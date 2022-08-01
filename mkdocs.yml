@@ -17,7 +17,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
+  - attr_list
     
 extra_css:
   - stylesheets/extra.css  
@@ -49,9 +49,13 @@ nav:
             - 'GraFX publisher 2020.2':         'GraFx_publisher/grafxpublisher_2020_2.md'
             - 'GraFX publisher 2020.1':         'GraFx_publisher/grafxpublisher_2020_1.md'
     - 'GraFx studio':
+        - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
         - 'Application overview':
-            - 'Layers':                         'GraFx_studio/layers.md'
+            - 'Properties':                     'GraFx_studio/properties.md'
+            - 'Animation':                      'GraFx_studio/animation.md'
+            - 'Alternate Layouts':              'GraFx_studio/alternate_layouts.md'
+            - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
         - 'Designing GraFx studio documents'    :
             - 'Hello world':                    'GraFx_studio/hello_world.md'
             - 'Intro level template':           'GraFx_studio/intro_document.md'
@@ -68,3 +72,4 @@ nav:
     - 'On-prem':
         - 'My CHILI publish':                   'on-premise/mycp.md'
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
+    - 'Test':                                   'test.md'

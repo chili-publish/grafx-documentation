@@ -1,9 +1,8 @@
-# CHILI GraFx Documentation
+# CHILI publish Guides
 
 ![alt text](/img/home3.png)
 
-
-Explore CHILI GraFx guides and examples to let you create and integrate smart templates.
+Explore our guides and examples to let you create and integrate smart templates into your applications.
 
 A toolset to create your platform for 
 

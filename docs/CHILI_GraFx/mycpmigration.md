@@ -9,13 +9,6 @@ CHILI GraFx is a platform, and is capable of hosting applications. And next to h
 Therefore your account(s) need to migrate from MyCP to CHILI GraFx.
 
 
-``` mermaid
-graph LR
-  A[My CHILI publish] --> B{Account exists?};
-  B -->|Yes| C[You're ready...];
-  B ---->|MAYBE| D[OOPS];
-  B --->|No| E[Migration will start!];
-```
     
 ### Phase 1
 
