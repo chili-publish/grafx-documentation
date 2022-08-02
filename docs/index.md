@@ -1,6 +1,6 @@
 # CHILI publish Guides
 
-![alt text](/img/home3.png)
+![Home](https://chilipublishdocs.imgix.net/home/home3.png?w=830&q=80)
 
 Explore our guides and examples to let you create and integrate smart templates into your applications.
 

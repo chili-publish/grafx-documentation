@@ -27,11 +27,12 @@ You will be able to connect third party Identity Providers to CHILI GraFx
 
 Loggin on to CHILI GraFx will bring you to this screen
 
-![smiley](/CHILI_GraFx/img/migrate5.png)
+![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate5.png?w=690)
+
 
 ## Step 2: Provide your email
 
-![smiley](/CHILI_GraFx/img/migrate2.png)
+![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate2.png?w=690)
 
 Provide your email, you used to login to My CHILI publish before.
 
@@ -39,11 +40,11 @@ If you use an email that is in use, you will get notified.
 
 If your email is known in the platform, CHILI GraFx will let you know.
 
-![smiley](/CHILI_GraFx/img/migrate4.png)
+![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate4.png?w=250)
 
 
 ## Step 2: Confirm your email
 
-![smiley](/CHILI_GraFx/img/migrate3.png)
+![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate3.png?w=690)
 
 A confirmation email awaits you, and will bring you to the activated CHILI GraFx dashboard.

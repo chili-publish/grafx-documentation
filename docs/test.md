@@ -8,3 +8,6 @@ graph LR
   B ---->|MAYBE| D[OOPS];
   B --->|No| E[Migration will start!];
 ```
+
+
+![alt text](https://chilipublishdocs.imgix.net/home/home.png?w=1100&q=75)

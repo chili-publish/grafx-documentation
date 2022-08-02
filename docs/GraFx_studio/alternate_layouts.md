@@ -1,5 +1,5 @@
 # Alternate Layouts
 
-![Properties](img/panel3.png)
+![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/panel3.png?w=250&q=80)
 
 Lorem Ipsum
