@@ -65,8 +65,6 @@ nav:
             - 'Intro level template':           'GraFx_studio/intro_document.md'
             - 'Intermedate level template':     'GraFx_studio/intermediate_document.md'
             - 'Advanced template design':       'GraFx_studio/adcanced_document.md'
-        - 'Solutions for Smart Templates':
-            - 'Multiple adds in Real Estate':   'GraFx_studio/realestate.md'
         - 'Extending GraFx studio':
             - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
@@ -79,4 +77,10 @@ nav:
     - 'On-prem':
         - 'My CHILI publish':                   'on-premise/mycp.md'
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
+
+    - 'Solutions':
+        - 'Multiple adds in Real Estate':   'solutions/realestate.md'
+        - 'Generating variants in Adds':    'solutions/addvariants.md'
+
+
     - 'Test':                                   'test.md'

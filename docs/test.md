@@ -7,6 +7,7 @@ graph LR
   B -->|Yes| C[You're ready...];
   B ---->|MAYBE| D[OOPS];
   B --->|No| E[Migration will start!];
+  C -->|Sometime| F[Oops];
 ```
 
 
