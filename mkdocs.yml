@@ -70,8 +70,11 @@ nav:
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
         - 'Integrate GraFx studio':
             - 'Getting started' :               'GraFx_studio/integration/getting_started.md'
-            - 'Hello World' :                   'GraFx_studio/integration/hello_world.md'
-            - 'Draft'   :                   'GraFx_studio/integration/draft.md'
+            - 'Local environment' :             'GraFx_studio/integration/local_environment.md'
+            - 'NPM & Webpack' :                 'GraFx_studio/integration/npm_webpack.md'
+            - 'CHILI Editor SDK' :              'GraFx_studio/integration/chili_editor_sdk.md'
+            - 'First build' :                   'GraFx_studio/integration/first_build.md'
+            - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
         - 'Release notes':                      'GraFx_studio/releasenotes.md'
 
     - 'On-prem':

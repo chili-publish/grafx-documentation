@@ -5,7 +5,7 @@ It contains 3 elements
 
 - The Editor SDK
 - The workspace
-- Your application
+- Your application 
 
 The **Editor SDK** is an open source application with the Canvas to render your document.
 This canvas does not have tools.
