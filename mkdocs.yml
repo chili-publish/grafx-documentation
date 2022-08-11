@@ -9,6 +9,9 @@ theme:
     text: Ubuntu
   palette:
     primary: grey
+  icon:
+    admonition:
+        note: material/fire-alert
 
 
 markdown_extensions:
@@ -45,7 +48,8 @@ nav:
     - 'GraFx publisher':
         - 'The manual':                         'GraFx_publisher/manual.md'
         - 'Integration':                        'GraFx_publisher/integration.md'
-        - 'Knowledge Base':                     'GraFx_publisher/knowledge_base.md'
+        - 'Knowledge Base':
+            - 'Smarter Templates':              'GraFx_publisher/smarter_templates.md'
         - 'Release notes':                      
             - 'GraFX publisher 2022':           'GraFx_publisher/grafxpublisher_2022.md'
             - 'GraFX publisher 2022 RC':        'GraFx_publisher/grafxpublisher_2022_rc.md'
