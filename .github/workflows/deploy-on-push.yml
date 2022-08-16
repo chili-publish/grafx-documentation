@@ -25,5 +25,5 @@ jobs:
             ssh_private_key: 'bla'
             local_path: './site/*'
             remote_path: '/var/www/grafxdocs'
-            sftpArgs: '-o ConnectTimeout=5'
+            sftpArgs: '-o ConnectTimeout=10 --verbose'
             port: 22
