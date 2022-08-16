@@ -8,13 +8,14 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - name: Install MkDocs and build documentation
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - name: Install MkDocs build documentation
+        uses: actions/checkout@v2
+        uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: mkdocs build
+        run: pip install mkdocs-material
+      - name:  build documentation 
+        run: mkdocs build
       - name: deploy build to server via sftp
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
