@@ -7,13 +7,12 @@ It contains 3 elements
 - The workspace
 - Your application 
 
-The **Editor SDK** is an open source application with the Canvas to render your document.
-This canvas does not have tools.
-
+The **Editor SDK** is an open source SDK that connects the Editor Engine (also referenced as “The Canvas”) which renders your document. This engine does not have tools (aka the Editor Engine).
+ 
 The **Workspace** is the set of panels and elements pre-built by CHILI publish to interact with your document canvas aka the **Editor SDK**.
 The **workspace** will NOT be covered in this first version.
 
-**Your application** is the custom code that will make it your application.
+**Your application** is the custom code that will make it your application, also referenced as "the integration".
 
 [Next up: setting up your Local environment](local_environment.md)
 

@@ -11,7 +11,7 @@ Make index.html, include JS file
 
 HTML source:
 	
-```
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,7 @@ HTML source:
 
 Add this line to your index.js
 
-```
+``` js
 import EditorSDK from "@chili-publish/editor-sdk";
 ```
 
@@ -40,7 +40,7 @@ You are now ready to call the Editor SDK in your application
 
 ## Basics needed to load Canvas and Basic functions
 
-```
+``` js
 import EditorSDK from "@chili-publish/editor-sdk";
 // import chilidoc from "../assets/demo.json";
 

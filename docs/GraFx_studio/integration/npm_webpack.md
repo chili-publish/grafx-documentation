@@ -1,6 +1,8 @@
 # Install and config NPM & WebPack
 
-We'll use the [NPM](https://docs.npmjs.com/getting-started) to facilitate life.
+As a package manager, we will use [NPM](https://docs.npmjs.com/getting-started).
+NPM is responsible for handling our dependencies, and it facilitates us by using the package.json as the source for our commands and dependencies.
+You could also just use a package manager to your liking, like e.g. [yarn](https://yarnpkg.com/).
 
 ## Initialize NPM
 
@@ -12,11 +14,14 @@ On the command line, go to your [Application folder](local_environment.md).
 npm init
 ```
 
+The file “package.json” is prefilled with some scripts and (dev)dependencies.
+
+A wizard will ask some questions on your specific setup.
 Answer the questions on the command line
 
 The result of the config are gathered in package.json
 
-```
+``` py
 {
   "name": "grafxapp",
   "version": "1.0.0",
@@ -108,3 +113,9 @@ Output: will output to 'dist’ Folder (change to your preference)
 Output will create "bundle.js" file
 
 [See Webpack documentation](https://webpack.js.org/)
+
+## How your directory should look like
+
+(or at least similar, depending on names you gave to folders)
+
+![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/integration/afterinit.png?w=840&q=80)
