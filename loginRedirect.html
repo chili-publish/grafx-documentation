@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GraFx Documentation</title>
+        <script>
+            const STORED_QUERY = 'grafx-docs-query-params';
+            const queryParams = window.location.search;
+            const prepareLoginUrl = () => {
+                const redirectUrl = `${window.location.origin}${window.location.pathname}`;
+
+                return `${redirectUrl}/.auth/login/aad?post_login_redirect_uri=${redirectUrl}index.html`;
+            };
+
+            const loginWithSavedState = () => {
+                localStorage.setItem(STORED_QUERY, queryParams);
+                window.location.assign(prepareLoginUrl());
+            };
+            loginWithSavedState();
+        </script>
+    </head>
+
+    <body>
+        <div id="workspace-login">Redirecting...</div>
+    </body>
+</html>
