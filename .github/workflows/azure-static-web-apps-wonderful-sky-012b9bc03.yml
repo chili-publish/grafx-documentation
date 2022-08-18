@@ -18,7 +18,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build And Deploy
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+      - name:  build documentation 
+        run: mkdocs build    
+      - name: Deploy to azure
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
