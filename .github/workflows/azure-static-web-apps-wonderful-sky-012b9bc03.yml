@@ -25,6 +25,8 @@ jobs:
         run: pip install mkdocs-material
       - name:  build documentation 
         run: mkdocs build    
+      - name: copy auth to /site
+        run: cp ./staticwebapp.config.json ./site/staticwebapp.config.json
       - name: Deploy to azure
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
