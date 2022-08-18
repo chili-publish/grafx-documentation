@@ -4,21 +4,19 @@ We allmost have all elements in place. Before we start customizing, we need to d
 
 Add to "package.json"
 
-```
+``` json
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
 ```
 
 Full file looks something like this
-```
+``` json
 {
   "name": "grafxapp",
   "version": "1.0.0",
   "description": "SDK test app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "author": "Bram",
@@ -37,13 +35,13 @@ Full file looks something like this
 
 Build the output
 
-```
+``` zsh
 npm run build
 ```
 
 Result should be like this
 
-```
+``` zsh
 > grafxapp@1.0.0 build
 > webpack
 
@@ -55,8 +53,9 @@ cacheable modules 416 KiB
 webpack 5.74.0 compiled successfully in 221 ms
 ```
 
-Your app is in the "dist" folder
+Your bundled code can be found in the "dist" folder
 
-![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/integration/dist.png?w=400&q=80)
+
+![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/integration/dist.png?w=800&q=80)
 
 All the prep work is done

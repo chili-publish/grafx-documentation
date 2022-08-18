@@ -2,14 +2,17 @@
 
 JavaScript could run in the browser, served from a file. 
 Running it from a webserver, will have several advantages, e.g. access to objects in the code you are writing.
+We also need a webserver to be able to fetch content from other domains.
 
 ## Setting up a webserver
 
 Set up a local webserver of your choice
 
-- [Apache](https://httpd.apache.org/)
-- [Nginx](https://www.nginx.com/)
-- [IIS](https://www.iis.net/overview)
+- [Apache](https://httpd.apache.org/){target="_blank"}
+- [Nginx](https://www.nginx.com/){target="_blank"}
+- [IIS](https://www.iis.net/overview){target="_blank"}
+
+To speedup and facilitate your setup, you can use tools like [MAMP](https://www.mamp.info/en/mac/){target="_blank"}
 
 ## Create a Folder for you application
 
