@@ -41,7 +41,8 @@ nav:
     - 'CHILI GraFx':
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
         - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
-        - 'Platform Admin':                     'CHILI_GraFx/admin.md'
+        - 'Platform Admin':
+            - 'User management' :               'CHILI_GraFx/user_management.md'
         - 'Application overview':
             - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
             - 'Panel 2' :                       'CHILI_GraFx/panel2.md'
