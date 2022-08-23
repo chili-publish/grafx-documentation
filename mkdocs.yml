@@ -32,6 +32,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 
+plugins:
+  - tags:
+      tags_file: tags.md
           
 extra_css:
   - stylesheets/extra.css  
@@ -99,3 +102,4 @@ nav:
 
 
     - 'Test':                                   'test.md'
+    - 'Tag Index':                              'tags.md'

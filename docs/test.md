@@ -1,6 +1,5 @@
 # Testing out MarkDown syntax
 
-
 ``` mermaid
 graph LR
   A[My CHILI publish] --> B{Account exists?};
