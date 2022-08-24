@@ -5,7 +5,6 @@ theme:
   features:
     - navigation.tabs
     - content.tabs.link
-    - toc.integrate
   font:
     text: Ubuntu
   palette:
@@ -13,7 +12,8 @@ theme:
   icon:
     admonition:
         note: material/fire-alert
-
+  logo: assets/logo.svg
+  
 plugins:
     - search
     - awesome-pages
@@ -36,7 +36,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-
+  - toc:
+      toc_depth: 3
           
 extra_css:
   - stylesheets/extra.css  
@@ -92,7 +93,7 @@ nav:
             - 'First build' :                   'GraFx_studio/integration/first_build.md'
             - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
         - 'Release notes':                      'GraFx_studio/releasenotes.md'
-        - 'SDK documentation':
+        - 'SDK reference':
             - Overview:                         'GraFx_studio/sdk/README.md'
             - ... | flat | GraFx_studio/sdk/**
 
