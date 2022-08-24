@@ -18,6 +18,10 @@
         {
             "route": "/*",
             "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "https://wonderful-sky-012b9bc03-*.westeurope.azurestaticapps.net/*",
+            "allowedRoles": ["anonymous"]
         }
     ],
     "responseOverrides": {
