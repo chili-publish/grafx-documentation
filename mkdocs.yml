@@ -2,6 +2,7 @@
 site_name: CHILI publish Guides
 theme:
   name: material
+  logo: assets/CHILI_LOGOS_OK-02.svg
   features:
     - navigation.tabs
     - content.tabs.link
@@ -35,7 +36,8 @@ markdown_extensions:
 plugins:
   - tags:
       tags_file: tags.md
-          
+  - search          
+  
 extra_css:
   - stylesheets/extra.css  
 
@@ -71,6 +73,17 @@ nav:
         - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
         - 'Application overview':
+            - 'Workspace elements':             'GraFx_studio/workspace_elements.md'
+            - 'Headerbar':                      'GraFx_studio/headerbar.md'
+            - 'Top Quick Tools':                'GraFx_studio/topquicktools.md'
+            - 'Document Canvas':                'GraFx_studio/documentcanvas.md'
+            - 'Page or Document':               'GraFx_studio/page_document.md'
+            - 'Properties panel':               'GraFx_studio/properties.md'
+            - 'Export':                         'GraFx_studio/export.md'
+            - 'Bottom Quick Tools':             'GraFx_studio/bottomquicktools.md'
+            - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
+            - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
+
             - 'Properties':                     'GraFx_studio/properties.md'
             - 'Animation':                      'GraFx_studio/animation.md'
             - 'Alternate Layouts':              'GraFx_studio/alternate_layouts.md'

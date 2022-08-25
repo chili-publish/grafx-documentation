@@ -1,3 +1,2 @@
-# About
+# Setting Up GraFx Studio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
