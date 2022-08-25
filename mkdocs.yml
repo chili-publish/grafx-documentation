@@ -13,6 +13,11 @@ theme:
   icon:
     admonition:
         note: material/fire-alert
+  logo: assets/logo.svg
+  
+plugins:
+    - search
+    - awesome-pages
 
 
 markdown_extensions:
@@ -37,6 +42,8 @@ plugins:
   - tags:
       tags_file: tags.md
   - search          
+  - toc:
+      toc_depth: 3
   
 extra_css:
   - stylesheets/extra.css  
@@ -104,6 +111,9 @@ nav:
             - 'First build' :                   'GraFx_studio/integration/first_build.md'
             - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
         - 'Release notes':                      'GraFx_studio/releasenotes.md'
+        - 'SDK reference':
+            - Overview:                         'GraFx_studio/sdk/README.md'
+            - ... | flat | GraFx_studio/sdk/**
 
     - 'On-prem':
         - 'My CHILI publish':                   'on-premise/mycp.md'
