@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="a" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 125.4 127.6" style="enable-background:new 0 0 125.4 127.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.9;fill:url(#SVGID_1_);enable-background:new    ;}
+	.st1{fill:#FFFFFF;}
+	.st2{opacity:0.23;fill:#010068;enable-background:new    ;}
+	.st3{fill:url(#SVGID_00000121241485848590142030000001793344588615059620_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="127.7212" y1="678.0446" x2="-0.9774" y2="579.3356" gradientTransform="matrix(1 0 0 1 0 -580)">
+	<stop  offset="3.000000e-02" style="stop-color:#6B2044"/>
+	<stop  offset="0.15" style="stop-color:#915974"/>
+	<stop  offset="0.31" style="stop-color:#BFA0AF"/>
+	<stop  offset="0.44" style="stop-color:#E2D3DA"/>
+	<stop  offset="0.54" style="stop-color:#F7F3F5"/>
+	<stop  offset="0.6" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path class="st0" d="M121.3,2.1H63.5C29.4,2.1,2,29.7,2,63.6c0,24.1,13.9,45,34.1,55c3.7-4.9,31.6-42.5,39.2-52.7l1.4-1.9l0.5-0.7
+	l45.5-61.5L121.3,2.1L121.3,2.1z"/>
+<path class="st1" d="M123.2,125.6L77,63.6c0,0-0.2,0.2-0.5,0.7c-0.2,0.5-0.9,1.2-1.4,1.9l-39,52.7l0,0c5.8,2.8,13.7,6.5,29.9,6.5
+	h57.1V125.6z"/>
+<path class="st2" d="M30.5,118.9L30.5,118.9z"/>
+<linearGradient id="SVGID_00000018941260824945088640000005230968742562432444_" gradientUnits="userSpaceOnUse" x1="30.5495" y1="698.8688" x2="30.5495" y2="698.8688" gradientTransform="matrix(1 0 0 1 0 -580)">
+	<stop  offset="0" style="stop-color:#FD0048"/>
+	<stop  offset="0.15" style="stop-color:#EF0347"/>
+	<stop  offset="0.42" style="stop-color:#CA0B46"/>
+	<stop  offset="0.79" style="stop-color:#8F1844"/>
+	<stop  offset="1" style="stop-color:#6B2044"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000018941260824945088640000005230968742562432444_);" d="M30.5,118.9L30.5,118.9z"/>
+</svg>

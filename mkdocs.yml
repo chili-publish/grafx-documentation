@@ -2,6 +2,7 @@
 site_name: CHILI publish Guides
 theme:
   name: material
+  logo: assets/CHILI_LOGOS_OK-02.svg
   features:
     - navigation.tabs
     - content.tabs.link
@@ -12,7 +13,12 @@ theme:
   icon:
     admonition:
         note: material/fire-alert
-
+  
+plugins:
+  - search
+  - awesome-pages
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - admonition
@@ -30,9 +36,10 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
-
-          
+  - pymdownx.superfences        
+  - toc:
+      toc_depth: 3
+  
 extra_css:
   - stylesheets/extra.css  
 
@@ -41,7 +48,8 @@ nav:
     - 'CHILI GraFx':
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
         - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
-        - 'Platform Admin':                     'CHILI_GraFx/admin.md'
+        - 'Platform Admin':
+            - 'User management' :               'CHILI_GraFx/user_management.md'
         - 'Application overview':
             - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
             - 'Panel 2' :                       'CHILI_GraFx/panel2.md'
@@ -67,6 +75,17 @@ nav:
         - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
         - 'Application overview':
+            - 'Workspace elements':             'GraFx_studio/workspace_elements.md'
+            - 'Headerbar':                      'GraFx_studio/headerbar.md'
+            - 'Top Quick Tools':                'GraFx_studio/topquicktools.md'
+            - 'Document Canvas':                'GraFx_studio/documentcanvas.md'
+            - 'Page or Document':               'GraFx_studio/page_document.md'
+            - 'Properties panel':               'GraFx_studio/properties.md'
+            - 'Export':                         'GraFx_studio/export.md'
+            - 'Bottom Quick Tools':             'GraFx_studio/bottomquicktools.md'
+            - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
+            - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
+
             - 'Properties':                     'GraFx_studio/properties.md'
             - 'Animation':                      'GraFx_studio/animation.md'
             - 'Alternate Layouts':              'GraFx_studio/alternate_layouts.md'
@@ -87,6 +106,9 @@ nav:
             - 'First build' :                   'GraFx_studio/integration/first_build.md'
             - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
         - 'Release notes':                      'GraFx_studio/releasenotes.md'
+        - 'SDK reference':
+            - Overview:                         'GraFx_studio/sdk/README.md'
+            - ... | flat | GraFx_studio/sdk/**
 
     - 'On-prem':
         - 'My CHILI publish':                   'on-premise/mycp.md'
@@ -98,3 +120,4 @@ nav:
 
 
     - 'Test':                                   'test.md'
+    - 'Tag Index':                              'tags.md'
