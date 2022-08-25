@@ -1,3 +1,8 @@
+---
+tags:
+  - studioAPI
+---
+
 # GraFx studio integration
 
 GraFx studio is a client side browser application.

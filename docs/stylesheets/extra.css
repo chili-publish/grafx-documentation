@@ -1,26 +1,49 @@
+img[alt=applogo] { width: 200px; }
+
+.md-header {
+    background-color: #F0F0F0;
+	color: #000;
+}
+
+.md-tabs {
+    background-color: #F0F0F0;
+	color: #000;
+}
+
+[dir=ltr] .md-header__title {
+    margin-left: 0;
+}
+
+.md-typeset h1 {
+    color: #010068;
+    font-weight: bold;
+}
 h2
 {
-	background-color: #ea4762; /* Green */
-	background-color: #ccc; /* Green */
+	background-color: #F8B6C0; /* Green */
 	border: none;
-	color: #ffffff;
+	color: #010068;
 	padding: 5px 15px;
 	border-radius: 3px;
 	text-align: left;
-	text-decoration: none;
 	display: block;
-	
+    font-weight: bold;	
+}
+
+.md-typeset h2 {
+    font-weight: bold;	 
 }
 
 h3
 {
-	background-color: #f4f4f6; /* Green */
+	background-color: #F0F0F0; /* Green */
 	border: none;
-	color: #000;
+	color: #010068;
 	padding: 5px 15px;
 	border-radius: 3px;
 	text-align: left;
 	text-decoration: none;
 	display: inline-block;
-	
+	border-bottom: 1px solid;	
+	width: 100%;
 }

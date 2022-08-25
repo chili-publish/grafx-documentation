@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: 3.x
       - name: Install MkDocs
-        run: pip install mkdocs-material
+        run: pip install mkdocs-material mkdocs-awesome-pages-plugin
       - name:  build documentation 
         run: mkdocs build    
       - name: copy auth to /site
