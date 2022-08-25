@@ -13,7 +13,6 @@ theme:
   icon:
     admonition:
         note: material/fire-alert
-  logo: assets/logo.svg
   
 plugins:
   - search
