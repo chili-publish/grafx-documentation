@@ -1,33 +1,36 @@
 {
-    "auth": {
-        "identityProviders": {
-            "azureActiveDirectory": {
-                "registration": {
-                    "openIdIssuer": "https://login.microsoftonline.com/2ea0bc9e-f829-408f-badf-30a37e6bc865/v2.0",
-                    "clientIdSettingName": "AAD_CLIENT_ID",
-                    "clientSecretSettingName": "AAD_CLIENT_SECRET"
-                }
-            }
-        }
-    },
-    "routes": [
-        {
-            "route": "/main.css",
-            "allowedRoles": ["anonymous"]
-        },
-        {
-            "route": "https://wonderful-sky-012b9bc03-*",
-            "allowedRoles": ["anonymous"]
-        },
-        {
-            "route": "/*",
-            "allowedRoles": ["authenticated"]
-        }
-    ],
-    "responseOverrides": {
-        "401": {
-            "statusCode": 302,
-            "redirect": "/.auth/login/aad"
-        }
+  "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
     }
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/.auth/login/auth0"
+    }
+  },
+  "auth": {
+    "identityProviders": {
+      "customOpenIdConnectProviders": {
+        "auth0": {
+          "registration": {
+            "clientIdSettingName": "AUTH0_ID",
+            "clientCredential": {
+              "clientSecretSettingName": "AUTH0_SECRET"
+            },
+            "openIdConnectConfiguration": {
+              "wellKnownOpenIdConfiguration": "https://grafx-dev.eu.auth0.com/.well-known/openid-configuration"
+            }
+          },
+          "login": {
+            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+            "scopes": ["openid", "profile"],
+            "loginParameterNames": []
+          }
+        }
+      }
+    }
+  }
 }
