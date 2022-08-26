@@ -21,7 +21,7 @@
               "clientSecretSettingName": "AUTH0_SECRET"
             },
             "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://grafx-dev.eu.auth0.com/.well-known/openid-configuration"
+                "wellKnownOpenIdConfiguration": "https://sombra.eu.auth0.com/.well-known/openid-configuration"
             }
           },
           "login": {
