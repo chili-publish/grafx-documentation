@@ -119,5 +119,5 @@ nav:
         - 'Generating variants in Adds':    'solutions/addvariants.md'
 
 
-    - 'Test':                                   'test.md'
+    - 'Developer center':                       'developercenter.md'
     - 'Tag Index':                              'tags.md'

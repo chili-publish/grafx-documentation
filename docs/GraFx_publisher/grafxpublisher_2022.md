@@ -1,20 +1,12 @@
 # GraFx publisher 2022
 
-``` mermaid
-pie showData
-    title Issues fixed in this release
-    "New features" : 210
-    "Fixes" : 15
-    "Regressions" : 3
-```
-
 ## New PDF optimization settings
 
 An administrator can now choose from a range of PDF output settings to optimize how images are handled when output is generated. This allows you to create PDFs that are optimized to efficiently download, transfer, and process with your specific production workflows in mind.
 
 Before version 2022, the only way to optimize your generated PDFs was to use one of the available quality settings, a custom Image Conversion Profile or Ghostscript optimization commands:
 
-![Image](img/rn/2022_1.png)
+![User management](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_1.png?w=830&q=80)
 
 Now all of this has been replaced by some brand new settings that let you control the image downsampling, the image compression and whether you want to include the complete images or only the visible parts. You can also choose to convert the colors of all objects in the PDF to a specific destination profile.
 
@@ -32,13 +24,13 @@ You can choose one of the available image quality presets if you want to optimiz
 
 If this doesn't suit your needs, you can customize as you want. You can configure how the image downsampling and compression should work for different types of images: color, grayscale and monochrome.
 
-![Image](img/rn/2022_2.png)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_2.png?w=400&q=80)
 
 ## Remove invisible image data
 
 You can crop out all the image data in the PDF that is invisible after the images are fitted into frames. This can significantly reduce the file size of the PDF without any visible difference.
 
-![Image](img/rn/2022_3.png)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_3.png?w=800&q=80)
 
 ## Convert colors
 
@@ -46,11 +38,11 @@ In the PDF Export Settings there is a new "Convert Colors" setting in the "Stand
 
 If you don't specify an Output PDF Standard, you have to choose a destination profile for color conversion.
 
-![Image](img/rn/2022_4.png)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_4.png?w=400&q=80)
 
 If you do specify an Output PDF Standard, you also have to specify the Output Intent. In this case the Output Intent is used as destination profile for color conversion.
 
-![Image](img/rn/2022_5.png)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_5.png?w=400&q=80)
 
 ## Transparent PNG output
 
@@ -72,21 +64,21 @@ You can now generate images that simulate the effects of overprint in a PDF docu
 
 Example 1: The "WATER" text is set to overprint to compensate for misregistration on a press. If you look closely at the bottom image, you can see that the black text is darker when printed on top of the water.
 
-![Image](img/rn/2022_6.jpeg)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_6.jpeg?w=400&q=80)
 
 Without overprint simulation
 
-![Image](img/rn/2022_7.jpeg)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_7.jpeg?w=400&q=80)
 
 With overprint simulation
 
 Example 2: The "spicy" text is set to overprint to create an effect of the background items showing through the text, as you can see on the bottom image.
 
-![Image](img/rn/2022_8.jpeg)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_8.jpeg?w=400&q=80)
 
 Without overprint simulation
 
-![Image](img/rn/2022_9.jpeg)
+![image](https://chilipublishdocs.imgix.net/GraFx_publisher/releasenotes/2022_9.jpeg?w=400&q=80)
 
 With overprint simulation
 
