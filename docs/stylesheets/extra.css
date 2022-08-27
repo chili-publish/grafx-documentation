@@ -20,14 +20,15 @@ img[alt=applogo] { width: 200px; }
 }
 h2
 {
-	background-color: #F8B6C0; /* Green */
+	background-color: #C0C0C0;
+	/* Green */
 	border: none;
 	color: #010068;
 	padding: 5px 15px;
 	border-radius: 3px;
 	text-align: left;
 	display: block;
-    font-weight: bold;	
+	font-weight: bold;
 }
 
 .md-typeset h2 {
