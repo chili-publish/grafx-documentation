@@ -49,17 +49,19 @@ nav:
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
         - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
         - 'Platform Admin':
+            - 'General Admin' :                 'CHILI_GraFx/admin.md'
             - 'User management' :               'CHILI_GraFx/user_management.md'
+            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
+            - 'Environments' :                  'CHILI_GraFx/environments.md'
         - 'Application overview':
             - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
-            - 'Panel 2' :                       'CHILI_GraFx/panel2.md'
         - 'How to':
             - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
-            - 'Add media to GraFx' :            'CHILI_GraFx/how_to/add_media.md'
+            - 'Setup GraFx media' :             'CHILI_GraFx/how_to/setup_media.md'
         - 'Integrate CHILI GraFx':
-            - 'Getting started' :              'CHILI_GraFx/integration/getting_started.md'
-            - 'Hello World' :                   'CHILI_GraFx/integration/hello_world.md'
-        - 'Release notes':                      'CHILI_GraFx/releasenotes.md'
+            - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
+        - 'Release notes':
+            - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'
     - 'GraFx publisher':
         - 'The manual':                         'GraFx_publisher/manual.md'
         - 'Integration':                        'GraFx_publisher/integration.md'
@@ -91,10 +93,10 @@ nav:
             - 'Alternate Layouts':              'GraFx_studio/alternate_layouts.md'
             - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
         - 'Designing GraFx studio documents'    :
-            - 'Hello world':                    'GraFx_studio/hello_world.md'
             - 'Intro level template':           'GraFx_studio/intro_document.md'
             - 'Intermedate level template':     'GraFx_studio/intermediate_document.md'
             - 'Advanced template design':       'GraFx_studio/adcanced_document.md'
+            - 'Create Alternate Layouts':       'GraFx_studio/how_to/alternate_layouts.md'
         - 'Extending GraFx studio':
             - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
@@ -119,5 +121,5 @@ nav:
         - 'Generating variants in Adds':    'solutions/addvariants.md'
 
 
-    - 'Test':                                   'test.md'
+    - 'Developer center':                       'developercenter.md'
     - 'Tag Index':                              'tags.md'
