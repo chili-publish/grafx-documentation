@@ -1,26 +1,24 @@
 ---
 tags:
-  - GraFxPlatform
-  - Usermanagement
+  - unfinished
 ---
 
 # User management
 
 ## Introduction
 
-What can I do? That is the basic question in user management in CHILI GraFx.
-We organized the user management to make it easy and scalable.
-
 5 Basic concepts define the user management. Below you can find the details of each concept.
+
+### Relation between concepts
 
 ``` mermaid
 erDiagram
-  GraFx-Subscription ||--|{ GraFx-Media-Asset : Has
-  Permission ||--|{ GraFx-Media-Asset : Impacts
+  GraFx-Subscription ||--|{ Resources : Has
+  Permission ||--|{ Resources : Impacts
   Role ||--|{ Permission : Groups
-  GraFx-UserGroup ||--|{ Role : Has-many
-  GraFx-User ||--|{ Role : Has
-  GraFx-UserGroup ||--|{ GraFx-User : Has
+  GraFx-UserGroup ||--|{ Role : Has-one-or-more
+  GraFx-User ||--|{ Role : Has-one-or-more
+  GraFx-UserGroup ||--|{ GraFx-User : Contains
 ```
 
 ### Resources
@@ -32,16 +30,16 @@ Let's start with resources, since they are the items undergoing the effect of pe
 
 Sample resources: GraFx Media assets, GraFx Documents, Users, Environments
 
-### Users
+### GraFx Users
 
 !!! Definition 
 	A Person or system identified by a username that performs an operation over the resource
 	
-We defined a user as a person or a system. In many cases you will interact as a human with the GraFx UI. 
+We defined a GraFx User as a person or a system. In many cases you will interact as a human with the GraFx UI. 
 
 In some cases, you'll also need a system user, that can be used to interact with the GraFx API's. It's wise to unlink this system user from a person. In case the human user changes jobs or roles, you don't need to redefine the access or role for the system user.
 
-### Groups
+### GraFx UserGroup
 
 !!! Definition
 	A list of 1 or more users, sharing the same role(s)
