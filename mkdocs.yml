@@ -92,12 +92,14 @@ nav:
             - 'Animation':                      'GraFx_studio/animation.md'
             - 'Alternate Layouts':              'GraFx_studio/alternate_layouts.md'
             - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
-        - 'Designing GraFx studio documents'    :
+        - 'Concepts':
+            - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
+        - 'How to: Design documents'    :
             - 'Intro level template':           'GraFx_studio/intro_document.md'
             - 'Intermedate level template':     'GraFx_studio/intermediate_document.md'
             - 'Advanced template design':       'GraFx_studio/adcanced_document.md'
             - 'Create Alternate Layouts':       'GraFx_studio/how_to/alternate_layouts.md'
-        - 'Extending GraFx studio':
+        - 'How to: Extend GraFx studio':
             - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
         - 'Integrate GraFx studio':
