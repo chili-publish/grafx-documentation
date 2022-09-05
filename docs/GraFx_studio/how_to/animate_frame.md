@@ -43,11 +43,57 @@ Dragging to the left will work up to the longest blue bar. I.e. if a frames show
 ![Timeline change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/timeline_reduce.gif)
 
 
-## Intro
+## Intro - Emphasis - Outro
 
-## Emphasis
+By default, no animations are set. By selecting the animation panel in the properties, you can set the **intro**, **emphasis** and **outro**.
 
-## Outro
+![Intro_Outro](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/intro_outro.gif)
 
+### Intro
 
-![Creat first Sub-Layout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/sublayout2.gif)
+As the name suggests, the **intro** changes how the animation starts.
+
+Choose 1 or all 4 animations
+
+- Easing type
+- Fade
+- Rotation
+- Scale
+
+Each of the animation types has settings that will appear when you select them. (Except fade, it will just fade in)
+
+### Emphasis
+
+The behaviour in the middle section.
+
+Set the style
+
+- Bounce
+- Flash
+- ...
+
+Set the Ease Type
+
+- Ease in
+- Ease out
+- Both
+
+Set the Twee type (how the movement is calculated)
+
+- Quadratic
+- ...
+
+[See easing types for more info](https://easings.net/){target="_blank"}
+
+!!! Note
+	Will need input here
+
+### Outro
+
+### Length of the intro, outro & emphasis
+
+Control the length and position of each element (lightblue bar), by dragging their respective start- and endpoints.
+
+Intro (start) — Emphasis (middel) - Outro (end)
+
+![Intro_Outro](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/intro_outro_resize.gif)
