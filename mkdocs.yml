@@ -46,6 +46,7 @@ extra_css:
 nav:
     - Home: 'index.md'
     - 'CHILI GraFx':
+        - 'Introduction':                       'CHILI_GraFx/intro.md'
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
         - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
         - 'Platform Admin':
@@ -61,18 +62,17 @@ nav:
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
         - 'Release notes':
+            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
             - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'
     - 'GraFx publisher':
+        - 'Introduction':                       'GraFx_publisher/intro.md'
         - 'The manual':                         'GraFx_publisher/manual.md'
         - 'Integration':                        'GraFx_publisher/integration.md'
         - 'Knowledge Base':
             - 'Smarter Templates':              'GraFx_publisher/smarter_templates.md'
-        - 'Release notes':                      
-            - 'GraFX publisher 2022':           'GraFx_publisher/grafxpublisher_2022.md'
-            - 'GraFX publisher 2022 RC':        'GraFx_publisher/grafxpublisher_2022_rc.md'
-            - 'GraFX publisher 2021':           'GraFx_publisher/grafxpublisher_2021.md'
-            - 'GraFX publisher 2020.2':         'GraFx_publisher/grafxpublisher_2020_2.md'
-            - 'GraFX publisher 2020.1':         'GraFx_publisher/grafxpublisher_2020_1.md'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_publisher/releasenotes/latest.md'
+            - 'GraFX publisher 2022':           'GraFx_publisher/releasenotes/2022.md'
     - 'GraFx studio':
         - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
@@ -90,7 +90,7 @@ nav:
 
             - 'Properties':                     'GraFx_studio/properties.md'
             - 'Animation':                      'GraFx_studio/animation.md'
-            - 'Alternate Layouts':              'GraFx_studio/alternate_layouts.md'
+            - 'Layouts':                        'GraFx_studio/layouts.md'
             - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
         - 'Concepts':
             - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
@@ -109,12 +109,29 @@ nav:
             - 'CHILI Editor SDK' :              'GraFx_studio/integration/chili_editor_sdk.md'
             - 'First build' :                   'GraFx_studio/integration/first_build.md'
             - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
-        - 'Release notes':                      'GraFx_studio/releasenotes.md'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
         - 'SDK reference':
             - Overview:                         'GraFx_studio/sdk/README.md'
             - ... | flat | GraFx_studio/sdk/**
 
+    - 'GraFx media':
+        - 'Introduction':                       'GraFx_media/intro.md'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_media/releasenotes/latest.md'
+
+    - 'GraFx fonts':
+        - 'Introduction':                       'GraFx_fonts/intro.md'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
+
+    - 'GraFx stylekits':
+        - 'Introduction':                       'GraFx_stylekits/intro.md'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
+
     - 'On-prem':
+        - 'Introduction':                       'on-premise/intro.md'
         - 'My CHILI publish':                   'on-premise/mycp.md'
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
 

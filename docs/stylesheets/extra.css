@@ -20,11 +20,11 @@ img[alt=applogo] { width: 200px; }
 }
 h2
 {
-	background-color: #C0C0C0;
+	background-color: #fff;
 	/* Green */
 	border: none;
 	color: #010068;
-	padding: 5px 15px;
+	padding: 5px 0px;
 	border-radius: 3px;
 	text-align: left;
 	display: block;
@@ -37,14 +37,14 @@ h2
 
 h3
 {
-	background-color: #F0F0F0; /* Green */
+	background-color: #FFF;
 	border: none;
 	color: #010068;
-	padding: 5px 15px;
+	padding: 5px 0px;
 	border-radius: 3px;
 	text-align: left;
 	text-decoration: none;
 	display: inline-block;
-	border-bottom: 1px solid;	
+	border-bottom: 0px solid;	
 	width: 100%;
 }
