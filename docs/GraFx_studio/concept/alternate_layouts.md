@@ -1,3 +1,8 @@
+---
+tags:
+  - unfinished
+---
+
 # Alternate Layouts
 
 ![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout1.png?w=850&q=80)
