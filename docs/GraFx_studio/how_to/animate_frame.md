@@ -78,10 +78,9 @@ Set the Ease Type
 - Ease out
 - Both
 
-Set the Twee type (how the movement is calculated)
+Set the Tween type (how the movement is calculated). Tweening, is how the movement between start and end point is calculated.
 
-- Quadratic
-- ...
+This website describes perfectly what several Tween types do.
 
 [See easing types for more info](https://easings.net/){target="_blank"}
 

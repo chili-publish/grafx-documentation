@@ -10,6 +10,11 @@ img[alt=applogo] { width: 200px; }
 	color: #000;
 }
 
+.md-tabs__link--active {
+    color: var(--md-typeset-a-color);
+    font-weight: bold;
+}
+
 [dir=ltr] .md-header__title {
     margin-left: 0;
 }
