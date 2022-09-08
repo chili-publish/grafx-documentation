@@ -1,8 +1,15 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Alignment
-
 # Enumeration: Alignment
 
 [index](../modules/index.md).Alignment
+
+## Table of contents
+
+### Enumeration Members
+
+- [CENTER](index.Alignment.md#center)
+- [JUSTIFY](index.Alignment.md#justify)
+- [LEFT](index.Alignment.md#left)
+- [RIGHT](index.Alignment.md#right)
 
 ## Enumeration Members
 
@@ -12,7 +19,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:8](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L8)
+[types/TextStyleTypes.ts:8](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L8)
 
 ___
 
@@ -22,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:10](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L10)
+[types/TextStyleTypes.ts:10](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L10)
 
 ___
 
@@ -32,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:7](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L7)
+[types/TextStyleTypes.ts:7](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L7)
 
 ___
 
@@ -42,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:9](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L9)
+[types/TextStyleTypes.ts:9](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L9)

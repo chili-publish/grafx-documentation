@@ -1,11 +1,24 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/AnimationController](../modules/controllers_AnimationController.md) / AnimationController
-
 # Class: AnimationController
 
 [controllers/AnimationController](../modules/controllers_AnimationController.md).AnimationController
 
 The AnimationController is responsible for all communication regarding Animations.
 Methods inside this controller can be called by `window.SDK.animation.{method-name}`
+
+## Table of contents
+
+### Methods
+
+- [getAnimationByFrameId](controllers_AnimationController.AnimationController.md#getanimationbyframeid)
+- [getAnimationsByLayoutId](controllers_AnimationController.AnimationController.md#getanimationsbylayoutid)
+- [getAnimationsOnSelectedLayout](controllers_AnimationController.AnimationController.md#getanimationsonselectedlayout)
+- [pauseAnimation](controllers_AnimationController.AnimationController.md#pauseanimation)
+- [playAnimation](controllers_AnimationController.AnimationController.md#playanimation)
+- [resetAnimation](controllers_AnimationController.AnimationController.md#resetanimation)
+- [resetFrameAnimation](controllers_AnimationController.AnimationController.md#resetframeanimation)
+- [setAnimationDuration](controllers_AnimationController.AnimationController.md#setanimationduration)
+- [setFrameAnimation](controllers_AnimationController.AnimationController.md#setframeanimation)
+- [setScrubberPosition](controllers_AnimationController.AnimationController.md#setscrubberposition)
 
 ## Methods
 
@@ -28,7 +41,7 @@ This method returns an animation for a given frame and layout
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:36](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L36)
+[src/controllers/AnimationController.ts:36](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L36)
 
 ___
 
@@ -50,7 +63,7 @@ This method returns the animations for a given layout
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:46](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L46)
+[src/controllers/AnimationController.ts:46](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L46)
 
 ___
 
@@ -66,7 +79,7 @@ This method returns all animations on current layout
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:25](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L25)
+[src/controllers/AnimationController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L25)
 
 ___
 
@@ -82,7 +95,7 @@ This method triggers the animation to pause
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:74](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L74)
+[src/controllers/AnimationController.ts:74](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L74)
 
 ___
 
@@ -98,7 +111,7 @@ This method triggers the animation to play
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:65](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L65)
+[src/controllers/AnimationController.ts:65](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L65)
 
 ___
 
@@ -114,7 +127,7 @@ This method resets the layout's animations and animation duration to its initial
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:113](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L113)
+[src/controllers/AnimationController.ts:113](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L113)
 
 ___
 
@@ -136,7 +149,7 @@ This method resets the animation to its initial state
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:104](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L104)
+[src/controllers/AnimationController.ts:104](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L104)
 
 ___
 
@@ -158,7 +171,7 @@ This method sets the total and maximum duration of the animation
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:94](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L94)
+[src/controllers/AnimationController.ts:94](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L94)
 
 ___
 
@@ -180,7 +193,7 @@ This method sets the animation state for a certain Frame
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:56](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L56)
+[src/controllers/AnimationController.ts:56](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L56)
 
 ___
 
@@ -202,4 +215,4 @@ This method sets the animation time to a certain time, expressed in miliseconds
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:84](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/AnimationController.ts#L84)
+[src/controllers/AnimationController.ts:84](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L84)

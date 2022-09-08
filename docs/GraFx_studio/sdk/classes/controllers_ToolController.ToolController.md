@@ -1,11 +1,20 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/ToolController](../modules/controllers_ToolController.md) / ToolController
-
 # Class: ToolController
 
 [controllers/ToolController](../modules/controllers_ToolController.md).ToolController
 
 The ToolController is responsible for all communication regarding the tools.
 Methods inside this controller can be called by `window.SDK.tool.{method-name}`
+
+## Table of contents
+
+### Methods
+
+- [getSelectedTool](controllers_ToolController.ToolController.md#getselectedtool)
+- [setHandTool](controllers_ToolController.ToolController.md#sethandtool)
+- [setImageFrameTool](controllers_ToolController.ToolController.md#setimageframetool)
+- [setSelectTool](controllers_ToolController.ToolController.md#setselecttool)
+- [setTextFrameTool](controllers_ToolController.ToolController.md#settextframetool)
+- [setZoomTool](controllers_ToolController.ToolController.md#setzoomtool)
 
 ## Methods
 
@@ -21,7 +30,7 @@ This method returns selected tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:33](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/ToolController.ts#L33)
+[src/controllers/ToolController.ts:33](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L33)
 
 ___
 
@@ -37,7 +46,7 @@ This method sets the used tool to a Move tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:48](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/ToolController.ts#L48)
+[src/controllers/ToolController.ts:48](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L48)
 
 ___
 
@@ -53,7 +62,7 @@ This method sets the used tool to a ImageFrame tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:69](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/ToolController.ts#L69)
+[src/controllers/ToolController.ts:69](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L69)
 
 ___
 
@@ -69,7 +78,7 @@ This method sets the used tool to a Pointer tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:41](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/ToolController.ts#L41)
+[src/controllers/ToolController.ts:41](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L41)
 
 ___
 
@@ -85,7 +94,7 @@ This method sets the used tool to a TextFrame tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:62](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/ToolController.ts#L62)
+[src/controllers/ToolController.ts:62](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L62)
 
 ___
 
@@ -101,4 +110,4 @@ This method sets the used tool to a Zoom tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:55](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/ToolController.ts#L55)
+[src/controllers/ToolController.ts:55](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L55)

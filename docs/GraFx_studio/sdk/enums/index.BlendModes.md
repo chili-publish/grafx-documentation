@@ -1,8 +1,27 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / BlendModes
-
 # Enumeration: BlendModes
 
 [index](../modules/index.md).BlendModes
+
+## Table of contents
+
+### Enumeration Members
+
+- [COLOR](index.BlendModes.md#color)
+- [COLOR\_BURN](index.BlendModes.md#color_burn)
+- [COLOR\_DODGE](index.BlendModes.md#color_dodge)
+- [DARKEN](index.BlendModes.md#darken)
+- [DIFFERENCE](index.BlendModes.md#difference)
+- [EXCLUSION](index.BlendModes.md#exclusion)
+- [HARD\_LIGHT](index.BlendModes.md#hard_light)
+- [HUE](index.BlendModes.md#hue)
+- [LIGHT](index.BlendModes.md#light)
+- [LUMINOSITY](index.BlendModes.md#luminosity)
+- [MULTIPLY](index.BlendModes.md#multiply)
+- [NORMAL](index.BlendModes.md#normal)
+- [OVERLAY](index.BlendModes.md#overlay)
+- [SATURATION](index.BlendModes.md#saturation)
+- [SCREEN](index.BlendModes.md#screen)
+- [SOFT\_LIGHT](index.BlendModes.md#soft_light)
 
 ## Enumeration Members
 
@@ -12,7 +31,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:109](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L109)
+[types/TextStyleTypes.ts:110](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L110)
 
 ___
 
@@ -22,7 +41,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:98](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L98)
+[types/TextStyleTypes.ts:99](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L99)
 
 ___
 
@@ -32,7 +51,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:101](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L101)
+[types/TextStyleTypes.ts:102](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L102)
 
 ___
 
@@ -42,7 +61,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:96](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L96)
+[types/TextStyleTypes.ts:97](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L97)
 
 ___
 
@@ -52,7 +71,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:105](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L105)
+[types/TextStyleTypes.ts:106](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L106)
 
 ___
 
@@ -62,7 +81,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:106](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L106)
+[types/TextStyleTypes.ts:107](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L107)
 
 ___
 
@@ -72,7 +91,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:104](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L104)
+[types/TextStyleTypes.ts:105](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L105)
 
 ___
 
@@ -82,7 +101,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:107](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L107)
+[types/TextStyleTypes.ts:108](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L108)
 
 ___
 
@@ -92,7 +111,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:99](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L99)
+[types/TextStyleTypes.ts:100](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L100)
 
 ___
 
@@ -102,7 +121,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:110](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L110)
+[types/TextStyleTypes.ts:111](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L111)
 
 ___
 
@@ -112,7 +131,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:97](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L97)
+[types/TextStyleTypes.ts:98](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L98)
 
 ___
 
@@ -122,7 +141,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:95](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L95)
+[types/TextStyleTypes.ts:96](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L96)
 
 ___
 
@@ -132,7 +151,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:102](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L102)
+[types/TextStyleTypes.ts:103](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L103)
 
 ___
 
@@ -142,7 +161,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:108](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L108)
+[types/TextStyleTypes.ts:109](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L109)
 
 ___
 
@@ -152,7 +171,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:100](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L100)
+[types/TextStyleTypes.ts:101](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L101)
 
 ___
 
@@ -162,4 +181,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:103](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L103)
+[types/TextStyleTypes.ts:104](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L104)

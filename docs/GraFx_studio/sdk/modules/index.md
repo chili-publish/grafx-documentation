@@ -1,14 +1,20 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / index
-
 # Module: index
 
-## Enumerations
+## Table of contents
+
+### References
+
+- [default](index.md#default)
+
+### Enumerations
 
 - [Alignment](../enums/index.Alignment.md)
 - [BasicAnimationsEmphasisStyles](../enums/index.BasicAnimationsEmphasisStyles.md)
 - [BlendMode](../enums/index.BlendMode.md)
 - [BlendModes](../enums/index.BlendModes.md)
 - [Case](../enums/index.Case.md)
+- [ColorType](../enums/index.ColorType.md)
+- [ColorUsageType](../enums/index.ColorUsageType.md)
 - [DownloadFormats](../enums/index.DownloadFormats.md)
 - [EaseTypes](../enums/index.EaseTypes.md)
 - [FlowDirection](../enums/index.FlowDirection.md)
@@ -29,17 +35,47 @@
 - [VariableType](../enums/index.VariableType.md)
 - [VerticalAlign](../enums/index.VerticalAlign.md)
 
-## Classes
+### Classes
 
 - [SDK](../classes/index.SDK.md)
 
-## Interfaces
+### Interfaces
 
 - [AppearanceProperties](../interfaces/index.AppearanceProperties.md)
 - [SelectedLayoutFrame](../interfaces/index.SelectedLayoutFrame.md)
 - [TextProperties](../interfaces/index.TextProperties.md)
 - [TextStyle](../interfaces/index.TextStyle.md)
 - [UpdateStyleType](../interfaces/index.UpdateStyleType.md)
+
+### Type Aliases
+
+- [AnimationPlaybackType](index.md#animationplaybacktype)
+- [BasicAnimationsType](index.md#basicanimationstype)
+- [Color](index.md#color)
+- [ColorUpdate](index.md#colorupdate)
+- [ColorUsage](index.md#colorusage)
+- [ConfigType](index.md#configtype)
+- [DocumentColor](index.md#documentcolor)
+- [DocumentError](index.md#documenterror)
+- [EaseTweenCombinationType](index.md#easetweencombinationtype)
+- [EditorResponse](index.md#editorresponse)
+- [Frame](index.md#frame)
+- [FrameAnimationPropertiesType](index.md#frameanimationpropertiestype)
+- [FrameAnimationType](index.md#frameanimationtype)
+- [FrameLayoutType](index.md#framelayouttype)
+- [FrameProperties](index.md#frameproperties)
+- [FrameType](index.md#frametype)
+- [ImageFrame](index.md#imageframe)
+- [InitialStateType](index.md#initialstatetype)
+- [LayoutPropertiesType](index.md#layoutpropertiestype)
+- [LayoutWithFrameProperties](index.md#layoutwithframeproperties)
+- [PageType](index.md#pagetype)
+- [ParagraphStyle](index.md#paragraphstyle)
+- [ParagraphStyleUpdate](index.md#paragraphstyleupdate)
+- [TextFrame](index.md#textframe)
+- [TextStyleUpdateType](index.md#textstyleupdatetype)
+- [Variable](index.md#variable)
+- [VariableMoves](index.md#variablemoves)
 
 ## References
 
@@ -55,7 +91,7 @@ Renames and re-exports [SDK](../classes/index.SDK.md)
 
 #### Defined in
 
-[types/AnimationTypes.ts:119](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L119)
+[types/AnimationTypes.ts:119](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L119)
 
 ___
 
@@ -73,7 +109,63 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:101](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L101)
+[types/AnimationTypes.ts:101](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L101)
+
+___
+
+### Color
+
+Ƭ **Color**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `b` | `number` |
+| `colorType` | [`ColorType`](../enums/index.ColorType.md) |
+| `displayValue` | `string` |
+| `g` | `number` |
+| `r` | `number` |
+
+#### Defined in
+
+[types/ColorStyleTypes.ts:20](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/ColorStyleTypes.ts#L20)
+
+___
+
+### ColorUpdate
+
+Ƭ **ColorUpdate**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `b` | `number` |
+| `colorType` | [`ColorType`](../enums/index.ColorType.md) |
+| `g` | `number` |
+| `r` | `number` |
+
+#### Defined in
+
+[types/ColorStyleTypes.ts:13](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/ColorStyleTypes.ts#L13)
+
+___
+
+### ColorUsage
+
+Ƭ **ColorUsage**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `color` | [`ColorUpdate`](index.md#colorupdate) |
+| `usageType` | [`ColorUsageType`](../enums/index.ColorUsageType.md) |
+
+#### Defined in
+
+[types/ParagraphStyleTypes.ts:4](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/ParagraphStyleTypes.ts#L4)
 
 ___
 
@@ -87,8 +179,10 @@ ___
 | :------ | :------ |
 | `editorId?` | `string` |
 | `editorLink` | `string` |
+| `onColorsChanged?` | (`colors`: [`DocumentColor`](index.md#documentcolor)[]) => `void` |
 | `onFrameAnimationsChanged?` | (`animationState`: [`FrameAnimationType`](index.md#frameanimationtype)[]) => `void` |
 | `onPageSelectionChanged?` | () => `void` |
+| `onParagraphStylesChanged?` | (`paragraphStyles`: [`ParagraphStyle`](index.md#paragraphstyle)[]) => `void` |
 | `onScrubberPositionChanged?` | (`state`: [`AnimationPlaybackType`](index.md#animationplaybacktype)) => `void` |
 | `onSelectedFrameContentChanged?` | (`state`: [`FrameType`](index.md#frametype)) => `void` |
 | `onSelectedFrameLayoutChanged?` | (`state`: [`FrameLayoutType`](index.md#framelayouttype)) => `void` |
@@ -102,7 +196,25 @@ ___
 
 #### Defined in
 
-[types/CommonTypes.ts:10](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L10)
+[types/CommonTypes.ts:12](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L12)
+
+___
+
+### DocumentColor
+
+Ƭ **DocumentColor**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `color` | [`Color`](index.md#color) |
+| `id` | `string` |
+| `name` | `string` |
+
+#### Defined in
+
+[types/ColorStyleTypes.ts:28](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/ColorStyleTypes.ts#L28)
 
 ___
 
@@ -119,7 +231,7 @@ ___
 
 #### Defined in
 
-[types/DocumentTypes.ts:1](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/DocumentTypes.ts#L1)
+[types/DocumentTypes.ts:1](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/DocumentTypes.ts#L1)
 
 ___
 
@@ -129,7 +241,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:49](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L49)
+[types/AnimationTypes.ts:49](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L49)
 
 ___
 
@@ -148,7 +260,7 @@ ___
 
 #### Defined in
 
-[types/CommonTypes.ts:27](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L27)
+[types/CommonTypes.ts:32](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L32)
 
 ___
 
@@ -158,7 +270,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:27](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L27)
+[types/FrameTypes.ts:27](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L27)
 
 ___
 
@@ -178,7 +290,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:107](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L107)
+[types/AnimationTypes.ts:107](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L107)
 
 ___
 
@@ -195,7 +307,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:114](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L114)
+[types/AnimationTypes.ts:114](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L114)
 
 ___
 
@@ -205,7 +317,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:4](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L4)
+[types/FrameTypes.ts:4](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L4)
 
 ___
 
@@ -230,7 +342,7 @@ ___
 
 #### Defined in
 
-[types/LayoutTypes.ts:12](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/LayoutTypes.ts#L12)
+[types/LayoutTypes.ts:12](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/LayoutTypes.ts#L12)
 
 ___
 
@@ -250,7 +362,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L19)
+[types/FrameTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L19)
 
 ___
 
@@ -270,7 +382,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:29](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L29)
+[types/FrameTypes.ts:29](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L29)
 
 ___
 
@@ -289,7 +401,7 @@ ___
 
 #### Defined in
 
-[types/CommonTypes.ts:45](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L45)
+[types/CommonTypes.ts:50](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L50)
 
 ___
 
@@ -299,7 +411,7 @@ ___
 
 #### Defined in
 
-[types/LayoutTypes.ts:3](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/LayoutTypes.ts#L3)
+[types/LayoutTypes.ts:3](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/LayoutTypes.ts#L3)
 
 ___
 
@@ -324,7 +436,7 @@ ___
 
 #### Defined in
 
-[types/LayoutTypes.ts:25](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/LayoutTypes.ts#L25)
+[types/LayoutTypes.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/LayoutTypes.ts#L25)
 
 ___
 
@@ -344,7 +456,93 @@ ___
 
 #### Defined in
 
-[types/CommonTypes.ts:37](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L37)
+[types/CommonTypes.ts:42](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L42)
+
+___
+
+### ParagraphStyle
+
+Ƭ **ParagraphStyle**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `alignToBaseLine` | `boolean` |
+| `baselineShiftValue` | `string` |
+| `color` | [`ColorUsage`](index.md#colorusage) |
+| `fontFamily` | `string` |
+| `fontSize` | `number` |
+| `fontStyle` | `string` |
+| `id` | `string` |
+| `kerningOn` | `boolean` |
+| `lineHeight` | `number` |
+| `lineThrough` | `boolean` |
+| `name` | `string` |
+| `paragraphEndIndent` | `string` |
+| `paragraphSpaceAfter` | `string` |
+| `paragraphSpaceBefore` | `string` |
+| `paragraphStartIndent` | `string` |
+| `subSuperScript` | [`Scripting`](../enums/index.Scripting.md) |
+| `textAlign` | [`Alignment`](../enums/index.Alignment.md) |
+| `textAlignLast` | [`Alignment`](../enums/index.Alignment.md) |
+| `textIndent` | `string` |
+| `textOverprint` | `boolean` |
+| `trackingLeft` | `string` |
+| `trackingRight` | `string` |
+| `typographicCase` | [`Case`](../enums/index.Case.md) |
+| `underline` | `boolean` |
+
+#### Defined in
+
+[types/ParagraphStyleTypes.ts:13](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/ParagraphStyleTypes.ts#L13)
+
+___
+
+### ParagraphStyleUpdate
+
+Ƭ **ParagraphStyleUpdate**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `alignToBaseLine` | { `value`: `boolean`  } |
+| `alignToBaseLine.value` | `boolean` |
+| `baselineShiftValue` | { `value`: `string`  } |
+| `baselineShiftValue.value` | `string` |
+| `color` | { `value`: [`ColorUsage`](index.md#colorusage)  } |
+| `color.value` | [`ColorUsage`](index.md#colorusage) |
+| `fontSize` | { `value`: `number`  } |
+| `fontSize.value` | `number` |
+| `kerningOn` | { `value`: `boolean`  } |
+| `kerningOn.value` | `boolean` |
+| `lineHeight` | { `value`: `number`  } |
+| `lineHeight.value` | `number` |
+| `lineThrough` | { `value`: `boolean`  } |
+| `lineThrough.value` | `boolean` |
+| `subSuperScript` | { `value`: [`Scripting`](../enums/index.Scripting.md)  } |
+| `subSuperScript.value` | [`Scripting`](../enums/index.Scripting.md) |
+| `textAlign` | { `value`: [`Alignment`](../enums/index.Alignment.md)  } |
+| `textAlign.value` | [`Alignment`](../enums/index.Alignment.md) |
+| `textAlignLast` | { `value`: [`Alignment`](../enums/index.Alignment.md)  } |
+| `textAlignLast.value` | [`Alignment`](../enums/index.Alignment.md) |
+| `textIndent` | { `value`: `string`  } |
+| `textIndent.value` | `string` |
+| `textOverprint` | { `value`: `boolean`  } |
+| `textOverprint.value` | `boolean` |
+| `trackingLeft` | { `value`: `string`  } |
+| `trackingLeft.value` | `string` |
+| `trackingRight` | { `value`: `string`  } |
+| `trackingRight.value` | `string` |
+| `typographicCase` | { `value`: [`Case`](../enums/index.Case.md)  } |
+| `typographicCase.value` | [`Case`](../enums/index.Case.md) |
+| `underline` | { `value`: `boolean`  } |
+| `underline.value` | `boolean` |
+
+#### Defined in
+
+[types/ParagraphStyleTypes.ts:41](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/ParagraphStyleTypes.ts#L41)
 
 ___
 
@@ -377,7 +575,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:36](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L36)
+[types/FrameTypes.ts:36](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L36)
 
 ___
 
@@ -387,7 +585,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:49](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L49)
+[types/TextStyleTypes.ts:49](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L49)
 
 ___
 
@@ -413,7 +611,7 @@ ___
 
 #### Defined in
 
-[types/VariableTypes.ts:5](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/VariableTypes.ts#L5)
+[types/VariableTypes.ts:5](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/VariableTypes.ts#L5)
 
 ___
 
@@ -431,4 +629,4 @@ ___
 
 #### Defined in
 
-[types/VariableTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/VariableTypes.ts#L19)
+[types/VariableTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/VariableTypes.ts#L19)

@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Case
-
 # Enumeration: Case
 
 [index](../modules/index.md).Case
+
+## Table of contents
+
+### Enumeration Members
+
+- [NORMAL](index.Case.md#normal)
+- [TO\_LOWER\_CASE](index.Case.md#to_lower_case)
+- [TO\_UPPER\_CASE](index.Case.md#to_upper_case)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:21](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L21)
+[types/TextStyleTypes.ts:21](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L21)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L19)
+[types/TextStyleTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L19)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:20](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L20)
+[types/TextStyleTypes.ts:20](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L20)

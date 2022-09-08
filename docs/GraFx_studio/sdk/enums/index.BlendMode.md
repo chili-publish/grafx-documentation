@@ -1,8 +1,12 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / BlendMode
-
 # Enumeration: BlendMode
 
 [index](../modules/index.md).BlendMode
+
+## Table of contents
+
+### Enumeration Members
+
+- [srcOver](index.BlendMode.md#srcover)
 
 ## Enumeration Members
 
@@ -12,4 +16,4 @@
 
 #### Defined in
 
-[types/FrameTypes.ts:81](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L81)
+[types/FrameTypes.ts:81](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L81)
