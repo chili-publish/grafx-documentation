@@ -1,54 +1,63 @@
-# How to: Alternate Layouts
+# Alternate layout (or Sub-layout)
 
-![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout1.png?w=850&q=80)
-
-Alternate layouts is a concept to reduce designtime by creating several variants from the same document.
-
-## Think different
-
-In stead of thinking about ouput in your design, think by grouping concepts.
-
-A leaderboard or skyscraper add are conceptually very similar. The only difference are the dimensions. Even a square add could be derived from the leaderboard design.
-If the content is similar, then it's probably a good candidate for an alternate layout.
-
-Even the animation of elements can be different. In a leaderboard your could animate an item from the far left, and in the skyscraper from the bottom. These paramaters can be set different per alternate layout.
-
-## The basic setup
-
-This design could be an abstract version, or a first version of the add.
-
-The properties of the design can be found on the right, in the properties panel.
-
-![Base Design](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout2.png?w=850&q=80)
-
-The properties of the elements on the page are shown when you select the element.
-
-![Base Design](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout3.png?w=850&q=80)
-
-The properties of the animation of the elements show when you select the animaction icon in the properties panel.
-
-Click on **intro**, **emphasis** and **outro** to expand the respective properties.
-
-![Base Design](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/proppanel.gif)
-
-## First alternate layout (or Sub-layout)
+## Create the Alternate Layout
 
 Click on the **plus** sign or three dots "Add sub-layout"
 
-![Creat first sublayout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/sublayout2.gif)
+![Creat first Sub-Layout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/sublayout2.gif)
 
 Rename the layout to "Skyscraper". Since your renamed, it's selected.
 
 Select the properties panel, and change the dimentions to 160 x 600.
 
-![Creat first sublayout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/sublayout1.png)
+![Skyscraper](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/sublayout1.png)
 
 The new dimensions appear colored. This is because they differ from the base values.
 
-This concept will pull through to all properties that differ from the main layout.
+## Move the elements on the layout
 
-This concept is called **inheritance**.
+Select an element in the page, and change the value of a property in the properties panel.
 
-## Inheritance
+You can also move the elements around on the page.
 
+![Move elements around](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout5.png)
+
+The updated value will be colored, as it's changed compared to the inherited value.
+
+![Colored Values](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout6.png)
+
+You can reset the value to the inherited one, by clicking on the left turning arrow, and select the value you want to reset. Only changed values you can reset will appear in this dropdown. Or you can choose to resel all values **Reset Overrides**
+
+![Creat first sublayout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout7.png)
+
+## Change the animation
+
+If the base layout contains an animation, the animation is also available in the alternate layout.
+
+Enable / Activate the [Layers panel](/GraFx_studio/layers_timeline/) via the [Bottom quick tools icon](/GraFx_studio/bottomquicktools/).
+
+Select an element for which you want to change the animation. 
+
+In the example below, we selected the Text frame "Discover"
+
+![Creat first sublayout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout8.png)
+
+In the Animation Properties panel, change the values you want to change for this Alternate Layout.
+
+If you don't change values, they will be inherited from the base layout.
+
+![Change Animation values](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout9.png)
+
+If you want to disable the specific animation, de-select the specific animation with the respective buttons.
+
+![Animation buttons](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout10.png)
+
+The active options are shown with a lighter background.
+
+From left to right:
+
+- Movement
+- Transparency
+- Rotation
+- Scaling
 
