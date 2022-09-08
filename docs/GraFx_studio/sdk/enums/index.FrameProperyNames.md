@@ -1,8 +1,16 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / FrameProperyNames
-
 # Enumeration: FrameProperyNames
 
 [index](../modules/index.md).FrameProperyNames
+
+## Table of contents
+
+### Enumeration Members
+
+- [FRAME\_ROTATION](index.FrameProperyNames.md#frame_rotation)
+- [FRAME\_X](index.FrameProperyNames.md#frame_x)
+- [FRAME\_Y](index.FrameProperyNames.md#frame_y)
+- [HEIGHT](index.FrameProperyNames.md#height)
+- [WIDTH](index.FrameProperyNames.md#width)
 
 ## Enumeration Members
 
@@ -12,7 +20,7 @@
 
 #### Defined in
 
-[src/utils/enums.ts:6](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/utils/enums.ts#L6)
+[src/utils/enums.ts:6](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/utils/enums.ts#L6)
 
 ___
 
@@ -22,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/utils/enums.ts:2](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/utils/enums.ts#L2)
+[src/utils/enums.ts:2](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/utils/enums.ts#L2)
 
 ___
 
@@ -32,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/utils/enums.ts:3](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/utils/enums.ts#L3)
+[src/utils/enums.ts:3](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/utils/enums.ts#L3)
 
 ___
 
@@ -42,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/utils/enums.ts:5](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/utils/enums.ts#L5)
+[src/utils/enums.ts:5](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/utils/enums.ts#L5)
 
 ___
 
@@ -52,4 +60,4 @@ ___
 
 #### Defined in
 
-[src/utils/enums.ts:4](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/utils/enums.ts#L4)
+[src/utils/enums.ts:4](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/utils/enums.ts#L4)

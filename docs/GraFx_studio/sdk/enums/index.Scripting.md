@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Scripting
-
 # Enumeration: Scripting
 
 [index](../modules/index.md).Scripting
+
+## Table of contents
+
+### Enumeration Members
+
+- [NORMAL](index.Scripting.md#normal)
+- [SUBSCRIPT](index.Scripting.md#subscript)
+- [SUPERSCRIPT](index.Scripting.md#superscript)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:26](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L26)
+[types/TextStyleTypes.ts:26](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L26)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:25](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L25)
+[types/TextStyleTypes.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L25)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:24](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L24)
+[types/TextStyleTypes.ts:24](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L24)

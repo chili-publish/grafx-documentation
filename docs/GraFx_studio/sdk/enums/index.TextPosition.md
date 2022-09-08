@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / TextPosition
-
 # Enumeration: TextPosition
 
 [index](../modules/index.md).TextPosition
+
+## Table of contents
+
+### Enumeration Members
+
+- [BOTTOM](index.TextPosition.md#bottom)
+- [CENTER](index.TextPosition.md#center)
+- [TOP](index.TextPosition.md#top)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:16](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L16)
+[types/TextStyleTypes.ts:16](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L16)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:15](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L15)
+[types/TextStyleTypes.ts:15](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L15)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:14](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L14)
+[types/TextStyleTypes.ts:14](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L14)

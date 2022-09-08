@@ -1,5 +1,3 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / TextProperties
-
 # Interface: TextProperties
 
 [index](../modules/index.md).TextProperties
@@ -7,6 +5,22 @@
 ## Indexable
 
 ▪ [key: `string`]: `number` \| `string` \| `Record`<`string`, `unknown`\> \| ``null`` \| `boolean` \| `undefined`
+
+## Table of contents
+
+### Properties
+
+- [SUB\_SUPER\_SCRIPT](index.TextProperties.md#sub_super_script)
+- [fontFamily](index.TextProperties.md#fontfamily)
+- [fontSize](index.TextProperties.md#fontsize)
+- [fontStyle](index.TextProperties.md#fontstyle)
+- [letterSpacing](index.TextProperties.md#letterspacing)
+- [lineHeight](index.TextProperties.md#lineheight)
+- [lineThrough](index.TextProperties.md#linethrough)
+- [position](index.TextProperties.md#position)
+- [textAlign](index.TextProperties.md#textalign)
+- [typographicCase](index.TextProperties.md#typographiccase)
+- [underline](index.TextProperties.md#underline)
 
 ## Properties
 
@@ -16,7 +30,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:39](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L39)
+[types/TextStyleTypes.ts:39](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L39)
 
 ___
 
@@ -26,7 +40,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:30](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L30)
+[types/TextStyleTypes.ts:30](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L30)
 
 ___
 
@@ -36,7 +50,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:32](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L32)
+[types/TextStyleTypes.ts:32](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L32)
 
 ___
 
@@ -46,7 +60,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:31](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L31)
+[types/TextStyleTypes.ts:31](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L31)
 
 ___
 
@@ -56,7 +70,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:37](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L37)
+[types/TextStyleTypes.ts:37](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L37)
 
 ___
 
@@ -66,7 +80,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:38](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L38)
+[types/TextStyleTypes.ts:38](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L38)
 
 ___
 
@@ -76,7 +90,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:36](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L36)
+[types/TextStyleTypes.ts:36](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L36)
 
 ___
 
@@ -86,7 +100,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:34](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L34)
+[types/TextStyleTypes.ts:34](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L34)
 
 ___
 
@@ -96,7 +110,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:33](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L33)
+[types/TextStyleTypes.ts:33](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L33)
 
 ___
 
@@ -106,7 +120,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:40](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L40)
+[types/TextStyleTypes.ts:40](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L40)
 
 ___
 
@@ -116,4 +130,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:35](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L35)
+[types/TextStyleTypes.ts:35](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L35)

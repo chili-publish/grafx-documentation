@@ -1,8 +1,15 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / VariableType
-
 # Enumeration: VariableType
 
 [index](../modules/index.md).VariableType
+
+## Table of contents
+
+### Enumeration Members
+
+- [group](index.VariableType.md#group)
+- [image](index.VariableType.md#image)
+- [longtext](index.VariableType.md#longtext)
+- [shorttext](index.VariableType.md#shorttext)
 
 ## Enumeration Members
 
@@ -12,7 +19,7 @@
 
 #### Defined in
 
-[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/VariableTypes.ts#L2)
+[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/VariableTypes.ts#L2)
 
 ___
 
@@ -22,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/VariableTypes.ts#L2)
+[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/VariableTypes.ts#L2)
 
 ___
 
@@ -32,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/VariableTypes.ts#L2)
+[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/VariableTypes.ts#L2)
 
 ___
 
@@ -42,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/VariableTypes.ts#L2)
+[types/VariableTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/VariableTypes.ts#L2)

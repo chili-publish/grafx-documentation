@@ -1,7 +1,7 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / controllers/LayoutController
-
 # Module: controllers/LayoutController
 
-## Classes
+## Table of contents
+
+### Classes
 
 - [LayoutController](../classes/controllers_LayoutController.LayoutController.md)

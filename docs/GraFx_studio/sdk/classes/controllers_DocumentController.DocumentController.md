@@ -1,11 +1,18 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/DocumentController](../modules/controllers_DocumentController.md) / DocumentController
-
 # Class: DocumentController
 
 [controllers/DocumentController](../modules/controllers_DocumentController.md).DocumentController
 
 The DocumentController is responsible for all communication regarding the Document.
 Methods inside this controller can be called by `window.SDK.document.{method-name}`
+
+## Table of contents
+
+### Methods
+
+- [getCurrentDocumentState](controllers_DocumentController.DocumentController.md#getcurrentdocumentstate)
+- [getDownloadLink](controllers_DocumentController.DocumentController.md#getdownloadlink)
+- [loadDocument](controllers_DocumentController.DocumentController.md#loaddocument)
+- [startPollingOnEndpoint](controllers_DocumentController.DocumentController.md#startpollingonendpoint)
 
 ## Methods
 
@@ -23,7 +30,7 @@ The JSON document in the form of a string
 
 #### Defined in
 
-[src/controllers/DocumentController.ts:28](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/DocumentController.ts#L28)
+[src/controllers/DocumentController.ts:28](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DocumentController.ts#L28)
 
 ___
 
@@ -50,7 +57,7 @@ the download link
 
 #### Defined in
 
-[src/controllers/DocumentController.ts:51](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/DocumentController.ts#L51)
+[src/controllers/DocumentController.ts:51](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DocumentController.ts#L51)
 
 ___
 
@@ -74,7 +81,7 @@ The document loaded inside of the canvas
 
 #### Defined in
 
-[src/controllers/DocumentController.ts:38](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/DocumentController.ts#L38)
+[src/controllers/DocumentController.ts:38](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DocumentController.ts#L38)
 
 ___
 
@@ -98,4 +105,4 @@ true when the endpoint call has successfully been resolved
 
 #### Defined in
 
-[src/controllers/DocumentController.ts:127](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/DocumentController.ts#L127)
+[src/controllers/DocumentController.ts:127](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DocumentController.ts#L127)

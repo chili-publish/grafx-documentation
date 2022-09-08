@@ -1,8 +1,12 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / UpdateStyleType
-
 # Interface: UpdateStyleType
 
 [index](../modules/index.md).UpdateStyleType
+
+## Table of contents
+
+### Properties
+
+- [path](index.UpdateStyleType.md#path)
 
 ## Properties
 
@@ -18,4 +22,4 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:114](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L114)
+[types/TextStyleTypes.ts:115](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L115)

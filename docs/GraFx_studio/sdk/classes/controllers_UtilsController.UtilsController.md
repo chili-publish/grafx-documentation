@@ -1,11 +1,20 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/UtilsController](../modules/controllers_UtilsController.md) / UtilsController
-
 # Class: UtilsController
 
 [controllers/UtilsController](../modules/controllers_UtilsController.md).UtilsController
 
 The UtilsController exposes a set of usefull utilities that can be used to make some repeated tasks a bit easier
 Methods inside this controller can be called by `window.SDK.utils.{method-name}`
+
+## Table of contents
+
+### Constructors
+
+- [constructor](controllers_UtilsController.UtilsController.md#constructor)
+
+### Methods
+
+- [calculateFromString](controllers_UtilsController.UtilsController.md#calculatefromstring)
+- [round](controllers_UtilsController.UtilsController.md#round)
 
 ## Constructors
 
@@ -36,7 +45,7 @@ The calculated value or null in case that it can't be calculated
 
 #### Defined in
 
-[src/controllers/UtilsController.ts:14](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/UtilsController.ts#L14)
+[src/controllers/UtilsController.ts:14](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/UtilsController.ts#L14)
 
 ___
 
@@ -61,4 +70,4 @@ The rounded value as a number
 
 #### Defined in
 
-[src/controllers/UtilsController.ts:22](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/UtilsController.ts#L22)
+[src/controllers/UtilsController.ts:22](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/UtilsController.ts#L22)
