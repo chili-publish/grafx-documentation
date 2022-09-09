@@ -93,6 +93,7 @@ nav:
             - 'Layouts':                        'GraFx_studio/layouts.md'
             - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
         - 'Concepts':
+            - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
             - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
         - 'How to: Design documents'    :
