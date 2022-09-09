@@ -1,98 +1,59 @@
-# How to animate my frame
+# How to animate a frame
 
 ## Introduction
 
 Be sure to first read about the [concept of Animation](/GraFx_studio/concept/animation/)
 
-Also read about the [Animation panel](/GraFx_studio/animation/)
+We will also refer to [Animation panel](/GraFx_studio/animation/)
 
-We will refer to terms defined in the concept page.
+## Before you animate
 
-## Static is the default
+**Show the timeline**
 
-(And we're not talking about electricity)
+Click on the Layers icon in the [bottom quick tools panel](/GraFx_studio/bottomquicktools/).
 
-By default, frames are static. This means, they don't have an animation, and appear from frame 1 up to the last frame of the timeline.
+![Timeline change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/timeline4.png)
 
-Even when you "play" the animation, this frame will appear static in on stage. (on the page)
+**Select the frame**
 
-## Appearance on stage
+Select the frame in the page, or in the list of layers.
 
-The blue bar represents the frame. It starts from frame 1, and runs all the way to the last frame.
+If the frame is not visible on the canvas, make sure to click the **eye** symbol
 
-The frame will appear "immediately", and will stay all the way to the end.
+**Animation tab**
 
-### Move the start - or end point
+Open the animation tab, in the properties panel.
 
-Scroll all the way to the left, and select the edge (when your cursor changes into a double sided arrow), now drag the edge to the left or right. (left won't work, if it's at the beginning)
+## Animate the intro
 
-![Timeline change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/timeline1.gif)
+Expand the **intro** section of the animation panel.
 
-You can do the same, for the end of the bar for that frame in the timeline.
+Select 1 or more of the behaviours you want to apply to the intro of the animation. Then select the properties linked to the behaviour.
 
-## Duration of the animation
+![Timeline change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/proppanel.gif)
 
-Drag the vertical divider to the left or right.
+Adjust the length of the animation in the timeline.
 
-![Duration change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/timeline_divider.png)
+![Timeline change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/intro_outro_resize.gif
+)
 
-You can always make the duration longer.
+!!! Tip
+	If you are distracted by other frames animating through your current frame, you can hide the other frame by clicking the **eye** next to these frames.
 
-Dragging to the left will work up to the longest blue bar. I.e. if a frames shows up to 5 seconds point, you will not be able to reduce the duration below 5 seconds.
+## Test the Animation
 
-![Timeline change](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/timeline_reduce.gif)
+Click the **play** button in the timeline panel to preview the animation. Adjust if needed and repeat until happy.
 
+## Animate the emphasis
 
-## Intro - Emphasis - Outro
+The **emphasis** allows you to hi-light the middle section of the animation.
 
-By default, no animations are set. By selecting the animation panel in the properties, you can set the **intro**, **emphasis** and **outro**.
+Expand the Emphasis section in the animation panel, and choose a type of animation.
 
-![Intro_Outro](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/intro_outro.gif)
+Adjust the start- and endpoint in the timeline, and test the animation.
 
-### Intro
+## Animate the Outro
 
-As the name suggests, the **intro** changes how the animation starts.
+Expand the Outro section in the animation panel.
 
-Choose 1 or all 4 animations
-
-- Easing type
-- Fade
-- Rotation
-- Scale
-
-Each of the animation types has settings that will appear when you select them. (Except fade, it will just fade in)
-
-### Emphasis
-
-The behaviour in the middle section.
-
-Set the style
-
-- Bounce
-- Flash
-- ...
-
-Set the Ease Type
-
-- Ease in
-- Ease out
-- Both
-
-Set the Tween type (how the movement is calculated). Tweening, is how the movement between start and end point is calculated.
-
-This website describes perfectly what several Tween types do.
-
-[See easing types for more info](https://easings.net/){target="_blank"}
-
-!!! Note
-	Will need input here
-
-### Outro
-
-### Length of the intro, outro & emphasis
-
-Control the length and position of each element (lightblue bar), by dragging their respective start- and endpoints.
-
-Intro (start) — Emphasis (middel) - Outro (end)
-
-![Intro_Outro](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/intro_outro_resize.gif)
+Set the properties for one of the behaviours for the outro action, and test the animation untill you're happy.
