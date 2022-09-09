@@ -1,8 +1,13 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / FrameTypeEnum
-
 # Enumeration: FrameTypeEnum
 
 [index](../modules/index.md).FrameTypeEnum
+
+## Table of contents
+
+### Enumeration Members
+
+- [image](index.FrameTypeEnum.md#image)
+- [text](index.FrameTypeEnum.md#text)
 
 ## Enumeration Members
 
@@ -12,7 +17,7 @@
 
 #### Defined in
 
-[types/FrameTypes.ts:59](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L59)
+[types/FrameTypes.ts:59](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L59)
 
 ___
 
@@ -22,4 +27,4 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:58](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L58)
+[types/FrameTypes.ts:58](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L58)

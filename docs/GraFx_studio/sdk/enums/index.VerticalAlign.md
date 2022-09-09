@@ -1,8 +1,15 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / VerticalAlign
-
 # Enumeration: VerticalAlign
 
 [index](../modules/index.md).VerticalAlign
+
+## Table of contents
+
+### Enumeration Members
+
+- [bottom](index.VerticalAlign.md#bottom)
+- [justify](index.VerticalAlign.md#justify)
+- [middle](index.VerticalAlign.md#middle)
+- [top](index.VerticalAlign.md#top)
 
 ## Enumeration Members
 
@@ -12,7 +19,7 @@
 
 #### Defined in
 
-[types/FrameTypes.ts:76](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L76)
+[types/FrameTypes.ts:76](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L76)
 
 ___
 
@@ -22,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:78](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L78)
+[types/FrameTypes.ts:78](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L78)
 
 ___
 
@@ -32,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:77](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L77)
+[types/FrameTypes.ts:77](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L77)
 
 ___
 
@@ -42,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:75](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L75)
+[types/FrameTypes.ts:75](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L75)

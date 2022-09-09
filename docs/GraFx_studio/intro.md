@@ -1,4 +1,9 @@
-# GraFx studio
+---
+tags:
+  - unfinished
+---
+
+# Introduction
 
 ![applogo](/assets/CHILI_LOGOS_OK-09.svg)
 

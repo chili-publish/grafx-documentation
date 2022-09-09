@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / SelectedLayoutFrame
-
 # Interface: SelectedLayoutFrame
 
 [index](../modules/index.md).SelectedLayoutFrame
+
+## Table of contents
+
+### Properties
+
+- [frameId](index.SelectedLayoutFrame.md#frameid)
+- [frameName](index.SelectedLayoutFrame.md#framename)
+- [included](index.SelectedLayoutFrame.md#included)
 
 ## Properties
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/CommonTypes.ts:58](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L58)
+[types/CommonTypes.ts:63](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L63)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/CommonTypes.ts:59](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L59)
+[types/CommonTypes.ts:64](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L64)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/CommonTypes.ts:60](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/CommonTypes.ts#L60)
+[types/CommonTypes.ts:65](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/CommonTypes.ts#L65)

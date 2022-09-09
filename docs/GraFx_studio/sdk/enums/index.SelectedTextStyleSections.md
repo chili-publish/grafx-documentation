@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / SelectedTextStyleSections
-
 # Enumeration: SelectedTextStyleSections
 
 [index](../modules/index.md).SelectedTextStyleSections
+
+## Table of contents
+
+### Enumeration Members
+
+- [APPEARANCE](index.SelectedTextStyleSections.md#appearance)
+- [PROPERTIES](index.SelectedTextStyleSections.md#properties)
+- [STYLE](index.SelectedTextStyleSections.md#style)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:71](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L71)
+[types/TextStyleTypes.ts:71](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L71)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:70](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L70)
+[types/TextStyleTypes.ts:70](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L70)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:69](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L69)
+[types/TextStyleTypes.ts:69](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L69)

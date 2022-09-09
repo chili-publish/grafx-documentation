@@ -1,11 +1,32 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/VariableController](../modules/controllers_VariableController.md) / VariableController
-
 # Class: VariableController
 
 [controllers/VariableController](../modules/controllers_VariableController.md).VariableController
 
 The VariableController is responsible for all communication regarding the variables.
 Methods inside this controller can be called by `window.SDK.variable.{method-name}`
+
+## Table of contents
+
+### Methods
+
+- [addVariable](controllers_VariableController.VariableController.md#addvariable)
+- [duplicateVariable](controllers_VariableController.VariableController.md#duplicatevariable)
+- [getVariableById](controllers_VariableController.VariableController.md#getvariablebyid)
+- [getVariableByName](controllers_VariableController.VariableController.md#getvariablebyname)
+- [getVariables](controllers_VariableController.VariableController.md#getvariables)
+- [groupVariables](controllers_VariableController.VariableController.md#groupvariables)
+- [moveVariable](controllers_VariableController.VariableController.md#movevariable)
+- [moveVariables](controllers_VariableController.VariableController.md#movevariables)
+- [removeVariables](controllers_VariableController.VariableController.md#removevariables)
+- [setDefaultVariableValue](controllers_VariableController.VariableController.md#setdefaultvariablevalue)
+- [setVariableIsHidden](controllers_VariableController.VariableController.md#setvariableishidden)
+- [setVariableIsReadonly](controllers_VariableController.VariableController.md#setvariableisreadonly)
+- [setVariableIsRequired](controllers_VariableController.VariableController.md#setvariableisrequired)
+- [setVariableLabel](controllers_VariableController.VariableController.md#setvariablelabel)
+- [setVariableName](controllers_VariableController.VariableController.md#setvariablename)
+- [setVariableType](controllers_VariableController.VariableController.md#setvariabletype)
+- [setVariableValue](controllers_VariableController.VariableController.md#setvariablevalue)
+- [ungroupVariable](controllers_VariableController.VariableController.md#ungroupvariable)
 
 ## Methods
 
@@ -30,7 +51,7 @@ The new created variable id
 
 #### Defined in
 
-[src/controllers/VariableController.ts:54](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L54)
+[src/controllers/VariableController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L54)
 
 ___
 
@@ -52,7 +73,7 @@ This method creates a copy of a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:117](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L117)
+[src/controllers/VariableController.ts:117](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L117)
 
 ___
 
@@ -74,7 +95,7 @@ This method returns a variable by id
 
 #### Defined in
 
-[src/controllers/VariableController.ts:35](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L35)
+[src/controllers/VariableController.ts:35](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L35)
 
 ___
 
@@ -96,7 +117,7 @@ This method returns a variable by name
 
 #### Defined in
 
-[src/controllers/VariableController.ts:45](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L45)
+[src/controllers/VariableController.ts:45](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L45)
 
 ___
 
@@ -112,7 +133,7 @@ This method returns the list of variables
 
 #### Defined in
 
-[src/controllers/VariableController.ts:25](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L25)
+[src/controllers/VariableController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L25)
 
 ___
 
@@ -135,7 +156,7 @@ This method aggregates the provided variables into a new group
 
 #### Defined in
 
-[src/controllers/VariableController.ts:126](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L126)
+[src/controllers/VariableController.ts:126](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L126)
 
 ___
 
@@ -159,7 +180,7 @@ This method moves a variable's position
 
 #### Defined in
 
-[src/controllers/VariableController.ts:144](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L144)
+[src/controllers/VariableController.ts:144](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L144)
 
 ___
 
@@ -181,7 +202,7 @@ This method changes positions of variables
 
 #### Defined in
 
-[src/controllers/VariableController.ts:153](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L153)
+[src/controllers/VariableController.ts:153](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L153)
 
 ___
 
@@ -203,7 +224,7 @@ This method removes a list of variables
 
 #### Defined in
 
-[src/controllers/VariableController.ts:63](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L63)
+[src/controllers/VariableController.ts:63](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L63)
 
 ___
 
@@ -226,7 +247,7 @@ This method sets a new value for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:99](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L99)
+[src/controllers/VariableController.ts:99](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L99)
 
 ___
 
@@ -249,7 +270,7 @@ This method sets isHidden flag for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:162](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L162)
+[src/controllers/VariableController.ts:162](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L162)
 
 ___
 
@@ -272,7 +293,7 @@ This method sets isReadonly flag for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:180](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L180)
+[src/controllers/VariableController.ts:180](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L180)
 
 ___
 
@@ -295,7 +316,7 @@ This method sets isRequired flag for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:171](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L171)
+[src/controllers/VariableController.ts:171](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L171)
 
 ___
 
@@ -318,7 +339,7 @@ This method sets a new label for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:81](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L81)
+[src/controllers/VariableController.ts:81](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L81)
 
 ___
 
@@ -341,7 +362,7 @@ This method sets a new name for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:72](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L72)
+[src/controllers/VariableController.ts:72](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L72)
 
 ___
 
@@ -364,7 +385,7 @@ This method sets a new type for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:90](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L90)
+[src/controllers/VariableController.ts:90](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L90)
 
 ___
 
@@ -387,7 +408,7 @@ This method sets a new value for a variable
 
 #### Defined in
 
-[src/controllers/VariableController.ts:108](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L108)
+[src/controllers/VariableController.ts:108](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L108)
 
 ___
 
@@ -409,4 +430,4 @@ This method dissolves the specified group
 
 #### Defined in
 
-[src/controllers/VariableController.ts:135](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/VariableController.ts#L135)
+[src/controllers/VariableController.ts:135](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L135)

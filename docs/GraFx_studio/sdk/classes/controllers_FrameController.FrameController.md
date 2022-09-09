@@ -1,11 +1,39 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/FrameController](../modules/controllers_FrameController.md) / FrameController
-
 # Class: FrameController
 
 [controllers/FrameController](../modules/controllers_FrameController.md).FrameController
 
 The FrameController is responsible for all communication regarding Frames.
 Methods inside this controller can be called by `window.SDK.frame.{method-name}`
+
+## Table of contents
+
+### Methods
+
+- [getFrameById](controllers_FrameController.FrameController.md#getframebyid)
+- [getFrameByName](controllers_FrameController.FrameController.md#getframebyname)
+- [getFramePropertiesByFrameId](controllers_FrameController.FrameController.md#getframepropertiesbyframeid)
+- [getFramePropertiesOnSelectedLayout](controllers_FrameController.FrameController.md#getframepropertiesonselectedlayout)
+- [getFrames](controllers_FrameController.FrameController.md#getframes)
+- [getFramesByPageId](controllers_FrameController.FrameController.md#getframesbypageid)
+- [getFramesProperties](controllers_FrameController.FrameController.md#getframesproperties)
+- [getSelectedFrames](controllers_FrameController.FrameController.md#getselectedframes)
+- [removeFrame](controllers_FrameController.FrameController.md#removeframe)
+- [resetFrame](controllers_FrameController.FrameController.md#resetframe)
+- [resetFrameHeight](controllers_FrameController.FrameController.md#resetframeheight)
+- [resetFrameRotation](controllers_FrameController.FrameController.md#resetframerotation)
+- [resetFrameSize](controllers_FrameController.FrameController.md#resetframesize)
+- [resetFrameWidth](controllers_FrameController.FrameController.md#resetframewidth)
+- [resetFrameX](controllers_FrameController.FrameController.md#resetframex)
+- [resetFrameY](controllers_FrameController.FrameController.md#resetframey)
+- [selectFrame](controllers_FrameController.FrameController.md#selectframe)
+- [selectMultipleFrames](controllers_FrameController.FrameController.md#selectmultipleframes)
+- [setFrameHeight](controllers_FrameController.FrameController.md#setframeheight)
+- [setFrameName](controllers_FrameController.FrameController.md#setframename)
+- [setFrameRotation](controllers_FrameController.FrameController.md#setframerotation)
+- [setFrameVisibility](controllers_FrameController.FrameController.md#setframevisibility)
+- [setFrameWidth](controllers_FrameController.FrameController.md#setframewidth)
+- [setFrameX](controllers_FrameController.FrameController.md#setframex)
+- [setFrameY](controllers_FrameController.FrameController.md#setframey)
 
 ## Methods
 
@@ -27,7 +55,7 @@ This method returns a frame by its id
 
 #### Defined in
 
-[src/controllers/FrameController.ts:64](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L64)
+[src/controllers/FrameController.ts:64](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L64)
 
 ___
 
@@ -49,7 +77,7 @@ This method returns a frame by its name
 
 #### Defined in
 
-[src/controllers/FrameController.ts:54](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L54)
+[src/controllers/FrameController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L54)
 
 ___
 
@@ -72,7 +100,7 @@ This method returns frame properties for a given frame and layout
 
 #### Defined in
 
-[src/controllers/FrameController.ts:84](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L84)
+[src/controllers/FrameController.ts:84](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L84)
 
 ___
 
@@ -88,7 +116,7 @@ This method returns all frame properties on current layout
 
 #### Defined in
 
-[src/controllers/FrameController.ts:73](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L73)
+[src/controllers/FrameController.ts:73](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L73)
 
 ___
 
@@ -104,7 +132,7 @@ This method returns the list of frames
 
 #### Defined in
 
-[src/controllers/FrameController.ts:25](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L25)
+[src/controllers/FrameController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L25)
 
 ___
 
@@ -126,7 +154,7 @@ This method returns the list of frames by pageId
 
 #### Defined in
 
-[src/controllers/FrameController.ts:44](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L44)
+[src/controllers/FrameController.ts:44](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L44)
 
 ___
 
@@ -148,7 +176,7 @@ This method returns frame properties for a given layout
 
 #### Defined in
 
-[src/controllers/FrameController.ts:94](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L94)
+[src/controllers/FrameController.ts:94](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L94)
 
 ___
 
@@ -164,7 +192,29 @@ This method returns the list of selected frames
 
 #### Defined in
 
-[src/controllers/FrameController.ts:34](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L34)
+[src/controllers/FrameController.ts:34](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L34)
+
+___
+
+### removeFrame
+
+▸ **removeFrame**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+
+This method will remove a specific frame using the Id.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `frameId` | `number` | The ID of the frame that needs to be deleted |
+
+#### Returns
+
+`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+
+#### Defined in
+
+[src/controllers/FrameController.ts:296](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L296)
 
 ___
 
@@ -186,7 +236,7 @@ This method will reset properties of a specific frame to their original values
 
 #### Defined in
 
-[src/controllers/FrameController.ts:226](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L226)
+[src/controllers/FrameController.ts:226](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L226)
 
 ___
 
@@ -208,7 +258,7 @@ This method will reset the height of a specific frame to its original value
 
 #### Defined in
 
-[src/controllers/FrameController.ts:275](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L275)
+[src/controllers/FrameController.ts:275](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L275)
 
 ___
 
@@ -230,7 +280,7 @@ This method will reset the rotation value of a specific frame to its original va
 
 #### Defined in
 
-[src/controllers/FrameController.ts:255](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L255)
+[src/controllers/FrameController.ts:255](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L255)
 
 ___
 
@@ -252,7 +302,7 @@ This method will reset the frame size (width and height) to the frame's original
 
 #### Defined in
 
-[src/controllers/FrameController.ts:104](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L104)
+[src/controllers/FrameController.ts:104](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L104)
 
 ___
 
@@ -274,7 +324,7 @@ This method will reset the width of a specific frame to its original value
 
 #### Defined in
 
-[src/controllers/FrameController.ts:265](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L265)
+[src/controllers/FrameController.ts:265](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L265)
 
 ___
 
@@ -296,7 +346,7 @@ This method will reset the x value of a specific frame to its original value
 
 #### Defined in
 
-[src/controllers/FrameController.ts:235](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L235)
+[src/controllers/FrameController.ts:235](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L235)
 
 ___
 
@@ -318,7 +368,7 @@ This method will reset the y value of a specific frame to its original value
 
 #### Defined in
 
-[src/controllers/FrameController.ts:245](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L245)
+[src/controllers/FrameController.ts:245](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L245)
 
 ___
 
@@ -340,7 +390,7 @@ This method will select a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:114](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L114)
+[src/controllers/FrameController.ts:114](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L114)
 
 ___
 
@@ -362,7 +412,7 @@ This method will select multipleFrames
 
 #### Defined in
 
-[src/controllers/FrameController.ts:124](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L124)
+[src/controllers/FrameController.ts:124](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L124)
 
 ___
 
@@ -385,7 +435,7 @@ This method will set the height of a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:135](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L135)
+[src/controllers/FrameController.ts:135](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L135)
 
 ___
 
@@ -408,7 +458,7 @@ This method will update the name of a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:216](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L216)
+[src/controllers/FrameController.ts:216](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L216)
 
 ___
 
@@ -431,7 +481,7 @@ This method will set the rotation angle of a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:151](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L151)
+[src/controllers/FrameController.ts:151](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L151)
 
 ___
 
@@ -454,7 +504,7 @@ This method will set the visibility property of a specified frame. If set to fal
 
 #### Defined in
 
-[src/controllers/FrameController.ts:286](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L286)
+[src/controllers/FrameController.ts:286](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L286)
 
 ___
 
@@ -477,7 +527,7 @@ This method will set the width of a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:167](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L167)
+[src/controllers/FrameController.ts:167](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L167)
 
 ___
 
@@ -500,7 +550,7 @@ This method will set the x value of a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:183](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L183)
+[src/controllers/FrameController.ts:183](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L183)
 
 ___
 
@@ -523,4 +573,4 @@ This method will set the y value of a specific frame
 
 #### Defined in
 
-[src/controllers/FrameController.ts:199](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/FrameController.ts#L199)
+[src/controllers/FrameController.ts:199](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L199)

@@ -1,8 +1,21 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / BasicAnimationsEmphasisStyles
-
 # Enumeration: BasicAnimationsEmphasisStyles
 
 [index](../modules/index.md).BasicAnimationsEmphasisStyles
+
+## Table of contents
+
+### Enumeration Members
+
+- [bounce](index.BasicAnimationsEmphasisStyles.md#bounce)
+- [flash](index.BasicAnimationsEmphasisStyles.md#flash)
+- [headshake](index.BasicAnimationsEmphasisStyles.md#headshake)
+- [heartbeat](index.BasicAnimationsEmphasisStyles.md#heartbeat)
+- [horizontal](index.BasicAnimationsEmphasisStyles.md#horizontal)
+- [pulse](index.BasicAnimationsEmphasisStyles.md#pulse)
+- [rubberBand](index.BasicAnimationsEmphasisStyles.md#rubberband)
+- [swing](index.BasicAnimationsEmphasisStyles.md#swing)
+- [tada](index.BasicAnimationsEmphasisStyles.md#tada)
+- [vertical](index.BasicAnimationsEmphasisStyles.md#vertical)
 
 ## Enumeration Members
 
@@ -12,7 +25,7 @@
 
 #### Defined in
 
-[types/AnimationTypes.ts:37](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L37)
+[types/AnimationTypes.ts:37](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L37)
 
 ___
 
@@ -22,7 +35,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:38](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L38)
+[types/AnimationTypes.ts:38](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L38)
 
 ___
 
@@ -32,7 +45,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:39](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L39)
+[types/AnimationTypes.ts:39](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L39)
 
 ___
 
@@ -42,7 +55,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:40](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L40)
+[types/AnimationTypes.ts:40](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L40)
 
 ___
 
@@ -52,7 +65,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:44](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L44)
+[types/AnimationTypes.ts:44](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L44)
 
 ___
 
@@ -62,7 +75,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:41](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L41)
+[types/AnimationTypes.ts:41](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L41)
 
 ___
 
@@ -72,7 +85,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:42](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L42)
+[types/AnimationTypes.ts:42](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L42)
 
 ___
 
@@ -82,7 +95,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:45](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L45)
+[types/AnimationTypes.ts:45](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L45)
 
 ___
 
@@ -92,7 +105,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:46](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L46)
+[types/AnimationTypes.ts:46](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L46)
 
 ___
 
@@ -102,4 +115,4 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:43](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L43)
+[types/AnimationTypes.ts:43](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L43)

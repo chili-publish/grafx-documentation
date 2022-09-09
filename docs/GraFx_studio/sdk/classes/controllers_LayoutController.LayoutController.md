@@ -1,11 +1,28 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [controllers/LayoutController](../modules/controllers_LayoutController.md) / LayoutController
-
 # Class: LayoutController
 
 [controllers/LayoutController](../modules/controllers_LayoutController.md).LayoutController
 
 The LayoutController is responsible for all communication regarding Layouts.
 Methods inside this controller can be called by `window.SDK.layout.{method-name}`
+
+## Table of contents
+
+### Methods
+
+- [addLayout](controllers_LayoutController.LayoutController.md#addlayout)
+- [duplicateLayout](controllers_LayoutController.LayoutController.md#duplicatelayout)
+- [getLayoutById](controllers_LayoutController.LayoutController.md#getlayoutbyid)
+- [getLayoutByName](controllers_LayoutController.LayoutController.md#getlayoutbyname)
+- [getLayouts](controllers_LayoutController.LayoutController.md#getlayouts)
+- [getSelectedLayout](controllers_LayoutController.LayoutController.md#getselectedlayout)
+- [removeLayout](controllers_LayoutController.LayoutController.md#removelayout)
+- [resetLayout](controllers_LayoutController.LayoutController.md#resetlayout)
+- [resetLayoutHeight](controllers_LayoutController.LayoutController.md#resetlayoutheight)
+- [resetLayoutWidth](controllers_LayoutController.LayoutController.md#resetlayoutwidth)
+- [selectLayout](controllers_LayoutController.LayoutController.md#selectlayout)
+- [setLayoutHeight](controllers_LayoutController.LayoutController.md#setlayoutheight)
+- [setLayoutName](controllers_LayoutController.LayoutController.md#setlayoutname)
+- [setLayoutWidth](controllers_LayoutController.LayoutController.md#setlayoutwidth)
 
 ## Methods
 
@@ -27,7 +44,7 @@ This method will add a new child layout (a new layout is always child of a root 
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:74](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L74)
+[src/controllers/LayoutController.ts:74](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L74)
 
 ___
 
@@ -49,7 +66,7 @@ This method will duplicate a specific layout
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:105](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L105)
+[src/controllers/LayoutController.ts:105](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L105)
 
 ___
 
@@ -71,7 +88,7 @@ This method returns a layout by its id
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:35](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L35)
+[src/controllers/LayoutController.ts:35](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L35)
 
 ___
 
@@ -93,7 +110,7 @@ This method returns a layout by its name
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:45](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L45)
+[src/controllers/LayoutController.ts:45](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L45)
 
 ___
 
@@ -109,7 +126,7 @@ This method returns the list of layouts
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:25](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L25)
+[src/controllers/LayoutController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L25)
 
 ___
 
@@ -125,7 +142,7 @@ This method returns the selected layout
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:54](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L54)
+[src/controllers/LayoutController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L54)
 
 ___
 
@@ -147,7 +164,7 @@ This method will remove a specific layout
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:64](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L64)
+[src/controllers/LayoutController.ts:64](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L64)
 
 ___
 
@@ -169,7 +186,7 @@ This method will reset a specific layout to its original value
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:115](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L115)
+[src/controllers/LayoutController.ts:115](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L115)
 
 ___
 
@@ -191,7 +208,7 @@ This method will reset the height of a specific layout to its original value
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:156](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L156)
+[src/controllers/LayoutController.ts:156](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L156)
 
 ___
 
@@ -213,7 +230,7 @@ This method will reset the width of a specific layout to its original value
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:166](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L166)
+[src/controllers/LayoutController.ts:166](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L166)
 
 ___
 
@@ -235,7 +252,7 @@ This method will select a specific layout
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:95](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L95)
+[src/controllers/LayoutController.ts:95](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L95)
 
 ___
 
@@ -258,7 +275,7 @@ This method will set the height of the layout to a specific value
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:126](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L126)
+[src/controllers/LayoutController.ts:126](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L126)
 
 ___
 
@@ -281,7 +298,7 @@ This method will update the name of a specific layout
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:85](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L85)
+[src/controllers/LayoutController.ts:85](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L85)
 
 ___
 
@@ -304,4 +321,4 @@ This method will set the width of the layout to a specific value
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:141](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/controllers/LayoutController.ts#L141)
+[src/controllers/LayoutController.ts:141](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L141)

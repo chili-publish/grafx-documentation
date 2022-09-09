@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / FontWeights
-
 # Enumeration: FontWeights
 
 [index](../modules/index.md).FontWeights
+
+## Table of contents
+
+### Enumeration Members
+
+- [BOLD](index.FontWeights.md#bold)
+- [ITALIC](index.FontWeights.md#italic)
+- [REGULAR](index.FontWeights.md#regular)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/TextStyleTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L2)
+[types/TextStyleTypes.ts:2](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L2)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:3](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L3)
+[types/TextStyleTypes.ts:3](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L3)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/TextStyleTypes.ts:4](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/TextStyleTypes.ts#L4)
+[types/TextStyleTypes.ts:4](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/TextStyleTypes.ts#L4)

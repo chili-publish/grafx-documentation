@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / FlowDirection
-
 # Enumeration: FlowDirection
 
 [index](../modules/index.md).FlowDirection
+
+## Table of contents
+
+### Enumeration Members
+
+- [horizontal](index.FlowDirection.md#horizontal)
+- [onPath](index.FlowDirection.md#onpath)
+- [vertical](index.FlowDirection.md#vertical)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/FrameTypes.ts:69](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L69)
+[types/FrameTypes.ts:69](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L69)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:71](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L71)
+[types/FrameTypes.ts:71](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L71)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/FrameTypes.ts:70](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/FrameTypes.ts#L70)
+[types/FrameTypes.ts:70](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/FrameTypes.ts#L70)

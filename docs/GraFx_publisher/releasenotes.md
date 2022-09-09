@@ -1,1 +1,0 @@
-# Releasenotes for CHILI GraFx publisher

@@ -1,8 +1,35 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / SDK
-
 # Class: SDK
 
 [index](../modules/index.md).SDK
+
+## Table of contents
+
+### Constructors
+
+- [constructor](index.SDK.md#constructor)
+
+### Properties
+
+- [animation](index.SDK.md#animation)
+- [colorStyle](index.SDK.md#colorstyle)
+- [config](index.SDK.md#config)
+- [connection](index.SDK.md#connection)
+- [debug](index.SDK.md#debug)
+- [document](index.SDK.md#document)
+- [frame](index.SDK.md#frame)
+- [layout](index.SDK.md#layout)
+- [page](index.SDK.md#page)
+- [paragraphStyle](index.SDK.md#paragraphstyle)
+- [textSelection](index.SDK.md#textselection)
+- [tool](index.SDK.md#tool)
+- [undoManager](index.SDK.md#undomanager)
+- [utils](index.SDK.md#utils)
+- [variable](index.SDK.md#variable)
+
+### Methods
+
+- [loadEditor](index.SDK.md#loadeditor)
+- [setConnection](index.SDK.md#setconnection)
 
 ## Constructors
 
@@ -20,7 +47,7 @@ The SDK should be configured clientside and it exposes all controllers to work w
 
 #### Defined in
 
-[src/index.ts:85](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L85)
+[src/index.ts:102](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L102)
 
 ## Properties
 
@@ -30,7 +57,17 @@ The SDK should be configured clientside and it exposes all controllers to work w
 
 #### Defined in
 
-[src/index.ts:69](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L69)
+[src/index.ts:84](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L84)
+
+___
+
+### colorStyle
+
+• **colorStyle**: `ColorStyleController`
+
+#### Defined in
+
+[src/index.ts:94](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L94)
 
 ___
 
@@ -40,7 +77,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L59)
+[src/index.ts:74](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L74)
 
 ___
 
@@ -50,17 +87,17 @@ ___
 
 #### Defined in
 
-[src/index.ts:60](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L60)
+[src/index.ts:75](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L75)
 
 ___
 
 ### debug
 
-• **debug**: `DebugController`
+• **debug**: [`DebugController`](controllers_DebugController.DebugController.md)
 
 #### Defined in
 
-[src/index.ts:75](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L75)
+[src/index.ts:90](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L90)
 
 ___
 
@@ -70,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:70](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L70)
+[src/index.ts:85](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L85)
 
 ___
 
@@ -80,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:68](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L68)
+[src/index.ts:83](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L83)
 
 ___
 
@@ -90,27 +127,37 @@ ___
 
 #### Defined in
 
-[src/index.ts:67](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L67)
+[src/index.ts:82](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L82)
 
 ___
 
 ### page
 
-• **page**: `PageController`
+• **page**: [`PageController`](controllers_PageController.PageController.md)
 
 #### Defined in
 
-[src/index.ts:74](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L74)
+[src/index.ts:89](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L89)
+
+___
+
+### paragraphStyle
+
+• **paragraphStyle**: [`ParagraphStyleController`](controllers_ParagraphStyleController.ParagraphStyleController.md)
+
+#### Defined in
+
+[src/index.ts:93](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L93)
 
 ___
 
 ### textSelection
 
-• **textSelection**: `TextStyleController`
+• **textSelection**: [`TextStyleController`](controllers_TextStyleController.TextStyleController.md)
 
 #### Defined in
 
-[src/index.ts:77](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L77)
+[src/index.ts:92](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L92)
 
 ___
 
@@ -120,17 +167,17 @@ ___
 
 #### Defined in
 
-[src/index.ts:73](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L73)
+[src/index.ts:88](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L88)
 
 ___
 
 ### undoManager
 
-• **undoManager**: `UndoManagerController`
+• **undoManager**: [`UndoManagerController`](controllers_UndoManagerController.UndoManagerController.md)
 
 #### Defined in
 
-[src/index.ts:76](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L76)
+[src/index.ts:91](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L91)
 
 ___
 
@@ -140,7 +187,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:72](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L72)
+[src/index.ts:87](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L87)
 
 ___
 
@@ -150,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:71](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L71)
+[src/index.ts:86](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L86)
 
 ## Methods
 
@@ -167,7 +214,7 @@ It will generate an iframe in the document
 
 #### Defined in
 
-[src/index.ts:111](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L111)
+[src/index.ts:129](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L129)
 
 ___
 
@@ -187,4 +234,4 @@ ___
 
 #### Defined in
 
-[src/index.ts:148](https://github.com/chili-publish/editor-sdk/blob/c6e096c/src/index.ts#L148)
+[src/index.ts:170](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/index.ts#L170)

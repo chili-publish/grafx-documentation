@@ -1,8 +1,14 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / EaseTypes
-
 # Enumeration: EaseTypes
 
 [index](../modules/index.md).EaseTypes
+
+## Table of contents
+
+### Enumeration Members
+
+- [easeIn](index.EaseTypes.md#easein)
+- [easeInOut](index.EaseTypes.md#easeinout)
+- [easeOut](index.EaseTypes.md#easeout)
 
 ## Enumeration Members
 
@@ -12,7 +18,7 @@
 
 #### Defined in
 
-[types/AnimationTypes.ts:18](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L18)
+[types/AnimationTypes.ts:18](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L18)
 
 ___
 
@@ -22,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:20](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L20)
+[types/AnimationTypes.ts:20](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L20)
 
 ___
 
@@ -32,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/AnimationTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/c6e096c/types/AnimationTypes.ts#L19)
+[types/AnimationTypes.ts:19](https://github.com/chili-publish/editor-sdk/blob/6abb55e/types/AnimationTypes.ts#L19)

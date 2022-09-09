@@ -1,7 +1,7 @@
-[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / controllers/DocumentController
-
 # Module: controllers/DocumentController
 
-## Classes
+## Table of contents
+
+### Classes
 
 - [DocumentController](../classes/controllers_DocumentController.DocumentController.md)
