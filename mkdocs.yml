@@ -87,15 +87,16 @@ nav:
             - 'Bottom Quick Tools':             'GraFx_studio/bottomquicktools.md'
             - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
             - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
-
             - 'Properties':                     'GraFx_studio/properties.md'
             - 'Animation':                      'GraFx_studio/animation.md'
             - 'Layouts':                        'GraFx_studio/layouts.md'
             - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
+            - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
             - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
+            - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
         - 'How to: Design documents'    :
             - 'Create Alternate Layouts':       'GraFx_studio/how_to/alternate_layouts.md'
             - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
