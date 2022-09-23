@@ -61,7 +61,10 @@ nav:
             - 'Setup GraFx media' :             'CHILI_GraFx/how_to/setup_media.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
-        - 'Platform API reference' :            'CHILI_GraFx/platform_api/api_reference.md'
+        - 'Platform API reference' :            
+            - 'Overview':                       'CHILI_GraFx/platform_api/overview.md'
+            - ... | flat | CHILI_GraFx/platform_api/classes/**
+
         - 'Release notes':
             - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
             - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'

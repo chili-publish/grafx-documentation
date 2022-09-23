@@ -2,8 +2,8 @@
 
 Server side, you have access to 2 API's with endpoints.
 
-- [Platform API](/CHILI_GraFx/platform_api/api_reference)
-- [Environment API](/GraFx_devcenter/environment_api/overview)
+- [Platform API](/CHILI_GraFx/platform_api/overview/)
+- [Environment API](/GraFx_devcenter/environment_api/overview/)
 
 Client side
 

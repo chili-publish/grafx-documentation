@@ -13,12 +13,12 @@ Your instance contains a Swagger Application to view these endpoints.
 
 https://**[your-chili-GraFx-url]**/grafx/swagger/index.html
 
-[Swagger Environment API](https://devchili.cpstaging.online/grafx/swagger/index.html){target="_blank"}
+[Swagger Platform API](https://chili-grafx-platf-prd-app.azurewebsites.net/swagger/index.html){target="_blank"}
 
-![Swagger](https://chilipublishdocs.imgix.net/GraFx_devcenter/swagger.png?w=830&q=80)
+![Swagger](https://chilipublishdocs.imgix.net/GraFx_devcenter/swagger_platform.png?w=830&q=80)
 
 
 ## Controllers
 
-- TemplateController
-- MediaController
+- UserController
+- AddOnController
