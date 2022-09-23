@@ -123,4 +123,4 @@ fetchDocument();
 
 Documented here (will move to current documentation site)
 
-[Classes](https://chili-publish.github.io/editor-sdk/)
+[Classes](/GraFx_studio/sdk/)

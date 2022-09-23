@@ -61,6 +61,7 @@ nav:
             - 'Setup GraFx media' :             'CHILI_GraFx/how_to/setup_media.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
+        - 'Platform API reference' :            'CHILI_GraFx/platform_api/api_reference.md'
         - 'Release notes':
             - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
             - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'
@@ -110,26 +111,30 @@ nav:
             - 'CHILI Editor SDK' :              'GraFx_studio/integration/chili_editor_sdk.md'
             - 'First build' :                   'GraFx_studio/integration/first_build.md'
             - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
         - 'SDK reference':
             - Overview:                         'GraFx_studio/sdk/README.md'
             - ... | flat | GraFx_studio/sdk/**
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview/'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
 
     - 'GraFx media':
         - 'Introduction':                       'GraFx_media/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_media/releasenotes/latest.md'
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
     - 'GraFx fonts':
         - 'Introduction':                       'GraFx_fonts/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
     - 'GraFx stylekits':
         - 'Introduction':                       'GraFx_stylekits/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
     - 'On-prem':
         - 'Introduction':                       'on-premise/intro.md'
@@ -141,5 +146,11 @@ nav:
         - 'Generating variants in Adds':    'solutions/addvariants.md'
 
 
-    - 'Developer center':                       'developercenter.md'
+    - 'Developer center':                       
+        - 'Overview':                           'GraFx_devcenter/overview.md'
+        - 'Platform API reference' :            'CHILI_GraFx/platform_api/api_reference/'
+        - 'Environment API':                    
+            - Overview:                         'GraFx_devcenter/environment_api/overview.md'
+            - ... | flat | GraFx_devcenter/environment_api/**
+        
     - 'Tag Index':                              'tags.md'
