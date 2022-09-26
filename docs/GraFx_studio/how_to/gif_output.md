@@ -1,4 +1,5 @@
-# Output to MP4
+# Output to GIF
+
 
 ## Select the right Layout
 
@@ -14,9 +15,9 @@ Have a quick glance at your timeline. Take the Scrubber, and run through the tim
 
 ![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_3.gif)
 
-## Output (to MP4)
+## Output (to GIF)
 
-Click "Export as" and choose MP4 in the dropdown.
+Click "Export as" and choose GIF in the dropdown.
 
 ![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_4.png)
 

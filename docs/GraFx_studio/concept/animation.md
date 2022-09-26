@@ -1,9 +1,3 @@
----
-tags:
-  - unfinished
-  - needinput
----
-
 # Animation
 
 ## Static vs Animated content
@@ -21,10 +15,6 @@ From the birth of a document a timeline is created. To start the timeline is 5 s
 By default, frames are static. This means, they don't have an animation, and appear from frame 1 up to the last frame of the timeline.
 
 Even when you "play" the animation, this frame will appear static in on stage. (on the page).
-
-
-!!! Alert
-	This needs to be defined, how static content output will work. What frame will be used etc...
 
 
 ## Timeline
@@ -82,9 +72,6 @@ All frames added to the page, will take the full length of the current timeline.
 
 If you resize the timeline, newly added frames will take this new length by default.
 
-!!! Question
-	How to resize the full timeline, with all elements in there?
-	
 ### Move the start - or end point of a frame
 
 Scroll all the way to the left (horizontal scroll), and select the edge (when your cursor changes into a double sided arrow). Now drag the edge to the left or right. (left won't work, if it's at the beginning)
@@ -130,14 +117,13 @@ Set the Ease Type
 
 Set the Tween type (how the movement is calculated). Tweening, is how the movement between start and end point is calculated.
 
-This website describes perfectly what several Tween types do.
+This website describes what several Ease types do.
 
 [See easing types for more info](https://easings.net/){target="_blank"}
 
-!!! Note
-	Will need input here
-
 ### Outro
+
+Similar to the intro, you can set the 4 animation properties for the end of the animation.
 
 ### Length of the intro, outro & emphasis
 
