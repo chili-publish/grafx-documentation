@@ -23,5 +23,3 @@ Click "Export as" and choose GIF in the dropdown.
 The button changes into a progress wheel. When the wheel stops spinning, your browser will download the file into your downloads folder.
 
 ![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_5.png)
-
-![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_6.png)
