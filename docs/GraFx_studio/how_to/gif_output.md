@@ -1,5 +1,6 @@
 # Output to GIF
 
+
 ## Select the right Layout
 
 In the tree of layouts, select the one you wish to output.
