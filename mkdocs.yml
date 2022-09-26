@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: CHILI publish Guides
+site_name: CHILI GraFx Guides
 theme:
   name: material
   logo: assets/CHILI_LOGOS_OK-02.svg
@@ -58,7 +58,6 @@ nav:
             - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
         - 'How to':
             - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
-            - 'Setup GraFx media' :             'CHILI_GraFx/how_to/setup_media.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
         - 'Platform API reference' :            
@@ -107,6 +106,10 @@ nav:
         - 'How to: Extend GraFx studio':
             - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
+        - 'How to: Output':
+            - 'Settings':                       'GraFx_studio/how_to/output_settings.md'
+            - 'MP4':                            'GraFx_studio/how_to/mp4_output.md'
+            - 'GIF':                            'GraFx_studio/how_to/gif_output.md'
         - 'Integrate GraFx studio':
             - 'Getting started' :               'GraFx_studio/integration/getting_started.md'
             - 'Local environment' :             'GraFx_studio/integration/local_environment.md'

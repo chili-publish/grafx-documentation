@@ -1,5 +1,7 @@
 img[alt=applogo] { width: 200px; }
 
+p img[alt=svg_icon] { width: 100px; }
+
 .md-header {
     background-color: #F0F0F0;
 	color: #000;

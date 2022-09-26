@@ -5,4 +5,4 @@ tags:
 
 # Introduction
 
-![applogo](/assets/CHILI_LOGOS_OK-13.svg)
+![applogo](/assets/CHILI_LOGOS-bis-2.svg)
