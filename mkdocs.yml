@@ -76,7 +76,7 @@ nav:
         - 'Release notes':
             - 'Latest':                         'GraFx_publisher/releasenotes/latest.md'
             - 'GraFX publisher 2022':           'GraFx_publisher/releasenotes/2022.md'
-    - 'GraFx studio':
+    - 'GraFx Studio':
         - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
         - 'Application overview':
@@ -97,12 +97,14 @@ nav:
             - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
+            - 'Variables':                      'GraFx_studio/concept/variables.md'
             - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
             - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
         - 'How to: Design documents'    :
             - 'Create Alternate Layouts':       'GraFx_studio/how_to/alternate_layouts.md'
             - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
+            - 'Add variables':                  'GraFx_studio/how_to/variables.md'
         - 'How to: Extend GraFx studio':
             - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
@@ -124,19 +126,19 @@ nav:
         - 'Release notes':
             - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
 
-    - 'GraFx media':
+    - 'GraFx Media':
         - 'Introduction':                       'GraFx_media/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_media/releasenotes/latest.md'
         - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
-    - 'GraFx fonts':
+    - 'GraFx Fonts':
         - 'Introduction':                       'GraFx_fonts/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
         - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
-    - 'GraFx stylekits':
+    - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx_stylekits/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
