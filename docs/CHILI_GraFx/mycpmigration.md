@@ -36,7 +36,7 @@ Logging on to CHILI GraFx will bring you to this screen
 
 Provide your email, you used to login to My CHILI publish before.
 
-If you use an email that is in use, you will get notified.
+If you use enter email that is in use, you will get notified.
 
 If your email is known in the platform, CHILI GraFx will let you know.
 
