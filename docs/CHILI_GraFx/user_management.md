@@ -35,7 +35,7 @@ Sample resources: GraFx Media assets, GraFx Documents, Users, Environments
 !!! Definition 
 	A Person or system identified by a username that performs an operation over the resource
 	
-We defined a GraFx User as a person or a system. In many cases you will interact as a human with the GraFx UI. 
+We define a GraFx User as a person or a system. In many cases you will interact as a human with the GraFx UI. 
 
 In some cases, you'll also need a system user, that can be used to interact with the GraFx API's. It's wise to unlink this system user from a person. In case the human user changes jobs or roles, you don't need to redefine the access or role for the system user.
 
