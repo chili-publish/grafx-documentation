@@ -8,6 +8,6 @@ A toolset to create your platform for
 
 - Creative automation 
 - CDO - Creative Dynamic Optimization
-- IA - Intelligent automation
+- IA - Intelligent Automation
 - Marketing variation creation
 - On brand visual communication
