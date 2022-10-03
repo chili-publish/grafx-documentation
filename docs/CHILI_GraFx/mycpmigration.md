@@ -25,7 +25,7 @@ You will be able to connect third party Identity Providers to CHILI GraFx
 
 ## Step 1: Confirm you want to start the wizard
 
-Loggin on to CHILI GraFx will bring you to this screen
+Logging on to CHILI GraFx will bring you to this screen
 
 ![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate5.png?w=690)
 
