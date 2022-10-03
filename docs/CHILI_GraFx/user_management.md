@@ -35,7 +35,7 @@ Sample resources: GraFx Media assets, GraFx Documents, Users, Environments
 !!! Definition 
 	A Person or system identified by a username that performs an operation over the resource
 	
-We defined a GraFx User as a person or a system. In many cases you will interact as a human with the GraFx UI. 
+We define a GraFx User as a person or a system. In many cases you will interact as a human with the GraFx UI. 
 
 In some cases, you'll also need a system user, that can be used to interact with the GraFx API's. It's wise to unlink this system user from a person. In case the human user changes jobs or roles, you don't need to redefine the access or role for the system user.
 
@@ -48,7 +48,7 @@ A group of users allows you to easily give the same role(s) to all the users in 
 
 All roles associated with a group of users will be associated with all members of the group
 
-### permissions
+### Permissions
 
 !!! Definition
 	The authorization to perform an operation over a resource. 
@@ -72,7 +72,7 @@ Permissions in CHILI GraFx will never be assigned on an individual level, but al
 
 ## Scope of permissions
 
-The scope of the permissions is the concept that not all permissions have the same impact. Some permissions have impact on a different leven.
+The scope of the permissions is the concept that not all permissions have the same impact. Some permissions have impact on a different level.
 
 The schema below shows the relation between the levels in a CHILI GraFx Subscription, to then explain the impact of permissions (roles) on these levels
 
@@ -86,14 +86,14 @@ erDiagram
 
 ### A GraFx Subscription
 
-Roles defined on the Subscription level, have permission with impact for all environments.
+Roles defined on the Subscription level have permission with impact for all environments.
 These contain operations like managing the lifecycle of identities and environments.
 
 ### Organization
 
 An organizaion is an optional grouping you can define. An organization groups 1 or more environments.
 
-Roles at the organization level, have impact on all environments in this organization.
+Roles at the organization level have impact on all environments in this organization.
 
 ### Environment
 
@@ -106,7 +106,7 @@ Roles (and permissions) on the environment level affect only the specific enviro
 ### Subscription Admin
 
 !!! Definition
-	A Subscription Admin manages the subscription(s) he is assigned too
+	A Subscription Admin manages the subscription(s) he is assigned to
 	
 Assigned permissions
 
