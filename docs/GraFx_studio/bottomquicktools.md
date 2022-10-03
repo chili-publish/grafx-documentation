@@ -5,7 +5,7 @@ Set of tools at the bottom of the sidebar.
 - Alternate layout
 - Layers & Animation
 - Media browser
-- Painting browser
+- Stylekit Panel
 
 ![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/ui_bottom_quicktools.png)
 
