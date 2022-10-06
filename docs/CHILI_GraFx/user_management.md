@@ -1,8 +1,3 @@
----
-tags:
-  - unfinished
----
-
 # User management
 
 ## Introduction
@@ -240,9 +235,39 @@ It's up to the Subscription Admin (first user) to assign new CHILI GraFx roles t
 
 In a second phase - Timeframe [UNCLEAR] - a smart mapping of the permissions will take place.
 
-## Scenarios [UNFINISHED]
+## Scenarios
+
+The description above explains the theory. Below are some examples how to organize your users, based on your profile.
 
 ### Brand Owner
+
+As the owner of the access to CHILI platform, you will have the Subscription Admin access.
+
+How you organize the other levels will depend on your organization.
+
+The main thought process is: who needs access to one or more resources, and how do I combine or separate these resources?
+
+**Example 1**: Brand-owner with 1 brand/product.
+
+All resources stored into 1 Environment.
+
+Environment Admin is the Brand Manager, or whoever is responsible for managing the brand assets (smart templates)
+
+End-users are the consumers of the templates, able to make publications.
+
+**Example 2**: Brand-owner with multiple brands, available worldwide
+
+Environment Admin is the brand manager, responsible for the group of smart templates, related to his/her group of brands.
+
+End-users are the consumers of the templates, able to make publications.
+
+**Example 3**: Brand-owner with several brands, and regional management/ownership of these products.
+
+Environment Admin is the brand manager, responsible for the group of smart templates, related to his/her group of brands.
+
+The end-users are the brand-managers for 1 or more groups of products, grouped in 1 environment.
+
+Setup Environments as (regional) product groups, and organize access via Environments.
 
 ### Solution Provider (no access to end-customers)
 
