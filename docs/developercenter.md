@@ -14,7 +14,7 @@ Your resources to integrate CHILI GraFx and application into your web applicatio
 - [SDK Reference](/GraFx_studio/sdk/)
 - REST API Getting started
 
-## GraFx publisher
+## GraFx Publisher
 
 - [REST API Reference](https://mydocumentation.chili-publish.com/search?text=rest%20api%20endpoints){target="_blank"}
 - [Javascript API](https://mydocumentation.chili-publish.com/search?text=Getting%20started%20with%20your%20JavaScript%20integration){target="_blank"}`
