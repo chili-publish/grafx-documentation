@@ -33,7 +33,7 @@ Set the starting point of the rotation.
 
 When you set to e.g. -90°, the object will start from -90° from its definitive position.
 
-The number of rotations, sets the number of rotations the object will make, before ending up in its final position.
+The number of rotations: sets the number of rotations the object will make before ending up in its final position.
 
 ### Scale from
 
@@ -47,12 +47,12 @@ Choose a style from the list, and test out the effect.
 
 ### Ease & Tween type
 
-The ease type defines wether the animation should start fast, ends fast or both.
+The ease type defines whether the animation should start fast, ends fast or both.
 
-The Twee type defines [the type of animation](https://easings.net/){target="_blank"}.
+The Tween type defines [the type of animation](https://easings.net/){target="_blank"}.
 
 ## Outro section
 
 This is similar to the intro, but has impact on the end of the animation.
 
-E.g. Scale and rotate will be **to** vs **from** in the intro.
+E.g. scale and rotate will be **to** vs **from** in the intro.
