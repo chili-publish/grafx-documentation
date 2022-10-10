@@ -15,4 +15,4 @@ The UI changes to allow you to focus on the tools to Design or Create your smart
 
 The UI changes to focus on automation tasks.
 
-E.g. When choosing "Automate" the panel to create variables will appear.
+E.g. when choosing "Automate" the panel to create variables will appear.
