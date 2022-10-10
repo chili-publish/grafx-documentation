@@ -121,6 +121,10 @@ nav:
         - 'Environment API':                    'GraFx_devcenter/environment_api/overview/'
         - 'Release notes':
             - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
+        - 'Early Access':
+            - 'Release notes':                  'GraFx_studio/early_access/releasenotes.md'
+            - 'Workspace':                      'GraFx_studio/early_access/workspace.md'
+            - 'Getting Started':                'GraFx_studio/early_access/gettingstarted.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_media/intro.md'
