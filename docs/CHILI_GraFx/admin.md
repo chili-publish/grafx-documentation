@@ -12,7 +12,7 @@ The central place to see and update your account details.
 
 ![My Account](https://chilipublishdocs.imgix.net/CHILI_GraFx/myaccount1.png?w=830&q=80)
 
-Click on the avatar, to choose a new picture for your account
+Click on the avatar to choose a new picture for your account
 
 ![My Account](https://chilipublishdocs.imgix.net/CHILI_GraFx/myaccount5.png?w=830&q=80)
 

@@ -5,7 +5,7 @@ tags:
 
 # CHILI GraFx Subscriptions
 
-Your account can hold 1 or more subscriptions. Choosing "My subscriptions" in the account drop down, will display a dashboard of the first active subscription.
+Your account can hold 1 or more subscriptions. Choosing "My subscriptions" in the account drop down will display a dashboard of the first active subscription.
 
 ![Subscriptions](https://chilipublishdocs.imgix.net/CHILI_GraFx/myaccount3.png?w=830&q=80)
 

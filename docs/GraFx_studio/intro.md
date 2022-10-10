@@ -1,9 +1,4 @@
----
-tags:
-  - unfinished
----
-
-# Introduction 2
+# Introduction
 
 ![applogo](/assets/CHILI_LOGOS_OK-09.svg)
 
