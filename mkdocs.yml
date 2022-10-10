@@ -51,7 +51,13 @@ nav:
         - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
         - 'Platform Admin':
             - 'General Admin' :                 'CHILI_GraFx/admin.md'
-            - 'User management' :               'CHILI_GraFx/user_management.md'
+            - 'User management' :
+                - 'Intro' :                     'CHILI_GraFx/user_management_intro.md'
+                - 'Scope' :                     'CHILI_GraFx/user_management_scope.md'
+                - 'Roles' :                     'CHILI_GraFx/user_management_roles.md'
+                - 'Users & Invitation' :        'CHILI_GraFx/user_management_users.md'
+                - 'Migration' :                 'CHILI_GraFx/user_management_migration.md'
+                - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
             - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
             - 'Environments' :                  'CHILI_GraFx/environments.md'
         - 'Application overview':
@@ -69,13 +75,6 @@ nav:
             - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx_publisher/intro.md'
-        - 'The manual':                         'GraFx_publisher/manual.md'
-        - 'Integration':                        'GraFx_publisher/integration.md'
-        - 'Knowledge Base':
-            - 'Smarter Templates':              'GraFx_publisher/smarter_templates.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_publisher/releasenotes/latest.md'
-            - 'GraFX publisher 2022':           'GraFx_publisher/releasenotes/2022.md'
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
@@ -160,3 +159,4 @@ nav:
             - ... | flat | GraFx_devcenter/environment_api/**
         
     - 'Tag Index':                              'tags.md'
+    - 'Hello':                                  'tags.md'
