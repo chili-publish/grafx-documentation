@@ -18,10 +18,6 @@ The platform hosts applications for you to build a powerful creative automation 
 
 Create smart templates to allow your customers to serve print and static digital output.
 
-[See GraFx studio documentation](/GraFx_studio/intro/)
-
----
-
 ![svg_icon](/assets/CHILI_LOGOS_OK-09.svg)
 
 Create smart templates to allow your customers to serve mainly print output
