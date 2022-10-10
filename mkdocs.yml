@@ -159,3 +159,4 @@ nav:
             - ... | flat | GraFx_devcenter/environment_api/**
         
     - 'Tag Index':                              'tags.md'
+    - 'Hello':                                  'tags.md'
