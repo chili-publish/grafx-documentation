@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: CHILI publish Guides
+site_name: CHILI GraFx Guides
 theme:
   name: material
   logo: assets/CHILI_LOGOS_OK-02.svg
@@ -64,9 +64,12 @@ nav:
             - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
         - 'How to':
             - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
-            - 'Setup GraFx media' :             'CHILI_GraFx/how_to/setup_media.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
+        - 'Platform API reference' :            
+            - 'Overview':                       'CHILI_GraFx/platform_api/overview.md'
+            - ... | flat | CHILI_GraFx/platform_api/classes/**
+
         - 'Release notes':
             - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
             - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'
@@ -86,21 +89,26 @@ nav:
             - 'Bottom Quick Tools':             'GraFx_studio/bottomquicktools.md'
             - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
             - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
-
             - 'Properties':                     'GraFx_studio/properties.md'
             - 'Animation':                      'GraFx_studio/animation.md'
             - 'Layouts':                        'GraFx_studio/layouts.md'
             - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
+            - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
             - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
+            - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
         - 'How to: Design documents'    :
             - 'Create Alternate Layouts':       'GraFx_studio/how_to/alternate_layouts.md'
             - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
         - 'How to: Extend GraFx studio':
             - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
             - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
+        - 'How to: Output':
+            - 'Settings':                       'GraFx_studio/how_to/output_settings.md'
+            - 'MP4':                            'GraFx_studio/how_to/mp4_output.md'
+            - 'GIF':                            'GraFx_studio/how_to/gif_output.md'
         - 'Integrate GraFx studio':
             - 'Getting started' :               'GraFx_studio/integration/getting_started.md'
             - 'Local environment' :             'GraFx_studio/integration/local_environment.md'
@@ -108,26 +116,30 @@ nav:
             - 'CHILI Editor SDK' :              'GraFx_studio/integration/chili_editor_sdk.md'
             - 'First build' :                   'GraFx_studio/integration/first_build.md'
             - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
         - 'SDK reference':
             - Overview:                         'GraFx_studio/sdk/README.md'
             - ... | flat | GraFx_studio/sdk/**
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview/'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_media/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_media/releasenotes/latest.md'
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx_fonts/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx_stylekits/intro.md'
         - 'Release notes':
             - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
+        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
 
     - 'On-prem':
         - 'Introduction':                       'on-premise/intro.md'
@@ -139,5 +151,11 @@ nav:
         - 'Generating variants in Adds':    'solutions/addvariants.md'
 
 
-    - 'Developer center':                       'developercenter.md'
+    - 'Developer center':                       
+        - 'Overview':                           'GraFx_devcenter/overview.md'
+        - 'Platform API reference' :            'CHILI_GraFx/platform_api/api_reference/'
+        - 'Environment API':                    
+            - Overview:                         'GraFx_devcenter/environment_api/overview.md'
+            - ... | flat | GraFx_devcenter/environment_api/**
+        
     - 'Tag Index':                              'tags.md'
