@@ -123,7 +123,6 @@ nav:
             - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
         - 'Early Access':
             - 'Release notes':                  'GraFx_studio/early_access/releasenotes.md'
-            - 'Workspace':                      'GraFx_studio/early_access/workspace.md'
             - 'Getting Started':                'GraFx_studio/early_access/gettingstarted.md'
 
     - 'GraFx Media':

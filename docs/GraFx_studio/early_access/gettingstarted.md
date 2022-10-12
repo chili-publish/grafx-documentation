@@ -12,24 +12,23 @@ Targeted for: Software engineers, integrators
 
 I am a developer, and I'm looking for the resources where to start, and how to integrate the editor.
 
+Please check out the [SDK reference documentation](/GraFx_studio/sdk/).
+
+To make life easy, we have created a couple of [demo integrations](https://github.com/chili-publish/editor-sdk-integration-examples){target="_blank"}, so you don't have to start from scratch.
+
+You can use this script in your HTML to always get the latest SDK version:
+
+
 ``` js
-<script src="https://chili-dev.azureedge.net/stable/early-access/sdk/v0.0.3/main.js"></script>
-<script src="integration.js"></script>
+<script src="https://cdnepgrafxstudioprd.azureedge.net/sdk/latest/main.js"></script>
 ```
 
-```js
-const sdk = new EditorSDK({
-    editorLink: 'https://chili-dev.azureedge.net/stable/early-access/editor/v0.0.3/web',
-    editorId: 'my-editor', // if not provided, default will be 'chili-editor'
-});
+Or you can use NPM to install a specific SDK version, with the following command:
+``` bash
+npm install @chili-publish/editor-sdk
 ```
 
-See the [full integration guide](/GraFx_studio/integration/getting_started/).
-
-To make life even more easy, we have created a [demo integration](https://github.com/chili-publish/editor-sdk-integration-examples), so you don't have to start from scratch.
-
-- For the 'editorLink' you should use the URL provided in the code snippet above.
-- For the link to the SDK you can also use the URL above or you can build the SDK yourself. The [code is available here](https://github.com/chili-publish/editor-sdk)
+The SDK is open sourced, you can find the [codebase here](https://github.com/chili-publish/editor-sdk){target="_blank"}.
 
 ## I want to: Check out the new features
 
@@ -40,6 +39,9 @@ I am a designer and want to check out the new user interface and create some coo
 Please go to [Sandbox](https://editor2.chili-publish-sandbox.online/) and log in with your CHILI account to try it out yourself.
 
 Take a look at this page, to get an overview of the [Template designer workspace](/GraFx_studio/workspace_elements/).
+
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/earlyaccess.png?w=800)
+
 
 ## I want to: Convince my boss to use CHILI GraFx
 
