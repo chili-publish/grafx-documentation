@@ -41,8 +41,8 @@ Please go to [Sandbox](https://editor2.chili-publish-sandbox.online/) and log in
 
 Take a look at this page, to get an overview of the [Template designer workspace](/GraFx_studio/workspace_elements/).
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/earlyaccess.png?w=800)
 
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/earlyaccess.png?w=800)
 
 ## I want to: Convince my boss to use CHILI GraFx
 
