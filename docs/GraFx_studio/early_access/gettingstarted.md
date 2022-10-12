@@ -33,7 +33,7 @@ The SDK is open sourced, you can find the [codebase here](https://github.com/chi
 
 ## I want to: Check out the new features
 
-Targeted for: **Template designers**
+Targeted for **Template designers**
 
 I am a designer and want to check out the new user interface and create some cool animations for different layouts!
 
