@@ -3,8 +3,6 @@ tags:
   - unfinished
 ---
 
-Needs recent screenshots (work in progres at time of writing)
-
 # Style Kit
 
 ![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/ui_stylekit.png)
