@@ -1,4 +1,4 @@
-# CHILI publish Guides
+# CHILI GraFx Guides
 
 ![Home](https://chilipublishdocs.imgix.net/home/home3.png?w=830&q=80)
 

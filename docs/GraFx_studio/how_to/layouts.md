@@ -1,6 +1,6 @@
-# Alternate layout (or Sub-layout)
+# Layouts
 
-## Create the Alternate Layout
+## Create the Layout
 
 Click on the **plus** sign or three dots "Add sub-layout"
 
@@ -32,7 +32,7 @@ You can reset the value to the inherited one, by clicking on the left turning ar
 
 ## Change the animation
 
-If the base layout contains an animation, the animation is also available in the alternate layout.
+If the base layout contains an animation, the animation is also available in the layout.
 
 Enable / Activate the [Layers panel](/GraFx_studio/layers_timeline/) via the [Bottom quick tools icon](/GraFx_studio/bottomquicktools/).
 
@@ -42,7 +42,7 @@ In the example below, we selected the Text frame "Discover"
 
 ![Creat first sublayout](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout8.png)
 
-In the Animation Properties panel, change the values you want to change for this Alternate Layout.
+In the Animation Properties panel, change the values you want to change for this Layout.
 
 If you don't change values, they will be inherited from the base layout.
 
