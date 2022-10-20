@@ -34,7 +34,7 @@ The document Canvas.
 
 ### 4 Page or Document
 
-Your smart template, showed as a page, or the full document.
+Your smart template, showed as a page or the full document.
 
 ### 5 Properties
 
@@ -62,10 +62,10 @@ Extra tools to show panels for specific uses
 
 Depending on the selection of your tool you'll see different details.
 
-E.g. With alternate layouts, you can organize your layouts.
+E.g. with alternate layouts, you can organize your layouts.
 
 ### 9 Bottom panel
 
 Contextual bottom panel will hold information for relevant tools.
 
-E.g. Layers or animation timeline will be displayed here
+E.g. layers or animation timeline will be displayed here

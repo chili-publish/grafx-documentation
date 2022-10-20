@@ -32,7 +32,7 @@ Tool to move the page around on the canvas
 
 Zoom in or out
 
-Click to zoom
+Click to zoom in
 
 Alt-click to zoom out
 

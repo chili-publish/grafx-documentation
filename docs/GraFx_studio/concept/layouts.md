@@ -3,20 +3,20 @@ tags:
   - unfinished
 ---
 
-# Alternate Layouts
+# Layouts
 
 ![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/altlayout1.png?w=850&q=80)
 
-Alternate layouts is a concept to reduce the time to produce variants, by creating several variants from the same document.
+Layouts is a concept to reduce the time to produce variants, by creating several variants from the same document.
 
 ## Think different
 
 In stead of thinking about ouput in your design, think by grouping concepts.
 
 A leaderboard or skyscraper add are conceptually very similar. The only difference are the dimensions or proportions. Even a square add could be derived from the leaderboard design.
-If the content is similar, then it's probably a good candidate for an alternate layout.
+If the content is similar, then it's probably a good candidate for a layout.
 
-Even the animation of elements can be different. In a leaderboard your could animate an item from the far left, and in the skyscraper from the bottom. These paramaters can be set different per alternate layout.
+Even the animation of elements can be different. In a leaderboard your could animate an item from the far left, and in the skyscraper from the bottom. These paramaters can be set different per layout.
 
 ## The basic setup
 
@@ -46,7 +46,7 @@ This means that values for this property have been taken from the master of this
 
 ![master](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/master.png?w=300)
 
-The master of this layout is the one above the current layout, in the Alternate Layout menu.
+The master of this layout is the one above the current layout, in the Layout menu.
 
 In this example **Base Design** is the master for **Skyscraper**, and **Skyscraper** is the current layout.
 

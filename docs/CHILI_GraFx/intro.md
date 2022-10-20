@@ -16,19 +16,23 @@ The platform hosts applications for you to build a powerful creative automation 
 
 ![svg_icon](/assets/CHILI_publisher_RGB.svg)
 
-Create smart templates to allow your customers to serve print and static digital output.
+Create smart templates to allow your customers to serve print and **static digital output**.
+
+[See GraFx publisher documentation](/GraFx_publisher/intro/)
+
+---
 
 ![svg_icon](/assets/CHILI_LOGOS_OK-09.svg)
 
-Create smart templates to allow your customers to serve mainly print output
+Create smart templates to allow your customers to serve **digital (static and animated) output**.
 
-[See GraFx publisher documentation](/GraFx_publisher/intro/)
+[See GraFx Studio documentation](/GraFx_studio/intro/)
 
 ### Resource Providers
 
 ![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-11.svg)
 
-Repository for your digital assets to be used in GraFx publisher and GraFx studio
+Repository for your digital assets to be used in GraFx Publisher and GraFx Studio
 
 [See GraFx Media documentation](/GraFx_media/intro/)
 
@@ -36,7 +40,7 @@ Repository for your digital assets to be used in GraFx publisher and GraFx studi
 
 ![svg_icon](/assets/CHILI_LOGOS_OK-07.svg)
 
-Repository for your digital fonts to be used in GraFx Publisher and GraFx Studio.
+Repository for your brand's fonts to be used in GraFx Publisher and GraFx Studio.
 
 [See GraFx Fonts documentation](/GraFx_fonts/intro/)
 

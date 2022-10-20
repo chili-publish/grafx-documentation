@@ -19,6 +19,8 @@ plugins:
   - awesome-pages
   - tags:
       tags_file: tags.md
+#  - git-revision-date-localized:
+#      fallback_to_build_date: true
 
 markdown_extensions:
   - admonition
@@ -59,8 +61,8 @@ nav:
                 - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
             - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
             - 'Environments' :                  'CHILI_GraFx/environments.md'
-        - 'Application overview':
-            - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
+#        - 'Application overview':
+#            - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
         - 'How to':
             - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
         - 'Integrate CHILI GraFx':
@@ -68,12 +70,12 @@ nav:
         - 'Platform API reference' :            
             - 'Overview':                       'CHILI_GraFx/platform_api/overview.md'
             - ... | flat | CHILI_GraFx/platform_api/classes/**
+        - 'Environment API reference':
+            - 'Overview':                       'CHILI_GraFx/environment_api/overview.md'
+            - ... | flat | CHILI_GraFx/environment_api/classes/**
 
-        - 'Release notes':
-            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
-            - '2022.01' :                       'CHILI_GraFx/releasenotes/202201.md'
-    - 'GraFx Publisher':
-        - 'Introduction':                       'GraFx_publisher/intro.md'
+#       - 'Release notes':
+#            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_studio/intro.md'
         - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
@@ -86,8 +88,8 @@ nav:
             - 'Properties panel':               'GraFx_studio/properties.md'
             - 'Export':                         'GraFx_studio/export.md'
             - 'Bottom Quick Tools':             'GraFx_studio/bottomquicktools.md'
-            - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
-            - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
+#            - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
+#            - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
             - 'Properties':                     'GraFx_studio/properties.md'
             - 'Animation':                      'GraFx_studio/animation.md'
             - 'Layouts':                        'GraFx_studio/layouts.md'
@@ -95,17 +97,17 @@ nav:
             - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
-            - 'Alternate Layouts':              'GraFx_studio/concept/alternate_layouts.md'
+            - 'Layouts':                        'GraFx_studio/concept/layouts.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
             - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
         - 'How to: Design documents'    :
-            - 'Create Alternate Layouts':       'GraFx_studio/how_to/alternate_layouts.md'
+            - 'Create Layouts':                 'GraFx_studio/how_to/layouts.md'
             - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
-        - 'How to: Extend GraFx studio':
-            - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
-            - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
+#        - 'How to: Extend GraFx studio':
+#            - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
+#            - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
         - 'How to: Output':
-            - 'Settings':                       'GraFx_studio/how_to/output_settings.md'
+#            - 'Settings':                       'GraFx_studio/how_to/output_settings.md'
             - 'MP4':                            'GraFx_studio/how_to/mp4_output.md'
             - 'GIF':                            'GraFx_studio/how_to/gif_output.md'
         - 'Integrate GraFx studio':
@@ -118,27 +120,32 @@ nav:
         - 'SDK reference':
             - Overview:                         'GraFx_studio/sdk/README.md'
             - ... | flat | GraFx_studio/sdk/**
-        - 'Environment API':                    'GraFx_devcenter/environment_api/overview/'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
+#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
+#        - 'Release notes':
+#            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
+        - 'Early Access':
+            - 'Workspace Release notes':        'GraFx_studio/early_access/releasenotes.md'
+            - 'Getting Started':                'GraFx_studio/early_access/gettingstarted.md'
+    - 'GraFx Publisher':
+        - 'Introduction':                       'GraFx_publisher/intro.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_media/intro.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_media/releasenotes/latest.md'
-        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
+#        - 'Release notes':
+#            - 'Latest':                         'GraFx_media/releasenotes/latest.md'
+#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx_fonts/intro.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
-        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
+#        - 'Release notes':
+#            - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
+#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx_stylekits/intro.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
-        - 'Environment API':                    'GraFx_devcenter/environment_api/overview.md'
+#        - 'Release notes':
+#            - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
+#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'On-prem':
         - 'Introduction':                       'on-premise/intro.md'
@@ -146,16 +153,10 @@ nav:
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
 
     - 'Solutions':
-        - 'Multiple adds in Real Estate':   'solutions/realestate.md'
-        - 'Generating variants in Adds':    'solutions/addvariants.md'
+        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
 
     - 'Developer center':                       
         - 'Overview':                           'GraFx_devcenter/overview.md'
-        - 'Platform API reference' :            'CHILI_GraFx/platform_api/api_reference/'
-        - 'Environment API':                    
-            - Overview:                         'GraFx_devcenter/environment_api/overview.md'
-            - ... | flat | GraFx_devcenter/environment_api/**
-        
-    - 'Tag Index':                              'tags.md'
-    - 'Hello':                                  'tags.md'
+        - 'Platform API reference' :            '/CHILI_GraFx/platform_api/overview/'
+        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
