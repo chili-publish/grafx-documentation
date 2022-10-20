@@ -31,6 +31,8 @@ npm install @chili-publish/editor-sdk
 
 The SDK is open sourced, you can find the [codebase here](https://github.com/chili-publish/editor-sdk){target="_blank"}.
 
+Connectors
+
 ## I want to: Check out the new features
 
 Targeted for **Template designers**
