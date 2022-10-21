@@ -35,7 +35,12 @@ Or you can use NPM to install a specific SDK version, with the following command
 npm install @chili-publish/editor-sdk
 ```
 
+### Debug panel
+
+On the top left of the editor canvas there is a button to open the debug panel. This panel shows a log of all interactions with the editor engine. This can help while building your integration.
+
 ### GraFx Connector
+
 With a GraFx Connector you can connect GraFx Studio to a resource provider. We prepared a [GraFx Connector template](https://github.com/chili-publish/grafx-connector-template) that you can use to create a custom connector to connect with your DAM system or to add hardcoded image URLs. This way you can assign your own assets to image frames in GraFx Studio.
 
 ## I want to: Check out the new features
