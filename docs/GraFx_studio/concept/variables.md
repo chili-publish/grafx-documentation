@@ -1,8 +1,3 @@
----
-tags:
-  - unfinished
----
-
 # Variables
 
 !!! Info
