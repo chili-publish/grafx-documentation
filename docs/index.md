@@ -1,4 +1,4 @@
-# CHILI publish Guides
+# CHILI GraFx Guides
 
 ![Home](https://chilipublishdocs.imgix.net/home/home3.png?w=830&q=80)
 
@@ -7,7 +7,7 @@ Explore our guides and examples to let you create and integrate smart templates 
 A toolset to create your platform for 
 
 - Creative automation 
-- CDO - Creative Danymic Optimization
-- IA - Intelligent automation
+- CDO - Creative Dynamic Optimization
+- IA - Intelligent Automation
 - Marketing variation creation
 - On brand visual communication

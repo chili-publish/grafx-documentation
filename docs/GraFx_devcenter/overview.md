@@ -3,7 +3,7 @@
 Server side, you have access to 2 API's with endpoints.
 
 - [Platform API](/CHILI_GraFx/platform_api/overview/)
-- [Environment API](/GraFx_devcenter/environment_api/overview/)
+- [Environment API](/CHILI_GraFx/environment_api/overview/)
 
 Client side
 
@@ -23,7 +23,7 @@ The API contains functions related to several apps.
 
 | Ust this API	   	   	    | for this App |
 |-------------------|-------------|
-| Platform API  	| CHILI GraFx |
+| Platform API  	| CHILI GraFx (platform)|
 | Environment API	| GraFx Studio |
 | Environment API	| GraFx Media |
 | Environment API	| GraFx Fonts |
@@ -43,19 +43,18 @@ Error codes
 | 500		     	| Server dead   |
 | 404		     	| Function not found   |
 
-
 # Overview per application
 
 ## CHILI GraFx
 
 - [Getting Started](/CHILI_GraFx/integration/getting_started/)
-- [Platform API](CHILI_GraFx/platform_api/api_reference.md)
+- [Platform API](/CHILI_GraFx/platform_api/overview/)
 
 ## GraFx Studio
 
 - [SDK Getting Started](/GraFx_studio/integration/getting_started/)		
 - [SDK Reference](/GraFx_studio/sdk/)
-- [Environment API](/GraFx_devcenter/environment_api/overview)
+- [Environment API](/CHILI_GraFx/environment_api/overview/)
 
 ## GraFx publisher
 
