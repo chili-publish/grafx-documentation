@@ -1,13 +1,11 @@
-# CHILI GraFx Guides
+# CHILI GraFx
 
-![Home](https://chilipublishdocs.imgix.net/home/home3.png?w=830&q=80)
+CHILI GraFx platform centralizes your account information, users, resources and documents.
 
-Explore our guides and examples to let you create and integrate smart templates into your applications.
+- Get access
+- Configure your account
+- Add your first environment
+- Add media
+- Start creating your first template
 
-A toolset to create your platform for 
-
-- Creative automation 
-- CDO - Creative Dynamic Optimization
-- IA - Intelligent Automation
-- Marketing variation creation
-- On brand visual communication
+The platform hosts applications for you to build a powerful creative automation application.

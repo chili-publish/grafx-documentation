@@ -46,7 +46,6 @@ extra_css:
   - stylesheets/extra.css  
 
 nav:
-    - Home: 'index.md'
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI_GraFx/intro.md'
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
