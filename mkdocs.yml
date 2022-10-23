@@ -97,6 +97,7 @@ nav:
             - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
+            - 'Frames':                         'GraFx_studio/concept/frames.md'
             - 'Layouts':                        'GraFx_studio/concept/layouts.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
             - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
