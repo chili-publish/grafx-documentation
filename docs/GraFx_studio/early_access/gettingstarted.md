@@ -8,13 +8,13 @@ The Early Access phase started in February 2022, and ends with the release of Gr
 
 ## I want to: Integrate the editor
 
-Targeted for: **Software engineers, integrators**
+Targeted for **software engineers, integrators**
 
 I am a developer, and I'm looking for the resources where to start, and how to integrate the editor.
 
 ### SDK
 
-To integrate GraFx Studio you will make use of the editor SDK. This SDK dynamically loads the editor engine en can be integrated in a custom application.
+To integrate GraFx Studio you will make use of the editor SDK. This SDK dynamically loads the editor engine and can be integrated in a custom application.
 
 We have an [SDK reference documentation](/GraFx_studio/sdk/){target="_blank"} and the [SDK codebase](https://github.com/chili-publish/editor-sdk){target="_blank"} is open sourced.
 
@@ -41,7 +41,7 @@ On the top left of the editor canvas there is a button to open the debug panel. 
 
 ### GraFx Connector
 
-With a GraFx Connector you can connect GraFx Studio to a resource provider. We prepared a [GraFx Connector template](https://github.com/chili-publish/grafx-connector-template) that you can use to create a custom connector to connect with your DAM system or to add hardcoded image URLs. This way you can assign your own assets to image frames in GraFx Studio.
+With a GraFx Connector you can connect GraFx Studio to a resource provider. We prepared a [GraFx Connector template](https://github.com/chili-publish/grafx-connector-template){target="_blank"} that you can use to create a custom connector to connect with your DAM system or to add hardcoded image URLs. This way you can assign your own assets to image frames in GraFx Studio.
 
 ## I want to: Check out the new features
 
