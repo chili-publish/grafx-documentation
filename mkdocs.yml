@@ -46,7 +46,6 @@ extra_css:
   - stylesheets/extra.css  
 
 nav:
-    - Home: 'index.md'
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI_GraFx/intro.md'
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
@@ -97,12 +96,17 @@ nav:
             - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
+            - 'Frames':                         'GraFx_studio/concept/frames.md'
             - 'Layouts':                        'GraFx_studio/concept/layouts.md'
+            - 'Variables':                      'GraFx_studio/concept/variables.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
             - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
         - 'How to: Design documents'    :
             - 'Create Layouts':                 'GraFx_studio/how_to/layouts.md'
             - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
+            - 'Define variables':               'GraFx_studio/how_to/define_variables.md'
+            - 'Organize variables':             'GraFx_studio/how_to/organize_variables.md'
+            - 'Add variables to document':      'GraFx_studio/how_to/variables.md'
 #        - 'How to: Extend GraFx studio':
 #            - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
 #            - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
@@ -128,6 +132,16 @@ nav:
             - 'Getting Started':                'GraFx_studio/early_access/gettingstarted.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx_publisher/intro.md'
+
+    - 'GraFx Publisher':
+        - 'Introduction':                       'GraFx_publisher/intro.md'
+        - 'The manual':                         'GraFx_publisher/manual.md'
+        - 'Integration':                        'GraFx_publisher/integration.md'
+        - 'Knowledge Base':
+            - 'Smarter Templates':              'GraFx_publisher/smarter_templates.md'
+        - 'Release notes':
+            - 'Latest':                         'GraFx_publisher/releasenotes/latest.md'
+            - 'GraFX publisher 2022':           'GraFx_publisher/releasenotes/2022.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_media/intro.md'

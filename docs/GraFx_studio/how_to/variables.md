@@ -28,4 +28,3 @@ To assign a variable to an image frame, select the frame and select the variable
 The menu shows the variables that can be assigned to an image frame (only image variables). 
 
 The menu also shows [None] as an item to remove the variable again from the frame.
-
