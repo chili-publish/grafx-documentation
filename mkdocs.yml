@@ -97,10 +97,12 @@ nav:
         - 'Concepts':
             - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
             - 'Frames':                         'GraFx_studio/concept/frames.md'
+            - 'Layers':                         'GraFx_studio/concept/layers.md'
             - 'Layouts':                        'GraFx_studio/concept/layouts.md'
             - 'Variables':                      'GraFx_studio/concept/variables.md'
             - 'Animation':                      'GraFx_studio/concept/animation.md'
             - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
+            - 'Shortcuts':                      'GraFx_studio/concept/shortcuts.md'
         - 'How to: Design documents'    :
             - 'Create Layouts':                 'GraFx_studio/how_to/layouts.md'
             - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
