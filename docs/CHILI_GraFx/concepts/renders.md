@@ -21,7 +21,7 @@ When these routines are called, a render is counted. Depending on the type of ou
 
 This average is used to size your allowance in your contract.
 
-## Examples
+## Examples (Work in Progress)
 
 ### Static Digital Output
 
