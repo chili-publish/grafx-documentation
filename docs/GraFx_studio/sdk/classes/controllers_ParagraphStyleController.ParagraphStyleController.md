@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/ParagraphStyleController](../modules/controllers_ParagraphStyleController.md) / ParagraphStyleController
+
 # Class: ParagraphStyleController
 
-[controllers/ParagraphStyleController](../modules/controllers_ParagraphStyleController.md).ParagraphStyleController
+[src/controllers/ParagraphStyleController](../modules/controllers_ParagraphStyleController.md).ParagraphStyleController
 
 The ParagraphStyleController is responsible for all communication regarding paragraph styles.
 Methods inside this controller can be called by `window.SDK.paragraphStyle.{method-name}`
@@ -22,25 +24,25 @@ Methods inside this controller can be called by `window.SDK.paragraphStyle.{meth
 
 ### createParagraphStyle
 
-▸ **createParagraphStyle**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **createParagraphStyle**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 This method create a new paragraph style
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 the new created paragraph style id
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:44](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L44)
+[src/controllers/ParagraphStyleController.ts:47](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L47)
 
 ___
 
 ### duplicateParagraphStyle
 
-▸ **duplicateParagraphStyle**(`paragraphStyleId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **duplicateParagraphStyle**(`paragraphStyleId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 This method duplicates a paragraph style
 
@@ -52,19 +54,19 @@ This method duplicates a paragraph style
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 the new paragraph style id
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L54)
+[src/controllers/ParagraphStyleController.ts:57](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L57)
 
 ___
 
 ### getParagraphStyleById
 
-▸ **getParagraphStyleById**(`paragraphStyleId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getParagraphStyleById**(`paragraphStyleId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`ParagraphStyle`](../modules/src.md#paragraphstyle)\>\>
 
 This method returns a paragraph style by id
 
@@ -76,33 +78,33 @@ This method returns a paragraph style by id
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`ParagraphStyle`](../modules/src.md#paragraphstyle)\>\>
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:35](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L35)
+[src/controllers/ParagraphStyleController.ts:36](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L36)
 
 ___
 
 ### getParagraphStyles
 
-▸ **getParagraphStyles**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getParagraphStyles**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`ParagraphStyle`](../modules/src.md#paragraphstyle)[]\>\>
 
 This method returns the list of paragraph styles
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`ParagraphStyle`](../modules/src.md#paragraphstyle)[]\>\>
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L25)
+[src/controllers/ParagraphStyleController.ts:26](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L26)
 
 ___
 
 ### moveParagraphStyles
 
-▸ **moveParagraphStyles**(`order`, `paragraphStyleIds`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **moveParagraphStyles**(`order`, `paragraphStyleIds`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method changes positions of paragraph styles
 
@@ -115,17 +117,17 @@ This method changes positions of paragraph styles
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:97](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L97)
+[src/controllers/ParagraphStyleController.ts:102](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L102)
 
 ___
 
 ### removeParagraphStyle
 
-▸ **removeParagraphStyle**(`id`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **removeParagraphStyle**(`id`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method removes a paragraph style
 
@@ -137,17 +139,17 @@ This method removes a paragraph style
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:86](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L86)
+[src/controllers/ParagraphStyleController.ts:91](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L91)
 
 ___
 
 ### renameParagraphStyle
 
-▸ **renameParagraphStyle**(`id`, `name`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **renameParagraphStyle**(`id`, `name`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method renames a paragraph style
 
@@ -160,17 +162,17 @@ This method renames a paragraph style
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:76](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L76)
+[src/controllers/ParagraphStyleController.ts:81](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L81)
 
 ___
 
 ### updateParagraphStyle
 
-▸ **updateParagraphStyle**(`id`, `paragraphStyle`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **updateParagraphStyle**(`id`, `paragraphStyle`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method updates a paragraph style
 
@@ -179,12 +181,12 @@ This method updates a paragraph style
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | The ID of a specific paragraph style |
-| `paragraphStyle` | [`ParagraphStyleUpdate`](../modules/index.md#paragraphstyleupdate) | The new paragraph style properties |
+| `paragraphStyle` | [`ParagraphStyleUpdate`](../modules/src.md#paragraphstyleupdate) | The new paragraph style properties |
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ParagraphStyleController.ts:65](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ParagraphStyleController.ts#L65)
+[src/controllers/ParagraphStyleController.ts:68](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ParagraphStyleController.ts#L68)

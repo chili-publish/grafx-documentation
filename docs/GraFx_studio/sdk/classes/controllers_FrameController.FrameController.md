@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/FrameController](../modules/controllers_FrameController.md) / FrameController
+
 # Class: FrameController
 
-[controllers/FrameController](../modules/controllers_FrameController.md).FrameController
+[src/controllers/FrameController](../modules/controllers_FrameController.md).FrameController
 
 The FrameController is responsible for all communication regarding Frames.
 Methods inside this controller can be called by `window.SDK.frame.{method-name}`
@@ -9,6 +11,7 @@ Methods inside this controller can be called by `window.SDK.frame.{method-name}`
 
 ### Methods
 
+- [addFrame](controllers_FrameController.FrameController.md#addframe)
 - [getFrameById](controllers_FrameController.FrameController.md#getframebyid)
 - [getFrameByName](controllers_FrameController.FrameController.md#getframebyname)
 - [getFramePropertiesByFrameId](controllers_FrameController.FrameController.md#getframepropertiesbyframeid)
@@ -34,12 +37,44 @@ Methods inside this controller can be called by `window.SDK.frame.{method-name}`
 - [setFrameWidth](controllers_FrameController.FrameController.md#setframewidth)
 - [setFrameX](controllers_FrameController.FrameController.md#setframex)
 - [setFrameY](controllers_FrameController.FrameController.md#setframey)
+- [setImageFrameFitMode](controllers_FrameController.FrameController.md#setimageframefitmode)
+- [setImageFromConnector](controllers_FrameController.FrameController.md#setimagefromconnector)
+- [setVerticalAlignment](controllers_FrameController.FrameController.md#setverticalalignment)
 
 ## Methods
 
+### addFrame
+
+▸ **addFrame**(`frameType`, `x`, `y`, `width`, `height`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>\>
+
+This method will add a new frame of 'frameType' to the template positioned on the requested
+coordinates.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `frameType` | [`FrameTypeEnum`](../enums/src.FrameTypeEnum.md) | The type of frame to create |
+| `x` | `number` | X coordinate of the new frame within the template |
+| `y` | `number` | Y coordinate of the new frame within the template |
+| `width` | `number` | Width of the new frame within the template |
+| `height` | `number` | Height of the new frame within the template |
+
+#### Returns
+
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>\>
+
+The newly created frame's ID
+
+#### Defined in
+
+[src/controllers/FrameController.ts:326](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L326)
+
+___
+
 ### getFrameById
 
-▸ **getFrameById**(`id`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFrameById**(`id`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)\>\>
 
 This method returns a frame by its id
 
@@ -51,17 +86,17 @@ This method returns a frame by its id
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:64](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L64)
+[src/controllers/FrameController.ts:66](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L66)
 
 ___
 
 ### getFrameByName
 
-▸ **getFrameByName**(`name`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFrameByName**(`name`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)\>\>
 
 This method returns a frame by its name
 
@@ -73,17 +108,17 @@ This method returns a frame by its name
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L54)
+[src/controllers/FrameController.ts:56](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L56)
 
 ___
 
 ### getFramePropertiesByFrameId
 
-▸ **getFramePropertiesByFrameId**(`frameId`, `layoutId?`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFramePropertiesByFrameId**(`frameId`, `layoutId?`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameLayoutType`](../modules/src.md#framelayouttype)\>\>
 
 This method returns frame properties for a given frame and layout
 
@@ -96,49 +131,49 @@ This method returns frame properties for a given frame and layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameLayoutType`](../modules/src.md#framelayouttype)\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:84](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L84)
+[src/controllers/FrameController.ts:88](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L88)
 
 ___
 
 ### getFramePropertiesOnSelectedLayout
 
-▸ **getFramePropertiesOnSelectedLayout**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFramePropertiesOnSelectedLayout**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameLayoutType`](../modules/src.md#framelayouttype)[]\>\>
 
 This method returns all frame properties on current layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameLayoutType`](../modules/src.md#framelayouttype)[]\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:73](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L73)
+[src/controllers/FrameController.ts:75](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L75)
 
 ___
 
 ### getFrames
 
-▸ **getFrames**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFrames**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)[]\>\>
 
 This method returns the list of frames
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)[]\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L25)
+[src/controllers/FrameController.ts:27](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L27)
 
 ___
 
 ### getFramesByPageId
 
-▸ **getFramesByPageId**(`pageId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFramesByPageId**(`pageId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)[]\>\>
 
 This method returns the list of frames by pageId
 
@@ -150,17 +185,17 @@ This method returns the list of frames by pageId
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)[]\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:44](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L44)
+[src/controllers/FrameController.ts:46](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L46)
 
 ___
 
 ### getFramesProperties
 
-▸ **getFramesProperties**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getFramesProperties**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameLayoutType`](../modules/src.md#framelayouttype)[]\>\>
 
 This method returns frame properties for a given layout
 
@@ -172,33 +207,33 @@ This method returns frame properties for a given layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameLayoutType`](../modules/src.md#framelayouttype)[]\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:94](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L94)
+[src/controllers/FrameController.ts:100](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L100)
 
 ___
 
 ### getSelectedFrames
 
-▸ **getSelectedFrames**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getSelectedFrames**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)[]\>\>
 
 This method returns the list of selected frames
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameType`](../modules/src.md#frametype)[]\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:34](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L34)
+[src/controllers/FrameController.ts:36](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L36)
 
 ___
 
 ### removeFrame
 
-▸ **removeFrame**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **removeFrame**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will remove a specific frame using the Id.
 
@@ -210,17 +245,17 @@ This method will remove a specific frame using the Id.
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:296](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L296)
+[src/controllers/FrameController.ts:312](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L312)
 
 ___
 
 ### resetFrame
 
-▸ **resetFrame**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrame**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset properties of a specific frame to their original values
 
@@ -232,17 +267,17 @@ This method will reset properties of a specific frame to their original values
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:226](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L226)
+[src/controllers/FrameController.ts:242](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L242)
 
 ___
 
 ### resetFrameHeight
 
-▸ **resetFrameHeight**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameHeight**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the height of a specific frame to its original value
 
@@ -254,17 +289,17 @@ This method will reset the height of a specific frame to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:275](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L275)
+[src/controllers/FrameController.ts:291](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L291)
 
 ___
 
 ### resetFrameRotation
 
-▸ **resetFrameRotation**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameRotation**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the rotation value of a specific frame to its original value
 
@@ -276,17 +311,17 @@ This method will reset the rotation value of a specific frame to its original va
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:255](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L255)
+[src/controllers/FrameController.ts:271](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L271)
 
 ___
 
 ### resetFrameSize
 
-▸ **resetFrameSize**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameSize**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the frame size (width and height) to the frame's original value
 
@@ -298,17 +333,17 @@ This method will reset the frame size (width and height) to the frame's original
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:104](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L104)
+[src/controllers/FrameController.ts:110](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L110)
 
 ___
 
 ### resetFrameWidth
 
-▸ **resetFrameWidth**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameWidth**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the width of a specific frame to its original value
 
@@ -320,17 +355,17 @@ This method will reset the width of a specific frame to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:265](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L265)
+[src/controllers/FrameController.ts:281](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L281)
 
 ___
 
 ### resetFrameX
 
-▸ **resetFrameX**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameX**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the x value of a specific frame to its original value
 
@@ -342,17 +377,17 @@ This method will reset the x value of a specific frame to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:235](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L235)
+[src/controllers/FrameController.ts:251](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L251)
 
 ___
 
 ### resetFrameY
 
-▸ **resetFrameY**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameY**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the y value of a specific frame to its original value
 
@@ -364,17 +399,17 @@ This method will reset the y value of a specific frame to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:245](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L245)
+[src/controllers/FrameController.ts:261](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L261)
 
 ___
 
 ### selectFrame
 
-▸ **selectFrame**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **selectFrame**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will select a specific frame
 
@@ -386,17 +421,17 @@ This method will select a specific frame
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:114](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L114)
+[src/controllers/FrameController.ts:120](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L120)
 
 ___
 
 ### selectMultipleFrames
 
-▸ **selectMultipleFrames**(`frameIds`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **selectMultipleFrames**(`frameIds`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will select multipleFrames
 
@@ -408,17 +443,17 @@ This method will select multipleFrames
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:124](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L124)
+[src/controllers/FrameController.ts:130](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L130)
 
 ___
 
 ### setFrameHeight
 
-▸ **setFrameHeight**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameHeight**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the height of a specific frame
 
@@ -431,17 +466,17 @@ This method will set the height of a specific frame
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:135](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L135)
+[src/controllers/FrameController.ts:141](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L141)
 
 ___
 
 ### setFrameName
 
-▸ **setFrameName**(`frameId`, `frameName`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameName**(`frameId`, `frameName`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will update the name of a specific frame
 
@@ -454,17 +489,17 @@ This method will update the name of a specific frame
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:216](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L216)
+[src/controllers/FrameController.ts:232](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L232)
 
 ___
 
 ### setFrameRotation
 
-▸ **setFrameRotation**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameRotation**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the rotation angle of a specific frame
 
@@ -477,17 +512,17 @@ This method will set the rotation angle of a specific frame
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:151](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L151)
+[src/controllers/FrameController.ts:159](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L159)
 
 ___
 
 ### setFrameVisibility
 
-▸ **setFrameVisibility**(`frameId`, `value`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameVisibility**(`frameId`, `value`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the visibility property of a specified frame. If set to false the frame will be invisible and vice versa.
 
@@ -500,17 +535,17 @@ This method will set the visibility property of a specified frame. If set to fal
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:286](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L286)
+[src/controllers/FrameController.ts:302](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L302)
 
 ___
 
 ### setFrameWidth
 
-▸ **setFrameWidth**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameWidth**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the width of a specific frame
 
@@ -523,17 +558,17 @@ This method will set the width of a specific frame
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:167](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L167)
+[src/controllers/FrameController.ts:177](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L177)
 
 ___
 
 ### setFrameX
 
-▸ **setFrameX**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameX**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the x value of a specific frame
 
@@ -546,17 +581,17 @@ This method will set the x value of a specific frame
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:183](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L183)
+[src/controllers/FrameController.ts:195](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L195)
 
 ___
 
 ### setFrameY
 
-▸ **setFrameY**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameY**(`frameId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the y value of a specific frame
 
@@ -569,8 +604,78 @@ This method will set the y value of a specific frame
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/FrameController.ts:199](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/FrameController.ts#L199)
+[src/controllers/FrameController.ts:213](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L213)
+
+___
+
+### setImageFrameFitMode
+
+▸ **setImageFrameFitMode**(`imageFrameId`, `fitMode`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
+
+This method will set the fitMode property of a specified image frame.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `imageFrameId` | `number` | The ID of the imageFrame that needs to get updated. |
+| `fitMode` | [`FitMode`](../enums/src.FitMode.md) | The new fitMode that you want to set to the imageFrame. |
+
+#### Returns
+
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
+
+#### Defined in
+
+[src/controllers/FrameController.ts:351](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L351)
+
+___
+
+### setImageFromConnector
+
+▸ **setImageFromConnector**(`imageFrameId`, `connectorId`, `resourceId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
+
+This method will assign an image from a mediaConnector to the correct imageFrame
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `imageFrameId` | `number` | The ID of the imageFrame where an image needs to be assigned to |
+| `connectorId` | `string` | Unique Id of the media connector |
+| `resourceId` | `string` | Unique Id of the asset that you want to assign to the imageFrame |
+
+#### Returns
+
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
+
+#### Defined in
+
+[src/controllers/FrameController.ts:338](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L338)
+
+___
+
+### setVerticalAlignment
+
+▸ **setVerticalAlignment**(`frameId`, `verticalAlign`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
+
+This method will set the vertical alignment property of a specified frame.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `frameId` | `number` | The ID of the frame that needs to get updated |
+| `verticalAlign` | [`VerticalAlign`](../enums/src.VerticalAlign.md) | The new vertical alignment to be set to the frame. |
+
+#### Returns
+
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
+
+#### Defined in
+
+[src/controllers/FrameController.ts:362](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/FrameController.ts#L362)

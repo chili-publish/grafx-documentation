@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/VariableController](../modules/controllers_VariableController.md) / VariableController
+
 # Class: VariableController
 
-[controllers/VariableController](../modules/controllers_VariableController.md).VariableController
+[src/controllers/VariableController](../modules/controllers_VariableController.md).VariableController
 
 The VariableController is responsible for all communication regarding the variables.
 Methods inside this controller can be called by `window.SDK.variable.{method-name}`
@@ -32,7 +34,7 @@ Methods inside this controller can be called by `window.SDK.variable.{method-nam
 
 ### addVariable
 
-▸ **addVariable**(`parentId`, `variableType`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **addVariable**(`parentId`, `variableType`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 This method adds a new variable
 
@@ -41,23 +43,23 @@ This method adds a new variable
 | Name | Type |
 | :------ | :------ |
 | `parentId` | `string` |
-| `variableType` | [`VariableType`](../enums/index.VariableType.md) |
+| `variableType` | [`VariableType`](../enums/src.VariableType.md) |
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 The new created variable id
 
 #### Defined in
 
-[src/controllers/VariableController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L54)
+[src/controllers/VariableController.ts:55](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L55)
 
 ___
 
 ### duplicateVariable
 
-▸ **duplicateVariable**(`variableId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **duplicateVariable**(`variableId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 This method creates a copy of a variable
 
@@ -69,17 +71,17 @@ This method creates a copy of a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:117](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L117)
+[src/controllers/VariableController.ts:118](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L118)
 
 ___
 
 ### getVariableById
 
-▸ **getVariableById**(`variableId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getVariableById**(`variableId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`Variable`](../modules/src.md#variable)\>\>
 
 This method returns a variable by id
 
@@ -91,17 +93,17 @@ This method returns a variable by id
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`Variable`](../modules/src.md#variable)\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:35](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L35)
+[src/controllers/VariableController.ts:36](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L36)
 
 ___
 
 ### getVariableByName
 
-▸ **getVariableByName**(`variableName`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getVariableByName**(`variableName`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`Variable`](../modules/src.md#variable)\>\>
 
 This method returns a variable by name
 
@@ -113,33 +115,33 @@ This method returns a variable by name
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`Variable`](../modules/src.md#variable)\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:45](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L45)
+[src/controllers/VariableController.ts:46](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L46)
 
 ___
 
 ### getVariables
 
-▸ **getVariables**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getVariables**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`Variable`](../modules/src.md#variable)[]\>\>
 
 This method returns the list of variables
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`Variable`](../modules/src.md#variable)[]\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L25)
+[src/controllers/VariableController.ts:26](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L26)
 
 ___
 
 ### groupVariables
 
-▸ **groupVariables**(`groupName`, `variableIds`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **groupVariables**(`groupName`, `variableIds`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 This method aggregates the provided variables into a new group
 
@@ -152,17 +154,17 @@ This method aggregates the provided variables into a new group
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`string`\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:126](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L126)
+[src/controllers/VariableController.ts:127](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L127)
 
 ___
 
 ### moveVariable
 
-▸ **moveVariable**(`variableId`, `parentId`, `orderIndex`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **moveVariable**(`variableId`, `parentId`, `orderIndex`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method moves a variable's position
 
@@ -176,17 +178,17 @@ This method moves a variable's position
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:144](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L144)
+[src/controllers/VariableController.ts:145](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L145)
 
 ___
 
 ### moveVariables
 
-▸ **moveVariables**(`movedVariables`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **moveVariables**(`movedVariables`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method changes positions of variables
 
@@ -194,21 +196,21 @@ This method changes positions of variables
 
 | Name | Type |
 | :------ | :------ |
-| `movedVariables` | [`VariableMoves`](../modules/index.md#variablemoves) |
+| `movedVariables` | [`VariableMoves`](../modules/src.md#variablemoves) |
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:153](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L153)
+[src/controllers/VariableController.ts:154](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L154)
 
 ___
 
 ### removeVariables
 
-▸ **removeVariables**(`variableIds`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **removeVariables**(`variableIds`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method removes a list of variables
 
@@ -220,17 +222,17 @@ This method removes a list of variables
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:63](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L63)
+[src/controllers/VariableController.ts:64](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L64)
 
 ___
 
 ### setDefaultVariableValue
 
-▸ **setDefaultVariableValue**(`variableId`, `value`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setDefaultVariableValue**(`variableId`, `value`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets a new value for a variable
 
@@ -243,17 +245,17 @@ This method sets a new value for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:99](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L99)
+[src/controllers/VariableController.ts:100](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L100)
 
 ___
 
 ### setVariableIsHidden
 
-▸ **setVariableIsHidden**(`variableId`, `isHidden`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableIsHidden**(`variableId`, `isHidden`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets isHidden flag for a variable
 
@@ -266,17 +268,17 @@ This method sets isHidden flag for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:162](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L162)
+[src/controllers/VariableController.ts:165](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L165)
 
 ___
 
 ### setVariableIsReadonly
 
-▸ **setVariableIsReadonly**(`variableId`, `isReadonly`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableIsReadonly**(`variableId`, `isReadonly`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets isReadonly flag for a variable
 
@@ -289,17 +291,17 @@ This method sets isReadonly flag for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:180](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L180)
+[src/controllers/VariableController.ts:183](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L183)
 
 ___
 
 ### setVariableIsRequired
 
-▸ **setVariableIsRequired**(`variableId`, `isRequired`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableIsRequired**(`variableId`, `isRequired`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets isRequired flag for a variable
 
@@ -312,17 +314,17 @@ This method sets isRequired flag for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:171](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L171)
+[src/controllers/VariableController.ts:174](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L174)
 
 ___
 
 ### setVariableLabel
 
-▸ **setVariableLabel**(`variableId`, `label`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableLabel**(`variableId`, `label`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets a new label for a variable
 
@@ -335,17 +337,17 @@ This method sets a new label for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:81](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L81)
+[src/controllers/VariableController.ts:82](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L82)
 
 ___
 
 ### setVariableName
 
-▸ **setVariableName**(`variableId`, `name`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableName**(`variableId`, `name`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets a new name for a variable
 
@@ -358,17 +360,17 @@ This method sets a new name for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:72](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L72)
+[src/controllers/VariableController.ts:73](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L73)
 
 ___
 
 ### setVariableType
 
-▸ **setVariableType**(`variableId`, `type`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableType**(`variableId`, `type`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets a new type for a variable
 
@@ -377,21 +379,21 @@ This method sets a new type for a variable
 | Name | Type |
 | :------ | :------ |
 | `variableId` | `string` |
-| `type` | [`VariableType`](../enums/index.VariableType.md) |
+| `type` | [`VariableType`](../enums/src.VariableType.md) |
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:90](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L90)
+[src/controllers/VariableController.ts:91](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L91)
 
 ___
 
 ### setVariableValue
 
-▸ **setVariableValue**(`variableId`, `value`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setVariableValue**(`variableId`, `value`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets a new value for a variable
 
@@ -404,17 +406,17 @@ This method sets a new value for a variable
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:108](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L108)
+[src/controllers/VariableController.ts:109](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L109)
 
 ___
 
 ### ungroupVariable
 
-▸ **ungroupVariable**(`groupId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **ungroupVariable**(`groupId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method dissolves the specified group
 
@@ -426,8 +428,8 @@ This method dissolves the specified group
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/VariableController.ts:135](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/VariableController.ts#L135)
+[src/controllers/VariableController.ts:136](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/VariableController.ts#L136)

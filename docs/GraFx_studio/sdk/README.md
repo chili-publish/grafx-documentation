@@ -1,26 +1,15 @@
-# SDK Documentation
+@chili-publish/editor-sdk / [Modules](modules.md)
 
-Welcome to the SDK documentation, if you want to be absolutely 100% sure that you have the latest and greatest SDK documentation at your hand, we could redirect you to the [Github Pages deployment of our SDK documentation](https://chili-publish.github.io/editor-sdk/index.html), but this one is great as well.
+# editor-sdk
 
-So on these pages you'll find some very technical but super handy descriptions of all the functions available in the controllers, as well as the exported enums and other configuration params.
+![Coverage](https://img.shields.io/badge/coverage-95.56%25-brightgreen.svg)
 
-## Controllers
+[![Build PR](https://github.com/chili-publish/editor-sdk/actions/workflows/pr-build.yml/badge.svg)](https://github.com/chili-publish/editor-sdk/actions/workflows/pr-build.yml) [![Publish Package](https://github.com/chili-publish/editor-sdk/actions/workflows/publish-package.yml/badge.svg)](https://github.com/chili-publish/editor-sdk/actions/workflows/publish-package.yml)
 
--   [AnimationController](classes/controllers_AnimationController.AnimationController.md)
--   [DocumentController](classes/controllers_DocumentController.DocumentController.md)
--   [FrameController](classes/controllers_FrameController.FrameController.md)
--   [LayoutController](classes/controllers_LayoutController.LayoutController.md)
--   [ToolController](classes/controllers_ToolController.ToolController.md)
--   [UtilsController](classes/controllers_UtilsController.UtilsController.md)
--   [VariableController](classes/controllers_VariableController.VariableController.md)
--   [DebugController](classes/controllers_DebugController.DebugController.md)
--   [SubscriberController](classes/controllers_SubscriberController.SubscriberController.md)
--   [PageController](classes/controllers_PageController.PageController.md)
--   [TextStyleController](classes/controllers_TextStyleController.TextStyleController.md)
--   [UndoManagerController](classes/controllers_UndoManagerController.UndoManagerController.md)
--   [ColorStyleController](classes/controllers_ColorStyleController.ColorStyleController.md)
--   [Default methods (SDK)](classes/index.SDK.md)
+This is the Open Source CHILI publisher Editor SDK which will make your life easier when you’re working on and integrating the new CHILI publisher Editor.
 
-## Enums, Types, Interfaces and general Methods
+The project is currently under active development, contributions are welcome in the form of [creating issues](https://github.com/chili-publish/editor-sdk/issues/new/choose) or in the form of actual contributions on the code. See our [CONTRIBUTING.md](https://github.com/chili-publis/editor-sdk/blob/develop/CONTRIBUTING.md) file to get started on your first contribution.
 
-If you want to check out some types, interfaces and general methods, you can find them all bundled [under the modules page](modules).
+## Early Access Program
+
+To integrate and start using the SDK, you will need to be accepted to the Early Access program, reach out to your contact

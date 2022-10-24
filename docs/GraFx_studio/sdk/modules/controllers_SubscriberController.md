@@ -1,4 +1,6 @@
-# Module: controllers/SubscriberController
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / src/controllers/SubscriberController
+
+# Module: src/controllers/SubscriberController
 
 ## Table of contents
 

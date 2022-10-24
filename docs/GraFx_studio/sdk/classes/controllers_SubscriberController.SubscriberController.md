@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/SubscriberController](../modules/controllers_SubscriberController.md) / SubscriberController
+
 # Class: SubscriberController
 
-[controllers/SubscriberController](../modules/controllers_SubscriberController.md).SubscriberController
+[src/controllers/SubscriberController](../modules/controllers_SubscriberController.md).SubscriberController
 
 The SubscriberController is responsible for all listeners which can influence the aplication-state from outside.
 Callbacks inside this controller can be set by `window.SDK.subscriber.{method-name}`
@@ -11,7 +13,9 @@ Callbacks inside this controller can be set by `window.SDK.subscriber.{method-na
 
 - [onAnimationChanged](controllers_SubscriberController.SubscriberController.md#onanimationchanged)
 - [onAnimationPlaybackChanged](controllers_SubscriberController.SubscriberController.md#onanimationplaybackchanged)
+- [onCharacterStylesChanged](controllers_SubscriberController.SubscriberController.md#oncharacterstyleschanged)
 - [onColorsChanged](controllers_SubscriberController.SubscriberController.md#oncolorschanged)
+- [onFontsChanged](controllers_SubscriberController.SubscriberController.md#onfontschanged)
 - [onPageSelectionChanged](controllers_SubscriberController.SubscriberController.md#onpageselectionchanged)
 - [onParagraphStylesChanged](controllers_SubscriberController.SubscriberController.md#onparagraphstyleschanged)
 - [onSelectedFrameContentChanged](controllers_SubscriberController.SubscriberController.md#onselectedframecontentchanged)
@@ -44,7 +48,7 @@ Listener on when a certain animation gets changed
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L25)
+[src/controllers/SubscriberController.ts:25](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L25)
 
 ___
 
@@ -66,7 +70,29 @@ Listener on the playbackstate of the animation, it contains the current time of 
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:34](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L34)
+[src/controllers/SubscriberController.ts:34](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L34)
+
+___
+
+### onCharacterStylesChanged
+
+▸ **onCharacterStylesChanged**(`characterStyles`): `void`
+
+Listener on character styles, if this changes, this listener will get triggered with the updates
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `characterStyles` | `string` | Stringified object of character styles |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/controllers/SubscriberController.ts:150](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L150)
 
 ___
 
@@ -78,9 +104,9 @@ Listener on the state of the currently selected color's styles, if this changes,
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `colors` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `colors` | `string` | Stringified object of colors |
 
 #### Returns
 
@@ -88,7 +114,29 @@ Listener on the state of the currently selected color's styles, if this changes,
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:132](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L132)
+[src/controllers/SubscriberController.ts:132](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L132)
+
+___
+
+### onFontsChanged
+
+▸ **onFontsChanged**(`fonts`): `void`
+
+Listener on fonts, if this changes, this listener will get triggered with the updates
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fonts` | `string` | Stringified object of fonts |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/controllers/SubscriberController.ts:159](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L159)
 
 ___
 
@@ -104,7 +152,7 @@ To be implemented, gets triggered when clicking on the pageTitle on the canvas.
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:78](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L78)
+[src/controllers/SubscriberController.ts:78](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L78)
 
 ___
 
@@ -126,7 +174,7 @@ Listener on paragraph styles, if this changes, this listener will get triggered 
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:141](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L141)
+[src/controllers/SubscriberController.ts:141](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L141)
 
 ___
 
@@ -148,7 +196,7 @@ Listener on the state of the currently selected frame, it contains some basic in
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:61](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L61)
+[src/controllers/SubscriberController.ts:61](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L61)
 
 ___
 
@@ -170,7 +218,7 @@ Listener on the state of the currently selected frame, if this changes, this lis
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:52](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L52)
+[src/controllers/SubscriberController.ts:52](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L52)
 
 ___
 
@@ -192,7 +240,7 @@ Listener on the state of the currently selected layout's frames, if this changes
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:114](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L114)
+[src/controllers/SubscriberController.ts:114](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L114)
 
 ___
 
@@ -214,7 +262,7 @@ Listener on the state of the currently selected layout, if its properties are ch
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:43](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L43)
+[src/controllers/SubscriberController.ts:43](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L43)
 
 ___
 
@@ -236,7 +284,7 @@ Listener on the state of the currently selected text's styles, if this changes, 
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:123](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L123)
+[src/controllers/SubscriberController.ts:123](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L123)
 
 ___
 
@@ -258,7 +306,7 @@ Listener on when the tool has changed by the canvas
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:96](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L96)
+[src/controllers/SubscriberController.ts:96](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L96)
 
 ___
 
@@ -280,7 +328,7 @@ A listener on the general state of the document, gets triggered everytime a chan
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:70](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L70)
+[src/controllers/SubscriberController.ts:70](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L70)
 
 ___
 
@@ -302,7 +350,7 @@ Listener on state changes
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:105](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L105)
+[src/controllers/SubscriberController.ts:105](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L105)
 
 ___
 
@@ -324,4 +372,4 @@ Listener on when variables change
 
 #### Defined in
 
-[src/controllers/SubscriberController.ts:87](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/SubscriberController.ts#L87)
+[src/controllers/SubscriberController.ts:87](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/SubscriberController.ts#L87)

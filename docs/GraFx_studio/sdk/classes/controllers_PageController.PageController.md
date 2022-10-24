@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/PageController](../modules/controllers_PageController.md) / PageController
+
 # Class: PageController
 
-[controllers/PageController](../modules/controllers_PageController.md).PageController
+[src/controllers/PageController](../modules/controllers_PageController.md).PageController
 
 The PageController is responsible for all communication regarding Pages.
 Methods inside this controller can be called by `window.SDK.page.{method-name}`
@@ -16,7 +18,7 @@ Methods inside this controller can be called by `window.SDK.page.{method-name}`
 
 ### getPageById
 
-▸ **getPageById**(`pageId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getPageById**(`pageId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Page`\>\>
 
 This method returns a page by its id
 
@@ -28,24 +30,24 @@ This method returns a page by its id
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Page`\>\>
 
 #### Defined in
 
-[src/controllers/PageController.ts:34](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/PageController.ts#L34)
+[src/controllers/PageController.ts:36](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/PageController.ts#L36)
 
 ___
 
 ### getPages
 
-▸ **getPages**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getPages**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Page`[]\>\>
 
 This method returns the list of pages
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Page`[]\>\>
 
 #### Defined in
 
-[src/controllers/PageController.ts:24](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/PageController.ts#L24)
+[src/controllers/PageController.ts:26](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/PageController.ts#L26)
