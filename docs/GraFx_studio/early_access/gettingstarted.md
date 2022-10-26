@@ -41,9 +41,11 @@ On the top left of the editor canvas there is a button to open the debug panel. 
 
 ### GraFx Connector
 
-With a GraFx Connector you can connect GraFx Studio to a resource provider. We prepared a [GraFx Connector template](https://github.com/chili-publish/grafx-connector-template){target="_blank"} that you can use to create a custom connector to connect with your DAM system or to add hardcoded image URLs. This way you can assign your own assets to image frames in GraFx Studio.
+With a GraFx Connector you can connect GraFx Studio to a resource provider.
 
-In the demo integrations project there is an [example](https://github.com/chili-publish/editor-sdk-integration-examples/tree/main/ts-connector-example){target="_blank"} of how you can register and use your connector.
+We prepared a [GraFx Connector template](https://github.com/chili-publish/grafx-connector-template){target="_blank"} that you can use to create a custom media connector to connect with your DAM system or to add hardcoded image URLs. With this media connector you can assign your own assets to image frames in GraFx Studio.
+
+In the demo integrations project there is an [example](https://github.com/chili-publish/editor-sdk-integration-examples/tree/main/ts-connector-example){target="_blank"} that shows how to set up and use a very simple media connector. When your custom connector is ready, you can use this example as inspiration to set it up and start using it.
 
 ## I want to: Check out the new features
 
