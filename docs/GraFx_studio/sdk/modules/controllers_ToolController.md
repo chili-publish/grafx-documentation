@@ -1,4 +1,6 @@
-# Module: controllers/ToolController
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / src/controllers/ToolController
+
+# Module: src/controllers/ToolController
 
 ## Table of contents
 

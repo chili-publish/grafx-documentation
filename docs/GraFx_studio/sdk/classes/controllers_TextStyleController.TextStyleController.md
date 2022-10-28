@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/TextStyleController](../modules/controllers_TextStyleController.md) / TextStyleController
+
 # Class: TextStyleController
 
-[controllers/TextStyleController](../modules/controllers_TextStyleController.md).TextStyleController
+[src/controllers/TextStyleController](../modules/controllers_TextStyleController.md).TextStyleController
 
 The TextStyleController is responsible for all communication regarding text styles.
 Methods inside this controller can be called by `window.SDK.textStyle.{method-name}`
@@ -15,7 +17,7 @@ Methods inside this controller can be called by `window.SDK.textStyle.{method-na
 
 ### setTextStyleProperties
 
-▸ **setTextStyleProperties**(`style`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setTextStyleProperties**(`style`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method updates a selected Text's style properties
 
@@ -23,12 +25,12 @@ This method updates a selected Text's style properties
 
 | Name | Type |
 | :------ | :------ |
-| `style` | [`TextStyleUpdateType`](../modules/index.md#textstyleupdatetype) |
+| `style` | [`TextStyleUpdateType`](../modules/src.md#textstyleupdatetype) |
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/TextStyleController.ts:24](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/TextStyleController.ts#L24)
+[src/controllers/TextStyleController.ts:25](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/TextStyleController.ts#L25)

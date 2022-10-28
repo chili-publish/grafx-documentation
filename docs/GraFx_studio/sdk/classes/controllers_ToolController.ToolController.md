@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/ToolController](../modules/controllers_ToolController.md) / ToolController
+
 # Class: ToolController
 
-[controllers/ToolController](../modules/controllers_ToolController.md).ToolController
+[src/controllers/ToolController](../modules/controllers_ToolController.md).ToolController
 
 The ToolController is responsible for all communication regarding the tools.
 Methods inside this controller can be called by `window.SDK.tool.{method-name}`
@@ -20,81 +22,81 @@ Methods inside this controller can be called by `window.SDK.tool.{method-name}`
 
 ### getSelectedTool
 
-▸ **getSelectedTool**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getSelectedTool**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`ToolType`](../enums/src.ToolType.md)\>\>
 
 This method returns selected tool
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`ToolType`](../enums/src.ToolType.md)\>\>
 
 #### Defined in
 
-[src/controllers/ToolController.ts:33](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L33)
+[src/controllers/ToolController.ts:34](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ToolController.ts#L34)
 
 ___
 
 ### setHandTool
 
-▸ **setHandTool**(): `Promise`<`void`\>
+▸ **setHandTool**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets the used tool to a Move tool
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ToolController.ts:48](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L48)
+[src/controllers/ToolController.ts:49](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ToolController.ts#L49)
 
 ___
 
 ### setImageFrameTool
 
-▸ **setImageFrameTool**(): `Promise`<`void`\>
+▸ **setImageFrameTool**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets the used tool to a ImageFrame tool
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ToolController.ts:69](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L69)
+[src/controllers/ToolController.ts:70](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ToolController.ts#L70)
 
 ___
 
 ### setSelectTool
 
-▸ **setSelectTool**(): `Promise`<`void`\>
+▸ **setSelectTool**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets the used tool to a Pointer tool
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ToolController.ts:41](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L41)
+[src/controllers/ToolController.ts:42](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ToolController.ts#L42)
 
 ___
 
 ### setTextFrameTool
 
-▸ **setTextFrameTool**(): `Promise`<`void`\>
+▸ **setTextFrameTool**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets the used tool to a TextFrame tool
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/ToolController.ts:62](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L62)
+[src/controllers/ToolController.ts:63](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ToolController.ts#L63)
 
 ___
 
@@ -110,4 +112,4 @@ This method sets the used tool to a Zoom tool
 
 #### Defined in
 
-[src/controllers/ToolController.ts:55](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/ToolController.ts#L55)
+[src/controllers/ToolController.ts:56](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/ToolController.ts#L56)

@@ -1,4 +1,6 @@
-# Module: controllers/VariableController
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / src/controllers/VariableController
+
+# Module: src/controllers/VariableController
 
 ## Table of contents
 
