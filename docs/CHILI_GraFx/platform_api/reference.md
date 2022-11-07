@@ -1,5 +1,9 @@
 <!-- Generator: Widdershins v4.0.1 -->
 
+<h1 id="chili-grafx">CHILI GraFx v1</h1>
+
+> Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
+
 # Authentication
 
 - HTTP Authentication, scheme: Bearer Enter a bearer token (JWT):
@@ -268,6 +272,14 @@ Bearer
       "backOfficeUri": "http://example.com"
     }
   ],
+  "licenses": [
+    {
+      "id": "string",
+      "coresTotal": 0,
+      "url": "http://example.com",
+      "licenseType": 0
+    }
+  ],
   "startDate": {
     "calendar": {
       "id": "string",
@@ -498,7 +510,8 @@ Bearer
   "lastName": "string",
   "subscriptionIds": [
     "497f6eca-6276-4993-bfeb-53cbbbba6f08"
-  ]
+  ],
+  "customerGuid": "d7cc35b4-123a-43e1-9482-fdc8ca6dcf4f"
 }
 ```
 
@@ -511,17 +524,12 @@ Bearer
 
 > Example responses
 
-> 400 Response
+
+> 200 Response
 
 ```json
 {
-  "type": "string",
-  "title": "string",
-  "status": 0,
-  "detail": "string",
-  "instance": "string",
-  "property1": null,
-  "property2": null
+  "userId": "string"
 }
 ```
 
@@ -529,7 +537,8 @@ Bearer
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully created.|None|
+
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully created.|[CreateUserResultModel](#schemacreateuserresultmodel)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, email, firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
 |409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|If user with the same email already exists.|[ProblemDetails](#schemaproblemdetails)|
 
@@ -686,7 +695,8 @@ Bearer
   "lastName": "string",
   "subscriptionIds": [
     "497f6eca-6276-4993-bfeb-53cbbbba6f08"
-  ]
+  ],
+  "customerGuid": "d7cc35b4-123a-43e1-9482-fdc8ca6dcf4f"
 }
 
 ```
@@ -701,6 +711,7 @@ Request model that is used to add new user in GraFx.
 |firstName|string|true|none|User first name.|
 |lastName|string|true|none|User last name.|
 |subscriptionIds|[string]¦null|false|none|Ids of existing user subscriptions.|
+|customerGuid|string(uuid)¦null|false|none|The guid of the customer this user is linked to.|
 
 <h2 id="tocS_BasicSubscriptionModel">BasicSubscriptionModel</h2>
 <!-- backwards compatibility -->
@@ -759,6 +770,28 @@ Response model with subscription information.
 |minYear|integer(int32)|false|read-only|none|
 |maxYear|integer(int32)|false|read-only|none|
 |eras|[[Era](#schemaera)]¦null|false|read-only|none|
+
+<h2 id="tocS_CreateUserResultModel">CreateUserResultModel</h2>
+<!-- backwards compatibility -->
+<a id="schemacreateuserresultmodel"></a>
+<a id="schema_CreateUserResultModel"></a>
+<a id="tocScreateuserresultmodel"></a>
+<a id="tocscreateuserresultmodel"></a>
+
+```json
+{
+  "userId": "string"
+}
+
+```
+
+Request model that is used in the response for the new user in GraFx.
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|userId|string|true|none|User ID which has been created in GraFx.|
 
 <h2 id="tocS_EnvironmentModel">EnvironmentModel</h2>
 <!-- backwards compatibility -->
@@ -1038,6 +1071,34 @@ Response model used for providing the information about API.
 |*anonymous*|6|
 |*anonymous*|7|
 
+<h2 id="tocS_LicenseType">LicenseType</h2>
+<!-- backwards compatibility -->
+<a id="schemalicensetype"></a>
+<a id="schema_LicenseType"></a>
+<a id="tocSlicensetype"></a>
+<a id="tocslicensetype"></a>
+
+```json
+0
+
+```
+
+License type.
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|integer(int32)|false|none|License type.|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|*anonymous*|0|
+|*anonymous*|1|
+|*anonymous*|2|
+
 <h2 id="tocS_LocalDate">LocalDate</h2>
 <!-- backwards compatibility -->
 <a id="schemalocaldate"></a>
@@ -1194,6 +1255,35 @@ Environment type used in subscription.
 |*anonymous*|0|
 |*anonymous*|1|
 
+<h2 id="tocS_SubscriptionLicenseModel">SubscriptionLicenseModel</h2>
+<!-- backwards compatibility -->
+<a id="schemasubscriptionlicensemodel"></a>
+<a id="schema_SubscriptionLicenseModel"></a>
+<a id="tocSsubscriptionlicensemodel"></a>
+<a id="tocssubscriptionlicensemodel"></a>
+
+```json
+{
+  "id": "string",
+  "coresTotal": 0,
+  "url": "http://example.com",
+  "licenseType": 0
+}
+
+```
+
+Response model with license details included in subscription.
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string¦null|false|none|License serial key|
+|coresTotal|integer(int32)¦null|false|none|Max cores amount|
+|url|string(uri)¦null|false|none|Url to My CP license|
+|licenseType|[LicenseType](#schemalicensetype)|false|none|License type.|
+
+
 <h2 id="tocS_SubscriptionModel">SubscriptionModel</h2>
 <!-- backwards compatibility -->
 <a id="schemasubscriptionmodel"></a>
@@ -1216,6 +1306,14 @@ Environment type used in subscription.
       "type": 0,
       "usedStorage": 0,
       "backOfficeUri": "http://example.com"
+    }
+  ],
+  "licenses": [
+    {
+      "id": "string",
+      "coresTotal": 0,
+      "url": "http://example.com",
+      "licenseType": 0
     }
   ],
   "startDate": {
@@ -1284,14 +1382,15 @@ Response model with detailed information about subscription.
 |maxStorage|integer(int64)¦null|false|none|Max storage available in subscription in bytes.|
 |storageUsed|integer(int64)|true|none|Storage used in bytes.|
 |environments|[[SubscriptionEnvironmentModel](#schemasubscriptionenvironmentmodel)]|true|none|Environments in subscription.|
+|licenses|[[SubscriptionLicenseModel](#schemasubscriptionlicensemodel)]¦null|false|none|Licenses assigned to the subscription.|
 |startDate|[LocalDate](#schemalocaldate)|false|none|none|
 |endDate|[LocalDate](#schemalocaldate)|false|none|none|
-|subscriptionType|[SubscriptionType](#schemasubscriptiontype)|true|none|none|
+|subscriptionType|[SubscriptionType](#schemasubscriptiontype)|true|none|Subscription type.|
 |status|[SubscriptionStatus](#schemasubscriptionstatus)|true|none|Status of user subscription.|
 |clientName|string¦null|false|none|Client name which uses the subscription.|
 |billingClientContact|string¦null|false|none|Client billing contact information.|
-|templateDesignerSeatsTotal|integer(int32)¦null|false|none|none|
-|templateDesignerSeatsUsed|integer(int32)¦null|false|none|none|
+|templateDesignerSeatsTotal|integer(int32)¦null|false|none|Max count of template designer seats.|
+|templateDesignerSeatsUsed|integer(int32)¦null|false|none|Using count of template designer seats.|
 
 <h2 id="tocS_SubscriptionRendersModel">SubscriptionRendersModel</h2>
 <!-- backwards compatibility -->
@@ -1363,11 +1462,13 @@ Status of user subscription.
 
 ```
 
+Subscription type.
+
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
+|*anonymous*|integer(int32)|false|none|Subscription type.|
 
 #### Enumerated Values
 
