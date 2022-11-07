@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/LayoutController](../modules/controllers_LayoutController.md) / LayoutController
+
 # Class: LayoutController
 
-[controllers/LayoutController](../modules/controllers_LayoutController.md).LayoutController
+[src/controllers/LayoutController](../modules/controllers_LayoutController.md).LayoutController
 
 The LayoutController is responsible for all communication regarding Layouts.
 Methods inside this controller can be called by `window.SDK.layout.{method-name}`
@@ -28,7 +30,7 @@ Methods inside this controller can be called by `window.SDK.layout.{method-name}
 
 ### addLayout
 
-▸ **addLayout**(`parentId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **addLayout**(`parentId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>\>
 
 This method will add a new child layout (a new layout is always child of a root / parentlayout)
 
@@ -40,17 +42,17 @@ This method will add a new child layout (a new layout is always child of a root 
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:74](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L74)
+[src/controllers/LayoutController.ts:76](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L76)
 
 ___
 
 ### duplicateLayout
 
-▸ **duplicateLayout**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **duplicateLayout**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>\>
 
 This method will duplicate a specific layout
 
@@ -62,17 +64,17 @@ This method will duplicate a specific layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:105](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L105)
+[src/controllers/LayoutController.ts:107](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L107)
 
 ___
 
 ### getLayoutById
 
-▸ **getLayoutById**(`id`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getLayoutById**(`id`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`\>\>
 
 This method returns a layout by its id
 
@@ -84,17 +86,17 @@ This method returns a layout by its id
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:35](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L35)
+[src/controllers/LayoutController.ts:37](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L37)
 
 ___
 
 ### getLayoutByName
 
-▸ **getLayoutByName**(`name`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getLayoutByName**(`name`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`\>\>
 
 This method returns a layout by its name
 
@@ -106,49 +108,49 @@ This method returns a layout by its name
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:45](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L45)
+[src/controllers/LayoutController.ts:47](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L47)
 
 ___
 
 ### getLayouts
 
-▸ **getLayouts**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getLayouts**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`[]\>\>
 
 This method returns the list of layouts
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`[]\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L25)
+[src/controllers/LayoutController.ts:27](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L27)
 
 ___
 
 ### getSelectedLayout
 
-▸ **getSelectedLayout**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getSelectedLayout**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`\>\>
 
 This method returns the selected layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`Layout`\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:54](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L54)
+[src/controllers/LayoutController.ts:56](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L56)
 
 ___
 
 ### removeLayout
 
-▸ **removeLayout**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **removeLayout**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will remove a specific layout
 
@@ -160,17 +162,17 @@ This method will remove a specific layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:64](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L64)
+[src/controllers/LayoutController.ts:66](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L66)
 
 ___
 
 ### resetLayout
 
-▸ **resetLayout**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetLayout**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset a specific layout to its original value
 
@@ -182,17 +184,17 @@ This method will reset a specific layout to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:115](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L115)
+[src/controllers/LayoutController.ts:117](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L117)
 
 ___
 
 ### resetLayoutHeight
 
-▸ **resetLayoutHeight**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetLayoutHeight**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the height of a specific layout to its original value
 
@@ -204,17 +206,17 @@ This method will reset the height of a specific layout to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:156](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L156)
+[src/controllers/LayoutController.ts:162](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L162)
 
 ___
 
 ### resetLayoutWidth
 
-▸ **resetLayoutWidth**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetLayoutWidth**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will reset the width of a specific layout to its original value
 
@@ -226,17 +228,17 @@ This method will reset the width of a specific layout to its original value
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:166](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L166)
+[src/controllers/LayoutController.ts:172](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L172)
 
 ___
 
 ### selectLayout
 
-▸ **selectLayout**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **selectLayout**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will select a specific layout
 
@@ -248,17 +250,17 @@ This method will select a specific layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:95](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L95)
+[src/controllers/LayoutController.ts:97](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L97)
 
 ___
 
 ### setLayoutHeight
 
-▸ **setLayoutHeight**(`layoutId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setLayoutHeight**(`layoutId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the height of the layout to a specific value
 
@@ -271,17 +273,17 @@ This method will set the height of the layout to a specific value
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:126](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L126)
+[src/controllers/LayoutController.ts:128](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L128)
 
 ___
 
 ### setLayoutName
 
-▸ **setLayoutName**(`layoutId`, `layoutName`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setLayoutName**(`layoutId`, `layoutName`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will update the name of a specific layout
 
@@ -294,17 +296,17 @@ This method will update the name of a specific layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:85](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L85)
+[src/controllers/LayoutController.ts:87](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L87)
 
 ___
 
 ### setLayoutWidth
 
-▸ **setLayoutWidth**(`layoutId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setLayoutWidth**(`layoutId`, `value`): `Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method will set the width of the layout to a specific value
 
@@ -317,8 +319,8 @@ This method will set the width of the layout to a specific value
 
 #### Returns
 
-`Promise`<``null`` \| [`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<``null`` \| [`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/LayoutController.ts:141](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/LayoutController.ts#L141)
+[src/controllers/LayoutController.ts:145](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/LayoutController.ts#L145)

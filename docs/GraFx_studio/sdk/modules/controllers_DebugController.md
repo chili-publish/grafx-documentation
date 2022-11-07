@@ -1,4 +1,6 @@
-# Module: controllers/DebugController
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / src/controllers/DebugController
+
+# Module: src/controllers/DebugController
 
 ## Table of contents
 

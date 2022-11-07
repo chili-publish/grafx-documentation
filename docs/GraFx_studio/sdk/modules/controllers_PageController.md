@@ -1,4 +1,6 @@
-# Module: controllers/PageController
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / src/controllers/PageController
+
+# Module: src/controllers/PageController
 
 ## Table of contents
 

@@ -50,6 +50,8 @@ nav:
         - 'Introduction':                       'CHILI_GraFx/intro.md'
         - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
         - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
+        - 'Concepts':
+            - 'Renders':                        'CHILI_GraFx/concepts/renders.md'
         - 'Platform Admin':
             - 'General Admin' :                 'CHILI_GraFx/admin.md'
             - 'User management' :
@@ -67,11 +69,11 @@ nav:
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
         - 'Platform API reference' :            
-            - 'Overview':                       'CHILI_GraFx/platform_api/overview.md'
-            - ... | flat | CHILI_GraFx/platform_api/classes/**
-        - 'Environment API reference':
-            - 'Overview':                       'CHILI_GraFx/environment_api/overview.md'
-            - ... | flat | CHILI_GraFx/environment_api/classes/**
+            - 'Intro' :                         'CHILI_GraFx/platform_api/intro.md'
+            - 'Reference' :                     'CHILI_GraFx/platform_api/reference.md'
+        - 'Environment API reference':          
+            - 'Intro' :                         'CHILI_GraFx/environment_api/intro.md'
+            - 'Reference' :                     'CHILI_GraFx/environment_api/reference.md'
 
 #       - 'Release notes':
 #            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'

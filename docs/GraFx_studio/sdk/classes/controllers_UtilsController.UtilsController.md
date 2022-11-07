@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/UtilsController](../modules/controllers_UtilsController.md) / UtilsController
+
 # Class: UtilsController
 
-[controllers/UtilsController](../modules/controllers_UtilsController.md).UtilsController
+[src/controllers/UtilsController](../modules/controllers_UtilsController.md).UtilsController
 
 The UtilsController exposes a set of usefull utilities that can be used to make some repeated tasks a bit easier
 Methods inside this controller can be called by `window.SDK.utils.{method-name}`
@@ -26,7 +28,7 @@ Methods inside this controller can be called by `window.SDK.utils.{method-name}`
 
 ### calculateFromString
 
-▸ **calculateFromString**(`val`, `precision?`): ``null`` \| `number`
+▸ **calculateFromString**(`val`, `precision?`): [`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>
 
 This method can calculate what's inside a string that represents a calculation (f.e. "1 + 5 - 2" will result in 4)
 
@@ -39,19 +41,19 @@ This method can calculate what's inside a string that represents a calculation (
 
 #### Returns
 
-``null`` \| `number`
+[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>
 
 The calculated value or null in case that it can't be calculated
 
 #### Defined in
 
-[src/controllers/UtilsController.ts:14](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/UtilsController.ts#L14)
+[src/controllers/UtilsController.ts:15](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/UtilsController.ts#L15)
 
 ___
 
 ### round
 
-▸ **round**(`val`, `precision?`): `number`
+▸ **round**(`val`, `precision?`): [`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>
 
 This method can round a value to a certain precision, default is 2
 
@@ -64,10 +66,10 @@ This method can round a value to a certain precision, default is 2
 
 #### Returns
 
-`number`
+[`EditorResponse`](../interfaces/src.EditorResponse.md)<`number`\>
 
 The rounded value as a number
 
 #### Defined in
 
-[src/controllers/UtilsController.ts:22](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/UtilsController.ts#L22)
+[src/controllers/UtilsController.ts:29](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/UtilsController.ts#L29)

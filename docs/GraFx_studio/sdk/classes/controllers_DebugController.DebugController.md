@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/DebugController](../modules/controllers_DebugController.md) / DebugController
+
 # Class: DebugController
 
-[controllers/DebugController](../modules/controllers_DebugController.md).DebugController
+[src/controllers/DebugController](../modules/controllers_DebugController.md).DebugController
 
 The DebugController is responsible for all communication regarding Debugging.
 Methods inside this controller can be called by `window.SDK.debug.{method-name}`
@@ -18,62 +20,62 @@ Methods inside this controller can be called by `window.SDK.debug.{method-name}`
 
 ### disableDebug
 
-▸ **disableDebug**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **disableDebug**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method disables the debugging
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/DebugController.ts:51](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DebugController.ts#L51)
+[src/controllers/DebugController.ts:53](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/DebugController.ts#L53)
 
 ___
 
 ### enableDebug
 
-▸ **enableDebug**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **enableDebug**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method enables the debugging
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/DebugController.ts:42](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DebugController.ts#L42)
+[src/controllers/DebugController.ts:44](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/DebugController.ts#L44)
 
 ___
 
 ### getLogs
 
-▸ **getLogs**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getLogs**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`DebugData`[]\>\>
 
 This method returns all debug logs
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`DebugData`[]\>\>
 
 #### Defined in
 
-[src/controllers/DebugController.ts:24](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DebugController.ts#L24)
+[src/controllers/DebugController.ts:26](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/DebugController.ts#L26)
 
 ___
 
 ### toggleDebugPanel
 
-▸ **toggleDebugPanel**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **toggleDebugPanel**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method toggles the showcase of debug panel
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/DebugController.ts:33](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/DebugController.ts#L33)
+[src/controllers/DebugController.ts:35](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/DebugController.ts#L35)
