@@ -6,7 +6,7 @@
 
 Base URLs:
 
-* <a href="/grafx">/grafx</a>
+* /grafx
 
 # Authentication
 
