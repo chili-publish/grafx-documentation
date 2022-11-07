@@ -1,4 +1,6 @@
-# Module: controllers/TextStyleController
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / src/controllers/TextStyleController
+
+# Module: src/controllers/TextStyleController
 
 ## Table of contents
 

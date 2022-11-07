@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/UndoManagerController](../modules/controllers_UndoManagerController.md) / UndoManagerController
+
 # Class: UndoManagerController
 
-[controllers/UndoManagerController](../modules/controllers_UndoManagerController.md).UndoManagerController
+[src/controllers/UndoManagerController](../modules/controllers_UndoManagerController.md).UndoManagerController
 
 The UndoManagerController is responsible for all communication regarding the Undo-Manager.
 Methods inside this controller can be called by `window.SDK.undoManager.{method-name}`
@@ -16,30 +18,30 @@ Methods inside this controller can be called by `window.SDK.undoManager.{method-
 
 ### redo
 
-▸ **redo**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **redo**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method redoes the last operation
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/UndoManagerController.ts:33](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/UndoManagerController.ts#L33)
+[src/controllers/UndoManagerController.ts:34](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/UndoManagerController.ts#L34)
 
 ___
 
 ### undo
 
-▸ **undo**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **undo**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method undoes the last operation
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/UndoManagerController.ts:24](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/UndoManagerController.ts#L24)
+[src/controllers/UndoManagerController.ts:25](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/UndoManagerController.ts#L25)

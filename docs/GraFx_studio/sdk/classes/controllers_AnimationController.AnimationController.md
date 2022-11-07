@@ -1,6 +1,8 @@
+[@chili-publish/editor-sdk](../README.md) / [Modules](../modules.md) / [src/controllers/AnimationController](../modules/controllers_AnimationController.md) / AnimationController
+
 # Class: AnimationController
 
-[controllers/AnimationController](../modules/controllers_AnimationController.md).AnimationController
+[src/controllers/AnimationController](../modules/controllers_AnimationController.md).AnimationController
 
 The AnimationController is responsible for all communication regarding Animations.
 Methods inside this controller can be called by `window.SDK.animation.{method-name}`
@@ -24,7 +26,7 @@ Methods inside this controller can be called by `window.SDK.animation.{method-na
 
 ### getAnimationByFrameId
 
-▸ **getAnimationByFrameId**(`frameId`, `layoutId?`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getAnimationByFrameId**(`frameId`, `layoutId?`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)\>\>
 
 This method returns an animation for a given frame and layout
 
@@ -37,17 +39,17 @@ This method returns an animation for a given frame and layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:36](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L36)
+[src/controllers/AnimationController.ts:39](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L39)
 
 ___
 
 ### getAnimationsByLayoutId
 
-▸ **getAnimationsByLayoutId**(`layoutId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getAnimationsByLayoutId**(`layoutId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)\>\>
 
 This method returns the animations for a given layout
 
@@ -59,81 +61,81 @@ This method returns the animations for a given layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:46](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L46)
+[src/controllers/AnimationController.ts:51](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L51)
 
 ___
 
 ### getAnimationsOnSelectedLayout
 
-▸ **getAnimationsOnSelectedLayout**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **getAnimationsOnSelectedLayout**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)[]\>\>
 
 This method returns all animations on current layout
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)[]\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:25](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L25)
+[src/controllers/AnimationController.ts:26](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L26)
 
 ___
 
 ### pauseAnimation
 
-▸ **pauseAnimation**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **pauseAnimation**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method triggers the animation to pause
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:74](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L74)
+[src/controllers/AnimationController.ts:85](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L85)
 
 ___
 
 ### playAnimation
 
-▸ **playAnimation**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **playAnimation**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method triggers the animation to play
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:65](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L65)
+[src/controllers/AnimationController.ts:76](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L76)
 
 ___
 
 ### resetAnimation
 
-▸ **resetAnimation**(): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetAnimation**(): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`unknown`\>\>
 
 This method resets the layout's animations and animation duration to its initial state
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`unknown`\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:113](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L113)
+[src/controllers/AnimationController.ts:124](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L124)
 
 ___
 
 ### resetFrameAnimation
 
-▸ **resetFrameAnimation**(`frameId`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **resetFrameAnimation**(`frameId`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`unknown`\>\>
 
 This method resets the animation to its initial state
 
@@ -145,17 +147,17 @@ This method resets the animation to its initial state
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`unknown`\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:104](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L104)
+[src/controllers/AnimationController.ts:115](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L115)
 
 ___
 
 ### setAnimationDuration
 
-▸ **setAnimationDuration**(`timeInMS`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setAnimationDuration**(`timeInMS`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 This method sets the total and maximum duration of the animation
 
@@ -167,17 +169,17 @@ This method sets the total and maximum duration of the animation
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<``null``\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:94](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L94)
+[src/controllers/AnimationController.ts:105](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L105)
 
 ___
 
 ### setFrameAnimation
 
-▸ **setFrameAnimation**(`animation`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setFrameAnimation**(`animation`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)\>\>
 
 This method sets the animation state for a certain Frame
 
@@ -185,21 +187,21 @@ This method sets the animation state for a certain Frame
 
 | Name | Type |
 | :------ | :------ |
-| `animation` | [`FrameAnimationPropertiesType`](../modules/index.md#frameanimationpropertiestype) |
+| `animation` | [`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype) |
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<[`FrameAnimationPropertiesType`](../modules/src.md#frameanimationpropertiestype)\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:56](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L56)
+[src/controllers/AnimationController.ts:63](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L63)
 
 ___
 
 ### setScrubberPosition
 
-▸ **setScrubberPosition**(`timeInMS`): `Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+▸ **setScrubberPosition**(`timeInMS`): `Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`unknown`\>\>
 
 This method sets the animation time to a certain time, expressed in miliseconds
 
@@ -211,8 +213,8 @@ This method sets the animation time to a certain time, expressed in miliseconds
 
 #### Returns
 
-`Promise`<[`EditorResponse`](../modules/index.md#editorresponse)\>
+`Promise`<[`EditorResponse`](../interfaces/src.EditorResponse.md)<`unknown`\>\>
 
 #### Defined in
 
-[src/controllers/AnimationController.ts:84](https://github.com/chili-publish/editor-sdk/blob/6abb55e/src/controllers/AnimationController.ts#L84)
+[src/controllers/AnimationController.ts:95](https://github.com/chili-publish/editor-sdk/blob/bc89ed1/src/controllers/AnimationController.ts#L95)

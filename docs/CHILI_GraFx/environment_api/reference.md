@@ -683,6 +683,7 @@ Returns all templates in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
+
 |folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 

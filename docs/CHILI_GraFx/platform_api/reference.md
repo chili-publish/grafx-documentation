@@ -524,6 +524,7 @@ Bearer
 
 > Example responses
 
+
 > 200 Response
 
 ```json
@@ -536,6 +537,7 @@ Bearer
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
+
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully created.|[CreateUserResultModel](#schemacreateuserresultmodel)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, email, firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
 |409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|If user with the same email already exists.|[ProblemDetails](#schemaproblemdetails)|
@@ -1280,6 +1282,7 @@ Response model with license details included in subscription.
 |coresTotal|integer(int32)¦null|false|none|Max cores amount|
 |url|string(uri)¦null|false|none|Url to My CP license|
 |licenseType|[LicenseType](#schemalicensetype)|false|none|License type.|
+
 
 <h2 id="tocS_SubscriptionModel">SubscriptionModel</h2>
 <!-- backwards compatibility -->
