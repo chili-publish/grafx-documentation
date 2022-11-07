@@ -1,6 +1,31 @@
+---
+title: CHILI GraFx v1
+language_tabs:
+  - shell: Shell
+  - http: HTTP
+  - javascript: JavaScript
+  - ruby: Ruby
+  - python: Python
+  - php: PHP
+  - java: Java
+  - go: Go
+toc_footers: []
+includes: []
+search: true
+highlight_theme: darkula
+headingLevel: 2
+
+---
+
 <!-- Generator: Widdershins v4.0.1 -->
 
 <h1 id="chili-grafx">CHILI GraFx v1</h1>
+
+> Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
+
+Base URLs:
+
+* <a href="/grafx">/grafx</a>
 
 # Authentication
 
@@ -25,8 +50,8 @@ Returns all fonts in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done|
-|search|query|string|false|Search by name or resource ID|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
 
@@ -94,8 +119,8 @@ Returns all fonts and directories in the environment located directly in request
 |limit|query|integer|false|Amount of folders per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done|
-|search|query|string|false|Search by name or resource ID|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
 
@@ -354,8 +379,8 @@ Returns all media in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done|
-|search|query|string|false|Search by name or resource ID|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
 
@@ -421,8 +446,8 @@ Returns all media and directories in the environment located directly in request
 |limit|query|integer|false|Amount of folders per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done|
-|search|query|string|false|Search by name or resource ID|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
 
@@ -677,8 +702,8 @@ Returns all templates in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done|
-|search|query|string|false|Search by name or resource ID|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
 
@@ -747,19 +772,20 @@ Creates a new template in the environment, takes template JSON from request body
 |---|---|---|---|---|
 |environment|path|string|true|Name of the environment|
 |name|query|string|true|Name of template|
-|folderPath|query|string|true|Folder to place created template|
+|folderPath|query|string|true|Folder to place created template  (NOTE: forward slashes only, should not start with slash)|
 |body|body|any|false|Template JSON|
 
 > Example responses
 
-> 401 Response
+> 201 Response
 
 ```json
 {
-  "type": "https://httpstatuses.io/401",
-  "title": "Unauthorized",
-  "status": "401",
-  "traceId": "00-4c7122268e63dfb01f47bd1a23507588-13f1aab74314c293-00"
+  "id": "67838f82-09d6-48ad-baeb-1d7dad676c9d",
+  "name": "Resource",
+  "relativePath": "Folder",
+  "extension": "jpg",
+  "type": "0"
 }
 ```
 
@@ -767,7 +793,8 @@ Creates a new template in the environment, takes template JSON from request body
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|None|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success|[Template](#schematemplate)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|One of arguments is incorrect|[BadRequestProblemDetails](#schemabadrequestproblemdetails)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
@@ -795,8 +822,8 @@ Returns all templates and directories in the environment located directly in req
 |limit|query|integer|false|Amount of folders per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done|
-|search|query|string|false|Search by name or resource ID|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
 
@@ -909,7 +936,7 @@ Updates template name, body and relative path in the environment
 |environment|path|string|true|Name of the environment|
 |templateId|path|string|true|ID of the template|
 |name|query|string|false|Name of the template|
-|folderPath|query|string|false|Folder to move updated template|
+|folderPath|query|string|false|Folder to move updated template (NOTE: forward slashes only, should not start with slash)|
 |body|body|any|false|Template JSON|
 
 > Example responses
@@ -936,6 +963,49 @@ Updates template name, body and relative path in the environment
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment or template is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
 |500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Template cannot be read from request body as json|[IncorrectJsonProblemDetails](#schemaincorrectjsonproblemdetails)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+
+## delete  api v1 environment {environment} templates {templateId}
+
+`DELETE /api/v1/environment/{environment}/templates/{templateId}`
+
+*Deletes template by ID in the environment*
+
+Deletes template by ID in the environment
+
+<h3 id="delete--api-v1-environment-{environment}-templates-{templateid}-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|environment|path|string|true|Name of the environment|
+|templateId|path|string|true|ID of the template|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": "67838f82-09d6-48ad-baeb-1d7dad676c9d",
+  "name": "Resource",
+  "relativePath": "Folder",
+  "extension": "jpg",
+  "type": "0"
+}
+```
+
+<h3 id="delete--api-v1-environment-{environment}-templates-{templateid}-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Template](#schematemplate)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment or template is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -1108,7 +1178,7 @@ Starts animated output task, takes template either by id or from request body
 |---|---|---|---|---|
 |environment|path|string|true|Name of the environment|
 |templateId|query|string|false|ID of the template|
-|layoutToExport|query|integer|false|Number of template layout to export|
+|layoutToExport|query|integer|false|Index of template layout to export|
 |outputType|query|string|false|Format of the output|
 |fps|query|integer|false|Framerate of the animated output (NOTE: for GIF output FPS should not exceed 50)|
 |pixelRatio|query|number|false|Pixel ratio of the animated output|
@@ -1137,6 +1207,69 @@ Starts animated output task, takes template either by id or from request body
 ```
 
 <h3 id="post--api-v1-environment-{environment}-output-animation-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[OutputTaskStartResponse](#schemaoutputtaskstartresponse)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Template is not provided, or provided both by ID and body, or one of the arguments exceeds limits|[BadRequestProblemDetails](#schemabadrequestproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment or template is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Template cannot be read from request body as json|[IncorrectJsonProblemDetails](#schemaincorrectjsonproblemdetails)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+
+## post  api v1 environment {environment} output image
+
+`POST /api/v1/environment/{environment}/output/image`
+
+*Starts image output task*
+
+Starts image output task, takes template either by id or from request body
+
+> Body parameter
+
+```json
+"Template JSON"
+```
+
+<h3 id="post--api-v1-environment-{environment}-output-image-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|environment|path|string|true|Name of the environment|
+|templateId|query|string|false|ID of the template|
+|layoutToExport|query|integer|false|Index of template layout to export|
+|outputType|query|string|false|Format of the output|
+|pixelRatio|query|number|false|Pixel ratio of the animated output|
+|body|body|any|false|Template JSON|
+
+#### Enumerated Values
+
+|Parameter|Value|
+|---|---|
+|outputType|png|
+|outputType|jpg|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "taskId": "a19ddb23-c4db-494f-aa38-129ddc319b99"
+  },
+  "links": {
+    "taskInfo": "string"
+  }
+}
+```
+
+<h3 id="post--api-v1-environment-{environment}-output-image-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
