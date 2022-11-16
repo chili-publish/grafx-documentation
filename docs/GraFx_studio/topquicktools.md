@@ -6,21 +6,21 @@ Tools to interact with the page or document.
 
 From top to bottom
 
-- Arrow
-- Media
-- Type
+- Select
+- Image
+- Text
 - Hand
 - Zoom
 
-## Arrow
+## Select
 
 To select frames or elements on the document or page
 
-## Media
+## Image
 
 To create a frame to hold media assets
 
-## Types
+## Text
 
 To create a frame to hold type or text
 
