@@ -1,14 +1,12 @@
-# Migration from My CHILI publish
+# UPgrade from My CHILI publish
 
-## Migrate?
+## Why upgrade?
 
 Your account was part of the My CHILI publish portal. 
 
-CHILI GraFx is a platform, and is capable of hosting applications. And next to hosting applications, the platform also offers the opportunity to have resources shared amongst applications.
+CHILI GraFx is a platform and hosts applications. Next to hosting applications, the platform also offers the opportunity to have resources shared amongst applications.
 
-Therefore your account(s) need to migrate from MyCP to CHILI GraFx.
-
-
+Therefore your account(s) need to upgrade from MyCP to CHILI GraFx.
     
 ### Phase 1
 
@@ -23,14 +21,16 @@ The roles and functionality will be respected and mapped to new CHILI GraFx user
 
 You will be able to connect third party Identity Providers to CHILI GraFx
 
-## Step 1: Confirm you want to start the wizard
+## How to upgrade?
 
-Logging on to CHILI GraFx will bring you to this screen
+### Step 1: Confirm you want to start the wizard
+
+Logging on to [CHILI GraFx](https://chiligrafx.com){target="_blank"} will bring you to this screen
 
 ![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate5.png?w=690)
 
 
-## Step 2: Provide your email
+### Step 2: Provide your email
 
 ![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate2.png?w=690)
 
@@ -43,7 +43,7 @@ If your email is known in the platform, CHILI GraFx will let you know.
 ![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate4.png?w=250)
 
 
-## Step 2: Confirm your email
+### Step 2: Confirm your email
 
 ![Migrate](https://chilipublishdocs.imgix.net/CHILI_GraFx/migrate3.png?w=690)
 

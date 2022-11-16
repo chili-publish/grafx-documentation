@@ -41,6 +41,11 @@ markdown_extensions:
   - pymdownx.superfences        
   - toc:
       toc_depth: 3
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   
 extra_css:
   - stylesheets/extra.css  
@@ -48,8 +53,8 @@ extra_css:
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI_GraFx/intro.md'
-        - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
-        - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
+#        - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
+        - 'Upgrade from My CHILI publish':    'CHILI_GraFx/mycpupgrade.md'
         - 'Concepts':
             - 'Renders':                        'CHILI_GraFx/concepts/renders.md'
         - 'Platform Admin':
@@ -60,12 +65,12 @@ nav:
                 - 'Roles' :                     'CHILI_GraFx/user_management_roles.md'
                 - 'Users & Invitation' :        'CHILI_GraFx/user_management_users.md'
                 - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
-            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
-            - 'Environments' :                  'CHILI_GraFx/environments.md'
+#            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
+#            - 'Environments' :                  'CHILI_GraFx/environments.md'
 #        - 'Application overview':
 #            - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
-        - 'How to':
-            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
+#        - 'How to':
+#            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
         - 'Platform API reference' :            
@@ -79,7 +84,7 @@ nav:
 #            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_studio/intro.md'
-        - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
+#        - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
         - 'Application overview':
             - 'Workspace elements':             'GraFx_studio/workspace_elements.md'
             - 'Headerbar':                      'GraFx_studio/headerbar.md'
@@ -136,16 +141,6 @@ nav:
             - 'Getting Started':                'GraFx_studio/early_access/gettingstarted.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx_publisher/intro.md'
-
-    - 'GraFx Publisher':
-        - 'Introduction':                       'GraFx_publisher/intro.md'
-        - 'The manual':                         'GraFx_publisher/manual.md'
-        - 'Integration':                        'GraFx_publisher/integration.md'
-        - 'Knowledge Base':
-            - 'Smarter Templates':              'GraFx_publisher/smarter_templates.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_publisher/releasenotes/latest.md'
-            - 'GraFX publisher 2022':           'GraFx_publisher/releasenotes/2022.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_media/intro.md'

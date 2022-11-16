@@ -1,8 +1,3 @@
----
-tags:
-  - unfinished
----
-
 # CHILI GraFx Subscriptions
 
 Your account can hold 1 or more subscriptions. Choosing "My subscriptions" in the account drop down will display a dashboard of the first active subscription.
