@@ -1,4 +1,9 @@
-# Workspace Release Notes (Early Access)
+# Release Notes
+
+## Version 0.85
+
+Nov 17th, 2022
+
 
 ## Version 0.70.3
 

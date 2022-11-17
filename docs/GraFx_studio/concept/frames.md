@@ -42,10 +42,13 @@ An image frame looks like a rectangular box when selected, and has a cross, when
 
 When media is selected / active for the frame, it will show the media.
 
-### Shape Frame
+## Z-index
 
-[future versions]
+Z-depth or Z-index refers to the Z-coordinate in the Cartesian coordinate system. 
 
-### Line Frame
+![XYZ](https://upload.wikimedia.org/wikipedia/commons/6/69/Coord_system_CA_0.svg)
 
-[future versions]
+!!! Alert
+	There is no actual height difference, but Z-axis is used to refer to the relative position to the other frames.
+
+In GraFx Studio z-index is in line with desktop editing tools. Each frame has a z-depth. 

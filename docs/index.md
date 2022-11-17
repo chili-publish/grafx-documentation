@@ -1,11 +1,11 @@
-# CHILI GraFx
+# Creative Automation
+<div class="introdiv">Add <span class="chilired">chili</span> to food...
+<br/>
+It <span class="chilired">activates</span> flavor
+<br/>
+<br/>
 
-CHILI GraFx platform centralizes your account information, users, resources and documents.
-
-- Get access
-- Configure your account
-- Add your first environment
-- Add media
-- Start creating your first template
-
-The platform hosts applications for you to build a powerful creative automation application.
+Add <span class="chilired">CHILI</span> to the creative process? 
+<br/>
+Your <span class="chilired">creative automation</span> boosts 🔥
+</div>

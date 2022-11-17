@@ -1,53 +1,30 @@
 # Workspace elements
 
-Upon opening of the GraFs Studio editor, you will see the full workspace
+When opening the GraFx Studio editor, you will see the full workspace
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor01.png?w=800)
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor03.png?w=800)
 
 ## Elements on screen
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor01_parts.png?w=800)
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor03_parts.png?w=800)
 
-1. Header bar
-2. Top Quick tools
-3. Document canvas
-4. Page / Document
-5. Properties
-6. Export button
-7. Bottom Quick tools
-8. Quick Tool Details
-9. Bottom panel
-
-### 1 Header bar
-
-The header bar allows you to switch between the tools to **design** your document, or **automate** it (e.g. add variables).
-
-The toolset will differ between the 2 concepts.
-
-### 2 Top Quick Tools
+### 1 Top Quick Tools
 
 Toolpanel to select the tool you wish to use to edit your document.
 
-### 3 Document Canvas
+### 2 Document Canvas
 
 The document Canvas.
 
-### 4 Page or Document
+### 3 Page or Document
 
 Your smart template, showed as a page or the full document.
 
-### 5 Properties
+### 4 Properties
 
 A panel where content will show with properties of the selected item in your document.
 
-### 6 Export button
-
-Tell the application to export your smart template as
-
-- MP4
-- GIF
-
-### 7 Bottom Quick Tools
+### 5 Bottom Quick Tools
 
 Extra tools to show panels for specific uses
 
@@ -56,16 +33,26 @@ Extra tools to show panels for specific uses
 - Media
 - Paintings
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor02_parts.png?w=800)
+### 6 Bottom panel
 
-### 8 Quick Tools Details
+Contextual bottom panel will hold information for relevant tools.
+
+E.g. layers or animation timeline will be displayed here
+
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor04_parts.png)
+
+### 7 Quick Tools Details
 
 Depending on the selection of your tool you'll see different details.
 
 E.g. with alternate layouts, you can organize your layouts.
 
-### 9 Bottom panel
+### 8 Hamburger menu
 
-Contextual bottom panel will hold information for relevant tools.
+Tell the application to save or export your smart template as
 
-E.g. layers or animation timeline will be displayed here
+- MP4
+- GIF
+- JPG
+- PNG
+

@@ -18,10 +18,6 @@ Have a quick glance at your timeline. Take the Scrubber, and run through the tim
 
 Click "Export as" and choose MP4 in the dropdown.
 
-![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_4.png)
+![Output](https://chilipublishdocs.imgix.net/GraFx_studio/export.png)
 
-The button changes into a progress wheel. When the wheel stops spinning, your browser will download the file into your downloads folder.
-
-![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_5.png)
-
-![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_6.png)
+When the export is ready, your browser will download the file into your downloads folder.

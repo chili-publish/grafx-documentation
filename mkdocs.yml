@@ -41,15 +41,20 @@ markdown_extensions:
   - pymdownx.superfences        
   - toc:
       toc_depth: 3
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   
 extra_css:
   - stylesheets/extra.css  
 
 nav:
     - 'CHILI GraFx':
-        - 'Introduction':                       'CHILI_GraFx/intro.md'
-        - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
-        - 'Migrating from My CHILI publish':    'CHILI_GraFx/mycpmigration.md'
+        - 'Introduction':                       'CHILI_GraFx/index.md'
+#        - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
+        - 'Upgrade from My CHILI publish':    'CHILI_GraFx/mycpupgrade.md'
         - 'Concepts':
             - 'Renders':                        'CHILI_GraFx/concepts/renders.md'
         - 'Platform Admin':
@@ -60,118 +65,109 @@ nav:
                 - 'Roles' :                     'CHILI_GraFx/user_management_roles.md'
                 - 'Users & Invitation' :        'CHILI_GraFx/user_management_users.md'
                 - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
-            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
-            - 'Environments' :                  'CHILI_GraFx/environments.md'
+#            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
+#            - 'Environments' :                  'CHILI_GraFx/environments.md'
 #        - 'Application overview':
 #            - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
         - 'How to':
-            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
+#            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
+            - 'Create GraFx Studio template' :   'CHILI_GraFx/how_to/create_studio_template.md'
+            - 'Create GraFx Publisher template' : 'CHILI_GraFx/how_to/create_publisher_template.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
         - 'Platform API reference' :            
-            - 'Intro' :                         'CHILI_GraFx/platform_api/intro.md'
+            - 'Intro' :                         'CHILI_GraFx/platform_api/index.md'
             - 'Reference' :                     'CHILI_GraFx/platform_api/reference.md'
         - 'Environment API reference':          
-            - 'Intro' :                         'CHILI_GraFx/environment_api/intro.md'
+            - 'Intro' :                         'CHILI_GraFx/environment_api/index.md'
             - 'Reference' :                     'CHILI_GraFx/environment_api/reference.md'
 
 #       - 'Release notes':
 #            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
     - 'GraFx Studio':
-        - 'Introduction':                       'GraFx_studio/intro.md'
-        - 'Setting up GraFx studio':            'GraFx_studio/setup.md'
+        - 'Introduction':                       'GraFx_Studio/index.md'
+#        - 'Setting up GraFx studio':            'GraFx_Studio/setup.md'
         - 'Application overview':
-            - 'Workspace elements':             'GraFx_studio/workspace_elements.md'
-            - 'Headerbar':                      'GraFx_studio/headerbar.md'
-            - 'Top Quick Tools':                'GraFx_studio/topquicktools.md'
-            - 'Document Canvas':                'GraFx_studio/documentcanvas.md'
-            - 'Page or Document':               'GraFx_studio/page_document.md'
-            - 'Properties panel':               'GraFx_studio/properties.md'
-            - 'Export':                         'GraFx_studio/export.md'
-            - 'Bottom Quick Tools':             'GraFx_studio/bottomquicktools.md'
-#            - 'Quick Tools Details':            'GraFx_studio/quicktoolsdetail.md'
-#            - 'Bottom Panel':                   'GraFx_studio/bottompanel.md'
-            - 'Properties':                     'GraFx_studio/properties.md'
-            - 'Animation':                      'GraFx_studio/animation.md'
-            - 'Layouts':                        'GraFx_studio/layouts.md'
-            - 'Layers & Timeline':              'GraFx_studio/layers_timeline.md'
-            - 'Stylekit':                       'GraFx_studio/stylekitpanel.md'
+            - 'Workspace elements':             'GraFx_Studio/workspace_elements.md'
+#            - 'Headerbar':                      'GraFx_Studio/headerbar.md'
+            - 'Top Quick Tools':                'GraFx_Studio/topquicktools.md'
+            - 'Document Canvas':                'GraFx_Studio/documentcanvas.md'
+            - 'Page or Document':               'GraFx_Studio/page_document.md'
+            - 'Properties panel':               'GraFx_Studio/properties.md'
+            - 'Export':                         'GraFx_Studio/export.md'
+            - 'Bottom Quick Tools':             'GraFx_Studio/bottomquicktools.md'
+#            - 'Quick Tools Details':            'GraFx_Studio/quicktoolsdetail.md'
+#            - 'Bottom Panel':                   'GraFx_Studio/bottompanel.md'
+            - 'Properties':                     'GraFx_Studio/properties.md'
+            - 'Animation':                      'GraFx_Studio/animation.md'
+            - 'Layouts':                        'GraFx_Studio/layouts.md'
+            - 'Frames & Timeline':              'GraFx_Studio/frames_timeline.md'
+            - 'Stylekit':                       'GraFx_Studio/stylekitpanel.md'
         - 'Concepts':
-            - 'Template vs Publication':        'GraFx_studio/concept/template_publication.md'
-            - 'Frames':                         'GraFx_studio/concept/frames.md'
-            - 'Layers':                         'GraFx_studio/concept/layers.md'
-            - 'Layouts':                        'GraFx_studio/concept/layouts.md'
-            - 'Variables':                      'GraFx_studio/concept/variables.md'
-            - 'Animation':                      'GraFx_studio/concept/animation.md'
-            - 'Stylekit':                       'GraFx_studio/concept/stylekit.md'
-            - 'Shortcuts':                      'GraFx_studio/concept/shortcuts.md'
+#            - 'Template vs Publication':        'GraFx_Studio/concept/template_publication.md'
+            - 'Frames':                         'GraFx_Studio/concept/frames.md'
+            - 'Layers':                         'GraFx_Studio/concept/layers.md'
+            - 'Layouts':                        'GraFx_Studio/concept/layouts.md'
+            - 'Variables':                      'GraFx_Studio/concept/variables.md'
+            - 'Animation':                      'GraFx_Studio/concept/animation.md'
+            - 'Stylekit':                       'GraFx_Studio/concept/stylekit.md'
+#            - 'Shortcuts':                      'GraFx_Studio/concept/shortcuts.md'
         - 'How to: Design documents'    :
-            - 'Create Layouts':                 'GraFx_studio/how_to/layouts.md'
-            - 'Animate my frame':               'GraFx_studio/how_to/animate_frame.md'
-            - 'Define variables':               'GraFx_studio/how_to/define_variables.md'
-            - 'Organize variables':             'GraFx_studio/how_to/organize_variables.md'
-            - 'Add variables to document':      'GraFx_studio/how_to/variables.md'
+            - 'Create Layouts':                 'GraFx_Studio/how_to/layouts.md'
+            - 'Animate my frame':               'GraFx_Studio/how_to/animate_frame.md'
+            - 'Define variables':               'GraFx_Studio/how_to/define_variables.md'
+            - 'Organize variables':             'GraFx_Studio/how_to/organize_variables.md'
+            - 'Add variables to document':      'GraFx_Studio/how_to/variables.md'
 #        - 'How to: Extend GraFx studio':
-#            - 'GraFx studio INDD plugin' :      'GraFx_studio/plugin/studio_indesign.md'
-#            - 'GraFx studio AI plugin' :        'GraFx_studio/plugin/studio_ai.md'
+#            - 'GraFx studio INDD plugin' :      'GraFx_Studio/plugin/studio_indesign.md'
+#            - 'GraFx studio AI plugin' :        'GraFx_Studio/plugin/studio_ai.md'
         - 'How to: Output':
-#            - 'Settings':                       'GraFx_studio/how_to/output_settings.md'
-            - 'MP4':                            'GraFx_studio/how_to/mp4_output.md'
-            - 'GIF':                            'GraFx_studio/how_to/gif_output.md'
+#            - 'Settings':                       'GraFx_Studio/how_to/output_settings.md'
+            - 'MP4':                            'GraFx_Studio/how_to/mp4_output.md'
+            - 'GIF':                            'GraFx_Studio/how_to/gif_output.md'
+            - 'JPG and PNG':                    'GraFx_Studio/how_to/png_jpg_output.md'
         - 'Integrate GraFx studio':
-            - 'Getting started' :               'GraFx_studio/integration/getting_started.md'
-            - 'Local environment' :             'GraFx_studio/integration/local_environment.md'
-            - 'NPM & Webpack' :                 'GraFx_studio/integration/npm_webpack.md'
-            - 'CHILI Editor SDK' :              'GraFx_studio/integration/chili_editor_sdk.md'
-            - 'First build' :                   'GraFx_studio/integration/first_build.md'
-            - 'Custom app' :                    'GraFx_studio/integration/custom_app.md'
+            - 'Getting started' :               'GraFx_Studio/integration/getting_started.md'
+            - 'Local environment' :             'GraFx_Studio/integration/local_environment.md'
+            - 'NPM & Webpack' :                 'GraFx_Studio/integration/npm_webpack.md'
+            - 'CHILI Editor SDK' :              'GraFx_Studio/integration/chili_editor_sdk.md'
+            - 'First build' :                   'GraFx_Studio/integration/first_build.md'
+            - 'Custom app' :                    'GraFx_Studio/integration/custom_app.md'
         - 'SDK reference':
-            - Overview:                         'GraFx_studio/sdk/README.md'
-            - ... | flat | GraFx_studio/sdk/**
+            - Overview:                         'GraFx_Studio/sdk/README.md'
+            - ... | flat | GraFx_Studio/sdk/**
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 #        - 'Release notes':
-#            - 'Latest':                         'GraFx_studio/releasenotes/latest.md'
-        - 'Early Access':
-            - 'Workspace Release notes':        'GraFx_studio/early_access/releasenotes.md'
-            - 'Getting Started':                'GraFx_studio/early_access/gettingstarted.md'
+#            - 'Latest':                         'GraFx_Studio/releasenotes/latest.md'
+        - 'Release notes':                      'GraFx_Studio/releasenotes.md'
     - 'GraFx Publisher':
-        - 'Introduction':                       'GraFx_publisher/intro.md'
-
-    - 'GraFx Publisher':
-        - 'Introduction':                       'GraFx_publisher/intro.md'
-        - 'The manual':                         'GraFx_publisher/manual.md'
-        - 'Integration':                        'GraFx_publisher/integration.md'
-        - 'Knowledge Base':
-            - 'Smarter Templates':              'GraFx_publisher/smarter_templates.md'
-        - 'Release notes':
-            - 'Latest':                         'GraFx_publisher/releasenotes/latest.md'
-            - 'GraFX publisher 2022':           'GraFx_publisher/releasenotes/2022.md'
+        - 'Introduction':                       'GraFx_Publisher/index.md'
 
     - 'GraFx Media':
-        - 'Introduction':                       'GraFx_media/intro.md'
+        - 'Introduction':                       'GraFx_Media/index.md'
 #        - 'Release notes':
 #            - 'Latest':                         'GraFx_media/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'GraFx Fonts':
-        - 'Introduction':                       'GraFx_fonts/intro.md'
+        - 'Introduction':                       'GraFx_Fonts/index.md'
 #        - 'Release notes':
 #            - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'GraFx Stylekits':
-        - 'Introduction':                       'GraFx_stylekits/intro.md'
+        - 'Introduction':                       'GraFx_Stylekits/index.md'
 #        - 'Release notes':
 #            - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'On-prem':
-        - 'Introduction':                       'on-premise/intro.md'
+        - 'Introduction':                       'on-premise/index.md'
         - 'My CHILI publish':                   'on-premise/mycp.md'
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
 
-    - 'Solutions':
-        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
+#    - 'Solutions':
+#        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
 
     - 'Developer center':                       

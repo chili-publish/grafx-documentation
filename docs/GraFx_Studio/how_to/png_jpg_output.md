@@ -1,4 +1,4 @@
-# Output to GIF
+# Output to PNG or JPG
 
 ## Select the right Layout
 
@@ -8,15 +8,13 @@ In the tree of layouts, select the one you wish to output.
 
 ![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_2.png)
 
-## Check the timeline
+## Timeline
 
-Have a quick glance at your timeline. Take the Scrubber, and run through the timeline. This will reassure you, this is the animation you will output.
+Since your outputting a static file, the first frame will be selected from the timeline.
 
-![Output](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/output_3.gif)
+## Output
 
-## Output (to MP4)
-
-Click "Export as" and choose GIF in the dropdown.
+Click "Export as" and choose PNG or JPG in the dropdown.
 
 ![Output](https://chilipublishdocs.imgix.net/GraFx_studio/export.png)
 
