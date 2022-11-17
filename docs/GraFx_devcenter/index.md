@@ -2,8 +2,8 @@
 
 Server side, you have access to 2 API's with endpoints.
 
-- [Platform API](/CHILI_GraFx/platform_api/overview/)
-- [Environment API](/CHILI_GraFx/environment_api/overview/)
+- [Platform API](/CHILI_GraFx/platform_api/)
+- [Environment API](/CHILI_GraFx/environment_api/)
 
 Client side
 
@@ -48,24 +48,24 @@ Error codes
 ## CHILI GraFx
 
 - [Getting Started](/CHILI_GraFx/integration/getting_started/)
-- [Platform API](/CHILI_GraFx/platform_api/overview/)
+- [Platform API](/CHILI_GraFx/platform_api/)
 
 ## GraFx Studio
 
 - [SDK Getting Started](/GraFx_studio/integration/getting_started/)		
 - [SDK Reference](/GraFx_studio/sdk/)
-- [Environment API](/CHILI_GraFx/environment_api/overview/)
+- [Environment API](/CHILI_GraFx/environment_api/)
 
 ## GraFx publisher
 
 - [REST API Reference](https://mydocumentation.chili-publish.com/search?text=rest%20api%20endpoints){target="_blank"}
-- [Javascript API](https://mydocumentation.chili-publish.com/search?text=Getting%20started%20with%20your%20JavaScript%20integration){target="_blank"}`
+- [Javascript API](https://mydocumentation.chili-publish.com/search?text=Getting%20started%20with%20your%20JavaScript%20integration){target="_blank"}
 - [Getting Started](https://mydocumentation.chili-publish.com/search?text=chili%20api%20guide){target="_blank"}
 
 ## GraFx media
 
-- [Environment API](/GraFx_devcenter/environment_api/overview)
+- [Environment API](/CHILI_GraFx/environment_api/)
 
 ## GraFx fonts
 
-- [Environment API](/GraFx_devcenter/environment_api/overview)
+- [Environment API](/CHILI_GraFx/environment_api/)
