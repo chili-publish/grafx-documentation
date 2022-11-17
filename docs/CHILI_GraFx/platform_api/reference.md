@@ -1,5 +1,3 @@
-<!-- Generator: Widdershins v4.0.1 -->
-
 <h1 id="chili-grafx">CHILI GraFx v1</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
@@ -259,6 +257,7 @@ Bearer
 {
   "id": 0,
   "name": "string",
+  "usedRenders": 0,
   "maxRenders": 0,
   "maxStorage": 0,
   "storageUsed": 0,
@@ -276,6 +275,7 @@ Bearer
     {
       "id": "string",
       "coresTotal": 0,
+      "coresUsed": 0,
       "url": "http://example.com",
       "licenseType": 0
     }
@@ -329,7 +329,13 @@ Bearer
   "clientName": "string",
   "billingClientContact": "string",
   "templateDesignerSeatsTotal": 0,
-  "templateDesignerSeatsUsed": 0
+  "templateDesignerSeatsUsed": 0,
+  "tenantInformation": {
+    "sandboxEnvironmentsTotal": 0,
+    "sandboxEnvironmentsUsed": 0,
+    "productionEnvironmentsTotal": 0,
+    "productionEnvironmentsUsed": 0
+  }
 }
 ```
 
@@ -524,7 +530,6 @@ Bearer
 
 > Example responses
 
-
 > 200 Response
 
 ```json
@@ -537,8 +542,7 @@ Bearer
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully created.|[CreateUserResultModel](#schemacreateuserresultmodel)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns ID of successfully created user|[CreateUserResultModel](#schemacreateuserresultmodel)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, email, firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
 |409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|If user with the same email already exists.|[ProblemDetails](#schemaproblemdetails)|
 
@@ -785,7 +789,7 @@ Response model with subscription information.
 
 ```
 
-Request model that is used in the response for the new user in GraFx.
+Request model that is used to return new user ID after creation in GraFx.
 
 ### Properties
 
@@ -1266,6 +1270,7 @@ Environment type used in subscription.
 {
   "id": "string",
   "coresTotal": 0,
+  "coresUsed": 0,
   "url": "http://example.com",
   "licenseType": 0
 }
@@ -1278,11 +1283,11 @@ Response model with license details included in subscription.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|id|string¦null|false|none|License serial key|
+|id|string|true|none|License serial key|
 |coresTotal|integer(int32)¦null|false|none|Max cores amount|
-|url|string(uri)¦null|false|none|Url to My CP license|
+|coresUsed|integer(int32)|true|none|Used cores amount|
+|url|string(uri)¦null|false|none|Url to license information|
 |licenseType|[LicenseType](#schemalicensetype)|false|none|License type.|
-
 
 <h2 id="tocS_SubscriptionModel">SubscriptionModel</h2>
 <!-- backwards compatibility -->
@@ -1295,6 +1300,7 @@ Response model with license details included in subscription.
 {
   "id": 0,
   "name": "string",
+  "usedRenders": 0,
   "maxRenders": 0,
   "maxStorage": 0,
   "storageUsed": 0,
@@ -1312,6 +1318,7 @@ Response model with license details included in subscription.
     {
       "id": "string",
       "coresTotal": 0,
+      "coresUsed": 0,
       "url": "http://example.com",
       "licenseType": 0
     }
@@ -1365,7 +1372,13 @@ Response model with license details included in subscription.
   "clientName": "string",
   "billingClientContact": "string",
   "templateDesignerSeatsTotal": 0,
-  "templateDesignerSeatsUsed": 0
+  "templateDesignerSeatsUsed": 0,
+  "tenantInformation": {
+    "sandboxEnvironmentsTotal": 0,
+    "sandboxEnvironmentsUsed": 0,
+    "productionEnvironmentsTotal": 0,
+    "productionEnvironmentsUsed": 0
+  }
 }
 
 ```
@@ -1378,6 +1391,7 @@ Response model with detailed information about subscription.
 |---|---|---|---|---|
 |id|integer(int32)|true|none|Subscription Id.|
 |name|string¦null|false|none|Subscription name.|
+|usedRenders|integer(int64)¦null|false|none|Used renders.|
 |maxRenders|integer(int64)¦null|false|none|Max renders available in subscription.|
 |maxStorage|integer(int64)¦null|false|none|Max storage available in subscription in bytes.|
 |storageUsed|integer(int64)|true|none|Storage used in bytes.|
@@ -1391,6 +1405,7 @@ Response model with detailed information about subscription.
 |billingClientContact|string¦null|false|none|Client billing contact information.|
 |templateDesignerSeatsTotal|integer(int32)¦null|false|none|Max count of template designer seats.|
 |templateDesignerSeatsUsed|integer(int32)¦null|false|none|Using count of template designer seats.|
+|tenantInformation|[SubscriptionTenantInformationModel](#schemasubscriptiontenantinformationmodel)|true|none|Response model with subscription tenant information.|
 
 <h2 id="tocS_SubscriptionRendersModel">SubscriptionRendersModel</h2>
 <!-- backwards compatibility -->
@@ -1449,6 +1464,34 @@ Status of user subscription.
 |---|---|
 |*anonymous*|0|
 |*anonymous*|1|
+
+<h2 id="tocS_SubscriptionTenantInformationModel">SubscriptionTenantInformationModel</h2>
+<!-- backwards compatibility -->
+<a id="schemasubscriptiontenantinformationmodel"></a>
+<a id="schema_SubscriptionTenantInformationModel"></a>
+<a id="tocSsubscriptiontenantinformationmodel"></a>
+<a id="tocssubscriptiontenantinformationmodel"></a>
+
+```json
+{
+  "sandboxEnvironmentsTotal": 0,
+  "sandboxEnvironmentsUsed": 0,
+  "productionEnvironmentsTotal": 0,
+  "productionEnvironmentsUsed": 0
+}
+
+```
+
+Response model with subscription tenant information.
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|sandboxEnvironmentsTotal|integer(int64)¦null|false|none|Total count of sandbox environments allowed in subscription.|
+|sandboxEnvironmentsUsed|integer(int64)|true|none|Total count of sandbox environments used in subscription.|
+|productionEnvironmentsTotal|integer(int64)¦null|false|none|Total count of production environments allowed in subscription.|
+|productionEnvironmentsUsed|integer(int64)|true|none|Total count of production environments used in subscription.|
 
 <h2 id="tocS_SubscriptionType">SubscriptionType</h2>
 <!-- backwards compatibility -->

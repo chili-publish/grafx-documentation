@@ -155,8 +155,8 @@ nav:
 #            - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
-#    - 'GraFx Stylekits':
-#        - 'Introduction':                       'GraFx_stylekits/intro.md'
+    - 'GraFx Stylekits':
+        - 'Introduction':                       'GraFx_Stylekits/index.md'
 #        - 'Release notes':
 #            - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'

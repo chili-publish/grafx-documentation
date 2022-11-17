@@ -39,3 +39,5 @@ You can define a color, give it a name and save the named color to be used later
 "In metal typesetting, a font is a particular size, weight and style of a typeface. Each font is a matched set of type, with a piece (a "sort") for each glyph. A typeface consists of a range of such fonts that shared an overall design."
 
 Source "Wikipedia"
+
+You can add fonts through the backoffice in GraFx Publisher. They will then be visible in your 
