@@ -171,6 +171,6 @@ nav:
 
 
     - 'Developer center':                       
-        - 'Overview':                           'GraFx_devcenter/overview.md'
+        - 'Overview':                           'GraFx_devcenter/index.md'
         - 'Platform API reference' :            '/CHILI_GraFx/platform_api/overview/'
         - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
