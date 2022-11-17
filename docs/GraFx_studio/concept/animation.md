@@ -16,6 +16,8 @@ By default, frames are static. This means, they don't have an animation, and app
 
 Even when you "play" the animation, this frame will appear static in on stage. (on the page).
 
+Exporting the "animation" to a static file format, will only export the first frame of the timeline.
+
 
 ## Timeline
 
@@ -45,11 +47,11 @@ You can also adjust the length of the animation in the animation panel, changing
 
 ![Timeline duration](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/timeline2.png)
 
-### Move the playhead
+### Move the scrubber
 
 You can play the animation (in real time) by clicking the play button.
 
-You can drag the white playhead left and right.
+You can drag the white white left and right.
 
 Each second is divided in 100 [centiseconds](https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)#Less_than_one_second){target="_blank"}.
 

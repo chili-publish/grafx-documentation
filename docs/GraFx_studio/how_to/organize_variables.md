@@ -6,7 +6,9 @@ tags:
 # Organize variables in your document
 
 
-In the headerbar, choose [Automate](/GraFx_studio/headerbar/)
+In the properties panel, click the tool wrench.
+
+![Variables](https://chilipublishdocs.imgix.net/GraFx_studio/variables1.png)
 
 A Variable panel will appear, where you can define/organize your variables.
 
@@ -18,14 +20,6 @@ With several variables selected, you can [group](#group-variables) variables.
 
 See [Define Variables](/GraFx_studio/how_to/define_variables/) for the other options.
 
-### Move to Top 
-
-Will move the variable to the top of the list
-
-### Move to Bottom 
-
-Will moves the variable to the bottom of the list
-
 ## Group variables
 
 You can put variables into variable groups. 
@@ -34,7 +28,7 @@ These groups can be used as a filter in the variable input form for the end-user
 
 It is possible to drag and drop one or more variables in and out of groups and from one group to another.
 
-## Sort variables
+## Ordering variables
 
 You can drag and drop variables in the variable list to change the order of the variables.
 

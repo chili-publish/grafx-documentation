@@ -1,3 +1,13 @@
+.chilired
+	{
+		color: #FF0048;
+	}
+.introdiv
+	{
+		font-size:2.5em;
+		font-weight:bold;
+	}
+	
 img[alt=applogo] { width: 200px; }
 
 p img[alt=svg_icon] { width: 100px; }

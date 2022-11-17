@@ -6,7 +6,7 @@
 
 Base URLs:
 
-* /grafx
+* <a href="/grafx">/grafx</a>
 
 # Authentication
 
@@ -31,7 +31,7 @@ Returns all fonts in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
@@ -100,7 +100,7 @@ Returns all fonts and directories in the environment located directly in request
 |limit|query|integer|false|Amount of folders per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
@@ -360,7 +360,7 @@ Returns all media in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
@@ -427,7 +427,7 @@ Returns all media and directories in the environment located directly in request
 |limit|query|integer|false|Amount of folders per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
@@ -683,8 +683,7 @@ Returns all templates in the environment including subfolders
 |limit|query|integer|false|Amount of resources per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-
-|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
@@ -728,6 +727,7 @@ Returns all templates in the environment including subfolders
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
+|410|[Gone](https://tools.ietf.org/html/rfc7231#section-6.5.9)|Next page token argument is not valid due to removed resource. Please reload previous page to get actual link to the next page|[GoneProblemDetails](#schemagoneproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -754,7 +754,7 @@ Creates a new template in the environment, takes template JSON from request body
 |---|---|---|---|---|
 |environment|path|string|true|Name of the environment|
 |name|query|string|true|Name of template|
-|folderPath|query|string|true|Folder to place created template  (NOTE: forward slashes only, should not start with slash)|
+|folderPath|query|string|true|Folder to place created template  (NOTE: forward slashes only, should start with slash)|
 |body|body|any|false|Template JSON|
 
 > Example responses
@@ -804,7 +804,7 @@ Returns all templates and directories in the environment located directly in req
 |limit|query|integer|false|Amount of folders per-response|
 |sortBy|query|string|false|Name of field sort is based|
 |sortOrder|query|string|false|Order of resources, ascending of descending|
-|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should not start with slash)|
+|folder|query|string|false|Folder in which search should be done (NOTE: forward slashes only, should start with slash)|
 |search|query|string|false|Search by name, relativePath or resource ID|
 
 #### Enumerated Values
@@ -903,7 +903,7 @@ Bearer
 
 *Updates template by ID in the environment*
 
-Updates template name, body and relative path in the environment
+Updates template metadata (name and/or relative path) or body in the environment. Simultaneous update of body and metadata is not allowed
 
 > Body parameter
 
@@ -918,7 +918,7 @@ Updates template name, body and relative path in the environment
 |environment|path|string|true|Name of the environment|
 |templateId|path|string|true|ID of the template|
 |name|query|string|false|Name of the template|
-|folderPath|query|string|false|Folder to move updated template (NOTE: forward slashes only, should not start with slash)|
+|folderPath|query|string|false|Folder to move updated template (NOTE: forward slashes only, should start with slash)|
 |body|body|any|false|Template JSON|
 
 > Example responses
@@ -940,7 +940,7 @@ Updates template name, body and relative path in the environment
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Template](#schematemplate)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|One of arguments is incorrect|[BadRequestProblemDetails](#schemabadrequestproblemdetails)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|One of arguments is incorrect or request contains both template body and metadata|[BadRequestProblemDetails](#schemabadrequestproblemdetails)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment or template is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
@@ -1042,7 +1042,7 @@ Bearer
 
 *Returns image preview of the template by ID in the environment*
 
-Returns image preview of the template by ID in the environment
+Returns image preview of the template by ID in the environment, or starts new preview generation task and returns it's ID
 
 <h3 id="get--api-v1-environment-{environment}-templates-{templateid}-preview-parameters">Parameters</h3>
 
@@ -1062,14 +1062,16 @@ Returns image preview of the template by ID in the environment
 
 > Example responses
 
-> 401 Response
+> 202 Response
 
 ```json
 {
-  "type": "https://httpstatuses.io/401",
-  "title": "Unauthorized",
-  "status": "401",
-  "traceId": "00-4c7122268e63dfb01f47bd1a23507588-13f1aab74314c293-00"
+  "data": {
+    "taskId": "a19ddb23-c4db-494f-aa38-129ddc319b99"
+  },
+  "links": {
+    "taskInfo": "string"
+  }
 }
 ```
 
@@ -1078,6 +1080,7 @@ Returns image preview of the template by ID in the environment
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success, returns file|None|
+|202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Existing preview was not found, starting a new task|[OutputTaskStartResponse](#schemaoutputtaskstartresponse)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment, template, or preview is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
@@ -1093,7 +1096,7 @@ Bearer
 
 *Returns image preview of the template by ID in the environment*
 
-Returns image preview of the template by ID in the environment
+Returns image preview of the template by ID in the environment, or starts new preview generation task and returns it's ID
 
 <h3 id="get--api-v1-environment-{environment}-templates-{templateid}-preview-{previewtype}-parameters">Parameters</h3>
 
@@ -1113,14 +1116,16 @@ Returns image preview of the template by ID in the environment
 
 > Example responses
 
-> 401 Response
+> 202 Response
 
 ```json
 {
-  "type": "https://httpstatuses.io/401",
-  "title": "Unauthorized",
-  "status": "401",
-  "traceId": "00-4c7122268e63dfb01f47bd1a23507588-13f1aab74314c293-00"
+  "data": {
+    "taskId": "a19ddb23-c4db-494f-aa38-129ddc319b99"
+  },
+  "links": {
+    "taskInfo": "string"
+  }
 }
 ```
 
@@ -1129,9 +1134,56 @@ Returns image preview of the template by ID in the environment
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success, returns file|None|
+|202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Existing preview was not found, starting a new task|[OutputTaskStartResponse](#schemaoutputtaskstartresponse)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Environment, template or preview is not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+
+## get  api v1 environment {environment} templates preview tasks {taskId}
+
+`GET /api/v1/environment/{environment}/templates/preview/tasks/{taskId}`
+
+*Returns preview generation task status*
+
+Returns preview generation task status
+
+<h3 id="get--api-v1-environment-{environment}-templates-preview-tasks-{taskid}-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|environment|path|string|true|Name of the environment|
+|taskId|path|string|true|ID of the task|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "data": {
+    "taskId": "a19ddb23-c4db-494f-aa38-129ddc319b99"
+  },
+  "links": {
+    "download": "string"
+  }
+}
+```
+
+<h3 id="get--api-v1-environment-{environment}-templates-preview-tasks-{taskid}-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Task is finished|[OutputTaskFinishedResponse](#schemaoutputtaskfinishedresponse)|
+|202|[Accepted](https://tools.ietf.org/html/rfc7231#section-6.3.3)|Task is not yet finished|None|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|[UnauthorizedProblemDetails](#schemaunauthorizedproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|[ForbiddenProblemDetails](#schemaforbiddenproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Task not found|[NotFoundProblemDetails](#schemanotfoundproblemdetails)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Task failed|[TaskFailedProblemDetails](#schemataskfailedproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -1160,7 +1212,7 @@ Starts animated output task, takes template either by id or from request body
 |---|---|---|---|---|
 |environment|path|string|true|Name of the environment|
 |templateId|query|string|false|ID of the template|
-|layoutToExport|query|integer|false|Index of template layout to export|
+|layoutToExport|query|string|false|Index of template layout to export|
 |outputType|query|string|false|Format of the output|
 |fps|query|integer|false|Framerate of the animated output (NOTE: for GIF output FPS should not exceed 50)|
 |pixelRatio|query|number|false|Pixel ratio of the animated output|
@@ -1224,9 +1276,9 @@ Starts image output task, takes template either by id or from request body
 |---|---|---|---|---|
 |environment|path|string|true|Name of the environment|
 |templateId|query|string|false|ID of the template|
-|layoutToExport|query|integer|false|Index of template layout to export|
+|layoutToExport|query|string|false|Index of template layout to export|
 |outputType|query|string|false|Format of the output|
-|pixelRatio|query|number|false|Pixel ratio of the animated output|
+|pixelRatio|query|number|false|Pixel ratio of the image output|
 |body|body|any|false|Template JSON|
 
 #### Enumerated Values
@@ -1737,6 +1789,32 @@ Bearer
   "title": "Not Found",
   "status": "404",
   "detail": "Environment 'environment' is not found"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|type|string|false|none|none|
+|title|string|false|none|none|
+|status|integer|false|none|none|
+|detail|integer|false|none|none|
+
+<h2 id="tocS_GoneProblemDetails">GoneProblemDetails</h2>
+<!-- backwards compatibility -->
+<a id="schemagoneproblemdetails"></a>
+<a id="schema_GoneProblemDetails"></a>
+<a id="tocSgoneproblemdetails"></a>
+<a id="tocsgoneproblemdetails"></a>
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.9",
+  "title": "Gone",
+  "status": "410",
+  "detail": "Gone"
 }
 
 ```

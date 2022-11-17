@@ -6,8 +6,6 @@ For the 3 stages of animation, you can set animation properties.
 
 ## Intro section
 
-![Animation](https://chilipublishdocs.imgix.net/GraFx_studio/panel2_2_.png?w=250&q=80)
-
 - Easing type (the star)
 - Fade (star half filled)
 - Rotation (two half circle arrows)
