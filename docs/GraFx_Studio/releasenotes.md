@@ -4,9 +4,9 @@ The GraFx Studio workspace for template designers is frequently updated with new
 
 Here you can find a summary of what's new!
 
-## November 17, 2022
+## November 18, 2022
 
-Version 0.84.7, using Studio SDK [0.84.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.88.3, using Studio SDK [0.88.2](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
 ### Features
 
@@ -16,6 +16,7 @@ Version 0.84.7, using Studio SDK [0.84.0](https://github.com/chili-publish/edito
 - Add fonts from your GraFx Publisher Backoffice to your Stylekit
 - Insert text variables in text frames
 - Change the vertical alignment of your text
+- Enable copyfitting for text frames to automatically change the font size to fit the text inside the frame
 - Bring frames forward or send them backward to change the way they are rendered on top of each other (changing the z-index)
 - Switch between image fill & fit mode to change how your image is placed in an image frame
 - Rename your template by clicking the template name in the top toolbar
@@ -24,8 +25,9 @@ Version 0.84.7, using Studio SDK [0.84.0](https://github.com/chili-publish/edito
 
 ### Improvements
 
-- Design and Automate modes are removed, variables are now located under a new tab in the properties panel
-- The order of the frames in the Layers panel is changed so that the top one is the one that is rendered in front
+- Design and Automate mode are removed, variables are now located under a new tab in the properties panel
+- The order of the frames in the Layers panel is changed so that the frame at the top is the one that is rendered in front
+- The frames in the Layers panel have the correct frame icon
 - Stylekit panel improvements
 - Updated primary color to the GraFx Studio color
 
