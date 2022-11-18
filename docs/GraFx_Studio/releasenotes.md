@@ -19,12 +19,13 @@ Version 0.84.7, using Studio SDK [0.84.0](https://github.com/chili-publish/edito
 - Bring frames forward or send them backward to change the way they are rendered on top of each other (changing the z-index)
 - Switch between image fill & fit mode to change how your image is placed in an image frame
 - Rename your template by clicking the template name in the top toolbar
-- Export your template as PNG or JPG (image is taken at the beginning of the animation)
+- Export the selected layout as PNG or JPG (the image is showing all visible frames, ignoring the animation)
 - Enabled environment API authentication
 
 ### Improvements
 
 - Design and Automate modes are removed, variables are now located under a new tab in the properties panel
+- The order of the frames in the Layers panel is changed so that the top one is the one that is rendered in front
 - Stylekit panel improvements
 - Updated primary color to the GraFx Studio color
 
