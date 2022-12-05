@@ -33,13 +33,14 @@ This average is used to size your allowance in your subscription.
 When variable output is used, this is the formula to count renders.
 
 !!! Alert
-	V = Variable Data source size (e.g. 1000 recors)
+
+	V = Variable Data source size (e.g. 1000 records)
 	
-	R = 50 + (V-50)/50	
+	Amount of Renders = 50 + (V-50)/50	
+		
+	e.g. 50 + (1000-50)/50 = 50 + 19 = 69
 	
 	The first 50 renders count as 50, then every 50 renders are counted as 1.
-	
-	e.g. 50 + (1000-50)/50 = 50 + 19 = 69
 	
 ## Fair use policy
 
