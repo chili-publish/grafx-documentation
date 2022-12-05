@@ -34,11 +34,11 @@ When variable output is used, this is the formula to count renders.
 
 !!! Alert
 	V = Variable Data source size (e.g. 1000 recors)
-	R = Renders
+	R = 50 + (V-50)/50	
 	
-	R = 1 + (V-50)*1
+	The first 50 renders count as 50, then every 50 renders are counted as 1.
 	
-	The first 50 renders count as 1, then 1 render is counted towards each record.
+	e.g. 50 + (1000-50)/50 = 50 + 19 = 69
 	
 ## Fair use policy
 
