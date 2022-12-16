@@ -4,6 +4,39 @@ The GraFx Studio workspace for template designers is frequently updated with new
 
 Here you can find a summary of what's new!
 
+## December 16, 2022
+
+Version 0.95.1, using Studio SDK [0.95.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+
+### Features
+
+- Next to paragraph styles, you can now also add character styles to your Stylekit and use them to style your text
+- Added support for most OTF fonts
+- Enabled keyboard shortcuts for text navigation, text selection and text cut/copy/paste
+
+### Improvements
+
+- Added option to remove fonts from your Stylekit
+- Added action menu to paragraph styles
+- Media assets and fonts are now showing the file type
+- It is not possible anymore to add the same font multiple times to your Stylekit
+- Frame property values are truncated to 2 decimal places
+- Saving your template while in text edit mode now also saves your latest text edits
+- Fixed issue with incorrect frame position at the end of an emphasis animation
+- Selected frame borders and handles are hidden during animation playback
+- Enabled 'T' and 'I' shortcuts to select the Text or Image frame creation tool
+- Some general styling improvements
+
+### Fixes
+
+- Fixed issues with fonts
+- Fixed issues with renaming a list item
+- Fixed issue with resetting a copyfitting override
+
+### Known issues
+
+- There are some issues with the color picker. We are working on it to get it fixed by the next release
+
 ## November 18, 2022
 
 Version 0.88.3, using Studio SDK [0.88.2](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
