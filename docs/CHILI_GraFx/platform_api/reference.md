@@ -6,7 +6,7 @@
 
 - HTTP Authentication, scheme: Bearer Enter a bearer token (JWT):
 
-<h1 id="chili-grafx-environmentroutingmodule">EnvironmentRoutingModule</h1>
+<h1 id="chili-grafx-environments">Environments</h1>
 
 ## get  api v1 environment {id}
 
@@ -26,21 +26,51 @@
 
 ```json
 {
-  "id": 0,
-  "name": "string",
-  "type": 0,
-  "usedStorage": 0,
+  "id": 494,
+  "name": "cp-000-001",
+  "type": "development",
+  "usedStorage": 2048,
   "usedStorageDetail": {
-    "assets": 0,
-    "documents": 0,
-    "fonts": 0,
-    "cache": 0,
-    "backup": 0,
-    "other": 0
+    "assets": 1280,
+    "documents": 3560,
+    "fonts": 1280,
+    "cache": 2560,
+    "backup": 5120,
+    "other": 10240
   },
-  "tenantName": "string",
-  "region": "string",
-  "renders": 0
+  "tenantName": "Tenant",
+  "region": "westeurope",
+  "renders": 2500
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
 }
 ```
 
@@ -49,6 +79,8 @@
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns environment information.|[EnvironmentModel](#schemaenvironmentmodel)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If environment with such Id is not found.|[ProblemDetails](#schemaproblemdetails)|
 
 <aside class="warning">
@@ -67,7 +99,7 @@ Bearer
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|integer(int32)|true|Environment Id.|
-|groupBy|query|string|true|Groups render information by: `year`, `month`|
+|groupBy|query|string|true|Groups render information by: `year`, `month`.|
 
 > Example responses
 
@@ -76,16 +108,56 @@ Bearer
 ```json
 [
   {
-    "date": "2019-08-24T14:15:22Z",
-    "totalRenders": 0,
+    "date": "2021-11-01T00:00:00",
+    "totalRenders": 2048,
     "renderDetail": [
       {
-        "name": "string",
-        "renders": 0
+        "name": "Pdf",
+        "renders": 1024
       }
     ]
   }
 ]
+```
+
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
 ```
 
 <h3 id="get--api-v1-environment-{id}-renders-responses">Responses</h3>
@@ -94,6 +166,8 @@ Bearer
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns environment renders information.|Inline|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If groupBy is missing or invalid.|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If environment with such Id is not found.|[ProblemDetails](#schemaproblemdetails)|
 
 <h3 id="get--api-v1-environment-{id}-renders-responseschema">Response Schema</h3>
@@ -114,7 +188,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-inforoutingmodule">InfoRoutingModule</h1>
+<h1 id="chili-grafx-info">Info</h1>
 
 ## get  api v1 info
 
@@ -129,7 +203,7 @@ Bearer
 ```json
 {
   "data": {
-    "serverVersion": "string"
+    "serverVersion": "1.0.0"
   }
 }
 ```
@@ -162,7 +236,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-rolesroutingmodule">RolesRoutingModule</h1>
+<h1 id="chili-grafx-roles">Roles</h1>
 
 ## get  api v1 roles
 
@@ -180,11 +254,22 @@ Bearer
 ]
 ```
 
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
 <h3 id="get--api-v1-roles-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of supported user roles.|Inline|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of supported user roles as strings array (e.g. ["SA","FA"]).|Inline|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
 
 <h3 id="get--api-v1-roles-responseschema">Response Schema</h3>
 
@@ -193,7 +278,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-subscriptionroutingmodule">SubscriptionRoutingModule</h1>
+<h1 id="chili-grafx-subscriptions">Subscriptions</h1>
 
 ## get  api v1 subscriptions
 
@@ -208,11 +293,31 @@ Bearer
 ```json
 [
   {
-    "id": 0,
-    "name": "string",
+    "id": 44,
+    "name": "CHILI - OnlineTrial",
     "isActive": true
   }
 ]
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
 ```
 
 <h3 id="get--api-v1-subscriptions-responses">Responses</h3>
@@ -220,6 +325,8 @@ Bearer
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of subscriptions.|Inline|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 
 <h3 id="get--api-v1-subscriptions-responseschema">Response Schema</h3>
 
@@ -230,7 +337,7 @@ Status Code **200**
 |*anonymous*|[[BasicSubscriptionModel](#schemabasicsubscriptionmodel)]|false|none|[Response model with subscription information.]|
 |» id|integer(int32)|true|none|Subscription Id.|
 |» name|string|true|none|Subscription name.|
-|» isActive|boolean|true|none|`True` if subscription is still active.|
+|» isActive|boolean|true|none|`true` if subscription is still active.|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -255,87 +362,75 @@ Bearer
 
 ```json
 {
-  "id": 0,
-  "name": "string",
-  "usedRenders": 0,
-  "maxRenders": 0,
-  "maxStorage": 0,
-  "storageUsed": 0,
+  "id": 1,
+  "name": "CHILI (Online)",
+  "usedRenders": 1000,
+  "maxRenders": 2500,
+  "maxStorage": 250000000000,
+  "storageUsed": 81959236,
   "environments": [
     {
-      "id": 0,
-      "name": "string",
-      "region": "string",
-      "type": 0,
-      "usedStorage": 0,
-      "backOfficeUri": "http://example.com"
+      "id": 494,
+      "name": "cp-eee-001",
+      "region": "westeurope",
+      "type": "development",
+      "usedStorage": 1093314335,
+      "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
     }
   ],
   "licenses": [
     {
-      "id": "string",
-      "coresTotal": 0,
-      "coresUsed": 0,
-      "url": "http://example.com",
-      "licenseType": 0
+      "id": "CPF-2022-0000001",
+      "coresTotal": 16,
+      "coresUsed": 2,
+      "url": "https://chili-publish.com/Licenses/Details/00000000-0000-0000-0000-000000000000",
+      "licenseType": "Production"
     }
   ],
-  "startDate": {
-    "calendar": {
-      "id": "string",
-      "name": "string",
-      "minYear": 0,
-      "maxYear": 0,
-      "eras": [
-        {
-          "name": "string"
-        }
-      ]
-    },
-    "year": 0,
-    "month": 0,
-    "day": 0,
-    "dayOfWeek": 0,
-    "yearOfEra": 0,
-    "era": {
-      "name": "string"
-    },
-    "dayOfYear": 0
-  },
-  "endDate": {
-    "calendar": {
-      "id": "string",
-      "name": "string",
-      "minYear": 0,
-      "maxYear": 0,
-      "eras": [
-        {
-          "name": "string"
-        }
-      ]
-    },
-    "year": 0,
-    "month": 0,
-    "day": 0,
-    "dayOfWeek": 0,
-    "yearOfEra": 0,
-    "era": {
-      "name": "string"
-    },
-    "dayOfYear": 0
-  },
-  "subscriptionType": 0,
-  "status": 0,
-  "clientName": "string",
-  "billingClientContact": "string",
-  "templateDesignerSeatsTotal": 0,
-  "templateDesignerSeatsUsed": 0,
+  "startDate": "11/12/2022 12:15:32 AM",
+  "endDate": "11/12/2023 12:15:32 PM",
+  "subscriptionType": "OnPremises",
+  "status": "Inactive",
+  "clientName": "CHILI Group",
+  "billingClientContact": "simple@example.com",
+  "templateDesignerSeatsTotal": 6,
+  "templateDesignerSeatsUsed": 4,
   "tenantInformation": {
-    "sandboxEnvironmentsTotal": 0,
-    "sandboxEnvironmentsUsed": 0,
-    "productionEnvironmentsTotal": 0,
-    "productionEnvironmentsUsed": 0
+    "sandboxEnvironmentsTotal": 4,
+    "sandboxEnvironmentsUsed": 2,
+    "productionEnvironmentsTotal": 4,
+    "productionEnvironmentsUsed": 1
   }
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
 }
 ```
 
@@ -344,7 +439,9 @@ Bearer
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns subscription.|[SubscriptionModel](#schemasubscriptionmodel)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription not found for the authenticated user.|[ProblemDetails](#schemaproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -372,11 +469,44 @@ Bearer
 true
 ```
 
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
 <h3 id="get--api-v1-subscription-{subscriptionguid}-{environmentguid}-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns `True` if environment is under subscription.|boolean|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns `true` if environment is under subscription.|boolean|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If subscriptionGuid or environmentGuid is not a valid GUID.|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -389,13 +519,20 @@ Bearer
 
 *Gets environments render information included in subscription.*
 
+All environments under that subscription are returned in the descending order based on renders.
+
 <h3 id="get--api-v1-subscription-{id}-renders-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|integer(int32)|true|Subscription Id.|
 |groupBy|query|string|true|Groups render information by: `year`, `month`|
-|top|query|integer(int32)|true|Returns first `top` environments with renders.|
+|top|query|integer(int32)|false|When top parameter is provided, the information for the `top` number of environments is returned and for|
+
+#### Detailed descriptions
+
+**top**: When top parameter is provided, the information for the `top` number of environments is returned and for
+all the rest of existing environments in the subscription the renders are concatenated under "Others".
 
 > Example responses
 
@@ -404,16 +541,56 @@ Bearer
 ```json
 [
   {
-    "date": "2019-08-24T14:15:22Z",
-    "totalRenders": 0,
+    "date": "2021-11-01T00:00:00",
+    "totalRenders": 4680,
     "environments": [
       {
-        "name": "string",
-        "renders": 0
+        "name": "cp-itm-000",
+        "renders": 4680
       }
     ]
   }
 ]
+```
+
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
 ```
 
 <h3 id="get--api-v1-subscription-{id}-renders-responses">Responses</h3>
@@ -422,7 +599,9 @@ Bearer
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of environments render details.|Inline|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If groupBy is missing or invalid.|[ProblemDetails](#schemaproblemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with this id is not found for the authenticated user.|[ProblemDetails](#schemaproblemdetails)|
 
 <h3 id="get--api-v1-subscription-{id}-renders-responseschema">Response Schema</h3>
 
@@ -461,15 +640,45 @@ Bearer
 ```json
 [
   {
-    "id": "string",
-    "email": "string",
-    "firstName": "string",
-    "lastName": "string",
-    "avatar": "string",
-    "lastSeen": 0,
-    "status": "string"
+    "id": "auth0|630f8c2b524936fea93c0e75",
+    "email": "simple@example.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "avatar": "https://www.chili-publish.com/",
+    "lastSeen": 1668540708,
+    "status": "Active"
   }
 ]
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
 ```
 
 <h3 id="get--api-v1-subscription-{id}-users-responses">Responses</h3>
@@ -477,7 +686,9 @@ Bearer
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of user details.|Inline|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with that Id is not found.|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with this id is not found for the authenticated user.|[ProblemDetails](#schemaproblemdetails)|
 
 <h3 id="get--api-v1-subscription-{id}-users-responseschema">Response Schema</h3>
 
@@ -499,7 +710,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-usermanagementroutingmodule">UserManagementRoutingModule</h1>
+<h1 id="chili-grafx-users">Users</h1>
 
 ## post  api v1 users manage add
 
@@ -511,13 +722,14 @@ Bearer
 
 ```json
 {
-  "email": "string",
-  "firstName": "string",
-  "lastName": "string",
+  "email": "simple@example.com",
+  "firstName": "John",
+  "lastName": "Doe",
   "subscriptionIds": [
-    "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+    "d28986ef-ad97-4172-92c9-59b768febd79",
+    "9afe8a46-27f4-4c39-76b1-db89e8ad9daf"
   ],
-  "customerGuid": "d7cc35b4-123a-43e1-9482-fdc8ca6dcf4f"
+  "customerGuid": "d28986ef-aa11-4372-92c9-59b768febd79"
 }
 ```
 
@@ -534,7 +746,37 @@ Bearer
 
 ```json
 {
-  "userId": "string"
+  "userId": "auth0|630f8c2b324946feb93c7e75"
+}
+```
+
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 409 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.8",
+  "title": "Conflict",
+  "status": 409
+}
+```
+
+> 500 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+  "title": "Internal Server Error",
+  "status": 500
 }
 ```
 
@@ -542,9 +784,10 @@ Bearer
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns ID of successfully created user|[CreateUserResultModel](#schemacreateuserresultmodel)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns ID of successfully created user.|[CreateUserResultModel](#schemacreateuserresultmodel)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, email, firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
 |409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|If user with the same email already exists.|[ProblemDetails](#schemaproblemdetails)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Server Error|[ProblemDetails](#schemaproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -561,8 +804,8 @@ Bearer
 
 ```json
 {
-  "firstName": "string",
-  "lastName": "string"
+  "firstName": "John",
+  "lastName": "Doe"
 }
 ```
 
@@ -575,18 +818,64 @@ Bearer
 
 > Example responses
 
-> 200 Response
+> 400 Response
 
 ```json
-{}
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
+```
+
+> 500 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+  "title": "Internal Server Error",
+  "status": 500
+}
 ```
 
 <h3 id="put--api-v1-users-{userid}-manage-update-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully updated.|[Void](#schemavoid)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: firstName, lastName|[ProblemDetails](#schemaproblemdetails)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully updated.|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If userId not found in GraFx.|[ProblemDetails](#schemaproblemdetails)|
 |500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Server Error|[ProblemDetails](#schemaproblemdetails)|
 
@@ -606,7 +895,7 @@ Bearer
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |userId|path|string|true|UserId in GraFx.|
-|signature|header|string|false|Signature used to verify that the request called by an authorized party.|
+|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
 
 > Example responses
 
@@ -615,6 +904,36 @@ Bearer
 ```json
 {
   "isEmailVerified": true
+}
+```
+
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
+```
+
+> 500 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+  "title": "Internal Server Error",
+  "status": 500
 }
 ```
 
@@ -642,7 +961,7 @@ Bearer
 
 ```json
 {
-  "userEmail": "string"
+  "userEmail": "simple@example.com"
 }
 ```
 
@@ -650,7 +969,7 @@ Bearer
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|signature|header|string|false|Signature used to verify that the request called by an authorized party.|
+|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
 |body|body|[MarkUserMigratedModel](#schemamarkusermigratedmodel)|false|none|
 
 > Example responses
@@ -659,13 +978,29 @@ Bearer
 
 ```json
 {
-  "type": "string",
-  "title": "string",
-  "status": 0,
-  "detail": "string",
-  "instance": "string",
-  "property1": null,
-  "property2": null
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
+```
+
+> 500 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+  "title": "Internal Server Error",
+  "status": 500
 }
 ```
 
@@ -675,8 +1010,83 @@ Bearer
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user successfully marked as migrated.|None|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, userEmail.|[ProblemDetails](#schemaproblemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|[ProblemDetails](#schemaproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If user with this userEmail is not found.|[ProblemDetails](#schemaproblemdetails)|
 |500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|If user cannot be marked as migrated due to internal failure.|[ProblemDetails](#schemaproblemdetails)|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+
+## post  api v1 users manage migrate subscriptions
+
+`POST /api/v1/users/manage/migrate/subscriptions`
+
+*Gets user accessible subscriptions.*
+
+> Body parameter
+
+```json
+{
+  "userEmail": "simple@example.com"
+}
+```
+
+<h3 id="post--api-v1-users-manage-migrate-subscriptions-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
+|body|body|[UserAccessibleSubscriptionsModel](#schemauseraccessiblesubscriptionsmodel)|false|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "userEmail": "simple@example.com"
+}
+```
+
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
+```
+
+> 500 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+  "title": "Internal Server Error",
+  "status": 500
+}
+```
+
+<h3 id="post--api-v1-users-manage-migrate-subscriptions-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns user accessible subscriptions.|[UserAccessibleSubscriptionsModel](#schemauseraccessiblesubscriptionsmodel)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, userEmail.|[ProblemDetails](#schemaproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If user not found in MyCP.|[ProblemDetails](#schemaproblemdetails)|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|If data cannot be retrieved due to internal failure.|[ProblemDetails](#schemaproblemdetails)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -694,13 +1104,14 @@ Bearer
 
 ```json
 {
-  "email": "string",
-  "firstName": "string",
-  "lastName": "string",
+  "email": "simple@example.com",
+  "firstName": "John",
+  "lastName": "Doe",
   "subscriptionIds": [
-    "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+    "d28986ef-ad97-4172-92c9-59b768febd79",
+    "9afe8a46-27f4-4c39-76b1-db89e8ad9daf"
   ],
-  "customerGuid": "d7cc35b4-123a-43e1-9482-fdc8ca6dcf4f"
+  "customerGuid": "d28986ef-aa11-4372-92c9-59b768febd79"
 }
 
 ```
@@ -726,8 +1137,8 @@ Request model that is used to add new user in GraFx.
 
 ```json
 {
-  "id": 0,
-  "name": "string",
+  "id": 44,
+  "name": "CHILI - OnlineTrial",
   "isActive": true
 }
 
@@ -741,39 +1152,7 @@ Response model with subscription information.
 |---|---|---|---|---|
 |id|integer(int32)|true|none|Subscription Id.|
 |name|string|true|none|Subscription name.|
-|isActive|boolean|true|none|`True` if subscription is still active.|
-
-<h2 id="tocS_CalendarSystem">CalendarSystem</h2>
-<!-- backwards compatibility -->
-<a id="schemacalendarsystem"></a>
-<a id="schema_CalendarSystem"></a>
-<a id="tocScalendarsystem"></a>
-<a id="tocscalendarsystem"></a>
-
-```json
-{
-  "id": "string",
-  "name": "string",
-  "minYear": 0,
-  "maxYear": 0,
-  "eras": [
-    {
-      "name": "string"
-    }
-  ]
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|string¦null|false|read-only|none|
-|name|string¦null|false|read-only|none|
-|minYear|integer(int32)|false|read-only|none|
-|maxYear|integer(int32)|false|read-only|none|
-|eras|[[Era](#schemaera)]¦null|false|read-only|none|
+|isActive|boolean|true|none|`true` if subscription is still active.|
 
 <h2 id="tocS_CreateUserResultModel">CreateUserResultModel</h2>
 <!-- backwards compatibility -->
@@ -784,7 +1163,7 @@ Response model with subscription information.
 
 ```json
 {
-  "userId": "string"
+  "userId": "auth0|630f8c2b324946feb93c7e75"
 }
 
 ```
@@ -806,21 +1185,21 @@ Request model that is used to return new user ID after creation in GraFx.
 
 ```json
 {
-  "id": 0,
-  "name": "string",
-  "type": 0,
-  "usedStorage": 0,
+  "id": 494,
+  "name": "cp-000-001",
+  "type": "development",
+  "usedStorage": 2048,
   "usedStorageDetail": {
-    "assets": 0,
-    "documents": 0,
-    "fonts": 0,
-    "cache": 0,
-    "backup": 0,
-    "other": 0
+    "assets": 1280,
+    "documents": 3560,
+    "fonts": 1280,
+    "cache": 2560,
+    "backup": 5120,
+    "other": 10240
   },
-  "tenantName": "string",
-  "region": "string",
-  "renders": 0
+  "tenantName": "Tenant",
+  "region": "westeurope",
+  "renders": 2500
 }
 
 ```
@@ -849,8 +1228,8 @@ Response model with the information about environment used by user.
 
 ```json
 {
-  "name": "string",
-  "renders": 0
+  "name": "Pdf",
+  "renders": 1024
 }
 
 ```
@@ -873,8 +1252,8 @@ Response model with environment render detail.
 
 ```json
 {
-  "name": "string",
-  "renders": 0
+  "name": "cp-itm-000",
+  "renders": 4680
 }
 
 ```
@@ -897,12 +1276,12 @@ Response model with environment render details.
 
 ```json
 {
-  "date": "2019-08-24T14:15:22Z",
-  "totalRenders": 0,
+  "date": "2021-11-01T00:00:00",
+  "totalRenders": 2048,
   "renderDetail": [
     {
-      "name": "string",
-      "renders": 0
+      "name": "Pdf",
+      "renders": 1024
     }
   ]
 }
@@ -928,12 +1307,12 @@ Response model with environment render information.
 
 ```json
 {
-  "assets": 0,
-  "documents": 0,
-  "fonts": 0,
-  "cache": 0,
-  "backup": 0,
-  "other": 0
+  "assets": 1280,
+  "documents": 3560,
+  "fonts": 1280,
+  "cache": 2560,
+  "backup": 5120,
+  "other": 10240
 }
 
 ```
@@ -959,7 +1338,7 @@ Response model with detailed information about environment storage use.
 <a id="tocsenvironmenttype"></a>
 
 ```json
-0
+"development"
 
 ```
 
@@ -969,34 +1348,15 @@ Environment type.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|Environment type.|
+|*anonymous*|string|false|none|Environment type.|
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
-|*anonymous*|0|
-|*anonymous*|1|
-
-<h2 id="tocS_Era">Era</h2>
-<!-- backwards compatibility -->
-<a id="schemaera"></a>
-<a id="schema_Era"></a>
-<a id="tocSera"></a>
-<a id="tocsera"></a>
-
-```json
-{
-  "name": "string"
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|name|string¦null|false|read-only|none|
+|*anonymous*|development|
+|*anonymous*|sandbox|
+|*anonymous*|production|
 
 <h2 id="tocS_Info">Info</h2>
 <!-- backwards compatibility -->
@@ -1007,7 +1367,7 @@ Environment type.
 
 ```json
 {
-  "serverVersion": "string"
+  "serverVersion": "1.0.0"
 }
 
 ```
@@ -1030,7 +1390,7 @@ Model used for providing technical information about API.
 ```json
 {
   "data": {
-    "serverVersion": "string"
+    "serverVersion": "1.0.0"
   }
 }
 
@@ -1044,37 +1404,6 @@ Response model used for providing the information about API.
 |---|---|---|---|---|
 |data|[Info](#schemainfo)|true|none|Model used for providing technical information about API.|
 
-<h2 id="tocS_IsoDayOfWeek">IsoDayOfWeek</h2>
-<!-- backwards compatibility -->
-<a id="schemaisodayofweek"></a>
-<a id="schema_IsoDayOfWeek"></a>
-<a id="tocSisodayofweek"></a>
-<a id="tocsisodayofweek"></a>
-
-```json
-0
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|none|
-
-#### Enumerated Values
-
-|Property|Value|
-|---|---|
-|*anonymous*|0|
-|*anonymous*|1|
-|*anonymous*|2|
-|*anonymous*|3|
-|*anonymous*|4|
-|*anonymous*|5|
-|*anonymous*|6|
-|*anonymous*|7|
-
 <h2 id="tocS_LicenseType">LicenseType</h2>
 <!-- backwards compatibility -->
 <a id="schemalicensetype"></a>
@@ -1083,7 +1412,7 @@ Response model used for providing the information about API.
 <a id="tocslicensetype"></a>
 
 ```json
-0
+"Production"
 
 ```
 
@@ -1093,61 +1422,15 @@ License type.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|License type.|
+|*anonymous*|string|false|none|License type.|
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
-|*anonymous*|0|
-|*anonymous*|1|
-|*anonymous*|2|
-
-<h2 id="tocS_LocalDate">LocalDate</h2>
-<!-- backwards compatibility -->
-<a id="schemalocaldate"></a>
-<a id="schema_LocalDate"></a>
-<a id="tocSlocaldate"></a>
-<a id="tocslocaldate"></a>
-
-```json
-{
-  "calendar": {
-    "id": "string",
-    "name": "string",
-    "minYear": 0,
-    "maxYear": 0,
-    "eras": [
-      {
-        "name": "string"
-      }
-    ]
-  },
-  "year": 0,
-  "month": 0,
-  "day": 0,
-  "dayOfWeek": 0,
-  "yearOfEra": 0,
-  "era": {
-    "name": "string"
-  },
-  "dayOfYear": 0
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|calendar|[CalendarSystem](#schemacalendarsystem)|false|none|none|
-|year|integer(int32)|false|none|none|
-|month|integer(int32)|false|none|none|
-|day|integer(int32)|false|none|none|
-|dayOfWeek|[IsoDayOfWeek](#schemaisodayofweek)|false|none|none|
-|yearOfEra|integer(int32)|false|read-only|none|
-|era|[Era](#schemaera)|false|none|none|
-|dayOfYear|integer(int32)|false|read-only|none|
+|*anonymous*|Production|
+|*anonymous*|Failover|
+|*anonymous*|Sandbox|
 
 <h2 id="tocS_MarkUserMigratedModel">MarkUserMigratedModel</h2>
 <!-- backwards compatibility -->
@@ -1158,7 +1441,7 @@ License type.
 
 ```json
 {
-  "userEmail": "string"
+  "userEmail": "simple@example.com"
 }
 
 ```
@@ -1167,7 +1450,7 @@ License type.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|userEmail|string¦null|false|none|User email which is used in MyCP to mark user as migrated.|
+|userEmail|string|true|none|User email which is used in MyCP to mark user as migrated.|
 
 <h2 id="tocS_ProblemDetails">ProblemDetails</h2>
 <!-- backwards compatibility -->
@@ -1209,12 +1492,12 @@ License type.
 
 ```json
 {
-  "id": 0,
-  "name": "string",
-  "region": "string",
-  "type": 0,
-  "usedStorage": 0,
-  "backOfficeUri": "http://example.com"
+  "id": 494,
+  "name": "cp-eee-001",
+  "region": "westeurope",
+  "type": "development",
+  "usedStorage": 1093314335,
+  "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
 }
 
 ```
@@ -1240,7 +1523,7 @@ Response model with environment details included in subscription.
 <a id="tocssubscriptionenvironmenttype"></a>
 
 ```json
-0
+"development"
 
 ```
 
@@ -1250,14 +1533,15 @@ Environment type used in subscription.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|Environment type used in subscription.|
+|*anonymous*|string|false|none|Environment type used in subscription.|
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
-|*anonymous*|0|
-|*anonymous*|1|
+|*anonymous*|development|
+|*anonymous*|sandbox|
+|*anonymous*|production|
 
 <h2 id="tocS_SubscriptionLicenseModel">SubscriptionLicenseModel</h2>
 <!-- backwards compatibility -->
@@ -1268,11 +1552,11 @@ Environment type used in subscription.
 
 ```json
 {
-  "id": "string",
-  "coresTotal": 0,
-  "coresUsed": 0,
-  "url": "http://example.com",
-  "licenseType": 0
+  "id": "CPF-2022-0000001",
+  "coresTotal": 16,
+  "coresUsed": 2,
+  "url": "https://chili-publish.com/Licenses/Details/00000000-0000-0000-0000-000000000000",
+  "licenseType": "Production"
 }
 
 ```
@@ -1298,86 +1582,44 @@ Response model with license details included in subscription.
 
 ```json
 {
-  "id": 0,
-  "name": "string",
-  "usedRenders": 0,
-  "maxRenders": 0,
-  "maxStorage": 0,
-  "storageUsed": 0,
+  "id": 1,
+  "name": "CHILI (Online)",
+  "usedRenders": 1000,
+  "maxRenders": 2500,
+  "maxStorage": 250000000000,
+  "storageUsed": 81959236,
   "environments": [
     {
-      "id": 0,
-      "name": "string",
-      "region": "string",
-      "type": 0,
-      "usedStorage": 0,
-      "backOfficeUri": "http://example.com"
+      "id": 494,
+      "name": "cp-eee-001",
+      "region": "westeurope",
+      "type": "development",
+      "usedStorage": 1093314335,
+      "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
     }
   ],
   "licenses": [
     {
-      "id": "string",
-      "coresTotal": 0,
-      "coresUsed": 0,
-      "url": "http://example.com",
-      "licenseType": 0
+      "id": "CPF-2022-0000001",
+      "coresTotal": 16,
+      "coresUsed": 2,
+      "url": "https://chili-publish.com/Licenses/Details/00000000-0000-0000-0000-000000000000",
+      "licenseType": "Production"
     }
   ],
-  "startDate": {
-    "calendar": {
-      "id": "string",
-      "name": "string",
-      "minYear": 0,
-      "maxYear": 0,
-      "eras": [
-        {
-          "name": "string"
-        }
-      ]
-    },
-    "year": 0,
-    "month": 0,
-    "day": 0,
-    "dayOfWeek": 0,
-    "yearOfEra": 0,
-    "era": {
-      "name": "string"
-    },
-    "dayOfYear": 0
-  },
-  "endDate": {
-    "calendar": {
-      "id": "string",
-      "name": "string",
-      "minYear": 0,
-      "maxYear": 0,
-      "eras": [
-        {
-          "name": "string"
-        }
-      ]
-    },
-    "year": 0,
-    "month": 0,
-    "day": 0,
-    "dayOfWeek": 0,
-    "yearOfEra": 0,
-    "era": {
-      "name": "string"
-    },
-    "dayOfYear": 0
-  },
-  "subscriptionType": 0,
-  "status": 0,
-  "clientName": "string",
-  "billingClientContact": "string",
-  "templateDesignerSeatsTotal": 0,
-  "templateDesignerSeatsUsed": 0,
+  "startDate": "11/12/2022 12:15:32 AM",
+  "endDate": "11/12/2023 12:15:32 PM",
+  "subscriptionType": "OnPremises",
+  "status": "Inactive",
+  "clientName": "CHILI Group",
+  "billingClientContact": "simple@example.com",
+  "templateDesignerSeatsTotal": 6,
+  "templateDesignerSeatsUsed": 4,
   "tenantInformation": {
-    "sandboxEnvironmentsTotal": 0,
-    "sandboxEnvironmentsUsed": 0,
-    "productionEnvironmentsTotal": 0,
-    "productionEnvironmentsUsed": 0
+    "sandboxEnvironmentsTotal": 4,
+    "sandboxEnvironmentsUsed": 2,
+    "productionEnvironmentsTotal": 4,
+    "productionEnvironmentsUsed": 1
   }
 }
 
@@ -1397,8 +1639,8 @@ Response model with detailed information about subscription.
 |storageUsed|integer(int64)|true|none|Storage used in bytes.|
 |environments|[[SubscriptionEnvironmentModel](#schemasubscriptionenvironmentmodel)]|true|none|Environments in subscription.|
 |licenses|[[SubscriptionLicenseModel](#schemasubscriptionlicensemodel)]¦null|false|none|Licenses assigned to the subscription.|
-|startDate|[LocalDate](#schemalocaldate)|false|none|none|
-|endDate|[LocalDate](#schemalocaldate)|false|none|none|
+|startDate|string¦null|false|none|Subscription start date.|
+|endDate|string¦null|false|none|Subscription end date.|
 |subscriptionType|[SubscriptionType](#schemasubscriptiontype)|true|none|Subscription type.|
 |status|[SubscriptionStatus](#schemasubscriptionstatus)|true|none|Status of user subscription.|
 |clientName|string¦null|false|none|Client name which uses the subscription.|
@@ -1416,12 +1658,12 @@ Response model with detailed information about subscription.
 
 ```json
 {
-  "date": "2019-08-24T14:15:22Z",
-  "totalRenders": 0,
+  "date": "2021-11-01T00:00:00",
+  "totalRenders": 4680,
   "environments": [
     {
-      "name": "string",
-      "renders": 0
+      "name": "cp-itm-000",
+      "renders": 4680
     }
   ]
 }
@@ -1446,7 +1688,7 @@ Response model with subscription render information.
 <a id="tocssubscriptionstatus"></a>
 
 ```json
-0
+"Inactive"
 
 ```
 
@@ -1456,14 +1698,14 @@ Status of user subscription.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|Status of user subscription.|
+|*anonymous*|string|false|none|Status of user subscription.|
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
-|*anonymous*|0|
-|*anonymous*|1|
+|*anonymous*|Inactive|
+|*anonymous*|Active|
 
 <h2 id="tocS_SubscriptionTenantInformationModel">SubscriptionTenantInformationModel</h2>
 <!-- backwards compatibility -->
@@ -1474,10 +1716,10 @@ Status of user subscription.
 
 ```json
 {
-  "sandboxEnvironmentsTotal": 0,
-  "sandboxEnvironmentsUsed": 0,
-  "productionEnvironmentsTotal": 0,
-  "productionEnvironmentsUsed": 0
+  "sandboxEnvironmentsTotal": 4,
+  "sandboxEnvironmentsUsed": 2,
+  "productionEnvironmentsTotal": 4,
+  "productionEnvironmentsUsed": 1
 }
 
 ```
@@ -1501,7 +1743,7 @@ Response model with subscription tenant information.
 <a id="tocssubscriptiontype"></a>
 
 ```json
-0
+"OnPremises"
 
 ```
 
@@ -1511,14 +1753,14 @@ Subscription type.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|integer(int32)|false|none|Subscription type.|
+|*anonymous*|string|false|none|Subscription type.|
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
-|*anonymous*|0|
-|*anonymous*|1|
+|*anonymous*|OnPremises|
+|*anonymous*|Saas|
 
 <h2 id="tocS_UpdateUserModel">UpdateUserModel</h2>
 <!-- backwards compatibility -->
@@ -1529,8 +1771,8 @@ Subscription type.
 
 ```json
 {
-  "firstName": "string",
-  "lastName": "string"
+  "firstName": "John",
+  "lastName": "Doe"
 }
 
 ```
@@ -1543,6 +1785,26 @@ Request model that is used to update user's first name and last name in GraFx.
 |---|---|---|---|---|
 |firstName|string|true|none|User first name.|
 |lastName|string|true|none|User last name.|
+
+<h2 id="tocS_UserAccessibleSubscriptionsModel">UserAccessibleSubscriptionsModel</h2>
+<!-- backwards compatibility -->
+<a id="schemauseraccessiblesubscriptionsmodel"></a>
+<a id="schema_UserAccessibleSubscriptionsModel"></a>
+<a id="tocSuseraccessiblesubscriptionsmodel"></a>
+<a id="tocsuseraccessiblesubscriptionsmodel"></a>
+
+```json
+{
+  "userEmail": "simple@example.com"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|userEmail|string|true|none|User email which is used in MyCP to get accessible subscriptions.|
 
 <h2 id="tocS_UserEmailVerificationStatusModel">UserEmailVerificationStatusModel</h2>
 <!-- backwards compatibility -->
@@ -1564,7 +1826,7 @@ Response model with user email verification status.
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|isEmailVerified|boolean|true|none|User email verification status. `True` if user verified its email address.|
+|isEmailVerified|boolean|true|none|User email verification status. `true` if user verified its email address.|
 
 <h2 id="tocS_UserModel">UserModel</h2>
 <!-- backwards compatibility -->
@@ -1575,13 +1837,13 @@ Response model with user email verification status.
 
 ```json
 {
-  "id": "string",
-  "email": "string",
-  "firstName": "string",
-  "lastName": "string",
-  "avatar": "string",
-  "lastSeen": 0,
-  "status": "string"
+  "id": "auth0|630f8c2b524936fea93c0e75",
+  "email": "simple@example.com",
+  "firstName": "John",
+  "lastName": "Doe",
+  "avatar": "https://www.chili-publish.com/",
+  "lastSeen": 1668540708,
+  "status": "Active"
 }
 
 ```
@@ -1599,20 +1861,4 @@ Response model with user information.
 |avatar|string¦null|false|none|Link to avatar picture.|
 |lastSeen|integer(int64)¦null|false|none|Last login datetime in seconds (unit timestamp).|
 |status|string¦null|false|none|User activity status.|
-
-<h2 id="tocS_Void">Void</h2>
-<!-- backwards compatibility -->
-<a id="schemavoid"></a>
-<a id="schema_Void"></a>
-<a id="tocSvoid"></a>
-<a id="tocsvoid"></a>
-
-```json
-{}
-
-```
-
-### Properties
-
-*None*
 
