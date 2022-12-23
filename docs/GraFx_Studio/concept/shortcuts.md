@@ -32,6 +32,29 @@
 |Save changes|⌘S|Ctrl+S|
 |Export selected|⌘E|Ctrl+E|
 
+## Text (cursor) manipulation
+
+When inside a text frame, and the I-beam (text cursor) is active.
+
+| |Mac|Windows|
+|----|----|----|
+|Move I beam right|➡️|➡️|
+|Move I beam left|⬅️|⬅️|
+|Move I beam right to end of current word|Ctrl+➡️|Ctrl+➡️|
+|Move I beam left to begin of current word|Ctrl+⬅️|Ctrl+⬅️|
+|Move I beam right to end of current line|Command+➡️|End|
+|Move I beam left to begin of current line|Command+⬅️|Home|
+|Move I beam up|⬆️|⬆️|
+|Move I beam left|⬇️|⬇️|
+|Select character right from cursor|Shift+➡️|Shift+➡️|
+|Select character left from cursor [^1]|Shift+⬅️|Shift+⬅️|
+|Select word right from cursor|Shift+Option+➡️|Shift+Ctrl+➡️|
+|Select word left from cursor|Shift+Option+⬅️|Shift+Ctrl+⬅️|
+|Select (full) sentence right from cursor|Shift+Command+➡️|Shift+End|
+|Select (full) sentence left from cursor|Shift+Command+⬅️|Shift+Home|
+
+[^1]: A the beginning of a line, and there is a life before, the (invisible) new-line character of the previous live will be selected.
+
 ## Tools
 
 | |Mac|Windows|
