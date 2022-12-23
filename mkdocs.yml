@@ -24,6 +24,7 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -111,9 +112,11 @@ nav:
             - 'Variables':                      'GraFx_Studio/concept/variables.md'
             - 'Animation':                      'GraFx_Studio/concept/animation.md'
             - 'Stylekit':                       'GraFx_Studio/concept/stylekit.md'
-#            - 'Shortcuts':                      'GraFx_Studio/concept/shortcuts.md'
+            - 'Shortcuts':                      'GraFx_Studio/concept/shortcuts.md'
         - 'How to: Design documents'    :
             - 'Create Layouts':                 'GraFx_Studio/how_to/layouts.md'
+            - 'Paragraph Styles':               'GraFx_Studio/how_to/paragraphstyles.md'
+            - 'Character Styles':               'GraFx_Studio/how_to/characterstyles.md'
             - 'Animate my frame':               'GraFx_Studio/how_to/animate_frame.md'
             - 'Define variables':               'GraFx_Studio/how_to/define_variables.md'
             - 'Organize variables':             'GraFx_Studio/how_to/organize_variables.md'

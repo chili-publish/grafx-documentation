@@ -31,7 +31,7 @@ Extra tools to show panels for specific uses
 - Alternate Layouts
 - Layers & Animation
 - Media
-- Paintings
+- Styles
 
 ### 6 Bottom panel
 
