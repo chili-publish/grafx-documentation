@@ -4,15 +4,29 @@ The GraFx Studio workspace for template designers is frequently updated with new
 
 Here you can find a summary of what's new!
 
+## December 23, 2022
+
+Version 0.97.1, using Studio SDK [0.97.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+
+### Improvements
+
+- You can leave the color of your character style undefined to use the color from the applied paragraph style
+- After creating a text or image frame, you now automatically go back to the Select tool
+
+### Fixes
+
+- Fixed issue with loading fonts, which caused the default font to be used instead (ℹ️ because of this fix the text in your template can look different)
+- The editor canvas is no longer moving when opening or closing the left side panel
+
 ## December 16, 2022
 
 Version 0.95.1, using Studio SDK [0.95.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
 ### Features
 
-- Next to paragraph styles, you can now also add character styles to your Stylekit and use them to style your text
+- Next to paragraph styles, you can now also add character styles to your Stylekit and use them to style your text ([more information](https://docs.chiligrafx.com/GraFx_Studio/how_to/characterstyles/){target="_blank"})
 - Added support for most OTF fonts
-- Enabled keyboard shortcuts for text navigation, text selection and text cut/copy/paste
+- Enabled keyboard shortcuts for text navigation, text selection and text cut/copy/paste ([list of shortcuts](https://docs.chiligrafx.com/GraFx_Studio/concept/shortcuts/#text-cursor-manipulation){target="_blank"})
 
 ### Improvements
 
