@@ -32,6 +32,29 @@
 |Save changes|⌘S|Ctrl+S|
 |Export selected|⌘E|Ctrl+E|
 
+## Text (cursor) manipulation
+
+When inside a text frame, and the text cursor is active.
+
+| |Mac|Windows|
+|----|----|----|
+|Move text cursor right|➡️|➡️|
+|Move text cursor left|⬅️|⬅️|
+|Move text cursor right to end of current word|Ctrl+➡️|Ctrl+➡️|
+|Move text cursor left to begin of current word|Ctrl+⬅️|Ctrl+⬅️|
+|Move text cursor right to end of current line|⌘ ➡️|End|
+|Move text cursor left to begin of current line|⌘ ⬅️|Home|
+|Move text cursor up|⬆️|⬆️|
+|Move text cursor left|⬇️|⬇️|
+|Select character right from cursor|⇧+➡️|Shift+➡️|
+|Select character left from cursor [^1]|⇧+⬅️|Shift+⬅️|
+|Select word right from cursor|⇧+Option+➡️|Shift+Ctrl+➡️|
+|Select word left from cursor|⇧+Option+⬅️|Shift+Ctrl+⬅️|
+|Select (full) sentence right from cursor|⇧+⌘ ➡️|Shift+End|
+|Select (full) sentence left from cursor|⇧+⌘ ⬅️|Shift+Home|
+
+[^1]: A the beginning of a line, and there is a line before, the (invisible) new-line character of the previous live will be selected.
+
 ## Tools
 
 | |Mac|Windows|
