@@ -83,8 +83,7 @@ nav:
             - 'Intro' :                         'CHILI_GraFx/environment_api/index.md'
             - 'Reference' :                     'CHILI_GraFx/environment_api/reference.md'
 
-#       - 'Release notes':
-#            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
+        - 'Release notes':                      'CHILI_GraFx/releasenotes.md'
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_Studio/index.md'
 #        - 'Setting up GraFx studio':            'GraFx_Studio/setup.md'
