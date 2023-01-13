@@ -6,8 +6,6 @@ Here you can find a summary of what's new!
 
 ## Jan 9, 2023
 
-Version 1.1.0.
-
 
 ### Improvements
 
