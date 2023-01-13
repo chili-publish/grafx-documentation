@@ -21,4 +21,5 @@ Version xx
 ### Fixes
 
 - 1
-- 1
+- 2
+- 3
