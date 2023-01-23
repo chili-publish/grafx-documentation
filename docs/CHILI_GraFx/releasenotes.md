@@ -4,22 +4,11 @@ The CHILI GraFx platform is frequently updated with new features, improvements a
 
 Here you can find a summary of what's new!
 
-## Jan 13, 2023
+## Jan 9, 2023
 
-Version xx
-
-### New features
-
-- A
-- B
 
 ### Improvements
 
-- X
-- Y
+- If you have multiple clients you can easily switch between these clients and get a list with environments of that client
+- If you have multiple clients you can search for a specific client by typing the name of the client in the search bar
 
-### Fixes
-
-- 1
-- 2
-- 3
