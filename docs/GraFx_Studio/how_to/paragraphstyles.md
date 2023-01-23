@@ -21,7 +21,7 @@ Click on the "..." menu next to the newly created paragraph style and choose edi
 
 Set all properties you want for this paragraph. Saving happens automatically.
 
-![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/ps_5.png)
+![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/ps_5_2.png?w=300)
 
 ## Apply a paragraph style
 

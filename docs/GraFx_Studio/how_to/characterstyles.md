@@ -6,7 +6,7 @@ Open the Stylekit panel.
 
 ![Button](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/ps_1.png)
 
-Select the first tab to view paragraph- and character styles
+Select the second tab to view paragraph- and character styles
 
 ![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/ps_2.png)
 
@@ -23,7 +23,7 @@ You can rename the style by clicking "Rename" in the "..." menu.
 
 Set all properties you want for this character. Saving happens automatically.
 
-![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/ps_10.png)
+![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/ps_10_2.png)
 
 ## Apply a character style
 
