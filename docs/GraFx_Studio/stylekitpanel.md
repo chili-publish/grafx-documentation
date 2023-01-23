@@ -4,31 +4,41 @@
 
 ## Text: Paragraph Styles
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/ui_ps_panel2.png)
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/ps1.png)
 
-List of paragraph styles.
+The pencil button allows editting the properties.
 
-Click on the pencil button to edit the properties of the paragraph style.
+The fill color can be a custom color, or a predefined [swatch](/GraFx_Studio/stylekitpanel/#swatch).
+
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/selectcolor.png)
+
 
 ## Text: Character Styles
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/ui_cs_panel.png)
-
-The list of character styles.
-
-!!! Alert
-	Coming soon!
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/characterstyle.png)
 
 ## Swatch
 
-A swatch is a color saved inside a Stylekit.
+A swatch is a color saved inside a Stylekit. You can reuse the swatch (predefined color) in paragraph- en character styles.
 
-You can define a color, give it a name and save the named color to be used later in a style.
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/swatch1.png)
+
+Define a color, give it a name and save the named color to be used later in a style.
+
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/swatch2.png)
 
 ## Fonts
 
-"In metal typesetting, a font is a particular size, weight and style of a typeface. Each font is a matched set of type, with a piece (a "sort") for each glyph. A typeface consists of a range of such fonts that shared an overall design."
+### Adding Fonts
 
-Source "Wikipedia"
+Select the font-book to view your fonts, and add them to the stylekit.
+
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/fonts.png)
+
+As of writing, Fonts are managed through the BackOffice of GraFx Publisher.
+Add them to a folder in the BackOffice, and they will appear in the selection window.
+
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/stylekit/fontselection.png)
+
 
 [See GraFx Fonts](/GraFx_Fonts/)
