@@ -118,6 +118,33 @@ extra:
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
 
 
+extra:
+  consent:
+    title: CHILI Grafx uses cookies
+    description: >-
+        This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.
+        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Pravacy Statement</a>
+    cookies:
+      analytics:
+        name: Google Analytics
+  analytics:
+    provider: google
+    property: G-73R676NPTP
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
+
+
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI_GraFx/index.md'
