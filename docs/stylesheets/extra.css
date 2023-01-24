@@ -34,6 +34,7 @@ p img[alt=svg_icon] { width: 100px; }
 .md-typeset h1 {
     color: #010068;
     font-weight: bold;
+    font-family: Bitter;
 }
 h2
 {
