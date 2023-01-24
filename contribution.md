@@ -41,7 +41,7 @@ Add them to the folder **assets** of the same directory of your markdown file.
 
 Example export for a PNG file
 
-[Export](assets/export-png.png)
+![Export](assets/export-png.png)
 
 ## Acceptance criteria
 
