@@ -52,6 +52,33 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css  
 
+extra:
+  consent:
+    title: A custom title
+    description: A custom description which can include HTML (links et al.)
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: false
+  analytics:
+    provider: google
+    property: G-73R676NPTP
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI_GraFx/index.md'
