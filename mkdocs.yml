@@ -259,7 +259,9 @@ nav:
         - 'Introduction':                       'on-premise/index.md'
         - 'My CHILI publish':                   'on-premise/mycp.md'
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
-
+    - 'Projects':
+            - 'Templates':
+                - 'Building a Holiday Card':        'projects/templates/building_holiday_card.md'
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
