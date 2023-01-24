@@ -23,6 +23,7 @@ plugins:
 #      fallback_to_build_date: true
 
 markdown_extensions:
+  - md_in_html
   - admonition
   - footnotes
   - pymdownx.details
@@ -50,6 +51,99 @@ markdown_extensions:
   
 extra_css:
   - stylesheets/extra.css  
+  
+extra_javascript:
+  - javascripts/extra.js
+  
+extra:
+  analytics:
+    provider: google
+    property: G-73R676NPTP
+
+extra:
+  consent:
+    title: A custom title
+    description: >-
+        We use cookies to recognize your repeated visits and preferences, as well 
+        as to measure the effectiveness of our documentation and whether users 
+        find what they're searching for. With your consent, you're helping us to 
+        make our documentation better.
+    cookies:
+      analytics:
+        name: Google Analytics
+  analytics:
+    provider: google
+    property: G-73R676NPTP
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
+extra:
+  consent:
+    title: CHILI Grafx uses cookies
+    description: >-
+        This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.
+        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Pravacy Statement</a>
+    cookies:
+      analytics:
+        name: Google Analytics
+  analytics:
+    provider: google
+    property: G-73R676NPTP
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
+extra:
+  consent:
+    title: CHILI Grafx uses cookies
+    description: >-
+        This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.
+        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Pravacy Statement</a>
+    cookies:
+      analytics:
+        name: Google Analytics
+  analytics:
+    provider: google
+    property: G-73R676NPTP
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
+
 
 nav:
     - 'CHILI GraFx':
@@ -83,22 +177,18 @@ nav:
             - 'Intro' :                         'CHILI_GraFx/environment_api/index.md'
             - 'Reference' :                     'CHILI_GraFx/environment_api/reference.md'
 
-#       - 'Release notes':
-#            - 'Latest':                         'CHILI_GraFx/releasenotes/latest.md'
+        - 'Release notes':                      'CHILI_GraFx/releasenotes.md'
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_Studio/index.md'
-#        - 'Setting up GraFx studio':            'GraFx_Studio/setup.md'
         - 'Application overview':
             - 'Workspace elements':             'GraFx_Studio/workspace_elements.md'
-#            - 'Headerbar':                      'GraFx_Studio/headerbar.md'
+            - 'Mouse or Trackpad':              'GraFx_Studio/mouse_trackpad.md'
             - 'Top Quick Tools':                'GraFx_Studio/topquicktools.md'
             - 'Document Canvas':                'GraFx_Studio/documentcanvas.md'
             - 'Page or Document':               'GraFx_Studio/page_document.md'
             - 'Properties panel':               'GraFx_Studio/properties.md'
             - 'Export':                         'GraFx_Studio/export.md'
             - 'Bottom Quick Tools':             'GraFx_Studio/bottomquicktools.md'
-#            - 'Quick Tools Details':            'GraFx_Studio/quicktoolsdetail.md'
-#            - 'Bottom Panel':                   'GraFx_Studio/bottompanel.md'
             - 'Properties':                     'GraFx_Studio/properties.md'
             - 'Animation':                      'GraFx_Studio/animation.md'
             - 'Layouts':                        'GraFx_Studio/layouts.md'
@@ -117,6 +207,7 @@ nav:
             - 'Create Layouts':                 'GraFx_Studio/how_to/layouts.md'
             - 'Paragraph Styles':               'GraFx_Studio/how_to/paragraphstyles.md'
             - 'Character Styles':               'GraFx_Studio/how_to/characterstyles.md'
+            - 'Swatches':                       'GraFx_Studio/how_to/swatches.md'
             - 'Animate my frame':               'GraFx_Studio/how_to/animate_frame.md'
             - 'Define variables':               'GraFx_Studio/how_to/define_variables.md'
             - 'Organize variables':             'GraFx_Studio/how_to/organize_variables.md'
@@ -168,9 +259,7 @@ nav:
         - 'Introduction':                       'on-premise/index.md'
         - 'My CHILI publish':                   'on-premise/mycp.md'
         - 'CHILI publisher':                    'on-premise/chili_publisher.md'
-    - 'Projects':
-        - 'Templates':
-            - 'Building a Holiday Card':        'projects/templates/building_holiday_card.md'
+
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
