@@ -55,11 +55,14 @@ extra_css:
 extra:
   consent:
     title: A custom title
-    description: A custom description which can include HTML (links et al.)
+    description: >-
+        We use cookies to recognize your repeated visits and preferences, as well 
+        as to measure the effectiveness of our documentation and whether users 
+        find what they're searching for. With your consent, you're helping us to 
+        make our documentation better.
     cookies:
       analytics:
         name: Google Analytics
-        checked: false
   analytics:
     provider: google
     property: G-73R676NPTP
