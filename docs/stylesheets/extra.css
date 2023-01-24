@@ -34,6 +34,7 @@ p img[alt=svg_icon] { width: 100px; }
 .md-typeset h1 {
     color: #010068;
     font-weight: bold;
+    font-family: Satoshi, Ubuntu, sans-serif;
 }
 h2
 {
@@ -50,6 +51,7 @@ h2
 
 .md-typeset h2 {
     font-weight: bold;	 
+    font-family: Satoshi, Ubuntu, sans-serif;
 }
 
 h3
@@ -64,4 +66,9 @@ h3
 	display: inline-block;
 	border-bottom: 0px solid;	
 	width: 100%;
+}
+
+.md-typeset h3 {
+    font-weight: bold;	 
+    font-family: Satoshi, Ubuntu, sans-serif;
 }
