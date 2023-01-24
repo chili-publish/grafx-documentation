@@ -7,16 +7,16 @@ Please note that this project is released with a Contributor Code of Conduct. By
 
 ## Submitting a pull request
 
-1. [Fork](https://github.com/chili-publish/grafx-documentation/fork){target="_blank"} and clone this repository
+1. [Fork](https://github.com/chili-publish/grafx-documentation/fork) and clone this repository
 2. Create a new branch: `git checkout -b my-branch-name` \*
-3. Make your change, don't forget to spell check
-4. Build the project locally and run local tests.
+3. Make your changes passed a spell check
+4. Build the project locally and run local tests
 5. Push to your fork and [submit a pull request](https://github.com/chili-publish/editor-sdk/compare)
-6. Pat yourself on the back and wait for your pull request to be reviewed and get merged.
+6. Pat yourself on the back and wait for your pull request to be reviewed and get merged
 
 **my-branch-name**: We use the prefixes **fix**, **feature**, **solution** in our branches to indicate what they represent. 
 
-An example for a branch that fixes a typo in playAnimation f.e. could be `fix/animation-typos`.
+An example for a branch that fixes a typo in Animation could be `fix/animation-typos`.
 
 Other examples
 
@@ -42,6 +42,10 @@ Add them to the folder **assets** of the same directory of your markdown file.
 Example export for a PNG file
 
 ![Export](assets/export-png.png)
+
+This file is stored in the "assets" folder, next to the contribution.md file.
+
+![Assets](assets/assets-folder.png)
 
 ## Acceptance criteria
 
