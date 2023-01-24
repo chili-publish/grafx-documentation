@@ -1,4 +1,4 @@
-# UPgrade from My CHILI publish
+# Upgrade from My CHILI publish
 
 ## Why upgrade?
 
