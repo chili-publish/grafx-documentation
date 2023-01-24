@@ -21,6 +21,8 @@ You can rename by clicking "Rename" in the "..." menu.
 
 ![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/swatch_03.png?w=400)
 
+### Color picker
+
 Define the color. Choose your type (Hex or RGB)
 
 ![Image](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/swatch_04.png?w=400)
