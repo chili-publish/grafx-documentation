@@ -9,7 +9,7 @@ Please note that this project is released with a Contributor Code of Conduct. By
 
 1. [Fork](https://github.com/chili-publish/grafx-documentation/fork) and clone this repository
 2. Create a new branch: `git checkout -b my-branch-name` \*
-3. Make your changes passed a spell check
+3. Make sure your changes pass a spell check (US English)
 4. Build the project locally and run local tests
 5. Push to your fork and [submit a pull request](https://github.com/chili-publish/editor-sdk/compare)
 6. Pat yourself on the back and wait for your pull request to be reviewed and get merged
