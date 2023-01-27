@@ -1,12 +1,16 @@
-<h1 id="chili-grafx">CHILI GraFx v1</h1>
+<!-- Generator: Widdershins v4.0.1 -->
+
+<h1 id="chili-grafx-platform">CHILI GraFx Platform v1</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
+
+API allowing integration with the CHILI GraFx Platform.
 
 # Authentication
 
 - HTTP Authentication, scheme: Bearer Enter a bearer token (JWT):
 
-<h1 id="chili-grafx-environments">Environments</h1>
+<h1 id="chili-grafx-platform-environments">Environments</h1>
 
 ## get  api v1 environment {id}
 
@@ -99,7 +103,17 @@ Bearer
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|integer(int32)|true|Environment Id.|
-|groupBy|query|string|true|Groups render information by: `year`, `month`.|
+|groupBy|query|string|true|Groups render information.
+|
+|startDate|query|string|false|Start date of the range from which to return the renders. Required if `endDate` is provided. Format: yyyy-MM-dd.|
+|endDate|query|string|false|End date of the range from which to return the renders. Required if `startDate` is provided. Format: yyyy-MM-dd.|
+
+#### Detailed descriptions
+
+**groupBy**: Groups render information.
+                For `year` returns renders for last 12 months and groups renders by each month.
+                For `month` returns renders for last 30 days and groups renders by each day.
+                These ranges can be overwritten by providing both `startDate` and `endDate` parameters.
 
 > Example responses
 
@@ -165,7 +179,7 @@ Bearer
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns environment renders information.|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If groupBy is missing or invalid.|[ProblemDetails](#schemaproblemdetails)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If groupBy is missing or one of the params has incorrect format.|[ProblemDetails](#schemaproblemdetails)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If environment with such Id is not found.|[ProblemDetails](#schemaproblemdetails)|
@@ -188,7 +202,115 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-info">Info</h1>
+## get  api v1 environments
+
+`GET /api/v1/environments`
+
+*Get environments under specified subscription.*
+
+<h3 id="get--api-v1-environments-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|subscriptionId|query|string(uuid)|true|Specifies ID of the subscription to read environments from.|
+
+> Example responses
+
+> 200 Response
+
+```json
+[
+  {
+    "id": 494,
+    "guid": "18a3ae5c-3bc5-42eb-b8d8-0307fbbbfea1",
+    "name": "cp-eee-001",
+    "region": "westeurope",
+    "type": "development",
+    "usedStorage": 1093314335,
+    "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
+  }
+]
+```
+
+> 400 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "Bad Request",
+  "status": 400
+}
+```
+
+> 401 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/401",
+  "title": "Unauthorized",
+  "status": 401
+}
+```
+
+> 403 Response
+
+```json
+{
+  "type": "https://httpstatuses.io/403",
+  "title": "Forbidden",
+  "status": 403
+}
+```
+
+> 404 Response
+
+```json
+{
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+  "title": "Not Found",
+  "status": 404
+}
+```
+
+<h3 id="get--api-v1-environments-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns environments under specified subscription.|Inline|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If `subscriptionId` is missing or has incorrect format.|[ProblemDetails](#schemaproblemdetails)|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
+|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with such ID is not found.|[ProblemDetails](#schemaproblemdetails)|
+
+<h3 id="get--api-v1-environments-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|[[BasicEnvironmentModel](#schemabasicenvironmentmodel)]|false|none|none|
+|» id|integer(int32)|true|none|Environment Id.|
+|» guid|string(uuid)|false|none|Environment guid.|
+|» name|string¦null|false|none|Environment name.|
+|» region|string¦null|false|none|Environment region.|
+|» type|[EnvironmentType](#schemaenvironmenttype)|false|none|Environment type.|
+|» usedStorage|integer(int64)|true|none|Total environment used storage.|
+|» backOfficeUri|string(uri)¦null|false|none|Backoffice URL.|
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+|type|development|
+|type|sandbox|
+|type|production|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+
+<h1 id="chili-grafx-platform-info">Info</h1>
 
 ## get  api v1 info
 
@@ -236,49 +358,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-roles">Roles</h1>
-
-## get  api v1 roles
-
-`GET /api/v1/roles`
-
-*Gets supported user roles in GraFx.*
-
-> Example responses
-
-> 200 Response
-
-```json
-[
-  "string"
-]
-```
-
-> 401 Response
-
-```json
-{
-  "type": "https://httpstatuses.io/401",
-  "title": "Unauthorized",
-  "status": 401
-}
-```
-
-<h3 id="get--api-v1-roles-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of supported user roles as strings array (e.g. ["SA","FA"]).|Inline|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
-
-<h3 id="get--api-v1-roles-responseschema">Response Schema</h3>
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-Bearer
-</aside>
-
-<h1 id="chili-grafx-subscriptions">Subscriptions</h1>
+<h1 id="chili-grafx-platform-subscriptions">Subscriptions</h1>
 
 ## get  api v1 subscriptions
 
@@ -295,7 +375,9 @@ Bearer
   {
     "id": 44,
     "name": "CHILI - OnlineTrial",
-    "isActive": true
+    "isActive": true,
+    "clientId": "950c78e8-99c0-4681-98b3-a8b2ff11683c",
+    "clientName": "CHILI"
   }
 ]
 ```
@@ -338,6 +420,8 @@ Status Code **200**
 |» id|integer(int32)|true|none|Subscription Id.|
 |» name|string|true|none|Subscription name.|
 |» isActive|boolean|true|none|`true` if subscription is still active.|
+|» clientId|string(uuid)¦null|false|none|Client GUID.|
+|» clientName|string¦null|false|none|Client name.|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
@@ -519,20 +603,31 @@ Bearer
 
 *Gets environments render information included in subscription.*
 
-All environments under that subscription are returned in the descending order based on renders.
+All environments under that subscription are returned in the specific order by the environment type
+(Production, Sandbox, Development) and then by the descending order based on renders amount.
 
 <h3 id="get--api-v1-subscription-{id}-renders-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|integer(int32)|true|Subscription Id.|
-|groupBy|query|string|true|Groups render information by: `year`, `month`|
-|top|query|integer(int32)|false|When top parameter is provided, the information for the `top` number of environments is returned and for|
+|groupBy|query|string|true|Groups render information.
+|
+|top|query|integer(int32)|false|When top parameter is provided, the information for the `top` number of environments with higher number
+|
+|startDate|query|string|false|Start date of the range from which to return the renders. Required if `endDate` is provided. Format: yyyy-MM-dd.|
+|endDate|query|string|false|End date of the range from which to return the renders. Required if `startDate` is provided. Format: yyyy-MM-dd.|
 
 #### Detailed descriptions
 
-**top**: When top parameter is provided, the information for the `top` number of environments is returned and for
-all the rest of existing environments in the subscription the renders are concatenated under "Others".
+**groupBy**: Groups render information.
+For `year` returns renders for last 12 months and groups renders by each month.
+For `month` returns renders for last 30 days and groups renders by each day.
+These ranges can be overwritten by providing both `startDate` and `endDate` parameters.
+
+**top**: When top parameter is provided, the information for the `top` number of environments with higher number
+of renders is returned and for all the rest of existing environments in the subscription the renders are
+concatenated under "Others".
 
 > Example responses
 
@@ -598,7 +693,7 @@ all the rest of existing environments in the subscription the renders are concat
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns array of environments render details.|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If groupBy is missing or invalid.|[ProblemDetails](#schemaproblemdetails)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If groupBy is missing or one of the params has incorrect format.|[ProblemDetails](#schemaproblemdetails)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with this id is not found for the authenticated user.|[ProblemDetails](#schemaproblemdetails)|
@@ -710,423 +805,39 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-<h1 id="chili-grafx-users">Users</h1>
-
-## post  api v1 users manage add
-
-`POST /api/v1/users/manage/add`
-
-*Adds new user in GraFx.*
-
-> Body parameter
-
-```json
-{
-  "email": "simple@example.com",
-  "firstName": "John",
-  "lastName": "Doe",
-  "subscriptionIds": [
-    "d28986ef-ad97-4172-92c9-59b768febd79",
-    "9afe8a46-27f4-4c39-76b1-db89e8ad9daf"
-  ],
-  "customerGuid": "d28986ef-aa11-4372-92c9-59b768febd79"
-}
-```
-
-<h3 id="post--api-v1-users-manage-add-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
-|body|body|[AddUserModel](#schemaaddusermodel)|true|none|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "userId": "auth0|630f8c2b324946feb93c7e75"
-}
-```
-
-> 400 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-  "title": "Bad Request",
-  "status": 400
-}
-```
-
-> 409 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.8",
-  "title": "Conflict",
-  "status": 409
-}
-```
-
-> 500 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
-  "title": "Internal Server Error",
-  "status": 500
-}
-```
-
-<h3 id="post--api-v1-users-manage-add-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns ID of successfully created user.|[CreateUserResultModel](#schemacreateuserresultmodel)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, email, firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
-|409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|If user with the same email already exists.|[ProblemDetails](#schemaproblemdetails)|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Server Error|[ProblemDetails](#schemaproblemdetails)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-Bearer
-</aside>
-
-## put  api v1 users {userId} manage update
-
-`PUT /api/v1/users/{userId}/manage/update`
-
-*Updates user's first name and last name in GraFx.*
-
-> Body parameter
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Doe"
-}
-```
-
-<h3 id="put--api-v1-users-{userid}-manage-update-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|userId|path|string|true|UserId in GraFx.|
-|body|body|[UpdateUserModel](#schemaupdateusermodel)|true|none|
-
-> Example responses
-
-> 400 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-  "title": "Bad Request",
-  "status": 400
-}
-```
-
-> 401 Response
-
-```json
-{
-  "type": "https://httpstatuses.io/401",
-  "title": "Unauthorized",
-  "status": 401
-}
-```
-
-> 403 Response
-
-```json
-{
-  "type": "https://httpstatuses.io/403",
-  "title": "Forbidden",
-  "status": 403
-}
-```
-
-> 404 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-  "title": "Not Found",
-  "status": 404
-}
-```
-
-> 500 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
-  "title": "Internal Server Error",
-  "status": 500
-}
-```
-
-<h3 id="put--api-v1-users-{userid}-manage-update-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user has been successfully updated.|None|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: firstName, lastName.|[ProblemDetails](#schemaproblemdetails)|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If userId not found in GraFx.|[ProblemDetails](#schemaproblemdetails)|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Server Error|[ProblemDetails](#schemaproblemdetails)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-Bearer
-</aside>
-
-## get  api v1 users {userId} manage email-status
-
-`GET /api/v1/users/{userId}/manage/email-status`
-
-*Gets user email verification status.*
-
-<h3 id="get--api-v1-users-{userid}-manage-email-status-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|userId|path|string|true|UserId in GraFx.|
-|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "isEmailVerified": true
-}
-```
-
-> 400 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-  "title": "Bad Request",
-  "status": 400
-}
-```
-
-> 404 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-  "title": "Not Found",
-  "status": 404
-}
-```
-
-> 500 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
-  "title": "Internal Server Error",
-  "status": 500
-}
-```
-
-<h3 id="get--api-v1-users-{userid}-manage-email-status-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns user email verification status.|[UserEmailVerificationStatusModel](#schemauseremailverificationstatusmodel)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, userId.|[ProblemDetails](#schemaproblemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If userId not found in GraFx.|[ProblemDetails](#schemaproblemdetails)|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|If data cannot be retrieved due to internal failure.|[ProblemDetails](#schemaproblemdetails)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-Bearer
-</aside>
-
-## put  api v1 users manage migrate
-
-`PUT /api/v1/users/manage/migrate`
-
-*Marks user as migrated to GraFx.*
-
-> Body parameter
-
-```json
-{
-  "userEmail": "simple@example.com"
-}
-```
-
-<h3 id="put--api-v1-users-manage-migrate-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
-|body|body|[MarkUserMigratedModel](#schemamarkusermigratedmodel)|false|none|
-
-> Example responses
-
-> 400 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-  "title": "Bad Request",
-  "status": 400
-}
-```
-
-> 404 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-  "title": "Not Found",
-  "status": 404
-}
-```
-
-> 500 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
-  "title": "Internal Server Error",
-  "status": 500
-}
-```
-
-<h3 id="put--api-v1-users-manage-migrate-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|If user successfully marked as migrated.|None|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, userEmail.|[ProblemDetails](#schemaproblemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If user with this userEmail is not found.|[ProblemDetails](#schemaproblemdetails)|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|If user cannot be marked as migrated due to internal failure.|[ProblemDetails](#schemaproblemdetails)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-Bearer
-</aside>
-
-## post  api v1 users manage migrate subscriptions
-
-`POST /api/v1/users/manage/migrate/subscriptions`
-
-*Gets user accessible subscriptions.*
-
-> Body parameter
-
-```json
-{
-  "userEmail": "simple@example.com"
-}
-```
-
-<h3 id="post--api-v1-users-manage-migrate-subscriptions-parameters">Parameters</h3>
-
-|Name|In|Type|Required|Description|
-|---|---|---|---|---|
-|signature|header|string|true|Signature used to verify that the request called by an authorized party.|
-|body|body|[UserAccessibleSubscriptionsModel](#schemauseraccessiblesubscriptionsmodel)|false|none|
-
-> Example responses
-
-> 200 Response
-
-```json
-{
-  "userEmail": "simple@example.com"
-}
-```
-
-> 400 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
-  "title": "Bad Request",
-  "status": 400
-}
-```
-
-> 404 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
-  "title": "Not Found",
-  "status": 404
-}
-```
-
-> 500 Response
-
-```json
-{
-  "type": "https://tools.ietf.org/html/rfc7231#section-6.6.1",
-  "title": "Internal Server Error",
-  "status": 500
-}
-```
-
-<h3 id="post--api-v1-users-manage-migrate-subscriptions-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Returns user accessible subscriptions.|[UserAccessibleSubscriptionsModel](#schemauseraccessiblesubscriptionsmodel)|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|If one of the following params is missing: signature, userEmail.|[ProblemDetails](#schemaproblemdetails)|
-|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If user not found in MyCP.|[ProblemDetails](#schemaproblemdetails)|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|If data cannot be retrieved due to internal failure.|[ProblemDetails](#schemaproblemdetails)|
-
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-Bearer
-</aside>
-
 # Schemas
 
-<h2 id="tocS_AddUserModel">AddUserModel</h2>
+<h2 id="tocS_BasicEnvironmentModel">BasicEnvironmentModel</h2>
 <!-- backwards compatibility -->
-<a id="schemaaddusermodel"></a>
-<a id="schema_AddUserModel"></a>
-<a id="tocSaddusermodel"></a>
-<a id="tocsaddusermodel"></a>
+<a id="schemabasicenvironmentmodel"></a>
+<a id="schema_BasicEnvironmentModel"></a>
+<a id="tocSbasicenvironmentmodel"></a>
+<a id="tocsbasicenvironmentmodel"></a>
 
 ```json
 {
-  "email": "simple@example.com",
-  "firstName": "John",
-  "lastName": "Doe",
-  "subscriptionIds": [
-    "d28986ef-ad97-4172-92c9-59b768febd79",
-    "9afe8a46-27f4-4c39-76b1-db89e8ad9daf"
-  ],
-  "customerGuid": "d28986ef-aa11-4372-92c9-59b768febd79"
+  "id": 494,
+  "guid": "18a3ae5c-3bc5-42eb-b8d8-0307fbbbfea1",
+  "name": "cp-eee-001",
+  "region": "westeurope",
+  "type": "development",
+  "usedStorage": 1093314335,
+  "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
 }
 
 ```
-
-Request model that is used to add new user in GraFx.
 
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|email|string|true|none|User email which should be used in GraFx.|
-|firstName|string|true|none|User first name.|
-|lastName|string|true|none|User last name.|
-|subscriptionIds|[string]¦null|false|none|Ids of existing user subscriptions.|
-|customerGuid|string(uuid)¦null|false|none|The guid of the customer this user is linked to.|
+|id|integer(int32)|true|none|Environment Id.|
+|guid|string(uuid)|false|none|Environment guid.|
+|name|string¦null|false|none|Environment name.|
+|region|string¦null|false|none|Environment region.|
+|type|[EnvironmentType](#schemaenvironmenttype)|false|none|Environment type.|
+|usedStorage|integer(int64)|true|none|Total environment used storage.|
+|backOfficeUri|string(uri)¦null|false|none|Backoffice URL.|
 
 <h2 id="tocS_BasicSubscriptionModel">BasicSubscriptionModel</h2>
 <!-- backwards compatibility -->
@@ -1139,7 +850,9 @@ Request model that is used to add new user in GraFx.
 {
   "id": 44,
   "name": "CHILI - OnlineTrial",
-  "isActive": true
+  "isActive": true,
+  "clientId": "950c78e8-99c0-4681-98b3-a8b2ff11683c",
+  "clientName": "CHILI"
 }
 
 ```
@@ -1153,28 +866,8 @@ Response model with subscription information.
 |id|integer(int32)|true|none|Subscription Id.|
 |name|string|true|none|Subscription name.|
 |isActive|boolean|true|none|`true` if subscription is still active.|
-
-<h2 id="tocS_CreateUserResultModel">CreateUserResultModel</h2>
-<!-- backwards compatibility -->
-<a id="schemacreateuserresultmodel"></a>
-<a id="schema_CreateUserResultModel"></a>
-<a id="tocScreateuserresultmodel"></a>
-<a id="tocscreateuserresultmodel"></a>
-
-```json
-{
-  "userId": "auth0|630f8c2b324946feb93c7e75"
-}
-
-```
-
-Request model that is used to return new user ID after creation in GraFx.
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|userId|string|true|none|User ID which has been created in GraFx.|
+|clientId|string(uuid)¦null|false|none|Client GUID.|
+|clientName|string¦null|false|none|Client name.|
 
 <h2 id="tocS_EnvironmentModel">EnvironmentModel</h2>
 <!-- backwards compatibility -->
@@ -1431,26 +1124,6 @@ License type.
 |*anonymous*|Production|
 |*anonymous*|Failover|
 |*anonymous*|Sandbox|
-
-<h2 id="tocS_MarkUserMigratedModel">MarkUserMigratedModel</h2>
-<!-- backwards compatibility -->
-<a id="schemamarkusermigratedmodel"></a>
-<a id="schema_MarkUserMigratedModel"></a>
-<a id="tocSmarkusermigratedmodel"></a>
-<a id="tocsmarkusermigratedmodel"></a>
-
-```json
-{
-  "userEmail": "simple@example.com"
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|userEmail|string|true|none|User email which is used in MyCP to mark user as migrated.|
 
 <h2 id="tocS_ProblemDetails">ProblemDetails</h2>
 <!-- backwards compatibility -->
@@ -1761,72 +1434,6 @@ Subscription type.
 |---|---|
 |*anonymous*|OnPremises|
 |*anonymous*|Saas|
-
-<h2 id="tocS_UpdateUserModel">UpdateUserModel</h2>
-<!-- backwards compatibility -->
-<a id="schemaupdateusermodel"></a>
-<a id="schema_UpdateUserModel"></a>
-<a id="tocSupdateusermodel"></a>
-<a id="tocsupdateusermodel"></a>
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Doe"
-}
-
-```
-
-Request model that is used to update user's first name and last name in GraFx.
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|firstName|string|true|none|User first name.|
-|lastName|string|true|none|User last name.|
-
-<h2 id="tocS_UserAccessibleSubscriptionsModel">UserAccessibleSubscriptionsModel</h2>
-<!-- backwards compatibility -->
-<a id="schemauseraccessiblesubscriptionsmodel"></a>
-<a id="schema_UserAccessibleSubscriptionsModel"></a>
-<a id="tocSuseraccessiblesubscriptionsmodel"></a>
-<a id="tocsuseraccessiblesubscriptionsmodel"></a>
-
-```json
-{
-  "userEmail": "simple@example.com"
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|userEmail|string|true|none|User email which is used in MyCP to get accessible subscriptions.|
-
-<h2 id="tocS_UserEmailVerificationStatusModel">UserEmailVerificationStatusModel</h2>
-<!-- backwards compatibility -->
-<a id="schemauseremailverificationstatusmodel"></a>
-<a id="schema_UserEmailVerificationStatusModel"></a>
-<a id="tocSuseremailverificationstatusmodel"></a>
-<a id="tocsuseremailverificationstatusmodel"></a>
-
-```json
-{
-  "isEmailVerified": true
-}
-
-```
-
-Response model with user email verification status.
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|isEmailVerified|boolean|true|none|User email verification status. `true` if user verified its email address.|
 
 <h2 id="tocS_UserModel">UserModel</h2>
 <!-- backwards compatibility -->
