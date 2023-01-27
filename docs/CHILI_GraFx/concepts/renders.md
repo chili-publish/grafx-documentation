@@ -32,7 +32,9 @@ This average is used to size your allowance in your subscription.
 
 When variable output is used, this is the formula to count renders.
 
-!!! Alert
+The first 50 renders are counted individually, then each set of 50 is counted as 1 render.
+
+!!! Formula
 
 	V = Variable Data source size (e.g. 1000 records)
 	
@@ -50,15 +52,15 @@ Your dashboard will show the actual status of renders. (with a delay of ±1 day)
 
 ![Renders](https://chilipublishdocs.imgix.net/CHILI_GraFx/renders.png)
 
-The light blue line shows the "6 month average".
+The light blue line shows the "6 month rolling average".
 
-Render quota are not a hard limit per month. If you generate more output than the render quota, we won’t block or watermark the output. 
+Render quota are not a hard limit per month. If you generate more output than the render quota, we won’t block or watermark the output.
 
 You are allowed to go over the monthly limit. 
 
 When the 6 month rolling average exceeds the render quota, it's time to add extra render packs to increase your render quota to at least the 6 month average.
 
-!!! Info
-	6 months average calculation	
+!!! Average
+	6 month average calculation:
 
 	Total of past 183 days divided by 6
