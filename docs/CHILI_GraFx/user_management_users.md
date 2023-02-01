@@ -10,7 +10,9 @@ The first user could also be created, by the migration from MyCP. If you had a u
 
 ### Subsequent Users
 
-You can add more users to the Subscription, by converting them from MyCP.
+In case some of your users are using MyCP or Zendesk, they can migrate their users to CHILI GraFx by accessing https://my.chili-publish.com.
+
+The system will suggest to start the migration process.
 
 You can also add users by asking a Client Success colleague to create a new user.
 
