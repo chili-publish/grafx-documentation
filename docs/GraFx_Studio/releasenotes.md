@@ -14,7 +14,6 @@ Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/edi
 - Fixed issue with font size and line height properties of a character style being set to 0 when clicked upon, and it was not possible to clear them (now you can leave them empty again to use the values from the applied paragraph style)
 - Fixed issue with text rendering when line height is 0
 - Fixed issue with deleted font being shown in font dropdown menu
-- Fixed issue with loading the default template
 - Fixed weird behavior when using the Hand tool to move the page
 
 ## January 23, 2023
