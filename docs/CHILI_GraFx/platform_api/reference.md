@@ -103,8 +103,7 @@ Bearer
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|integer(int32)|true|Environment Id.|
-|groupBy|query|string|true|Groups render information.
-|
+|groupBy|query|string|true|Groups render information.|
 |startDate|query|string|false|Start date of the range from which to return the renders. Required if `endDate` is provided. Format: yyyy-MM-dd.|
 |endDate|query|string|false|End date of the range from which to return the renders. Required if `startDate` is provided. Format: yyyy-MM-dd.|
 
@@ -223,11 +222,12 @@ Bearer
   {
     "id": 494,
     "guid": "18a3ae5c-3bc5-42eb-b8d8-0307fbbbfea1",
-    "name": "cp-eee-001",
+    "name": "CHILI Team",
     "region": "westeurope",
     "type": "development",
     "usedStorage": 1093314335,
-    "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
+    "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx",
+    "technicalName": "ch-01"
   }
 ]
 ```
@@ -288,14 +288,15 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|[[BasicEnvironmentModel](#schemabasicenvironmentmodel)]|false|none|none|
+|*anonymous*|[[BasicEnvironmentModel](#schemabasicenvironmentmodel)]|false|none|[Response model with the basic information about environment.]|
 |» id|integer(int32)|true|none|Environment Id.|
 |» guid|string(uuid)|false|none|Environment guid.|
-|» name|string¦null|false|none|Environment name.|
+|» name|string¦null|false|none|Environment display name.|
 |» region|string¦null|false|none|Environment region.|
 |» type|[EnvironmentType](#schemaenvironmenttype)|false|none|Environment type.|
 |» usedStorage|integer(int64)|true|none|Total environment used storage.|
 |» backOfficeUri|string(uri)¦null|false|none|Backoffice URL.|
+|» technicalName|string¦null|false|none|Environment technical name.|
 
 #### Enumerated Values
 
@@ -374,6 +375,7 @@ Bearer
 [
   {
     "id": 44,
+    "guid": "d9aa2149-7f95-4ecc-ab2f-d6d12708f8da",
     "name": "CHILI - OnlineTrial",
     "isActive": true,
     "clientId": "950c78e8-99c0-4681-98b3-a8b2ff11683c",
@@ -418,6 +420,7 @@ Status Code **200**
 |---|---|---|---|---|
 |*anonymous*|[[BasicSubscriptionModel](#schemabasicsubscriptionmodel)]|false|none|[Response model with subscription information.]|
 |» id|integer(int32)|true|none|Subscription Id.|
+|» guid|string(uuid)|true|none|Subscription GUID.|
 |» name|string|true|none|Subscription name.|
 |» isActive|boolean|true|none|`true` if subscription is still active.|
 |» clientId|string(uuid)¦null|false|none|Client GUID.|
@@ -611,10 +614,8 @@ All environments under that subscription are returned in the specific order by t
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|integer(int32)|true|Subscription Id.|
-|groupBy|query|string|true|Groups render information.
-|
-|top|query|integer(int32)|false|When top parameter is provided, the information for the `top` number of environments with higher number
-|
+|groupBy|query|string|true|Groups render information.|
+|top|query|integer(int32)|false|When top parameter is provided, the information for the `top` number of environments with higher number|
 |startDate|query|string|false|Start date of the range from which to return the renders. Required if `endDate` is provided. Format: yyyy-MM-dd.|
 |endDate|query|string|false|End date of the range from which to return the renders. Required if `startDate` is provided. Format: yyyy-MM-dd.|
 
@@ -818,14 +819,17 @@ Bearer
 {
   "id": 494,
   "guid": "18a3ae5c-3bc5-42eb-b8d8-0307fbbbfea1",
-  "name": "cp-eee-001",
+  "name": "CHILI Team",
   "region": "westeurope",
   "type": "development",
   "usedStorage": 1093314335,
-  "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx"
+  "backOfficeUri": "https://cp-000-000.chili-publish-sandbox.online/cp-000-000/interface.aspx",
+  "technicalName": "ch-01"
 }
 
 ```
+
+Response model with the basic information about environment.
 
 ### Properties
 
@@ -833,11 +837,12 @@ Bearer
 |---|---|---|---|---|
 |id|integer(int32)|true|none|Environment Id.|
 |guid|string(uuid)|false|none|Environment guid.|
-|name|string¦null|false|none|Environment name.|
+|name|string¦null|false|none|Environment display name.|
 |region|string¦null|false|none|Environment region.|
 |type|[EnvironmentType](#schemaenvironmenttype)|false|none|Environment type.|
 |usedStorage|integer(int64)|true|none|Total environment used storage.|
 |backOfficeUri|string(uri)¦null|false|none|Backoffice URL.|
+|technicalName|string¦null|false|none|Environment technical name.|
 
 <h2 id="tocS_BasicSubscriptionModel">BasicSubscriptionModel</h2>
 <!-- backwards compatibility -->
@@ -849,6 +854,7 @@ Bearer
 ```json
 {
   "id": 44,
+  "guid": "d9aa2149-7f95-4ecc-ab2f-d6d12708f8da",
   "name": "CHILI - OnlineTrial",
   "isActive": true,
   "clientId": "950c78e8-99c0-4681-98b3-a8b2ff11683c",
@@ -864,6 +870,7 @@ Response model with subscription information.
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |id|integer(int32)|true|none|Subscription Id.|
+|guid|string(uuid)|true|none|Subscription GUID.|
 |name|string|true|none|Subscription name.|
 |isActive|boolean|true|none|`true` if subscription is still active.|
 |clientId|string(uuid)¦null|false|none|Client GUID.|
