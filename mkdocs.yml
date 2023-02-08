@@ -170,28 +170,20 @@ nav:
             - Overview:                         'GraFx_Studio/sdk/README.md'
             - ... | flat | GraFx_Studio/sdk/**
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
-#        - 'Release notes':
-#            - 'Latest':                         'GraFx_Studio/releasenotes/latest.md'
         - 'Release notes':                      'GraFx_Studio/releasenotes.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx_Publisher/index.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_Media/index.md'
-#        - 'Release notes':
-#            - 'Latest':                         'GraFx_media/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx_Fonts/index.md'
-#        - 'Release notes':
-#            - 'Latest':                         'GraFx_fonts/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx_Stylekits/index.md'
-#        - 'Release notes':
-#            - 'Latest':                         'GraFx_stylekits/releasenotes/latest.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
     - 'On-prem':
@@ -201,6 +193,8 @@ nav:
 
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
+
+    - 'Release notes':                          'releasenotes/index.md'
 
 
     - 'Developer center':                       
