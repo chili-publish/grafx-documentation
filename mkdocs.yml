@@ -176,7 +176,15 @@ nav:
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx_Media/index.md'
-#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
+        - 'Application overview':               
+            'Viewing Media':                    'GraFx_Media/viewing.md'
+        - 'How to':
+            'Browse media':                     'GraFx_Media/how_to/browse.md'
+            'Search media':                     'GraFx_Media/how_to/search.md'
+#           'Upload media':                     'GraFx_Media/how_to/upload.md'
+#           'Download media':                   'GraFx_Media/how_to/download.md'
+#           'Sort and Filter media':            'GraFx_Media/how_to/sort_filter.md'
+#           'Sort media':                       'GraFx_Media/how_to/sort.md'
 
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx_Fonts/index.md'
