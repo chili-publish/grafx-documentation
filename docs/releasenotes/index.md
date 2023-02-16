@@ -1,16 +1,44 @@
 # Release notes
 
-The CHILI GraFx platform is frequently updated with new features, improvements and fixes.
+CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
 Here you can find a summary of what's new!
+
+## Feb 16, 2023 - GraFx Studio
+
+Version 0.107.3, using Studio SDK [0.107.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+
+### Features
+
+- You can make the content of an image frame variable by inserting an image variable
+- You can browse your media and assign an image to an image variable
+
+### Improvements
+
+- The template is automatically zoomed to page when opened or when switching to another layout
+- Added tooltips to the sidebar and header bar
+- Added a loading indication while media previews are loading
+- The variable settings panel is not opened when a new variable is created
+- The variable name is truncated in the variable tag when it doesn't fit in the text frame, to prevent text overflow
+
+### Fixes
+
+- Fixed issue with resetting an override on the image fit mode
+- Fixed issue with undo/redo of creating a new variable
+- Fixed issue with undo/redo of creating a new layout
+- Because of issues with calculating the number of occurrences of a variable, it's hidden in the variable list until the number is reliable
+- Fixed infinite API calls when navigating to the bottom of the Media panel
+- Media details are now retrieved using the new *details(id)* connector method
+- Fixed issues with server-side rendering
 
 ## Feb 16, 2023 - GraFx Media Alpha
 
 ### Features
+
 - You can browse between your assets in GraFx Media Alpha
 - You can search for an asset in GraFx Media Alpha
 
-## Jan 30, 2023 - GraFX Studio
+## Jan 30, 2023 - GraFx Studio
 
 Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
@@ -23,7 +51,7 @@ Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/edi
 - Fixed issue with loading the default template
 - Fixed weird behavior when using the Hand tool to move the page
 
-## Jan 23, 2023 - GraFX Studio
+## Jan 23, 2023 - GraFx Studio
 
 Version 0.102.2, using Studio SDK [0.102.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
@@ -60,7 +88,7 @@ Version 0.102.2, using Studio SDK [0.102.0](https://github.com/chili-publish/edi
 - Fixed issue that resulted in an error when removing a frame
 
 
-## Jan 9, 2023 - CHILI GraFX
+## Jan 9, 2023 - CHILI GraFx
 
 
 ### Improvements
@@ -68,7 +96,7 @@ Version 0.102.2, using Studio SDK [0.102.0](https://github.com/chili-publish/edi
 - If you have multiple clients you can easily switch between these clients and get a list with environments of that client
 - If you have multiple clients you can search for a specific client by typing the name of the client in the search bar
 
-## Dec 23, 2022 - GraFX Studio
+## Dec 23, 2022 - GraFx Studio
 
 Version 0.97.1, using Studio SDK [0.97.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
@@ -82,7 +110,7 @@ Version 0.97.1, using Studio SDK [0.97.0](https://github.com/chili-publish/edito
 - Fixed issue with loading fonts, which caused the default font to be used instead (ℹ️ because of this fix the text in your template can look different)
 - The editor canvas is no longer moving when opening or closing the left side panel
 
-## Dec 16, 2022 - GraFX Studio
+## Dec 16, 2022 - GraFx Studio
 
 Version 0.95.1, using Studio SDK [0.95.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
@@ -111,7 +139,7 @@ Version 0.95.1, using Studio SDK [0.95.0](https://github.com/chili-publish/edito
 - Fixed issues with renaming a list item
 - Fixed issue with resetting a copyfitting override
 
-## Nov 18, 2022 - GraFX Studio
+## Nov 18, 2022 - GraFx Studio
 
 Version 0.88.3, using Studio SDK [0.88.2](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
@@ -145,7 +173,7 @@ Version 0.88.3, using Studio SDK [0.88.2](https://github.com/chili-publish/edito
 - Fixed issue with pressing the delete/backspace key while renaming a frame
 - Fixed issue with the button to reset overrides not being present after clicking outside the page
 
-## Oct 12, 2022 - GraFX Studio
+## Oct 12, 2022 - GraFx Studio
 
 Version 0.70.3, using Studio SDK [0.70.3](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
