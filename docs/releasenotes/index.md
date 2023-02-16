@@ -4,6 +4,12 @@ The CHILI GraFx platform is frequently updated with new features, improvements a
 
 Here you can find a summary of what's new!
 
+## Feb 16, 2023 - GraFx Media Alpha
+
+### Features
+- You can browse between your assets in GraFx Media Alpha
+- You can search for an asset in GraFx Media Alpha
+
 ## Jan 30, 2023 - GraFX Studio
 
 Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
