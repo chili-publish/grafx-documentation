@@ -24,7 +24,7 @@ Use cases are
 - Generating Output
 - ...
 
-[See the Environment API](/CHILI_GraFx/environment_api/intro/)
+[See the Environment API](/CHILI_GraFx/environment_api/)
 
 # Authenticate
 
