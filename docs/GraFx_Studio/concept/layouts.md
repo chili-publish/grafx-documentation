@@ -45,6 +45,8 @@ The master of this layout is the one above the current layout, in the Layout men
 
 In this example **Base Design** is the master for **Skyscraper**, and **Skyscraper** is the current layout.
 
+When switching layouts, the document will zoom to fit.
+
 ![inherited](https://chilipublishdocs.imgix.net/GraFx_studio/how_to/inheritedvalues.png?w=300)
 
 When a value is colored (and the bullet next to **inherited** is colored), it means the current value for this layout is different than the master's value.

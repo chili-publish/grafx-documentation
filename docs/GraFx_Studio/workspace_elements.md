@@ -8,7 +8,7 @@ When opening the GraFx Studio editor, you will see the full workspace
 
 ![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/editor03_parts.png?w=800)
 
-### 1 Top Quick Tools
+### 1 Sidebar
 
 Toolpanel to select the tool you wish to use to edit your document.
 
