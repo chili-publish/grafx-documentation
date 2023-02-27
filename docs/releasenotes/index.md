@@ -35,8 +35,8 @@ Version 0.107.3, using Studio SDK [0.107.0](https://github.com/chili-publish/edi
 
 ### Features
 
-- You can browse between your assets in GraFx Media Alpha
-- You can search for an asset in GraFx Media Alpha
+- You can [browse](/GraFx_Media/how_to/browse/) between your assets in GraFx Media Alpha
+- You can [search](/GraFx_Media/how_to/search/) for an asset in GraFx Media Alpha
 
 ## Jan 30, 2023 - GraFx Studio
 
