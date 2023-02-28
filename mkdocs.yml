@@ -109,7 +109,7 @@ nav:
             - 'Create GraFx Publisher template' : 'CHILI_GraFx/how_to/create_publisher_template.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
-        - 'Platform API reference' :            
+        - 'Platform API reference' :
             - 'Intro' :                         'CHILI_GraFx/platform_api/index.md'
             - 'Reference' :                     'CHILI_GraFx/platform_api/reference.md'
         - 'Environment API reference':          
