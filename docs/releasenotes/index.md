@@ -4,9 +4,31 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 Here you can find a summary of what's new!
 
+## Mar 1, 2023 - GraFx Studio
+
+Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+
+### Features
+
+- You can constrain the proportions of a frame while resizing to preserve the aspect ratio
+- There is a new dropdown menu that allows you to control the zoom level
+- A warning icon appears when part of your text is not visible because it doesn't fit inside the text frame
+
+![animation](https://chilipublishdocs.imgix.net/releasenotes/overflow.gif)
+
+### Improvements
+
+- Variable settings panel does not close automatically anymore, it stays open until you manually close it
+
+### Fixes
+
+- Fixed issue where copyfitting property was not shown in yellow when it has an override
+- Fixed issue where variable settings panel was only opened on second click
+- Fixed issue with Media panel being empty when opened too fast
+
 ## Feb 16, 2023 - GraFx Studio
 
-Version 0.107.3, using Studio SDK [0.107.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.107.4, using Studio SDK [0.107.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
 
 ### Features
 

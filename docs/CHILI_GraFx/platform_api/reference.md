@@ -1,5 +1,3 @@
-<!-- Generator: Widdershins v4.0.1 -->
-
 <h1 id="chili-grafx-platform">CHILI GraFx Platform v1</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
@@ -12,13 +10,11 @@ API allowing integration with the CHILI GraFx Platform.
 
 <h1 id="chili-grafx-platform-environments">Environments</h1>
 
-## get  api v1 environment {id}
+## Gets environment information.
 
 `GET /api/v1/environment/{id}`
 
-*Gets environment information.*
-
-<h3 id="get--api-v1-environment-{id}-parameters">Parameters</h3>
+<h3 id="gets-environment-information.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -78,7 +74,7 @@ API allowing integration with the CHILI GraFx Platform.
 }
 ```
 
-<h3 id="get--api-v1-environment-{id}-responses">Responses</h3>
+<h3 id="gets-environment-information.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -92,13 +88,11 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api v1 environment {id} renders
+## Get environment renders information.
 
 `GET /api/v1/environment/{id}/renders`
 
-*Get environment renders information.*
-
-<h3 id="get--api-v1-environment-{id}-renders-parameters">Parameters</h3>
+<h3 id="get-environment-renders-information.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -173,7 +167,7 @@ Bearer
 }
 ```
 
-<h3 id="get--api-v1-environment-{id}-renders-responses">Responses</h3>
+<h3 id="get-environment-renders-information.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -183,7 +177,7 @@ Bearer
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If environment with such Id is not found.|[ProblemDetails](#schemaproblemdetails)|
 
-<h3 id="get--api-v1-environment-{id}-renders-responseschema">Response Schema</h3>
+<h3 id="get-environment-renders-information.-responseschema">Response Schema</h3>
 
 Status Code **200**
 
@@ -201,13 +195,11 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api v1 environments
+## Get environments under specified subscription.
 
 `GET /api/v1/environments`
 
-*Get environments under specified subscription.*
-
-<h3 id="get--api-v1-environments-parameters">Parameters</h3>
+<h3 id="get-environments-under-specified-subscription.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -272,7 +264,7 @@ Bearer
 }
 ```
 
-<h3 id="get--api-v1-environments-responses">Responses</h3>
+<h3 id="get-environments-under-specified-subscription.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -282,7 +274,7 @@ Bearer
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with such ID is not found.|[ProblemDetails](#schemaproblemdetails)|
 
-<h3 id="get--api-v1-environments-responseschema">Response Schema</h3>
+<h3 id="get-environments-under-specified-subscription.-responseschema">Response Schema</h3>
 
 Status Code **200**
 
@@ -313,11 +305,9 @@ Bearer
 
 <h1 id="chili-grafx-platform-info">Info</h1>
 
-## get  api v1 info
+## Gets information about API.
 
 `GET /api/v1/info`
-
-*Gets information about API.*
 
 > Example responses
 
@@ -331,7 +321,7 @@ Bearer
 }
 ```
 
-<h3 id="get--api-v1-info-responses">Responses</h3>
+<h3 id="gets-information-about-api.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -342,13 +332,11 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api ping
+## Checks server availability.
 
 `GET /api/ping`
 
-*Checks server availability.*
-
-<h3 id="get--api-ping-responses">Responses</h3>
+<h3 id="checks-server-availability.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -361,11 +349,9 @@ Bearer
 
 <h1 id="chili-grafx-platform-subscriptions">Subscriptions</h1>
 
-## get  api v1 subscriptions
+## Gets all existing subscriptions.
 
 `GET /api/v1/subscriptions`
-
-*Gets all existing subscriptions.*
 
 > Example responses
 
@@ -404,7 +390,7 @@ Bearer
 }
 ```
 
-<h3 id="get--api-v1-subscriptions-responses">Responses</h3>
+<h3 id="gets-all-existing-subscriptions.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -412,7 +398,7 @@ Bearer
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|If bearer token is missing.|[ProblemDetails](#schemaproblemdetails)|
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 
-<h3 id="get--api-v1-subscriptions-responseschema">Response Schema</h3>
+<h3 id="gets-all-existing-subscriptions.-responseschema">Response Schema</h3>
 
 Status Code **200**
 
@@ -431,13 +417,11 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api v1 subscription {id}
+## Gets detailed information about subscription.
 
 `GET /api/v1/subscription/{id}`
 
-*Gets detailed information about subscription.*
-
-<h3 id="get--api-v1-subscription-{id}-parameters">Parameters</h3>
+<h3 id="gets-detailed-information-about-subscription.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -521,7 +505,7 @@ Bearer
 }
 ```
 
-<h3 id="get--api-v1-subscription-{id}-responses">Responses</h3>
+<h3 id="gets-detailed-information-about-subscription.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -535,13 +519,11 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api v1 subscription {subscriptionGuid} {environmentGuid}
+## Checks if environment is under subscription.
 
 `GET /api/v1/subscription/{subscriptionGuid}/{environmentGuid}`
 
-*Checks if environment is under subscription.*
-
-<h3 id="get--api-v1-subscription-{subscriptionguid}-{environmentguid}-parameters">Parameters</h3>
+<h3 id="checks-if-environment-is-under-subscription.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -586,7 +568,7 @@ true
 }
 ```
 
-<h3 id="get--api-v1-subscription-{subscriptionguid}-{environmentguid}-responses">Responses</h3>
+<h3 id="checks-if-environment-is-under-subscription.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -600,16 +582,14 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api v1 subscription {id} renders
+## Gets environments render information included in subscription.
 
 `GET /api/v1/subscription/{id}/renders`
-
-*Gets environments render information included in subscription.*
 
 All environments under that subscription are returned in the specific order by the environment type
 (Production, Sandbox, Development) and then by the descending order based on renders amount.
 
-<h3 id="get--api-v1-subscription-{id}-renders-parameters">Parameters</h3>
+<h3 id="gets-environments-render-information-included-in-subscription.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -689,7 +669,7 @@ concatenated under "Others".
 }
 ```
 
-<h3 id="get--api-v1-subscription-{id}-renders-responses">Responses</h3>
+<h3 id="gets-environments-render-information-included-in-subscription.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -699,7 +679,7 @@ concatenated under "Others".
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with this id is not found for the authenticated user.|[ProblemDetails](#schemaproblemdetails)|
 
-<h3 id="get--api-v1-subscription-{id}-renders-responseschema">Response Schema</h3>
+<h3 id="gets-environments-render-information-included-in-subscription.-responseschema">Response Schema</h3>
 
 Status Code **200**
 
@@ -717,13 +697,11 @@ To perform this operation, you must be authenticated by means of one of the foll
 Bearer
 </aside>
 
-## get  api v1 subscription {id} users
+## Gets users that use the subscription.
 
 `GET /api/v1/subscription/{id}/users`
 
-*Gets users that use the subscription.*
-
-<h3 id="get--api-v1-subscription-{id}-users-parameters">Parameters</h3>
+<h3 id="gets-users-that-use-the-subscription.-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -777,7 +755,7 @@ Bearer
 }
 ```
 
-<h3 id="get--api-v1-subscription-{id}-users-responses">Responses</h3>
+<h3 id="gets-users-that-use-the-subscription.-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
@@ -786,7 +764,7 @@ Bearer
 |403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|If user does not have required role.|[ProblemDetails](#schemaproblemdetails)|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|If subscription with this id is not found for the authenticated user.|[ProblemDetails](#schemaproblemdetails)|
 
-<h3 id="get--api-v1-subscription-{id}-users-responseschema">Response Schema</h3>
+<h3 id="gets-users-that-use-the-subscription.-responseschema">Response Schema</h3>
 
 Status Code **200**
 
