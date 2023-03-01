@@ -14,7 +14,7 @@ Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/edi
 - There is a new dropdown menu that allows you to control the zoom level
 - A warning icon appears when part of your text is not visible because it doesn't fit inside the text frame
 
-![animation](https://chilipublishdocs.imgix.net/releasenotes/overflow.gif)
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/overflow.gif)
 
 ### Improvements
 
