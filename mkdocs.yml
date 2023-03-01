@@ -109,7 +109,7 @@ nav:
             - 'Create GraFx Publisher template' : 'CHILI_GraFx/how_to/create_publisher_template.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
-        - 'Platform API reference' :            
+        - 'Platform API reference' :
             - 'Intro' :                         'CHILI_GraFx/platform_api/index.md'
             - 'Reference' :                     'CHILI_GraFx/platform_api/reference.md'
         - 'Environment API reference':          
@@ -122,7 +122,7 @@ nav:
         - 'Application overview':
             - 'Workspace elements':             'GraFx_Studio/workspace_elements.md'
             - 'Mouse or Trackpad':              'GraFx_Studio/mouse_trackpad.md'
-            - 'Top Quick Tools':                'GraFx_Studio/topquicktools.md'
+            - 'SidebarTools':                   'GraFx_Studio/sidebar.md'
             - 'Document Canvas':                'GraFx_Studio/documentcanvas.md'
             - 'Page or Document':               'GraFx_Studio/page_document.md'
             - 'Properties panel':               'GraFx_Studio/properties.md'

@@ -20,7 +20,7 @@ The platform hosts applications for you to build a powerful creative automation 
 
 Create smart templates to allow your customers to serve static digital and print output
 
-[See GraFx publisher documentation](/GraFx_publisher/intro/)
+[See GraFx publisher documentation](/GraFx_publisher/)
 
 ---
 
@@ -28,7 +28,7 @@ Create smart templates to allow your customers to serve static digital and print
 
 Create smart templates to allow your customers to serve animated and static digital output
 
-[See GraFx Studio documentation](/GraFx_studio/intro/)
+[See GraFx Studio documentation](/GraFx_studio/)
 
 ### Resource Providers
 
@@ -36,7 +36,7 @@ Create smart templates to allow your customers to serve animated and static digi
 
 Repository for your digital assets to be used in GraFx publisher and GraFx studio
 
-[See GraFx Media documentation](/GraFx_media/intro/)
+[See GraFx Media documentation](/GraFx_media/)
 
 ---
 
@@ -44,7 +44,7 @@ Repository for your digital assets to be used in GraFx publisher and GraFx studi
 
 Repository for your digital fonts to be used in GraFx publisher and GraFx studio
 
-[See GraFx Fonts documentation](/GraFx_fonts/intro/)
+[See GraFx Fonts documentation](/GraFx_fonts/)
 
 ---
 
@@ -52,4 +52,4 @@ Repository for your digital fonts to be used in GraFx publisher and GraFx studio
 
 Manage your stylekits
 
-[See GraFx Stylekits documentation](/GraFx_stylekits/intro/)
+[See GraFx Stylekits documentation](/GraFx_stylekits/)
