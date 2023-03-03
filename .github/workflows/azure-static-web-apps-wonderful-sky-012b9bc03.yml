@@ -24,7 +24,9 @@ jobs:
       - name: Install MkDocs
         run: pip install mkdocs-material mkdocs-awesome-pages-plugin
       - name:  build documentation 
-        run: mkdocs build    
+        run: mkdocs build   
+      - name: copy config file
+        run: cp staticwebapp.config.json /site   
       - name: Deploy to azure
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
