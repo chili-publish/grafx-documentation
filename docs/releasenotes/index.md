@@ -11,10 +11,13 @@ Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/edi
 ### Features
 
 - You can constrain the proportions of a frame while resizing to preserve the aspect ratio
+
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/proportions.gif)
+
 - There is a new dropdown menu that allows you to control the zoom level
 - A warning icon appears when part of your text is not visible because it doesn't fit inside the text frame
 
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/overflow.gif)
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/overflow3.gif)
 
 ### Improvements
 
