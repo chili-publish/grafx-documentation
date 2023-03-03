@@ -65,6 +65,7 @@ extra:
     cookies:
       analytics:
         name: Google Analytics
+        checked: true
   analytics:
     provider: google
     property: G-73R676NPTP
