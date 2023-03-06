@@ -11,6 +11,8 @@ Here you can find a summary of what's new!
 - You can sort your assets on name
 - You can see a preview of your asset
 
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/media_20230306.gif)
+
 ## Mar 1, 2023 - GraFx Studio
 
 Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
