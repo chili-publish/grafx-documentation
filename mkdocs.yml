@@ -118,6 +118,16 @@ nav:
             - 'Reference' :                     'CHILI_GraFx/environment_api/reference.md'
 
         - 'Release notes':                      'CHILI_GraFx/releasenotes.md'
+        - 'Step by step onboarding':
+            - 'Intro' :                         'CHILI_GraFx/step_by_step/intro.md'
+            - 'Loggin in' :                     'CHILI_GraFx/step_by_step/loggin_in.md'
+            - 'Find your way around' :          'CHILI_GraFx/step_by_step/navigating.md'
+            - 'Applications' :                  'CHILI_GraFx/step_by_step/applications.md'
+            - 'GraFx Publisher - first template': 'CHILI_GraFx/step_by_step/gfx_publisher_template1.md'
+            - 'GraFx Studio - Hello world':     'CHILI_GraFx/step_by_step/gfx_studio_template1.md'
+            - 'GraFx Studio - Hello world extended': 'CHILI_GraFx/step_by_step/gfx_studio_template2.md'
+            - 'GraFx Media intro':              'CHILI_GraFx/step_by_step/gfx_media.md'
+        
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_Studio/index.md'
         - 'Application overview':
