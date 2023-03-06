@@ -16,7 +16,7 @@ If you wish to have more in depth material, have a look at the [CHILI publish Ac
 	2.	[Quick Hello world in GraFx Studio](/CHILI_GraFx/step_by_step/gfx_studio_template1/)
 	3.	[15 minute intro into GraFx Studio](/CHILI_GraFx/step_by_step/gfx_studio_template2/)
 5.	Media management
-	1.	[Hello world in GraFx Media](/CHILI_GraFx/step_by_step/gfx_media/)
+	1.	[GraFx Media intro](/CHILI_GraFx/step_by_step/gfx_media/)
 	
 ## Why Hello World?
 
