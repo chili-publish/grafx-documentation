@@ -123,10 +123,18 @@ nav:
             - 'Loggin in' :                     'CHILI_GraFx/step_by_step/loggin_in.md'
             - 'Find your way around' :          'CHILI_GraFx/step_by_step/navigating.md'
             - 'Applications' :                  'CHILI_GraFx/step_by_step/applications.md'
-            - 'GraFx Publisher - first template': 'CHILI_GraFx/step_by_step/gfx_publisher_template1.md'
-            - 'GraFx Studio - Hello world':     'CHILI_GraFx/step_by_step/gfx_studio_template1.md'
-            - 'GraFx Studio - Hello world extended': 'CHILI_GraFx/step_by_step/gfx_studio_template2.md'
-            - 'GraFx Media intro':              'CHILI_GraFx/step_by_step/gfx_media.md'
+            - 'GraFx Publisher' :
+                - 'GraFx Publisher - first template': 'CHILI_GraFx/step_by_step/gfx_publisher_template1.md'
+            - 'GraFx Studio' :
+                - 'Hello world':                'CHILI_GraFx/step_by_step/gfx_studio_template1.md'
+                - 'Hello world extended':       'CHILI_GraFx/step_by_step/gfx_studio_template2.md'
+#                - 'Adding a text frame':        'CHILI_GraFx/step_by_step/gfx_studio_textframe.md'
+#                - 'Adding an image frame':      'CHILI_GraFx/step_by_step/gfx_studio_imageframe.md'
+#                - 'Styles':                     'CHILI_GraFx/step_by_step/gfx_studio_styles.md'
+#                - 'Layouts':                    'CHILI_GraFx/step_by_step/gfx_studio_layouts.md'
+#                - 'Timeline':                   'CHILI_GraFx/step_by_step/gfx_studio_timeline.md'
+            - 'GraFx Media' :
+                - 'GraFx Media intro':              'CHILI_GraFx/step_by_step/gfx_media.md'
         
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx_Studio/index.md'
