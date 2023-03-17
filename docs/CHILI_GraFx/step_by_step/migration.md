@@ -1,4 +1,4 @@
-# Migration
+# User Account Migration
 
 ## 1. Your setup is ready
 
