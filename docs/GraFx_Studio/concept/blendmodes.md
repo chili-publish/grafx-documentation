@@ -17,6 +17,10 @@ Blend Modes determine how two graphics or colors blend together. Each blend mode
 | Hue | Saturation | Color | Luminosity |
 |![Frame](https://chilipublishdocs.imgix.net/GraFx_studio/blendmodes/hue.png?w=150)| ![Frame](https://chilipublishdocs.imgix.net/GraFx_studio/blendmodes/saturation.png?w=150)|![Frame](https://chilipublishdocs.imgix.net/GraFx_studio/blendmodes/color.png?w=150)|![Frame](https://chilipublishdocs.imgix.net/GraFx_studio/blendmodes/luminosity.png?w=150)|
 
+The above examples show blend modes in action on a graphic. You can also apply them to a frame with text.
+
+![Frame](https://chilipublishdocs.imgix.net/GraFx_studio/blendmodes/blendmodetext.png)
+
 ### Normal
 The default blend mode which draws the new graphics over the existing graphics.
 
