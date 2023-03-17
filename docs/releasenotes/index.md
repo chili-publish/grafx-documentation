@@ -10,7 +10,7 @@ Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/edi
 
 ### Features
 
-- We added 15 blend modes that can be applied to your image and text content to improve your template design
+- We added [15 blend modes](/GraFx_Studio/concept/blendmodes/) that can be applied to your image and text content to improve your template design
 
 ### Improvements
 
