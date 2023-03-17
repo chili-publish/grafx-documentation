@@ -4,6 +4,30 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 Here you can find a summary of what's new!
 
+## Mar 16, 2023 - GraFx Studio
+
+Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+
+### Features
+
+- We added [15 blend modes](/GraFx_Studio/concept/blendmodes/) that can be applied to your image and text content to improve your template design
+
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/blendmodes_rn.gif)
+
+### Improvements
+
+- Animation snaps to 0,1 seconds on the timeline, which makes it easier to align the animation of multiple frames
+
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/snap_rn.gif)
+
+- Frames are only selectable and editable on the canvas while they are visible in the animation (this fixes some issues with entering text edit mode)
+- While in text edit mode, you can now also edit the frame properties and change the copyfitting settings
+
+### Fixes
+
+- Fixed some issues with the color picker component to select a custom color or a swatch or to change the opacity
+- Fixed issue where fonts were not loaded when the dialog to add fonts was opened too quickly
+
 ## Mar 6, 2023 - GraFx Media Alpha
 
 ### Features
@@ -11,7 +35,7 @@ Here you can find a summary of what's new!
 - You can sort your assets on name
 - You can see a preview of your asset
 
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/media_20230306.gif)
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/media_20230307.gif)
 
 ## Mar 1, 2023 - GraFx Studio
 
