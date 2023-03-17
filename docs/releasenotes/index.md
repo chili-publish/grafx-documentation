@@ -12,6 +12,8 @@ Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/edi
 
 - We added [15 blend modes](/GraFx_Studio/concept/blendmodes/) that can be applied to your image and text content to improve your template design
 
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/blendmodes_rn.gif)
+
 ### Improvements
 
 - Animation snaps to 0,1 seconds on the timeline, which makes it easier to align the animation of multiple frames
