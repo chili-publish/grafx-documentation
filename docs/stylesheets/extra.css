@@ -9,10 +9,21 @@
 	}
 	
 img[alt=applogo] { width: 200px; }
+img[alt=steps]
+{
+	margin-left: 50px;
+	border: 1pt #DDDDDD solid;
+}
 
 p:has(img[alt=releasenotes])
 {
 	width: 100%;
+	text-align: center;
+}
+
+p:has(img[alt=steps])
+{
+	width: 60%;
 	text-align: center;
 }
 
