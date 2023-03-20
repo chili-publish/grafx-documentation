@@ -10,17 +10,16 @@ Here you can find a summary of what's new!
 
 !!! danger "Sandbox Release"
 	
-	When information relates to your Sandbox, we'll add this message.
-	As soon as the update is in production, we'll add another note and link to this info.
+	Information related to your Sandbox.
+	
+	When the update is in production, another release note will be added.
 
-Your CHILI GraFx sandbox has the latest update to GraFx Publisher
+Your [CHILI GraFx](/CHILI_GraFx/) sandbox has the latest update to [GraFx Publisher](/GraFx_Publisher/)
 
 - Our goal: Improve performance in handling templates, documents, assets.
 - Our ask: Test in your sandbox now, and send us your feedback.
 
 With this update, we’re implementing a new platform infrastructure that greatly enhances  performance. We **urge** you to test GraFx Publisher on your sandbox environment to experience this new level of performance for yourself.
-
-If you require assistance in transferring your production data over for testing, please [reach out](https://mysupport.chili-publish.com/), and our support team will be available to assist.
 
 ## Mar 16, 2023 - GraFx Studio
 
