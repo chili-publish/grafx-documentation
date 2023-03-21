@@ -86,3 +86,18 @@ See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/
 The CHILI publisher Configurator for Enfocus Switch allows for Switch customers to execute CHILI publisher related functions inside of Switch Flows.
 
 See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412380/CHILI+Switch+Configurator){target="_blank"}
+
+## CHILI publisher end-of-life
+
+CHILI publisher (legacy) is **end-of-life**.
+
+To benefit continued support and maintenance, switch to CHILI GraFx.
+
+[GraFx Publisher](/GraFx_publisher/intro/) is the application based on CHILI publisher, hosted in the [CHILI GraFx platform](/CHILI_GraFx/intro/).
+
+The documentation for CHILI publisher, used on-premise, can be found here.
+
+!!! note
+	Remember that support for CHILI publisher (on premise) is end-of-life.
+
+For previous documentation visit [this link](https://mydocumentation.chili-publish.com){target=_blank}
