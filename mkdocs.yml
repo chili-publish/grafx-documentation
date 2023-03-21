@@ -14,6 +14,8 @@ theme:
   icon:
     admonition:
         note: material/fire-alert
+        example: material/test-tube
+        danger: material/test-tube
   
 plugins:
   - search
@@ -34,6 +36,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.highlight:
@@ -223,7 +228,9 @@ nav:
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
-    - 'Release notes':                          'releasenotes/index.md'
+    - 'Release notes':                          
+        - 'Recent':                             'releasenotes/index.md'
+        - '2022':                               'releasenotes/2022.md'
 
 
     - 'Developer center':                       

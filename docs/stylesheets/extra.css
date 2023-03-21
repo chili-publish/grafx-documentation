@@ -23,6 +23,11 @@ img[alt=releasenotes]
 
 p img[alt=svg_icon] { width: 100px; }
 
+p img[alt=rn_icon]
+{
+	width: 100px;
+}
+
 .md-header {
     background-color: #F0F0F0;
 	color: #000;
