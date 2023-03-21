@@ -97,6 +97,7 @@ nav:
         - 'Upgrade from My CHILI publish':    'CHILI_GraFx/mycpupgrade.md'
         - 'Concepts':
             - 'Renders':                        'CHILI_GraFx/concepts/renders.md'
+            - 'Sandbox':                        'CHILI_GraFx/concepts/sandbox.md'
         - 'Platform Admin':
             - 'General Admin' :                 'CHILI_GraFx/admin.md'
             - 'User management' :
