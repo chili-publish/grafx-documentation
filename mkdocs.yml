@@ -125,6 +125,7 @@ nav:
         - 'Release notes':                      'CHILI_GraFx/releasenotes.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI_GraFx/step_by_step/intro.md'
+            - 'User Account Migration' :        'CHILI_GraFx/step_by_step/migration.md'
             - 'Loggin in' :                     'CHILI_GraFx/step_by_step/loggin_in.md'
             - 'Find your way around' :          'CHILI_GraFx/step_by_step/navigating.md'
             - 'Applications' :                  'CHILI_GraFx/step_by_step/applications.md'
