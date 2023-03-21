@@ -221,11 +221,6 @@ nav:
         - 'Introduction':                       'GraFx_Stylekits/index.md'
 #        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
 
-    - 'On-prem':
-        - 'Introduction':                       'on-premise/index.md'
-        - 'My CHILI publish':                   'on-premise/mycp.md'
-        - 'CHILI publisher':                    'on-premise/chili_publisher.md'
-
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
