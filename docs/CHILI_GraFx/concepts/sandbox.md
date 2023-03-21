@@ -21,3 +21,11 @@ Both the platform and application UI (the way the platform looks) and API (the w
 ## Testing
 
 We encourage you to setup a strategy to include testing the sandbox deployment as part of your product or platform lifecycle. This will ensure a more stable result.
+
+## Sandbox on multi tenant vs private tenant
+
+Depending on your contract CHILI GraFx is hosted on a multi-tenant or private tenant setup.
+
+The timeframe when a Sandbox is updated is equal for all customers on the same tenant.
+
+With a private tenant, you have more control on the timing when a Sandbox or Production setup is upgraded.
