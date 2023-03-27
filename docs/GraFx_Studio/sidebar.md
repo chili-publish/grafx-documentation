@@ -1,6 +1,6 @@
 # Sidebar (top section)
 
-![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/ui_top_quicktools.png)
+![appscreen](https://chilipublishdocs.imgix.net/GraFx_studio/ui_top_quicktools2.png)
 
 Tools to interact with the page or document.
 
@@ -8,6 +8,9 @@ From top to bottom
 
 - Select (V)
 - Image (I)
+- Shapes > Rectangle (R)
+- Shapes > Ellipse (E)
+- Shapes > Polygon (Y)
 - Text (T)
 - Hand (H)
 - Zoom (Z)
@@ -23,6 +26,10 @@ To select frames or elements on the document or page
 ## Image
 
 To create a frame to hold media assets
+
+## Shapes
+
+To create a frame to hold a shape.
 
 ## Text
 

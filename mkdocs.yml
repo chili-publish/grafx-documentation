@@ -163,6 +163,7 @@ nav:
             - 'Frames':                         'GraFx_Studio/concept/frames.md'
             - 'Layers':                         'GraFx_Studio/concept/layers.md'
             - 'Layouts':                        'GraFx_Studio/concept/layouts.md'
+            - 'Shapes':                         'GraFx_Studio/concept/shapes.md'
             - 'Variables':                      'GraFx_Studio/concept/variables.md'
             - 'Blend modes':                    'GraFx_Studio/concept/blendmodes.md'
             - 'Animation':                      'GraFx_Studio/concept/animation.md'
