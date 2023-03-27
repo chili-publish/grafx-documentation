@@ -20,16 +20,5 @@ Select (Y) for polygon (don't ask Y)
 - Height (inherited property)
 - Constrain proportions
 - Rotation (inherited property)
-- Corner radius (soon)
 
 ![Properties](https://chilipublishdocs.imgix.net/GraFx_studio/properties_shapes.png)
-
-### Corner radius
-
-Rectangle: corner radius can be set per corner individually → 4 properties, 1 for each corner
-
-Polygon: corner radius is the same for all corners → 1 property for all corners
-
-The Default corner radius is 0.
-
-Same for each corner (on by default) → enabling this checkbox will sync all 4 corner radius values.
