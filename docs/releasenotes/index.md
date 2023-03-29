@@ -26,9 +26,6 @@ Version 0.116.2, using Studio SDK [0.116.0](https://github.com/chili-publish/edi
 - Fixed issue with the Width and Height properties both getting an override when only one of the two was changed
 - Fixed issue with changing a font in a text frame when the animation is paused inside an animation block for that frame
 
-
-
-
 ## Mar 17, 2023 - GraFx Publisher
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK_publisher.svg)
