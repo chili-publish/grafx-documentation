@@ -119,6 +119,15 @@ fetchDocument();
 
 ```
 
+Below is an example on what the minimum work is to start an editor engine in your own local app:
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJodzON" data-preview="true" data-editable="true" data-user="brapoprod" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/brapoprod/pen/OJodzON">
+  CHILI editor-sdk test</a> by Brian Roels (<a href="https://codepen.io/brapoprod">@brapoprod</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 ## All available controllers / classes
 
 Documented here (will move to current documentation site)
