@@ -10,7 +10,7 @@ With this update, we’re implementing platform infrastructure changes that grea
 
 The update does require planned downtime, and will be transparant for you.
 
-The update will be implemented gradually on all tenants, and will happen over the following days and weeks.
+The update will be implemented (starting April 5) gradually on all tenants, and will happen over the following days and weeks.
 
 
 ## Mar 17, 2023 - GraFx Publisher
