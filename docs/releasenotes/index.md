@@ -2,7 +2,7 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
-## Apr 03, 2023 - Infrastructure update
+## Apr 18, 2023 - Infrastructure update
 
 Your [CHILI GraFx](/CHILI_GraFx/) infrastructure has been upgraded to have the latest update.
 
