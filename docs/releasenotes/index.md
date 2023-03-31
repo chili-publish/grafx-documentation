@@ -14,6 +14,8 @@ Version 0.116.2, using Studio SDK [0.116.0](https://github.com/chili-publish/edi
 
 - You can now add rectangle, ellipse, and polygon shapes to your design, by using a new Shape tool in the left toolbar. In the properties panel, you can set a blend mode and change the fill and stroke color, to customize as you want. (There are still a couple of known issues, which will be addressed in the next release!)
 
+![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/shapes.gif)
+
 ### Improvements
 
 - You can select text on the page when the Text tool is active (previously it would create a new text frame instead)
