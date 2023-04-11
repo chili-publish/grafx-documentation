@@ -46,7 +46,7 @@
 
 ### Classes
 
-- [SDK](../classes/src.SDK.md)
+- [SDK](../classes/SDK.md)
 
 ### Interfaces
 
@@ -118,7 +118,7 @@ ___
 
 ### default
 
-Renames and re-exports [SDK](../classes/src.SDK.md)
+Renames and re-exports [SDK](../classes/SDK.md)
 
 ## Type Aliases
 
