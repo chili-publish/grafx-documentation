@@ -8,9 +8,9 @@ Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/edi
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
-!!! danger "Breaking change introduced"
+!!! information "Breaking change"
 	
-	⚠️ There is a breaking change in the Studio SDK. For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
+	⚠️ There is a minor breaking change in the Studio SDK. For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
 
 ### Improvements
 
