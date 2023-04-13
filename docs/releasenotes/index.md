@@ -2,6 +2,26 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## Apr 14, 2023 - GraFx Studio
+
+Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+⚠️ There is a breaking change in the Studio SDK. For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
+
+### Improvements
+
+- When applying a blend mode to a text frame you automatically go out of text edit mode (this way you can see the effect of the blend mode, because it is not applied while in text edit mode)
+- You can now easily download the JSON file of the template with a "Download doc" trigger in the debug panel
+
+### Fixes
+
+- Fixed issue with MacBook being detected as a mobile device, causing issues with frame handles
+- Fixed issue with opacity not being applied to fill and stroke for shapes
+- Fixed issue when using a swatch as fill color for shapes, which caused the shape color to not change immediately on the canvas when the swatch color is changed
+- Fixed issue with text not being selectable with the Text tool when a blend mode is applied to the text frame
+
 ## Mar 31, 2023 - Infrastructure update
 
 Your [CHILI GraFx](/CHILI_GraFx/) infrastructure has been upgraded to have the latest update.
