@@ -9,11 +9,10 @@
 ``` mermaid
 erDiagram
   GraFx-Subscription ||--|{ Resources : Has
+  GraFx-Subscription ||--|{ GraFx-User : Has
   Permission ||--|{ Resources : Impacts
-  Role ||--|{ Permission : Groups
-  GraFx-UserGroup ||--|{ Role : Has-one-or-more
+  Role ||--|{ Permission : Has
   GraFx-User ||--|{ Role : Has-one-or-more
-  GraFx-UserGroup ||--|{ GraFx-User : Contains
 ```
 
 ### Resources
@@ -34,16 +33,7 @@ We defined a GraFx User as a person or a system. In many cases you will interact
 
 In some cases, you'll also need a system user, that can be used to interact with the GraFx API's. It's wise to unlink this system user from a person. In case the human user changes jobs or roles, you don't need to redefine the access or role for the system user.
 
-### GraFx UserGroup
-
-!!! Definition
-	A list of 1 or more users, sharing the same role(s)
-
-A group of users allows you to easily give the same role(s) to all the users in that group. 
-
-All roles associated with a group of users will be associated with all members of the group
-
-### permissions
+### Permissions
 
 !!! Definition
 	The authorization to perform an operation over a resource. 
