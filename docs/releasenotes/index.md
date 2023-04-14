@@ -21,9 +21,13 @@ Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/edi
 - Fixed issue when using a swatch as fill color for shapes, which caused the shape color to not change immediately on the canvas when the swatch color is changed
 - Fixed issue with text not being selectable with the Text tool when a blend mode is applied to the text frame
 
-!!! information "Breaking change"
+??? note "Note for integrators"
 	
-	There is a minor breaking change in the Studio SDK. For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
+	There is a minor breaking change in the Studio SDK's typings.
+	It basically boils down to changing the import for the Id type, you can do it as follows:
+	Change `#!typescript import { Id } from '@chili-publish/editor-sdk/lib/types/CommonTypes'`
+	To `#!typescript import { Id } from '@chili-publish/editor-sdk'`
+	For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
 
 ## Mar 31, 2023 - Infrastructure update
 
