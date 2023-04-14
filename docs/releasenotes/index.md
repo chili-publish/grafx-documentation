@@ -24,9 +24,9 @@ Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/edi
 ??? note "Note for integrators"
 	
 	There is a minor breaking change in the Studio SDK's typings.
-	It basically boils down to changing the import for the Id type, you can do it as follows:
-	Change `#!typescript import { Id } from '@chili-publish/editor-sdk/lib/types/CommonTypes'`
-	To `#!typescript import { Id } from '@chili-publish/editor-sdk'`
+	It basically boils down to changing the import for the Id type, you can do it as follows:<br>
+	Change `#!typescript import { Id } from '@chili-publish/editor-sdk/lib/types/CommonTypes'`<br>
+	To `#!typescript import { Id } from '@chili-publish/editor-sdk'`<br>
 	For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
 
 ## Mar 31, 2023 - Infrastructure update
