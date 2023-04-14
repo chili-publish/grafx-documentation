@@ -13,9 +13,9 @@ theme:
     primary: grey
   icon:
     admonition:
-        note: material/fire-alert
+        note: material/pencil
         example: material/test-tube
-        danger: material/test-tube
+        danger: material/fire-alert
   
 plugins:
   - search
