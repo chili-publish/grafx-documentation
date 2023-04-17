@@ -64,9 +64,8 @@ A user is someone that has credentials to GraFx. A user can have 1 or more roles
 ``` mermaid
 erDiagram
   GraFx-Subscription ||--|{ Resources : Has
+  GraFx-Subscription ||--|{ GraFx-User : Has
   Permission ||--|{ Resources : Impacts
-  Role ||--|{ Permission : Groups
-  GraFx-UserGroup ||--|{ Role : Has-one-or-more
+  Role ||--|{ Permission : Has
   GraFx-User ||--|{ Role : Has-one-or-more
-  GraFx-UserGroup ||--|{ GraFx-User : Contains
 ```
