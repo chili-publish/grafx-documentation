@@ -2,9 +2,9 @@
 
 ## Introduction
 
-5 basic concepts define the user management. Below you can find the details of each concept.
+4 basic concepts define the user management. Below you can find the details of each concept.
 
-There are 5 different concepts that make up the user management process in GraFx.
+There are 4 different concepts that make up the user management process in GraFx.
  - Resources
  - Permissions
  - Roles
