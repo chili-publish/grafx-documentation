@@ -48,7 +48,7 @@ All roles associated with a group of users will be associated with all members o
 !!! Definition
 	The authorization to perform an operation over a resource. 
 	
-Sample permissions: 
+Sample permissions:
 
 create, read, update, delete an asset
 
