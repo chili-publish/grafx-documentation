@@ -8,34 +8,34 @@
 
 ### Constructors
 
-- [constructor](src.SDK.md#constructor)
+- [constructor](SDK.md#constructor)
 
 ### Properties
 
-- [animation](src.SDK.md#animation)
-- [colorStyle](src.SDK.md#colorstyle)
-- [config](src.SDK.md#config)
-- [configuration](src.SDK.md#configuration)
-- [connection](src.SDK.md#connection)
-- [connector](src.SDK.md#connector)
-- [debug](src.SDK.md#debug)
-- [document](src.SDK.md#document)
-- [fontConnector](src.SDK.md#fontconnector)
-- [frame](src.SDK.md#frame)
-- [layout](src.SDK.md#layout)
-- [mediaConnector](src.SDK.md#mediaconnector)
-- [page](src.SDK.md#page)
-- [paragraphStyle](src.SDK.md#paragraphstyle)
-- [textSelection](src.SDK.md#textselection)
-- [tool](src.SDK.md#tool)
-- [undoManager](src.SDK.md#undomanager)
-- [utils](src.SDK.md#utils)
-- [variable](src.SDK.md#variable)
+- [animation](SDK.md#animation)
+- [colorStyle](SDK.md#colorstyle)
+- [config](SDK.md#config)
+- [configuration](SDK.md#configuration)
+- [connection](SDK.md#connection)
+- [connector](SDK.md#connector)
+- [debug](SDK.md#debug)
+- [document](SDK.md#document)
+- [fontConnector](SDK.md#fontconnector)
+- [frame](SDK.md#frame)
+- [layout](SDK.md#layout)
+- [mediaConnector](SDK.md#mediaconnector)
+- [page](SDK.md#page)
+- [paragraphStyle](SDK.md#paragraphstyle)
+- [textSelection](SDK.md#textselection)
+- [tool](SDK.md#tool)
+- [undoManager](SDK.md#undomanager)
+- [utils](SDK.md#utils)
+- [variable](SDK.md#variable)
 
 ### Methods
 
-- [loadEditor](src.SDK.md#loadeditor)
-- [setConnection](src.SDK.md#setconnection)
+- [loadEditor](SDK.md#loadeditor)
+- [setConnection](SDK.md#setconnection)
 
 ## Constructors
 
