@@ -103,8 +103,10 @@ nav:
                 - 'Intro' :                     'CHILI_GraFx/user_management_intro.md'
                 - 'Scope' :                     'CHILI_GraFx/user_management_scope.md'
                 - 'Roles' :                     'CHILI_GraFx/user_management_roles.md'
+                - 'Change Roles & Access' :     'CHILI_GraFx/user_management_updaterole.md'
+                - 'Template Designer Seat' :    'CHILI_GraFx/user_management_template_designer.md'
                 - 'Users & Invitation' :        'CHILI_GraFx/user_management_users.md'
-                - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
+#                - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
 #            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
 #            - 'Environments' :                  'CHILI_GraFx/environments.md'
 #        - 'Application overview':
