@@ -1,5 +1,9 @@
 # User management
 
+This page describes the roles.
+
+Click here to see how to [change roles & Environment access](/CHILI_GraFx/user_management_updaterole/).
+
 ## Available roles
 
 ### Subscription Admin
@@ -9,16 +13,17 @@
 	
 Assigned permissions
 
-- View all their subscription(s) assigned to
+- View all subscription(s) assigned to
 - View usage reporting
 - View subscription details
 - View overview of all the environments in a subscription
-- Request add-ons (eg. extra storage)-
-- Directly contact their Client Success Manager
+- Request add-ons (eg. extra storage)
+- Directly contact to Client Success Manager
 - User management for all users in the subscription (CRUD actions)
+- Invite users to all available environments in the subscription
 
-??? Warning "Subscription Admin"
-	Important: a Subscription Admin can assign the role ‘Subscription Admin' to other users on 'User Detail page', but only for subscriptions he is assigned to.
+??? Tip "Subscription Admin"
+	Important: a Subscription Admin can assign the role ‘Subscription Admin' to other users on 'User Detail page'.
 
 ### Environment Admin
 
@@ -32,19 +37,9 @@ Assigned permissions
 - Manage the CHILI GraFx environment where you are Environment Admin
 	- Environment Settings (eg. branding)
 	- User management (CRUD actions) for the users of environments where you are Environment Admin
+- Invite users to the Environment
 	
-??? warning "Environment Admin vs Environment User"
-	If an Environment Admin wants to actually work in the CHILI GraFx environment he needs to have an additional role (Environment User)
-
-### Organization Environment Admin
-
-!!! Definition
-	An Organization Environment Admin manages a group of CHILI GraFx environments that belong to an organization and where a user is assigned to by the Subscription Admin
-
-!!! Warning
-	Further to be defined
-
-### Environment User
+### Environment User - a.k.a. "User"
 
 !!! Definition
 	An Environment User works as an end-user in the CHILI GraFx environment(s) where you are assigned to.
@@ -56,56 +51,20 @@ Assigned permissions
 - Work in the environments where the user is assigned to
 
 !!! Warning "Template Designer"
-	- If an Environment user wants to create templates in the CHILI GraFx environment this user needs to have an additional role: Template Designer
-	- If an Environment users wants to create workspaces in the CHILI GraFx environment the user needs to have an additional role: Workspace Admin
+	- If an Environment user wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](/CHILI_GraFx/user_management_roles/#template-designer)
 
 ### Template Designer
 
-!!! Definition
-	A Template Designer can create templates in the CHILI GraFx environments where the user is assigned to
-	
-Assigned permissions
+See the [Template Designer Seat](/CHILI_GraFx/user_management_template_designer/) page
 
-- View templates
-- Create templates
-- Update templates
-- delete templates
-
-!!! Warning "Different permissions then Environment user"
-	- Different permissions than Environment User 
-	- The Template Designer has to be assigned on the Subscription Management page since this role is an paying add-on
-	- A Template Designer is assigned on Subscription Level and gives this user access to all the environments of that subscription
-	- To use the Desktop plugins you don’t need a template designer seat: importing content in GraFx Publisher or GraFx Studio doesn’t require a template designer seat but making the templates smart does require a seat.
-	
-Template designer seats (role) is assigned on the Subscription page
-
-![Template Designer Seat](https://chilipublishdocs.imgix.net/CHILI_GraFx/user_assigned_seats.png?w=800&q=80)
-
-### Workspace Admin
+### Content Administrator
 
 !!! Definition
-	A Workspace Admin can create workspaces in the CHILI GraFx environment where he is assigned too.
+	A content Administrator is a legacy role, available to users that have been converted from CHILI publisher Online.
 
-Assigned permissions
+A content Administrator can create and use GraFx Publisher templates. There is no limit to Content Administrators for converted CHILI publisher Online customers.
 
-- CRUD actions on workspaces
-
-!!! Warning "Different than Environment user role"
-	Not same permissions as Environment User 
-
-
-### Support User - [UNCLEAR]
-
-!!! Definition
-	A Support User can access the [support portal of CHILI GraFx](http://mysupport.chili-publish.com){target="_blank"}
-
-### Documentation User
-
-!!! Definition
-	By default, all users have access to all documentation.
-	Documentation will be open for public, except some restricted sections. All users in CHILI GraFx also get access to the restricted pages.
-
-### Developer User [UNCLEAR]
+This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
 ## User creation and invitation
 
@@ -123,8 +82,5 @@ All users (except the first (subscription Admin) user) can be invited to CHILI G
 Only the Subscription Admin & the Environment Admin can access the User Management page on CHILI GraFx where they can:
 
 - view an overview of the users
-- view an overview of the Groups
 - view an overview of the roles on CHILI GraFx
 - invite users to CHILI GraFx
-
-![Template Designer Seat](https://chilipublishdocs.imgix.net/CHILI_GraFx/user_list2.png?w=800&q=80)
