@@ -15,7 +15,7 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 ![2023-04-14_16-26-11](https://user-images.githubusercontent.com/122599725/233287606-4ef0e434-7af6-4b11-b148-a4abe1c6cbc7.gif)
 
-Read more about User Management on https://docs.chiligrafx.com/CHILI_GraFx/user_management_intro/.
+Read more about [User Management](https://docs.chiligrafx.com/CHILI_GraFx/user_management_intro/).
 
 ## Apr 14, 2023 - GraFx Studio
 
