@@ -2,6 +2,21 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## Apr 19, 2023 - CHILI GraFx
+
+### Features
+
+- You can invite users to CHILI GraFx
+- When you invite a user to CHILI GraFx you can assign this user to an GraFx environment and assign the role this user needs to have in this environment
+- You can remove the role 'Subscription Admin' from other users
+- You can add an existing user to additional GraFx environments and assign the role this user needs to have in this environment
+- You can access GraFx Publisher within the CHILI GraFx environment with SSO
+- You can login in GraFx Publisher from the direct URL with your CHILI GraFx account
+
+![2023-04-14_16-26-11](https://user-images.githubusercontent.com/122599725/233287606-4ef0e434-7af6-4b11-b148-a4abe1c6cbc7.gif)
+
+Read more about User Management on https://docs.chiligrafx.com/CHILI_GraFx/user_management_intro/.
+
 ## Apr 14, 2023 - GraFx Studio
 
 Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
