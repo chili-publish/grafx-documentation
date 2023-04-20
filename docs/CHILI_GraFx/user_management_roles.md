@@ -1,5 +1,9 @@
 # User management
 
+This page describes the roles.
+
+Click here to see how to [change roles & Environment access](/CHILI_GraFx/user_management_updaterole/).
+
 ## Available roles
 
 ### Subscription Admin
