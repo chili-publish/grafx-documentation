@@ -4,6 +4,8 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 ## Apr 19, 2023 - CHILI GraFx
 
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
 ### Features
 
 - You can invite users to CHILI GraFx
