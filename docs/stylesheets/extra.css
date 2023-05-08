@@ -34,6 +34,12 @@ img[alt=releasenotes]
 
 p img[alt=svg_icon] { width: 100px; }
 
+p img[alt=screenshot] 
+	{
+		max-width: 75%;
+		margin: 0 50px 0 50px;
+	}
+
 p img[alt=rn_icon]
 {
 	width: 100px;

@@ -104,7 +104,6 @@ nav:
                 - 'Intro' :                     'CHILI_GraFx/user_management_intro.md'
                 - 'Scope' :                     'CHILI_GraFx/user_management_scope.md'
                 - 'Roles' :                     'CHILI_GraFx/user_management_roles.md'
-                - 'Change Roles & Access' :     'CHILI_GraFx/user_management_updaterole.md'
                 - 'Template Designer Seat' :    'CHILI_GraFx/user_management_template_designer.md'
                 - 'Users & Invitation' :        'CHILI_GraFx/user_management_users.md'
 #                - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
@@ -116,6 +115,8 @@ nav:
 #            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
             - 'Create GraFx Studio template' :   'CHILI_GraFx/how_to/create_studio_template.md'
             - 'Create GraFx Publisher template' : 'CHILI_GraFx/how_to/create_publisher_template.md'
+            - 'Assign or remove Subscription admin role' : 'CHILI_GraFx/how_to/subscription-admin/index.md'
+            - 'Change Roles & Access' :         'CHILI_GraFx/how_to/user_management_updaterole/index.md'
         - 'Integrate CHILI GraFx':
             - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
         - 'Platform API reference' :
