@@ -4,9 +4,9 @@
 
 ### Subscription Admin
 
-If you have access to  multiple subscriptions, first select the subscription where you want to make changes.
+If you have access to multiple subscriptions, first select the subscription where you want to make changes.
 
-![Role Change](https://chilipublishdocs.imgix.net/CHILI_GraFx/users/changerole01.png)
+![screenshot](https://chilipublishdocs.imgix.net/CHILI_GraFx/users/changerole01.png)
 
 If you have acces to only 1 subscription, you will see your subscription only. (without dropdown icon)
 
