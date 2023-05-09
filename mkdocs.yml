@@ -93,7 +93,6 @@ extra:
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI_GraFx/index.md'
-#        - 'Setting up CHILI GraFx':             'CHILI_GraFx/setup.md'
         - 'Upgrade from My CHILI publish':    'CHILI_GraFx/mycpupgrade.md'
         - 'Concepts':
             - 'Renders':                        'CHILI_GraFx/concepts/renders.md'
@@ -110,8 +109,6 @@ nav:
 #                - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
 #            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
 #            - 'Environments' :                  'CHILI_GraFx/environments.md'
-#        - 'Application overview':
-#            - 'Panel 1' :                       'CHILI_GraFx/panel1.md'
         - 'How to':
 #            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
             - 'Create GraFx Studio template' :   'CHILI_GraFx/how_to/create_studio_template.md'
