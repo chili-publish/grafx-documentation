@@ -221,9 +221,9 @@ nav:
         - 'Recent':                             'release-notes/index.md'
         - '2022':                               'release-notes/2022.md'
 
-    - 'Developer center':
+    - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
-        - 'GraFx Studio SDK':                   'https://chili-publish.github.io/editor-sdk/index.html'
+        - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
         - 'Platform API reference' :
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
         - 'Environment API reference':
