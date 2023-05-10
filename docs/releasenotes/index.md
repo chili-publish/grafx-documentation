@@ -2,6 +2,16 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## May 10, 2023 - GraFx Studio SDK
+
+We renamed our repository and package for the SDK.
+The new name is studio-sdk, coming from editor-sdk.
+
+??? note "Note for integrators"
+	
+	This means you'll have to update your integration dependency, and change it from @chili-publish/editor-sdk to @chili-publish/studio-sdk inside your `package.json`.
+
+
 ## Apr 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
