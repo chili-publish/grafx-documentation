@@ -38,7 +38,7 @@ The result of the config are gathered in package.json
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "@chili-publish/editor-sdk": "^0.47.1"
+    "@chili-publish/studio-sdk": "^0.47.1"
   }
 }
 

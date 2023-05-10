@@ -26,7 +26,7 @@ Full file looks something like this
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "@chili-publish/editor-sdk": "^0.47.1"
+    "@chili-publish/studio-sdk": "^0.47.1"
   }
 }
 ```
@@ -49,7 +49,7 @@ asset bundle.js 429 KiB [emitted] (name: main)
 runtime modules 937 bytes 4 modules
 cacheable modules 416 KiB
   ./src/index.js 2.08 KiB [built] [code generated]
-  ./node_modules/@chili-publish/editor-sdk/_bundles/main.js 414 KiB [built] [code generated]
+  ./node_modules/@chili-publish/studio-sdk/_bundles/main.js 414 KiB [built] [code generated]
 webpack 5.74.0 compiled successfully in 221 ms
 ```
 

@@ -29,7 +29,7 @@ HTML source:
 Add this line to your index.js
 
 ``` js
-import EditorSDK from "@chili-publish/editor-sdk";
+import StudioSDK from "@chili-publish/studio-sdk";
 ```
 
 ## Go to your (local) URL in your browser
@@ -41,7 +41,7 @@ You are now ready to call the Editor SDK in your application
 ## Basics needed to load Canvas and Basic functions
 
 ``` js
-import EditorSDK from "@chili-publish/editor-sdk";
+import StudioSDK from "@chili-publish/studio-sdk";
 // import chilidoc from "../assets/demo.json";
 
 // link to flutter engine
@@ -106,7 +106,7 @@ const config = {
 
 // define the SDK instance as "SDK"
 // initialize SDK
-const SDK = new EditorSDK(config);  // (use config when loading)
+const SDK = new StudioSDK(config);  // (use config when loading)
 
 // execute app
 window.SDK = SDK;                   // bind object to window
