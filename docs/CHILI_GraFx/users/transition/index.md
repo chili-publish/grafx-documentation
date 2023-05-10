@@ -16,6 +16,10 @@ You will be able to create "human" users, and API users (or machine-to-machine u
 
 During this transition, **API users for GraFx Publisher (only)** need to be created following the information below.
 
+When we refer to "**human**" users, we are referring to the people (you) who will be using CHILI GraFx directly through the user interface (UI) that has been designed for people. You will be able to navigate through the various features, input data, and receive feedback from the system based on your actions.
+
+On the other hand, **API users** are not human users, but rather computer programs or systems that interact with the software application through its application programming interface (API). API users are typically used in systems that want to access the functionality of the platform programmatically, rather than through a graphical user interface (GUI). API users can send requests to the application's API, which will then return responses with the requested data or perform the requested actions.
+
 ## GraFx Publisher API users
 
 When logged in into CHILI GraFx, you cannot yet add API or M2M users for GraFx Publisher.
