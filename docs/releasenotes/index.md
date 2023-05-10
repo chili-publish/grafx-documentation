@@ -7,6 +7,8 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 We renamed our repository and package for the SDK.
 The new name is studio-sdk, coming from editor-sdk.
 
+Also a new version has been pushed, we're now at version 0.121.0
+
 ??? note "Note for integrators"
 	
 	This means you'll have to update your integration dependency, and change it from @chili-publish/editor-sdk to @chili-publish/studio-sdk inside your `package.json`.
