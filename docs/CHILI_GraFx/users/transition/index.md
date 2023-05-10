@@ -1,20 +1,23 @@
 # User management transition
 
-!!! warning "Temporary information"
-	
-	While integrating CHILI publisher into CHILI GraFX, now calling it GraFx Publisher, there are some steps we need to take during this transition phase.
-	
-	Update 2023-05-01
+## Introduction
 
-## One API user to rule them all
+We are transitioning "User management" from the current Applications (like GraFx Publisher) to the CHILI GraFx Platform.
 
-In the end (after the transition period) there will be 1 location to create and manage API users: CHILI GraFx.
+User management for the new Applications (like GraFx Studio, GraFx Media, ...) are all handled in the CHILI GraFx platform.
 
-You will be able to create "human" users, and API users (or machine-to-machine users).
+The CHILI GraFx platform is the place to create users. Human users (people) and API users. 
 
-**But** ...
+Except API users for GraFx Publisher.
 
-During this transition, **API users for GraFx Publisher (only)** need to be created following the information below.
+**API users for GraFx Publisher (only)** need to be created following the information below.
+
+!!! Important
+	Creating API users for the platform or your environment, will be available soon in CHILI GraFx.
+
+
+## API users vs Human users
+
 
 When we refer to "**human**" users, we are referring to the people (you) who will be using CHILI GraFx directly through the user interface (UI) that has been designed for people. You will be able to navigate through the various features, input data, and receive feedback from the system based on your actions.
 
@@ -22,9 +25,9 @@ On the other hand, **API users** are not human users, but rather computer progra
 
 ## GraFx Publisher API users
 
-When logged in into CHILI GraFx, you cannot yet add API or M2M users for GraFx Publisher.
+When logged in into CHILI GraFx, you cannot add API users for GraFx Publisher.
 
-API or Machine to Machine (M2M) users are necessary to create integrations with your application and GraFx Publisher.
+API (also known as Machine to Machine - M2M in short) users are necessary to create integrations with your application and GraFx Publisher.
 
 To create API users in GraFx Publisher, log in with your original credentials into GraFx Publisher.
 
