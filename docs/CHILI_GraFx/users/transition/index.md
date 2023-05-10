@@ -6,11 +6,19 @@
 	
 	Update 2023-05-01
 
+## One API user to rule them all
 
+In the end (after the transition period) there will be 1 location to create and manage API users: CHILI GraFx.
+
+You will be able to create "human" users, and API users (or machine-to-machine users).
+
+**But** ...
+
+During this transition, **API users for GraFx Publisher (only)** need to be created following the information below.
 
 ## GraFx Publisher API users
 
-When logged in into CHILI GraFx, you cannot yet add API or M2M users.
+When logged in into CHILI GraFx, you cannot yet add API or M2M users for GraFx Publisher.
 
 API or Machine to Machine (M2M) users are necessary to create integrations with your application and GraFx Publisher.
 
@@ -30,7 +38,7 @@ https://chiligrafx.com/environments/[some-number]/publisher
 
 ![screenshot](GraFx-Publisher_01.png)
 
-## Create an API user
+## Create a GraFx Publisher API user
 
 To create API users, you need to login via the original URL.
 
