@@ -13,11 +13,11 @@ Each section provides you
 
 ## The Platform & Applications
 
-Platform: [CHILI GraFx](/CHILI_GraFx)
+Platform: [CHILI GraFx](/CHILI-GraFx)
 
-Application: [GraFx Studio](/GraFx_Studio)
+Application: [GraFx Studio](/GraFx-Studio)
 
-Application: [GraFx Publisher](/GraFx_Publisher)
+Application: [GraFx Publisher](/GraFx-Publisher)
 
 	
 ## Resources
