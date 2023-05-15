@@ -21,6 +21,7 @@ plugins:
   - redirects:
       redirect_maps:
         'CHILI-GraFx/releasenotes.md': 'release-notes/index.md'
+        'CHILI_GraFx/users/transition/index.md': 'CHILI-GraFx/users/transition/index.md'
         'CHILI-GraFx/users/index.md': 'CHILI-GraFx/users/intro/index.md'
         'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
   - search
@@ -103,6 +104,8 @@ nav:
         - 'Concepts':
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
+#            - 'Environments' :                  'CHILI-GraFx/concepts/environments/index.md'
+            - 'Subscriptions' :                 'CHILI-GraFx/concepts/subscriptions/index.md'
         - 'Platform Administration':
             - 'General Administration' :        'CHILI-GraFx/admin/index.md'
             - 'User management' :
@@ -112,9 +115,8 @@ nav:
                 - 'Change Roles & Access' :     'CHILI-GraFx/users/update/index.md'
                 - 'Template Designer Seat' :    'CHILI-GraFx/users/template-designer/index.md'
                 - 'Users & Invitation' :        'CHILI-GraFx/users/creation/index.md'
+                - 'Transition' :                'CHILI-GraFx/users/transition/index.md'
 #                - 'Scenarios' :                 'CHILI-GraFx/users/scenarios/index.md'
-#            - 'Subscriptions' :                 'CHILI-GraFx/subscriptions/index.md'
-#            - 'Environments' :                  'CHILI-GraFx/environments/index.md'
         - 'How to':
 #            - 'Create a new environment' :      'CHILI-GraFx/guides/create-environment/index.md'
             - 'Create GraFx Studio template' :   'CHILI-GraFx/guides/create-studio-template/index.md'
