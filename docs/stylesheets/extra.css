@@ -1,78 +1,59 @@
-.chilired
-	{
-		color: #FF0048;
-	}
-.introdiv
-	{
-		font-size:2.5em;
-		font-weight:bold;
-	}
-	
-img[alt=applogo] { width: 200px; }
-img[alt=steps]
-{
+.chilired {
+	color: #FF0048;
+}
+.introdiv {
+	font-size:2.5em;
+	font-weight:bold;
+}
+img[alt=applogo] {
+	width: 200px;
+}
+img[alt=steps] {
 	margin-left: 50px;
 	border: 1pt #DDDDDD solid;
 }
-
-p:has(img[alt=releasenotes])
-{
+p:has(img[alt=releasenotes]) {
 	width: 100%;
 	text-align: center;
 }
-
-p:has(img[alt=steps])
-{
+p:has(img[alt=steps]) {
 	width: 60%;
 	text-align: center;
 }
 
-img[alt=releasenotes]
-{
-	// height: 250px;
+img[alt=releasenotes] {
+	/* height: 250px; */
 }
 
-p img[alt=svg_icon] { width: 100px; }
-
-p img[alt=screenshot] 
-	{
-		max-width: 75%;
-		margin: 0 50px 0 50px;
-	}
-
-p img[alt=rn_icon]
-{
+p img[alt=svg_icon] {
 	width: 100px;
 }
-
+p img[alt=rn_icon] {
+	width: 100px;
+}
 .md-header {
-    background-color: #F0F0F0;
+	background-color: #F0F0F0;
 	color: #000;
 }
-
 .md-tabs {
-    background-color: #F0F0F0;
+	background-color: #F0F0F0;
 	color: #000;
 }
-
 .md-tabs__link--active {
-    color: var(--md-typeset-a-color);
-    font-weight: bold;
+	color: var(--md-typeset-a-color);
+	font-weight: bold;
 }
-
 [dir=ltr] .md-header__title {
-    margin-left: 0;
+	margin-left: 0;
 }
-
 .md-typeset h1 {
-    color: #010068;
-    font-weight: bold;
-    font-family: Satoshi, Ubuntu, sans-serif;
+	color: #010068;
+	font-weight: bold;
+	font-family: Satoshi, Ubuntu, sans-serif;
 }
-h2
-{
+h2 {
 	background-color: #fff;
-	/* Green */
+ /* Green */
 	border: none;
 	color: #010068;
 	padding: 5px 0px;
@@ -81,14 +62,11 @@ h2
 	display: block;
 	font-weight: bold;
 }
-
 .md-typeset h2 {
-    font-weight: bold;	 
-    font-family: Satoshi, Ubuntu, sans-serif;
+	font-weight: bold;
+	font-family: Satoshi, Ubuntu, sans-serif;
 }
-
-h3
-{
+h3 {
 	background-color: #FFF;
 	border: none;
 	color: #010068;
@@ -97,11 +75,10 @@ h3
 	text-align: left;
 	text-decoration: none;
 	display: inline-block;
-	border-bottom: 0px solid;	
+	border-bottom: 0px solid;
 	width: 100%;
 }
-
 .md-typeset h3 {
-    font-weight: bold;	 
-    font-family: Satoshi, Ubuntu, sans-serif;
+	font-weight: bold;
+	font-family: Satoshi, Ubuntu, sans-serif;
 }

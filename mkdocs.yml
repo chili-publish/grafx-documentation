@@ -16,8 +16,13 @@ theme:
         note: material/pencil
         example: material/test-tube
         danger: material/fire-alert
-  
+
 plugins:
+  - redirects:
+      redirect_maps:
+        'CHILI-GraFx/releasenotes.md': 'release-notes/index.md'
+        'CHILI-GraFx/users/index.md': 'CHILI-GraFx/users/intro/index.md'
+        'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
   - search
   - awesome-pages
   - tags:
@@ -40,13 +45,13 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences        
+  - pymdownx.superfences
   - toc:
       toc_depth: 3
   - pymdownx.critic
@@ -54,10 +59,10 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  
+
 extra_css:
-  - stylesheets/extra.css  
-  
+  - stylesheets/extra.css
+
 extra_javascript:
   - javascripts/feedback.js
 
@@ -85,154 +90,139 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Let us know what you would change!
             <a href="https://forms.office.com/e/XPsgcHD0i0" target="_blank" rel="noopener">feedback form</a>
 
 
 nav:
     - 'CHILI GraFx':
-        - 'Introduction':                       'CHILI_GraFx/index.md'
-        - 'Upgrade from My CHILI publish':    'CHILI_GraFx/mycpupgrade.md'
-        - 'Concepts':
-            - 'Renders':                        'CHILI_GraFx/concepts/renders.md'
-            - 'Sandbox':                        'CHILI_GraFx/concepts/sandbox.md'
-        - 'Platform Admin':
-            - 'General Admin' :                 'CHILI_GraFx/admin.md'
-            - 'User management' :
-                - 'Intro' :                     'CHILI_GraFx/user_management_intro.md'
-                - 'Scope' :                     'CHILI_GraFx/user_management_scope.md'
-                - 'Roles' :                     'CHILI_GraFx/user_management_roles.md'
-                - 'Template Designer Seat' :    'CHILI_GraFx/user_management_template_designer.md'
-                - 'Users & Invitation' :        'CHILI_GraFx/user_management_users.md'
-                - 'Transition' :                'CHILI_GraFx/users/transition/index.md'
-#                - 'Scenarios' :                 'CHILI_GraFx/user_management_scenarios.md'
-#            - 'Subscriptions' :                 'CHILI_GraFx/subscriptions.md'
-#            - 'Environments' :                  'CHILI_GraFx/environments.md'
-        - 'How to':
-#            - 'Create a new environment' :      'CHILI_GraFx/how_to/create_environment.md'
-            - 'Create GraFx Studio template' :   'CHILI_GraFx/how_to/create_studio_template.md'
-            - 'Create GraFx Publisher template' : 'CHILI_GraFx/how_to/create_publisher_template.md'
-            - 'Assign or remove Subscription admin role' : 'CHILI_GraFx/how_to/subscription-admin/index.md'
-            - 'Change Roles & Access' :         'CHILI_GraFx/how_to/user_management_updaterole/index.md'
-        - 'Integrate CHILI GraFx':
-            - 'Getting started' :               'CHILI_GraFx/integration/getting_started.md'
-        - 'Platform API reference' :
-            - 'Intro' :                         'CHILI_GraFx/platform_api/index.md'
-            - 'Reference' :                     'CHILI_GraFx/platform_api/reference.md'
-        - 'Environment API reference':          
-            - 'Intro' :                         'CHILI_GraFx/environment_api/index.md'
-            - 'Reference' :                     'CHILI_GraFx/environment_api/reference.md'
 
-        - 'Release notes':                      'CHILI_GraFx/releasenotes.md'
-        - 'Step by step onboarding':
-            - 'Intro' :                         'CHILI_GraFx/step_by_step/intro.md'
-            - 'User Account Migration' :        'CHILI_GraFx/step_by_step/migration.md'
-            - 'Loggin in' :                     'CHILI_GraFx/step_by_step/loggin_in.md'
-            - 'Find your way around' :          'CHILI_GraFx/step_by_step/navigating.md'
-            - 'Applications' :                  'CHILI_GraFx/step_by_step/applications.md'
-            - 'GraFx Publisher' :
-                - 'GraFx Publisher - first template': 'CHILI_GraFx/step_by_step/gfx_publisher_template1.md'
-            - 'GraFx Studio' :
-                - 'Hello world':                'CHILI_GraFx/step_by_step/gfx_studio_template1.md'
-                - 'Hello world extended':       'CHILI_GraFx/step_by_step/gfx_studio_template2.md'
-#                - 'Adding a text frame':        'CHILI_GraFx/step_by_step/gfx_studio_textframe.md'
-#                - 'Adding an image frame':      'CHILI_GraFx/step_by_step/gfx_studio_imageframe.md'
-#                - 'Styles':                     'CHILI_GraFx/step_by_step/gfx_studio_styles.md'
-#                - 'Layouts':                    'CHILI_GraFx/step_by_step/gfx_studio_layouts.md'
-#                - 'Timeline':                   'CHILI_GraFx/step_by_step/gfx_studio_timeline.md'
-            - 'GraFx Media' :
-                - 'GraFx Media intro':              'CHILI_GraFx/step_by_step/gfx_media.md'
-        
-    - 'GraFx Studio':
-        - 'Introduction':                       'GraFx_Studio/index.md'
-        - 'Application overview':
-            - 'Workspace elements':             'GraFx_Studio/workspace_elements.md'
-            - 'Mouse or Trackpad':              'GraFx_Studio/mouse_trackpad.md'
-            - 'SidebarTools':                   'GraFx_Studio/sidebar.md'
-            - 'Document Canvas':                'GraFx_Studio/documentcanvas.md'
-            - 'Page or Document':               'GraFx_Studio/page_document.md'
-            - 'Properties panel':               'GraFx_Studio/properties.md'
-            - 'Export':                         'GraFx_Studio/export.md'
-            - 'Bottom Quick Tools':             'GraFx_Studio/bottomquicktools.md'
-            - 'Properties':                     'GraFx_Studio/properties.md'
-            - 'Animation':                      'GraFx_Studio/animation.md'
-            - 'Layouts':                        'GraFx_Studio/layouts.md'
-            - 'Frames & Timeline':              'GraFx_Studio/frames_timeline.md'
-            - 'Stylekit':                       'GraFx_Studio/stylekitpanel.md'
+        - 'Introduction':                       'CHILI-GraFx/index.md'
+        - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
-#            - 'Template vs Publication':        'GraFx_Studio/concept/template_publication.md'
-            - 'Frames':                         'GraFx_Studio/concept/frames.md'
-            - 'Layers':                         'GraFx_Studio/concept/layers.md'
-            - 'Layouts':                        'GraFx_Studio/concept/layouts.md'
-            - 'Shapes':                         'GraFx_Studio/concept/shapes.md'
-            - 'Variables':                      'GraFx_Studio/concept/variables.md'
-            - 'Blend modes':                    'GraFx_Studio/concept/blendmodes.md'
-            - 'Animation':                      'GraFx_Studio/concept/animation.md'
-            - 'Stylekit':                       'GraFx_Studio/concept/stylekit.md'
-            - 'Shortcuts':                      'GraFx_Studio/concept/shortcuts.md'
-        - 'How to: Design documents'    :
-            - 'Create Layouts':                 'GraFx_Studio/how_to/layouts.md'
-            - 'Paragraph Styles':               'GraFx_Studio/how_to/paragraphstyles.md'
-            - 'Character Styles':               'GraFx_Studio/how_to/characterstyles.md'
-            - 'Swatches':                       'GraFx_Studio/how_to/swatches.md'
-            - 'Blend modes':                    'GraFx_Studio/how_to/blendmodes.md'
-            - 'Animate my frame':               'GraFx_Studio/how_to/animate_frame.md'
-            - 'Define variables':               'GraFx_Studio/how_to/define_variables.md'
-            - 'Organize variables':             'GraFx_Studio/how_to/organize_variables.md'
-            - 'Add variables to document':      'GraFx_Studio/how_to/variables.md'
+            - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
+            - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
+        - 'Platform Administration':
+            - 'General Administration' :        'CHILI-GraFx/admin/index.md'
+            - 'User management' :
+                - 'Intro' :                     'CHILI-GraFx/users/intro/index.md'
+                - 'Scope' :                     'CHILI-GraFx/users/scope/index.md'
+                - 'Roles' :                     'CHILI-GraFx/users/roles/index.md'
+                - 'Change Roles & Access' :     'CHILI-GraFx/users/update/index.md'
+                - 'Template Designer Seat' :    'CHILI-GraFx/users/template-designer/index.md'
+                - 'Users & Invitation' :        'CHILI-GraFx/users/creation/index.md'
+#                - 'Scenarios' :                 'CHILI-GraFx/users/scenarios/index.md'
+#            - 'Subscriptions' :                 'CHILI-GraFx/subscriptions/index.md'
+#            - 'Environments' :                  'CHILI-GraFx/environments/index.md'
+        - 'How to':
+#            - 'Create a new environment' :      'CHILI-GraFx/guides/create-environment/index.md'
+            - 'Create GraFx Studio template' :   'CHILI-GraFx/guides/create-studio-template/index.md'
+            - 'Create GraFx Publisher template' : 'CHILI-GraFx/guides/create-publisher-template/index.md'
+        - 'Integrate CHILI GraFx':
+            - 'Getting started' :               'CHILI-GraFx/integration/getting_started.md'
+        - 'Step by step onboarding':
+            - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'
+            - 'User Account Migration' :        'CHILI-GraFx/guides/onboarding/migration/index.md'
+            - 'Logging in' :                    'CHILI-GraFx/guides/onboarding/logging-in/index.md'
+            - 'Find your way around' :          'CHILI-GraFx/guides/onboarding/navigation/index.md'
+            - 'Applications' :                  'CHILI-GraFx/guides/onboarding/applications/index.md'
+            - 'GraFx Publisher' :
+                - 'GraFx Publisher intro':      'CHILI-GraFx/guides/onboarding/publisher/index.md'
+            - 'GraFx Studio':
+                - 'GraFx Studio intro':         'CHILI-GraFx/guides/onboarding/studio/index.md'
+            - 'GraFx Media' :
+                - 'GraFx Media intro':          'CHILI-GraFx/guides/onboarding/media/index.md'
+
+    - 'GraFx Studio':
+        - 'Introduction':                       'GraFx-Studio/index.md'
+        - 'Application overview':
+            - 'Workspace elements':             'GraFx-Studio/overview/workspace-elements/index.md'
+            - 'Mouse or Trackpad':              'GraFx-Studio/overview/movement/index.md'
+            - 'Header Bar':                     'GraFx-Studio/overview/headerbar/index.md'
+            - 'Sidebar Tools':                  'GraFx-Studio/overview/sidebar/index.md'
+            - 'Document Canvas':                'GraFx-Studio/overview/document-canvas/index.md'
+            - 'Page or Document':               'GraFx-Studio/overview/document/index.md'
+            - 'Properties panel':               'GraFx-Studio/overview/properties/index.md'
+            - 'Export':                         'GraFx-Studio/overview/export/index.md'
+            - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
+            - 'Animation':                      'GraFx-Studio/overview/animation/index.md'
+            - 'Layouts':                        'GraFx-Studio/overview/layouts/index.md'
+            - 'Frames & Timeline':              'GraFx-Studio/overview/timeline/index.md'
+            - 'Stylekit':                       'GraFx-Studio/overview/stylekits/index.md'
+        - 'Concepts':
+#            - 'Template vs Publication':        'GraFx-Studio/concept/template_publication.md'
+            - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
+            - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
+            - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
+            - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
+            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
+            - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
+            - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
+            - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
+            - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
+        - 'How to: Design documents':
+            - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
+#            - 'Adding a text frame':        'GraFx-Studio/guides/frames/text/index.md'
+#            - 'Adding an image frame':      'GraFx-Studio/guides/frames/image/index.md'
+#            - 'Styles':                     'GraFx-Studio/guides/styles/index.md'
+#            - 'Timeline':                   'GraFx-Studio/guides/timeline/index.md.md'
+            - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
+            - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
+            - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
+            - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
+            - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
+            - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
+            - 'Define variables':               'GraFx-Studio/guides/variables/define/index.md'
+            - 'Organize variables':             'GraFx-Studio/guides/variables/organize/index.md'
+            - 'Add variables to document':      'GraFx-Studio/guides/variables/assign/index.md'
 #        - 'How to: Extend GraFx studio':
-#            - 'GraFx studio INDD plugin' :      'GraFx_Studio/plugin/studio_indesign.md'
-#            - 'GraFx studio AI plugin' :        'GraFx_Studio/plugin/studio_ai.md'
+#            - 'GraFx studio INDD plugin' :      'GraFx-Studio/plugin/studio_indesign.md'
+#            - 'GraFx studio AI plugin' :        'GraFx-Studio/plugin/studio_ai.md'
         - 'How to: Output':
-#            - 'Settings':                       'GraFx_Studio/how_to/output_settings.md'
-            - 'MP4':                            'GraFx_Studio/how_to/mp4_output.md'
-            - 'GIF':                            'GraFx_Studio/how_to/gif_output.md'
-            - 'JPG and PNG':                    'GraFx_Studio/how_to/png_jpg_output.md'
+#            - 'Settings':                       'GraFx-Studio/guides/output/settings/index.md'
+            - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
+            - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
+            - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
         - 'Integrate GraFx studio':
-            - 'Getting started' :               'GraFx_Studio/integration/getting_started.md'
-            - 'Local environment' :             'GraFx_Studio/integration/local_environment.md'
-            - 'NPM & Webpack' :                 'GraFx_Studio/integration/npm_webpack.md'
-            - 'CHILI Editor SDK' :              'GraFx_Studio/integration/chili_editor_sdk.md'
-            - 'First build' :                   'GraFx_Studio/integration/first_build.md'
-            - 'Custom app' :                    'GraFx_Studio/integration/custom_app.md'
-        - 'SDK reference':
-            - Overview:                         'GraFx_Studio/sdk/README.md'
-            - ... | flat | GraFx_Studio/sdk/**
-#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
-        - 'Release notes':                      'GraFx_Studio/releasenotes.md'
+            - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
+            - 'Local environment':              'GraFx-Studio/integration/environment/index.md'
+            - 'NPM & Webpack':                  'GraFx-Studio/integration/npm/index.md'
+            - 'CHILI Editor SDK':               'GraFx-Studio/integration/studio-sdk/index.md'
+            - 'First build':                    'GraFx-Studio/integration/first-build/index.md'
+            - 'Custom app':                     'GraFx-Studio/integration/custom-app/index.md'
     - 'GraFx Publisher':
-        - 'Introduction':                       'GraFx_Publisher/index.md'
+        - 'Introduction':                       'GraFx-Publisher/index.md'
+        - 'Guides':
+          - 'Hello world':                      'GraFx-Publisher/guides/hello-world/index.md'
 
     - 'GraFx Media':
-        - 'Introduction':                       'GraFx_Media/index.md'
-        - 'Application overview':               
-            'Viewing Media':                    'GraFx_Media/viewing.md'
+        - 'Introduction':                       'GraFx-Media/index.md'
+        - 'Application overview':
+            - 'Viewing Media':                  'GraFx-Media/overview/viewing/index.md'
         - 'How to':
-            'Browse media':                     'GraFx_Media/how_to/browse.md'
-            'Search media':                     'GraFx_Media/how_to/search.md'
-#           'Upload media':                     'GraFx_Media/how_to/upload.md'
-#           'Download media':                   'GraFx_Media/how_to/download.md'
-#           'Sort and Filter media':            'GraFx_Media/how_to/sort_filter.md'
-#           'Sort media':                       'GraFx_Media/how_to/sort.md'
-
+            - 'Browse media':                   'GraFx-Media/guides/browse/index.md'
+            - 'Search media':                   'GraFx-Media/guides/browse/search/index.md'
+#           'Upload media':                     'GraFx-Media/guides/upload/index.md'
+#           'Download media':                   'GraFx-Media/guides/download/index.md'
+#           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':
-        - 'Introduction':                       'GraFx_Fonts/index.md'
-#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
+        - 'Introduction':                       'GraFx-Fonts/index.md'
 
     - 'GraFx Stylekits':
-        - 'Introduction':                       'GraFx_Stylekits/index.md'
-#        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
+        - 'Introduction':                       'GraFx-Stylekits/index.md'
 
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
-    - 'Release notes':                          
-        - 'Recent':                             'releasenotes/index.md'
-        - '2022':                               'releasenotes/2022.md'
+    - 'Release notes':
+        - 'Recent':                             'release-notes/index.md'
+        - '2022':                               'release-notes/2022.md'
 
-
-    - 'Developer center':                       
-        - 'Overview':                           'GraFx_devcenter/index.md'
-        - 'Platform API reference' :            '/CHILI_GraFx/platform_api/overview/'
-        - 'Environment API':                    '/CHILI_GraFx/environment_api/overview/'
+    - 'Developer Center':
+        - 'Overview':                           'GraFx-Developers/index.md'
+        - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
+        - 'Platform API reference' :
+            - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
+        - 'Environment API reference':
+            - 'Swagger' :                       'https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html'
