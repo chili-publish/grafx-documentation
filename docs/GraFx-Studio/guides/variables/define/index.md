@@ -1,8 +1,3 @@
----
-tags:
-  - unfinished
----
-
 # Defining variables
 
 In the headerbar, choose [Automate](/GraFx-Studio/overview/headerbar/)
