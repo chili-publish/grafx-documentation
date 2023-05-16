@@ -8,9 +8,9 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 ### Fixes
 
-- Fixed a problem where the text was not displaying correctly because the required font was missing.
-- PDF Output Enhancement: We ensured that the PDF files are generated reliably even when the system is experiencing heavy usage.
-- PDF Rendering Update: We have updated our rendering engine used for PDF generation.
+- Output: Fixed output failure due to missing font
+- Output: Improved reliability of PDF output when the system is under high load
+- PDF rendering: Updated the PRD rendering engine
 
 ## Apr 19, 2023 - CHILI GraFx
 
