@@ -12,6 +12,42 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 - Output: Improved reliability of PDF output when the system is under high load
 - PDF rendering: Updated the PDF Post-processing engine
 
+## May 16, 2023 - CHILI GraFx - Environment API
+
+![rn_icon](/assets/CHILI_LOGOS_OK-04.svg)
+
+### Added Endpoints
+
+
+User is able to **rename** template attached to collection
+
+- PATCH /api/v1/template-collections/{collectionId}/templates/{templateId}
+
+User is able to **create**, **rename** and **delete** project.
+
+- POST	/api/v1/environments/{environmentId}/projects
+- PATCH /api/v1/environments/{environmentId}/projects/{projectId}
+- DELETE /api/v1/environments/{environmentId}/projects/{projectId}
+	
+User is able to **download** project json.
+
+- GET /api/v1/environments/{environmentId}/projects/{projectId}/document
+
+### Updated Endpoints
+
+When a user attempts to **delete** a template attached to a collection, an error is returned. User is now able to use ‘force’ request parameter, the template will be deleted.
+
+- DELETE /api/v1/templates/{templateId}
+
+Http **method** is changed from ‘PUT’ to ‘PATCH’.
+
+The endpoint now allows partial update of template collection instead of full update.
+
+- PATCH /api/v1/template-collections/{templateCollectionId}
+
+
+See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
+
 ## Apr 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)

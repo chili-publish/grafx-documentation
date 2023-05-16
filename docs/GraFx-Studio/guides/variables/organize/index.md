@@ -1,8 +1,3 @@
----
-tags:
-  - unfinished
----
-
 # Organize variables in your document
 
 
