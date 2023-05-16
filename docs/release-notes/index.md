@@ -15,9 +15,9 @@ User is able to **rename** template attached to collection
 
 - PATCH /api/v1/template-collections/{collectionId}/templates/{templateId}
 
-User is able to **create**, **update** and **delete** project.
+User is able to **create**, **rename** and **delete** project.
 
-- POST	/api/v1/environments/{environmentId}/projects/
+- POST	/api/v1/environments/{environmentId}/projects
 - PATCH /api/v1/environments/{environmentId}/projects/{projectId}
 - DELETE /api/v1/environments/{environmentId}/projects/{projectId}
 	
@@ -35,7 +35,7 @@ Http **method** is changed from ‘PUT’ to ‘PATCH’.
 
 The endpoint now allows partial update of template collection instead of full update.
 
-- PATCH /template-collections/{templateCollectionId}
+- PATCH /api/v1/template-collections/{templateCollectionId}
 
 
 See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
