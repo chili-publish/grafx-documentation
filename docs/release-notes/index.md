@@ -2,6 +2,15 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## May 16, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Output: Fixed output failure due to missing font
+- Output: Improved reliability of PDF output when the system is under high load
+
 ## May 16, 2023 - CHILI GraFx - Environment API
 
 ![rn_icon](/assets/CHILI_LOGOS_OK-04.svg)
@@ -37,7 +46,6 @@ The endpoint now allows partial update of template collection instead of full up
 
 
 See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
-
 
 ## Apr 19, 2023 - CHILI GraFx
 
