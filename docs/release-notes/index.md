@@ -10,25 +10,33 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 ### Added Endpoints
 
-- PATCH /template-collections/{collectionId}/templates/{templateId}
 
-User is able to rename template attached to collection
+User is able to **rename** template attached to collection
 
-- POST/PATCH/DELETE /projects
+- PATCH /api/v1/template-collections/{collectionId}/templates/{templateId}
 
-User is able to create, update and delete project.
+User is able to **create**, **update** and **delete** project.
+
+- POST	/api/v1/environments/{environmentId}/projects/
+- PATCH /api/v1/environments/{environmentId}/projects/{projectId}
+- DELETE /api/v1/environments/{environmentId}/projects/{projectId}
+	
+User is able to **download** project json.
+
+- GET /api/v1/environments/{environmentId}/projects/{projectId}/document
 
 ### Updated Endpoints
 
-- DELETE /templates/{templateId}
+When a user attempts to **delete** a template attached to a collection, an error is returned. User is now able to use ‘force’ request parameter, the template will be deleted.
 
-When a user attempts to delete a template attached to a collection, an error is returned. User is now able to use ‘force’ request parameter, the template will be deleted.
+- DELETE /api/v1/templates/{templateId}
+
+Http **method** is changed from ‘PUT’ to ‘PATCH’.
+
+The endpoint now allows partial update of template collection instead of full update.
 
 - PATCH /template-collections/{templateCollectionId}
 
-Http method is changed from ‘PUT’ to ‘PATCH’.
-
-The endpoint now allows partial update of template collection instead of full update.
 
 See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
 
