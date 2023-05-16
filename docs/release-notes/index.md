@@ -10,7 +10,6 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 - Output: Fixed output failure due to missing font
 - Output: Improved reliability of PDF output when the system is under high load
-- PDF rendering: Updated the PDF Post-processing engine
 
 ## May 16, 2023 - CHILI GraFx - Environment API
 
