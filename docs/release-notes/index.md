@@ -2,6 +2,16 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## May 16, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed a problem where the text was not displaying correctly because the required font was missing.
+- PDF Output Enhancement: We ensured that the PDF files are generated reliably even when the system is experiencing heavy usage.
+- PDF Rendering Update: We have updated our rendering engine used for PDF generation.
+
 ## Apr 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
