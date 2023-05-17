@@ -219,7 +219,17 @@ nav:
 
     - 'Release notes':
         - 'Recent':                             'release-notes/index.md'
-        - '2022':                               'release-notes/2022.md'
+        - 'CHILI GraFx':                        'release-notes/CHILI-GraFx/index.md'
+        - 'GraFx Studio':                       'release-notes/GraFx-Studio/index.md'
+        - 'GraFx Publisher':                    'release-notes/GraFx-Publisher/index.md'
+        - 'GraFx Media':                        'release-notes/GraFx-Media/index.md'
+#        - 'GraFx Fonts':                        'release-notes/GraFx-Fonts/index.md'
+#        - 'GraFx Stylekits':                    'release-notes/GraFx-Stylekits/index.md'
+#        - 'GraFx Data':                         'release-notes/GraFx-Data/index.md'
+#        - 'GraFx Insights':                     'release-notes/GraFx-Insights/index.md'
+        - 'Infrastructure':                     'release-notes/infrastructure/index.md'
+
+        - 'Archive':                            'release-notes/2022.md'
 
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
