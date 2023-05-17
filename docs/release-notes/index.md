@@ -47,6 +47,16 @@ The endpoint now allows partial update of template collection instead of full up
 
 See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
 
+
+## Apr 20, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Features
+
+- You can now log into GraFx Publisher via GraFx user account.
+
+
 ## Apr 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
@@ -90,6 +100,18 @@ Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/stu
 	Change `#!typescript import { Id } from '@chili-publish/studio-sdk/lib/types/CommonTypes'`<br>
 	To `#!typescript import { Id } from '@chili-publish/studio-sdk'`<br>
 	For more information, please check out the [SDK release notes](https://github.com/chili-publish/studio-sdk/releases/tag/0.117.0){target="_blank"}.
+
+
+## Apr 18, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- API: Fixed issue with ResourceSearchInFolder not returning items in response if includeSubDirectories property was false
+- API: Fixed 'ResourceGetTree/ResourceGetTreeLevel' for enabled support 'parentFolder' argument ending with slashes.
+- API: Fixed 'rest-api/v1/resources/documents/items/{id}/privateinfo' endpoint to return 'fileInfo.xml' node
+
 
 ## Mar 31, 2023 - Infrastructure update
 
