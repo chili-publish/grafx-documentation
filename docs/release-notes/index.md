@@ -22,6 +22,11 @@ Select the platform or Application to see all release notes.
 
 [See all GraFx Studio release notes](/release-notes/GraFx-Studio/).
 
+## GraFx Media
+
+**Mar 6, 2023**: Sort and preview assets
+
+[See all GraFx Media release notes](/release-notes/GraFx-Media/).
 
 ## Infrastructure
 
@@ -29,8 +34,3 @@ Select the platform or Application to see all release notes.
 
 [See all Infrastructure release notes](/release-notes/Infrastructure/).
 
-## GraFx Media
-
-**Mar 6, 2023**: Sort and preview assets
-
-[See all GraFx Media release notes](/release-notes/GraFx-Media/).
