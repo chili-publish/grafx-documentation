@@ -66,7 +66,7 @@ Read more about [User Management](https://docs.chiligrafx.com/CHILI_GraFx/user_m
 
 ## Apr 14, 2023 - GraFx Studio
 
-Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
@@ -87,9 +87,9 @@ Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/edi
 	
 	There is a minor breaking change in the Studio SDK's typings.
 	It basically boils down to changing the import for the Id type, you can do it as follows:<br>
-	Change `#!typescript import { Id } from '@chili-publish/editor-sdk/lib/types/CommonTypes'`<br>
-	To `#!typescript import { Id } from '@chili-publish/editor-sdk'`<br>
-	For more information, please check out the [SDK release notes](https://github.com/chili-publish/editor-sdk/releases/tag/0.117.0){target="_blank"}.
+	Change `#!typescript import { Id } from '@chili-publish/studio-sdk/lib/types/CommonTypes'`<br>
+	To `#!typescript import { Id } from '@chili-publish/studio-sdk'`<br>
+	For more information, please check out the [SDK release notes](https://github.com/chili-publish/studio-sdk/releases/tag/0.117.0){target="_blank"}.
 
 ## Mar 31, 2023 - Infrastructure update
 
@@ -104,7 +104,7 @@ The update will be implemented (starting April 5) gradually on all tenants, and 
 
 ## Mar 29, 2023 - GraFx Studio
 
-Version 0.116.2, using Studio SDK [0.116.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.116.2, using Studio SDK [0.116.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
@@ -145,7 +145,7 @@ With this update, we’re implementing a new platform infrastructure that greatl
 
 ## Mar 16, 2023 - GraFx Studio
 
-Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
@@ -182,7 +182,7 @@ Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/edi
 
 ## Mar 1, 2023 - GraFx Studio
 
-Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ### Features
 
@@ -207,7 +207,7 @@ Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/edi
 
 ## Feb 16, 2023 - GraFx Studio
 
-Version 0.107.4, using Studio SDK [0.107.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.107.4, using Studio SDK [0.107.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ### Features
 
@@ -241,7 +241,7 @@ Version 0.107.4, using Studio SDK [0.107.0](https://github.com/chili-publish/edi
 
 ## Jan 30, 2023 - GraFx Studio
 
-Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ### Fixes
 
@@ -254,7 +254,7 @@ Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/edi
 
 ## Jan 23, 2023 - GraFx Studio
 
-Version 0.102.2, using Studio SDK [0.102.0](https://github.com/chili-publish/editor-sdk/releases){target="_blank"}
+Version 0.102.2, using Studio SDK [0.102.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ### Features
 

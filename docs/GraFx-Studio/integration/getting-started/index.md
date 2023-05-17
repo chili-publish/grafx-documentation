@@ -47,7 +47,7 @@ You can use this script in your HTML to always get the latest SDK version:
 Or you can use NPM to install a specific SDK version, with the following command:
 
 ``` bash
-npm install @chili-publish/editor-sdk
+npm install @chili-publish/studio-sdk
 ```
 
 #### stateChanged event will be deprecated
