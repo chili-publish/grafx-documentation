@@ -1,0 +1,21 @@
+#Variables
+-List the possible variable types (dataType property)
+
+Short Text = "string"
+Long Text = "longtext"
+Formatted Text = "formattedtext"
+Structured Text = "structuredtext"
+Calculated Field = "calculated"
+Image = "image"
+Number = "number"
+Checkbox = "checkbox"
+Date = "date"
+List = "list"
+Table = "table"
+Color = "color"
+Paragraph Style = "paragraphstyle"
+Character Style = "characterstyle"
+Font = "font"
+Coordinate = "coordinate"
+Divider = "divider"
+Button Bar = "buttonbar"
