@@ -31,7 +31,7 @@
     ```javascript
     /* publisherDocument can be either a document ID or document XML*/
     const publisherDocument = `document id or xml`;
-    editor.ExecuteFunction('document','OpenDocumentFromXml', publisherDocument);
+    editorObject.ExecuteFunction('document','OpenDocumentFromXml', publisherDocument);
     ```
 
   You can optionally include a Workspace ID and/or View Preferences ID to load with the document
