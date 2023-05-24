@@ -2,6 +2,14 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## May 23, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Output: Improved stability of VDP outputs with a large amount of rows and variables
+
 ## May 16, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
