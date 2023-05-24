@@ -118,26 +118,26 @@ GraFx Publisher comes with more than just a name change, this year it is all abo
 
 Below you will find an example of some endpoints that will see improvements:
 
-post /resources/assets/folders/copy
-get /resources/assets
-get /resources/assets/sorted
-get /resources/documents/sorted
-post /resources/documents/folders/copy
-get /resources/fonts/sorted
-post /resources/documents/items/{id}/copy
-get /resources/assets/paged
-post /resources/assets/items
-post /resources/documents/items
-post /resources/fonts/items
-get /resources/documents/treelevel
-get /resources/assets/infolder
-get /resources/documents/items
-get /resources/fonts/treelevel
-get /resources/documents/defaultsettings
-post /resources/assets/items/{id}/copy
-get /resources/documents/items/byname
-get /resources/fonts/tree
-get /resources/assets/items/bypath
+- post /resources/assets/folders/copy
+- get /resources/assets
+- get /resources/assets/sorted
+- get /resources/documents/sorted
+- post /resources/documents/folders/copy
+- get /resources/fonts/sorted
+- post /resources/documents/items/{id}/copy
+- get /resources/assets/paged
+- post /resources/assets/items
+- post /resources/documents/items
+- post /resources/fonts/items
+- get /resources/documents/treelevel
+- get /resources/assets/infolder
+- get /resources/documents/items
+- get /resources/fonts/treelevel
+- get /resources/documents/defaultsettings
+- post /resources/assets/items/{id}/copy
+- get /resources/documents/items/byname
+- get /resources/fonts/tree
+- get /resources/assets/items/bypath
 
 This is just the tip of the iceberg! Expect performance improvements across the entire platform API calls.
 
