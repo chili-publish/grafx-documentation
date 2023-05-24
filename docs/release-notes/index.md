@@ -112,6 +112,14 @@ Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/stu
 
 ## Apr 18, 2023 - GraFx Publisher
 
+**Boost Platform Performance**
+
+GraFx Publisher comes with more than just a name change, this year it is all about improving platform performance. We've listened to your feedback and revamped our platform infrastructure to deliver blazing-fast file operations, including moving, copying, and deleting. This means you can work efficiently even in large environments! 🚀
+
+Note: Smaller environments might not notice significant changes in performance.
+
+🔔 Heads up: We've fine-tuned the ResourceItemGetTree and ResourceItemGetTreeLevel API endpoints to optimize performance. Now, these endpoints return only the first 10,000 items, ensuring a smoother experience for all users.
+
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 
 ### Fixes
