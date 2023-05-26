@@ -2,6 +2,29 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## May 26, 2023 - GraFx Studio
+
+Version 0.122.1, using Studio SDK [0.122.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- You can crop an image to manually resize and position it inside an image frame
+- Snap guides show up when creating, moving or resizing a frame to help you to nicely align the frames in your design
+
+### Improvements
+
+- You can use the arrow keys to move a frame in steps of 1 pixel, holding down the Shift key moves it in steps of 10 pixels
+- Creating, moving or resizing a frame is now done on a pixel grid, meaning that the x, y, width, and height properties have non-decimal values
+- Punctuation marks stay together with the preceding word and will not move to the next line
+
+### Fixes
+
+- Fixed issue where the animation sometimes blinked at the beginning or the end
+- Fixed issue where changing the width or height of a frame also caused an override on other properties
+- Fixed issue with constraining proportions when changing the width or height of a frame in the properties panel
+
 ## May 23, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
