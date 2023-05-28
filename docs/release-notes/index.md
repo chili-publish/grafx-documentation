@@ -36,13 +36,6 @@ Version 0.122.1, using Studio SDK [0.122.0](https://github.com/chili-publish/stu
 ### Fixes
 
 - Output: Improved stability of VDP outputs with a large amount of rows and variables
-
-## May 16, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
 - Output: Fixed output failure due to missing font
 - Output: Improved reliability of PDF output when the system is under high load
 
@@ -51,7 +44,6 @@ Version 0.122.1, using Studio SDK [0.122.0](https://github.com/chili-publish/stu
 ![rn_icon](/assets/CHILI_LOGOS_OK-04.svg)
 
 ### Added Endpoints
-
 
 User is able to **rename** template attached to collection
 
