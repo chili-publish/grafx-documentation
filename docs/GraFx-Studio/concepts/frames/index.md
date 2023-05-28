@@ -16,10 +16,6 @@ The width and height defines the size of the frame.
 
 The rotation property of the frame, is the angle of rotation, relative to the **center** of the frame.
 
-## Design properties [future version]
-
-The frame-border will have properties in the future
-
 ## Frame types
 
 ![screenshot](frame-types.png)
