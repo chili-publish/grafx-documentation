@@ -25,6 +25,15 @@ img[alt=releasenotes] {
 	/* height: 250px; */
 }
 
+img[alt=screenshot] {
+	width: 40%;
+	min-width: 250px;
+}
+
+img[alt=screenshot-fullwidth] {
+	max-height: 300px;
+}
+
 p img[alt=svg_icon] {
 	width: 100px;
 }
