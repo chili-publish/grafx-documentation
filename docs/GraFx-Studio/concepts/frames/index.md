@@ -16,19 +16,16 @@ The width and height defines the size of the frame.
 
 The rotation property of the frame, is the angle of rotation, relative to the **center** of the frame.
 
-## Frame types
+
+## Text Frame
 
 ![screenshot](frame-types.png)
-
-Depending on the type of content, you'll need a different type of frame.
-
-### Text Frame
 
 A text frame is made to hold text.
 
 A text frame looks like a rectangular box when selected.
 
-### Image Frame
+## Image Frame
 
 An image frame is made to hold static images.
 
@@ -41,6 +38,21 @@ When media is selected / active for the frame, it will show the media.
 Look [here](/GraFx-Studio/concepts/crop/) to see how to work with cropping.
 
 ![screenshot-fullwidth](../crop/rectcrop.png)
+
+### Fit- or Fill mode
+
+![screenshot-fullwidth](fit-fill.png)
+
+BY default, a placed asset is "fitted" in the frame. This means the maximum size of the  picture is shown, maintaining the aspect ration.
+
+This mean that parts of the frame will remain empty.
+
+!!! Remark
+	Except when the aspect ratio of the image is exactly the same as the frame. E.g. an image of 100 x 100 pixels, in a frame of 200 x 200 pixels, will not show empty space)
+
+With "Fill" mode, the image is scaled up, so the full frame is used. This (possibly) results in parts of the image hidden outside of the frame.
+
+![screenshot-fullwidth](fillmode.png)
 
 
 ## Z-index
