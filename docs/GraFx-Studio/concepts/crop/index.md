@@ -4,21 +4,21 @@
 
 ![screenshot](crop.png)
 
-Cropping enables manually position and scaling the asset within the image frame and allows to resize the frame itself.
+Cropping enables manual positioning and scaling of the assets within the image frame and allows to resize of the frame itself.
 
 ## Image frame and Crop frame
 
 ![screenshot](cropframes.png)
 
-The Image frame (1) and the crop frame (2) are 2 element influencing the size & crop of the image.
+The Image frame (1) and the crop frame (2) are 2 elements influencing the size & crop of the image.
 
-When your frame and image both have exactly the same aspect ratio, the image frame and crop frame will be the same.
+When your frame and image both have the same aspect ratio, the image frame and crop frame will be the same.
 
 ![screenshot](defaultcrop.png)
 
-When your image has a different ratio than the frame it fits it, the default crop frame will be different.
+When your image has a different ratio than the frame it fits in, the default crop frame will be different.
 
-Is the example below, the image is landscape while the image frame is square(-ish).
+In the example below, the image is landscape while the image frame is square(-ish).
 
 ![screenshot](rectcrop.png)
 
@@ -44,22 +44,40 @@ When the asset in an image frame is replaced, the crop settings are reset.
 
 They are reset to the [fit-mode](/GraFx-Studio/concepts/frames/#fit-or-fill-mode) of that frame.
 
-Replacing an image can be done by a user, or through integration. In either way, the crop settings are removed, and the fill-setting is applied.
+Replacing an image can be done by a user, or through integration. In either way, the crop settings are removed, and the fill setting is applied.
 
-## Undo
+## Undo versus reset
 
-All image and frame transformations done while in image crop mode are grouped together as one undo/redo item. 
-
-This means that if you apply an image crop and undo it again, you always go back to the state before you clicked the crop button.
+### Crop Reset
 
 ![screenshot](crop-button.png)
 
-## Recalculation
+The crop reset button (reverse arrow) will reset the image fit to the chosen [fit mode](/GraFx-Studio/concepts/frames/#fit-or-fill-mode).
 
-Improvements of cropping algorithms in the future will not affect the document. 
+All changes made to the cropping, positioning or rotation will be reset to the fit- or fill setting of the image frame.
 
-A crop is saved in the document, and will only be trigger and recalculated when
+### Undo or redo
 
-- The frame resizes
-- The frame content changes
-- A different crop mode is used, or settings of the crop mode are changed
+![screenshot](undo.png)
+
+One undo or redo action is the combination of all changes made during 1 crop manipulation.
+
+When you make several changes during one manipulation, they will be stored as 1 undo/redo.
+
+!!! Example
+	Consider this scenario
+	
+	- State 0: Image in a frame in "Fit" mode
+	- Enter crop mode
+		- Reposition the image
+		- Apply the crop
+	- State 1: Image is cropped
+	- Enter crop mode (again)
+		- Rotate the image in the frame
+		- Move the image (again)
+		- Apply the crop
+	- State 2: Image is cropped and rotated
+
+	With Undo, you can return from State 2 to State 1. Click Undo again, and you will go back to state 0.
+
+	Whereas with reset, starting in State 2, you will disregard all crop changes, and go back to State 0.

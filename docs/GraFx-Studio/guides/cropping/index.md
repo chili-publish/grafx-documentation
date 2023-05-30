@@ -24,7 +24,7 @@ You can also enter crop mode by double clicking on the image. (with the Arrow to
 
 ### Arrow
 
-Use the arrow-tool to manually position the image in the crop frame.
+Use the arrow-tool to manually poisition the image in the crop frame.
 
 ![screenshot-fullwidth](manual-position.png)
 
