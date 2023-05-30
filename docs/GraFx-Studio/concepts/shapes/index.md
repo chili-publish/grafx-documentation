@@ -20,5 +20,6 @@ Select (Y) for polygon (don't ask Y)
 - Height (inherited property)
 - Constrain proportions
 - Rotation (inherited property)
+- Corner radius
 
 ![Properties](shape-properties.png)
