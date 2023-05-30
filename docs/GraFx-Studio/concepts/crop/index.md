@@ -38,6 +38,14 @@ Resetting the override restores both the fit mode and image crop to the parent l
 
 The reset button next to the fit mode removes the image crop and restores the original fit mode, while the "Reset fit mode" option in the overrides list resets both the fit mode and image crop to the parent layout's values.
 
+## Replacing content
+
+When the asset in an image frame is replaced, the crop settings are reset.
+
+They are reset to the [fit-mode](/GraFx-Studio/concepts/frames/#fit-or-fill-mode) of that frame.
+
+Replacing an image can be done by a user, or through integration. In either way, the crop settings are removed, and the fill-setting is applied.
+
 ## Undo
 
 All image and frame transformations done while in image crop mode are grouped together as one undo/redo item. 
