@@ -166,6 +166,7 @@ nav:
         - 'How to: Design documents':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
+            - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
