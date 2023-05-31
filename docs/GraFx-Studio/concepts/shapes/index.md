@@ -1,6 +1,6 @@
 # Shapes
 
-A shape frame can be drawn by holding down left click and dragging the cursor as desired or by a single click on the canvas. A single click on the canvas will create a proportional shape. (Always 100 by 100 px).
+A shape frame can be drawn by holding down the left mouse button click and dragging the cursor as desired or by a single click on the canvas. A single click on the canvas will create a proportional shape. (Always 100 by 100 px).
 
 Select (R) for rectangle
 

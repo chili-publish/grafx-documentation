@@ -10,7 +10,7 @@ Select the shape tool in the sidebar and choose a shape. You can also use the sh
 
 Drag a rectangle on the canvas. The selected shape will be drawn inside the frame.
 
-![screenhot-fullwidth](draw-frame-shape.png)
+![screen](draw-frame-shape.gif)
 
 ## Properties
 
@@ -22,26 +22,26 @@ Some shapes can have a corner radius. (see below).
 
 A corner radius can be entered in the property panel, or can be set through the corner radius handle.
 
-![animation](corder-radius.gif)
+![animation](corner-radius.gif)
 
 
 ### Rectangle
 
-By default you can set the corder radius for all corners.
+By default you can set the corner radius for all corners.
 
 ![screenhot](corner-radius.png)
 
-By deselecting the "Same for each corner", you can specify a corder radius for each corder individually.
+By deselecting the "Same for each corner", you can specify a corner radius for each corner individually.
 
 ### Ellipse
 
-By design, an ellipse does not have a corder radius. An ellipse will fit an ellipsoide shape inside the rectangular frame.
+By design, an ellipse does not have a corner radius. This will fit an ellipse shape inside the rectangular frame.
 
 ![screenshot](ellipse.png)
 
 ### Polygon
 
-Drawing a rectangular frame to fit a polyon will draw a triangle.
+Drawing a rectangular frame to fit a polygon will draw a triangle.
 
 A triangle has 1 corner radius setting, and will apply that setting to all (3) corners.
 
