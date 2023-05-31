@@ -24,6 +24,7 @@ plugins:
         'CHILI_GraFx/users/transition/index.md': 'CHILI-GraFx/users/transition/index.md'
         'CHILI-GraFx/users/index.md': 'CHILI-GraFx/users/intro/index.md'
         'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
+        'releasenotes/index.md': 'release-notes/index.md'
   - search
   - awesome-pages
   - tags:
