@@ -1,6 +1,6 @@
 # Collections
 
-See also: [Template workflow](/CHILI-GraFx/concepts/template-management/#template-collection) for the full story.
+See also: [Template process](/CHILI-GraFx/concepts/template-management/#template-collection) for the full story.
 
 ## Create a collection
 
@@ -14,13 +14,11 @@ A collection will appear in the list of collections.
 
 ## Add templates
 
-![screenshot-fullwidth](open-collection.png)
+Start at the templates, and choose to add to collection from the contextual menu.
 
-Open the collection, to add templates to the collection.
+A list of collections is presented. You can select 1 or more collections, where the templates will be added.
 
-A template browser is presented. You can select 1 or more templates, to be added to this collection.
-
-![screenshot-fullwidth](add-template.png)
+![screen](add-to-collection.png)
 
 ## Reference
 
