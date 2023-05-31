@@ -14,7 +14,7 @@ A collection will appear in the list of collections.
 
 ## Add templates
 
-Start at the templates, and choose to add to collection from the contextual menu.
+Start at the templates, and choose to add to the collection from the contextual menu.
 
 A list of collections is presented. You can select 1 or more collections, where the templates will be added.
 
