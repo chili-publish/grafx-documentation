@@ -4,7 +4,7 @@ A shape frame can be drawn by holding down the left mouse button click and dragg
 
 Select (R) for rectangle
 
-Select (O) for oval
+Select (E) for ellipse
 
 Select (Y) for polygon (don't ask Y)
 
