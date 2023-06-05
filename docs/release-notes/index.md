@@ -14,6 +14,14 @@ In the next step, end users will be able to browse the collections and start a p
 
 ![screen](/CHILI-GraFx/concepts/template-management/collections.png)
 
+## May 31, 2023 - CHILI GraFx
+
+### Bugfixes
+
+- Updated error message if you want to invite more than 10 users at once to CHILI GraFx
+- Disable 'Add Template Designer Seat' button when all Template Designer seats are assigned
+- Fix issue with logout button on 'MyAccount' page
+
 ## May 26, 2023 - GraFx Studio
 
 Version 0.122.1, using Studio SDK [0.122.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
