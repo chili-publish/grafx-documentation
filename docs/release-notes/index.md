@@ -16,7 +16,9 @@ In the next step, end users will be able to browse the collections and start a p
 
 ## May 31, 2023 - CHILI GraFx
 
-### Bugfixes
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Fixes
 
 - Updated error message if you want to invite more than 10 users at once to CHILI GraFx
 - Disable 'Add Template Designer Seat' button when all Template Designer seats are assigned
