@@ -16,6 +16,18 @@ Version 0.123.1, using Studio SDK [0.123.0](https://github.com/chili-publish/stu
 
 - When a new frame is added it is only visible on the selected layout and its sub-layouts, on all other layouts the frame is hidden (if you want a frame to be visible on all layouts you should add it on the top-level layout)
 
+## June 6, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Editor: Fixed issue where iframe caused the page to scroll when partially outside of view
+- Editor: Fixed issue with transparent selection
+- API: Removed redundant calls to file system to minimize probability for concurrency issues
+- API: Fixed issue with ResourceSearchInFolder not returning items in response if includeSubDirectories property was false
+- API: Strengthened security on REST API
+
 ## May 31, 2023 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
