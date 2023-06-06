@@ -10,6 +10,8 @@ CHILI GraFx and the GraFx applications are frequently updated with new features,
 
 - Editor: Fixed issue where iframe caused the page to scroll when partially outside of view
 - Editor: Fixed issue with transparent selection
+- API: Removed redundant calls to file system to minimize probability for concurrency issues
+- API: Fixed issue with ResourceSearchInFolder not returning items in response if includeSubDirectories property was false
 - API: Strengthened security on REST API
 
 ## May 31, 2023 - GraFx Studio
