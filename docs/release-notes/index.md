@@ -2,6 +2,22 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## Jun 6, 2023 - GraFx Studio
+
+Version 0.123.1, using Studio SDK [0.123.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- You can change the [corner radius](/GraFx-Studio/guides/shape-frame/) of your rectangle and polygon shapes by dragging the round handles in the shape or by using the corner radius properties in the frame properties panel
+
+![animation](/GraFx-Studio/guides/shape-frame/corner-radius.gif)
+
+### Improvements
+
+- When a new frame is added it is only visible on the selected layout and its sub-layouts, on all other layouts the frame is hidden (if you want a frame to be visible on all layouts you should add it on the top-level layout)
+
 ## June 6, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
