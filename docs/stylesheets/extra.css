@@ -16,6 +16,10 @@ p:has(img[alt=releasenotes]) {
 	width: 100%;
 	text-align: center;
 }
+p:has(img[alt=releasenotes]) {
+	width: 100%;
+	text-align: center;
+}
 p:has(img[alt=steps]) {
 	width: 60%;
 	text-align: center;

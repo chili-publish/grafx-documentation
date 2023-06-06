@@ -17,14 +17,6 @@ The width and height defines the size of the frame.
 The rotation property of the frame, is the angle of rotation, relative to the **center** of the frame.
 
 
-## Text Frame
-
-![screenshot](frame-types.png)
-
-A text frame is made to hold text.
-
-A text frame looks like a rectangular box when selected.
-
 ## Image Frame
 
 An image frame is made to hold static images.
@@ -53,6 +45,23 @@ This mean that parts of the frame will remain empty.
 With "Fill" mode, the image is scaled up, so the full frame is used. This (possibly) results in parts of the image hidden outside of the frame.
 
 ![screenshot-fullwidth](fillmode.png)
+
+## Shape Frame
+
+![screenshot-sullwidth](frame-shape.png)
+
+A shape frame draws the selected shape. (Rectangle, Ellipse, Polygon).
+
+The shape can be used as a (dynamic) background for e.g. a button. Since a shape will follow the inheritance model, the size, rotation, position etc, will also be linked to the current sub-layout.
+
+## Text Frame
+
+![screenshot](frame-types.png)
+
+A text frame is made to hold text.
+
+A text frame looks like a rectangular box when selected.
+
 
 
 ## Z-index
