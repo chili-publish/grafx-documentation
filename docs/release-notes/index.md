@@ -2,6 +2,16 @@
 
 CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
 
+## June 6, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Editor: Fixed issue where iframe caused the page to scroll when partially outside of view
+- Editor: Fixed issue with transparent selection
+- API: Fixed security vulnerability
+
 ## May 31, 2023 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
