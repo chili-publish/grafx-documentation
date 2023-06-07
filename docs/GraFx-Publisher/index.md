@@ -64,7 +64,7 @@ Important features of CHILI Editor
 
 CHILI publisher is made to be integrated. The same philosophy is kept, and CHILI GraFx, GraFx Publisher, and GraFx Studio are also made to be integrated.
 
-See [Developer Center](/GraFx-developers/) for the full API & SDK guides.
+See [Developer Center](/GraFx-Developers/) for the full API & SDK guides.
 
 See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412012/CHILI+API+Guide){target="_blank"}
 
