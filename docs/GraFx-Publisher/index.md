@@ -4,7 +4,7 @@
 
 GraFx Publisher is the evolution of **CHILI publisher Online** (CPO) into the platform of CHILI GraFx.
 
-Enter the ‘phygital’ age of marketing by producing high-quality print and static digital output with GraFx Publisher.
+Enter the 'phygital' age of marketing by producing high-quality print and static digital output with GraFx Publisher.
 
 ## Concepts and features from CHILI publisher
 
@@ -64,7 +64,7 @@ Important features of CHILI Editor
 
 CHILI publisher is made to be integrated. The same philosophy is kept, and CHILI GraFx, GraFx Publisher, and GraFx Studio are also made to be integrated.
 
-See [Developer Center](/GraFx_devcenter/) for the full API & SDK guides.
+See [Developer Center](/GraFx-Developers/) for the full API & SDK guides.
 
 See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412012/CHILI+API+Guide){target="_blank"}
 
@@ -75,7 +75,7 @@ CHILI publisher, now GraFx Publisher is a smart template editor to allow end-use
 
 Concept > Design > Layout > (corporate) Approval > Smart Template > End-user interaction
 
-You’ll need a way to convert your existing documents from your current (desktop) Document Editor into GraFx Publisher.
+You'll need a way to convert your existing documents from your current (desktop) Document Editor into GraFx Publisher.
 
 Once in GraFx Publisher, you can add Document Intelligence, brand guidelines and other rules to allow end-users to interact with your document.
 
@@ -93,7 +93,7 @@ CHILI publisher (legacy) is **end-of-life**.
 
 To benefit continued support and maintenance, switch to CHILI GraFx.
 
-[GraFx Publisher](/GraFx_publisher/intro/) is the application based on CHILI publisher, hosted in the [CHILI GraFx platform](/CHILI_GraFx/intro/).
+[GraFx Publisher](/GraFx-Publisher/) is the application based on CHILI publisher, hosted in the [CHILI GraFx platform](/CHILI-GraFx/).
 
 The documentation for CHILI publisher, used on-premise, can be found here.
 
