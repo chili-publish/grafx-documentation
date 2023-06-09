@@ -1,6 +1,34 @@
 # Release notes
 
-CHILI GraFx and the GraFx applications are frequently updated with new features, improvements, and fixes.
+## June 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Features
+
+- Added support for Adobe® Illustrator®[^1] 2023 (27.x)
+
+[^1]:
+	Adobe and Illustrator are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
+
+### Improvements
+
+- Preflighting a document is no longer adding items to the undo/redo stack
+- When converting a document you are no longer prompted with a message for every text frame that contains right alignment
+
+### Resolved issues
+
+- Fixed issue with the plug-in panel going blank when reopening
+- Fixed issue with missing images in documents exported to GraFx Publisher from macOS
+- Fixed issue with failing conversion for documents containing circular text
+- Fixed issue with upload when using heavy assets on Windows
+- Fixed issue where the document name was not updated in the plug-in when opening a new document
+
+[Download page (behind login)](https://mysupport.chili-publish.com/hc/en-us/articles/360021250259-Latest-downloads)
+
+This version is compatible with Adobe® Illustrator®[^1] 2022 (26.x) and 2023 (27.x).
+
+This version is compatible with GraFx Publisher and the on-premise version of CHILI publisher (version 5.6 or above).
 
 ## June 6, 2023 - GraFx Publisher
 
