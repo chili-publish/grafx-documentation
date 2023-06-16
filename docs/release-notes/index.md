@@ -1,5 +1,29 @@
 # Release notes
 
+## June 16, 2023 - GCHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx Platform API 1.11
+
+### Features
+
+**User management**
+
+- Added endpoints for disabling and enabling users in the subscription
+
+**Manage Integrations**
+
+- Added endpoints to create, update, delete Integrations
+- Added endpoint to get details of a single Integration
+- Added endpoint to get available permissions for an Integration
+- Added endpoint to Rotate client secret
+- Added endpoints to manage permissions of Integrations
+
+Authentication
+- Add support for the bearer token with new grant type
+- Add support for scope-based authorization rules
+
 ## June 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
