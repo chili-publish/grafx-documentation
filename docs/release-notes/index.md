@@ -20,7 +20,8 @@ CHILI GraFx Platform API 1.11
 - Added endpoint to Rotate client secret
 - Added endpoints to manage permissions of Integrations
 
-Authentication
+**Authentication**
+
 - Add support for the bearer token with new grant type
 - Add support for scope-based authorization rules
 
