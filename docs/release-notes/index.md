@@ -1,5 +1,68 @@
 # Release notes
 
+## June 19, 2023 - GCHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+### Features
+
+**Authentication**
+
+- Extended ‘full access’ configuration to support multiple applications having full access to Environment API and Platform API.
+
+**Machine to Machine**
+
+- Add support for scope-based authorization rules
+- Enabled integrations access to Environment API endpoints.
+
+**Template Collections**
+
+- Managing the image cover of a Template Collection
+
+**My Projects**
+
+- Introduce GET api/v1/environments/{environmentId}/projects endpoint that provides list of ‘My Project’ data.
+- Introduce GET api/v1/environment/{environmentId}/projects/{projectId} endpoint that provides ‘My Project’ data.
+- Accessing My Project's previews
+- Saving modified json document of a My Project document
+- Output: Image and animation output from a Project
+
+### Improvements
+
+**GraFx Media**
+
+- Extended endpoints responses to return media file info
+	- GET api/v1/environment/{environmentId}/media
+	- GET api/v1/environment/{environmentId}/media/directory
+
+**Output**
+
+- Update ‘output’ endpoints: introduce ‘engineVersion’ parameter to override the engine version that is used during output rendering.
+	- POST api/v1/environment/{environmentId}/output/animation
+	- POST api/v1/environment/{environmentId}/output/image
+
+
+### Fixes
+
+- Output: Fixed mp4 output for a template with uneven dimensions
+- Fixed return code (from 500 to 400) for template collection creation when the name is duplicate.
+- Fixed adding new My Project with invalid Template (prevent storing broken My Project).
+
+#### Experimental
+
+
+!!! example "Experimental"
+	Below API calls are released in Experimental mode. 
+	This means that these endpoints are not yet final (syntax, response, ...).
+	
+**Connectors**
+
+- Added Connector module
+
+
+
 ## June 16, 2023 - GCHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
