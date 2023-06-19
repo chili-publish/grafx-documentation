@@ -157,6 +157,7 @@ nav:
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
+            - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
@@ -176,6 +177,8 @@ nav:
             - 'Define variables':               'GraFx-Studio/guides/variables/define/index.md'
             - 'Organize variables':             'GraFx-Studio/guides/variables/organize/index.md'
             - 'Add variables to document':      'GraFx-Studio/guides/variables/assign/index.md'
+            - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
+            - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
         - 'How to: Output':
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
