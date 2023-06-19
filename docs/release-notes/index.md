@@ -16,9 +16,9 @@ CHILI GraFx Platform API 1.11
 
 - Added endpoints to create, update, delete Integrations
 - Added endpoint to get details of a single Integration
-- Added endpoint to get available permissions for an Integration
+- Added endpoint to get available scopes for an Integration
 - Added endpoint to Rotate client secret
-- Added endpoints to manage permissions of Integrations
+- Added endpoints to manage scopes of Integrations
 
 **Authentication**
 
