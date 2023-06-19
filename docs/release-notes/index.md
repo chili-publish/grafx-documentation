@@ -10,7 +10,7 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 
 **Authentication**
 
-- Changed authentication module to give multiple M2M applications access
+- Extended ‘full access’ configuration to support multiple applications having full access to Environment API and Platform API.
 
 **Machine to Machine**
 
@@ -23,8 +23,8 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 
 **My Projects**
 
-- Introduce GET /environments/{environmentId}/projects endpoint that provides list of ‘My Project’ data.
-- Introduce GET /environment/{environmentId}/projects/{projectId} endpoint that provides ‘My Project’ data.
+- Introduce GET api/v1/environments/{environmentId}/projects endpoint that provides list of ‘My Project’ data.
+- Introduce GET api/v1/environment/{environmentId}/projects/{projectId} endpoint that provides ‘My Project’ data.
 - Accessing My Project's previews
 - Saving modified json document of a My Project document
 - Output: Image and animation output from a Project
@@ -33,7 +33,9 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 
 **GraFx Media**
 
-- Asset endpoints now return fileInfo
+- Extended endpoints responses to return media file info
+	- GET api/v1/environment/{environmentId}/media
+	- GET api/v1/environment/{environmentId}/media/directory
 
 **Output**
 
