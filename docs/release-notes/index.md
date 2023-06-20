@@ -1,6 +1,6 @@
 # Release notes
 
-## June 19, 2023 - GCHILI GraFx
+## June 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -63,7 +63,7 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 
 
 
-## June 16, 2023 - GCHILI GraFx
+## June 16, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
