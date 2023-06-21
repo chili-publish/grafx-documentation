@@ -170,6 +170,8 @@ In the next step, end users will be able to browse the collections and start a p
 
 ## May 26, 2023 - GraFx Studio
 
+
+
 Version 0.122.1, using Studio SDK [0.122.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
@@ -239,6 +241,18 @@ The endpoint now allows partial update of template collection instead of full up
 
 
 See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
+
+
+## May 10, 2023 - GraFx Studio SDK
+
+We renamed our repository and package for the SDK.
+The new name is studio-sdk, coming from editor-sdk.
+
+Also a new version has been pushed, we're now at version 0.121.0
+
+??? note "Note for integrators"
+
+	This means you'll have to update your integration dependency, and change it from @chili-publish/editor-sdk to @chili-publish/studio-sdk inside your `package.json`.
 
 
 ## Apr 20, 2023 - GraFx Publisher
