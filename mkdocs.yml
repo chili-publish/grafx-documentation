@@ -122,7 +122,7 @@ nav:
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Manage Collections' :            'CHILI-GraFx/guides/manage-collections/index.md'
-            - 'Define integrations' :           'CHILI-GraFx/guides/integrations/index.md'
+            - 'Manage integrations' :           'CHILI-GraFx/guides/integrations/index.md'
         - 'Integrate CHILI GraFx':              'CHILI-GraFx/integration/index.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'

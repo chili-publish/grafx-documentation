@@ -1,4 +1,6 @@
-# CHILI GraFx Integration: Empower Your Custom Solutions
+# CHILI GraFx Integration
+
+Empower Your Custom Solutions
 
 ## Introduction
 
@@ -6,11 +8,11 @@ This guide will walk you through the process of defining an integration within t
 
 ## Step 1: Accessing the CHILI GraFx Platform
 
-Log in to your CHILI GraFx platform account using your provided credentials.
+Log in to your [CHILI GraFx](https://chiligrafx.com/) platform account using your provided credentials.
 
 ## Step 2: Creating a New Integration
 
-Navigate to Environments and click the pencil icon, right of the Environment.
+Navigate to [Environments](https://chiligrafx.com/environments) and click the pencil icon, right of the Environment.
 
 ![screen](integration1.png)
 
@@ -44,6 +46,8 @@ Click on the Integration name, to see the details
 
 ![screenshot](integration5.png)
 
+Permissions are presented as API scopes, and will determine the access your integration has on the platform.
+
 ![screenshot](integration6.png)
 
 ### Step 4: Generating an Access Token
@@ -72,6 +76,6 @@ The access token is issued with an expiration time set to 10 hours. Ensure your 
 
 With the access token in hand, you can now include it in the headers or parameters of your API requests to the CHILI GraFx platform.
 
-Refer to the [platform API](/GraFx-Developers/) documentation to explore the available endpoints, request parameters, and response formats.
+Refer to the [Developer](/GraFx-Developers/) documentation to explore the available endpoints, request parameters, and response formats.
 
 Leverage the API calls to interact with the CHILI GraFx platform, perform operations such as creating, updating, or retrieving resources, and integrate its capabilities seamlessly into your custom solution.
