@@ -19,10 +19,10 @@ CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.onlin
 
 ### Fixes
 
-- Fix ‘update Template body’ action to avoid data corruption.
+- Fix ‘update Template body’ action to avoid data corruption
 - Fix ‘environment’ case sensitivity for My Project endpoints to avoid not-found errors
 - Fix attempting to add My Project based on corrupted Template (avoid creation corrupted My Project)
-- Update Environment API endpoints to restrict access for not activated users.
+- Update Environment API endpoints to restrict access for not activated users
 
 
 ## June 23, 2023 - CHILI GraFx
