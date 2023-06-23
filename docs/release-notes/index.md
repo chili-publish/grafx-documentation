@@ -1,5 +1,30 @@
 # Release notes
 
+!!! example "Experimental"
+	To give you early access to the latest features, we will release some features as "Experimental". These will be marked "**Experimental**" for each line.
+	This means that these features or endpoints are not yet final (syntax might change, response could be different, ...), so don't base your (production) code on these.
+
+
+## June 23, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+### Features
+
+**Experimental**
+
+- Introduce temporary POST api/experimental/environment/{environmentId}/output/pdf endpoint that provides ability to generate PDF output
+
+### Fixes
+
+- Fix ‘update Template body’ action to avoid data corruption.
+- Fix ‘environment’ case sensitivity for My Project endpoints to avoid not-found errors
+- Fix attempting to add My Project based on corrupted Template (avoid creation corrupted My Project)
+- Update Environment API endpoints to restrict access for not activated users.
+
+
 ## June 23, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
@@ -81,17 +106,9 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 - Fixed return code (from 500 to 400) for template collection creation when the name is duplicate.
 - Fixed adding new My Project with invalid Template (prevent storing broken My Project).
 
-#### Experimental
-
-
-!!! example "Experimental"
-	Below API calls are released in Experimental mode. 
-	This means that these endpoints are not yet final (syntax, response, ...).
-	
-**Connectors**
+**Connectors (Experimental)** 
 
 - Added Connector module
-
 
 
 ## June 16, 2023 - CHILI GraFx
