@@ -50,49 +50,19 @@ Click on the Integration name, to see the details
 
 The CHILI GraFx platform is now ready to provide an  access token. This token serves as your application's authorization for subsequent API calls.
 
-How to get an access token?
+How to get an access token? Below is an example of a curl command.
 
-``` JSON
-"request": {
-                "method": "POST",
-                "header": [
-                    {
-                        "key": "content-type",
-                        "value": "application/x-www-form-urlencoded"
-                    }
-                ],
-                "body": {
-                    "mode": "urlencoded",
-                    "urlencoded": [
-                        {
-                            "key": "audience",
-                            "value": "https://chiligrafx.com",
-                            "type": "text"
-                        },
-                        {
-                            "key": "grant_type",
-                            "value": "client_credentials",
-                            "type": "text"
-                        },
-                        {
-                            "key": "client_id",
-                            "value": "<CLIENT_ID FROM GRAFX INTEGRATION>",
-                            "type": "text"
-                        },
-                        {
-                            "key": "client_secret",
-                            "value": "<CLIENT_SECRET FROM GRAFX INTEGRATION>",
-                            "type": "text"
-                        }
-                    ]
-                },
-                "url": {
-                    "raw": "https://integration-login.chiligrafx.com/oauth/token",                  
-                }
-            },
+``` SH
+curl --location \
+--request POST 'https://integration-login.chiligrafx.com/oauth/token' \
+--header 'content-type: application/x-www-form-urlencoded' \
+--data-urlencode 'audience=https://chiligrafx.com' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'client_id=<CLIENT_ID>' \
+--data-urlencode 'client_secret=<CLIENT_SECRET>'
 ```
 
-This call is best done server-side, to not expose the client_id and certainly not the client_secret in the browser._
+This call is best done **server-side** to not expose the **client_id** and certainly not the **client_secret** in the browser.
 
 Extract the access token from the authentication response and securely store it within your application.
 
