@@ -1,5 +1,18 @@
 # Release notes
 
+## June 23, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Platform API 1.12](https://api.chiligrafx.com/swagger/index.html)
+
+### Improvements
+
+- Added status in user endpoints
+	- GET /api/v1/subscription/{id}/users
+	- GET/api/v1/subscription/{subscriptionId}/users/{userId}
+- Improved token generation for Integrations
+
 ## June 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
