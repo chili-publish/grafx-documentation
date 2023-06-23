@@ -12,7 +12,7 @@ CHILI GraFx can be used [out of the box](/CHILI-GraFx/concepts/template-manageme
 
 If you want to harness the full power of the CHILI GraFx engine, you can integrate it into your application.
 
-More info on [the concept](/CHILI-GraFx/concepts/integrations/).
+More information on [the concept](/CHILI-GraFx/concepts/integrations/).
 
 ## Create integrations
 
