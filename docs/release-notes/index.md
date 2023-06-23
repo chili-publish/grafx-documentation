@@ -29,24 +29,6 @@ CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.onlin
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
-CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
-
-### Features
-
-- Introduce temporary POST api/experimental/environment/{environmentId}/output/pdf endpoint that provides ability to generate PDF output
-
-### Fixes
-
-- Fix ‘update Template body’ action to avoid data corruption.
-- Fix ‘environment’ case sensitivity for My Project endpoints to avoid not-found errors
-- Fix attempting to add My Project based on corrupted Template (avoid creation corrupted My Project)
-- Update Environment API endpoints to restrict access for not activated users.
-
-
-## June 23, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
 CHILI GraFx [Platform API 1.12](https://api.chiligrafx.com/swagger/index.html)
 
 ### Improvements
