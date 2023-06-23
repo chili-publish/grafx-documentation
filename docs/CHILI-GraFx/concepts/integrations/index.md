@@ -1,0 +1,15 @@
+# CHILI GraFx Integrations
+
+
+Integration is the process of connecting web applications or services with the CHILI GraFx platform, enabling them to seamlessly collaborate and exchange data or functionality.
+
+Integrations expand the capabilities of CHILI GraFx beyond its core features by leveraging the resources and functionalities offered by other applications or services.
+
+Conversely, applications can also enhance their capabilities by integrating with CHILI GraFx, taking advantage of its features. 
+
+!!! Note "External Systems"
+	For example, GraFx Studio can be integrated into a DAM, PIM, or DXP platform, facilitating the enrichment of static assets with smart templates. 
+	
+To enable external applications to connect to CHILI GraFx, an Integration must be defined within the CHILI GraFx platform, which includes a name and credentials for authentication. 
+
+For instructions on setting up an Integration, refer to the documentation on how to establish the connection.
