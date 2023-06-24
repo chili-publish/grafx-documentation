@@ -16,8 +16,14 @@ By default, a frame is not animated. With these setting, you can set the behavio
 
 ![screenshot](animation-properties.png)
 
-## Variable properties
+## Automation properties
+
+![screenshot](automationpanel.png)
+
+### Variables
 
 By default, a frame does not have variables. You can set, unset and change the setting for a variable set to (in) the frame.
 
-![screenshot](variable-properties.png)
+### Actions
+
+A new document starts without [Actions](/GraFx-Studio/concepts/actions/).
