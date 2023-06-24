@@ -1,5 +1,9 @@
 # Actions JavaScript
 
+!!! example "Experimental"
+    Actions are released as Experimental.
+    This means that you can use them to test out future functionality, but the actual implementation is not final yet.
+
 Initially, Actions may seem daunting. Therefore, take a look at [this example](/GraFx-Studio/guides/actions/create/) first to get started.
 
 Once you start feeling comfortable, here is some more detailed information.

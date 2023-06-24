@@ -164,7 +164,7 @@ nav:
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
-        - 'How to: Design documents':
+        - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
@@ -173,7 +173,9 @@ nav:
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
             - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
+        - 'How to: Animate':
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
+        - 'How to: Automate':
             - 'Define variables':               'GraFx-Studio/guides/variables/define/index.md'
             - 'Organize variables':             'GraFx-Studio/guides/variables/organize/index.md'
             - 'Add variables to document':      'GraFx-Studio/guides/variables/assign/index.md'
