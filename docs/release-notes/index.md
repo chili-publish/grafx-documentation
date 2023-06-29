@@ -1,8 +1,9 @@
 # Release notes
 
 !!! example "Experimental"
-	To give you early access to the latest features, we will release some features as "Experimental". These will be marked "**Experimental**" for each line.
-	This means that these features or endpoints are not yet final (syntax might change, response could be different, ...), so don't base your (production) code on these.
+	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
+	
+	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
 
 ## June 28, 2023 - CHILI GraFx
