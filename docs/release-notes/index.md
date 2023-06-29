@@ -5,6 +5,16 @@
 	This means that these features or endpoints are not yet final (syntax might change, response could be different, ...), so don't base your (production) code on these.
 
 
+## June 28, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+### Improvements
+
+- Improved stability of output generation
+
 ## June 23, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
