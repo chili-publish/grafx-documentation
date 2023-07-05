@@ -10,6 +10,23 @@
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
+This release enables Template designers to create collections and manage templates in collections.
+
+End users can see collections, and create projects from templates in a collection.
+
+Fine grained access management will be added later.
+
+### Features
+
+- Template designers can now make [Collections](/CHILI-GraFx/concepts/template-management/#template-collection)
+- Template designers can [manage templates](/CHILI-GraFx/guides/manage-collections/) in collections
+- End-users can [create Projects](/CHILI-GraFx/concepts/template-management/#end-user) from Templates in a collection.
+
+
+## June 28, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
 CHILI GraFx [Environment API 1.1.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
 
 ### Improvements
