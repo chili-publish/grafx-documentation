@@ -23,7 +23,6 @@ Fine grained access management will be added later.
 - End-users can [create Projects](/CHILI-GraFx/concepts/template-management/#end-user) from Templates in a collection.
 - Subscription Admins can now [create Integrations](/CHILI-GraFx/guides/integrations/) to allow external application to connect to CHILI GraFx
 
-
 ## June 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
