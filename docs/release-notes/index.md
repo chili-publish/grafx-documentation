@@ -1,5 +1,71 @@
 # Release notes
 
+!!! example "Experimental"
+	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
+	
+	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
+
+
+## June 28, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+This release enables Template designers to create collections and manage templates in collections.
+
+End users can see collections, and create projects from templates in a collection.
+
+Fine grained access management will be added later.
+
+### Features
+
+- Template designers can now make [Collections](/CHILI-GraFx/concepts/template-management/#template-collection)
+- Template designers can [manage templates](/CHILI-GraFx/guides/manage-collections/) in collections
+- End-users can [create Projects](/CHILI-GraFx/concepts/template-management/#end-user) from Templates in a collection.
+
+
+## June 28, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+### Improvements
+
+- Improved stability of output generation
+
+## June 23, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+### Features
+
+**Experimental**
+
+- Introduce temporary POST api/experimental/environment/{environmentId}/output/pdf endpoint that provides ability to generate PDF output
+
+### Fixes
+
+- Fix ‘update Template body’ action to avoid data corruption.
+- Fix ‘environment’ case sensitivity for My Project endpoints to avoid not-found errors
+- Fix attempting to add My Project based on corrupted Template (avoid creation corrupted My Project)
+- Update Environment API endpoints to restrict access for not activated users.
+
+
+## June 23, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Platform API 1.12](https://api.chiligrafx.com/swagger/index.html)
+
+### Improvements
+
+- Added status in user endpoints
+	- GET /api/v1/subscription/{id}/users
+	- GET/api/v1/subscription/{subscriptionId}/users/{userId}
+- Improved token generation for Integrations
+
 ## June 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
@@ -50,17 +116,9 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 - Fixed return code (from 500 to 400) for template collection creation when the name is duplicate.
 - Fixed adding new My Project with invalid Template (prevent storing broken My Project).
 
-#### Experimental
-
-
-!!! example "Experimental"
-	Below API calls are released in Experimental mode. 
-	This means that these endpoints are not yet final (syntax, response, ...).
-	
-**Connectors**
+**Connectors (Experimental)** 
 
 - Added Connector module
-
 
 
 ## June 16, 2023 - CHILI GraFx
