@@ -21,7 +21,7 @@ Fine grained access management will be added later.
 - Template designers can now make [Collections](/CHILI-GraFx/concepts/template-management/#template-collection)
 - Template designers can [manage templates](/CHILI-GraFx/guides/manage-collections/) in collections
 - End-users can [create Projects](/CHILI-GraFx/concepts/template-management/#end-user) from Templates in a collection.
-
+- Subscription Admins can now [create Integrations](/CHILI-GraFx/guides/integrations/) to allow external application to connect to CHILI GraFx
 
 ## June 28, 2023 - CHILI GraFx
 
@@ -337,7 +337,7 @@ Also a new version has been pushed, we're now at version 0.121.0
 
 ![2023-04-14_16-26-11](https://user-images.githubusercontent.com/122599725/233287606-4ef0e434-7af6-4b11-b148-a4abe1c6cbc7.gif)
 
-Read more about [User Management](https://docs.chiligrafx.com/CHILI_GraFx/user_management_intro/).
+Read more about [User Management](/CHILI-GraFx/users/intro/).
 
 ## Apr 14, 2023 - GraFx Studio
 
