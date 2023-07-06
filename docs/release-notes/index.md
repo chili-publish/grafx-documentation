@@ -5,10 +5,11 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
-
 ## June 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.7](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
 
 This release enables Template designers to create collections and manage templates in collections.
 
@@ -22,6 +23,11 @@ Fine grained access management will be added later.
 - Template designers can [manage templates](/CHILI-GraFx/guides/manage-collections/) in collections
 - End-users can [create Projects](/CHILI-GraFx/concepts/template-management/#end-user) from Templates in a collection.
 - Subscription Admins can now [create Integrations](/CHILI-GraFx/guides/integrations/) to allow external application to connect to CHILI GraFx
+
+### Improvements
+
+- Prevent the creation of folders with leading or trailing spaces in the names
+
 
 ## June 28, 2023 - CHILI GraFx
 
