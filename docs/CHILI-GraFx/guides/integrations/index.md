@@ -62,6 +62,8 @@ Permissions are presented as API scopes, and will determine the access your inte
 
 Now we can request an access token using our `Client ID` and `Client Secret`. This token will serve as your application's authorization for subsequent API calls.
 
+![grafx token generation workflow](grafx-token-workflow.svg)
+
 To get an access token we simply make a POST request to our auth server located at `https://integration-login.chiligrafx.com/oauth/token` and provide a couple fields. If all goes as intended, you will receive an access_token in your response.
 
 Here are some examples for making this request
