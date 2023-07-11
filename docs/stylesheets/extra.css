@@ -41,8 +41,8 @@ img[alt=screenshot-fullwidth] {
 p img[alt=svg_icon] {
 	width: 100px;
 }
-p img[alt=rn_icon] {
-	width: 100px;
+img[alt=rn_icon] {
+	width: 75px;
 }
 .md-header {
 	background-color: #F0F0F0;
@@ -94,4 +94,16 @@ h3 {
 .md-typeset h3 {
 	font-weight: bold;
 	font-family: Satoshi, Ubuntu, sans-serif;
+}
+
+.md-typeset table:not([class]) th {
+    vertical-align: middle;
+}
+
+.md-typeset table:not([class]) {
+    border: 0rem solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) td {
+    border-top: 0rem solid var(--md-typeset-table-color);
 }
