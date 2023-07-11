@@ -1,6 +1,6 @@
 # Integrate CHILI GraFx apps
 
-To communitcate with GraFx server side, please use these two APIs. You can learn more about the role of each API below.
+To communicate with GraFx, please use these two APIs. You can learn more about the role of each API below.
 
 - [Platform API](https://api.chiligrafx.com/swagger/index.html)
 - [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
@@ -9,11 +9,16 @@ Client side
 
 - [GraFx Studio SDK](https://chili-publish.github.io/studio-sdk/index.html)
 
+**You can access the specific interactive Swagger for your environment API via the following format**
+
+Production: `<environment name>.chili-publish.online/grafx/swagger/index.html`
+
+Sandbox: `<environment name>.chili-publish-sandbox.online/grafx/swagger/index.html`
+
 ## Platform API
+The GraFx Platform API allows you to manage GraFx Platform resources.
 
-The **GraFx Platform API** allows you to manage GraFx Platform resources.
-
-Some exmaple use cases are:
+Some example use cases are:
 
 - User management
 - Environment creation
@@ -54,18 +59,20 @@ Error codes
 | 500		     	| Server dead   |
 | 404		     	| Function not found   |
 
+You can find out more about generating credentials in our [Integration Guide](/CHILI-GraFx/guides/integrations/)
+
 # Overview per application
 
 ## CHILI GraFx
 
-- [Getting Started](/CHILI-GraFx/integration/getting_started/)
+- [Getting Started](/CHILI-GraFx/integration/)
 - [Platform API Swagger](https://api.chiligrafx.com/swagger/index.html)
 
 ## GraFx Studio
 
 - [SDK Getting Started](/GraFx-Studio/integration/getting-started/)
 - [SDK Reference](https://chili-publish.github.io/studio-sdk/index.html)
-- [Environment API Swagger](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
 
 ## GraFx Publisher
 
