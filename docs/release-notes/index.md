@@ -5,6 +5,14 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
+## June 11, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Improvements
+
+- Editor: Removed the use of the d= parameter in URL as it’s no longer supported in Chrome
+- Editor: Fixed issue with assets without point of interest not showing on template when Smart Fit is applied
 
 ## June 28, 2023 - CHILI GraFx
 
