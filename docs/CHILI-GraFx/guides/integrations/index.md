@@ -68,7 +68,8 @@ To get an access token we simply make a POST request to our auth server located 
 
 Here are some examples for making this request
 
-=== "cURL"
+
+<!-- === "cURL"
     ``` SH
     curl --location \
     --request POST 'https://integration-login.chiligrafx.com/oauth/token' \
@@ -78,6 +79,7 @@ Here are some examples for making this request
     --data-urlencode 'client_id=<CLIENT_ID>' \
     --data-urlencode 'client_secret=<CLIENT_SECRET>'
     ```
+-->
 === "Python"
     ```python
     import requests
