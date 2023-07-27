@@ -29,6 +29,7 @@ plugins:
   - awesome-pages
   - tags:
       tags_file: tags.md
+  - table-reader
 #  - git-revision-date-localized:
 #      fallback_to_build_date: true
 
@@ -100,6 +101,9 @@ extra:
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI-GraFx/index.md'
+        - 'Applications':               
+            - 'Overview':                       'CHILI-GraFx/applications/overview/index.md'
+            - 'Comparison':                     'CHILI-GraFx/applications/comparison/index.md'
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
             - 'Template Management':            'CHILI-GraFx/concepts/template-management/index.md'
