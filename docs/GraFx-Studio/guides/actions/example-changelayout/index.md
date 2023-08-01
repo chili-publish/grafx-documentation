@@ -14,6 +14,8 @@ This variable is a List variable, containing the names of the possible output si
 
 The action will execute the change, based on the change of the List variable.
 
+![Movie](changelayout.gif)
+
 ### The variable
 
 A list variable "Ad size" is defined.
