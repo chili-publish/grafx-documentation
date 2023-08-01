@@ -5,6 +5,14 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
+## Aug 1, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+- Fixed issue with old preview being applied when copying document immediately after changes were made to original document 
+- Improved availability of [Publisher interface library](https://github.com/chili-publish/publisher-interface)
+- Removed the use of the d= parameter in URL as it’s no longer supported in Chrome
+
 ## June 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
