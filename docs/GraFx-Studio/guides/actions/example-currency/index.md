@@ -16,7 +16,7 @@ The currency symbol will change with the selection.
 
 ### The variable
 
-A text List variable "Discount" is defined.
+A text List variable "Currency" is defined.
 
 ![screenshot](variable.png)
 
@@ -54,7 +54,7 @@ The part starting with double "//" are comments, to give info to your future sel
 
 A JavaScript list variable "currency" is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
 
-A series of if-then-else statements runs through the possible options, and sets the value of the Variable **displayCurrency" to the relevant currency symbol.
+A series of if-then-else statements runs through the possible options, and sets the value of the Variable **displayCurrency** to the relevant currency symbol.
 
 ### The result
 
