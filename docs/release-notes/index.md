@@ -17,7 +17,6 @@
 - Editor: Fixed issue with assets without point of interest not showing on template when Smart Fit is applied
 - System: Fixed performance degradation of copy & move operations
 
-
 ## June 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
