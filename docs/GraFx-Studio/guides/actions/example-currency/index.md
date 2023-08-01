@@ -16,7 +16,9 @@ The currency symbol will change with the selection.
 
 ### The variable
 
-A text List variable "Discount" is defined.
+A list variable "Currency" is defined.
+
+The items in the list contain the currency options.
 
 ![screenshot](variable.png)
 
@@ -52,10 +54,10 @@ The script (action) executed upon the trigger
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript list variable "currency" is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
+A JavaScript variable **currency** is defined to hold the value of the "Currency" variable in the template, converted to a string (series of characters).
 
-A series of if-then-else statements runs through the possible options, and sets the value of the Variable **displayCurrency" to the relevant currency symbol.
+A series of if-then-else statements run through the possible options, and set the value of the Variable **displayCurrency** to the relevant currency symbol.
 
 ### The result
 
-When the end-user changes the value of the variable Currency, the currency symbol used in the Smart Tempalte is updated.
+When the end-user changes the value of the variable Currency, the currency symbol used in the Smart Template is updated.

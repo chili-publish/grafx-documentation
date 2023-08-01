@@ -18,7 +18,7 @@ The action will execute the change, based on the presence of a value in that var
 
 ### The variable
 
-A text variable "Ad size" is defined.
+A text variable "Old price" is defined.
 
 ![screenshot](variable.png)
 
@@ -59,14 +59,14 @@ The script (action) executed upon the trigger
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript variable "oldPriceVariable" is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
+A JavaScript variable **oldPriceVariable** is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
 
-Then an if-statement checks if the JS variable "oldPriceVariable" contains a value.
+Then an if-statement checks if the JS variable **oldPriceVariable** contains a value.
 
-If this is NOT the case, we set the "include" property of the frame to "fase", basically hiding the frame from sight and output.
+If this is NOT the case, we set the "include" property of the frame to "false", basically hiding the frame from sight and output.
 
 If there is content, we enable the inclusion of the frame.
 
 ### The result
 
-When the end-user changes the value of the variable, the frame will be hidden or shown, depending on the value presence.
+When the end-user changes the value of the variable, the frame will be hidden or shown, depending on the value's presence.
