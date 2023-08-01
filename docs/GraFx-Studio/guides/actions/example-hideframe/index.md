@@ -18,7 +18,7 @@ The action will execute the change, based on the presence of a value in that var
 
 ### The variable
 
-A text variable "Ad size" is defined.
+A text variable "Old price" is defined.
 
 ![screenshot](variable.png)
 
