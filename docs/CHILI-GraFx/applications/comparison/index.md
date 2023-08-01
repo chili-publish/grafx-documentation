@@ -15,6 +15,6 @@ If your use case is print only, then GraFx Publisher is the choice for your smar
 
 If you aim to have animated or static digital output only, then GraFx Studio is the place for you to start.
 
-When you want to have both channels combined, please have a look at the feature comparison below. This will help you decide where to start, depending on your needs.
+When you want to have both channels combined, please have a look at the feature comparison below. This will help you decide where to start.
 
 {{ read_excel('./features.xlsx', engine='openpyxl') }}
