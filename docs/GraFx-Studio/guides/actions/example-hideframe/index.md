@@ -1,4 +1,4 @@
-# Actions: How or hide a frame
+# Actions: How to hide a frame
 
 !!! example "Experimental"
     Actions are released as Experimental.
