@@ -14,7 +14,7 @@ A list of all variables that are available in the document shows
 ## Options for a variable
 
 Each variable has a pencil icon, and three dots.
-The pancil icon will bring up the "Settings" panel.
+The pencil icon will bring up the "Settings" panel.
 
 The three dots will provide you below options:
 
@@ -46,7 +46,7 @@ This location does not have any effect on the working of your document. It will 
 
 ### Move to Bottom
 
-Will moves the variable to the bottom of the list
+Will move the variable to the bottom of the list
 
 You can also drag the variable in the list to where you want to position it.
 
@@ -92,7 +92,7 @@ To indicate that a variable is required an asterisk ( * ) is shown next to the v
 
 ### Visibility conditions
 
-When the "Visible" setting is enabled (is enable by default), there is an option to add one or more visibility conditions. Only if ALL conditions are met the variable is visible for the end-user.
+When the "Visible" setting is enabled (is enabled by default), there is an option to add one or more visibility conditions. Only if ALL conditions are met the variable is visible for the end-user.
 
 The visibility conditions:
 

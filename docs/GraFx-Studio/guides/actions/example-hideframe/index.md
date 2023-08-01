@@ -33,8 +33,8 @@ Step 1 is to define the trigger, that will initiate the action.
 The trigger is initiated when
 
 - the "Variable value changed", specified by the "Old price" variable, 
-- or when the Document is loaded (to be sure we check when opening the document)
-- or when a layout is changed.
+- or when the document is loaded (to be sure we check when opening the document)
+- or when a layout is changed
 
 ![screenshot](action-triggers.png)
 

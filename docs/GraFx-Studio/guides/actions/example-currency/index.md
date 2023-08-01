@@ -31,8 +31,8 @@ First step is to define the trigger, that will initiate the action.
 The trigger is initiated when
 
 - the "Variable value changed", specified by the "Currency" variable, 
-- or when the Document is loaded (to be sure we check when opening the document)
-- or when a layout is changed.
+- or when the document is loaded (to be sure we check when opening the document)
+- or when a layout is changed
 
 ![screenshot](trigger.png)
 
@@ -52,7 +52,7 @@ The script (action) executed upon the trigger
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript list variable "currencty" is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
+A JavaScript list variable "currency" is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
 
 A series of if-then-else statements runs through the possible options, and sets the value of the Variable **displayCurrency" to the relevant currency symbol.
 
