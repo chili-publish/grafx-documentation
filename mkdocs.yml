@@ -182,6 +182,7 @@ nav:
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
             - 'Example: Change Layout':         'GraFx-Studio/guides/actions/example-changelayout/index.md'
+            - 'Example: Hide frame':            'GraFx-Studio/guides/actions/example-hideframe/index.md'
         - 'How to: Output':
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
