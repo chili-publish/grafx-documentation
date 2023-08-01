@@ -63,10 +63,10 @@ A JavaScript variable **oldPriceVariable** is defined to hold the value of the V
 
 Then an if-statement checks if the JS variable **oldPriceVariable** contains a value.
 
-If this is NOT the case, we set the "include" property of the frame to "fase", basically hiding the frame from sight and output.
+If this is NOT the case, we set the "include" property of the frame to "false", basically hiding the frame from sight and output.
 
 If there is content, we enable the inclusion of the frame.
 
 ### The result
 
-When the end-user changes the value of the variable, the frame will be hidden or shown, depending on the value presence.
+When the end-user changes the value of the variable, the frame will be hidden or shown, depending on the value's presence.
