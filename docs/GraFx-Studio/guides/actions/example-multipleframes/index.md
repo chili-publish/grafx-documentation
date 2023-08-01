@@ -64,11 +64,11 @@ The script (action) executed upon the trigger
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript variable "discount" is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
+A JavaScript variable **discount** is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
 
-A JavaScript variable "discountVisible" is defined to hold the value of the discount, and when empty "No discount".
+A JavaScript variable **discountVisible** is defined to hold the value of the discount, and when empty "No discount".
 
-For the variable "promoVisible":
+For the variable **promoVisible**:
 
 The code uses a conditional check to determine if the value of the variable discount is exactly equal to '-50%'. If it is, the variable promoVisible will be set to true; otherwise, it will be set to false. In simpler terms, it's checking if there is a discount of exactly 50% and storing the result in promoVisible.
 

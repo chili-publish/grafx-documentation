@@ -49,7 +49,7 @@ The script (action) executed upon the trigger
 	studio.layouts.select(layoutName);
 ```
 
-A constant is defined "layoutName" as the lowercase value of the selected item in the list variable.
+A constant is defined **layoutName** as the lowercase value of the selected item in the list variable.
 
 This [constant](https://www.w3schools.com/js/js_const.asp) (value of) is used to select the active layout in GraFx Studio
 
