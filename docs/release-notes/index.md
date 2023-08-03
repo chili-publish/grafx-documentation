@@ -5,6 +5,16 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
+## Aug 3, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.8](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+- Introduced DELETE /environment/{envId}/template-collections/{collectionId}/cover endpoint that provides the ability to remove an image cover of a Template Collection
+- Fixed: When adding a dot in the middle of a Template's name resulted in cutting the part of the name off 
+- Fixed: When adding a file with extension in uppercase as a Template Collection cover caused 500 error
+
 ## June 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
