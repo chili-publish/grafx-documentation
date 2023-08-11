@@ -7,8 +7,9 @@
 
 ## Aug 4, 2023 - GraFx Studio
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 Version 0.136.1, using Studio SDK 0.136.0
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
 ### Features
 
