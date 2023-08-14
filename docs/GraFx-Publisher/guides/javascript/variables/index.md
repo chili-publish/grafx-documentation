@@ -28,6 +28,29 @@ This will work to set the value of most variables in Publisher. Variables such a
     editorObject.SetProperty(`document.variables[${variableNameOrID}]`, "value", "New Value");
     ```
 
+### Get array of all variables in the document
+=== "PublisherInterface"
+    ```javascript
+    const getVarNames = async () => {
+      let varNames = [];
+      const varCount = await publisher.getObject("document.variables.count");
+      for (let i=0; i < varCount; i++) {
+        varNames.push((await publisher.getObject(`document.variables[${i}]`)));
+      }
+      return varNames;
+    }
+    ```
+=== "editorObject"
+    ```javascript
+    const getVarNames = () => {
+      let varNames = [];
+      const varCount = editorObject.GetObject("document.variables.count");
+      for (let i=0; i < varCount; i++) {
+        varNames.push(editorObject.GetObject(`document.variables[${i}]`));
+      }
+      return varNames;
+    }
+    ```
 
 ### Create a new variable
 
@@ -53,7 +76,6 @@ This function will create a new variable within the document and return the ID o
     **/
     function createVariable(name, type) {
       const newVarID = editorObject.ExecuteFunction("document.variables", "Add").id;
-      editorObject.SetProperty(`document.variables[${newVarID}]`, "name", name);
       editorObject.SetProperty(`document.variables[${newVarID}]`, "dataType", type);
       return newVarID;
     }

@@ -1,6 +1,7 @@
 # Intro to GraFx Publisher JavaScript
 
-Our new JavaScript documentation is currently under heavy development. We hope that you understand this transitory phase and appreciate all feedback using the smiley faces provided at the bottom of each page.
+!!! Warning
+    Our new JavaScript documentation is currently under heavy development. We hope that you understand this transitory phase and appreciate all feedback using the smiley faces provided at the bottom of each page.
 
 ## PublisherInterface vs. editorObject
 There are currently two methods of interacting with GraFx Publisher via JavaScript. PublisherInterface and the original method of the `editorObject` JavaScript object within the editor. Let's discuss the differences between them and how they work. In the Publisher JavaScript documentation we will provide code snippets for both methods. A simple rule of thumb to determine which variant you need is this:

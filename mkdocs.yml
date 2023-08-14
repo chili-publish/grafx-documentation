@@ -204,12 +204,16 @@ nav:
           - 'Intro':                            'GraFx-Publisher/guides/javascript/index.md'
           - 'Examples':
             - 'Document':                       'GraFx-Publisher/guides/javascript/document/index.md'
-            - 'Frames':                         'GraFx-Publisher/guides/javascript/frames/index.md'
+            - 'Frames':
+              - 'General':                      'GraFx-Publisher/guides/javascript/frames/index.md'
+              - 'Frame Types':                  'GraFx-Publisher/guides/javascript/frames/types/index.md'
+              - 'Images':                       'GraFx-Publisher/guides/javascript/frames/image/index.md'
             - 'Pages':                          'GraFx-Publisher/guides/javascript/pages/index.md'
             - 'Colors':                         'GraFx-Publisher/guides/javascript/colors/index.md'
             - 'Variables':
               - 'General':                      'GraFx-Publisher/guides/javascript/variables/index.md'
               - 'List':                         'GraFx-Publisher/guides/javascript/variables/list/index.md'
+              - 'Image':                        'GraFx-Publisher/guides/javascript/variables/image/index.md'
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
