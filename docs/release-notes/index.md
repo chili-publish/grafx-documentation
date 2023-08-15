@@ -5,6 +5,67 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
+## Aug 4, 2023 - GraFx Studio
+
+Version 0.136.1, using Studio [SDK 0.136.0](https://github.com/chili-publish/studio-sdk/releases/tag/0.136.0)
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+#### Variables
+List items inside ‘Single Select List’ variable can be reordered. Updated order also will be shown in a drop-down inside variable settings and in Studio UI
+
+![Reorder](https://github.com/chili-publish/grafx-documentation/assets/122599725/f47de351-d8f0-4780-93de-8faf17fb55d9)
+
+New variable type ‘Boolean’ was introduced with two settings –
+
+- Default state’ which allows to set the default value
+- Visible’ settings which controls visibility of variable in Studio UI
+
+![Boolean](https://github.com/chili-publish/grafx-documentation/assets/122599725/7a3110bc-e979-4b55-8173-8a03d2bd59ca)
+
+#### Output
+PDF output is present in the list of available output formats. This is an experimental feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
+
+![image-20230809-104515](https://github.com/chili-publish/grafx-documentation/assets/122599725/269dae35-7e71-462e-ae9d-0033c6ad1efe)
+
+
+### Fixes
+
+- Fixed issue where ‘Rename’ option was available for several selected variables at once in the ‘Variable List’
+- Fixed issue where the ‘Delete’ option only removed one variable when multiple were selected. Right now all selected variables will be removed from the ‘Variable List’
+- Fixed issue where an executed action is added to undo stack when switching between text variable input fields
+- Fixed issues where playing the animation, made the timeline player move in blocks instead of moving smoothly over the timeline.
+- Fixed issue where the finished animation didn’t change the pause button back to play.
+
+## Aug 3, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+New action item ‘Collection settings’ was added to collections. This panel can be opened in two ways:
+- Through the "Three dots" on the collection card and clicking "Collection settings"
+- Inside a collection by clicking on the "Three dots" in the top right corner.
+![image-20230809-095332](https://github.com/chili-publish/grafx-documentation/assets/122599725/377e0601-109c-4587-a92f-184ddb2aa803)
+
+It opens a panel with ‘Cover image’ option which allows to upload image that is shown on the collection card. For the uploaded image PNG, JPG and JPEG formats can be used and we don’t have restrictions for a file size.
+![image-20230809-095402](https://github.com/chili-publish/grafx-documentation/assets/122599725/f013110d-140e-42c8-8bb1-f5f377c70fbb)
+
+### Fixes
+- Fixed issue where a template could be opened as a project from ‘Collection’ tab. Now a template can be opened only from the ‘My projects’ tab
+
+## Aug 3, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.8](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+- Introduced DELETE /environment/{envId}/template-collections/{collectionId}/cover endpoint that provides the ability to remove an image cover of a Template Collection
+- Fixed: When adding a dot in the middle of a Template's name resulted in cutting the part of the name off 
+- Fixed: When adding a file with extension in uppercase as a Template Collection cover caused 500 error
+
 ## June 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
