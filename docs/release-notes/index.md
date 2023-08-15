@@ -4,6 +4,17 @@
 	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
+	
+## Aug 15, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+- Backoffice: Fixed issue with old preview being applied when copying document immediately after changes were made to original document 
+- Editor: Improved availability of [Publisher interface library](https://github.com/chili-publish/publisher-interface)
+- Editor: Removed the use of the d= parameter in URL as it’s no longer supported in Chrome. (see [this Article](https://mysupport.chili-publish.com/hc/en-us/articles/360019722600-Dealing-With-CORS-Using-Custom-Subdomains) on CORS for more background)
+- Editor: Fixed issue with assets without point of interest not showing on template when Smart Fit is applied
+- System: Fixed performance degradation of copy & move operations
+- Output: Added error detail for unsupported png files
 
 ## Aug 4, 2023 - GraFx Studio
 
