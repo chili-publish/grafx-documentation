@@ -16,6 +16,7 @@
 - Editor: Removed the use of the d= parameter in URL as it’s no longer supported in Chrome. (see [this Article](https://mysupport.chili-publish.com/hc/en-us/articles/360019722600-Dealing-With-CORS-Using-Custom-Subdomains) on CORS for more background)
 - Editor: Fixed issue with assets without point of interest not showing on template when Smart Fit is applied
 - System: Fixed performance degradation of copy & move operations
+- Output: Added error detail for unsupported png files
 
 ## June 28, 2023 - CHILI GraFx
 
