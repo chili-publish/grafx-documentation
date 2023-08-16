@@ -5,6 +5,18 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 	
+## Aug 16, 2023 - CHILI GraFx 
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Features
+
+- De-activate a user so the user can no longer access or use any of the resources within that subscription
+- Re-activate a user that was deactivated so the user has exactly the same priviliges he had before being de-activated
+- Delete a user so the user loses all his privileges within that subscription & the user isn't visible in the list of users anymore
+
+![deactivate user](https://github.com/chili-publish/grafx-documentation/assets/122599725/b0b9bb66-1f25-4c70-bd95-e4e0c7e94f74)
+
 ## Aug 15, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
