@@ -5,6 +5,18 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 	
+## Aug 16, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
+### Improvements
+
+- GET /subscription/id and /subscription/id/renders were migrated to use GUIDs
+Now all our end points use GUIDs for identifying entities
+- GET subscription/subscriptionId/users/userId has been deprecated to improve consistency in naming: GET subscription**s**/subscriptionId/users/userId is the new end point
+
 ## Aug 15, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
