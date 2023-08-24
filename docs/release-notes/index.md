@@ -5,6 +5,20 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 	
+## Aug 24, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.1.9](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+- Introduce GET /environments/{environmentId}/font-styles/{styleId}
+<br/>endpoint that provides font style information
+- Introduce DELETE /environments/{environmentId}/font-styles?ids={comma-separated ids}
+<br/>endpoint that deletes font styles by id.
+- Introduce DELETE /environments/{environmentId}/font-families?ids={comma-separated ids} <br/>endpoint that deletes font families by id.
+- Extend GET /environments/{environmentId}/font-familes
+<br/>endpoint with ‘search’ argument that provides ability to search by font family name
+
 ## Aug 16, 2023 - CHILI GraFx 
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
