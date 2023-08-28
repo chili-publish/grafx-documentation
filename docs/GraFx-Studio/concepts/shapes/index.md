@@ -6,7 +6,7 @@ Select (R) for rectangle
 
 Select (E) for ellipse
 
-Select (Y) for polygon (don't ask Y)
+Select (Y) for polygon (don't ask whY)
 
 ![Properties](shapes-ui.png)
 
