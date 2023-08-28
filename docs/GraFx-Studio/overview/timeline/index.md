@@ -2,7 +2,7 @@
 
 ![Properties](timeline.png)
 
-!!! Alert
-	While the panel is called "Layers" it show the frames.
-	Layers is coming soon, and will group the frames onto several layers.
-	For now, all visible frames are groups in 1 (invisible) layer.
+Please note:
+	The Layers panel actually displays frames.
+	The Layers feature is coming soon, and will let you group frames across several layers.
+	Until then, all visible frames are located on a single (invisible) layer.
