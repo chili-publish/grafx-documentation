@@ -82,9 +82,3 @@ A Client Success colleague can assist you in the setup process.
 ## Federated SSO via the SAML protocol
 
 [Details for the SAML protocol](saml/)
-
-## Federated SSO via other protocols 
-
-Please contact our CS team in case you need to use another federation protocol to enable Federated SSO with your organization.
-
-**Would make this very specific** and not leave it open

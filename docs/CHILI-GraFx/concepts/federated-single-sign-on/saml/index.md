@@ -17,3 +17,7 @@ This document lists the info for your SAML Identity Providers in the CGX Platfor
 - Authentication request signing certificate: Provided upon request. 
 - SP ID: Provided upon request. 
 - The identity attribute must be the user’s corporate email address 
+
+## Get in touch!
+
+If you want to setup Federated Single sign on, [click here](/CHILI-GraFx/guides/setup-fsso/)
