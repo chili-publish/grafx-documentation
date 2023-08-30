@@ -5,6 +5,13 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 	
+## Aug 30, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+- User management in GraFx Publisher has changed to API User management. You are now able to manage GraFx Publisher [users in CHILI GraFx platform](/CHILI-GraFx/users/creation/). No change to existing (API) users in GraFx Publisher. We encourage to move non API users to [CHILI GraFx](/CHILI-GraFx/users/creation/).
+- Fixed an issue in the DEL ‘/rest-api/v1.2/resources/Documents/folders’ endpoint to prevent data loss.
+
 ## Aug 24, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
