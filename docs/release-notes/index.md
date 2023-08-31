@@ -9,7 +9,7 @@
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 
-- User management in GraFx Publisher has changed to API User management. You are now able to manage GraFx Publisher [users in CHILI GraFx platform](/CHILI-GraFx/users/creation/). No change to existing (API) users in GraFx Publisher. We encourage to move non API users to [CHILI GraFx](/CHILI-GraFx/users/creation/).
+- User management in GraFx Publisher has changed to API User management. You are now able to manage GraFx Publisher [users in CHILI GraFx platform](/CHILI-GraFx/users/creation/). Existing users in GraFx Publisher are unaffected, but we advise migrating these users to [CHILI GraFx](/CHILI-GraFx/users/creation/).
 - Fixed an issue in the DEL ‘/rest-api/v1.2/resources/Documents/folders’ endpoint to prevent data loss.
 
 ## Aug 24, 2023 - CHILI GraFx
