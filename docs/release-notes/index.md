@@ -5,6 +5,33 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 	
+## Aug 30, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+With this release, we introduced improvements to the GraFx Studio Smart Template editor
+
+- You're now able to reorder actions
+- You're now able to save action script even if it contains warnings in the script
+- Add percentage sign behind line height value
+- Rename action trigger to "Selected layout changed" 
+- Show notification when closing or reloading GraFx Studio with unsaved changes
+
+![Reorder Actions](reorder-actions.gif)
+
+When you're in the middle of writing an action, and you need to save to be sure and look up something, you can now save the script, even if the editor indicates you have some (syntax or logical) errors.
+
+![Save on error](save-on-error.png)
+
+
+
+We also improved the GraFx Studio UI, the interface for the self-service use-case
+
+- Interface will zoom to page when another layout is selected by action
+- Disable all shortcuts except hand-cursor
+- Show indicator when download is in progress
+
+
 ## Aug 24, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
