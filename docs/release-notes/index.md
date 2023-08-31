@@ -11,25 +11,31 @@
 
 With this release, we introduced improvements to the GraFx Studio Smart Template editor
 
-- You're now able to reorder actions
-- You're now able to save action script even if it contains warnings in the script
-- Add percentage sign behind line height value
-- Rename action trigger to "Selected layout changed" 
-- Show notification when closing or reloading GraFx Studio with unsaved changes
+- You're now able to reorder actions (this impacts the order of execution when multiple actions have the same trigger) 
 
 ![Reorder Actions](reorder-actions.gif)
 
-When you're in the middle of writing an action, and you need to save to be sure and look up something, you can now save the script, even if the editor indicates you have some (syntax or logical) errors.
+- Action script is saved even if it contains errors (indicated with a red squiggly line). This is useful when you're in the middle of writing an action and you need to close the action interface to check something
 
 ![Save on error](save-on-error.png)
 
-
+- Visual improvements to the action interface
+- Rename action trigger to "Selected layout changed"
+- Force action names to be unique
+- Show notification when closing or reloading GraFx Studio with unsaved changes
+- When inserting an image variable in an image frame that contains an image, this image is automatically set as default state for that image variable
+- Dialog to edit a character/paragraph style is not hidden behind the animation timeline anymore
+- Fixed issue with error tooltips
+- Add percentage sign behind line height value
+- Selecting another layout exits text editing mode
+- It is no longer possible to use a URL for an image variable (an asset ID must be used)
 
 We also improved the GraFx Studio UI, the interface for the self-service use-case
 
-- Interface will zoom to page when another layout is selected by action
-- Disable all shortcuts except hand-cursor
-- Show indicator when download is in progress
+- Automatically zoom to page when another layout is selected by an action
+- Shortcuts to select another tool are disabled to prevent end-users from accidentally going into inline edit mode
+- Shortcut to open the debug panel is disabled
+- Show indicator and block new downloads while download is in progress
 
 
 ## Aug 24, 2023 - CHILI GraFx
