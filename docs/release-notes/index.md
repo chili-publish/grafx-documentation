@@ -38,6 +38,13 @@ We also improved the GraFx Studio UI, the interface for the self-service use-cas
 - Show indicator and block new downloads while download is in progress
 
 
+## Aug 30, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+- User management in GraFx Publisher has changed to API User management. You are now able to manage GraFx Publisher [users in CHILI GraFx platform](/CHILI-GraFx/users/creation/). Existing users in GraFx Publisher are unaffected, but we advise migrating these users to [CHILI GraFx](/CHILI-GraFx/users/creation/).
+- Fixed an issue in the DEL ‘/rest-api/v1.2/resources/Documents/folders’ endpoint to prevent data loss.
+
 ## Aug 24, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
