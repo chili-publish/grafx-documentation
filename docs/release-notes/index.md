@@ -28,7 +28,7 @@ With this release, we introduced improvements to the GraFx Studio Smart Template
 - Fixed issue with error tooltips
 - Add percentage sign behind line height value
 - Selecting another layout exits text editing mode
-- It is no longer possible to use a URL for an image variable (an asset ID must be used)
+- It's no longer possible to use an URL for an image variable (an asset ID must be used)
 
 We also improved the GraFx Studio UI, the interface for the self-service use-case
 
