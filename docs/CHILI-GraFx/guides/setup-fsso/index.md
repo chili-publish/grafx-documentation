@@ -8,7 +8,7 @@ Consult the supported protocols, and initiate a support ticket with the Client S
 
 ## Test SSO connection
 
-Once the Chili Publish team configures the connection, regardless of the preferred protocol selected, your users will be able to authenticate using your company's identities.
+Once the CHILI Publish team configures the connection, regardless of the preferred protocol selected, your users will be able to authenticate using your company's identities.
 
 To verify this, please follow this process:
 
