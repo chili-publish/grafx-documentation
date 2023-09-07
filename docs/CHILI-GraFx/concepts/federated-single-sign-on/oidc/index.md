@@ -7,6 +7,7 @@ This document lists the info for your OIDC Identity Providers in the CGX Platfor
 - Issuer URL 
 - Client ID 
 - Client Secret
+- Domain of the email addresses of your corporate users
 
 ## We will provide you
 
