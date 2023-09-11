@@ -76,8 +76,12 @@ CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 ### Improvements
 
 - GET /subscription/id and /subscription/id/renders were migrated to use GUIDs
-Now all our end points use GUIDs for identifying entities
-- GET subscription/subscriptionId/users/userId has been deprecated to improve consistency in naming: GET subscription**s**/subscriptionId/users/userId is the new end point
+
+Now all our endpoints use GUIDs for identifying entities
+
+- GET subscription/subscriptionId/users/userId has been deprecated to improve consistency in naming
+
+GET subscription**s**/subscriptionId/users/userId is the new endpoint.
 
 ## Aug 15, 2023 - GraFx Publisher
 
