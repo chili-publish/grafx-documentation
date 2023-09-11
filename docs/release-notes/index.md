@@ -4,7 +4,7 @@
 	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
-	
+
 ## Aug 30, 2023 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
@@ -70,6 +70,13 @@ CHILI GraFx [Environment API 1.1.9](https://sandbox1.chili-publish-sandbox.onlin
 - Delete a user so the user loses all his privileges within that subscription & the user isn't visible in the list of users anymore
 
 ![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/b0b9bb66-1f25-4c70-bd95-e4e0c7e94f74)
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
+### Improvements
+
+- GET /subscription/id and /subscription/id/renders were migrated to use GUIDs. Now all our endpoints use GUIDs for identifying entities.
+- GET subscription/subscriptionId/users/userId has been deprecated to improve consistency in naming. GET subscription**s**/subscriptionId/users/userId is the new endpoint.
 
 ## Aug 15, 2023 - GraFx Publisher
 
