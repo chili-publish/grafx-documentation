@@ -17,6 +17,12 @@ jobs:
           # Use json as output format (instead of markdown)
           format: json
           fail: true
+
+    # This step for upload artifacts
+  upload-artifacts:
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
       - name: Link report upload
         uses: actions/upload-artifact@v3
         with:
