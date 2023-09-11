@@ -13,21 +13,19 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.8.0
         with:
+          # All supported file formats to be verified and accept 403 (Forbidden) as correct link
           args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' 
           # Use json as output format (instead of markdown)
           format: json
+          # Fail job if one or more links are failing
           fail: true
-
-    # This step for upload artifacts
-  upload-artifacts:
-    runs-on: ubuntu-latest
-    if: always()
-    steps:
       - name: Link report upload
+        if: always()
         uses: actions/upload-artifact@v3
         with:
             name: link-report
             path: ./lychee/out.md
-            retention-days: 30
+            retention-days: 30  
+
            
    
