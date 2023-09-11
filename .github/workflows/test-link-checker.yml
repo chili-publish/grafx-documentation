@@ -16,3 +16,11 @@ jobs:
           args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' 
           # Use json as output format (instead of markdown)
           format: json
+      - name: Link report upload
+        uses: actions/upload-artifact@v3
+        with:
+            name: link-report
+            path: ./lychee/out.md
+            retention-days: 30
+           
+   
