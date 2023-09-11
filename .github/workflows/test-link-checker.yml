@@ -16,6 +16,7 @@ jobs:
           args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' 
           # Use json as output format (instead of markdown)
           format: json
+          fail: true
       - name: Link report upload
         uses: actions/upload-artifact@v3
         with:
