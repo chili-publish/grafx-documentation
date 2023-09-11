@@ -10,7 +10,8 @@ This document lists the info for your SAML Identity Providers in the CGX Platfor
 	- Email 
 	- First Name 
 	- Last Name 
-- Identity attribute 
+- Identity attribute
+- Domain of the email addresses of your corporate users
 
 ## We will provide you
 
