@@ -18,7 +18,7 @@
 
 This text contains a placeholder for a **firstname**.
 
-We assume it's supposed to be a firstname, because of the name.
+We assume it's supposed to be a first name, because of the name.
 
 But the name of the variable **firstname** is not related to the content.
 
@@ -33,7 +33,7 @@ Variables are placeholders, that will be replaced with variable content.
 
 ## Types of content
 
-The type of content for the variable will differ with the context. In the previous example, this most likely will be a piece of text.
+The type of content for the variable will differ, according to context. In the previous example, this most likely will be a piece of text.
 
 In other cases, it could be a reference to an image (or other digital asset).
 
