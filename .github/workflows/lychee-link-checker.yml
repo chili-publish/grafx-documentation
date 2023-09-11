@@ -16,8 +16,8 @@ jobs:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
           args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' 
           # Use json as output format (instead of markdown)
-          format: json
-          output: lychee/results.json
+          format: markdown
+          jobSummary: true
           # Fail job if one or more links are failing
           fail: true
       - name: Link report upload
@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
             name: link-report
-            path: .lychee/results.json
+            path: ./lychee/out.md
             retention-days: 30  
 
            
