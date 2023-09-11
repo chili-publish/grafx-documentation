@@ -14,19 +14,12 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
-          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' 
+          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude 'https:\/\/[^/]*cp-[^/]*\.chili-publish\.online\/.*'
           # Use json as output format (instead of markdown)
           format: markdown
           jobSummary: true
           # Fail job if one or more links are failing
           fail: true
-      - name: Link report upload
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-            name: link-report
-            path: ./lychee/out.md
-            retention-days: 30  
 
            
    
