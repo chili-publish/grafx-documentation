@@ -6,24 +6,24 @@ Elements of a "stylekit":
 
 	- Text: paragraph styles
 	- Text: character styles
-	- Swatch
+	- Swatches
 	- Fonts
 
 When you define a stylekit, you define elements that fit together in one group, so you can re-use the settings later in the document.
 
 ## Text: Paragraph Styles
 
-A paragraph style is a set of attributes, such as font size and color, that determines how the text in a paragraph looks.
+A paragraph style is a set of attributes, such as font size and color, that determines how the text will look in a paragraph.
 
 ## Text: Character Styles
 
 A character style is a collection of character formatting attributes that can be applied to text in a single step.
 
-## Swatch
+## Swatches
 
 A swatch is a color saved inside a Stylekit.
 
-A [swatch](/GraFx-Studio/guides/swatches/) is a color saved inside a Stylekit. You can define a color, give it a name, and save the named color to be used later in a style.
+A [swatch](/GraFx-Studio/guides/swatches/) is a color saved inside a Stylekit. You can define a color, give it a name, save it, and use it later in a style.
 
 ## Fonts
 
@@ -31,4 +31,4 @@ In metal typesetting, a font is a particular size, weight, and style of a typefa
 
 Source "Wikipedia"
 
-You can add fonts through the backoffice in GraFx Publisher. They will then be visible in your.
+You can add fonts through the backoffice in GraFx Publisher, and then add them to your stylekit in GraFx Studio.
