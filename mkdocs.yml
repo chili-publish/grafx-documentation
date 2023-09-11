@@ -7,6 +7,7 @@ theme:
   features:
     - navigation.tabs
     - content.tabs.link
+    - navigation.footer
   font:
     text: Ubuntu
   palette:
@@ -29,6 +30,7 @@ plugins:
   - awesome-pages
   - tags:
       tags_file: tags.md
+  - table-reader
 #  - git-revision-date-localized:
 #      fallback_to_build_date: true
 
@@ -69,6 +71,23 @@ extra_javascript:
   - javascripts/feedback.js
 
 extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/chili-publish/
+      name: CHILI publish on LinkedIn
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/CHILIPublish/
+      name: CHILI publish on Facebook
+    - icon: fontawesome/brands/github
+      link: https://github.com/chili-publish
+      name: CHILI publish on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CHILI_publish
+      name: CHILI publish on Twitter aka X
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/chilipublish
+      name: CHILI publish on Instagram
+      
   consent:
     title: CHILI Grafx uses cookies
     description: >-
@@ -100,6 +119,9 @@ extra:
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI-GraFx/index.md'
+        - 'Applications':               
+            - 'Overview':                       'CHILI-GraFx/applications/overview/index.md'
+            - 'Editor Comparison':              'CHILI-GraFx/applications/editor-comparison/index.md'
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
             - 'Template Management':            'CHILI-GraFx/concepts/template-management/index.md'

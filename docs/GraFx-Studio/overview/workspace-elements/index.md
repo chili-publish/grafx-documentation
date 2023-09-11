@@ -22,11 +22,11 @@ Your smart template, showed as a page or the full document.
 
 ### 4 Properties
 
-A panel where content will show with properties of the selected item in your document.
+A panel where content will show the properties of the selected item in your document.
 
 ### 5 Bottom Quick Tools
 
-Extra tools to show panels for specific uses
+Additional tools to display panels for specific use
 
 - Alternate Layouts
 - Layers & Animation
@@ -37,7 +37,7 @@ Extra tools to show panels for specific uses
 
 Contextual bottom panel will hold information for relevant tools.
 
-E.g. layers or animation timeline will be displayed here
+E.g. the Layers/Animation timeline will be displayed here
 
 ![appscreen](panel-labeled.png)
 
@@ -49,10 +49,11 @@ E.g. with alternate layouts, you can organize your layouts.
 
 ### 8 Hamburger menu
 
-Tell the application to save or export your smart template as
+This lets you save your project, and export your smart template to the following formats:
 
 - MP4
 - GIF
-- JPG
 - PNG
+- JPG
+- PDF (experimental)
 
