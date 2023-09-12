@@ -75,6 +75,11 @@ At the same time, the customer’s IDP must trust CGX Identity Hub to make sure 
 
 A Client Success colleague can assist you in the setup process.
 
+!!! warning "Important: Invitation Only"
+	Expected behaviour of **Federated Single Sign On** would be to have user groups in place. 
+	Today, allowing access to CHILI GraFx, happens through **invitation via email**. As soon as the invitee has accepted the invitation, the invited user will be able to login through the Enterprise Identity Provider.
+
+
 ## Federated SSO via the OIDC protocol
 
 [Details for the OIDC protocol](oidc/)
