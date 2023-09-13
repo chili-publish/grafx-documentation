@@ -42,21 +42,19 @@ The trigger is initiated when
 
 The script (action) executed upon the trigger
 
-![s](action.png)
-
 ``` js
 	let discount = studio.variables.getValue("Discount").toString();
 	let discountVisible = discount !== 'No discount';
 	let promoVisible = discount === '-50%';
 
 	// Show discount if there is one
-	studio.frames.include("Discount shape", discountVisible);
-	studio.frames.include("Discount", discountVisible);
+	studio.frames.setVisible("Discount shape", discountVisible);
+	studio.frames.setVisible("Discount", discountVisible);
 	studio.variables.setValue("DisplayDiscount",discount);
 
 	// Show "Super promo!" if discount is -50%
-	studio.frames.include("Promo shape", promoVisible);
-	studio.frames.include("Promo", promoVisible);
+	studio.frames.setVisible("Promo shape", promoVisible);
+	studio.frames.setVisible("Promo", promoVisible);
 
 	if(discountVisible){
 		//Discount color swatch is used on the discount shape. Depending on the value of the Discount variable, we change the color of the swatch
@@ -74,7 +72,7 @@ For the variable **promoVisible**:
 
 The code uses a conditional check to determine if the value of the variable discount is exactly equal to '-50%'. If it is, the variable promoVisible will be set to true; otherwise, it will be set to false. In simpler terms, it's checking if there is a discount of exactly 50% and storing the result in promoVisible.
 
-The last part of the code sets the visibility (include) of frames to true or false. The true or false statements have been defined in the top part.
+The last part of the code sets the visibility of frames to true or false. The true or false statements have been defined in the top part.
 
 ### The result
 

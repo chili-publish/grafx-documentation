@@ -5,7 +5,21 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
-## Sept 12, 2023 - GraFx Publisher
+## Sep 12, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+- Fixed issue with output generation in both Template Designer workspace and Studio UI
+- You can now delete multiple paragraph and character styles, colors, and actions at once
+
+Improvements to **Actions** (experimental feature):
+
+- An error icon is shown in the list of actions if the action contains errors
+- We added more flexibility to get and set properties in an action
+- We changed the method name to change the visibility of a frame: `.include()` is replaced by `.setVisible()`  
+**This is a breaking change! Please update any template that uses this method ([here](/GraFx-Studio/guides/actions/example-hideframe/) you can find an example of how it works). Projects created from these templates will also be impacted, so it is advised to delete them and start new projects from the updated templates.**
+
+## Sep 12, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 
@@ -182,7 +196,7 @@ Fine grained access management will be added later.
 - Prevent the creation of folders with leading or trailing spaces in the names
 
 
-## June 28, 2023 - CHILI GraFx
+## Jun 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -192,7 +206,7 @@ CHILI GraFx [Environment API 1.1.6](https://sandbox1.chili-publish-sandbox.onlin
 
 - Improved stability of output generation
 
-## June 23, 2023 - CHILI GraFx
+## Jun 23, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -225,7 +239,7 @@ CHILI GraFx [Platform API 1.12](https://api.chiligrafx.com/swagger/index.html)
 	- GET/api/v1/subscription/{subscriptionId}/users/{userId}
 - Improved token generation for Integrations
 
-## June 19, 2023 - CHILI GraFx
+## Jun 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -280,7 +294,7 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 - Added Connector module
 
 
-## June 16, 2023 - CHILI GraFx
+## Jun 16, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -305,7 +319,7 @@ CHILI GraFx Platform API 1.11
 - Add support for the bearer token with new grant type
 - Add support for scope-based authorization rules
 
-## June 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
+## Jun 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 
@@ -351,7 +365,7 @@ Version 0.123.1, using Studio SDK [0.123.0](https://github.com/chili-publish/stu
 
 - When a new frame is added it is only visible on the selected layout and its sub-layouts, on all other layouts the frame is hidden (if you want a frame to be visible on all layouts you should add it on the top-level layout)
 
-## June 6, 2023 - GraFx Publisher
+## Jun 6, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 
