@@ -11,7 +11,7 @@
 
 ### Fixes
 
-- Fixed document preview: Failure caused by preflight checks failing if required variable is empty
+- Fixed failing document preview because of failing preflight checks if a required variable is empty
 
 ## Aug 30, 2023 - GraFx Studio
 
