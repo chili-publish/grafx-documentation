@@ -43,7 +43,7 @@ In this case, the trigger is initiated when the "Variable value changed", specif
 The script (action) executed upon the trigger
 
 ``` js
-	const layoutName = studio.variables.getValue(triggers.changedVariable.name).toString();
+	const layoutName = studio.variables.getValue(triggers.changedVariable).toString();
 	studio.layouts.select(layoutName);
 ```
 

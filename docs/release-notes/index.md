@@ -17,7 +17,7 @@ Improvements to **Actions** (experimental feature):
 - An error icon is shown in the list of actions if the action contains errors
 - We added more flexibility to get and set properties in an action
 - We changed the method name to change the visibility of a frame: `.include()` is replaced by `.setVisible()`  
-**This is a breaking change! Please update any template that uses this method ([here](/GraFx-Studio/guides/example-hideframe/) you can find an example of how it works). Projects created from these templates will also be impacted, so it is advised to delete them and start new projects from the updated templates.**
+**This is a breaking change! Please update any template that uses this method ([here](/GraFx-Studio/guides/actions/example-hideframe/) you can find an example of how it works). Projects created from these templates will also be impacted, so it is advised to delete them and start new projects from the updated templates.**
 
 ## Sep 12, 2023 - GraFx Publisher
 
