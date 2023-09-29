@@ -56,7 +56,7 @@ Triggered when the document is loaded on the canvas.
 
 Triggered when the value of a variable is changed.
 
-Imagine a change in name or price. This change can be triggered by an end-user or through the population of variable data via datasources.
+Imagine a change in name or price. This change can be triggered by an end-user or through the population of variable data via data sources.
 
 ## Write JavaScript to be executed
 
