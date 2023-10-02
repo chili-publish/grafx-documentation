@@ -241,11 +241,15 @@ nav:
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
         - 'Application overview':
+            - 'Application elements':           'GraFx-Media/overview/elements/index.md'
             - 'Viewing Media':                  'GraFx-Media/overview/viewing/index.md'
+        - 'Concepts':
+            - 'Media vs DAM':                   'GraFx-Media/concepts/media-vs-dam/index.md'
         - 'How to':
             - 'Browse media':                   'GraFx-Media/guides/browse/index.md'
             - 'Search media':                   'GraFx-Media/guides/browse/search/index.md'
-#           'Upload media':                     'GraFx-Media/guides/upload/index.md'
+            - 'Manage folders':                 'GraFx-Media/guides/manage-folders/index.md'
+            - 'Upload media':                   'GraFx-Media/guides/upload-media/index.md'
 #           'Download media':                   'GraFx-Media/guides/download/index.md'
 #           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':
