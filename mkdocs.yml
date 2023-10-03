@@ -242,7 +242,6 @@ nav:
         - 'Introduction':                       'GraFx-Media/index.md'
         - 'Application overview':
             - 'Application elements':           'GraFx-Media/overview/elements/index.md'
-            - 'Viewing Media':                  'GraFx-Media/overview/viewing/index.md'
         - 'Concepts':
             - 'Media vs DAM':                   'GraFx-Media/concepts/media-vs-dam/index.md'
         - 'How to':
