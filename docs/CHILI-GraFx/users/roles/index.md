@@ -34,21 +34,22 @@ Assigned permissions
 
 - Access to environments where you are Environment Admin
 - View overview of all the environments where you are Environment Admin
+- Access to GraFx Publisher
 - Manage the CHILI GraFx environment where you are Environment Admin
 	- Environment Settings (eg. branding)
 	- User management (CRUD actions) for the users of environments where you are Environment Admin
 - Invite users to the Environment
 
-### Environment User - a.k.a. "User"
+### User
 
 !!! Definition
-	An Environment User works as an end-user in the CHILI GraFx environment(s) where you are assigned to.
+	A User works as an end-user in the CHILI GraFx environment(s) where you are assigned to.
 
 Assigned permissions
 
 - Access to the environments the user is assigned to
 - View overview of all the environments where the user is Environment User
-- Work in the environments where the user is assigned to
+- Limited in what applications they can access
 
 !!! Warning "Template Designer"
 	- If an Environment user wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer)
