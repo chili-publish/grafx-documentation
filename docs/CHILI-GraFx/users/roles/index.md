@@ -22,6 +22,8 @@ Assigned permissions
 - User management for all users in the subscription (CRUD actions)
 - Invite users to all available environments in the subscription
 
+In the API, this is labeled as "SA".
+
 ??? Tip "Subscription Admin"
 	Important: a Subscription Admin can assign the role 'Subscription Admin' to other users on 'User Detail page'.
 
@@ -40,6 +42,8 @@ Assigned permissions
 	- User management (CRUD actions) for the users of environments where you are Environment Admin
 - Invite users to the Environment
 
+In the API, this is labeled as "EA".
+
 ### User
 
 !!! Definition
@@ -50,6 +54,8 @@ Assigned permissions
 - Access to the environments the user is assigned to
 - View overview of all the environments where the user is Environment User
 - Limited in what applications they can access
+
+In the API, this is labeled as "EU".
 
 !!! Warning "Template Designer"
 	- If an Environment user wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer)
