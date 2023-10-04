@@ -47,7 +47,7 @@ In the API, this is labeled as "EA".
 ### User
 
 !!! Definition
-	A User works as an end-user in the CHILI GraFx environment(s) where you are assigned to.
+	A User works as an end-user in the CHILI GraFx environment(s) where you are assigned to. This is the default role, and cannot be removed.
 
 Assigned permissions
 
