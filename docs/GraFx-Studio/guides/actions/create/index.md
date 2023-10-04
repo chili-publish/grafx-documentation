@@ -80,7 +80,7 @@ The order of the actions in the list defines the order of execution. This means 
 
 ![Reorder Actions](/release-notes/reorder-actions.gif)
 
-It is possible that an action causes an another event to fire, which can trigger another action. If this happens, all actions triggered by the first event will be executed first. When they are all processed, the actions triggered by the new event will be executed. As an example, we have this list of actions:
+It is possible that an action causes another event to fire, which can trigger another action. If this happens, all actions triggered by the first event will be executed first. When they are all processed, the actions triggered by the new event will be executed. As an example, we have this list of actions:
 
 Action A is triggered by event 1 and causes event 2 to be fired
 
