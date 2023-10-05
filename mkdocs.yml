@@ -7,6 +7,7 @@ theme:
   features:
     - navigation.tabs
     - content.tabs.link
+    - navigation.footer
   font:
     text: Ubuntu
   palette:
@@ -70,6 +71,23 @@ extra_javascript:
   - javascripts/feedback.js
 
 extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/chili-publish/
+      name: CHILI publish on LinkedIn
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/CHILIPublish/
+      name: CHILI publish on Facebook
+    - icon: fontawesome/brands/github
+      link: https://github.com/chili-publish
+      name: CHILI publish on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CHILI_publish
+      name: CHILI publish on Twitter aka X
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/chilipublish
+      name: CHILI publish on Instagram
+      
   consent:
     title: CHILI Grafx uses cookies
     description: >-

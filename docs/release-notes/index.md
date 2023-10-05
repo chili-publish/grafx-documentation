@@ -4,7 +4,75 @@
 	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
-	
+
+## Sep 19, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+- Output: Improve error handling of a corrupt PNG during output
+
+## Sep 12, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+- Fixed issue with output generation in both Template Designer workspace and Studio UI
+- You can now delete multiple paragraph and character styles, colors, and actions at once
+
+Improvements to **Actions** (experimental feature):
+
+- An error icon is shown in the list of actions if the action contains errors
+- We added more flexibility to get and set properties in an action
+- We changed the method name to change the visibility of a frame: `.include()` is replaced by `.setVisible()`  
+**This is a breaking change! Please update any template that uses this method ([here](/GraFx-Studio/guides/actions/example-hideframe/) you can find an example of how it works). Projects created from these templates will also be impacted, so it is advised to delete them and start new projects from the updated templates.**
+
+## Sep 12, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed failing document preview because of failing preflight checks if a required variable is empty
+
+## Aug 30, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+With this release, we introduced improvements to the GraFx Studio Smart Template editor
+
+- You're now able to reorder actions (this impacts the order of execution when multiple actions have the same trigger) 
+
+![releasenotes](reorder-actions.gif)
+
+- Action script is saved even if it contains errors (indicated with a red squiggly line). This is useful when you're in the middle of writing an action and you need to close the action interface to check something
+
+![releasenotes](save-on-error.png)
+
+- Visual improvements to the action interface
+- Rename action trigger to "Selected layout changed"
+- Force action names to be unique
+- Show notification when closing or reloading GraFx Studio with unsaved changes
+- When inserting an image variable in an image frame that contains an image, this image is automatically set as default state for that image variable
+- Dialog to edit a character/paragraph style is not hidden behind the animation timeline anymore
+- Fixed issue with error tooltips
+- Add percentage sign behind line height value
+- Selecting another layout exits text editing mode
+- It's no longer possible to use a URL for an image variable (an asset ID must be used)
+
+We also improved the GraFx Studio UI, the interface for the self-service use-case
+
+- Automatically zoom to page when another layout is selected by an action
+- Shortcuts to select another tool are disabled to prevent end-users from accidentally going into inline edit mode
+- Shortcut to open the debug panel is disabled
+- Show indicator and block new downloads while download is in progress
+
+
+## Aug 30, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+- User management in GraFx Publisher has changed to API User management. You are now able to manage GraFx Publisher [users in CHILI GraFx platform](/CHILI-GraFx/users/creation/). Existing users in GraFx Publisher are unaffected, but we advise migrating these users to [CHILI GraFx](/CHILI-GraFx/users/creation/).
+- Fixed an issue in the DEL ‘/rest-api/v1.2/resources/Documents/folders’ endpoint to prevent data loss.
+
 ## Aug 24, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
@@ -29,7 +97,14 @@ CHILI GraFx [Environment API 1.1.9](https://sandbox1.chili-publish-sandbox.onlin
 - Re-activate a user that was deactivated so the user has exactly the same priviliges he had before being de-activated
 - Delete a user so the user loses all his privileges within that subscription & the user isn't visible in the list of users anymore
 
-![deactivate user](https://github.com/chili-publish/grafx-documentation/assets/122599725/b0b9bb66-1f25-4c70-bd95-e4e0c7e94f74)
+![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/b0b9bb66-1f25-4c70-bd95-e4e0c7e94f74)
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
+### Improvements
+
+- GET /subscription/id and /subscription/id/renders were migrated to use GUIDs. Now all our endpoints use GUIDs for identifying entities.
+- GET subscription/subscriptionId/users/userId has been deprecated to improve consistency in naming. GET subscription**s**/subscriptionId/users/userId is the new endpoint.
 
 ## Aug 15, 2023 - GraFx Publisher
 
@@ -53,19 +128,19 @@ Version 0.136.1, using Studio [SDK 0.136.0](https://github.com/chili-publish/stu
 #### Variables
 List items inside ‘Single Select List’ variable can be reordered. Updated order also will be shown in a drop-down inside variable settings and in Studio UI
 
-![Reorder](https://github.com/chili-publish/grafx-documentation/assets/122599725/f47de351-d8f0-4780-93de-8faf17fb55d9)
+![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/f47de351-d8f0-4780-93de-8faf17fb55d9)
 
 New variable type ‘Boolean’ was introduced with two settings –
 
 - Default state’ which allows to set the default value
 - Visible’ settings which controls visibility of variable in Studio UI
 
-![Boolean](https://github.com/chili-publish/grafx-documentation/assets/122599725/7a3110bc-e979-4b55-8173-8a03d2bd59ca)
+![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/7a3110bc-e979-4b55-8173-8a03d2bd59ca)
 
 #### Output
 PDF output is present in the list of available output formats. This is an experimental feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
 
-![image-20230809-104515](https://github.com/chili-publish/grafx-documentation/assets/122599725/269dae35-7e71-462e-ae9d-0033c6ad1efe)
+![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/269dae35-7e71-462e-ae9d-0033c6ad1efe)
 
 
 ### Fixes
@@ -85,10 +160,10 @@ PDF output is present in the list of available output formats. This is an experi
 New action item ‘Collection settings’ was added to collections. This panel can be opened in two ways:
 - Through the "Three dots" on the collection card and clicking "Collection settings"
 - Inside a collection by clicking on the "Three dots" in the top right corner.
-![image-20230809-095332](https://github.com/chili-publish/grafx-documentation/assets/122599725/377e0601-109c-4587-a92f-184ddb2aa803)
+![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/377e0601-109c-4587-a92f-184ddb2aa803)
 
 It opens a panel with ‘Cover image’ option which allows to upload image that is shown on the collection card. For the uploaded image PNG, JPG and JPEG formats can be used and we don’t have restrictions for a file size.
-![image-20230809-095402](https://github.com/chili-publish/grafx-documentation/assets/122599725/f013110d-140e-42c8-8bb1-f5f377c70fbb)
+![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/f013110d-140e-42c8-8bb1-f5f377c70fbb)
 
 ### Fixes
 - Fixed issue where a template could be opened as a project from ‘Collection’ tab. Now a template can be opened only from the ‘My projects’ tab
@@ -127,7 +202,7 @@ Fine grained access management will be added later.
 - Prevent the creation of folders with leading or trailing spaces in the names
 
 
-## June 28, 2023 - CHILI GraFx
+## Jun 28, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -137,7 +212,7 @@ CHILI GraFx [Environment API 1.1.6](https://sandbox1.chili-publish-sandbox.onlin
 
 - Improved stability of output generation
 
-## June 23, 2023 - CHILI GraFx
+## Jun 23, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -170,7 +245,7 @@ CHILI GraFx [Platform API 1.12](https://api.chiligrafx.com/swagger/index.html)
 	- GET/api/v1/subscription/{subscriptionId}/users/{userId}
 - Improved token generation for Integrations
 
-## June 19, 2023 - CHILI GraFx
+## Jun 19, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -225,7 +300,7 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 - Added Connector module
 
 
-## June 16, 2023 - CHILI GraFx
+## Jun 16, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
@@ -250,7 +325,7 @@ CHILI GraFx Platform API 1.11
 - Add support for the bearer token with new grant type
 - Add support for scope-based authorization rules
 
-## June 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
+## Jun 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 
@@ -296,7 +371,7 @@ Version 0.123.1, using Studio SDK [0.123.0](https://github.com/chili-publish/stu
 
 - When a new frame is added it is only visible on the selected layout and its sub-layouts, on all other layouts the frame is hidden (if you want a frame to be visible on all layouts you should add it on the top-level layout)
 
-## June 6, 2023 - GraFx Publisher
+## Jun 6, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
 

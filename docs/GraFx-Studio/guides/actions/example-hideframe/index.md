@@ -42,18 +42,16 @@ The trigger is initiated when
 
 The script (action) executed upon the trigger
 
-![](action.png)
-
 ``` js
-	// Hide the Old price frame, Old price shape frame, Discount and Discount shape frame if the Old price variable doesn't contain a value, show them when it has a value
+	// Hide the Old price frame and Old price shape frame, Discount and Discount shape frame if the Old price variable doesn't contain a value, show them when it has a value
 	let oldPriceVariable = studio.variables.getValue('Old price').toString();
 
 	if (oldPriceVariable.trim()==="") {
-		studio.frames.include('Old price', false);
-		studio.frames.include('Old price shape', false);
+		studio.frames.setVisible('Old price', false);
+		studio.frames.setVisible('Old price shape', false);
 	} else {
-		studio.frames.include('Old price', true);
-		studio.frames.include('Old price shape', true);
+		studio.frames.setVisible('Old price', true);
+		studio.frames.setVisible('Old price shape', true);
 	}
 ```
 
@@ -63,9 +61,9 @@ A JavaScript variable **oldPriceVariable** is defined to hold the value of the V
 
 Then an if-statement checks if the JS variable **oldPriceVariable** contains a value.
 
-If this is NOT the case, we set the "include" property of the frame to "false", basically hiding the frame from sight and output.
+If this is NOT the case, we use the "setVisible" method to set the visibility of the frame to "false", basically hiding the frame from sight and output.
 
-If there is content, we enable the inclusion of the frame.
+If there is content, we set the visibility of the frame to "true".
 
 ### The result
 

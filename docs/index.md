@@ -13,11 +13,11 @@ Each section provides you
 
 ## The Platform & Applications
 
-Platform: [CHILI GraFx](/CHILI-GraFx)
+Platform: [CHILI GraFx](/CHILI-GraFx/)
 
-Application: [GraFx Studio](/GraFx-Studio)
+Application: [GraFx Studio](/GraFx-Studio/)
 
-Application: [GraFx Publisher](/GraFx-Publisher)
+Application: [GraFx Publisher](/GraFx-Publisher/)
 
 	
 ## Resources
@@ -34,10 +34,18 @@ Try out concepts before you implement them
 
 [Demo Portal: The Big Spicy](https://demoportal.thebigspicy.com/scenarios){target="_blank"}
 
-### CHILI publish website
-
-[chili-publish.com](https://www.chili-publish.com/){target="_blank"}
-
 ### Support
 
 [Support website](https://mysupport.chili-publish.com/){target="_blank"}
+
+### CHILI publish NV
+
+![svg_icon](/assets/CHILI_LOGOS_OK-01.svg)
+
+All information on this portal is documentation on the products and services of [CHILI publish](https://www.chili-publish.com/contact-sales/). See [Application of CHILI GraFx](/CHILI-GraFx/applications/overview/).
+
+CHILI publish NV<br/>
+Korte Keppestraat 9, bus 11<br/>
+9320 Aalst, Belgium
+
+[chili-publish.com](https://www.chili-publish.com/){target="_blank"}
