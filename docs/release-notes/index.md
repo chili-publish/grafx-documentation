@@ -7,7 +7,25 @@
 
 ## Oct 19, 2023 - CHILI GraFx goes live
 
-- Stuff for MVP going live
+![CHILI_LOGOS-Media-1-01](https://github.com/chili-publish/grafx-documentation/assets/122599725/5ac478d7-e2a7-434a-9a7f-c05be033d304)
+
+### Features
+- You can upload an asset with format .eps, .jpg, .pdf, .png, .psd, .tif & .ai
+- You can create folders
+- You can move, rename, duplicate, download or delete an asset
+- You can filter on format of assets
+
+  ![2023-10-11_15-17-06](https://github.com/chili-publish/grafx-documentation/assets/122599725/0c7ebad2-855b-4a75-a6a2-73d2e578a980)
+
+![CHILI_LOGOS-Fonts-1-01](https://github.com/chili-publish/grafx-documentation/assets/122599725/6b729083-5281-4aaf-8575-2387af635a90)
+
+### Features
+- You can upload a font style & font family
+- During the font upload you can change the font family and font style
+- You can sort & delete font styles & font families
+- You can access font styles details
+
+![2023-10-11_15-31-50](https://github.com/chili-publish/grafx-documentation/assets/122599725/fe98f3c4-6b13-4264-aa74-862cd3a35b2f)
 
 
 ## Sep 19, 2023 - GraFx Publisher
