@@ -5,6 +5,11 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
+## Oct 19, 2023 - CHILI GraFx goes live
+
+- Stuff for MVP going live
+
+
 ## Sep 19, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
