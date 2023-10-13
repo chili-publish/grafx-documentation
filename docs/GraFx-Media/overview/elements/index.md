@@ -6,7 +6,7 @@ When opening GraFx Media, you see the action banner (1) and below all top level 
 
 ### 1 Action banner
 
-The area of the application where you manipulate the contents. You can search, sort and change the view.
+The area of the application where you interact with the contents. You can search, sort and change the view.
 
 ### 2 Folders and media
 

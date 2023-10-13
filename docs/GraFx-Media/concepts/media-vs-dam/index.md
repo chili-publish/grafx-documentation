@@ -2,8 +2,6 @@
 
 GraFx Media could be seen as a DAM (Digital Asset Management) system. But there are some key differences.
 
-In general when referring to a DAM, below are some basic requirements users will expect.
-
 ## DAM System (Digital Asset Management)
 
 - Think of a DAM system like a library for your digital stuff. It's a place where you can store not only your digital assets (like images, videos, documents) but also a bunch of information about them.
