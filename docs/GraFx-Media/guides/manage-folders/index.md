@@ -4,7 +4,7 @@
 
 GraFx Media is used to store your assets you will use in [GraFx Studio](/GraFx-Studio/) and [GraFx Publisher](/GraFx-Publisher/).
 
-Assets are arranged in folder and subfolders.
+Assets are arranged in folders and subfolders.
 
 Assets can be uploaded in a folder, not on the root level of GraFx Media.
 

@@ -13,7 +13,7 @@ GraFx Media could be seen as a DAM (Digital Asset Management) system. But there 
 
 GraFx Media is not a DAM in the definition we have above.
 
-GraFx Media is a basic repository to store the assets that are used in the Smart Templates.
+GraFx Media is a repository to store the assets that are used in the Smart Templates.
 
 GraFx Media stores this info as metadata:
 
