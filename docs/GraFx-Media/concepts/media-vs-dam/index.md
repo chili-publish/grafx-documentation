@@ -26,4 +26,4 @@ GraFx Media stores this info as metadata:
 
 ## Connectors
 
-GraFx Media is build on to use the GraFx Connector Framework. This means that later, when more developers add connectors to DAM systems, you'll be able to link your existing DAM system and use the assets in the editors GraFx Publisher and GraFx Studio.
+GraFx Media is uses the CHILI GraFx Connector Framework. This means that later, when more developers add connectors to DAM systems, you'll be able to link your existing DAM system and use the assets in the editors GraFx Publisher and GraFx Studio.
