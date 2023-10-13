@@ -34,7 +34,7 @@ Add a (sub)folder at the current location
 
 ### 7 Upload button
 
-Upload an asset to the current location
+Upload asset(s) to the current location. (You can upload 1 or more at the same time)
 
 ### 8 View
 
