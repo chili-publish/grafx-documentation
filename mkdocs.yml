@@ -251,16 +251,15 @@ nav:
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx-Fonts/index.md'
         - 'Application overview':
-            - 'Intro':                          'GraFx-Fonts/overview/intro/index.md'
             - 'Application elements':           'GraFx-Fonts/overview/elements/index.md'
             - 'Supported Font Types':           'GraFx-Fonts/overview/supported-font-types/index.md'
         - 'Concepts':
             - 'Fonts vs Families':              'GraFx-Fonts/concepts/fonts-vs-families/index.md'
+            - 'Fonts in GraFx Publisher':       'GraFx-Fonts/concepts/fonts-in-publisher/index.md'
+
         - 'How to':
-            - 'Browse fonts':                   'GraFx-Fonts/guides/browse-fonts/index.md'
-            - 'Search fonts':                   'GraFx-Fonts/guides/search-fonts/index.md'
-            - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
             - 'Upload fonts':                   'GraFx-Fonts/guides/upload-fonts/index.md'
+            - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx-Stylekits/index.md'
