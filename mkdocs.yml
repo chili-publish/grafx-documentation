@@ -216,6 +216,7 @@ nav:
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
+            - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
         - 'Integrate GraFx studio':
             - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
             - 'Local environment':              'GraFx-Studio/integration/environment/index.md'

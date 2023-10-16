@@ -23,7 +23,7 @@ You can rename the style by clicking "Rename" in the "..." menu.
 
 Set all properties you want for this character. Saving happens automatically.
 
-![Image](cs-5.png)
+![Image](cs-9.png)
 
 ## Apply a character style
 
@@ -35,7 +35,7 @@ DIfferent than with paragraph styles, with character styles you need to select t
 
 In the properties panel on the right, select the character style from the dropdown list.
 
-![Image](cs-7.png)
+![Image](cs-9.png)
 
 You selected text now has the character style applied.
 
