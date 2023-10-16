@@ -2,7 +2,7 @@
 
 ## License
 
-Adding fonts to CHILI GraFx requires a valid license. Before uploading, check your font supplies (foundry) if you have a valid license to use your font's for your application.
+Adding fonts to CHILI GraFx requires a valid license. Before uploading, check your font supplier (foundry) if you have a valid license to use your font's for your application.
 
 ## Adding font to GraFx Fonts
 
@@ -26,7 +26,7 @@ GraFx Fonts will read the metadata from the font files, als suggest the categori
 
 ![appscreen](confirmstyles.png)
 
-At this moment, you can still delete a specific font before it's added to the GraFx Fonts repository.
+At this moment in the upload process, you can still delete a specific font before it's added to the GraFx Fonts repository.
 
 ## Upload ready
 
@@ -34,7 +34,7 @@ After you confirmed the upload, your font family will appear in the list.
 
 ![appscreen](result2.png)
 
-Click the font family to see its contents.
+Click the font family to see its contents (the font styles).
 
 ![appscreen](harry.png)
 

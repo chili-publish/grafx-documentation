@@ -10,11 +10,11 @@ The area of the application where you interact with the contents. You can search
 
 ### Sort Field
 
-Select the field you want to sort the contents below
+Select the field you want to sort the contents below on
 
 ### Sorting order
 
-Select the order or sorting (ascending or descending)
+Select the order of sorting (ascending or descending)
 
 ### Search field
 
