@@ -6,4 +6,4 @@ Centralize your licensed fonts in a single location. GraFx Fonts is visually int
 
 !!! Info
 	Today, your fonts are stored in the environment of GraFx Publisher.
-	You can add fonts and folders, and they will be visible in GraFx Studio.
+	You can add fonts and folders, which will be visible in GraFx Studio.
