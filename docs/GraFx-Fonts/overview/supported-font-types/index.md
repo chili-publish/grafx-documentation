@@ -9,16 +9,9 @@ GraFx Fonts supports [OTF](https://en.wikipedia.org/wiki/OpenType) and [TTF](htt
 	
 ## These fonts are not Supported
 
-### Web Open Font Format (WOFF)
+If not mentioned in the above list, font files are not supported.
 
-WOFF files are OpenType or TrueType fonts, with format-specific compression applied and additional XML metadata added
+Since some fonts are similar, we added them below as NOT supported to avoid ambiguity.
 
-	- Open Type Fonts (OTF)
-	- True Type Fonts (TTF)
-	- True Type Font Collection (TTFC)
-
-### Variable fonts
-
-Variable Fonts a.k.a. OpenType Font Variations
-
-A variable font is a font file that is able to store a continuous range of design variants. An entire font family can be stored, with an infinite number of fonts available.
+	- Web Open Font Format (WOFF)
+	- Variable Fonts a.k.a. OpenType Font Variations
