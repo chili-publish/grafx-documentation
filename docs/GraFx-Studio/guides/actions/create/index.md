@@ -56,7 +56,7 @@ Triggered when the document is loaded on the canvas.
 
 Triggered when the value of a variable is changed.
 
-Imagine a change in name or price. This change can be triggered by an end-user or through the population of variable data via datasources.
+Imagine a change in name or price. This change can be triggered by an end-user or through the population of variable data via data sources.
 
 ## Write JavaScript to be executed
 
@@ -80,7 +80,7 @@ The order of the actions in the list defines the order of execution. This means 
 
 ![Reorder Actions](/release-notes/reorder-actions.gif)
 
-It is possible that an action causes an another event to fire, which can trigger another action. If this happens, all actions triggered by the first event will be executed first. When they are all processed, the actions triggered by the new event will be executed. As an example, we have this list of actions:
+It is possible that an action causes another event to fire, which can trigger another action. If this happens, all actions triggered by the first event will be executed first. When they are all processed, the actions triggered by the new event will be executed. As an example, we have this list of actions:
 
 Action A is triggered by event 1 and causes event 2 to be fired
 
