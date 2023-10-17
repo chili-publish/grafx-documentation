@@ -27,6 +27,48 @@
 
 ![2023-10-11_15-31-50](https://github.com/chili-publish/grafx-documentation/assets/122599725/fe98f3c4-6b13-4264-aa74-862cd3a35b2f)
 
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+This is a big day for GraFx Studio, as it is now available for use in production!
+
+Managing templates and collections and access to the Template Designer workspace are now restricted to admins and template designers. Other users can use templates to create their own projects, but cannot edit the original templates.
+
+Even though it is now in production, GraFx Studio renders are not yet counted, as we want to give our users some time to get used to the new application first. We hope you enjoy it and are curious to hear your feedback!
+
+### Features
+
+**Actions**
+
+Actions can be added to a template to define how it should react to user input. Actions let you show/hide a frame or variable, select a layout, change a variable value, change a color, and much more. Triggers can be set to control when actions should be executed.
+
+It was already available as an experimental feature but is now available for production use.
+
+**GraFx Fonts**
+
+With the introduction of GraFx Fonts we also introduce the concept of font families and font styles in GraFx Studio. You can now add font families to the Stylekit of your template instead of single fonts. This will enable all font styles from those font families for use in the template.
+
+**This is a breaking change! All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, so it is advised to delete them and start new projects from the updated templates.**
+
+**Image variable settings**
+
+Inside the image variable settings, the template designer can specify the folder inside GraFx Media where the assets for that variable are located. This results in a better experience for the user and prevents access to other assets.
+
+For custom media connectors this also enables custom settings for image variables, as defined by the connector. Custom media connectors enable you to use assets from an external DAM system in GraFx Studio templates (this is still in experimental mode).
+
+### Improvements
+
+- Writing actions has been made easier with the introduction of helper functions
+- Renamed triggers objects inside action script to be future proof (**this is a breaking change, please update your actions if you use e.g. triggers.changedVariable**)
+- Improved error indications in the list of actions
+- Proper support for undo/redo of actions
+- Improved visual feedback on the canvas when an image is unable to load
+- UI improvements in the Template Designer workspace
+- UI improvements in the Studio UI
+- When integrating the Studio UI you can configure the download and back buttons
+
+### Fixes
+
+- Fixed issue with undo/redo and saving of changes to horizontal text alignment
 
 ## Sep 19, 2023 - GraFx Publisher
 
