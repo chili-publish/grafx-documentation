@@ -8,25 +8,22 @@ When opening GraFx Fonts, you see the action banner and below all font families.
 
 The area of the application where you interact with the contents. You can search, sort and change the view.
 
-### Sort Field
+![appscreen](action-banner.png)
 
-Select the field you want to sort the contents below on
+**1 - Sort Field:**
+Select the field you want to sort the contents below on.
 
-### Sorting order
+**2 - Sorting order:**
+Select the order of sorting (ascending or descending).
 
-Select the order of sorting (ascending or descending)
+**3 - Search field:**
+Search on the name of the font.
 
-### Search field
+**4 - Upload button:**
+Upload font families. (You can upload 1 or more at the same time).
 
-Search on the name of the font
-
-### Upload button
-
-Upload font families. (You can upload 1 or more at the same time)
-
-### View
-
-View the contents in a grid or list view
+**5 - View:**
+View the contents in a grid or list view.
 
 ## Font families
 
