@@ -1,8 +1,8 @@
-# Supported File Types
+# Supported file types
 
-GraFx Media is used to support your assets for both Smart Template Editors.
+GraFx Media is used to support your assets for both smart template editors.
 
-Below is a list of supported File Types.
+Below is a list of supported file types.
 
 	- .eps
 	- .jpg
@@ -11,3 +11,9 @@ Below is a list of supported File Types.
 	- .psd
 	- .tif
 	- .ai
+	
+Your upload window will only allow supported file types. The other files will be grayed out (OSX) or not shown (Windows).
+
+![image](filetypes.png)
+
+![image](filetypes-windows.png)
