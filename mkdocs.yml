@@ -185,7 +185,6 @@ nav:
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
-            - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
             - 'Genie':                          'GraFx-Studio/concepts/genie/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
