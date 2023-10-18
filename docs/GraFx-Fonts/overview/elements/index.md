@@ -10,23 +10,23 @@ The area of the application where you interact with the contents. You can search
 
 ![appscreen](action-banner.png)
 
-<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">1</span>
+<span class="reddot">1</span>
 **Sort Field:** 
 Select the field you want to sort the contents below on
 
-<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">2</span>
+<span class="reddot">2</span>
 **Sorting order:** 
 Select the order of sorting (ascending or descending)
 
-<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">3</span>
+<span class="reddot">3</span>
 **Search field:** 
 Search on the name of the font
 
-<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">4</span>
+<span class="reddot">4</span>
 **Upload button:** 
 Upload font families. (You can upload 1 or more at the same time)
 
-<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">5</span>
+<span class="reddot">5</span>
 **View:** 
 View the contents in a grid or list view
 
