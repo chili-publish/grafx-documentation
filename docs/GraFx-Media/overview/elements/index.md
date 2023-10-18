@@ -3,39 +3,36 @@
 When opening GraFx Media, you see the action banner (1) and below all top level folders (2).
 
 ![appscreen](dashboard.png)
+<br/>
 
-### 1 Action banner
-
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">1</span>
+**Action Banner**
 The area of the application where you interact with the contents. You can search, sort and change the view.
 
-### 2 Folders and media
-
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">2</span>
+**Folders and Media**
 Similar to what you're used to in any OS, a view on the folders and their contents.
+
 
 ## Action banner
 
 ![appscreen](action-banner.png)
+<br/>
 
-### 3 Sort Field
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">3</span>
+**Sort Field** Select the field you want to sort the contents below
 
-Select the field you want to sort the contents below
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">4</span>
+**Sorting order** Select the order or sorting (ascending or descending)
 
-### 4 Sorting order
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">5</span>
+**Search field** Search on the name or ID of an asset
 
-Select the order or sorting (ascending or descending)
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">6</span>
+**Create folder** Add a (sub)folder at the current location
 
-### 5 Search field
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">7</span>
+**Upload button** Upload asset(s) to the current location. (You can upload 1 or more at the same time)
 
-Search on the name or ID of an asset
-
-### 6 Create folder
-
-Add a (sub)folder at the current location
-
-### 7 Upload button
-
-Upload asset(s) to the current location. (You can upload 1 or more at the same time)
-
-### 8 View
-
-View the contents in a grid or list view
+<span style="display:inline-block; width:30px; height:30px; background-color:red; border-radius:50%; color:white; text-align:center; line-height:30px;">8</span>
+**View** View the contents in a grid or list view
