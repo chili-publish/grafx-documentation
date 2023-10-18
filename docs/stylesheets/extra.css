@@ -1,5 +1,22 @@
+:root {
+  --chilired: #FD0048;
+}
+
+.reddot
+{
+	display:inline-block; 
+	width:20px; 
+	height:20px; 
+	background-color: var(--chilired); 
+	border-radius:50%; 
+	color:white; 
+	text-align:center; 
+	line-height:20px;
+	margin: 0 6px 0 0;
+}
+
 .chilired {
-	color: #FF0048;
+	color: var(--chilired);
 }
 .introdiv {
 	font-size:2.5em;
