@@ -242,7 +242,6 @@ nav:
         - 'Introduction':                       'GraFx-Media/index.md'
         - 'Application overview':
             - 'Application elements':           'GraFx-Media/overview/elements/index.md'
-            - 'Intro':                          'GraFx-Media/guides/intro/index.md'
             - 'Supported File Types':           'GraFx-Media/overview/filetypes/index.md'
         - 'Concepts':
             - 'Media vs DAM':                   'GraFx-Media/concepts/media-vs-dam/index.md'
