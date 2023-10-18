@@ -2,7 +2,7 @@
 
 ![applogo](/assets/CHILI_LOGOS_OK-07.svg)
 
-Centralize your licensed fonts in a single location. GraFx Fonts is visually intuitive and easy to use.
+The fonts application for [GraFx Studio](/GraFx-Studio/)
 
 ![asset](dashboard.png)
 
@@ -10,16 +10,17 @@ Centralize your licensed fonts in a single location. GraFx Fonts is visually int
 
 GraFx Fonts serves Fonts and Font families for GraFx Studio
 
-GraFx Publisher Fonts serves Fonts for GraFx Publisher
+GraFx Publisher Fonts [serves Fonts for GraFx Publisher](/GraFx-Fonts/concepts/fonts-in-publisher/)
 
 ``` mermaid
 erDiagram
-  GraFx-Studio ||--|{ GraFx-Fonts : "Has access to"
-  GraFx-Publisher ||--|{ GraFx-Publisher-Fonts : "Has access to"
+  GraFx-Studio ||--|| GraFx-Fonts : "|"
+  GraFx-Publisher ||--|| GraFx-Publisher-Fonts : "|"
   GraFx-Fonts {
-  	handles Font-Families
+  	has fonts
+  	has Families
   }  
   GraFx-Publisher-Fonts {
-  	handles Fonts
+  	has fonts
   }  
 ```

@@ -7,3 +7,16 @@ With the introduction of GraFx Fonts, a new way of working is introduced to hand
 For information on how to work with fonts in GraFx Publisher, please see [CHILI publisher Fonts Documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413922/Fonts) for more information.
 
 Any fonts needed for GraFx Publisher templates should be uploaded within the GraFx Publisher application.
+
+``` mermaid
+erDiagram
+  GraFx-Studio ||--|| GraFx-Fonts : "|"
+  GraFx-Publisher ||--|| GraFx-Publisher-Fonts : "|"
+  GraFx-Fonts {
+  	has fonts
+  	has Families
+  }  
+  GraFx-Publisher-Fonts {
+  	has fonts
+  }  
+```
