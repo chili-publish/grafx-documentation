@@ -1,0 +1,130 @@
+# Actions Helper Functions
+
+## Introduction
+
+Actions are defined in the Automation panel, Actions & Variable tab.
+
+![screenshot](panel1.png)
+
+![screenshot](editaction.png)
+ 
+![screenshot](actioneditor.png)
+
+When writing actions, you can start with the base objects, and with the dot-notation drill down to the function or value you're looking for.
+
+To help you with the speed of coding, we added a set of Helper Functions.
+
+E.g. You want to copy the color value of one character style to another.
+
+Without helper functions
+
+```js
+studio.stylekit.colors.copy("characterstyle1", "characterstyle2");
+```
+
+When writing code, add a dot, and the Action Editor will suggest possible functions that are relevant in this context.
+
+![appscreen](dotnotation.png)
+
+For many often used functions, we created helper functions.
+
+With helper Functions
+
+```js
+copyColorFromTo("characterstyle1", "characterstyle2")
+```
+
+Start typing one of the 4 type of functions (see below) and the Action Editor will suggest the list of available functions.
+
+![appscreen](helpers.png)
+
+## Parameters
+
+A function requires info or input to handle your request. This input is sometimes referred to as "**parameters**".
+
+There is no need to learn them by heart. When you start typing a function end with an open bracket "**(**", and the Action Editor will show an info panel what info to expect.
+
+![appscreen](params.png)
+
+In this case, the function needs the name of a frame (as a String, i.e. text) and also needs the state of visibility: True or False.
+
+Parameters are separated by a comma ","
+
+## Groups of functions
+
+Helper functions are grouped into 4 types:
+
+	- Copy
+	- Get
+	- Set
+	- Select
+	
+### Copy
+
+A copy function will copy values from one location to another.
+
+	- copyCharacterStyleFromTo
+	- copyColorFromTo
+	- copyParagraphStyleFromTo
+	- copyVariableValueFromTo
+
+### Get
+
+A get function will retrieve a value
+
+	- getAllItemsFromListVariable
+	- getBooleanVariableValue
+	- getFrameHeight
+	- getFrameRotation
+	- getFrameVisible
+	- getFrameWidth
+	- getFrameX
+	- getFrameY
+	- getImageVariableValue
+	- getListVariableValue
+	- getPageHeight
+	- getPageWidth
+	- getSelectedItemFromListVariable
+	- getSelectedLayoutName
+	- getTextVariableValue
+	- getTriggeredFrameName
+	- getTriggeredLayoutName
+	- getTriggeredVariableName
+	- getTriggeredVariableValue
+	- getVariableIsVisible
+	- getVariableValue
+
+### Select
+
+This specific function sets the active Layout to the specified Layout.
+
+	- selectLayout
+
+### Set
+
+Set functions allow you to set a property of an object.
+
+E.g. If you want a frame to be Invisible, you can 
+
+```js
+	setFrameVisible("Frame 1", false)
+```
+
+	- setBooleanVariableValue
+	- setFrameHeight
+	- setFrameRotation
+	- setFrameVisible
+	- setFrameWidth
+	- setFrameX
+	- setFrameY
+	- setImageVariableValue
+	- setListVariableValue
+	- setPageSize
+	- setSelectedItemFromListVariable
+	- setTextVariableValue
+	- setVariableValue
+	- setVariableVisible
+	
+	
+!!! info "For the JavaScript geeks ..."
+	The CHILI GraFx SDK is an open source project. It's a wrapper around the core technology, that enables our GraFx Studio Editor. We keep a list of the Helper Functions, and since it's source code, you will see more details about the function and its requirements. [List of Helper Functions in the SDK](https://github.com/chili-publish/studio-sdk/blob/main/packages/actions/src/ActionHelpers.ts)
