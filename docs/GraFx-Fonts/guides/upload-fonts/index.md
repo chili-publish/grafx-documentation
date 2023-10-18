@@ -26,7 +26,11 @@ GraFx Fonts will read the metadata from the font files, als suggest the categori
 
 ![appscreen](confirmstyles.png)
 
-At this moment in the upload process, you can still delete a specific font before it's added to the GraFx Fonts repository.
+At this moment in the upload process, you can still choose to NOT upload a specific font to the GraFx Fonts application.
+
+Click the waste bin next to the font (style) you wish NOT to upload.
+
+![appscreen](wastebin.png)
 
 ## Upload ready
 
@@ -43,11 +47,11 @@ Click the font family to see its contents (the font styles).
 
 ### Duplicates
 
-When GraFx Fonts detects a duplicate category, you'll see a warning icon.
+When GraFx Fonts detects a duplicate, you'll see a warning icon.
+
+![appscreen](error.png)
 
 You can choose to delete (not to upload) the font, or categorize it differently.
-
-![appscreen](duplicate.png)
 
 Two criteria are used to check if a font style is unique
 
