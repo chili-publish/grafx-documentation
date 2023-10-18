@@ -38,7 +38,7 @@ The list of font families show the fonts grouped in families.
 
 ![appscreen](family.png)
 
-Below the family, the amount of styles is indicated.
+Below the family, the amount of styles and the [Font type](/GraFx-Fonts/overview/supported-font-types/) is indicated.
 
 Click on the font, to see the styles in the family.
 
