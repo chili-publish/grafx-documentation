@@ -4,8 +4,6 @@
 
 GraFx Studio, GraFx Fonts & GraFx Media go live!
 
-Before today, you had access to the Alpha versions of the applications. They are now live, and ready to be used in production.
-
 ### GraFx Media
 
 ![rn_icon](/assets/CHILI_LOGOS_OK-11.svg)
