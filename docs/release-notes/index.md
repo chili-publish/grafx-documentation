@@ -10,7 +10,7 @@ Before today, you had access to the Alpha versions of the applications. They are
 
 ![rn_icon](/assets/CHILI_LOGOS_OK-11.svg)
 
-GraFx Media is the application on CHILI GraFx that enables you to manage template assets in one central library. Assets in GraFx Media are shared accross GraFx Studio & GraFx Publisher. Asset management for GraFx Publisher can still be done in GraFx Publisher but with GraFx Media we offer an improved UX to manage assets more efficiently​.
+GraFx Media is the application on CHILI GraFx that enables you to manage template assets in one central library. Assets in GraFx Media are shared across GraFx Studio & GraFx Publisher. Asset management for GraFx Publisher can still be done in GraFx Publisher but with GraFx Media we offer an improved UX to manage assets more efficiently.
 
 #### Features
 - You can upload an asset with format .eps, .jpg, .pdf, .png, .psd, .tif & .ai
@@ -22,7 +22,7 @@ GraFx Media is the application on CHILI GraFx that enables you to manage templat
 
 ![rn_icon](/assets/CHILI_LOGOS_OK-07.svg)
 
-GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx and brings better brand consistency to CHILI GraFx. Important to know is that fonts in GraFx Fonts can only be used in GraFx Studio. Fonts used in GraFx Publisher are managed in GraFx Publisher separatly. 
+GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx and brings better brand consistency to CHILI GraFx. Important to know is that fonts in GraFx Fonts can only be used in GraFx Studio. Fonts used in GraFx Publisher are managed in GraFx Publisher separately. 
 
 #### Features
 - You can upload a font style & font family
@@ -38,7 +38,7 @@ GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx
 
 This is a big day for GraFx Studio, as it is now available for use in production!
 
-Managing templates and collections and access to the Template Designer workspace are now restricted to admins and template designers. Other users can use templates to create their own projects, but cannot edit the original templates.
+Managing templates and collections and access to the Template Designer workspace are now restricted to admins and template designers. Other users can use templates to create projects with personalized and localized content, but cannot edit the original templates.
 
 Even though it is now in production, GraFx Studio renders are not yet counted, as we want to give our users some time to get used to the new application first. We hope you enjoy it and are curious to hear your feedback!
 
@@ -52,9 +52,9 @@ It was already available as an [experimental](/release-notes/experimental/) feat
 
 **GraFx Fonts**
 
-With the introduction of GraFx Fonts we also introduce the concept of font families and font styles in GraFx Studio. You can now add font families to the Stylekit of your template instead of single fonts. This will enable all font styles from those font families for use in the template.
+With the introduction of GraFx Fonts, we also introduce the concept of font families and font styles in GraFx Studio. You can now add font families to the Stylekit of your template and the font styles from this family will be available for use in the template.
 
-**This is a breaking change!** All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore through GraFx Studio and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, so it is advised to delete them and start new projects from the updated templates.**
+**This is a breaking change!** All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore through GraFx Studio and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, it is advised to delete them and start new projects from the updated templates.
 
 **Image variable settings**
 
@@ -64,8 +64,8 @@ For custom media connectors this also enables custom settings for image variable
 
 #### Improvements
 
-- Writing actions has been made easier with the introduction of helper functions
-- Renamed triggers objects inside action script to be future proof (**this is a breaking change, please update your actions if you use e.g. triggers.changedVariable**)
+- Writing actions has been made easier with the introduction of [helper functions](/CHILI-GraFx/concepts/helper-functions/)
+- Renamed triggers that are used inside the action script (**This is a breaking change!** Please update any action that uses triggers.changedVariable, triggers.changedFrame, etc.)
 - Improved error indications in the list of actions
 - Proper support for undo/redo of actions
 - Improved visual feedback on the canvas when an image is unable to load
