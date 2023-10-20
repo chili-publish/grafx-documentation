@@ -259,6 +259,7 @@ nav:
 
     - 'Release notes':
         - 'Recent':                             'release-notes/index.md'
+        - 'Experimental':                       'release-notes/experimental/index.md'
         - '2022':                               'release-notes/2022.md'
 
     - 'Developer Center':

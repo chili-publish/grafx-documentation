@@ -1,29 +1,30 @@
 # Release notes
 
-!!! example "Experimental"
-	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
-	
-	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
+## Oct 20, 2023 - We go live!
 
-## Oct 20, 2023 - GraFx Studio, GraFx Fonts & GraFx Media go live
+GraFx Studio, GraFx Fonts & GraFx Media go live!
 
-![rn_icon](https://github.com/chili-publish/grafx-documentation/assets/122599725/5ac478d7-e2a7-434a-9a7f-c05be033d304)
+Before today, you had access to the Alpha versions of the applications. They are now live, and ready to be used in production.
+
+### GraFx Media
+
+![rn_icon](/assets/CHILI_LOGOS_OK-11.svg)
 
 GraFx Media is the application on CHILI GraFx that enables you to manage template assets in one central library. Assets in GraFx Media are shared accross GraFx Studio & GraFx Publisher. Asset management for GraFx Publisher can still be done in GraFx Publisher but with GraFx Media we offer an improved UX to manage assets more efficiently​.
 
-### Features
+#### Features
 - You can upload an asset with format .eps, .jpg, .pdf, .png, .psd, .tif & .ai
 - You can create folders
 - You can rename or delete an asset
 - You can filter on format of assets
 
-  ![2023-10-11_15-17-06](https://github.com/chili-publish/grafx-documentation/assets/122599725/0c7ebad2-855b-4a75-a6a2-73d2e578a980)
+### GraFx Fonts
 
-![rn_icon](https://github.com/chili-publish/grafx-documentation/assets/122599725/6b729083-5281-4aaf-8575-2387af635a90)
+![rn_icon](/assets/CHILI_LOGOS_OK-07.svg)
 
 GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx and brings better brand consistency to CHILI GraFx. Important to know is that fonts in GraFx Fonts can only be used in GraFx Studio. Fonts used in GraFx Publisher are managed in GraFx Publisher separatly. 
 
-### Features
+#### Features
 - You can upload a font style & font family
 - During the font upload you can change the font family and font style
 - You can sort & delete font styles & font families
@@ -31,7 +32,9 @@ GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx
 
 ![2023-10-11_15-31-50](https://github.com/chili-publish/grafx-documentation/assets/122599725/fe98f3c4-6b13-4264-aa74-862cd3a35b2f)
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+### GraFx Studio
+
+![rn_icon](/assets/CHILI_LOGOS_OK-09.svg)
 
 This is a big day for GraFx Studio, as it is now available for use in production!
 
@@ -39,27 +42,27 @@ Managing templates and collections and access to the Template Designer workspace
 
 Even though it is now in production, GraFx Studio renders are not yet counted, as we want to give our users some time to get used to the new application first. We hope you enjoy it and are curious to hear your feedback!
 
-### Features
+#### Features
 
 **Actions**
 
 Actions can be added to a template to define how it should react to user input. Actions let you show/hide a frame or variable, select a layout, change a variable value, change a color, and much more. Triggers can be set to control when actions should be executed.
 
-It was already available as an experimental feature but is now available for production use.
+It was already available as an [experimental](/release-notes/experimental/) feature but is now available for production use.
 
 **GraFx Fonts**
 
 With the introduction of GraFx Fonts we also introduce the concept of font families and font styles in GraFx Studio. You can now add font families to the Stylekit of your template instead of single fonts. This will enable all font styles from those font families for use in the template.
 
-**This is a breaking change! All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, so it is advised to delete them and start new projects from the updated templates.**
+**This is a breaking change!** All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore through GraFx Studio and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, so it is advised to delete them and start new projects from the updated templates.**
 
 **Image variable settings**
 
 Inside the image variable settings, the template designer can specify the folder inside GraFx Media where the assets for that variable are located. This results in a better experience for the user and prevents access to other assets.
 
-For custom media connectors this also enables custom settings for image variables, as defined by the connector. Custom media connectors enable you to use assets from an external DAM system in GraFx Studio templates (this is still in experimental mode).
+For custom media connectors this also enables custom settings for image variables, as defined by the connector. Custom media connectors enable you to use assets from an external DAM system in GraFx Studio templates (this is still in [experimental](/release-notes/experimental/) mode).
 
-### Improvements
+#### Improvements
 
 - Writing actions has been made easier with the introduction of helper functions
 - Renamed triggers objects inside action script to be future proof (**this is a breaking change, please update your actions if you use e.g. triggers.changedVariable**)
@@ -70,7 +73,7 @@ For custom media connectors this also enables custom settings for image variable
 - UI improvements in the Studio UI
 - When integrating the Studio UI you can configure the download and back buttons
 
-### Fixes
+#### Fixes
 
 - Fixed issue with undo/redo and saving of changes to horizontal text alignment
 
@@ -87,7 +90,7 @@ For custom media connectors this also enables custom settings for image variable
 - Fixed issue with output generation in both Template Designer workspace and Studio UI
 - You can now delete multiple paragraph and character styles, colors, and actions at once
 
-Improvements to **Actions** (experimental feature):
+Improvements to **Actions** ([experimental](/release-notes/experimental/) feature):
 
 - An error icon is shown in the list of actions if the action contains errors
 - We added more flexibility to get and set properties in an action
@@ -207,7 +210,7 @@ New variable type ‘Boolean’ was introduced with two settings –
 ![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/7a3110bc-e979-4b55-8173-8a03d2bd59ca)
 
 #### Output
-PDF output is present in the list of available output formats. This is an experimental feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
+PDF output is present in the list of available output formats. This is an [experimental](/release-notes/experimental/) feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
 
 ![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/269dae35-7e71-462e-ae9d-0033c6ad1efe)
 
@@ -289,7 +292,7 @@ CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.onlin
 
 ### Features
 
-**Experimental**
+**[experimental](/release-notes/experimental/)**
 
 - Introduce temporary POST api/experimental/environment/{environmentId}/output/pdf endpoint that provides ability to generate PDF output
 
@@ -364,7 +367,7 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 - Fixed return code (from 500 to 400) for template collection creation when the name is duplicate.
 - Fixed adding new My Project with invalid Template (prevent storing broken My Project).
 
-**Connectors (Experimental)** 
+**Connectors ([experimental](/release-notes/experimental/))** 
 
 - Added Connector module
 
