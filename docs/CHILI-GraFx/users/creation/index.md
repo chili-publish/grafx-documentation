@@ -22,6 +22,19 @@ Assigning the environment and role happens in the next step.
 
 ![Invite Users](invite-role.png)
 
+#### Invitation expiration
+
+When a user is invited to GraFx, the invitation does not expire, but the link for the user to set his password does.
+
+If a user does not receive the invitation email (e.g. due to a spam filter) or forgets about the email for some time and the link expires, the user can gain access to GraFx through the following process:
+
+- Go to chiligrafx .com
+- Enter his email address
+- Click on "Forgot password?"
+- <A Password reset email will be sent to the user>
+- Click on the password reset email link and set a new password
+- Authenticate normally
+
 ### Existing MyCP users
 
 In case some of your users are using MyCP or Zendesk, they can migrate their users to CHILI GraFx by accessing https://my.chili-publish.com.
