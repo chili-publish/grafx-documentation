@@ -86,14 +86,10 @@ A summary of the access of each role in the platform.
 | Roles | End user | SA | EA | TD | CA |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-10.svg)<br/>TD Workspace| 🚫 | 🚫<sup>1</sup> | 🚫<sup>1</sup> | ✅ | ✅<sup>2</sup>|
-|![smallapplogo](/assets/CHILI_LOGOS_OK-10.svg)<br/>My Projects| ✅ | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-08.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-12.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-
-<sup>1</sup> Before Oct 20, SA and EA had access
-
-<sup>2</sup> Output is watermarked
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | ✅ | ✅ | ✅ | ✅|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 
 ## User creation and invitation
 
