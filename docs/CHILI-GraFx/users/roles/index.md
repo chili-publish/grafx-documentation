@@ -75,7 +75,7 @@ This role will not be visible to Subscriptions without a prior CHILI publisher O
 
 ## Overview of Role Access
 
-The table below summarized the access of each specific role in the platform.
+A summary of the access of each role in the platform.
 
 - *SA*: Subscription Admin
 - *EA*: Environment Admin
@@ -86,7 +86,7 @@ The table below summarized the access of each specific role in the platform.
 | Roles | End user | SA | EA | TD | CA |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-10.svg)<br/>TD WOrkspace| 🚫 | 🚫<sup>1</sup> | 🚫<sup>1</sup> | ✅ | ✅<sup>2</sup>|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-10.svg)<br/>TD Workspace| 🚫 | 🚫<sup>1</sup> | 🚫<sup>1</sup> | ✅ | ✅<sup>2</sup>|
 |![smallapplogo](/assets/CHILI_LOGOS_OK-10.svg)<br/>My Projects| ✅ | ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-08.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-12.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
