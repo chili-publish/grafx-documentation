@@ -46,6 +46,11 @@ Even though it is now in production, GraFx Studio renders are not yet counted, a
 
 Actions can be added to a template to define how it should react to user input. Actions let you show/hide a frame or variable, select a layout, change a variable value, change a color, and much more. Triggers can be set to control when actions should be executed.
 
+<script src="https://fast.wistia.com/embed/medias/cddytrgebt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cddytrgebt seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+
+![animation](20231020actions.gif)
+
+
 It was already available as an [experimental](/release-notes/experimental/) feature but is now available for production use.
 
 **GraFx Fonts**
@@ -57,6 +62,10 @@ With the introduction of GraFx Fonts, we also introduce the concept of font fami
 **Image variable settings**
 
 Inside the image variable settings, the template designer can specify the folder inside GraFx Media where the assets for that variable are located. This results in a better experience for the user and prevents access to other assets.
+
+<script src="https://fast.wistia.com/embed/medias/ykn7900oei.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ykn7900oei seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+
+![animation](imagevariables.gif)
 
 For custom media connectors this also enables custom settings for image variables, as defined by the connector. Custom media connectors enable you to use assets from an external DAM system in GraFx Studio templates (this is still in [experimental](/release-notes/experimental/) mode).
 
