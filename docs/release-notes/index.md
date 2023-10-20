@@ -5,9 +5,11 @@
 	
 	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
 
-## Oct 19, 2023 - CHILI GraFx goes live
+## Oct 20, 2023 - GraFx Studio, GraFx Fonts & GraFx Media go live
 
 ![rn_icon](https://github.com/chili-publish/grafx-documentation/assets/122599725/5ac478d7-e2a7-434a-9a7f-c05be033d304)
+
+GraFx Media is the application on CHILI GraFx that enables you to manage template assets in one central library. Assets in GraFx Media are shared accross GraFx Studio & GraFx Publisher. Asset management for GraFx Publisher can still be done in GraFx Publisher but with GraFx Media we offer an improved UX to manage assets more efficiently​.
 
 ### Features
 - You can upload an asset with format .eps, .jpg, .pdf, .png, .psd, .tif & .ai
@@ -18,6 +20,8 @@
   ![2023-10-11_15-17-06](https://github.com/chili-publish/grafx-documentation/assets/122599725/0c7ebad2-855b-4a75-a6a2-73d2e578a980)
 
 ![rn_icon](https://github.com/chili-publish/grafx-documentation/assets/122599725/6b729083-5281-4aaf-8575-2387af635a90)
+
+GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx and brings better brand consistency to CHILI GraFx. Important to know is that fonts in GraFx Fonts can only be used in GraFx Studio. Fonts used in GraFx Publisher are managed in GraFx Publisher separatly. 
 
 ### Features
 - You can upload a font style & font family
