@@ -21,7 +21,7 @@ Click on the "..." menu next to the newly created paragraph style and choose edi
 
 Set all properties you want for this paragraph. Saving happens automatically.
 
-![Image](ps-5.png)
+![Image](ps-8.png)
 
 ## Apply a paragraph style
 

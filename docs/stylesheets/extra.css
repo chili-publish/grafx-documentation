@@ -1,3 +1,15 @@
+.reddot
+{
+	display:inline-block; 
+	width:20px; 
+	height:20px; 
+	background-color:red; 
+	border-radius:50%; 
+	color:white; 
+	text-align:center; 
+	line-height:20px;
+	margin: 0 6px 0 0;
+
 .md-typeset table:not([class]) td
 {
 	vertical-align: middle;

@@ -196,6 +196,7 @@ nav:
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
@@ -217,6 +218,7 @@ nav:
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
+            - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
         - 'Integrate GraFx studio':
             - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
             - 'Local environment':              'GraFx-Studio/integration/environment/index.md'
@@ -251,6 +253,16 @@ nav:
 #           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx-Fonts/index.md'
+        - 'Application overview':
+            - 'Application elements':           'GraFx-Fonts/overview/elements/index.md'
+            - 'Supported Font Types':           'GraFx-Fonts/overview/supported-font-types/index.md'
+        - 'Concepts':
+            - 'Fonts vs Families':              'GraFx-Fonts/concepts/fonts-vs-families/index.md'
+            - 'Fonts in GraFx Publisher':       'GraFx-Fonts/concepts/fonts-in-publisher/index.md'
+
+        - 'How to':
+            - 'Upload fonts':                   'GraFx-Fonts/guides/upload-fonts/index.md'
+            - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx-Stylekits/index.md'
