@@ -2,8 +2,18 @@
 
 ![applogo](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS-Media-1.svg)
 
-GraFx Media (Alpha) is an early version with (only) browsing functionality.
+GraFx Media is the central repository to store your assets to be used in your Smart Templates.
 
-Your assets are still available in GraFx Publisher and will continue to be shared between GraFx Studio and GraFx Publisher.
+GraFx Media uses the same repository for GraFx Publisher and GraFx Studio. This facilitates maintaining brand consistency throughout all your output.
 
-![appscreen](dashboard.png)
+## Media for all editors
+GraFx Media allows management of assets for both GraFx Studio and GraFx Publisher.
+
+``` mermaid
+erDiagram
+  GraFx-Studio ||--|| GraFx-Media : ""
+  GraFx-Publisher ||--|| GraFx-Media : ""
+  GraFx-Media {
+  	Stores Assets
+  }  
+```

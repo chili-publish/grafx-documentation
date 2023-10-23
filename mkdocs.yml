@@ -185,6 +185,7 @@ nav:
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
+            - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
@@ -194,7 +195,9 @@ nav:
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
+            - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
@@ -216,6 +219,7 @@ nav:
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
+            - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
         - 'Integrate GraFx studio':
             - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
             - 'Local environment':              'GraFx-Studio/integration/environment/index.md'
@@ -241,15 +245,29 @@ nav:
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
         - 'Application overview':
-            - 'Viewing Media':                  'GraFx-Media/overview/viewing/index.md'
+            - 'Application elements':           'GraFx-Media/overview/elements/index.md'
+            - 'Supported File Types':           'GraFx-Media/overview/filetypes/index.md'
+        - 'Concepts':
+            - 'Media vs DAM':                   'GraFx-Media/concepts/media-vs-dam/index.md'
         - 'How to':
             - 'Browse media':                   'GraFx-Media/guides/browse/index.md'
             - 'Search media':                   'GraFx-Media/guides/browse/search/index.md'
-#           'Upload media':                     'GraFx-Media/guides/upload/index.md'
+            - 'Manage folders':                 'GraFx-Media/guides/manage-folders/index.md'
+            - 'Upload media':                   'GraFx-Media/guides/upload-media/index.md'
 #           'Download media':                   'GraFx-Media/guides/download/index.md'
 #           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx-Fonts/index.md'
+        - 'Application overview':
+            - 'Application elements':           'GraFx-Fonts/overview/elements/index.md'
+            - 'Supported Font Types':           'GraFx-Fonts/overview/supported-font-types/index.md'
+        - 'Concepts':
+            - 'Fonts vs Families':              'GraFx-Fonts/concepts/fonts-vs-families/index.md'
+            - 'Fonts in GraFx Publisher':       'GraFx-Fonts/concepts/fonts-in-publisher/index.md'
+
+        - 'How to':
+            - 'Upload fonts':                   'GraFx-Fonts/guides/upload-fonts/index.md'
+            - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx-Stylekits/index.md'
@@ -259,6 +277,7 @@ nav:
 
     - 'Release notes':
         - 'Recent':                             'release-notes/index.md'
+        - 'Experimental':                       'release-notes/experimental/index.md'
         - '2022':                               'release-notes/2022.md'
 
     - 'Developer Center':

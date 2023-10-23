@@ -2,7 +2,7 @@
 
 ## Browse
 
-![appscreen](browse-1.png)
+![appscreen](dashboard.png)
 
 Initally, the top level directory structure is shown. The default view is by grid.
 

@@ -73,6 +73,24 @@ A content Administrator can create and use GraFx Publisher templates. There is n
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
+## Overview of Role Access
+
+A summary of the access of each role in the platform.
+
+- *SA*: Subscription Admin
+- *EA*: Environment Admin
+- *TD*: Template Designer
+- *TD Workspace*: The workspace where Template Designers can edit Smart Templates
+- *CA*: Content Admin
+
+| Roles | End user | SA | EA | TD | CA |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | ✅ | ✅ | ✅ | ✅|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+
 ## User creation and invitation
 
 ### First user
