@@ -8,7 +8,7 @@ Select the fonts icon to check the already available fonts in your document.
 
 ![Image](fonts-2.png)
 
-Click on the "+" sign to ad a new font.
+Click on the "+" sign to add a new font.
 
 The available fonts are shown ([GraFx Fonts](/GraFx-Fonts/) application).
 

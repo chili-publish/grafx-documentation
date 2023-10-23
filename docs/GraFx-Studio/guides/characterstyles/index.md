@@ -37,6 +37,6 @@ In the properties panel on the right, select the character style from the dropdo
 
 ![Image](cs-9.png)
 
-You selected text now has the character style applied.
+Your selected text now has the character style applied.
 
 ![Image](cs-8.png)
