@@ -22,7 +22,7 @@ Listen carefully while uploading.
 
 ![appscreen](elevator.png)
 
-GraFx Fonts will read the metadata from the font files and suggest the categorization of the fons according the family and [style](https://en.wikipedia.org/wiki/Font#Characteristics).
+GraFx Fonts will read the metadata from the font files and suggest the categorization of the fonts according the family and [style](https://en.wikipedia.org/wiki/Font#Characteristics).
 
 ![appscreen](confirmstyles.png)
 
