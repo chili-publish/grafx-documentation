@@ -28,10 +28,10 @@ When a user is invited to GraFx, the invitation does not expire, but the link fo
 
 If a user does not receive the invitation email (e.g. due to a spam filter) or forgets about the email for some time and the link expires, the user can gain access to GraFx through the following process:
 
-- Go to chiligrafx .com
+- Go to chiligrafx.com
 - Enter his email address
 - Click on "Forgot password?"
-- <A Password reset email will be sent to the user>
+- A Password reset email will be sent to the user
 - Click on the password reset email link and set a new password
 - Authenticate normally
 
