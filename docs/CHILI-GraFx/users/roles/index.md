@@ -22,6 +22,8 @@ Assigned permissions
 - User management for all users in the subscription (CRUD actions)
 - Invite users to all available environments in the subscription
 
+In the API, this is labeled as "SA".
+
 ??? Tip "Subscription Admin"
 	Important: a Subscription Admin can assign the role 'Subscription Admin' to other users on 'User Detail page'.
 
@@ -34,21 +36,26 @@ Assigned permissions
 
 - Access to environments where you are Environment Admin
 - View overview of all the environments where you are Environment Admin
+- Access to GraFx Publisher
 - Manage the CHILI GraFx environment where you are Environment Admin
 	- Environment Settings (eg. branding)
 	- User management (CRUD actions) for the users of environments where you are Environment Admin
 - Invite users to the Environment
 
-### Environment User - a.k.a. "User"
+In the API, this is labeled as "EA".
+
+### User
 
 !!! Definition
-	An Environment User works as an end-user in the CHILI GraFx environment(s) where you are assigned to.
+	A User works as an end-user in the CHILI GraFx environment(s) where you are assigned to. This is the default role, and cannot be removed.
 
 Assigned permissions
 
 - Access to the environments the user is assigned to
 - View overview of all the environments where the user is Environment User
-- Work in the environments where the user is assigned to
+- Limited in what applications they can access
+
+In the API, this is labeled as "EU".
 
 !!! Warning "Template Designer"
 	- If an Environment user wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer)
@@ -65,6 +72,24 @@ See the [Template Designer Seat](/CHILI-GraFx/users/template-designer-seat/) pag
 A content Administrator can create and use GraFx Publisher templates. There is no limit to Content Administrators for converted CHILI publisher Online customers.
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
+
+## Overview of Role Access
+
+A summary of the access of each role in the platform.
+
+- *SA*: Subscription Admin
+- *EA*: Environment Admin
+- *TD*: Template Designer
+- *TD Workspace*: The workspace where Template Designers can edit Smart Templates
+- *CA*: Content Admin
+
+| Roles | End user | SA | EA | TD | CA |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | ✅ | ✅ | ✅ | ✅|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 
 ## User creation and invitation
 

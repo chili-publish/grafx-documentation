@@ -19,3 +19,7 @@ Guides appear when allignment to these references is close to
 
 - Layout borders (top, bottom, left, right)
 - Other frame references (top, bottom, left, right, center)
+
+## Easter Egg
+
+Have you found the easter egg in the GraFx Publisher snapping settings?
