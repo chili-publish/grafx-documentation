@@ -4,8 +4,7 @@
   --tertiary: #644FCA;
 }
 
-.reddot
-{
+.reddot {
 	display:inline-block; 
 	width:20px; 
 	height:20px; 
@@ -15,6 +14,7 @@
 	text-align:center; 
 	line-height:20px;
 	margin: 0 6px 0 0;
+}
 
 .md-typeset table:not([class]) td
 {
