@@ -34,9 +34,45 @@ With helper Functions
 copyColorFromTo("characterstyle1", "characterstyle2")
 ```
 
-Start typing one of the 4 type of functions (see below) and the Action Editor will suggest the list of available functions.
+### How to find the right function?
+
+There are several approaches, to finding the function you might need.
+
+#### Get and Set
+
+For some object, you can "set" a parameter, or "get" information about an element on the page.
+
+By typing "get" or "set", you will also get a list of relevant functions.
+
+![appscreen](get.png)
+
+![appscreen](set.png)
+
+#### Keywords
+
+Another way of finding a helper function, is to start typing the name of a keyword that makes sense for you: frame, variable, document, page, etc. ...
+
+The Action editor will suggest the list of helper functions that are relevant.
+
+![appscreen](variable.png)
+
+![appscreen](image.png)
+
+![appscreen](frame.png)
+
+![appscreen](page.png)
+
+#### Category names
+
+You can also start typing one of the [4 categories](#groups-of-functions) of functions (see below) and the Action Editor will suggest the list of available functions.
 
 ![appscreen](helpers.png)
+
+#### Combine
+
+When you don't know yet, what you are looking for, start typing one of the categories. Then scroll through the list, learn from what you see, and then restart with keywords you recognize and think are relevant. This way, you'll find your way around quickly.
+
+<script src="https://fast.wistia.com/embed/medias/xu3o7hf5hb.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_xu3o7hf5hb seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
 
 ## Parameters
 
