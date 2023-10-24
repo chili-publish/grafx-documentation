@@ -68,7 +68,7 @@ For custom media connectors this also enables custom settings for image variable
 
 #### Improvements
 
-- Writing actions has been made easier with the introduction of [helper functions](/CHILI-GraFx/concepts/helper-functions/)
+- Writing actions has been made easier with the introduction of [helper functions](/GraFx-Studio/concepts/helper-functions/)
 - Renamed triggers that are used inside the action script (**This is a breaking change!** Please update any action that uses triggers.changedVariable, triggers.changedFrame, etc.)
 - Improved error indications in the list of actions
 - Proper support for undo/redo of actions
