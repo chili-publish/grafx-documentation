@@ -43,13 +43,13 @@ In this case, the trigger is initiated when the "Variable value changed", specif
 The script (action) executed upon the trigger
 
 ``` js
-	const layoutName = studio.variables.getValue(triggers.changedVariable).toString();
-	studio.layouts.select(layoutName);
+const layoutName = studio.variables.getStringValue(triggers.variableValueChanged);
+studio.layouts.select(layoutName);
 ```
 
-A constant is defined **layoutName** as the string value of the selected item in the list variable.
+A [constant](https://www.w3schools.com/js/js_const.asp) **layoutName** is defined as the string value of the variable that triggered the action. In this case this is the name of the selected ad size.
 
-This [constant](https://www.w3schools.com/js/js_const.asp) (value of) is used to select the active layout in GraFx Studio
+This constant is used to select the active layout in GraFx Studio.
 
 ### The result
 

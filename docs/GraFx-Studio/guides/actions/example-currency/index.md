@@ -42,19 +42,15 @@ The trigger is initiated when
 
 The script (action) executed upon the trigger
 
-![s](script.png)
-
 ``` js
-	let currency = studio.variables.getValue("Currency").toString();
+let currency = studio.variables.getStringValue("Currency");
 
-	if (currency === "Dollar") studio.variables.setValue("displayCurrency", "$")
-	else if (currency === "Euro") studio.variables.setValue("displayCurrency", "€")
-	else studio.variables.setValue("displayCurrency", "£");
+if (currency === "Dollar") studio.variables.setValue("displayCurrency", "$")
+else if (currency === "Euro") studio.variables.setValue("displayCurrency", "€")
+else studio.variables.setValue("displayCurrency", "£");
 ```
 
-The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
-
-A JavaScript variable **currency** is defined to hold the value of the "Currency" variable in the template, converted to a string (series of characters).
+A JavaScript variable **currency** is defined to hold the string value of the "Currency" variable in the template.
 
 A series of if-then-else statements run through the possible options, and set the value of the Variable **displayCurrency** to the relevant currency symbol.
 
