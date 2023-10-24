@@ -1,9 +1,5 @@
 # Actions JavaScript
 
-!!! example "Experimental"
-    Actions are released as Experimental.
-    This means that you can use them to test out future functionality, but the actual implementation is not final yet.
-
 Initially, Actions may seem daunting. Therefore, take a look at [this example](/GraFx-Studio/guides/actions/create/) first to get started.
 
 Once you start feeling comfortable, here is some more detailed information.
@@ -58,6 +54,10 @@ Continue to add logic around your statement.
 You can add "console.log" statements to show debug information in the browser console.
 
 ![screen](js6.png)
+
+## Helper Functions
+
+Next to using the basic object, several [helper functions](/GraFx-Studio/concepts/helper-functions/) are available. These helper functions combine several steps into one function.
 
 ## Security
 

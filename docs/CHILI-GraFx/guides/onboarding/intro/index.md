@@ -12,9 +12,9 @@ Looking for detailed training material? Have a look at the [CHILI publish Academ
 4.	Template creation
 	1.	[Hello world in GraFx Publisher](/GraFx-Studio/guides/hello-world/)
 	2.	[Hello world in GraFx Studio](/GraFx-Studio/guides/hello-world/)
-	3.	[15 minute intro into GraFx Studio](/GraFx-Studio/guides/hello-world-extended/)
+	3.	[15 minute intro into GraFx Studio](/GraFx-Studio/guides/hello-world/#extended-version)
 5.	Media management
-	1.	[GraFx Media intro](/GraFx-Media/guides/intro/)
+	1.	[GraFx Media intro](/GraFx-Media/)
 
 ## Hello World?
 

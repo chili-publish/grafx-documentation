@@ -1,7 +1,5 @@
 # Snapping
 
-## Concept
-
 When dragging frames around, you'll see bright lines appear.
 
 These lines are allignment guides, that align with other objects and reference points on the canvas.

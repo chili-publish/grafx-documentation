@@ -12,17 +12,25 @@ A font family, on the other hand, is a group or collection of related fonts. The
 
 These different styles within the same family maintain a consistent look and feel but vary in thickness, slant, or other design aspects.
 
-The Mozilla Developer Network provides a rough mapping to typical font weight names. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Font#Weight))
+## List of supported names, weights and styles
 
-| Name | Weight |
-|---|---|
-| Thin / Hairline | 100 |
-| Ultra-light / Extra-light | 200 |
-| Light | 300 |
-| Normal / regular | 400 |
-| Medium | 500 |
-| Semi-bold / Demi-bold | 600 |
-| Bold | 700 |
-| Extra-bold / Ultra-bold | 800 |
-| Heavy / Black | 900 |
-| Extra-black / Ultra-black	| 950 | 
+| Name | Weight | Style |
+|---|---|---|
+| Thin | 100 | | 
+| Thin | 100 | Italic |
+| ExtraLight | 200 |  |
+| ExtraLight | 200 | Italic |
+| Light | 300 |  |
+| Light | 300 | Italic |
+| Regular | 400 |  |
+| Regular | 400 | Italic |
+| Medium | 500 |  |
+| Medium | 500 | Italic |
+| SemiBold | 600 |  |
+| SemiBold | 600 | Italic |
+| Bold | 700 |  |
+| Bold | 700 | Italic |
+| ExtraBold | 800 |  |
+| ExtraBold | 800 | Italic |
+| Black | 900 |  |
+Black | 900 | Italic |
