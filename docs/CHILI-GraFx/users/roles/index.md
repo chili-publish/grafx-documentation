@@ -100,7 +100,7 @@ Permissions
 - Access to the environments the user is assigned to
 - View overview of all the environments where the user is Environment User
 - Limited in what applications they can access (see table)
-- Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Templates (including fonts and media in these templates)
+- Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Templates (using fonts & media that are made available in the template)
 
 In the API, this is labeled as "EU".
 
