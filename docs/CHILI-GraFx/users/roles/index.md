@@ -122,8 +122,6 @@ This role will not be visible to Subscriptions without a prior CHILI publisher O
 
 Content Administrators will be able to create templates in GraFx Studio, but the output will be watermarked in [phase 2](#phase-2-2024).
 
-
-
 ## User creation and invitation
 
 ### First user
