@@ -1,9 +1,5 @@
 # Actions: Change to another layout
 
-!!! example "Experimental"
-    Actions are released as Experimental.
-    This means that you can use them to test out future functionality, but the actual implementation is not final yet.
-
 For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
 
 ## Intro
