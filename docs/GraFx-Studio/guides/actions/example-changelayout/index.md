@@ -43,9 +43,9 @@ const layoutName = studio.variables.getStringValue(triggers.variableValueChanged
 studio.layouts.select(layoutName);
 ```
 
-A [constant](https://www.w3schools.com/js/js_const.asp) **layoutName** is defined as the string value of the variable that triggered the action. In this case this is the name of the selected ad size.
+A [const](https://www.w3schools.com/js/js_const.asp) variable **layoutName** is defined as the [string](https://www.w3schools.com/js/js_strings.asp) value of the variable that triggered the action. In this case this is the name of the selected ad size.
 
-This constant is used to select the active layout in GraFx Studio.
+This const variable is then used to select the layout with the same name (the items in the "Ad size" list variable need to have the same name as the layouts).
 
 ### The result
 
