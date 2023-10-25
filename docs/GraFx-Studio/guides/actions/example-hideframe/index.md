@@ -53,7 +53,7 @@ if (oldPriceVariable.trim() === "") {
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript variable **oldPriceVariable** is defined to hold the string value of the "Old price" variable in the template.
+A JavaScript variable **oldPriceVariable** is defined to hold the [string](https://www.w3schools.com/js/js_strings.asp) value of the "Old price" variable in the template.
 
 Then an if-statement checks if the JavaScript variable **oldPriceVariable** contains a value.
 

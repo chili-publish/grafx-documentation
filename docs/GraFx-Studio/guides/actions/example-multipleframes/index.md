@@ -60,9 +60,9 @@ if(discountVisible){
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript variable **discount** is defined to hold the string value of the "Discount" variable in the template.
+A JavaScript variable **discount** is defined to hold the [string](https://www.w3schools.com/js/js_strings.asp) value of the "Discount" variable in the template.
 
-The JavaScript variable **discountVisible** is either *true* or *false* and is used later to set the visibility of the frames. It uses a conditional check: it is *true* if **discount** has a value different from "No discount", and *false* for any other value.
+The JavaScript variable **discountVisible** is either *true* or *false* and is used later to set the visibility of the frames. It uses a conditional check: it is *true* (= show the frame) if the value of **discount** is different from "No discount", and *false* (= hide the frame) if the value is "No discount".
 
 The JavaScript variable **promoVisible** is also used to set the visibility of the frames and also uses a conditional check: it is *true* if **discount** has a value equal to "-50%", and *false* for any other value.
 
