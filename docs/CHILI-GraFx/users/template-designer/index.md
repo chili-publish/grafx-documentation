@@ -12,15 +12,14 @@ Assigned permissions
 - View templates
 - Create templates
 - Update templates
-- delete templates
+- Delete templates
 
-!!! Warning "Different permissions then Environment user"
-	- Different permissions than Environment User
+!!! Warning "Different permissions than Environment user"
 	- The Template Designer has to be assigned on the Subscription Management page since this role is an paying add-on
 	- A Template Designer is assigned on Subscription Level and gives this user access to all the environments of that subscription
 	- To use the Desktop plugins you don't need a template designer seat: importing content in GraFx Publisher or GraFx Studio doesn't require a template designer seat but making the templates smart does require a seat.
 
-Template designer seats (role) is assigned on the Subscription page
+Template designer seat (role) is assigned on the Subscription page
 
 ![Template Designer Seat](tds_assign_seat.png)
 
