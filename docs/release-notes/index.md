@@ -1,5 +1,14 @@
 # Release notes
 
+## Oct 31, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- System: Fixed performance degradation for copy and move operations
+- Fixed issue with using keyboard shortcut to delete a locked frame (constraints)
+
 ## Oct 20, 2023 - We go live!
 
 GraFx Studio, GraFx Fonts & GraFx Media go live!
