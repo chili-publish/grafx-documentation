@@ -1,5 +1,23 @@
 # Release notes
 
+## Nov 2, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- Our new AI assistant GraFx Genie can help you write actions. Just tell it what the action should do and it will generate the JavaScript code for you (available in experimental mode)
+- You can change the unit of a layout to millimeters or inches. This is a first step toward enabling print output with GraFx Studio! (available in experimental mode)
+
+### Improvements
+
+- You can reorder frames in the Layers panel by drag and drop. This changes the order in which frames are rendered on top of each other
+- Improved handling of invalid input in the property input fields
+
+### Fixes
+
+- Fixed issue where a frame was accidentally deleted when using the delete/backspace key while a dialog is open but the focus is not on the text input field
+
 ## Oct 20, 2023 - We go live!
 
 GraFx Studio, GraFx Fonts & GraFx Media go live!
