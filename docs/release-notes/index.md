@@ -6,8 +6,8 @@
 
 ### Fixes
 
-- System: Fixed performance degradation for copy and move operations
-- Fixed issue with using keyboard shortcut to delete a locked frame (constraints)
+- Fixed performance degradation of copy & move operations
+- Fixed issue with using keyboard shortcut to delete a locked frame (when frame has constraints)
 
 ## Oct 20, 2023 - We go live!
 
