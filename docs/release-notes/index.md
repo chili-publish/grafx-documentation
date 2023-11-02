@@ -1,5 +1,13 @@
 # Release notes
 
+## Nov 2, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed resources consistency issue between Environment API and CPO. Sometimes folders where duplicated.
+
 ## Oct 31, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
