@@ -185,7 +185,7 @@ nav:
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
-            - 'Genie':                          'GraFx-Studio/concepts/genie/index.md'
+            - 'GraFx Genie':                          'GraFx-Studio/concepts/grafx-genie/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'

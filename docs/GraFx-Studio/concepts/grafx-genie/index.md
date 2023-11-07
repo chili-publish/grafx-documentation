@@ -1,4 +1,4 @@
-# Genie for Actions (experimental)
+# GraFx Genie for Actions (experimental)
 
 !!! example "Experimental"
 	To give you early access to the latest and greatest, we will release some features as "**Experimental**". This means you can use them, but the final implementation might change. So don't use this in production.
