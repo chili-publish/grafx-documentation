@@ -1,9 +1,5 @@
 # Actions: Change to another layout
 
-!!! example "Experimental"
-    Actions are released as Experimental.
-    This means that you can use them to test out future functionality, but the actual implementation is not final yet.
-
 For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
 
 ## Intro
@@ -43,13 +39,13 @@ In this case, the trigger is initiated when the "Variable value changed", specif
 The script (action) executed upon the trigger
 
 ``` js
-	const layoutName = studio.variables.getValue(triggers.changedVariable).toString();
-	studio.layouts.select(layoutName);
+const layoutName = studio.variables.getStringValue(triggers.variableValueChanged);
+studio.layouts.select(layoutName);
 ```
 
-A constant is defined **layoutName** as the string value of the selected item in the list variable.
+A [const](https://www.w3schools.com/js/js_const.asp) variable **layoutName** is defined as the [string](https://www.w3schools.com/js/js_strings.asp) value of the variable that triggered the action. In this case this is the name of the selected ad size.
 
-This [constant](https://www.w3schools.com/js/js_const.asp) (value of) is used to select the active layout in GraFx Studio
+This const variable is then used to select the layout with the same name (the items in the "Ad size" list variable need to have the same name as the layouts).
 
 ### The result
 
