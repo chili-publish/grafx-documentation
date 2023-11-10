@@ -31,6 +31,23 @@
 - Copyfitting maximum value resets to the default value on frame movement
 - Text overflow warning icon is shown for a second when you switch between text frames in text edit mode
 
+## Nov 2, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed resources consistency issue between Environment API and CPO. Sometimes folders where duplicated.
+
+## Oct 31, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed performance degradation of copy & move operations
+- Fixed issue with using keyboard shortcut to delete a locked frame (when frame has constraints)
+
 ## Oct 20, 2023 - We go live!
 
 GraFx Studio, GraFx Fonts & GraFx Media go live!
