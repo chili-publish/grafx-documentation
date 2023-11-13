@@ -1,5 +1,36 @@
 # Release notes
 
+## Nov 7, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- Our new AI assistant [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/) can help you write actions! Just tell it what the action should do and it will generate the JavaScript code for you (available in [experimental](/release-notes/experimental/) mode)
+- You can change the unit of a layout to millimeters or inches. This is a first step toward enabling print output with GraFx Studio! (available in [experimental](/release-notes/experimental/) mode)
+
+### Improvements
+
+- You can reorder frames in the Layers panel by drag and drop. This changes the order in which frames are rendered on top of each other
+- Improved handling of invalid input in the property input fields
+- Added support for images with a custom crop in PDF output (available in [experimental](/release-notes/experimental/) mode)
+
+### Fixes
+
+- Assets are shown twice in the Media panel
+- Selected frame is deleted when using the delete/backspace key while a dialog is open but the focus is not on the text input field
+- Actions that use the "Frame moved" trigger are executed multiple times when the frame is moved by holding down an arrow key
+- Action is not added to the undo/redo stack if the Folder setting for the GraFx Media connector was changed in the image variable settings
+- Cannot insert an empty text variable in a text frame
+- Not able to apply the default Arial font to text
+- Font style does not display the correct style when the default Arial font is used
+- Updated value of line height in character style is applied to the text only after entering text edit mode
+- Paragraph style cannot be set after deleting the used font
+- Paragraph style settings can't be opened by pencil icon if you clicked outside before
+- 'Null' is present for character style settings when you provide an invalid value
+- Copyfitting maximum value resets to the default value on frame movement
+- Text overflow warning icon is shown for a second when you switch between text frames in text edit mode
+
 ## Nov 2, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
