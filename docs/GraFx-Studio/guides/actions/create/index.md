@@ -1,9 +1,5 @@
 # How to create an Action
 
-!!! example "Experimental"
-    Actions are released as Experimental.
-    This means that you can use them to test out future functionality, but the actual implementation is not final yet.
-
 ## Add Action
 
 Open the [Automation panel](GraFx-Studio/overview/properties/#automation-properties).

@@ -1,9 +1,5 @@
 # Actions: How to hide a frame
 
-!!! example "Experimental"
-    Actions are released as Experimental.
-    This means that you can use them to test out future functionality, but the actual implementation is not final yet.
-
 For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
 
 ## Intro
@@ -43,23 +39,23 @@ The trigger is initiated when
 The script (action) executed upon the trigger
 
 ``` js
-	// Hide the Old price frame and Old price shape frame, Discount and Discount shape frame if the Old price variable doesn't contain a value, show them when it has a value
-	let oldPriceVariable = studio.variables.getValue('Old price').toString();
+// Hide the Old price and Old price shape frames if the Old price variable doesn't contain a value, show them if it has a value
+let oldPriceVariable = studio.variables.getStringValue("Old price");
 
-	if (oldPriceVariable.trim()==="") {
-		studio.frames.setVisible('Old price', false);
-		studio.frames.setVisible('Old price shape', false);
-	} else {
-		studio.frames.setVisible('Old price', true);
-		studio.frames.setVisible('Old price shape', true);
-	}
+if (oldPriceVariable.trim() === "") {
+    studio.frames.setVisible("Old price", false);
+    studio.frames.setVisible("Old price shape", false);
+} else {
+    studio.frames.setVisible("Old price", true);
+    studio.frames.setVisible("Old price shape", true);
+}
 ```
 
 The part starting with double "//" are comments, to give info to your future self, or colleague Template Designers working on the script.
 
-A JavaScript variable **oldPriceVariable** is defined to hold the value of the Variable in the document, and is converted to a string (series of characters).
+A JavaScript variable **oldPriceVariable** is defined to hold the [string](https://www.w3schools.com/js/js_strings.asp) value of the "Old price" variable in the template.
 
-Then an if-statement checks if the JS variable **oldPriceVariable** contains a value.
+Then an if-statement checks if the JavaScript variable **oldPriceVariable** contains a value.
 
 If this is NOT the case, we use the "setVisible" method to set the visibility of the frame to "false", basically hiding the frame from sight and output.
 

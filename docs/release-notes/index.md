@@ -1,9 +1,133 @@
 # Release notes
 
-!!! example "Experimental"
-	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
-	
-	These features or endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your (production) code on experimental features.
+## Nov 7, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- Our new AI assistant [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/) can help you write actions! Just tell it what the action should do and it will generate the JavaScript code for you (available in [experimental](/release-notes/experimental/) mode)
+- You can change the unit of a layout to millimeters or inches. This is a first step toward enabling print output with GraFx Studio! (available in [experimental](/release-notes/experimental/) mode)
+
+### Improvements
+
+- You can reorder frames in the Layers panel by drag and drop. This changes the order in which frames are rendered on top of each other
+- Improved handling of invalid input in the property input fields
+- Added support for images with a custom crop in PDF output (available in [experimental](/release-notes/experimental/) mode)
+
+### Fixes
+
+- Assets are shown twice in the Media panel
+- Selected frame is deleted when using the delete/backspace key while a dialog is open but the focus is not on the text input field
+- Actions that use the "Frame moved" trigger are executed multiple times when the frame is moved by holding down an arrow key
+- Action is not added to the undo/redo stack if the Folder setting for the GraFx Media connector was changed in the image variable settings
+- Cannot insert an empty text variable in a text frame
+- Not able to apply the default Arial font to text
+- Font style does not display the correct style when the default Arial font is used
+- Updated value of line height in character style is applied to the text only after entering text edit mode
+- Paragraph style cannot be set after deleting the used font
+- Paragraph style settings can't be opened by pencil icon if you clicked outside before
+- 'Null' is present for character style settings when you provide an invalid value
+- Copyfitting maximum value resets to the default value on frame movement
+- Text overflow warning icon is shown for a second when you switch between text frames in text edit mode
+
+## Nov 2, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed resources consistency issue between Environment API and CPO. Sometimes folders where duplicated.
+
+## Oct 31, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed performance degradation of copy & move operations
+- Fixed issue with using keyboard shortcut to delete a locked frame (when frame has constraints)
+
+## Oct 20, 2023 - We go live!
+
+GraFx Studio, GraFx Fonts & GraFx Media go live!
+
+### GraFx Media
+
+![rn_icon](/assets/CHILI_LOGOS_OK-11.svg)
+
+GraFx Media is the application on CHILI GraFx that enables you to manage template assets in one central library. Assets in GraFx Media are shared across GraFx Studio & GraFx Publisher. Asset management for GraFx Publisher can still be done in GraFx Publisher but with GraFx Media we offer an improved UX to manage assets more efficiently.
+
+#### Features
+- You can upload an asset with format .eps, .jpg, .pdf, .png, .psd, .tif & .ai
+- You can create folders
+- You can rename or delete an asset
+- You can filter on format of assets
+
+### GraFx Fonts
+
+![rn_icon](/assets/CHILI_LOGOS_OK-07.svg)
+
+GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx and brings better brand consistency to CHILI GraFx. Important to know is that fonts in GraFx Fonts can only be used in GraFx Studio. Fonts used in GraFx Publisher are managed in GraFx Publisher separately. 
+
+#### Features
+- You can upload a font style & font family
+- During the font upload you can change the font family and font style
+- You can sort & delete font styles & font families
+- You can access font styles details
+
+![2023-10-11_15-31-50](https://github.com/chili-publish/grafx-documentation/assets/122599725/fe98f3c4-6b13-4264-aa74-862cd3a35b2f)
+
+### GraFx Studio
+
+![rn_icon](/assets/CHILI_LOGOS_OK-09.svg)
+
+This is a big day for GraFx Studio, as it is now available for use in production!
+
+Managing templates and collections and access to the Template Designer workspace are now restricted to admins and template designers. Other users can use templates to create projects with personalized and localized content, but cannot edit the original templates.
+
+Even though it is now in production, GraFx Studio renders are not yet counted, as we want to give our users some time to get used to the new application first. We hope you enjoy it and are curious to hear your feedback!
+
+#### Features
+
+**Actions**
+
+Actions can be added to a template to define how it should react to user input. Actions let you show/hide a frame or variable, select a layout, change a variable value, change a color, and much more. Triggers can be set to control when actions should be executed.
+
+<script src="https://fast.wistia.com/embed/medias/cddytrgebt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cddytrgebt seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+
+
+It was already available as an [experimental](/release-notes/experimental/) feature but is now available for production use.
+
+**GraFx Fonts**
+
+With the introduction of GraFx Fonts, we also introduce the concept of font families and font styles in GraFx Studio. You can now add font families to the Stylekit of your template and the font styles from this family will be available for use in the template.
+
+**This is a breaking change!** All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore through GraFx Studio and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, it is advised to delete them and start new projects from the updated templates.
+
+**Image variable settings**
+
+Inside the image variable settings, the template designer can specify the folder inside GraFx Media where the assets for that variable are located. This results in a better experience for the user and prevents access to other assets.
+
+<script src="https://fast.wistia.com/embed/medias/ykn7900oei.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ykn7900oei seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+
+
+For custom media connectors this also enables custom settings for image variables, as defined by the connector. Custom media connectors enable you to use assets from an external DAM system in GraFx Studio templates (this is still in [experimental](/release-notes/experimental/) mode).
+
+#### Improvements
+
+- Writing actions has been made easier with the introduction of [helper functions](/GraFx-Studio/concepts/helper-functions/)
+- Renamed triggers that are used inside the action script (**This is a breaking change!** Please update any action that uses triggers.changedVariable, triggers.changedFrame, etc.)
+- Improved error indications in the list of actions
+- Proper support for undo/redo of actions
+- Improved visual feedback on the canvas when an image is unable to load
+- UI improvements in the Template Designer workspace
+- UI improvements in the Studio UI
+- When integrating the Studio UI you can configure the download and back buttons
+
+#### Fixes
+
+- Fixed issue with undo/redo and saving of changes to horizontal text alignment
 
 ## Sep 19, 2023 - GraFx Publisher
 
@@ -18,7 +142,7 @@
 - Fixed issue with output generation in both Template Designer workspace and Studio UI
 - You can now delete multiple paragraph and character styles, colors, and actions at once
 
-Improvements to **Actions** (experimental feature):
+Improvements to **Actions** ([experimental](/release-notes/experimental/) feature):
 
 - An error icon is shown in the list of actions if the action contains errors
 - We added more flexibility to get and set properties in an action
@@ -138,7 +262,7 @@ New variable type ‘Boolean’ was introduced with two settings –
 ![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/7a3110bc-e979-4b55-8173-8a03d2bd59ca)
 
 #### Output
-PDF output is present in the list of available output formats. This is an experimental feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
+PDF output is present in the list of available output formats. This is an [experimental](/release-notes/experimental/) feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
 
 ![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/269dae35-7e71-462e-ae9d-0033c6ad1efe)
 
@@ -220,7 +344,7 @@ CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.onlin
 
 ### Features
 
-**Experimental**
+**[experimental](/release-notes/experimental/)**
 
 - Introduce temporary POST api/experimental/environment/{environmentId}/output/pdf endpoint that provides ability to generate PDF output
 
@@ -295,7 +419,7 @@ CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.onlin
 - Fixed return code (from 500 to 400) for template collection creation when the name is duplicate.
 - Fixed adding new My Project with invalid Template (prevent storing broken My Project).
 
-**Connectors (Experimental)** 
+**Connectors ([experimental](/release-notes/experimental/))** 
 
 - Added Connector module
 
