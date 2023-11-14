@@ -1,5 +1,17 @@
 # Release notes
 
+## Nov 14, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Improved PDF output performance
+- Fixed duplicates for resources
+- Fixed blank documents in rare occasions
+- Fixed stuck tasks in queue after VDP output
+- Fixed document image output
+
 ## Nov 7, 2023 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
