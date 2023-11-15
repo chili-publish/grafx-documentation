@@ -230,8 +230,45 @@ nav:
             - 'Custom app':                     'GraFx-Studio/integration/custom-app/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
-        - 'Guides':
-          - 'Hello world':                      'GraFx-Publisher/guides/hello-world/index.md'
+        - 'Hello world':                        'GraFx-Publisher/guides/hello-world/index.md'
+        - 'Application overview':               
+            - 'Overview':                       'GraFx-Publisher/overview/index.md'
+            - 'Backoffice':                     'GraFx-Publisher/overview/backoffice/index.md'
+            - 'Limitations':                    'GraFx-Publisher/overview/limitations/index.md'
+        - 'Concepts':
+            - 'Who are you?':                   'GraFx-Publisher/concepts/profiles/index.md'
+            - 'Renders':                        'GraFx-Publisher/concepts/renders/index.md'
+            - 'Smart Templates':                'GraFx-Publisher/concepts/smart-templates/index.md'
+            - 'Media':                          'GraFx-Publisher/concepts/media/index.md'
+            - 'Fonts':                          'GraFx-Publisher/concepts/fonts/index.md'
+            - 'Constraints':                    'GraFx-Publisher/concepts/constraints/index.md'
+            - 'Workspace':                      'GraFx-Publisher/concepts/workspace/index.md'
+            - 'ViewPreference':                 'GraFx-Publisher/concepts/viewpreference/index.md'
+            - 'Exporting - Roundtrip':          'GraFx-Publisher/concepts/export-roundtrip/index.md'
+            - '3D Folding':                     'GraFx-Publisher/concepts/3D-folding/index.md'
+            - '3D Models':                      'GraFx-Publisher/concepts/3D-models/index.md'
+            - 'ODT Import':                     'GraFx-Publisher/concepts/ODT/index.md'
+            - 'Structured Text Import':         'GraFx-Publisher/concepts/structured-text-import/index.md'
+            - 'PDF output':                     'GraFx-Publisher/concepts/PDF/index.md'
+            - 'Backups':                        'GraFx-Publisher/concepts/backups/index.md'
+            - 'Backwards compatibility':        'GraFx-Publisher/concepts/compatibility/index.md'
+            - 'Workflow':                       'GraFx-Publisher/concepts/workflow/index.md'
+            - 'Made to integrate':              'GraFx-Publisher/concepts/integration/index.md'
+            - 'Custom UI':                      'GraFx-Publisher/concepts/custom-ui/index.md'
+            - 'Connectors':                     'GraFx-Publisher/concepts/connectors/index.md'
+            - 'Backoffice':                     'GraFx-Publisher/concepts/backoffice/index.md'
+        - 'How to: Prepare':
+            - 'Image Conversion Profiles':      'GraFx-Publisher/guides/image-conversion-profiles/index.md'
+            - 'Image Transformations':          'GraFx-Publisher/guides/image-transformations/index.md'
+        - 'How to: Design':
+            - 'Create first document':          'GraFx-Publisher/guides/templates/first-document/index.md'
+        - 'How to: Automate':                   'GraFx-Publisher/guides/automate/index.md'
+        - 'How to: Output':                     'GraFx-Publisher/guides/output/index.md'
+        - 'How to: Integrate':                    
+            - 'Create API Users':               'GraFx-Publisher/guides/integrate/api-users/index.md'
+        - 'How to: Connect':                    
+            - 'Introduction':                   'GraFx-Publisher/guides/connect/index.md'
+            - 'Enfocus Switch':                 'GraFx-Publisher/guides/connect/switch/index.md'        
         - 'JavaScript':
           - 'Intro':                            'GraFx-Publisher/guides/javascript/index.md'
           - 'Examples':
