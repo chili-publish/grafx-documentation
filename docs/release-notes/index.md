@@ -1,5 +1,13 @@
 # Release notes
 
+## Nov 21, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed: EPS file previews missing after datamigration
+
 ## Nov 7, 2023 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
