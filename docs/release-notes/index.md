@@ -6,7 +6,7 @@
 
 ### Fixes
 
-- Fixed: EPS file previews missing after datamigration
+- Fixed: EPS file previews missing after data migration
 
 ## Nov 14, 2023 - GraFx Publisher
 
