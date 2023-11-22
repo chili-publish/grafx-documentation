@@ -139,4 +139,4 @@ Your pull request will be reviewed and approved before being merged into the `ma
 
 ## License
 
-Any approved and merged content you submit will be subject to the terms of the project's [license](LICENSE.md). Ensure your contributions consist of original material, or content that is freely available for commercial use and requires no attribution. Exceptions apply for media content depicting CHILI publish software.
+Any approved and merged content you submit will be subject to the terms of the project's [license](LICENSE). Ensure your contributions consist of original material, or content that is freely available for commercial use and requires no attribution. Exceptions apply for media content depicting CHILI publish software.

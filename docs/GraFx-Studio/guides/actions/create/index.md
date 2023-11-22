@@ -2,7 +2,7 @@
 
 ## Add Action
 
-Open the [Automation panel](GraFx-Studio/overview/properties/#automation-properties).
+Open the [Automation panel](/GraFx-Studio/overview/properties/#automation-properties).
 
 By default, a new document will not have any Actions.
 
