@@ -1,5 +1,30 @@
 # Release notes
 
+## Nov 22, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.3.3](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+### Improvements
+
+- Introduced the ability to add watermarks to outputs.
+- Improved the performance of the 'Get' endpoints for media and templates.
+- Transitioned to using a token cache service for fetching internal tokens, moving away from direct calls to the identity provider.
+- Standardized the examples in Swagger documentation for consistency.
+
+### Fixes
+
+- Fixed the issue causing a 500 response when certain invalid arguments are used.
+- Addressed an issue where URLs containing the 'environment' value in varying case sensitivities caused errors.
+- Resolved a 500 error that occurred due to a concurrency issue when executing multiple requests to delete a single folder.
+- Fixed a problem where templates became unattachable to any collection after being manually migrated to another environment without updating their ID.
+
+### New Endpoints
+
+- Introduced for Enhanced Media Preview Capabilities<br>`GET /api/v1/environment/{environment}/media/{mediaId}/preview/highestOrVector`
+
+
 ## Nov 21, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
