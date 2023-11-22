@@ -1,6 +1,6 @@
 # Understanding Storage Calculation
 
-How is storage is calculated in CHILI GraFx. This document is designed to provide you with a clear understanding of how your media assets, such as pictures, consume storage space in CHILI GraFx.
+This document outlines how your media assets, such as pictures, consume storage space in CHILI GraFx.
 
 ## 1. **Uploading Media Assets**
 
