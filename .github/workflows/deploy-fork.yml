@@ -1,12 +1,13 @@
-name: Azure Static Web Apps CI/CD
+name: Deploy fork PR to dev
 
 on:
-  pull_request:
-    types: [labeled]
+  workflow_run: 
+    workflows: [Apply Deploy Label]
+    types:
+      - completed
 
 jobs:
   build_and_deploy_job:
-    if: github.event.label.name == 'Accept for Deploy'
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
@@ -35,7 +36,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
-    if: github.repository != 'chili-publish/grafx-documentation' && github.event_name == 'pull_request' && github.event.action == 'closed'
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
