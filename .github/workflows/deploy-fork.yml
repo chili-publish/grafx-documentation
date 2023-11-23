@@ -1,7 +1,10 @@
 name: Deploy fork PR to dev
 
 on:
-  workflow_run: [Apply Deploy Label]
+  workflow_run: 
+    workflows: [Apply Deploy Label]
+    types:
+      - completed
 
 jobs:
   build_and_deploy_job:
