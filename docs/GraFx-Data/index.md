@@ -5,4 +5,4 @@
 Connect GraFx Data with any data provider—or add your own data—then use GraFx Studio to drive fully-automated graphical production.
 
 !!! Info
-	Available soon
+	Available soon!!!!!!!!!!!!
