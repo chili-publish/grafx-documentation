@@ -8,7 +8,6 @@ CHILI GraFx [Environment API 1.3.3](https://sandbox1.chili-publish-sandbox.onlin
 
 ### Improvements
 
-- Introduced the ability to add watermarks to outputs.
 - Improved the performance of the 'Get' endpoints for media and templates.
 - Transitioned to using a token cache service for fetching internal tokens, moving away from direct calls to the identity provider.
 - Standardized the examples in Swagger documentation for consistency.
