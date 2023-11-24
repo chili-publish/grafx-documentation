@@ -8,6 +8,7 @@
 
 Permissions
 
+
 - View all subscription(s) assigned to
 - View usage reporting
 - View subscription details
