@@ -4,9 +4,10 @@
 
 ### Subscription Admin
 
-**Definition**: A Subscription Admin manages the subscription(s) they are assigned too
+**Definition**: A Subscription Admin manages the subscription(s) they are assigned to
 
 Permissions
+
 
 - View all subscription(s) assigned to
 - View usage reporting
