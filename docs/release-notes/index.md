@@ -1,5 +1,20 @@
 # Release notes
 
+## Nov 27, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Improvements
+
+- Improved performance of getting renders information
+- Optimization of authorization-related functions
+
+### Fixes
+
+- Fixed error response in case of failed users invitation
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
 ## Nov 22, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
@@ -22,7 +37,6 @@ CHILI GraFx [Environment API 1.3.3](https://sandbox1.chili-publish-sandbox.onlin
 ### New Endpoints
 
 - Introduced for Enhanced Media Preview Capabilities<br>`GET /api/v1/environment/{environment}/media/{mediaId}/preview/highestOrVector`
-
 
 ## Nov 21, 2023 - GraFx Publisher
 
