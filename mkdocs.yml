@@ -164,13 +164,12 @@ nav:
                 - 'GraFx Media intro':          'CHILI-GraFx/guides/onboarding/media/index.md'
         - 'Trust':
             - 'Introduction':                   'CHILI-GraFx/trust/introduction/index.md'
-            - 'Compliance':                     'CHILI-GraFx/trust/compliance/index.md'
             - 'Security Policy':                'CHILI-GraFx/trust/security-policy/index.md'
+            - 'Compliance':                     'CHILI-GraFx/trust/compliance/index.md'
             - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
             - 'Privacy and Data Protection':    'CHILI-GraFx/trust/privacy-data-protection/index.md'
-            - 'Definitions':
-                - 'Data at rest':               'CHILI-GraFx/trust/definitions/data-at-rest/index.md'
-                - 'Data in transit':            'CHILI-GraFx/trust/definitions/data-in-transit/index.md'
+            - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
+            - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
