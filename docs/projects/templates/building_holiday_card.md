@@ -1,15 +1,14 @@
 # Building A Holiday Card
-📝 This guide was built using GraFx Studio before it was released in production
-
+📝 This guide was built using GraFx Studio
 
 ## Topics to discuss:
 - Uploading assets
-- Adding assets a document
+- Adding assets to a document
 - Working with layers
-- Animating with the time line
+- Animating with the timeline
 
 ## Intro
-We are going to be building an animated holiday card which you can send to colleagues, friends, and family.
+We are going to be building an animated holiday card that you can send to colleagues, friends, and family.
 
 The end result can look like this:
 
