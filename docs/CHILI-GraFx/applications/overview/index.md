@@ -4,15 +4,15 @@
 
 ![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK_publisher.svg)
 
-Create smart templates to allow your customers to serve static digital and print output
+Create Smart Templates to allow your customers to serve static digital and print output
 
-[See GraFx publisher documentation](/GraFx-Publisher/)
+[See GraFx Publisher documentation](/GraFx-Publisher/)
 
 ---
 
 ![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
-Create smart templates to allow your customers to serve animated and static digital output
+Create Smart Templates to allow your customers to serve animated and static digital output
 
 [See GraFx Studio documentation](/GraFx-Studio/)
 
@@ -20,7 +20,7 @@ Create smart templates to allow your customers to serve animated and static digi
 
 ![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-11.svg)
 
-Repository for your digital assets to be used in GraFx publisher and GraFx studio
+Repository for your digital assets to be used in GraFx Publisher and GraFx Studio
 
 [See GraFx Media documentation](/GraFx-Media/)
 
@@ -28,7 +28,7 @@ Repository for your digital assets to be used in GraFx publisher and GraFx studi
 
 ![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-07.svg)
 
-Repository for your digital fonts to be used in GraFx publisher and GraFx studio
+Repository for your digital fonts to be used in GraFx Publisher and GraFx Studio
 
 [See GraFx Fonts documentation](/GraFx-Fonts/)
 
