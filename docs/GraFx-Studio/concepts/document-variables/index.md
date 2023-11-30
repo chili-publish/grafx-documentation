@@ -1,4 +1,4 @@
-# Variables
+# Document Variables
 
 !!! Info
 
@@ -6,7 +6,9 @@
 
 	Source: [Wikipedia](https://en.wikipedia.org/wiki/Variable_(computer_science)){target="_blank"}
 
-	In the context of **GraFx Studio**, that variable is used in a frame as placeholder to be replaced with the content of the variable or datasource.
+	In the context of **GraFx Studio**, that document variable is used in a frame as placeholder to be replaced with the content of the variable or datasource.
+	
+	We specifically refer to **document** variables, since you can also use **JavaScript** variables in [Actions](/GraFx-Studio/concepts/actions/).
 
 ## Example
 
@@ -29,11 +31,11 @@ It could also have been:
 
 	How is life?"
 
-Variables are placeholders, that will be replaced with variable content.
+Document variables are placeholders, that will be replaced with variable content.
 
 ## Types of content
 
-The type of content for the variable will differ with the context. In the previous example, this most likely will be a piece of text.
+The type of content for the document variable will differ with the context. In the previous example, this most likely will be a piece of text.
 
 In other cases, it could be a reference to an image (or other digital asset).
 
@@ -42,4 +44,4 @@ In other cases, it could be a reference to an image (or other digital asset).
 
 	![Image](https://upload.wikimedia.org/wikipedia/commons/6/68/Raffael_058.jpg)
 
-When the frame has a source reference **$ImageRef** then you can replace the variable **$ImageRef** with the source that is relevant at any moment.
+When the frame has a source reference **$ImageRef** then you can replace the document variable **$ImageRef** with the source that is relevant at any moment.
