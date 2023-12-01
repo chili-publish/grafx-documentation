@@ -125,6 +125,7 @@ nav:
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
             - 'Template Management':            'CHILI-GraFx/concepts/template-management/index.md'
+            - 'Environments':                   'CHILI-GraFx/concepts/environments/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Storage':                        'CHILI-GraFx/concepts/storage/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
