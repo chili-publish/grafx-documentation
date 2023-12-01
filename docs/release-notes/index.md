@@ -1,5 +1,19 @@
 # Release notes
 
+# Dec 1, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Improvements
+
+- GraFx Publisher opens in separate tab
+- The menu is not collapsable anymore
+- When you browse between media in GraFx Media the URL shows the location of the asset so you can easily share the URL of an asset or use the back button
+- Environment avatars are shown in the environment overview
+- The user sees a 'No access' page when he has no access to any environment
+- UI improvements in the subscription & environment drop-down
+- UI improvements in the integration configuration
+
 ## Dec 1, 2023 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
