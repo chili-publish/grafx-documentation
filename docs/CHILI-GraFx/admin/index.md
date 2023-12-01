@@ -1,6 +1,6 @@
 # CHILI GraFx platform administration
 
-Account & Platform administration can be found under the dropdown in the icon on the top right.
+Account & Platform administration can be found under the dropdown in the avatar on the top right.
 
 ![Account Dropdown](myaccount2.png)
 
