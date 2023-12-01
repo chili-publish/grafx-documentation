@@ -32,10 +32,10 @@ You can now clear local text formatting overrides to revert to the applied parag
 
 ### Fixes
 
-- Fixed Occasional Images flicker during animation playback
+- Fixed occasional images flicker during animation playback
 - The text frame in animations now correctly displays the changed variable value when modified with an action
 - Server-side rendering no longer utilizes incorrect layouts when actions alter the layout
-- Fixed duplicating a variable group now includes duplicating the associated variables
+- Duplicating a variable group now includes duplicating the associated variables
 - Fixed rendering issues for certain fonts
 
 ## Nov 27, 2023 - CHILI GraFx
