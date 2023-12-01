@@ -1,16 +1,16 @@
 # Release notes
 
-# Dec 1, 2023 - CHILI GraFx
+## Dec 1, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
 ### Improvements
 
 - GraFx Publisher opens in separate tab
-- The menu is not collapsable anymore
-- When you browse between media in GraFx Media the URL shows the location of the asset so you can easily share the URL of an asset or use the back button
+- The Application remains visible (won't collapse anymore)
+- In GraFx Media, the URL indicates the asset's location sharing and back button navigation
 - Environment avatars are shown in the environment overview
-- The user sees a 'No access' page when he has no access to any environment
+- Without the right permissions, the user will see a 'No access' page
 - UI improvements in the subscription & environment drop-down
 - UI improvements in the integration configuration
 
@@ -20,22 +20,23 @@
 
 ### Features
 
-- You can now clear text formatting to remove all local overrides on your text and go back to the applied paragraph or character style
+- Clear local text style overrides  
+You can now clear local text formatting overrides to revert to the applied paragraph or character style
 
 ![releasenotes](clear-text-formatting.png)
 
 ### Improvements
 
-- The panels to edit actions or to select an image or font can now be moved and do not block interaction with the rest of the workspace 
-- The Template Designer workspace is no longer using the studio.chiligrafx.com domain, it is now fully integrated in the CHILI GraFx platform (this eliminates the fact that you sometimes had to log in again when opening the workspace)
+- The panels for editing actions or selecting images/fonts can now be freely moved without obstructing workspace interaction
+- The Template Designer workspace is now fully integrated into the CHILI GraFx platform using the same domain, eliminating the need for occasional re-logins due to the studio.chiligrafx.com domain change
 
 ### Fixes
 
-- Images sometimes flicker during animation playback
-- When playing an animation the text frame is not displaying the correct value from the variable if it was changed with an action
-- When an action is used to change the layout, server-side rendering sometimes uses the wrong layout
-- When duplicating a variable group the variables are not duplicated with it
-- Some fonts are not rendered correctly
+- Fixed Occasional Images flicker during animation playback
+- The text frame in animations now correctly displays the changed variable value when modified with an action
+- Server-side rendering no longer utilizes incorrect layouts when actions alter the layout
+- Fixed duplicating a variable group now includes duplicating the associated variables
+- Fixed rendering issues for certain fonts
 
 ## Nov 27, 2023 - CHILI GraFx
 
