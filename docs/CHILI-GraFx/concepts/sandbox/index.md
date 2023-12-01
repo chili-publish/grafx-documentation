@@ -6,6 +6,10 @@ A sandbox environment is like a test version of the CHILI GraFx platform or appl
 
 This means that any changes made in the sandbox will not affect the production data. The sandbox allows you to test new features to make sure they work properly before they are used in the live version.
 
+Sandboxes will have a watermark in the output and will not count as a [render](/CHILI-GraFx/concepts/renders/).
+
+![screenshot](sample.jpeg)
+
 ## Production
 
 Production is the live version of CHILI GraFx that customers use to access and use the actual platform and applications. It is where all the real work happens, and any changes made in production are immediately reflected to the end-users. 
