@@ -1,5 +1,28 @@
 # Release notes
 
+## Dec 1, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- You can now clear text formatting to remove all local overrides on your text and go back to the applied paragraph or character style
+
+![releasenotes](clear-text-formatting.png)
+
+### Improvements
+
+- The panels to edit actions or to select an image or font can now be moved and do not block interaction with the rest of the workspace 
+- The Template Designer workspace is no longer using the studio.chiligrafx.com domain, it is now fully integrated in the CHILI GraFx platform (this eliminates the fact that you sometimes had to log in again when opening the workspace)
+
+### Fixes
+
+- Images sometimes flicker during animation playback
+- When playing an animation the text frame is not displaying the correct value from the variable if it was changed with an action
+- When an action is used to change the layout, server-side rendering sometimes uses the wrong layout
+- When duplicating a variable group the variables are not duplicated with it
+- Some fonts are not rendered correctly
+
 ## Nov 27, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
