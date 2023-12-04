@@ -2,7 +2,7 @@
 
 ## Overview of Role Access
 
-We're enhancing our SaaS platform's user management through a phased approach. 
+We are enhancing our SaaS platform's user management through a phased approach. 
 
 Currently, Subscription Admins and Environment Admins can create templates to familiarize themselves with the system. 
 
