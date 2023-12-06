@@ -1,5 +1,21 @@
 # Release notes
 
+## Dec 5, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Improvements
+
+- Enhanced PDF output performance  
+Experience faster and more reliable generation of PDFs.
+
+### Fixes
+
+- Resolved root folder deletion anomaly  
+Previously, only subfolders were removed when deleting a root folder. This has been corrected to ensure the root folder is also eliminated.
+- Fixed accessibility issue in GraFx Publisher  
+Users can now access GraFx Publisher again from within CHILI GraFx.
+
 ## Dec 1, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
