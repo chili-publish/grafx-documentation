@@ -15,16 +15,16 @@ It's designed to assist you in creating actions, which play a vital role within 
 
 ## Example
 
-You have a retail template. A variable field allows the users of the template to enter a discount percentage.
+You have a retail template. A template variable field allows the users of the template to enter a discount percentage.
 When the discount drops below — let's say — 30%, you (as a template designer) want to show an extra asset, to hi-light the steep discount.
 
 ![image](template.png)
 
-A variable makes sure a user can change the discount.
+A template variable makes sure a user can change the discount.
 
 ![image](variable.png)
 
-Now, let's make an action, that will be triggerd with a variable value changes.
+Now, let's make an action, that will be triggerd with a template variable value changes.
 
 ![image](trigger.png)
 
@@ -48,7 +48,7 @@ Genie will now suggest a JavaScript you can use to perform the functionality.
 
 ![image](action2.png)
 
-As you see, Genie knows about the context. Without specifiing that discount is a variable name, it will understand and use this information to write the script.
+As you see, Genie knows about the context. Without specifiing that discount is a template variable name, it will understand and use this information to write the script.
 
 If you're not 100% convinced, you can still tweak the script, or ask a Developer colleague to take a look for the final touches.
 
