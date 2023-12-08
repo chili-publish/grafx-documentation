@@ -189,7 +189,6 @@ nav:
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
             - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
-            - 'Template Variables':             'GraFx-Studio/concepts/template-variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
