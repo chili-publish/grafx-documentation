@@ -76,9 +76,9 @@ You can find out more about generating credentials in our [Integration Guide](/C
 
 ## GraFx Publisher
 
-- [REST API Reference](https://mydocumentation.chili-publish.com/search?text=rest%20api%20endpoints){target="_blank"}
-- [Javascript API](https://mydocumentation.chili-publish.com/search?text=Getting%20started%20with%20your%20JavaScript%20integration){target="_blank"}
-- [Getting Started](https://mydocumentation.chili-publish.com/search?text=chili%20api%20guide){target="_blank"}
+- [REST API Reference](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413560/REST+API+Endpoints){target="_blank"}
+- [Javascript API](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412075/Getting+started+with+your+JavaScript+integration){target="_blank"}
+- [Getting Started](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412012/CHILI+API+Guide){target="_blank"}
 
 ## GraFx Media
 
