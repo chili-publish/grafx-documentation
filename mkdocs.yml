@@ -28,8 +28,6 @@ plugins:
         'releasenotes/index.md': 'release-notes/index.md'
   - search
   - awesome-pages
-  - tags:
-      tags_file: tags.md
   - table-reader
 #  - git-revision-date-localized:
 #      fallback_to_build_date: true
