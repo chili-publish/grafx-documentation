@@ -1,5 +1,59 @@
 # Release notes
 
+## Dec 5, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Improvements
+
+- Enhanced PDF output performance  
+Experience faster and more reliable generation of PDFs.
+
+### Fixes
+
+- Resolved root folder deletion anomaly  
+Previously, only subfolders were removed when deleting a root folder. This has been corrected to ensure the root folder is also eliminated.
+- Fixed accessibility issue in GraFx Publisher  
+Users can now access GraFx Publisher again from within CHILI GraFx.
+
+## Dec 1, 2023 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Improvements
+
+- GraFx Publisher opens in separate tab
+- The Application remains visible (won't collapse anymore)
+- In GraFx Media, the URL indicates the asset's location sharing and back button navigation
+- Environment avatars are shown in the environment overview
+- Without the right permissions, the user will see a 'No access' page
+- UI improvements in the subscription & environment drop-down
+- UI improvements in the integration configuration
+
+## Dec 1, 2023 - GraFx Studio
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+
+### Features
+
+- Clear local text style overrides  
+You can now clear local text formatting overrides to revert to the applied paragraph or character style
+
+![releasenotes](clear-text-formatting.png)
+
+### Improvements
+
+- The panels for editing actions or selecting images/fonts can now be freely moved without obstructing workspace interaction
+- The Template Designer workspace is now fully integrated into the CHILI GraFx platform using the same domain, eliminating the need for occasional re-logins due to the studio.chiligrafx.com domain change
+
+### Fixes
+
+- Fixed occasional images flicker during animation playback
+- The text frame in animations now correctly displays the changed variable value when modified with an action
+- Server-side rendering no longer utilizes incorrect layouts when actions alter the layout
+- Duplicating a variable group now includes duplicating the associated variables
+- Fixed rendering issues for certain fonts
+
 ## Nov 27, 2023 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
