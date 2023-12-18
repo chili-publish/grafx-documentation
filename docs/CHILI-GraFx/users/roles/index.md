@@ -54,7 +54,6 @@ In phase 2, Subscription Admins and Environment Admins will have the opportunity
 
 Permissions
 
-
 - View all subscription(s) assigned to
 - View usage reporting
 - View subscription details
