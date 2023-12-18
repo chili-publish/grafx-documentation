@@ -4,7 +4,7 @@ Our customers trust CHILI publish with their data, and this responsibility is so
 
 ## Data center and network security
 
-We ensure the confidentiality and integrity of your data with industry best practices. CHILI publish primarily hosts Service Data (as defined below) in Microsoft AZURE data centers that have been certified as ISO 27001, PCI/DSS Service Provider Level 1, and SOC 2 compliant. Authentication and authorization data is stored and managed in Auth0. 
+We ensure the confidentiality and integrity of your data with industry best practices. CHILI publish primarily hosts Service Data (as defined below) in Microsoft AZURE data centers that have been certified as ISO 27001, PCI/DSS Service Provider Level 1, and SOC 2 compliant. Authentication and authorization data is stored and managed in [Auth0](https://auth0.com/security). 
 See [Azure Compliance](https://azure.microsoft.com/en-us/overview/trusted-cloud/compliance/)   and [Azure Security](https://docs.microsoft.com/en-us/azure/security/) for more information. 
 
 
