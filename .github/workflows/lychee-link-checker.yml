@@ -2,7 +2,12 @@ name: Links checker
 
 on:
   push:
+    branches:
+      - main
   pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
 
 jobs:
   linkChecker:
@@ -14,7 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
-          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude '^https:\/\/cp'
+          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude '^https:\/\/cp' --exclude 'https://login.chiligrafx.com/login/callback'
           format: markdown
           # Add job summary in github action
           jobSummary: true
