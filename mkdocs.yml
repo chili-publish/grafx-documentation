@@ -161,6 +161,13 @@ nav:
                 - 'GraFx Studio intro':         'CHILI-GraFx/guides/onboarding/studio/index.md'
             - 'GraFx Media' :
                 - 'GraFx Media intro':          'CHILI-GraFx/guides/onboarding/media/index.md'
+        - 'Trust':
+            - 'Introduction':                   'CHILI-GraFx/trust/introduction/index.md'
+            - 'Security Policy':                'CHILI-GraFx/trust/security-policy/index.md'
+            - 'Compliance':                     'CHILI-GraFx/trust/compliance/index.md'
+            - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
+            - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
+            - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
@@ -220,6 +227,8 @@ nav:
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
             - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
+        - 'How to: My projects':
+            - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
         - 'Integrate GraFx studio':
             - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
             - 'Local environment':              'GraFx-Studio/integration/environment/index.md'
