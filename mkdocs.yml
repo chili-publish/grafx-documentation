@@ -234,14 +234,23 @@ nav:
         - 'Application overview':               
             - 'Overview':                       'GraFx-Publisher/overview/index.md'
             - 'Backoffice':                     'GraFx-Publisher/overview/backoffice/index.md'
+            - 'Editor':
+                - 'Intro':                      'GraFx-Publisher/overview/editor/index.md'
+                - 'Panels':                     'GraFx-Publisher/overview/editor-panels/index.md'
+                - 'Tabs':                       'GraFx-Publisher/overview/editor-tabs/index.md'
+                - 'Toolbars':                   'GraFx-Publisher/overview/editor-toolbars/index.md'
             - 'Limitations':                    'GraFx-Publisher/overview/limitations/index.md'
         - 'Concepts':
             - 'Who are you?':                   'GraFx-Publisher/concepts/profiles/index.md'
             - 'Renders':                        'GraFx-Publisher/concepts/renders/index.md'
             - 'Smart Templates':                'GraFx-Publisher/concepts/smart-templates/index.md'
+            - 'Editor user levels':             'GraFx-Publisher/concepts/user-levels/index.md'
             - 'Media':                          'GraFx-Publisher/concepts/media/index.md'
             - 'Fonts':                          'GraFx-Publisher/concepts/fonts/index.md'
+            - 'Frames':                         'GraFx-Publisher/concepts/frames/index.md'
             - 'Constraints':                    'GraFx-Publisher/concepts/constraints/index.md'
+            - 'Colors & Colorspaces':           'GraFx-Publisher/concepts/colors/index.md'
+            - 'Variable data':                  'GraFx-Publisher/concepts/variable-date/index.md'
             - 'Workspace':                      'GraFx-Publisher/concepts/workspace/index.md'
             - 'ViewPreference':                 'GraFx-Publisher/concepts/viewpreference/index.md'
             - 'Exporting - Roundtrip':          'GraFx-Publisher/concepts/export-roundtrip/index.md'
@@ -257,12 +266,25 @@ nav:
             - 'Custom UI':                      'GraFx-Publisher/concepts/custom-ui/index.md'
             - 'Connectors':                     'GraFx-Publisher/concepts/connectors/index.md'
             - 'Backoffice':                     'GraFx-Publisher/concepts/backoffice/index.md'
-        - 'How to: Prepare':
+        - 'How to: Backoffice Settings':
             - 'Image Conversion Profiles':      'GraFx-Publisher/guides/image-conversion-profiles/index.md'
             - 'Image Transformations':          'GraFx-Publisher/guides/image-transformations/index.md'
-        - 'How to: Design':
+            - 'Manage Fonts':                   'GraFx-Publisher/guides/fonts/index.md'
+            - 'Manage Datasources':             'GraFx-Publisher/guides/datasources/index.md'
+        - 'How to: Create Smart Templates':
+            - 'Introduction':                   'GraFx-Publisher/guides/templates/introduction/index.md'
             - 'Create first document':          'GraFx-Publisher/guides/templates/first-document/index.md'
+            - 'Arrange your workspace':         'GraFx-Publisher/guides/templates/arrange-workspace/index.md'
+            - 'Document settings':              'GraFx-Publisher/guides/templates/document-settings/index.md'
+            - 'Layers':                         'GraFx-Publisher/guides/templates/layers/index.md'
+            - 'Frames':                         'GraFx-Publisher/guides/templates/frames/index.md'
         - 'How to: Automate':                   'GraFx-Publisher/guides/automate/index.md'
+        - 'How to: Customize':                  
+            - 'Languages':                      'GraFx-Publisher/guides/customize/language/index.md'
+            - 'Icons':                          'GraFx-Publisher/guides/customize/icons/index.md'
+            - 'Viewpreferences':                'GraFx-Publisher/guides/customize/viewpreferences/index.md'
+            - 'Workspaces':                     'GraFx-Publisher/guides/customize/workspaces/index.md'
+            - 'Contitional Interface Elements': 'GraFx-Publisher/guides/customize/conditional-interface/index.md'
         - 'How to: Output':                     'GraFx-Publisher/guides/output/index.md'
         - 'How to: Integrate':                    
             - 'Create API Users':               'GraFx-Publisher/guides/integrate/api-users/index.md'

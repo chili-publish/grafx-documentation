@@ -56,6 +56,15 @@ img[alt=screenshot] {
 	min-width: 250px;
 }
 
+img[alt=ui] {
+	width: 40%;
+	min-width: 433px;
+}
+
+img[alt=ui-full] {
+	width: 100%;
+}
+
 img[alt=screenshot-fullwidth] {
 	max-height: 300px;
 }
