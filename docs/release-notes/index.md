@@ -1,5 +1,13 @@
 # Release notes
 
+## Dec 19, 2023 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed issue with PDF output containing hidden layers with copyfitted frames
+
 ## Dec 5, 2023 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
