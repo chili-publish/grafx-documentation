@@ -273,8 +273,10 @@ nav:
             - 'Manage Datasources':             'GraFx-Publisher/guides/datasources/index.md'
         - 'How to: Create Smart Templates':
             - 'Introduction':                   'GraFx-Publisher/guides/templates/introduction/index.md'
-            - 'Create first document':          'GraFx-Publisher/guides/templates/first-document/index.md'
+            - 'Prerequisites':                  'GraFx-Publisher/guides/prerequisites/index.md'
+            - 'First Smart Template':           'GraFx-Publisher/guides/templates/first-smart-template/index.md'
             - 'Arrange your workspace':         'GraFx-Publisher/guides/templates/arrange-workspace/index.md'
+            - 'Set constraints':                'GraFx-Publisher/guides/templates/set-constraints/index.md'
             - 'Document settings':              'GraFx-Publisher/guides/templates/document-settings/index.md'
             - 'Layers':                         'GraFx-Publisher/guides/templates/layers/index.md'
             - 'Frames':                         'GraFx-Publisher/guides/templates/frames/index.md'
