@@ -6,9 +6,9 @@
 
 ### Fixes
 
-- Fixed issue when datasource of 1 record does not respect variable naming
+- Fixed issue where datasource output with one record does not respect the PDF Name Pattern
 - Fixed issue when deletion of a resource may cause deletion of other resources with similar name
-- Added error message “CHILI service ended unexpectedly“
+- Improved error messaging when output generation fails
 
 ## 2023
 
