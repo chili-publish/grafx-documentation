@@ -11,7 +11,7 @@
 ### Improvements
 
 - Added more tooltips to the Template Designer workspace and made some improvements to them
-- Assigning an image to an image variable is now possible via a single or double click
+- Assigning an image to an image variable is now possible via a single click
 - Changed the min and max values for copyfitting to 1% and 10.000% (it was 10% and 1.000%)
 - Moved the "Clear style overrides" button to another location in the Template Designer workspace
 
