@@ -16,7 +16,7 @@ However, if you are going to be making many changes you will need to setup a doc
 
 ### Option 1: Using Docker with Codespaces
 
-For a quick and easy setup, you can use [Docker](https://www.docker.com/get-started/) in conjunction with [GitHub Codespaces](https://github.com/features/codespaces).
+For a quick and easy setup, you can use Docker in conjunction with [GitHub Codespaces](https://github.com/features/codespaces).
 
 **Steps:**
 
@@ -30,7 +30,7 @@ For a quick and easy setup, you can use [Docker](https://www.docker.com/get-star
 
 ### Option 2: Using Docker Locally
 
-If you have Docker installed on your machine, setting up the documentation locally is straightforward.
+If you have [Docker Desktop](https://docs.docker.com/desktop/) (for Windows, Mac, or Linux) or [Docker](https://docs.docker.com/engine/) and [Docker-Compose](https://docs.docker.com/compose/) (for Linux) installed on your machine, setting up the documentation locally is straightforward.
 
 **Steps:**
 
