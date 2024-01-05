@@ -4,7 +4,7 @@ This guide will walk you through all steps to create you first smart template.
 
 - Convert an existing Adobe InDesign document
 - Add Business logic
-- Lock down the UI for end users
+- Define end user experience
 - Publish link
 
 With a CHILI GraFx subscription, you can follow along.
@@ -78,6 +78,14 @@ You will see the full workspace, with all Template Designer tools, panels and ta
 
 ## Add business logic
 
+Adding the "Smart" to your templates can be done in many ways. We'll hilite Variables and Constraints in this introductory guide.
+
+Other options are
+
+- Dynamic layouts
+- Snippets
+- Datasources
+
 ### Variables
 
 Variables allow you to create placeholders for text, images or barcodes, and allow end-users to fill in their content.
@@ -136,27 +144,9 @@ Repeat the above steps to add a variable to the other frame.
 
      ![ui-full](screen13.png)
 
-### Preview end-user view
+### Constraints
 
-In the bottom toolbar, choose Simulate > End User. This will simulate how an end-user will see the document.
-
-![ui](screen17.png)
-
-If you don't see the full drop-down list, hover your mouse over the right arrow to allow the bar to move so you see the full button.
-
-![ui](screen18.png)
-
-You'll see a slightly different look. But it's far from a clean view at first sight.
-
-![ui-full](screen19.png)
-
-In the guide [Arrange your workspace](/GraFx-Publisher/guides/templates/arrange-workspace/), we'll go into more detail how to close the end-user view even more.
-
-### Lock frames
-
-In the Template Designer view (Workspace Administrator) and even in the End user view, you are still able to move frames around. 
-
-This is **not** the behaviour we want. We want to protect the brand, and only allow interaction with what we define an end user can change.
+One example of a constraint, is the locking of e.g. movement of frames.
 
 ![gif](move-frames.gif)
 
@@ -178,6 +168,49 @@ Frame constraints are saved with the template.
 
 You can repeat this, for all individual frames. But if you have a lot of frames, you can set constraints on the Document, Layer or individual level. And you can set inheritance for the settings. More on setting constraints on this guide on [constraints](/GraFx-Publisher/guides/templates/set-constraints/).
 
+## Define end user experience
+
+Untill now, we worked in the Template Designer view (Workspace Administrator).
+
+GraFx Publisher allows you to finetune how the end user will view the document. All elements surrounding the document, are called the "Workspace". You can define what parts of that workspace will be visible for the end users.
+
+Once you have defined what will be visible, and what not, you can save into a settings files; the Workspace settings.
+
+Another part of this definition, is called View Preferences.
+
+What you want to show is saved in the Workspace Settings.  
+Things like units, default color space, color of the frame handles, are all saved into the View Preferences.
+
+- Hide Workspace Elements
+- Define View Preferences
+
+### Preview end-user view
+
+In the bottom toolbar, choose Simulate > End User. This will simulate how an end-user will see the document.
+
+![ui](screen17.png)
+
+If you don't see the full drop-down list, hover your mouse over the right arrow to allow the bar to move so you see the full button.
+
+![ui](screen18.png)
+
+You'll see a slightly different look. But it's far from a clean view at first sight.
+
+![ui-full](screen19.png)
+
+In the guide [Arrange your workspace](/GraFx-Publisher/guides/templates/arrange-workspace/), we'll go into more detail how to close the end-user view even more.
+
+In the next steps, we'll explain how to define what you see as end user.
+
+### Hide Workspace Elements
+
+### Define View Preferences
+
+## Publish link to the document
+
+### Direct links
+
+### Integration
 
 [A](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413931/Creating+your+first+document)
 
