@@ -9,11 +9,9 @@ Client side
 
 - [GraFx Studio SDK](https://chili-publish.github.io/studio-sdk/index.html)
 
-**You can access the specific interactive Swagger for your environment API via the following format**
+**You can access the specific interactive Swagger for your environment API via integration setup**
 
-Production: `<environment name>.chili-publish.online/grafx/swagger/index.html`
-
-Sandbox: `<environment name>.chili-publish-sandbox.online/grafx/swagger/index.html`
+![ui](integration01.png)
 
 ## Platform API
 The GraFx Platform API allows you to manage GraFx Platform resources.
