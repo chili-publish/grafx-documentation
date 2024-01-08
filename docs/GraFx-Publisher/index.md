@@ -1,4 +1,4 @@
-# GraFx Publisher (formerly CHILI publisher)
+# GraFx Publisher
 
 ![applogo](/assets/CHILI_publisher_RGB.svg)
 
@@ -7,8 +7,6 @@ GraFx Publisher is the evolution of **CHILI publisher Online** (CPO) into the pl
 Enter the 'phygital' age of marketing by producing high-quality print and static digital output with GraFx Publisher.
 
 ## Concepts and features from CHILI publisher
-
-The documentation (of CHILI publisher) is maintained at [this location](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412838/CHILI+publisher+Online){target="_blank"}.
 
 ### My CHILI Publisher
 
@@ -25,7 +23,6 @@ The Back Office of CHILI publisher holds documents, assets, configurations, etc.
 Assets will evolve into GraFx Media, Fonts will evolve into GraFx Fonts, documents will be managed in the CHILI GraFx platform etc.
 
 See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413939/CHILI+BackOffice+Guide){target="_blank"}
-
 
 ### CHILI Editor
 

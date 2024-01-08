@@ -4,10 +4,10 @@ Our guide introduces you to Smart Template creation using the tracer bullet appr
 
 This approach ensures you understand the overall workflow, laying the groundwork for future exploration.
 
-- Convert an existing Adobe InDesign document
-- Add business logic
-- Define the end user experience
-- Publish a link
+- 1 Convert an existing Adobe InDesign document
+- 2 Add business logic
+- 3 Define the end user experience
+- 4 Publish a link
 
 ## Pre-requisites
 
@@ -17,7 +17,9 @@ Download the design package. (Contains an Adobe InDesign file and the necessary 
 
 - [Adobe InDesign file](Guide-01.zip)
 
-## Convert
+## 1. Convert
+
+### Desktop Tools
 
 - Open the "**SeasonSale.indd**" file in Adobe InDesign.
 - If you don't see the GraFx Publisher plugin yet, choose it from the Window menu.
@@ -56,7 +58,9 @@ Fonts, is where your uploaded fonts will be stored in the GraFx Publisher Fonts 
 
 ![ui](screen043.png)
 
-## Opening the Document
+## 2. Add business logic
+
+Now it's time to switch to GraF Publisher, and start adding business logic
 
 - Open [CHILI GraFx](https://chiligrafx.com/environments).
 - Choose the Environment you have sent the document to.
@@ -76,15 +80,19 @@ You will see the full workspace, with all Template Designer tools, panels, and t
 
 ![ui-full](screen06.png)
 
-## Add Business Logic
+### Business Logic?
 
-Adding the "Smart" to your templates can be done in many ways. We'll highlight Variables and Constraints in this introductory guide.
+Adding the "Smart" to your templates can be done in many ways. We'll highlight **Variables** and **Constraints** in this introductory guide.
+
+**Variables** will be used ad placeholders to allow end users to fill in their content.
+
+**Constraints** is a concept to lock certain items for end users.
 
 Other options include:
 
-- Dynamic layouts
-- Snippets
-- Data sources
+- Dynamic layouts (link to be added)
+- Snippets (link to be added)
+- Data sources (link to be added)
 
 ### Variables
 
@@ -170,7 +178,7 @@ Frame constraints are saved with the template.
 
 You can repeat this for all individual frames. But if you have a lot of frames, you can set constraints on the Document, Layer, or individual level. And you can set inheritance for the settings. More on setting constraints in this guide on [constraints](/GraFx-Publisher/guides/templates/set-constraints/).
 
-## Define End User Experience
+## 3. Define End User Experience
 
 Until now, we worked in the Template Designer view (Workspace Administrator).
 
@@ -246,7 +254,7 @@ Set all items, for each group under the dropdown.
 
 When ready, click the "Save" button to save these settings also to CHILI GraFx.
 
-## Publish Link to the Document
+## 4. Publish the Document
 
 The Smart Template is now defined, and you have defined Workspace Settings, and View Preferences.
 
