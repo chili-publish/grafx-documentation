@@ -6,14 +6,11 @@
 
 ### Improvements
 
-- Full enforcement of user groups on the backend for authorization decisions
-- Additional features for modifying user groups and related entities
-- Allowed length for user group name increased to 100 characters
-- Optimization of authorization pipelines
+- User groups available on the backend for authorization decisions
 
 ### Fixes
 
-- Improved reliability of user management operations
+- Improved user management operations
 - Monthly renders of the last range weren't returned
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
