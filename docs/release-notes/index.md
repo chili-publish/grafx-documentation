@@ -1,5 +1,23 @@
 # Release notes
 
+## Jan 9, 2024 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Improvements
+
+- Full enforcement of user groups on the backend for authorization decisions
+- Additional features for modifying user groups and related entities
+- Allowed length for user group name increased to 100 characters
+- Optimization of authorization pipelines
+
+### Fixes
+
+- Improved reliability of user management operations
+- Monthly renders of the last range weren't returned
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
 ## Jan 4, 2024 - GraFx Studio
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
