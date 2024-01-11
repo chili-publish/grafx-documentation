@@ -6,11 +6,11 @@
 
 ### Improvements
 
-- User groups available on the backend for authorization decisions
+- User groups  
+User groups allow admins to set permissions and access to user groups next to individual users. This release integrates user group permissions into our authorization process, available through the API.
 
 ### Fixes
 
-- Improved user management operations
 - Monthly renders of the last range weren't returned
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
