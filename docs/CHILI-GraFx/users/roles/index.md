@@ -2,25 +2,7 @@
 
 ## Overview of Role Access
 
-We are enhancing our SaaS platform's user management through a phased approach. 
-
-Currently, Subscription Admins and Environment Admins can create templates to familiarize themselves with the system. 
-
-However, these shouldn't be part of your main workflow, as permissions will change in upcoming phases. We're working towards an optimized platform, and we appreciate your adaptability during this transition.
-
-### Phase 1 (today)
-
-| Roles | User | SA | EA | TD | CA |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | ✅ | ✅ | ✅ | ✅|
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
-
-### Phase 2 (end of 2023)
-
-| Roles | User | SA | EA | TD | CA |
+| Roles | End User | SA | EA | TD | CA |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅ | ✅(1)|
@@ -29,7 +11,7 @@ However, these shouldn't be part of your main workflow, as permissions will chan
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 
 
-In phase 2, Subscription Admins and Environment Admins will have the opportunity to function as Template Designers when they are allocated a Template Designer Seat.
+Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
 (1) Content Admins will be able to create Templates, but the output will be watermarked.
 
@@ -91,21 +73,21 @@ Permissions
 
 In the API, this is labeled as "EA".
 
-### User
+### End User
 
-**Definition**: A User works as an end user in the CHILI GraFx environment(s) where they are assigned to. This is the default role, and cannot be removed.
+**Definition**: An "End User" works as an end user in the CHILI GraFx environment(s) where they are assigned to. This is the default role, and cannot be removed.
 
 Permissions
 
-- Access to the environments the user is assigned to
-- View overview of all the environments where the user is Environment User
+- Access to the environments the End User is assigned to
+- View overview of all the environments where the End User has access
 - Limited in what applications they can access (see table)
 - Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Templates (using fonts & media that are made available in the template)
 
-In the API, this is labeled as "EU".
+In the API, this is labeled as "EU". (End User)
 
 !!! Warning "Template Designer"
-	- If an Environment user wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer).
+	- If an End User wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer).
 	See also [Phased approach in roles](#overview-of-role-access)
 
 ### Template Designer
@@ -130,7 +112,7 @@ The first user will be the subscription admin, and is created by CHILI GraFx, as
 
 ### Subsequent Users
 
-All users (except the first (subscription admin) user) can be invited to CHILI GraFx by
+All End Users (except the first (subscription admin) user) can be invited to CHILI GraFx by
 
 - A Subscription Admin
 - An Environment Admin
