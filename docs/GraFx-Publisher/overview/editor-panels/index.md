@@ -6,7 +6,7 @@ Panels are part of the Workspace. When loading a document, a set of panels will 
 
 ## Organizing Panels
 
-Panels are grouped within [Tabs](GraFx-Publisher/overview/editor-tabs/). Each panel has a default location.
+Panels are grouped within [Tabs](/GraFx-Publisher/overview/editor-tabs/). Each panel has a default location.
 
 ![ui](panel02.png)
 
