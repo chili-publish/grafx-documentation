@@ -138,7 +138,6 @@ nav:
                 - 'Intro' :                     'CHILI-GraFx/users/intro/index.md'
                 - 'Scope' :                     'CHILI-GraFx/users/scope/index.md'
                 - 'Roles' :                     'CHILI-GraFx/users/roles/index.md'
-                - 'User Groups' :               'CHILI-GraFx/users/user-groups/index.md'
                 - 'Template Designer Seat' :    'CHILI-GraFx/users/template-designer/index.md'
                 - 'Users & Invitation' :        'CHILI-GraFx/users/creation/index.md'
                 - 'Transition' :                'CHILI-GraFx/users/transition/index.md'
