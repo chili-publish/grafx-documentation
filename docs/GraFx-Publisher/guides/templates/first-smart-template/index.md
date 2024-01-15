@@ -4,10 +4,10 @@ Our guide introduces you to Smart Template creation using the tracer bullet appr
 
 This approach ensures you understand the overall workflow, laying the groundwork for future exploration.
 
-- 1 Convert an existing Adobe InDesign document
-- 2 Add business logic
-- 3 Define the end user experience
-- 4 Publish a link
+- Convert an existing Adobe InDesign document
+- Add business logic
+- Define the end user experience
+- Publish a link
 
 ## Pre-requisites
 
@@ -17,9 +17,15 @@ Download the design package. (Contains an Adobe InDesign file and the necessary 
 
 - [Adobe InDesign file](Guide-01.zip)
 
-## 1. Convert
+## Convert
 
-### Desktop Tools
+### Pre-flight
+
+Before you convert an Adobe InDesign document to GraFx publisher, you can pre-flight the file, to see what will not convert well.
+
+In this [tutorial](/preflight), we go in detail on pre-flighting.
+
+### Convert
 
 - Open the "**SeasonSale.indd**" file in Adobe InDesign.
 - If you don't see the GraFx Publisher plugin yet, choose it from the Window menu.
@@ -30,12 +36,19 @@ Download the design package. (Contains an Adobe InDesign file and the necessary 
 Your Environment Admin can provide you with the credentials.  
 You need a Template Designer Seat.
 
+!!! Info "Server credentials"
+	Your URL will look like: https://XX-XX-XX.chili-publish.online/main.asmx  
+	Where the XX-XX-XX is the name of one of your environments.
+
 ![ui-full](screen01.png)
 
 - In the "**Import settings**" section, choose the destination where to store all converted elements.  
 Documents, is where your converted file will be stored.  
 Images, is where your placed assets will be stored in GraFx Media.
 Fonts, is where your uploaded fonts will be stored in the GraFx Publisher Fonts repository.
+
+!!! Info "Paths"
+	Paths can be given by typing, or you can click the "Browse..." button, and you will be offered to select the path and folder from your GraFx Publisher environment.
 
 ![ui](screen03.png)
 
@@ -58,7 +71,7 @@ Fonts, is where your uploaded fonts will be stored in the GraFx Publisher Fonts 
 
 ![ui](screen043.png)
 
-## 2. Add business logic
+## Add business logic
 
 Now it's time to switch to GraF Publisher, and start adding business logic
 
@@ -143,16 +156,12 @@ Repeat the above steps to add a variable to the other frame.
 
 !!! Tip "Tip: See the text frame contents"
     With a text frame selected, click on the "Edit story" button to see the full contents, including the variables.
+	![screenshot](screen11.png)
+	![ui-full](screen12.png)
      
-     ![screenshot](screen11.png)
-     
-     ![ui-full](screen12.png)
-     
-     Uncheck the "Edit with formatting" to see black text on the background. Sometimes the text color will make it difficult
+	Uncheck the "Edit with formatting" to see black text on the background. Sometimes the text color will make it difficult to see and edit the contents.
 
- to see and edit the contents.
-
-     ![ui-full](screen13.png)
+	![ui-full](screen13.png)
 
 ### Constraints
 
@@ -178,7 +187,7 @@ Frame constraints are saved with the template.
 
 You can repeat this for all individual frames. But if you have a lot of frames, you can set constraints on the Document, Layer, or individual level. And you can set inheritance for the settings. More on setting constraints in this guide on [constraints](/GraFx-Publisher/guides/templates/set-constraints/).
 
-## 3. Define End User Experience
+## Define End User Experience
 
 Until now, we worked in the Template Designer view (Workspace Administrator).
 
@@ -254,11 +263,9 @@ Set all items, for each group under the dropdown.
 
 When ready, click the "Save" button to save these settings also to CHILI GraFx.
 
-## 4. Publish the Document
+## Publish the Document
 
 The Smart Template is now defined, and you have defined Workspace Settings, and View Preferences.
-
-There are even more options, you can find more information, e.g., on constraints here.
 
 ### Direct Links
 
