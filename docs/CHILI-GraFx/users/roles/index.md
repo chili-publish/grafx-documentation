@@ -18,7 +18,7 @@ Subscription Admins and Environment Admins can function as Template Designers wh
 !!! Info "Legend"
 	**Roles**
 
-	- *User*: [A.k.a. End User](#user)
+	- *End User*: [End User](#end-user)
 	- *CA*: [Content Admin](#content-administrator)
 	- *EA*: [Environment Admin](#environment-admin)
 	- *TD*: [Template Designer](#template-designer)
@@ -26,7 +26,7 @@ Subscription Admins and Environment Admins can function as Template Designers wh
 
 	**Specific application**
 
-	- *TD Workspace*: The workspace where Template Designers can edit Smart Templates
+	- *TD Workspace*: The workspace where Template Designers can edit Smart Templates in GraFx Studio
 	
 ## Roles
 
@@ -42,7 +42,7 @@ Permissions
 - View overview of all the environments in a subscription
 - Request add-ons (eg. extra storage)
 - Directly contact to Client Success Manager
-- User management for all users in the subscription (CRUD actions)
+- User management for all users in the subscription (CRUD)
 - Invite users to all available environments in the subscription
 
 In the API, this role is labeled as "SA".
@@ -56,16 +56,16 @@ In the API, this role is labeled as "SA".
 
 !!! Tip "Subscription Admin"
 	**Important**: a Subscription Admin can assign the role 'Subscription Admin' to other users on 'User Detail page'.
+	A Subscription Admin can take away the role of another **Subscription Admin**.
 
 ### Environment Admin
 
-**Definition**: An Environment Admin manages the CHILI GraFx environment(s) where he is assigned to by his Subscription Admin
+**Definition**: An Environment Admin manages the CHILI GraFx environment(s) where they are assigned to by their Subscription Admin
 
 Permissions
 
 - Access to environments where you are Environment Admin
 - View overview of all the environments where you are Environment Admin
-- Access to GraFx Publisher
 - Manage the CHILI GraFx environment where you are Environment Admin
 	- Environment Settings (eg. branding)
 	- User management (CRUD actions) for the users of environments where you are Environment Admin
@@ -82,7 +82,7 @@ Permissions
 - Access to the environments the End User is assigned to
 - View overview of all the environments where the End User has access
 - Limited in what applications they can access (see table)
-- Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Templates (using fonts & media that are made available in the template)
+- Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
 
 In the API, this is labeled as "EU". (End User)
 
@@ -108,7 +108,7 @@ Content Administrators will be able to create templates in GraFx Studio, but the
 
 ### First user
 
-The first user will be the subscription admin, and is created by CHILI GraFx, as a result of a signed contract.
+The first user will be the subscription admin, and is created by CHILI publish, as a result of a signed contract.
 
 ### Subsequent Users
 
