@@ -28,4 +28,4 @@ Next to the GraFx Publisher APIs for Platform and Environment, there are the RES
 
 See [Developer Center](/GraFx-Developers/) for more integration resources.
 
-![ui-full](API.png)
+![ui-full](api.png)
