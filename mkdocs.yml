@@ -143,7 +143,7 @@ nav:
                 - 'Transition' :                'CHILI-GraFx/users/transition/index.md'
         - 'How to':
             - 'Change Roles & Access' :         'CHILI-GraFx/guides/role-access-update/index.md'
-            - 'Set Individual Access' :         'CHILI-GraFx/guides/set-individual-access/index.md'
+            - 'Manage Individual Access' :      'CHILI-GraFx/guides/manage-individual-access/index.md'
             - 'Manage User Groups' :            'CHILI-GraFx/guides/manage-user-groups/index.md'
             - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
             - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
