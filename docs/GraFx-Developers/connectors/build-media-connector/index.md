@@ -3,17 +3,29 @@
 ## Pre-requisites
 
 - Have 'npm' installed
-- Know nodejs
-- Have a decent IDE
+- Knowledge of nodejs
+- IDE
+	- [Visual Studio Code](https://code.visualstudio.com/)
+	- [Rider](https://www.jetbrains.com/rider/)
+	
+## Local install location
+
+Before you start, choose where you want to have the local setup. This directory will hold all the files (.js) for your connector.
+
+Go to (or make) directory, where you want to start making your connector  
+e.g. "/Users/<yourname>/mediaconnector-mydam"
 
 ## Install the CLI
 
-go to (or make) directory, where you want to start making your connector  
-e.g. "/Users/<yourname>/mediaconnector-mydam"
+The CLI (Command Line Interface) is part of the tooling we offer to get you up and running.
+
+The CLI Tool has several commands that will perform tasks like building, deploying, getting the latest files, etc.
 
 Install the command line tools. This will help you to install, build and deploy your Media connector.
 
-``` csh
+The "-g" option will make sure the command line tool is available on a "global" level, meaning also outside of your directory. In case you want to work on several connectors, you can call the tool from any directory.
+
+``` bash
 npm install -g @chili-publish/connector-cli
 ```
 
