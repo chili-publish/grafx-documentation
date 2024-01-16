@@ -1,5 +1,13 @@
 # Release notes
 
+## Jan 16, 2024 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed issues where specific PDF assets caused corruption in the PDF output file
+
 ## Jan 9, 2024 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
