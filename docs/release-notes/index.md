@@ -10,7 +10,7 @@
 
 ### Fixes
 
-- Fixed wrong properties in environment renders analytics
+- Render visualization showed wrong metrics
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
