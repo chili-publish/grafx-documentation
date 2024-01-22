@@ -39,7 +39,7 @@ Permissions
 - View all subscription(s) assigned to
 - View usage reporting
 - View subscription details
-- View overview of all the environments in a subscription
+- View an overview of all the environments in a subscription
 - Request add-ons (eg. extra storage)
 - Directly contact to Client Success Manager
 - User management for all users in the subscription (CRUD)
@@ -65,7 +65,7 @@ In the API, this role is labeled as "SA".
 Permissions
 
 - Access to environments where you are Environment Admin
-- View overview of all the environments where you are Environment Admin
+- View an overview of all the environments where you are Environment Admin
 - Manage the CHILI GraFx environment where you are Environment Admin
 	- Environment Settings (eg. branding)
 	- User management (CRUD actions) for the users of environments where you are Environment Admin
@@ -75,12 +75,12 @@ In the API, this is labeled as "EA".
 
 ### End User
 
-**Definition**: An "End User" works as an end user in the CHILI GraFx environment(s) where they are assigned to. This is the default role, and cannot be removed.
+**Definition**: An "End User" works as an end user in the CHILI GraFx environment(s) to which they are assigned. This is the default role, and cannot be removed.
 
 Permissions
 
 - Access to the environments the End User is assigned to
-- View overview of all the environments where the End User has access
+- View an overview of all the environments where the End User has access
 - Limited in what applications they can access (see table)
 - Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
 
@@ -92,7 +92,7 @@ In the API, this is labeled as "EU". (End User)
 
 ### Template Designer
 
-See the [Template Designer Seat](/CHILI-GraFx/users/template-designer-seat/) page
+See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
 
 ### Content Administrator
 
@@ -102,26 +102,26 @@ A content Administrator can create and use GraFx Publisher templates. There is n
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
-Content Administrators will be able to create templates in GraFx Studio, but the output will be watermarked in [phase 2](#phase-2-2024).
+Content Administrators will be able to create templates in GraFx Studio, but the output will be watermarked.
 
 ## User creation and invitation
 
 ### First user
 
-The first user will be the subscription admin, and is created by CHILI publish, as a result of a signed contract.
+The first user will be the [Subscription Admin](/CHILI-GraFx/users/roles/#subscription-admin), and is created by CHILI publish, as a result of a signed contract.
 
 ### Subsequent Users
 
-All End Users (except the first (subscription admin) user) can be invited to CHILI GraFx by
+Other users can be invited to CHILI GraFx by
 
 - A Subscription Admin
 - An Environment Admin
 
 Only the Subscription Admin & the Environment Admin can access the User Management page on CHILI GraFx where they can:
 
-- view an overview of the users
-- view an overview of the roles on CHILI GraFx
-- invite users to CHILI GraFx
+- View an overview of the users
+- Invite users to CHILI GraFx
+- Give access to users
 
 ## Changing roles
 
