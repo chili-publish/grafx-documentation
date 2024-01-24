@@ -141,6 +141,8 @@ nav:
                 - 'Roles' :                     'CHILI-GraFx/users/roles/index.md'
                 - 'Template Designer Seat' :    'CHILI-GraFx/users/template-designer/index.md'
                 - 'Users & Invitation' :        'CHILI-GraFx/users/creation/index.md'
+                - 'Deactivate Users' :        'CHILI-GraFx/users/deactivate/index.md'
+                - 'Delete Users' :            'CHILI-GraFx/users/delete/index.md'
                 - 'Transition' :                'CHILI-GraFx/users/transition/index.md'
         - 'How to':
             - 'Change Roles & Access' :         'CHILI-GraFx/guides/role-access-update/index.md'
