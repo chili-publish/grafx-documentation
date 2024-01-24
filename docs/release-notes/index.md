@@ -1,5 +1,22 @@
 # Release notes
 
+## Jan 24, 2024 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- When outputting a PDF with a variable in the path name, the value of the variable is now used correctly.
+- Fixed the issue where an asset could end up as duplicate using ResourceItemAdd, when a path was malformed.
+- Fixed vulnerability where code details were shown in an error message
+- Fixed incorrect behavior for the ResourceSearchInFolder API endpoint related to the parentFolderPath parameter. Previously, when includeSubDirectories was set to true, the endpoint performed a prefix search. This behavior has been corrected to conduct an exact search, aligning with expectations set in prior versions of CHILI.
+- Fixed issue where some characters in REST endpoint query parameters cause the endpoint to fail
+
+### Improvements
+
+- A download will now be served from a more sustainable location
+- Improved performance when copying a file with an existing name
+
 ## Jan 19, 2024 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
