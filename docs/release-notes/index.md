@@ -1,5 +1,27 @@
 # Release notes
 
+## Jan 19, 2024 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Improvements
+
+- Deprecated endpoints were deleted from the API  
+
+### Fixes
+
+- Render visualization showed wrong metrics
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
+## Jan 16, 2024 - GraFx Publisher
+
+![rn_icon](/assets/CHILI_publisher_RGB.svg)
+
+### Fixes
+
+- Fixed issues where specific PDF assets caused corruption in the PDF output file
+
 ## Jan 9, 2024 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
