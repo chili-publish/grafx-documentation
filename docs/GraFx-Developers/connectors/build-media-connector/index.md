@@ -2,7 +2,10 @@
 
 ## Pre-requisites
 
+See also [pre-requisites](../pre-requisites/)
+
 - Have 'npm' installed
+- Have 'nodejs' installed
 - Knowledge of nodejs
 - IDE
 	- [Visual Studio Code](https://code.visualstudio.com/)

@@ -301,5 +301,6 @@ nav:
         - 'Connectors':
             - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
             - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
+            - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
             - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'
             
