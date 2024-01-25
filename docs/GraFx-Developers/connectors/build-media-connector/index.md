@@ -201,13 +201,12 @@ In this part, you'll build the logic that is specific for your connector.
 
 E.g. for the query method, we will hardcode an example.
 
-The data structure of what needs to be returned, can be found in the MediaPage definition
+The data structure of what needs to be returned can be found in the MediaPage definition
 
 Since the method is defined as a Promise, we'll make it async.
 
 ```typescript
 async query(options: QueryOptions, context: Dictionary): Promise<Media.MediaPage> {
-
 
   return {
 	pageSize: 1,
@@ -228,20 +227,58 @@ async query(options: QueryOptions, context: Dictionary): Promise<Media.MediaPage
 }
 ```
 
+We'll add more logic in a moment, but for now we'll go full circle to push this to your CHILI GraFx instance.
+
 ## Publish your result
 
-Once ready, it's time to publish your connector to your environment.
+It's time to publish your connector to your environment.
 
-Before you can do that, you'll need to login.
+Before you can do that, you'll need to login on your instance of CHILI GraFx.
 
-Our CLI tool provides a way to authenticate, via the browser.
+Our CLI tool provides a way to authenticate via the browser. This way, your CHILI GraFx instance will recognize the cli tool, to be able to push the connector.
 
-``` zsh
-npx connector-cli login
+Step 1, call the login option through the CLO
+
+```shell
+$ npx connector-cli login
++0.041s connector-cli v1.0.49
++0.042s Running command: 'login' with options: {}
++0.043s No access token found.
++0.385s Please visit https://login.chiligrafx-dev.com/activate?user_code=xxxx-yyyy and enter the code xxxx-yyyy to authenticate.
++0.385s Waiting for authentication... Ctrl+C to cancel.
 ```
 
-when that is done, you can bow publish.
+Visit the url that is displayed, and confirm or enter the code.
+
+If succesful, the command line will show this message (with your credentials)
+
+```shell
++35.619s CLI authenticated successfully.
++35.812s User is authenticated => demo@test.com
+
+```
+
+When that is done, you can now publish.
 
 ``` zsh
 npx connector-cli publish -e <environment> -b <base url> -n <connector name>
 ```
+
+The connector is now building, and will be published to your environment.
+
+```shell
++0.05s connector-cli v1.0.49
++0.051s Running command: 'publish' with options: {"connectorFile":"./connector.ts","options":{"overwrite":false,"environment":"cp-dyx-217","baseUrl":"https://aaa.test.com/grafx","name":"MyConnector"}}
++0.418s User is authenticated => user@test.com
++0.418s Building connector...
++1.665s Build succeeded -> /tmp/file_1706217866012_3433.js
++1.666s Failed to extract version from *
++1.714s Deploying connector -> https://www.test.com/grafx/api/experimental/environment/cp-aaa-yyy/connectors
++2.16s Connector "MyConnector" is published
+```
+
+Now, open a template, or create a new template in GraFx Studio, and open the "Media" panel.
+
+You should see your "MyConnector", ready to query the Media provider of your choice, and add the media to your GraFx Studio Smart Template!
+
+![screenshot](connector07.png)
