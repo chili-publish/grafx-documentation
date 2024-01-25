@@ -208,6 +208,7 @@ Since the method is defined as a Promise, we'll make it async.
 ```typescript
 async query(options: QueryOptions, context: Dictionary): Promise<Media.MediaPage> {
 
+
   return {
 	pageSize: 1,
 	data:[
