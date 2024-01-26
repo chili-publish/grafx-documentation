@@ -8,7 +8,7 @@
 
 - Fixed an error where you could not access the platform
 
-## Nov 22, 2023 - CHILI GraFx
+## Jan 25, 2024 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
