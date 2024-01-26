@@ -8,7 +8,7 @@ When you are SubScription Admin, you can define who's an Environment Admin, for 
 
 When you are (only) an Environment Admin, you don't have access to the subscription level.
 
-The schema below shows the relation between the levels in a CHILI GraFx Subscription, to then explain the impact of permissions (roles) on these levels
+The schema below shows the relation between the levels in a CHILI GraFx Subscription, to then explain the impact of access on these levels
 
 ``` mermaid
 erDiagram
@@ -23,7 +23,7 @@ These contain operations like managing the lifecycle of users and environments.
 
 ### Environment
 
-An environment is the base level, where documents are grouped to serve an application. The minimum restriction you can apply to a set of resources, is the environment level.
+An environment is the base level, where documents are grouped to serve an application. The minimum restriction you can apply to a set of resources is the environment level.
 
 ### Roles
 

@@ -8,13 +8,13 @@ If you have access to multiple subscriptions, first select the subscription wher
 
 ![ui](changerole-1.png)
 
-If you have acces to only 1 subscription, you will see your subscription only. (without dropdown icon)
+If you have access to only 1 subscription, you will see your subscription only. (without dropdown icon)
 
 ![ui](changerole-2.png)
 
 ### Environment Admin
 
-As Environment admin the process is similar. But you won't need to choose a subscription. And you only see the subscriptions you have access too.
+As Environment admin the process is similar. But you won't need to choose a subscription. And you only see the subscriptions you have access to.
 
 If you don't see an environment you should see, please contact your Subscription Admin, to provide you access to other environments.
 

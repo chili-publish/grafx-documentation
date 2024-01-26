@@ -21,6 +21,8 @@ Let's dive into each concept below to see what they do, and how they relate.
 
 Resources are items that make up CHILI GraFx. Control and management of these resources require the proper _access_.
 
+An example of resources are collections. You can give access to collections through user groups (soon).
+
 **Example resources:**
 
 GraFx Media assets, GraFx Templates, Users, Environments
@@ -60,7 +62,7 @@ In some cases, you'll also need a system user, which can be used to interact wit
 
 ### User Groups
 
-User Groups in CHILI GraFx represent a collection of users who share common access needs and roles. Each user group is defined by the access and roles, which collectively determine the actions members of the group can perform in the system. By categorizing users into groups, you simplify access management, allowing administrators to efficiently assign and modify access rights for multiple users simultaneously, enhancing both security and operational efficiency.
+User Groups in CHILI GraFx represent a collection of users — in the same subscription — who share common access needs and roles. Each user group is defined by the access and roles, which collectively determine the actions members of the group can perform in the system. By categorizing users into groups, you simplify access management, allowing administrators to efficiently assign and modify access rights for multiple users simultaneously, enhancing both security and operational efficiency.
 
 Access to a resource (e.g., Environment) is additive. Meaning if you get End User access through group 1, and Environment Admin access through membership of group 2, you will have both access levels assigned.
 
