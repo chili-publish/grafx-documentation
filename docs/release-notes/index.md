@@ -1,5 +1,13 @@
 # Release notes
 
+## Jan 26, 2024 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Fixes
+
+- Fixed an error where you could not access the platform
+
 ## Jan 25, 2024 - CHILI GraFx
 
 ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
@@ -17,14 +25,14 @@ api/v1/environment/{environmentId}/output/jpg
 - Introduce 'default' output settings
 - Add 'scaling' option to output settings
 - Sort font styles by weight
- 
+
 ### Fixes
 
 - Update authorization rules for Content Administrator role
 - Fix video output issues
 - Avoid potential resources duplicates
 - Ignore font style 'width' property on upload
- 
+
 ### Experimental
 
 - Introduce oauth-authorization-code endpoints  
