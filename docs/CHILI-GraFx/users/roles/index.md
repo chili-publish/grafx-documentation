@@ -2,7 +2,25 @@
 
 ## Overview of Role Access
 
-| Roles | End User | SA | EA | TD | CA |
+We are enhancing our SaaS platform's user management through a phased approach. 
+
+Currently, Subscription Admins and Environment Admins can create templates to familiarize themselves with the system. 
+
+However, these shouldn't be part of your main workflow, as permissions will change in upcoming phases. We're working towards an optimized platform, and we appreciate your adaptability during this transition.
+
+### Phase 1 (today)
+
+| Roles | User | SA | EA | TD | CA |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | ✅ | ✅ | ✅ | ✅|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
+
+### Phase 2 (April 2024)
+
+| Roles | User | SA | EA | TD | CA |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅ | ✅(1)|
@@ -11,7 +29,7 @@
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 
 
-Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
+In phase 2, Subscription Admins and Environment Admins will have the opportunity to function as Template Designers when they are allocated a Template Designer Seat.
 
 (1) Content Admins will be able to create Templates, but the output will be watermarked.
 
