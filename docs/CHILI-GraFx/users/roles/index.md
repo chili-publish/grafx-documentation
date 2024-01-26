@@ -1,5 +1,5 @@
 # User management
-
+ 
 ## Overview of Role Access
 
 We are enhancing our SaaS platform's user management through a phased approach. 
@@ -116,7 +116,7 @@ See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
 
 **Definition**: A content Administrator is a legacy role, available to users that have been converted from CHILI publisher Online.
 
-A content Administrator can create and use GraFx Publisher templates. There is no limit to Content Administrators for converted CHILI publisher Online customers.
+A content Administrator can create and use GraFx Publisher templates. There is no  limit to Content Administrators for converted CHILI publisher Online customers.
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
