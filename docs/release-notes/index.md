@@ -1,5 +1,44 @@
 # Release notes
 
+## Jan 26, 2024 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+### Fixes
+
+- Fixed an error where you could not access the platform
+
+## Jan 25, 2024 - CHILI GraFx
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
+CHILI GraFx [Environment API 1.3.4](/GraFx-Developers/#environment-api)
+
+### Improvements
+
+- Introduce png variable output endpoint  
+api/v1/environment/{environmentId}/output/png
+- Introduce gif variable output endpoint  
+api/v1/environment/{environmentId}/output/gif
+- Introduce jpg variable output endpoint  
+api/v1/environment/{environmentId}/output/jpg
+- Introduce 'default' output settings
+- Add 'scaling' option to output settings
+- Sort font styles by weight
+
+### Fixes
+
+- Update authorization rules for Content Administrator role
+- Fix video output issues
+- Avoid potential resources duplicates
+- Ignore font style 'width' property on upload
+
+### Experimental
+
+- Introduce oauth-authorization-code endpoints  
+(api/experimental/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code)
+- Introduce 'none' auth for connector definition
+
 ## Jan 24, 2024 - GraFx Publisher
 
 ![rn_icon](/assets/CHILI_publisher_RGB.svg)
