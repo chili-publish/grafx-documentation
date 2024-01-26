@@ -9,9 +9,6 @@ Client side
 
 - [GraFx Studio SDK](https://chili-publish.github.io/studio-sdk/index.html)
 
-**You can access the specific interactive Swagger for your environment API via integration setup**
-
-![ui](integration01.png)
 
 ## Platform API
 The CHILI GraFx Platform API allows you to manage CHILI GraFx Platform resources.
@@ -25,7 +22,11 @@ Some example use cases are:
 
 ## Environment API
 
-Through the **CHILI GraFx Environment API** you can manage your CHILI GraFx environment.
+**You can access the specific interactive Swagger for your environment API via integration setup**
+
+![ui](integration01.png)
+
+Through the **GraFx Environment API** you can manage your CHILI GraFx environment.
 
 Some example use cases are:
 
