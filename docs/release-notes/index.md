@@ -6,9 +6,7 @@
 
 ### Fixes
 
-- Fix exception during fetch of subscription environments
-
-CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+- Fixed an error where you could not access the platform
 
 ## Nov 22, 2023 - CHILI GraFx
 
