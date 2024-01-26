@@ -2,8 +2,6 @@
 
 ## Set individual access
 
-See here
-
 Select the user you want to change, and select the tab "Individual access"
 
 ![screenshot](changerole-4.png)
