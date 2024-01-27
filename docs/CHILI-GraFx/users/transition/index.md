@@ -53,8 +53,26 @@ If you logged in via the right URL, you'll see this:
 
 ![screenshot](GraFx-Publisher_02.png)
 
-Continue with "Users" and create the "API" user. We called it "API" but feel free to give the user a different name.
+Continue with "Users" and create the "API" user. We called it "AP1" but feel free to give the user a different name.
 
 ![screenshot](GraFx-Publisher_03.png)
 
-Now your API user for Integration with GraFx Publisher is ready.
+Now link your API user with the user groups you need.
+
+### Create a GraFx Publisher Group
+
+When logging into Publisher you'll see this:
+
+![screenshot](GraFx-Publisher_04.png)
+
+Continue with "User groups" and create a group. We called it "end user". Then select the permission categories and individual permissions you users will need.
+
+![screenshot](GraFx-Publisher_05.png)
+
+Please note these groups are specific for CHILI GraFx Publisher and work for API users for Publisher.
+
+### Note for Chili-Publish Online customers
+
+We have removed the OLD checkbox "Environment Administrator" from the Publisher interface.
+
+If your API users need to have all of the permissions in the environment, you can create a group (you can call it "Environment Administrator"), set all of the privileges to that group, and use this group as you would use the checkbox.
