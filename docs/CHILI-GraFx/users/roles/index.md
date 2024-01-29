@@ -18,7 +18,7 @@ However, these shouldn't be part of your main workflow, as permissions will chan
 |![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ | ✅ |
 
-### Phase 2 (April 2024)
+### Phase 2 (early 2024)
 
 | Roles | User | SA | EA | TD | CA |
 |:---:|:---:|:---:|:---:|:---:|:---:|
