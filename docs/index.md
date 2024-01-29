@@ -10,7 +10,7 @@
 
     ---
 
-    **January 2024**: A major update on the Environment API 1.3.4
+    **January 2024**: A ==major update on the Environment API 1.3.4==
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
