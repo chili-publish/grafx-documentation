@@ -52,7 +52,7 @@ api/v1/environment/{environmentId}/output/jpg
 (api/experimental/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code)
 - Introduce 'none' auth for connector definition
 
-## ![rn_icon](/assets/CHILI_publisher_RGB.svg) Jan 24, 2024 - GraFx Publisher
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 24, 2024 - GraFx Publisher
 
 
 
@@ -83,7 +83,7 @@ api/v1/environment/{environmentId}/output/jpg
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-## ![rn_icon](/assets/CHILI_publisher_RGB.svg) Jan 16, 2024 - GraFx Publisher
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 16, 2024 - GraFx Publisher
 
 ### Fixes
 
@@ -102,7 +102,7 @@ User groups allow admins to set permissions and access to user groups next to in
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg) Jan 4, 2024 - GraFx Studio
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Jan 4, 2024 - GraFx Studio
 
 ### Features
 
@@ -124,7 +124,7 @@ CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 - Fixed issue with actions throwing the same error twice
 - Fixed issue where a font that is used in the template could be deleted without getting a confirmation dialog
 
-## ![rn_icon](/assets/CHILI_publisher_RGB.svg) Jan 2, 2024 - GraFx Publisher
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 2, 2024 - GraFx Publisher
 
 ### Fixes
 
