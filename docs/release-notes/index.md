@@ -10,6 +10,9 @@
 - A user can be added to a user group when they are invited to CHILI GraFx for the first time or from the User Management page on CHILI GraFx
 - User Group membership, User Group details (name & description) and assignement of environment and roles are managed by the Subscription Admin
 
+### Improvements
+- In GraFx Media you can move an asset from one place within the environment to another using the quick actions menu.
+
 [Documentation on user groups](/CHILI-GraFx/guides/manage-user-groups/)
 
 ## Jan 26, 2024 - CHILI GraFx
