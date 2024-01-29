@@ -1,38 +1,46 @@
 # Understanding Storage Calculation
 
-This document outlines how your media assets, such as pictures, consume storage space in CHILI GraFx.
+This document outlines how your assets, such as pictures, consume storage space in CHILI GraFx.
 
-## 1. **Uploading Media Assets**
+## Dashboard
+Your journey in understanding storage starts on the Dashboard of [CHILI GraFx](https://chiligrafx.com). Here, a graph neatly displays the total storage used across all your environments.
 
-When you upload an asset, it occupies a certain amount of storage space. This space is primarily determined by the file size of the asset. For example, a 1 MB picture will initially take up 1 MB of storage space in your account.
+You have the option to delve into specific environments using a dropdown selector.
 
-## 2. **The Role of Preview Data**
+![find environment](find_environment.png)
 
-For optimal performance, our application automatically creates preview data when you upload a media asset. These files are essential for the application to function correctly and efficiently over the web. They allow faster loading times and smoother access to your media, but they also require additional storage space. The size of these files varies depending on the original file but is a necessary part of the storage calculation.
+In each environment, storage usage is broken down into several categories:
+- Media assets (images you upload)
+- Font assets
+- Smart Templates
+- Storage for preview files
+- Storage for backups
 
-## 3. **Backup Storage**
+![environment breakdown](env_breakdown.png)
 
-Data security is paramount for us ([ISO 27001](https://www.chili-publish.com/trust/)). Therefore, CHILI GraFx creates backups of your uploaded media assets, fonts and Smart Templates. These backups are essential to protect your data against accidental loss or corruption. However, like preview files, backups also take up additional storage space. We ensure that your data is safe and readily available whenever you need it, but this safety feature increases the total storage requirement.
+## Understanding Storage Dynamics
 
-## 4. **Total Storage Calculation**
+### Uploading Media Assets
+When you upload a media asset, it consumes storage equivalent to its file size. For instance, uploading a 1 MB image will use 1 MB of your storage quota.
 
-The total storage space you see on your dashboard is not just the sum of the file sizes of your uploaded media. It is, in fact, a multiple of this size. This total includes:
+### Uploading Font Assets
+Similar to Media Assets, when you upload a font asset it occupies a certain amount of storage space. GraFx Fonts only allows you to upload only one copy of font style per font family. GraFx Publisher allows you to upload multiple copies.
 
-- The original media asset size (e.g., your pictures)
-- The font assets
-- The Smart Templates
-- The storage required for preview files
-- The storage required for backups
+### Smart Templates
+Creating a new smart template (GraFx Studio Templates, GraFx Studio Projects, or GraFx Publisher Documents) also uses storage. These files are typically small, under 400 KB, but larger and more complex templates will occupy more space.
+
+### Preview Data
+Our system automatically generates preview data for media assets and smart templates to enhance performance. These previews ensure quicker load times and smoother access but do require extra storage. The size varies based on the original file.
+
+### Backup Storage
+Data security is paramount for us ([ISO 27001](https://www.chili-publish.com/trust/)). Therefore, CHILI GraFx creates backups of your uploaded media assets, fonts and Smart Templates. These backups are essential to protect your data against accidental loss or corruption. However, like preview files, backups also take up additional storage space.
 
 ## Scenario
+Consider this example: you have Documents (Smart Templates), Assets, and Fonts with their respective sizes. 
 
-Below is an example of a scenario where you have Document (Smart Templates), Assets and Fonts. Each have their respective size.
+Backups are exact duplicates of your data, and their size might vary in real-world scenarios. CHILI GraFx always considers 100% of the data size for backup calculations. Note that preview data, crucial for system performance, is not included in backups. In a recovery situation, the CHILI GraFx engine will regenerate this data.
 
-When backed up, we calculate the exact amount of data for the backup. Depending on your scenario, this might be more or less in real life due to snapshots. CHILI GraFx only calculates 100% of the data size.
-
-Preview data, necessary for the system to work performant, is not backed up. In case a backup needs to be recovered, preview data will be recreated by the CHILI GraFx engine.
-
-In the scenario below: **282 MB** will be reported in your storage overview.
+In this example, **282 MB** is the total storage displayed in your overview.
 
 | Type of Data  | Size   | Backup Size   | Total |
 | ----------- 	| -----: | -----: | --: |
@@ -43,5 +51,6 @@ In the scenario below: **282 MB** will be reported in your storage overview.
 | Total  		| **110.7 GB**  | **100.7 GB** | **211.4 GB** |
 
 ## Conclusion
+Understanding how storage is calculated helps you manage your account effectively. The total storage footprint encompasses not only your uploaded files but also the additional space needed for previews, fonts, templates, and backups, balancing performance with data security.
 
-Understanding how storage is calculated helps you manage your account effectively. It's important to remember that the total storage usage includes not just your uploaded files but also the additional space required for preview files, fonts, templates and backups, ensuring both performance and data safety.
+If you're integrating CHILI GraFx into your workflow, developing a strategy for regular cleanup of old assets and templates is advisable for optimal storage management.
