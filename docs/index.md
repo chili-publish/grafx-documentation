@@ -2,6 +2,21 @@
 
 <script src="https://fast.wistia.com/embed/medias/ynvyz51p7b.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ynvyz51p7b seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
 
+## Latest updates
+
+<div class="grid cards" markdown>
+
+-   :material-clock-fast: __Release notes__
+
+    ---
+
+    **January 2024**: A major update on the Environment API 1.3.4
+
+    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+
+</div>
+
+
 ## The Platform & Applications
 
 <div class="grid cards" markdown>
@@ -56,7 +71,6 @@
 
 </div>
 
-
 ## More Resources
 
 <div class="grid cards" markdown>
@@ -87,7 +101,7 @@
 
 </div>
 
-### CHILI publish NV
+---
 
 ![svg_icon](/assets/CHILI_LOGOS_OK-01.svg)
 

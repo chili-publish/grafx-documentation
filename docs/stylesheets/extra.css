@@ -35,7 +35,7 @@ img[alt=smallapplogo] {
 	width: 70px;
 }
 img[alt=tinyapplogo] {
-	--md-icon-size: 1.5em;
+	--md-icon-size: 3.0em;
 	vertical-align: middle;
 	display: inline-flex;
 	height: var(--md-icon-size);
