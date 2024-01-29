@@ -7,7 +7,7 @@
 ### Features
 
 - Introducing User Groups to invite users in bulk to environments with a specific role per environment
-- A user can be added to a user group when he is invited to CHILI GraFx for the first time or from the User Management page on CHILI GraFx
+- A user can be added to a user group when they are invited to CHILI GraFx for the first time or from the User Management page on CHILI GraFx
 - User Group membership, User Group details (name & description) and assignement of environment and roles are managed by the Subscription Admin
 
 ## Jan 26, 2024 - CHILI GraFx
