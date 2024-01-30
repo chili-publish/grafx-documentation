@@ -1,16 +1,20 @@
 # Release notes
 
-## Jan 26, 2024 - CHILI GraFx
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 30, 2024 - GraFx Publisher
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+### Fixes
+
+- Improved stability for larger VDP sizes
+- Task status is set to ‘false’ when no output was produced
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 26, 2024 - CHILI GraFx
 
 ### Fixes
 
 - Fixed an error where you could not access the platform
 
-## Jan 25, 2024 - CHILI GraFx
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 25, 2024 - CHILI GraFx
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
 
 CHILI GraFx [Environment API 1.3.4](/GraFx-Developers/#environment-api)
 
@@ -39,9 +43,7 @@ api/v1/environment/{environmentId}/output/jpg
 (api/experimental/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code)
 - Introduce 'none' auth for connector definition
 
-## Jan 24, 2024 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 24, 2024 - GraFx Publisher
 
 ### Fixes
 
@@ -56,9 +58,9 @@ api/v1/environment/{environmentId}/output/jpg
 - A download will now be served from a more sustainable location
 - Improved performance when copying a file with an existing name
 
-## Jan 19, 2024 - CHILI GraFx
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 19, 2024 - CHILI GraFx
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+
 
 ### Improvements
 
@@ -70,17 +72,13 @@ api/v1/environment/{environmentId}/output/jpg
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-## Jan 16, 2024 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 16, 2024 - GraFx Publisher
 
 ### Fixes
 
 - Fixed issues where specific PDF assets caused corruption in the PDF output file
 
-## Jan 9, 2024 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 9, 2024 - CHILI GraFx
 
 ### Improvements
 
@@ -93,9 +91,7 @@ User groups allow admins to set permissions and access to user groups next to in
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-## Jan 4, 2024 - GraFx Studio
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Jan 4, 2024 - GraFx Studio
 
 ### Features
 
@@ -117,9 +113,7 @@ CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 - Fixed issue with actions throwing the same error twice
 - Fixed issue where a font that is used in the template could be deleted without getting a confirmation dialog
 
-## Jan 2, 2024 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 2, 2024 - GraFx Publisher
 
 ### Fixes
 
