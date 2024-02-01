@@ -1,26 +1,30 @@
 # User management
 
-## Scope of permissions
+## Scope of roles
 
-The scope of the permissions is the concept that not all permissions have the same impact. Some permissions have impact on a different level.
+Roles on the Subscription level, have a different impact than a role on the Environment level.
 
-The schema below shows the relation between the levels in a CHILI GraFx Subscription, to then explain the impact of permissions (roles) on these levels
+When you are SubScription Admin, you can define who's an Environment Admin, for each Environment.
+
+When you are (only) an Environment Admin, you don't have access to the subscription level.
+
+The schema below shows the relation between the levels in a CHILI GraFx Subscription, to then explain the impact of access on these levels
 
 ``` mermaid
 erDiagram
-  CHILI-GraFx-Client ||--|{ GraFx-Subscription : Has
-  GraFx-Subscription ||--|{ GraFx-Environment : Has
+  CHILI-GraFx-Client ||--|{ GraFx-Subscription : Has-one-or-more
+  GraFx-Subscription ||--|{ GraFx-Environment : Has-one-or-more
 ```
 
 ### A GraFx Subscription
 
-Roles defined on the Subscription level have permission with impact for all environments.
-These contain operations like managing the lifecycle of identities and environments.
+Roles on the subscription level define access for all environments.
+These contain operations like managing the lifecycle of users and environments.
 
 ### Environment
 
-An environment is the smallest level, where documents are grouped to serve an application. The minimum restriction you can apply to a set of resources, is the environment level.
+An environment is the base level, where documents are grouped to serve an application. The minimum restriction you can apply to a set of resources is the environment level.
 
 ### Roles
 
-[Roles](/CHILI-GraFx/users/roles/) (and permissions) on the environment level affect only the specific environment.
+[Roles](/CHILI-GraFx/users/roles/) on the environment level affect only the specific environment.

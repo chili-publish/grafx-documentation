@@ -34,6 +34,12 @@ img[alt=applogo] {
 img[alt=smallapplogo] {
 	width: 70px;
 }
+img[alt=tinyapplogo] {
+	--md-icon-size: 3.0em;
+	vertical-align: middle;
+	display: inline-flex;
+	height: var(--md-icon-size);
+}
 img[alt=steps] {
 	margin-left: 50px;
 	border: 1pt #DDDDDD solid;
