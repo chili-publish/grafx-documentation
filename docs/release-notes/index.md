@@ -1,13 +1,21 @@
 # Release notes
 
-## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Fab 1, 2024 - CHILI GraFx
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 1, 2024 - CHILI GraFx
 
-### Improvements
+We're aiming to keep things smooth with a CI/CD approach; automatically rolling out updates to make sure you get the best experience. We'll give you a heads-up in the release notes only when there's something new and cool that changes how you use the platform.
+
+### Improvements Platform API
 
 - Possibility to configure allowed federated domains for external users
-- Introduce "isFederated" field in user response models to reflect federation status
+- Introduced "isFederated" field in the user model to reflect the federation status
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
+### Improvements Environment API
+
+- Several minor updates and fixes
+
+CHILI GraFx [Environment API 1.3.5](/GraFx-Developers/#environment-api)
 
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 30, 2024 - GraFx Publisher
 
