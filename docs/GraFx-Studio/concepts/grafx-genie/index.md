@@ -32,7 +32,7 @@ To create the action, click on the Action tab.
 
 ![image](action.png)
 
-You can now ask Genie to write the script for you.
+You can now ask GraFx Genie to write the script for you.
 
 Click on the GraFx Genie icon.
 
@@ -40,11 +40,11 @@ Click on the GraFx Genie icon.
 
 ![image](genie1.png)
 
-Ask Genie what functionality you need in your Smart Template
+Ask GraFx Genie what functionality you need in your Smart Template
 
 ![image](genie2.png)
 
-Genie will now suggest a JavaScript you can use to perform the functionality.
+GraFx Genie will now suggest a JavaScript you can use to perform the functionality.
 
 ![image](action2.png)
 
