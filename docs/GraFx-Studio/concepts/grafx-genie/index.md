@@ -40,7 +40,7 @@ Click on the GraFx Genie icon.
 
 ![image](genie1.png)
 
-And ask Genie what functionality you need in your Smart Template
+Ask Genie what functionality you need in your Smart Template
 
 ![image](genie2.png)
 
@@ -48,7 +48,7 @@ Genie will now suggest a JavaScript you can use to perform the functionality.
 
 ![image](action2.png)
 
-As you see, Genie knows about the context. Without specifiing that discount is a template variable name, it will understand and use this information to write the script.
+As you see, GraFx Genie knows about the context. Without specifying that discount is a template variable name, it will understand and use this information to write the script.
 
 If you're not 100% convinced, you can still tweak the script, or ask a Developer colleague to take a look for the final touches.
 
