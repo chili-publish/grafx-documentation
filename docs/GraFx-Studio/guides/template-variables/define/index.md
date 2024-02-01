@@ -76,23 +76,7 @@ The default value your template variable will have.
 - Name: Cannot be empty, must be unique
 - Type: See [types](#types) above
 - [Visible](#visibility-conditions): Enabled by default
-- [Required](#required-template-variables): Disabled by default
 - Read-only: Disabled by default
-
-### Required template variables
-
-When checked, the Studio Editor will ask the user to provide a value.
-
-!!! Info
-	When a template variable is required and it doesn't have a default value it doesn't show an error upon opening the document.
-
-An error is triggered upon these conditions:
-
-- When the input is in focus and left empty.
-- When the user enters a value for the first time, deletes it again (so the input is empty again) the error message will be shown below the input until the error is resolved.
-- When trying to save the document or generate output. A dialog is shown to inform the user that the document can't be saved or exported.
-
-To indicate that a template variable is required an asterisk ( * ) is shown next to the label.
 
 ### Visibility conditions
 
