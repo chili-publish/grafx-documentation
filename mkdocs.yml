@@ -209,7 +209,6 @@ nav:
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
             - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
-            - 'Organize template variables':    'GraFx-Studio/guides/template-variables/organize/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
