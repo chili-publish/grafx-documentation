@@ -42,8 +42,8 @@ As in the screenshot above, we have a Template variable named "headline", and yo
 Imagine this Action in your template
 
 ```javascript
-let a = getVariableValue('headline');
-let newheadline = a + " Now";
+var a = getVariableValue('headline');
+var newheadline = a + " Now";
 setVariableValue('headline', newheadline);
 ```
 
@@ -54,7 +54,7 @@ There is a [helper function](/GraFx-Studio/concepts/helper-functions/#get) calle
 You can then store this value in a JavaScript Variable. For example
    
 ```javascript
-let a = getVariableValue('headline');
+var a = getVariableValue('headline');
 ```
 
 This line says: "Store the headline's content in a container named 'a'."
@@ -64,7 +64,7 @@ This line says: "Store the headline's content in a container named 'a'."
 Once the value from the Template Variable is stored in the JavaScript Variable 'a', you can use it or manipulate it in your script.
     
 ```javascript
-let newheadline = a + " Now";
+var newheadline = a + " Now";
 ```
 
 ### Going back to the Template
