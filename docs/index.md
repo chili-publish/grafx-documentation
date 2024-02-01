@@ -10,7 +10,7 @@
 
     ---
 
-    **January 2024**: A ==major update on the Environment API 1.3.4==
+    **February 2024**: Several updates on ==GraFx Media==, ==Environment and Platform API== and ==User groups==.
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
