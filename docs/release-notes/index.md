@@ -1,6 +1,6 @@
 # Release notes
 
-## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-12.svg) Jan 30, 2024 - GraFx Media
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-12.svg) Feb 1, 2024 - GraFx Media
 
 ### Improvements
 
