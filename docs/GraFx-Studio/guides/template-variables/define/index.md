@@ -69,7 +69,7 @@ A placeholder for a reference to an image in the (GraFx) Media pool, or other so
 
 ## Default state
 
-The default value your template variable with have.
+The default value your template variable will have.
 
 ## Basic properties:
 
