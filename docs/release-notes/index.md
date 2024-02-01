@@ -13,6 +13,7 @@ CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
 ### Improvements Environment API
 
+- New naming for default output settings
 - Several minor updates and fixes
 
 CHILI GraFx [Environment API 1.3.5](/GraFx-Developers/#environment-api)
