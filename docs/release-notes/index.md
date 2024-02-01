@@ -1,6 +1,22 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-12.svg) Feb 1, 2024 - GraFx Media
+
+### Improvements
+
+- In GraFx Media you can move an asset from one place within the environment to another using the quick actions menu.
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 1, 2024 - CHILI GraFx
+
+### Features
+
+- Introducing User Groups to invite users in bulk to environments with a specific role per environment
+- A user can be added to a user group when they are invited to CHILI GraFx for the first time or from the User Management page on CHILI GraFx
+- User Group membership, User Group details (name & description) and assignement of environment and roles are managed by the Subscription Admin
+
+[Documentation on user groups](/CHILI-GraFx/guides/manage-user-groups/)
+
+### API updates
 
 We're aiming to keep things smooth with a CI/CD approach; automatically rolling out updates to make sure you get the best experience. We'll give you a heads-up in the release notes only when there's something new and cool that changes how you use the platform.
 
