@@ -78,22 +78,6 @@ The default value your template variable will have.
 - [Visible](#visibility-conditions): Enabled by default
 - Read-only: Disabled by default
 
-### Visibility conditions
-
-When the "Visible" setting is enabled (is enabled by default), there is an option to add one or more visibility conditions. Only if ALL conditions are met the template variable is visible for the end-user.
-
-The visibility conditions:
-
-- Variable … has value …
-- Selected frame name contains …
-- Selected frame is of type …
-- Selected frame has private data … with value …
-- Selected layout name contains …
-
-!!! Note
-	We limit the options to keep it simple.
-	If you want more advanced action, you can create a hidden template variable that is set by an action and use that template variable as a visibility condition.
-
 ### Appearance settings
 
 These setting define how the template variable is presented:
