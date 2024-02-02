@@ -30,7 +30,9 @@ plugins:
   - awesome-pages
   - table-reader
 #  - git-revision-date-localized:
+#      enable_creation_date: true
 #      fallback_to_build_date: true
+#      type: iso-date  
 
 markdown_extensions:
   - md_in_html
@@ -43,6 +45,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -138,11 +141,17 @@ nav:
                 - 'Intro' :                     'CHILI-GraFx/users/intro/index.md'
                 - 'Scope' :                     'CHILI-GraFx/users/scope/index.md'
                 - 'Roles' :                     'CHILI-GraFx/users/roles/index.md'
-                - 'Change Roles & Access' :     'CHILI-GraFx/users/update/index.md'
                 - 'Template Designer Seat' :    'CHILI-GraFx/users/template-designer/index.md'
                 - 'Users & Invitation' :        'CHILI-GraFx/users/creation/index.md'
+                - 'Deactivate Users' :        'CHILI-GraFx/users/deactivate/index.md'
+                - 'Delete Users' :            'CHILI-GraFx/users/delete/index.md'
                 - 'Transition' :                'CHILI-GraFx/users/transition/index.md'
         - 'How to':
+            - 'Change Roles & Access' :         'CHILI-GraFx/guides/role-access-update/index.md'
+            - 'Manage Individual Access' :      'CHILI-GraFx/guides/manage-individual-access/index.md'
+            - 'Manage User Groups' :            'CHILI-GraFx/guides/manage-user-groups/index.md'
+            - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
+            - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Manage Collections' :            'CHILI-GraFx/guides/manage-collections/index.md'
