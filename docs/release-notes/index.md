@@ -8,6 +8,13 @@
 
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 1, 2024 - CHILI GraFx
 
+??? note "Change in URLs"
+	
+	We've updated the way how our URLs in the platform are built. 
+    This means that if you have bookmarks (especially if they are linking to a certain environment) that the URLs will bring you to a 404.
+    This change was necessary to have a more consistent way of navigating the platform.
+    Please update your bookmarks to follow the new structure.
+
 ### Features
 
 - Introducing User Groups to invite users in bulk to environments with a specific role per environment
