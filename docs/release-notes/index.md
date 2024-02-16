@@ -1,6 +1,6 @@
 # Release notes
 
-## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 12, 2024 - GraFx Studio
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 16, 2024 - GraFx Studio
 
 ### Features
 
