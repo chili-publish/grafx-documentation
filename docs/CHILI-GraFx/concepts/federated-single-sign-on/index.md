@@ -39,9 +39,9 @@ erDiagram
   GraFx-Media ||--|| CHILI-GraFx-Identity-Hub : A-P
   CHILI-GraFx-Identity-Hub {
   	handles Authentication
-  	handles Individual access
-    handles Groups definition
-    handles Group membership
+  	handles Individual-Access
+    handles Groups-Definition
+    handles Group-Membership
   }
 ```
 
@@ -60,12 +60,12 @@ erDiagram
   GraFx-Media ||--|| CHILI-GraFx-Identity-Hub : A-P
   CHILI-GraFx-Identity-Hub ||--|| Customer-Identity-Provider : A
   CHILI-GraFx-Identity-Hub {
-  	handles Individual access
-    handles Groups definition
+  	handles Individual-Access
+    handles Groups-Definition
   }
   Customer-Identity-Provider {
   	handles Authentication
-    handles Group membership
+    handles Group-Membership
   }
 ```
 
