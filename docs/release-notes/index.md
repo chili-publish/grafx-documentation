@@ -1,5 +1,17 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 20, 2024 - CHILI GraFx
+
+### Improvements
+
+- We added an `isGraFxPricebook` flag to subscription information in the API to reflect if a certain subscription belongs to a CHILI GraFx price book.
+
+### Fixes
+
+- Fixed an issue where data was shown incorrectly when user roles were updated in the individual access tab of the user
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 16, 2024 - GraFx Studio
 
 ### Features
@@ -33,8 +45,8 @@
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 1, 2024 - CHILI GraFx
 
 ??? note "Change in URLs"
-	
-	We've updated the way how our URLs in the platform are built. 
+
+ We've updated the way how our URLs in the platform are built.
     This means that if you have bookmarks (especially if they are linking to a certain environment) that the URLs will bring you to a 404.
     This change was necessary to have a more consistent way of navigating the platform.
     Please update your bookmarks to follow the new structure.
