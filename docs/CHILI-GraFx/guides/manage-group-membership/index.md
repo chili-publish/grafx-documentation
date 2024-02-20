@@ -1,6 +1,6 @@
 # User Group Membership
 
-## Add Members to a group
+## Manage membership of non-federated users
 
 Go to User Management, click "Groups", click on the group you want to manage. "Graphics Production Team"
 
@@ -32,3 +32,19 @@ Under "Assigned members" you can "delete" a member. This will revoke group membe
 When done, you'll see the members under the "Members" tab.
 
 ![screenshot-full](ug012.png)
+
+## Manage membership of Federated users
+
+Group membership of federated users are managed in the third-party identity provider (IDP).
+
+All group membership operations are disabled for federated users because group membership information from the third-party IDP overrides the informaion in CGX.
+
+When a user authenticates in a third-party IDP, the authentication must include the identifiers of the groups the user belongs to.
+
+To get the identifier from a group, click on "Copy group ID" in the group drop-down.
+
+![screenshot-full](ug014.png)
+
+For additional information on the claims used, check, the related security protocol [SAML](/CHILI-GraFx/concepts/federated-single-sign-on/saml/) or [OpenID Connect](/CHILI-GraFx/concepts/federated-single-sign-on/oidc/)
+
+The details on managing the group membership in the third-party IDP varies from vendor to vendor. Please contact your IT support team for further details.
