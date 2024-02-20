@@ -4,11 +4,11 @@
 
 ### Improvements
 
-- Added `isGraFxPricebook` flag to subscriptions information to reflect, if a certain subscription belongs to a GraFx price book or not
+- We added an `isGraFxPricebook` flag to subscription information in the API to reflect if a certain subscription belongs to a CHILI GraFx price book.
 
 ### Fixes
 
-- Fixed stale data on individual access tab, when user roles were updated
+- Fixed an issue where data was shown incorrectly when user roles were updated in the individual access tab of the user
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
