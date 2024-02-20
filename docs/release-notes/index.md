@@ -1,5 +1,18 @@
 # Release notes
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
+
+### Fixes
+
+- Fixed cache issues when requesting Documents previews.  
+Image preview download returns wront content type instead of image/png when async was set to false.
+- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice 
+
+### Improvements
+
+- PDF generation performance has been improved when no post-processing options are selected in the PDF Export Settings. This is default for new PDF Export Settings.
+
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 16, 2024 - GraFx Studio
 
 ### Features
