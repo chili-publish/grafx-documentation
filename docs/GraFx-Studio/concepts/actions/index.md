@@ -48,6 +48,6 @@ The second tab in the Trigger popup screen shows the Action editor.
 
 Enter your JavaScript code that should be executed.
 
-![screenshot](actioncode.png)
+![image](actioncode.png)
 
 See further [How to create an action](/GraFx-Studio/guides/actions/create/) and [Intro to writing JavaScript](/GraFx-Studio/guides/actions/javascript/)

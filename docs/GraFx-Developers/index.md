@@ -1,6 +1,6 @@
 # Integrate CHILI GraFx apps
 
-To communicate with GraFx, please use these two APIs. You can learn more about the role of each API below.
+To communicate with CHILI GraFx, use these two APIs. You can learn more about the role of each API below.
 
 - [Platform API](https://api.chiligrafx.com/swagger/index.html)
 - [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
@@ -9,14 +9,9 @@ Client side
 
 - [GraFx Studio SDK](https://chili-publish.github.io/studio-sdk/index.html)
 
-**You can access the specific interactive Swagger for your environment API via the following format**
-
-Production: `<environment name>.chili-publish.online/grafx/swagger/index.html`
-
-Sandbox: `<environment name>.chili-publish-sandbox.online/grafx/swagger/index.html`
 
 ## Platform API
-The GraFx Platform API allows you to manage GraFx Platform resources.
+The CHILI GraFx Platform API allows you to manage CHILI GraFx Platform resources.
 
 Some example use cases are:
 
@@ -27,9 +22,13 @@ Some example use cases are:
 
 ## Environment API
 
+**You can access the specific interactive Swagger for your environment API via integration setup**
+
+![ui](integration01.png)
+
 Through the **GraFx Environment API** you can manage your CHILI GraFx environment.
 
-Some exmaple use cases are:
+Some example use cases are:
 
 - Adding Smart Templates
 - Adding Template Designer seats (later)
@@ -76,9 +75,9 @@ You can find out more about generating credentials in our [Integration Guide](/C
 
 ## GraFx Publisher
 
-- [REST API Reference](https://mydocumentation.chili-publish.com/search?text=rest%20api%20endpoints){target="_blank"}
-- [Javascript API](https://mydocumentation.chili-publish.com/search?text=Getting%20started%20with%20your%20JavaScript%20integration){target="_blank"}
-- [Getting Started](https://mydocumentation.chili-publish.com/search?text=chili%20api%20guide){target="_blank"}
+- [REST API Reference](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413560/REST+API+Endpoints){target="_blank"}
+- [Javascript API](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412075/Getting+started+with+your+JavaScript+integration){target="_blank"}
+- [Getting Started](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412012/CHILI+API+Guide){target="_blank"}
 
 ## GraFx Media
 

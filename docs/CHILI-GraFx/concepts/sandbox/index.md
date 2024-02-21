@@ -2,9 +2,13 @@
 
 ## Sandbox
 
-A sandbox deployment is like a test version of the CHILI GraFx platform or applications that allows you to experiment with new features without affecting the live production data. With each new release, the sandbox deployment will have the latest version of the platform and/or applications, but with separate data.
+A sandbox environment is like a test version of the CHILI GraFx platform or applications that allows you to experiment with new features without affecting the live production data. With each new release, the sandbox environments will have the latest version of the platform and/or applications, but with separate data.
 
 This means that any changes made in the sandbox will not affect the production data. The sandbox allows you to test new features to make sure they work properly before they are used in the live version.
+
+Output generated in a sandbox environment has a watermark and is not counted as a [render](/CHILI-GraFx/concepts/renders/).
+
+![screenshot](sample.jpeg)
 
 ## Production
 
@@ -12,7 +16,7 @@ Production is the live version of CHILI GraFx that customers use to access and u
 
 ## Why two versions?
 
-The reason for having a separate sandbox deployment is to allow developers, testers, and customers to test new features without affecting the live production data. This is important because it ensures that any issues or bugs are identified and fixed before they affect the people who are using the live version.
+The reason for having a separate sandbox is to allow developers, testers, and customers to test new features without affecting the live production data. This is important because it ensures that any issues or bugs are identified and fixed before they affect the people who are using the live version.
 
 ## UI and API
 
@@ -20,7 +24,7 @@ Both the platform and application UI (the way the platform looks) and API (the w
 
 ## Testing
 
-We encourage you to setup a strategy to include testing the sandbox deployment as part of your product or platform lifecycle. This will ensure a more stable result.
+We encourage you to setup a strategy to include testing the sandbox as part of your product or platform lifecycle. This will ensure a more stable result.
 
 ## Sandbox on multi tenant vs private tenant
 

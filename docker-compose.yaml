@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    container_name: grafx-documentation
+    build: .
+    volumes:
+      - ./:/usr/grafx-docs
+    command: /bin/sh -c "mkdocs serve -a 0.0.0.0:8000"
+    ports:
+      - "8000:8000"

@@ -7,6 +7,7 @@ theme:
   features:
     - navigation.tabs
     - content.tabs.link
+    - navigation.footer
   font:
     text: Ubuntu
   palette:
@@ -27,10 +28,11 @@ plugins:
         'releasenotes/index.md': 'release-notes/index.md'
   - search
   - awesome-pages
-  - tags:
-      tags_file: tags.md
+  - table-reader
 #  - git-revision-date-localized:
+#      enable_creation_date: true
 #      fallback_to_build_date: true
+#      type: iso-date  
 
 markdown_extensions:
   - md_in_html
@@ -43,6 +45,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -69,6 +72,23 @@ extra_javascript:
   - javascripts/feedback.js
 
 extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/chili-publish/
+      name: CHILI publish on LinkedIn
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/CHILIPublish/
+      name: CHILI publish on Facebook
+    - icon: fontawesome/brands/github
+      link: https://github.com/chili-publish
+      name: CHILI publish on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CHILI_publish
+      name: CHILI publish on Twitter aka X
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/chilipublish
+      name: CHILI publish on Instagram
+      
   consent:
     title: CHILI Grafx uses cookies
     description: >-
@@ -100,12 +120,20 @@ extra:
 nav:
     - 'CHILI GraFx':
         - 'Introduction':                       'CHILI-GraFx/index.md'
+        - 'Applications':               
+            - 'Overview':                       'CHILI-GraFx/applications/overview/index.md'
+            - 'Editor Comparison':              'CHILI-GraFx/applications/editor-comparison/index.md'
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
             - 'Template Management':            'CHILI-GraFx/concepts/template-management/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
+            - 'Storage':                        'CHILI-GraFx/concepts/storage/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
             - 'Subscriptions' :                 'CHILI-GraFx/concepts/subscriptions/index.md'
+            - 'Federated Single Sign On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
+            - 'FSSO OIDC':                      'CHILI-GraFx/concepts/federated-single-sign-on/oidc/index.md'
+            - 'FSSO SAML':                      'CHILI-GraFx/concepts/federated-single-sign-on/saml/index.md'
+            - 'FSSO Glossary':                  'CHILI-GraFx/concepts/federated-single-sign-on/glossary/index.md'
             - 'Integrations' :                  'CHILI-GraFx/concepts/integrations/index.md'
         - 'Platform Administration':
             - 'General Administration' :        'CHILI-GraFx/admin/index.md'
@@ -113,15 +141,22 @@ nav:
                 - 'Intro' :                     'CHILI-GraFx/users/intro/index.md'
                 - 'Scope' :                     'CHILI-GraFx/users/scope/index.md'
                 - 'Roles' :                     'CHILI-GraFx/users/roles/index.md'
-                - 'Change Roles & Access' :     'CHILI-GraFx/users/update/index.md'
                 - 'Template Designer Seat' :    'CHILI-GraFx/users/template-designer/index.md'
                 - 'Users & Invitation' :        'CHILI-GraFx/users/creation/index.md'
+                - 'Deactivate Users' :        'CHILI-GraFx/users/deactivate/index.md'
+                - 'Delete Users' :            'CHILI-GraFx/users/delete/index.md'
                 - 'Transition' :                'CHILI-GraFx/users/transition/index.md'
         - 'How to':
+            - 'Change Roles & Access' :         'CHILI-GraFx/guides/role-access-update/index.md'
+            - 'Manage Individual Access' :      'CHILI-GraFx/guides/manage-individual-access/index.md'
+            - 'Manage User Groups' :            'CHILI-GraFx/guides/manage-user-groups/index.md'
+            - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
+            - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Manage Collections' :            'CHILI-GraFx/guides/manage-collections/index.md'
             - 'Manage Integrations' :           'CHILI-GraFx/guides/integrations/index.md'
+            - 'Setup FSSO' :                    'CHILI-GraFx/guides/setup-fsso/index.md'
         - 'Integrate CHILI GraFx':              'CHILI-GraFx/integration/index.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'
@@ -135,6 +170,13 @@ nav:
                 - 'GraFx Studio intro':         'CHILI-GraFx/guides/onboarding/studio/index.md'
             - 'GraFx Media' :
                 - 'GraFx Media intro':          'CHILI-GraFx/guides/onboarding/media/index.md'
+        - 'Trust':
+            - 'Introduction':                   'CHILI-GraFx/trust/introduction/index.md'
+            - 'Security Policy':                'CHILI-GraFx/trust/security-policy/index.md'
+            - 'Compliance':                     'CHILI-GraFx/trust/compliance/index.md'
+            - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
+            - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
+            - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
@@ -158,6 +200,8 @@ nav:
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
+            - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
+            - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
@@ -167,7 +211,9 @@ nav:
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
+            - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
@@ -189,6 +235,9 @@ nav:
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
+            - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
+        - 'How to: My projects':
+            - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
         - 'Integrate GraFx studio':
             - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
             - 'Local environment':              'GraFx-Studio/integration/environment/index.md'
@@ -214,15 +263,29 @@ nav:
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
         - 'Application overview':
-            - 'Viewing Media':                  'GraFx-Media/overview/viewing/index.md'
+            - 'Application elements':           'GraFx-Media/overview/elements/index.md'
+            - 'Supported File Types':           'GraFx-Media/overview/filetypes/index.md'
+        - 'Concepts':
+            - 'Media vs DAM':                   'GraFx-Media/concepts/media-vs-dam/index.md'
         - 'How to':
             - 'Browse media':                   'GraFx-Media/guides/browse/index.md'
             - 'Search media':                   'GraFx-Media/guides/browse/search/index.md'
-#           'Upload media':                     'GraFx-Media/guides/upload/index.md'
+            - 'Manage folders':                 'GraFx-Media/guides/manage-folders/index.md'
+            - 'Upload media':                   'GraFx-Media/guides/upload-media/index.md'
 #           'Download media':                   'GraFx-Media/guides/download/index.md'
 #           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':
         - 'Introduction':                       'GraFx-Fonts/index.md'
+        - 'Application overview':
+            - 'Application elements':           'GraFx-Fonts/overview/elements/index.md'
+            - 'Supported Font Types':           'GraFx-Fonts/overview/supported-font-types/index.md'
+        - 'Concepts':
+            - 'Fonts vs Families':              'GraFx-Fonts/concepts/fonts-vs-families/index.md'
+            - 'Fonts in GraFx Publisher':       'GraFx-Fonts/concepts/fonts-in-publisher/index.md'
+
+        - 'How to':
+            - 'Upload fonts':                   'GraFx-Fonts/guides/upload-fonts/index.md'
+            - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
 
     - 'GraFx Stylekits':
         - 'Introduction':                       'GraFx-Stylekits/index.md'
@@ -232,7 +295,9 @@ nav:
 
     - 'Release notes':
         - 'Recent':                             'release-notes/index.md'
+        - '2023':                               'release-notes/2023.md'
         - '2022':                               'release-notes/2022.md'
+        - 'Experimental':                       'release-notes/experimental/index.md'
 
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'

@@ -35,8 +35,7 @@ Select the font-book to view your fonts, and add them to the stylekit.
 
 ![appscreen](fonts.png)
 
-As of writing, Fonts are managed through the BackOffice of GraFx Publisher.
-Add them to a folder in the BackOffice, and they will appear in the selection window.
+Select the font family you want to add to your document.
 
 ![appscreen](font-browser.png)
 

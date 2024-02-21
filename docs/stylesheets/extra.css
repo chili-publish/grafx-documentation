@@ -1,5 +1,28 @@
+:root {
+  --chilired: #FD0048;
+  --secondary: #74E5D3;
+  --tertiary: #644FCA;
+}
+
+.reddot {
+	display:inline-block; 
+	width:20px; 
+	height:20px; 
+	background-color: var(--chilired); 
+	border-radius:50%; 
+	color:white; 
+	text-align:center; 
+	line-height:20px;
+	margin: 0 6px 0 0;
+}
+
+.md-typeset table:not([class]) td
+{
+	vertical-align: middle;
+}
+
 .chilired {
-	color: #FF0048;
+	color: var(--chilired);
 }
 .introdiv {
 	font-size:2.5em;
@@ -8,13 +31,18 @@
 img[alt=applogo] {
 	width: 200px;
 }
+img[alt=smallapplogo] {
+	width: 70px;
+}
+img[alt=tinyapplogo] {
+	--md-icon-size: 3.0em;
+	vertical-align: middle;
+	display: inline-flex;
+	height: var(--md-icon-size);
+}
 img[alt=steps] {
 	margin-left: 50px;
 	border: 1pt #DDDDDD solid;
-}
-p:has(img[alt=releasenotes]) {
-	width: 100%;
-	text-align: center;
 }
 p:has(img[alt=releasenotes]) {
 	width: 100%;
@@ -42,7 +70,10 @@ p img[alt=svg_icon] {
 	width: 100px;
 }
 img[alt=rn_icon] {
-	width: 75px;
+	--md-icon-size: 3.0em;
+	vertical-align: middle;
+	display: inline-flex;
+	height: var(--md-icon-size);
 }
 .md-header {
 	background-color: #F0F0F0;

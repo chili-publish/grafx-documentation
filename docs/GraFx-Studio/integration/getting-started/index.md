@@ -1,8 +1,3 @@
----
-tags:
-  - studioAPI
----
-
 # GraFx studio integration
 
 GraFx studio is a client side browser application.
@@ -33,6 +28,16 @@ To integrate GraFx Studio you will make use of the editor SDK. This SDK dynamica
 
 We have [SDK reference documentation](https://chili-publish.github.io/studio-sdk/index.html){target="_blank"} and the [SDK codebase](https://github.com/chili-publish/studio-sdk){target="_blank"} is open sourced.
 
+### SDK Version
+
+Integrating an SDK into your project can be done in two ways: using a **JavaScript link** or a **package manager** like NPM. 
+
+Using a JavaScript link connects directly to the **latest hosted version**, ensuring automatic updates and access to new features. However, this method can lead to unexpected changes if the SDK is updated. 
+
+Using a package manager like NPM allows you to download and install a **specific SDK version**, offering more control and stability. This approach is beneficial for maintaining consistency, especially in larger projects, but requires manual updates to access new features or security improvements. 
+
+The choice between these methods depends on your project's needs for latest updates versus stability and the team's ability to manage SDK updates.
+
 ### Demo integrations
 
 To make life easier, we have created a couple of [demo integrations](https://github.com/chili-publish/studio-sdk-integration-examples){target="_blank"}, so you don't have to start from scratch.
@@ -41,7 +46,7 @@ You can use this script in your HTML to always get the latest SDK version:
 
 
 ``` js
-<script src="https://cdnepgrafxstudioprd.azureedge.net/sdk/latest/main.js"></script>
+<script src="https://studio-cdn.chiligrafx.com/sdk/latest/main.js"></script>
 ```
 
 Or you can use NPM to install a specific SDK version, with the following command:
@@ -52,11 +57,25 @@ npm install @chili-publish/studio-sdk
 
 #### stateChanged event will be deprecated
 
-You should subscribe to specific events instead of the global stateChanged event, which will be deprecated soon. You can find the available events in the [documentation](https://chili-publish.github.io/studio-sdk/classes/controllers_SubscriberController.SubscriberController.html){target="_blank"} or in the [code](https://github.com/chili-publish/studio-sdk/blob/main/src/controllers/SubscriberController.ts){target="_blank"}.
+You should subscribe to specific events instead of the global stateChanged event, which will be deprecated soon. You can find the available events in the [documentation](https://chili-publish.github.io/studio-sdk/){target="_blank"}.
 
 ### Debug panel
 
-On the top left of the editor canvas there is a button to open the debug panel. This panel shows a log of all interactions with the editor engine. This can help while building your integration.
+The shortcut will open the debug panel.
+
+Mac: ⌥ (option) + 🌐 fn + F1
+
+Windows: Alt + F1
+
+![Debug panel](debugpanel.png)
+
+This panel shows a log of all interactions with the SDK. This can help while building your integration.
+
+There is also an FPS graph, to display the performance of the Editor.
+
+The "Info" tab shows versions of the Engine and SDK.
+
+A triggers tab holds several buttons to trigger events for the template.
 
 ### GraFx Connector
 

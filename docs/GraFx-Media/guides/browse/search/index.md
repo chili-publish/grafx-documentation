@@ -4,4 +4,4 @@ When the amount of assets grow, a search will help you to quickly locate the ass
 
 ![appscreen](search-blue.png)
 
-In the search bar, enter a name of the assets and the list will update.
+In the search bar, enter a name or Asset ID of the assets and the list will update.
