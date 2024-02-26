@@ -1,5 +1,19 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 26, 2024 - CHILI GraFx
+
+### Improvements
+
+- You can now update the name and description of the created user groups.
+
+![screenshot](updatename.png)
+
+### Security
+
+- Security updates to the Platform API were made.
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
 
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
 
