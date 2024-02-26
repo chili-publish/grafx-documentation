@@ -11,7 +11,7 @@
 
 ### Features
 
-- A default user group that contains by default all the users of a subscription is made available and can be used to easily assign all users to the same environment(s) with the same role(s)
+- A default user group that contains all the users of a subscription is made available and can be used to easily assign all users to the same environment(s) with the same role(s)
   
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
 
