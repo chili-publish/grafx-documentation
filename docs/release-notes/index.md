@@ -1,5 +1,11 @@
 # Release notes
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 26, 2024 - GraFx Publisher
+
+### Improvements
+
+- New Publisher Plugin
+
 
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
 
