@@ -1,6 +1,18 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 26, 2024 - CHILI GraFx
 
+### Improvements
+
+- Previews for template & project in GraFx Studio are now displayed in medium quality
+- On the homepage the environments are now ranked with the most recent visited environment first
+- On the user detail page it's indicated if a user is federated (= created in third party IDP of the client) or local (= created on CHILI GraFx)
+- Restricted actions on federated users are now clarified by error messages
+
+### Features
+
+- A default user group that contains by default all the users of a subscription is made available and can be used to easily assign all users to the same environment(s) with the same role(s)
+  
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
 
 ### Fixes
