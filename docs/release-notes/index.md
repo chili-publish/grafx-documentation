@@ -4,7 +4,7 @@
 
 ### Improvements
 
-- Previews for template & project in GraFx Studio are now displayed in medium quality
+- The quality of the thumbnails for template & project in GraFx Studio have improved
 - On the homepage the environments are now ranked with the most recent visited environment first
 - On the user detail page it's indicated if a user is federated (= created in third party IDP of the client) or local (= created on CHILI GraFx)
 - Restricted actions on federated users are now clarified by error messages
