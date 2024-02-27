@@ -4,7 +4,7 @@
 
 ### Improvements
 
-- Meda search improvements in the Studio UI
+- Media search improvements in the Studio UI
 
 ### Fixes
 
