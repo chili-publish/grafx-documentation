@@ -1,5 +1,17 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
+
+### Improvements
+
+- Media search improvements in the Studio UI
+
+### Fixes
+
+- Fixed issue with color slider in the color picker
+- Fixed issue with Folder setting for GraFx Media in image variable settings
+- Fixed issue with image preview when image variable value is set by name
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 26, 2024 - CHILI GraFx
 
 ### Improvements
