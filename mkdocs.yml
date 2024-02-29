@@ -259,6 +259,11 @@ nav:
             - 'Variables':
               - 'General':                      'GraFx-Publisher/guides/javascript/variables/index.md'
               - 'List':                         'GraFx-Publisher/guides/javascript/variables/list/index.md'
+        - 'Plugins':
+            - 'Conversion':                     'GraFx-Publisher/convert/intro/index.md'
+            - 'Adobe InDesign plug-in':         'GraFx-Publisher/convert/Adobe-InDesign/index.md'
+            - 'Adobe Illustrator extension':    'GraFx-Publisher/convert/Adobe-Illustrator/index.md'
+            
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
