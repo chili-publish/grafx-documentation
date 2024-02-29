@@ -1,6 +1,39 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
+### Improvements
+
+- Media search improvements in the Studio UI
+
+### Fixes
+
+- Fixed issue with color slider in the color picker
+- Fixed issue with Folder setting for GraFx Media in image variable settings
+- Fixed issue with image preview when image variable value is set by name
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 26, 2024 - CHILI GraFx
+
+### Improvements
+
+- The quality of the thumbnails for template & project in GraFx Studio have improved
+- On the homepage the environments are now ranked with the most recent visited environment first
+- On the user detail page it's indicated if a user is federated (= created in third party IDP of the client) or local (= created on CHILI GraFx)
+- Restricted actions on federated users are now clarified by error messages
+- You can now update the name and description of the created user groups.
+
+![screenshot](updatename.png)
+
+### Features
+
+- A default user group that contains all the users of a subscription is made available and can be used to easily assign all users to the same environment(s) with the same role(s)
+
+### Security
+
+- Security updates to the Platform API were made.
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+  
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
 
 ### Fixes
