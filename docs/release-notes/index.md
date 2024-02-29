@@ -1,5 +1,20 @@
 # Release notes
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 1, 2024 - GraFx Publisher plug-in for Adobe Illustrator® and Adobe InDesign®
+
+### Features
+
+- Added support for Adobe® Illustrator® 2024 (28.x),
+- Added a possibility to login with GraFx (SSO).
+
+[Download page](https://docs.chiligrafx.com) (behind login)
+
+This version is compatible with Adobe® Illustrator® 2022 (26.x), 2023 (27.x) and 2024 (28.x).
+
+This version is compatible with Adobe® InDesign® 2023 (18.x) and 2024 (19.x).
+
+This version is compatible with GraFx Publisher and the on-premise version of CHILI Publisher (6.6.5.0).
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
 ### Improvements
