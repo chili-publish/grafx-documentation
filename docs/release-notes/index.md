@@ -13,7 +13,6 @@ Several technical improvements to the tech stack result in overall better perfor
 ### Fixes
 
 - Fixed issue when asset previews can’t be recreated after calling ResourceItemReplaceFile
-- Fixed DocumentCreateIDMLPOST QR test
 
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
