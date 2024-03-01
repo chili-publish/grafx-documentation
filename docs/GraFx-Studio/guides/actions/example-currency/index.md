@@ -2,6 +2,9 @@
 
 For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
 
+!!! info "Template Variables"
+	When referring to **variables** on this page we refer to **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** unless stated differently.
+
 ## Intro
 
 A trigger is set to act upon the currency.
@@ -48,7 +51,7 @@ else studio.variables.setValue("displayCurrency", "£");
 
 A JavaScript variable **currency** is defined to hold the [string](https://www.w3schools.com/js/js_strings.asp) value of the "Currency" variable in the template.
 
-A series of if-then-else statements run through the possible options, and set the value of the Variable **displayCurrency** to the relevant currency symbol.
+A series of if-then-else statements run through the possible options, and set the value of the Template variable **displayCurrency** to the relevant currency symbol.
 
 ### The result
 
