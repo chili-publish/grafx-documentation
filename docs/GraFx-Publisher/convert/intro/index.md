@@ -1,17 +1,11 @@
 # Convert Desktop files to CHILI GraFx
 
-CHILI GraFx hosts Smart Template Editors to work on (animated) digital and print Smart Templates.
-These smart templates live at the end of the workflow.
 
-Concept > Design > Layout > (corporate) Approval > Smart Template > End-user interaction
+CHILI GraFx enhances Smart Template creation for digital and print formats, positioned at the workflow's end, from concept through approval to end-user interaction. It facilitates converting existing documents into GraFx Publisher, where Document Intelligence and brand rules are applied, allowing user engagement. 
 
-You’ll need a way to convert your existing documents from your current (desktop) Document Editor into GraFx Publisher.
+To support this streamlining template adaptation and integration, CHILI GraFx has extensions like
 
-Once in the CHILI GraFx editors, you can add Document Intelligence, brand guidelines and other rules to allow end-users to interact with your document.
-
-To enable this conversion, we offer several Extensions or Plugins for existing applications
-
-- GraFx Publisher Converter (for Adobe InDesign)
-- GraFx Publisher Data Manager
-- GraFx Publisher Live Preflight
-- GraFx Publisher AI Converter (for Adobe Illustrator)
+- GraFx Publisher Converter for Adobe InDesign-
+- Data Manager
+- Live Preflight
+- Converter for Adobe Illustrator
