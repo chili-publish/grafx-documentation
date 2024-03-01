@@ -57,7 +57,7 @@ npm install @chili-publish/studio-sdk
 
 #### stateChanged event will be deprecated
 
-You should subscribe to specific events instead of the global stateChanged event, which will be deprecated soon. You can find the available events in the [documentation](https://chili-publish.github.io/studio-sdk/classes/controllers_SubscriberController.SubscriberController.html){target="_blank"} or in the [code](https://github.com/chili-publish/studio-sdk/blob/main/src/controllers/SubscriberController.ts){target="_blank"}.
+You should subscribe to specific events instead of the global stateChanged event, which will be deprecated soon. You can find the available events in the [documentation](https://chili-publish.github.io/studio-sdk/){target="_blank"}.
 
 ### Debug panel
 

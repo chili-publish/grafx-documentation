@@ -1,954 +1,246 @@
 # Release notes
 
-## Nov 27, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
 ### Improvements
 
-- Improved performance of getting renders information
-- Optimization of authorization-related functions
+- Media search improvements in the Studio UI
 
 ### Fixes
 
-- Fixed error response in case of failed users invitation
+- Fixed issue with color slider in the color picker
+- Fixed issue with Folder setting for GraFx Media in image variable settings
+- Fixed issue with image preview when image variable value is set by name
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 26, 2024 - CHILI GraFx
+
+### Improvements
+
+- The quality of the thumbnails for template & project in GraFx Studio have improved
+- On the homepage the environments are now ranked with the most recent visited environment first
+- On the user detail page it's indicated if a user is federated (= created in third party IDP of the client) or local (= created on CHILI GraFx)
+- Restricted actions on federated users are now clarified by error messages
+- You can now update the name and description of the created user groups.
+
+![screenshot](updatename.png)
+
+### Features
+
+- A default user group that contains all the users of a subscription is made available and can be used to easily assign all users to the same environment(s) with the same role(s)
+
+### Security
+
+- Security updates to the Platform API were made.
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+  
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
+
+### Fixes
+
+- Fixed cache issues when requesting Documents previews.  
+Image preview download returns wront content type instead of image/png when async was set to false.
+- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice 
+
+### Improvements
+
+- PDF generation performance has been improved when no post-processing options are selected in the PDF Export Settings. This is default for new PDF Export Settings.
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 20, 2024 - CHILI GraFx
+
+### Improvements
+
+- We added an `isGraFxPricebook` flag to subscription information in the API to reflect if a certain subscription belongs to a CHILI GraFx price book.
+
+### Fixes
+
+- Fixed an issue where data was shown incorrectly when user roles were updated in the individual access tab of the user
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-## Nov 22, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-CHILI GraFx [Environment API 1.3.3](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
-
-### Improvements
-
-- Improved the performance of the 'Get' endpoints for media and templates.
-- Transitioned to using a token cache service for fetching internal tokens, moving away from direct calls to the identity provider.
-- Standardized the examples in Swagger documentation for consistency.
-
-### Fixes
-
-- Fixed the issue causing a 500 response when certain invalid arguments are used.
-- Addressed an issue where URLs containing the 'environment' value in varying case sensitivities caused errors.
-- Resolved a 500 error that occurred due to a concurrency issue when executing multiple requests to delete a single folder.
-- Fixed a problem where templates became unattachable to any collection after being manually migrated to another environment without updating their ID.
-
-### New Endpoints
-
-- Introduced for Enhanced Media Preview Capabilities<br>`GET /api/v1/environment/{environment}/media/{mediaId}/preview/highestOrVector`
-
-## Nov 21, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
-- Fixed: EPS file previews missing after data migration
-
-## Nov 14, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
-- Improved PDF output performance
-- Fixed duplicates for resources
-- Fixed blank documents in rare occasions
-- Fixed stuck tasks in queue after VDP output
-- Fixed document image output
-
-## Nov 7, 2023 - GraFx Studio
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 16, 2024 - GraFx Studio
 
 ### Features
 
-- Our new AI assistant [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/) can help you write actions! Just tell it what the action should do and it will generate the JavaScript code for you (available in [experimental](/release-notes/experimental/) mode)
-- You can change the unit of a layout to millimeters or inches. This is a first step toward enabling print output with GraFx Studio! (available in [experimental](/release-notes/experimental/) mode)
+- Added support for CMYK colors
+- Added letter spacing (tracking) to the text style properties
+- You can select multiple frames by holding the Shift key and move and resize them together
+- In an action, you can use the name of an asset to easily change an image variable based on user input (previously, you could only use the asset ID)
 
 ### Improvements
 
-- You can reorder frames in the Layers panel by drag and drop. This changes the order in which frames are rendered on top of each other
-- Improved handling of invalid input in the property input fields
-- Added support for images with a custom crop in PDF output (available in [experimental](/release-notes/experimental/) mode)
+- The height of the animation timeline panel can be changed
+- The color picker and text style panels can be moved
+- Added a search field when browsing for images in the Studio UI
+- Next to specifying a folder for image variables, you can now also specify if subfolders are included or not
+- Improved rendering performance of text frames
+- Improvements to PDF output (experimental)
 
 ### Fixes
 
-- Assets are shown twice in the Media panel
-- Selected frame is deleted when using the delete/backspace key while a dialog is open but the focus is not on the text input field
-- Actions that use the "Frame moved" trigger are executed multiple times when the frame is moved by holding down an arrow key
-- Action is not added to the undo/redo stack if the Folder setting for the GraFx Media connector was changed in the image variable settings
-- Cannot insert an empty text variable in a text frame
-- Not able to apply the default Arial font to text
-- Font style does not display the correct style when the default Arial font is used
-- Updated value of line height in character style is applied to the text only after entering text edit mode
-- Paragraph style cannot be set after deleting the used font
-- Paragraph style settings can't be opened by pencil icon if you clicked outside before
-- 'Null' is present for character style settings when you provide an invalid value
-- Copyfitting maximum value resets to the default value on frame movement
-- Text overflow warning icon is shown for a second when you switch between text frames in text edit mode
+- Fixed compatibility with some browser extensions (e.g. ZoomInfo)
+- Fixed size of text cursor for low copyfitting values
+- Fixed issue with updating text variables when they are placed at the end of a text frame
 
-## Nov 2, 2023 - GraFx Publisher
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-12.svg) Feb 1, 2024 - GraFx Media
 
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
+### Improvements
 
-### Fixes
+- In GraFx Media you can move an asset from one place within the environment to another using the quick actions menu.
 
-- Fixed resources consistency issue between Environment API and CPO. Sometimes folders where duplicated.
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 1, 2024 - CHILI GraFx
 
-## Oct 31, 2023 - GraFx Publisher
+??? note "Change in URLs"
 
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
-- Fixed performance degradation of copy & move operations
-- Fixed issue with using keyboard shortcut to delete a locked frame (when frame has constraints)
-
-## Oct 20, 2023 - We go live!
-
-GraFx Studio, GraFx Fonts & GraFx Media go live!
-
-### GraFx Media
-
-![rn_icon](/assets/CHILI_LOGOS_OK-11.svg)
-
-GraFx Media is the application on CHILI GraFx that enables you to manage template assets in one central library. Assets in GraFx Media are shared across GraFx Studio & GraFx Publisher. Asset management for GraFx Publisher can still be done in GraFx Publisher but with GraFx Media we offer an improved UX to manage assets more efficiently.
-
-#### Features
-- You can upload an asset with format .eps, .jpg, .pdf, .png, .psd, .tif & .ai
-- You can create folders
-- You can rename or delete an asset
-- You can filter on format of assets
-
-### GraFx Fonts
-
-![rn_icon](/assets/CHILI_LOGOS_OK-07.svg)
-
-GraFx Fonts introduces the concept of font families & font styles to CHILI GraFx and brings better brand consistency to CHILI GraFx. Important to know is that fonts in GraFx Fonts can only be used in GraFx Studio. Fonts used in GraFx Publisher are managed in GraFx Publisher separately. 
-
-#### Features
-- You can upload a font style & font family
-- During the font upload you can change the font family and font style
-- You can sort & delete font styles & font families
-- You can access font styles details
-
-![2023-10-11_15-31-50](https://github.com/chili-publish/grafx-documentation/assets/122599725/fe98f3c4-6b13-4264-aa74-862cd3a35b2f)
-
-### GraFx Studio
-
-![rn_icon](/assets/CHILI_LOGOS_OK-09.svg)
-
-This is a big day for GraFx Studio, as it is now available for use in production!
-
-Managing templates and collections and access to the Template Designer workspace are now restricted to admins and template designers. Other users can use templates to create projects with personalized and localized content, but cannot edit the original templates.
-
-Even though it is now in production, GraFx Studio renders are not yet counted, as we want to give our users some time to get used to the new application first. We hope you enjoy it and are curious to hear your feedback!
-
-#### Features
-
-**Actions**
-
-Actions can be added to a template to define how it should react to user input. Actions let you show/hide a frame or variable, select a layout, change a variable value, change a color, and much more. Triggers can be set to control when actions should be executed.
-
-<script src="https://fast.wistia.com/embed/medias/cddytrgebt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cddytrgebt seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-
-
-It was already available as an [experimental](/release-notes/experimental/) feature but is now available for production use.
-
-**GraFx Fonts**
-
-With the introduction of GraFx Fonts, we also introduce the concept of font families and font styles in GraFx Studio. You can now add font families to the Stylekit of your template and the font styles from this family will be available for use in the template.
-
-**This is a breaking change!** All existing templates need to be updated (GraFx Publisher fonts are not accessible anymore through GraFx Studio and will fall back to Arial). This means you have to upload your fonts to GraFx Fonts, add them to the Stylekit of your template, and apply them again to the text and/or styles. Projects created from these templates are also impacted, it is advised to delete them and start new projects from the updated templates.
-
-**Image variable settings**
-
-Inside the image variable settings, the template designer can specify the folder inside GraFx Media where the assets for that variable are located. This results in a better experience for the user and prevents access to other assets.
-
-<script src="https://fast.wistia.com/embed/medias/ykn7900oei.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:55.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ykn7900oei seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-
-
-For custom media connectors this also enables custom settings for image variables, as defined by the connector. Custom media connectors enable you to use assets from an external DAM system in GraFx Studio templates (this is still in [experimental](/release-notes/experimental/) mode).
-
-#### Improvements
-
-- Writing actions has been made easier with the introduction of [helper functions](/GraFx-Studio/concepts/helper-functions/)
-- Renamed triggers that are used inside the action script (**This is a breaking change!** Please update any action that uses triggers.changedVariable, triggers.changedFrame, etc.)
-- Improved error indications in the list of actions
-- Proper support for undo/redo of actions
-- Improved visual feedback on the canvas when an image is unable to load
-- UI improvements in the Template Designer workspace
-- UI improvements in the Studio UI
-- When integrating the Studio UI you can configure the download and back buttons
-
-#### Fixes
-
-- Fixed issue with undo/redo and saving of changes to horizontal text alignment
-
-## Sep 19, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-- Output: Improve error handling of a corrupt PNG during output
-
-## Sep 12, 2023 - GraFx Studio
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-- Fixed issue with output generation in both Template Designer workspace and Studio UI
-- You can now delete multiple paragraph and character styles, colors, and actions at once
-
-Improvements to **Actions** ([experimental](/release-notes/experimental/) feature):
-
-- An error icon is shown in the list of actions if the action contains errors
-- We added more flexibility to get and set properties in an action
-- We changed the method name to change the visibility of a frame: `.include()` is replaced by `.setVisible()`  
-**This is a breaking change! Please update any template that uses this method ([here](/GraFx-Studio/guides/actions/example-hideframe/) you can find an example of how it works). Projects created from these templates will also be impacted, so it is advised to delete them and start new projects from the updated templates.**
-
-## Sep 12, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
-- Fixed failing document preview because of failing preflight checks if a required variable is empty
-
-## Aug 30, 2023 - GraFx Studio
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-With this release, we introduced improvements to the GraFx Studio Smart Template editor
-
-- You're now able to reorder actions (this impacts the order of execution when multiple actions have the same trigger) 
-
-![releasenotes](reorder-actions.gif)
-
-- Action script is saved even if it contains errors (indicated with a red squiggly line). This is useful when you're in the middle of writing an action and you need to close the action interface to check something
-
-![releasenotes](save-on-error.png)
-
-- Visual improvements to the action interface
-- Rename action trigger to "Selected layout changed"
-- Force action names to be unique
-- Show notification when closing or reloading GraFx Studio with unsaved changes
-- When inserting an image variable in an image frame that contains an image, this image is automatically set as default state for that image variable
-- Dialog to edit a character/paragraph style is not hidden behind the animation timeline anymore
-- Fixed issue with error tooltips
-- Add percentage sign behind line height value
-- Selecting another layout exits text editing mode
-- It's no longer possible to use a URL for an image variable (an asset ID must be used)
-
-We also improved the GraFx Studio UI, the interface for the self-service use-case
-
-- Automatically zoom to page when another layout is selected by an action
-- Shortcuts to select another tool are disabled to prevent end-users from accidentally going into inline edit mode
-- Shortcut to open the debug panel is disabled
-- Show indicator and block new downloads while download is in progress
-
-
-## Aug 30, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-- User management in GraFx Publisher has changed to API User management. You are now able to manage GraFx Publisher [users in CHILI GraFx platform](/CHILI-GraFx/users/creation/). Existing users in GraFx Publisher are unaffected, but we advise migrating these users to [CHILI GraFx](/CHILI-GraFx/users/creation/).
-- Fixed an issue in the DEL ‘/rest-api/v1.2/resources/Documents/folders’ endpoint to prevent data loss.
-
-## Aug 24, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-CHILI GraFx [Environment API 1.1.9](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
-
-- Introduce GET /environments/{environmentId}/font-styles/{styleId}
-<br/>endpoint that provides font style information
-- Introduce DELETE /environments/{environmentId}/font-styles?ids={comma-separated ids}
-<br/>endpoint that deletes font styles by id.
-- Introduce DELETE /environments/{environmentId}/font-families?ids={comma-separated ids} <br/>endpoint that deletes font families by id.
-- Extend GET /environments/{environmentId}/font-familes
-<br/>endpoint with ‘search’ argument that provides ability to search by font family name
-
-## Aug 16, 2023 - CHILI GraFx 
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+ We've updated the way how our URLs in the platform are built.
+    This means that if you have bookmarks (especially if they are linking to a certain environment) that the URLs will bring you to a 404.
+    This change was necessary to have a more consistent way of navigating the platform.
+    Please update your bookmarks to follow the new structure.
 
 ### Features
 
-- De-activate a user so the user can no longer access or use any of the resources within that subscription
-- Re-activate a user that was deactivated so the user has exactly the same priviliges he had before being de-activated
-- Delete a user so the user loses all his privileges within that subscription & the user isn't visible in the list of users anymore
+- Introducing User Groups to invite users in bulk to environments with a specific role per environment
+- A user can be added to a user group when they are invited to CHILI GraFx for the first time or from the User Management page on CHILI GraFx
+- User Group membership, User Group details (name & description) and assignement of environment and roles are managed by the Subscription Admin
 
-![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/b0b9bb66-1f25-4c70-bd95-e4e0c7e94f74)
+[Documentation on user groups](/CHILI-GraFx/guides/manage-user-groups/)
+
+### API updates
+
+We're aiming to keep things smooth with a CI/CD approach; automatically rolling out updates to make sure you get the best experience. We'll give you a heads-up in the release notes only when there's something new and cool that changes how you use the platform.
+
+### Improvements Platform API
+
+- Possibility to configure allowed federated domains for external users
+- Introduced "isFederated" field in the user model to reflect the federation status
 
 CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-### Improvements
+### Improvements Environment API
 
-- GET /subscription/id and /subscription/id/renders were migrated to use GUIDs. Now all our endpoints use GUIDs for identifying entities.
-- GET subscription/subscriptionId/users/userId has been deprecated to improve consistency in naming. GET subscription**s**/subscriptionId/users/userId is the new endpoint.
+- New naming for default output settings
+- Several minor updates and fixes
 
-## Aug 15, 2023 - GraFx Publisher
+CHILI GraFx [Environment API 1.3.5](/GraFx-Developers/#environment-api)
 
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-- Backoffice: Fixed issue with old preview being applied when copying document immediately after changes were made to original document 
-- Editor: Improved availability of [Publisher interface library](https://github.com/chili-publish/publisher-interface)
-- Editor: Removed the use of the d= parameter in URL as it’s no longer supported in Chrome. (see [this Article](https://mysupport.chili-publish.com/hc/en-us/articles/360019722600-Dealing-With-CORS-Using-Custom-Subdomains) on CORS for more background)
-- Editor: Fixed issue with assets without point of interest not showing on template when Smart Fit is applied
-- System: Fixed performance degradation of copy & move operations
-- Output: Added error detail for unsupported png files
-
-## Aug 4, 2023 - GraFx Studio
-
-Version 0.136.1, using Studio [SDK 0.136.0](https://github.com/chili-publish/studio-sdk/releases/tag/0.136.0)
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-### Features
-
-#### Variables
-List items inside ‘Single Select List’ variable can be reordered. Updated order also will be shown in a drop-down inside variable settings and in Studio UI
-
-![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/f47de351-d8f0-4780-93de-8faf17fb55d9)
-
-New variable type ‘Boolean’ was introduced with two settings –
-
-- Default state’ which allows to set the default value
-- Visible’ settings which controls visibility of variable in Studio UI
-
-![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/7a3110bc-e979-4b55-8173-8a03d2bd59ca)
-
-#### Output
-PDF output is present in the list of available output formats. This is an [experimental](/release-notes/experimental/) feature which is not feature complete yet and can contain some differences with templates from which you want to generate output.
-
-![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/269dae35-7e71-462e-ae9d-0033c6ad1efe)
-
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 30, 2024 - GraFx Publisher
 
 ### Fixes
 
-- Fixed issue where ‘Rename’ option was available for several selected variables at once in the ‘Variable List’
-- Fixed issue where the ‘Delete’ option only removed one variable when multiple were selected. Right now all selected variables will be removed from the ‘Variable List’
-- Fixed issue where an executed action is added to undo stack when switching between text variable input fields
-- Fixed issues where playing the animation, made the timeline player move in blocks instead of moving smoothly over the timeline.
-- Fixed issue where the finished animation didn’t change the pause button back to play.
+- Improved stability for larger VDP sizes
+- Task status is set to ‘false’ when no output was produced
 
-## Aug 3, 2023 - GraFx Studio
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-### Features
-
-New action item ‘Collection settings’ was added to collections. This panel can be opened in two ways:
-- Through the "Three dots" on the collection card and clicking "Collection settings"
-- Inside a collection by clicking on the "Three dots" in the top right corner.
-![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/377e0601-109c-4587-a92f-184ddb2aa803)
-
-It opens a panel with ‘Cover image’ option which allows to upload image that is shown on the collection card. For the uploaded image PNG, JPG and JPEG formats can be used and we don’t have restrictions for a file size.
-![releasenotes](https://github.com/chili-publish/grafx-documentation/assets/122599725/f013110d-140e-42c8-8bb1-f5f377c70fbb)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 26, 2024 - CHILI GraFx
 
 ### Fixes
-- Fixed issue where a template could be opened as a project from ‘Collection’ tab. Now a template can be opened only from the ‘My projects’ tab
 
-## Aug 3, 2023 - CHILI GraFx
+- Fixed an error where you could not access the platform
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 25, 2024 - CHILI GraFx
 
-CHILI GraFx [Environment API 1.1.8](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
-
-- Introduced DELETE /environment/{envId}/template-collections/{collectionId}/cover endpoint that provides the ability to remove an image cover of a Template Collection
-- Fixed: When adding a dot in the middle of a Template's name resulted in cutting the part of the name off 
-- Fixed: When adding a file with extension in uppercase as a Template Collection cover caused 500 error
-
-## June 28, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-CHILI GraFx [Environment API 1.1.7](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
-
-This release enables Template designers to create collections and manage templates in collections.
-
-End users can see collections, and create projects from templates in a collection.
-
-Fine grained access management will be added later.
-
-### Features
-
-- Template designers can now make [Collections](/CHILI-GraFx/concepts/template-management/#template-collection)
-- Template designers can [manage templates](/CHILI-GraFx/guides/manage-collections/) in collections
-- End-users can [create Projects](/CHILI-GraFx/concepts/template-management/#end-user) from Templates in a collection.
-- Subscription Admins can now [create Integrations](/CHILI-GraFx/guides/integrations/) to allow external application to connect to CHILI GraFx
+CHILI GraFx [Environment API 1.3.4](/GraFx-Developers/#environment-api)
 
 ### Improvements
 
-- Prevent the creation of folders with leading or trailing spaces in the names
+- Introduce png variable output endpoint  
+api/v1/environment/{environmentId}/output/png
+- Introduce gif variable output endpoint  
+api/v1/environment/{environmentId}/output/gif
+- Introduce jpg variable output endpoint  
+api/v1/environment/{environmentId}/output/jpg
+- Introduce 'default' output settings
+- Add 'scaling' option to output settings
+- Sort font styles by weight
 
+### Fixes
 
-## Jun 28, 2023 - CHILI GraFx
+- Update authorization rules for Content Administrator role
+- Fix video output issues
+- Avoid potential resources duplicates
+- Ignore font style 'width' property on upload
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+### Experimental
 
-CHILI GraFx [Environment API 1.1.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+- Introduce oauth-authorization-code endpoints  
+(api/experimental/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code)
+- Introduce 'none' auth for connector definition
+
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 24, 2024 - GraFx Publisher
+
+### Fixes
+
+- When outputting a PDF with a variable in the path name, the value of the variable is now used correctly.
+- Fixed the issue where an asset could end up as duplicate using ResourceItemAdd, when a path was malformed.
+- Fixed vulnerability where code details were shown in an error message
+- Fixed incorrect behavior for the ResourceSearchInFolder API endpoint related to the parentFolderPath parameter. Previously, when includeSubDirectories was set to true, the endpoint performed a prefix search. This behavior has been corrected to conduct an exact search, aligning with expectations set in prior versions of CHILI.
+- Fixed issue where some characters in REST endpoint query parameters cause the endpoint to fail
 
 ### Improvements
 
-- Improved stability of output generation
+- A download will now be served from a more sustainable location
+- Improved performance when copying a file with an existing name
 
-## Jun 23, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-CHILI GraFx [Environment API 1.1.5](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
-
-### Features
-
-**[experimental](/release-notes/experimental/)**
-
-- Introduce temporary POST api/experimental/environment/{environmentId}/output/pdf endpoint that provides ability to generate PDF output
-
-### Fixes
-
-- Fix ‘update Template body’ action to avoid data corruption.
-- Fix ‘environment’ case sensitivity for My Project endpoints to avoid not-found errors
-- Fix attempting to add My Project based on corrupted Template (avoid creation corrupted My Project)
-- Update Environment API endpoints to restrict access for not activated users.
-
-
-## June 23, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-CHILI GraFx [Platform API 1.12](https://api.chiligrafx.com/swagger/index.html)
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 19, 2024 - CHILI GraFx
 
 ### Improvements
 
-- Added status in user endpoints
-	- GET /api/v1/subscription/{id}/users
-	- GET/api/v1/subscription/{subscriptionId}/users/{userId}
-- Improved token generation for Integrations
+- Deprecated endpoints were deleted from the API  
 
-## Jun 19, 2023 - CHILI GraFx
+### Fixes
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+- Render visualization showed wrong metrics
 
-CHILI GraFx [Environment API 1.1.4](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-### Features
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 16, 2024 - GraFx Publisher
 
-**Authentication**
+### Fixes
 
-- Extended ‘full access’ configuration to support multiple applications having full access to Environment API and Platform API.
+- Fixed issues where specific PDF assets caused corruption in the PDF output file
 
-**Machine to Machine**
-
-- Add support for scope-based authorization rules
-- Enabled integrations access to Environment API endpoints.
-
-**Template Collections**
-
-- Managing the image cover of a Template Collection
-
-**My Projects**
-
-- Introduce GET api/v1/environments/{environmentId}/projects endpoint that provides list of ‘My Project’ data.
-- Introduce GET api/v1/environment/{environmentId}/projects/{projectId} endpoint that provides ‘My Project’ data.
-- Accessing My Project's previews
-- Saving modified json document of a My Project document
-- Output: Image and animation output from a Project
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Jan 9, 2024 - CHILI GraFx
 
 ### Improvements
 
-**GraFx Media**
-
-- Extended endpoints responses to return media file info
-	- GET api/v1/environment/{environmentId}/media
-	- GET api/v1/environment/{environmentId}/media/directory
-
-**Output**
-
-- Update ‘output’ endpoints: introduce ‘engineVersion’ parameter to override the engine version that is used during output rendering.
-	- POST api/v1/environment/{environmentId}/output/animation
-	- POST api/v1/environment/{environmentId}/output/image
-
+- User groups  
+User groups allow admins to set permissions and access to user groups next to individual users. This release integrates user group permissions into our authorization process, available through the API.
 
 ### Fixes
 
-- Output: Fixed mp4 output for a template with uneven dimensions
-- Fixed return code (from 500 to 400) for template collection creation when the name is duplicate.
-- Fixed adding new My Project with invalid Template (prevent storing broken My Project).
+- Monthly renders of the last range weren't returned
 
-**Connectors ([experimental](/release-notes/experimental/))** 
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
-- Added Connector module
-
-
-## Jun 16, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-CHILI GraFx Platform API 1.11
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Jan 4, 2024 - GraFx Studio
 
 ### Features
 
-**User management**
-
-- Added endpoints for disabling and enabling users in the subscription
-
-**Manage Integrations**
-
-- Added endpoints to create, update, delete Integrations
-- Added endpoint to get details of a single Integration
-- Added endpoint to get available scopes for an Integration
-- Added endpoint to Rotate client secret
-- Added endpoints to manage scopes of Integrations
-
-**Authentication**
-
-- Add support for the bearer token with new grant type
-- Add support for scope-based authorization rules
-
-## Jun 9, 2023 - GraFx Publisher plug-in for Adobe Illustrator®
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Features
-
-- Added support for Adobe® Illustrator®[^1] 2023 (27.x)
-
-[^1]:
-	Adobe and Illustrator are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
+- You can now cut (Ctrl/Cmd+X), copy (Ctrl/Cmd+C), paste (Ctrl/Cmd+V), and duplicate (Ctrl/Cmd+D) frames in the Template Designer workspace. This is possible with the shortcuts or via the quick actions in the Layers panel
 
 ### Improvements
 
-- Preflighting a document is no longer adding items to the undo/redo stack
-- When converting a document you are no longer prompted with a message for every text frame that contains right alignment
-
-### Resolved issues
-
-- Fixed issue with the plug-in panel going blank when reopening
-- Fixed issue with missing images in documents exported to GraFx Publisher from macOS
-- Fixed issue with failing conversion for documents containing circular text
-- Fixed issue with upload when using heavy assets on Windows
-- Fixed issue where the document name was not updated in the plug-in when opening a new document
-
-[Download page (behind login)](https://mysupport.chili-publish.com/hc/en-us/articles/360021250259-Latest-downloads)
-
-This version is compatible with Adobe® Illustrator®[^1] 2022 (26.x) and 2023 (27.x).
-
-This version is compatible with GraFx Publisher and the on-premise version of CHILI publisher (version 5.6 or above).
-
-## Jun 6, 2023 - GraFx Studio
-
-Version 0.123.1, using Studio SDK [0.123.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-### Features
-
-- You can change the [corner radius](/GraFx-Studio/guides/shape-frame/) of your rectangle and polygon shapes by dragging the round handles in the shape or by using the corner radius properties in the frame properties panel
-
-![animation](/GraFx-Studio/guides/shape-frame/corner-radius.gif)
-
-### Improvements
-
-- When a new frame is added it is only visible on the selected layout and its sub-layouts, on all other layouts the frame is hidden (if you want a frame to be visible on all layouts you should add it on the top-level layout)
-
-## Jun 6, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
+- Added more tooltips to the Template Designer workspace and made some improvements to them
+- Assigning an image to an image variable is now possible via a single click
+- Changed the min and max values for copyfitting to 1% and 10.000% (it was 10% and 1.000%)
+- Moved the "Clear style overrides" button to another location in the Template Designer workspace
 
 ### Fixes
 
-- Editor: Fixed issue where iframe caused the page to scroll when partially outside of view
-- Editor: Fixed issue with transparent selection
-- API: Removed redundant calls to file system to minimize probability for concurrency issues
-- API: Fixed issue with ResourceSearchInFolder not returning items in response if includeSubDirectories property was false
-- API: Strengthened security on REST API
+- Fixed issue with low quality image previews in the Studio UI
+- Fixed issue with variable text not being updated after undo/redo
+- Fixed issue with the number of triggers not being shown in red when hovered while in error state
+- Fixed issue with the media connector sending multiple download requests
+- Fixed issue with actions throwing the same error twice
+- Fixed issue where a font that is used in the template could be deleted without getting a confirmation dialog
 
-## May 31, 2023 - GraFx Studio
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-We are working hard on delivering an end-to-end process, from Smart Templates created by designers to output generated by end users. Check out the [template management](/CHILI-GraFx/concepts/template-management/) page to learn more about this new way of working.
-
-The first step in this process is organizing your templates in [collections](/CHILI-GraFx/guides/manage-collections/). This is available now!
-
-In the next step, end users will be able to browse the collections and start a project from one of the templates. The project will be opened in a user-friendly interface where you can make changes and generate output.
-
-![screen](/CHILI-GraFx/concepts/template-management/collections.png)
-
-## May 31, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Jan 2, 2024 - GraFx Publisher
 
 ### Fixes
 
-- Updated error message if you want to invite more than 10 users at once to CHILI GraFx
-- Disable 'Add Template Designer Seat' button when all Template Designer seats are assigned
-- Fix issue with logout button on 'MyAccount' page
+- Fixed issue where datasource output with one record does not respect the PDF Name Pattern
+- Fixed issue when deletion of a resource may cause deletion of other resources with similar name
+- Improved error messaging when output generation fails
 
-## May 26, 2023 - GraFx Studio
+## 2023
 
-
-
-Version 0.122.1, using Studio SDK [0.122.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-### Features
-
-- You can [crop an image](/GraFx-Studio/concepts/crop/) to manually resize and position it inside an image frame
-- [Snap guides](/GraFx-Studio/concepts/snapping/) show up when creating, moving or resizing a frame to help you to nicely align the frames in your design
-
-![screenshot-fullwidth](/GraFx-Studio/concepts/crop/rectcrop.png)
-
-![screenshot-fullwidth](/GraFx-Studio/concepts/snapping/snapping.gif)
-
-### Improvements
-
-- You can use the arrow keys to move a frame in steps of 1 pixel, holding down the Shift key moves it in steps of 10 pixels
-- Creating, moving or resizing a frame is now done on a pixel grid, meaning that the x, y, width, and height properties have non-decimal values
-- Punctuation marks stay together with the preceding word and will not move to the next line
-
-### Fixes
-
-- Fixed issue where the animation sometimes blinked at the beginning or the end
-- Fixed issue where changing the width or height of a frame also caused an override on other properties
-- Fixed issue with constraining proportions when changing the width or height of a frame in the properties panel
-
-## May 23, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
-- Output: Improved stability of VDP outputs with a large amount of rows and variables
-- Output: Fixed output failure due to missing font
-- Output: Improved reliability of PDF output when the system is under high load
-
-## May 16, 2023 - CHILI GraFx - Environment API
-
-![rn_icon](/assets/CHILI_LOGOS_OK-04.svg)
-
-### Added Endpoints
-
-User is able to **rename** template attached to collection
-
-- PATCH /api/v1/template-collections/{collectionId}/templates/{templateId}
-
-User is able to **create**, **rename** and **delete** project.
-
-- POST	/api/v1/environments/{environmentId}/projects
-- PATCH /api/v1/environments/{environmentId}/projects/{projectId}
-- DELETE /api/v1/environments/{environmentId}/projects/{projectId}
-	
-User is able to **download** project json.
-
-- GET /api/v1/environments/{environmentId}/projects/{projectId}/document
-
-### Updated Endpoints
-
-When a user attempts to **delete** a template attached to a collection, an error is returned. User is now able to use ‘force’ request parameter, the template will be deleted.
-
-- DELETE /api/v1/templates/{templateId}
-
-Http **method** is changed from ‘PUT’ to ‘PATCH’.
-
-The endpoint now allows partial update of template collection instead of full update.
-
-- PATCH /api/v1/template-collections/{templateCollectionId}
-
-
-See Swagger [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html).
-
-
-## May 10, 2023 - GraFx Studio SDK
-
-We renamed our repository and package for the SDK.
-The new name is studio-sdk, coming from editor-sdk.
-
-Also a new version has been pushed, we're now at version 0.121.0
-
-??? note "Note for integrators"
-
-	This means you'll have to update your integration dependency, and change it from @chili-publish/editor-sdk to @chili-publish/studio-sdk inside your `package.json`.
-
-
-## Apr 20, 2023 - GraFx Publisher
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Features
-
-- You can now log into GraFx Publisher via GraFx user account.
-
-
-## Apr 19, 2023 - CHILI GraFx
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
-
-### Features
-
-- You can invite users to CHILI GraFx
-- When you invite a user to CHILI GraFx you can assign this user to an GraFx environment and assign the role this user needs to have in this environment
-- You can remove the role 'Subscription Admin' from other users
-- You can add an existing user to additional GraFx environments and assign the role this user needs to have in this environment
-- You can access GraFx Publisher within the CHILI GraFx environment with SSO
-- You can login in GraFx Publisher from the direct URL with your CHILI GraFx account
-
-![2023-04-14_16-26-11](https://user-images.githubusercontent.com/122599725/233287606-4ef0e434-7af6-4b11-b148-a4abe1c6cbc7.gif)
-
-Read more about [User Management](/CHILI-GraFx/users/intro/).
-
-## Apr 14, 2023 - GraFx Studio
-
-Version 0.117.1, using Studio SDK [0.117.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-
-### Improvements
-
-- When applying a blend mode to a text frame you automatically go out of text edit mode (this way you can see the effect of the blend mode, because it is not applied while in text edit mode)
-- You can now easily download the JSON file of the template with a "Download doc" trigger in the debug panel
-
-### Fixes
-
-- Fixed issue with MacBook being detected as a mobile device, causing issues with frame handles
-- Fixed issue with opacity not being applied to fill and stroke for shapes
-- Fixed issue when using a swatch as fill color for shapes, which caused the shape color to not change immediately on the canvas when the swatch color is changed
-- Fixed issue with text not being selectable with the Text tool when a blend mode is applied to the text frame
-
-??? note "Note for integrators"
-	
-	There is a minor breaking change in the Studio SDK's typings.
-	It basically boils down to changing the import for the Id type, you can do it as follows:<br>
-	Change `#!typescript import { Id } from '@chili-publish/studio-sdk/lib/types/CommonTypes'`<br>
-	To `#!typescript import { Id } from '@chili-publish/studio-sdk'`<br>
-	For more information, please check out the [SDK release notes](https://github.com/chili-publish/studio-sdk/releases/tag/0.117.0){target="_blank"}.
-
-
-## Apr 18, 2023 - GraFx Publisher
-
-**Boost Platform Performance**
-
-GraFx Publisher comes with more than just a name change, this year it is all about improving platform performance. We've listened to your feedback and revamped our platform infrastructure to deliver blazing-fast file operations, including moving, copying, and deleting. This means you can work efficiently even in large environments! 🚀
-
-Note: Smaller environments might not notice significant changes in performance.
-
-🔔 Heads up: We've fine-tuned the ResourceItemGetTree and ResourceItemGetTreeLevel API endpoints to optimize performance. Now, these endpoints return only the first 10,000 items, ensuring a smoother experience for all users.
-
-![rn_icon](/assets/CHILI_publisher_RGB.svg)
-
-### Fixes
-
-- API: Fixed issue with ResourceSearchInFolder not returning items in response if includeSubDirectories property was false
-- API: Fixed 'ResourceGetTree/ResourceGetTreeLevel' for enabled support 'parentFolder' argument ending with slashes.
-- API: Fixed 'rest-api/v1/resources/documents/items/{id}/privateinfo' endpoint to return 'fileInfo.xml' node
-
-
-## Mar 31, 2023 - Infrastructure update
-
-Your [CHILI GraFx](/CHILI_GraFx/) infrastructure has been upgraded to have the latest update.
-
-With this update, we’re implementing platform infrastructure changes that greatly enhance  performance.
-
-The update does require planned downtime, and will be transparant for you.
-
-The update will be implemented (starting April 5) gradually on all tenants, and will happen over the following days and weeks.
-
-
-## Mar 29, 2023 - GraFx Studio
-
-Version 0.116.2, using Studio SDK [0.116.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-### Features
-
-- You can now add rectangle, ellipse, and polygon shapes to your design, by using a new Shape tool in the left toolbar. In the properties panel, you can set a blend mode and change the fill and stroke color, to customize as you want. (There are still a couple of known issues, which will be addressed in the next release!)
-
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/shapes.gif)
-
-### Improvements
-
-- You can select text on the page when the Text tool is active (previously it would create a new text frame instead)
-- The layout name above the page is not scaled when zooming in or out
-- Blend mode is not applied when in text edit mode (this makes editing text easier)
-- Internal optimization to significantly increase the performance or rendering frames on the canvas
-
-### Fixes
-
-- Fixed issue with the Width and Height properties both getting an override when only one of the two was changed
-- Fixed issue with changing a font in a text frame when the animation is paused inside an animation block for that frame
-
-## Mar 17, 2023 - GraFx Publisher
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK_publisher.svg)
-
-!!! danger "Sandbox Release"
-	
-	Information related to your Sandbox.
-	
-	When the update is in production, another release note will be added.
-
-Your [CHILI GraFx](/CHILI_GraFx/) sandbox has the latest update to [GraFx Publisher](/GraFx_Publisher/)
-
-- Our goal: Improve performance in handling templates, documents, assets.
-- Our ask: Test in your sandbox now, and send us your feedback.
-
-With this update, we’re implementing a new platform infrastructure that greatly enhances  performance. We **urge** you to test GraFx Publisher on your sandbox environment to experience this new level of performance for yourself.
-
-## Mar 16, 2023 - GraFx Studio
-
-Version 0.114.1, using Studio SDK [0.114.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
-
-### Features
-
-- We added [15 blend modes](/GraFx_Studio/concept/blendmodes/) that can be applied to your image and text content to improve your template design
-
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/blendmodes_rn.gif)
-
-### Improvements
-
-- Animation snaps to 0,1 seconds on the timeline, which makes it easier to align the animation of multiple frames
-
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/snap_rn.gif)
-
-- Frames are only selectable and editable on the canvas while they are visible in the animation (this fixes some issues with entering text edit mode)
-- While in text edit mode, you can now also edit the frame properties and change the copyfitting settings
-
-### Fixes
-
-- Fixed some issues with the color picker component to select a custom color or a swatch or to change the opacity
-- Fixed issue where fonts were not loaded when the dialog to add fonts was opened too quickly
-
-## Mar 6, 2023 - GraFx Media Alpha
-
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-11.svg)
-
-### Features
-
-- You can sort your assets on name
-- You can see a preview of your asset
-
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/media_20230307.gif)
-
-## Mar 1, 2023 - GraFx Studio
-
-Version 0.111.2, using Studio SDK [0.111.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-### Features
-
-- You can constrain the proportions of a frame while resizing to preserve the aspect ratio
-
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/proportions.gif)
-
-- There is a new dropdown menu that allows you to control the zoom level
-- A warning icon appears when part of your text is not visible because it doesn't fit inside the text frame
-
-![releasenotes](https://chilipublishdocs.imgix.net/releasenotes/overflow3.gif)
-
-### Improvements
-
-- Variable settings panel does not close automatically anymore, it stays open until you manually close it
-
-### Fixes
-
-- Fixed issue where copyfitting property was not shown in yellow when it has an override
-- Fixed issue where variable settings panel was only opened on second click
-- Fixed issue with Media panel being empty when opened too fast
-
-## Feb 16, 2023 - GraFx Studio
-
-Version 0.107.4, using Studio SDK [0.107.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-### Features
-
-- You can make the content of an image frame variable by inserting an image variable
-- You can browse your media and assign an image to an image variable
-
-### Improvements
-
-- The template is automatically zoomed to page when opened or when switching to another layout
-- Added tooltips to the sidebar and header bar
-- Added a loading indication while media previews are loading
-- The variable settings panel is not opened when a new variable is created
-- The variable name is truncated in the variable tag when it doesn't fit in the text frame, to prevent text overflow
-
-### Fixes
-
-- Fixed issue with resetting an override on the image fit mode
-- Fixed issue with undo/redo of creating a new variable
-- Fixed issue with undo/redo of creating a new layout
-- Because of issues with calculating the number of occurrences of a variable, it's hidden in the variable list until the number is reliable
-- Fixed infinite API calls when navigating to the bottom of the Media panel
-- Media details are now retrieved using the new *details(id)* connector method
-- Fixed issues with server-side rendering
-
-## Feb 16, 2023 - GraFx Media Alpha
-
-### Features
-
-- You can [browse](/GraFx_Media/how_to/browse/) between your assets in GraFx Media Alpha
-- You can [search](/GraFx_Media/how_to/search/) for an asset in GraFx Media Alpha
-
-## Jan 30, 2023 - GraFx Studio
-
-Version 0.104.1, using Studio SDK [0.104.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-### Fixes
-
-- Fixed issue with loading media
-- Fixed issue with font size and line height properties of a character style being set to 0 when clicked upon, and it was not possible to clear them (now you can leave them empty again to use the values from the applied paragraph style)
-- Fixed issue with text rendering when line height is 0
-- Fixed issue with deleted font being shown in font dropdown menu
-- Fixed issue with loading the default template
-- Fixed weird behavior when using the Hand tool to move the page
-
-## Jan 23, 2023 - GraFx Studio
-
-Version 0.102.2, using Studio SDK [0.102.0](https://github.com/chili-publish/studio-sdk/releases){target="_blank"}
-
-### Features
-
-- You can now add [swatches](/GraFx_Studio/how_to/swatches/) to your Stylekit and use them in your template, e.g. to change the color of your text via a paragraph or character style (👉 click the color field to open the color picker, where you can go to the swatches tab to select a swatch)
-- The [color picker](/GraFx_Studio/how_to/swatches/#color-picker) now comes in two versions, one for defining a swatch (where you cannot set the opacity or select another swatch) and one for applying a color (where you can choose between a custom color or a swatch and where you can change the opacity)
-- You can [pan and zoom](/GraFx_Studio/mouse_trackpad/) the canvas by using two-finger gestures on the trackpad, even if the Hand or Zoom tool is not selected
-
-### Improvements
-
-- Improved text selection and text cursor positioning
-- Simplified the character style settings by removing the indeterminate state for fill color (👉 when you leave the fill color unchecked the color is not applied, which means the default black or the color from the applied paragraph style is used)
-- The default Arial Regular font is always available in the dropdown menu where you can select a font
-- Renaming a font in the Stylekit is blocked (👉 you cannot rename a font in the Stylekit, but this was not blocked and caused an incorrect rename state)
-- Removed variable name input field from the variables settings panel (👉 you can rename a variable by double clicking the variable name in the list)
-
-### Fixes
-
-- Fixed issue with loading fonts
-- Fixed issue where the default Arial Regular font was selected in the text properties panel, but it was not used for new text frames
-- Fixed issue where the applied character style was not shown correctly in the text properties panel
-- Fixed issue where color swatches were converted to custom colors in paragraph and character styles
-- Fixed issue with using Ctrl/Command+A to select all text with a keyboard with Azerty layout
-- Fixed issue with replacing selected text with copied text
-- Fixed issue where changes to variable settings were not saved when clicking on another panel
-- Fixed icon misalignment on Uppercase button in text properties panel
-- Fixed issue with inconsistent truncation of list items
-- Fixed issue where several action menus could be opened at the same time in the Layouts panel
-- Fixed issue with hidden action menu on sortable lists when using Safari
-- Fixed issue with hamburger menu being shown behind other panels
-- Fixed issue with blocked Media panel when an image frame was selected
-- Fixed issue with output generation being triggered after renaming a template
-- Fixed issue that resulted in an error when removing a frame
-
-
-## Jan 9, 2023 - CHILI GraFx
-
-
-### Improvements
-
-- If you have multiple clients you can easily switch between these clients and get a list with environments of that client
-- If you have multiple clients you can search for a specific client by typing the name of the client in the search bar
+See [this page](/release-notes/2023/) for 2023 release notes.
