@@ -19,7 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
-          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude '^https:\/\/cp' --exclude 'https://login.chiligrafx.com/login/callback'
+          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude '^https:\/\/cp' --exclude 'https://login.chiligrafx.com/login/callback' --exclude 'https://my.chili-publish.com/'
           format: markdown
           # Add job summary in github action
           jobSummary: true
