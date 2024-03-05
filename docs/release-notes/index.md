@@ -1,6 +1,6 @@
 # Release notes
 
-## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 29, 2024 - GraFx Publisher
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 05, 2024 - GraFx Publisher
 
 ### Improvements
 
@@ -9,10 +9,12 @@ Now, media assets caching is improved, significantly reducing the overall proces
 - Improved performance  
 Several technical improvements to the tech stack result in overall better performance.
 - Improved preview of assets with blend mode in the GraFx Publisher Editor
+- Switched output download link to a more sustainable location (URL remains to not break your integrations)
 
 ### Fixes
 
 - Fixed issue when asset previews can’t be recreated after calling ResourceItemReplaceFile
+- Fixed an issue where a (wrong) error was shown on the login page
 
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
