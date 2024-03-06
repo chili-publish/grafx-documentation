@@ -1,5 +1,22 @@
 # Release notes
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 05, 2024 - GraFx Publisher
+
+### Improvements
+
+- Enhanced CHILI GraFx's handling of large VDP[^1] jobs.  
+Media assets caching is improved, significantly reducing the overall processing time.
+[^1]: VDP: Variable Data Processing, a.k.a. Variable Data Printing
+- Improved performance  
+Several technical improvements to the tech stack result in overall better performance.
+- Improved preview of assets with blend mode in the GraFx Publisher Editor
+- Switched output download link to a more sustainable location (URL remains to not break your integrations)
+
+### Fixes
+
+- Fixed issue when asset previews can’t be recreated after calling ResourceItemReplaceFile
+- Fixed an issue where a (wrong) error was shown on the login page
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
 ### Improvements
