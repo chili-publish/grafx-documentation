@@ -4,8 +4,9 @@
 
 ### Improvements
 
-- Enhanced CHILI GraFx's handling of large VDP jobs.  
-Now, media assets caching is improved, significantly reducing the overall processing time.
+- Enhanced CHILI GraFx's handling of large VDP[^1] jobs.  
+Media assets caching is improved, significantly reducing the overall processing time.
+[^1]: VDP: Variable Data Processing, a.k.a. Variable Data Printing
 - Improved performance  
 Several technical improvements to the tech stack result in overall better performance.
 - Improved preview of assets with blend mode in the GraFx Publisher Editor
