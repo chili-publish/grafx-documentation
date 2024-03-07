@@ -4,26 +4,31 @@
 
 ### Improvements
 
-- PDF output endpoint has been moved from experimental to production.
-- Introduced operations for managing output settings.
-- Improved stability of connectors API.
+- PDF output endpoint has been moved from experimental to production
+- Introduced endpoints to manage output settings
+- Improved stability of connectors API
 
 ### Fixes
 
-- Fixed error during parse of macintosh fonts.
+- Fixed error during parse of MacOS fonts  
 
 ### New Endpoints
 
-- Introduced output settings endpoints<br>`GET /api/v1/environment/{environment}/output/settings`
-<br>`DELETE /api/v1/environment/{environment}/output/settings`
-<br>`GET /api/v1/environment/{environment}/output/settings`
-<br>`PUT /api/v1/environment/{environment}/output/settings/{outputSettingsId}`
-<br>`POST /api/v1/environment/{environment}/output/settings/jpg`
-<br>`POST /api/v1/environment/{environment}/output/settings/png`
-<br>`POST /api/v1/environment/{environment}/output/settings/pdf`
-<br>`POST /api/v1/environment/{environment}/output/settings/gif`
-<br>`POST /api/v1/environment/{environment}/output/settings/mp4`
-- Introduced PDF output task endpoint<br>`POST /api/v1/environment/{environment}/output/pdf`
+Introduced output settings endpoints
+
+- GET /api/v1/environment/{environment}/output/settings
+- DELETE /api/v1/environment/{environment}/output/settings
+- GET /api/v1/environment/{environment}/output/settings
+- PUT /api/v1/environment/{environment}/output/settings/{outputSettingsId}
+- POST /api/v1/environment/{environment}/output/settings/jpg
+- POST /api/v1/environment/{environment}/output/settings/png
+- POST /api/v1/environment/{environment}/output/settings/pdf
+- POST /api/v1/environment/{environment}/output/settings/gif
+- POST /api/v1/environment/{environment}/output/settings/mp4
+
+Introduced PDF output task endpoint
+
+- POST /api/v1/environment/{environment}/output/pdf
 
 CHILI GraFx [Environment API 1.3.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
 
