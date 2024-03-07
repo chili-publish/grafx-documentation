@@ -1,12 +1,46 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Mar 06, 2024 - CHILI GraFx
+
+### Improvements
+
+- PDF output endpoint has been moved from experimental to production
+- Introduced endpoints to manage output settings
+- Improved stability of connectors API
+
+### Fixes
+
+- Fixed error during parsing of MacOS fonts
+
+### New Endpoints
+
+Introduced output settings endpoints
+
+- GET /api/v1/environment/{environment}/output/settings
+- DELETE /api/v1/environment/{environment}/output/settings
+- GET /api/v1/environment/{environment}/output/settings
+- PUT /api/v1/environment/{environment}/output/settings/{outputSettingsId}
+- POST /api/v1/environment/{environment}/output/settings/jpg
+- POST /api/v1/environment/{environment}/output/settings/png
+- POST /api/v1/environment/{environment}/output/settings/pdf
+- POST /api/v1/environment/{environment}/output/settings/gif
+- POST /api/v1/environment/{environment}/output/settings/mp4
+
+Introduced PDF output task endpoint
+
+- POST /api/v1/environment/{environment}/output/pdf
+
+CHILI GraFx [Environment API 1.3.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 05, 2024 - GraFx Publisher
 
 ### Improvements
 
 - Enhanced CHILI GraFx's handling of large VDP[^1] jobs.  
 Media assets caching is improved, significantly reducing the overall processing time.
+
 [^1]: VDP: Variable Data Processing, a.k.a. Variable Data Printing
+
 - Improved performance  
 Several technical improvements to the tech stack result in overall better performance.
 - Improved preview of assets with blend mode in the GraFx Publisher Editor
@@ -57,7 +91,7 @@ CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
 - Fixed cache issues when requesting Documents previews.  
 Image preview download returns wront content type instead of image/png when async was set to false.
-- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice 
+- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice
 
 ### Improvements
 
