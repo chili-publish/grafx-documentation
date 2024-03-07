@@ -10,7 +10,7 @@
 
 ### Fixes
 
-- Fixed error during parse of MacOS fonts  
+- Fixed error during parsing of MacOS fonts
 
 ### New Endpoints
 
