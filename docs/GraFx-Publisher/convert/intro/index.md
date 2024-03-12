@@ -5,7 +5,7 @@ CHILI GraFx enhances Smart Template creation for digital and print formats, posi
 
 To support this streamlining template adaptation and integration, CHILI GraFx has extensions like
 
-- GraFx Publisher Converter for Adobe InDesign-
+- GraFx Publisher Converter for Adobe InDesign
 - Data Manager
 - Live Preflight
 - Converter for Adobe Illustrator
