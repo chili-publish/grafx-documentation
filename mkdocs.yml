@@ -8,6 +8,7 @@ theme:
     - navigation.tabs
     - content.tabs.link
     - navigation.footer
+    - content.footnote.tooltips
   font:
     text: Ubuntu
   palette:

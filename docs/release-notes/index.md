@@ -1,5 +1,138 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Mar 06, 2024 - CHILI GraFx
+
+### Improvements
+
+- PDF output endpoint has been moved from experimental to production
+- Introduced endpoints to manage output settings
+- Improved stability of connectors API
+
+### Fixes
+
+- Fixed error during parsing of MacOS fonts
+
+### New Endpoints
+
+Introduced output settings endpoints
+
+- GET /api/v1/environment/{environment}/output/settings
+- DELETE /api/v1/environment/{environment}/output/settings
+- GET /api/v1/environment/{environment}/output/settings
+- PUT /api/v1/environment/{environment}/output/settings/{outputSettingsId}
+- POST /api/v1/environment/{environment}/output/settings/jpg
+- POST /api/v1/environment/{environment}/output/settings/png
+- POST /api/v1/environment/{environment}/output/settings/pdf
+- POST /api/v1/environment/{environment}/output/settings/gif
+- POST /api/v1/environment/{environment}/output/settings/mp4
+
+Introduced PDF output task endpoint
+
+- POST /api/v1/environment/{environment}/output/pdf
+
+CHILI GraFx [Environment API 1.3.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 05, 2024 - GraFx Publisher
+
+### Improvements
+
+- Enhanced CHILI GraFx's handling of large VDP[^1] jobs.  
+Media assets caching is improved, significantly reducing the overall processing time.
+
+[^1]: VDP: Variable Data Processing, a.k.a. Variable Data Printing
+
+- Improved performance  
+Several technical improvements to the tech stack result in overall better performance.
+- Improved preview of assets with blend mode in the GraFx Publisher Editor
+- Switched output download link to a more sustainable location (URL remains to not break your integrations)
+
+### Fixes
+
+- Fixed issue when asset previews can’t be recreated after calling ResourceItemReplaceFile
+- Fixed an issue where a (wrong) error was shown on the login page
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
+
+### Improvements
+
+- Media search improvements in the Studio UI
+
+### Fixes
+
+- Fixed issue with color slider in the color picker
+- Fixed issue with Folder setting for GraFx Media in image variable settings
+- Fixed issue with image preview when image variable value is set by name
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 26, 2024 - CHILI GraFx
+
+### Improvements
+
+- The quality of the thumbnails for template & project in GraFx Studio have improved
+- On the homepage the environments are now ranked with the most recent visited environment first
+- On the user detail page it's indicated if a user is federated (= created in third party IDP of the client) or local (= created on CHILI GraFx)
+- Restricted actions on federated users are now clarified by error messages
+- You can now update the name and description of the created user groups.
+
+![screenshot](updatename.png)
+
+### Features
+
+- A default user group that contains all the users of a subscription is made available and can be used to easily assign all users to the same environment(s) with the same role(s)
+
+### Security
+
+- Security updates to the Platform API were made.
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+  
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Feb 20, 2024 - GraFx Publisher
+
+### Fixes
+
+- Fixed cache issues when requesting Documents previews.  
+Image preview download returns wront content type instead of image/png when async was set to false.
+- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice
+
+### Improvements
+
+- PDF generation performance has been improved when no post-processing options are selected in the PDF Export Settings. This is default for new PDF Export Settings.
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 20, 2024 - CHILI GraFx
+
+### Improvements
+
+- We added an `isGraFxPricebook` flag to subscription information in the API to reflect if a certain subscription belongs to a CHILI GraFx price book.
+
+### Fixes
+
+- Fixed an issue where data was shown incorrectly when user roles were updated in the individual access tab of the user
+
+CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 16, 2024 - GraFx Studio
+
+### Features
+
+- Added support for CMYK colors
+- Added letter spacing (tracking) to the text style properties
+- You can select multiple frames by holding the Shift key and move and resize them together
+- In an action, you can use the name of an asset to easily change an image variable based on user input (previously, you could only use the asset ID)
+
+### Improvements
+
+- The height of the animation timeline panel can be changed
+- The color picker and text style panels can be moved
+- Added a search field when browsing for images in the Studio UI
+- Next to specifying a folder for image variables, you can now also specify if subfolders are included or not
+- Improved rendering performance of text frames
+- Improvements to PDF output (experimental)
+
+### Fixes
+
+- Fixed compatibility with some browser extensions (e.g. ZoomInfo)
+- Fixed size of text cursor for low copyfitting values
+- Fixed issue with updating text variables when they are placed at the end of a text frame
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-12.svg) Feb 1, 2024 - GraFx Media
 
 ### Improvements
@@ -9,8 +142,8 @@
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Feb 1, 2024 - CHILI GraFx
 
 ??? note "Change in URLs"
-	
-	We've updated the way how our URLs in the platform are built. 
+
+ We've updated the way how our URLs in the platform are built.
     This means that if you have bookmarks (especially if they are linking to a certain environment) that the URLs will bring you to a 404.
     This change was necessary to have a more consistent way of navigating the platform.
     Please update your bookmarks to follow the new structure.
