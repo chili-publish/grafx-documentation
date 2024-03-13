@@ -10,7 +10,7 @@
 
     ---
 
-    **February 2024**: Several updates on ==GraFx Media==, ==Environment and Platform API== and ==User groups==.
+    **March 2024**: Major updates on performance for ==GraFx Publisher==.
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
