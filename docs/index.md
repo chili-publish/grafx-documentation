@@ -10,6 +10,10 @@
 
     ---
 
+    **March 2024**: New plugins for ==GraFx Publisher==.
+
+    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+
     **March 2024**: Major updates on performance for ==GraFx Publisher==.
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
