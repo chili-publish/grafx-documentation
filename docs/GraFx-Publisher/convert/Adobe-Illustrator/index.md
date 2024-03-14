@@ -1,8 +1,10 @@
-# GraFx Publisher Converter for Illustrator
+# GraFx Publisher Converter for Adobe® Illustrator®
 
-## Download the Latest Version
+## Download
 
-Get the newest release [Version 8.0 here](https://s3.eu-central-1.amazonaws.com/releases.chili-publish.com/releases/Desktop_Tools/8.0.0.0_Ai_202403130815/CHILI_Illustrator_Plugin_8.0.0.0.zip).
+Download the newest version 
+
+[Version 8.0 here](https://s3.eu-central-1.amazonaws.com/releases.chili-publish.com/releases/Desktop_Tools/8.0.0.0_Ai_202403130815/CHILI_Illustrator_Plugin_8.0.0.0.zip).
 
 ## Converter Overview
 

@@ -1,8 +1,8 @@
-# GraFx Publisher Converter for InDesign
+# GraFx Publisher Converter for Adobe® InDesign®
 
-## Downloads
+## Download
 
-Download the latest version
+Download the newest version
 
 [Version 8.0 (Unsigned)](https://s3.eu-central-1.amazonaws.com/releases.chili-publish.com/releases/Desktop_Tools/8.0.0.0_Id_202403130816/CHILI_InDesign_Extensions_8.0.0.0_Unsigned.zip)
 
