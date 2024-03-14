@@ -1,16 +1,17 @@
 # Release notes
 
-## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 13, 2024 - GraFx Publisher plug-ins
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 13, 2024 - GraFx Publisher
 
- for Adobe Illustrator® and Adobe InDesign®
+### New plugins
+
+- for [Adobe Illustrator®](/GraFx-Publisher/convert/Adobe-Illustrator/)
+- for [Adobe InDesign®](/GraFx-Publisher/convert/Adobe-InDesign/)
 
 ### Features
 
 - Added support for Adobe® Illustrator®[^1] 2024 (28.x),
 - Added support for Apple silicon CPUs,
 - Added a possibility to login with GraFx (SSO).
-
-[Download page](https://docs.chiligrafx.com)
 
 This version is compatible with Adobe® Illustrator® 2022 (26.x), 2023 (27.x) and 2024 (28.x).
 
