@@ -1,4 +1,4 @@
-# Integrate GraFx Studio Enduser UI
+# Integrate GraFx Studio UI
 
 ## Introduction
 
@@ -8,9 +8,9 @@ To make Smart Templates in GraFx Studio, you'll need a "template designer seat."
 
 **In your webportal**
 
-Moreover, this end-user interface isn't limited to just the CHILI GraFx environment; it's designed for broader application and can be seamlessly integrated into custom web portals. 
+Moreover, this end user interface isn't limited to just the CHILI GraFx environment; it's designed for broader application and can be seamlessly integrated into custom web portals. 
 
-This flexibility opens up numerous possibilities for customizing and enhancing the user experience. For detailed instructions on integrating the end-user interface into your web portal, refer to the guide below.
+This flexibility opens up numerous possibilities for customizing and enhancing the user experience. For detailed instructions on integrating the end user interface into your web portal, refer to the guide below.
 
 ## Token
 
@@ -23,7 +23,7 @@ Since you don't want to pass secure credentials, your server side code will need
 
 ## Quick start
 
-On this page on Github, you can get started in no time to have your own GraFx Studio Enduser UI integrated.
+On this page on Github, you can get started in no time to have your own GraFx Studio UI integrated.
 
 - Define a `<div>`on your page
 ``` html
