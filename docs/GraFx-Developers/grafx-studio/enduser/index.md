@@ -7,6 +7,7 @@
 To make Smart Templates in GraFx Studio, you'll need a "template designer seat." Once your template is ready, it moves to the stage where end users can interact with it, specifically in "[My Projects](/GraFx-Studio/guides/create-projects/)." This area is where templates come to life, allowing end users to consume and customize them to fit their needs.
 
 **In your webportal**
+
 Moreover, this end-user interface isn't limited to just the CHILI GraFx environment; it's designed for broader application and can be seamlessly integrated into custom web portals. 
 
 This flexibility opens up numerous possibilities for customizing and enhancing the user experience. For detailed instructions on integrating the end-user interface into your web portal, refer to the guide below.
