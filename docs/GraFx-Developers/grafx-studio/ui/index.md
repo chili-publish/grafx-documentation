@@ -23,7 +23,7 @@ Since you don't want to pass secure credentials, your server side code will need
 
 ## Quick start
 
-On this page on Github, you can get started in no time to have your own GraFx Studio UI integrated.
+On [this page on Github](https://github.com/chili-publish/studio-ui?tab=readme-ov-file#studio-ui), you can get started in no time to have your own GraFx Studio UI integrated.
 
 - Define a `<div>`on your page
 ``` html
@@ -33,7 +33,7 @@ On this page on Github, you can get started in no time to have your own GraFx St
 ```html
 <script src="https://studio-cdn.chiligrafx.com/studio-ui/latest/bundle.js"></script>
 ```
-- Define custom logic and credentials
+- Define custom logic and credentials (examples can be found on [Github](https://github.com/chili-publish/studio-ui?tab=readme-ov-file#studio-ui))
 
 All information can be found here: [see all details on Github](https://github.com/chili-publish/studio-ui?tab=readme-ov-file#studio-ui)
 
