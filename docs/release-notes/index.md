@@ -6,7 +6,6 @@
 
 - for [Adobe Illustrator®](/GraFx-Publisher/convert/Adobe-Illustrator/)
 - for [Adobe InDesign®](/GraFx-Publisher/convert/Adobe-InDesign/)
-=======
 
 ### Features
 
