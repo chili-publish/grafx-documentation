@@ -23,6 +23,17 @@ This version is compatible with GraFx Publisher and the on-premise version of CH
 !!! info
 
     Please uninstall the previous versions of the CHILI Plugins to avoid unexpected issues with the new releases.
+    
+    **Mac OS**
+    
+    Applications/CHILI publish/CHILI Desktop Tools/uninstall
+    
+    **Windows OS**
+    
+	Control Panel > Programs > Programs and Features > Uninstall or change a program >  
+	**Look for CHILI Desktop Tools**
+	
+	C:\Program Files (x86)\CHILI publish\CHILI Desktop Tools\uninstall.exe
 
 
 [^2]: Adobe® InDesign® and Illustrator® are either registered trademarks or trademarks of Adobe® in the United States and/or other countries. 
