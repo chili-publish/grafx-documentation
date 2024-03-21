@@ -27,11 +27,11 @@ Since you don't want to pass secure credentials, your server side code will need
 
 On [this page on Github](https://github.com/chili-publish/studio-ui?tab=readme-ov-file#studio-ui), you can get started in no time to have your own GraFx Studio UI integrated.
 
-- Define a `<div>`on your page
+- Define a `<div>` on your page
 ``` html
 <div id="studio-ui-container"></div>
 ```
-- Inject the javascript
+- Inject the JavaScript
 ```html
 <script src="https://studio-cdn.chiligrafx.com/studio-ui/latest/bundle.js"></script>
 ```
