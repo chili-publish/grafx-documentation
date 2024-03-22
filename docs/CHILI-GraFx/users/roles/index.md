@@ -27,7 +27,7 @@ E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give
 |![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| ✅ |
 
-Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
+End users, Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
 (1) Content Admins will be able to create Templates, but the output will be watermarked.
 
