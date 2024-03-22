@@ -1,6 +1,6 @@
 # User management
+
 ## Overview
-=======
 
 The first table shows the roles and their permissions.  
 You can assign these roles to all users in your subscription.
@@ -26,7 +26,6 @@ E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| ✅ |
-=======
 
 Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
