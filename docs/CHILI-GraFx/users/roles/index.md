@@ -1,6 +1,6 @@
 # User management
-
 ## Overview
+=======
 
 The first table shows the roles and their permissions.  
 You can assign these roles to all users in your subscription.
@@ -26,7 +26,7 @@ E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| ✅ |
-
+=======
 
 Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
@@ -111,17 +111,19 @@ In the API, this is labeled as "EU". (End User)
 
 **Definition**: A content Administrator is a legacy role, available to users that have been converted from CHILI publisher Online.
 
-A content Administrator can create and use GraFx Publisher templates. There is no limit to Content Administrators for converted CHILI publisher Online customers.
+A content Administrator can create and use GraFx Publisher templates. There is no  limit to Content Administrators for converted CHILI publisher Online customers.
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
 Content Administrators will be able to create templates in GraFx Studio, but the output will be watermarked.
+
 
 ## Template Designer
 
 A template Designer Seat can be assigned to a limited amount of people, depending on the amount of seats you subscribed to.
 
 See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
+
 
 ## User creation and invitation
 

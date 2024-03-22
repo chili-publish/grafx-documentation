@@ -18,7 +18,7 @@ For instructions on setting up an Integration, [see our guide](/CHILI-GraFx/guid
 
 The **GraFx Platform API** allows you to manage GraFx Platform resources.
 
-Some exmaple use cases are:
+Some example use cases are:
 
 - User management
 - Environment creation
