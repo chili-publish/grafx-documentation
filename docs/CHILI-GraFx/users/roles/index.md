@@ -19,7 +19,7 @@ Template designer seats give a user extra permissions, and can only be assigned 
 
 E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give 5 users a Template Designer Seat.
 
-|  | Template Designer Seat |
+|  | Template Designer Seat (TDS) |
 |:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| ✅ |
@@ -37,8 +37,11 @@ Subscription Admins and Environment Admins can function as Template Designers wh
 	- *End User*: [End User](#end-user)
 	- *CA*: [Content Admin](#content-administrator)
 	- *EA*: [Environment Admin](#environment-admin)
-	- *TD*: [Template Designer](#template-designer)
 	- *CA*: [Content Admin](#content-administrator)
+
+	**Extra permissions**
+	
+	- *TDS*: [Template Designer](#template-designer)
 
 	**Specific application**
 
