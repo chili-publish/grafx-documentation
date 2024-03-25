@@ -24,19 +24,3 @@ We strongly encourage you to use method 2.
 ## The Guide
 This guide is broken up in to sections. In each section we will add some additional functioanlity to our application until we reach our final template store.
 
-- [Section 1 Setting Up The Project](/GraFx-Developers/studio-guide-building-a-template-store/section-01/)
-- [Section 2 Creating Store Pages](/GraFx-Developers/studio-guide-building-a-template-store/section-02/)
-- [Section 3 Setting The Login Page As Default](/GraFx-Developers/studio-guide-building-a-template-store/section-03/)
-- [Section 4 Handling User Sessions With Cookies](/GraFx-Developers/studio-guide-building-a-template-store/section-04/)
-- [Section 5 Constructing a Mock Database](/GraFx-Developers/studio-guide-building-a-template-store/section-05/)
-- [Section 6 Displaying Mock Templates](/GraFx-Developers/studio-guide-building-a-template-store/section-06/)
-- [Section 7 Register Templates](/GraFx-Developers/studio-guide-building-a-template-store/section-07/)
-- [Section 8 Authentication and Environment Configuration](/GraFx-Developers/studio-guide-building-a-template-store/section-08/)
-- [Section 9 API & Template Management](/GraFx-Developers/studio-guide-building-a-template-store/section-09/)
-- [Section 10 Implementing Editable Projects](/GraFx-Developers/studio-guide-building-a-template-store/section-10/)
-- [Section 11 Authentication Data Management](/GraFx-Developers/studio-guide-building-a-template-store/section-11/)
-- [Section 12 Get Project JSON](/GraFx-Developers/studio-guide-building-a-template-store/section-12/)
-- [Section 13 Project Save and Order Endpoints](/GraFx-Developers/studio-guide-building-a-template-store/section-13/)
-- [Section 14 Order Handling](/GraFx-Developers/studio-guide-building-a-template-store/section-14/)
-- [Section 15 Implementing Previews](/GraFx-Developers/studio-guide-building-a-template-store/section-15/)
-- [Final Words](/GraFx-Developers/studio-guide-building-a-template-store/final-words/)

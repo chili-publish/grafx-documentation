@@ -21,9 +21,3 @@ We strongly encourage you to use method 2.
 
 This course is broken up in to sections. In each section we will add some additional functionality to our integration until we have a custom UI. Each section is represented in this repository as a folder. You can also use the table of contents below to navigate to the various sections.
 
-- [Section 1 Setting up the project](/GraFx-Developers/studio-guide-custom-ui-with-sdk/section-01/)
-- [Section 2 Loading the Editor](/GraFx-Developers/studio-guide-custom-ui-with-sdk/section-02/)
-- [Section 3 Authenticating Connectors](/GraFx-Developers/studio-guide-custom-ui-with-sdk/section-03/)
-- [Section 4 Working with Controllers](/GraFx-Developers/studio-guide-custom-ui-with-sdk/section-04/)
-- [Section 5 Working with Meida Connector](/GraFx-Developers/studio-guide-custom-ui-with-sdk/section-05/)
-- [Section 6 Working with Events](/GraFx-Developers/studio-guide-custom-ui-with-sdk/section-06/)
