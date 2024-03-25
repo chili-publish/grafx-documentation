@@ -309,7 +309,9 @@ nav:
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
         - 'Scopes':                             'GraFx-Developers/scopes/index.md'
-        - 'GraFx Studio UI':                    'GraFx-Developers/grafx-studio/ui/index.md'
+        - 'GraFx Studio':
+            - 'Overview':                       'GraFx-Developers/grafx-studio/overview/index.md'
+            - 'Integration Overview':           'GraFx-Developers/grafx-studio/integration-overview/'
         - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
         - 'Platform API reference' :
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
