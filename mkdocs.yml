@@ -9,6 +9,7 @@ theme:
     - content.tabs.link
     - navigation.footer
     - content.footnote.tooltips
+    - content.code.copy
   font:
     text: Ubuntu
   palette:
