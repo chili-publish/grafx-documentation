@@ -354,3 +354,4 @@ nav:
               - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
               - 'Platform API reference':             'https://api.chiligrafx.com/swagger/index.html'
               - 'Environment API reference':          'https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html'
+        - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/references/templates-vs-projects/index.md'
