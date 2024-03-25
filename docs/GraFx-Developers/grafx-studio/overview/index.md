@@ -1,6 +1,6 @@
 # GraFx Studio Overview
 
-[GraFx Studio]() is a smart document editor targeting both digital and print.
+GraFx Studio is a smart document editor targeting both digital and print.
 
 GraFx Studio encompasses three distinct parts:
 
@@ -9,6 +9,8 @@ GraFx Studio encompasses three distinct parts:
 - Connectors - are components that enable the editor engine to link and interact with other software applications or systems. They facilitate communication and data exchange between different software environments.
 
 From an integration standpoint, you will need to determine which of the three you will want to integrate and to what degrees.
+
+For more information see: [Integration Overview](/GraFx-Developers/grafx-studio/integration-overview/01-overview/)
 
 ## Editor Engine
 
@@ -20,10 +22,10 @@ The Editor Engine has a minimal UI for interacting with frames and frame content
 
 #### Tutorials
 
-- [Quick Start]() - a quick ~15 minute guide that will teach you everything you need to know
-- [Bootcamp Building a Custom Studio UI]() - a step-by-step bootcamp that will guide you in building a complete UI
+- [Studio SDK Quickstart](/GraFx-Developers/grafx-studio/studio-sdk-quickstart/01-overview/) - a quick ~15 minute guide that will teach you everything you need to know
+- [Integration Project - Building a Custom UI](/GraFx-Developers/grafx-studio/integration-project-building-a-custom-ui/project-overview/) - a step-by-step bootcamp that will guide you in building a complete UI
 
-#### Documentation
+#### References
 
 - [Studio SDK](https://github.com/chili-publish/studio-sdk) - a SDK library to interface with the Studio Editor Engine
 
@@ -39,6 +41,9 @@ CHILI GraFx provides a REST-like API that is used to managed resources on the pl
 ### Learning Resources
 
 #### Tutorials
+
+- [Environment API Quickstart](/GraFx-Developers/grafx-studio/environment-api-quickstart/02-managing-integrations/)
+- [Integration Project - Building a Template Store](/GraFx-Developers/grafx-studio/integration-project-building-a-template-store/project-overview/)
 
 ---
 
