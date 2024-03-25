@@ -311,7 +311,11 @@ nav:
         - 'Scopes':                             'GraFx-Developers/scopes/index.md'
         - 'GraFx Studio':
             - 'Overview':                       'GraFx-Developers/grafx-studio/overview/index.md'
-            - 'Integration Overview':           'GraFx-Developers/grafx-studio/integration-overview/'
+            - 'Integration Overview':
+                - '01 Overview':                'GraFx-Developers/grafx-studio/integration-overview/01-overview/index.md'
+                - '02 Integration Levels':      'GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md'
+                - '03 Common Integration Workflows': 'GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md'
+                - '04 Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-authentication/index.md'
         - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
         - 'Platform API reference' :
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
