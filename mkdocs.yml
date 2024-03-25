@@ -350,8 +350,7 @@ nav:
                 - 'Section 15 Implementing Previews': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/section-15/index.md'
                 - 'Final Words': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/final-words/index.md'
             - 'Integrate Studio UI':            'GraFx-Developers/grafx-studio/integrate-studio-ui/index.md'
-        - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
-        - 'Platform API reference' :
-            - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
-        - 'Environment API reference':
-            - 'Swagger' :                       'https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html'
+            - 'References':
+              - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
+              - 'Platform API reference':             'https://api.chiligrafx.com/swagger/index.html'
+              - 'Environment API reference':          'https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html'
