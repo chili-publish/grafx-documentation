@@ -307,7 +307,6 @@ nav:
 
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
-        - 'Scopes':                             'GraFx-Developers/scopes/index.md'
         - 'GraFx Studio':
             - 'Overview':                       'GraFx-Developers/grafx-studio/overview/index.md'
             - 'Integration Overview':
@@ -350,6 +349,7 @@ nav:
                 - 'Section 14 Order Handling': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/section-14/index.md'
                 - 'Section 15 Implementing Previews': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/section-15/index.md'
                 - 'Final Words': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/final-words/index.md'
+            - 'Integrate Studio UI':            'GraFx-Developers/grafx-studio/integrate-studio-ui/index.md'
         - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
         - 'Platform API reference' :
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'

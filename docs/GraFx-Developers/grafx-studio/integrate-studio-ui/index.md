@@ -1,4 +1,4 @@
-# Integrate GraFx Studio UI
+# Integrate Studio UI
 
 ## Introduction
 
