@@ -318,7 +318,7 @@ nav:
                 - '02 Managing Integrations':   'GraFx-Developers/grafx-studio/environment-api-quickstart/02-managing-integrations/index.md'
                 - '03 Generating A Token':      'GraFx-Developers/grafx-studio/environment-api-quickstart/03-generating-a-token/index.md'
                 - '04 Making API Calls':        'GraFx-Developers/grafx-studio/environment-api-quickstart/04-making-api-calls/index.md'
-            - 'Studio Sdk Quickstart':
+            - 'Studio SDK Quickstart':
                 - '01 Overview':                'GraFx-Developers/grafx-studio/studio-sdk-quickstart/01-overview/index.md'
                 - '02 Project Setup':           'GraFx-Developers/grafx-studio/studio-sdk-quickstart/02-project-setup/index.md'
                 - '03 Loading Studio Sdk':      'GraFx-Developers/grafx-studio/studio-sdk-quickstart/03-loading-studio-sdk/index.md'
