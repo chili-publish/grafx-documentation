@@ -8,6 +8,7 @@ theme:
     - navigation.tabs
     - content.tabs.link
     - navigation.footer
+    - content.footnote.tooltips
   font:
     text: Ubuntu
   palette:
@@ -259,6 +260,11 @@ nav:
             - 'Variables':
               - 'General':                      'GraFx-Publisher/guides/javascript/variables/index.md'
               - 'List':                         'GraFx-Publisher/guides/javascript/variables/list/index.md'
+        - 'Plugins':
+            - 'Conversion':                     'GraFx-Publisher/convert/intro/index.md'
+            - 'for Adobe® InDesign®':             'GraFx-Publisher/convert/Adobe-InDesign/index.md'
+            - 'for Adobe® Illustrator®':          'GraFx-Publisher/convert/Adobe-Illustrator/index.md'
+            
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
@@ -302,6 +308,7 @@ nav:
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
         - 'Scopes':                             'GraFx-Developers/scopes/index.md'
+        - 'GraFx Studio UI':                    'GraFx-Developers/grafx-studio/ui/index.md'
         - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
         - 'Platform API reference' :
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'

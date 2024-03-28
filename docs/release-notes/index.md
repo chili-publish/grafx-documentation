@@ -1,5 +1,94 @@
 # Release notes
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 14, 2024 - GraFx Publisher
+
+### New plugins
+
+- for [Adobe® Illustrator®](/GraFx-Publisher/convert/Adobe-Illustrator/)
+- for [Adobe® InDesign®](/GraFx-Publisher/convert/Adobe-InDesign/)
+
+### Features
+
+- Added support for Adobe® Illustrator®[^2] 2024 (28.x),
+- Added support for Apple® silicon CPUs,
+- Added a possibility to login with GraFx (SSO).
+
+This version is compatible with Adobe® Illustrator® 2022 (26.x), 2023 (27.x) and 2024 (28.x).
+
+This version is compatible with Adobe® InDesign® 2023 (18.x) and 2024 (19.x).
+
+This version is compatible with GraFx Publisher and the on-premise version of CHILI Publisher (6.6.5.0).
+
+
+!!! info
+
+    Please uninstall the previous versions of the CHILI Plugins to avoid unexpected issues with the new releases.
+    
+    **Mac OS**
+    
+    Applications/CHILI publish/CHILI Desktop Tools/uninstall
+    
+    **Windows OS**
+    
+	Control Panel > Programs > Programs and Features > Uninstall or change a program >  
+	**Look for CHILI Desktop Tools**
+	
+	C:\Program Files (x86)\CHILI publish\CHILI Desktop Tools\uninstall.exe
+
+
+[^2]: Adobe® InDesign® and Illustrator® are either registered trademarks or trademarks of Adobe® in the United States and/or other countries. 
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Mar 06, 2024 - CHILI GraFx
+
+### Improvements
+
+- PDF output endpoint has been moved from experimental to production
+- Introduced endpoints to manage output settings
+- Improved stability of connectors API
+
+### Fixes
+
+- Fixed error during parsing of MacOS fonts
+
+### New Endpoints
+
+Introduced output settings endpoints
+
+- GET /api/v1/environment/{environment}/output/settings
+- DELETE /api/v1/environment/{environment}/output/settings
+- GET /api/v1/environment/{environment}/output/settings
+- PUT /api/v1/environment/{environment}/output/settings/{outputSettingsId}
+- POST /api/v1/environment/{environment}/output/settings/jpg
+- POST /api/v1/environment/{environment}/output/settings/png
+- POST /api/v1/environment/{environment}/output/settings/pdf
+- POST /api/v1/environment/{environment}/output/settings/gif
+- POST /api/v1/environment/{environment}/output/settings/mp4
+
+Introduced PDF output task endpoint
+
+- POST /api/v1/environment/{environment}/output/pdf
+
+CHILI GraFx [Environment API 1.3.6](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 05, 2024 - GraFx Publisher
+
+### Improvements
+
+- Enhanced CHILI GraFx's handling of large VDP[^1] jobs.  
+Media assets caching is improved, significantly reducing the overall processing time.
+
+[^1]: VDP: Variable Data Processing, a.k.a. Variable Data Printing
+
+- Improved performance  
+Several technical improvements to the tech stack result in overall better performance.
+- Improved preview of assets with blend mode in the GraFx Publisher Editor
+- Switched output download link to a more sustainable location (URL remains to not break your integrations)
+
+### Fixes
+
+- Fixed issue when asset previews can’t be recreated after calling ResourceItemReplaceFile
+- Fixed an issue where a (wrong) error was shown on the login page
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Feb 27, 2024 - GraFx Studio
 
 ### Improvements
@@ -40,7 +129,7 @@ CHILI GraFx [Platform API](https://api.chiligrafx.com/swagger/index.html)
 
 - Fixed cache issues when requesting Documents previews.  
 Image preview download returns wront content type instead of image/png when async was set to false.
-- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice 
+- Fixed issue where imageQuality property in PDF export settings isn't updated via Backoffice
 
 ### Improvements
 
