@@ -37,7 +37,7 @@
 
     ---
 
-    **GraFx Studio** is the Smart Template editor for (animated) digital output.
+    **GraFx Studio** is the multichannel Smart Template editor for (animated) digital and print output.
 
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
 
