@@ -49,6 +49,24 @@
 - Fixed tooltip issue on the zoom controls
 - Fixed issue with the shape list dialog not automatically closing after one is selected
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 28, 2024 - GraFx Publisher
+
+### Improvements
+
+- Logging of PDF generation has been improved, giving you more insights.
+- **DocumentProcessServerSide** endpoint output file is moved to a more sustainable location.  
+!!! Info
+	If you have hard-coded checks on the full path, you need to check your integration. The URL has changed.
+	
+	If you parse the result and use the download link provided, nothing needs to change.
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Mar 28, 2024 - CHILI GraFx
+
+### Features
+
+- Federated User Groups: Enable users in a User Group of your Identity Provider to get instant access to CHILI GraFx.  
+See [Federated Single Sign On](/CHILI-GraFx/concepts/federated-single-sign-on/) and [User Group Membership](/CHILI-GraFx/guides/manage-group-membership/#manage-membership-of-federated-users) for more details.
+
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 14, 2024 - GraFx Publisher
 
 ### New plugins
