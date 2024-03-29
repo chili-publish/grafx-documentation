@@ -1,5 +1,54 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Apr 03, 2024 - GraFx Studio
+
+### Features
+
+#### Output settings
+
+- You can create output settings for PDF, JPG, PNG, MP4, and GIF output formats
+- There are type-specific settings to control scaling, quality, and frame rate
+- You can add a watermark to generate free of charge output
+- In the Template Designer workspace, you can select one of the output settings to export a template
+
+#### Print
+
+- PDF output is now available in production
+- For each layout in a template, you can specify if the intent is print, digital static, or digital animated
+- You only see the panels and properties that are relevant for the selected intent (e.g., the animation panel is only shown when the intent is digital animated)
+- You can set the unit to pixels, millimeters, or inches (this was already available in experimental mode)
+- You can set a bleed area when the intent is print (only visible on the canvas in normal view mode)
+- You can toggle between normal and preview mode with the 'W' shortcut
+- In the Studio UI, the play button and animation timeline are only shown when the intent of the selected layout is digital animated
+
+#### Other
+
+- You can change the baseline shift of text
+- You can select multiple frames and rotate them together
+- When moving or resizing multiple frames, the selection snaps to other objects
+
+### Improvements
+
+- An image frame is automatically created when clicking an asset in the Media panel (when no image frame is selected)
+- The layout properties are shown when clicking the page background (previously, you had to click the layout name above the page)
+- Duplicating an image variable now also copies the media connector settings
+- The image variable settings are now spread over 3 tabs for a better structure
+- The folder setting for image variables can now also be linked to a list variable
+- The top left menu is restructured, has more options, and shows the shortcuts
+- New shortcuts to open the left panels
+- New shortcuts to save and export a template
+- You can now search the list of templates
+
+### Fixes
+
+- Fixed drag and drop issue on Windows 11 devices with a touchscreen
+- Fixed output rendering issue when the animation ends with a slide outro
+- Fixed issue with media search in the Studio UI when "Include subfolders" is turned off
+- Fixed issue with the animation duration input field
+- Fixed issue when renaming a template with invalid input
+- Fixed tooltip issue on the zoom controls
+- Fixed issue with the shape list dialog not automatically closing after one is selected
+
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 14, 2024 - GraFx Publisher
 
 ### New plugins
