@@ -10,7 +10,12 @@
 
     ---
 
-    **February 2024**: Several updates on ==GraFx Media==, ==Environment and Platform API== and ==User groups==.
+    **March 2024**: Management for Federated User Groups ==GraFx Publisher==.
+
+    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+
+
+    **March 2024**: New plugins for ==GraFx Publisher==.
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
@@ -33,7 +38,7 @@
 
     ---
 
-    **GraFx Studio** is the Smart Template editor for (animated) digital output.
+    **GraFx Studio** is the multichannel Smart Template editor for (animated) digital and print output.
 
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
 
