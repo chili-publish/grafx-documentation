@@ -69,7 +69,7 @@ var newheadline = a + " Now";
 
 ### Going back to the Template
 
-Once the Javascript action has done it's magic, you can use the new contents of the JavaScript variable, to store it back into the Template variable.
+Once the Javascript action has done its magic, you can use the new contents of the JavaScript variable, to store it back into the Template variable.
 	
 ```javascript
 setVariableValue("headline", a);
