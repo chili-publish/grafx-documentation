@@ -201,10 +201,10 @@ nav:
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
+            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
             - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
-            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
@@ -224,9 +224,8 @@ nav:
         - 'How to: Animate':
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
-            - 'Define variables':               'GraFx-Studio/guides/variables/define/index.md'
-            - 'Organize variables':             'GraFx-Studio/guides/variables/organize/index.md'
-            - 'Add variables to document':      'GraFx-Studio/guides/variables/assign/index.md'
+            - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
+            - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
             - 'Example: Change Layout':         'GraFx-Studio/guides/actions/example-changelayout/index.md'
