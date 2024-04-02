@@ -6,9 +6,31 @@ In CHILI GraFx, an environment is a foundational concept that shapes how users i
 
 ## Key Characteristics of Environments
 
+### Applications
+
+All applications on the CHILI GraFx platform **live inside** the environments.
+
+This means, you first will need to select an environment, before you can start an application, and start working on your Smart Templates.
+
+When entering the platform, you don't see the applications, before you choose an Environment.
+
+![screenshot](env1.png)
+
+Choose an environment
+
+![screenshot](env2.png)
+
+Once in the environment, you can select the application you want to work in.
+
+![screenshot](env3.png)
+
+The dropdown at the top will show all visible environments for you.
+
+Or you could click on the CHILI GraFx logo, to return to the platform home.
+
 ### Isolation
 
-One of the crucial features of an environment is its isolation from others. No data interchange or interaction is possible between different environments[^1]. This isolation ensures security and integrity of data, where each environment functions independently.
+One of the crucial features of an environment is its isolation from others. No data interchange or interaction is possible between different environments[^1]. This isolation ensures the security and integrity of data, where each environment functions independently.
 
 ### Sandbox vs. Production Environments
 
