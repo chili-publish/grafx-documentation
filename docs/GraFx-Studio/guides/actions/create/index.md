@@ -20,6 +20,10 @@ If applicable, select the scope for the Trigger.
 
 The scope is the object (frame, variable, etc.) that will be monitored. You can also choose to monitor "Any variable" or "Any frame".
 
+!!! info "Template Variables"
+	When referring to **variables** in this context we mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)**.
+
+
 ![screenshot](triggerscope.png)
 
 What Triggers are available?

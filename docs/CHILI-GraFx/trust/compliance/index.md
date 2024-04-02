@@ -18,8 +18,6 @@ Our compliance team works hard to meet your organization’s compliance needs. W
 
 ![Logo](https://www.datocms-assets.com/11099/1643128549-iso-brand-compliance.png?auto=format&dpr=0.62&w=600)
 
-[Download statement of applicability](https://resources.chili-publish.com/hubfs/Legal/CHILI%20publish%20ISO27001%20Statement%20of%20Applicability%20v116.pdf)
+[Download statement of applicability](https://cdn6.chili-publish.com/hub/Legal/CHILI_publish_ISO27001_Statement_of_Applicability_v120.pdf)
 
-[ISO 27001:2017 Certificate](https://resources.chili-publish.com/hubfs/Legal/NL%201527.1.1%20-%20CHILI%20publish%20N.V.%20-%20ISO%2027001.pdf)
-
-
+[ISO 27001:2017 Certificate](https://cdn6.chili-publish.com/hub/Legal/NL_1527.1.1-CHILI_publish_N.V.-ISO_27001.pdf)

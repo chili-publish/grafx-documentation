@@ -1,5 +1,63 @@
 # Release notes
 
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 28, 2024 - GraFx Publisher
+
+### Improvements
+
+- Logging of PDF generation has been improved, giving you more insights.
+- **DocumentProcessServerSide** endpoint output file is moved to a more sustainable location.  
+!!! Info
+	If you have hard-coded checks on the full path, you need to check your integration. The URL has changed.
+	
+	If you parse the result and use the download link provided, nothing needs to change.
+
+
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Mar 28, 2024 - CHILI GraFx
+
+### Features
+
+- Federated User Groups: Enable users in a User Group of your Identity Provider to get instant access to CHILI GraFx.  
+See [Federated Single Sign On](/CHILI-GraFx/concepts/federated-single-sign-on/) and [User Group Membership](/CHILI-GraFx/guides/manage-group-membership/#manage-membership-of-federated-users) for more details.
+
+## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 14, 2024 - GraFx Publisher
+
+### New plugins
+
+- for [Adobe® Illustrator®](/GraFx-Publisher/convert/Adobe-Illustrator/)
+- for [Adobe® InDesign®](/GraFx-Publisher/convert/Adobe-InDesign/)
+
+### Features
+
+- Added support for Adobe® Illustrator®[^2] 2024 (28.x),
+- Added support for Apple® silicon CPUs,
+- Added a possibility to login with GraFx (SSO).
+
+This version is compatible with Adobe® Illustrator® 2022 (26.x), 2023 (27.x) and 2024 (28.x).
+
+This version is compatible with Adobe® InDesign® 2023 (18.x) and 2024 (19.x).
+
+This version is compatible with GraFx Publisher and the on-premise version of CHILI Publisher (6.6.5.0).
+
+
+!!! info
+
+    Please uninstall the previous versions of the CHILI Plugins to avoid unexpected issues with the new releases.
+    
+    **Mac OS**
+    
+    Applications/CHILI publish/CHILI Desktop Tools/uninstall
+    
+    **Windows OS**
+    
+	Control Panel > Programs > Programs and Features > Uninstall or change a program >  
+	**Look for CHILI Desktop Tools**
+	
+	C:\Program Files (x86)\CHILI publish\CHILI Desktop Tools\uninstall.exe
+
+
+[^2]: Adobe® InDesign® and Illustrator® are either registered trademarks or trademarks of Adobe® in the United States and/or other countries. 
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) Mar 06, 2024 - CHILI GraFx
 
 ### Improvements

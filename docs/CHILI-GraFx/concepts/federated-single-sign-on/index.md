@@ -28,7 +28,7 @@ This section explains the relationship between the components and how those resp
 
 Those customers who use the CHILI GraFx platform without SSO federation host their users and the permissions of those in the platform itself.
 
-Within the components of the platform, there is an identity hub that manages both the **Authentication** of the users and the **permissions** they have on each platform component.
+Within the components of the platform, there is an identity hub that manages both the **Authentication** of the users and the **permissions** they have on each platform component. These permissions include Individual access, Groups, and Group memberships.
 
 ``` mermaid
 erDiagram
@@ -39,7 +39,9 @@ erDiagram
   GraFx-Media ||--|| CHILI-GraFx-Identity-Hub : A-P
   CHILI-GraFx-Identity-Hub {
   	handles Authentication
-  	handles Permissions
+  	handles Individual-Access
+    handles Groups-Definition
+    handles Group-Membership
   }
 ```
 
@@ -47,7 +49,7 @@ erDiagram
 
 Those customers who use the SSO Federation host their own users and take care of the authentication process. This enables the use of multiple factors for the authentication, and those mechanisms to be shared with other systems of the company.
 
-In this case, the CHILI GraFx Identity Hub only takes care of the **permission management** of the users. Plus, of course, the management of the trust relationship between CGX and the customer’s IDP.
+In this case, the CHILI GraFx Identity Hub only takes care of the **Individual access** of the users and the definition of the permissions of the **User groups**. Plus, of course, the management of the trust relationship between CGX and the customer’s IDP.
 
 ``` mermaid
 erDiagram
@@ -58,10 +60,12 @@ erDiagram
   GraFx-Media ||--|| CHILI-GraFx-Identity-Hub : A-P
   CHILI-GraFx-Identity-Hub ||--|| Customer-Identity-Provider : A
   CHILI-GraFx-Identity-Hub {
-  	handles Permissions
+  	handles Individual-Access
+    handles Groups-Definition
   }
   Customer-Identity-Provider {
   	handles Authentication
+    handles Group-Membership
   }
 ```
 

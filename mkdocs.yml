@@ -127,6 +127,7 @@ nav:
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
             - 'Template Management':            'CHILI-GraFx/concepts/template-management/index.md'
+            - 'Environments':                   'CHILI-GraFx/concepts/environments/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Storage':                        'CHILI-GraFx/concepts/storage/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
@@ -153,6 +154,7 @@ nav:
             - 'Manage User Groups' :            'CHILI-GraFx/guides/manage-user-groups/index.md'
             - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
             - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
+            - 'Example: Federated groups with Entra ID' :             'CHILI-GraFx/guides/example-federated-groups-entraid/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Manage Collections' :            'CHILI-GraFx/guides/manage-collections/index.md'
@@ -200,10 +202,10 @@ nav:
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
+            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
             - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
-            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
@@ -223,9 +225,8 @@ nav:
         - 'How to: Animate':
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
-            - 'Define variables':               'GraFx-Studio/guides/variables/define/index.md'
-            - 'Organize variables':             'GraFx-Studio/guides/variables/organize/index.md'
-            - 'Add variables to document':      'GraFx-Studio/guides/variables/assign/index.md'
+            - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
+            - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
             - 'Example: Change Layout':         'GraFx-Studio/guides/actions/example-changelayout/index.md'
@@ -260,6 +261,11 @@ nav:
             - 'Variables':
               - 'General':                      'GraFx-Publisher/guides/javascript/variables/index.md'
               - 'List':                         'GraFx-Publisher/guides/javascript/variables/list/index.md'
+        - 'Plugins':
+            - 'Conversion':                     'GraFx-Publisher/convert/intro/index.md'
+            - 'for Adobe® InDesign®':             'GraFx-Publisher/convert/Adobe-InDesign/index.md'
+            - 'for Adobe® Illustrator®':          'GraFx-Publisher/convert/Adobe-Illustrator/index.md'
+            
 
     - 'GraFx Media':
         - 'Introduction':                       'GraFx-Media/index.md'
@@ -303,6 +309,7 @@ nav:
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
         - 'Scopes':                             'GraFx-Developers/scopes/index.md'
+        - 'GraFx Studio UI':                    'GraFx-Developers/grafx-studio/ui/index.md'
         - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
         - 'Platform API reference' :
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
