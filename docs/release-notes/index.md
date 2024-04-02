@@ -38,6 +38,7 @@
 - New shortcuts to save and export a template
 - You can now search and sort the list of templates.
 - You can switch between grid and list view on the templates page
+- Overwrite dialog is shown when you assign an image from the media panel to a frame with an image variable
 
 ### Fixes
 
