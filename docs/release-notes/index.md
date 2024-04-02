@@ -37,7 +37,8 @@
 - The top left menu is restructured, has more options, and shows the shortcuts
 - New shortcuts to open the left panels
 - New shortcuts to save and export a template
-- You can now search the list of templates
+- You can now search and sort the list of templates.
+- You can switch between grid and list view on the templates page
 
 ### Fixes
 
