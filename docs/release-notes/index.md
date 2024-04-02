@@ -41,7 +41,7 @@
 
 ### Fixes
 
-- Fixed drag and drop issue on Windows 11 devices with a touchscreen
+- Fixed drag and drop issue on Windows devices with a touchscreen
 - Fixed output rendering issue when the animation ends with a slide outro
 - Fixed issue with media search in the Studio UI when "Include subfolders" is turned off
 - Fixed issue with the animation duration input field
