@@ -25,7 +25,6 @@
 
 - You can change the baseline shift of text
 - You can select multiple frames and rotate them together
-- When moving or resizing multiple frames, the selection snaps to other objects
 
 ### Improvements
 
