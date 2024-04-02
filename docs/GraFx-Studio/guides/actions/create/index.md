@@ -2,7 +2,7 @@
 
 ## Add Action
 
-Open the [Automation panel](GraFx-Studio/overview/properties/#automation-properties).
+Open the [Automation panel](/GraFx-Studio/overview/properties/#automation-properties).
 
 By default, a new document will not have any Actions.
 
@@ -19,6 +19,10 @@ In the Action, first select a Trigger - an event that will kick off the Action.
 If applicable, select the scope for the Trigger.
 
 The scope is the object (frame, variable, etc.) that will be monitored. You can also choose to monitor "Any variable" or "Any frame".
+
+!!! info "Template Variables"
+	When referring to **variables** in this context we mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)**.
+
 
 ![screenshot](triggerscope.png)
 
@@ -74,7 +78,7 @@ When creating a new action the default name “Action 1” is given. Every new a
 
 The order of the actions in the list defines the order of execution. This means that if an event triggers multiple actions, the first one in the list will be executed first. The order can be changed by drag and drop.
 
-![Reorder Actions](/release-notes/reorder-actions.gif)
+![Reorder Actions](reorder-actions.gif)
 
 It is possible that an action causes another event to fire, which can trigger another action. If this happens, all actions triggered by the first event will be executed first. When they are all processed, the actions triggered by the new event will be executed. As an example, we have this list of actions:
 

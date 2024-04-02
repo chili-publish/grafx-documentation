@@ -34,13 +34,13 @@ Click an existing integration to edit its details.
 
 ![screenshot](integration4.png)
 
-### Step 3: Obtaining Integration Credentials
+## Step 3: Obtaining Integration Credentials
 
 After saving the integration configuration, click on the integration name, to see the details panel.
 
 When looking at the details for your integration, you will notice that there are two tabs.
 
-##### The General Tab
+### The General Tab
 The `General` tab contains the information about your integration and the authentication credentials.
 
 The CHILI GraFx platform will generate a set of credentials specifically for this integration.
@@ -49,16 +49,16 @@ These credentials include a `Client ID` and `Client Secret`. Make sure to secure
 
 ![screenshot](integration5.png)
 
-##### Your Environment Swagger
+### Your Environment Swagger
 At the bottom of the `General` tab you will notice that there are links to the Environment API and Platform API Swagger pages for your environment that you can interactively test endpoints with **after** [generating an access token](#step-4-generating-an-access-token)
 
-##### The Permissions tab
+### The Permissions tab
 The `Permissions` tab is where you can control the level of access your integration has to your environment.
 Permissions are presented as API scopes, and will determine the access your integration has on the environment.
 
 ![screenshot](integration6.png)
 
-### Step 4: Generating an Access Token
+## Step 4: Generating an Access Token
 
 Now we can request an access token using our `Client ID` and `Client Secret`. This token will serve as your application's authorization for subsequent API calls.
 
@@ -225,7 +225,7 @@ Extract the access token from the authentication response and securely store it 
 
 The access token is issued with an expiration offset. You can find this in the `expires_in` JSON property of the response. Ensure your application refreshes it's token when necessary. You simply repeat the process generate a new token.
 
-### Step 6: Making API Calls
+## Step 5: Making API Calls
 
 With the access token in hand, you can now include it in the headers of your API requests to the CHILI GraFx platform.
 `Authorization: Bearer <YOUR ACCESS TOKEN>`
