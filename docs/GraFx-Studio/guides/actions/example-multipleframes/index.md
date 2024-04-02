@@ -2,6 +2,9 @@
 
 For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
 
+!!! info "Template Variables"
+	When referring to **variables** on this page we refer to **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** unless stated differently.
+
 ## Intro
 
 A trigger is set to act upon the value for a discount.

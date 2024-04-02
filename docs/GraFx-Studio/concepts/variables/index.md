@@ -1,45 +1,78 @@
-# Variables
+# Understanding Variables in GraFx Studio
 
-!!! Info
+In GraFx Studio, we utilize the concept of variables in two distinct contexts to enhance automation and flexibility in document creation. This page aims to clarify the differences and uses of "**JavaScript variables**" and "**Template variables**".
 
-	A variable is a named container for a particular set of data (text, image reference, date, etc...).
+## JavaScript Variables
 
-	Source: [Wikipedia](https://en.wikipedia.org/wiki/Variable_(computer_science)){target="_blank"}
+### Definition and Purpose
 
-	In the context of **GraFx Studio**, that variable is used in a frame as placeholder to be replaced with the content of the variable or datasource.
+**JavaScript Variables** are used within Actions to automate the document.
 
-## Example
+These variables are integral in scripting custom behaviors, controlling document flow, and manipulating data in real-time.
 
-!!! Text
-	"Hello <!firstname!>,
+### Example Use-Case
 
-	How is life?"
+Suppose you need to calculate a total based on other parameters. A **JavaScript variable** can be used to store the total and update it in the Actions script.
+
+```javascript
+var firstvalue = 10; // JavaScript Variable
+var secondvalue = 20; // JavaScript Variable
+var total = firstvalue + secondvalue; // total will hold the value 30
+```
+
+## Template Variables
+
+### Definition and Purpose
+
+**Template Variables**, are used within a GraFx Studio template to store variable content. They allow end users to customize and change elements like text and images in a predefined template. These variables make templates flexible and adaptable to different needs and scenarios.
+
+### Example Use-Cases
+
+![image](template-variable-1.png)
+
+![image](template-variable-2.png)
 
 
-This text contains a placeholder for a **firstname**.
+## Bridging Actions and Templates
 
-We assume it's supposed to be a firstname, because of the name.
+Now, how do these two types of variables interact? Let's use a simple example to explain:
 
-But the name of the variable **firstname** is not related to the content.
+As in the screenshot above, we have a Template variable named "headline", and you want to use this headline in an action. Here's how you can do it:
 
-It could also have been:
+Imagine this Action in your template
 
-!!! Text
-	"Hello <!V1!>,
+```javascript
+let a = getVariableValue('headline');
+let newheadline = a + " Now";
+setVariableValue('headline', newheadline);
+```
 
-	How is life?"
+### Getting the Template Variable Value
 
-Variables are placeholders, that will be replaced with variable content.
+There is a [helper function](/GraFx-Studio/concepts/helper-functions/#get) called `getVariableValue()`. This function acts like a question you ask to your template: "Hey, what's the current value of this Template Variable?"
 
-## Types of content
+You can then store this value in a JavaScript Variable. For example
+   
+```javascript
+var a = getVariableValue('headline');
+```
 
-The type of content for the variable will differ with the context. In the previous example, this most likely will be a piece of text.
+This line says: "Store the headline's content in a container named 'a'."
 
-In other cases, it could be a reference to an image (or other digital asset).
+### Using the Value
 
-!!! Info
-	https://upload.wikimedia.org/wikipedia/commons/6/68/Raffael_058.jpg
+Once the value from the Template Variable is stored in the JavaScript Variable 'a', you can use it or manipulate it in your script.
+    
+```javascript
+var newheadline = a + " Now";
+```
 
-	![Image](https://upload.wikimedia.org/wikipedia/commons/6/68/Raffael_058.jpg)
+### Going back to the Template
 
-When the frame has a source reference **$ImageRef** then you can replace the variable **$ImageRef** with the source that is relevant at any moment.
+Once the Javascript action has done its magic, you can use the new contents of the JavaScript variable, to store it back into the Template variable.
+	
+```javascript
+setVariableValue("headline", a);
+```
+
+This allows a seamless interaction between the content in your template and the actions you can script using JavaScript.
