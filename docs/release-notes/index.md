@@ -8,7 +8,7 @@
 
 - You can create output settings for PDF, JPG, PNG, MP4, and GIF output formats
 - There are type-specific settings to control scaling, quality, and frame rate
-- You can add a watermark to generate free of charge output
+- You can add a watermark to generate free-of-charge output
 - In the Template Designer workspace, you can select one of the output settings to export a template
 
 #### Print
