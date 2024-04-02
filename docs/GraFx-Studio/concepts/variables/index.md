@@ -24,7 +24,7 @@ var total = firstvalue + secondvalue; // total will hold the value 30
 
 ### Definition and Purpose
 
-**Template Variables**, are used within a GraFx Studio templates to store variable content. They allow end users to customize and change elements like text and images in a predefined template. These variables make templates flexible and adaptable to different needs and scenarios.
+**Template Variables**, are used within a GraFx Studio template to store variable content. They allow end users to customize and change elements like text and images in a predefined template. These variables make templates flexible and adaptable to different needs and scenarios.
 
 ### Example Use-Cases
 
