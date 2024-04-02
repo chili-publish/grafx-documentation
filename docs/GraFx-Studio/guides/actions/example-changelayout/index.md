@@ -42,13 +42,13 @@ In this case, the trigger is initiated when the "Variable value changed", specif
 The script (action) executed upon the trigger
 
 ``` js
-var layoutName = studio.variables.getStringValue(triggers.variableValueChanged);
+let layoutName = studio.variables.getStringValue(triggers.variableValueChanged);
 studio.layouts.select(layoutName);
 ```
 
-A [const](https://www.w3schools.com/js/js_const.asp) Javascript variable **layoutName** is defined as the [string](https://www.w3schools.com/js/js_strings.asp) value of the Template variable that triggered the action. In this case this is the name of the selected ad size.
+A Javascript variable **layoutName** is defined as the [string](https://www.w3schools.com/js/js_strings.asp) value of the Template variable that triggered the action. In this case this is the name of the selected ad size.
 
-This const JavaScript variable is then used to select the layout with the same name (the items in the "Ad size" list Template variable need to have the same name as the layouts).
+This JavaScript variable is then used to select the layout with the same name (the items in the "Ad size" list Template variable need to have the same name as the layouts).
 
 ### The result
 
