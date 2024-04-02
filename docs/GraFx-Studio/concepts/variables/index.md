@@ -42,8 +42,8 @@ As in the screenshot above, we have a Template variable named "headline", and yo
 Imagine this Action in your template
 
 ```javascript
-var a = getVariableValue('headline');
-var newheadline = a + " Now";
+let a = getVariableValue('headline');
+let newheadline = a + " Now";
 setVariableValue('headline', newheadline);
 ```
 
