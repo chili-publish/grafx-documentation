@@ -12,7 +12,7 @@ Create Smart Templates to allow your customers to serve static digital and print
 
 ![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-09.svg)
 
-Create Smart Templates to allow your customers to serve animated and static digital output
+Create Smart Templates to allow your customers to serve multichannel animated, static digital and print output
 
 [See GraFx Studio documentation](/GraFx-Studio/)
 
