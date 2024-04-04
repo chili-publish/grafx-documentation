@@ -1,5 +1,28 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) April 4, 2024 - CHILI GraFx
+
+### Features
+
+- Template Designer Seats are enforced: only users with a Template Designer Seat can create production-ready templates in GraFx Studio
+- Renders from GraFx Studio are reported on the analytics page of CHILI GraFx
+- Output from GraFx Studio done by clients that don't have a GraFx contract is watermarked
+- Personalized in-app messaging to users on CHILI GraFx
+
+![2024-04-04_10-37-09](https://github.com/chili-publish/grafx-documentation/assets/122599725/254c1937-7098-4277-a06b-676ca5bf273b)
+
+
+### Improvements
+- Loading spinner is hidden when skeleton is displayed
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) April 4, 2024 - GraFx Studio
+
+### Improvements
+
+- Sort and search functionalities for templates added
+- List and grid view available for templates
+- When user double clicks on a template only 1 project is created
+
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 28, 2024 - GraFx Publisher
 
 ### Improvements
