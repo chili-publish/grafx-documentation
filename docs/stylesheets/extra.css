@@ -70,7 +70,7 @@ p img[alt=svg_icon] {
 	width: 100px;
 }
 img[alt=rn_icon] {
-	--md-icon-size: 2.0em;
+	--md-icon-size: 3.0em;
 	vertical-align: middle;
 	display: inline-flex;
 	height: var(--md-icon-size);
