@@ -2,6 +2,9 @@
 
 For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
 
+!!! info "Template Variables"
+	When referring to **variables** on this page we refer to **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** unless stated differently.
+
 ## Intro
 
 A trigger is set to act upon a variable value change.
@@ -39,16 +42,16 @@ In this case, the trigger is initiated when the "Variable value changed", specif
 The script (action) executed upon the trigger
 
 ``` js
-const layoutName = studio.variables.getStringValue(triggers.variableValueChanged);
+let layoutName = studio.variables.getStringValue(triggers.variableValueChanged);
 studio.layouts.select(layoutName);
 ```
 
-A [const](https://www.w3schools.com/js/js_const.asp) variable **layoutName** is defined as the [string](https://www.w3schools.com/js/js_strings.asp) value of the variable that triggered the action. In this case this is the name of the selected ad size.
+A Javascript variable **layoutName** is defined as the [string](https://www.w3schools.com/js/js_strings.asp) value of the Template variable that triggered the action. In this case this is the name of the selected ad size.
 
-This const variable is then used to select the layout with the same name (the items in the "Ad size" list variable need to have the same name as the layouts).
+This JavaScript variable is then used to select the layout with the same name (the items in the "Ad size" list Template variable need to have the same name as the layouts).
 
 ### The result
 
-When the end-user changes the value of the list variable, the GraFx Studio layout will change to the chosen name.
+When the end-user changes the value of the list variable (Template), the GraFx Studio layout will change to the chosen name.
 
 Output will be based on the chosen layout.
