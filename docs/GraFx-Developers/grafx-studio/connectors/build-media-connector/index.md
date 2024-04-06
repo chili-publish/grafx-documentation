@@ -45,7 +45,7 @@ npx connector-cli
 Initialize: Means building the Boiler Plate. This is the basic code you'll need to get started.
 
 ``` csh
-npx connector-cli init
+connector-cli init -n "demo"
 ```
 
 You now have the basic code. In that code, we have defined some dependencies. To download these, execute the install command.
