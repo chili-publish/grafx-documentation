@@ -28,6 +28,7 @@ The Editor Engine has a minimal UI for interacting with frames and frame content
 #### References
 
 - [Studio SDK](https://github.com/chili-publish/studio-sdk) - a SDK library to interface with the Studio Editor Engine
+- [Studio SDK Examples](https://github.com/chili-publish/studio-sdk/tree/main/examples/sdk) - a few example projects using the Studio SDK
 
 #### Custom Built UIs
 
@@ -45,7 +46,24 @@ CHILI GraFx provides a REST-like API that is used to managed resources on the pl
 - [Environment API Quickstart](/GraFx-Developers/grafx-studio/environment-api-quickstart/02-managing-integrations/)
 - [Integration Project - Building a Template Store](/GraFx-Developers/grafx-studio/integration-project-building-a-template-store/project-overview/)
 
----
+#### References
+
+- [Environment API Swagger](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
+    - Replace `sandbox1` with your environment and remove `-sandbox` if your environment is on production.
+
+## Connectors
+
+Connectors allow the Editor Engine to link to and interact with other software applications or systems.
+
+!!! warning Experimental
+
+    Connectors are still experimental. Therefore, documentation and examples may be out of date, and APIs may change without notice.
+
+#### References
+
+- [Connector Template](https://github.com/chili-publish/grafx-connector-template) 
+
+----
 
 ## Terms To Know
 
