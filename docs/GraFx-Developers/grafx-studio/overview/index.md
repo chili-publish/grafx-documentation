@@ -61,7 +61,7 @@ Connectors allow the Editor Engine to link to and interact with other software a
 
 #### References
 
-- [Connector Template](https://github.com/chili-publish/grafx-connector-template) 
+- [Connector Template](https://github.com/chili-publish/grafx-connector-template) A template for creating connectors to integrate the Editor Engine with other software.
 
 ----
 
