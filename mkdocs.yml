@@ -302,7 +302,7 @@ nav:
         - 'Experimental':                       'release-notes/experimental/index.md'
 
     - 'Developer Center':
-        - 'Overview':                           'GraFx-Developers/index.md'
+        - 'Overview':                           'GraFx-Developers/overview/index.md'
         - 'GraFx Studio':
             - 'Overview':                       'GraFx-Developers/grafx-studio/overview/index.md'
             - 'Integration Overview':
@@ -310,7 +310,7 @@ nav:
                 - '02 Integration Levels':      'GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md'
                 - '03 Common Integration Workflows': 'GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md'
                 - '04 Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-authentication/index.md'
-            - Editor Engine :
+            - 'Editor Engine' :
                 - 'Studio SDK Quickstart':
                     - '01 Overview':                'GraFx-Developers/grafx-studio/studio-sdk-quickstart/01-overview/index.md'
                     - '02 Project Setup':           'GraFx-Developers/grafx-studio/studio-sdk-quickstart/02-project-setup/index.md'
@@ -325,7 +325,7 @@ nav:
                     - 'Section 5 Working with Meida Connector': 'GraFx-Developers/grafx-studio/integration-project-building-a-custom-ui/section-05/index.md'
                     - 'Section 6 Working with Events': 'GraFx-Developers/grafx-studio/integration-project-building-a-custom-ui/section-06/index.md'
                 - 'Integrate Studio UI':            'GraFx-Developers/grafx-studio/integrate-studio-ui/index.md'
-            - Environment API:
+            - 'Environment API':
                 - 'Environment API Quickstart':
                     - '02 Managing Integrations':   'GraFx-Developers/grafx-studio/environment-api-quickstart/02-managing-integrations/index.md'
                     - '03 Generating A Token':      'GraFx-Developers/grafx-studio/environment-api-quickstart/03-generating-a-token/index.md'
@@ -348,5 +348,6 @@ nav:
                     - 'Section 14 Order Handling': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/section-14/index.md'
                     - 'Section 15 Implementing Previews': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/section-15/index.md'
                     - 'Final Words': 'GraFx-Developers/grafx-studio/integration-project-building-a-template-store/final-words/index.md'
+            - 'Supplementary Material':
+                - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
-        - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/references/templates-vs-projects/index.md'
