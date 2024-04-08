@@ -62,7 +62,13 @@ A text frame is made to hold text.
 
 A text frame looks like a rectangular box when selected.
 
+## Select a Frame
 
+![ui](frame-rotate.gif)
+
+Use the "Select" tool, to select 1 or more frames. You can select multiple frame by holding the shift-key.
+
+When multiple frames are selected, you can move and rotate then together.
 
 ## Z-index
 
