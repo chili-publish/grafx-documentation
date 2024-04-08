@@ -104,7 +104,11 @@ To add a new page, such as 'JavaScript' under 'Concepts', follow these steps:
 
 The current page order is based on perceived importance, which is subjective. If unsure, place the page where you deem a good fit. A maintainer will guide you if a different placement is necessary.
 
-#### Adding release notes (only for CHILI publish staff members)
+#### Adding release notes 
+
+!!! Warning
+	This repository is open for contribution, but as you will understand, releasenotes can only be pushed by CHILI publish staff members.
+	Pull requests from external sources will be denied.
 
 As the releasenotes use a blog-style structure, each entry has its own page.
 The pages can be found under docs/release-notes/releaseposts/[releasenote].md
