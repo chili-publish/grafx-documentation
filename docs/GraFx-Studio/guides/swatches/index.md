@@ -23,9 +23,35 @@ You can rename by clicking "Rename" in the "..." menu.
 
 ### Color picker
 
-Define the color. Choose your type (Hex or RGB)
+Define the color. Choose your type and set the values for the chose color space.
 
-![Image](swatch-4.png)
+#### Hex
+
+![screenshot](hex.png)
+
+The value is e hexadecimal representation of an RGB value.
+
+Ranging from 00 (black) to FF (white).
+
+[See how you can define your Hex color value](https://www.w3schools.com/colors/colors_hexadecimal.asp)
+
+#### RGB
+
+![screenshot](rgb.png)
+
+The 3 values represent a decimal value for each of the 3 RGB channels.
+
+[See how to calculate RGB color values](https://www.w3schools.com/colors/colors_rgb.asp)
+
+#### CMYK
+
+![screenshot](cmyk.png)
+
+Mostly used in print, but also available in CSS4, CMYK is a subtractive color system.
+
+A subtractive color mixing model predicts the resultant spectral power distribution of light filtered through overlaid partially absorbing materials on a reflecting or transparent surface.[^1]
+
+[^1]: Source: [Wikipedia](https://en.wikipedia.org/wiki/Subtractive_color#Process)
 
 ## Apply a swatch
 
