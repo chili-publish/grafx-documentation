@@ -7,10 +7,10 @@ You can assign these roles to all users in your subscription.
 
 Any user can have 1 or more roles at the same time.
 
-| Roles | End User | SA | EA | CA |
+| Roles | End User | SA | EA | CA[^1] |
 |:---:|:---:|:---:|:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅(1)|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅[^1]|
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ |
@@ -29,7 +29,7 @@ E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give
 
 End users, Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
-(1) Content Admins will be able to create Templates, but the output will be watermarked.
+[^1]: [Content Admin](/CHILI-GraFx/users/roles/#content-administrator) is a role introduced to support Legacy Customers. See [Content Admin](/CHILI-GraFx/users/roles/#content-administrator) for more details.
 
 !!! Info "Legend"
 	**Roles**
@@ -113,19 +113,23 @@ In the API, this is labeled as "EU". (End User)
 
 **Definition**: A content Administrator is a legacy role, available to users that have been converted from CHILI publisher Online.
 
+Impact on **GraFx Publisher**
+
 A content Administrator can create and use GraFx Publisher templates. There is no  limit to Content Administrators for converted CHILI publisher Online customers.
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
-Content Administrators will be able to create templates in GraFx Studio, but the output will be watermarked.
+Impact on **GraFx Studio**
 
+Content Administrators will be able to create Templates in GraFx Studio, but the output will be watermarked, if you are on a CHILI publisher Online contract.
+
+To be able to make/edit GraFx Studio Templates while on a CHILI GraFx contract, you need [Template Designer Seats](/CHILI-GraFx/users/roles/#template-designer).
 
 ## Template Designer
 
 A template Designer Seat can be assigned to a limited amount of people, depending on the amount of seats you subscribed to.
 
 See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
-
 
 ## User creation and invitation
 
