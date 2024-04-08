@@ -128,6 +128,23 @@ date: 2024-04-08
 # Topic of the release
 
 ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+Contents of your Update
+
+## New features
+
+- Awesome new feature 1
+- Awesome new feature 2
+
+## Improvements
+
+- Improvement 1
+- Improvement 2
+
+## Changes
+
+- Thing you need to know!
+
 ```
 
 The file starts with metadata holding
