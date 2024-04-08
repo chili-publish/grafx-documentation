@@ -104,6 +104,40 @@ To add a new page, such as 'JavaScript' under 'Concepts', follow these steps:
 
 The current page order is based on perceived importance, which is subjective. If unsure, place the page where you deem a good fit. A maintainer will guide you if a different placement is necessary.
 
+#### Adding release notes (only for CHILI publish staff members)
+
+As the releasenotes use a blog-style structure, each entry has its own page.
+The pages can be found under docs/release-notes/releaseposts/[releasenote].md
+
+Where each file has the naming convention: yyyyMMddxx.md
+- yyyy 4 digit year e.g. 2024
+- MM 2 digit month e.g. 04
+- dd 2 digit day e.g. 19 or 02
+- xx 2 digit number to allow multiple releasenotes on 1 day.
+
+This results in e.g. 2024040801.md
+
+**Contents of the file**
+
+``` markdown
+---
+draft: false
+date: 2024-04-08
+---
+
+# Topic of the release
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+```
+
+The file starts with metadata holding
+- draft status: true or false (true will not render in live guides)
+- date: The publication date of the release note, formatted as: yyyy-MM-dd
+
+The topic always starts with #
+
+Followed by the relevant icon for the Platform or Application
+
 #### Example: Removing a Page
 
 To remove a page, such as 'JavaScript' under 'Concepts', follow these steps:
