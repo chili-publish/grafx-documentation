@@ -1,5 +1,13 @@
 # Release notes
 
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) April 8, 2024 - CHILI GraFx
+
+### Improvement
+
+- To avoid confusion, the **All users** group will have a fixed name and description. This default user group contains **all the users available in a subscription**.
+
+![UI](https://github.com/chili-publish/grafx-documentation/assets/122599725/4df784af-3dfe-4ed7-9d59-960dcc1f9263)
+
 ## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) April 4, 2024 - CHILI GraFx
 
 ### Features
