@@ -1,6 +1,6 @@
 # Integrate CHILI GraFx apps
 
-To communicate with GraFx, please use these two APIs. You can learn more about the role of each API below.
+To communicate with CHILI GraFx, use these two APIs. You can learn more about the role of each API below.
 
 - [Platform API](https://api.chiligrafx.com/swagger/index.html)
 - [Environment API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html)
@@ -11,7 +11,7 @@ Client side
 
 
 ## Platform API
-The GraFx Platform API allows you to manage GraFx Platform resources.
+The CHILI GraFx Platform API allows you to manage CHILI GraFx Platform resources.
 
 Some example use cases are:
 

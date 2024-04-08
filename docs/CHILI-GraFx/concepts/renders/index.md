@@ -24,41 +24,64 @@ This average is used to size your allowance in your subscription.
 
 ### Animated Digital Output
 
-1 render is counted towards each second of output.
+Basic concept: 1 render is counted towards each (started) second of output.
+
+CHILI GraFx looks at the length of the animation. Not at the output framerate or whether or not only part of the clip or the whole clip is animated.
+
+!!! Note
+	**Some examples**
+	
+	- An animation with a duration of 0.1 seconds: 1 render
+	- An animation with a duration of 0.5 seconds: 1 render
+	- An animation with a duration of 1.5 seconds: 2 render
+	- An animation with a duration of 2 seconds: 2 renders
+	- An animation with a duration of 2,5 seconds: 3 renders
+	- An animation with a duration of 3 seconds: 3 renders
+
+Watermarked output does not count as a render.
 
 ### Static PDF output
 
 1 render is counted towards each PDF file.
 
+### Static PDF output with variable data (datasource)
+
 When variable output is used, this is the formula to count renders.
 
-The first 50 renders are counted individually, then each set of 50 is counted as 1 render.
+The first 50 renders are counted individually, then each subsequent set of 50 add 1 render.
 
 !!! Formula
 
-	V = Variable Data source size (e.g. 1000 records)
+	**V** = Variable Data source size (e.g. 1000 records)
 
-	Amount of Renders = 50 + (V-50)/50
+	**Renders** = 50 + (V-50)/50
 
-	e.g. 50 + (1000-50)/50 = 50 + 19 = 69
+	In this case: 50 + (1000-50)/50 = 50 + 19 = 69
 
 	The first 50 renders count as 50, then every 50 renders are counted as 1.
 
 ## Fair use policy
 
-In your subscription, you're entitle to a render quota.
+In your subscription, you're entitled to a render quota.
 
-Your dashboard will show the actual status of renders. (with a delay of ±1 day).
+Your dashboard will show the actual status of renders for the full subsciption (all environments, with a delay of ±1 day).
 
-![Renders](renders.png)
+![screenshot-full](renders01.png)
 
 The light blue line shows the "6 month rolling average".
 
+---
+
+When you select an environment, you'll see the details.
+
+![screenshot-full](renders02.png)
+
+
 Render quota are not a hard limit per month. If you generate more output than the render quota, we won’t block or watermark the output.
 
-You are allowed to go over the monthly limit.
+The system will not stop working at the limit.
 
-When the 6 month rolling average exceeds the render quota, it's time to add extra render packs to increase your render quota to at least the 6 month average.
+When the 6 month rolling average exceeds the render quota, you will be invoiced an extra render pack to increase your render quota to at least the 6 month average.
 
 !!! Average
 	6 month average calculation:
