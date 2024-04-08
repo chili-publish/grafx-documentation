@@ -127,7 +127,7 @@ date: 2024-04-08
 
 # Topic of the release
 
-![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg)
+![rn_icon](/assets/icon-CHILI-GraFx.svg)
 ```
 
 The file starts with metadata holding
@@ -137,6 +137,15 @@ The file starts with metadata holding
 The topic always starts with #
 
 Followed by the relevant icon for the Platform or Application
+
+- Platform CHILI GraFx /assets/icon-CHILI-GraFx.svg
+- Application GraFx Data /assets/icon-GraFx-Data.svg
+- Application GraFx Fonts /assets/icon-GraFx-Fonts.svg
+- Application GraFx Genie /assets/icon-Grafx-Genie.svg
+- Application GraFx Media /assets/icon-GraFx-Media.svg
+- Application GraFx Publisher /assets/icon-GraFx-Publisher.svg
+- Application GraFx Studio /assets/icon-GraFx-Studio.svg
+- Application GraFx Stylekits /assets/icon-GraFx-Stylekits.svg
 
 #### Example: Removing a Page
 
