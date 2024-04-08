@@ -309,7 +309,7 @@ nav:
                 - '01 Overview':                'GraFx-Developers/grafx-studio/integration-overview/01-overview/index.md'
                 - '02 Integration Levels':      'GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md'
                 - '03 Common Integration Workflows': 'GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md'
-                - '04 Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-authentication/index.md'
+                - '04 Managing Integrations and Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md'
             - 'Editor Engine' :
                 - 'Studio SDK Quickstart':
                     - '01 Overview':                'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md'
@@ -327,6 +327,7 @@ nav:
                 - 'Integrate Studio UI':            'GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/index.md'
             - 'Environment API':
                 - 'Environment API Quickstart':
+                    - '01 Overview': 'GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/01-overview/index.md'
                     - '02 Managing Integrations':   'GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/02-managing-integrations/index.md'
                     - '03 Generating A Token':      'GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/03-generating-a-token/index.md'
                     - '04 Making API Calls':        'GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/04-making-api-calls/index.md'
