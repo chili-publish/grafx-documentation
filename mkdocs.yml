@@ -39,7 +39,8 @@ plugins:
         archive_pagination_per_page: 25
         archive_toc: false
         authors: false
-        draft: true
+        draft: false
+        draft_on_serve: true
   - rss:
         use_git: false
         match_path: release-notes/releaseposts/.*
