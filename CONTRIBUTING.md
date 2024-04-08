@@ -138,14 +138,16 @@ The topic always starts with #
 
 Followed by the relevant icon for the Platform or Application
 
-- Platform CHILI GraFx /assets/icon-CHILI-GraFx.svg
-- Application GraFx Data /assets/icon-GraFx-Data.svg
-- Application GraFx Fonts /assets/icon-GraFx-Fonts.svg
-- Application GraFx Genie /assets/icon-Grafx-Genie.svg
-- Application GraFx Media /assets/icon-GraFx-Media.svg
-- Application GraFx Publisher /assets/icon-GraFx-Publisher.svg
-- Application GraFx Studio /assets/icon-GraFx-Studio.svg
-- Application GraFx Stylekits /assets/icon-GraFx-Stylekits.svg
+| Application | Asset URL |
+| ---- | ---- |
+| CHILI GraFx | /assets/icon-CHILI-GraFx.svg|
+| GraFx Data | /assets/icon-GraFx-Data.svg|
+| GraFx Fonts | /assets/icon-GraFx-Fonts.svg|
+| GraFx Genie | /assets/icon-Grafx-Genie.svg|
+| GraFx Media | /assets/icon-GraFx-Media.svg|
+| GraFx Publisher | /assets/icon-GraFx-Publisher.svg|
+| GraFx Studio | /assets/icon-GraFx-Studio.svg|
+| GraFx Stylekits | /assets/icon-GraFx-Stylekits.svg|
 
 #### Example: Removing a Page
 
