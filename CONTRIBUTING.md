@@ -106,12 +106,13 @@ The current page order is based on perceived importance, which is subjective. If
 
 #### Adding release notes 
 
-!!! Warning
-	This repository is open for contribution, but as you will understand, releasenotes can only be pushed by CHILI publish staff members.
-	Pull requests from external sources will be denied.
+This repository is open for contribution, but as you will understand, releasenotes can only be pushed by CHILI publish staff members.
+Pull requests from external sources will be denied.
 
-As the releasenotes use a blog-style structure, each entry has its own page.
+The releasenotes uses a blog-style structure: each entry has its own page.
 The pages can be found under docs/release-notes/releaseposts/[releasenote].md
+
+![screensho](/docs/release-notes/releasenotesassets/releaseposts.png)
 
 Where each file has the naming convention: yyyyMMddxx.md
 - yyyy 4 digit year e.g. 2024
