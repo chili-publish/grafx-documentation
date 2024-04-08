@@ -44,3 +44,13 @@ Unless if the person still has access through [Individual Access](/CHILI-GraFx/g
 ## Manage User Group Membership
 
 See [Manage Group Membership](/CHILI-GraFx/guides/manage-group-membership/)
+
+## Special group: [All users]
+
+This group is available by default, and cannot be renamed.
+
+The group contains all users from the current subscription.
+
+This group can be used, to provide specific access for all users (current and new).
+
+![ui-full](allusers.png)
