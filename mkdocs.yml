@@ -200,6 +200,7 @@ nav:
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
+            - 'Layout Intent':                  'GraFx-Studio/concepts/layout-intent/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
@@ -210,6 +211,7 @@ nav:
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
+            - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
