@@ -1,4 +1,4 @@
-# Section 5: Working with Meida Connector
+# Section 5: Working with the Media Connector
 
 ### Actually loading an image frame
 

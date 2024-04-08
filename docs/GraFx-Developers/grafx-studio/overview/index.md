@@ -22,8 +22,8 @@ The Editor Engine has a minimal UI for interacting with frames and frame content
 
 #### Tutorials
 
-- [Studio SDK Quickstart](/GraFx-Developers/grafx-studio/studio-sdk-quickstart/01-overview/) - a quick ~15 minute guide that will teach you everything you need to know
-- [Integration Project - Building a Custom UI](/GraFx-Developers/grafx-studio/integration-project-building-a-custom-ui/project-overview/) - a step-by-step bootcamp that will guide you in building a complete UI
+- [Studio SDK Quickstart](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/) - a quick ~15 minute guide that will teach you everything you need to know
+- [Integration Project - Building a Custom UI](/GraFx-Developers/grafx-studio/editor-engine/integration-project-building-a-custom-ui/project-overview/) - a step-by-step bootcamp that will guide you in building a complete UI
 
 #### References
 
@@ -43,8 +43,8 @@ CHILI GraFx provides a REST-like API that is used to managed resources on the pl
 
 #### Tutorials
 
-- [Environment API Quickstart](/GraFx-Developers/grafx-studio/environment-api-quickstart/02-managing-integrations/)
-- [Integration Project - Building a Template Store](/GraFx-Developers/grafx-studio/integration-project-building-a-template-store/project-overview/)
+- [Environment API Quickstart](/GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/02-managing-integrations/)
+- [Integration Project - Building a Template Store](/GraFx-Developers/environment-api/grafx-studio/integration-project-building-a-template-store/project-overview/)
 
 #### References
 

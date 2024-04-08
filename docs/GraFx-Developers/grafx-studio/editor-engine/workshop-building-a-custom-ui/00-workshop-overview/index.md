@@ -1,5 +1,5 @@
-# Project Overview
- The goal of this project course is to provide all the information needed to get a custom integration of GraFx studio up and running. This course will provide both code samples you can reference for every step of the process as well as discussion in each section to provide insight on how we will build each part of our integration.
+# Workshop Overview
+ The goal of this workshop is to provide all the information needed to get a custom integration of GraFx studio up and running. This course will provide both code samples you can reference for every step of the process as well as discussion in each section to provide insight on how we will build each part of our integration.
 
 Please feel free to skip ahead to any section of this course if you are looking to reference a specific item.
 
