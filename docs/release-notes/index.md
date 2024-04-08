@@ -1,6 +1,6 @@
 # Release notes
 
-## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Apr 03, 2024 - GraFx Studio
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) Apr 32, 2024 - GraFx Studio
 
 ### Features
 
@@ -50,6 +50,33 @@
 - Fixed issue when renaming a template with invalid input
 - Fixed tooltip issue on the zoom controls
 - Fixed issue with the shape list dialog not automatically closing after one is selected
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) April 8, 2024 - CHILI GraFx
+
+### Improvement
+
+- To avoid confusion, the **All users** group will have a fixed name and description. This default user group contains **all the users available in a subscription**.
+
+![UI](https://github.com/chili-publish/grafx-documentation/assets/122599725/4df784af-3dfe-4ed7-9d59-960dcc1f9263)
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-04.svg) April 4, 2024 - CHILI GraFx
+
+### Features
+
+- A Template Designer Seat empowers users to craft production-ready templates in GraFx Studio. This ensures that only those with a Template Designer Seat have the ability to create and refine templates, highlighting the specialized role and expertise required for template design within the platform.
+- Renders from GraFx Studio are reported on the analytics page of CHILI GraFx
+- Output from GraFx Studio done by clients that are not on a CHILI GraFx contract is watermarked
+- Personalized in-app messaging to users on CHILI GraFx
+
+![2024-04-04_10-37-09](https://github.com/chili-publish/grafx-documentation/assets/122599725/254c1937-7098-4277-a06b-676ca5bf273b)
+
+## ![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg) April 4, 2024 - GraFx Studio
+
+### Improvements
+
+- Sort and search for GraFx Studio templates added
+- List and grid view available for GraFx Studio templates
+- When user double clicks on a template only 1 project is created
 
 ## ![rn_icon](/assets/CHILI_LOGOS_OK-21.svg) Mar 28, 2024 - GraFx Publisher
 
