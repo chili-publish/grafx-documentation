@@ -10,7 +10,7 @@ Any user can have 1 or more roles at the same time.
 | Roles | End User | SA | EA | CA |
 |:---:|:---:|:---:|:---:|:---:|
 |![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅(1)|
+|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅[^1]|
 |![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ |
 |![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ |
@@ -29,7 +29,8 @@ E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give
 
 End users, Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
-(1) Content Admins will be able to create Templates, but the output will be watermarked.
+[^1]: Content Admins will be able to create Templates, but the output will be watermarked, if you are on a CHILI publisher Online contract.  
+To be able to edit GraFx Studio Template in a CHILI GraFx contract, you need Template Designer Seats.
 
 !!! Info "Legend"
 	**Roles**
@@ -117,8 +118,10 @@ A content Administrator can create and use GraFx Publisher templates. There is n
 
 This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
 
-Content Administrators will be able to create templates in GraFx Studio, but the output will be watermarked.
+Impact on **GraFx Studio**
 
+Content Admins will be able to create Templates in GraFx Studio, but the output will be watermarked, if you are on a CHILI publisher Online contract.  
+To be able to make/edit GraFx Studio Templates while on a CHILI GraFx contract, you need Template Designer Seats.
 
 ## Template Designer
 
