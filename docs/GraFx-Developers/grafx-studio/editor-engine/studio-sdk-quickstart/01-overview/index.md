@@ -17,4 +17,4 @@ However, for production purposes, we currently suggest using [node](https://node
 However, for this guide, you need only two things:
 
 - `bun` a JavaScript engine which you can install [here](https://bun.sh/docs/installation). Bun comes with easy API for serving files over HTTP and a bundler built in.
-- An integration token, which you need to generate here: [Generating a Toke????]()
+- An integration token, which you need to generate here: [integration](/GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/)

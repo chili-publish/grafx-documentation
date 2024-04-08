@@ -22,7 +22,7 @@ Integrations play a crucial role by associating all user Projects under their cr
 
 To create an integration, navigate to your preferred environment setup and ensure you assign all necessary permissions.
 
-Learn how to create an integration by visiting the [integration guide](https://docs.chiligrafx.com/CHILI-GraFx/guides/integrations/).
+Learn how to create an integration by visiting the [integration guide](/GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/).
 
 ## 2. Configuration with Environment Variables
 

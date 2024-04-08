@@ -42,7 +42,7 @@ Up to this point, we have utilized a token with full permissions, which we will 
 Creating reating a read-only token involves three steps:
 
 ### Step 1: Creating an Integration
-Follow the instructions in the [integration guide](https://docs.chiligrafx.com/CHILI-GraFx/guides/integrations/) to create an integration.
+Follow the instructions in the [integration guide](/GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/) to create an integration.
 
 Make sure to set limited permissions:
 
