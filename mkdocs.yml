@@ -14,6 +14,7 @@ theme:
     - content.tabs.link
     - navigation.footer
     - content.footnote.tooltips
+    - content.code.copy
   font:
     text: Ubuntu
   palette:
@@ -336,6 +337,7 @@ nav:
     - 'Release notes':
         - 'Release notes':                      'release-notes/index.md'
         - 'Experimental':                       'release-notes/experimental/index.md'
+        - 'RSS feed':                           'release-notes/rss/index.md'
 
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
