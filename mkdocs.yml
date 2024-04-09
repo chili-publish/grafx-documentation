@@ -14,6 +14,7 @@ theme:
     - content.tabs.link
     - navigation.footer
     - content.footnote.tooltips
+    - content.code.copy
   font:
     text: Ubuntu
   palette:
@@ -25,6 +26,7 @@ theme:
         danger: material/fire-alert
 
 plugins:
+  - awesome-pages
   - blog:
         blog_dir: "release-notes"
         blog_toc: false
@@ -35,8 +37,6 @@ plugins:
         pagination: true
         pagination_per_page: 10
         categories: false
-        archive_pagination: true
-        archive_pagination_per_page: 25
         archive_toc: false
         authors: false
         draft: false
@@ -62,7 +62,6 @@ plugins:
         'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
         'releasenotes/index.md': 'release-notes/index.md'
   - search
-  - awesome-pages
   - table-reader
 #  - git-revision-date-localized:
 #      enable_creation_date: true
@@ -82,8 +81,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
@@ -339,6 +338,7 @@ nav:
     - 'Release notes':
         - 'Release notes':                      'release-notes/index.md'
         - 'Experimental':                       'release-notes/experimental/index.md'
+        - 'RSS feed':                           'release-notes/rss/index.md'
 
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/index.md'
