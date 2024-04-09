@@ -348,3 +348,9 @@ nav:
             - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
         - 'Environment API reference':
             - 'Swagger' :                       'https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html'
+        - 'Connectors':
+            - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
+            - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
+            - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
+            - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'
+            
