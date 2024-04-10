@@ -192,7 +192,7 @@ nav:
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Manage Collections' :            'CHILI-GraFx/guides/manage-collections/index.md'
             - 'Setup FSSO' :                    'CHILI-GraFx/guides/setup-fsso/index.md'
-        - 'Integrate CHILI GraFx':              'GraFx-Developers/index.md'
+        - 'Integrate CHILI GraFx':              'GraFx-Developers/overview/index.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'
             - 'User Account Migration' :        'CHILI-GraFx/guides/onboarding/migration/index.md'
