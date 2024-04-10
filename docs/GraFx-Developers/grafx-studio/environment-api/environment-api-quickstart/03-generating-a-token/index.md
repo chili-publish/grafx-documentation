@@ -4,13 +4,13 @@ To utilize the Environment API, you need an access token. Here's how to obtain o
 
 ## 1. Create an Integration
 
-Before you can generate a token, you must create an Integration. Check out our guide on [Manage Integrations](/CHILI-GraFx/guides/integrations/) to get started. 
+Before you can generate a token, you must create an Integration. Check out our guide on [Manage Integrations](/GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/02-managing-integrations/) to get started. 
 
 ## 2. Find Client ID and Secret
 
 After setting up an Integration with the necessary permissions, navigate to the General tab. Here, you'll find your Client ID and Client Secret.
 
-![img](img)
+![screenshot](integration5.png)	
 
 ## 3. Request a Token
 Use the Client ID and Client Secret to request a token. Make a POST request to:

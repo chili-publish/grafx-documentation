@@ -84,7 +84,11 @@ Create a `chili.js` file:
     ni chili.js
     ```
 
-We generate tokens using the authentication endpoint "https://integration-login.chiligrafx.com/oauth/token`. This endpoint takes our client ID and secret.
+We generate tokens using the authentication endpoint:
+``` html
+	https://integration-login.chiligrafx.com/oauth/token.
+```
+This endpoint takes our client ID and secret.
 
 Insert the following function into `chili.js` to request tokens from the authentication endpoint:
 
