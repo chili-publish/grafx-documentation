@@ -10,6 +10,6 @@ This reduces repetitive setup for diverse output needs, streamlining workflow an
 
 ## API
 
-Look for the [REST API](/GraFx-Developers/#environment-api) calls in your [Environment API](/GraFx-Developers/#environment-api) to enable integrators to automate the making and managing of settings.
+Look for the REST API calls in your [Environment API](/GraFx-Developers/environment-api/reference/) to enable integrators to automate the making and managing of settings.
 
 /api/v1/environment/{environment}/output/settings/xxx
