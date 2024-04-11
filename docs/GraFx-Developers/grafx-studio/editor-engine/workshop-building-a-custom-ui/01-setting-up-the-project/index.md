@@ -99,7 +99,10 @@ The body of our `index.html` file will now look like this
 
 _Note: We must state that `type="module"` because we will be using the JavaScript module syntax which is a way to break up JavaScript code into small re-usable pieces and import them in to other "modules" for use. In particular You can find our more at the Mozzila documentation page on [JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)_
 
-If your server is still running from the previous lesson you can simply navigate to http://localhost:1234
+If your server is still running from the previous lesson you can simply navigate to
+``` html
+	http://localhost:1234
+```
 
 If the server is not running, simply start it up with
 ``` sh
