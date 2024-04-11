@@ -251,6 +251,7 @@ nav:
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
             - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'

@@ -49,11 +49,6 @@ E.g. with alternate layouts, you can organize your layouts.
 
 ### 8 Hamburger menu
 
-This lets you save your project, and export your smart template to the following formats:
+This is the main menu, with quick access to functions you need for your Smart Template.
 
-- MP4
-- GIF
-- PNG
-- JPG
-- PDF (experimental)
-
+[See Hamburger Menu](/GraFx-Studio/overview/hamburger-menu/)
