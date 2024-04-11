@@ -69,6 +69,10 @@ See [generic settings](#generic-settings-for-all-file-types)
 Can be used to scale the output if your target channel requires a bigger or smaller image size.
 Higher-resolution images will be used (if available in your media) to produce higher-resolution output.
 
+### Quality
+
+Can be used to set the quality of the output. 100% will produce the highest quality but also the largest file size. 1% will produce the lowest quality but smallest file size.
+
 ## PNG output settings
 
 ![screenshot-full](os09.png)
@@ -86,15 +90,10 @@ Higher-resolution images will be used (if available in your media) to produce hi
 
 Can be used to scale the output if your target channel requires a bigger or smaller image size.
 Higher-resolution images will be used (if available in your media) to produce higher-resolution output.
+
 ### Frame rate
 
-For animations, defines how much frames will be played per second.
-
-### File Size limit
-
-If you choose to set the file size limit, the Quality will fade. Since you'll leave it to our engine, to find the best quality just below the file size you set.
-
-Especially with (animated) gif files, this can mean the amount of used colors will lower to reach the desired file size.
+For animations, defines how many frames will be played per second.
 
 ## MP4 output settings
 
