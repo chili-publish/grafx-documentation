@@ -4,17 +4,21 @@ This is the main menu, with quick access to functions you need for your Smart Te
 
 ![screenshot](hamburger1.png)
 
-#### File
+## File
 
 Save and rename your Smart Template.
 
 ![screenshot](file.png)
 
-#### Edit
+## Edit
+
+All the usual undo, redo, cut, copy, paste, duplicate, and delete functions.
 
 ![screenshot](edit.png)
 
-#### Frame
+## Frame
+
+Move the frame up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
 
 ![screenshot](frame.png)
 
@@ -23,16 +27,17 @@ Available when a frame is selected, and if relevant.
 E.g. When only 1 frame is available, "Bring to front/back" will be grayed out.  
 When multiple frames are available, but the frame is the frontmost, "Bring to font" will be grayed out.
 
-#### View
+
+## View
+
+Toggle View mode (enables or disables frame borders and the bleed box).
+
+Zoom the canvas in or out.
 
 ![screenshot](view.png)
 
-Preview mode toggles the view mode.
+## Export
 
-Zoom allows you to get a closer look at your Smart Template to tweak the tiniest detail.
+Shows the export dialog, with all [output settings](/GraFx-Studio/concepts/output-settings/) you have defined.
 
-#### Export
-
-In combination with **Output Settings** the Export menu will show a dialog providing all the defined Output Settings.
-
-![screenshot](exportdialog.png)
+![screenshot](export.png)

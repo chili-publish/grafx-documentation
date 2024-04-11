@@ -239,6 +239,7 @@ nav:
             - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
             - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
+            - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
@@ -267,6 +268,7 @@ nav:
             - 'Example: Multiple frame hide/show': 'GraFx-Studio/guides/actions/example-multipleframes/index.md'
             - 'Example: Currency change':       'GraFx-Studio/guides/actions/example-currency/index.md'
         - 'How to: Output':
+            - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
