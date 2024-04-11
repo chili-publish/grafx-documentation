@@ -74,7 +74,6 @@ Hopefully you will see a message like this
 Then you can visit our newly created website by going to
 http://localhost:1234
 
-![The hello world page on our website](../assets/1-Setting-up-Project/hello-world.png)
 
 ### Creating our JavaScript file
 Our next step is to to create a file to hold the JavaScript code for our integration. This JavaScript file will import our Editor-SDK so that we can use the nice features the SDK provides us within our own JavaScript logic.
