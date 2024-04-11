@@ -10,14 +10,23 @@
 
     ---
 
-    **March 2024**: Management for Federated User Groups ==GraFx Publisher==.
+    **April 2024**: GraFx Studio goes ==multichannel==.
 
-    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+    [:octicons-arrow-right-24: Show all release notes](/release-notes/2024/04/11/grafx-studio-goes-multichannel/)
+    
+    **April 2024**: Extensive GraFx Studio integration guide.
+
+    [:octicons-arrow-right-24: Integrate GraFx Studio](/GraFx-Developers/grafx-studio/overview/)
 
 
-    **March 2024**: New plugins for ==GraFx Publisher==.
+    **April 2024**: Guide to build your own DAM connector.
 
-    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+    [:octicons-arrow-right-24: My own DAM connector](/GraFx-Developers/connectors/build-media-connector/)
+
+
+    **April 2024**: Add release notes to your ==RSS== reader.
+
+    [:octicons-arrow-right-24: RSS?](/release-notes/rss/)
 
 </div>
 
