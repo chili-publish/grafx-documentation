@@ -7,7 +7,11 @@ Controllers are the primary method of interfacing with GraFx Studio, the Studio 
 
 Currently there are 19 controllers in the SDK, but you see the list of them on the Studio SDK documentation [here](https://chili-publish.github.io/studio-sdk/#controllers)
 
-Controllers follow a simple naming convention so normally you can determine where the functions to do something might be. This is incredibly helpful when exploring the SDK in our browsers ["Developer Console"](https://balsamiq.com/support/faqs/browserconsole/) when we are on our integrations page http://localhost:1234
+Controllers follow a simple naming convention so normally you can determine where the functions to do something might be. This is incredibly helpful when exploring the SDK in our browsers ["Developer Console"](https://balsamiq.com/support/faqs/browserconsole/) when we are on our integrations page 
+
+``` html
+	http://localhost:1234
+```
 
 ![screenshot](controllers-console.png)
 
