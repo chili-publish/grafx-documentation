@@ -3,20 +3,20 @@
 Intents enhance the functionality of layouts. Each layout now includes an "Intent" property with three possible values: 
 
 - Print 
-- Digital Static
-- Digital Animated
+- Digital static
+- Digital animated
 
 This property provides contextual guidance for both Template Designers and end users.
 
 ![screenshot](intent.png)
 
-## Inheritance Model
+## Inheritance model
 
 Intents are part of the [Inheritance model](/GraFx-Studio/concepts/layouts/#inheritance).
 
-An Intent defined for a master layout automatically applies to all newly created sublayouts. If needed, Intent can be individually adjusted for each sublayout, overriding the inherited default.
+An Intent defined for a master layout automatically applies to all sub-layouts. If needed, Intent can be individually adjusted for each sub-layout, overriding the inherited default.
 
-Imagine a Layout setup: an Ad master (digital static), and 1 sublayout intented for Print.
+Imagine a Layout setup: an Ad Master layout (Digital static), and a Flyer sub-layout intended for Print.
 
 ![screenshot](layouts.png)
 
@@ -27,16 +27,16 @@ The size did not color, since it's converted from Pixels, and will reflect the s
 
 ## Print
 
-- Units will default to Millimeters.
+- Units will default to Millimeters
 - [Bleed](/GraFx-Studio/concepts/bleed/) properties are visible
 - Animation properties are hidden
 - Animation timeline is hidden
 
 ![screenshot](print.png)
 
-## Digital Static
+## Digital static
 
-- Units will default to Pixels.
+- Units will default to Pixels
 - [Bleed](/GraFx-Studio/concepts/bleed/) properties are hidden
 - Animation properties are hidden
 - Animation timeline is hidden
@@ -46,9 +46,9 @@ The size did not color, since it's converted from Pixels, and will reflect the s
 ![screenshot](noanimation.png)
 
 
-## Digital Animated
+## Digital animated
 
-- Units will default to Pixels.
+- Units will default to Pixels
 - [Bleed](/GraFx-Studio/concepts/bleed/) properties are hidden
 - Animation properties are visible
 - Animation timeline is visible
