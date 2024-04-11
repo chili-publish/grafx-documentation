@@ -161,7 +161,10 @@ user@debian:~/connector1$ npx connector-cli debug
 
 Now open your webbrowser, and go to the IP of the machine (local or remote) that you are running this script on.
 
-In the below example, we're working on a virtual machine on ip [192.168.3.43:3300](http://192.168.3.43:3300/?type=MedieConnector).
+In the below example, we're working on a virtual machine on ip
+``` html
+ http://192.168.3.43:3300/?type=MedieConnector
+```
 
 !!! tip
 	Don't forget to add '/?type=MediaConnector' to the url

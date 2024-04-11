@@ -44,19 +44,19 @@ async function initEditor() {
 }
 ```
 
-When we create the `StudioSDK` we pass in a [ConfigType](https://chili-publish.github.io/studio-sdk/types/index.ConfigType.html) object. In our original implementation of the function we are only setting the `editorId` property which is the ID of an element where the Studio editor will appended to in the live site.
+When we create the `StudioSDK` we pass in a [ConfigType](https://chili-publish.github.io/studio-sdk/modules/types_ConfigurationTypes.html) object. In our original implementation of the function we are only setting the `editorId` property which is the ID of an element where the Studio editor will appended to in the live site.
 
-If you go an look at the documentation of [ConfigType](https://chili-publish.github.io/studio-sdk/types/index.ConfigType.html), you will find that the [ConfigType](https://chili-publish.github.io/studio-sdk/types/index.ConfigType.html) object allows a number of optional properties.
+If you go an look at the documentation of [ConfigType](https://chili-publish.github.io/studio-sdk/modules/types_ConfigurationTypes.html), you will find that the [ConfigType](https://chili-publish.github.io/studio-sdk/modules/types_ConfigurationTypes.html) object allows a number of optional properties.
 
 All the properties that start with "on" are properties that expect a function to be set, which the SDK will call when a specific event is fired.
 
-For example, on the [ConfigType](https://chili-publish.github.io/studio-sdk/types/index.ConfigType.html) object there is a property called `onDocumentLoaded`.
+For example, on the [ConfigType](https://chili-publish.github.io/studio-sdk/modules/types_ConfigurationTypes.html) object there is a property called `onDocumentLoaded`.
 
 The "on" lets us know this is a callback for an event. The "DocumentLoaded" is the event.
 
 Unfortunately at this moment there is not a comprehensive list of when each event is fired. However, the naming of the event should give you a good hint of when the even event is fired.
 
-Once we know the event property on the [ConfigType](https://chili-publish.github.io/studio-sdk/types/index.ConfigType.html) that we want to react to, we can assign and callback function.
+Once we know the event property on the [ConfigType](https://chili-publish.github.io/studio-sdk/modules/types_ConfigurationTypes.html) that we want to react to, we can assign and callback function.
 
 For example, if we want to have a callback function fired when the document is loaded we can add a function to the `onDocumentLoaded` property.
 
@@ -187,7 +187,8 @@ So the `onDocumentLoad` property expects a function of type:
 
 Meaning it expects a function with zero parameters and that returns `undefined`. In TypeScript, which is what the SDK was written in, `void` is the same as `undefined`.
 
-All of the callback event properties on an object of [ConfigType](https://chili-publish.github.io/studio-sdk/types/index.ConfigType.html) have a type signature which tells you what type of function the property expects to call when the event is fired.
+All of the callback event properties on an object of 
+[ConfigType](https://chili-publish.github.io/studio-sdk/modules/types_ConfigurationTypes.html) have a type signature which tells you what type of function the property expects to call when the event is fired.
 
 For example, the `onSelectedToolChanged` property expects a function of type:
 ```ts

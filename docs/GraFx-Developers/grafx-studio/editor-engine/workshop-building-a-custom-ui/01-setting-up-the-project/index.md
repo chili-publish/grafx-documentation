@@ -69,10 +69,12 @@ npx parcel src/index.html
 ```
 
 Hopefully you will see a message like this
-![A terminal window showing the web server has started](../assets/1-Setting-up-Project/server-started.png)
+![screenshot](server-started.png)
 
 Then you can visit our newly created website by going to
-http://localhost:1234
+``` html
+	http://localhost:1234
+```
 
 
 ### Creating our JavaScript file
@@ -88,7 +90,7 @@ import EditorSDK from "@chili-publish/studio-sdk";
 Next, we need to inform our index.html file about our fancy JavaScript to do this we will edit our index.html file and add a `<script>` tag.
 
 The body of our `index.html` file will now look like this
-```html
+``` html
 <body>
   <h1>Hello World</h1>
   <script type="module" src="index.js"></script>
@@ -100,7 +102,7 @@ _Note: We must state that `type="module"` because we will be using the JavaScrip
 If your server is still running from the previous lesson you can simply navigate to http://localhost:1234
 
 If the server is not running, simply start it up with
-```sh
+``` sh
 npx parcel src/index.html
 ```
 
@@ -108,7 +110,7 @@ Now the we should open "Developer Tools" in our browser (if you need help doing 
 
 I will be using Chrome for this example and so by opening the "Console" tab in my developers tools and reloading my integration page I can see that our "I'm alive!" console log is firing.
 
-![The integration website showing our console.log function working](../assets/1-Setting-up-Project/javascript-linked.png)
+![screenshot-full](javascript-linked.png)
 
 **Wahoo!** this means that our custom JavaScript code is now being called from our integration :D
 
