@@ -10,19 +10,19 @@ Save or rename your file.
 
 ## Edit
 
-All the usual undo, redo, cut, copy, paste, duplicate and delete function.
+All the usual undo, redo, cut, copy, paste, duplicate, and delete functions.
 
 ![screenshot](edit.png)
 
 ## Frame
 
-Move the frames up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
+Move the frame up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
 
 ![screenshot](frame.png)
 
 ## View
 
-Toggle View mode (enables or disables frame borders and the bleed box)
+Toggle View mode (enables or disables frame borders and the bleed box).
 
 Zoom the canvas in or out.
 
