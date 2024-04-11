@@ -23,7 +23,7 @@ You can rename by clicking "Rename" in the "..." menu.
 
 ### Color picker
 
-Define the color. Choose your type and set the values for the chose color space.
+Define the color. Choose your type and set the values for the chosen color space.
 
 #### Hex
 
