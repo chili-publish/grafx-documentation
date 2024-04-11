@@ -35,7 +35,7 @@ DIfferent than with paragraph styles, with character styles you need to select t
 
 In the properties panel on the right, select the character style from the dropdown list.
 
-![Image](cs-9.png)
+![Image](cs-7.png)
 
 Your selected text now has the character style applied.
 

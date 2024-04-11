@@ -1,10 +1,12 @@
 # The Hamburger Menu
 
-![screenshot](hamburger-menu.png)
+This is the main menu, with quick access to functions you need for your Smart Template.
+
+![screenshot](hamburger1.png)
 
 ## File
 
-Save or rename your file.
+Save and rename your Smart Template.
 
 ![screenshot](file.png)
 
@@ -19,6 +21,12 @@ All the usual undo, redo, cut, copy, paste, duplicate, and delete functions.
 Move the frame up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
 
 ![screenshot](frame.png)
+
+Available when a frame is selected, and if relevant.
+
+E.g. When only 1 frame is available, "Bring to front/back" will be grayed out.  
+When multiple frames are available, but the frame is the frontmost, "Bring to font" will be grayed out.
+
 
 ## View
 
