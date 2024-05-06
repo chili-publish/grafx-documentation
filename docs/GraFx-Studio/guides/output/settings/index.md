@@ -60,6 +60,8 @@ See [generic settings](#generic-settings-for-all-file-types)
 
 ![screenshot-full](os12.png)
 
+Next to the generic settings, you can set the "Bar width reduction"
+
 ## JPG output settings
 
 ![screenshot-full](os13.png)
