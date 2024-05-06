@@ -15,15 +15,34 @@
 
 ### Things to know
 
-When the value is shown, it is always placed below, not embedded
-
-Width of the narrow bar (X-dimension) = 0,01 in (0,254 mm)
-
-The frame width depends on the barcode value, left/right quiet zones, and magnification.  
+- When the value is shown, it is always placed below, not embedded
+- Width of the narrow bar (X-dimension) = 0,01 in (0,254 mm)
+- The frame width depends on the barcode value, left/right quiet zones, and magnification.    
 Default: depends on the default value + left/right quiet zones
-
-The frame height depends on the bar height, value visibility, top/bottom quiet zones, and magnification.  
+- The frame height depends on the bar height, value visibility, top/bottom quiet zones, and magnification.  
 Default: default bar height + text height
+
+## Code 93
+
+![screenshot](code93.png)
+
+### Settings
+
+| Setting      | Description | Default |
+| ----------- | ----------- | ----------- |
+| Bar height     | height of the bars | 15mm       |
+| Magnification  | | 100%        |
+| Show value   | Show barcode value in the frame| Yes |
+| Quiet zone   | This is the size of the whitespace around the barcode| left: 0,1 in (2,54 mm)<br/>right: 0,1 in (2,54 mm)<br/>top: 0<br/>bottom: 0 |
+
+### Things to know
+
+- When the value is shown, it is always placed below, not embedded
+- Width of the narrow bar (X-dimension) = 0,01 in (0,254 mm)
+- The frame width depends on the barcode value, left/right quiet zones, and magnification  
+(default: depends on the default value + left/right quiet zones)
+- The frame height depends on the bar height, value visibility, top/bottom quiet zones, and magnification  
+(default: default bar height + text height)
 
 ## QR Code
 
@@ -95,6 +114,29 @@ When turned on, the error correction setting is disabled and set to High
 - When the value is shown, it is always placed below, not embedded
 - Width of the narrow bar (X-dimension) = 0,01 in (0,254 mm)
 - The frame width depends on the barcode value, left/right quiet zones, and magnification
+(default: depends on the default value + left/right quiet zones)
+- The frame height depends on the bar height, value visibility, top/bottom quiet zones, and magnification  
+(default: default bar height + text height)
+
+## Code GS1-128
+
+![screenshot](gs1-128.png)
+
+### Settings
+
+| Setting      | Description | Default |
+| ----------- | ----------- | ----------- |
+| Character set | 128A, 128B, 128C | 128A |
+| Bar height | Height of the bars | 15 mm |
+| Magnification  |  Frame scaling| 100% |
+| Show value  | Also show barcode value in the frame | Yes |
+| Quiet zone   | This is the size of the whitespace around the barcode| left: 0,1 in (2,54 mm)<br/>right: 0,1 in (2,54 mm)<br/>top: 0<br/>bottom: 0 |
+
+### Things to know
+
+- When the value is shown, it is always placed below, not embedded
+- Width of the narrow bar (X-dimension) = 0,01 in (0,254 mm)
+- The frame width depends on the barcode value, left/right quiet zones, and magnification  
 (default: depends on the default value + left/right quiet zones)
 - The frame height depends on the bar height, value visibility, top/bottom quiet zones, and magnification  
 (default: default bar height + text height)
