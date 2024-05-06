@@ -254,9 +254,9 @@ nav:
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
             - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
             - 'Barcodes':                       
-               - 'Available':                   'GraFx-Studio/guides/barcodes/available/index.md'
+               - 'Overview':                    'GraFx-Studio/guides/barcodes/overview/index.md'
                - 'Add a barcode':               'GraFx-Studio/guides/barcodes/add/index.md'
-               - 'Overview':                     'GraFx-Studio/guides/barcodes/overview/index.md'
+               - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
             - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'

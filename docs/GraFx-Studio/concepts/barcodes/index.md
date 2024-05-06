@@ -92,3 +92,7 @@ The reduction width depends on the printer, so it’s configured in the PDF outp
 - The default is 0 mm
 
 The bar width of all barcodes that are placed in the PDF is adjusted, based on this setting.
+
+## How to?
+
+See [how to add](/GraFx-Studio/guides/barcodes/add/) for a guide how to add a barcode to your template.
