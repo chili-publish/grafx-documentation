@@ -14,18 +14,16 @@ Barcodes can hold static values and have variables linked to them.
 
 Barcodes are created and configured in GraFx Studio (different than in GraFx Publisher).
 
-- Click a barcode from the Barcode menu
+- Click a barcode from the Barcode library
 - Configure using the properties panel
 
 ![ui](barcodes1.gif)
 
 ## Barcode-specific settings
 
-Depending on the type, different settings are enabled or disabled. 
+Depending on the specification and characteristics of the barcode, different settings are available.
 
-The definition of the barcode defines what settings are enabled.
-
-## Inheritance
+## Layout Inheritance
 
 The barcode type and settings are not inherited. It is the content of the frame. It is persistent across all layouts, similar to image or text.
 
@@ -47,7 +45,7 @@ The Quiet zone properties are decimal numbers in the unit of the layout
 
 ## Magnification
 
-The Magnification property is an integer (not deciman) number that specifies the scaling of the frame, in horizontal and vertical directions
+The Magnification property is an integer (not decimal) number that specifies the scaling of the frame, in horizontal and vertical directions
 
 - 100% means no scaling is applied
 - Min: 10%, Max: 1000%
@@ -56,7 +54,7 @@ The Magnification property is an integer (not deciman) number that specifies the
 
 ## Font
 
-The default Arial Regular font is used for the barcode value inside the frame (As mentioned on the EAN/UPC fact sheets as one of the recommended typefaces)
+The default Arial Regular font is used for the barcode value inside the frame, it is one of the recommended typefaces for EAN/UPC.
 
 - The glyph placement uses a monospaced layout
 - The font size is calculated so that the font height is 2,75 mm at 100% magnification (this is an EAN/UPC Symbol Reference recommendation, but we use it for all barcode types)
@@ -80,9 +78,10 @@ If the value is invalid, an error message is shown next to the text input field,
 
 ## Bar Width Reduction
 
-Bar Width Reduction (or BWR) is adjusting the barcode bar thickness to compensate for ink spread when printing. More info: [Bar Width Reduction in Barcode](https://boxshot.com/barcode/tutorials/bar-width-reduction/)
 
-The reduction width depends on the printer, so it’s configured in the PDF output settings and not in the barcode settings (same as with GraFx Publisher):
+Bar Width Reduction (BWR) is used in barcode printing to compensate for ink spread or "dot gain." It involves reducing the barcode bars' thickness so that after printing and ink spreading, they remain scannable. The actual adjustment amount depends on various factors like ink, paper, and printer conditions. To get the right value, print a sample, measure the bar width, and compare it to the original file. The difference helps adjust the bar width to compensate for the printing process.
+
+The reduction width depends on the printer, so it’s configured in the [PDF output settings](/GraFx-Studio/guides/output/settings/) and not in the barcode settings:
 
 - The “Bar width reduction” setting is added to the output settings for the PDF output format
 - It’s a decimal number and can be positive or negative

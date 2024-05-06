@@ -8,8 +8,8 @@
 
 | Setting      | Description | Default |
 | ----------- | ----------- | ----------- |
-| Bar height     | | 15mm       |
-| Magnification  | | 100%        |
+| Bar height     | Height of the bars | 15mm       |
+| Magnification  | Frame scaling | 100%        |
 | Show value   | Show barcode value in the frame| Yes |
 | Quiet zone   | This is the size of the whitespace around the barcode| left: 0,1 in (2,54 mm)<br/>right: 0,1 in (2,54 mm)<br/>top: 0<br/>bottom: 0 |
 
@@ -30,7 +30,7 @@ Default: default bar height + text height
 
 | Setting      | Description | Default |
 | ----------- | ----------- | ----------- |
-| Bar height     | height of the bars | 15mm       |
+| Bar height     | Height of the bars | 15mm       |
 | Magnification  | | 100%        |
 | Show value   | Show barcode value in the frame| Yes |
 | Quiet zone   | This is the size of the whitespace around the barcode| left: 0,1 in (2,54 mm)<br/>right: 0,1 in (2,54 mm)<br/>top: 0<br/>bottom: 0 |
@@ -53,19 +53,10 @@ Default: default bar height + text height
 | Setting      | Description | Default |
 | ----------- | ----------- | ----------- |
 | Error correction | Low (L), Medium (M), Quartile (Q), High (H) | High (H)  |
-| Add center whitespace  | On / Off | Off |
 | Character set | → ISO 8859-1 / UTF-8 | ISO 8859-1 |
 | Quiet zone   | Size of the whitespace around the barcode| 0|
 
 ### Things to know
-
-**Add center whitespace**
-
-When "Add center whitespace" is turned on, GraFx Studio leaves a square whitespace at the center of the QR code where an image can be placed (this requires a separate image frame).
-
-The size of the square should be sufficiently small so that the QR code is still readable
-
-When turned on, the error correction setting is disabled and set to High
 
 **Extra**
 
