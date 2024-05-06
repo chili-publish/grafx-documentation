@@ -10,6 +10,13 @@ If you selected an image frame, you can also choose the fit and crop of the imag
 
 ![screenshot](size-properties.png)
 
+## Extended properties
+
+In some cases (e.g. Barcodes), extra properties can be found behind the "..." (three dots) menu.
+
+![screenshot](properties.gif)
+
+
 ## Animation properties
 
 By default, a frame is not animated. With these setting, you can set the behaviour of the intro, emphasis and outro of the animation.

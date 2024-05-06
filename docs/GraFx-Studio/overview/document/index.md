@@ -1,8 +1,8 @@
 # Document or Page
 
-Your document or page of the document. (3)
+Your document or page of the document.
 
-![appscreen](editor-labeled.png)
+![appscreen](editor-doc.png)
 
 When opening the canvas, the document is zoomed to fit. 
 
