@@ -62,6 +62,11 @@ img[alt=screenshot] {
 	min-width: 250px;
 }
 
+img[alt=screenshotsmall] {
+	width: 25%;
+	min-width: 80px;
+}
+
 img[alt=screenshot-fullwidth] {
 	max-height: 300px;
 }

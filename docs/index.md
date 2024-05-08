@@ -10,24 +10,26 @@
 
     ---
 
+    **May 2024**: GraFx Studio adds ==barcodes==.
+    
+    ![screenshotsmall](/release-notes/releasenotesassets/barcodedocs.png)
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/06/grafx-studio-adds-support-for-qr-and-barcodes/)
+
+
+    **May 2024**: CHILI GraFx platform updates.
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/02/chili-grafx-platform-updates/)
+
+
     **April 2024**: GraFx Studio goes ==multichannel==.
 
-    [:octicons-arrow-right-24: Show all release notes](/release-notes/2024/04/11/grafx-studio-goes-multichannel/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/04/11/grafx-studio-goes-multichannel/)
     
-    **April 2024**: Extensive GraFx Studio integration guide.
+    **See all release notes**
 
-    [:octicons-arrow-right-24: Integrate GraFx Studio](/GraFx-Developers/grafx-studio/overview/)
-
-
-    **April 2024**: Guide to build your own DAM connector.
-
-    [:octicons-arrow-right-24: My own DAM connector](/GraFx-Developers/connectors/build-media-connector/)
-
-
-    **April 2024**: Add release notes to your ==RSS== reader.
-
-    [:octicons-arrow-right-24: RSS?](/release-notes/rss/)
-
+    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+    
 </div>
 
 
