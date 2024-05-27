@@ -64,8 +64,9 @@ The appearance is the color for a specific part of the barcode.
 - Background represents the background color
 - Blend mode: apply [blend modes](/GraFx-Studio/concepts/blendmodes/), similar to image frames
 
-![ui](barcode_fill_bg.png)
+![ui](qr1.png)
 
+![ui](qr_blend.png)
 
 ## Magnification
 
