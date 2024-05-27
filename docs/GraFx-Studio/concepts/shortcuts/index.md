@@ -77,6 +77,7 @@ When inside a text frame, and the text cursor is active.
 
 | |Mac|Windows||
 |----|----|----|----|
+|Preview mode|W|W|✅|
 |Rulers|⇧R|Shift+R|❇️|
 |Open layouts panel|||❇️|
 |Open layers/timeline panel|||❇️|
@@ -88,10 +89,10 @@ When inside a text frame, and the text cursor is active.
 | |Mac|Windows||
 |----|----|----|----|
 |Pan Canvas|Spacebar (Hold down)|Spacebar (Hold down)|✅|
-|Zoom In|⌘ + or Option-Scrollwheel or Option-swipe (Magic Mouse) or Pinch out (trackpad)|Ctrl + or Ctrl-Scrollwheel or Pinch out (trackpad)|❇️|
-|Zoom Out|⌘ - or Option-Scrollwheel or Option-swipe (Magic Mouse) or Pinch out (trackpad)|Ctrl - or Ctrl-Scrollwheel or Pinch out (trackpad)|❇️|
-|Zoom to 100%|⇧0|Shift+0|❇️|
-|Zoom to fit|⇧1|Shift+1|❇️|
+|Zoom In|⌘ + or Option-Scrollwheel or Option-swipe (Magic Mouse) or Pinch out (trackpad)|Ctrl + or Ctrl-Scrollwheel or Pinch out (trackpad)|✅️|
+|Zoom Out|⌘ - or Option-Scrollwheel or Option-swipe (Magic Mouse) or Pinch out (trackpad)|Ctrl - or Ctrl-Scrollwheel or Pinch out (trackpad)|✅|
+|Zoom to 100%|⇧0|Shift+0|✅️|
+|Zoom to fit|⇧1|Shift+1|✅️|
 |Zoom to selection|⇧2|Shift+2|❇️|
 
 ## Operations
