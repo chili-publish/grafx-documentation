@@ -34,6 +34,19 @@ The Bar height property is a decimal number in the unit of the layout
 - The value is converted to the unit of the layout
 - The minimum value is 1 px
 
+## Light margin indicator
+
+Show the character that indicates the light margin
+
+![ui](barcodes2.gif)
+
+## Start and Stop characters
+
+Show the start and stop character
+
+![ui](barcodes3.gif)
+
+
 ## Quiet zone
 
 The Quiet zone properties are decimal numbers in the unit of the layout
@@ -42,6 +55,18 @@ The Quiet zone properties are decimal numbers in the unit of the layout
 - The default values are also the minimum values
 - DataMatrix & QR codes (2-dimensional types) → Changing the quiet zone resizes the code
 - All other barcode types (1-dimensional types) → Changing the quiet zone resizes the frame
+
+## Appearance
+
+The appearance is the color for a specific part of the barcode.
+
+- Fill represents the actual (bar)code
+- Background represents the background color
+- Blend mode: apply [blend modes](/GraFx-Studio/concepts/blendmodes/), similar to image frames
+
+![ui](qr1.png)
+
+![ui](qr_blend.png)
 
 ## Magnification
 
