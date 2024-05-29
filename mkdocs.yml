@@ -232,6 +232,7 @@ nav:
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
+            - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
@@ -252,6 +253,10 @@ nav:
             - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
             - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
+            - 'Barcodes':                       
+               - 'Overview':                    'GraFx-Studio/guides/barcodes/overview/index.md'
+               - 'Add a barcode':               'GraFx-Studio/guides/barcodes/add/index.md'
+               - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
             - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
