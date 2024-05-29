@@ -60,7 +60,11 @@ See [generic settings](#generic-settings-for-all-file-types)
 
 ![screenshot-full](os12.png)
 
-Next to the generic settings, you can set the "Bar width reduction"
+### Bar width reduction
+
+Bar Width Reduction (BWR) is used in barcode printing to compensate for ink spread or "dot gain". It involves reducing the barcode bars' thickness so that they remain scannable after printing and ink spreading. The actual adjustment amount depends on various factors like ink, paper, and printer conditions. To get the right value, print a sample, measure the bar width, and compare it to the original file. The difference helps adjust the bar width to compensate for the printing process.
+
+Positive values make the bars smaller, negative values make the bars wider.
 
 ## JPG output settings
 
