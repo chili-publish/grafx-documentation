@@ -10,10 +10,26 @@
 
     ---
 
-    **February 2024**: Several updates on ==GraFx Media==, ==Environment and Platform API== and ==User groups==.
+    **May 2024**: GraFx Studio adds ==barcodes==.
+    
+    ![screenshotsmall](/release-notes/releasenotesassets/barcodedocs.png)
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/06/grafx-studio-adds-support-for-qr-and-barcodes/)
+
+
+    **May 2024**: CHILI GraFx platform updates.
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/02/chili-grafx-platform-updates/)
+
+
+    **April 2024**: GraFx Studio goes ==multichannel==.
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/04/11/grafx-studio-goes-multichannel/)
+    
+    **See all release notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-
+    
 </div>
 
 
@@ -33,7 +49,7 @@
 
     ---
 
-    **GraFx Studio** is the Smart Template editor for (animated) digital output.
+    **GraFx Studio** is the multichannel Smart Template editor for (animated) digital and print output.
 
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
 
