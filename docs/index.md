@@ -10,6 +10,11 @@
 
     ---
 
+    **June 11 2024**: GraFx Studio adds ==user interfaces==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/11/grafx-studio-updates/)
+
+
     **May 2024**: GraFx Studio adds ==barcodes==.
     
     ![screenshotsmall](/release-notes/releasenotesassets/barcodedocs.png)
