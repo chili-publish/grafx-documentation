@@ -6,11 +6,15 @@
 | :fontawesome-regular-square-check: | Built by CHILI publish |
 |  | Third party |
 
-## Installation
+## Activation
+
+Once a connector is available in the GraFx Marketplace, you can activate it on your environment.
 
 Ask CHILI publish to activate on your environment
 
 ## Configuration
+
+Your instance of the Connector needs to know to what Acquia DAM instance it needs to speak, and how it would then authenticate.
 
 - Endpoint configuration
 - Authentication for impersonation
@@ -19,6 +23,9 @@ Ask CHILI publish to activate on your environment
 Ask CHILI publish to setup configuration
 
 ## Governance
+
+An important part of Digital Assets, is the governance. When and where can the assets be used, and who can use them.
+The Connector to Acquia Dam respects the governance set up in the DAM system.
 
 ### Impersonation
 
@@ -33,14 +40,59 @@ This means if the credentials only allow access to part of the assets, only thes
 ## Place assets in your template
 
 - Select the right Connector
-- Assign the asset to an image frame
+- Doubleclick the asset to assign to image frame
 
-## DAM Queries
+![ui](acquia_assets.gif)
+
+## Image variables
+
+When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets, when you "select image".
+
+![ui](var1.png)
+
+![ui](var2.png)
+
+
+## DAM Queries & Variables
+
+### Intro
+
+You want to filter down the assets suggested to the template user, using categories, keywords, etc. ...
+
+In the Acquia Dam solution, you can use a query language.
+
+![ui](assets1.png)
+
+By using the query language, you can filter down to the right selection of assets.
+
+!!! tip "Category"
+
+	Use "cat:{wine}" to filter down to only wines
+
+![ui](assets2.png)
+
+!!! tip "Description"
+
+	Add "cat:{wine} des:{white}" to further filter to only wines with the word "white" in the description.
+	
+![ui](assets3.png)
+
+### How to
 
 DAM queries happen on the level of the connector, for a specific frame.
 
-How to restrict what assets are shown to a template user.
+Set the value of the query in the connector settings.
 
-### Variable DAM Queries
+![ui](query1.png)
 
-With the use of variables and/or GraFx Genie, you can set a text variable to hold a DAM query. This variable can be influenced, and used to serve as the DAM query.
+If a fixed Query is not sufficient, you can use a variable.
+
+![ui](query2.png)
+
+![ui](query3.png)
+
+To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the Query, according to other variables of input the Smart Template gets.
+
+![ui](query4.png)
+
+In the image above, the action will set the "DamSearchString" to have different DAM Queries, depending on a chosen category. That text variable is then used in the image variable. (see image above here)
