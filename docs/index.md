@@ -10,6 +10,11 @@
 
     ---
 
+    **June 21 2024**: GraFx Studio adds ==number variables==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/21/grafx-studio-adds-number-variables/)
+
+
     **June 11 2024**: GraFx Studio adds ==user interfaces==.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/06/11/grafx-studio-updates/)
