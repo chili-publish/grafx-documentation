@@ -18,6 +18,10 @@ In each environment, storage usage is broken down into several categories:
 
 ![environment breakdown](env_breakdown.png)
 
+!!! note
+
+    This data is not in real-time and it can take up to two weeks for data changes to be reflected.
+
 ## Understanding Storage Dynamics
 
 ### Uploading Media Assets
