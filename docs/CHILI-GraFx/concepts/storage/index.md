@@ -1,6 +1,6 @@
 # Understanding Storage Calculation
 
-This document outlines how your documents and assets, such as pictures, consume storage space in CHILI GraFx.
+This page outlines how your documents and assets, such as pictures, consume storage space in CHILI GraFx.
 
 ## Dashboard
 Your journey in understanding storage starts on the Dashboard of [CHILI GraFx](https://chiligrafx.com). Here, a graph neatly displays the total storage used across all your environments.
@@ -10,11 +10,11 @@ You have the option to delve into specific environments using a dropdown selecto
 ![find environment](find_environment.png)
 
 In each environment, storage usage is broken down into several categories:
-- Media assets (images you upload)
-- Font assets
-- Smart Templates
-- Storage for preview files
-- Storage for backups
+- Assets
+- Fonts
+- Documents (Smart Templates)
+- Preview Data
+- Backup
 
 ![environment breakdown](env_breakdown.png)
 
@@ -58,6 +58,6 @@ In this example, **333.9 GB** is the total storage displayed in your overview.
 | Total  		| **233.2 GB**  | **100.7 GB** | **333.9 GB** |
 
 ## Conclusion
-Understanding how storage is calculated helps you manage your account effectively. The total storage footprint encompasses not only your uploaded files but also the additional space needed for previews, fonts, templates, and backups, balancing performance with data security.
+Understanding how storage is calculated helps you manage your account effectively. The total storage footprint encompasses not only your uploaded files but also the additional space needed for previews, fonts, documents (templates), and backups, balancing performance with data security.
 
-If you're integrating CHILI GraFx into your workflow, developing a strategy for regular cleanup of old assets and templates is advisable for optimal storage management.
+If you're integrating CHILI GraFx into your workflow, developing a strategy for regular cleanup of old assets and documents (templates) is advisable for optimal storage management.
