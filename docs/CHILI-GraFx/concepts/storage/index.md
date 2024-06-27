@@ -47,15 +47,15 @@ Consider this example: you have Documents, Assets, and Fonts with their respecti
 
 Backups are exact duplicates of your data, and their size might vary in real-world scenarios. CHILI GraFx always considers 100% of the data size for backup calculations. Note that preview data, crucial for system performance, is not included in backups. In a recovery situation, the CHILI GraFx engine will regenerate this data.
 
-In this example, **282 MB** is the total storage displayed in your overview.
+In this example, **333.9 GB** is the total storage displayed in your overview.
 
 | Type of Data  | Size   | Backup Size   | Total |
 | ----------- 	| -----: | -----: | --: |
-| Documents     | 0.5 GB  | 0.5 GB  | 1 GB |
-| Assets        | 100 GB | 100 GB | 200 GB |
-| Fonts         | 0.2 GB   | 0.2 GB   | 0.4 GB |
-| Preview data  | 10 GB  | n.a. | 10 GB |
-| Total  		| **110.7 GB**  | **100.7 GB** | **211.4 GB** |
+| Documents     | 500 MB  | 500 MB  | 1.0 GB |
+| Assets        | 100.0 GB | 100.0 GB | 200.0 GB |
+| Fonts         | 200 MB   | 200 MB  | 400 MB |
+| Preview data  | 132.5 GB  | n.a. | 132.5 GB |
+| Total  		| **233.2 GB**  | **100.7 GB** | **333.9 GB** |
 
 ## Conclusion
 Understanding how storage is calculated helps you manage your account effectively. The total storage footprint encompasses not only your uploaded files but also the additional space needed for previews, fonts, templates, and backups, balancing performance with data security.
