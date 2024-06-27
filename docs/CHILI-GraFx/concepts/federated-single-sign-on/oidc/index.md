@@ -26,8 +26,12 @@ Please provide us following details of the application you created on our IDP:
 - Client ID 
 - Client Secret
 
-Also, please let us know which **email domain(s)** to enable SSO for.
-Authenticating users that provide an email address in one of these domains will be redirected to your IDP.
+Also, please let us know which **email domain(s)** to enable the FSSO for.
+After specifying an email address in one of these domains, users will be redirected to your IDP.
+
+!!! Tip "Test domain"
+	Ideally we first test the FSSO using a different domain.
+    This avoids breaking authentication for your users already using GraFx, if the FSSO configuration needs more tweaking.
 
 ## Get in touch!
 
