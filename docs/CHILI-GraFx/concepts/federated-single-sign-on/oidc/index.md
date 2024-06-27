@@ -18,12 +18,16 @@ Please configure your IDP to provide at least following claims:
 
 ## 2. GraFx Configuration
 
-Please provide us:
+Next we need to configure a few things on our side, so your users get redirected to your IDP when logging into GraFx.
 
-- Issuer URL 
+Please provide us following details of the application you created on our IDP:
+
+- Issuer URL
 - Client ID 
 - Client Secret
-- Domain of the email addresses of your corporate users
+
+Also, please let us know which **email domain(s)** to enable SSO for.
+Authenticating users that provide an email address in one of these domains will be redirected to your IDP.
 
 ## Get in touch!
 
