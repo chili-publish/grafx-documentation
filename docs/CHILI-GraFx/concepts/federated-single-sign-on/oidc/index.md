@@ -1,21 +1,29 @@
-# Federated Single sign-on: OIDC
+# Federated Single Sign On: OIDC
 
-This document lists the info for your OIDC Identity Providers in the CGX Platform.
+This document lists the steps required for setting up Federated Single Sign On from your OIDC Identity Provider ("IDP") to CHILI GraFx.
 
-## CHILI GraFx will need
+## 1. Configure your IDP
+Create an OIDC application in your IDP
+
+Redirect URI: `https://login.chiligrafx.com/login/callback`
+
+Please configure your IDP to provide at least following claims:
+
+| **Claim name**                        | **Description**                                    |
+|---------------------------------------|----------------------------------------------------|
+| `email`                               | The email address of the user                      |
+| `given_name`                          | The given name of the user                         |
+| `family_name`                         | The family name of the user                        |
+| `https://chili-publish.com/CGXGroups` | The IDs of the GraFx groups the user should be in  |
+
+## 2. GraFx Configuration
+
+Please provide us:
 
 - Issuer URL 
 - Client ID 
 - Client Secret
 - Domain of the email addresses of your corporate users
-
-## We will provide you
-
-- Redirect URI: `https://login.chiligrafx.com/login/callback`
-- Claim with the email of the user: `email` 
-- Claim with the given name of the user: `given_name` 
-- Claim with the family name of the user: `family_name`
-- Claim with the group memberships of the user: `https://chili-publish.com/CGXGroups`
 
 ## Get in touch!
 
