@@ -1,6 +1,6 @@
 # Understanding Storage Calculation
 
-This document outlines how your assets, such as pictures, consume storage space in CHILI GraFx.
+This document outlines how your documents and assets, such as pictures, consume storage space in CHILI GraFx.
 
 ## Dashboard
 Your journey in understanding storage starts on the Dashboard of [CHILI GraFx](https://chiligrafx.com). Here, a graph neatly displays the total storage used across all your environments.
