@@ -7,10 +7,10 @@ This document lists the info for your SAML Identity Providers in the CGX Platfor
 - Sign in URL 
 - X509 Signing Certificate 
 - Claim names for this information: 
-	- Email (default is email)
-	- First Name (default is given_name)
-	- Last Name (default is family_name)
-	- Group memberships (default is https://chili-publish.com/CGXGroups)
+	- Email (default is `email`)
+	- First Name (default is `given_name`)
+	- Last Name (default is `family_name`)
+	- Group memberships (default is `https://chili-publish.com/CGXGroups`)
 - Identity attribute 
 
 ## We will provide you
