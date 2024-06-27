@@ -24,23 +24,26 @@ In each environment, storage usage is broken down into several categories:
 
 ## Understanding Storage Dynamics
 
-### Uploading Media Assets
-When you upload a media asset, it consumes storage equivalent to its file size. For instance, uploading a 1 MB image will use 1 MB of your storage quota.
+### Uploading Assets
+When you upload an asset, such as to GraFx Media, it consumes storage equivalent to its file size. For instance, uploading a 1 MB image will use 1 MB of your storage quota.
 
-### Uploading Font Assets
-Similar to Media Assets, when you upload a font asset it occupies a certain amount of storage space. GraFx Fonts only allows you to upload only one copy of font style per font family. GraFx Publisher allows you to upload multiple copies.
+### Uploading Fonts
+Similar to an asset, when you upload a font, such as to GraFx Fonts, it occupies a certain amount of storage space. GraFx Fonts only allows you to upload one copy of each font style per font family. GraFx Publisher allows you to upload multiple copies, but it is advisable to avoid doing so to conserve storage space.
 
-### Smart Templates
-Creating a new smart template (GraFx Studio Templates, GraFx Studio Projects, or GraFx Publisher Documents) also uses storage. These files are typically small, under 400 KB, but larger and more complex templates will occupy more space.
+### Documents (Smart Templates)
+Creating a document (GraFx Studio Templates, GraFx Studio Projects, or GraFx Publisher Documents) also uses storage. These files are typically small, under 400 KB, but larger and more complex templates will occupy more space.
 
 ### Preview Data
-Our system automatically generates preview data for media assets and smart templates to enhance performance. These previews ensure quicker load times and smoother access but do require extra storage. The size varies based on the original file.
+Our system automatically generates preview data for media assets and documents to enhance performance. These previews are required for the usage of assets in GraFx Studio and GraFx Publisher, ensuring quicker load times and smoother access. The size varies based on the original file, but each uploaded asset typically results in three generated previews:
+    - High preview
+    - Medium preview
+    - 4k preview
 
 ### Backup Storage
-Data security is paramount for us ([ISO 27001](https://www.chili-publish.com/trust/)). Therefore, CHILI GraFx creates backups of your uploaded media assets, fonts and Smart Templates. These backups are essential to protect your data against accidental loss or corruption. However, like preview files, backups also take up additional storage space.
+Data security is paramount for us ([ISO 27001](https://www.chili-publish.com/trust/)). Therefore, CHILI GraFx creates backups of your uploaded media assets, fonts and documents. These backups are essential to protect your data against accidental loss or corruption. However, like preview files, backups also take up additional storage space. Typically, backups are a 1:1 ratio to the original file sizes.
 
 ## Scenario
-Consider this example: you have Documents (Smart Templates), Assets, and Fonts with their respective sizes. 
+Consider this example: you have Documents, Assets, and Fonts with their respective sizes. 
 
 Backups are exact duplicates of your data, and their size might vary in real-world scenarios. CHILI GraFx always considers 100% of the data size for backup calculations. Note that preview data, crucial for system performance, is not included in backups. In a recovery situation, the CHILI GraFx engine will regenerate this data.
 
