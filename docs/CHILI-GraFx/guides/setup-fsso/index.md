@@ -1,10 +1,10 @@
-# Setup Federated Single sign on
+# Setup Federated Single Sign On
 
-To setup Federated Single sing on, CHILI publish will need certain information.
+To setup Federated Single Sign On, CHILI publish will need certain information.
 
 This information depends on the [preferred protocol](/CHILI-GraFx/concepts/federated-single-sign-on/#federated-sso-via-the-oidc-protocol).
 
-Consult the supported protocols, and initiate a support ticket with the Client Success team to assist you with the setup
+Consult the supported protocols, and initiate a support ticket with the Client Success team to assist you with the setup.
 
 ## Test SSO connection
 
@@ -13,7 +13,7 @@ Once the CHILI Publish team configures the connection, regardless of the preferr
 To verify this, please follow this process:
 
 1. Open a fresh browser via Private or Incognito browsing
-2. Go to http://chiligrafx.com
+2. Navigate to [GraFx](https://chiligrafx.com)
 3. Enter an email address in the domain provided to our team
 4. Verify the browser redirects you to your company's login screen
 5. Authenticate normally following the authentication process of your company
