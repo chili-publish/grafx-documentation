@@ -65,11 +65,12 @@ const pdfOutput = await fetch(`https://cp-example.chili-publish.online/api/v1/en
 ```
 
 Key points:
-- The `variables` property accepts an array of objects.
-- Each object represents a set of variable updates (a row) for a single output.
-- Variable names are keys, and their new values are the corresponding values.
-- Only string and null values are accepted. Numbers, objects, arrays, and booleans will cause a 400 Bad Request error.
-- Variable values are typed-checked during output and must match what is allowed in GraFx Studio for the type of variable you are setting (see [Variable Type Details](#variable-type-details)).
+
+  - The `variables` property accepts an array of objects.
+  - Each object represents a set of variable updates (a row) for a single output.
+  - Variable names are keys, and their new values are the corresponding values.
+  - Only string and null values are accepted. Numbers, objects, arrays, and booleans will cause a 400 Bad Request error.
+  - Variable values are typed-checked during output and must match what is allowed in GraFx Studio for the type of variable you are setting (see [Variable Type Details](#variable-type-details)).
 
 !!! tip
 
