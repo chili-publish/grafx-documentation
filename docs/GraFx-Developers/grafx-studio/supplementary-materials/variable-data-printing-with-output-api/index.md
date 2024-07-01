@@ -73,11 +73,11 @@ Key points:
 
 !!! tip
 
-  Always set a value for variables that might change during output. Omitted variables will inherit values from the previous object in the array, which can lead to unwanted output results.
+    Always set a value for variables that might change during output. Omitted variables will inherit values from the previous object in the array, which can lead to unwanted output results.
 
 !!! tip
 
-  If your VDP data comes from a source that doesn't guarantee type consistency with GraFx Studio document variable types (e.g., a CSV file), perform type checking before attempting output to avoid 500 errors.
+    If your VDP data comes from a source that doesn't guarantee type consistency with GraFx Studio document variable types (e.g., a CSV file), perform type checking before attempting output to avoid 500 errors.
 
 ### Limitations
 
