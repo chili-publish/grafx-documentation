@@ -7,10 +7,11 @@ This document lists the steps required for setting up Federated Single Sign On f
 Create a SAML application in your IDP.
 
 To do this, you will need a few details:
-* Redirect URI: `https://login.chiligrafx.com/login/callback`
-* Service Provider ID
-  * The name GraFx will identify itself as on your IDP.
-  * This will be provided by our Client Success team
+
+- Redirect URI: `https://login.chiligrafx.com/login/callback`
+- Service Provider ID
+  - The name GraFx will identify itself as on your IDP
+  - This will be provided by our Client Success team
 
 Please configure your IDP to provide at least following attributes in SAML responses:
 
@@ -28,8 +29,9 @@ Also, please configure the application to use the **email address** as the `Name
 Next we need to configure a few things on our side, so your users get redirected to your IDP when logging into GraFx.
 
 Please provide us following metadata:
-* Sign In URL
-* X509 Signing Certificate
+
+- Sign In URL
+- X509 Signing Certificate
 
 Alternatively, you can provide the **SAML metadata URL**.  
 Above values can be derived from it.
