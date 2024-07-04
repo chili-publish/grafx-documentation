@@ -7,22 +7,25 @@ Create an OIDC application in your IDP
 
 Redirect URI: `https://login.chiligrafx.com/login/callback`
 
-Please configure your IDP to provide at least following claims:
+Please configure your IDP to provide at least following claims in the **ID token**:
 
-| **Claim name**                        | **Description**                                    |
-|---------------------------------------|----------------------------------------------------|
-| `email`                               | The email address of the user                      |
-| `given_name`                          | The given name of the user                         |
-| `family_name`                         | The family name of the user                        |
-| `https://chili-publish.com/CGXGroups` | The IDs of the GraFx groups the user should be in  |
+| **Claim name**                        | **Description**                                              |
+|---------------------------------------|--------------------------------------------------------------|
+| `sub`                                 | The user ID. Should be set to the email address              |
+| `email`                               | The email address of the user                                |
+| `given_name`                          | The given name of the user                                   |
+| `family_name`                         | The family name of the user                                  |
+| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the GraFx groups the user should be in    |
+
+Please enable both the `Standard` (auth code) and the `Implicit` flows. 
 
 ## 2. GraFx Configuration
 
 Next we need to configure a few things on our side, so your users get redirected to your IDP when logging into GraFx.
 
-Please provide us following details of the application you created on our IDP:
+Please provide us following details of the application you created on your IDP:
 
-- Issuer URL
+- URL to your IDP's OpenID Configuration document
 - Client ID 
 - Client Secret
 
