@@ -38,7 +38,7 @@ Also, please let us know which **email domain(s)** to enable the FSSO for.
 After specifying an email address in one of these domains, users will be redirected to your IDP.
 
 !!! Tip "Test domain"
-    Ideally we first test the FSSO using a different domain.
+    Ideally we first test the FSSO using a different domain.  
     This avoids breaking authentication for your users already using GraFx, if the FSSO configuration needs more tweaking.
 
 ## Get in touch!
