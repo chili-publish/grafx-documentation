@@ -6,7 +6,10 @@ This document lists the steps required for setting up Federated Single Sign On f
 
 Create an OIDC application in your IDP
 
-Redirect URI: `https://login.chiligrafx.com/login/callback`
+| **Configuration** | **Value**                                     |
+| ----------------- | --------------------------------------------- |
+| Redirect URI      | `https://login.chiligrafx.com/login/callback` |
+| Enabled flows     | `Standard` (auth code) and `Implicit`         |
 
 Please configure your IDP to provide at least following claims in the **ID token**:
 
@@ -17,8 +20,6 @@ Please configure your IDP to provide at least following claims in the **ID token
 | `given_name`                          | The given name of the user                                |
 | `family_name`                         | The family name of the user                               |
 | `https://chili-publish.com/CGXGroups` | A list of UUIDs of the GraFx groups the user should be in |
-
-Please enable both the `Standard` (auth code) and the `Implicit` flows. 
 
 ## 2. GraFx Configuration
 
