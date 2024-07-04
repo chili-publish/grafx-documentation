@@ -83,14 +83,15 @@ A Client Success colleague can assist you in the setup process.
 	Expected behaviour of **Federated Single Sign On** would be to have user groups in place. 
 	Today, allowing access to CHILI GraFx, happens through **invitation via email**. As soon as the invitee has accepted the invitation, the invited user will be able to login through the Enterprise Identity Provider.
 
+## Supported protocols
 
-## Federated SSO via the OIDC protocol
+CHILI GraFx supports federation using following protocols:
 
-[Details for the OIDC protocol](oidc/)
+- [OpenID Connect (OIDC)](/CHILI-GraFx/guides/setup-fsso/oidc)
+- [Security Assertion Markup Language (SAML)](/CHILI-GraFx/guides/setup-fsso/saml)
 
-## Federated SSO via the SAML protocol
-
-[Details for the SAML protocol](saml/)
+## Configuring FSSO
+See [the FSSO setup guide](/CHILI-GraFx/guides/setup-fsso)
 
 ## SSO Glossary
 
