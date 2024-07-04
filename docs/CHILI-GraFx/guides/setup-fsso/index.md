@@ -13,7 +13,7 @@ Once the CHILI Publish team configures the connection, regardless of the preferr
 To verify this, please follow this process:
 
 1. Open a fresh browser via Private or Incognito browsing
-2. Navigate to [GraFx](https://chiligrafx.com)
+2. Go to [GraFx](https://chiligrafx.com)
 3. Enter an email address in the domain provided to our team
 4. Verify the browser redirects you to your company's login screen
 5. Authenticate normally following the authentication process of your company
