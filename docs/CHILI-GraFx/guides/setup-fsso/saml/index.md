@@ -1,4 +1,4 @@
-# Federated Single Sign On: SAML
+# Setup Federated Single Sign on using SAML
 
 This document lists the steps required for setting up Federated Single Sign On from your SAML Identity Provider ("IDP") to CHILI GraFx.
 
