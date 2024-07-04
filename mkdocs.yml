@@ -160,9 +160,6 @@ nav:
         - 'Concepts':
             - 'Environments':                   'CHILI-GraFx/concepts/environments/index.md'
             - 'Federated Single Sign On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
-            - 'FSSO OIDC':                      'CHILI-GraFx/concepts/federated-single-sign-on/oidc/index.md'
-            - 'FSSO SAML':                      'CHILI-GraFx/concepts/federated-single-sign-on/saml/index.md'
-            - 'FSSO Glossary':                  'CHILI-GraFx/concepts/federated-single-sign-on/glossary/index.md'
             - 'Integrations' :                  'CHILI-GraFx/concepts/integrations/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
@@ -189,6 +186,8 @@ nav:
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Setup FSSO' :                    'CHILI-GraFx/guides/setup-fsso/index.md'
+            - 'Setup FSSO: OIDC' :              'CHILI-GraFx/guides/setup-fsso/oidc/index.md'
+            - 'Setup FSSO: SAML' :              'CHILI-GraFx/guides/setup-fsso/saml/index.md'
         - 'Integrate CHILI GraFx':              'GraFx-Developers/overview/index.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'
