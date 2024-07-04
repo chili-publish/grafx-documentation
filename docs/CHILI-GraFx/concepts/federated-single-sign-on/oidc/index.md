@@ -3,6 +3,7 @@
 This document lists the steps required for setting up Federated Single Sign On from your OIDC Identity Provider ("IDP") to CHILI GraFx.
 
 ## 1. Configure your IDP
+
 Create an OIDC application in your IDP
 
 Redirect URI: `https://login.chiligrafx.com/login/callback`

@@ -3,6 +3,7 @@
 This document lists the steps required for setting up Federated Single Sign On from your SAML Identity Provider ("IDP") to CHILI GraFx.
 
 ## 1. Configure your IDP
+
 Create a SAML application in your IDP
 
 To do this, you will need a few details:
