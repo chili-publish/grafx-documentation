@@ -13,12 +13,12 @@ To do this, you will need a few details:
 
 Please configure your IDP to provide at least following claims:
 
-| **Claim name**                        | **Description**                                              |
-|---------------------------------------|--------------------------------------------------------------|
-| `email`                               | The email address of the user                                |
-| `given_name`                          | The given name of the user                                   |
-| `family_name`                         | The family name of the user                                  |
-| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the GraFx groups the user should be in    |
+| **Claim name**                        | **Description**                                           |
+| ------------------------------------- | --------------------------------------------------------- |
+| `email`                               | The email address of the user                             |
+| `given_name`                          | The given name of the user                                |
+| `family_name`                         | The family name of the user                               |
+| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the GraFx groups the user should be in |
 
 Also, please configure the application to use the **email address** as the `NameID` in SAML responses.
 
@@ -37,7 +37,7 @@ Also, please let us know which **email domain(s)** to enable the FSSO for.
 After specifying an email address in one of these domains, users will be redirected to your IDP.
 
 !!! Tip "Test domain"
-	Ideally we first test the FSSO using a different domain.
+    Ideally we first test the FSSO using a different domain.
     This avoids breaking authentication for your users already using GraFx, if the FSSO configuration needs more tweaking.
 
 ## Get in touch!
