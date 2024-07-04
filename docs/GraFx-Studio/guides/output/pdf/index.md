@@ -1,7 +1,4 @@
-# Output to PDF (experimental)
-
-!!! example "Experimental"
-	To give you early access to the latest and greatest, we will release some features as "**Experimental**". This means you can start playing around with this functionality, but you should not use this in production. Functionality might change in the final implementation.
+# Output to PDF
 
 ## Select the right Layout
 
@@ -23,8 +20,12 @@ If you were to remove all animations, as initially shown, the position and size 
 
 ## Output (to PDF)
 
-Click "Hamburger menu" and choose PDF (experimental) in the dropdown.
+Click "Hamburger menu" and Export.
 
-![Output](pdf.png)
+Choose the right [output setting](/GraFx-Studio/concepts/output-settings/), you have predefined as PDF output.
+
+![screenshot](pdf.png)
+
+![screenshot](export.png)
 
 When the export is ready, your browser will download the file into your downloads folder.

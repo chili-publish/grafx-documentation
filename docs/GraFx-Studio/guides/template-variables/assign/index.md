@@ -5,13 +5,19 @@
 	In the context of this page, we are talking about Template variables, unless stated differently.
 
 
-Be sure to also check the [concept page](/GraFx-Studio/concepts/template-variables/)
+Be sure to also check the [concept page](/GraFx-Studio/concepts/variables/)
 
 ## Insert template variable in a text frame
 
 Choose "Insert" from the variable "..." menu to insert it into a text frame
 
-![Variables](insert-variable.png)
+Insert the content of a text variable into a text frame.
+
+![Variables](text_insert.png)
+
+Insert the content of list variable into a text frame.
+
+![Variables](list_insert.png)
 
 In edit mode, the template variable name is shown in a gray box in the text.
 
