@@ -13,7 +13,7 @@ To do this, you will need a few details:
   - The name GraFx will identify itself as on your IDP
   - This will be provided by our Client Success team
 
-Please configure your IDP to provide at least following attributes in SAML responses:
+Please configure your IDP to provide at least following required attributes in SAML responses:
 
 | **Attribute name**                        | **Description**                                           |
 | ------------------------------------- | --------------------------------------------------------- |
