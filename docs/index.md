@@ -10,6 +10,10 @@
 
     ---
 
+    **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
+
     **June 21 2024**: GraFx Studio adds ==number variables==.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/06/21/grafx-studio-adds-number-variables/)
@@ -26,16 +30,6 @@
 
     [:octicons-arrow-right-24: Show details](/release-notes/2024/05/06/grafx-studio-adds-support-for-qr-and-barcodes/)
 
-
-    **May 2024**: CHILI GraFx platform updates.
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/02/chili-grafx-platform-updates/)
-
-
-    **April 2024**: GraFx Studio goes ==multichannel==.
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/04/11/grafx-studio-goes-multichannel/)
-    
     **See all release notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
