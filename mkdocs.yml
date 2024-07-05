@@ -159,7 +159,7 @@ nav:
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
             - 'Environments':                   'CHILI-GraFx/concepts/environments/index.md'
-            - 'Federated Single Sign On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
+            - 'Federated Single Sign-On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
             - 'Integrations' :                  'CHILI-GraFx/concepts/integrations/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'

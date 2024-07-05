@@ -1,4 +1,4 @@
-# CHILI GraFx Federated Single sign-on
+# CHILI GraFx Federated Single Sign-On
 
 This document contains general concepts that apply to the federation with third-party IDPs as well as details for the configuration depending on the protocol to be used.
 
@@ -80,7 +80,7 @@ At the same time, the customer’s IDP must trust CGX Identity Hub to make sure 
 A Client Success colleague can assist you in the setup process.
 
 !!! warning "Important: Invitation Only"
-	Expected behaviour of **Federated Single Sign On** would be to have user groups in place. 
+	Expected behaviour of **Federated Single Sign-On** would be to have user groups in place. 
 	Today, allowing access to CHILI GraFx, happens through **invitation via email**. As soon as the invitee has accepted the invitation, the invited user will be able to login through the Enterprise Identity Provider.
 
 ## Supported protocols

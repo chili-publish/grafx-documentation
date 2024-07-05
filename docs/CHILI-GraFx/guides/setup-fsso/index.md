@@ -1,6 +1,6 @@
-# Setup Federated Single Sign On
+# Setup Federated Single Sign-On
 
-To setup Federated Single Sign On, CHILI publish will need certain information.
+To setup Federated Single Sign-On, CHILI publish will need certain information.
 
 This information depends on the [preferred protocol](/CHILI-GraFx/concepts/federated-single-sign-on/#supported-protocols).
 

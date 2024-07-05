@@ -1,6 +1,6 @@
-# Setup Federated Single Sign on using OpenID Connect
+# Setup Federated Single Sign-On using OpenID Connect
 
-This document lists the steps required for setting up Federated Single Sign On from your OIDC Identity Provider ("IDP") to CHILI GraFx.
+This document lists the steps required for setting up Federated Single Sign-On from your OIDC Identity Provider ("IDP") to CHILI GraFx.
 
 ## 1. Gather necessary info
 
