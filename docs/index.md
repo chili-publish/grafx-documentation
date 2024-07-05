@@ -10,7 +10,7 @@
 
     ---
 
-    **July 4 2024**: CHILI GraFx: Multi-select and enhanced item previews.
+    **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
 
