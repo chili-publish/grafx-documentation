@@ -1,12 +1,14 @@
 # Setup Federated Single Sign-On
 
-To setup Federated Single Sign-On, CHILI publish will need certain information.
+## Implementing FSSO
+
+To setup Federated Single Sign-On (FSSO), CHILI publish will need certain information.
 
 This information depends on the [preferred protocol](/CHILI-GraFx/concepts/federated-single-sign-on/#supported-protocols).
 
 Consult the supported protocols, and initiate a support ticket with the Client Success team to assist you with the setup.
 
-## Test SSO connection
+## Testing FSSO connection
 
 Once the CHILI Publish team configures the connection, regardless of the preferred protocol selected, your users will be able to authenticate using your company's identities.
 
