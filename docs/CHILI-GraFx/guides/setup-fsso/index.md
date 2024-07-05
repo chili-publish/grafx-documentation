@@ -1,12 +1,16 @@
 # Setup Federated Single Sign-On
 
-## Implementing FSSO
+## Configuring FSSO
 
 To setup Federated Single Sign-On (FSSO), CHILI publish will need certain information.
 
 This information depends on the [preferred protocol](/CHILI-GraFx/concepts/federated-single-sign-on/#supported-protocols).
 
 Consult the supported protocols, and initiate a support ticket with the Client Success team to assist you with the setup.
+
+!!! info "Configuring your Identity Provider"
+	During the setup of Federated Single Sign-On, CHILI publish can not configure your Identity Provider (IdP) on your behalf.  
+    The reason is that there are numerous IDP systems, each with its own unique configuration methods.
 
 ## Testing FSSO connection
 
