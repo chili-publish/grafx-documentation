@@ -44,3 +44,22 @@ Once CHILI publish has enabled FSSO for the test domain, please verify that user
 ## 5. Enable FSSO
 
 We will coordinate with you to enable FSSO for your main domain(s) at a mutually agreed-upon time.
+
+## Examples
+
+### Claims in the ID token
+
+Here's an excerpt from the ID token returned by the IDP, showing a valid format for the required claims:
+
+```json
+...
+  "sub": "oidc-user@my-oidc-realm.com",
+  "https://chili-publish.com/CGXGroups": [
+    "e68dc58a-324f-468b-a0ab-32494699d61c",
+    "2a01aa2d-8f8a-427b-ba9e-ecc02fa74179"
+  ],
+  "given_name": "Oidc",
+  "family_name": "User",
+  "email": "oidc-user@my-oidc-realm.com"
+...
+```
