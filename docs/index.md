@@ -14,6 +14,12 @@
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
 
+
+    **July 1 2024**: ==PDF batch output== with GraFx Studio.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/01/pdf-batch-output-with-grafx-studio/)
+
+
     **June 21 2024**: GraFx Studio adds ==number variables==.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/06/21/grafx-studio-adds-number-variables/)
