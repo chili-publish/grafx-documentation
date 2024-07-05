@@ -91,7 +91,7 @@ CHILI GraFx supports federation using following protocols:
 - [Security Assertion Markup Language (SAML)](/CHILI-GraFx/guides/setup-fsso/saml)
 
 ## Configuring FSSO
-See [the FSSO setup guide](/CHILI-GraFx/guides/setup-fsso)
+See [the FSSO setup guide](/CHILI-GraFx/guides/setup-fsso/intro)
 
 ## SSO Glossary
 
