@@ -27,7 +27,7 @@ Please configure your IDP to provide at least following claims in the **ID token
 
 ## 3. GraFx Configuration
 
-Next we need to configure a few things on our side, so your users get redirected to your IDP when logging into GraFx.
+Next CHILI publish needs to configure a few things on the GraFx side, so your users get redirected to your IDP when logging into GraFx.
 
 Please provide us following details of the application you created on your IDP:
 
