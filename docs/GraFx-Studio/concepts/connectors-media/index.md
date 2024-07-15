@@ -6,7 +6,7 @@
 
 ## Support
 
-CHILI publish categorizes CHILI GraFx Connectors into 4 categories.
+CHILI publish categorizes CHILI GraFx Connectors into four categories.
 
 ### Built-in
 
@@ -16,29 +16,17 @@ GraFx Studio connects to GraFx Media through the GraFx Media connector, utilizin
 
 To facilitate connections to external services, CHILI publish develops Media Connectors for specific applications. For instance, the Media Connector for Acquia DAM is built and supported by CHILI publish. Support for these connectors encompasses their internal workings, including API calls made to external systems. However, issues related to availability, configuration, or API problems on the media provider's side are not covered under support. Our Customer Support team assists in identifying the origin of such issues.
 
-An example: **The Media Connector for Acquia DAM**
+**Example**: The Media Connector for Acquia DAM
 
-### Built by third party, approved by CHILI publish
+### Built by Third Party, Approved by CHILI publish
 
-Our open connector framework encourages developers to [build connectors](/GraFx-Developers/connectors/build-media-connector/) for their unique use 	cases. If a media provider develops a connector, such as for a generative AI application, it can be offered in our marketplace. Support for these connectors is provided by the developer.
+Our open connector framework encourages developers to [build connectors](/GraFx-Developers/connectors/build-media-connector/) for their unique use cases. If a media provider develops a connector, such as for a generative AI application, it can be offered in our marketplace. Support for these connectors is provided by the developer.
 
-### Custom (private) Connectors
+### Custom (Private) Connectors
 
 In cases where a built-in or readily available connector is unavailable for specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/build-media-connector/). These connectors can be tailored for private use or offered in the marketplace for broader application. Building a private connector allows integration with custom media providers and customization to meet specific requirements.
 
-## Metadata mapping
+## Metadata Mapping
 
-To be written!!
-
-How to import meta data, and map to variables
-
-
-## End-user view
-
-What does an end user see, when using this connector
-
-What is the impact of credentials for the end user?
-
-## FAQ
-
-When does the asset and metadata get updated?
+When an asset is fetched from the DAM, metadata is sent alongside.
+This medadata can be mapped to variables.

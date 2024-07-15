@@ -6,11 +6,13 @@
 | :fontawesome-regular-square-check: | Built by CHILI publish |
 |  | Third party |
 
+[See Connector types](/GraFx-Studio/concepts/connectors-media/#support)
+
 ## Activation
 
-Once a connector is available in the GraFx Marketplace, you can activate it on your environment.
+Once a connector is available in the GraFx Connector Hub, it can be activated on your environment.
 
-Ask CHILI publish to activate on your environment
+[Ask CHILI publish](https://mysupport.chili-publish.com/) to activate on your environment.
 
 ## Configuration
 
@@ -20,7 +22,7 @@ Your instance of the Connector needs to know to what Acquia DAM instance it need
 - Authentication for impersonation
 - Authentication for machine-machine
 
-Ask CHILI publish to setup configuration
+[Ask CHILI publish](https://mysupport.chili-publish.com/) to setup configuration
 
 ## Governance
 
