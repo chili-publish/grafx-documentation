@@ -23,11 +23,11 @@ Please configure your IDP to provide at least following claims in the **ID token
 | `email`                               | The email address of the user                             |
 | `given_name`                          | The given name of the user                                |
 | `family_name`                         | The family name of the user                               |
-| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the GraFx groups the user should be in |
+| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the CHILI GraFx groups the user should be in |
 
-## 3. GraFx Configuration
+## 3. CHILI GraFx Configuration
 
-Next CHILI publish needs to configure a few things on the GraFx side, so your users get redirected to your IDP when logging into GraFx.
+Next CHILI publish needs to configure a few things on the CHILI GraFx side, so your users get redirected to your IDP when logging into CHILI GraFx.
 
 Please provide us following details of the application you created on your IDP:
 

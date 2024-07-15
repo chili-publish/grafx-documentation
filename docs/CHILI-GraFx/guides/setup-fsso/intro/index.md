@@ -22,13 +22,13 @@ Once the CHILI Publish team configures the connection, regardless of the preferr
 To verify this, please follow this process:
 
 1. Open a fresh browser via Private or Incognito browsing
-2. Go to [GraFx](https://chiligrafx.com)
+2. Go to [CHILI GraFx](https://chiligrafx.com)
 3. Enter an email address in the domain provided to our team
 4. Verify the browser redirects you to your company's login screen
 5. Authenticate normally following the authentication process of your company
-6. Confirm you can successfully access the GraFx platform
+6. Confirm you can successfully access the CHILI GraFx platform
 
-## Migrate existing GraFx users
+## Migrate existing CHILI GraFx users
 
 The migration of the users happens in a transparent way based on the user's email address.
 

@@ -9,7 +9,7 @@ Our Client Success team will provide you following details:
 | **Name**            | **Description**                                    |
 | ------------------- | -------------------------------------------------- |
 | Redirect URI        | `https://login.chiligrafx.com/login/callback`      |
-| Service Provider ID | The name GraFx will identify itself as on your IDP |
+| Service Provider ID | The name CHILI GraFx will identify itself as on your IDP |
 
 CHILI publish recommends testing FSSO on a separate 'test' domain initially. Given the variability in protocols and differences among various Identity Provider (IDP) services, there’s a risk of incompatible configurations. By enabling FSSO for the test domain first, you can verify the correctness of the configuration without impacting your users.
 
@@ -25,18 +25,18 @@ Please configure your IDP to provide at least following required attributes in S
 | `email`                               | The email address of the user                             |
 | `given_name`                          | The given name of the user                                |
 | `family_name`                         | The family name of the user                               |
-| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the GraFx groups the user should be in |
+| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the CHILI GraFx groups the user should be in |
 
-## 3. GraFx Configuration
+## 3. CHILI GraFx Configuration
 
-Next CHILI publish needs to configure a few things on the GraFx side, so your users get redirected to your IDP when logging into GraFx.
+Next CHILI publish needs to configure a few things on the CHILI GraFx side, so your users get redirected to your IDP when logging into CHILI GraFx.
 
 Please provide us following metadata:
 
 | **Name**                 | **Description**                                    |
 | ------------------------ | -------------------------------------------------- |
 | Sign In URL              | `https://login.chiligrafx.com/login/callback`      |
-| X509 Signing Certificate | The name GraFx will identify itself as on your IDP |
+| X509 Signing Certificate | The name CHILI GraFx will identify itself as on your IDP |
 
 Alternatively, you can provide the **SAML metadata URL**.  
 Above values can be derived from it.
