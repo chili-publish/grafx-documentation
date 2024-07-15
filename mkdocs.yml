@@ -396,6 +396,7 @@ nav:
                 - 'Final Words':                                        'GraFx-Developers/grafx-studio/workshop-building-a-template-store/final-words/index.md'
             - 'Supplementary Materials':
                 - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md'
+                - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
             - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
