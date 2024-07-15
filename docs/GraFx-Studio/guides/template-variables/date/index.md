@@ -59,6 +59,10 @@ Will display the name of the month or day in the chosen language
 
 Will work for patterns which output words such as `MMM`, `MMMM`, `cc` and `ccc`. Default is `en_US`.
 
+![screenshot-full](date3.png)
+
+![screenshot-full](date4.png)
+
 ## Use in Actions
 
 Different [helper functions](/GraFx-Studio/concepts/helper-functions/) are available in Actions related to Date variables.
