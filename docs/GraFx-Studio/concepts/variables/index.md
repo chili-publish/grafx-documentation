@@ -1,4 +1,4 @@
-# Understanding Variables in GraFx Studio
+# Variables in GraFx Studio
 
 In GraFx Studio, we utilize the concept of variables in two distinct contexts to enhance automation and flexibility in document creation. This page aims to clarify the differences and uses of "**JavaScript variables**" and "**Template variables**".
 
@@ -6,7 +6,7 @@ In GraFx Studio, we utilize the concept of variables in two distinct contexts to
 
 ### Definition and Purpose
 
-**JavaScript Variables** are used within Actions to automate the document.
+**JavaScript Variables** are used in [Actions](/GraFx-Studio/concepts/actions/) to automate the document.
 
 These variables are integral in scripting custom behaviors, controlling document flow, and manipulating data in real-time.
 
@@ -76,3 +76,9 @@ setVariableValue("headline", a);
 ```
 
 This allows a seamless interaction between the content in your template and the actions you can script using JavaScript.
+
+## Howto?
+
+[Add Template Variables](/GraFx-Studio/guides/template-variables/define/)
+
+[Create Actions](/GraFx-Studio/guides/actions/create/)
