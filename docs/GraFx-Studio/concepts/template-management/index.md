@@ -1,4 +1,4 @@
-# CHILI GraFx Template Management
+# GraFx Studio Template Management
 
 This page describes the process of creating a template, making it available for end users, and allowing end users to customize and use the template to create different versions or variants.
 
