@@ -57,7 +57,7 @@ Will work for patterns which output words such as `MM`, `MMM`, `MMMM`, `cc` and 
 
 ## Use in Actions
 
-Different helper functions are available in Actions related to Date variables.
+Different [helper functions](/GraFx-Studio/concepts/helper-functions/) are available in Actions related to Date variables.
 
 In Actions, you can use JavaScript to address the value and/or properties for date variables.
 
