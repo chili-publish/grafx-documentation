@@ -26,34 +26,38 @@ Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concept
 
 A date can be displayed in several formats, depending on the local preferences. You can set a formatting string, how to display the date.
 
-The formatting can be empty, and will then default to "dd/MM/yyyy"
+The initial value (upon creation) for the formatting is "dd/MM/yyyy"
 
-**Format**
+Leaving the field empty will result in an empty display of the date.
 
-Supported date formats
+#### Format
+
+Supported Date patterns to specify the date format.
 
 - Day -> `d`, `dd`
 - Month -> `M`, `MM`, `MMM`, `MMMM`
 - Year -> `yy`, `yyyy`
 - Day of week -> `ccc`, `cccc`
 
-[See Github](https://unicode-org.github.io/icu/userguide/format_parse/datetime/) for ICO formatting. (Only the above formats are supported)
+[See ICU formatting overview](https://unicode-org.github.io/icu/userguide/format_parse/datetime/#date-field-symbol-table) (Only the above formats are supported)
 
-Examples for an input date of `10-12-1815`
+Examples for an input date of `04-01-1815`
 
-- Format `dd/MM/yyyy` will display `12/10/1815`
-- Format `d.M.yy` will display `12.10.15`
-- Format `d MMM yyyy` will display `12 Oct 1815` for the `en_US` language
-- Format `MMMM d, yyyy` will display `October 12, 1815` for the `en_US` language
-- Format `ccc, MMM d, yyyy` will display `Thu, Oct 12, 1815` for the `en_US` language
-- Format `cccc, MMMM d, yyyy` will display `Thursday, October 12, 1815` for the `en_US` language
-- Format `cccc, MMMM d, yyyy` will display `donderdag, oktober 12, 1815` for the `nl` language
+- Format `dd/MM/yyyy` will display `01/04/1815`
+- Format `d.M.yy` will display `1.4.15`
+- Format `dd.M.yy` will display `01.4.15`
+- Format `dd.MM.yy` will display `01.04.15`
+- Format `d MMM yyyy` will display `1 Apr 1815` for the `en_US` language
+- Format `MMMM d, yyyy` will display `April 1, 1815` for the `en_US` language
+- Format `ccc, MMM d, yyyy` will display `Mon, Apr 1, 1815` for the `en_US` language
+- Format `cccc, MMMM d, yyyy` will display `Monday, April 1, 1815` for the `en_US` language
+- Format `cccc, MMMM d, yyyy` will display `maandag, april 1, 1815` for the `nl` language
 	
-**Language**
+#### Language
 
 Will display the name of the month or day in the chosen language
 
-Will work for patterns which output words such as `MM`, `MMM`, `MMMM`, `cc` and `ccc`. Default is `en_US`.
+Will work for patterns which output words such as `MMM`, `MMMM`, `cc` and `ccc`. Default is `en_US`.
 
 ## Use in Actions
 
