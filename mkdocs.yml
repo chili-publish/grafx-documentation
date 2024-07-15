@@ -267,6 +267,7 @@ nav:
         - 'How to: Automate':
             - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
+            - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
             - 'Example: Change Layout':         'GraFx-Studio/guides/actions/example-changelayout/index.md'
