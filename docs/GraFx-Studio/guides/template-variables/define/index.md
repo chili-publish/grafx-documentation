@@ -63,11 +63,9 @@ Create a variable. Then, in the properties panel, choose the variable type. Diff
 
 ![screenshot](vartypes.png)
 
-### Single Line of Text
+### Single Line Text
 
 A placeholder for text.
-
-[Use Text variables](/GraFx-Studio/guides/template-variables/define/)
 
 ### Image
 

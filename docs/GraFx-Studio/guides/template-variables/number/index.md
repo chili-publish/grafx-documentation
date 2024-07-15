@@ -38,9 +38,11 @@ Set the number of decimal places that will be displayed.
 
 ![screenshot-full](ds0.png)
 
-You can define a character style that is different from the style defined for the text, to use for the decimal part of the number.
+Specify a character style specific for the decimal part of a number.
 
-The default Paragraph style for the frame is "Text".
+**Example**
+
+The chosen Paragraph style for the frame is "Text".
 
 ![screenshot-full](ds1.png)
 
@@ -49,6 +51,10 @@ A specific character style is defined and has the property to show as "Superscri
 ![screenshot-full](ds2.png)
 
 The variable decimal setting shows the decimals will use this character setting for the decimal part.
+
+If you want to use the decimal character style, you need to make sure that there are no style overrides on the number variable (you can use the "Clear style overrides" button in the text properties panel to remove the style overrides)
+
+If a character style is already applied, it is locally replaced by the decimal character style
 
 ![screenshot-full](ds3.png)
 
@@ -60,7 +66,7 @@ The symbol used to separate the integer part and the decimal part.
 
 The “thousands separator” symbol is used to group digits into sets of three for easier readability of large numbers, commonly represented by a comma (,), period (.), or other symbols depending on regional conventions.
 
-## Set Style Properties
+## Appearance Settings
 
 ### Stepper
 
