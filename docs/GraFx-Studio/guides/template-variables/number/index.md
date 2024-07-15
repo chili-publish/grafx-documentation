@@ -50,13 +50,14 @@ A specific character style is defined and has the property to show as "Superscri
 
 ![screenshot-full](ds2.png)
 
-The variable decimal setting shows the decimals will use this character setting for the decimal part.
+The 'decimal' character style "Cents" is set to "Superscript" to use it as character style for the decimal part.
+
+![screenshot-full](ds3.png)
 
 If you want to use the decimal character style, you need to make sure that there are no style overrides on the number variable (you can use the "Clear style overrides" button in the text properties panel to remove the style overrides)
 
 If a character style is already applied, it is locally replaced by the decimal character style
 
-![screenshot-full](ds3.png)
 
 #### Decimal Separator
 
