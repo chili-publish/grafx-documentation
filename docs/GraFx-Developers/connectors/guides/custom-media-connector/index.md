@@ -72,60 +72,6 @@ export default class MyConnector implements Media.MediaConnector {
 
 Let's begin from implementing a `query` method to retreive list of assets
 
-<!-- ```typescript title="connector.ts"
-async query(
-  options: Connector.QueryOptions,
-  context: Connector.Dictionary
-): Promise<Media.MediaPage> {
-	// const filter = options.filter?.join(' ') ?? '';
-	// const pageToken = options.pageToken ?? '';
-	// const sortBy = options.sortBy ?? '';
-	// const sortOrder = options.sortOrder ?? '';
-	// const pageSize = options.pageSize ?? '';
-	// const configFolder = this._formatPath(context['folder'] ?? '');
-	// const includeSubfolders = this._asBoolean(context['includeSubfolders']) ?? true;
-	// const isSearching = filter.length > 0 ? true : false;
-	// const includeItemsFromSubfolders = isSearching && includeSubfolders;
-	// const collection = this._formatPath(options.collection ?? '');
-	// const collectionIsSubOfContextFolder = collection?.toLocaleLowerCase().startsWith(configFolder.toLocaleLowerCase());
-	// const folder = collectionIsSubOfContextFolder ? collection : configFolder;
-
-	// Construct url
-	// let queryEndpoint = this._getBaseMediaUrl();
-  const baseURL =
-    "https://int-product-1.chili-publish-sandbox.online/grafx/api/v1/environment/int-product-1/";
-  let queryEndpoint = baseURL + "media?includeFolders=true";
-
-	// queryEndpoint += `?search=${filter}`;
-	// queryEndpoint += `&limit=${pageSize}`;
-	// queryEndpoint += `&limit=${pageSize}`;
-	// queryEndpoint += `&sortBy=${sortBy}`;
-	// queryEndpoint += `&sortOrder=${sortOrder}`;
-	// queryEndpoint += `&includeItemsFromSubfolders=${includeItemsFromSubfolders}`;
-	// queryEndpoint += `&includeFolders=${includeSubfolders}`;
-	queryEndpoint += `&includeFolders=true`;
-	// queryEndpoint += `&folder=${folder}`;
-
-	// if (pageToken != null && pageToken.length > 0) {
-	// 	queryEndpoint += `&nextPageToken=${pageToken}`;
-	// }
-
-	const result = await this.runtime.fetch(queryEndpoint, {
-		method: 'GET',
-		// referrer: 'grafx-media-connector',
-	});
-
-	// if (!result.ok) {
-	// 	this.runtime.logError(`Error (query): ${result.status}-${result.statusText}`)
-	// 	throw new Error('Query method failed');
-	// 	// throw new ConnectorHttpError(result.status, `Query failed ${result.status} ${result.statusText}`);
-	// }
-
-	// return this._formatRelativePath(JSON.parse(result.text));
-	return JSON.parse(result.text);
-}
-``` -->
-
 First of all let's add a private class field that's going to be referenced our environment baseURL (we will need it for re-use later)
 
 ```typescript title="connector.ts"
