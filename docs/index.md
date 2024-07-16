@@ -10,6 +10,11 @@
 
     ---
 
+    **July 16 2024**: GraFx Studio adds ==date variables==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/16/grafx-studio-adds-date-variables/)
+
+
     **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
