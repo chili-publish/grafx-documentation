@@ -14,6 +14,7 @@ theme:
     - content.tabs.link
     - navigation.footer
     - content.footnote.tooltips
+    - content.code.copy
   font:
     text: Ubuntu
   palette:
@@ -25,6 +26,7 @@ theme:
         danger: material/fire-alert
 
 plugins:
+  - awesome-pages
   - blog:
         blog_dir: "release-notes"
         blog_toc: false
@@ -35,8 +37,6 @@ plugins:
         pagination: true
         pagination_per_page: 10
         categories: false
-        archive_pagination: true
-        archive_pagination_per_page: 25
         archive_toc: false
         authors: false
         draft: false
@@ -50,7 +50,6 @@ plugins:
         abstract_chars_count: -1
         date_from_meta:
           as_creation: "date"
-          as_update: false
           datetime_format: "%Y-%m-%d"
           default_timezone: Europe/Paris
           
@@ -62,7 +61,6 @@ plugins:
         'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
         'releasenotes/index.md': 'release-notes/index.md'
   - search
-  - awesome-pages
   - table-reader
 #  - git-revision-date-localized:
 #      enable_creation_date: true
@@ -82,8 +80,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
@@ -160,17 +158,13 @@ nav:
             - 'Editor Comparison':              'CHILI-GraFx/applications/editor-comparison/index.md'
         - 'Upgrade from My CHILI publish':      'CHILI-GraFx/guides/onboarding/upgrade/index.md'
         - 'Concepts':
-            - 'Template Management':            'CHILI-GraFx/concepts/template-management/index.md'
             - 'Environments':                   'CHILI-GraFx/concepts/environments/index.md'
-            - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
-            - 'Storage':                        'CHILI-GraFx/concepts/storage/index.md'
-            - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
-            - 'Subscriptions' :                 'CHILI-GraFx/concepts/subscriptions/index.md'
-            - 'Federated Single Sign On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
-            - 'FSSO OIDC':                      'CHILI-GraFx/concepts/federated-single-sign-on/oidc/index.md'
-            - 'FSSO SAML':                      'CHILI-GraFx/concepts/federated-single-sign-on/saml/index.md'
-            - 'FSSO Glossary':                  'CHILI-GraFx/concepts/federated-single-sign-on/glossary/index.md'
+            - 'Federated Single Sign-On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
             - 'Integrations' :                  'CHILI-GraFx/concepts/integrations/index.md'
+            - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
+            - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
+            - 'Storage':                        'CHILI-GraFx/concepts/storage/index.md'
+            - 'Subscriptions' :                 'CHILI-GraFx/concepts/subscriptions/index.md'
         - 'Platform Administration':
             - 'General Administration' :        'CHILI-GraFx/admin/index.md'
             - 'User management' :
@@ -188,13 +182,14 @@ nav:
             - 'Manage User Groups' :            'CHILI-GraFx/guides/manage-user-groups/index.md'
             - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
             - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
-            - 'Example: Federated groups with Entra ID' :             'CHILI-GraFx/guides/example-federated-groups-entraid/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
-            - 'Manage Collections' :            'CHILI-GraFx/guides/manage-collections/index.md'
-            - 'Manage Integrations' :           'CHILI-GraFx/guides/integrations/index.md'
-            - 'Setup FSSO' :                    'CHILI-GraFx/guides/setup-fsso/index.md'
-        - 'Integrate CHILI GraFx':              'CHILI-GraFx/integration/index.md'
+            - 'Setup FSSO' :
+              - 'Intro' :                       'CHILI-GraFx/guides/setup-fsso/intro/index.md'    
+              - 'OpenID Connect' :              'CHILI-GraFx/guides/setup-fsso/oidc/index.md'
+              - 'SAML' :                        'CHILI-GraFx/guides/setup-fsso/saml/index.md'
+              - 'Example: Federated groups with Entra ID' : 'CHILI-GraFx/guides/setup-fsso/example-federated-groups-entraid/index.md'
+        - 'Integrate CHILI GraFx':              'GraFx-Developers/overview/index.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'
             - 'User Account Migration' :        'CHILI-GraFx/guides/onboarding/migration/index.md'
@@ -218,38 +213,49 @@ nav:
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
         - 'Application overview':
-            - 'Workspace elements':             'GraFx-Studio/overview/workspace-elements/index.md'
-            - 'Mouse or Trackpad':              'GraFx-Studio/overview/movement/index.md'
-            - 'Hamburger Menu':                 'GraFx-Studio/overview/hamburger-menu/index.md'
-            - 'Sidebar Tools':                  'GraFx-Studio/overview/sidebar/index.md'
+            - 'Animation':                      'GraFx-Studio/overview/animation/index.md'
+            - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
             - 'Document Canvas':                'GraFx-Studio/overview/document-canvas/index.md'
+            - 'Frames & Timeline':              'GraFx-Studio/overview/timeline/index.md'
+            - 'Hamburger Menu':                 'GraFx-Studio/overview/hamburger-menu/index.md'
+            - 'Layouts':                        'GraFx-Studio/overview/layouts/index.md'
+            - 'Mouse or Trackpad':              'GraFx-Studio/overview/movement/index.md'
             - 'Page or Document':               'GraFx-Studio/overview/document/index.md'
             - 'Properties panel':               'GraFx-Studio/overview/properties/index.md'
-            - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
-            - 'Animation':                      'GraFx-Studio/overview/animation/index.md'
-            - 'Layouts':                        'GraFx-Studio/overview/layouts/index.md'
-            - 'Frames & Timeline':              'GraFx-Studio/overview/timeline/index.md'
+            - 'Sidebar Tools':                  'GraFx-Studio/overview/sidebar/index.md'
             - 'Stylekit':                       'GraFx-Studio/overview/stylekits/index.md'
+            - 'Workspace elements':             'GraFx-Studio/overview/workspace-elements/index.md'
         - 'Concepts':
+            - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
+            - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
+            - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
+            - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
+            - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
+            - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
+            - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
+            - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
+            - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
             - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
-            - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
+            - 'Layout Intent':                  'GraFx-Studio/concepts/layout-intent/index.md'
+            - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
-            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
-            - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
-            - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
-            - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
-            - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
-            - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
-            - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
+            - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
-            - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
+            - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
+            - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
+            - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
+            - 'Barcodes':                       
+               - 'Overview':                    'GraFx-Studio/guides/barcodes/overview/index.md'
+               - 'Add a barcode':               'GraFx-Studio/guides/barcodes/add/index.md'
+               - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
             - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
@@ -261,6 +267,8 @@ nav:
         - 'How to: Automate':
             - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
+            - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
+            - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
             - 'Example: Change Layout':         'GraFx-Studio/guides/actions/example-changelayout/index.md'
@@ -268,19 +276,17 @@ nav:
             - 'Example: Multiple frame hide/show': 'GraFx-Studio/guides/actions/example-multipleframes/index.md'
             - 'Example: Currency change':       'GraFx-Studio/guides/actions/example-currency/index.md'
         - 'How to: Output':
+            - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
             - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
-        - 'How to: My projects':
+        - 'How to':
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
+            - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
+            - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
         - 'Integrate GraFx studio':
-            - 'Getting started':                'GraFx-Studio/integration/getting-started/index.md'
-            - 'Local environment':              'GraFx-Studio/integration/environment/index.md'
-            - 'NPM & Webpack':                  'GraFx-Studio/integration/npm/index.md'
-            - 'CHILI Editor SDK':               'GraFx-Studio/integration/studio-sdk/index.md'
-            - 'First build':                    'GraFx-Studio/integration/first-build/index.md'
-            - 'Custom app':                     'GraFx-Studio/integration/custom-app/index.md'
+            - 'Overview':                'GraFx-Developers/grafx-studio/overview/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
         - 'Guides':
@@ -338,19 +344,65 @@ nav:
     - 'Release notes':
         - 'Release notes':                      'release-notes/index.md'
         - 'Experimental':                       'release-notes/experimental/index.md'
+        - 'RSS feed':                           'release-notes/rss/index.md'
 
     - 'Developer Center':
-        - 'Overview':                           'GraFx-Developers/index.md'
-        - 'Scopes':                             'GraFx-Developers/scopes/index.md'
-        - 'GraFx Studio UI':                    'GraFx-Developers/grafx-studio/ui/index.md'
-        - 'GraFx Studio SDK':                   'https://chili-publish.github.io/studio-sdk/index.html'
-        - 'Platform API reference' :
-            - 'Swagger' :                       'https://api.chiligrafx.com/swagger/index.html'
-        - 'Environment API reference':
-            - 'Swagger' :                       'https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html'
+        - 'Overview':                           'GraFx-Developers/overview/index.md'
+        - 'Environment API':
+            - 'Quickstart':
+                - 'Overview':                'GraFx-Developers/environment-api/01-overview/index.md'
+                - 'Managing Integrations':   'GraFx-Developers/environment-api/02-managing-integrations/index.md'
+                - 'Generating A Token':      'GraFx-Developers/environment-api/03-generating-a-token/index.md'
+                - 'Making API Calls':        'GraFx-Developers/environment-api/04-making-api-calls/index.md'
+            - 'API reference':                  'GraFx-Developers/environment-api/reference/index.md'
+
+        - 'Integrate GraFx Studio':
+            - 'Overview':                       'GraFx-Developers/grafx-studio/overview/index.md'
+            - 'Integration Overview':
+                - '01 Overview':                'GraFx-Developers/grafx-studio/integration-overview/01-overview/index.md'
+                - '02 Integration Levels':      'GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md'
+                - '03 Common Integration Workflows': 'GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md'
+                - '04 Managing Integrations and Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md'
+            - 'Editor Engine' :
+                - 'Studio SDK Quickstart':
+                    - '01 Overview':                'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md'
+                    - '02 Project Setup':           'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/02-project-setup/index.md'
+                    - '03 Loading Studio Sdk':      'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/03-loading-studio-sdk/index.md'
+                    - '04 Communicating With Sdk':  'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/04-communicating-with-sdk/index.md'
+                - 'Workshop Building a Custom UI':
+                    - '00 Workshop Overview':                   'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/00-workshop-overview/index.md'
+                    - '01 Setting up the project':              'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/01-setting-up-the-project/index.md'
+                    - '02 Loading the Editor':                  'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/02-loading-the-editor/index.md'
+                    - '03 Authenticating Connectors':           'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/03-authenticating-connectors/index.md'
+                    - '04 Working with Controllers':            'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/04-working-with-controllers/index.md'
+                    - '05 Working with the Media Connector':    'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/05-working-with-the-media-connector/index.md'
+                    - '06 Working with Events':                 'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/06-working-with-events/index.md'
+                - 'Integrate Studio UI':                        'GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/index.md'
+            - 'Workshop: Building a Template Store':
+                - '00 Workshop Overview':                               'GraFx-Developers/grafx-studio/workshop-building-a-template-store/00-workshop-overview/index.md'
+                - '01 Setting Up The Project':                          'GraFx-Developers/grafx-studio/workshop-building-a-template-store/01-setting-up-the-project/index.md'
+                - '02 Creating Store Pages':                            'GraFx-Developers/grafx-studio/workshop-building-a-template-store/02-creating-store-pages/index.md'
+                - '03 Setting The Login Page As Default':               'GraFx-Developers/grafx-studio/workshop-building-a-template-store/03-setting-the-login-page-as-default/index.md'
+                - '04 Handling User Sessions With Cookies':             'GraFx-Developers/grafx-studio/workshop-building-a-template-store/04-handling-user-sessions-with-cookies/index.md'
+                - '05 Constructing a Mock Database':                    'GraFx-Developers/grafx-studio/workshop-building-a-template-store/05-constructing-a-mock-database/index.md'
+                - '06 Displaying Mock Templates':                       'GraFx-Developers/grafx-studio/workshop-building-a-template-store/06-displaying-mock-templates/index.md'
+                - '07 Register Templates':                              'GraFx-Developers/grafx-studio/workshop-building-a-template-store/07-register-templates/index.md'
+                - '08 Authentication and Environment Configuration':    'GraFx-Developers/grafx-studio/workshop-building-a-template-store/08-authentication-and-environment-configuration/index.md'
+                - '09 API & Template Management':                       'GraFx-Developers/grafx-studio/workshop-building-a-template-store/09-api-&-template-management/index.md'
+                - '10 Implementing Editable Projects':                  'GraFx-Developers/grafx-studio/workshop-building-a-template-store/10-implementing-editable-projects/index.md'
+                - '11 Authentication Data Management':                  'GraFx-Developers/grafx-studio/workshop-building-a-template-store/11-authentication-data-management/index.md'
+                - '12 Get Project JSON':                                'GraFx-Developers/grafx-studio/workshop-building-a-template-store/12-get-project-json/index.md'
+                - '13 Project Save and Order Endpoints':                'GraFx-Developers/grafx-studio/workshop-building-a-template-store/13-project-save-and-order-endpoints/index.md'
+                - '14 Order Handling':                                  'GraFx-Developers/grafx-studio/workshop-building-a-template-store/14-order-handling/index.md'
+                - '15 Implementing Previews':                           'GraFx-Developers/grafx-studio/workshop-building-a-template-store/15-implementing-previews/index.md'
+                - 'Final Words':                                        'GraFx-Developers/grafx-studio/workshop-building-a-template-store/final-words/index.md'
+            - 'Supplementary Materials':
+                - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md'
+                - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
+            - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
             - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
-            - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
-            - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
-            - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'
-            
+            - 'Media Connectors':
+                - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
+                - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
+                - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'

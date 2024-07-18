@@ -10,15 +10,41 @@
 
     ---
 
-    **March 2024**: Management for Federated User Groups ==GraFx Publisher==.
+    **July 16 2024**: GraFx Studio adds ==date variables==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/16/grafx-studio-adds-date-variables/)
+
+
+    **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
+
+
+    **July 1 2024**: ==PDF batch output== with GraFx Studio.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/01/pdf-batch-output-with-grafx-studio/)
+
+
+    **June 21 2024**: GraFx Studio adds ==number variables==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/21/grafx-studio-adds-number-variables/)
+
+
+    **June 11 2024**: GraFx Studio adds ==user interfaces==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/11/grafx-studio-updates/)
+
+
+    **May 2024**: GraFx Studio adds ==barcodes==.
+    
+    ![screenshotsmall](/release-notes/releasenotesassets/barcodedocs.png)
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/06/grafx-studio-adds-support-for-qr-and-barcodes/)
+
+    **See all release notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-
-
-    **March 2024**: New plugins for ==GraFx Publisher==.
-
-    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-
+    
 </div>
 
 
