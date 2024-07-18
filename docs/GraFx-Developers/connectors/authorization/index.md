@@ -23,7 +23,7 @@ Within the `package.json` file of your connector project, locate the `config` se
 ```
 
 !!! tip
-	Once you specify `supportedAuth` on connector's project level, you might execute `connector-cli info` to see the infromation about them
+	Once you specify `supportedAuth` on connector's project level, you might execute `connector-cli info` to see the information about them
 
 To see list of all available authorization types supported by our Framework see [Supported authorization types](#authorization-types) section below in this page
 
@@ -51,7 +51,7 @@ connector-cli set-auth \
 
 Our Framework supports following authorization types:
 
-- Chili token
+- CHILI token
 - Static key
 - OAuth2.0 client credentials flow
 - OAuth2.0 resource owner flow
@@ -63,7 +63,7 @@ Below is a table of CLI parameters per authorization type
 
 | Type                             | "-au"                 | "-at"                         |
 | -------------------------------- | --------------------- | ----------------------------- |
-| Chili token                      | "browser" or "server" | "chili"                       |
+| CHILI token                      | "browser" or "server" | "chili"                       |
 | Static key                       | "browser" or "server" | "staticKey"                   |
 | OAuth2.0 client credentials flow | "browser" or "server" | "oAuth2ClientCredentials"     |
 | OAuth2.0 resource owner flow     | "browser" or "server" | "oAuth2ResourceOwnerPassword" |
