@@ -126,7 +126,7 @@
 
     ---
 
-    Aks our award wining support staff.
+    Ask our award winning support staff.
 
     [:octicons-link-external-24: Support Portal](https://mysupport.chili-publish.com/)
 
