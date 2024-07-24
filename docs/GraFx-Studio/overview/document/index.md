@@ -1,6 +1,6 @@
-# Document or Page
+# Document
 
-Your document or page of the document.
+Your document
 
 ![appscreen](editor-doc.png)
 
