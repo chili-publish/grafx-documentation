@@ -220,7 +220,7 @@ nav:
             - 'Hamburger Menu':                 'GraFx-Studio/overview/hamburger-menu/index.md'
             - 'Layouts':                        'GraFx-Studio/overview/layouts/index.md'
             - 'Mouse or Trackpad':              'GraFx-Studio/overview/movement/index.md'
-            - 'Page or Document':               'GraFx-Studio/overview/document/index.md'
+            - 'Document':               'GraFx-Studio/overview/document/index.md'
             - 'Properties panel':               'GraFx-Studio/overview/properties/index.md'
             - 'Sidebar Tools':                  'GraFx-Studio/overview/sidebar/index.md'
             - 'Stylekit':                       'GraFx-Studio/overview/stylekits/index.md'
