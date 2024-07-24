@@ -8,7 +8,7 @@ Enter the 'phygital' age of marketing by producing high-quality print and static
 
 ## Concepts and features from CHILI publisher
 
-The documentation (of CHILI publisher) is maintained at [this location](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412838/CHILI+publisher+Online){target="_blank"}.
+The documentation (of CHILI publisher) is maintained at [this location](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/overview){target="_blank"}.
 
 ### My CHILI Publisher
 
