@@ -217,7 +217,7 @@ nav:
             - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
             - 'Document Canvas':                'GraFx-Studio/overview/document-canvas/index.md'
             - 'Frames & Timeline':              'GraFx-Studio/overview/timeline/index.md'
-            - 'Hamburger Menu':                 'GraFx-Studio/overview/hamburger-menu/index.md'
+            - 'Header Bar':                     'GraFx-Studio/overview/headerbar/index.md'
             - 'Layouts':                        'GraFx-Studio/overview/layouts/index.md'
             - 'Mouse or Trackpad':              'GraFx-Studio/overview/movement/index.md'
             - 'Document':               'GraFx-Studio/overview/document/index.md'

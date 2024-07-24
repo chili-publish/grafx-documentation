@@ -1,18 +1,56 @@
 # Header bar
 
-![appscreen](headerbar.png)
+![screenshot-full](headerbar.png)
 
-Depending on your need, you can choose a different overall toolset to
+From left to right
 
-- Design
-- Automate
+- Hamburger menu
+- Document name
+- Undo & Redo (undo or redo the last step executed)
+- Status (Is the document saved or not)
+- Document Zoom level
 
-## Design
 
-The UI changes to allow you to focus on the tools to Design or Create your smart template
+## The Hamburger Menu
 
-## Automate
+This is the main menu, with quick access to functions you need for your Smart Template.
 
-The UI changes to focus on automation tasks.
+![screenshot](hamburger1.png)
 
-E.g. when choosing "Automate" the panel to create variables will appear.
+### File
+
+Save and rename your Smart Template.
+
+![screenshot](file.png)
+
+### Edit
+
+All the usual undo, redo, cut, copy, paste, duplicate, and delete functions.
+
+![screenshot](edit.png)
+
+### Frame
+
+Move the frame up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
+
+![screenshot](frame.png)
+
+Available when a frame is selected, and if relevant.
+
+E.g. When only 1 frame is available, "Bring to front/back" will be grayed out.  
+When multiple frames are available, but the frame is the frontmost, "Bring to font" will be grayed out.
+
+
+### View
+
+Toggle View mode (enables or disables frame borders and the bleed box).
+
+Zoom the canvas in or out.
+
+![screenshot](view.png)
+
+### Export
+
+Shows the export dialog, with all [output settings](/GraFx-Studio/concepts/output-settings/) you have defined.
+
+![screenshot](export.png)
