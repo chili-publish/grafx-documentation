@@ -401,8 +401,17 @@ nav:
                 - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
-            - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
+            - 'Intro': 'GraFx-Developers/connectors/intro/index.md'
+            - 'Pre-requisites': 'GraFx-Developers/connectors/pre-requisites/index.md'
+            - 'CLI': 'GraFx-Developers/connectors/connector-cli/index.md'
             - 'Media Connectors':
-                - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
-                - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
-                - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'
+                - 'Overview': 'GraFx-Developers/connectors/media-connector/index.md'
+                - 'Getting Started': 'GraFx-Developers/connectors/media-connector/getting-started/index.md'
+                - 'Fundamentals': 'GraFx-Developers/connectors/media-connector/fundamentals/index.md'
+            - 'Authorization': 'GraFx-Developers/connectors/authorization/index.md'
+            - 'How to':
+                - 'Create Media Connector': 'GraFx-Developers/connectors/guides/custom-media-connector/index.md'
+                - 'Deploy Acquia': 'GraFx-Developers/connectors/guides/deploy-acquia/index.md'
+                - 'Setup "User impersonation"': 'GraFx-Developers/connectors/guides/user-impersonation/index.md'
+                - 'Enable metadata mapping': 'GraFx-Developers/connectors/guides/metadata-mapping/index.md'
+            - 'FAQ': 'GraFx-Developers/connectors/faq/index.md'   
