@@ -25,3 +25,11 @@ Choose one of the [supported](/GraFx-Media/overview/filetypes/) file types.
 After the upload is done, you'll see a preview of the file(s).
 
 Generating the preview can take a few seconds.
+
+## Max upload size
+
+The maximum size for uploading assets is set to 1GB.
+
+## Virus scan
+
+UPloaded files will be scanned for virusses.
