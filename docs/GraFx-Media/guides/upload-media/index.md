@@ -36,7 +36,7 @@ Uploaded files will be scanned for virusses.
 
 ## Errors
 
-When a filetype is not supported, a potential virus is found, you'll see the error message in the top right indicated by a red circle with an exclamation mark.
+When a filetype is not supported, or a potential virus is found, you'll see the error message in the top right, indicated by a red circle with an exclamation mark.
 
 ![screenshot](unsupported.png)
 
