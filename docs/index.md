@@ -10,6 +10,20 @@
 
     ---
 
+    **July 22 2024**: CHILI GraFx ==Academy==
+    
+    Are you a visual learner, CHILI GraFx Expands the Academy with more videos.
+    
+    ![screenshot](academy01.png)
+    
+    [:octicons-arrow-right-24: Youtube Channel](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B9G1zgsqkKDgQWd03PP2cxF)
+
+
+    **July 16 2024**: GraFx Studio adds ==date variables==.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/16/grafx-studio-adds-date-variables/)
+
+
     **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
@@ -121,7 +135,7 @@
 
     ---
 
-    Aks our award wining support staff.
+    Ask our award winning support staff.
 
     [:octicons-link-external-24: Support Portal](https://mysupport.chili-publish.com/)
 
