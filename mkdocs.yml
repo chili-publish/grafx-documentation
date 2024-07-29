@@ -276,6 +276,7 @@ nav:
             - 'Example: Hide frame':            'GraFx-Studio/guides/actions/example-hideframe/index.md'
             - 'Example: Multiple frame hide/show': 'GraFx-Studio/guides/actions/example-multipleframes/index.md'
             - 'Example: Currency change':       'GraFx-Studio/guides/actions/example-currency/index.md'
+            - 'Google Sheets Connector':        'GraFx-Studio/guides/connector/google-sheets/index.md'
         - 'How to: Output':
             - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
