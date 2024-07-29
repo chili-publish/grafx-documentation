@@ -243,6 +243,7 @@ nav:
             - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
+            - 'Spot Colors':                    'GraFx-Studio/concepts/spot-colors/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
