@@ -2,7 +2,7 @@
 
 The fastest way to contact the CHILI publish team for technical assistance is the Support Portal. You can access the [Support Portal](https://mysupport.chili-publish.com/) here. 
 
-If your account was locked out, and you don't have access to the support portal, you can send us an email.
+If your account was locked out, and you don't have access to the support portal, or you prefer to communicate by email, you can always send us an email.
 
 In the CHILI GraFx platform, you can also access the link to support.
 
@@ -18,12 +18,13 @@ If you do not have an account, skip to the section about contacting support via 
 More information about navigating the  CHILI GraFx Platform navigation can be found here: [GraFx Platform Navigation](/CHILI-GraFx/guides/onboarding/navigation/)
 
 ## MySupport
+Using your GraFx account, you can acess the support portal: [MySupport](https://mysupport.chili-publish.com). Not all GraFx accounts have support access, if you require an account to have support access please create a support ticket or contact your account manager.
+
+Click the Support link to view existing support tickets or create a new one.
 
 ![screenshot-full](support02.png)
 
-Log into your account at [MySupport](https://mysupport.chili-publish.com). If you do not have an account, skip to the section about contacting support via email. 
-
-Click the Support link to view your/your company’s existing support tickets and create a new one. CHILI publish’s team of Client Success Engineers will promptly respond to your request.
+After creating a ticket, you will receive an email with a summary of the ticket. To update the ticket you may come back to [MySupport](https://mysupport.chili-publish.com) or reply to the summary email. When a Client Success Engineer or another team member replies to your ticket, you will receive an email notification.
 
 ## Email to create a ticket
 
