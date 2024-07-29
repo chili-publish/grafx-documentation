@@ -209,6 +209,7 @@ nav:
             - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
             - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
             - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
+        - 'Support':                            'CHILI-GraFx/support/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
