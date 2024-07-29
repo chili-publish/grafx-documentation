@@ -2,7 +2,7 @@
 
 The fastest way to contact the CHILI publish team for technical assistance is the Support Portal. You can access the [Support Portal](https://mysupport.chili-publish.com/) here. 
 
-If you account was locked out, and you don't have access to the support portal, you can send us an email.
+If your account was locked out, and you don't have access to the support portal, you can send us an email.
 
 In the CHILI GraFx platform, you can also access the link to support.
 
