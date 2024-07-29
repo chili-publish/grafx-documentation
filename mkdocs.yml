@@ -232,6 +232,7 @@ nav:
             - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
+            - 'Conversion Desktop documents':   'GraFx-Studio/concepts/conversion/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
@@ -248,6 +249,7 @@ nav:
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
+            - 'Convert Adobe InDesign':         'GraFx-Studio/guides/conver-indesign/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
