@@ -182,6 +182,7 @@ nav:
             - 'Manage User Groups' :            'CHILI-GraFx/guides/manage-user-groups/index.md'
             - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
             - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
+            - 'Manage Connectors' :             'CHILI-GraFx/guides/manage-connectors/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Setup FSSO' :
