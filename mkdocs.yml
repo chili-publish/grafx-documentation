@@ -15,6 +15,9 @@ theme:
     - navigation.footer
     - content.footnote.tooltips
     - content.code.copy
+    - search.suggest
+    - search.highlight
+    - search.share
   font:
     text: Ubuntu
   palette:
