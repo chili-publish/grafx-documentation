@@ -1,377 +1,153 @@
-# Connector Authorization
+# Authorization for Connectors
 
-When building a custom connector that interacts with an external system (which is typically protected by some form of authorization), we often need to include specific credentials or tokens in our requests. However, hardcoding these sensitive details directly into the connector’s code poses a security risk. Anyone with access to the code could potentially extract these credentials. Fortunately, there’s a safer approach.
+Connectors support various types of authorization to enable secure integration with external systems. This document outlines the process of adding authorization to a Connector and explains the different authorization types available.
 
-## Setup
+## Adding Authorization to a Connector
 
-To enable authorization for your connector you need to do it in two places:
+To implement authorization in a Connector, follow these steps:
 
-- Connector project
-- Deployed connector instance in the environment
+1. Define the authorization usage (browser or server)
+2. Specify the authorization type
 
-### Connector project
+## Authorization Usage
 
-Within the `package.json` file of your connector project, locate the `config` section. Here, you’ll specify the valid authorization methods. This step ensures that only supported authorization types can be configured and provides an overview of the connector’s authorization capabilities
+Connectors are used in two different scenarios:
+
+1. **browser**: Used when Studio is loaded in the browser for Studio editors (e.g., Studio UI) or when using the SDK.
+2. **server**: Employed when Studio is loaded on GraFx servers for generating output (e.g., PDF, PNG, GIF).
+
+Therefore, you can define different authorization types for each usage, allowing your Connector to use separate authorization methods for browser and server interactions.
+
+!!! note "Authorization Always Happens on the Server"
+
+	In both cases, the actual request and authorization occurs on the server to prevent token or credential leakage to the frontend. All requests in the browser are proxied through our servers, where the authorization is added.
+
+## Supported Authorization Types
+
+Connectors support four types of authorization:
+
+| Auth Type | Reference | Usage Support | CLI Argument (-at) |
+|-----------|-----------|---------------|---------------------|
+| Static Header Key | [MDN - Authorization Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) | browser and server | staticKey |
+| OAuth Client Credentials | [OAuth - Client Credentials](https://oauth.net/2/grant-types/client-credentials/) | browser and server | oAuth2ClientCredentials |
+| OAuth Authorization Code | [OAuth - Authorization Code](https://oauth.net/2/grant-types/authorization-code/) | browser | oAuth2AuthorizationCode |
+| OAuth Resource Owner Password | [OAuth - Password Grant](https://oauth.net/2/grant-types/password/) | browser and server | oAuth2ResourceOwnerPassword |
+
+!!! note "Authorization is Optional"
+
+	Authorization is optional for Connectors, and by default no authorization is used. However, please be aware that once authorization is set, there is currently no method to remove it via the CLI.
+
+### OAuth Considerations
+
+1. OAuth responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception that `expires_in` being mandatory.
+2. The `grant_type` for OAuth types is automatically set as per the specification and cannot be configured.
+3. `access_token` and `refresh_token` are cached internally for OAuth types. Currently, there's no way to reset them without deleting the Connector.
+4. OAuth Authorization Code is user-specific and thus is not useful with an Integration User (which is used outside the GraFx Platform).
+5. OAuth Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios. or example, if you wanted to build a connector where unknown users can use their Google Photos, the OAuth Authorization Code will work in the "browser" usage, but there is no way to access the user's photos on the "server" usage during output because Goolge does not support any other authentication types into unknown accounts.
+
+## Setting Up Authorization
+
+You must use the the CLI tool to set up authorization on a Connector. This guide assumes you have a published Connector project and its ID.
+
+### Step 1: Add Supported Authorization Types to package.json
+
+In your Connector project's `package.json` file, add the supported authorization types to the `supportedAuth` property:
 
 ```json
-...
-"config": {
-	...
-	"supportedAuth": ["staticKey", "oAuth2AuthorizationCode"]
+{
+  "config": {
+    "supportedAuth": ["staticKey", "oAuth2AuthorizationCode"]
+  }
 }
-...
 ```
 
-!!! tip
-	Once you specify `supportedAuth` on connector's project level, you might execute `connector-cli info` to see the information about them
+The values accepted are the same as the ones in the `-at` agurment in the `set-auth` command. See [Supported Authorization Types](#supported-authorization-types)
 
-To see list of all available authorization types supported by our Framework see [Supported authorization types](#authorization-types) section below in this page
+!!! note "For Future Use"
 
-### Deployed connector instance
+	The package config is required by the CLI tool, and in the future is meant to signify to other parties what types of authenitcation your Connector supports.
 
-!!! Important
-	To configure authorization you need first deploy your connector to the environment via `connector-cli publish ...` command
+### Step 2: Add Authorization via CLI
 
-Once we specified `supportedAuth` on the connector's project level we can procceed with configuration of deployed connector instance. It can be achieved by following CLI command:
+Use the `set-auth` command in the CLI tool:
 
 ```bash
 connector-cli set-auth \
- 	--connectorId <connector-id> \
- 	-e <environment> \
-	-b <base-url> \
-	-au <auth-usage> \
-	-at <auth-type> \
-	--auth-data-file <path-to-auth-file>
+    --connectorId <connector-id> \
+    -e <environment> \
+    -b <base-url> \
+    -au <auth-usage> \
+    -at <auth-type> \
+    --auth-data-file <path-to-auth-file>
 ```
 
-!!! tip
-	To get more information about command's parameter, you can always refer to the help command, `connector-cli set-auth -h`
+Parameters:
+- `--connectorId`: ID of your Connector
+- `-e`: Name of your environment
+- `-b`: Base URL of your API (including environment name)
+- `-au`: Authorization usage (browser or server)
+- `-at`: Authorization type (see table in [Supported Authorization Types](#supported-authorization-types))
+- `--auth-data-file`: Path to a JSON file with authorization-specific data
 
-## Authorization types
+!!! tip "Each Usage Can Only Have One Authorization Type"
 
-Our Framework supports following authorization types:
+	In most cases, if you are setting authorization for one usage, you will do so for all usages. You can set the same authorization type for both "server" and "browser." You can also make them different. 
+	
+	However, you cannot set multiple authorization types for the same usage. Attempting to set, for example, "browser" twice will result in the authorization type for "browser" being overwritten.
 
-- CHILI token
-- Static key
-- OAuth2.0 client credentials flow
-- OAuth2.0 resource owner flow
-- OAuth2.0 authorization code
+### Authorization Data File Requirements
 
-### "-au" and "-at"
+Each authorization type requires specific JSON schema for the `--auth-data-file`:
 
-Below is a table of CLI parameters per authorization type
-
-| Type                             | "-au"                 | "-at"                         |
-| -------------------------------- | --------------------- | ----------------------------- |
-| CHILI token                      | "browser" or "server" | "chili"                       |
-| Static key                       | "browser" or "server" | "staticKey"                   |
-| OAuth2.0 client credentials flow | "browser" or "server" | "oAuth2ClientCredentials"     |
-| OAuth2.0 resource owner flow     | "browser" or "server" | "oAuth2ResourceOwnerPassword" |
-| OAuth2.0 authorization code      | "browser"             | "oAuth2AuthorizationCode"     |
-
-!!! Important
-	When configuring authentication for your connector, remember to configure it twice: once for `browser` and once for `server` authentication usages (`-au`). The `browser` authentication applies when using the connector via the Studio interface in your browser, while the `server` authentication is specifically for output generation.
-
-### "--auth-data-file" file
-
-For each authorization type, you’ll need to provide a file (in JSON or YAML format) containing the relevant authorization information.
-
-#### Chili token
-
-```typescript title="format"
-interface ChiliToken {
-	/**
-	 * An arbitary string value
-	 */
-	name: string;
-}
-```
-
-Example:
-
-```json title="auth-chili.json"
+#### Static Header Key
+```json
 {
-	"name": "chili-token-auth"
+  "name": "string",
+  "key": "string",
+  "value": "string"
 }
 ```
 
-or
-
-```yaml title="auth-chili.yaml"
-name: "chili-token-auth"
-```
-
-#### Static key
-
-```typescript title="format"
-interface StaticKey {
-	/**
-	 * An arbitary string value
-	 */
-	name: string;
-
-	/**
-	 * HTTP header name
-	 */
-	key: string;
-
-	/**
-	 * HTTP header value
-	 */
-	value: string;
-}
-```
-
-Example:
-
-```json title="auth-static-key.json"
+#### OAuth Client Credentials
+```json
 {
-	"name": "static-key-auth",
-	"key": "Authorization",
-	"value": "Api-Key"
+  "name": "string",
+  "clientId": "string",
+  "clientSecret": "string",
+  "scope": "string",
+  "tokenEndpoint": "string"
 }
 ```
 
-or
-
-```yaml title="auth-static-key.yaml"
-name: "static-key-auth"
-key: Authorization
-value: Api-Key
-```
-
-#### OAuth2.0 client credentials
-
-```typescript title="format"
-interface OAuth2ClientCredentials {
-	/**
-	 * An arbitary string value
-	 */
-	name: string;
-
-	/**
-	 * OAuth 2.0 app client id
-	 */
-	clientId: string;
-
-	/**
-	 * OAuth 2.0 app client secret
-	 */
-	clientSecret: string;
-
-	/**
-	 * OAuth 2.0 app scope.
-	 * @optional
-	 */
-	scope?: string;
-
-	/**
-	 * OAuth 2.0 app token endpoint URL
-	 */
-	tokenEndpoint: string;
-}
-```
-
-Example:
-
-```json title="auth-oauth-2-client-credentials.json"
+#### OAuth Authorization Code
+```json
 {
-	"name": "oauth-2-client-credentials-auth",
-	"clientId": "clientId",
-	"clientSecret": "secretKeyValue",
-	"tokenEndpoint": "http://oauth-app.com/token"
+  "name": "string",
+  "clientId": "string",
+  "clientSecret": "string",
+  "scope": "string",
+  "authorizationServerMetadata": {
+    "authorization_endpoint": "string",
+    "token_endpoint": "string",
+    "token_endpoint_auth_methods_supported": ["client_secret_basic", "client_secret_post"]
+  },
+  "specCustomization": {
+    "codeParameterName": "string",
+    "requestContentType": "applicationJson" | "formUrlEncoded"
+  }
 }
 ```
 
-or
-
-```yaml title="auth-oauth-2-client-credentials.yaml"
-name: "oauth-2-client-credentials-auth"
-clientId: clientId
-clientSecret: secretKeyValue
-scope: offline
-tokenEndpoint: http://oauth-app.com/token
-```
-
-#### OAuth2.0 resource owner
-
-```typescript title="format"
-interface OAuth2ResourceOwnerPassword {
-	/**
-	 * An arbitary string value
-	 */
-	name: string;
-	/**
-	 * OAuth 2.0 app client id
-	 */
-	clientId: string;
-
-	/**
-	 * OAuth 2.0 app client secret
-	 */
-	clientSecret: string;
-
-	/**
-	 * OAuth 2.0 app scope.
-	 * @optional
-	 */
-	scope?: string;
-
-	/**
-	 * User that has an access to the OAuth 2.0 app
-	 */
-	username: string;
-
-	/**
-	 * Password of the username
-	 */
-	password: string;
-
-	/**
-	 * Defines which HTTP Content-Type will be used for token request.
-	 * @optional
-	 * @default "formUrlEncoded"
-	 */
-	bodyFormat?: "applicationJson" | "formUrlEncoded";
-	/**
-	 * OAuth 2.0 app token endpoint URL
-	 */
-	tokenEndpoint: string;
-}
-```
-
-Example:
-
-```json title="auth-oauth2-resource-owner.json"
+#### OAuth Resource Owner Password
+```json
 {
-	"name": "oauth2-resource-owner-password-auth",
-	"clientId": "clientId",
-	"clientSecret": "secretKeyValue",
-	"tokenEndpoint": "http://oauth-app.com/token",
-	"username": "demo@google.com",
-	"password": "superSecretPassword",
-	"bodyFormat": "applicationJson"
+  "name": "string",
+  "clientId": "string",
+  "clientSecret": "string",
+  "scope": "string",
+  "username": "string",
+  "password": "string",
+  "bodyFormat": "applicationJson" | "formUrlEncoded",
+  "tokenEndpoint": "string"
 }
-```
-
-or
-
-```yaml title="auth-oauth2-resource-owner.yaml"
-name: "oauth2-resource-owner-password-auth"
-clientId: clientId
-clientSecret: secretKeyValue
-tokenEndpoint: http://oauth-app.com/token
-scope: offline
-username: demo@google.com
-password: superSecretPassword
-```
-
-#### OAuth2.0 authorization code
-
-```typescript title="format"
-interface Oauth2AuthorizationCode {
-	/**
-	 * An arbitary string value
-	 */
-	name: string;
-	/**
-	 * OAuth 2.0 app client id
-	 */
-	clientId: string;
-
-	/**
-	 * OAuth 2.0 app client secret
-	 */
-	clientSecret: string;
-
-	/**
-	 * OAuth 2.0 app scope.
-	 * @optional
-	 */
-	scope?: string;
-
-	/**
-	 * OAuth 2.0 authorization server config
-	 */
-	authorizationServerMetadata: AuthorizationServerMetadata;
-
-	/**
-	 * Possible customization of the OAuth 2.0 specifications
-	 * @optional
-	 */
-	specCustomization?: SpecCustomization;
-}
-```
-
-```typescript
-interface AuthorizationServerMetadata {
-	/**
-	 * OAuth 2.0 app authorization endpoint URL
-	 */
-	authorization_endpoint: string;
-
-	/**
-	 * OAuth 2.0 app token endpoint URL
-	 */
-	token_endpoint: string;
-
-	/**
-	 * Describe the way of how "clientId" and "clientSerects" are sending in HTTP requests
-	 * More info:
-	 * - https://developer.okta.com/docs/reference/api/oidc/#client-authentication-methods
-	 */
-	token_endpoint_auth_methods_supported: Array<
-		"client_secret_basic" | "client_secret_post"
-	>;
-}
-```
-
-```typescript
-interface SpecCustomization {
-	/**
-	 * Name of the "code" parameter that send in HTTP requests.
-	 * @optional
-	 * @default "code"
-	 */
-	codeParameterName?: string;
-
-	/**
-	 * Defines which HTTP Content-Type will be used for HTTP request.
-	 * @optional
-	 * @default "formUrlEncoded"
-	 */
-	requestContentType?: "applicationJson" | "formUrlEncoded";
-}
-```
-
-Example:
-
-```json title="auth-oauth2-authorization-code.json"
-{
-	"name": "oauth2-authorization-code-auth",
-	"clientId": "clientId",
-	"clientSecret": "secretKeyValue",
-	"authorizationServerMetadata": {
-		"authorization_endpoint": "http://oauth-app.com/authorization",
-		"token_endpoint": "http://oauth-app.com/token",
-		"token_endpoint_auth_methods_supported": ["client_secret_post"]
-	}
-}
-```
-
-or
-
-```yaml title="auth-oauth2-authorization-code.yaml"
-name: "oauth2-authorization-code-auth"
-clientId: clientId
-clientSecret: secretKeyValue
-scope: offline
-authorizationServerMetadata:
-  authorization_endpoint: http://oauth-app.com/authorization
-  token_endpoint: http://oauth-app.com/token
-  token_endpoint_auth_methods_supported:
-	- client_secret_basic
-specCustomization:
-  requestContentType: applicationJson
-  codeParameterName: authorization_code
 ```
