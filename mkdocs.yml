@@ -409,7 +409,7 @@ nav:
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
                 - 'Getting Started': 'GraFx-Developers/connectors/media-connector/getting-started/index.md'
                 - 'Fundamentals': 'GraFx-Developers/connectors/media-connector/fundamentals/index.md'
-            - 'Authorization': 'GraFx-Developers/connectors/authorization/index.md'
+            - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
             - 'How to':
                 - 'Create Media Connector': 'GraFx-Developers/connectors/guides/custom-media-connector/index.md'
                 - 'Deploy Acquia': 'GraFx-Developers/connectors/guides/deploy-acquia/index.md'
