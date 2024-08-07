@@ -71,7 +71,7 @@ A start and end date can be
 
 - None
 - Specific Date
-- Relative
+- Relative Date
 
 ![screenshot](date5.png)
 
@@ -79,11 +79,14 @@ A start and end date can be
 
 The possible earliest date, or possible latest date can be made specific. E.g. Headquarters defined that a campaign can be valid within a larger period, but local marketeers can choose the exact start- and end date.
 
-#### Relative
+#### Relative Date
 
 Setting a number relative to the current date (current = when you open the document), enables a template designer to set a date prior to the current, or x days after the current date.
 
-A negative number, allows to set a date in the past, x days before the current date.
+As an example, setting 0 in the "Start" date (Type Relative Date), prevents the end user to pick a date in the past.
+
+![screenshot](date10.png)
+
 
 ### Exclude days
 
@@ -95,7 +98,7 @@ Choose what days of the week should be excluded from the selection available for
 
 Your settings will define how the date picker is displayed.
 
-In the Template Editor Workspace you'll see a preview
+In the Template Designer Workspace you'll see a preview
 
 ![screenshot](date7.png)
 
