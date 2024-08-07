@@ -83,12 +83,12 @@ The possible earliest date, or possible latest date can be made specific. E.g. H
 
 Setting a number relative to the current date (current = when you open the document), enables a template designer to set a date prior to the current, or x days after the current date.
 
-As an example, setting 0 in the "Start" date (Type Relative Date), prevents the end user to pick a date in the past.
+As an example, setting 0 in the "Start date" (Type Relative Date), prevents the end user to pick a date in the past.
 
 ![screenshot](date10.png)
 
 
-### Exclude days
+### Excluded days
 
 Choose what days of the week should be excluded from the selection available for the end user.
 
