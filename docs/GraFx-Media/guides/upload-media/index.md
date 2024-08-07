@@ -25,3 +25,21 @@ Choose one of the [supported](/GraFx-Media/overview/filetypes/) file types.
 After the upload is done, you'll see a preview of the file(s).
 
 Generating the preview can take a few seconds.
+
+## Max upload size
+
+The maximum size for uploading assets is set to 1GB.
+
+## Virus scan
+
+Uploaded files will be scanned for virusses.
+
+## Errors
+
+When a filetype is not supported, or a potential virus is found, you'll see the error message in the top right, indicated by a red circle with an exclamation mark.
+
+![screenshot](unsupported.png)
+
+When all went well, you'll see a green checkbox for a few seconds.
+
+![screenshot](ok.png)
