@@ -410,7 +410,7 @@ nav:
                 - 'Add Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-settings-to-your-connector/index.md'
                 - 'Add Variable Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
                 - 'Getting Started': 'GraFx-Developers/connectors/media-connector/getting-started/index.md'
-                - 'Fundamentals': 'GraFx-Developers/connectors/media-connector/fundamentals/index.md'
+                - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/fundamentals/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
             - 'How to':
                 - 'Create Media Connector': 'GraFx-Developers/connectors/guides/custom-media-connector/index.md'
