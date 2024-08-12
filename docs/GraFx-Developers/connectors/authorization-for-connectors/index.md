@@ -1,4 +1,4 @@
-# Authorization in Connectors
+# Authorization for Connectors
 
 Connectors support various types of authorization to enable secure integration with external systems. This document outlines the process of adding authorization to a Connector and explains the different authorization types available.
 
@@ -105,7 +105,7 @@ Therefore, you can define different authorization types for each usage, allowing
 
 !!! note "Each Usage Can Only Be Set Once"
 
-	  If you run the `set-auth` command twice with the same authorization usage `-au` value but different `-at` authorization types, the authorization type will just be overwritten (not added) for that targeted usage.
+	  If you run the `set-auth` command twice with the same authorization usage `-au` value but different `-at` authorization types, the authorization type will just be ignored. At this moment there is no way to overwrite or erase authorization once set.
 
 ### Authorization Type (`-at`)
 
