@@ -9,13 +9,14 @@ For example here are some connectors created by CHILI publish and our community.
 
 ## Tutorials
 
-- [Media Connector Fundamentals]()
-- [Build a Simple Media Connector]()
-- [Add Configuration to Your Connector]()
-- [Pass Metadata From Connector to Document]()
-- [Build a Media Connector With Authorization]()
+If you are just learning to build Media Connectors, we suggest following this order.
+
+- [Media Connector Fundamentals](/GraFx-Developers/connectors/media-connector/media-connector-fundamentals/)
+- [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/)
+- [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/)
+- [Add Environment Options To Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/)
 
 ## References
-- [Authorization]()
+- [Authorization](/GraFx-Developers/connectors/authorization-for-connectors/)
 - [Connector CLI]()
-
+- [Comprehensive Media Connector Reference Guide]()
