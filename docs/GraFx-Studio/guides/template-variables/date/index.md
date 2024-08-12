@@ -26,7 +26,6 @@ Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concept
 
 A date can be displayed in several formats, depending on the local preferences. You can set a formatting string, how to display the date.
 
-One of the options you can set in the Date Variable settings, is the Display Format.
 You can play enter your combination of characters, representing the Display Format you want in your template.
 
 ![raphs-explainer](displayformat.gif)
