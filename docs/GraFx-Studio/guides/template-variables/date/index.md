@@ -28,7 +28,7 @@ A date can be displayed in several formats, depending on the local preferences. 
 
 You can experiment by entering different combinations of characters to define the Display Format you want in your template.
 
-![raphs-explainer](displayformat.gif)
+![awesome-Raph-explainer](displayformat.gif)
 
 The initial value (upon creation) for the formatting is "dd/MM/yyyy"
 
