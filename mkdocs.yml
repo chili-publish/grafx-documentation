@@ -407,6 +407,7 @@ nav:
             - 'Media Connectors':
                 - 'Overview': 'GraFx-Developers/connectors/media-connector/overview/index.md'
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
+                - 'Add Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-settings-to-your-connector/index.md'
                 - 'Getting Started': 'GraFx-Developers/connectors/media-connector/getting-started/index.md'
                 - 'Fundamentals': 'GraFx-Developers/connectors/media-connector/fundamentals/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
