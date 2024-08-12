@@ -10,7 +10,7 @@
 
 ## Activation
 
-Once a connector is available in the GraFx Connector Hub, it can be activated on your environment.
+Once a connector is available in the Connector Hub, it can be activated on your environment.
 
 [Ask CHILI publish](https://mysupport.chili-publish.com/) to activate on your environment.
 

@@ -71,7 +71,7 @@ CHILI publish categorizes CHILI GraFx Connectors into four categories.
 
 ### Built-in
 
-GraFx Studio connects to GraFx Media through the GraFx Media connector, utilizing the same framework as other media connectors. CHILI publish assumes full responsibility for the development and support of the GraFx Media connector and the associated media service, as all elements were built in-house.
+GraFx Studio connects to [GraFx Media](/GraFx-Media/) through the GraFx Media connector, utilizing the same framework as other media connectors. CHILI publish assumes full responsibility for the development and support of the GraFx Media connector and the associated media service, as all elements were built in-house.
 
 ### Built by CHILI publish
 
@@ -81,11 +81,11 @@ To facilitate connections to external services, CHILI publish develops Media Con
 
 ### Built by Third Party, Approved by CHILI publish
 
-Our open connector framework encourages developers to [build connectors](/GraFx-Developers/connectors/build-media-connector/) for their unique use cases. If a media provider develops a connector, such as for a generative AI application, it can be offered in our marketplace. Support for these connectors is provided by the developer.
+Our open connector framework encourages developers to [build connectors](/GraFx-Developers/connectors/build-media-connector/) for their unique use cases. If a media provider develops a connector, it can be offered in our Connector Hub. Support for these connectors is provided by the developer.
 
 ### Custom (Private) Connectors
 
-In cases where a built-in or readily available connector is unavailable for specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/build-media-connector/). These connectors can be tailored for private use or offered in the marketplace for broader application. Building a private connector allows integration with custom media providers and customization to meet specific requirements.
+In cases where a built-in or readily available connector is unavailable for specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/build-media-connector/). These connectors can be tailored for private use or offered in the Connector Hub for broader application. Building a private connector allows integration with custom media providers and customization to meet specific requirements.
 
 ## Metadata Mapping
 
