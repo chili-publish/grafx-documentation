@@ -1,0 +1,27 @@
+---
+draft: false
+date: 2024-08-20
+---
+
+# GraFx Studio updates
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg)
+
+## Features
+
+- You can set help text for the end-user in the End-User Interface
+- You can toggle auto-grow and set directions and minimum sizes
+- Autocomplete for date variables always shows entire list, sorted ("filtered before") on top
+- You can configure a pre - and suffix for text, number, date and list variables
+- You can configure a character style for the pre - and suffix value, both seperate
+
+## Other improvements and fixes
+
+- Action modal can expand fullscreen
+- You don't automatically switch to the general properties tab when going into text edit mode
+- The character style setting window closes when selecting a different style
+- Date picker input stays in focus when you interact with the date picker
+- MP4 and GIF are available for print and digital static intent
+- Local support for the date picker is removed and only shows in English
+- 'Back to templates' option is added in the hamburger menu
+- Error toast is shown for failed connector's authorization
