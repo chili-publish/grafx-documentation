@@ -62,7 +62,7 @@ getCapabilities(): Media.MediaConnectorCapabilities {
 
 !!! note "Requirements"
 
-    The built-in CHILI GUI currently requires `query` support, and `filtering` must be set to `true` even if not implemented.
+    The built-in CHILI GUI currently requires `query` and `filtering` to be set to `true` even if filtering is not implemented. This will be fixed in future versions.
 
 ### getConfigurationOptions method
 
@@ -70,15 +70,26 @@ The `getConfigurationOptions`  method allows Connector developers to define cust
 
 ```typescript
 getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
-  return [];
+  return [{
+    name: "example",
+    displayName: "Displayed In UI",
+    type: "text"
+  }];
 }
 ```
 
-When you define configuration options in this method, you're essentially telling the SDK, "My Connector supports these customization options." These values can then be accessed and utilized in other methods of your Connector through the context argument.
+When you define configuration options in this method, you're essentially telling the SDK, "My Connector supports these customization options." These values can then be accessed and utilized in other methods of your Connector through the `context` argument.
 
 ### query Method
 
-The `query` method is called by the SDK when selecting an image for an image variable or using the media panel:
+The `query` method is called by the SDK and the engine in two scenarios:
+
+- When selecting an image for an image variable or using the media panel.
+- Before `download` is called when `filtering` is set to `false` in `getCapabilities`.
+
+!!! warning "query can be called in different scenarios"
+
+    This may seem inconsequential, but is important to understand that this method can be called in multiple scenarios and the arguments and response in each scenario have different expectations.
 
 ```typescript
 async query(
@@ -101,7 +112,7 @@ export interface MediaPage {
 }
 ```
 
-Currently, only the `data` property is crucial for displaying image options in built-in GUIs.
+Currently, only the `data` property is crucial for displaying image options in the built-in GUIs. 'pageSize' has no effect.
 
 ### download Method
 
@@ -125,16 +136,20 @@ The `download` method is invoked in various scenarios to retrieve image data. It
 #### Preview Types
 The `previewType` parameter can have these values:
 
-- thumbnail: Used for image selection in built-in GUIs.
-- mediumres: Not currently used, but may be used in the future.
-- highres: Used when loading images into frames.
-- fullres: Used only during `intent` type "print".
+- thumbnail: Used when requesting the image preview in the Variable panel.
+- mediumres: Used when request images in the media panel and the variable "Select image" modal.
+- highres: Used when loading images into frames in the editor in the browser.
+- fullres: Used during output for requesting the images to be loaded in frames.
+
+!!! note "Remember Custom UIs"
+
+    Custom GUI editors may request previewTypes for different scenarios.
 
 #### Download Intents
 The `intent` parameter specifies the platform the `download` was called:
 
-- web: For in-browser display.
-- print: For PDF or image output.
+- web: For in-browser display and image output.
+- print: For PDF output.
 - animation: For GIF and MP4 output.
 
 #### Supported Formats
