@@ -128,6 +128,7 @@ async query(
 - The `pageSize` property within `options` is intended to specify the number of elements the UI can display. However, it is currently hardcoded and not functional.
 - The returned `pageSize` in the `MediaPage` object also has no effect at present.
 
+
 ## Publishing the Connector
 
 ### Step 1: Logging In
@@ -251,6 +252,13 @@ To test your updated connector:
 4. Then add an image frame to your design
 5. Double-click an image in the Media panel to fill the frame
 
+## Some Issues
+### Issue: Only First Image
+
+You may notice that no matter which image you select in the Media panel, the image selected is always the first one. This is due to how `download` behaves when `filtering` is `true`. 
+
+When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`.
+
 ### Issue: Double-clicking with Nothing Selected
 
 You may notice that double-clicking an image in the Media panel when nothing is selected doesn't have any effect. This is due to a missing capability in our connector.
@@ -262,6 +270,68 @@ Connector <connector-id> doesn't have capability: detail
 ```
 
 This error occurs because we haven't implemented the `detail` method in our connector, which is required for this specific functionality.
+
+## Fixing `query`
+
+When `query` is called before `download`, the `options.pageSize` will be the value `1` and `options.collection` will be `null`.
+
+```typescript
+async query(
+  options: Connector.QueryOptions,
+  context: Connector.Dictionary
+): Promise<Media.MediaPage> {
+
+  // When pageSize is 1 & collection is null, we know that query is called before download
+  if (options.pageSize == 1 && !options.collection) {
+    return {
+      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
+
+      data: [{
+
+        id: options.filter[0],
+        name: "",
+        relativePath: "",
+        type: 0,
+        metaData: {}
+      }],
+
+      links: {
+        nextPage: "" // Pagination is ignored in this example
+      }
+    }
+  }
+
+  // If pageSize is bigger than 1, we do a normal query
+
+  const resp = await this.runtime.fetch("https://picsum.photos/v2/list?page=1&limit=4", {
+    method: "GET"
+  });
+
+  if (resp.ok) {
+    const data = JSON.parse(resp.text);
+
+    // Transform the data to match the Media type
+    const dataFormatted = data.map(d => ({
+      id: d.id,
+      name: d.id,
+      relativePath: "/",
+      type: 0,
+      metaData: {}
+    })) as Array<any>;
+
+    return {
+      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
+      data: dataFormatted,
+      links: {
+        nextPage: "" // Pagination is ignored in this example
+      }
+    }
+  }
+
+  // Handle error case
+  throw new Error("Failed to fetch images from picsum.photos");
+}
+```
 
 ## Implementing the Detail Method
 
