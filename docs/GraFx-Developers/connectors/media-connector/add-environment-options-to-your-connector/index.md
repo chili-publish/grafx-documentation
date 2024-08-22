@@ -86,4 +86,3 @@ connector-cli publish -e <environment-name> \
 
 After publishing, test your connector as usual. For an additional test, try re-publishing with an incorrect `baseURL` to verify that it doesn't work, demonstrating the importance of the environment option.
 
-

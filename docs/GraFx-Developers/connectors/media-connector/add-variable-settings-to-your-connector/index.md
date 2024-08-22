@@ -57,6 +57,28 @@ async query(
     context: Connector.Dictionary
   ): Promise<Media.MediaPage> {
 
+    // When pageSize is 1 & collection is null, we know that query is called before download
+    if (options.pageSize == 1 && !options.collection) {
+      return {
+        pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
+
+        data: [{
+
+          id: options.filter[0],
+          name: "",
+          relativePath: "",
+          type: 0,
+          metaData: {}
+        }],
+
+        links: {
+          nextPage: "" // Pagination is ignored in this example
+        }
+      }
+    }
+
+    // If pageSize is bigger than 1, we do a normal query
+
     // Set a default user limit
     let limit = 30;
 
