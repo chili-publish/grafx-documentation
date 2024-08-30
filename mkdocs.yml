@@ -15,6 +15,9 @@ theme:
     - navigation.footer
     - content.footnote.tooltips
     - content.code.copy
+    - search.suggest
+    - search.highlight
+    - search.share
   font:
     text: Ubuntu
   palette:
@@ -209,6 +212,7 @@ nav:
             - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
             - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
             - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
+        - 'Support':                            'CHILI-GraFx/support/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
@@ -233,6 +237,8 @@ nav:
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
+            - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
+            - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
             - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
@@ -262,6 +268,8 @@ nav:
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
             - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
+        - 'How to: Connect':
+            - 'Acquia DAM':                     'GraFx-Studio/guides/connect-acquia/index.md'
         - 'How to: Animate':
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
