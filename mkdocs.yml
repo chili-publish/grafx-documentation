@@ -409,7 +409,7 @@ nav:
                 - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
-            - 'Intro': 'GraFx-Developers/connectors/intro/index.md'
+            - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
             - 'Media Connectors':
                 - 'Overview': 'GraFx-Developers/connectors/media-connector/overview/index.md'
                 - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md'
