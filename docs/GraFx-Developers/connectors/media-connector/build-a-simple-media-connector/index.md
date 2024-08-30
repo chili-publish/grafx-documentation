@@ -36,6 +36,8 @@ cd simple-media-connector
     bun install
     ```
 
+4. Open `connector.ts` as this is the main connector file we will be modifying.
+
 ## Modifying the Query Method
 
 Our goal is to display images from picsum.photos in the image selector. The `query` method is utilized by the default Studio GUIs to retrieve a list of `Media` objects for display.
@@ -48,7 +50,7 @@ First, we need to modify the `getCapabilities()` method to inform the UI about o
 getCapabilities(): Media.MediaConnectorCapabilities {
   return {
     query: true,
-    detail: false,
+    detail: true,
     filtering: true,
     metadata: false,
   };
@@ -123,7 +125,7 @@ async query(
 
 ### Notes on Query Options
 
-- The `options` parameter provides query options set by the UI. Currently, only the `pageToken` property is utilized and it only for pagination.
+- The `options` parameter provides query options set by the UI. Currently, only the `pageToken` property is utilized and it is only for pagination.
 - The returned `nextPage` in the `MediaPage.links` is meant to be passed back as `pageToken` during pagination, but it only works in a very specific use-case.
 - The `pageSize` property within `options` is intended to specify the number of elements the UI can display. However, it is currently hardcoded and not functional.
 - The returned `pageSize` in the `MediaPage` object also has no effect at present.
@@ -255,7 +257,7 @@ To test your updated connector:
 ## Some Issues
 ### Issue: Only First Image
 
-You may notice that no matter which image you select in the Media panel, the image selected is always the first one. This is due to how `download` behaves when `filtering` is `true`. 
+You may notice that no matter which image you select in the Media panel, the image displayed in the template is instead the first image. This is due to how `download` behaves when `filtering` is `true`. 
 
 When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`.
 
@@ -335,7 +337,7 @@ async query(
 
 ## Implementing the Detail Method
 
-The `detail` method is utilized for defining the initial width and height of the image frame when selected from the Media panel. While this method requires several parameters, only the width and height are actually used for this purpose. Even though, width and height are not required.
+The `detail` method is used to define the initial width and height of the image frame when selected from the Media panel. Although this method accepts several parameters, only the width and height are relevant for this purpose. However, it's important to note that the type signature tells you the width and height is not mandatory, but the behavior of the method requires them present.
 
 ### Basic Implementation
 
@@ -395,15 +397,14 @@ Congratulations! You've successfully built your first Media Connector for GraFx 
 ### Key Accomplishments
 
 In this tutorial, you've learned how to:
+
 1. Set up a new connector project
 2. Implement the `query` method to fetch and display images
 3. Create a `download` method to retrieve image data
 4. Add a `detail` method to control initial frame sizes
 5. Publish and test your connector in the GraFx Studio environment
 
-### Next Steps
-
-To deepen your understanding of connectors and explore more advanced features:
+## Next Steps
 
 1. Review the [Comprehensive Connector Documentation](link-to-comprehensive-docs) for in-depth information on connector functionality and best practices.
-2. Follow the [Build a Media Connector With Authorization](link-to-auth-connector-tutorial) tutorial to learn how to implement authentication in your connectors.
+2. Follow the [Add Environment Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector) tutorial to learn how to implement authentication in your Connectors.

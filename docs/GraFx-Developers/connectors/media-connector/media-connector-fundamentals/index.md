@@ -64,7 +64,7 @@ getCapabilities(): Media.MediaConnectorCapabilities {
 
     The built-in CHILI GUI currently requires `query` and `filtering` to be set to `true` even if filtering is not implemented. This will be fixed in future versions.
 
-### getConfigurationOptions method
+### getConfigurationOptions Method
 
 The `getConfigurationOptions`  method allows Connector developers to define customizable settings that template designers can use to modify the behavior of the Connector.
 
@@ -137,7 +137,7 @@ The `download` method is invoked in various scenarios to retrieve image data. It
 The `previewType` parameter can have these values:
 
 - thumbnail: Used when requesting the image preview in the Variable panel.
-- mediumres: Used when request images in the media panel and the variable "Select image" modal.
+- mediumres: Used when requesting images in the media panel and the variable "Select image" modal.
 - highres: Used when loading images into frames in the editor in the browser.
 - fullres: Used during output for requesting the images to be loaded in frames.
 
@@ -170,4 +170,4 @@ async detail(
 }
 ```
 
-Although not strictly required by the type signature, the Template Designer Workspace expects width and height information. It's acceptable to return default values as this only set the initial frame size.
+Although not strictly required by the type signature, the Template Designer Workspace expects width and height information and will fail if not passed. It's acceptable to return default values as this only sets the initial frame size.

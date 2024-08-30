@@ -149,7 +149,7 @@ Once your connector is published, you can test it by following these steps:
 ## Adding a Rectangle/Square Image Setting
 
 
-The picsum.photos API supports both outputting rectangular and square images. We can enhance our connector by adding a setting that allows Designes to choose between these two image crops. This setting will affect how images are displayed in both the image selector and the document frame.
+The picsum.photos API supports both outputting rectangular and square images. We can enhance our connector by adding a setting that allows Designers to choose between these two image crops. This setting will affect how images are displayed in both the image selector and the document frame.
 
 ### Step 1: Update `getConfigurationOptions`
 
@@ -168,7 +168,7 @@ The picsum.photos API supports both outputting rectangular and square images. We
       }
     ];
   }
-  ```
+```
 
 This addition introduces a new boolean option named "wide" that users can toggle to switch between rectangular and square image displays.
 
@@ -199,6 +199,7 @@ Next, we'll update our `download` method to incorporate this new setting:
 ```
 
 Key changes in this method:
+
 1. We now use the `context.wide` setting to determine the image dimensions.
 2. For thumbnails, we use 400x200 for wide (rectangular) images and 200x200 for square images.
 3. For full-size images, we use 2000x1000 for wide images and 1000x1000 for square images.
@@ -227,5 +228,5 @@ By completing this guide, you have:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation](link-to-comprehensive-docs) for in-depth information on Connector functionality and best practices.
-2. Follow the [Build a Media Connector With Authorization](link-to-auth-connector-tutorial) tutorial to learn how to implement authentication in your Connectors.
+1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
+2. Follow the [Add Environment Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector) tutorial to learn how to add environment options in your Connectors.

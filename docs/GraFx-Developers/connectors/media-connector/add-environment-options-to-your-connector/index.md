@@ -7,7 +7,7 @@ This guide is about adding options that are set at the environment level for you
 - Node.js or Bun.js installed
 - [Connector CLI](link-to-connector-cli-docs) tool
 - Environment Admin user with a Template Designer license
-- Completed [Build a Simple Media Connector](link-to-simple-media-connector-guide) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Build-a-Simple-Media-Connector)
+- Completed  [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Add-Settings-To-Your-Connector)
 
 
 ## Adding an Environment Option
@@ -84,5 +84,9 @@ connector-cli publish -e <environment-name> \
         -ro baseURL="picsum.photos"
 ```
 
-After publishing, test your connector as usual. For an additional test, try re-publishing with an incorrect `baseURL` to verify that it doesn't work, demonstrating the importance of the environment option.
+After publishing, test your connector as we did in [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/#step-3:-publish-and-test). For an additional test, try re-publishing with an incorrect `baseURL` to verify that it doesn't work, demonstrating the importance of the environment option.
 
+## Next Steps
+
+1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
+2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial to learn how to add variable settings in your Connectors.
