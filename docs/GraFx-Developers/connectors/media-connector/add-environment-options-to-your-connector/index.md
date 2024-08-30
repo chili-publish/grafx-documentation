@@ -5,7 +5,7 @@ This guide is about adding options that are set at the environment level for you
 ## Requirements
 
 - Node.js or Bun.js installed
-- [Connector CLI](link-to-connector-cli-docs) tool
+- [Connector CLI]() tool
 - Environment Admin user with a Template Designer license
 - Completed  [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Add-Settings-To-Your-Connector)
 

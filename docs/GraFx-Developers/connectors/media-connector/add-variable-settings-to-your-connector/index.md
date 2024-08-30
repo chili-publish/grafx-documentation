@@ -5,9 +5,9 @@ This guide focuses on adding configurable settings to your Connector within the 
 ## Requirements
 
 - Node.js or Bun.js installed
-- [Connector CLI](link-to-connector-cli-docs) tool
+- [Connector CLI]() tool
 - Environment Admin user with a Template Designer license
-- Completed [Build a Simple Media Connector](link-to-simple-media-connector-guide) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Build-a-Simple-Media-Connector)
+- Completed [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Build-a-Simple-Media-Connector)
 
 ## Understanding Connector Settings
 

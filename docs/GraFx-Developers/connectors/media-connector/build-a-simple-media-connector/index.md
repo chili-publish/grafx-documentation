@@ -186,8 +186,6 @@ The `download` method handles two main scenarios:
 1. Fetching thumbnails for the image selector UI
 2. Fetching full-size images for other use cases (editor and output)
 
-For more details on additional options, please refer to the [Media Connector Deep Dive](link-to-documentation).
-
 ### Implementing the Download Method
 
 Here's the implementation of the `download` method:
@@ -406,5 +404,5 @@ In this tutorial, you've learned how to:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation](link-to-comprehensive-docs) for in-depth information on connector functionality and best practices.
+1. Review the [Comprehensive Connector Documentation]() for in-depth information on connector functionality and best practices.
 2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial to learn how to add variable settings in your Connectors.

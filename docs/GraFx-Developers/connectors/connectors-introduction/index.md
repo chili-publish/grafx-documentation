@@ -10,7 +10,7 @@ To successfully create a Connector, you should have:
 
 - Proficiency in modern JavaScript and familiarity with TypeScript
 - Node.js or Bun.js installed on your development environment
-- [Connector CLI](link-to-connector-cli-docs) tool installed
+- [Connector CLI]() tool installed
 - An Environment Admin user account with a Template Designer license
 
 ## Why Build a Connector?
