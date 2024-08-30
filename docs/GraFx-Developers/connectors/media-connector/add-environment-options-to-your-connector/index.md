@@ -89,4 +89,3 @@ After publishing, test your connector as we did in [Add Variable Settings To You
 ## Next Steps
 
 1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
-2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial to learn how to add variable settings in your Connectors.

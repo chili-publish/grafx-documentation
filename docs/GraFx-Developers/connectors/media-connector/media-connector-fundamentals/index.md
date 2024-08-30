@@ -171,3 +171,9 @@ async detail(
 ```
 
 Although not strictly required by the type signature, the Template Designer Workspace expects width and height information and will fail if not passed. It's acceptable to return default values as this only sets the initial frame size.
+
+## Next Steps
+
+1. Follow the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial to learn how to build a simple Connectors.
+2. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
+3. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector. 
