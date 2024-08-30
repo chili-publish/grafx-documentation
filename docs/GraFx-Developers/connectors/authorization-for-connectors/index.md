@@ -24,7 +24,7 @@ For example, services like GraFx Media and GraFx Platform don't meet the require
 ## Define Supported Authorization Types
 Before implementing authorization, you must define the supported authorization types in your `package.json` file. This ensures consistency between your CLI commands and your package configuration.
 
-To do so, add or modify the `supportedAuth` property you `package.json` file with the types of authentication your Connector supports.
+To do so, add or modify the `supportedAuth` property in your `package.json` file with the types of authentication your Connector supports.
 
 Example of a `package.json` supporting Static Header Key and OAuth Authorization Code:
 ```json
@@ -91,9 +91,10 @@ https://{environment}.chili-publish-sandbox.online/grafx
 
 ### Authorization Usage (`-au`)
 
-This argument expects one of two value that will specify the usage scenario for the authorization.
+This argument expects one of two values that will specify the usage scenario for the authorization.
 
 Expected values:
+
 - **browser**: Connector authentication to use when Studio is loaded in the browser for Studio editors (e.g., Studio UI) or when using the SDK.
 - **server**: Connector authentication to use when Studio is loaded on GraFx servers for generating output (e.g., PDF, PNG, GIF).
 
@@ -135,8 +136,6 @@ In addition to specifying the authorization type using the `-at` argument, you m
 5. OAuth Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios.
 
 ### Authorization Data File Requirements (`--auth-data-file`)
-
-Each authorization type requires a specific JSON schema which is related to the requirements of that authorization type. Keep in mind that the `grant_type` for OAuth types is predefined by the specifications.
 
 Each authorization type requires a specific JSON schema. The `grant_type` for OAuth types is predefined by the specifications.
 
@@ -272,16 +271,3 @@ connector-cli set-auth \
 ```
 
 By following these steps, we've configured our Connector to use OAuth Client Credentials for server-side interactions and OAuth Authorization Code for browser-based interactions. This setup allows for secure communication with external APIs in both scenarios.
-
-## Common Questions
-
-### How can I retrieve my Connector ID?
-### Is it possible to use different authorization types for browser and server usage simultaneously?
-### What happens if the authorization token expires during a session?
-### Can I update or modify the authorization settings after they've been set?
-### How does the caching of access and refresh tokens work, and is there a way to manually invalidate them?
-### How can I troubleshoot authorization issues if my Connector fails to authenticate?
-### Is it possible to use custom OAuth flows that aren't included in the four provided types?
-### Can I use environment variables or secure storage solutions for authorization data instead of JSON files?
-### Is there a way to test the authorization setup before publishing the Connector?
-### Is there a way to monitor and log authorization-related events?
