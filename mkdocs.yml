@@ -411,7 +411,7 @@ nav:
         - 'Connectors':
             - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
             - 'Media Connectors':
-                - 'Overview': 'GraFx-Developers/connectors/media-connector/overview/index.md'
+                - 'Introduction': 'GraFx-Developers/connectors/media-connector/media-connector-introduction/index.md'
                 - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md'
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
                 - 'Add Variable Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
