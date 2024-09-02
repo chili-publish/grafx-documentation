@@ -216,7 +216,7 @@ The "wide" setting controls how the image is loaded into the frame. To best obse
 
 This demonstrates that our connector is not just affecting the image selection process, but also how the image is displayed within the document itself.
 
-### Key Accomplishments
+## Key Accomplishments
 
 By completing this guide, you have:
 
