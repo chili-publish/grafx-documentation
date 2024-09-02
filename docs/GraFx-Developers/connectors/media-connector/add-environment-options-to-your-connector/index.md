@@ -86,6 +86,15 @@ connector-cli publish -e <environment-name> \
 
 After publishing, test your connector as we did in [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/#step-3:-publish-and-test). For an additional test, try re-publishing with an incorrect `baseURL` to verify that it doesn't work, demonstrating the importance of the environment option.
 
+## Key Accomplishments
+
+By completing this guide, you have:
+
+- Added an environment-level option to your Connector configuration.
+- Modified your Connector code to utilize the new environment option.
+- Learned how to publish a Connector with required options using the Connector CLI.
+- Gained understanding of how environment options can be used to make your Connector more flexible and configurable.
+
 ## Next Steps
 
 1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.

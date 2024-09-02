@@ -220,11 +220,11 @@ This demonstrates that our connector is not just affecting the image selection p
 
 By completing this guide, you have:
 
-- Added an environment-level option to your Connector configuration.
-- Modified your Connector code to utilize the new environment option.
-- Learned how to publish a Connector with required options using the Connector CLI.
-- Gained understanding of how environment options can be used to make your Connector more flexible and configurable.
-
+- Introduction of configurable settings for image variables in the Connector.
+- Implementation of the getConfigurationOptions method to define and control the number of images returned by an API.
+- Modification of the query method to handle new settings, including validation and user-defined limits.
+- Introduction of an wide option allowing designers to choose between rectangular and square displays.
+- Enhancements to the download method to incorporate the new wide setting, affecting both thumbnails and full-size images.
 
 ## Next Steps
 
