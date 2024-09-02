@@ -409,8 +409,11 @@ nav:
                 - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
-            - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
+            - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
             - 'Media Connectors':
-                - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
-                - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
-                - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'
+                - 'Introduction': 'GraFx-Developers/connectors/media-connector/media-connector-introduction/index.md'
+                - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md'
+                - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
+                - 'Add Variable Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
+                - 'Add Environment Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
+            - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
