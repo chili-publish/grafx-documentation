@@ -1,0 +1,21 @@
+---
+draft: false
+date: 2024-09-03
+---
+
+# GraFx Studio updates
+
+![rn_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_OK-10.svg)
+
+## Features
+
+- You can mark a variable as "Required" in the variable settings panel (output is blocked if this variable has no value)
+- There is a "Save as" option in the hamburger menu to save the current state of the template as a new template
+- You can select all frames with Ctrl/Cmd+A
+
+## Other improvements and fixes
+
+- Connectors without filtering capability can be used in the Media panel and with image variables
+- Connector metadata mapping is skipped for connectors without the metadata capability
+- Improvements for actions
+- Fixes for the color picker and the animation timeline
