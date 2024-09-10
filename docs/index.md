@@ -1,6 +1,6 @@
 # CHILI GraFx Product documentation
 
-<script src="https://fast.wistia.com/embed/medias/ynvyz51p7b.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ynvyz51p7b seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IOWiRYyc4P8?si=hodiKzSTgV48vs1i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Latest updates
 

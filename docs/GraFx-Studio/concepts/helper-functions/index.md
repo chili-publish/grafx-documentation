@@ -68,7 +68,7 @@ Alternatively, you can start typing one of the [4 categories](#groups-of-functio
 
 If you're unsure about what you're looking for, begin by typing one of the categories. Browse the list, familiarize yourself with the options, and then re-enter using keywords you recognize and deem relevant. This approach will help you navigate more efficiently.
 
-<script src="https://fast.wistia.com/embed/medias/xu3o7hf5hb.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_xu3o7hf5hb seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/35QsfgjG9F0?si=wFYwd8hBVEc1lmgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Parameters
 
