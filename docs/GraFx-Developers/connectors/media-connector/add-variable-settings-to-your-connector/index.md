@@ -134,7 +134,7 @@ To publish your connector, use the following command in your terminal:
 connector-cli publish -e <environment-name> \
         -b <base-url> \
         -n <name> \
-        --proxyOption.allowedDomains "*.xyz"
+        --proxyOption.allowedDomains "picsum.photos"
 ```
 
 Once your connector is published, you can test it by following these steps:
