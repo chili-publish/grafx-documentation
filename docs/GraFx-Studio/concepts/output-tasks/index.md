@@ -93,16 +93,3 @@ When users create output directly from the CHILI GraFx front-end, a new **Output
 ### Output from the API
 
 API-triggered output jobs are also listed as **Output Tasks**. Whether triggered through external applications or scripts, all API-based outputs are treated and tracked just like front-end jobs.
-
-## Monitoring and Managing Output Tasks
-
-The **Output Task List** provides an at-a-glance overview of the output jobs. Users can monitor the progress of each task and confirm when jobs are completed. By regularly checking the list, users can ensure that all output tasks are being processed as expected.
-
-## Conclusion
-
-The **Output Task** concept ensures that all output jobs, whether initiated from the front-end or via the API, are tracked, listed, and easily monitored. This helps maintain transparency and provides users with the ability to manage output jobs efficiently.
-
-For further details, refer to the specific sections of the documentation related to output management.
-```
-
-You can now add the screenshots in the respective places, and this page is ready for publishing.
