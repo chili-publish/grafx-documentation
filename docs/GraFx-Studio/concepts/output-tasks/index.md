@@ -48,7 +48,7 @@ Behind the "..." menu, you can also
 **Task ID** Copies the unique ID (GUID) used for the task. Using API calls, this task ID is used to poll the status of the task.
 
 ```JSON
-    84ad7436-f82f-4e87-8cd3-37299e37878c
+84ad7436-f82f-4e87-8cd3-37299e37878c
 ```
 
 **User Information** provides a JSON structure with the information about the user started the task.
