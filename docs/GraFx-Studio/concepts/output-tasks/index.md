@@ -63,7 +63,7 @@ Behind the "..." menu, you can also
     "lastSeen":1726227211,
     "status":"Pending",
     "subscriptionRoles":["SA"],
-    "environmentRoles":null,"hasFullAccess":true,
+    "environmentRoles":null,
     "createdAt":1689165295,
     "isFederated":true,
     "membershipType":"Invitation"
