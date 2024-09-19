@@ -246,6 +246,7 @@ nav:
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
             - 'Layout Intent':                  'GraFx-Studio/concepts/layout-intent/index.md'
             - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
+            - 'Output Tasks':                   'GraFx-Studio/concepts/output-tasks/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
