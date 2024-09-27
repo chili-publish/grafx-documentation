@@ -149,7 +149,7 @@ After successfully logging in, you can publish your connector using the followin
 connector-cli publish -e <environment-name> \
         -b <base-url> \
         -n <name> \
-        --proxyOption.allowedDomains "*.xyz"
+        --proxyOption.allowedDomains "picsum.photos"
 ```
 
 #### Command Arguments

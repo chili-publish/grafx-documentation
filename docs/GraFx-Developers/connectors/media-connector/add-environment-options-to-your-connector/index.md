@@ -80,7 +80,7 @@ To publish your updated connector:
 connector-cli publish -e <environment-name> \
         -b <base-url> \
         -n <name> \
-        --proxyOption.allowedDomains "*.xyz" \
+        --proxyOption.allowedDomains "picsum.photos" \
         -ro baseURL="picsum.photos"
 ```
 
