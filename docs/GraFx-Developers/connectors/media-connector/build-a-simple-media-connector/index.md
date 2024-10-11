@@ -5,7 +5,7 @@ This guide walks you through the process of creating a simple media connector us
 ## Requirements
 
 - Node.js or Bun.js
-- [Connector CLI]() tool
+- [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool
 - Environment Admin user with a Template Designer license applied
 
 ## Creating a New Connector Project

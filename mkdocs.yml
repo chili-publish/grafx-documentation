@@ -417,4 +417,5 @@ nav:
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
                 - 'Add Variable Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
                 - 'Add Environment Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
+                - 'Connector CLI':                      'GraFx-Developers/connectors/connector-cli/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
