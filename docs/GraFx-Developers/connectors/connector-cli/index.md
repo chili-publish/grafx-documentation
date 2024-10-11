@@ -22,9 +22,6 @@ connector-cli -h
 
 This will give you an overview of the available commands
 
-## Commands
+## Github
 
-!!! warning "Work in progress"
-	This section is currently under construction. Keep calm and stay healthy!
-
-<!-- TODO: Provide details for each CLI commands with argument description and examples in context of https://chilipublishintranet.atlassian.net/browse/WRS-1871 -->
+For more information on the Connector Framework and CLI, see the [public repository](https://github.com/chili-publish/studio-connector-framework)
