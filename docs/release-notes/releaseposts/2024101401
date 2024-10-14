@@ -1,0 +1,12 @@
+---
+draft: false
+date: 2024-10-14
+---
+
+# CHILI GraFx platform updates
+
+![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+- You can now select an available connectors in the Connector Hub and configure it for your environment
+- You can set a connector as 'default' within an environment
+- You can enable or disable a connector within an environment
