@@ -10,45 +10,29 @@
 
     ---
 
-    **July 22 2024**: CHILI GraFx ==Academy==
+    **October 14 2024**: ==Connect== with CHILI GraFx
     
-    Are you a visual learner, CHILI GraFx Expands the Academy with more videos.
+    Unleash the power of connectors
     
-    ![screenshot](academy01.png)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
+
+    **October 8 2024**: ==Spot== lights on GraFx Studio
     
-    [:octicons-arrow-right-24: Youtube Channel](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B9G1zgsqkKDgQWd03PP2cxF)
-
-
-    **July 16 2024**: GraFx Studio adds ==date variables==.
+    Spot colors and private data extend GraFx Studio even more
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/16/grafx-studio-adds-date-variables/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/08/grafxstudio-in-the-spot-light/)
 
-
-    **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
+    **September 19 2024**: Get a grip on ==output tasks==
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
-
-
-    **July 1 2024**: ==PDF batch output== with GraFx Studio.
+    You can now see an overview of output tasks of GraFx Studio
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/01/pdf-batch-output-with-grafx-studio/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/19/chili-grafx-platform-updates/)
 
-
-    **June 21 2024**: GraFx Studio adds ==number variables==.
+    **September 3 2024**: Improvements in GraFx Studio
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/21/grafx-studio-adds-number-variables/)
-
-
-    **June 11 2024**: GraFx Studio adds ==user interfaces==.
+    Set a variable to be required, and save a template under a new name, and many more improvements.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/11/grafx-studio-updates/)
-
-
-    **May 2024**: GraFx Studio adds ==barcodes==.
-    
-    ![screenshotsmall](/release-notes/releasenotesassets/barcodedocs.png)
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/06/grafx-studio-adds-support-for-qr-and-barcodes/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/03/grafx-studio-updates/)
 
     **See all release notes**
 
