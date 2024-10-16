@@ -1,0 +1,58 @@
+
+name: Generate Embeddings and Upload to Azure
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_extension:
+        description: 'File extension to search for (e.g., .md)'
+        required: false
+        default: '.md'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@latest
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: .github/action-generate-embeddings
+        run: |
+          npm ci
+
+      - name: Build TypeScript
+        working-directory: .github/action-generate-embeddings 
+        run: |
+          npx tsc
+
+      - name: Run generate_embeddings script
+        working-directory: .github/action-generate-embeddings 
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FILE_EXTENSION: ${{ github.event.inputs.file_extension }}
+        run: |
+          npx ts-node generate_embeddings.ts
+
+      - name: Archive output files
+        working-directory: .github/action-generate-embeddings 
+        run: |
+          zip -r embeddings_output.zip embeddings_output/
+
+      - name: Upload to Azure Storage
+        uses: azure/blob-upload-action@v1
+        with:
+          connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          container_name: 'embeddings'
+          source_folder: './embeddings_output.zip'
+          working-directory: .github/action-generate-embeddings
+
+      - name: Cleanup
+        working-directory: .github/action-generate-embeddings 
+        run: |
+          rm -rf embeddings_output embeddings_output.zip
