@@ -38,12 +38,12 @@ You will be able to connect third party Identity Providers to CHILI GraFx
 
 Logging on to [CHILI GraFx](https://chiligrafx.com){target="_blank"} will bring you to this screen
 
-![Migrate](upgrade-1.png)
+![screenshot-full](upgrade-1.png)
 
 
 ### Step 2: Provide your email
 
-![Migrate](upgrade-2.png)
+![screenshot-full](upgrade-2.png)
 
 Provide your email, you used to login to My CHILI publish before.
 
@@ -51,11 +51,11 @@ If you use enter email that is in use, you will get notified.
 
 If your email is known in the platform, CHILI GraFx will let you know.
 
-![Migrate](upgrade-3.png)
+![screenshot-full](upgrade-3.png)
 
 
 ### Step 2: Confirm your email
 
-![Migrate](upgrade-4.png)
+![screenshot-full](upgrade-4.png)
 
 A confirmation email awaits you, and will bring you to the activated CHILI GraFx dashboard.
