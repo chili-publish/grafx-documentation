@@ -2,6 +2,8 @@
 
 You can manage [Private Data](/GraFx-Studio/concepts/private-data/) for variables in GraFx Studio. This allows you to attach custom key-value pairs to a variable, which can be used by your custom integrations, without affecting the Studio UI or end-user interface.
 
+Private data can impact your custom end-user interface. Integrations can use the private data to add tags to variables to trigger specific UI workflows.
+
 ## Manage Private Data
 
 ![screenshot-full](private-data01.png)
