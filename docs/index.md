@@ -1,20 +1,9 @@
 # CHILI GraFx Product documentation
 
-<script src="https://fast.wistia.com/embed/medias/ynvyz51p7b.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ynvyz51p7b seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-
-<iframe width="760" height="426" src="https://www.youtube.com/embed/IOWiRYyc4P8?controls=0&mute=1&showinfo=0&rel=0&autoplay=1&loop=0&playlist=IOWiRYyc4P8" allow="autoplay" title="CHILI GraFx Product documentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<div style="width: 100%; height: 426px; float: none; clear: both; margin: 2px auto;">
-  <embed
-    src="https://www.youtube.com/embed/IOWiRYyc4P8?controls=0&mute=1&showinfo=0&rel=0&autoplay=1&loop=0&playlist=IOWiRYyc4P8"
-    wmode="transparent"
-    type="video/mp4"
-    width="100%" height="100%"
-    allow="autoplay; encrypted-media; picture-in-picture"
-    allowfullscreen
-    title="CHILI GraFx"
-  >
-</div>
+<video width="690" height="388" autoplay="true" loop="true" muted="true">
+  <source src="/assets/CHILI GraFx Animated video 720.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Latest updates
 
