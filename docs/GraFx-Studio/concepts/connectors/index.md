@@ -4,6 +4,24 @@ The CHILI GraFx Connectors provide a means to seamlessly integrate CHILI GraFx c
 
 ![ui](connector1.png)
 
+## Connector Hub
+
+The Connector Hub is the central repository where you can find connectors you can install into your environment.
+
+As an Environment Admin, navigate to:
+
+My Environments > [Your Environment] > Settings > Connectors
+
+![screenshot-full](ch01.png)
+
+Select the tab Connectors
+
+![screenshot-full](ch02.png)
+
+Overview of the installed connectors
+
+![screenshot-full](ch03.png)
+
 ## Types of connectors
 
 ### Built-in

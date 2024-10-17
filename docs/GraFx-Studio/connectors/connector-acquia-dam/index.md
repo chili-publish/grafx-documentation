@@ -8,62 +8,68 @@
 
 [See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
-## Activation
+## Installation
 
-Once a connector is available in the Connector Hub, it can be activated on your environment.
-
-[Ask CHILI publish](https://mysupport.chili-publish.com/) to activate on your environment.
+[See installtion through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
 ## Configuration
 
+### Base configuration
+
 Your instance of the Connector needs to know to what Acquia DAM instance it needs to speak, and how it would then authenticate.
 
-- Endpoint configuration
-- Authentication for impersonation
-- Authentication for machine-machine
+Once installed, navigate to Connector overview, and select "Acquia DAM". Start with **Configuration**.
 
-[Ask CHILI publish](https://mysupport.chili-publish.com/) to setup configuration
+![screenshot-full](config.png)
 
-## Governance
+Consult your Acquia System Admin to get the right values for the fields.
+
+### Authentication
 
 An important part of Digital Assets, is the governance. When and where can the assets be used, and who can use them.
-The Connector to Acquia Dam respects the governance set up in the DAM system.
 
-### Impersonation
+You can set the Authentication for machine-machine and Browser seperately, or use the same setup for both.
+
+![screenshot-full](config-auth.png)
+
+Consult your Acquia System Admin to get the right values for the fields.
+
+### Browser authentication
 
 GraFx Studio is a consumer of the assets available in the DAM. Therefore, the user that is used to impersonate the access to the DAM system, will dictate what assets are available in the template.
 
-### Machine to machine
+### Server authentication
 
-The credentials used to setup machine 2 machine, will dictate the governance on the assets in the automation setup. 
+The credentials used to setup machine 2 machine, will dictate the governance on the assets in the automation setup.
 
 This means if the credentials only allow access to part of the assets, only these assets will be available when batch processing requests access to place assets in the output.
 
-## Place assets in your template
+## Using the assets from your Acquia DAM system
 
-- Select the right Connector
+### Place assets in your template
+
+- Select the Acquia Dam Connector
 - Doubleclick the asset to assign to image frame
 
-![ui](acquia_assets.gif)
+![screenshot-full](acquia_assets.gif)
 
-## Image variables
+### Image variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets, when you "select image".
 
-![ui](var1.png)
+![screenshot-full](var1.png)
 
-![ui](var2.png)
+![screenshot-full](var2.png)
 
+### DAM Queries & Variables
 
-## DAM Queries & Variables
-
-### Intro
+#### Intro
 
 You want to filter down the assets suggested to the template user, using categories, keywords, etc. ...
 
 In the Acquia Dam solution, you can use a query language.
 
-![ui](assets1.png)
+![screenshot-full](assets1.png)
 
 By using the query language, you can filter down to the right selection of assets.
 
@@ -71,30 +77,30 @@ By using the query language, you can filter down to the right selection of asset
 
 	Use "cat:{wine}" to filter down to only wines
 
-![ui](assets2.png)
+![screenshot-full](assets2.png)
 
 !!! tip "Description"
 
 	Add "cat:{wine} des:{white}" to further filter to only wines with the word "white" in the description.
 	
-![ui](assets3.png)
+![screenshot-full](assets3.png)
 
-### How to
+#### How to
 
 DAM queries happen on the level of the connector, for a specific frame.
 
 Set the value of the query in the connector settings.
 
-![ui](query1.png)
+![screenshot-full](query1.png)
 
 If a fixed Query is not sufficient, you can use a variable.
 
-![ui](query2.png)
+![screenshot-full](query2.png)
 
-![ui](query3.png)
+![screenshot-full](query3.png)
 
 To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the Query, according to other variables of input the Smart Template gets.
 
-![ui](query4.png)
+![screenshot-full](query4.png)
 
 In the image above, the action will set the "DamSearchString" to have different DAM Queries, depending on a chosen category. That text variable is then used in the image variable. (see image above here)
