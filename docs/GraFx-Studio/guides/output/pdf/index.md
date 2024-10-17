@@ -12,7 +12,7 @@ In the tree of layouts, select the one you wish to output.
 
 Since a PDF is a static file, the timeline does not have any effect on the PDF output. The output engine will disregard all animation information, and generate the PDF as if no animation was made.
 
-<script src="https://fast.wistia.com/embed/medias/qznksrj7t5.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:44.17% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qznksrj7t5 seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Y3YAx_CAAU?si=CccBWgygg7zwRVpe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 In the example above, the frame flies in from the left (as an intro animation), bounces in the middle (for emphasis), and then flies out (as an outro animation). This means the frame is always in motion and never has a stagnant or still moment.
 

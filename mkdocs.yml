@@ -199,12 +199,9 @@ nav:
             - 'Logging in' :                    'CHILI-GraFx/guides/onboarding/logging-in/index.md'
             - 'Find your way around' :          'CHILI-GraFx/guides/onboarding/navigation/index.md'
             - 'Applications' :                  'CHILI-GraFx/guides/onboarding/applications/index.md'
-            - 'GraFx Publisher' :
-                - 'GraFx Publisher intro':      'CHILI-GraFx/guides/onboarding/publisher/index.md'
-            - 'GraFx Studio':
-                - 'GraFx Studio intro':         'CHILI-GraFx/guides/onboarding/studio/index.md'
-            - 'GraFx Media' :
-                - 'GraFx Media intro':          'CHILI-GraFx/guides/onboarding/media/index.md'
+            - 'GraFx Publisher intro':          'GraFx-Publisher/guides/hello-world/index.md'
+            - 'GraFx Studio intro':             'GraFx-Publisher/guides/hello-world/index.md'
+            - 'GraFx Media intro':              'GraFx-Media/overview/elements/index.md'
         - 'Trust':
             - 'Introduction':                   'CHILI-GraFx/trust/introduction/index.md'
             - 'Security Policy':                'CHILI-GraFx/trust/security-policy/index.md'
