@@ -6,7 +6,7 @@
 | :fontawesome-regular-square-check: | Built by CHILI publish |
 |  | Third party |
 
-[See Connector types](/GraFx-Studio/concepts/connectors-media/#support)
+[See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
 ## Activation
 
