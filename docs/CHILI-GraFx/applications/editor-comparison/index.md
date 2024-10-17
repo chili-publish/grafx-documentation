@@ -1,17 +1,11 @@
 # Smart Template Editors compared
 
-**CHILI GraFx** is the platform to enable multichannel creative automation.
+**GraFx Studio** extends the possibilities in **CHILI GraFx**, enabling a wider range of use cases, including print, static and animated digital content and multi-channel output. **GraFx Studio** goes further by providing advanced tools for creating dynamic, engaging content, expanding what you can achieve across digital and traditional channels.
 
-Our vision is to provide you with 1 smart template editor for animated digital, static digital and print output.
-
-**GraFx Publisher** has been around for a while and is the editor for smart templates intended for static digital and (variable-data) PDF output.
-
-**GraFx Studio** is the next generation smart template editor. Our goal is to provide you with all the tools for animated, static digital and print output, for the self-service use-case and for any automated workflow.
+With the tools and features available in GraFx Studio, many use cases can be solved in different, more flexible ways. The platform offers new approaches to content creation that not only cover existing needs but also open up possibilities for innovative workflows and outputs that weren’t achievable before.
 
 Therefore we redesigned the editor, SDK and API from scratch.
 
-Today, the feature set for print in GraFx Publisher is still more extensive. But day by day, print-related features are added.
-
-When you want to have both channels combined, please have a look at the feature comparison below. This will help you decide where to start.
+Explore the comparison below to see how GraFx Studio’s features can solve even more creative challenges and elevate your content creation process.
 
 {{ read_excel('./features.xlsx', engine='openpyxl') }}
