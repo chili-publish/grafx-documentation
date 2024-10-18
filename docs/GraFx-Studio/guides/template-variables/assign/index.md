@@ -13,21 +13,21 @@ Choose "Insert" from the variable "..." menu to insert it into a text frame
 
 Insert the content of a text variable into a text frame.
 
-![Variables](text_insert.png)
+![screenshot-full](text_insert.png)
 
 Insert the content of list variable into a text frame.
 
-![Variables](list_insert.png)
+![screenshot-full](list_insert.png)
 
 In edit mode, the template variable name is shown in a gray box in the text.
 
-![Variables](variables-1.png)
+![screenshot-full](variables-1.png)
 
-![Variables](variables-2.png)
+![screenshot-full](variables-2.png)
 
 If the frame is not wide enough to show the full name, the name will be truncated to avoid overflow.
 
-![Variables](variables-3.png)
+![screenshot-full](variables-3.png)
 
 
 ## Assign template variable to image frame
@@ -36,10 +36,10 @@ Select the image frame you want to assign the template variable to.
 
 In the variable tab, choose the image variable from the "Insert variable" drop-down menu.
 
-![Variables](assign.png)
+![screenshot-full](assign.png)
 
 ## Un-assign a template variable from an image frame
 
 To remove the template variable from the image frame, select the frame and choose "None" from the "Insert variable" drop-down menu.
 
-![Variables](unassign.png)
+![screenshot-full](unassign.png)
