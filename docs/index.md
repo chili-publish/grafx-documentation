@@ -12,7 +12,7 @@
 
     **October 14 2024**: ==Connect== with CHILI GraFx
     
-    Unleash the power of connectors
+    Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
 
