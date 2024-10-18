@@ -4,32 +4,31 @@ A **Media Connector** accelerates collateral creation by bringing assets from an
 
 ![screenshot-full](connector2.png)
 
-The value for end-users lies in accessing brand-managed assets (with corresponding metadata) while respecting the digital rights management of the external system.
-Media Connectors also enable fully automated content creation, driving content generation at scale.
+The value for end-users lies in accessing brand-managed assets (with corresponding metadata) while respecting the digital rights management of the external system. Media Connectors also enable fully automated content creation, driving content generation at scale.
 
-Connectors can be used in **[self-service](/GraFx-Studio/concepts/self-service/)** or **[headless](/GraFx-Studio/concepts/headless/)**.
+Connectors can be used in **[self-service](/GraFx-Studio/concepts/self-service/)** or **[headless](/GraFx-Studio/concepts/headless/)** workflows.
 
 ## Concepts
 
-If you're considering building your own Media Connector, here are approaches to consider.
+If you're considering building your own Media Connector, here are some approaches to consider.
 
 ## Concept 1: Making Assets Available for the End-User
 
-In the 'Media' panel on the left in GraFx Studio, a Template Designer can browse between the available Media Connectors. Multiple media repositories can be connected, and by default, the built-in application GraFx Media is available.
+In the **Media** panel on the left in GraFx Studio, a Template Designer can browse the available Media Connectors. Multiple media repositories can be connected, and by default, the built-in application GraFx Media is available.
 
 ![screenshot-full](damconnector01.png)
 
-When the Template Designer clicks on a Media Connector, the repository is opened, and all assets the user is entitled to access, according to the digital rights governance within the Media Connector, are shown.
+When the Template Designer clicks on a Media Connector, the repository opens, and all assets the user is entitled to access, according to the digital rights governance within the Media Connector, are displayed.
 
 ![screenshot-full](damconnector02.png)
 
-The Template Designer can select and add an asset to the design. 
+The Template Designer can select and add an asset to the design.
 
 **Challenge**: In the above scenario, the user will see **all** the assets.
 
 ### Narrowing Down the Selection
 
-In the Template Designer Workspace, a template designer can configure which specific assets are made available for the end-user in the EU Interface. This avoids showing the end-user all assets, including those that are less relevant.
+In the Template Designer Workspace, a Template Designer can configure which specific assets are made available to the end-user in the **End User Interface (EU Interface)**. This avoids showing the end-user all assets, including those that are less relevant.
 
 **Solution**: Refine the query to limit the asset view.
 
@@ -41,7 +40,7 @@ A Media Connector communicates with a media provider (e.g., DAM). Each of these 
 
 ![screenshot-full](damconnector03.png)
 
-In the end-user interface, the end-user will see the selected assets. In this example, a category of smartphones:
+In the end-user interface, the end-user will see the filtered assets. In this example, a category of smartphones:
 
 ![screenshot-full](damconnector04.png)
 

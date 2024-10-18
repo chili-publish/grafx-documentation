@@ -8,10 +8,10 @@
 
 [See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
-## Intro 
+## Introduction
 
-GraFx Media is the built-in Media repository.
+**GraFx Media** is the built-in media repository.
 
-It is listed here since GraFx Media uses the same **Connector Architecture** as the other Connectors.
+It is listed here because GraFx Media uses the same **Connector Architecture** as other connectors.
 
-More info on the [GraFx Media application](/GraFx-Media/)
+For more information, see the [GraFx Media application](/GraFx-Media/).

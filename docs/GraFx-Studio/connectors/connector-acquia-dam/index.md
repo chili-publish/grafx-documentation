@@ -10,52 +10,57 @@
 
 ## Installation
 
-[See installtion through Connector Hub](/GraFx-Studio/guides/connector-hub/)
+[See installation through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
 ## Configuration
 
-### Base configuration
+### Base Configuration
 
-Your instance of the Connector needs to know to what Acquia DAM instance it needs to speak, and how it would then authenticate.
+Your instance of the Connector needs to know which Acquia DAM instance it should communicate with and how to authenticate.
 
-Once installed, navigate to Connector overview, and select "Acquia DAM". Start with **Configuration**.
+Once installed, navigate to the Connector overview, and select **Acquia DAM**. Start with **Configuration**.
 
 ![screenshot-full](config.png)
 
-Consult your Acquia System Admin to get the right values for the fields.
+Consult your Acquia System Admin to get the correct values for the fields.
 
 ### Authentication
 
-An important part of Digital Assets, is the governance. When and where can the assets be used, and who can use them.
+An important part of managing digital assets is governance—determining when and where assets can be used, and who has access to them.
 
-You can set the Authentication for machine-machine and Browser seperately, or use the same setup for both.
+You will need specific credentials from your Acquia DAM installation to set up the connector:
+
+- **Client ID** and **Client Secret**: These are customer-specific credentials provided by the Acquia Admin when creating integrations within Acquia.
+- **Token URL** and **Authorization URL**: These are more developer-oriented settings but can also be retrieved from Acquia documentation. While they are publicly available, they are generic for all Acquia clients.
+
+You can set the authentication for machine-to-machine and browser separately or use the same setup for both.
 
 ![screenshot-full](config-auth.png)
 
-Consult your Acquia System Admin to get the right values for the fields.
+Consult your Acquia System Admin to get the correct values for the fields.
 
-### Browser authentication
+### Browser Authentication
 
-GraFx Studio is a consumer of the assets available in the DAM. Therefore, the user that is used to impersonate the access to the DAM system, will dictate what assets are available in the template.
+GraFx Studio consumes assets available in the DAM. Therefore, the user impersonating access to the DAM system will dictate which assets are available in the template.
 
-### Server authentication
+### Server Authentication
 
-The credentials used to setup machine 2 machine, will dictate the governance on the assets in the automation setup.
+The credentials used to set up machine-to-machine authentication will determine the governance on the assets in the automation setup.
 
-This means if the credentials only allow access to part of the assets, only these assets will be available when batch processing requests access to place assets in the output.
+This means if the credentials only allow access to certain assets, only those assets will be available when batch processing requests access to place assets in the output.
 
-## Using the assets from your Acquia DAM system
+## Using Assets from Your Acquia DAM System
 
-### Place assets in your template
+### Place Assets in Your Template
 
-- Select the Acquia Dam Connector
-- Doubleclick the asset to assign to image frame
+- Select the Acquia DAM Connector.
+- Double-click the asset to assign it to the image frame.
 
 ![screenshot-full](acquia_assets.gif)
 
-### Image variables
+### Image Variables
 
-When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets, when you "select image".
+When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets when you select an image.
 
 ![screenshot-full](var1.png)
 
@@ -63,11 +68,11 @@ When using [image variables](/GraFx-Studio/guides/template-variables/assign/#ass
 
 ### DAM Queries & Variables
 
-#### Intro
+#### Introduction
 
-You want to filter down the assets suggested to the template user, using categories, keywords, etc. ...
+You may want to filter the assets suggested to the template user by using categories, keywords, etc.
 
-In the Acquia Dam solution, you can use a query language.
+In the Acquia DAM solution, you can use a query language.
 
 ![screenshot-full](assets1.png)
 
@@ -75,32 +80,32 @@ By using the query language, you can filter down to the right selection of asset
 
 !!! tip "Category"
 
-	Use "cat:{wine}" to filter down to only wines
+    Use `cat:{wine}` to filter down to only wines.
 
 ![screenshot-full](assets2.png)
 
 !!! tip "Description"
 
-	Add "cat:{wine} des:{white}" to further filter to only wines with the word "white" in the description.
-	
+    Add `cat:{wine} des:{white}` to further filter to only wines with the word "white" in the description.
+    
 ![screenshot-full](assets3.png)
 
-#### How to
+#### How To
 
-DAM queries happen on the level of the connector, for a specific frame.
+DAM queries are set at the connector level for a specific frame.
 
 Set the value of the query in the connector settings.
 
 ![screenshot-full](query1.png)
 
-If a fixed Query is not sufficient, you can use a variable.
+If a fixed query is not sufficient, you can use a variable.
 
 ![screenshot-full](query2.png)
 
 ![screenshot-full](query3.png)
 
-To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the Query, according to other variables of input the Smart Template gets.
+To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the query according to other variables or inputs the Smart Template receives.
 
 ![screenshot-full](query4.png)
 
-In the image above, the action will set the "DamSearchString" to have different DAM Queries, depending on a chosen category. That text variable is then used in the image variable. (see image above here)
+In the image above, the action sets the `DamSearchString` to have different DAM queries depending on a chosen category. That text variable is then used in the image variable (see image above).
