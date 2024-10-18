@@ -51,3 +51,11 @@ Support for these connectors is provided by the developer.
 In cases where a built-in or readily available connector does not meet specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/build-media-connector/). These connectors can be tailored for private use.
 
 Building a private connector allows integration with custom media providers and customization to meet specific requirements.
+
+### Default Connectors
+
+Each type of connector has a designated **default** connector, and there can only be one default connector per type. The default connector is the one that is automatically used in the Template Designer (TD) Workspace unless otherwise specified.
+
+For media connectors, **GraFx Media** is the default connector. This means that whenever you work in the TD Workspace and access media assets, the GraFx Media connector is used unless you configure another connector as the default.
+
+You can change the default connector by selecting a different one in the **Configuration** tab. However, only one default connector can be active per connector type (e.g., media or data).
