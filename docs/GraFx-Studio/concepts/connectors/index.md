@@ -48,7 +48,7 @@ Support for these connectors is provided by the developer.
 
 ### Custom (Private) Connectors
 
-In cases where a built-in or readily available connector does not meet specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/build-media-connector/). These connectors can be tailored for private use.
+In cases where a built-in or readily available connector does not meet specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/connectors-introduction/). These connectors can be tailored for private use.
 
 Building a private connector allows integration with custom media providers and customization to meet specific requirements.
 
