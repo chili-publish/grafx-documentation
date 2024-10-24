@@ -1,10 +1,9 @@
 # Publish my Connector
 
-You build a connector! Congratulations.
+You've built a connector! Congratulations.
 
-For specific connectors
-
-- [Build a Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/)
+!!! info
+    PS If you are looking for documentation on "How to start building a connector", you need to be [here](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) for Media Connectors.
 
 ## Requirements
 
@@ -26,7 +25,8 @@ Your connector needs to be documented
 
 ## Publish to GitHub
 
-- Sent to GitHub
+- Create a [fork](https://wonderful-sky-012b9bc03-422.westeurope.1.azurestaticapps.net/GraFx-Developers/connectors/publish-my-connector/) from the connector Framework Repository (if you haven't done that allready while building)
+- Commit your fork
 - Create a Pull Request
 
 ## Write Documentation
@@ -41,11 +41,19 @@ An example of how this can look like, can be found on [this page](/GraFx-Studio/
 
 ## Review
 
+After your PR, our team will be notified, and the review process starts.
+
 The team will review your submitted code and validate.
+
+- Functioneel
+- Code
+- Technical
 
 ## Publish
 
 Once the code and functionality is validated, the CHILI publish team will publish your connector.
 At the same time, the documentation pull request will also be published.
+
+Once the code is merged, the Connector will be available in the Connector Hub
 
 Your Connector is now available in the [Connector Hub](/GraFx-Studio/guides/connector-hub/)
