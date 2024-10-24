@@ -16,6 +16,14 @@ To make your connector available on the CHILI GraFx Connector Hub, it must be ma
 
 The connector must be submitted to the GitHub Repo
 
+### Documented
+
+Your connector needs to be documented
+
+- Base configuration
+- Authentication setup
+- How to use
+
 ## Publish to GitHub
 
 - Sent to GitHub
