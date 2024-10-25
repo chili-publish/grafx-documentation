@@ -42,13 +42,13 @@ Our Support team assists in identifying the origin of such issues.
 
 ### Built by Third Party, Approved by CHILI publish
 
-Our open connector framework encourages developers to [build connectors](/GraFx-Developers/connectors/build-media-connector/) for their unique use cases. If a media provider develops a connector, it can be offered in our Connector Hub.
+Our open connector framework encourages developers to [build connectors](/GraFx-Developers/connectors/connectors-introduction/) for their unique use cases. If a media provider develops a connector, it can be offered in our Connector Hub.
 
 Support for these connectors is provided by the developer.
 
 ### Custom (Private) Connectors
 
-In cases where a built-in or readily available connector does not meet specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/build-media-connector/). These connectors can be tailored for private use.
+In cases where a built-in or readily available connector does not meet specific needs, we encourage you to [build custom connectors](/GraFx-Developers/connectors/connectors-introduction/). These connectors can be tailored for private use.
 
 Building a private connector allows integration with custom media providers and customization to meet specific requirements.
 
