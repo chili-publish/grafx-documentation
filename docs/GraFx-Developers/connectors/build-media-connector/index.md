@@ -240,7 +240,7 @@ Before you can do that, you'll need to login on your instance of CHILI GraFx.
 
 Our CLI tool provides a way to authenticate via the browser. This way, your CHILI GraFx instance will recognize the cli tool, to be able to push the connector.
 
-Step 1, call the login option through the CLI
+Step 1, call the login option through the CLI 
 
 ```shell
 $ npx connector-cli login
