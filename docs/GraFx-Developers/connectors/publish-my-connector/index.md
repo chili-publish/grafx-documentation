@@ -9,7 +9,9 @@ You've built a connector! Congratulations.
 
 ### Open Source
 
-To make your connector available on the CHILI GraFx Connector Hub, it must be made open source.
+To make your connector available on the CHILI GraFx [Connector Hub](/GraFx-Studio/guides/connector-hub/), it must be made open source.
+
+Below, you'll see it needs to be committed to a public repository, which will make it Open Source.
 
 ### GitHub
 
@@ -25,33 +27,35 @@ Your connector needs to be documented
 
 ## Publish to GitHub
 
-- Create a [fork](https://wonderful-sky-012b9bc03-422.westeurope.1.azurestaticapps.net/GraFx-Developers/connectors/publish-my-connector/) from the connector Framework Repository (if you haven't done that allready while building)
+- Create a [fork](https://wonderful-sky-012b9bc03-422.westeurope.1.azurestaticapps.net/GraFx-Developers/connectors/publish-my-connector/) from the connector Framework Repository<br/>(if you haven't done that allready while building)
 - Commit your fork
 - Create a Pull Request
 
+The Pull Request will trigger the CHILI publish staff to review your code and connector.
+
 ## Write Documentation
 
-We will write the abstract version of how to start the deployment.
-We expect you to write documentation on the use and configuration setup.
+We covered how to start the deployment of a(ny) connector.
+We expect you to write documentation on the configuration and use of your connector.
 
-The CHILI GraFx Documentation GitHub repository is also public ([see license](https://github.com/chili-publish/grafx-documentation/blob/main/LICENSE)).
+The CHILI GraFx Documentation GitHub repository is public ([see license](https://github.com/chili-publish/grafx-documentation/blob/main/LICENSE)).
 Make a fork, add the documentation pages and make a pull request.
 
-An example of how this can look like, can be found on [this page](/GraFx-Studio/connectors/connector-grafx-media/).
+An example can be found on [this page](/GraFx-Studio/connectors/connector-grafx-media/).
 
 ## Review
 
-After your PR, our team will be notified, and the review process starts.
+After your pull request, our team will be notified, and the review process starts.
 
 The team will review your submitted code and validate.
 
-- Functioneel
+- Functional
 - Code
-- Technical
+- Security
 
 ## Publish
 
-Once the code and functionality is validated, the CHILI publish team will publish your connector.
+Once the code and functionality is validated, the CHILI publish team will publish your connector. (merge the pull request)
 At the same time, the documentation pull request will also be published.
 
 Once the code is merged, the Connector will be available in the Connector Hub
