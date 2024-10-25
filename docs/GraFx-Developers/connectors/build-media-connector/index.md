@@ -285,3 +285,7 @@ Now, open a template, or create a new template in GraFx Studio, and open the "Me
 You should see your "MyConnector", ready to query the Media provider of your choice, and add the media to your GraFx Studio Smart Template!
 
 ![screenshot](connector07.png)
+
+## Publish to the Connector Hub
+
+If you want your connector to be part of the CHILI GraFx Connector Hub, then you can publish your connector through [these steps](/GraFx-Developers/connectors/publish-my-connector/).
