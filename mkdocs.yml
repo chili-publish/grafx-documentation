@@ -236,11 +236,12 @@ nav:
             - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
-            - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
             - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
+            - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
+            - 'Headless':                       'GraFx-Studio/concepts/headless/index.md'
             - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
             - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
@@ -250,6 +251,7 @@ nav:
             - 'Private Data':                   'GraFx-Studio/concepts/private-data/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
+            - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
@@ -270,8 +272,8 @@ nav:
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
             - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
-        - 'How to: Connect':
-            - 'Acquia DAM':                     'GraFx-Studio/guides/connect-acquia/index.md'
+        - 'How to: Connectors':
+            - 'Connector HUB' :                 'GraFx-Studio/guides/connector-hub/index.md'
         - 'How to: Animate':
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
@@ -296,8 +298,10 @@ nav:
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
-        - 'Integrate GraFx studio':
-            - 'Overview':                'GraFx-Developers/grafx-studio/overview/index.md'
+        - 'Connectors':
+            - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
+            - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'            
+        - 'Integrate GraFx studio ...':         'GraFx-Developers/grafx-studio/overview/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
         - 'Guides':
