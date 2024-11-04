@@ -7,7 +7,7 @@ Your journey in understanding storage starts on the Dashboard of [CHILI GraFx](h
 
 You have the option to delve into specific environments using a dropdown selector.
 
-![find environment](find_environment.png)
+![screenshot-full](find_environment.png)
 
 In each environment, storage usage is broken down into several categories:
 - Assets
@@ -16,7 +16,7 @@ In each environment, storage usage is broken down into several categories:
 - Preview Data
 - Backup
 
-![environment breakdown](env_breakdown.png)
+![screenshot-full](env_breakdown.png)
 
 !!! note
 
