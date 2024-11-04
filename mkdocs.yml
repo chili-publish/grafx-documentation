@@ -422,3 +422,4 @@ nav:
                 - 'Add Environment Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
                 - 'Connector CLI':                      'GraFx-Developers/connectors/connector-cli/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
+            - 'Publish my connector':                         'GraFx-Developers/connectors/publish-my-connector/index.md'
