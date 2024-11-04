@@ -48,6 +48,8 @@ If you want to make specific adjustments, you can manually move a frame or chang
 
 ## What’s Next?
 
+See the [How To set Anchoring page](/GraFx-Studio/guides/anchoring/) in the Guides section
+
 Anchoring is powerful on its own, but it becomes even more effective when combined with other Smart Template features:
 
 - [Actions](/GraFx-Studio/concepts/actions/)
