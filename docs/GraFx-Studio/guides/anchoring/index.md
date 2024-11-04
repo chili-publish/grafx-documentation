@@ -1,97 +1,95 @@
 # Anchoring
 
+Anchoring can be explored by creating a blank document with at least two frames and following along with the guide below.
+
+Select a frame to access anchoring properties in the properties panel.
+
 ## Default
 
-Upon creation of a new frame (text, image, ...) the anchoring is set to Relative.
+When a new frame (text, image, etc.) is created, anchoring is set to Relative by default.
+
+The default Target is set to Page.
 
 ![screenshot-full](anchor_guide_02.png)
 
-## Properties menu
+## Properties Menu
 
-Select a frame, and you'll see the **Anchoring** section in the properties panel.
-
-The properties will reveal more depending on the chosen options.
+Select a frame, and you'll see the **Anchoring** section in the properties panel. Additional options may appear based on your selections.
 
 ![screenshot-full](anchor_guide_01.png)
 
-## Types of anchors
+## Types of Anchors
 
-Select a frame, and change the Horizontal and/or Vertical anchor
+Select a frame, then adjust the Horizontal and/or Vertical anchor.
 
 ![screenshot-full](anchor_guide_05.gif)
 
-## Relative (%)
+### Relative (%)
 
-The image frame below, has relative anchors to the page (by default).
-
-Left and right are set to 5%, top 14% and bottom 38%.
+The image frame below is anchored to the page by default, with Left and Right set to 5%, Top at 14%, and Bottom at 38%.
 
 ![screenshot-full](anchor_guide_03.png)
 
-The canvas is set to 1080 px width and height.
-
-When now adjusting the canvas to e.g. 1200 px, the position of the image frame will remain 5% of the left, and 5% of the right. The actual x and y position will differ.
-
-![screenshot-full](anchor_guide_04.gif)
-
-This means, the actual pixel count from the left (and right) will increase. 
+If the canvas size changes (e.g., from 1080 px to 1200 px), the frame's relative position remains the same at 5% from the left and right. However, the actual pixel distance will change:
 
 - 5% of 1080 = 54 px
 - 5% of 1200 = 60 px
 
-## Left, Right or Left & Right
+![screenshot-full](anchor_guide_04.gif)
 
-Choosing of of these anchors, will anchor the selected frame with a fixed amount of units from the chosen side(s).
+### Left, Right, Top, Bottom
 
-Reminder: by default, the anchor is set to the page
+Selecting these anchors sets the frame to a fixed offset from the chosen side(s).
 
-### Left
+#### Left
 
-A fixed amount of units (pixels, mm, inches, ...) will be set to keep from the left side.
-
-When the canvas is made wider, the left-hand side spacing will remain the exact amount of units.
+A fixed offset (in pixels, mm, inches, etc.) is set from the left target. If the canvas width changes, the left offset remains constant.
 
 ![screenshot-full](anchor_guide_06.gif)
 
-### Right
+#### Right
 
-A fixed amount of units (pixels, mm, inches, ...) will be set to keep from the right side.
-
-When the canvas is made wider, the right-hand side spacing will remain the exact amount of units.
+A fixed offset is set from the right target. If the canvas width changes, the right offset remains constant.
 
 ![screenshot-full](anchor_guide_07.gif)
 
-### Left & Right
+#### Left & Right
 
-A fixed amount of units (pixels, mm, inches, ...) will be kept from the left-hand side & the right-hand side.
-
-When the canvas is made wider, both sides will remain the exact amount of units from the respective sides.
+A fixed offset is maintained on both the left and right sides. If the canvas width changes, both offsets remain unchanged.
 
 ![screenshot-full](anchor_guide_08.gif)
 
+#### Top
+
+**Note:** Top, Bottom and Top & Bottom are only available for Vertical anchoring, but work similar.
+
+A fixed offset (in pixels, mm, inches, etc.) is set from the top target. If the canvas height changes, the top offset remains constant.
+
+#### Bottom
+
+A fixed offset is set from the bottom target. If the canvas height changes, the bottom offset remains constant.
+
+#### Top & Bottom
+
+A fixed offset is maintained on both the top and bottom sides. If the canvas height changes, both offsets remain unchanged.
+
 ### Center
 
-The selected frame will **not change size**, and will keep centered relative to the changed dimensions of the canvas.
+The selected frame stays centered **relative** to the canvas, and its size does not change if the canvas dimensions change.
 
 ![screenshot-full](anchor_guide_09.gif)
 
 ## Anchor Targets
 
-By default, the anchor target is set to the page. This means, the choice you made above (relative, left, ...) is set to page.
+By default the anchor target is the page, meaning any chosen anchor option (relative, left, etc.) applies to the page.
 
-You can modify the target with the property element below the Horizontal and Vertical anchor choice.
+You can modify the target by selecting a new option below the Horizontal and Vertical anchor settings.
 
 ![screenshot](anchor_guide_10.png)
 
-The box with the 4 circles around, represents your frame.
+The box with four circles around it represents your frame. The animation next to it shows the effect of your anchor settings. In the animation, the blue box represents your frame, and the gray area represents your canvas.
 
-The animation right to the box, represents the impact of your choice. In the animation, the blue box represents your frame, and the gray area your cancas.
-
-Select elements in the box representing the left, top, right and bottom anchor. Select the center cross to adjust the center anchor.
-
-Depending on the choice you made above, different anchor targets can be set.
-
-E.g. When the left side of the frame is anchored, the right anchor target cannot be set.
+Click the circles (left, top, right, bottom) or the center cross to adjust the anchor settings. Depending on the settings, some anchor targets may be restricted (e.g., if the left side is anchored, the right anchor cannot be set).
 
 ![screenshot](anchor_guide_11.png)
 
@@ -133,23 +131,23 @@ By default, your frame is anchored (relative) to the page.
 
 ## Anchor to Frame
 
-Choose an anchor target (one of 4 circles around the box), and set a new anchor point.
+Choose an anchor target (one of the four circles around the box) and set a new anchor point.
 
-Let's use the picture below as example
+Example:
 
-- Chosen frame is the image frame of the house
-- Horizontal anchoring is set to "Left". This means there will be a fixed amount of pixels on the left.
-- Left anchor target is selected, this means: To what target should we anchor the image frame?
-- Anchor left is set to "Frame" (not page)
-- Target Frame is set to "Realtor" (the name of the frame)
-- Target Anchor Point is set to Left
+- Selected frame: Image frame of the house
+- Horizontal anchoring: Set to "Left," meaning a fixed amount of pixels will remain on the left
+- Left anchor target: Specifies the frame to anchor to
+- Anchor left: Set to "Frame" (not page)
+- Target Frame: Set to "Realtor" (the frame’s name)
+- Target Anchor Point: Left
 
-This means: The image of house is set to anchor on the left-hand side to the left side of the realtor image.
+This setup anchors the left side of the house image to the left side of the "Realtor" frame.
 
-The Interface displays the amount of pixels will be kept as offset. (i.e. 79.50).
+The interface shows the offset in pixels (e.g., 79.50).
 
 ![screenshot-full](anchor_guide_12.png)
 
-The solid anchor line on the left of the house image shows the offset (79.50) and stops where the left-hand side of the realtor image is.
+The solid anchor line on the left of the house image shows the offset (79.50) and stops at the left side of the "Realtor" frame.
 
 ![screenshot-full](anchor_guide_13.png)
