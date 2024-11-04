@@ -240,7 +240,7 @@ Before you can do that, you'll need to login on your instance of CHILI GraFx.
 
 Our CLI tool provides a way to authenticate via the browser. This way, your CHILI GraFx instance will recognize the cli tool, to be able to push the connector.
 
-Step 1, call the login option through the CLO
+Step 1, call the login option through the CLI 
 
 ```shell
 $ npx connector-cli login
@@ -285,3 +285,7 @@ Now, open a template, or create a new template in GraFx Studio, and open the "Me
 You should see your "MyConnector", ready to query the Media provider of your choice, and add the media to your GraFx Studio Smart Template!
 
 ![screenshot](connector07.png)
+
+## Publish to the Connector Hub
+
+If you want your connector to be part of the CHILI GraFx Connector Hub, then you can publish your connector through [these steps](/GraFx-Developers/connectors/publish-my-connector/).
