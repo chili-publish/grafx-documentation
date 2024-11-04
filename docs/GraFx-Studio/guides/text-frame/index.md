@@ -1,55 +1,97 @@
-# Text frame
+# Text Frame
 
-## Create a text frame
+## Create a Text Frame
 
 Click the Text tool in the [sidebar](/GraFx-Studio/overview/sidebar/). Drag a frame on the document.
 
 ![ui](creattextframe.gif)
 
-## Add text to a text frame
+## Add Text to a Text Frame
 
-Double-click inside the text frame, and start typing.
+Double-click inside the text frame and start typing.
 
-## Add variable text to a text frame
+## Add Variable Text to a Text Frame
 
-See [Work with variables](/GraFx-Studio/guides/template-variables/assign/)
+See [Work with variables](/GraFx-Studio/guides/template-variables/assign/).
 
-## Frame properties
+## Frame Properties
 
-See [Frame properties](/GraFx-Studio/concepts/frames/)
+See [Frame properties](/GraFx-Studio/concepts/frames/).
 
-## Text properties
+## Text Properties
 
-### Text style
+### Text Style
 
-Choose a predefined [paragraph -](/GraFx-Studio/guides/paragraphstyles/) or [character style](/GraFx-Studio/guides/characterstyles/) for the (selected) text.
+Choose a predefined [paragraph style](/GraFx-Studio/guides/paragraphstyles/) or [character style](/GraFx-Studio/guides/characterstyles/) for the selected text.
 
-### Typographic properties
+### Typographic Properties
 
-If you don't want to work with predefined styles (highly recommended) you can set the typographic properties for the (selected) text.
+If you prefer not to use predefined styles (recommended for consistency), you can manually set typographic properties for the selected text.
 
 ![screenshot](typography.png)
 
-1. Choose a font family, weight, and size
-2. Vertical spacing for the characters
-3. Horizontal spacing for the characters
-4. Align the text: left, center, right, and justified
-5. Align text vertically to the top (default), center, and bottom of the frame
-6. Shift the baseline of the (selected) text
-7. Override capitalization by selecting "lowercase" or "uppercase"
-8. Make your text superscript or subscript
-9. Underline text, Strike-through
+1. Select a font family, weight, and size.
+2. Adjust vertical spacing between characters.
+3. Adjust horizontal spacing between characters.
+4. Align text: left, center, right, or justified.
+5. Align text vertically to the top (default), center, or bottom of the frame.
+6. Shift the baseline of the selected text.
+7. Override capitalization by choosing "lowercase" or "uppercase."
+8. Apply superscript or subscript formatting.
+9. Add underline or strikethrough to text.
 
-### Auto resize
+### Auto Resize
 
-In creative automation, your text frame needs to handle datasets, with varying lengths of text. To accommodate different lengths, you can make the copy fit the frame by allowing reduction or growth of the font size.
+For creative automation, text frames often need to handle datasets with varying text lengths. Set how the frame should respond to different content lengths:
+
+- Text Overflow
+- Copyfitting
+- Auto-grow
+
+![screenshot](autoresize.png)
+
+#### Text Overflow
+
+With no resizing option selected, text that exceeds the frame will trigger a yellow text-overflow indicator below the frame.
+
+![screenshot](overflow.png)
+
+See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how a VDP job should handle text overflow.
+
+![screenshot](errorhandling.png)
+
+#### Copyfitting
+
+Select the text frame and enable "Copyfitting" to adjust font size to fit the frame by allowing slight reduction or growth.
 
 ![screenshot](copyfit.png)
 
-Choose the minimum and maximum percentage a font size can vary.
+Set the minimum and maximum percentages for font size adjustments.
+
+> Note: When Copyfitting is enabled, Autogrow is disabled.
+
+#### Auto-grow
+
+Enable "Autogrow" to allow the frame to expand as needed to fit content of varying lengths. For instance, records in a dataset might contain differing character counts.
+
+Choose one or two growth directions (e.g., left, right, up, down). 
+
+![screenshot](autogrow-left.png)
+
+When selecting "Left" or "Right," you can also add the opposite direction for bidirectional growth.
+
+![screenshot](autogrow-left-right.png)
+
+When "Up" is selected, you can also add "Down."
+
+To enable Autogrow, select at least one growth direction, or uncheck "Autogrow" to disable it.
+
+Define the minimum and maximum frame size if needed.
+
+![screenshot](autogrow-min-max.png)
 
 ### Appearance
 
-Make the frame blend with its background.
+Adjust how the frame blends with its background.
 
-See [blend modes](/GraFx-Studio/guides/blendmodes/)
+See [Blend Modes](/GraFx-Studio/guides/blendmodes/).
