@@ -110,13 +110,21 @@
 
     [:octicons-link-external-24: Get Certified](https://product.chili-publish.academy/)
 
+-   :octicons-video-24: __Youtube__
+
+    ---
+
+    Get inspired by fun and interactive videos.
+
+    [:octicons-link-external-24: Watch](https://www.youtube.com/@chilipublish/featured)
+
 -   :octicons-browser-24: __Demo__
 
     ---
 
     Try out concepts before you implement them.
 
-    [:octicons-link-external-24: Visit Demo Portal](https://demoportal.thebigspicy.com/scenarios)
+    [:octicons-link-external-24: Discover it yourself](https://www.chili-publish.com/request-a-demo/)
 
 -   :octicons-people-24: __Support__
 
