@@ -27,7 +27,7 @@ Your connector needs to be documented
 
 ## Publish to GitHub
 
-- Create a [fork](https://wonderful-sky-012b9bc03-422.westeurope.1.azurestaticapps.net/GraFx-Developers/connectors/publish-my-connector/) from the connector Framework Repository<br/>(if you haven't done that allready while building)
+- Create a [fork](https://github.com/chili-publish/studio-connector-framework) from the connector Framework Repository<br/>(if you haven't done that allready while building)
 - Commit your fork
 - Create a Pull Request
 
