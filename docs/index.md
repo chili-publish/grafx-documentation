@@ -1,6 +1,9 @@
 # CHILI GraFx Product documentation
 
-<script src="https://fast.wistia.com/embed/medias/ynvyz51p7b.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ynvyz51p7b seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+<video width="690" height="388" autoplay="true" loop="true" muted="true">
+  <source src="/assets/CHILI GraFx Animated video 720.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Latest updates
 
@@ -10,15 +13,34 @@
 
     ---
 
-    **March 2024**: Management for Federated User Groups ==GraFx Publisher==.
+    **October 14 2024**: ==Connect== with CHILI GraFx
+    
+    Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
+
+    **October 8 2024**: ==Spot== lights on GraFx Studio
+    
+    Spot colors and private data extend GraFx Studio even more
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/08/grafxstudio-in-the-spot-light/)
+
+    **September 19 2024**: Get a grip on ==output tasks==
+    
+    You can now see an overview of output tasks of GraFx Studio
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/19/chili-grafx-platform-updates/)
+
+    **September 3 2024**: Improvements in GraFx Studio
+    
+    Set a variable to be required, and save a template under a new name, and many more improvements.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/03/grafx-studio-updates/)
+
+    **See all release notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-
-
-    **March 2024**: New plugins for ==GraFx Publisher==.
-
-    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-
+    
 </div>
 
 
@@ -100,7 +122,7 @@
 
     ---
 
-    Aks our award wining support staff.
+    Ask our award winning support staff.
 
     [:octicons-link-external-24: Support Portal](https://mysupport.chili-publish.com/)
 
