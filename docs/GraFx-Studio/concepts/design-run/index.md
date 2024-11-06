@@ -1,0 +1,63 @@
+# Design Mode and Run Mode
+
+GraFx Studio provides two modes for creating and testing Smart Templates: **Design Mode** and **Run Mode**. 
+
+These modes allow you to focus separately on designing the smart template and testing business logic.
+
+In **Design Mode**, you can freely arrange and style elements without triggering actions or interactions. This keeps the workspace clean, ideal for setting up and adjusting layouts, styles, and initial logic.
+
+Switching to **Run Mode** simulates the end-user experience (My Projects), showing how the template’s logic behaves live. In this mode, actions and visibility settings behave as they will in a real environment, letting you test how users will experience the template.
+
+## Design Mode
+
+**Design Mode** is optimized for layout and style tasks, with logic and actions inactive.
+
+![screenshot](dr1.png)
+
+![screenshot-full](dr1_1.png)
+
+### Key Features in Design Mode:
+- **Static Layout**: Actions and logic are inactive, letting you set up without interference.
+- **Focused Styling**: Only layout and style elements are active, making design adjustments easier.
+  
+### Elements Active in Design Mode:
+- **Anchoring**: Set relative positions to ensure consistent layout across sizes.
+- **Animation Setup**: Define and tes animations with playback
+- **Styling**: Customize text, colors, and layout freely.
+
+## Run Mode
+
+In **Run Mode**, the template operates as it would for end users, activating logic and interactions for realistic testing.
+
+![screenshot](dr2.png)
+
+![screenshot-full](dr2-1.png)
+
+### Key Features in Run Mode:
+- **Live Actions**: Business logic is triggered in response to changes, reflecting end-user interactions.
+- **True Visibility**: Hidden variables and conditional visibility behave as configured for end users.
+- **User Interface Simulation**: Simulate how different [User Interfaces](/GraFx-Studio/concepts/user-interface/) will appear to end users. In Run Mode, you can switch between different user interfaces to see e.g. which output settings are available to end users, ensuring the final experience matches the intended design.
+
+### Displaying Output Settings by Layout Intent
+
+When a **User Interface** is selected, only the output settings specific to that interface will be shown. 
+
+For example, when viewing a layout with a **Print Intent**, only print-specific output settings (defined in the user interface) will be displayed in the "download" options.
+
+Conversely, when viewing a layout with a **Digital Animated Intent**, only the digital animated output settings will appear. This selective display provides a clear, intent-specific experience that mirrors the end-user environment.
+
+![screenshot](dr3.png)
+
+![screenshot](dr4.png)
+
+### Elements Active in Run Mode:
+- **Actions**: All interactions and business logic execute in real time.
+- **Conditional Visibility**: Hidden elements are hidden, showing how visibility rules work.
+
+## Workflow
+
+1. **Design** in Design Mode: Arrange layout, styles, animations and initial logic without active interactions.
+2. **Switch to Run Mode**: Test actions, and user interactions.
+3. **Refine** by toggling between modes, adjusting design or logic as needed.
+
+By switching between **Design Mode** and **Run Mode**, you can refine interactive templates efficiently without design interference.
