@@ -1,11 +1,11 @@
-# Smart Template Editors compared
+# GraFx Studio and GraFx Publisher: Feature Comparison
 
-**GraFx Studio** extends the possibilities in **CHILI GraFx**, enabling a wider range of use cases, including print, static and animated digital content and multi-channel output. **GraFx Studio** goes further by providing advanced tools for creating dynamic, engaging content, expanding what you can achieve across digital and traditional channels.
+**GraFx Studio** represents the next generation of AI powered content creation in **CHILI GraFx**, offering a streamlined and future-ready experience with enhanced capabilities for print, digital, and animated content, all optimized for true **multichannel** output. Built with a **modern UI** and **intuitive workflows**, GraFx Studio is designed for **effortless integration** and a **scalable cloud performance** that supports a broad range of use cases.
 
-With the tools and features available in GraFx Studio, many use cases can be solved in different, more flexible ways. The platform offers new approaches to content creation that not only cover existing needs but also open up possibilities for innovative workflows and outputs that weren’t achievable before.
+The new tech stack powering GraFx Studio introduces a **Connector framework** for seamless integration with external systems, providing flexibility and a more dynamic approach to content management. This forward-thinking architecture enables teams to create engaging, adaptable content that scales across traditional and digital channels with ease.
 
-Therefore we redesigned the editor, SDK and API from scratch.
+With GraFx Studio, you gain not only the tools to meet current needs but also the potential to explore innovative workflows and outputs. The **editor**, **SDK**, and **API** have been redesigned from the ground up, making GraFx Studio the platform for today’s and tomorrow’s creative challenges.
 
-Explore the comparison below to see how GraFx Studio’s features can solve even more creative challenges and elevate your content creation process.
+Explore the comparison below to see how GraFx Studio’s advanced features unlock new creative possibilities and elevate your content creation process.
 
 {{ read_excel('./features.xlsx', engine='openpyxl') }}
