@@ -1,6 +1,9 @@
 # CHILI GraFx Product documentation
 
-<script src="https://fast.wistia.com/embed/medias/ynvyz51p7b.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ynvyz51p7b seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+<video width="690" height="388" autoplay="true" loop="true" muted="true">
+  <source src="/assets/CHILI GraFx Animated video 720.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Latest updates
 
@@ -10,45 +13,29 @@
 
     ---
 
-    **July 22 2024**: CHILI GraFx ==Academy==
+    **October 14 2024**: ==Connect== with CHILI GraFx
     
-    Are you a visual learner, CHILI GraFx Expands the Academy with more videos.
+    Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
     
-    ![screenshot](academy01.png)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
+
+    **October 8 2024**: ==Spot== lights on GraFx Studio
     
-    [:octicons-arrow-right-24: Youtube Channel](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B9G1zgsqkKDgQWd03PP2cxF)
-
-
-    **July 16 2024**: GraFx Studio adds ==date variables==.
+    Spot colors and private data extend GraFx Studio even more
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/16/grafx-studio-adds-date-variables/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/08/grafxstudio-in-the-spot-light/)
 
-
-    **July 4 2024**: CHILI GraFx: ==Multi-select== and ==enhanced item previews==.
+    **September 19 2024**: Get a grip on ==output tasks==
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/04/chili-grafx/)
-
-
-    **July 1 2024**: ==PDF batch output== with GraFx Studio.
+    You can now see an overview of output tasks of GraFx Studio
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/07/01/pdf-batch-output-with-grafx-studio/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/19/chili-grafx-platform-updates/)
 
-
-    **June 21 2024**: GraFx Studio adds ==number variables==.
+    **September 3 2024**: Improvements in GraFx Studio
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/21/grafx-studio-adds-number-variables/)
-
-
-    **June 11 2024**: GraFx Studio adds ==user interfaces==.
+    Set a variable to be required, and save a template under a new name, and many more improvements.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/06/11/grafx-studio-updates/)
-
-
-    **May 2024**: GraFx Studio adds ==barcodes==.
-    
-    ![screenshotsmall](/release-notes/releasenotesassets/barcodedocs.png)
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/05/06/grafx-studio-adds-support-for-qr-and-barcodes/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/03/grafx-studio-updates/)
 
     **See all release notes**
 
@@ -123,13 +110,21 @@
 
     [:octicons-link-external-24: Get Certified](https://product.chili-publish.academy/)
 
+-   :octicons-video-24: __Youtube__
+
+    ---
+
+    Get inspired by fun and interactive videos.
+
+    [:octicons-link-external-24: Watch](https://www.youtube.com/@chilipublish/featured)
+
 -   :octicons-browser-24: __Demo__
 
     ---
 
     Try out concepts before you implement them.
 
-    [:octicons-link-external-24: Visit Demo Portal](https://demoportal.thebigspicy.com/scenarios)
+    [:octicons-link-external-24: Discover it yourself](https://www.chili-publish.com/request-a-demo/)
 
 -   :octicons-people-24: __Support__
 

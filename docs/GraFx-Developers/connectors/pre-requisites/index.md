@@ -1,10 +1,12 @@
-# Pre-requisites to build a connector 
+# Pre-requisites
 
-## npm
+To be able build custom connectors you need to have NodeJS and NPM installed. Please follow [official documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to make installation according to your OS.
 
-https://linuxize.com/post/how-to-install-node-js-on-debian-10/
+Minimal supported version of NodeJS is LTS
 
-## Nodejs
+After installation open terminal and check the installed version:
 
-https://linuxize.com/post/how-to-install-node-js-on-debian-10/
-
+```bash
+node -v
+npm -v
+```
