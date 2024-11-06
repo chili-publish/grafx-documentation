@@ -253,7 +253,7 @@ nav:
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
-            - 'Convert Adobe InDesign':         'GraFx-Studio/guides/conver-indesign/index.md'
+            - 'Convert Adobe InDesign':         'GraFx-Studio/guides/convert-indesign/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
