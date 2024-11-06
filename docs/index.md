@@ -1,6 +1,9 @@
 # CHILI GraFx Product documentation
 
-<script src="https://fast.wistia.com/embed/medias/ynvyz51p7b.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ynvyz51p7b seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+<video width="690" height="388" autoplay="true" loop="true" muted="true">
+  <source src="/assets/CHILI GraFx Animated video 720.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Latest updates
 
@@ -107,13 +110,21 @@
 
     [:octicons-link-external-24: Get Certified](https://product.chili-publish.academy/)
 
+-   :octicons-video-24: __Youtube__
+
+    ---
+
+    Get inspired by fun and interactive videos.
+
+    [:octicons-link-external-24: Watch](https://www.youtube.com/@chilipublish/featured)
+
 -   :octicons-browser-24: __Demo__
 
     ---
 
     Try out concepts before you implement them.
 
-    [:octicons-link-external-24: Visit Demo Portal](https://demoportal.thebigspicy.com/scenarios)
+    [:octicons-link-external-24: Discover it yourself](https://www.chili-publish.com/request-a-demo/)
 
 -   :octicons-people-24: __Support__
 
