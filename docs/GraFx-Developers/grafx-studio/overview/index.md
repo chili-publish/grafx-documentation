@@ -23,7 +23,7 @@ The Editor Engine has a minimal UI for interacting with frames and frame content
 #### Tutorials
 
 - [Studio SDK Quickstart](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/) - a quick ~15 minute guide that will teach you everything you need to know
-- [Integration Project - Building a Custom UI](/GraFx-Developers/grafx-studio/editor-engine/integration-project-building-a-custom-ui/project-overview/) - a step-by-step bootcamp that will guide you in building a complete UI
+- [Integration Project - Building a Custom UI](/grafx-studio/editor-engine/workshop-building-a-custom-ui/00-workshop-overview/) - a step-by-step bootcamp that will guide you in building a complete UI
 
 #### References
 
