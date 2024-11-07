@@ -59,13 +59,29 @@ This location does not have any effect on the working of your document. It will 
 
 ## Types
 
-### Single Line of Text
+Create a variable. Then, in the properties panel, choose the variable type. Different use cases demand different variable types.
+
+![screenshot](vartypes.png)
+
+### Single Line Text
 
 A placeholder for text.
 
 ### Image
 
 A placeholder for a reference to an image in the (GraFx) Media pool, or other sources through **Connectors**
+
+### Single select list
+
+A placeholder with a predefined list of values to choose from
+
+### Boolean
+
+A placeholder that can hold "True" or "False".
+
+### Number
+
+A Placeholder to hold a numeric value. Different than a text variable, you can set specific elements related to numbers.
 
 ## Default state
 

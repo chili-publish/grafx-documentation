@@ -5,6 +5,7 @@ Set of tools at the bottom of the sidebar.
 - Alternate layout
 - Layers & Animation
 - Media browser
+- Barcodes
 - Stylekit Panel
 
 ![appscreen](bottom-quicktools-ui.png)

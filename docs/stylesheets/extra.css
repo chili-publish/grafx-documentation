@@ -60,10 +60,36 @@ img[alt=releasenotes] {
 img[alt=screenshot] {
 	width: 40%;
 	min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
 }
 
-img[alt=screenshot-fullwidth] {
+img[alt=screenshotsmall] {
 	max-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+img[alt=screenshot-full] {
+	max-height: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+
 }
 
 p img[alt=svg_icon] {

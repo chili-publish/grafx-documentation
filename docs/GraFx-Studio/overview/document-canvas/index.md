@@ -1,6 +1,6 @@
 # Document or Page canvas
 
-The area on the tool (2) to show your document or page of the document
+The canvas is the area where your document is displayed.
 
 ![appscreen](editor-labeled.png)
 
