@@ -39,9 +39,15 @@ You can set the authentication for machine-to-machine and browser separately or 
 
 Consult your Acquia System Admin to get the correct values for the fields.
 
-### Browser Authentication
+### Browser Authentication or Impersonation
 
 GraFx Studio consumes assets available in the DAM. Therefore, the user impersonating access to the DAM system will dictate which assets are available in the template.
+
+**Impersonation** refers to the process of granting a user access to an external system, such as a Digital Asset Management (DAM) platform, by using pre-configured credentials. This approach ensures seamless integration while respecting the security and governance rules of the connected system.
+
+Imagine a marketing team using GraFx Studio connected to a DAM system. The administrator configures the connector with specific credentials:
+
+By leveraging impersonation, GraFx Studio ensures that users see only the assets and data they are authorized to access, in compliance with the DAM system's governance.
 
 ### Server Authentication
 
