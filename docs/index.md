@@ -13,6 +13,12 @@
 
     ---
 
+    **November 22 2024**: GraFx Studio - ==New milestone achieved!==
+    
+    Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
+
     **October 14 2024**: ==Connect== with CHILI GraFx
     
     Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
@@ -30,12 +36,6 @@
     You can now see an overview of output tasks of GraFx Studio
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/09/19/chili-grafx-platform-updates/)
-
-    **September 3 2024**: Improvements in GraFx Studio
-    
-    Set a variable to be required, and save a template under a new name, and many more improvements.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/03/grafx-studio-updates/)
 
     **See all release notes**
 
