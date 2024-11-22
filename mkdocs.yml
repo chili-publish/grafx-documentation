@@ -237,6 +237,8 @@ nav:
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
             - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
+            - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
+            - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
             - 'Headless':                       'GraFx-Studio/concepts/headless/index.md'
