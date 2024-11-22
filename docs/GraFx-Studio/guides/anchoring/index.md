@@ -36,17 +36,17 @@ The image frame below is anchored to the page by default, with Left and Right se
 
 ![screenshot-full](anchor_guide_03.png)
 
-If the canvas size changes (e.g., from 1080 px to 1200 px), the frame's relative position remains the same at 5% from the left and right. However, the actual pixel distance will change:
+If the page size changes (e.g., from 1080 px to 1200 px), the frame's relative position remains the same at 5% from the left and right. However, the actual pixel distance will change:
 
 - 5% of 1080 = 54 px
 - 5% of 1200 = 60 px
 
 !!! Info "Precision"
-    The anchors on screen only show full percentages. Behind the screens GraFx Studio calculates with **4** decimals precision.
+    The anchors on screen show 2 decimals in the percentages. Behind the screens GraFx Studio calculates with full precision.
     
-    54.1432% will display as **54%**
+    54.1432% will display as **54.14%**
 
-    54.9876% will display as **55%**    
+    54.9876% will display as **55.99%**
     
     You can still enter the exact pixel location of a frame to start, and the percentages will show on the selected frame. (when set to relative)
     
@@ -59,39 +59,39 @@ Selecting these anchors sets the frame to a fixed offset from the chosen side(s)
 
 #### Left
 
-A fixed offset (in pixels, mm, inches, etc.) is set from the left target. If the canvas width changes, the left offset remains constant.
+A fixed offset (in pixels, mm, inches, etc.) is set from the left target. If the page width changes, the left offset remains constant.
 
 ![screenshot-full](anchor_guide_06.gif)
 
 #### Right
 
-A fixed offset is set from the right target. If the canvas width changes, the right offset remains constant.
+A fixed offset is set from the right target. If the page width changes, the right offset remains constant.
 
 ![screenshot-full](anchor_guide_07.gif)
 
 #### Left & Right
 
-A fixed offset is maintained on both the left and right sides. If the canvas width changes, both offsets remain unchanged.
+A fixed offset is maintained on both the left and right sides. If the page width changes, both offsets remain unchanged.
 
 ![screenshot-full](anchor_guide_08.gif)
 
 #### Top
 
-**Note:** Top, Bottom and Top & Bottom are only available.
-
-A fixed offset (in pixels, mm, inches, etc.) is set from the top target. If the canvas height changes, the top offset remains constant.
+A fixed offset (in pixels, mm, inches, etc.) is set from the top target. If the page height changes, the top offset remains constant.
 
 #### Bottom
 
-A fixed offset is set from the bottom target. If the canvas height changes, the bottom offset remains constant.
+A fixed offset is set from the bottom target. If the page height changes, the bottom offset remains constant.
 
 #### Top & Bottom
 
-A fixed offset is maintained on both the top and bottom sides. If the canvas height changes, both offsets remain unchanged.
+A fixed offset is maintained on both the top and bottom sides. If the page height changes, both offsets remain unchanged.
 
 ### Center
 
-The selected frame stays centered **relative** to the canvas, and its size does not change if the canvas dimensions change.
+The selected frame stays centered **relative** to the target (page or frame), and its size does not change if the page dimensions change.
+
+When moving the frame, it remains positioned relative to the center of the target.
 
 ![screenshot-full](anchor_guide_09.gif)
 
@@ -103,7 +103,7 @@ You can modify the target by selecting a new option below the Horizontal and Ver
 
 ![screenshot](anchor_guide_10.png)
 
-The box with four circles around it represents your frame. The animation next to it shows the effect of your anchor settings. In the animation, the blue box represents your frame, and the gray area represents your canvas.
+The box with four circles around it represents your frame. The animation next to it shows the effect of your anchor settings. In the animation, the blue box represents your frame, and the gray area represents your page.
 
 Click the circles (left, top, right, bottom) or the center cross to adjust the anchor settings. Depending on the settings, some anchor targets may be restricted (e.g., if the left side is anchored, the right anchor cannot be set).
 
@@ -111,7 +111,7 @@ Click the circles (left, top, right, bottom) or the center cross to adjust the a
 
 ## Anchoring effect on a frame
 
-Below, you'll find a [reference overview](#reference-anchoring-effect-on-a-frame) of the effect of changing the canvas or page size to the frame when anchored with specific settings.
+Below, you'll find a [reference overview](#reference-anchoring-effect-on-a-frame) of the effect of changing the page size to the frame when anchored with specific settings.
 
 ## Anchor to Page
 
@@ -142,18 +142,18 @@ The solid anchor line on the left of the house image shows the offset (79.50) an
 
 ## Reference: Anchoring effect on a frame
 
-Examples below show the effect of changing the canvas or page size, when a frame is anchored with these settings.
+Examples below show the effect of changing the page size, when a frame is anchored with these settings.
 
 <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
 !!! Info "Explained: Center-Bottom"
     Let's explain one as example: **Center-Bottom**
     
-    Horizontally, the frame is anchored to the center of the page (or canvas).
+    Horizontally, the frame is anchored to the center of the page.
     
-    Vertically, the Frame is anchored to the bottom of the page (or canvas).
+    Vertically, the Frame is anchored to the bottom of the page.
     
-    Now, when you change the canvas size, the distance of the bottom of the frame remains equal. The horizontal posizion will remain centered in the canvas.
+    Now, when you change the page size, the distance of the bottom of the frame remains equal. The horizontal posizion will remain centered in the page.
 
 
 
