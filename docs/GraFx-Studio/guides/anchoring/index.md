@@ -156,7 +156,6 @@ Examples below show the effect of changing the page size, when a frame is anchor
     Now, when you change the page size, the distance of the bottom of the frame remains equal. The horizontal posizion will remain centered in the page.
 
 
-
 | Anchor settings effect      | | |
 | -- | -- | -- |
 | Center-Bottom              | Center-Center             | Center-Relative             |
