@@ -154,8 +154,13 @@ The `intent` parameter specifies the platform the `download` was called:
 
 #### Supported Formats
 
-- For all combinations of `previewType` and `intent`, PNG and JPEG formats are acceptable.
-- When `intent` is "print", PDF format is also acceptable in addition to PNG and JPEG.
+DownloadType / DownloadIntent | *web* (= browser based editing session) | *print* (= PDF output, High res image output) | *animation* (= Gif, mp4 output, compression will be applied)
+-- | -- | -- | --
+*thumbnail* | ✓ (e.g., Displaying small preview images on a webpage) |   |  
+*mediumres* | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |  
+*highres* | ✓ (e.g., Downloading a high-quality image for use on a high-resolution display) | ✓ (e.g., Printing a high-quality, large-scale image) | ✓ (e.g., Using as a frame in a high-quality animation)
+*fullres* (PDF / PNG / JPEG) For image types other then PNG / JPEG one should serve the asset wrapped as a PDF file |   | ✓ (e.g., Printing the original PDF or image file in its highest quality) |  
+*original* | ✓ | ✓ | ✓
 
 ### detail Method
 
