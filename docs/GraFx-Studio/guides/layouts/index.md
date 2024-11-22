@@ -18,11 +18,13 @@ If your preset is not available in the list, choose "Custom" and define the name
 
 ![screenshot-full](layoutpresets03.png)
 
-Select the properties panel, and change the dimentions to 160 x 600.
+Click create!
+
+In the properties panel, you'll see the layout size.
 
 ![Skyscraper](sublayout-2.png)
 
-The new dimensions appear colored. This is because they [differ from the base values](/GraFx-Studio/concepts/layout-intent/?h=inherita#inheritance-model).
+If the values appear colored, it's because they differ from the base values. To learn more, read about the [Inheritance model](/GraFx-Studio/concepts/layout-intent/#inheritance-model).
 
 ## Move the elements on the layout
 
