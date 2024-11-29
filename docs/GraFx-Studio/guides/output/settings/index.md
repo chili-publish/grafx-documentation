@@ -70,7 +70,7 @@ Positive values make the bars smaller, negative values make the bars wider.
 
 What are [Crop Marks](/GraFx-Studio/concepts/crop-marks/)?
 
-Set the offset and weight (thickness) of the cropmarks.
+Set the offset and weight (thickness) of the crop marks.
 
 ![screenshot](os16.png)
 
