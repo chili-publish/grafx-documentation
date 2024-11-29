@@ -66,6 +66,14 @@ Bar Width Reduction (BWR) is used in barcode printing to compensate for ink spre
 
 Positive values make the bars smaller, negative values make the bars wider.
 
+### Crop Marks
+
+What are [Crop Marks](/GraFx-Studio/concepts/crop-marks/)?
+
+Set the offset and weight (thickness) of the crop marks.
+
+![screenshot](os16.png)
+
 ## JPG output settings
 
 ![screenshot-full](os13.png)
