@@ -73,6 +73,13 @@ Enabling this setting removed the dependency of fonts in the PDF.
 
 ![screenshot-full](os17.png)
 
+### Crop Marks
+
+What are [Crop Marks](/GraFx-Studio/concepts/crop-marks/)?
+
+Set the offset and weight (thickness) of the crop marks.
+
+![screenshot](os16.png)
 
 ## JPG output settings
 
