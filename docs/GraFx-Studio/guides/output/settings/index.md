@@ -71,7 +71,7 @@ Positive values make the bars smaller, negative values make the bars wider.
 When enabled, the glyphs (characters used in the PDF) will be output as vector shapes. Fonts will not be embedded.
 Enabling this setting removed the dependency of fonts in the PDF.
 
-![screenshot-full](os17.png)
+![screenshot](os17.png)
 
 ### Crop Marks
 
