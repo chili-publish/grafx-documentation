@@ -66,6 +66,14 @@ Bar Width Reduction (BWR) is used in barcode printing to compensate for ink spre
 
 Positive values make the bars smaller, negative values make the bars wider.
 
+### Outline text
+
+When enabled, the glyphs (characters used in the PDF) will be output as vector shapes. Fonts will not be embedded.
+Enabling this setting removed the dependency of fonts in the PDF.
+
+![screenshot-full](os17.png)
+
+
 ## JPG output settings
 
 ![screenshot-full](os13.png)
