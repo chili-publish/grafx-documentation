@@ -10,16 +10,18 @@ This guide walks you through the process of creating a simple media connector us
 
 ## Creating a New Connector Project
 
-1. Run the command command to create a new connector project:
+1. Execute the command to create a new connector project:
 
 ```bash
-connector-cli new -n simple-media-connector
+connector-cli new
 ```
 
-2. Change to the newly created directory:
+and follow the prompts to configure the project settings.
+
+2. Enter to the project directory:
 
 ```bash
-cd simple-media-connector
+cd <projectName>
 ```
 
 3. Install dependencies:
@@ -255,7 +257,7 @@ To test your updated connector:
 ## Some Issues
 ### Issue: Only First Image
 
-You may notice that no matter which image you select in the Media panel, the image displayed in the template is instead the first image. This is due to how `download` behaves when `filtering` is `true`. 
+You may notice that no matter which image you select in the Media panel, the image displayed in the template is instead the first image. This is due to how `download` behaves when `filtering` is `true`.
 
 When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`.
 
