@@ -10,4 +10,4 @@ CHILI GraFx platform centralizes your account information, users, resources and 
 - Add media
 - Start creating your first template
 
-The platform hosts [applications](/CHILI-GraFx/applications/overview/) for you to build a powerful creative automation application.
+The platform hosts [applications](/docs/CHILI-GraFx/applications/overview/) for you to build a powerful creative automation application.
