@@ -99,4 +99,5 @@ The default value your template variable will have.
 These setting define how the template variable is presented:
 
 - Label: Can be empty, must not be unique, by default it has the same value as the name (When the name is changed, the label is updated, unless if the label already has a different value)
-- Label position
+- Placeholder: Default text, to help nudge the end user to fill in something
+- Help text: Text that will appear below the variable to add more info what to do with the variable.
