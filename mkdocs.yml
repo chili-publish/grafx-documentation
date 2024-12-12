@@ -230,6 +230,7 @@ nav:
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
             - 'Anchoring':                      'GraFx-Studio/concepts/anchoring/index.md'
+            - 'Autogrow':                       'GraFx-Studio/concepts/autogrow/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
             - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
@@ -259,6 +260,7 @@ nav:
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
             - 'Anchoring':                      'GraFx-Studio/guides/anchoring/index.md'
+            - 'Autogrow':                       'GraFx-Studio/guides/autogrow/index.md'
             - 'Barcodes':                       
                - 'Overview':                    'GraFx-Studio/guides/barcodes/overview/index.md'
                - 'Add a barcode':               'GraFx-Studio/guides/barcodes/add/index.md'
