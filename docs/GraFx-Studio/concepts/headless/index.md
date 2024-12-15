@@ -9,3 +9,5 @@ This approach is ideal for scenarios where you want to automate the creation of 
 - **Run Background Processes**: Initiate batch jobs and monitor output tasks programmatically.
 
 Headless automation empowers you to use the powerful capabilities of GraFx Studio while keeping everything behind the scenes, providing flexibility and efficiency for high-volume or fully automated workflows.
+
+![screenshot-full](code.png)
