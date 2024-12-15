@@ -17,7 +17,7 @@ Barcodes are created and configured in GraFx Studio (different than in GraFx Pub
 - Click a barcode from the Barcode library
 - Configure using the properties panel
 
-![ui](barcodes1.gif)
+![screenshot-full](barcodes1.gif)
 
 ## Barcode-specific settings
 
@@ -38,13 +38,13 @@ The Bar height property is a decimal number in the unit of the layout
 
 Show the character that indicates the light margin
 
-![ui](barcodes2.gif)
+![screenshot-full](barcodes2.gif)
 
 ## Start and Stop characters
 
 Show the start and stop character
 
-![ui](barcodes3.gif)
+![screenshot-full](barcodes3.gif)
 
 
 ## Quiet zone
@@ -64,9 +64,9 @@ The appearance is the color for a specific part of the barcode.
 - Background represents the background color
 - Blend mode: apply [blend modes](/GraFx-Studio/concepts/blendmodes/), similar to image frames
 
-![ui](qr1.png)
+![screenshot-full](qr1.png)
 
-![ui](qr_blend.png)
+![screenshot-full](qr_blend.png)
 
 ## Magnification
 
