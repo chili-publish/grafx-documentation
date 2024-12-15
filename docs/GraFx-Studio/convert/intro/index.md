@@ -6,32 +6,21 @@ GraFx Studio allows you to **convert your existing designs** from desktop tools 
 
 ## The Conversion Process
 
+Below is the abstract process of conversion. For specific conversions see:
 
+- [how to convert an Adobe® InDesign® document](/GraFx-Studio/convert/Adobe-InDesign/).
 
 ### Export from Desktop Tools
 
 Using a plugin, you can export your document into a CHILI GraFx zip format that contains all the necessary assets, document structure, and settings.
 
-![screenshot-full](convert02.png)
-
 ### Import into GraFx Studio
 
 This zip file can be imported into GraFx Studio, where the document is converted into a Smart Template.
 
-![screenshot-full](convert06.png)
-
-![screenshot-full](convert11.png)
-
 ### Add Business Logic
 
 In GraFx Studio, you can enhance the template by adding business logic, variables, and automation rules. This enables the template to dynamically generate variations, adapting to different content, channels, and user inputs.
-Example of business logic: Adding variables
-
-![screenshot-full](convert12.png)
-
-Example of business logic: Apply copy fitting to accomodate smaller or larger text.
-
-![screenshot-full](convert13.png)
 
 ### Automate Variant Creation
 
