@@ -9,9 +9,9 @@ When developing your Connector's JavaScript logic, you'll often need to make req
 Hardcoding tokens directly into the Connector code is considered bad practice, as this code may be accessible to other administrators in your environment. To address this security concern, the Connector CLI tool provides four different authorization types:
 
 - Static Header Key
-- OAuth2.0 Client Credentials
-- OAuth2.0 Authorization Code
-- OAuth2.0 Resource Owner Password (Password Grant)
+- OAuth 2.0 Client Credentials
+- OAuth 2.0 Authorization Code
+- OAuth 2.0 Resource Owner Password (Password Grant)
 
 When a user first accesses a Connector and the code makes a `runtime.fetch` call, the GraFx Platform automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
 
@@ -26,7 +26,7 @@ Before implementing authorization, you must define the supported authorization t
 
 To do so, add or modify the `supportedAuth` property in your `package.json` file with the types of authentication your Connector supports.
 
-Example of a `package.json` supporting Static Header Key and OAuth2.0 Authorization Code:
+Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authorization Code:
 ```json
 {
 ...
@@ -115,30 +115,30 @@ This arguments expects one of the four supported types of authorization.
 | Auth Type | Reference | Usage Support | Expected Argument Value |
 |-----------|-----------|---------------|---------------------|
 | Static Header Key | [MDN - Authorization Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) | browser and server | staticKey |
-| OAuth2.0 Client Credentials | [OAuth2.0 - Client Credentials](https://oauth.net/2/grant-types/client-credentials/) | browser and server | oAuth2ClientCredentials |
-| OAuth2.0 Authorization Code | [OAuth2.0 - Authorization Code](https://oauth.net/2/grant-types/authorization-code/) | browser | oAuth2AuthorizationCode |
-| OAuth2.0 Resource Owner Password | [OAuth2.0 - Password Grant](https://oauth.net/2/grant-types/password/) | browser and server | oAuth2ResourceOwnerPassword |
-| OAuth2.0 JWT Bearer Token | [OAuth2.0 - JWT Bearer Token Flow](https://datatracker.ietf.org/doc/html/rfc7523) | browser and server | oAuth2JwtBearer |
+| OAuth 2.0 Client Credentials | [OAuth 2.0 - Client Credentials](https://oauth.net/2/grant-types/client-credentials/) | browser and server | oAuth2ClientCredentials |
+| OAuth 2.0 Authorization Code | [OAuth 2.0 - Authorization Code](https://oauth.net/2/grant-types/authorization-code/) | browser | oAuth2AuthorizationCode |
+| OAuth 2.0 Resource Owner Password | [OAuth 2.0 - Password Grant](https://oauth.net/2/grant-types/password/) | browser and server | oAuth2ResourceOwnerPassword |
+| OAuth 2.0 JWT Bearer Token | [OAuth 2.0 - JWT Bearer Token Flow](https://datatracker.ietf.org/doc/html/rfc7523) | browser and server | oAuth2JwtBearer |
 
 In addition to specifying the authorization type using the `-at` argument, you must also define the supported authorization types in your `package.json` file. See [Define Supported Authorization Types](#define-supported-authorization-types)
 
 !!! warning "Each Usage Can Only Be Set Once"
 
-    OAuth2.0 Authorization Code is only supported with browser usage.
+    OAuth 2.0 Authorization Code is only supported with browser usage.
 
 <br/>
 
-#### OAuth2.0 Considerations
+#### OAuth 2.0 Considerations
 
-1. OAuth2.0 responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception `expires_in` being mandatory.
-2. The `grant_type` for OAuth2.0 types is automatically set as per the specification and cannot be configured.
-3. `access_token` and `refresh_token` are cached internally for OAuth2.0 types. There's currently no way to reset them without deleting the Connector.
-4. OAuth2.0 Authorization Code is user-specific and not useful with an Integration User (used outside the GraFx Platform).
-5. OAuth2.0 Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios.
+1. OAuth 2.0 responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception `expires_in` being mandatory.
+2. The `grant_type` for OAuth 2.0 types is automatically set as per the specification and cannot be configured.
+3. `access_token` and `refresh_token` are cached internally for OAuth 2.0 types. There's currently no way to reset them without deleting the Connector.
+4. OAuth 2.0 Authorization Code is user-specific and not useful with an Integration User (used outside the GraFx Platform).
+5. OAuth 2.0 Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios.
 
 ### Authorization Data File Requirements (`--auth-data-file`)
 
-Each authorization type requires a specific JSON schema. The `grant_type` for OAuth2.0 types is predefined by the specifications.
+Each authorization type requires a specific JSON schema. The `grant_type` for OAuth 2.0 types is predefined by the specifications.
 
 #### Static Header Key
 ```typescript
@@ -149,27 +149,27 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 }
 ```
 
-#### OAuth2.0 Client Credentials
+#### OAuth 2.0 Client Credentials
 ```typescript
 {
   "name": string,         // An arbitrary string value
-  "clientId": string,     // OAuth2.0 app client id
-  "clientSecret": string, // OAuth2.0 app client secret
-  "scope": string,        // OAuth2.0 app scope. Optional
-  "tokenEndpoint": string // OAuth2.0 app token endpoint URL
+  "clientId": string,     // OAuth 2.0 app client id
+  "clientSecret": string, // OAuth 2.0 app client secret
+  "scope": string,        // OAuth 2.0 app scope. Optional
+  "tokenEndpoint": string // OAuth 2.0 app token endpoint URL
 }
 ```
 
-#### OAuth2.0 Authorization Code
+#### OAuth 2.0 Authorization Code
 ```typescript
 {
   "name": string, // An arbitrary string value
-  "clientId": string, // OAuth2.0 app client id
-  "clientSecret": string, // OAuth2.0 app client secret
-  "scope": string, // OAuth2.0 app scope. Optional
+  "clientId": string, // OAuth 2.0 app client id
+  "clientSecret": string, // OAuth 2.0 app client secret
+  "scope": string, // OAuth 2.0 app scope. Optional
   "authorizationServerMetadata": {
-    "authorization_endpoint": string, // OAuth2.0 app authorization endpoint URL
-    "token_endpoint": string, // OAuth2.0 app token endpoint URL
+    "authorization_endpoint": string, // OAuth 2.0 app authorization endpoint URL
+    "token_endpoint": string, // OAuth 2.0 app token endpoint URL
     "token_endpoint_auth_methods_supported": ["client_secret_basic", "client_secret_post"] // Describe the way of how "clientId" and "clientSecrets" are sending in HTTP requests
   },
   "specCustomization": {
@@ -179,27 +179,27 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 }
 ```
 
-#### OAuth2.0 Resource Owner Password
+#### OAuth 2.0 Resource Owner Password
 ```typescript
 {
   "name": string, // An arbitrary string value
-  "clientId": string, // OAuth2.0 app client id
-  "clientSecret": string, // OAuth2.0 app client secret
-  "scope": string, // OAuth2.0 app scope. Optional
-  "username": string, // User that has an access to the OAuth2.0 app
+  "clientId": string, // OAuth 2.0 app client id
+  "clientSecret": string, // OAuth 2.0 app client secret
+  "scope": string, // OAuth 2.0 app scope. Optional
+  "username": string, // User that has an access to the OAuth 2.0 app
   "password": string, // Password of the username
   "bodyFormat": "applicationJson" | "formUrlEncoded", // Defines which HTTP Content-Type will be used for token request. Optional, default "formUrlEncoded"
-  "tokenEndpoint": string // OAuth2.0 app token endpoint URL
+  "tokenEndpoint": string // OAuth 2.0 app token endpoint URL
 }
 ```
 
-#### OAuth2.0 JWT Bearer Token
+#### OAuth 2.0 JWT Bearer Token
 ```typescript
 {
   "name": string, // An arbitrary string value
-  "issuer": string, // OAuth2.0 issuer
-  "scope": string, // OAuth2.0 app scope. Optional
-  "tokenEndpoint": string // OAuth2.0 app token endpoint URL
+  "issuer": string, // OAuth 2.0 issuer
+  "scope": string, // OAuth 2.0 app scope. Optional
+  "tokenEndpoint": string // OAuth 2.0 app token endpoint URL
   "expirationTimeSeconds": number, // Expiration time for JWT token. Optional
   "signatureConfig": {
     "algorithm": "RS256", // Algorithm to sign JWT token
@@ -210,13 +210,13 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 
 ## Example: Setting Multiple Authorization Types
 
-This example demonstrates how to set up a Connector with different authorization types for server and browser interactions. In this scenario, we'll use OAuth2.0 Client Credentials for server interactions and OAuth Authorization Code for browser interactions.
+This example demonstrates how to set up a Connector with different authorization types for server and browser interactions. In this scenario, we'll use OAuth 2.0 Client Credentials for server interactions and OAuth Authorization Code for browser interactions.
 
 ### Step 1: Prepare Authorization Data Files
 
 First, create two JSON files with the necessary authorization data:
 
-#### OAuth2.0 Client Credentials JSON
+#### OAuth 2.0 Client Credentials JSON
 ```json title="oauth-client-credentials.json"
 {
   "name": "MyClientCredentials",
@@ -227,7 +227,7 @@ First, create two JSON files with the necessary authorization data:
 }
 ```
 
-#### OAuth2.0 Authorization Code JSON
+#### OAuth 2.0 Authorization Code JSON
 ```json title="oauth-authorization-code.json"
 {
   "name": "MyAuthorizationCode",
@@ -260,7 +260,7 @@ Ensure that your `package.json` file includes both authorization types in the `s
 
 ### Step 3: Set Authorization for Server Interactions
 
-Use the following command to set OAuth2.0 Client Credentials for server interactions:
+Use the following command to set OAuth 2.0 Client Credentials for server interactions:
 
 ```bash
 connector-cli set-auth \
@@ -274,7 +274,7 @@ connector-cli set-auth \
 
 ### Step 4: Set Authorization for Browser Interactions
 
-Use the following command to set OAuth2.0 Authorization Code for browser interactions:
+Use the following command to set OAuth 2.0 Authorization Code for browser interactions:
 
 ```bash
 connector-cli set-auth \
@@ -286,4 +286,4 @@ connector-cli set-auth \
     --auth-data-file path/to/oauth-authorization-code.json
 ```
 
-By following these steps, we've configured our Connector to use OAuth2.0 Client Credentials for server-side interactions and OAuth2.0 Authorization Code for browser-based interactions. This setup allows for secure communication with external APIs in both scenarios.
+By following these steps, we've configured our Connector to use OAuth 2.0 Client Credentials for server-side interactions and OAuth 2.0 Authorization Code for browser-based interactions. This setup allows for secure communication with external APIs in both scenarios.
