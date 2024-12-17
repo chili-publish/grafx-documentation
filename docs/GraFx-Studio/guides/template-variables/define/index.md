@@ -4,16 +4,24 @@
 	When referring to **variables** we can mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](/GraFx-Studio/concepts/variables/#javascript-variables)**.
 	In the context of this page, we are talking about Template variables, unless stated differently.
 
-In the headerbar, choose [Automate](/GraFx-Studio/overview/headerbar/)
+In the properties panel (right), choose the wrench & screwdriver tool.
+
+![screenshot](var01.png)
+
+Then choose **Variables**
+
+![screenshot](var02.png)
 
 A panel will appear, where you can define your template variables.
 
 A list of all template variables that are available in the document shows
 
-- Variable name
 - Variable type
-- Visibility of the variable
-- Number of occurrences of the variable in the document
+- Variable name
+- Pencil icon (when hovering over the variable)
+- "..." menu
+
+![screenshot](var03.png)
 
 ## Options
 
@@ -56,6 +64,15 @@ You can also drag it in the list to where you want to position it.
 
 This location does not have any effect on the working of your document. It will only help to guide the end-user to see them in a logical order.
 
+### Group
+
+You can group variables in a group or folder. This allows you to stay organised in more complex templates.
+
+Shift-select multiple variables, and group them. After grouping, you can rename the group.
+
+![screenshot](group01.png)
+
+![screenshot](group02.png)
 
 ## Types
 
@@ -83,18 +100,41 @@ A placeholder that can hold "True" or "False".
 
 A Placeholder to hold a numeric value. Different than a text variable, you can set specific elements related to numbers.
 
-## Default state
+## Variable settings
+
+### Variable name
+
+![screenshot](var07.png)
+
+In the list of variable, you can double click or "Rename" the variable Name.
+
+!!! important "Variable name vs Display Label"
+
+    The variable name is the technical name, that will be used for further automation.
+    In the general properties you can set the display label, that will be shown in the [Studio UI interface](/GraFx-Studio/concepts/template-management/?h=studio#studio-ui).
+
+### Default state
+
+![screenshot](var04.png)
 
 The default value your template variable will have.
 
-## Basic properties:
+### General properties:
 
-- Name: Cannot be empty, must be unique
+![screenshot](var05.png)
+
 - Type: See [types](#types) above
 - [Visible](#visibility-conditions): Enabled by default
-- Read-only: Disabled by default
+- Required: Disabled by default
+
+Below, there will be type-specific settings
+
+- [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
+A set of key-value pairs to assist you with automation.
 
 ### Appearance settings
+
+![screenshot](var06.png)
 
 These setting define how the template variable is presented:
 
