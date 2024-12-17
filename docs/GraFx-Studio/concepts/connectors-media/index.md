@@ -30,6 +30,7 @@ The Template Designer can select and add an asset to the design.
 
 In the Template Designer Workspace, a Template Designer can configure which specific assets are made available to the end-user in the **End User Interface (EU Interface)**. This avoids showing the end-user all assets, including those that are less relevant.
 
+
 **Solution**: Refine the query to limit the asset view.
 
 For example, assets will be shown to the end-user depending on a chosen category (electronics, household, food, etc.).
@@ -40,7 +41,8 @@ A Media Connector communicates with a media provider (e.g., DAM). Each of these 
 
 ![screenshot-full](damconnector03.png)
 
-In the end-user interface, the end-user will see the filtered assets. In this example, a category of smartphones:
+In the end-user interface, the end-user will see the selected assets. In this example, a category of smartphones:
+
 
 ![screenshot-full](damconnector04.png)
 
