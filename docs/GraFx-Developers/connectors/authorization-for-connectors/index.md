@@ -118,7 +118,7 @@ This arguments expects one of the four supported types of authorization.
 | OAuth Client Credentials | [OAuth - Client Credentials](https://oauth.net/2/grant-types/client-credentials/) | browser and server | oAuth2ClientCredentials |
 | OAuth Authorization Code | [OAuth - Authorization Code](https://oauth.net/2/grant-types/authorization-code/) | browser | oAuth2AuthorizationCode |
 | OAuth Resource Owner Password | [OAuth - Password Grant](https://oauth.net/2/grant-types/password/) | browser and server | oAuth2ResourceOwnerPassword |
-| OAuth JWT Bearer Token | [OAuth - JWT Bearer Token Flow](https://datatracker.ietf.org/doc/html/rfc7523) | browser and server | oAuth2JwtBearer |
+| OAuth2.0 JWT Bearer Token | [OAuth - JWT Bearer Token Flow](https://datatracker.ietf.org/doc/html/rfc7523) | browser and server | oAuth2JwtBearer |
 
 In addition to specifying the authorization type using the `-at` argument, you must also define the supported authorization types in your `package.json` file. See [Define Supported Authorization Types](#define-supported-authorization-types)
 
