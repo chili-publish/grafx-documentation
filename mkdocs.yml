@@ -265,14 +265,14 @@ nav:
                - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
+            - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
+            - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
             - 'Fonts':                          'GraFx-Studio/guides/add-fonts/index.md'
             - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
-            - 'Layouts':                        'GraFx-Studio/guides/layouts/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
             - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
-            - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
         - 'How to: Connectors':
             - 'Connector HUB' :                 'GraFx-Studio/guides/connector-hub/index.md'
         - 'How to: Animate':
