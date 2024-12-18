@@ -8,6 +8,9 @@ See also: [Pages & Layout Intents](/GraFx-Studio/concepts/pages/)
 
 Choose **Layouts** > **Pages** > **Add Page**
 
+!!! info "Intent matters"
+    Add Pages is only visible for layouts with print intent
+
 ## (Re-)Arrange Pages
 
 Drag a page before or after another page.

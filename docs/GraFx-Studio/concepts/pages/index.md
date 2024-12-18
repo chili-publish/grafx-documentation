@@ -15,7 +15,8 @@ GraFx Studio offers three [layout **intents**](/GraFx-Studio/concepts/layout-int
 In print workflows, multi-page documents are common and essential for:
 
 - **Brochures**: Combining several pages to convey detailed information.
-- **Magazines or Catalogs**: Presenting extensive content across multiple pages.
+- **Flyers, leaflets**: Presenting extensive content across multiple pages.
+- **Business cards**: Typically front- and backside
 - **Reports and Booklets**: Structuring content into chapters or sections.
 
 In **digital static** and **digital animated** designs, the concept of multiple pages doesn’t apply. These projects typically involve single-page outputs designed for screens, where navigation is handled differently (e.g., scrolling, slideshows, or animations).
