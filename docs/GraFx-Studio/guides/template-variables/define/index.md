@@ -19,7 +19,7 @@ A list of all template variables that are available in the document shows
 - Variable type
 - Variable name
 - Pencil icon (when hovering over the variable)
-- "..." menu
+- "..." menu (when hovering over the variable)
 
 ![screenshot](var03.png)
 
@@ -106,12 +106,12 @@ A Placeholder to hold a numeric value. Different than a text variable, you can s
 
 ![screenshot](var07.png)
 
-In the list of variable, you can double click or "Rename" the variable Name.
+In the list of variables, you can double click or "Rename" the variable Name.
 
 !!! important "Variable name vs Display Label"
 
     The variable name is the technical name, that will be used for further automation.
-    In the general properties you can set the display label, that will be shown in the [Studio UI interface](/GraFx-Studio/concepts/template-management/?h=studio#studio-ui).
+    In the appearance tab you can set the (display) label, that will be shown in the [Studio UI interface](/GraFx-Studio/concepts/template-management/?h=studio#studio-ui).
 
 ### Default state
 
@@ -126,9 +126,6 @@ The default value your template variable will have.
 - Type: See [types](#types) above
 - [Visible](#visibility-conditions): Enabled by default
 - Required: Disabled by default
-
-Below, there will be type-specific settings
-
 - [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
 A set of key-value pairs to assist you with automation.
 
@@ -136,7 +133,7 @@ A set of key-value pairs to assist you with automation.
 
 ![screenshot](var06.png)
 
-These setting define how the template variable is presented:
+These settings define how the template variable is presented:
 
 - Label: Can be empty, must not be unique, by default it has the same value as the name (When the name is changed, the label is updated, unless if the label already has a different value)
 - Placeholder: Default text, to help nudge the end user to fill in something
