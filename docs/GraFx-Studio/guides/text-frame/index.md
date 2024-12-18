@@ -52,11 +52,11 @@ For creative automation, text frames often need to handle datasets with varying 
 
 #### Text Overflow
 
-With no resizing option selected, text that exceeds the frame will trigger a yellow text-overflow indicator below the frame.
+With no resizing option selected, text that exceeds the frame will trigger a yellow Text overflow indicator below the frame.
 
 ![screenshot](overflow.png)
 
-See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how a VDP job should handle text overflow.
+See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how Batch output should handle text overflow.
 
 ![screenshot](errorhandling.png)
 
@@ -68,11 +68,13 @@ Select the text frame and enable "Copyfitting" to adjust font size to fit the fr
 
 Set the minimum and maximum percentages for font size adjustments.
 
-> Note: When Copyfitting is enabled, Autogrow is disabled.
+> Note: When Copyfitting is enabled, Auto-grow is disabled.
 
 #### Auto-grow
 
-Enable "Autogrow" to allow the frame to expand as needed to fit content of varying lengths. For instance, records in a dataset might contain differing character counts.
+Enable "Auto-grow" to allow the frame to expand as needed to fit content of varying lengths. For instance, records in a dataset might contain differing character counts.
+
+> Note: When Auto-grow is enabled, Copyfitting is disabled.
 
 Choose one or two growth directions (e.g., left, right, up, down). 
 
@@ -84,11 +86,16 @@ When selecting "Left" or "Right," you can also add the opposite direction for bi
 
 When "Up" is selected, you can also add "Down."
 
-To enable Autogrow, select at least one growth direction, or uncheck "Autogrow" to disable it.
+To enable Auto-grow, select at least one growth direction, or uncheck "Auto-grow" to disable it.
 
 Define the minimum and maximum frame size if needed.
 
+> Note: When the maximum height is reached, the text will overflow.
+
 ![screenshot](autogrow-min-max.png)
+
+!!! info "Rotation"
+    Auto-grow does not work for rotated frames. If auto-grow is enabled, anchoring for that direction is automatically set to a compatible mode.
 
 ### Appearance
 
