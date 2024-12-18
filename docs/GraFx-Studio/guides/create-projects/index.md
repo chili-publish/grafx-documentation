@@ -1,6 +1,6 @@
 # My projects
 
-See also: [Template Management](/CHILI-GraFx/concepts/template-management/#my-projects) for the full story.
+See also: [Template Management](/GraFx-Studio/concepts/template-management/) for the full story.
 
 ## Before you start
 
