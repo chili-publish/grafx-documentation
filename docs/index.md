@@ -13,11 +13,22 @@
 
     ---
 
+    **December 18 2024**: GraFx Studio - ==Another milestone achieved!==
+    
+    GraFx Studio now supports multi-page documents. The new auto-grow feature lets frames expand automatically.  
+    A major improvement in CHILI GraFx Smart Templates.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
+
+    ---
+
     **November 22 2024**: GraFx Studio - ==New milestone achieved!==
     
     Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
+
+    ---
 
     **October 14 2024**: ==Connect== with CHILI GraFx
     
@@ -25,17 +36,7 @@
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
 
-    **October 8 2024**: ==Spot== lights on GraFx Studio
-    
-    Spot colors and private data extend GraFx Studio even more
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/08/grafxstudio-in-the-spot-light/)
-
-    **September 19 2024**: Get a grip on ==output tasks==
-    
-    You can now see an overview of output tasks of GraFx Studio
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/09/19/chili-grafx-platform-updates/)
+    ---
 
     **See all release notes**
 
