@@ -2,13 +2,17 @@
 
 Set of tools at the bottom of the sidebar.
 
-- Alternate layout
+- Layouts
 - Layers & Animation
-- Media browser
-- Barcodes
-- Stylekit Panel
+- Resources
+    - Stylekit Panel
+    - Media
+    - Data Source
+    - Barcodes
 
-![appscreen](bottom-quicktools-ui.png)
+![screenshotsmall](bottom-quicktools-ui.png)
+
+![screenshot](resources-panel.png)
 
 E.g. When selecting the **Layers and Animation** tool, an extra properties panel will open.
 
