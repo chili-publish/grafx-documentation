@@ -12,6 +12,7 @@ Hardcoding tokens directly into the Connector code is considered bad practice, a
 - OAuth 2.0 Client Credentials
 - OAuth 2.0 Authorization Code
 - OAuth 2.0 Resource Owner Password (Password Grant)
+- OAuth 2.0 JWT Bearer Token
 
 When a user first accesses a Connector and the code makes a `runtime.fetch` call, the GraFx Platform automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
 
@@ -194,19 +195,8 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 ```
 
 #### OAuth 2.0 JWT Bearer Token
-```typescript
-{
-  "name": string, // An arbitrary string value
-  "issuer": string, // OAuth 2.0 issuer
-  "scope": string, // OAuth 2.0 app scope. Optional
-  "tokenEndpoint": string // OAuth 2.0 app token endpoint URL
-  "expirationTimeSeconds": number, // Expiration time for JWT token. Optional
-  "signatureConfig": {
-    "algorithm": "RS256", // Algorithm to sign JWT token
-    "privateKey": string // Private key to sign JWT token
-  }
-}
-```
+
+Depends on the connector definition
 
 ## Example: Setting Multiple Authorization Types
 
