@@ -2,8 +2,6 @@
 
 When opening the GraFx Studio editor, you will see the full workspace
 
-![appscreen](editor.png)
-
 ## Elements on screen
 
 ![appscreen](editor-labeled.png)
