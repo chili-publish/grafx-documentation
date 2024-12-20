@@ -213,3 +213,11 @@ Otherwise the default font is used.
 
 ### Plan for Automation
 After importing to GraFx Studio, leverage smart template features to add business logic and automate variant creation.
+
+## Things to consider
+
+- Colors that are not in RGB or CMYK color space (like HSB, LAB) will revert to Black  
+- Adobe® Variables (like <document_name> <current_date> etc) will be removed form a text
+- Any item Frame in Adobe® InDesign® (text/image) might have properties (background color ,stroke, opacity).  
+Frame options are not detected by Preflight and will be missed after export
+- ‘Line’ Shapes are always exported as .pdf without Preflight warning
