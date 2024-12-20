@@ -1,31 +1,35 @@
 # Stylekit
 
-![appscreen](stylekit.png)
+![screenshotsmall](sk1.png)
+
+![screenshot](sk2.png)
+
+![screenshot](sk3.png)
 
 ## Text: Paragraph Styles
 
-![appscreen](paragraph-styles.png)
+![screenshot](paragraph-styles.png)
 
 The pencil button allows editting the properties.
 
 The fill color can be a custom color, or a predefined [swatch](/GraFx-Studio/concepts/stylekits/#swatch).
 
-![appscreen](select-color.png)
+![screenshot](select-color.png)
 
 
 ## Text: Character Styles
 
-![appscreen](character-styles.png)
+![screenshot](character-styles.png)
 
 ## Swatch
 
 A swatch is a color saved inside a Stylekit. You can reuse the swatch (predefined color) in paragraph- en character styles.
 
-![appscreen](swatch.png)
+![screenshot](swatch.png)
 
 Define a color, give it a name and save the named color to be used later in a style.
 
-![appscreen](swatch-2.png)
+![screenshot](swatch-2.png)
 
 ## Fonts
 
@@ -33,11 +37,11 @@ Define a color, give it a name and save the named color to be used later in a st
 
 Select the font-book to view your fonts, and add them to the stylekit.
 
-![appscreen](fonts.png)
+![screenshot](fonts.png)
 
 Select the font family you want to add to your document.
 
-![appscreen](font-browser.png)
+![screenshot](font-browser.png)
 
 
 [See GraFx Fonts](/GraFx-Fonts/)
