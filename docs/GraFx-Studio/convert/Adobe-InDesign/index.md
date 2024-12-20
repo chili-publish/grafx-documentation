@@ -7,32 +7,28 @@
 
 ## Introduction
 
-The InDesign Conversion Plugin allows you to export documents from Adobe® InDesign® and import them into **GraFx Studio**. This process lets you automate the creation of design variants by leveraging GraFx Studio’s powerful smart template features. While InDesign remains a great starting point for creative design, GraFx Studio excels at automation and multi-channel output.
+The InDesign Conversion Plugin allows you to export documents from Adobe® InDesign® and import them into **GraFx Studio**. This process lets you automate the creation of design variants by leveraging GraFx Studio’s powerful smart template features. While InDesign® remains a great starting point for creative design, GraFx Studio excels at automation and multi-channel output.
 
 ## Elements of the conversion
 
 - GraFx Studio Exporter (Adobe® InDesign® plugin)
 - Importer in GraFx Studio
 
-## Where to Find the **GraFx Studio Exporter** Plugin
-
-You can download the plugin from the **CHILI GraFx**
-
 ## How to Install the Plugin
 
 ### Download the Plugin
 
-Go to CHILI GraFx, download
+Click to download [the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.1.0/GraFxStudioExporter_InDesign_0.1.0.ccx)
 
 ### Install the Plugin
 
-   - Locate the "chili.desktop.tools.id_ID_x.ccx" (x = version number)
+   - Locate the "GraFxStudioExporter_InDesign_x.y.z.ccx" (x.y.z being the version)  
    - Double click the ccx file
-   - Follow the steps to install the plugin in Adobe InDesign
+   - Follow the steps to install the plugin in Adobe® InDesign®
 
 ## How to Convert a Document
 
-### Prepare Your InDesign Document
+### Prepare Your InDesign® Document
 
    - Open the Adobe® InDesign® document you want to export.
    - Ensure all assets are properly linked.
@@ -48,7 +44,7 @@ All assets are linked correctly
 
 ### Export to GraFx Studio
 
-   - Go to **Plugins > GraFx Studio Exporter > GraFx Studio Exporter**
+   - Go to **Plugins > CHILI GraFx plugins > GraFx Studio Exporter**
 
 ![screenshot](convert01.png)
 
@@ -63,13 +59,25 @@ You can choose to ignore, or to export the object to a PDF asset, and place it a
 
 ![screenshot-full](convert19.png)
 
-   - Choose a destination folder and click **Export**.
+   - Choose a destination folder and click **Export**.  
+   Required only once, can be changed at any moment
+   - Choose the Page to be exported  
+   Only one page can be exported at a time. Soon you will be able to export all pages at once.
 
-![screenshot](convert05.png)
+![screenshot](convert20.png)
 
    - The plugin creates a `.zip` file containing the document and all necessary assets.
    
 ![screenshot-full](convert07.png)
+
+!!! info "What's in the zip file?"
+    ![screenshot](convert21.png)
+    
+    - A log file with info about the Plugin version, the Adobe App version, current Date and Plugin Warnings or Errors caught during the Document Preflight or Export
+    - The log file is named: GraFx_Studio_Exporter.log
+    - The zip file name format: <selected_page>_<document_name>(<optional_duplicate_copy_version>).zip
+    
+   
 
 ### Import into GraFx Studio
 
@@ -88,7 +96,7 @@ You can choose to ignore, or to export the object to a PDF asset, and place it a
 
 ![screenshot](convert10.png)
 
-   - Your InDesign document is now ready for automation in GraFx Studio.
+   - Your InDesign® document is now ready for automation in GraFx Studio.
 
 ![screenshot](convert11.png)
 
@@ -133,17 +141,18 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 |                        | Appearance color scheme                  | ✅             |                                                    |
 | **Document**           | Page size                                | ✅             |                                                    |
 |                        | Choose the page to import                                | ✅            | 
-|                        | All pages                                | ❌           |                                      |
+|                        | All pages                                | ✴️           | Coming soon!                                     |
 |                        | Layouts                                  | ❌           |                                      |
 | **Frames**             | Rotation                                 | ✅             |                                                    |
 |                        | Blend modes                              | ❌           |                                      |
+|                        | Mirror / Shear                           | ❌           |                                      |
 | **Text Frames**        | Font (specified but not exported)        | ✅             |                                                    |
 |                        | Font size                                | ✅             |                                                    |
 |                        | Tracking (letter spacing)                | ✅             |                                                    |
 |                        | Baseline shift                           | ✅             |                                                    |
 |                        | Underline                                | ✅             |                                                    |
 |                        | Strikethrough                            | ✅             |                                                    |
-|                        | Superscript                              | ❌️ |                                    |
+|                        | Superscript                              | ✅️ |                                    |
 |                        | Subscript                                | ✅             |                                                    |
 |                        | All caps                                 | ✅             |                                                    |
 | **Alignment**          | Left                                     | ✅             |                                                    |
@@ -172,25 +181,35 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 |                        | Center problem object (click on warning) | ✅             |                                                    |
 |                        | No document open behavior                | ✅             | Preflight does nothing if no document is open     |
 |                        | Switching documents                      | ✅             | Preflight results reset when switching documents  |
-| **Layers**             | Layer names                              | ✅             | InDesign layer names converted to default names   |
+| **Layers**             | Layer names                              | ✅             | InDesign® layer names converted to default names   |
 |                        | Hidden layers                            | ❌           | Hidden layers are not exported                    |
 
 ### Legend (not John)
 
 - ✅ **Supported**: Fully supported
-- ⚠️ **Limited Support**: Partially supported; some functionality may be restricted
+- ✴️ **Not yet**: Planned to be released soon
 - ❌ **Unsupported**: The team is working hard to add this functionality
 
 ## Tips for Successful Conversion
 
-1. **Simplify Your Design**:
-   - Ensure your design uses basic text, shapes, and images for best results.
+### Simplify Your Design
 
-2. **Check for Unsupported Features**:
-   - Use the **Preflight** option in InDesign to identify unsupported features before exporting.
+Ensure your design uses basic text, shapes, and images for best results.
 
-3. **Use Linked Assets**:
-   - Make sure all images and fonts are properly linked and included in the export.
+### Check for Unsupported Features
 
-4. **Plan for Automation**:
-   - After importing to GraFx Studio, leverage smart template features to add business logic and automate variant creation.
+Use the **Preflight** option in InDesign® to identify unsupported features before exporting.
+
+### Use Linked Assets
+
+Make sure all images are properly linked and included in the export.
+
+### Have fonts installed on your environment
+
+Font Files are not included in the .zip and are not exported.
+You should have all Fonts installed to the platform.
+Fonts will be applied to the template upon Importing, and the match will be made by name of the font.
+Otherwise the default font is used.
+
+### Plan for Automation
+After importing to GraFx Studio, leverage smart template features to add business logic and automate variant creation.
