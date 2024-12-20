@@ -305,6 +305,9 @@ nav:
         - 'Connectors':
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'            
+        - 'Plugins':
+            - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
+            - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
         - 'Integrate GraFx studio ...':         'GraFx-Developers/grafx-studio/overview/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
