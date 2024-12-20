@@ -4,6 +4,8 @@
 	To give you early access to the latest and greatest, we are introducing some features as **"Experimental"**.  
 	You’re welcome to explore and use these features, but keep in mind that their functionality may evolve.  
 	If you’re working in production workflows, be aware that changes may still occur.
+	
+	Please let us know through the support channels if you run into issues.
 
 ## Introduction
 
