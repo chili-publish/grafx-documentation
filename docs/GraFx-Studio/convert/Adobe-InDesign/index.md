@@ -213,6 +213,8 @@ You should have all Fonts installed to the platform.
 Fonts will be applied to the template upon Importing, and the match will be made by name of the font.
 Otherwise the default font is used.
 
+When you install the fonts after the import, GraFx Studio will try to apply them when you re-open the template.
+
 ### Plan for Automation
 After importing to GraFx Studio, leverage smart template features to add business logic and automate variant creation.
 
