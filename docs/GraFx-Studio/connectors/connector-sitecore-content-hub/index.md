@@ -1,4 +1,4 @@
-# Media Connector for Acquia DAM
+# Media Connector for Sitecore Content Hub
 
 |  | Connector type |
 | --- | --- |
@@ -16,28 +16,40 @@
 
 ### Base Configuration
 
-Your instance of the Connector needs to know which Acquia DAM instance it should communicate with and how to authenticate.
+Your instance of the Connector needs to know which Sitecore Content HUB instance it should communicate with and how to authenticate.
 
-Once installed, navigate to the Connector overview, and select **Acquia DAM**. Start with **Configuration**.
+Once installed, navigate to the Connector overview, and select **Sitecore Content HUB**. Start with **Configuration**.
 
-![screenshot-full](config.png)
+![screenshot-full](sch06.png)
 
-Consult your Acquia System Admin to get the correct values for the fields.
+![screenshot-full](sch01.png)
+
+Consult your Sitecore System Admin to get the correct values for the fields.
 
 ### Authentication
 
-An important part of managing digital assets is governance—determining when and where assets can be used, and who has access to them.
+Choose your type of Authentication. At this moment, only OAuth 2.0 is supported.
 
-You will need specific credentials from your Acquia DAM installation to set up the connector:
+![screenshot](sch02.png)
 
-- **Client ID** and **Client Secret**: These are customer-specific credentials provided by the Acquia Admin when creating integrations within Acquia.
-- **Token URL** and **Authorization URL**: These are more developer-oriented settings but can also be retrieved from Acquia documentation. While they are publicly available, they are generic for all Acquia clients.
+You will need specific credentials from your Sitecore Content HUB installation to set up the connector:
+
+- **Client ID** and **Client Secret**: These are customer-specific credentials provided by the Sitecore Admin when creating integrations within Sitecore.
+- **Username** and **Password**.
+- **Token endpoint**: These are more developer-oriented settings but can also be retrieved from Sitecore documentation. While they are publicly available, they are generic for all Sitecore clients.
+- **Scope**: Check with your Sitecore Admin on what scope to use.
 
 You can set the authentication for machine-to-machine and browser separately or use the same setup for both.
 
-![screenshot-full](config-auth.png)
+![screenshot-full](sch04.png)
 
-Consult your Acquia System Admin to get the correct values for the fields.
+Consult your Sitecore System Admin to get the correct values for the fields.
+
+### Server Authentication
+
+The credentials used to set up machine-to-machine authentication will determine the governance on the assets in the automation setup.
+
+This means if the credentials only allow access to certain assets, only those assets will be available when batch processing requests access to place assets in the output.
 
 ### Browser Authentication or Impersonation
 
@@ -49,69 +61,54 @@ Imagine a marketing team using GraFx Studio connected to a DAM system. The admin
 
 By leveraging impersonation, GraFx Studio ensures that users see only the assets and data they are authorized to access, in compliance with the DAM system's governance.
 
-### Server Authentication
-
-The credentials used to set up machine-to-machine authentication will determine the governance on the assets in the automation setup.
-
-This means if the credentials only allow access to certain assets, only those assets will be available when batch processing requests access to place assets in the output.
-
-## Using Assets from Your Acquia DAM System
+## Using Assets from Your Sitecore Content HUB System
 
 ### Place Assets in Your Template
 
-- Select the Acquia DAM Connector.
-- Double-click the asset to assign it to the image frame.
+- Select the Sitecore Content HUB Connector.
 
-![screenshot-full](acquia_assets.gif)
+![screenshot-full](sch07.png)
+
+![screenshot-full](sch08.png)
+
+![screenshot-full](sch09.png)
+
+Depending on the configuration, you will be asked to authenticate.
+
+![screenshot-full](sch10.png)
+
+- From here on, your (Sitecore) assets act similar to any other asset in GraFx Studio.
 
 ### Image Variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets when you select an image.
 
-![screenshot-full](var1.png)
+![screenshot-full](var01.png)
 
-![screenshot-full](var2.png)
-
-### DAM Queries & Variables
+### Configuration options
 
 #### Introduction
 
 You may want to filter the assets suggested to the template user by using categories, keywords, etc.
 
-In the Acquia DAM solution, you can use a query language.
-
-![screenshot-full](assets1.png)
+In the Sitecore Content HUB solution, you can use a search query language.
 
 By using the query language, you can filter down to the right selection of assets.
 
-!!! tip "Category"
-
-    Use `cat:{wine}` to filter down to only wines.
-
-![screenshot-full](assets2.png)
-
-!!! tip "Description"
-
-    Add `cat:{wine} des:{white}` to further filter to only wines with the word "white" in the description.
-    
-![screenshot-full](assets3.png)
+Please consult the [Sitecore Documentation](https://doc.sitecore.com/ch/en/developers/cloud-dev/linq-queries.html) on how to work with Queries, or consult your Sitecore Content Hub administrator to assist you.
 
 #### How To
 
-DAM queries are set at the connector level for a specific frame.
+Queries are set at the variable level.
 
 Set the value of the query in the connector settings.
 
-![screenshot-full](query1.png)
+![screenshot-full](var02.png)
 
-If a fixed query is not sufficient, you can use a variable.
+If a fixed query is not sufficient, you can use a [variables](/GraFx-Studio/concepts/variables/) and [actions](/GraFx-Studio/concepts/actions/) (and [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/)) to make your queries more dynamic.
 
-![screenshot-full](query2.png)
+#### Other configuration options
 
-![screenshot-full](query3.png)
+**Show only approved assets** will show only approved assets. The approval is part of the Sitecore Content Hub system.
 
-To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the query according to other variables or inputs the Smart Template receives.
-
-![screenshot-full](query4.png)
-
-In the image above, the action sets the `DamSearchString` to have different DAM queries depending on a chosen category. That text variable is then used in the image variable (see image above).
+**Locale** enables you to filter on Locale (region / language)
