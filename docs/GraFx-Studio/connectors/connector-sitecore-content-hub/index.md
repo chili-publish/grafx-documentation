@@ -91,7 +91,7 @@ When using [image variables](/GraFx-Studio/guides/template-variables/assign/#ass
 
 To filter the assets suggested to template users, you can use categories, keywords, or other search parameters.
 
-Sitecore Content Hub supports search queries through its query language. Consult the [Sitecore Documentation](https://doc.sitecore.com/ch/en/developers/cloud-dev/linq-queries.html) or your Sitecore Content Hub Administrator for guidance.
+Sitecore Content Hub supports search queries through its query language. Consult the [Sitecore Documentation](https://doc.sitecore.com/ch/en/developers/cloud-dev/generic-properties.html) or your Sitecore Content Hub Administrator for guidance.
 
 #### How To
 
