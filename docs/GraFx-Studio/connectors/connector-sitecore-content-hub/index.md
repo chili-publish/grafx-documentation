@@ -28,7 +28,7 @@ Consult your Sitecore System Admin to obtain the correct values for the fields.
 
 ### Authentication
 
-Select your type of authentication. Currently, only OAuth 2.0 is supported.
+Select your type of authentication. Currently, OAuth 2.0 Resource Owner Password and OAuth 2.0 Authorization Code (Browser only) are supported.
 
 ![screenshot](sch02.png)
 
