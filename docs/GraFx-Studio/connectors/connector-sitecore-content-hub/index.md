@@ -10,29 +10,50 @@
 
 ## Installation
 
+As no "installation" happens, you could also talk about deployment of a connector on your environment.
+
 [See Installation Through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
-## Configuration
+## Sitecore Configuration 
+
+Consult your [Sitecore documentation](https://doc.sitecore.com/ch/en/users/content-hub/create-an-oauth-client.html) or Sitecore System Admin to obtain the correct values for the fields.
+
+- **OAuth admin console**
+``` html
+https://<SITECORE_CONTENTHUB_PATH>/en-us/admin/oauthclients
+```
+
+- **Redirect URL** (only used if grafx config is Authorization Code):
+``` html
+https://<env-name>.chili-publish.online/grafx/api/v1/environment/<env-name>/connectors/<connector-id>/auth/oauth-authorization-code/redirect
+```
+
+## CHILI GraFx Connector Configuration 
+
+From the overview of Environments, click on "Settings" on the right to your environment, where you want to install or configure the Connector.
+
+![screenshot-full](sch13.jpg)
+
+Then click the installed Connector to access the configuration.
+
+![screenshot-full](sch12.png)
 
 ### Base Configuration
 
 Your instance of the Connector needs to know which Sitecore Content Hub instance it should communicate with and how to authenticate.
 
-Once installed, navigate to the Connector overview and select **Sitecore Content Hub**. Start with **Configuration**.
-
-![screenshot-full](sch06.png)
-
 ![screenshot-full](sch01.png)
-
-Consult your Sitecore System Admin to obtain the correct values for the fields.
 
 ### Authentication
 
-Select your type of authentication. Currently, OAuth 2.0 Resource Owner Password and OAuth 2.0 Authorization Code (Browser only) are supported.
+Select your type of authentication:
+
+**Supported on Server:** OAuth 2.0 Resource Owner Password  
+This is the flow where username and password (contenthub credentials) are needed. It makes all requests as that specific user.
+
+**Supported on Browser:** OAuth 2.0 Authorization Code (Browser only)
 
 ![screenshot](sch02.png)
-
-You will need specific credentials from your Sitecore Content Hub installation to set up the connector:
 
 - **Client ID** and **Client Secret**: These are [customer-specific credentials](https://doc.sitecore.com/ch/en/users/content-hub/create-an-oauth-client.html) provided by the Sitecore Admin when creating integrations within Sitecore.
 - **Username** and **Password**: User-specific credentials for authentication.
@@ -43,10 +64,9 @@ You can configure separate authentication for machine-to-machine and browser use
 
 ![screenshot-full](sch04.png)
 
-- **Redirect URL** (only used if grafx config is Authorization Code):
-``` js
-/api/v1/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code/redirect
-```
+- **Authorization Endpoint** https://<SITECORE_CONTENTHUB_PATH>/oauth/authorize
+- **Token Endpoint** https://{SITECORE_CONTENTHUB_PATH}/oauth/token
+
 
 Consult your Sitecore System Admin for assistance in configuring these fields.
 
@@ -55,6 +75,8 @@ Consult your Sitecore System Admin for assistance in configuring these fields.
 The credentials used for machine-to-machine authentication determine the governance on assets in automation workflows. 
 
 This means that if the credentials restrict access to specific assets, only those assets will be available during batch processing.
+
+
 
 ### Browser Authentication or Impersonation
 
