@@ -34,7 +34,7 @@ Select your type of authentication. Currently, OAuth 2.0 Resource Owner Password
 
 You will need specific credentials from your Sitecore Content Hub installation to set up the connector:
 
-- **Client ID** and **Client Secret**: These are customer-specific credentials provided by the Sitecore Admin when creating integrations within Sitecore.
+- **Client ID** and **Client Secret**: These are [customer-specific credentials](https://doc.sitecore.com/ch/en/users/content-hub/create-an-oauth-client.html) provided by the Sitecore Admin when creating integrations within Sitecore.
 - **Username** and **Password**: User-specific credentials for authentication.
 - **Token Endpoint**: Developer-oriented settings available in Sitecore documentation. These settings are generic for all Sitecore clients.
 - **Scope**: Consult your Sitecore Admin to determine the appropriate scope.
@@ -42,6 +42,11 @@ You will need specific credentials from your Sitecore Content Hub installation t
 You can configure separate authentication for machine-to-machine and browser use cases or use the same setup for both.
 
 ![screenshot-full](sch04.png)
+
+- **Redirect URL** (only used if grafx config is Authorization Code):
+``` js
+/api/v1/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code/redirect
+```
 
 Consult your Sitecore System Admin for assistance in configuring these fields.
 
