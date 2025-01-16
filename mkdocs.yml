@@ -304,7 +304,8 @@ nav:
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
         - 'Connectors':
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
-            - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'            
+            - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
+            - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
