@@ -20,7 +20,7 @@ The InDesign Conversion Plugin allows you to export documents from Adobe® InDes
 
 ### Download the Plugin
 
-Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.1.0/GraFxStudioExporter_InDesign_0.1.0.ccx)
+Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.2.0/GraFxStudioExporter_InDesign_0.2.0.ccx)
 
 ### Install the Plugin
 
