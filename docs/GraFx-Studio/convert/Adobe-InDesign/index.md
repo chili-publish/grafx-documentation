@@ -64,9 +64,14 @@ You can choose to ignore, or to export the object to a PDF asset, and place it a
    - Choose a destination folder and click **Export**.  
    Required only once, can be changed at any moment
    - Choose the Page to be exported
-   - Choose "All pages" to export all the pages[^1]
+   - Choose "All pages" to export all the pages
 
-[^1]: Exported pages must have the same size. Users can skip differently sized pages or convert them to match the first page. A maximum of 50 pages can be exported, with any additional pages excluded.
+!!! note "Limitations"
+    Exported pages must have the same size.
+    
+    Users can skip differently sized pages or convert them to match the first page.
+    
+    A maximum of 50 pages can be exported, with any additional pages excluded.
 
 ![screenshot](convert20.png)
 
