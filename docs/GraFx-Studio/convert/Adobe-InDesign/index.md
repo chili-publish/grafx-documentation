@@ -132,6 +132,11 @@ When you initiate a conversion, the preflight engine scans the document for feat
     **Limitations**  
     - **Not Editable**: Placed assets are static. You cannot edit them within GraFx Studio. For example, if text is saved as a PDF asset, you won’t be able to create a text variable to dynamically alter the text content.
   
+## Compatibility
+
+The plugin has been tested and is compatible with Adobe® InDesign® versions from 2024 and 2025.
+
+The latest tested version is 20.1 (January 2025).
 
 ## Supported Features
 
