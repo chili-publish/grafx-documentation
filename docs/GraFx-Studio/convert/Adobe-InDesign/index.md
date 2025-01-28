@@ -150,7 +150,7 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 |                        | Appearance color scheme                  | ✅             |                                                    |
 | **Document**           | Page size                                | ✅             |                                                    |
 |                        | Choose the page to import                                | ✅            | 
-|                        | All pages                                | ✴️           | Coming soon!                                     |
+|                        | All pages                                | ✅           |  See [Export](/GraFx-Studio/convert/Adobe-InDesign/#export-to-grafx-studio) for liminations |
 |                        | Layouts                                  | ❌           |                                      |
 | **Frames**             | Rotation                                 | ✅             |                                                    |
 |                        | Blend modes                              | ❌           |                                      |
