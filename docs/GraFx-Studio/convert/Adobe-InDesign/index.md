@@ -20,7 +20,7 @@ The InDesign Conversion Plugin allows you to export documents from Adobe® InDes
 
 ### Download the Plugin
 
-Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.1.0/GraFxStudioExporter_InDesign_0.1.0.ccx)
+Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.2.0/GraFxStudioExporter_InDesign_0.2.0.ccx)
 
 ### Install the Plugin
 
@@ -63,8 +63,15 @@ You can choose to ignore, or to export the object to a PDF asset, and place it a
 
    - Choose a destination folder and click **Export**.  
    Required only once, can be changed at any moment
-   - Choose the Page to be exported  
-   Only one page can be exported at a time. Soon you will be able to export all pages at once.
+   - Choose the Page to be exported
+   - Choose "All pages" to export all the pages
+
+!!! note "Limitations"
+    Exported pages must have the same size.
+    
+    Users can skip differently sized pages or convert them to match the first page.
+    
+    A maximum of 50 pages can be exported, with any additional pages excluded.
 
 ![screenshot](convert20.png)
 
