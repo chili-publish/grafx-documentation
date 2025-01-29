@@ -17,6 +17,10 @@
 
 [See Connector Types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
+## Support
+
+Where and how should users go for support inqueries.
+
 ## Installation
 
 How to deploy or install a connector to your environment?
