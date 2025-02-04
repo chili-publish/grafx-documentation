@@ -17,7 +17,7 @@
     
     Powered by our AI assistant GraFx Genie, CHILI GraFx now instantly identifies the subject and the Point of Interest (POI) within the image then automatically crops it to fit the frame – whether for social media, digital ads, or print.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/12/18/grafxstudio---grafx-genie-powered-smart-crop/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/04/grafxstudio---grafx-genie-powered-smart-crop/)
 
     ---
 
