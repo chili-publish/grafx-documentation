@@ -2,41 +2,43 @@
 
 ## Define a character style
 
-Open the Stylekit panel.
+Open the **Resource Panel** > **Stylekit panel**.
 
-![Button](cs-1.png)
+![screenshotsmall](bottom-quicktools-ui.png)
 
-Select the second tab to view paragraph- and character styles
+![screenshot](stylekit.png)
 
-![Image](cs-2.png)
+Select the first tab to view paragraph- and character styles
+
+![screenshot](cs-2.png)
 
 Click on the "+" sign to ad a new character style (bottom section is for character styles).
 Each click on the "+" sign will add another (empty) character style.
 
-![Image](cs-3.png)
+![screenshot](cs-3.png)
 
 Click on the "..." menu next to the newly created style and choose edit or click the pencil to edit the style.
 
 You can rename the style by clicking "Rename" in the "..." menu.
 
-![Image](cs-4.png)
+![screenshot](cs-4.png)
 
 Set all properties you want for this character. Saving happens automatically.
 
-![Image](cs-9.png)
+![screenshot](cs-9.png)
 
 ## Apply a character style
 
 Select the text you want to apply the character style to.
 
-![Image](cs-6.png)
+![screenshot](cs-6.png)
 
 DIfferent than with paragraph styles, with character styles you need to select the character or words you want to apply the style to.
 
 In the properties panel on the right, select the character style from the dropdown list.
 
-![Image](cs-7.png)
+![screenshot](cs-7.png)
 
 Your selected text now has the character style applied.
 
-![Image](cs-8.png)
+![screenshot](cs-8.png)
