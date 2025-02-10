@@ -66,8 +66,8 @@ plugins:
         'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
         'releasenotes/index.md': 'release-notes/index.md'
   - search
-  - table-reader
   - macros
+  - table-reader
 #  - git-revision-date-localized:
 #      enable_creation_date: true
 #      fallback_to_build_date: true
