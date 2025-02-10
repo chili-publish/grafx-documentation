@@ -2,7 +2,9 @@
 
 site_name: CHILI GraFx Guides
 site_description: Explore CHILI GraFx Documentation to build Smart Templates and integrate Creative Automation into your solution
-site_url: https://docs.chiligrafx.com/
+# site_url: https://www.chili-publish.com/documentation/
+site_url: !ENV BASE_URL
+
 
 theme:
   name: material
@@ -65,6 +67,7 @@ plugins:
         'releasenotes/index.md': 'release-notes/index.md'
   - search
   - table-reader
+  - macros
 #  - git-revision-date-localized:
 #      enable_creation_date: true
 #      fallback_to_build_date: true
@@ -108,6 +111,7 @@ extra_javascript:
   - javascripts/feedback.js
 
 extra:
+  base_url: !ENV BASE_URL
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/chili-publish/
@@ -129,7 +133,7 @@ extra:
     title: CHILI Grafx uses cookies
     description: >-
         This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.
-        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Pravacy Statement</a>
+        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Privacy Statement</a>
     cookies:
       analytics:
         name: Google Analytics

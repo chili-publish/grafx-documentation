@@ -1,11 +1,13 @@
 # CHILI GraFx Product documentation
 
 <video width="690" height="388" autoplay="true" loop="true" muted="true">
-  <source src="/assets/CHILI GraFx Animated video 720.mp4" type="video/mp4">
+  <source src="{{ config.extra.base_url }}/assets/CHILI GraFx Animated video 720.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 ## Latest updates
+
+Current Base URL: `{{ config.extra.base_url }}`
 
 <div class="grid cards" markdown>
 
@@ -17,7 +19,7 @@
     
     Powered by our AI assistant GraFx Genie, CHILI GraFx now instantly identifies the subject and the Point of Interest (POI) within the image then automatically crops it to fit the frame – whether for social media, digital ads, or print.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/04/grafxstudio---grafx-genie-powered-smart-crop/)
+    [:octicons-arrow-right-24: Show details]({{ config.extra.base_url }}/release-notes/2025/02/04/grafxstudio---grafx-genie-powered-smart-crop/)
 
     ---
 
@@ -26,7 +28,7 @@
     GraFx Studio now supports multi-page documents. The new auto-grow feature lets frames expand automatically.  
     A major improvement in CHILI GraFx Smart Templates.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
+    [:octicons-arrow-right-24: Show details]({{ config.extra.base_url }}/release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
 
     ---
 
@@ -34,7 +36,7 @@
     
     Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
+    [:octicons-arrow-right-24: Show details]({{ config.extra.base_url }}/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
 
     ---
 
@@ -42,13 +44,13 @@
     
     Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
+    [:octicons-arrow-right-24: Show details]({{ config.extra.base_url }}/release-notes/2024/10/14/connect-with-chili-grafx/)
 
     ---
 
     **See all release notes**
 
-    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+    [:octicons-arrow-right-24: Show all release notes]({{ config.extra.base_url }}release-notes/)
     
 </div>
 
@@ -57,7 +59,7 @@
 
 <div class="grid cards" markdown>
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-02.svg) __CHILI GraFx__
+-   ![tinyapplogo]({{ config.extra.base_url }}/assets/CHILI_LOGOS_OK-02.svg) __CHILI GraFx__
 
     ---
 
@@ -65,7 +67,7 @@
 
     [:octicons-arrow-right-24: Getting started](/CHILI-GraFx/admin/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
+-   ![tinyapplogo]({{ config.extra.base_url }}/assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
 
     ---
 
@@ -73,7 +75,7 @@
 
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
+-   ![tinyapplogo]({{ config.extra.base_url }}/assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
 
     ---
 
@@ -81,7 +83,7 @@
     
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Publisher/guides/hello-world/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
+-   ![tinyapplogo]({{ config.extra.base_url }}/assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
 
     ---
 
@@ -89,7 +91,7 @@
     
     [:octicons-arrow-right-24: Upload your media](/GraFx-Media/guides/upload-media/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
+-   ![tinyapplogo]({{ config.extra.base_url }}/assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
 
     ---
 
@@ -147,7 +149,7 @@
 
 ---
 
-![svg_icon](/assets/CHILI_LOGOS_OK-01.svg)
+![svg_icon]({{ config.extra.base_url }}/assets/CHILI_LOGOS_OK-01.svg)
 
 All information on this portal is documentation on the products and services of [CHILI publish](https://www.chili-publish.com/contact-sales/).
 
