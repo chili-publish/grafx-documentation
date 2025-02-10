@@ -3,7 +3,7 @@ pymdown-extensions
 mkdocs-material
 mkdocs-awesome-pages-plugin
 mkdocs-redirects
-mkdocs-table-reader-plugin
 mkdocs-rss-plugin
 mkdocs-macros-plugin
+mkdocs-table-reader-plugin
 openpyxl
