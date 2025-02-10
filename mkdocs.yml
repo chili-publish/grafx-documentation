@@ -2,8 +2,9 @@
 
 site_name: CHILI GraFx Guides
 site_description: Explore CHILI GraFx Documentation to build Smart Templates and integrate Creative Automation into your solution
-# site_url: https://www.chili-publish.com/documentation/
-site_url: !ENV BASE_URL
+## site_url: https://www.chili-publish.com/documentation/
+# site_url: !ENV BASE_URL
+site_url: https://docs.chili-grafx.com/
 
 
 theme:
