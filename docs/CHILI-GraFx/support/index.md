@@ -15,9 +15,8 @@ If you do not have an account, skip to the section about contacting support via 
 2. Use the icon to open the menu at the lower right corner of the page. 
 3. Choose the Support link from the menu to launch CHILI’s Support Portal. 
 
-More information about navigating the  CHILI GraFx Platform navigation can be found here: [GraFx Platform Navigation](/CHILI-GraFx/guides/onboarding/navigation/)
-
 ## MySupport
+
 Using your GraFx account, you can access the support portal: [MySupport](https://mysupport.chili-publish.com). Not all GraFx accounts have support access; if you require an account to have support access, please create a support ticket or contact your account manager
 
 Click the Support link to view existing support tickets or create a new one.
@@ -41,4 +40,4 @@ Once you logged in...
 - [Best practices](https://mysupport.chili-publish.com/hc/en-us/articles/360019123140-Best-Practices-to-Submit-a-New-Support-Ticket)
 - [How-to’s](https://mysupport.chili-publish.com/hc/en-us/articles/360012616660-Making-A-Request-Ticket)
 - [FAQs](https://mysupport.chili-publish.com/hc/en-us/articles/360012877560-New-Support-Portal-FAQ)
-- [Welcome Aboard](https://mysupport.chili-publish.com/hc/en-us/sections/360003701560-Welcome-Aboard )
+- [Welcome Aboard](https://mysupport.chili-publish.com/hc/en-us/sections/360003701560-Welcome-Aboard)

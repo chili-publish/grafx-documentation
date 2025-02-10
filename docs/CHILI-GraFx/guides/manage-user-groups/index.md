@@ -18,7 +18,7 @@ Give an (optional) description (Step 2/3)
 
 ![screenshot](ug003.png)
 
-Assign Access, similar to [Individual Access assignment](/CHILI-GraFx/guides/set-individual-access/).
+Assign Access, similar to [Individual Access assignment](../manage-individual-access/).
 
 - Select the Environments the group has access to
 - Select the Role everybody in this group will have, for this Environment
@@ -39,11 +39,11 @@ To delete a group, select the group, en "Delete Group" under the Actions drop do
 
 Upon deletion, all members are removed from the group, and the related access is revoked.
 
-Unless if the person still has access through [Individual Access](/CHILI-GraFx/guides/set-individual-access/), or through membership of another group.
+Unless if the person still has access through [Individual Access](../manage-individual-access/), or through membership of another group.
 
 ## Manage User Group Membership
 
-See [Manage Group Membership](/CHILI-GraFx/guides/manage-group-membership/)
+See [Manage Group Membership](../manage-group-membership/)
 
 ## Special group: [All users]
 

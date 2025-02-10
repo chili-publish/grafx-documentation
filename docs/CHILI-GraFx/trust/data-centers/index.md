@@ -1,10 +1,10 @@
 # CHILI publish Data Centers
 
-Data at rest is stored in secure data centers. We distinguish between [Service Data](/CHILI-GraFx/trust/definitions/#service-data), [Platform Data](/CHILI-GraFx/trust/definitions/#platform-data) and [Support Data](/CHILI-GraFx/trust/definitions/#support-data).
+Data at rest is stored in secure data centers. We distinguish between [Service Data](../definitions/#service-data), [Platform Data](../definitions/#platform-data) and [Support Data](../definitions/#support-data).
 
 ## Service Data
 
-The Customer can select a data center in a region, offered by CHILI publish to store [Service Data](/CHILI-GraFx/trust/definitions/#service-data):
+The Customer can select a data center in a region, offered by CHILI publish to store [Service Data](../definitions/#service-data):
 
 - West-Europe (The Netherlands - Amsterdam)
 - East US (Virginia)
@@ -14,11 +14,11 @@ The Customer can select a data center in a region, offered by CHILI publish to s
 
 ## Platform Data
 
-[Platform data](/CHILI-GraFx/trust/definitions/#platform-data) is stored at rest in the Azure region West-Europe (The Netherlands, Amsterdam)
+[Platform data](../definitions/#platform-data) is stored at rest in the Azure region West-Europe (The Netherlands, Amsterdam)
 
 ## Support Data
 
-[Support Data](/CHILI-GraFx/trust/definitions/#support-data) is stored at rest in West Europe.
+[Support Data](../definitions/#support-data) is stored at rest in West Europe.
 
 ## Compliance
 

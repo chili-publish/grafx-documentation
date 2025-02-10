@@ -12,7 +12,7 @@ Conversely, applications can also enhance their capabilities by integrating with
 	
 To enable external applications to connect to CHILI GraFx, an Integration must be defined within the CHILI GraFx platform, which includes a name and credentials for authentication. 
 
-For instructions on setting up an Integration, [see our guide](/CHILI-GraFx/guides/integrations/).
+For instructions on setting up an Integration, [see our guide](../../../GraFx-Developers/overview/).
 
 ## Platform API
 
@@ -35,4 +35,4 @@ Some exmaple use cases are:
 - Adding Template Designer seats (later)
 - Generating Output
 
-You can learn more about these in the [Developer Center](/GraFx-Developers/)
+You can learn more about these in the [Developer Center](../../../GraFx-Developers/overview/)

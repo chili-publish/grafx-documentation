@@ -45,6 +45,6 @@ To get the identifier from a group, click on "Copy group ID" in the group drop-d
 
 ![screenshot-full](ug014.png)
 
-For additional information on the claims used, check, the related security protocol [SAML](/CHILI-GraFx/concepts/federated-single-sign-on/saml/) or [OpenID Connect](/CHILI-GraFx/concepts/federated-single-sign-on/oidc/)
+For additional information on the claims used, check, the related security protocol [SAML](../../../CHILI-GraFx/guides/setup-fsso/saml/) or [OpenID Connect](../../../CHILI-GraFx/guides/setup-fsso/oidc/)
 
 The details on managing the group membership in the third-party IDP varies from vendor to vendor. Please contact your IT support team for further details.

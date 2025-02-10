@@ -1,9 +1,9 @@
 # Create a new GraFx Publisher template
 
 !!! Info
-	In our current phase of development, all Subscription Admins can create templates.
-	When GraFx Studio moves into Phase 4, you will need a Template Designer Seat
+	You need a [Template Designer Seat](../../../CHILI-GraFx/users/template-designer/) or a 
+	[Content Administrator](../../../CHILI-GraFx/users/roles/#content-administrator) role to make templates in GraFx Publisher.
 
-Navigate to GraFx Publisher, and [create your document in the Backoffice](https://chilipublishdocs.atlassian.net/wiki/search?text=create%20first%20document){target=_blank}.
+Navigate to GraFx Publisher, and [create your document in the Backoffice](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413931/Creating+your+first+document){target=_blank}.
 
 ![Template](publisher.png)

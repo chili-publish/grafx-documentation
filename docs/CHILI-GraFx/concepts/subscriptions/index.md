@@ -10,7 +10,7 @@ If you have more than 1 subscription, you can change subscriptions in the dropdo
 
 ![screenshotsmall](https://chilipublishdocs.imgix.net/CHILI_GraFx/myaccount4.png?w=830&q=80)
 
-# Add-ons
+# Features of each Subscription
 
 ## Template designer seats
 
@@ -18,9 +18,9 @@ For a designer to be able to make a template, you need to assign a Template Desi
 
 ## Renders
 
-Renders is a measure of usage of the platform. See [**renders**](/CHILI-GraFx/concepts/renders/) for more detail.
+Renders is a measure of usage of the platform. See [**renders**](../renders/) for more detail.
 
-This number shows the average renders, over the last 6 months. This is also the basis for the invoicing.
+This number shows the [average renders](../renders/#fair-use-policy). This is also the basis for the invoicing.
 
 ## Storage
 

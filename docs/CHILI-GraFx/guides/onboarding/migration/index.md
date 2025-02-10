@@ -111,14 +111,11 @@ Choose the "Log in with GraFx" button.
 
 ## Extra resources
 
-Once logged in, [these (restricted) pages](https://mysupport.chili-publish.com/hc/en-us/sections/360003701560-Welcome-Aboard) handle some of the common questions.
+Once logged in, [these (restricted) pages](https://mysupport.chili-publish.com/hc/en-us/sections/360003701560-Welcome-Aboard) handle the common questions.
 
-- Creating Chili GraFx Users
-- The SPICY road trip: Academy
+- Creating Users
+- The Academy
 - Best Practices to Submit a New Support Ticket
-- Release Notes
-- Getting to Know the CHILI BackOffice
 - Using MySupport
 - New Support Portal FAQ
 - Making A Request Ticket
-- Export Tickets From Old Platform

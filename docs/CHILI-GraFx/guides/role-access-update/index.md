@@ -26,12 +26,12 @@ Go to User Management
 
 #### Set Individual Access
 
-[Set individual access](/CHILI-GraFx/guides/set-individual-access)
+[Set individual access](../manage-individual-access/)
 
 #### Access through a group
 
-[Greate User Group](/CHILI-GraFx/guides/manage-user-groups)
+[Greate User Group](../manage-user-groups)
 
-[Group Membership](/CHILI-GraFx/guides/manage-group-membership)
+[Group Membership](../manage-group-membership)
 
-[Group Access](/CHILI-GraFx/guides/manage-group-access)
+[Group Access](../manage-group-access)

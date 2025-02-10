@@ -87,11 +87,11 @@ A Client Success colleague can assist you in the setup process.
 
 CHILI GraFx supports federation using following protocols:
 
-- [OpenID Connect (OIDC)](/CHILI-GraFx/guides/setup-fsso/oidc)
-- [Security Assertion Markup Language (SAML)](/CHILI-GraFx/guides/setup-fsso/saml)
+- [OpenID Connect (OIDC)](../../../CHILI-GraFx/guides/setup-fsso/oidc)
+- [Security Assertion Markup Language (SAML)](../../../CHILI-GraFx/guides/setup-fsso/saml)
 
 ## Configuring FSSO
-See [the FSSO setup guide](/CHILI-GraFx/guides/setup-fsso/intro)
+See [the FSSO setup guide](../../../CHILI-GraFx/guides/setup-fsso/intro)
 
 ## SSO Glossary
 

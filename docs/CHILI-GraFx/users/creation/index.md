@@ -10,7 +10,7 @@ The first user could also be created after a migration from MyCP. If you had a u
 
 ### Invite users
 
-With the [Subscription Admin](/CHILI-GraFx/users/roles/#subscription-admin) or [Environment Admin](/CHILI-GraFx/users/roles/#environment-admin) role, you can invite users.
+With the [Subscription Admin](../roles/#subscription-admin) or [Environment Admin](../roles/#environment-admin) role, you can invite users.
 
 ![Invite Users](invite-users-start.png)
 
@@ -37,6 +37,6 @@ If a user does not receive the invitation email (e.g. due to a spam filter) or f
 
 ### Existing MyCP users
 
-In case some of your users are using MyCP or Zendesk, they can migrate their users to CHILI GraFx by accessing https://my.chili-publish.com.
+In case some of your users are using MyCP or Zendesk, they can migrate their users to CHILI GraFx by accessing [https://my.chili-publish.com](https://my.chili-publish.com).
 
 The system will suggest to start the migration process.

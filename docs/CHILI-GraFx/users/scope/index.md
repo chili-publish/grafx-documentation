@@ -27,4 +27,4 @@ An environment is the base level, where documents are grouped to serve an applic
 
 ### Roles
 
-[Roles](/CHILI-GraFx/users/roles/) on the environment level affect only the specific environment.
+[Roles](../roles/) on the environment level affect only the specific environment.

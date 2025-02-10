@@ -6,7 +6,7 @@ A sandbox environment is like a test version of the CHILI GraFx platform or appl
 
 This means that any changes made in the sandbox will not affect the production data. The sandbox allows you to test new features to make sure they work properly before they are used in the live version.
 
-Output generated in a sandbox environment has a watermark and is not counted as a [render](/CHILI-GraFx/concepts/renders/).
+Output generated in a sandbox environment has a watermark and is not counted as a [render](../renders/).
 
 ![screenshot](sample.jpeg)
 

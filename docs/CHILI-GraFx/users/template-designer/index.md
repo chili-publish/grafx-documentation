@@ -29,4 +29,4 @@ In the Assigned Seats tab, you can free seats to allow other users in your seat.
 ![Template Designer Seat](tds_remove_seat.png)
 
 !!! warning "Important for CHILI publish Online customers"
-	The restriction does not apply for GraFx Publisher, for customers that had a previous CHILI publish Online subscription. You are still able to add users, and assign the [Content Administrator](/CHILI-GraFx/users/roles/#content-administrator) role, and these people will be able to make and use GraFx Publisher templates.
+	The restriction does not apply for GraFx Publisher, for customers that had a previous CHILI publish Online subscription. You are still able to add users, and assign the [Content Administrator](../roles/#content-administrator) role, and these people will be able to make and use GraFx Publisher templates.

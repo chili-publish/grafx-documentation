@@ -68,7 +68,7 @@ Your dashboard will show the actual status of renders for the full subsciption (
 
 ![screenshot-full](renders01.png)
 
-The light blue line shows the "6 month rolling average".
+The light blue line shows the "rolling average"[^1].
 
 ---
 
@@ -81,9 +81,19 @@ Render quota are not a hard limit per month. If you generate more output than th
 
 The system will not stop working at the limit.
 
-When the 6 month rolling average exceeds the render quota, you will be invoiced an extra render pack to increase your render quota to at least the 6 month average.
+When the rolling average exceeds the render quota, you will be invoiced an extra render pack to increase your render quota to at least the average.
 
 !!! Average
+    **3 months**[^1]
+    
+	3 month average calculation:
+
+	Total of past 91 days divided by 3
+	
+	**6 months**[^1]
+	
 	6 month average calculation:
 
-	Total of past 183 days divided by 6
+	Total of past 183 days divided by 6[^1]
+	
+[^1]: Your contract dictates how the average is calculated.

@@ -1,20 +1,16 @@
 # Step by step
 
-Create a Smart Templates in under 15 minutes.
-
 Looking for detailed training material? Have a look at the [CHILI publish Academy](https://product.chili-publish.academy/dashboard).
 
 ## Steps to your first template
 
-1.	[Logging in to CHILI GraFx](/CHILI-GraFx/guides/onboarding/logging-in/)
-2.	[Navigating around in CHILI GraFx](/CHILI-GraFx/guides/onboarding/navigation/)
-3.	[Applications & Environments](/CHILI-GraFx/guides/onboarding/applications/)
+1.	[Logging in to CHILI GraFx](../logging-in/)
+2.	[Navigating around in CHILI GraFx](../navigation/)
+3.	[Applications & Environments](../applications/)
 4.	Template creation
-	1.	[Hello world in GraFx Publisher](/GraFx-Studio/guides/hello-world/)
-	2.	[Hello world in GraFx Studio](/GraFx-Studio/guides/hello-world/)
-	3.	[15 minute intro into GraFx Studio](/GraFx-Studio/guides/hello-world-extended/)
-5.	Media management
-	1.	[GraFx Media intro](/GraFx-Media/guides/intro/)
+	1.	[Hello world in GraFx Publisher](../../../../GraFx-Publisher/guides/hello-world/)
+	2.	[Hello world in GraFx Studio](../../../../GraFx-Studio/guides/hello-world/)
+	3.	[Extended intro into GraFx Studio](../../../../GraFx-Studio/guides/hello-world/#extended-version)
 
 ## Hello World?
 

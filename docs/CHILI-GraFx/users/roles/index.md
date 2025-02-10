@@ -9,11 +9,11 @@ Any user can have 1 or more roles at the same time.
 
 | Roles | End User | SA | EA | CA[^1] |
 |:---:|:---:|:---:|:---:|:---:|
-|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅[^1]|
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ |
+|![smallapplogo](../../../assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅[^1]|
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ |
 
 Template designer seats give a user extra permissions, and can only be assigned according to the available seats.
 
@@ -21,11 +21,11 @@ E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give
 
 |  | Template Designer Seat (TDS) |
 |:---:|:---:|
-|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| ✅ |
+|![smallapplogo](../../../assets/CHILI_publisher_RGB.svg)| ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-09.svg)| ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-07.svg)| ✅ |
+|![smallapplogo](../../../assets/CHILI_LOGOS_OK-11.svg)| ✅ |
 
 End users, Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
 
@@ -101,7 +101,7 @@ Permissions
 - Access to the environments the End User is assigned to
 - View an overview of all the environments where the End User has access
 - Limited in what applications they can access (see table)
-- Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
+- Create "[My projects](../../guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
 
 In the API, this is labeled as "EU". (End User)
 
@@ -123,19 +123,19 @@ Impact on **GraFx Studio**
 
 Content Administrators will be able to create Templates in GraFx Studio, but the output will be watermarked, if you are on a CHILI publisher Online contract.
 
-To be able to make/edit GraFx Studio Templates while on a CHILI GraFx contract, you need [Template Designer Seats](/CHILI-GraFx/users/roles/#template-designer).
+To be able to make/edit GraFx Studio Templates while on a CHILI GraFx contract, you need [Template Designer Seats](#template-designer).
 
 ## Template Designer
 
 A template Designer Seat can be assigned to a limited amount of people, depending on the amount of seats you subscribed to.
 
-See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
+See the [Template Designer Seat](../template-designer/) page
 
 ## User creation and invitation
 
 ### First user
 
-The first user will be the [Subscription Admin](/CHILI-GraFx/users/roles/#subscription-admin), and is created by CHILI publish, as a result of a signed contract.
+The first user will be the [Subscription Admin](#subscription-admin), and is created by CHILI publish, as a result of a signed contract.
 
 ### Subsequent Users
 
@@ -152,4 +152,4 @@ Only the Subscription Admin & the Environment Admin can access the User Manageme
 
 ## Changing roles
 
-Click here to see how to [change roles & Environment access](/CHILI-GraFx/users/update/).
+Click here to see how to [change roles & Environment access](../../guides/role-access-update/).

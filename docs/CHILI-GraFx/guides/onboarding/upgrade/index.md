@@ -7,7 +7,7 @@ My CHILI publisher (MyCP in short) has evolved into the CHILI GraFx. The platfor
 Part of CHILI GraFx is the User management, Subscription management, etc. The functionality of MyCP moved on to CHILI GraFx.
 
 If you haven't migrated yet, this is the right time!
-[Migrate now](/CHILI-GraFx/guides/onboarding/migration/)
+[Migrate now](../migration/)
 
 For the legacy MyCP documentation visit [MyCP Dodumentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1373405185/My+CHILI+publisher+a.k.a.+MyCP){target=_blank}.
 

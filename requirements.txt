@@ -4,6 +4,5 @@ mkdocs-material
 mkdocs-awesome-pages-plugin
 mkdocs-redirects
 mkdocs-rss-plugin
-mkdocs-macros-plugin
 mkdocs-table-reader-plugin
 openpyxl
