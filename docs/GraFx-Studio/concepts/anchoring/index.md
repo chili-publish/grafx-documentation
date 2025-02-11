@@ -28,7 +28,7 @@ For example, if a text frame is anchored to a logo frame, the text will maintain
 
 ## Inheritance
 
-Anchoring settings follow the [Inheritance Model](/GraFx-Studio/concepts/layouts/#inheritance) across sub-layouts, ensuring consistent positioning. 
+Anchoring settings follow the [Inheritance Model](../../../GraFx-Studio/concepts/layouts/#inheritance) across sub-layouts, ensuring consistent positioning. 
 
 When creating sub-layouts, anchoring maintains relative positions across different page sizes. In the example below, a default layout uses a square format where all frames are positioned relative to the page.
 
@@ -60,13 +60,13 @@ When moving a frame, these settings will also override the inheritance model:
 
 ## What’s Next?
 
-See the [How To set Anchoring page](/GraFx-Studio/guides/anchoring/) in the Guides section
+See the [How To set Anchoring page](../../../GraFx-Studio/guides/anchoring/) in the Guides section
 
 Anchoring is powerful on its own, but it becomes even more effective when combined with other Smart Template features:
 
-- [Actions](/GraFx-Studio/concepts/actions/)
+- [Actions](../../../GraFx-Studio/concepts/actions/)
 - Autogrow
-- [Copyfitting](/GraFx-Studio/guides/text-frame/#auto-resize)
-- [Inheritance](/GraFx-Studio/concepts/layouts/#inheritance)
-- [Layouts](/GraFx-Studio/concepts/layouts/)
-- [Variables](/GraFx-Studio/concepts/variables/)
+- [Copyfitting](../../../GraFx-Studio/guides/text-frame/#auto-resize)
+- [Inheritance](../../../GraFx-Studio/concepts/layouts/#inheritance)
+- [Layouts](../../../GraFx-Studio/concepts/layouts/)
+- [Variables](../../../GraFx-Studio/concepts/variables/)

@@ -10,7 +10,7 @@ A template refers to a pre-designed document that serves as a starting point for
 
 Templates are typically created by experienced designers who establish the visual and functional framework for a particular type of design, such as brochures, posters, websites, or social media posts. These templates can include various components like typography, color schemes, imagery placeholders, and other design elements that are common to the specific design type.
 
-A GraFx Studio template is created by a template Designer using [GraFx Studio](/GraFx-Studio/).
+A GraFx Studio template is created by a template Designer using [GraFx Studio](../../../GraFx-Studio/).
 
 ![screen](templates.png)
 

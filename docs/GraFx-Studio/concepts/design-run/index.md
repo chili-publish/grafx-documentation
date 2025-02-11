@@ -39,7 +39,7 @@ In **Run Mode**, the template operates as it would for end users, activating log
 ### Key Features in Run Mode:
 - **Live Actions**: Business logic is triggered in response to changes, reflecting end-user interactions.
 - **True Visibility**: Hidden variables and conditional visibility (of frames) behave as configured for end users.
-- **User Interface Simulation**: Simulate how different [User Interfaces](/GraFx-Studio/concepts/user-interface/) will appear to end users. In Run Mode, you can switch between different user interfaces to see e.g. which output settings are available to end users, ensuring the final experience matches the intended design.
+- **User Interface Simulation**: Simulate how different [User Interfaces](../../../GraFx-Studio/concepts/user-interface/) will appear to end users. In Run Mode, you can switch between different user interfaces to see e.g. which output settings are available to end users, ensuring the final experience matches the intended design.
 
 ### Displaying Output Settings by Layout Intent
 

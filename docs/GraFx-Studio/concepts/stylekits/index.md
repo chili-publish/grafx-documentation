@@ -23,7 +23,7 @@ A character style is a collection of character formatting attributes that can be
 
 A swatch is a color saved inside a Stylekit.
 
-A [swatch](/GraFx-Studio/guides/swatches/) is a color saved inside a Stylekit. You can define a color, give it a name, and save the named color to be used later in a style.
+A [swatch](../../../GraFx-Studio/guides/swatches/) is a color saved inside a Stylekit. You can define a color, give it a name, and save the named color to be used later in a style.
 
 ## Fonts
 

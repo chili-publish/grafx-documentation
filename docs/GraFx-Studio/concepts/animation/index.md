@@ -25,7 +25,7 @@ Exporting the "animation" to a static file format, will only export the first fr
 
 To start, the length of the timeline will be 5 seconds long.
 
-Show the timeline by enabling the "Layers / Animation" panel in the [bottom quicktools panel](/GraFx-Studio/overview/bottom-quicktools/).
+Show the timeline by enabling the "Layers / Animation" panel in the [bottom quicktools panel](../../../GraFx-Studio/overview/bottom-quicktools/).
 
 ![Timeline duration](show-timeline.png)
 

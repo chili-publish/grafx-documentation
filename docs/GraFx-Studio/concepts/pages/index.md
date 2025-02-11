@@ -8,7 +8,7 @@ This is primarily relevant in a **print environment**. Understanding when and wh
 
 ## When to Use Multi-Page Documents
 
-GraFx Studio offers three [layout **intents**](/GraFx-Studio/concepts/layout-intent/).
+GraFx Studio offers three [layout **intents**](../../../GraFx-Studio/concepts/layout-intent/).
 
 ## Why Multi-Page Only Makes Sense for Print
 
@@ -23,4 +23,4 @@ In **digital static** and **digital animated** designs, the concept of multiple 
 
 ## How To
 
-See [How to add, hide, and delete pages](/GraFx-Studio/guides/pages/).
+See [How to add, hide, and delete pages](../../../GraFx-Studio/guides/pages/).

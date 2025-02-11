@@ -6,7 +6,7 @@ A **Media Connector** accelerates collateral creation by bringing assets from an
 
 The value for end-users lies in accessing brand-managed assets (with corresponding metadata) while respecting the digital rights management of the external system. Media Connectors also enable fully automated content creation, driving content generation at scale.
 
-Connectors can be used in **[self-service](/GraFx-Studio/concepts/self-service/)** or **[headless](/GraFx-Studio/concepts/headless/)** workflows.
+Connectors can be used in [**self-service**](../../../GraFx-Studio/concepts/self-service/)** or [**headless**](../../../GraFx-Studio/concepts/headless/) workflows.
 
 ## Concepts
 

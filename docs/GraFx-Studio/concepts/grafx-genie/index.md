@@ -9,9 +9,9 @@ You need to write an Action, to make your template into a Smart Template.
 
 Challenge: You don't know how to write JavaScript code, to make this happen.
 
-GraFx Genie is your go-to smart assistant for crafting [actions](/GraFx-Studio/guides/actions/create/) to support your templates. 
+GraFx Genie is your go-to smart assistant for crafting [actions](../../../GraFx-Studio/guides/actions/create/) to support your templates. 
 
-It's designed to assist you in creating actions, which play a vital role within triggers. See also: [Introduction to Actions](/GraFx-Studio/concepts/actions/)
+It's designed to assist you in creating actions, which play a vital role within triggers. See also: [Introduction to Actions](../../../GraFx-Studio/concepts/actions/)
 
 ## Example
 

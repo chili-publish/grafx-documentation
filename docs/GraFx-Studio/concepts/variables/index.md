@@ -6,7 +6,7 @@ In GraFx Studio, we utilize the concept of variables in two distinct contexts to
 
 ### Definition and Purpose
 
-**JavaScript Variables** are used in [Actions](/GraFx-Studio/concepts/actions/) to automate the document.
+**JavaScript Variables** are used in [Actions](../../../GraFx-Studio/concepts/actions/) to automate the document.
 
 These variables are integral in scripting custom behaviors, controlling document flow, and manipulating data in real-time.
 
@@ -49,7 +49,7 @@ setVariableValue('headline', newheadline);
 
 ### Getting the Template Variable Value
 
-There is a [helper function](/GraFx-Studio/concepts/helper-functions/#get) called `getVariableValue()`. This function acts like a question you ask to your template: "Hey, what's the current value of this Template Variable?"
+There is a [helper function](../../../GraFx-Studio/concepts/helper-functions/#get) called `getVariableValue()`. This function acts like a question you ask to your template: "Hey, what's the current value of this Template Variable?"
 
 You can then store this value in a JavaScript Variable. For example
    
@@ -79,6 +79,6 @@ This allows a seamless interaction between the content in your template and the 
 
 ## Howto?
 
-[Add Template Variables](/GraFx-Studio/guides/template-variables/define/)
+[Add Template Variables](../../../GraFx-Studio/guides/template-variables/define/)
 
-[Create Actions](/GraFx-Studio/guides/actions/create/)
+[Create Actions](../../../GraFx-Studio/guides/actions/create/)

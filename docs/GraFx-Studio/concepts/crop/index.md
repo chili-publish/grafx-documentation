@@ -30,7 +30,7 @@ The Image handles (3) allow you to influence the image. The crop handles (4) ena
 
 ## Inheritance model
 
-See also [Inheritance model](/GraFx-Studio/concepts/layouts/#inheritance)
+See also [Inheritance model](../../../GraFx-Studio/concepts/layouts/#inheritance)
 
 In the layout inheritance model, changing the image crop or fit mode on a child layout overrides the parent layout. 
 
@@ -42,7 +42,7 @@ The reset button next to the fit mode removes the image crop and restores the or
 
 When the asset in an image frame is replaced, the crop settings are reset.
 
-They are reset to the [fit-mode](/GraFx-Studio/concepts/frames/#fit-or-fill-mode) of that frame.
+They are reset to the [fit-mode](../../../GraFx-Studio/concepts/frames/#fit-or-fill-mode) of that frame.
 
 Replacing an image can be done by a user, or through integration. In either way, the crop settings are removed, and the fill setting is applied.
 
@@ -52,7 +52,7 @@ Replacing an image can be done by a user, or through integration. In either way,
 
 ![screenshot](crop-button.png)
 
-The crop reset button (reverse arrow) will reset the image fit to the chosen [fit mode](/GraFx-Studio/concepts/frames/#fit-or-fill-mode).
+The crop reset button (reverse arrow) will reset the image fit to the chosen [fit mode](../../../GraFx-Studio/concepts/frames/#fit-or-fill-mode).
 
 All changes made to the cropping, positioning or rotation will be reset to the fit- or fill setting of the image frame.
 

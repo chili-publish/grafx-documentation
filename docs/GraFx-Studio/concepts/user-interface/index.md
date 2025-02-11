@@ -8,11 +8,11 @@ You can define User Interfaces for specific customers (because they use specific
 
 ## Output settings
 
-For each of the three [Layout Intents](/GraFx-Studio/concepts/layout-intent/) you can add 1 or more Output Settings.
+For each of the three [Layout Intents](../../../GraFx-Studio/concepts/layout-intent/) you can add 1 or more Output Settings.
 
 ![ui](ui2.png)
 
-Before you do, define [Output Settings](/GraFx-Studio/concepts/output-settings/), and then you can add them for the specific Layout Intent.
+Before you do, define [Output Settings](../../../GraFx-Studio/concepts/output-settings/), and then you can add them for the specific Layout Intent.
 
 ## Default User Interface
 
@@ -30,4 +30,4 @@ User Interfaces are only accesible for users with one of these roles
 - Environment admins
 - Template designers
 
-See also [Roles](/CHILI-GraFx/users/roles/#roles)
+See also [Roles](../../../CHILI-GraFx/users/roles/#roles)

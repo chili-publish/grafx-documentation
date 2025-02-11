@@ -62,7 +62,7 @@ The appearance is the color for a specific part of the barcode.
 
 - Fill represents the actual (bar)code
 - Background represents the background color
-- Blend mode: apply [blend modes](/GraFx-Studio/concepts/blendmodes/), similar to image frames
+- Blend mode: apply [blend modes](../../../GraFx-Studio/concepts/blendmodes/), similar to image frames
 
 ![screenshot-full](qr1.png)
 
@@ -106,7 +106,7 @@ If the value is invalid, an error message is shown next to the text input field,
 
 Bar Width Reduction (BWR) is used in barcode printing to compensate for ink spread or "dot gain." It involves reducing the barcode bars' thickness so that after printing and ink spreading, they remain scannable. The actual adjustment amount depends on various factors like ink, paper, and printer conditions. To get the right value, print a sample, measure the bar width, and compare it to the original file. The difference helps adjust the bar width to compensate for the printing process.
 
-The reduction width depends on the printer, so it’s configured in the [PDF output settings](/GraFx-Studio/guides/output/settings/) and not in the barcode settings:
+The reduction width depends on the printer, so it’s configured in the [PDF output settings](../../../GraFx-Studio/guides/output/settings/) and not in the barcode settings:
 
 - The “Bar width reduction” setting is added to the output settings for the PDF output format
 - It’s a decimal number and can be positive or negative
@@ -119,4 +119,4 @@ The bar width of all barcodes that are placed in the PDF is adjusted, based on t
 
 ## How to?
 
-See [how to add](/GraFx-Studio/guides/barcodes/add/) for a guide how to add a barcode to your template.
+See [how to add](../../../GraFx-Studio/guides/barcodes/add/) for a guide how to add a barcode to your template.

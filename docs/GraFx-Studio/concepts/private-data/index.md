@@ -16,4 +16,4 @@ For advanced use cases, **Private Data** allows extra information to be passed t
 - **Integration-specific:** Used by integrations to provide extra private data.
 - **Customizable:** Tailored to your integration’s requirements.
 
-See also [How to manage Private Data](/GraFx-Studio/guides/template-variables-private-date/)
+See also [How to manage Private Data](../../../GraFx-Studio/guides/template-variables-private-date/)

@@ -27,7 +27,7 @@ An image frame looks like a rectangular box when selected and has a cross when n
 
 When media is selected / active for the frame, it will show the media.
 
-Look [here](/GraFx-Studio/concepts/crop/) to see how to work with cropping.
+Look [here](../../../GraFx-Studio/concepts/crop/) to see how to work with cropping.
 
 ![screenshot-fullwidth](../crop/rectcrop.png)
 

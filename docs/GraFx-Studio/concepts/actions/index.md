@@ -50,4 +50,4 @@ Enter your JavaScript code that should be executed.
 
 ![image](actioncode.png)
 
-See further [How to create an action](/GraFx-Studio/guides/actions/create/) and [Intro to writing JavaScript](/GraFx-Studio/guides/actions/javascript/)
+See further [How to create an action](../../../GraFx-Studio/guides/actions/create/) and [Intro to writing JavaScript](../../../GraFx-Studio/guides/actions/javascript/)

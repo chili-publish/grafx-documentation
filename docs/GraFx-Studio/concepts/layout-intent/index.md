@@ -12,7 +12,7 @@ This property provides contextual guidance for both Template Designers and end u
 
 ## Inheritance model
 
-Intents are part of the [Inheritance model](/GraFx-Studio/concepts/layouts/#inheritance).
+Intents are part of the [Inheritance model](../../../GraFx-Studio/concepts/layouts/#inheritance).
 
 An Intent defined for a master layout automatically applies to all sub-layouts. If needed, Intent can be individually adjusted for each sub-layout, overriding the inherited default.
 
@@ -28,7 +28,7 @@ The size did not color, since it's converted from Pixels, and will reflect the s
 ## Print
 
 - Units will default to Millimeters
-- [Bleed](/GraFx-Studio/concepts/bleed/) properties are visible
+- [Bleed](../../../GraFx-Studio/concepts/bleed/) properties are visible
 - Animation properties are hidden
 - Animation timeline is hidden
 
@@ -37,7 +37,7 @@ The size did not color, since it's converted from Pixels, and will reflect the s
 ## Digital static
 
 - Units will default to Pixels
-- [Bleed](/GraFx-Studio/concepts/bleed/) properties are hidden
+- [Bleed](../../../GraFx-Studio/concepts/bleed/) properties are hidden
 - Animation properties are hidden
 - Animation timeline is hidden
 
@@ -49,7 +49,7 @@ The size did not color, since it's converted from Pixels, and will reflect the s
 ## Digital animated
 
 - Units will default to Pixels
-- [Bleed](/GraFx-Studio/concepts/bleed/) properties are hidden
+- [Bleed](../../../GraFx-Studio/concepts/bleed/) properties are hidden
 - Animation properties are visible
 - Animation timeline is visible
 
