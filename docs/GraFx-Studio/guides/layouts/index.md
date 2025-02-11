@@ -46,7 +46,7 @@ You can reset the value to the inherited one, by clicking on the left turning ar
 
 If the base layout contains an animation, the animation is also available in the layout.
 
-Enable / Activate the [Layers panel](../../../GraFx-Studio/overview/frames-timeline/) via the [Bottom quick tools icon](../../../GraFx-Studio/overview/bottom-quicktools/).
+Enable / Activate the [Layers panel](../../../GraFx-Studio/overview/timeline/) via the [Bottom quick tools icon](../../../GraFx-Studio/overview/bottom-quicktools/).
 
 Select an element for which you want to change the animation.
 

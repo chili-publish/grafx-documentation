@@ -44,8 +44,8 @@ CHILI GraFx provides a REST-like API that is used to managed resources on the pl
 
 #### Tutorials
 
-- [Environment API Quickstart](../../../GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/02-managing-integrations/)
-- [Integration Project - Building a Template Store](../../../GraFx-Developers/environment-api/grafx-studio/integration-project-building-a-template-store/project-overview/)
+- [Environment API Quickstart](../../../GraFx-Developers/environment-api/01-overview/)
+- [Integration Project - Building a Template Store](../../../GraFx-Developers/grafx-studio/workshop-building-a-template-store/00-workshop-overview/)
 
 #### References
 
