@@ -1,6 +1,6 @@
 # Introduction
 
-![applogo](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS-Media-1.svg)
+![applogo](../assets/CHILI_LOGOS_OK-11.svg)
 
 GraFx Media is the central repository to store your assets to be used in your Smart Templates.
 
