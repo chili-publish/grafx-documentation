@@ -1,6 +1,6 @@
 # My projects
 
-See also: [Template Management](/GraFx-Studio/concepts/template-management/) for the full story.
+See also: [Template Management](../../../GraFx-Studio/concepts/template-management/) for the full story.
 
 ## Before you start
 
@@ -14,7 +14,7 @@ You will see "Start a project" and below "My projects"
 
 If your template designer did not assign templates to a collection, or no collections exist yet, this page will be empty.
 
-Before you start [you need to have 1 collection](/CHILI-GraFx/guides/manage-collections/#create-a-collection), with at least 1 Smart Template
+Before you start [you need to have 1 collection](../../../GraFx-Studio/guides/manage-collections/#create-a-collection), with at least 1 Smart Template
 
 ## Pick a collection
 

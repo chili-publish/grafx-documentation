@@ -18,7 +18,7 @@ All the usual undo, redo, cut, copy, paste, duplicate, and delete functions.
 
 ## Frame
 
-Move the frame up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
+Move the frame up or down. (See [Z-index](../../../GraFx-Studio/concepts/frames/#z-index))
 
 ![screenshot](frame.png)
 
@@ -38,6 +38,6 @@ Zoom the canvas in or out.
 
 ## Export
 
-Shows the export dialog, with all [output settings](/GraFx-Studio/concepts/output-settings/) you have defined.
+Shows the export dialog, with all [output settings](../../../GraFx-Studio/concepts/output-settings/) you have defined.
 
 ![screenshot](export.png)

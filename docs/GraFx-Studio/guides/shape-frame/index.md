@@ -1,20 +1,20 @@
 # Frame: Shape
 
-See concept [Shape frames](/GraFx-Studio/concepts/frames/#shape-frame)
+See concept [Shape frames](../../../GraFx-Studio/concepts/frames/#shape-frame)
 
 ## Create shape frame
 
 Select the shape tool in the sidebar and choose a shape. You can also use the shortcut for the shape you wish to draw.
 
-![screenhot](tool-shape.png)
+![screenshot](tool-shape.png)
 
 Drag a rectangle on the canvas. The selected shape will be drawn inside the frame.
 
-![screen](draw-frame-shape.gif)
+![screenshot](draw-frame-shape.gif)
 
 ## Properties
 
-Similar properties as with all frames. See [Basic properties](/GraFx-Studio/concepts/frames/#basic-properties).
+Similar properties as with all frames. See [Basic properties](../../../GraFx-Studio/concepts/frames/#basic-properties).
 
 ### Corner radius
 
@@ -29,7 +29,7 @@ A corner radius can be entered in the property panel, or can be set through the 
 
 By default you can set the corner radius for all corners.
 
-![screenhot](corner-radius.png)
+![screenshot](corner-radius.png)
 
 By deselecting the "Same for each corner", you can specify a corner radius for each corner individually.
 
@@ -57,4 +57,4 @@ In the properties panel, you can now set the value above 50. Visually, this will
 
 When you now make a different layout, that is much bigger in size, and the frame would be much bigger, then this corner radius would be visible again.
 
-![screenshot-fullwidth](max-radius.gif)
+![screenshot-full](max-radius.gif)

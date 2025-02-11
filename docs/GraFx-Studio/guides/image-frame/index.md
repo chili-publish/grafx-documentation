@@ -1,6 +1,6 @@
 # Frame: Image
 
-See concept [Image frames](/GraFx-Studio/concepts/frames/#image-frame)
+See concept [Image frames](../../../GraFx-Studio/concepts/frames/#image-frame)
 
 ## Create image frame
 
@@ -28,7 +28,7 @@ The initial fit of the asset in the frame is to fill the frame. (see Fill proper
 
 ## Properties
 
-Similar properties as with all frames. See [Basic properties](/GraFx-Studio/concepts/frames/#basic-properties).
+Similar properties as with all frames. See [Basic properties](../../../GraFx-Studio/concepts/frames/#basic-properties).
 
 ### Fill properties
 
@@ -57,8 +57,8 @@ If the image and the frame have the exact aspect ratio, there will be no differe
 
 #### Crop
 
-See [Cropping an Image](/GraFx-Studio/guides/cropping/)
+See [Cropping an Image](../../../GraFx-Studio/guides/cropping/)
 
 ### Appearance
 
-See [Blend modes](/GraFx-Studio/guides/blendmodes/)
+See [Blend modes](../../../GraFx-Studio/guides/blendmodes/)

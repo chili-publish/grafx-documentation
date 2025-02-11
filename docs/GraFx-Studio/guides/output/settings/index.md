@@ -1,6 +1,6 @@
 # Create Output Settings
 
-[What are output settings?](/GraFx-Studio/concepts/output-settings/)
+[What are output settings?](../../../../GraFx-Studio/concepts/output-settings/)
 
 ## Create output settings
 
@@ -38,7 +38,7 @@ Depending on the chosen output file type, there are different settings available
 
 ### Name and description
 
-The name of your setting (1), is the name that will be shown in the [Studio UI](/GraFx-Studio/guides/create-projects/#customize-your-project).
+The name of your setting (1), is the name that will be shown in the [Studio UI](../../../../GraFx-Studio/guides/create-projects/#customize-your-project).
 
 The description (2) will be shown as a second line in the export.
 
@@ -75,7 +75,7 @@ Enabling this setting removed the dependency of fonts in the PDF.
 
 ### Crop Marks
 
-What are [Crop Marks](/GraFx-Studio/concepts/crop-marks/)?
+What are [Crop Marks](../../../../GraFx-Studio/concepts/crop-marks/)?
 
 Set the offset and weight (thickness) of the crop marks.
 

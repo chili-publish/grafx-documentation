@@ -25,7 +25,7 @@ By default, you can enter a static value in the barcode properties. (Set value)
 
 To unleash the power of real Creative Automation, you can link a value to a variable.
 
-Start by defining your variable. [See Variables](/GraFx-Studio/guides/template-variables/define/)
+Start by defining your variable. [See Variables](../../../../GraFx-Studio/guides/template-variables/define/)
 
 ![screenshot-full](variables.png)
 

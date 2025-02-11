@@ -1,7 +1,7 @@
 # Defining template variables
 
 !!! info "Template Variables"
-	When referring to **variables** we can mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](/GraFx-Studio/concepts/variables/#javascript-variables)**.
+	When referring to **variables** we can mean **[Template variables](../../../../GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](../../../../GraFx-Studio/concepts/variables/#javascript-variables)**.
 	In the context of this page, we are talking about Template variables, unless stated differently.
 
 In the properties panel (right), choose the wrench & screwdriver tool.
@@ -111,7 +111,7 @@ In the list of variables, you can double click or "Rename" the variable Name.
 !!! important "Variable name vs Display Label"
 
     The variable name is the technical name, that will be used for further automation.
-    In the appearance tab you can set the (display) label, that will be shown in the [Studio UI interface](/GraFx-Studio/concepts/template-management/?h=studio#studio-ui).
+    In the appearance tab you can set the (display) label, that will be shown in the [Studio UI interface](../../../../GraFx-Studio/concepts/template-management/#studio-ui).
 
 ### Default state
 
@@ -126,7 +126,7 @@ The default value your template variable will have.
 - Type: See [types](#types) above
 - [Visible](#visibility-conditions): Enabled by default
 - Required: Disabled by default
-- [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
+- [Private data](../../../../GraFx-Studio/concepts/private-data/)  
 A set of key-value pairs to assist you with automation.
 
 ### Appearance settings

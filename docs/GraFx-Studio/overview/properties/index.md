@@ -33,4 +33,4 @@ By default, a frame does not have variables. You can set, unset and change the s
 
 ### Actions
 
-A new document starts without [Actions](/GraFx-Studio/concepts/actions/).
+A new document starts without [Actions](../../../GraFx-Studio/concepts/actions/).

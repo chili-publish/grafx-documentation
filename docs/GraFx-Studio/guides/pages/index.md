@@ -1,6 +1,6 @@
 # Multiple Pages
 
-See also: [Pages & Layout Intents](/GraFx-Studio/concepts/pages/)
+See also: [Pages & Layout Intents](../../../GraFx-Studio/concepts/pages/)
 
 ![screenshot-full](multipage.gif)
 
@@ -31,13 +31,13 @@ Click the **Eye** icon on the page, or **"..."** > **Hide Page**
   ![screenshot](page01.png)  
   ![screenshot](page02.png)
 
-- Visibility applies to all [layouts](/GraFx-Studio/concepts/layouts/).  
+- Visibility applies to all [layouts](../../../GraFx-Studio/concepts/layouts/).  
   It is not possible to hide different pages in different layouts.
 - When a document is loaded, the first visible page is selected.
 
   ![screenshot](page01.png)
 
-!!! info "[Studio UI](/GraFx-Studio/concepts/template-management/) Considerations"
+!!! info "[Studio UI](../../../GraFx-Studio/concepts/template-management/) Considerations"
 
     - Hidden pages are ignored.  
       The page navigation panel only shows snapshots of visible pages.  

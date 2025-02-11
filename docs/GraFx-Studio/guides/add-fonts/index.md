@@ -12,7 +12,7 @@ Select the fonts icon to check the already available fonts in your document.
 
 Click on the "+" sign to add a new font.
 
-The available fonts are shown ([GraFx Fonts](/GraFx-Fonts/) application).
+The available fonts are shown ([GraFx Fonts](../../../GraFx-Fonts/) application).
 
 ![screenshot](fonts-3.png)
 

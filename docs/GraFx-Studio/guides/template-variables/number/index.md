@@ -22,7 +22,7 @@ Double-click the name, or choose "Rename" under the "..." menu.
 
 ### Visible
 
-Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
+Defines if the variable will be visible in the [Studio UI](../../../../GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
 
 ### Range
 

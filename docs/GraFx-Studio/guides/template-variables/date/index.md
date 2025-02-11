@@ -20,7 +20,7 @@ Double-click the name, or choose "Rename" under the "..." menu.
 
 ### Visible
 
-Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
+Defines if the variable will be visible in the [Studio UI](../../../../GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
 
 ### Display Format
 
@@ -116,7 +116,7 @@ Current date is Aug 7, 2024. First possible date to select is Aug 15. Last possi
 
 ## Use in Actions
 
-Different [helper functions](/GraFx-Studio/concepts/helper-functions/) are available in Actions related to Date variables.
+Different [helper functions](../../../../GraFx-Studio/concepts/helper-functions/) are available in Actions related to Date variables.
 
 In Actions, you can use JavaScript to address the value and/or properties for date variables.
 

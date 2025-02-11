@@ -1,9 +1,9 @@
 # Actions: Selective Frame visibility
 
-For basic intro into Actions, look at the [concept](/GraFx-Studio/concepts/actions/) page.
+For basic intro into Actions, look at the [concept](../../../../GraFx-Studio/concepts/actions/) page.
 
 !!! info "Template Variables"
-	When referring to **variables** on this page we refer to **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** unless stated differently.
+	When referring to **variables** on this page we refer to **[Template variables](../../../../GraFx-Studio/concepts/variables/#template-variables)** unless stated differently.
 
 ## Intro
 
@@ -25,7 +25,7 @@ The items in the list contain the discount options.
 
 ### The trigger
 
-An action is defined (See [Create Actions](/GraFx-Studio/guides/actions/create/) on how to do this)
+An action is defined (See [Create Actions](../../../../GraFx-Studio/guides/actions/create/) on how to do this)
 
 First step is to define the trigger, that will initiate the action.
 

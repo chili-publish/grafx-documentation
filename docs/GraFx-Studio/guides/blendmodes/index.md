@@ -4,6 +4,6 @@
 - Open the properties panel
 - Appearance > Blend mode
 
-[Overview of blend modes](/GraFx-Studio/concepts/blendmodes/)
+[Overview of blend modes](../../../GraFx-Studio/concepts/blendmodes/)
 
 ![Frame](applyblendmode.png)

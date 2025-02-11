@@ -58,4 +58,4 @@ When the current layout is a "Sub-layout", resetting the crop will fall back to 
 
 ## Undo / Redo
 
-Explained on the [concept page](/GraFx-Studio/concepts/crop/#undo)
+Explained on the [concept page](../../../GraFx-Studio/concepts/crop/#undo-or-redo)

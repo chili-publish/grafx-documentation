@@ -12,7 +12,7 @@
 
 The pencil button allows editting the properties.
 
-The fill color can be a custom color, or a predefined [swatch](/GraFx-Studio/concepts/stylekits/#swatch).
+The fill color can be a custom color, or a predefined [swatch](../../../GraFx-Studio/concepts/stylekits/#swatch).
 
 ![screenshot](select-color.png)
 
@@ -44,4 +44,4 @@ Select the font family you want to add to your document.
 ![screenshot](font-browser.png)
 
 
-[See GraFx Fonts](/GraFx-Fonts/)
+[See GraFx Fonts](../../../GraFx-Fonts/)

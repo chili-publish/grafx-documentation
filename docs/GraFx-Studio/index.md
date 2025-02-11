@@ -1,6 +1,6 @@
 # Introduction
 
-![applogo](/assets/CHILI_LOGOS_OK-09.svg)
+![applogo](../assets/CHILI_LOGOS_OK-09.svg)
 
 GraFx Studio is the multichannel Smart Template editor for (animated) digital and print output.
 

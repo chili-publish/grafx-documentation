@@ -8,7 +8,7 @@ GraFx Studio allows you to **convert your existing designs** from desktop tools 
 
 Below is the abstract process of conversion. For specific conversions see:
 
-- [how to convert an Adobe® InDesign® document](/GraFx-Studio/convert/Adobe-InDesign/).
+- [how to convert an Adobe® InDesign® document](../../../GraFx-Studio/convert/Adobe-InDesign/).
 
 ### Export from Desktop Tools
 

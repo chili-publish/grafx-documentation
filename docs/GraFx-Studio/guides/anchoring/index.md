@@ -2,7 +2,7 @@
 
 ## Concept
 
-See the [Anchoring Concept page](/GraFx-Studio/concepts/anchoring/) for a conceptual explanation.
+See the [Anchoring Concept page](../../../GraFx-Studio/concepts/anchoring/) for a conceptual explanation.
 
 ## Take your time to explore
 

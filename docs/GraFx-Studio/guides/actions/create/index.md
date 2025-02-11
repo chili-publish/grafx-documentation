@@ -2,7 +2,7 @@
 
 ## Add Action
 
-Open the [Automation panel](/GraFx-Studio/overview/properties/#automation-properties).
+Open the [Automation panel](../../../../GraFx-Studio/overview/properties/#automation-properties).
 
 By default, a new document will not have any Actions.
 
@@ -21,7 +21,7 @@ If applicable, select the scope for the Trigger.
 The scope is the object (frame, variable, etc.) that will be monitored. You can also choose to monitor "Any variable" or "Any frame".
 
 !!! info "Template Variables"
-	When referring to **variables** in this context we mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)**.
+	When referring to **variables** in this context we mean [**Template variables**](../../../../GraFx-Studio/concepts/variables/#template-variables).
 
 
 ![screenshot](triggerscope.png)

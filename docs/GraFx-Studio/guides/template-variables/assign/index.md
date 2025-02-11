@@ -1,11 +1,11 @@
 # How to work with template variables
 
 !!! info "Template Variables"
-	When referring to **variables** we can mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](/GraFx-Studio/concepts/variables/#javascript-variables)**.
+	When referring to **variables** we can mean **[Template variables](../../../../GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](../../../../GraFx-Studio/concepts/variables/#javascript-variables)**.
 	In the context of this page, we are talking about Template variables, unless stated differently.
 
 
-Be sure to also check the [concept page](/GraFx-Studio/concepts/variables/)
+Be sure to also check the [concept page](../../../../GraFx-Studio/concepts/variables/)
 
 ## Insert template variable in a text frame
 

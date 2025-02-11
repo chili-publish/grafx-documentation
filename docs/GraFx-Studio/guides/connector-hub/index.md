@@ -36,7 +36,7 @@ Select the connector you want to deploy or install in your environment.
 
 Each connector in the list displays who built it—either **CHILI publish** or a **third-party partner**. 
 
-This is indicated by the "By" field. For more details, see the [Types of Connectors](/GraFx-Studio/concepts/connectors/#types-of-connectors).
+This is indicated by the "By" field. For more details, see the [Types of Connectors](../../../GraFx-Studio/concepts/connectors/#types-of-connectors).
 
 ### Connector Categories
 
@@ -68,7 +68,7 @@ If a connector was available in the past but has been set to 'not available' aga
 
 ## Create a Custom Connector
 
-See the Developer Documentation for detailed instructions on how to [build your custom connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/).
+See the Developer Documentation for detailed instructions on how to [build your custom connector](../../../GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/).
 
 ## List of Available Connectors
 

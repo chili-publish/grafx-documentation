@@ -22,7 +22,7 @@ If you were to remove all animations, as initially shown, the position and size 
 
 Click "Hamburger menu" and Export.
 
-Choose the right [output setting](/GraFx-Studio/concepts/output-settings/), you have predefined as PDF output.
+Choose the right [output setting](../../../../GraFx-Studio/concepts/output-settings/), you have predefined as PDF output.
 
 ![screenshot](pdf.png)
 

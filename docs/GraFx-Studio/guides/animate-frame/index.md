@@ -2,15 +2,15 @@
 
 ## Introduction
 
-Be sure to first read about the [concept of Animation](/GraFx-Studio/concepts/animation/)
+Be sure to first read about the [concept of Animation](../../../GraFx-Studio/concepts/animation/)
 
-We will also refer to [Animation panel](/GraFx-Studio/overview/animation/)
+We will also refer to [Animation panel](../../../GraFx-Studio/overview/animation/)
 
 ## Before you animate
 
 **Show the timeline**
 
-Click on the Layers icon in the [bottom quick tools panel](/GraFx-Studio/overview/bottom-quicktools/).
+Click on the Layers icon in the [bottom quick tools panel](../../../GraFx-Studio/overview/bottom-quicktools/).
 
 ![Timeline change](timeline.png)
 

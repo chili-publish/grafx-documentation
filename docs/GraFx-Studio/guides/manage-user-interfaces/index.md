@@ -1,6 +1,6 @@
 # User interfaces
 
-See also what is a [User Interface](/GraFx-Studio/concepts/user-interface/)
+See also what is a [User Interface](../../../GraFx-Studio/concepts/user-interface/)
 
 ## Create
 
@@ -28,9 +28,9 @@ Click a settings or choose "Edit user interface" in the "..." menu.
 
 Update the name (should still be unique)
 
-Add or update [output settings](/GraFx-Studio/concepts/output-settings/).
+Add or update [output settings](../../../GraFx-Studio/concepts/output-settings/).
 
-For each of the 3 [Layout Intents](/GraFx-Studio/concepts/layout-intent/), you can add Output Settings. This way, only these settings are available for output, with the chosen User Interface.
+For each of the 3 [Layout Intents](../../../GraFx-Studio/concepts/layout-intent/), you can add Output Settings. This way, only these settings are available for output, with the chosen User Interface.
 
 ## Delete
 
@@ -52,7 +52,7 @@ You can edit the settings, but not change the name nor delete them.
 
 ## Where to use: Collections
 
-In [collections](/GraFx-Studio/guides/manage-collections/), go to Collection Settings.
+In [collections](../../../GraFx-Studio/guides/manage-collections/), go to Collection Settings.
 
 ![screenshot](ui10.png)
 
@@ -60,7 +60,7 @@ Set the created **User Interface**
 
 ![screenshot](ui11.png)
 
-For each new [project](/GraFx-Studio/concepts/template-management/#my-projects) created based on this template in the collection, the user interface will be applied.
+For each new [project](../../../GraFx-Studio/concepts/template-management/#my-projects) created based on this template in the collection, the user interface will be applied.
 
 This means only the output settings will be available, for the specific layout Intent.
 

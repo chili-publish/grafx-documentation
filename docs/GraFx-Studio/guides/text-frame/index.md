@@ -2,7 +2,7 @@
 
 ## Create a Text Frame
 
-Click the Text tool in the [sidebar](/GraFx-Studio/overview/sidebar/). Drag a frame on the document.
+Click the Text tool in the [sidebar](../../../GraFx-Studio/overview/sidebar/). Drag a frame on the document.
 
 ![ui](creattextframe.gif)
 
@@ -12,17 +12,17 @@ Double-click inside the text frame and start typing.
 
 ## Add Variable Text to a Text Frame
 
-See [Work with variables](/GraFx-Studio/guides/template-variables/assign/).
+See [Work with variables](../../../GraFx-Studio/guides/template-variables/assign/).
 
 ## Frame Properties
 
-See [Frame properties](/GraFx-Studio/concepts/frames/).
+See [Frame properties](../../../GraFx-Studio/concepts/frames/).
 
 ## Text Properties
 
 ### Text Style
 
-Choose a predefined [paragraph style](/GraFx-Studio/guides/paragraphstyles/) or [character style](/GraFx-Studio/guides/characterstyles/) for the selected text.
+Choose a predefined [paragraph style](../../../GraFx-Studio/guides/paragraphstyles/) or [character style](../../../GraFx-Studio/guides/characterstyles/) for the selected text.
 
 ### Typographic Properties
 
@@ -56,7 +56,7 @@ With no resizing option selected, text that exceeds the frame will trigger a yel
 
 ![screenshot](overflow.png)
 
-See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how Batch output should handle text overflow.
+See also [Output Settings](../../../GraFx-Studio/guides/output/settings/) to define how Batch output should handle text overflow.
 
 ![screenshot](errorhandling.png)
 
@@ -101,4 +101,4 @@ Define the minimum and maximum frame size if needed.
 
 Adjust how the frame blends with its background.
 
-See [Blend Modes](/GraFx-Studio/guides/blendmodes/).
+See [Blend Modes](../../../GraFx-Studio/guides/blendmodes/).

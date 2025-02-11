@@ -49,4 +49,4 @@ E.g. with alternate layouts, you can organize your layouts.
 
 This is the main menu, with quick access to functions you need for your Smart Template.
 
-[See Hamburger Menu](/GraFx-Studio/overview/hamburger-menu/)
+[See Hamburger Menu](../../../GraFx-Studio/overview/hamburger-menu/)

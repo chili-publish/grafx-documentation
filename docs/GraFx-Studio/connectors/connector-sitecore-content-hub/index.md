@@ -6,13 +6,13 @@
 | :fontawesome-regular-square-check: | Built by CHILI publish |
 |  | Third party |
 
-[See Connector Types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
+[See Connector Types](../../../GraFx-Studio/concepts/connectors/#types-of-connectors)
 
 ## Installation
 
 As no "installation" happens, you could also talk about deployment of a connector on your environment.
 
-[See Installation Through Connector Hub](/GraFx-Studio/guides/connector-hub/)
+[See Installation Through Connector Hub](../../../GraFx-Studio/guides/connector-hub/)
 
 ## Sitecore Configuration 
 
@@ -108,7 +108,7 @@ Depending on the configuration, you may need to authenticate.
 
 ### Image Variables
 
-When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same list of assets when selecting an image.
+When using [image variables](../../../GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same list of assets when selecting an image.
 
 ![screenshot-full](var01.png)
 
@@ -128,7 +128,7 @@ Set the query value in the connector settings.
 
 ![screenshot-full](var02.png)
 
-For more dynamic queries, you can use [variables](/GraFx-Studio/concepts/variables/), [actions](/GraFx-Studio/concepts/actions/), and [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/) to automate and refine your queries.
+For more dynamic queries, you can use [variables](../../../GraFx-Studio/concepts/variables/), [actions](../../../GraFx-Studio/concepts/actions/), and [GraFx Genie](../../../GraFx-Studio/concepts/grafx-genie/) to automate and refine your queries.
 
 #### Other Configuration Options
 

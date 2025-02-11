@@ -1,6 +1,6 @@
 # Actions JavaScript
 
-Initially, Actions may seem daunting. Therefore, take a look at [this example](/GraFx-Studio/guides/actions/create/) first to get started.
+Initially, Actions may seem daunting. Therefore, take a look at [this example](../../../../GraFx-Studio/guides/actions/create/) first to get started.
 
 Once you start feeling comfortable, here is some more detailed information.
 
