@@ -1,6 +1,6 @@
 # GraFx Publisher (formerly CHILI publisher)
 
-![applogo](/assets/CHILI_publisher_RGB.svg)
+![applogo](../assets/CHILI_publisher_RGB.svg)
 
 GraFx Publisher is the evolution of **CHILI publisher Online** (CPO) into the platform of CHILI GraFx.
 
@@ -14,7 +14,7 @@ The documentation (of CHILI publisher) is maintained at [this location](https://
 
 My CHILI publisher — MyCP in short — **was** the web portal you can use to manage your subscriptions and environments.
 
-This functionality has been transfered to [CHILI GraFx](/CHILI-GraFx/).
+This functionality has been transfered to [CHILI GraFx](../CHILI-GraFx/).
 
 See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1373405185/My+CHILI+publisher+a.k.a.+MyCP){target="_blank"}
 
@@ -64,7 +64,7 @@ Important features of CHILI Editor
 
 CHILI publisher is made to be integrated. The same philosophy is kept, and CHILI GraFx, GraFx Publisher, and GraFx Studio are also made to be integrated.
 
-See [Developer Center](/GraFx-Developers/) for the full API & SDK guides.
+See [Developer Center](../GraFx-Developers/overview/) for the full API & SDK guides.
 
 See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412012/CHILI+API+Guide){target="_blank"}
 
@@ -93,11 +93,4 @@ CHILI publisher (legacy) is **end-of-life**.
 
 To benefit continued support and maintenance, switch to CHILI GraFx.
 
-[GraFx Publisher](/GraFx-Publisher/) is the application based on CHILI publisher, hosted in the [CHILI GraFx platform](/CHILI-GraFx/).
-
-The documentation for CHILI publisher, used on-premise, can be found here.
-
-!!! note
-	Remember that support for CHILI publisher (on premise) is end-of-life.
-
-For previous documentation visit [this link](https://mydocumentation.chili-publish.com){target=_blank}
+GraFx Publisher is the application based on CHILI publisher, hosted in the CHILI GraFx platform.
