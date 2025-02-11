@@ -4,7 +4,7 @@ To utilize the Environment API, you need an access token. Here's how to obtain o
 
 ## 1. Create an Integration
 
-Before you can generate a token, you must create an Integration. Check out our guide on [Manage Integrations](/GraFx-Developers/environment-api/02-managing-integrations/) to get started. 
+Before you can generate a token, you must create an Integration. Check out our guide on [Manage Integrations](../02-managing-integrations/) to get started. 
 
 ## 2. Find Client ID and Secret
 

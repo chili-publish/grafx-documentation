@@ -4,7 +4,7 @@
 
 **Making Smart Templates**
 
-To make Smart Templates in GraFx Studio, you'll need a "template designer seat." Once your template is ready, it moves to the stage where end users can interact with it, specifically in "[My Projects](/GraFx-Studio/guides/create-projects/)." This area is where templates come to life, allowing end users to consume and customize them to fit their needs.
+To make Smart Templates in GraFx Studio, you'll need a "template designer seat." Once your template is ready, it moves to the stage where end users can interact with it, specifically in "[My Projects](../../../../GraFx-Studio/guides/create-projects/)." This area is where templates come to life, allowing end users to consume and customize them to fit their needs.
 
 ![screenshot-full](studio-ui.png)
 
@@ -21,7 +21,7 @@ This flexibility opens up numerous possibilities for customizing and enhancing t
 
 Since you don't want to pass secure credentials, your server side code will need to generate a token.
 
-[This page](/CHILI-GraFx/guides/integrations/#step-4-generating-an-access-token) explains how.
+[This page](../../../../GraFx-Developers/environment-api/03-generating-a-token/) explains how.
 
 ## Quick start
 

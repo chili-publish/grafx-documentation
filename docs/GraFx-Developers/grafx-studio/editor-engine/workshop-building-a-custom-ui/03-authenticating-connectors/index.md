@@ -7,7 +7,7 @@ A connector in the literal sense is an implementation of a set of capabilities a
 
 ## Creating a Readonly Integration
 
-Follow the instructions in the [integration guide](/GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/) to create an integration.
+Follow the instructions in the [integration guide](../../../../../GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/) to create an integration.
 
 Make sure to set limited permissions:
 

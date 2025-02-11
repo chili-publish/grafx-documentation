@@ -5,7 +5,7 @@ This guide walks you through the process of creating a simple media connector us
 ## Requirements
 
 - Node.js or Bun.js
-- [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool
+- [Connector CLI](../../connector-cli/) tool
 - Environment Admin user with a Template Designer license applied
 
 ## Creating a New Connector Project
@@ -406,5 +406,5 @@ In this tutorial, you've learned how to:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation]() for in-depth information on connector functionality and best practices.
-2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial to learn how to add variable settings in your Connectors.
+1. Review the [Comprehensive Connector Documentation](../../../../GraFx-Studio/concepts/connectors/) for in-depth information on connector functionality and best practices.
+2. Follow the [Add Variable Settings To Your Connector](../add-variable-settings-to-your-connector) tutorial to learn how to add variable settings in your Connectors.

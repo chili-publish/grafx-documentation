@@ -52,7 +52,7 @@ GraFx Studio currently supports two types of Connectors:
 
 If you're interested in building a Connector:
 
-- For Media Connectors, please refer to our [Media Connector Introduction](/GraFx-Developers/connectors/media-connector/media-connector-introduction/) guide for detailed instructions and best practices.
+- For Media Connectors, please refer to our [Media Connector Introduction](../media-connector/media-connector-introduction/) guide for detailed instructions and best practices.
 - For Data Connectors, please check back in 2025 for updated information and documentation.
 
 ### Common Questions

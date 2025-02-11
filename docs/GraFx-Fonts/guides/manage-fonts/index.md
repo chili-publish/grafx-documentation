@@ -2,7 +2,7 @@
 
 ## Adding fonts
 
-See [Upload Fonts](/GraFx-Fonts/guides/upload-fonts/)
+See [Upload Fonts](../upload-fonts/)
 
 ## Removing Font Families
 

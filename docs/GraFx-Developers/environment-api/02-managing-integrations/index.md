@@ -230,5 +230,5 @@ The access token is issued with an expiration offset. You can find this in the `
 With the access token in hand, you can now include it in the headers of your API request as a:
 `Authorization: Bearer <YOUR ACCESS TOKEN>`
 
-See the [Making API Calls](/GraFx-Developers/grafx-studio/environment-api/environment-api-quickstart/04-making-api-calls/) to get up to speed on using these tokens.
+See the [Making API Calls](../04-making-api-calls/) to get up to speed on using these tokens.
 

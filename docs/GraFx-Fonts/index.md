@@ -1,8 +1,8 @@
 # Introduction
 
-![applogo](/assets/CHILI_LOGOS_OK-07.svg)
+![applogo](../assets/CHILI_LOGOS_OK-07.svg)
 
-The fonts application for [GraFx Studio](/GraFx-Studio/)
+The fonts application for [GraFx Studio](../GraFx-Studio/)
 
 ![asset](dashboard.png)
 
@@ -10,7 +10,7 @@ The fonts application for [GraFx Studio](/GraFx-Studio/)
 
 GraFx Fonts serves Fonts and Font families for GraFx Studio
 
-GraFx Publisher Fonts [serves Fonts for GraFx Publisher](/GraFx-Fonts/concepts/fonts-in-publisher/)
+GraFx Publisher Fonts [serves Fonts for GraFx Publisher](concepts/fonts-in-publisher/)
 
 ``` mermaid
 erDiagram

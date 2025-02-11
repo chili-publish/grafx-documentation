@@ -1,6 +1,6 @@
 # Fonts in GraFx Publisher
 
-![applogo](/assets/CHILI_publisher_RGB.svg)
+![applogo](../../../assets/CHILI_publisher_RGB.svg)
 
 With the introduction of GraFx Fonts, a new way of working is introduced to handle fonts in GraFx Publisher and GraFx Studio. Fonts uploaded to the GraFx Fonts application are exclusively available for use in GraFx Studio. We've kept this separation to ensure that existing templates in GraFx Publisher continue to function as expected. 
 

@@ -7,7 +7,7 @@ This guide is about adding options that are set at the environment level for you
 - Node.js or Bun.js installed
 - [Connector CLI]() tool
 - Environment Admin user with a Template Designer license
-- Completed  [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Add-Settings-To-Your-Connector)
+- Completed  [Add Variable Settings To Your Connector](../add-variable-settings-to-your-connector) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Add-Settings-To-Your-Connector)
 
 
 ## Adding an Environment Option
@@ -72,7 +72,7 @@ async download(
 
 When publishing your Connector with the new environment option, include the `-ro` (required option) argument in your command.
 
-We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI]() documentation.
+We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Publishing the connector](../build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI]() documentation.
 
 To publish your updated connector:
 
@@ -84,7 +84,7 @@ connector-cli publish -e <environment-name> \
         -ro baseURL="picsum.photos"
 ```
 
-After publishing, test your connector as we did in [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/#step-3:-publish-and-test). For an additional test, try re-publishing with an incorrect `baseURL` to verify that it doesn't work, demonstrating the importance of the environment option.
+After publishing, test your connector as we did in [Add Variable Settings To Your Connector](../add-variable-settings-to-your-connector/#step-3:-publish-and-test). For an additional test, try re-publishing with an incorrect `baseURL` to verify that it doesn't work, demonstrating the importance of the environment option.
 
 ## Key Accomplishments
 
@@ -97,4 +97,4 @@ By completing this guide, you have:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
+1. Review the [Comprehensive Connector Documentation](../../../../GraFx-Studio/concepts/connectors/) for in-depth information on Connector functionality and best practices.

@@ -10,9 +10,9 @@ Variable Data Printing (VDP) allows you to generate PDF outputs where variables 
 
 Before proceeding, ensure you are familiar with:
 
-  - Authentication process. (See: [Environment Quickstart](/GraFx-Developers/environment-api/01-overview/))
+  - Authentication process. (See: [Environment Quickstart](../../../../GraFx-Developers/environment-api/01-overview/))
   - Output generation loop using task status to check that output has succeeded.
-  - Difference between Templates and Projects. (See: [Templates vs Projects](/GraFx-Developers/supplementary-materials/templates-vs-projects/))
+  - Difference between Templates and Projects. (See: [Templates vs Projects](../templates-vs-projects/))
 
 ## Variable Management
 

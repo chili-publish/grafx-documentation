@@ -9,7 +9,7 @@ You've built a connector! Congratulations.
 
 ### Open Source
 
-To make your connector available on the CHILI GraFx [Connector Hub](/GraFx-Studio/guides/connector-hub/), it must be made open source.
+To make your connector available on the CHILI GraFx [Connector Hub](../../../GraFx-Studio/guides/connector-hub/), it must be made open source.
 
 Below, you'll see it needs to be committed to a public repository, which will make it Open Source.
 
@@ -41,7 +41,7 @@ We expect you to write documentation on the configuration and use of your connec
 The CHILI GraFx Documentation GitHub repository is public ([see license](https://github.com/chili-publish/grafx-documentation/blob/main/LICENSE)).
 Make a fork, add the documentation pages and make a pull request.
 
-An example can be found on [this page](/GraFx-Studio/connectors/connector-grafx-media/).
+An example can be found on [this page](../../../GraFx-Studio/connectors/connector-grafx-media/).
 
 ## Review
 
@@ -60,4 +60,4 @@ At the same time, the documentation pull request will also be published.
 
 Once the code is merged, the Connector will be available in the Connector Hub
 
-Your Connector is now available in the [Connector Hub](/GraFx-Studio/guides/connector-hub/)
+Your Connector is now available in the [Connector Hub](../../../GraFx-Studio/guides/connector-hub/)

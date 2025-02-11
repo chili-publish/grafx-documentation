@@ -12,7 +12,7 @@ Quick the differences:
 
 !!! question "Why it matters?"
 
-    Depending on your integration level (see [Integraion Overview](/GraFx-Developers/grafx-studio/integration-overview/01-overview/)) you may not care about Projects or Templates. For example, if you store everything externally, then Projects have no purpose for your integration.
+    Depending on your integration level (see [Integraion Overview](../../../../GraFx-Developers/grafx-studio/integration-overview/01-overview/)) you may not care about Projects or Templates. For example, if you store everything externally, then Projects have no purpose for your integration.
 
 ## Document
 
@@ -52,7 +52,7 @@ Templates are just a JSON Document being stored in GraFx Studio with special pro
 
 Users who are assigned with a Template Designer seat can edit Templates in the full Studio UI Workspace. These Template Designers can also assign Templates to collections.
 
-Outside of GraFx Studio context, Templates are just JSON Documents stored on the CHILI servers in a particular environment. You can manage them with them via the [Environment API](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/) as well as generate output via API.
+Outside of GraFx Studio context, Templates are just JSON Documents stored on the CHILI servers in a particular environment. You can manage them with them via the [Environment API](../../../../GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/) as well as generate output via API.
 
 In a completely external integration, designers with Template Designer seats would create and edit their Documents as Templates inside GraFx Studio and then would register them into the integration application. The integration would take the JSON from GraFx Studio, or the designer would upload the JSON directly.
 

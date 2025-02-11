@@ -5,9 +5,9 @@ This guide focuses on adding configurable settings to your Connector within the 
 ## Requirements
 
 - Node.js or Bun.js installed
-- [Connector CLI]() tool
+- [Connector CLI](../../connector-cli/) tool
 - Environment Admin user with a Template Designer license
-- Completed [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Build-a-Simple-Media-Connector)
+- Completed [Build a Simple Media Connector](../build-a-simple-media-connector/) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Build-a-Simple-Media-Connector)
 
 ## Understanding Connector Settings
 
@@ -228,5 +228,5 @@ By completing this guide, you have:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
-2. Follow the [Add Environment Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector) tutorial to learn how to add environment options in your Connectors.
+1. Review the [Comprehensive Connector Documentation](../../../../GraFx-Studio/concepts/connectors/) for in-depth information on Connector functionality and best practices.
+2. Follow the [Add Environment Options to Your Connector](../add-environment-options-to-your-connector) tutorial to learn how to add environment options in your Connectors.
