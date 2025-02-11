@@ -7,19 +7,17 @@
 
 ## Latest updates
 
-Current Base URL: ``
-
 <div class="grid cards" markdown>
 
 -   :material-clock-fast: __Release notes__
 
     ---
 
-    **February 2 2025**: GraFx Studio - ==GraFx Genie-powered Smart Crop==
+    **February 4 2025**: GraFx Studio - ==GraFx Genie-powered Smart Crop==
     
     Powered by our AI assistant GraFx Genie, CHILI GraFx now instantly identifies the subject and the Point of Interest (POI) within the image then automatically crops it to fit the frame – whether for social media, digital ads, or print.
     
-    [:octicons-arrow-right-24: Show details](../release-notes/2025/02/04/grafxstudio---grafx-genie-powered-smart-crop/)
+    [:octicons-arrow-right-24: Show details](release-notes/2025/02/04/grafxstudio---grafx-genie-powered-smart-crop/)
 
     ---
 
@@ -28,7 +26,7 @@ Current Base URL: ``
     GraFx Studio now supports multi-page documents. The new auto-grow feature lets frames expand automatically.  
     A major improvement in CHILI GraFx Smart Templates.
     
-    [:octicons-arrow-right-24: Show details](../release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
+    [:octicons-arrow-right-24: Show details](release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
 
     ---
 
@@ -36,7 +34,7 @@ Current Base URL: ``
     
     Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
     
-    [:octicons-arrow-right-24: Show details](../release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
+    [:octicons-arrow-right-24: Show details](release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
 
     ---
 
@@ -44,13 +42,13 @@ Current Base URL: ``
     
     Unleash the power of [connectors](GraFx-Studio/concepts/connectors/)
     
-    [:octicons-arrow-right-24: Show details](../release-notes/2024/10/14/connect-with-chili-grafx/)
+    [:octicons-arrow-right-24: Show details](release-notes/2024/10/14/connect-with-chili-grafx/)
 
     ---
 
     **See all release notes**
 
-    [:octicons-arrow-right-24: Show all release notes](../release-notes/)
+    [:octicons-arrow-right-24: Show all release notes](release-notes/)
     
 </div>
 
@@ -67,7 +65,7 @@ Current Base URL: ``
 
     [:octicons-arrow-right-24: Getting started](CHILI-GraFx/admin/)
 
--   ![tinyapplogo](../assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
+-   ![tinyapplogo](assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
 
     ---
 
@@ -75,7 +73,7 @@ Current Base URL: ``
 
     [:octicons-arrow-right-24: Make your first Smart Template](GraFx-Studio/guides/hello-world/)
 
--   ![tinyapplogo](../assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
+-   ![tinyapplogo](assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
 
     ---
 
@@ -83,7 +81,7 @@ Current Base URL: ``
     
     [:octicons-arrow-right-24: Make your first Smart Template](GraFx-Publisher/guides/hello-world/)
 
--   ![tinyapplogo](../assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
+-   ![tinyapplogo](assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
 
     ---
 
@@ -91,7 +89,7 @@ Current Base URL: ``
     
     [:octicons-arrow-right-24: Upload your media](GraFx-Media/guides/upload-media/)
 
--   ![tinyapplogo](../assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
+-   ![tinyapplogo](assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
 
     ---
 
@@ -105,7 +103,7 @@ Current Base URL: ``
 
     **Integrate** powerful GraFx Applications in your web application.
     
-    [:octicons-arrow-right-24: Start Integrating](../GraFx-Developers/overview/)
+    [:octicons-arrow-right-24: Start Integrating](GraFx-Developers/overview/)
 
 </div>
 

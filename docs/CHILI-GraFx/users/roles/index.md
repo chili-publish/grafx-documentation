@@ -101,7 +101,7 @@ Permissions
 - Access to the environments the End User is assigned to
 - View an overview of all the environments where the End User has access
 - Limited in what applications they can access (see table)
-- Create "[My projects](../../GraFx-Studio/guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
+- Create "[My projects](../../../GraFx-Studio/guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
 
 In the API, this is labeled as "EU". (End User)
 
