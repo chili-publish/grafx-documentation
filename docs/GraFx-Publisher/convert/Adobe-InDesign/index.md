@@ -8,6 +8,10 @@ Download the newest version
 
 [Version 8.0](https://s3.eu-central-1.amazonaws.com/releases.chili-publish.com/releases/Desktop_Tools/8.0.0.0_Id_202403130816/CHILI_InDesign_Extensions_8.0.0.0.zip)
 
+The plugin has been tested and is compatible with Adobe® InDesign® versions from 2024 and 2025.
+
+The latest tested version is 20.1 (January 2025).
+
 ## How to access Converter?
 
 You can find the GraFx Publisher converter in Adobe® InDesign® under the "Window" menu.
