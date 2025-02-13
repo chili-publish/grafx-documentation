@@ -119,22 +119,33 @@ In the list of variables, you can double click or "Rename" the variable Name.
 
 The default value your template variable will have.
 
-### General properties:
+### General properties
 
 ![screenshot](var05.png)
 
 - Type: See [types](#types) above
-- [Visible](#visibility-conditions): Enabled by default
 - Required: Disabled by default
 - [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
 A set of key-value pairs to assist you with automation.
 
-### Appearance settings
+### User Interface
 
-![screenshot](var06.png)
+![screenshot](var08.png)
 
 These settings define how the template variable is presented:
 
 - Label: Can be empty, must not be unique, by default it has the same value as the name (When the name is changed, the label is updated, unless if the label already has a different value)
 - Placeholder: Default text, to help nudge the end user to fill in something
 - Help text: Text that will appear below the variable to add more info what to do with the variable.
+
+#### Visibility
+
+Choose how visibility is set
+
+![screenshot](var13.png)
+
+- Always (default)
+- Never
+- Conditional
+
+Conditional: See [Visibility Conditions](../visibility/)
