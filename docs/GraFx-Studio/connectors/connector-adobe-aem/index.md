@@ -6,11 +6,11 @@
 | :fontawesome-regular-square-check: | Built by CHILI publish |
 |  | Third party |
 
-[See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
+[See Connector types](../../concepts/connectors/#types-of-connectors)
 
 ## Installation
 
-[See installation through Connector Hub](/GraFx-Studio/guides/connector-hub/)
+[See installation through Connector Hub](../../guides/connector-hub/)
 
 ## Configuration
 
@@ -66,7 +66,7 @@ This means if the credentials only allow access to certain assets, only those as
 
 ### Image Variables
 
-When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets when you select an image.
+When using [image variables](../../guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets when you select an image.
 
 ![screenshot-full](var1.png)
 
@@ -110,7 +110,7 @@ If a fixed query is not sufficient, you can use a variable.
 
 ![screenshot-full](query3.png)
 
-To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the query according to other variables or inputs the Smart Template receives.
+To further automate, you can use [Actions](../../guides/actions/create/) to influence and set the query according to other variables or inputs the Smart Template receives.
 
 ![screenshot-full](query4.png)
 
