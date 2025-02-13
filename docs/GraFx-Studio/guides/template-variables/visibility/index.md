@@ -36,8 +36,6 @@ Click **+ Add Condition** and define the criteria that must be met for the varia
 
 ![screenshot-full](var12.png)
 
----
-
 ## Deprecated in Actions
 
 !!! warning "Deprecated Action"

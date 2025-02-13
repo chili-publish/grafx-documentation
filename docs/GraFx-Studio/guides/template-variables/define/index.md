@@ -130,6 +130,8 @@ A set of key-value pairs to assist you with automation.
 
 ### User Interface
 
+![screenshot](var14.png)
+
 ![screenshot](var08.png)
 
 These settings define how the template variable is presented:

@@ -1,28 +1,8 @@
 # Number Variables
 
-## Create a Number Variable
+## General Properties
 
-Under the Automate icon, click Variables, and add a variable with the "+" sign.
-
-![screenshot](num0.png)
-
-Choose "Number" as the Variable Type.
-
-![screenshot-full](create-numbers.gif)
-
-## Set the Variable Name
-
-Double-click the name, or choose "Rename" under the "..." menu.
-
-![screenshot](num2.png)
-
-## Set General Properties
-
-![screenshot-full](num1.png)
-
-### Visible
-
-Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
+![screenshot-full](num3.png)
 
 ### Range
 
@@ -67,11 +47,19 @@ The symbol used to separate the integer part and the decimal part.
 
 The “thousands separator” symbol is used to group digits into sets of three for easier readability of large numbers, commonly represented by a comma (,), period (.), or other symbols depending on regional conventions.
 
-## Appearance Settings
+## User Interface
+
+![screenshot-full](num4.png)
+
+See [User Interface](../../template-variables/define/#user-interface)
 
 ### Stepper
 
 Enable or disable the visibility of a stepper button to increase or decrease the number with a value defined in the Step size.
+
+### Visibility
+
+See [Visibility Conditions](../../template-variables/visibility/)
 
 ## Use in Actions
 
