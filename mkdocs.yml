@@ -282,6 +282,7 @@ nav:
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
             - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
+            - 'Variable Visibility Conditions': 'GraFx-Studio/guides/template-variables/visibility/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
             - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
