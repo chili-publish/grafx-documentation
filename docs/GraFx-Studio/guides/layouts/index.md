@@ -34,6 +34,8 @@ Every Layout created, is available (by default) in Studio UI. You can also check
 
 In Studio UI or Run Mode, a dropdown will be available, with all "Available" Layouts.
 
+Layouts are "Available", if you set the property "Available".
+
 ![screenshot](layout01.png)
 
 ![screenshot-full](studioui01.png)
@@ -43,6 +45,10 @@ If available, you can also set if a Layout is resizable in the End User Interfac
 When set, the end user will be able to set the width and height of the layout, to be resized, up to a minimum and/or maximum size.
 
 ![screenshot](layout03.png)
+
+In the Studio UI or Run Mode, you will see a width and height field, to custom resize your output.
+
+![screenshot](resize.png)
 
 ## Move the elements on the layout
 
