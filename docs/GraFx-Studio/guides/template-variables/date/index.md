@@ -18,10 +18,6 @@ Double-click the name, or choose "Rename" under the "..." menu.
 
 ![screenshot-full](date2.png)
 
-### Visible
-
-Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
-
 ### Display Format
 
 A date can be displayed in several formats, depending on the local preferences. You can set a formatting string, how to display the date.
@@ -113,6 +109,10 @@ In Studio UI (My Projects), you will see what an end user can see.
 ![screenshot](date9.png)
 
 Current date is Aug 7, 2024. First possible date to select is Aug 15. Last possible date is 30 days after today: Sept 6. Saturdays and Sundays are excluded.
+
+## User Interface
+
+See [User Interface](../../template-variables/define/#user-interface) and [Visibility Conditions](../../template-variables/visibility/)
 
 ## Use in Actions
 
