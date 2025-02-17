@@ -12,6 +12,8 @@
 
 - **Studio UI**: A minimalist end-user UI by CHILI publish, available on GitHub. [GitHub - chili-publish/studio-ui](https://github.com/chili-publish/studio-ui).
 
+- **Studio UI Theming**: See this GitHub page on Studio UI on how to [custom Theme the Studio UI](https://github.com/chili-publish/studio-ui/blob/main/documentation/advanced-integration.md#javascript)
+
 - **Environment API Quickstart**: A tutorial on managing integrations using the Environment API. Find it at [GraFx Developers - Environment API Quickstart](/GraFx-Developers/environment-api/01-overview/).
 
 - **Integration Project - Building a Template Store**: A project guide for creating a template store using the Environment API. Details are at [GraFx Developers - Building a Template Store](/GraFx-Developers/grafx-studio/workshop-building-a-template-store/00-workshop-overview/).
