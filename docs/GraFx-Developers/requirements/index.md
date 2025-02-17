@@ -1,8 +1,8 @@
 # CHILI GraFx requirements
 
-Allthoug CHILI GraFx runs in the cloud, and is accessed through your browser, some corporate IT infrastructure will require some configuration.
+Although **CHILI GraFx** runs in the cloud and is accessed through your browser, some corporate IT infrastructures may require configuration.
 
-Below are common things to know
+Below are common requirements to consider.
 
 ## Application URLs to whitelist
 
