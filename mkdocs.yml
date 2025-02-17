@@ -372,6 +372,7 @@ nav:
 
     - 'Developer Center':
         - 'Overview':                           'GraFx-Developers/overview/index.md'
+        - 'CHILI GraFx Requirements':           'GraFx-Developers/requirements/index.md'
         - 'Environment API':
             - 'Quickstart':
                 - 'Overview':                'GraFx-Developers/environment-api/01-overview/index.md'
