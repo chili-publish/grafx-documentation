@@ -8,30 +8,41 @@ Below are common things to know
 
 ### Production Application
 
-- *.chiligrafx.com (asterisk will be your environment name)
-- *.chili-publish.online
-- api.chiligrafx.com/api/
-- *.chili-publish-sandbox.online
+``` html
+*.chiligrafx.com (asterisk will be your environment name)
+*.chili-publish.online
+api.chiligrafx.com/api/
+*.chili-publish-sandbox.online
+```
 
 ### Applications & URLs CHILI GraFx will call
 
-- https://region1.google-analytics.com/
-- https://api-iam.eu.intercom.io/
+``` html
+region1.google-analytics.com/
+api-iam.eu.intercom.io/
+```
 
 ## Supporting applications
 
 **Support**
 
-- https://mysupport.chili-publish.com/
-
+``` html
+mysupport.chili-publish.com/
+```
 Will redirect to
 
-- https://chili-publish.zendesk.com
+``` html
+chili-publish.zendesk.com
+```
 
 **Training & Certification Portan**
 
-- https://product.chili-publish.academy/
+``` html
+product.chili-publish.academy
+```
 
 **Open source elements of CHILI GraFx**
 
-- https://github.com/chili-publish
+``` html
+github.com/chili-publish
+```
