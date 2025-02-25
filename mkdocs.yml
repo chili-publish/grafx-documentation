@@ -235,6 +235,7 @@ nav:
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
+            - 'Connectors for Data':            'GraFx-Studio/concepts/connectors-data/index.md'
             - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Crop Marks':                     'GraFx-Studio/concepts/crop-marks/index.md'
@@ -305,8 +306,9 @@ nav:
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
         - 'Connectors':
-            - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
+            - 'Google Sheets':                 'GraFx-Studio/connectors/connector-google-sheets-data/index.md'
+            - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'

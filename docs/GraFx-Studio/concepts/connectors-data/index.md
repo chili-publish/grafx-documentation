@@ -1,0 +1,19 @@
+# Data Connectors
+
+A **Data Connector** accelerates collateral creation by bringing data from an external system into GraFx Studio.
+
+The value for end-users lies in accessing centrally brand-managed data. Data Connectors also enable fully automated content creation, driving content generation at scale.
+
+Connectors can be used in **[self-service](/GraFx-Studio/concepts/self-service/)** or **[headless](/GraFx-Studio/concepts/headless/)** workflows.
+
+## Making Data Available for the End-User
+
+In the **Data Source** panel (under **Resources**) on the left in GraFx Studio, a Template Designer can browse the available Data Connectors. Multiple connectors can be deploiyed.
+
+![screenshot-full](data01.png)
+
+![screenshot-full](data01.png)
+
+Depending on the setup of each Data Connector, the data of that data source is now available in the document as variables.[^1]
+
+[^1]: Depending on the Data Connector, the link between data column and variables will be different. See specific setup for each Data Connector.
