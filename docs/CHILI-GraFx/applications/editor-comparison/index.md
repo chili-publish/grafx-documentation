@@ -1,17 +1,11 @@
-# Smart Template Editors compared
+# GraFx Studio and GraFx Publisher: Feature Comparison
 
-**CHILI GraFx** is the platform to enable multichannel creative automation.
+**GraFx Studio** represents the next generation of AI powered content creation in **CHILI GraFx**, offering a streamlined and future-ready experience with enhanced capabilities for print, digital, and animated content, all optimized for true **multichannel** output. Built with a **modern UI** and **intuitive workflows**, GraFx Studio is designed for **effortless integration** and a **scalable cloud performance** that supports a broad range of use cases.
 
-Our vision is to provide you with 1 smart template editor for animated digital, static digital and print output.
+The new tech stack powering GraFx Studio introduces a **Connector framework** for seamless integration with external systems, providing flexibility and a more dynamic approach to content management. This forward-thinking architecture enables teams to create engaging, adaptable content that scales across traditional and digital channels with ease.
 
-**GraFx Publisher** has been around for a while and is the editor for smart templates intended for static digital and (variable-data) PDF output.
+With GraFx Studio, you gain not only the tools to meet current needs but also the potential to explore innovative workflows and outputs. The **editor**, **SDK**, and **API** have been redesigned from the ground up, making GraFx Studio the platform for today’s and tomorrow’s creative challenges.
 
-**GraFx Studio** is the next generation smart template editor. Our goal is to provide you with all the tools for animated, static digital and print output, for the self-service use-case and for any automated workflow.
-
-Therefore we redesigned the editor, SDK and API from scratch.
-
-Today, the feature set for print in GraFx Publisher is still more extensive. But day by day, print-related features are added.
-
-When you want to have both channels combined, please have a look at the feature comparison below. This will help you decide where to start.
+Explore the comparison below to see how GraFx Studio’s advanced features unlock new creative possibilities and elevate your content creation process.
 
 {{ read_excel('./features.xlsx', engine='openpyxl') }}

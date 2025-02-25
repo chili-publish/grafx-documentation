@@ -11,7 +11,7 @@ Some properties will not be visible, because the definition of this barcode don'
 
 Some properties can be found under the "..." (three dots) menu
 
-![ui](barcodes1.gif)
+![screenshot-full](barcodes1.gif)
 
 ## Values in barcodes
 
@@ -19,7 +19,7 @@ Some properties can be found under the "..." (three dots) menu
 
 By default, you can enter a static value in the barcode properties. (Set value)
 
-![ui](staticvalue.png)
+![screenshot-full](staticvalue.png)
 
 ### Variable value
 
@@ -27,8 +27,8 @@ To unleash the power of real Creative Automation, you can link a value to a vari
 
 Start by defining your variable. [See Variables](/GraFx-Studio/guides/template-variables/define/)
 
-![ui](variables.png)
+![screenshot-full](variables.png)
 
 Link the variable to your Bar- or QR code.
 
-![ui](variablevalue.png)
+![screenshot-full](variablevalue.png)

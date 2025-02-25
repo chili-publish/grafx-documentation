@@ -15,6 +15,9 @@ theme:
     - navigation.footer
     - content.footnote.tooltips
     - content.code.copy
+    - search.suggest
+    - search.highlight
+    - search.share
   font:
     text: Ubuntu
   palette:
@@ -196,12 +199,9 @@ nav:
             - 'Logging in' :                    'CHILI-GraFx/guides/onboarding/logging-in/index.md'
             - 'Find your way around' :          'CHILI-GraFx/guides/onboarding/navigation/index.md'
             - 'Applications' :                  'CHILI-GraFx/guides/onboarding/applications/index.md'
-            - 'GraFx Publisher' :
-                - 'GraFx Publisher intro':      'CHILI-GraFx/guides/onboarding/publisher/index.md'
-            - 'GraFx Studio':
-                - 'GraFx Studio intro':         'CHILI-GraFx/guides/onboarding/studio/index.md'
-            - 'GraFx Media' :
-                - 'GraFx Media intro':          'CHILI-GraFx/guides/onboarding/media/index.md'
+            - 'GraFx Publisher intro':          'GraFx-Publisher/guides/hello-world/index.md'
+            - 'GraFx Studio intro':             'GraFx-Publisher/guides/hello-world/index.md'
+            - 'GraFx Media intro':              'GraFx-Media/overview/elements/index.md'
         - 'Trust':
             - 'Introduction':                   'CHILI-GraFx/trust/introduction/index.md'
             - 'Security Policy':                'CHILI-GraFx/trust/security-policy/index.md'
@@ -229,47 +229,64 @@ nav:
         - 'Concepts':
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
             - 'Action Helper Functions':        'GraFx-Studio/concepts/helper-functions/index.md'
+            - 'Anchoring':                      'GraFx-Studio/concepts/anchoring/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
             - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
+            - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
+            - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
+            - 'Crop Marks':                     'GraFx-Studio/concepts/crop-marks/index.md'
+            - 'Design & Run':                   'GraFx-Studio/concepts/design-run/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'GraFx Genie':                    'GraFx-Studio/concepts/grafx-genie/index.md'
+            - 'Headless':                       'GraFx-Studio/concepts/headless/index.md'
             - 'Keyboard Shortcuts':             'GraFx-Studio/concepts/shortcuts/index.md'
             - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
             - 'Layout Intent':                  'GraFx-Studio/concepts/layout-intent/index.md'
             - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
+            - 'Output Tasks':                   'GraFx-Studio/concepts/output-tasks/index.md'
+            - 'Pages':                          'GraFx-Studio/concepts/pages/index.md'
+            - 'Private Data':                   'GraFx-Studio/concepts/private-data/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
+            - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
         - 'How to: Design':
             - 'Hello world':                    'GraFx-Studio/guides/hello-world/index.md'
-            - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
-            - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
-            - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
-            - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
+            - 'Anchoring':                      'GraFx-Studio/guides/anchoring/index.md'
             - 'Barcodes':                       
                - 'Overview':                    'GraFx-Studio/guides/barcodes/overview/index.md'
                - 'Add a barcode':               'GraFx-Studio/guides/barcodes/add/index.md'
                - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
-            - 'Add fonts':                      'GraFx-Studio/guides/add-fonts/index.md'
-            - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
-            - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
-            - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
-            - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
+            - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
+            - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
+            - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
+            - 'Fonts':                          'GraFx-Studio/guides/add-fonts/index.md'
+            - 'Image Frames':                   'GraFx-Studio/guides/image-frame/index.md'
+            - 'Layouts':                        'GraFx-Studio/guides/layouts/index.md'
+            - 'Pages':                          'GraFx-Studio/guides/pages/index.md'
+            - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
+            - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
+            - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
+        - 'How to: Connectors':
+            - 'Connector HUB' :                 'GraFx-Studio/guides/connector-hub/index.md'
         - 'How to: Animate':
             - 'Animate my frame':               'GraFx-Studio/guides/animate-frame/index.md'
         - 'How to: Automate':
             - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
+            - 'Variable Visibility Conditions': 'GraFx-Studio/guides/template-variables/visibility/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
             - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
+            - 'Variables private data':         'GraFx-Studio/guides/template-variables-private-date/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'
             - 'Example: Change Layout':         'GraFx-Studio/guides/actions/example-changelayout/index.md'
@@ -287,8 +304,14 @@ nav:
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
-        - 'Integrate GraFx studio':
-            - 'Overview':                'GraFx-Developers/grafx-studio/overview/index.md'
+        - 'Connectors':
+            - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
+            - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
+            - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
+        - 'Plugins':
+            - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
+            - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
+        - 'Integrate GraFx studio ...':         'GraFx-Developers/grafx-studio/overview/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
         - 'Guides':
@@ -403,8 +426,13 @@ nav:
                 - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
-            - 'Intro':                          'GraFx-Developers/connectors/intro/index.md'
+            - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
             - 'Media Connectors':
-                - 'Media Connectors':               'GraFx-Developers/connectors/media-connector/index.md'
-                - 'Pre-requisites':                 'GraFx-Developers/connectors/pre-requisites/index.md'
-                - 'Build my own Media Connector':   'GraFx-Developers/connectors/build-media-connector/index.md'
+                - 'Introduction': 'GraFx-Developers/connectors/media-connector/media-connector-introduction/index.md'
+                - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md'
+                - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
+                - 'Add Variable Settings To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
+                - 'Add Environment Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
+                - 'Connector CLI':                      'GraFx-Developers/connectors/connector-cli/index.md'
+            - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
+            - 'Publish my connector':                         'GraFx-Developers/connectors/publish-my-connector/index.md'
