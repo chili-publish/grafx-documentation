@@ -5,7 +5,7 @@ This guide focuses on adding configurable settings to your Connector within the 
 ## Requirements
 
 - Node.js or Bun.js installed
-- [Connector CLI]() tool
+- [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool
 - Environment Admin user with a Template Designer license
 - Completed [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Build-a-Simple-Media-Connector)
 
@@ -126,7 +126,7 @@ async query(
 
 ### Step 3: Publish and Test
 
-We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI]() documentation.
+We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) documentation.
 
 To publish your connector, use the following command in your terminal:
 
@@ -228,5 +228,5 @@ By completing this guide, you have:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
+1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on Connector functionality and best practices.
 2. Follow the [Add Environment Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector) tutorial to learn how to add environment options in your Connectors.

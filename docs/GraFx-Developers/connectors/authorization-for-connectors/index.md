@@ -39,7 +39,7 @@ Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authoriza
 ```
 
 ## Implement Authorization
-To implement authorization in a Connector, you need a published Connector and the [Connector CLI]() tool. Use the following command:
+To implement authorization in a Connector, you need a published Connector and the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Use the following command:
 
 ```bash
 connector-cli set-auth \

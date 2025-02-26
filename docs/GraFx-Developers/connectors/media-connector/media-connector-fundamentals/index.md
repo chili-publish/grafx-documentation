@@ -1,6 +1,6 @@
 # Media Connector Fundamentals
 
-A Media Connector is a JavaScript class that provides methods utilized by the Studio Engine and the Studio SDK. This guide offers a high-level overview of Connectors. For an in-depth exploration of all technical details, refer to the [Comprehensive Media Connector Reference Guide]().
+A Media Connector is a JavaScript class that provides methods utilized by the Studio Engine and the Studio SDK. This guide offers a high-level overview of Connectors.
 
 ## Requirements
 
@@ -180,5 +180,4 @@ Although not strictly required by the type signature, the Template Designer Work
 ## Next Steps
 
 1. Follow the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial to learn how to build a simple Connectors.
-2. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
-3. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector. 
+2. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector. 
