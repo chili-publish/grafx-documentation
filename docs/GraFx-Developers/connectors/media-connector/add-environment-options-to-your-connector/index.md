@@ -5,7 +5,7 @@ This guide is about adding options that are set at the environment level for you
 ## Requirements
 
 - Node.js or Bun.js installed
-- [Connector CLI]() tool
+- [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool
 - Environment Admin user with a Template Designer license
 - Completed  [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Add-Settings-To-Your-Connector)
 
@@ -27,7 +27,7 @@ Modify the `options` property in your `package.json` to add the new option:
 }
 ```
 
-Setting the value to `null` requires you to define the value during publishing using the [Connector CLI]() tool. Alternatively, you can provide a default value instead of `null`. Note that only strings and booleans are allowed; numbers will be converted to strings.
+Setting the value to `null` requires you to define the value during publishing using the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Alternatively, you can provide a default value instead of `null`. Note that only strings and booleans are allowed; numbers will be converted to strings.
 
 !!! Bug "Default Values Issue"
     There is a known issue in the Connector CLI tool where default values are not applied correctly.
@@ -72,7 +72,7 @@ async download(
 
 When publishing your Connector with the new environment option, include the `-ro` (required option) argument in your command.
 
-We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI]() documentation.
+We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) documentation.
 
 To publish your updated connector:
 
@@ -97,4 +97,4 @@ By completing this guide, you have:
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation]() for in-depth information on Connector functionality and best practices.
+1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on Connector functionality and best practices.

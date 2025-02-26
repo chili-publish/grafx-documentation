@@ -140,11 +140,11 @@ Where you will need to fill in the "ENVIRONMENT API BASE" and "TOKEN HERE" with 
 `https://ft-nostress.chili-publish.online/grafx/api/v1/environment/ft-nostress/`
 - `GraFxStudioAuthToken,` expects a token that is generated from Client ID and Client Secret
 
-Learn how to generate a token [here]().
+Learn how to generate a token [here](/GraFx-Developers/environment-api/03-generating-a-token/).
 
 ## Step 4 - Load A Document
 
-In a production server, we will need to pull the document JSON from the [Environment API]() or from your own host or database. The Editor Engine does not care where the JSON comes from, as long as it is the correct format. See [Document JSON In-Depth]() for more details.
+In a production server, we will need to pull the document JSON from the [Environment API](/GraFx-Developers/environment-api/reference/) or from your own host or database. The Editor Engine does not care where the JSON comes from, as long as it is the correct format.
 
 The `document.load` function allows us to pass in the JSON. For this example, we can load in a demo document for testing. Update your `index.ts` with the following code.
 

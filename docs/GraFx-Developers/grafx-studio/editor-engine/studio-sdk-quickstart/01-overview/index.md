@@ -7,7 +7,7 @@ This is a quick start guide to get you started with the [Studio SDK](https://git
 To deploy your project in a live environment, ensure you have:
 
 - **JavaScript Engine:** [Node.js](https://nodejs.org/en) recommended. For simplicity, this guide uses Bun.
-- **Bundler:** Bundlers package your code into a single file, essential for StudioSDK which is an exteranl project. Common choices include [webpack](), [esbuild](), and [parcel]().
+- **Bundler:** Bundlers package your code into a single file, essential for StudioSDK which is an exteranl project. Common choices include [webpack](https://webpack.js.org/), [esbuild](https://esbuild.github.io/), and [parcel](https://parceljs.org/).
 - **Web Server:** Required to deliver your files over HTTP to avoid errors.
 
 However, for production purposes, we currently suggest using [node](https://nodejs.org/en).
