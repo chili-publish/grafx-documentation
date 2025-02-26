@@ -8,8 +8,7 @@ Media Connectors are particularly valuable for integrating with Digital Asset Ma
 
 CHILI publish and our community have developed several Media Connectors to enhance the functionality of GraFx Studio. Some notable examples include:
 
-- [Acquia Connector](): Enables connection to your Acquia DAM instance, providing access to your organization's digital assets.
-- [Unsplash Connector](): Allows integration with Unsplash, offering access to a vast library of free, high-resolution stock photos for both personal and commercial use.
+- [Acquia Connector](/GraFx-Studio/connectors/connector-acquia-dam/): Enables connection to your Acquia DAM instance, providing access to your organization's digital assets.
 
 ## Tutorial Sequence
 
@@ -25,5 +24,4 @@ For those new to building Media Connectors, we recommend following this structur
 To deepen your understanding and for quick access to specific information, refer to these resources:
 
 - [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/): Understand the authentication and authorization processes for secure connector integration.
-- [Connector CLI](): Learn about the Command Line Interface tools available for connector development and management.
-- [Comprehensive Media Connector Reference Guide](): A detailed technical reference for advanced connector development and troubleshooting.
+- [Connector CLI](/GraFx-Developers/connectors/connector-cli/): Learn about the Command Line Interface tools available for connector development and management.
