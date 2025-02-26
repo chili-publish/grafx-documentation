@@ -32,10 +32,12 @@ You can configure **Server Authentication** and **Browser Authentication** separ
 
 ![screenshot](separate.png)
 
-- **Server Authentication** allows the system to act as a service account, so the end-user does not need to authenticate when using the Smart Template.
-- **Browser Authentication** requires users to authenticate and log in with their credentials.
+- **Server Authentication** Always required: defines the method on how the CHILI GraFx Server will talk to the Google Sheets server
+- **Browser Authentication** Optionally, you can define how the browser needs to talk to Google Sheets, to pull data in
 
 ### 1. Server Authentication
+
+Server authentication is Always required.
 
 ![screenshot-full](auth_1.png)
 
@@ -75,27 +77,43 @@ This setup allows you to configure authentication at the instance level while li
 
 ### How to Use Google Sheets Data
 
-!!! important
-  Your Google Sheet column names must match the Smart Template variable names.
+#### Sheet Setup guidelines
+
+- **Column Range**: Only columns from A to Z are used.
+- **Header**: Your Google Sheet column names must match the Smart Template variable names
+- **Column Data Type**
+    - All values are considered: "Single Line Text"
+    - Format Numbers as Numbers  
+    ![screenshot](format_number.png)
+    - Format Date as Date or Data Time  
+    ![screenshot](format_date.png)
+    - Booleans: Boolean columns must always have a value (cells cannot be empty)
+    - Booleans: Define boolean columns using checkboxes  
+    ![screenshot](format_boolean.png)
+- **Row Structure**: The sheet must **NOT** contain empty rows between rows with data  
+![screenshot](format_empty.png)
 
 For this example, we'll use a [publicly available document](https://docs.google.com/spreadsheets/d/1cJDWEjmP76YVEA31Ir4n8usVDc1ytYBav6w4a9p4TBM/edit?usp=sharing).
 
 ![screenshot-full](sheet.png)
 
-1. **Create Variables**  
- - In your template, create variables corresponding to the column names in Google Sheets.
- - As long as the names match and a data source is connected, the values will be populated automatically.
+#### Create Variables
+
+- In your template, create variables corresponding to the column names in Google Sheets.
+- As long as the names match and a data source is connected, the values will be populated automatically.
 
 ![screenshot](variables.png)
 
-2. **Link the Google Sheet**  
- - Copy the link of the [public document](https://docs.google.com/spreadsheets/d/1cJDWEjmP76YVEA31Ir4n8usVDc1ytYBav6w4a9p4TBM/edit?usp=sharing).
- - Paste it into the data source field.
+#### Link the Google Sheet
+
+- Copy the link of the [public document](https://docs.google.com/spreadsheets/d/1cJDWEjmP76YVEA31Ir4n8usVDc1ytYBav6w4a9p4TBM/edit?usp=sharing).
+- Paste it into the data source field.
 
 ![screenshot](sheetsetup.png)
 
-3. **Preview in Run Mode or Studio UI**  
- - In [Run mode](/GraFx-Studio/concepts/design-run/#run-mode) or the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui), you can browse records to preview how content changes.
+#### Preview in Run Mode or Studio UI
+
+- In [Run mode](/GraFx-Studio/concepts/design-run/#run-mode) or the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui), you can browse records to preview how content changes.
 
 #### Run Mode (in Studio Workspace)
 
@@ -107,12 +125,11 @@ For this example, we'll use a [publicly available document](https://docs.google.
 
 ## Output
 
-To generate output with dynamic data, create an [output setting](/GraFx-Studio/concepts/output-settings/).
+To generate output with dynamic data, create an [output setting](../../guides/output/settings/#data-source).
 
-Ensure the **data source is enabled** for processing.
+Ensure the **Data source** is enable for batch processing.
 
-!!! info
-  The exact name of this setting is to be confirmed.
+![screenshot](output.png)
 
 To process the Google Sheets data via the [API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html#/Output/post_api_v1_environment__environment__output_settings_pdf), set `"dataSourceEnabled": true`.
 
@@ -124,3 +141,9 @@ Currently, the Google Sheets connector supports:
 
 [^1]: Using a simple action, you can assign the text variable (containing an image name) to an image variable. **GraFx Genie** can assist in automating this.  
 ![screenshot](action.png)
+
+## Known Limitations
+
+### Column range
+
+Only columns A through Z are used
