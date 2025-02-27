@@ -22,8 +22,6 @@ Once installed, navigate to the **Connector overview**, and select your deployed
 
 ![screenshot-full](config.png)
 
-Consult your IT Admin who manages your Google Workspace to obtain the correct values for the fields.
-
 ### Authentication
 
 To authenticate with Google Sheets, you need to provide credentials.
@@ -47,19 +45,30 @@ Server authentication is Always required.
 ![screenshot](separate.png)
 
 - **Token endpoint**: https://oauth2.googleapis.com/token
-- **Issuer**: Provide the email address of the service account.
-- **Signing algorithm**: Specify the algorithm to sign the JWT token.
-- **Private Key**: If applicable, provide the PEM-formatted private key.
+- **Issuer**: Provide the email address of the service account. (Created via [Google Cloud Console](https://cloud.google.com/iam/docs/service-accounts-create))
+- **Signing algorithm**: JWT Bearer token requires RS256 algorithm.
+- **Private Key**: Provide the PEM-formatted private key.  
+Once provided, we will never show the private key again.
 
 ### 2. Browser Authentication or Impersonation
 
 ![screenshot-full](auth_2.png)
 
-- **Authorization method**: Select the required authentication method.
+**OAuth 2.0 Authorization Code**
+
 - **Client ID** and **Client Secret**: In your Google API console, create an application and use the provided Client ID and Secret.
-- **Authorization endpoint**: Provide the Google Authorization URL.
-- **Token endpoint**: Provide the Google token endpoint.
-- **Scope**: Enter one or more scopes required for authentication.
+- **Authorization endpoint**: Set the endpoint to:
+``` html
+https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&include_granted_scopes=true
+```
+- **Token endpoint**: Set the endpoint to:
+```html
+https://oauth2.googleapis.com/token
+```
+- **Scope**: Provide the scope: 
+``` html
+https://www.googleapis.com/auth/spreadsheets.readonly
+```
 
 For more details, refer to [Google Developers](https://developers.google.com/identity/protocols/oauth2).
 
@@ -92,6 +101,10 @@ This setup allows you to configure authentication at the instance level while li
     ![screenshot](format_boolean.png)
 - **Row Structure**: The sheet must **NOT** contain empty rows between rows with data  
 ![screenshot](format_empty.png)
+- **Sharing**  
+**OAuth2.0 JWT Bearer authentication**: Share it with the service account setup during configuration of the Connector.  
+**OAuth2.0 Authorisation Code**: share with the user who is authorising.  
+**Public**: All people with the link can access your document. You can set it to read-only or editable.  
 
 For this example, we'll use a [publicly available document](https://docs.google.com/spreadsheets/d/1cJDWEjmP76YVEA31Ir4n8usVDc1ytYBav6w4a9p4TBM/edit?usp=sharing).
 
@@ -132,18 +145,3 @@ Ensure the **Data source** is enable for batch processing.
 ![screenshot](output.png)
 
 To process the Google Sheets data via the [API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html#/Output/post_api_v1_environment__environment__output_settings_pdf), set `"dataSourceEnabled": true`.
-
-## Supported Variable Types
-
-Currently, the Google Sheets connector supports:
-
-- **Text variables**[^1]
-
-[^1]: Using a simple action, you can assign the text variable (containing an image name) to an image variable. **GraFx Genie** can assist in automating this.  
-![screenshot](action.png)
-
-## Known Limitations
-
-### Column range
-
-Only columns A through Z are used
