@@ -77,7 +77,7 @@ This setup allows you to configure authentication at the instance level while li
 
 ### How to Use Google Sheets Data
 
-#### Sheet Setup guidelines
+#### Google Sheet Setup guidelines
 
 - **Column Range**: Only columns from A to Z are used.
 - **Header**: Your Google Sheet column names must match the Smart Template variable names
