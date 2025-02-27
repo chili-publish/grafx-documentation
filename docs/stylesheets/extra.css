@@ -95,12 +95,21 @@ img[alt=screenshot-full] {
 p img[alt=svg_icon] {
 	width: 100px;
 }
-img[alt=rn_icon] {
-	--md-icon-size: 3.0em;
-	vertical-align: middle;
-	display: inline-flex;
-	height: var(--md-icon-size);
+
+img[alt="rn_icon"] {
+  --md-icon-size: 3.0em;
+  vertical-align: middle;
+  display: inline-block;
+  height: var(--md-icon-size);
 }
+
+.version-label {
+  font-size: 0.8em;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+
 .md-header {
 	background-color: #F0F0F0;
 	color: #000;
@@ -140,7 +149,6 @@ h3 {
 	background-color: #FFF;
 	border: none;
 	color: #010068;
-	padding: 5px 0px;
 	border-radius: 3px;
 	text-align: left;
 	text-decoration: none;
@@ -151,6 +159,7 @@ h3 {
 .md-typeset h3 {
 	font-weight: bold;
 	font-family: Satoshi, Ubuntu, sans-serif;
+	margin: 0.4em 0 0em;
 }
 
 .md-typeset table:not([class]) th {

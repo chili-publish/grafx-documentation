@@ -13,6 +13,14 @@
 
     ---
 
+    **February 27 2025**: GraFx Studio - ==Data Connectors & Versioning==
+    
+    We’re launching data connectors, making it easier than ever to connect GraFx Studio to external data sources. Plus, you can now lock GraFx Studio to a specific version in an environment.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/27/grafxstudio-121---data-connectors--grafx-studio-versioning/)
+
+    ---
+
     **February 2 2025**: GraFx Studio - ==GraFx Genie-powered Smart Crop==
     
     Powered by our AI assistant GraFx Genie, CHILI GraFx now instantly identifies the subject and the Point of Interest (POI) within the image then automatically crops it to fit the frame – whether for social media, digital ads, or print.
@@ -35,14 +43,6 @@
     Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
     
     [:octicons-arrow-right-24: Show details](/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
-
-    ---
-
-    **October 14 2024**: ==Connect== with CHILI GraFx
-    
-    Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
 
     ---
 
