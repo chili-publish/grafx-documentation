@@ -72,7 +72,7 @@ https://www.googleapis.com/auth/spreadsheets.readonly
 
 For more details, refer to [Google Developers](https://developers.google.com/identity/protocols/oauth2).
 
-## Using Data from Your Google Sheet in a Smart Template
+## Google Sheet data in a Smart Template
 
 ### Different Sheet per Template
 
@@ -84,9 +84,9 @@ Each Smart Template can link to a different Google Sheet. You can even make the 
 
 This setup allows you to configure authentication at the instance level while linking to different sheets per template.
 
-### How to Use Google Sheets Data
+![screenshot-full](instance.png)
 
-#### Google Sheet Setup guidelines
+### Google Sheet Setup guidelines
 
 - **Column Range**: Only columns from A to Z are used.
 - **Header**: Your Google Sheet column names must match the Smart Template variable names
@@ -106,7 +106,9 @@ This setup allows you to configure authentication at the instance level while li
 **OAuth2.0 Authorisation Code**: share with the user who is authorising.  
 **Public**: All people with the link can access your document. You can set it to read-only or editable.  
 
-For this example, we'll use a [publicly available document](https://docs.google.com/spreadsheets/d/1cJDWEjmP76YVEA31Ir4n8usVDc1ytYBav6w4a9p4TBM/edit?usp=sharing).
+## How to Use Google Sheets Data
+
+For this example, we'll use a [publicly available document](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
 
 ![screenshot-full](sheet.png)
 
@@ -119,7 +121,13 @@ For this example, we'll use a [publicly available document](https://docs.google.
 
 #### Link the Google Sheet
 
-- Copy the link of the [public document](https://docs.google.com/spreadsheets/d/1cJDWEjmP76YVEA31Ir4n8usVDc1ytYBav6w4a9p4TBM/edit?usp=sharing).
+- Select the Connector Instance (for the right Authentication method)
+
+![screenshot](datasource.png)
+
+![screenshot](connector.png)
+
+- Copy the link of the [public document](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
 - Paste it into the data source field.
 
 ![screenshot](sheetsetup.png)
@@ -144,4 +152,6 @@ Ensure the **Data source** is enable for batch processing.
 
 ![screenshot](output.png)
 
-To process the Google Sheets data via the [API](https://sandbox1.chili-publish-sandbox.online/grafx/swagger/index.html#/Output/post_api_v1_environment__environment__output_settings_pdf), set `"dataSourceEnabled": true`.
+When set to "Use data source", your output will have a page for each record in the data source.
+
+![screenshot-full](output2.png)
