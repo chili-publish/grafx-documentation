@@ -146,12 +146,12 @@ For this example, we'll use a [publicly available document](https://docs.google.
 
 To generate output with dynamic data, create an [output setting](../../guides/output/settings/#data-source).
 
-!!! note "PDF only"
-    Only PDF output will use the data source. Soon the other formats will support batch output too.
-
 Ensure the **Data source** is enabled for batch processing.
 
 ![screenshot](output.png)
+
+!!! note "PDF only"
+    Only PDF output will use the data source. Soon the other formats will support batch output too.
 
 When set to "Use data source", your output will have a page for each record in the data source.
 
