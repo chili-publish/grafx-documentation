@@ -13,11 +13,11 @@
 
     ---
 
-    **February 27 2025**: GraFx Studio - ==Data Connectors & Versioning==
+    **February 28 2025**: GraFx Studio - ==Data Connectors & Versioning==
     
     We’re launching data connectors, making it easier than ever to connect GraFx Studio to external data sources. Plus, you can now lock GraFx Studio to a specific version in an environment.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/27/grafxstudio-121---data-connectors--grafx-studio-versioning/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/28/grafx-studio--data-connectors--versioning/)
 
     ---
 
