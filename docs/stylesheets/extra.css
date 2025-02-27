@@ -118,6 +118,16 @@ img[alt="rn_icon"] {
 	background-color: #F0F0F0;
 	color: #000;
 }
+
+.md-nav__link--active {
+	text-decoration: underline;
+}
+
+.md-tabs__item--active {
+	color: var(--chilired);
+	font-weight: bold;
+}
+
 .md-tabs__link--active {
 	color: var(--md-typeset-a-color);
 	font-weight: bold;

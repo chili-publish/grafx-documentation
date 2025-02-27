@@ -14,8 +14,8 @@ Multiple connectors can be deployed. One setup might require a different authent
 
 ![screenshot-full](data01.png)
 
-![screenshot-full](data01.png)
+![screenshot-full](data02.png)
 
-Depending on the setup of each Data Connector, the data of that data source is now available, and will populate the variables in the document.[^1]
+The data of that data source is now available, and will populate the variable values in the document.[^1]
 
-[^1]: Depending on the Data Connector, the link between data column and variables will be different. See specific setup for each Data Connector.
+[^1]: See Data Connector specifics on how to setup
