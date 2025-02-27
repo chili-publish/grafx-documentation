@@ -94,7 +94,7 @@ This setup allows you to configure authentication at the instance level while li
     - All values are considered: "Single Line Text"
     - Format Numbers as Numbers  
     ![screenshot](format_number.png)
-    - Format Date as Date or Data Time  
+    - Format Date as "Date" or "Date Time"
     ![screenshot](format_date.png)
     - Booleans: Boolean columns must always have a value (cells cannot be empty)
     - Booleans: Define boolean columns using checkboxes  
@@ -148,7 +148,10 @@ For this example, we'll use a [publicly available document](https://docs.google.
 
 To generate output with dynamic data, create an [output setting](../../guides/output/settings/#data-source).
 
-Ensure the **Data source** is enable for batch processing.
+!!! note "PDF only"
+    Only PDF output will use the data source. Soon the other formats will support batch output too.
+
+Ensure the **Data source** is enabled for batch processing.
 
 ![screenshot](output.png)
 
