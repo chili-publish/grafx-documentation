@@ -8,7 +8,7 @@ Enter the 'phygital' age of marketing by producing high-quality print and static
 
 ## Concepts and features from CHILI publisher
 
-The documentation (of CHILI publisher) is maintained at [this location](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412838/CHILI+publisher+Online){target="_blank"}.
+The documentation (of CHILI publisher) is maintained at [this location](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412740/What+is+CHILI+Publisher){target="_blank"}.
 
 ### My CHILI Publisher
 
@@ -66,7 +66,7 @@ CHILI publisher is made to be integrated. The same philosophy is kept, and CHILI
 
 See [Developer Center](/GraFx-Developers/) for the full API & SDK guides.
 
-See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1412012/CHILI+API+Guide){target="_blank"}
+See also [CHILI publisher documentation](https://chilipublishdocs.atlassian.net/wiki/spaces/CPDOC/pages/1413844/Getting+started+with+CHILI+API){target="_blank"}
 
 
 ### CHILI publish converters
@@ -99,5 +99,3 @@ The documentation for CHILI publisher, used on-premise, can be found here.
 
 !!! note
 	Remember that support for CHILI publisher (on premise) is end-of-life.
-
-For previous documentation visit [this link](https://mydocumentation.chili-publish.com){target=_blank}
