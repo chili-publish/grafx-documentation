@@ -6,7 +6,7 @@ If a company collects, transmits, hosts or analyzes personal data of data subjec
 
 ## What is the GDPR?
 
-The [General Data Protection Regulation](https://gdpr.eu/what-is-gdpr/) (“GDPR”) is the European privacy regulation. The GDPR addresses the processing of personal data and the free movement of such data. It aims to strengthen the security and protection of personal data in the EU and harmonize EU data protection law. Broadly, it sets out a number of data protection principles and requirements which must be adhered to when personal data is processed.
+The [General Data Protection Regulation](https://gdprinfo.eu/) (“GDPR”) is the European privacy regulation. The GDPR addresses the processing of personal data and the free movement of such data. It aims to strengthen the security and protection of personal data in the EU and harmonize EU data protection law. Broadly, it sets out a number of data protection principles and requirements which must be adhered to when personal data is processed.
 The GDPR also established the European Data Protection Board (“EPDB”), which ensures that the data protection law is applied consistently across the EU and works to ensure effective cooperation amongst data protection authorities.
 
 ## How does the GDPR apply to customers?
