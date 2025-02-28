@@ -235,6 +235,7 @@ nav:
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
+            - 'Connectors for Data':            'GraFx-Studio/concepts/connectors-data/index.md'
             - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Crop Marks':                     'GraFx-Studio/concepts/crop-marks/index.md'
@@ -293,6 +294,7 @@ nav:
             - 'Example: Hide frame':            'GraFx-Studio/guides/actions/example-hideframe/index.md'
             - 'Example: Multiple frame hide/show': 'GraFx-Studio/guides/actions/example-multipleframes/index.md'
             - 'Example: Currency change':       'GraFx-Studio/guides/actions/example-currency/index.md'
+            - 'Google Sheets Connector':        'GraFx-Studio/guides/connector/google-sheets/index.md'
         - 'How to: Output':
             - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
@@ -303,10 +305,12 @@ nav:
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
-        - 'Connectors':
-            - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
+        - 'Connectors: Media':
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
+            - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
+        - 'Connectors: Data':
+            - 'Google Sheets':                 'GraFx-Studio/connectors/connector-google-sheets-data/index.md'
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'

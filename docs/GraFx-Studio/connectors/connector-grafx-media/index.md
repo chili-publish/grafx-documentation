@@ -1,10 +1,8 @@
 # GraFx Media
 
-|  | Connector type |
-| --- | --- |
-| :fontawesome-regular-square-check: | Built-in |
-|  | Built by CHILI publish |
-|  | Third party |
+:fontawesome-regular-square-check: Built-in  
+:fontawesome-regular-square: Built by CHILI publish  
+:fontawesome-regular-square: Third Party
 
 [See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 

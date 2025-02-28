@@ -1,10 +1,8 @@
 # Media Connector for Sitecore Content Hub
 
-|  | Connector Type |
-| --- | --- |
-|  | Built-in |
-| :fontawesome-regular-square-check: | Built by CHILI publish |
-|  | Third party |
+:fontawesome-regular-square: Built-in  
+:fontawesome-regular-square-check: Built by CHILI publish  
+:fontawesome-regular-square: Third Party
 
 [See Connector Types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
