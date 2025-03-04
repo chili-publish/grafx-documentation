@@ -29,6 +29,7 @@ Once installed, navigate to the **Connector overview**, and select your deployed
 https://sheets.googleapis.com
 ```
 
+
 ### Authentication
 
 To authenticate with Google Sheets, you need to provide credentials.
@@ -99,6 +100,7 @@ Below is an example (where **actual credentials have been removed** for security
 }
 
 ```
+
 
 ![screenshot-full](auth_1.png)
 
@@ -179,6 +181,7 @@ A **modified** example to use as reference: [^1]
 }
 ```
 
+
 ![screenshot-full](auth_2.png)
 
 **OAuth 2.0 Authorization Code**
@@ -214,7 +217,6 @@ https://oauth2.googleapis.com/token
 ``` html
 https://www.googleapis.com/auth/spreadsheets.readonly
 ```
-
 
 For more details, refer to [Google Developers](https://developers.google.com/identity/protocols/oauth2).
 
