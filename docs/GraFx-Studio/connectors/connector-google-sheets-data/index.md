@@ -20,6 +20,15 @@ Once installed, navigate to the **Connector overview**, and select your deployed
 
 ![screenshot-full](config.png)
 
+- **Name**: Choose a name to distinguish your connector setup.
+- **Description**: Give more context what this connector does, what is specific about it.
+- **Version**: If available, choose the version you want to use.
+- **Proxy settings**
+
+```html
+https://sheets.googleapis.com
+```
+
 ### Authentication
 
 To authenticate with Google Sheets, you need to provide credentials.
@@ -35,6 +44,62 @@ You can configure **Server Authentication** and **Browser Authentication** separ
 
 Server authentication is Always required.
 
+For the server authentication, you will need to setup a service account.
+
+#### Google setup
+
+!!! warning "Disclaimer"
+    How to setup the **Service Account** on Google Cloud might change over time.
+
+Go to [Google Cloud Console](https://cloud.google.com/iam/docs/service-accounts-create).
+
+Go to API and Services
+
+![screenshot](google07.png)
+
+Go to Credentials, and create a new Service account. Go through all steps.
+
+![screenshot-full](google08.png)
+
+You now have the Service Account credentials.
+
+![screenshot-full](google02.png)
+
+If you have not done during the initial creation, go to the created credentials, and add a private KEY.
+
+Create a private key, in the **Keys** section.
+
+![screenshot-full](google04.png)
+
+Choose JSON format
+
+![screenshot](google05.png)
+
+After confirmation, a JSON file will be downloaded to your computer. (see example below)
+
+![screenshot-full](google06.png)
+
+#### JSON
+
+Below is an example (where **actual credentials have been removed** for security). Below, we'll refer to parts of that JSON to use in the setup.
+
+``` json
+{
+  "type": "service_account",
+  "project_id": "your-project-name",
+  "private_key_id": "2d7f5c97ccae8465e708bc...",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADqsdfkjqmsdlkfjmsqdkfjtyTXDMR\n42AQ7VJsIxnPM5FUZx8xzRNMVDQakle5Ksi6zFeZr3/Nrh20yXp0iYXtkLqNTvAD\n5Q5L2zATHx2nvlRxJcCwehxdWW58KubHvdyaN2uQMdxj8idr964LhW53bpgKK6vg\nygdMnY8i+X6++9eaqlyf+MXsckN5Qrk15AigEcJlCStLHE7D9xD+ivXMgUwFpXU+\n...\nXwbYE9GufVHVtvXz573fQcQzrPJ5ifjoZ+hDpfpT9ZOfMO1zA/HzOlxfUN9XF2Kc\njfFdOCixWLT6HuKeOb0GH1eo\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-generated-address@your-project-name.iam.gserviceaccount.com",
+  "client_id": "123456789123456798",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/yourname%40yourproject-grafx.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
+```
+
 ![screenshot-full](auth_1.png)
 
 - **Authorization method**: Select the required authentication method.
@@ -42,31 +107,114 @@ Server authentication is Always required.
 
 ![screenshot](separate.png)
 
-- **Token endpoint**: https://oauth2.googleapis.com/token
-- **Issuer**: Provide the email address of the service account. (Created via [Google Cloud Console](https://cloud.google.com/iam/docs/service-accounts-create))
+- **Token endpoint**:  
+see [JSON](#1-server-authentication): **token_uri**  
+```html
+https://oauth2.googleapis.com/token
+```
+- **Issuer**: Provide the email address of the service account.  
+see [JSON](#1-server-authentication): **client_email**
 - **Signing algorithm**: JWT Bearer token requires RS256 algorithm.
 - **Private Key**: Provide the PEM-formatted private key.  
-Once provided, we will never show the private key again.
+see [JSON](#1-server-authentication): **private_key**
+You can copy-past the full contents, leaving in the "\n". They will be replaced when you save your settings.  
+Once provided, we will never show the private key again.  
+PS: With each change, you will have to re-enter the private key.
+
+!!! warning "Stop here"
+    No need to setup **Browser authentication**, if the system can use the service account for both Server and Browser authentication.
+    Only if you need a different way to authenticate in the Browser, then continue on 2.
 
 ### 2. Browser Authentication or Impersonation
+
+Create Client ID credentials on [Google Cloud Console](https://cloud.google.com/iam/docs/service-accounts-create)
+
+Important to set an **Authorised redirect URI**
+
+![screenshot-full](google03.png)
+
+It should be set to this URI
+
+``` json
+https://{ENVIRONMENT}.chili-publish.online/grafx/api/v1/environment/{ENVIRONMENT}/connectors/{CONNECTOR_ID}/auth/oauth-authorization-code/redirect
+```
+
+Set the {ENVIRONMENT} to your Environment Key.
+
+Where is the Environment Key?
+
+Open Publisher, and take the Key from the URI, it's the first element.
+
+![screenshot](google10.png) 
+
+Below is an example, your Environment Key will be unique to your setup.
+
+![screenshot](google11.png) 
+
+Set the {CONNECTOR_ID} to the ID of your Connector Instance
+
+You can grab the connector ID from the URI, if you are in the Connector setup (in CHILI GraFx)
+
+![screenshot](google12.png)
+
+![screenshot-full](google09.png)
+
+At the end, you'll get a JSON file. We'll refer to elements in the setup below.
+
+A **modified** example to use as reference: [^1]
+
+[^1]: Goes without saying, these settings will NOT work, you need to make your own.
+
+``` json
+{
+"web":
+    {
+    "client_id":"123456789.apps.googleusercontent.com",
+    "project_id":"your-project-id",
+    "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+    "token_uri":"https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret":"ABCDEF-_DEF123456HIJKLM"
+    }
+}
+```
 
 ![screenshot-full](auth_2.png)
 
 **OAuth 2.0 Authorization Code**
 
-- **Client ID** and **Client Secret**: In your Google API console, create an application and use the provided Client ID and Secret.
-- **Authorization endpoint**: Set the endpoint to:
+- **Client ID**:  
+see [JSON](#2-browser-authentication-or-impersonation): **client_id**  
+
+- **Client Secret**:  
+see [JSON](#2-browser-authentication-or-impersonation): **client_secret**  
+
+- **Authorization endpoint**:  
+see [JSON](#2-browser-authentication-or-impersonation): **auth_uri**  
+Set the endpoint to:  
+The below endpoint includes 2 extra parameters  
 ``` html
 https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&include_granted_scopes=true
-```
-- **Token endpoint**: Set the endpoint to:
-```html
+```  
+!!! info "Extra URL parameters"
+	**access_type**=offline
+	This ensures that the application can continue to access the Google API even when the user is not actively using it. It allows the system to receive a refresh token, which can be used to get a new access token without requiring the user to log in again.
+	
+	**include_granted_scopes**=true
+	If the user has already granted permission for certain scopes in a previous authentication, this setting ensures that those permissions are retained. This way, the user doesn’t have to approve the same access every time they log in.
+
+- **Token endpoint**:  
+see [JSON](#2-browser-authentication-or-impersonation): **token_uri**  
+``` html
 https://oauth2.googleapis.com/token
 ```
-- **Scope**: Provide the scope: 
+
+- **Scope**: Provide the scope:  
+
 ``` html
 https://www.googleapis.com/auth/spreadsheets.readonly
 ```
+
 
 For more details, refer to [Google Developers](https://developers.google.com/identity/protocols/oauth2).
 
@@ -92,7 +240,7 @@ This setup allows you to configure authentication at the instance level while li
     - All values are considered: "Single Line Text"
     - Format Numbers as Numbers  
     ![screenshot](format_number.png)
-    - Format Date as "Date" or "Date Time"
+    - Format Date as "Date" or "Date Time"  
     ![screenshot](format_date.png)
     - Booleans: Boolean columns must always have a value (cells cannot be empty)
     - Booleans: Define boolean columns using checkboxes  
