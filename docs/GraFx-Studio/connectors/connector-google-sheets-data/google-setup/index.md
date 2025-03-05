@@ -1,5 +1,19 @@
 # Credentials for Google Sheets on Google Cloud
 
+## Before you Start
+
+Enable the API!
+
+Find the Settings for Google Sheets, in the [API library](https://console.cloud.google.com/apis/library/browse?inv=1&invt=AbrOXg&q=sheets)
+
+![screenshot](../google20.png)
+
+If the API is enabled, we're all set, if not, **Enable** the API
+
+In the screenshot below, it is already enabled.
+
+![screenshot](../google21.png)
+
 ## Service Account
 
 !!! warning "Disclaimer"
