@@ -90,6 +90,23 @@ You can copy-past the full contents, leaving in the "\n". They will be replaced 
 If you come back to change settings, you will not see the private key, for obvious reasons.  
 New changes: re-enter the private key again before you save.
 
+### Try it out
+
+To try out your setup, open a test Google Sheets document with public access.
+
+!!! warning "Public data"
+    Beware to not share data you would like to keep private, as the sheet will be public to anyone with the link.
+
+![screenshot](google22.png)
+
+![screenshot-full](google23.png)
+
+Now, [add 1 variable to a Smart Template](in-smart-template/#create-variables-in-grafx-studio), and preview in Run Mode.
+
+If that works, the connector works fine.
+
+Later you can tweak the security and permissions on the google side, together with your system admin.
+
 !!! warning "Stop here"
     No need to setup **Browser authentication**, if the system can use the service account for both Server and Browser authentication.
     Only if you need a different way to authenticate in the Browser, then continue on 2.
