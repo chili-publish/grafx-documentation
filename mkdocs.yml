@@ -294,7 +294,6 @@ nav:
             - 'Example: Hide frame':            'GraFx-Studio/guides/actions/example-hideframe/index.md'
             - 'Example: Multiple frame hide/show': 'GraFx-Studio/guides/actions/example-multipleframes/index.md'
             - 'Example: Currency change':       'GraFx-Studio/guides/actions/example-currency/index.md'
-            - 'Google Sheets Connector':        'GraFx-Studio/guides/connector/google-sheets/index.md'
         - 'How to: Output':
             - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
@@ -310,7 +309,10 @@ nav:
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
         - 'Connectors: Data':
-            - 'Google Sheets':                 'GraFx-Studio/connectors/connector-google-sheets-data/index.md'
+            - 'Google Sheets':                  
+                - 'Connector setup':            'GraFx-Studio/connectors/connector-google-sheets-data/index.md'
+                - 'Google Credentials':         'GraFx-Studio/connectors/connector-google-sheets-data/google-setup/index.md'
+                - 'In a Smart Template':        'GraFx-Studio/connectors/connector-google-sheets-data/in-smart-template/index.md'
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
