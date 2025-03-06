@@ -1,17 +1,32 @@
 # How to Use Google Sheets Data
 
-For this example, we'll use a [publicly available Google sheet](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
+## Security
+
+To try out your setup, open a test Google Sheets document with public access.
+
+!!! warning "Public data"
+    Beware to not share data you would like to keep private, as the sheet will be public to anyone with the link.
+
+![screenshot](../google22.png)
+
+![screenshot-full](../google23.png)
+
+If that works, the connector works fine.
+
+Later you can tweak the security and permissions on the google side, together with your system admin.
+
+In the example below, we'll use a [publicly available read-only Google sheet](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
 
 ![screenshot-full](../sheet.png)
 
-#### Create Variables
+## Create Variables in GraFx Studio
 
 - In your template, create variables corresponding to the column names in Google Sheets.
 - As long as the names match and a data source is connected, the values will be populated automatically.
 
 ![screenshot](../variables.png)
 
-#### Link the Google Sheet
+## Link the Google Sheet
 
 - Select the Connector Instance (for the right Authentication method)
 
@@ -24,15 +39,15 @@ For this example, we'll use a [publicly available Google sheet](https://docs.goo
 
 ![screenshot](../sheetsetup.png)
 
-#### Preview in Run Mode or Studio UI
+## Preview in Run Mode or Studio UI
 
 - In [Run mode](/GraFx-Studio/concepts/design-run/#run-mode) or the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui), you can browse records to preview how content changes.
 
-#### Run Mode (in Studio Workspace)
+## Run Mode (in Studio Workspace)
 
 ![screenshot-full](../runmode.png)
 
-#### Studio UI
+## Studio UI
 
 ![screenshot-full](../studioui.png)
 
