@@ -1,20 +1,5 @@
 # How to Use Google Sheets Data
 
-## Security
-
-To try out your setup, open a test Google Sheets document with public access.
-
-!!! warning "Public data"
-    Beware to not share data you would like to keep private, as the sheet will be public to anyone with the link.
-
-![screenshot](../google22.png)
-
-![screenshot-full](../google23.png)
-
-If that works, the connector works fine.
-
-Later you can tweak the security and permissions on the google side, together with your system admin.
-
 In the example below, we'll use a [publicly available read-only Google sheet](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
 
 ![screenshot-full](../sheet.png)
