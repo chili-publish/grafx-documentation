@@ -50,3 +50,23 @@ Ensure the **Data source** is enabled for batch processing.
 When set to "Use data source", your output will have a page for each record in the data source.
 
 ![screenshot-full](../output2.png)
+
+## Google Sheet Setup guidelines
+
+- **Column Range**: Only columns from A to Z are used.
+- **Header**: Your Google Sheet column names must match the Smart Template variable names
+- **Column Data Type**
+    - All values are considered: "Single Line Text"
+    - Format Numbers as Numbers  
+    ![screenshot](../format_number.png)
+    - Format Date as "Date" or "Date Time"  
+    ![screenshot](../format_date.png)
+    - Booleans: Boolean columns must always have a value (cells cannot be empty)
+    - Booleans: Define boolean columns using checkboxes  
+    ![screenshot](../format_boolean.png)
+- **Row Structure**: The sheet must **NOT** contain empty rows between rows with data  
+![screenshot](../format_empty.png)
+- **Sharing**  
+**OAuth2.0 JWT Bearer authentication**: Share it with the service account setup during configuration of the Connector.  
+**OAuth2.0 Authorisation Code**: share with the user who is authorising.  
+**Public**: All people with the link can access your document. You can set it to read-only or editable. 
