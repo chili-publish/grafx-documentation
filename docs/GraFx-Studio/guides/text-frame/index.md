@@ -62,6 +62,10 @@ See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how 
 
 #### Copyfitting
 
+<iframe width="690" height="388" src="https://www.youtube.com/embed/ErhWlgQ74X4?si=lRBPLD4IAwQsN92N&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Go to Youtube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
 Select the text frame and enable "Copyfitting" to adjust font size to fit the frame by allowing slight reduction or growth.
 
 ![screenshot](copyfit.png)
@@ -71,6 +75,11 @@ Set the minimum and maximum percentages for font size adjustments.
 > Note: When Copyfitting is enabled, Auto-grow is disabled.
 
 #### Auto-grow
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/Z_GAnwZQXWg?si=Z0fXY0xl2KlTeGpp&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Go to Youtube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
 
 Enable "Auto-grow" to allow the frame to expand as needed to fit content of varying lengths. For instance, records in a dataset might contain differing character counts.
 
