@@ -253,6 +253,7 @@ nav:
             - 'Private Data':                   'GraFx-Studio/concepts/private-data/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
+            - 'Smart Crop':                     'GraFx-Studio/concepts/genie-smart-crop/index.md'
             - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
             - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
@@ -275,6 +276,7 @@ nav:
             - 'Pages':                          'GraFx-Studio/guides/pages/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Smart Crop':                     'GraFx-Studio/guides/smart-crop/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
             - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
         - 'How to: Connectors':
@@ -344,11 +346,13 @@ nav:
             - 'Supported File Types':           'GraFx-Media/overview/filetypes/index.md'
         - 'Concepts':
             - 'Media vs DAM':                   'GraFx-Media/concepts/media-vs-dam/index.md'
+            - 'GraFx Genie: Smart Crop':        'GraFx-Media/concepts/genie-smart-crop/index.md'
         - 'How to':
             - 'Browse media':                   'GraFx-Media/guides/browse/index.md'
             - 'Search media':                   'GraFx-Media/guides/browse/search/index.md'
             - 'Manage folders':                 'GraFx-Media/guides/manage-folders/index.md'
             - 'Upload media':                   'GraFx-Media/guides/upload-media/index.md'
+            - 'Set Subject Area':               'GraFx-Media/guides/smart-crop-subject-area/index.md'
 #           'Download media':                   'GraFx-Media/guides/download/index.md'
 #           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':

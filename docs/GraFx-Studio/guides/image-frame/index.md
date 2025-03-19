@@ -32,8 +32,7 @@ Similar properties as with all frames. See [Basic properties](/GraFx-Studio/conc
 
 ### Fill properties
 
-![screenshot-full](fitfill.png)
-
+![screenshot-full](sc5.png)
 
 #### Fit
 
@@ -47,6 +46,16 @@ Choose the Fill property, to fill the full frame with the image. No whitespace i
 
 ![screenshot](image-6.png)
 
+#### Smart Crop
+
+Choose the Smart Crop property, to let GraFx Genie assist to position the subject area and POI in the frame.
+
+![screenshot](sc12.png)
+
+See [Concept of Smart Crop](../../concepts/genie-smart-crop/) for more details
+
+See [How to use Smart Crop](../smart-crop/) for more details
+
 #### Aspect radio
 
 If the image and the frame have the exact aspect ratio, there will be no difference between fitt and fill.
@@ -55,7 +64,7 @@ If the image and the frame have the exact aspect ratio, there will be no differe
 
 ![screenshot-full](fill.png)
 
-#### Crop
+#### Manual Crop
 
 See [Cropping an Image](/GraFx-Studio/guides/cropping/)
 
