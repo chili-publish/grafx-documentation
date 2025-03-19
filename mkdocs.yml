@@ -275,6 +275,7 @@ nav:
             - 'Pages':                          'GraFx-Studio/guides/pages/index.md'
             - 'Paragraph Styles':               'GraFx-Studio/guides/paragraphstyles/index.md'
             - 'Shape Frames':                   'GraFx-Studio/guides/shape-frame/index.md'
+            - 'Smart Crop':                     'GraFx-Studio/guides/smart-crop/index.md'
             - 'Swatches':                       'GraFx-Studio/guides/swatches/index.md'
             - 'Text Frames':                    'GraFx-Studio/guides/text-frame/index.md'
         - 'How to: Connectors':
@@ -344,6 +345,7 @@ nav:
             - 'Search media':                   'GraFx-Media/guides/browse/search/index.md'
             - 'Manage folders':                 'GraFx-Media/guides/manage-folders/index.md'
             - 'Upload media':                   'GraFx-Media/guides/upload-media/index.md'
+            - 'Set Subject Area':               'GraFx-Media/guides/smart-crop-subject-area/index.md'
 #           'Download media':                   'GraFx-Media/guides/download/index.md'
 #           'Sort and Filter media':            'GraFx-Media/guides/browse/sort/index.md'
     - 'GraFx Fonts':
