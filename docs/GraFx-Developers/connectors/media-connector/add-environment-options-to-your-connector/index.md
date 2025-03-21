@@ -29,9 +29,6 @@ Modify the `options` property in your `package.json` to add the new option:
 
 Setting the value to `null` requires you to define the value during publishing using the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Alternatively, you can provide a default value instead of `null`. Note that only strings and booleans are allowed; numbers will be converted to strings.
 
-!!! Bug "Default Values Issue"
-    There is a known issue in the Connector CLI tool where default values are not applied correctly.
-
 ## Implementing the Option in Code
 
 ### Updating the `query` Method
