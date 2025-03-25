@@ -1,4 +1,4 @@
-# Add Variable Settings To Your Connector
+# Add Configuration Options To Your Connector
 
 This guide focuses on adding configurable settings to your Connector within the Studio Designer Workspace, specifically for image variables. The primary goal is to empower designers to tailor your Connector's functionality for various end-user scenarios, enhancing the flexibility and relevance of the final product.
 
@@ -19,135 +19,7 @@ Settings values are passed via the `context` parameter in the `query`, `download
 
     This type of configuration is a one way communication from image variable in template to Connector.
 
-## Implementing Settings
-
-### Step 1: Update `getConfigurationOptions`
-
-We'll add a setting to control the number of images returned by the picsum.photos API:
-
-```typescript
-getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
-  return [{
-    name: "limit",
-    displayName: "Number (1 to 100) of Images to Display",
-    type: "text"
-  }];
-}
-```
-
-!!! info "Supported Types"
-
-    Currently, only string (text) and boolean values are supported for settings.
-
-At this moment, there is no way to communicate to the designer that they entered in a wrong value. So we do our best to communicate the limits in our `displayName` in our `getConfigurationOptions`.
-
-### Step 2: Modify the `query` Method
-
-We'll update our `query` method to handle the newly introduced limit setting. This modification involves several key steps:
-
-1. Adding a `limit` query string parameter to our API call
-2. Verifying the existence and validity of `context.limit` as a integer 
-3. Ensuring the limit falls within an acceptable range (1 to 100)
-
-Here's the refined implementation:
-
-```typescript
-async query(
-    options: Connector.QueryOptions,
-    context: Connector.Dictionary
-  ): Promise<Media.MediaPage> {
-
-    // When pageSize is 1 & collection is null, we know that query is called before download
-    if (options.pageSize == 1 && !options.collection) {
-      return {
-        pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
-
-        data: [{
-
-          id: options.filter[0],
-          name: "",
-          relativePath: "",
-          type: 0,
-          metaData: {}
-        }],
-
-        links: {
-          nextPage: "" // Pagination is ignored in this example
-        }
-      }
-    }
-
-    // If pageSize is bigger than 1, we do a normal query
-
-    // Set a default user limit
-    let limit = 30;
-
-    // Check if a specific limit is provided in the settings (context)
-    if (context.limit) {
-      // Convert the provided limit to a number
-      const parsedLimit = parseInt(context.limit.toString(), 10);
-
-      // Validate and set the user limit between 1 and 100
-      if (!isNaN(parsedLimit)) {
-        limit = Math.min(Math.max(parsedLimit, 1), 100);
-      }
-    }
-
-
-    const resp = await this.runtime.fetch(`https://picsum.photos/v2/list?page=1&limit=${limit}`, {
-      method: "GET"
-    });
-
-    if (resp.ok) {
-      const data = JSON.parse(resp.text);
-
-      // Transform the data to match the Media type
-      const dataFormatted = data.map(d => ({
-        id: d.id,
-        name: d.id,
-        relativePath: "/",
-        type: 0,
-        metaData: {}
-      })) as Array<any>;
-
-      return {
-        pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
-        data: dataFormatted,
-        links: {
-          nextPage: "" // Pagination is ignored in this example
-        }
-      }
-    }
-
-    // Handle error case
-    throw new Error("Failed to fetch images from picsum.photos");
-  }
-```
-
-### Step 3: Publish and Test
-
-We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) documentation.
-
-To publish your connector, use the following command in your terminal:
-
-```bash
-connector-cli publish -e <environment-name> \
-        -b <base-url> \
-        -n <name> \
-        --proxyOption.allowedDomains "*.xyz"
-```
-
-Once your connector is published, you can test it by following these steps:
-
-1. Open a Template where you can add an image variable.
-2. Add a new image variable to your document.
-3. In the image selection interface, choose your newly published Connector.
-4. Look for the new setting: "Number (1 to 100) of Images to Display".
-5. Adjust this setting to different values within the allowed range (1 to 100).
-6. Click "Select image" to observe how the number of displayed images changes based on your setting.
-
 ## Adding a Rectangle/Square Image Setting
-
 
 The picsum.photos API supports both outputting rectangular and square images. We can enhance our connector by adding a setting that allows Designers to choose between these two image crops. This setting will affect how images are displayed in both the image selector and the document frame.
 
@@ -156,11 +28,6 @@ The picsum.photos API supports both outputting rectangular and square images. We
 ```typescript
   getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
     return [
-      {
-        name: "limit",
-        displayName: "Number (1 to 100) of Images to Display",
-        type: "text"
-      },
       {
         name: "wide",
         displayName: "Display images as rectangluar instead of square",
@@ -172,37 +39,48 @@ The picsum.photos API supports both outputting rectangular and square images. We
 
 This addition introduces a new boolean option named "wide" that users can toggle to switch between rectangular and square image displays.
 
+!!! info "Supported Types"
+
+    Currently, only string (text) and boolean values are supported for settings.
+
 ### Step 2: Update the `download` Method
 
 Next, we'll update our `download` method to incorporate this new setting:
 
 ```typescript
-  async download(
-    id: string,
-    previewType: Media.DownloadType,
-    intent: Media.DownloadIntent,
-    context: Connector.Dictionary
-  ): Promise<Connector.ArrayBufferPointer> {
-
-    // Check to see if we are a thumbnail in the UI or being used in another situation.
-    switch (previewType) {
-      case "thumbnail": {
-        const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/${(context.wide) ? "400/" : ""}200`, { method: "GET" });
-        return picture.arrayBuffer;
-      }
-      default: {
-        const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/${(context.wide) ? "2000/" : ""}1000`, { method: "GET" });
-        return picture.arrayBuffer;
-      }
+async download(
+  id: string,
+  previewType: Media.DownloadType,
+  intent: Media.DownloadIntent,
+  context: Connector.Dictionary
+): Promise<Connector.ArrayBufferPointer> {
+  switch (previewType) {
+    case "thumbnail": {
+      const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/${(context.wide) ? "400/" : ""}200`, { method: "GET" });
+      return picture.arrayBuffer;
+    }
+    case "mediumres": {
+      const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/400`, { method: "GET" });
+      return picture.arrayBuffer;
+    }
+    case "highres": {
+      const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/${(context.wide) ? "2000/" : ""}1000`, { method: "GET" });
+      return picture.arrayBuffer;
+    }
+    default: {
+      const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}`, { method: "GET" });
+      return picture.arrayBuffer;
     }
   }
+}
 ```
 
 Key changes in this method:
 
 1. We now use the `context.wide` setting to determine the image dimensions.
 2. For thumbnails, we use 400x200 for wide (rectangular) images and 200x200 for square images.
-3. For full-size images, we use 2000x1000 for wide images and 1000x1000 for square images.
+3. For highres, we use 2000x1000 for wide (rectangular) images and 1000x1000 for square images.
+4. For mediumres, fullres and original, we keep the previous implementation.
 
 ### Step 3: Publish and Test
 
@@ -221,10 +99,8 @@ This demonstrates that our connector is not just affecting the image selection p
 By completing this guide, you have:
 
 - Introduction of configurable settings for image variables in the Connector.
-- Implementation of the getConfigurationOptions method to define and control the number of images returned by an API.
-- Modification of the query method to handle new settings, including validation and user-defined limits.
 - Introduction of an wide option allowing designers to choose between rectangular and square displays.
-- Enhancements to the download method to incorporate the new wide setting, affecting both thumbnails and full-size images.
+- Enhancements to the download method to incorporate the new wide setting, affecting both all changed `previewTypes`.
 
 ## Next Steps
 
