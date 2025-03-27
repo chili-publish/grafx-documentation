@@ -121,7 +121,7 @@ connector-cli delete \
 ```
 
 !!! warning "Remove the connector"
-    Don't remove connectors that are using in production, since it breaks all assets loading in templates where you use them
+    Don't remove connectors that you are using in production, it will breaks the link to all assets templates where you use them
 
 ## Next Steps
 
