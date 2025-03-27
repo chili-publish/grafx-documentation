@@ -82,37 +82,52 @@ Consult your Canto System Admin for assistance in configuring these fields.
 
 ![screenshot-full](sch09.png)
 
-Depending on the configuration, you may need to authenticate.
-
-![screenshot-full](sch10.png)
-
-- Once authenticated, Sitecore assets behave like any other asset in GraFx Studio.
-
 ### Image Variables
 
-When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same list of assets when selecting an image.
+When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except is you have set configuration options (see below).
 
 ![screenshot-full](var01.png)
 
+### Metadata mapping
+
+See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details
+
+![screenshot](var02.png)
+
 ### Configuration Options
 
-#### Introduction
+![screenshot](var03.png)
 
-To filter the assets suggested to template users, you can use categories, keywords, or other search parameters.
+To filter the assets suggested to template users, you can use several methods.
 
-Canto supports search queries through its query language. Consult the [Sitecore Documentation](https://doc.sitecore.com/ch/en/developers/cloud-dev/generic-properties.html) or your Canto Administrator for guidance.
+#### Folder View
 
-#### How To
+When set to True, Keyword and tag will be ignored, and you'll be able to browse through the assets as you would browse through folders.
 
-Queries are set at the variable level.
+#### Keyword filter
 
-Set the query value in the connector settings.
+When set, this keyword will be used to filte matching assets.
 
-![screenshot-full](var02.png)
+#### Tag filter
 
-For more dynamic queries, you can use [variables](/GraFx-Studio/concepts/variables/), [actions](/GraFx-Studio/concepts/actions/), and [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/) to automate and refine your queries.
+When set, this tag will be used to filte matching assets.
 
-#### Other Configuration Options
+#### Album filter
 
-- **Show Only Approved Assets**: Displays only assets that have been approved in Canto.
-- **Locale**: Filters assets by region or language.
+When set, only assets from that album will be presented. 
+
+!!! important "Use the ID"
+    For the Album filter, you need to set the album ID.  
+    You'll find the ID in the URL when browsing your albums in Canto.  
+    
+    ![screenshot](var04.png)
+
+#### Only show approved
+
+When set to True, this will filter out all the non-approved assets.
+
+#### Fail Loading and Output if not approved
+
+Imagine the scenario where you used an approved asset before. And since the last use of the template, the used asset has been set to "not approved".
+
+When this option is set, the loading, and also the output from GraFx Studio will fail. This helps to avoid outputting non approved assets.
