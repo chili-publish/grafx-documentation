@@ -41,6 +41,14 @@ const resp = await this.runtime.fetch(`https://${this.runtime.options["baseURL"]
 });
 ```
 
+### Updating the `detail` Method
+
+Similarly, update the `detail` method:
+
+```typescript
+const resp = await this.runtime.fetch(`https://${this.runtime.options["baseURL"]}/id/${id}/info`, { method: "GET" });
+```
+
 ### Updating the `download` Method
 
 Similarly, update the `download` method:

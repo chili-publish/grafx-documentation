@@ -278,9 +278,7 @@ To test your updated connector:
 2. Create new Image Variable targeting our connector
 3. Select asset for this Variable -->
 
-## Some Issues
-
-### Issue: Double-clicking with Nothing Selected
+## Issue: Double-clicking with Nothing Selected
 
 You may notice that double-clicking an image in the Media panel when nothing is selected doesn't have any effect.
 
@@ -291,74 +289,6 @@ Error: QuickJS cannot evaluate your script: Error: Method not implemented.
 ```
 
 This error occurs because we haven't implemented the `detail` method in our connector, which is required for this specific functionality.
-
-<!-- ### Issue: Only first image for Image Variable
-
-You may notice that no matter which image you select in the Image Variable Selector, the displayed `thumbnail` is always the first image. This is due to how `download` for `thubmnail` behaves when `filtering` is `true`.
-
-When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`. -->
-
-<!-- ## Fixing `query`
-
-When `query` is called before `download`, the `options.pageSize` will be the value `1` and `options.collection` will be `null`. -->
-
-<!-- ```typescript
-async query(
-  options: Connector.QueryOptions,
-  context: Connector.Dictionary
-): Promise<Media.MediaPage> {
-
-  // When pageSize is 1 & collection is null, we know that query is called before download
-  if (options.pageSize == 1 && !options.collection) {
-    return {
-      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
-
-      data: [{
-
-        id: options.filter[0],
-        name: "",
-        relativePath: "",
-        type: 0,
-        metaData: {}
-      }],
-
-      links: {
-        nextPage: "" // Pagination is ignored in this example
-      }
-    }
-  }
-
-  // If pageSize is bigger than 1, we do a normal query
-
-  const resp = await this.runtime.fetch("https://picsum.photos/v2/list?page=1&limit=4", {
-    method: "GET"
-  });
-
-  if (resp.ok) {
-    const data = JSON.parse(resp.text);
-
-    // Transform the data to match the Media type
-    const dataFormatted = data.map(d => ({
-      id: d.id,
-      name: d.id,
-      relativePath: "/",
-      type: 0,
-      metaData: {}
-    })) as Array<any>;
-
-    return {
-      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
-      data: dataFormatted,
-      links: {
-        nextPage: "" // Pagination is ignored in this example
-      }
-    }
-  }
-
-  // Handle error case
-  throw new Error("Failed to fetch images from picsum.photos");
-}
-``` -->
 
 ## Implementing the Detail Method
 
@@ -424,6 +354,101 @@ After implementing the `detail` method and fixing `query`
 3. Test the functionality by double-clicking an image in the Media panel.
 4. Verify that the image is added to the design with the correct initial frame size.
 
+## Notes about "filtering"
+
+Now let's make our connector more accessible and introduce another capability - filtering
+
+### Updating Capabilities
+
+First, we need to modify the `getCapabilities()` method and enable `filtering`:
+
+```typescript
+getCapabilities(): Media.MediaConnectorCapabilities {
+  return {
+    query: true,
+    detail: true,
+    filtering: true,
+    metadata: false,
+  };
+}
+```
+
+### Modify query method
+
+Next step is start consuming filter value during querying of the assets
+
+!!! note "Fake implementation"
+    Since Picsum itself doesn't support any filtering, we provide implementation that just logs the filter value in order to demonstrate
+    the difference
+
+```typescript
+  async query(
+    options: Connector.QueryOptions,
+    context: Connector.Dictionary
+  ): Promise<Media.MediaPage> {
+    // Note: we just log the filter value in case if our query suppose to do filtering logic
+    if (options.filter !== null) {
+      this.runtime.logError(`Filter options are: ${options.filter}`)
+    }
+
+    // The rest part of method stays unchanged
+    ...
+  }
+```
+
+### Republishing and Testing
+
+After adding `filtering` capabilities and modifying `query` method
+
+1. Republish your connector using the `connector-cli publish` command (as described in previous sections).
+2. Open GraFx Studio Designer Workspace.
+3. Open the Media panel. This time you should see the search box above.
+4. Enter any value and check logs in the browser `Dev Tools` panel - you should see them according to changes in `query` method.
+
+## Issue: Only first image selection works in Image Variable Selector
+
+You may notice that no matter which image you select in the Image Variable Selector, the displayed `thumbnail` is works only for the first image. This is due to how `download` for `thubmnail` behaves when `filtering` is `true`.
+
+When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`.
+
+### Fixing `thumbnail` preview
+
+When `query` is called before `download`, the `options.pageSize` will be the value `1` and `options.collection` will be `null`.
+
+```typescript
+  async query(
+    options: Connector.QueryOptions,
+    context: Connector.Dictionary
+  ): Promise<Media.MediaPage> {
+      // When pageSize is 1 & collection is null, we know that query is called before download for `thubmnail` preview
+    if (options.pageSize == 1 && !options.collection) {
+      const assetId = options.filter[0] // In this situation the only filter item contains assetId as value
+      const asset = await this.detail(assetId, context) // Here we request details for single item
+      return {
+        pageSize: options.pageSize, // Note: We return same pageSize, although it doesn't matter in this situation
+        data: [asset],
+        links: {
+          nextPage: "" // Pagination is ignored in this situation
+        }
+      }
+    }
+    // If pageSize is bigger than 1, we do a normal query
+
+    // The rest part of method stays unchanged
+    ...
+  }
+```
+
+### One more Republishing and Testing
+
+After fixing the preview for `thumbnail`
+
+1. Republish your connector using the `connector-cli publish` command (as described in previous sections).
+2. Open GraFx Studio Designer Workspace.
+3. Create or use existing Image Variable and configure it to use our connector.
+4. Select any image other than first one - your selection should properly work this time.
+
+
 ## Conclusion
 
 Congratulations! You've successfully built your first Media Connector for GraFx Studio. This connector allows you to integrate images from picsum.photos into the GraFx Studio Designer Workspace.
@@ -436,7 +461,8 @@ In this tutorial, you've learned how to:
 2. Implement the `query` method to fetch and display images taking into account pagination options
 3. Create a `download` method to retrieve image data
 4. Add a `detail` method to control initial frame sizes
-5. Publish and test your connector in the GraFx Studio environment
+5. Implement a fake `filtering` functionality
+5. Publish and test your connector in the GraFx Studio
 
 ## Next Steps
 
