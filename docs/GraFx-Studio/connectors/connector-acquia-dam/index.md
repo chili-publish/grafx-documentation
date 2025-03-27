@@ -6,6 +6,10 @@
 
 [See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
+## Solution vendor website
+
+See [Acquia's website](https://www.acquia.com/products/acquia-dam).
+
 ## Installation
 
 [See installation through Connector Hub](/GraFx-Studio/guides/connector-hub/)

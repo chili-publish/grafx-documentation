@@ -6,6 +6,10 @@
 
 [See Connector Types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
+## Solution vendor website
+
+See [Sitecore's website](https://www.sitecore.com/products/content-hub).
+
 ## Installation
 
 As no "installation" happens, you could also talk about deployment of a connector on your environment.
