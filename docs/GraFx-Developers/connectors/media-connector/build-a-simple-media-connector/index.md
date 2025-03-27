@@ -61,7 +61,7 @@ getCapabilities(): Media.MediaConnectorCapabilities {
 
 !!! note "Requirements"
 
-    The built-in CHILI GUI currently requires at least `query` and `detail` to be set to `true` to make connector functional properly.
+    The GraFx Studio currently requires at least `query` and `detail` to be set to `true` to make connector functional properly.
 
 ### Implementing the Query Method
 
@@ -142,7 +142,7 @@ Now, let's update our `query` method to handle this data and return the expected
 
 ### Step 1: Logging In
 
-Before publishing your connector, you need to log in to GraFx. Run the following command and follow the on-screen instructions:
+Before publishing your connector, you need to log in to CHILI GraFx. Run the following command and follow the on-screen instructions:
 
 ```bash
 connector-cli login
@@ -163,10 +163,10 @@ connector-cli publish \
 #### Command Arguments
 
 - `-e <environment-name>`: The environment where you want to deploy your connector.
-- `-b <base-url>`: The base URL for GraFx API calls. Use one of the following formats:
+- `-b <base-url>`: The base URL for CHILI GraFx API. Use one of the following formats:
     - **Production** Environments: `https://{environment-name}.chili-publish.online/grafx`
     - **Sandbox** Environments: `https://{environment-name}.chili-publish-sandbox.online/grafx`
-- `-n <name>`: The name of your connector as it will appear in the Studio UI.
+- `-n <name>`: The name of your connector as it will appear in the GraFx Studio.
 - `--proxyOption.allowedDomains "picsum.photos"`: Specifies allowed domains for all requests that we're making from the connector.
 
 !!! note "Grab the Connector ID"
@@ -175,7 +175,7 @@ connector-cli publish \
 
 ### Step 3: Enabling the connector
 
-The connector published in the previous step is initially unavailable for use in Studio Designer Workspace. To activate it, access the connector's settings in the Platform for the desired environment and turn on the `Availability` switch next to the newly deployed connector.
+The connector published in the previous step is initially unavailable for use in GraFx Studio Designer Workspace. To activate it, access the connector's settings in the Platform for the desired environment and turn on the `Availability` switch next to the newly deployed connector.
 
 ### Step 4: Verifying
 

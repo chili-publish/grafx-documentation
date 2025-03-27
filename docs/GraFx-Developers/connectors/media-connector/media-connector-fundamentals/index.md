@@ -62,7 +62,7 @@ getCapabilities(): Media.MediaConnectorCapabilities {
 
 !!! note "Requirements"
 
-    The built-in CHILI GUI currently requires at least `query` and `detail` to be set to `true` to make connector functional properly.
+    The GraFx Studio currently requires at least `query` and `detail` to be set to `true` to make connector functional properly.
 
 ### getConfigurationOptions Method
 

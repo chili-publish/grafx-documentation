@@ -1,6 +1,6 @@
 # Add Configuration Options To Your Connector
 
-This guide focuses on adding configurable settings to your Connector within the Studio Designer Workspace, specifically for image variables. The primary goal is to empower designers to tailor your Connector's functionality for various end-user scenarios, enhancing the flexibility and relevance of the final product.
+This guide focuses on adding configurable settings to your Connector within the GraFx Studio Designer Workspace, specifically for image variables. The primary goal is to empower designers to tailor your Connector's functionality for various end-user scenarios, enhancing the flexibility and relevance of the final product.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ This guide focuses on adding configurable settings to your Connector within the 
 
 ## Understanding Connector Settings
 
-The `getConfigurationOptions` method is crucial for defining settings that appear in the GUI and are stored in the document JSON. It's important to note that this method, while named similarly, is distinct from `runtime.options` or `QueryOptions` passed to the `query` method.
+The `getConfigurationOptions` method is crucial for defining settings that appear in the GraFx Studio and are stored in the document JSON. It's important to note that this method, while named similarly, is distinct from `runtime.options` or `QueryOptions` passed to the `query` method.
 
 Settings values are passed via the `context` parameter in the `query`, `download`, and `detail` methods. This allows designers to customize Connector behavior at the individual image variable level.
 
@@ -80,7 +80,6 @@ Key changes in this method:
 1. We now use the `context.wide` setting to determine the image dimensions.
 2. For thumbnails, we use 400x200 for wide (rectangular) images and 200x200 for square images.
 3. For highres, we use 2000x1000 for wide (rectangular) images and 1000x1000 for square images.
-4. For mediumres, fullres and original, we keep the previous implementation.
 
 ### Step 3: Publish and Test
 
@@ -100,7 +99,7 @@ By completing this guide, you have:
 
 - Introduction of configurable settings for image variables in the Connector.
 - Introduction of an wide option allowing designers to choose between rectangular and square displays.
-- Enhancements to the download method to incorporate the new wide setting, affecting both all changed `previewTypes`.
+- Enhancements to the download method to incorporate the new wide setting, affecting some `previewTypes`.
 
 ## Next Steps
 

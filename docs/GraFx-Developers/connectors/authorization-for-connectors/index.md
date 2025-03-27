@@ -20,7 +20,7 @@ When a user first accesses a Connector and the code makes a `runtime.fetch` call
 
 While the Connector framework supports the most common authorization schemas, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the 5 provided types, you may need to develop a workaround solution.
 
-For example, services like GraFx Media and GraFx Platform don't meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
+For example, services like GraFx Media and CHILI GraFx Platform don't meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
 
 ## Define Supported Authorization Types
 Before implementing authorization, you must define the supported authorization types in your `package.json` file. This ensures consistency between your CLI commands and your package configuration.
@@ -107,7 +107,7 @@ Therefore, you can define different authorization types for each usage, allowing
 
 !!! note "Can not remove configured authorization"
 
-	  At this moment there is no way to erase authorization once set. If you run the `set-auth` command multiple times with the same authorization usage `-au` value but different `-at` authorization types, the last one overrites the previous one.
+	  At this moment there is no way to erase authorization once set. If you run the `set-auth` command multiple times with the same authorization usage `-au` value but different `-at` authorization types, the last one overwrites the previous one.
 
 ### Authorization Type (`-at`)
 
