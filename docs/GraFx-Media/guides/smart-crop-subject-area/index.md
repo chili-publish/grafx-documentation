@@ -20,7 +20,7 @@ A default **Subject Area** and **Point of Interest (POI)** are automatically det
 
 ## Manual Override
 
-If you want the image to focus on a different the Point of Interest (POI).
+If you want the image to focus on a different Point of Interest (POI).
 
 ![screenshot-full](sc7.png)
 
