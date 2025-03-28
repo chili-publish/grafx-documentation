@@ -53,29 +53,31 @@ getCapabilities(): Media.MediaConnectorCapabilities {
   return {
     query: true,
     detail: true,
-    filtering: true,
+    filtering: false,
     metadata: false,
   };
 }
 ```
 
-Note: We set both `query` and `filtering` to `true`. Ideally, we only want to support `query`, but currently, it's not possible to have `query` without `filtering` for the default Studio GUIs. This limitation may be addressed in future updates.
+!!! note "Requirements"
+
+    The GraFx Studio currently requires at least `query` and `detail` to be set to `true` to make connector functional properly.
 
 ### Implementing the Query Method
 
 Next, we'll modify the `query` method to perform the following tasks:
 
-1. Fetch a list of photos from picsum.photos
+1. Fetch a list of photos from picsum.photos according to provided `pageSize` and `pageToken`
 2. Transform the data to match the required `Media` type
 3. Return the `Media` data within the expected `MediaPage` type
 
 We'll use the following endpoint to retrieve our photos:
 
 ```
-https://picsum.photos/v2/list?page=1
+https://picsum.photos/v2/list?page=${pageNumber}&limit=${pageSize}
 ```
 
-This endpoint returns 30 images per page in an array of objects with the following structure:
+This endpoint returns `pageSize` images for `pageNumber` in an array of objects with the following structure:
 
 ```typescript
 {
@@ -91,53 +93,56 @@ This endpoint returns 30 images per page in an array of objects with the followi
 Now, let's update our `query` method to handle this data and return the expected `MediaPage` type:
 
 ```typescript
-async query(
-  options: Connector.QueryOptions,
-  context: Connector.Dictionary
-): Promise<Media.MediaPage> {
-  const resp = await this.runtime.fetch("https://picsum.photos/v2/list?page=1", {
-    method: "GET"
-  });
+  async query(
+    options: Connector.QueryOptions,
+    context: Connector.Dictionary
+  ): Promise<Media.MediaPage> {
+    // We set pageNumber according to pageToken param if it's valid or use default value
+    const pageNumber = Number(options.pageToken) || 1;
+    const resp = await this.runtime.fetch(
+      `https://picsum.photos/v2/list?page=${pageNumber}&limit=${options.pageSize}`,
+      {
+        method: 'GET',
+      }
+    );
 
-  if (resp.ok) {
+    // Handle error case
+    if (!resp.ok) {
+      // Note: Consider to always use "ConnectorHttpError" to handle error case for HTTP response
+      throw new ConnectorHttpError(
+        resp.status,
+        `[PicsumPhoto conector]: Failed to fetch images from picsum.photos: ${resp.status}-${resp.statusText}`
+      );
+    }
+
     const data = JSON.parse(resp.text);
 
     // Transform the data to match the Media type
-    const dataFormatted = data.map(d => ({
+    const dataFormatted = data.map((d) => ({
       id: d.id,
       name: d.id,
-      relativePath: "/",
-      type: 0,
-      metaData: {}
-    })) as Array<any>;
+      relativePath: '/', // Note: since picsum doens't have folder structure, we specify relativePath always as root directory
+      extension: 'png', // Note: Although not required by Media type, it's good practice to define it when the possibility arises in DAM
+      type: 0, // Note: define "0" if returned item is asset and "1" if it's a folder
+      metaData: {},
+    }));
 
     return {
-      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
+      pageSize: options.pageSize, // Note: We return same pageSize to keep consistency between different page's request
       data: dataFormatted,
       links: {
-        nextPage: "" // Pagination is ignored in this example
-      }
-    }
+        nextPage:
+          dataFormatted.length === options.pageSize ? `${pageNumber + 1}` : '', // Calculates next page based on recieved assets size
+      },
+    };
   }
-
-  // Handle error case
-  throw new Error("Failed to fetch images from picsum.photos");
-}
 ```
-
-### Notes on Query Options
-
-- The `options` parameter provides query options set by the UI. Currently, only the `pageToken` property is utilized and it is only for pagination.
-- The returned `nextPage` in the `MediaPage.links` is meant to be passed back as `pageToken` during pagination, but it only works in a very specific use-case.
-- The `pageSize` property within `options` is intended to specify the number of elements the UI can display. However, it is currently hardcoded and not functional.
-- The returned `pageSize` in the `MediaPage` object also has no effect at present.
-
 
 ## Publishing the Connector
 
 ### Step 1: Logging In
 
-Before publishing your connector, you need to log in to your environment. Run the following command and follow the on-screen instructions:
+Before publishing your connector, you need to log in to CHILI GraFx. Run the following command and follow the on-screen instructions:
 
 ```bash
 connector-cli login
@@ -148,47 +153,46 @@ connector-cli login
 After successfully logging in, you can publish your connector using the following command:
 
 ```bash
-connector-cli publish -e <environment-name> \
+connector-cli publish \
+        -e <environment-name> \
         -b <base-url> \
         -n <name> \
-        --proxyOption.allowedDomains "*.xyz"
+        --proxyOption.allowedDomains "picsum.photos"
 ```
 
 #### Command Arguments
 
-- `-e <environment-name>`: The name of the environment you logged into in the previous step.
-- `-b <base-url>`: The base URL for GraFx API calls. Use one of the following formats:
-  - Production Environments: `https://{environment}.chili-publish.online/grafx`
-  - Sandbox Environments: `https://{environment}.chili-publish-sandbox.online/grafx`
-- `-n <name>`: The name of your connector as it will appear in the Studio UI.
-- `--proxyOption.allowedDomains "*.xyz"`: Specifies allowed domains for OAuth, but is required even though not used.
+- `-e <environment-name>`: The environment where you want to deploy your connector.
+- `-b <base-url>`: The base URL for CHILI GraFx API. Use one of the following formats:
+    - **Production** Environments: `https://{environment-name}.chili-publish.online/grafx`
+    - **Sandbox** Environments: `https://{environment-name}.chili-publish-sandbox.online/grafx`
+- `-n <name>`: The name of your connector as it will appear in the GraFx Studio.
+- `--proxyOption.allowedDomains "picsum.photos"`: Specifies allowed domains for all requests that we're making from the connector.
 
 !!! note "Grab the Connector ID"
 
     Make sure to copy and save the resulting Connector ID after publishing. Currently, there is no way to retrieve this ID later without using the Environment API.
 
-### Step 3: Verifying the Publication
+### Step 3: Enabling the connector
 
-To verify that your connector has been published successfully:
+The connector published in the previous step is initially unavailable for use in GraFx Studio Designer Workspace. To activate it, access the connector's settings in the Platform for the desired environment and turn on the `Availability` switch next to the newly deployed connector.
+
+### Step 4: Verifying
+
+To verify that your connector has been available successfully:
 
 1. Open GraFx Studio Designer Workspace.
 2. Create or open an existing template.
-3. Navigate to the media panel.
+3. Navigate to the Media Panel.
 
-At this point, you should see missing image placeholders for images numbered 0 through 29. This is expected behavior, as we haven't implemented the `download` method yet.
+At this point, you should see missing image placeholders for images numbered 0 through 14. This is expected behavior, as we haven't implemented the `download` method yet.
+
+!!! note "Pagination"
+    To test pagination, scroll down until the end of media panel to initiate next page load
 
 ## Implementing the Download Method
 
 The images don't load initially because we haven't implemented the `download` method. This method is called by the engine or UI whenever an image needs to be displayed.
-
-### Understanding the Download Method
-
-The `download` method handles two main scenarios:
-
-1. Fetching thumbnails for the image selector UI
-2. Fetching full-size images for other use cases (editor and output)
-
-### Implementing the Download Method
 
 Here's the implementation of the `download` method:
 
@@ -204,8 +208,16 @@ async download(
       const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/200`, { method: "GET" });
       return picture.arrayBuffer;
     }
-    default: {
+    case "mediumres": {
+      const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/400`, { method: "GET" });
+      return picture.arrayBuffer;
+    }
+    case "highres": {
       const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}/1000`, { method: "GET" });
+      return picture.arrayBuffer;
+    }
+    default: {
+      const picture = await this.runtime.fetch(`https://picsum.photos/id/${id}`, { method: "GET" });
       return picture.arrayBuffer;
     }
   }
@@ -214,9 +226,13 @@ async download(
 
 This method:
 
-1. Checks the `previewType` to determine whether a thumbnail or full-size image is required
+1. Checks the `previewType` to determine a requested preview type
 2. Fetches the appropriate image from picsum.photos
 3. Returns the image data as an `ArrayBufferPointer`
+
+!!! note "Download method"
+
+    For more details see [link](/GraFx-Developers/connectors/media-connector/media-connector-fundamentals/#download-method)
 
 ## Publishing and Testing the Updated Connector
 
@@ -227,10 +243,11 @@ After implementing the `download` method, you need to republish your connector w
 Use the following command to republish your connector, including the `--connectorId` argument:
 
 ```bash
-connector-cli publish -e <environment-name> \
+connector-cli publish \
+        -e <environment-name> \
         -b <base-url> \
         -n <name> \
-        --proxyOption.allowedDomains "*.xyz" \
+        --proxyOption.allowedDomains "picsum.photos" \
         --connectorId <connector-id>
 ```
 
@@ -239,7 +256,7 @@ Replace `<connector-id>` with the ID you received when first publishing the conn
 If you've forgotten your connector ID, you can retrieve it using the following API endpoint:
 
 ```
-GET https://{environment}.chili-publish.online/grafx/api/experimental/environment/{environment}/connectors
+GET https://{environment}.chili-publish.online/grafx/api/v1/environment/{environment}/connectors
 ```
 
 Replace `{environment}` with your environment name.
@@ -248,96 +265,34 @@ Replace `{environment}` with your environment name.
 
 To test your updated connector:
 
+<!-- #### Media panel use case -->
+
 1. Open GraFx Studio Designer Workspace
 2. Navigate to the Media panel
 3. Verify that images now appear properly in the Media panel
-4. Then add an image frame to your design
-5. Double-click an image in the Media panel to fill the frame
+4. Double-click an image in the Media panel to create image frame with selected image
 
-## Some Issues
-### Issue: Only First Image
+<!-- #### Image variable use case
 
-You may notice that no matter which image you select in the Media panel, the image displayed in the template is instead the first image. This is due to how `download` behaves when `filtering` is `true`.
+1. Open GraFx Studio Designer Workspace
+2. Create new Image Variable targeting our connector
+3. Select asset for this Variable -->
 
-When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`.
+## Issue: Double-clicking with Nothing Selected
 
-### Issue: Double-clicking with Nothing Selected
-
-You may notice that double-clicking an image in the Media panel when nothing is selected doesn't have any effect. This is due to a missing capability in our connector.
+You may notice that double-clicking an image in the Media panel when nothing is selected doesn't have any effect.
 
 If you open the developer console, you'll see an error message:
 
 ```
-Connector <connector-id> doesn't have capability: detail
+Error: QuickJS cannot evaluate your script: Error: Method not implemented.
 ```
 
 This error occurs because we haven't implemented the `detail` method in our connector, which is required for this specific functionality.
 
-## Fixing `query`
-
-When `query` is called before `download`, the `options.pageSize` will be the value `1` and `options.collection` will be `null`.
-
-```typescript
-async query(
-  options: Connector.QueryOptions,
-  context: Connector.Dictionary
-): Promise<Media.MediaPage> {
-
-  // When pageSize is 1 & collection is null, we know that query is called before download
-  if (options.pageSize == 1 && !options.collection) {
-    return {
-      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
-
-      data: [{
-
-        id: options.filter[0],
-        name: "",
-        relativePath: "",
-        type: 0,
-        metaData: {}
-      }],
-
-      links: {
-        nextPage: "" // Pagination is ignored in this example
-      }
-    }
-  }
-
-  // If pageSize is bigger than 1, we do a normal query
-
-  const resp = await this.runtime.fetch("https://picsum.photos/v2/list?page=1&limit=4", {
-    method: "GET"
-  });
-
-  if (resp.ok) {
-    const data = JSON.parse(resp.text);
-
-    // Transform the data to match the Media type
-    const dataFormatted = data.map(d => ({
-      id: d.id,
-      name: d.id,
-      relativePath: "/",
-      type: 0,
-      metaData: {}
-    })) as Array<any>;
-
-    return {
-      pageSize: options.pageSize, // Note: pageSize is not currently used by the UI
-      data: dataFormatted,
-      links: {
-        nextPage: "" // Pagination is ignored in this example
-      }
-    }
-  }
-
-  // Handle error case
-  throw new Error("Failed to fetch images from picsum.photos");
-}
-```
-
 ## Implementing the Detail Method
 
-The `detail` method is used to define the initial width and height of the image frame when selected from the Media panel. Although this method accepts several parameters, only the width and height are relevant for this purpose. However, it's important to note that the type signature tells you the width and height is not mandatory, but the behavior of the method requires them present.
+The `detail` method is used when we need to fetch single asset details. It's important to note that the type signature tells you the `width` and `height` is not mandatory, but it always recommended to provide the actual sizes if possible
 
 ### Basic Implementation
 
@@ -352,43 +307,147 @@ async detail(
     name: id,
     id: id,
     metaData: {},
-    relativePath: "/",
+    relativePath: '/',
+    extension: 'png',
     type: 0
-  }
+  };
 }
 ```
 
-With this implementation, when you double-click an image in the Media panel, it will be added to the design in a 100x100 pixel frame (the default size when width and height are not specified).
+With this implementation, when you double-click an image in the Media panel, it will be added to the design in `default-sized` image frame (the default size when width and height are not specified).
 
-### Customizing Frame Size
+### Return actual image Size
 
-To customize the initial frame size, you can include `width` and `height` properties in the returned object. For example, to set a 200x200 pixel frame:
+To create frame size taking into account the actual image size, you can include `width` and `height` properties in the returned object.
 
 ```typescript
 async detail(
   id: string,
   context: Connector.Dictionary
 ): Promise<Media.MediaDetail> {
-  return {
-    name: id,
-    id: id,
-    metaData: {},
-    relativePath: "/",
-    type: 0,
-    width: 200,
-    height: 200
+  const resp = await this.runtime.fetch(`https://picsum.photos/id/${id}/info`, { method: "GET" });
+  // Handle error case
+  if(!resp.ok) {
+    // Note: Consider to always use "ConnectorHttpError" to handle error case for HTTP response
+    throw new ConnectorHttpError(resp.status, `[PicsumPhoto conector]: Failed to fetch images from picsum.photos: ${resp.status}-${resp.statusText}`);
   }
+  const assetDetail = JSON.parse(resp.text);
+  return {
+    name: assetDetail.id,
+    id: assetDetail.id,
+    metaData: {},
+    relativePath: '/',
+    extension: 'png',
+    type: 0,
+    width: assetDetail.width,
+    height: assetDetail.height
+  };
 }
 ```
 
-### Publishing and Testing
+## Publishing and Testing
 
-After implementing the `detail` method:
+After implementing the `detail` method and fixing `query`
 
 1. Republish your connector using the `connector-cli publish` command (as described in previous sections).
 2. Open GraFx Studio Designer Workspace.
 3. Test the functionality by double-clicking an image in the Media panel.
 4. Verify that the image is added to the design with the correct initial frame size.
+
+## Notes about "filtering"
+
+Now let's make our connector more accessible and introduce another capability - filtering
+
+### Updating Capabilities
+
+First, we need to modify the `getCapabilities()` method and enable `filtering`:
+
+```typescript
+getCapabilities(): Media.MediaConnectorCapabilities {
+  return {
+    query: true,
+    detail: true,
+    filtering: true,
+    metadata: false,
+  };
+}
+```
+
+### Modify query method
+
+Next step is start consuming filter value during querying of the assets
+
+!!! note "Fake implementation"
+    Since Picsum itself doesn't support any filtering, we provide implementation that just logs the filter value in order to demonstrate
+    the difference
+
+```typescript
+  async query(
+    options: Connector.QueryOptions,
+    context: Connector.Dictionary
+  ): Promise<Media.MediaPage> {
+    // Note: we just log the filter value in case if our query suppose to do filtering logic
+    if (options.filter !== null) {
+      this.runtime.logError(`Filter options are: ${options.filter}`)
+    }
+
+    // The rest part of method stays unchanged
+    ...
+  }
+```
+
+### Republishing and Testing
+
+After adding `filtering` capabilities and modifying `query` method
+
+1. Republish your connector using the `connector-cli publish` command (as described in previous sections).
+2. Open GraFx Studio Designer Workspace.
+3. Open the Media panel. This time you should see the search box above.
+4. Enter any value and check logs in the browser `Dev Tools` panel - you should see them according to changes in `query` method.
+
+## Issue: Only first image selection works in Image Variable Selector
+
+You may notice that no matter which image you select in the Image Variable Selector, the displayed `thumbnail` is works only for the first image. This is due to how `download` for `thubmnail` behaves when `filtering` is `true`.
+
+When `filtering` is `false`, `download` is called directly with the selected asset ID. However, when it is set to `true`, `query` is called first and then the first item from the call will be pushed into `download`.
+
+### Fixing `thumbnail` preview
+
+When `query` is called before `download`, the `options.pageSize` will be the value `1` and `options.collection` will be `null`.
+
+```typescript
+  async query(
+    options: Connector.QueryOptions,
+    context: Connector.Dictionary
+  ): Promise<Media.MediaPage> {
+      // When pageSize is 1 & collection is null, we know that query is called before download for `thubmnail` preview
+    if (options.pageSize == 1 && !options.collection) {
+      const assetId = options.filter[0] // In this situation the only filter item contains assetId as value
+      const asset = await this.detail(assetId, context) // Here we request details for single item
+      return {
+        pageSize: options.pageSize, // Note: We return same pageSize, although it doesn't matter in this situation
+        data: [asset],
+        links: {
+          nextPage: "" // Pagination is ignored in this situation
+        }
+      }
+    }
+    // If pageSize is bigger than 1, we do a normal query
+
+    // The rest part of method stays unchanged
+    ...
+  }
+```
+
+### One more Republishing and Testing
+
+After fixing the preview for `thumbnail`
+
+1. Republish your connector using the `connector-cli publish` command (as described in previous sections).
+2. Open GraFx Studio Designer Workspace.
+3. Create or use existing Image Variable and configure it to use our connector.
+4. Select any image other than first one - your selection should properly work this time.
+
 
 ## Conclusion
 
@@ -399,10 +458,11 @@ Congratulations! You've successfully built your first Media Connector for GraFx 
 In this tutorial, you've learned how to:
 
 1. Set up a new connector project
-2. Implement the `query` method to fetch and display images
+2. Implement the `query` method to fetch and display images taking into account pagination options
 3. Create a `download` method to retrieve image data
 4. Add a `detail` method to control initial frame sizes
-5. Publish and test your connector in the GraFx Studio environment
+5. Implement a fake `filtering` functionality
+5. Publish and test your connector in the GraFx Studio
 
 ## Next Steps
 
