@@ -54,15 +54,14 @@ getCapabilities(): Media.MediaConnectorCapabilities {
   return {
     query: true,
     detail: true,
-    filtering: true,
+    filtering: false,
     metadata: false,
   };
 }
 ```
 
 !!! note "Requirements"
-
-    The built-in CHILI GUI currently requires `query` and `filtering` to be set to `true` even if filtering is not implemented. This will be fixed in future versions.
+    To take advantage of a maximum of GraFx Studio features, it's advised to at least implement 'detail' and 'query'
 
 ### getConfigurationOptions Method
 
@@ -84,8 +83,8 @@ When you define configuration options in this method, you're essentially telling
 
 The `query` method is called by the SDK and the engine in two scenarios:
 
-- When selecting an image for an image variable or using the media panel.
-- Before `download` is called when `filtering` is set to `false` in `getCapabilities`.
+- When browsing assets for an image variable or using the media panel.
+- Before `download` for `thumbnail` previewType if `filtering` is set to `true` in `getCapabilities`.
 
 !!! warning "query can be called in different scenarios"
 
@@ -112,7 +111,15 @@ export interface MediaPage {
 }
 ```
 
-Currently, only the `data` property is crucial for displaying image options in the built-in GUIs. 'pageSize' has no effect.
+Currently, only the `data` and `links.nextPage` properties are crucial for displaying image options in the built-in GUIs. The `pageSize` has no effect at present.
+
+#### Notes on "query"
+
+- The `options` parameter provides query options set by the UI.
+    - `pageToken` and `pageSize` properties are for pagination.
+    - `filter` property is to filter out your results based on some condition.
+    - `collection` property is when you have a folder structure in your DAM and want to request particular assets from selected folder. Specifies as path string, i.e. `/folder-1/sub-folder-2/sub-sub-folder-3`. `Root` is defined as `/`.
+- The returned `nextPage` in the `MediaPage.links` is meant to be passed back as `pageToken` during pagination
 
 ### download Method
 
@@ -136,10 +143,10 @@ The `download` method is invoked in various scenarios to retrieve image data. It
 #### Preview Types
 The `previewType` parameter can have these values:
 
-- thumbnail: Used when requesting the image preview in the Variable panel.
-- mediumres: Used when requesting images in the media panel and the variable "Select image" modal.
-- highres: Used when loading images into frames in the editor in the browser.
-- fullres: Used during output for requesting the images to be loaded in frames.
+- **thumbnail**: Used when requesting the image preview in the Variable panel.
+- **mediumres**: Used when requesting images in the media panel and the variable "Select image" modal.
+- **highres**: Used when loading images into frames in the editor in the browser.
+- **fullres**: Used during output for requesting the images to be loaded in frames.
 
 !!! note "Remember Custom UIs"
 
@@ -148,23 +155,26 @@ The `previewType` parameter can have these values:
 #### Download Intents
 The `intent` parameter specifies the platform the `download` was called:
 
-- web: For in-browser display and image output.
-- print: For PDF output.
-- animation: For GIF and MP4 output.
+- **web**: For in-browser display and image output.
+- **print**: For PDF output.
+- **animation**: For GIF and MP4 output.
 
 #### Supported Formats
 
 DownloadType / DownloadIntent | *web* (= browser based editing session) | *print* (= PDF output, High res image output) | *animation* (= Gif, mp4 output, compression will be applied)
 -- | -- | -- | --
-*thumbnail* | ✓ (e.g., Displaying small preview images on a webpage) |   |  
-*mediumres* | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |  
+*thumbnail* | ✓ (e.g., Displaying small preview images on a webpage) |   |
+*mediumres* | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |
 *highres* | ✓ (e.g., Downloading a high-quality image for use on a high-resolution display) | ✓ (e.g., Printing a high-quality, large-scale image) | ✓ (e.g., Using as a frame in a high-quality animation)
-*fullres* (PDF / PNG / JPEG) For image types other then PNG / JPEG one should serve the asset wrapped as a PDF file |   | ✓ (e.g., Printing the original PDF or image file in its highest quality) |  
+*fullres* (PDF / PNG / JPEG) For image types other then PNG / JPEG one should serve the asset wrapped as a PDF file |   | ✓ (e.g., Printing the original PDF or image file in its highest quality) |
 *original* | ✓ | ✓ | ✓
 
 ### detail Method
 
-The `detail` method is called when a user double-clicks an image in the media panel to set the image frame size:
+The `detail` method is called in two scenarios:
+
+- When a user double-clicks an image in the media panel to create the image frame and set assets to it or set assets to the selected image frame.
+- Before `download` for `thumbnail` previewType if `filtering` is set to `false` in `getCapabilities`.
 
 ```typescript
 async detail(
@@ -175,9 +185,9 @@ async detail(
 }
 ```
 
-Although not strictly required by the type signature, the Template Designer Workspace expects width and height information and will fail if not passed. It's acceptable to return default values as this only sets the initial frame size.
+Although not strictly required by the type signature, the Template Designer Workspace expects width and height information to set the initial image frame size. If omitted, built-in GUI’s defaults are used instead.
 
 ## Next Steps
 
 1. Follow the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial to learn how to build a simple Connectors.
-2. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector. 
+2. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector.
