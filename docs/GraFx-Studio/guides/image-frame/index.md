@@ -28,6 +28,8 @@ The initial fit of the asset in the frame is to fill the frame. (see Fill proper
 
 Similar to setting Subject Area and POI in GraFx Media, you can do this in GraFx Studio Workspace.
 
+This also allows the Template Designer to overrule the POI and Subject area sent by an external Asset Provider (user Media Connectors).
+
 ![screenshot](sc01.png)
 
 Click on the diagonal arrows to see the details of the asset.
