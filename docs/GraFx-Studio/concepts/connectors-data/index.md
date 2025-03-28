@@ -48,13 +48,13 @@ A template default value or an action may influence this behavior. Similarly, if
 
 See also [Error Report in Output Tasks](/GraFx-Studio/concepts/output-tasks/#accessing-the-output-task-list).
 
-#### Output
+#### In Output
 
 - All variables of a record are applied.
 - If one or more errors occur, the entire record fails.
 - The error report details all errors for each processed record.
 
-### In Studio UI
+#### In Studio UI
 
 - All variables of a record are applied.
 - For **Text**, **List**, **Image**, and **Date Variables**:
