@@ -61,8 +61,7 @@ getCapabilities(): Media.MediaConnectorCapabilities {
 ```
 
 !!! note "Requirements"
-
-    The GraFx Studio currently requires at least `query` and `detail` to be set to `true` to make connector functional properly.
+    To take advantage of a maximum of GraFx Studio features, it's advised to at least implement 'detail' and 'query'
 
 ### getConfigurationOptions Method
 
