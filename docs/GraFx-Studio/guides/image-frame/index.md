@@ -60,7 +60,7 @@ Similar properties as with all frames. See [Basic properties](/GraFx-Studio/conc
 
 #### Fit
 
-Choose the Fit property, to fit the full imge inside the frame. Whitespace is created if needed, to fit the full image.
+Choose the Fit property, to fit the full image inside the frame. Whitespace is created if needed, to fit the full image.
 
 ![screenshot](image-7.png)
 
