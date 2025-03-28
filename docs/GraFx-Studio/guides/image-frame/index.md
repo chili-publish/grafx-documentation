@@ -45,6 +45,9 @@ See also [Concept of Smart Crop](/concepts/genie-smart-crop/) and [Set Subject A
 !!! warning "Watch out!"
     If you set the Subject Area here, it will impact all templates where this asset is used, as the Subject Area and POI are stored alongside the media.
 
+!!! warning "Known issue"
+    If you made changes, reselect the Smart Crop Fit, to see the effect.
+
 ## Properties
 
 Similar properties as with all frames. See [Basic properties](/GraFx-Studio/concepts/frames/#basic-properties).
