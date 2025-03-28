@@ -22,9 +22,31 @@ With the frame selected, open the **resource panel** > **media panel**, and sele
 
 ![screenshot](image-4.png)
 
-![screenshot](image-5.png)
-
 The initial fit of the asset in the frame is to fill the frame. (see Fill properties below)
+
+## Smart Crop
+
+Similar to setting Subject Area and POI in GraFx Media, you can do this in GraFx Studio Workspace.
+
+![screenshot](sc01.png)
+
+Click on the diagonal arrows to see the details of the asset.
+
+The information about the asset is displayed, and the option to define the subject area and POI.
+
+![screenshot-full](sc02.png)
+
+Click the "Subject Area" button, and you'll be able to set the Subject Area and POI.
+
+![screenshot-full](sc03.png)
+
+See also [Concept of Smart Crop](/concepts/genie-smart-crop/) and [Set Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
+
+!!! warning "Watch out!"
+    If you set the Subject Area here, it will impact all templates where this asset is used, as the Subject Area and POI are stored alongside the media.
+
+!!! warning "Known issue"
+    If you made changes, reselect the Smart Crop Fit, to see the effect.
 
 ## Properties
 
