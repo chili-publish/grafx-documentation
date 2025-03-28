@@ -12,7 +12,7 @@ See [Canto's website](https://www.canto.com/product/)
 
 ## Installation
 
-As no "installation" happens, you could also talk about deployment of a connector on your environment.
+The installation is done by enabling the Canto connector on the environment.
 
 [See Installation Through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
