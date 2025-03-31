@@ -9,49 +9,45 @@
 
 <div class="grid cards" markdown>
 
-
-
--   :material-clock-fast: __Release notes__
+-   :material-clock-fast: **Release Notes**
 
     ---
 
-    **March 28 2025**: GraFx Studio - ==Connector for Canto DAM==
-    
-    Spicy Labs added a Media connector to be able to use DAM assets from the Canto DAM solution.
-    
-    If you use Canto DAM, you can now use the DAM assets in your smart templates.
+    **March 28, 2025**: GraFx Studio – ==Connector for Canto DAM==
+
+    Spicy Labs added a media connector to allow the use of DAM assets from the Canto DAM solution.  
+    If you use Canto DAM, you can now integrate its assets into your smart templates.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam/)
 
     ---
 
-    **March 28 2025**: GraFx Studio - ==Smart Crop update==
-    
-    You can now manually edit the Subject Area and Point Of Interest of any asset, including those from external DAM systems via media connectors.
-    
-    This allows for precise adjustments to AI-generated data, ensuring Smart Crop focuses on the correct subject.    
+    **March 28, 2025**: GraFx Studio – ==Smart Crop Update==
+
+    You can now manually edit the Subject Area and Point of Interest of any asset, including those from external DAM systems via media connectors.  
+    This allows for precise adjustments to AI-generated data, ensuring Smart Crop focuses on the correct subject.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio--smart-crop-update/)
 
     ---
 
-    **March 27 2025**: GraFx Studio & CHILI GraFx - ==Several updates==
-    
-    Smart Crop preview, GraFx Media Asset download, Batch Error Reporting, Data source improvements, ...
+    **March 27, 2025**: GraFx Studio & CHILI GraFx – ==Several Updates==
 
+    Updates include Smart Crop preview, GraFx Media asset download, batch error reporting, data source improvements, and more.
+    
     [:octicons-arrow-right-24: Show details](/release-notes/2025/03/27/chili-grafx-and-grafx-studio-updates/)
 
     ---
 
-    **February 28 2025**: GraFx Studio - ==Data Connectors & Versioning==
-    
-    We’re launching data connectors, making it easier than ever to connect GraFx Studio to external data sources. Plus, you can now lock GraFx Studio to a specific version in an environment.
+    **February 28, 2025**: GraFx Studio – ==Data Connectors & Versioning==
+
+    We’re launching data connectors to simplify connecting GraFx Studio to external data sources. Additionally, you can now lock GraFx Studio to a specific version in your environment.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/02/28/grafx-studio--data-connectors--versioning/)
 
     ---
 
-    **See all release notes**
+    **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
     
