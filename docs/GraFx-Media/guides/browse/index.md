@@ -29,7 +29,7 @@ Click on the asset or "view details" under the three dots menu "...", to show th
 
 ![appscreen](view-details.png)
 
-![appscreen](asset-details.png)
+![appscreen](download.png)
 
 Available details:
 
@@ -37,8 +37,9 @@ Available details:
 - Filename
 - File type
 - Dimensions
+- [Smart Crop](../smart-crop-subject-area/)
 - Object ID
 
 The Object ID is the unique reference of the asset in the environment. This is the reference to refer to the asset, when an Integration refers to the asset.
 
-
+You can download the original through the down-arrow in the top right of the asset window.

@@ -12,16 +12,26 @@ In **GraFx Media**, select an uploaded asset to view its details.
 
 Click **Set Subject Area** to define or adjust the focal area of your image.
 
-![screenshot-full](sc2.png)
+![screenshot](sc4.png)
+
+![screenshot-full](sc5.png)
 
 A default **Subject Area** and **Point of Interest (POI)** are automatically detected upon upload. If these match your needs, no further action is required.
 
-![screenshot-full](sc2.png)
-
 ## Manual Override
 
-If you want the image to focus on a different subject, you can manually adjust the Subject Area and the Point of Interest (POI) directly on the asset.
+If you want the image to focus on a different Point of Interest (POI).
 
-![screenshot-full](sc3.png)
+![screenshot-full](sc7.png)
 
-Changes are applied immediately, no saving is required.
+![screenshot-full](sc6.png)
+
+If you want the image to focus on a different subject, you can manually adjust the Subject Area.
+
+![screenshot-full](sc8.png)
+
+In both cases, the preview images will show the effect of your choice in the 3 different aspect ratios.
+
+![screenshot](sc9.png)
+
+Hit "Apply" to save the new Subject Area and POI.
