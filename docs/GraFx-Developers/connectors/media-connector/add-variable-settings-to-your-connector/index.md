@@ -104,4 +104,4 @@ By completing this guide, you have:
 ## Next Steps
 
 1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on Connector functionality and best practices.
-2. Follow the [Add Environment Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector) tutorial to learn how to add environment options in your Connectors.
+2. Follow the [Add Environment Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/) tutorial to learn how to add environment options in your Connectors.

@@ -1,6 +1,6 @@
 # Media Connector Introduction
 
-GraFx Studio, by default, utilizes [GraFx Media](/GraFx-Media) to provide access to image assets. Media Connectors are a specialized type of Connector that enable GraFx Studio to access and utilize assets from external, non-GraFx sources.
+GraFx Studio, by default, utilizes [GraFx Media](/GraFx-Media/) to provide access to image assets. Media Connectors are a specialized type of Connector that enable GraFx Studio to access and utilize assets from external, non-GraFx sources.
 
 Media Connectors are particularly valuable for integrating with Digital Asset Management (DAM) systems, allowing users to seamlessly access their photos within GraFx Studio. This integration streamlines workflow and enhances productivity by providing a unified interface for asset management and design creation.
 
