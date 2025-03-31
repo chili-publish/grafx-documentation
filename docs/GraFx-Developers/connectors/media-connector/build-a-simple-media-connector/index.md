@@ -467,4 +467,4 @@ In this tutorial, you've learned how to:
 ## Next Steps
 
 1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on connector functionality and best practices.
-2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector) tutorial to learn how to add variable settings in your Connectors.
+2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/) tutorial to learn how to add variable settings in your Connectors.
