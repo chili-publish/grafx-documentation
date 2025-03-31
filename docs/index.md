@@ -9,44 +9,45 @@
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast: __Release notes__
+-   :material-clock-fast: **Release Notes**
 
     ---
 
-    **February 28 2025**: GraFx Studio - ==Data Connectors & Versioning==
+    **March 28, 2025**: GraFx Studio – ==Connector for Canto DAM==
+
+    Spicy Labs added a media connector to allow the use of DAM assets from the Canto DAM solution.  
+    If you use Canto DAM, you can now integrate its assets into your smart templates.
     
-    We’re launching data connectors, making it easier than ever to connect GraFx Studio to external data sources. Plus, you can now lock GraFx Studio to a specific version in an environment.
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam/)
+
+    ---
+
+    **March 28, 2025**: GraFx Studio – ==Smart Crop Update==
+
+    You can now manually edit the Subject Area and Point of Interest of any asset, including those from external DAM systems via media connectors.  
+    This allows for precise adjustments to AI-generated data, ensuring Smart Crop focuses on the correct subject.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio--smart-crop-update/)
+
+    ---
+
+    **March 27, 2025**: GraFx Studio & CHILI GraFx – ==Several Updates==
+
+    Updates include Smart Crop preview, GraFx Media asset download, batch error reporting, data source improvements, and more.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/27/chili-grafx-and-grafx-studio-updates/)
+
+    ---
+
+    **February 28, 2025**: GraFx Studio – ==Data Connectors & Versioning==
+
+    We’re launching data connectors to simplify connecting GraFx Studio to external data sources. Additionally, you can now lock GraFx Studio to a specific version in your environment.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/02/28/grafx-studio--data-connectors--versioning/)
 
     ---
 
-    **February 2 2025**: GraFx Studio - ==GraFx Genie-powered Smart Crop==
-    
-    Powered by our AI assistant GraFx Genie, CHILI GraFx now instantly identifies the subject and the Point of Interest (POI) within the image then automatically crops it to fit the frame – whether for social media, digital ads, or print.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/04/grafxstudio---grafx-genie-powered-smart-crop/)
-
-    ---
-
-    **December 18 2024**: GraFx Studio - ==Another milestone achieved!==
-    
-    GraFx Studio now supports multi-page documents. The new auto-grow feature lets frames expand automatically.  
-    A major improvement in CHILI GraFx Smart Templates.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
-
-    ---
-
-    **November 22 2024**: GraFx Studio - ==New milestone achieved!==
-    
-    Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
-
-    ---
-
-    **See all release notes**
+    **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
     
