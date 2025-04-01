@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "Checking markdown links for missing trailing slash..."
 
-          RESULTS=$(grep -Prn '\[[^]]+\]\((?!https?:\/\/)(?!.*#)([^)]+[^\/])\)' ./*.md || true)
+          RESULTS=$(grep -Prn '\[[^]]+\]\((?!https?:\/\/)(?!.*#)([^)]+[^\/])\)' docs/**/*.md || true)
 
           if [ -z "$RESULTS" ]; then
             echo "✅ No missing trailing slashes found."
