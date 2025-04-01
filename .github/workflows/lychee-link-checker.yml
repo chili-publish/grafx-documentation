@@ -26,5 +26,18 @@ jobs:
           # Fail job if one or more links are failing
           fail: true
 
-           
+      - name: Check markdown links for missing trailing slash
+        run: |
+          echo "Checking markdown links for missing trailing slash..."
+
+          RESULTS=$(grep -Prn '\[[^]]+\]\((?!https?:\/\/)(?!.*#)([^)]+[^\/])\)' ./*.md || true)
+
+          if [ -z "$RESULTS" ]; then
+            echo "✅ No missing trailing slashes found."
+            exit 0
+          else
+            echo "❌ Links missing trailing slashes found:"
+            echo "$RESULTS"
+            exit 1
+          fi          
    
