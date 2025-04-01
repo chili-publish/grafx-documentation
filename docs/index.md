@@ -18,7 +18,7 @@
     Spicy Labs added a media connector to allow the use of DAM assets from the Canto DAM solution.  
     If you use Canto DAM, you can now integrate its assets into your smart templates.
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam/)
 
     ---
 
