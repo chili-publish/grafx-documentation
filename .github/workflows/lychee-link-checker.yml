@@ -34,8 +34,8 @@ jobs:
           # Append summary to the GitHub job summary
           echo "## Markdown Link Check Summary" >> $GITHUB_STEP_SUMMARY
           if [ -z "$RESULTS" ]; then
-            echo "✅ No missing trailing slashes found in markdown links in the docs folder." >> $GITHUB_STEP_SUMMARY
-            echo "✅ No missing trailing slashes found."
+            echo "✅ No missing trailing slashes found in markdown links in the docs folder" >> $GITHUB_STEP_SUMMARY
+            echo "✅ No missing trailing slashes found"
             exit 0
           else
             echo "❌ Found markdown links missing trailing slashes:" >> $GITHUB_STEP_SUMMARY
