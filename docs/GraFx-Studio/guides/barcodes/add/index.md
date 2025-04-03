@@ -2,9 +2,19 @@
 
 ## Feature Channel
 
+### Adding a QR Code
+
 <iframe width="690" height="388" src="https://www.youtube.com/embed/0l2g2SuEB3U?si=cnHnRL9KeAZZ5mMU&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[Go to Youtube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+### Adding a Barcode
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/JtN3saILmqY?si=JlZWD1jV5ivr9yNh&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Adding a Variable to a Barcode
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/00duWSHzdVo?si=H1vO5EEBvjPr7Fkh&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
 
 ## How to?
 
@@ -40,3 +50,9 @@ Start by defining your variable. [See Variables](/GraFx-Studio/guides/template-v
 Link the variable to your Bar- or QR code.
 
 ![screenshot-full](variablevalue.png)
+
+## Personalize QR Code
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/XCFzT2arycI?si=H13NfUda7_LdFPj8&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)

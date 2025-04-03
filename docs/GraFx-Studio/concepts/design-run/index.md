@@ -9,6 +9,13 @@ In **Design Mode**, you can freely arrange and style elements without triggering
 Switching to **Run Mode** simulates the end-user experience (My Projects), showing how the template’s logic behaves live. In this mode, actions behave as they will in a real environment, letting you test how users will experience the template.
 Variables set to be hidden, won't show in the end-user experience.
 
+## Feature Channel
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/u9EGrd-7uTY?si=aezAKjm-gCpENLOg&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## Design Mode
 
 **Design Mode** is optimized for layout and style tasks, with actions inactive.
