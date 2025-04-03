@@ -13,6 +13,14 @@
 
     ---
 
+    **April 7, 2025**: GraFx Studio – ==Adobe® InDesign® plugin update==
+
+    New release enhances image alignment controls and export preflight checks, adds blending options, and includes general bug fixes and improvements.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/07/grafx-studio---adobe-indesign-plugin-update/)
+
+    ---
+
     **March 28, 2025**: GraFx Studio – ==Connector for Canto DAM==
 
     Spicy Labs added a media connector to allow the use of DAM assets from the Canto DAM solution.  
@@ -36,14 +44,6 @@
     Updates include Smart Crop preview, GraFx Media asset download, batch error reporting, data source improvements, and more.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/03/27/chili-grafx-and-grafx-studio-updates/)
-
-    ---
-
-    **February 28, 2025**: GraFx Studio – ==Data Connectors & Versioning==
-
-    We’re launching data connectors to simplify connecting GraFx Studio to external data sources. Additionally, you can now lock GraFx Studio to a specific version in your environment.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/02/28/grafx-studio--data-connectors--versioning/)
 
     ---
 
