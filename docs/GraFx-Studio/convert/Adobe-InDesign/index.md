@@ -194,7 +194,7 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 |                        | Stroke color                             | ✅                | Predefined & custom                                |
 |                        | Fill color                               | ✅                | Predefined & custom                                |
 |                        | Corner radius                            | ✅                | Rectangle only                                     |
-|                        | Triangle corner radius                   | ❌                | Not supported yet                                  |
+|                        | Triangle corner radius                   | ❌                |                                                    |
 | **Colors**             | CMYK, RGB swatches                       | ✅                |                                                    |
 |                        | Spot colors                              | ✅                |                                                    |
 |                        | Custom RGB/CMYK                          | ✅                |                                                    |
@@ -224,7 +224,7 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 
 - ✅ **Supported**: Fully supported
 - ✴️ **Not yet**: Planned to be released soon
-- ❌ **Unsupported**: The team is working hard to add this functionality
+- ❌ **Unsupported**: The team is working hard to add this functionality in the future
 
 ## Tips for Successful Conversion
 
