@@ -1,8 +1,5 @@
 # Layers
 
-!!! Alert
-	Coming soon
-	
-	With this version, all frames are located on 1 Layer.
+<iframe width="690" height="388" src="https://www.youtube.com/embed/QYxehP_PrZk?si=ST1tJ0GRhJ20pmi_&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-	Soon we'll have layers to group frames, and you'll be able to move Layers up and down on the Z-axis.
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)

@@ -2,6 +2,13 @@
 
 To understand the concept, see [**Smart Crop**](../../concepts/genie-smart-crop/).
 
+## Feature Channel
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/utQjb5Xqm0g?si=N_xthpb-1uOYzE5f&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## Selecting an Asset
 
 In **GraFx Media**, select an uploaded asset to view its details.
