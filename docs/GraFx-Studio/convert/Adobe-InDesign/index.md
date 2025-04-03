@@ -158,7 +158,6 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 |                        | All pages                                | ✅                |  See [Export](/GraFx-Studio/convert/Adobe-InDesign/#export-to-grafx-studio) for limitations |
 |                        | Layouts                                  | ❌                |                                                    |
 |                        | Bleeds                                   | ✅                | Exported from document settings                    |
-|                        | Units converted to mm                    | ✅                |                                                    |
 | **Frames**             | Rotation                                 | ✅                | Includes text, image, ellipse, polygon             |
 |                        | Blend modes                              | ⚠️                | Preflight: convert to PDF or ignore                |
 |                        | Mirror / Shear                           | ⚠️                | Shear triggers preflight                           |
