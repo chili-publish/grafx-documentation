@@ -43,6 +43,16 @@ Adjust the length of the animation in the timeline.
 
 Click the **play** button in the timeline panel to preview the animation. Adjust if needed and repeat until happy.
 
+## Add an Ease type
+
+The speed of animations should not always be linear. You can also use Ease Types.
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/syDJpBqgkME?si=EGGZXtF6doEYq_Yg&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+[Show all ease types](https://easings.net/)
+
 ## Animate the emphasis
 
 The **emphasis** allows you to hi-light the middle section of the animation.
@@ -51,8 +61,45 @@ Expand the Emphasis section in the animation panel, and choose a type of animati
 
 Adjust the start- and endpoint in the timeline, and test the animation.
 
+<iframe width="690" height="388" src="https://www.youtube.com/embed/sIlb9FNeaCo?si=heR86F_KbXaMwA1a&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## Animate the Outro
 
 Expand the Outro section in the animation panel.
 
 Set the properties for one of the behaviours for the outro action, and test the animation untill you're happy.
+
+## Feature Channel
+
+### Extend or Shorten the Timeline
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/utRwo8RmVkc?si=m7gaYizOBJ1-3LkV&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+### Add a Slide Animation
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/uFwQvwQrR68?si=A4eD4UEK7CMtB-DS&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+### Add a Fade Animation
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/AfACkUOcGOY?si=pabUZ0nYiKKh_zMU&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+### Add a Rotate Animation
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/2kZgpQOsrmY?si=2mLae031zrRHjKrJ&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+### Add a Scale Animation
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/s0QSKGP9UKM?si=LiW0tIG-XokiEfrU&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)

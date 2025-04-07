@@ -4,6 +4,13 @@ See also: [Pages & Layout Intents](/GraFx-Studio/concepts/pages/)
 
 ![screenshot-full](multipage.gif)
 
+## Feature Channel
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/rpg5X-5Pf1c?si=AATvtCFMsMGlXDHp&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## Add Pages
 
 Choose **Layouts** > **Pages** > **Add Page**

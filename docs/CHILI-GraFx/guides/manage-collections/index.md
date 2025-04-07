@@ -1,6 +1,6 @@
 # Collections
 
-See also: [Template process](/CHILI-GraFx/concepts/template-management/#template-collection) for the full story.
+See also: [Template process](/CHILI-GraFx/concepts/template-management/#template-collection/) for the full story.
 
 ## Create a collection
 

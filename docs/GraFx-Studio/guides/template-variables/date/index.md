@@ -1,5 +1,10 @@
 # Date Variables
 
+<iframe width="690" height="388" src="https://www.youtube.com/embed/qLGhpOnz6kk?si=Xh6Ao2Vw0YxKChKl&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## Create a Date Variable
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.

@@ -57,6 +57,19 @@ img[alt=releasenotes] {
 	/* height: 250px; */
 }
 
+img[alt=screenshot-new] {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 img[alt=screenshot] {
 	width: 40%;
 	min-width: 250px;
