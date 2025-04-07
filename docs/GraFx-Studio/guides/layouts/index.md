@@ -26,6 +26,24 @@ In the properties panel, you'll see the layout size.
 
 If the values appear colored, it's because they differ from the base values. To learn more, read about the [Inheritance model](/GraFx-Studio/concepts/layout-intent/#inheritance-model).
 
+## Feature Channel
+
+### Add Layouts from Presets
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/ZA1YTtW-nT8?si=GfWlbRa11EHm5V-A&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Add Custom Layouts
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/nkGrke-PGQo?si=BuHlZbM4VTptQjfw&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Layout Settings
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/VAn-EuAvWr0?si=FbebOOxEB6z9kbwm&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Go to Youtube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
+
 ## Layouts in the Studio UI
 
 See also [Studio UI](../../concepts/template-management/#studio-ui)

@@ -1,6 +1,11 @@
 # Smart Crop
 
-See the concept [Smart Crop](../../concepts/genie-smart-crop/).
+Also see the concept [Smart Crop](../../concepts/genie-smart-crop/).
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/Wrw3i2lcCYI?si=58dg9pPCXT0TvZZO&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
 
 ## How to use Smart Crop?
 
@@ -33,6 +38,13 @@ A box appears over your image frame. Adjust its size and position to specify exa
 Your subject will now fit within the defined Subject Position box.
 
 ![screenshot-full](sc11.png)
+
+## Feature Channel
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/dTU9VX0Iqfo?si=phM0gg_adKHpX8Y1&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
 
 !!! warning "Important rules for Smart Crop"
 

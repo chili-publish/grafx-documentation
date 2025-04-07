@@ -12,6 +12,12 @@ Drag a rectangle on the canvas. The frame will initially look like a crossed rec
 
 ![screen](image-2.png)
 
+## Feature Channel
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/KgVcr821tII?si=D-p32N58ssZSoD90&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
 ## Choose media
 
 With the frame selected, open the **resource panel** > **media panel**, and select an asset.
