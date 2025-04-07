@@ -53,7 +53,8 @@ When set to "Use data source", your output will have a page for each record in t
 
 ## Google Sheet Setup guidelines
 
-- **Column Range**: Only columns from A to Z are used.
+- **Column Range**: Values from all columns will be read[^1].
+[^1]: Although all columns from the Google Sheet will be read, relying on too many variables may significantly slow down performance.
 - **Header**: Your Google Sheet column names must match the Smart Template variable names
 - **Column Data Type**
     - All values are considered: "Single Line Text"
