@@ -20,7 +20,7 @@ The InDesign Conversion Plugin allows you to export documents from Adobe® InDes
 
 ### Download the Plugin
 
-Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.1.0/GraFxStudioExporter_InDesign_0.1.0.ccx)
+Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.3.0/GraFxStudioExporter_InDesign_0.3.0.ccx)
 
 ### Install the Plugin
 
@@ -63,8 +63,15 @@ You can choose to ignore, or to export the object to a PDF asset, and place it a
 
    - Choose a destination folder and click **Export**.  
    Required only once, can be changed at any moment
-   - Choose the Page to be exported  
-   Only one page can be exported at a time. Soon you will be able to export all pages at once.
+   - Choose the Page to be exported
+   - Choose "All pages" to export all the pages
+
+!!! note "Limitations"
+    Exported pages must have the same size.
+    
+    Users can skip differently sized pages or convert them to match the first page.
+    
+    A maximum of 50 pages can be exported, with any additional pages excluded.
 
 ![screenshot](convert20.png)
 
@@ -125,6 +132,11 @@ When you initiate a conversion, the preflight engine scans the document for feat
     **Limitations**  
     - **Not Editable**: Placed assets are static. You cannot edit them within GraFx Studio. For example, if text is saved as a PDF asset, you won’t be able to create a text variable to dynamically alter the text content.
   
+## Compatibility
+
+The plugin has been tested and is compatible with Adobe® InDesign® versions from 2024 and 2025.
+
+The latest tested version is 20.1 (January 2025).
 
 ## Supported Features
 
@@ -135,62 +147,84 @@ As the GraFx Studio Exporter is **Experimental**, the list below will update fre
 Features marked with a green checkmark ✅ are fully supported. Some unsupported features are listed for clarity where it matters most.
 If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as we’re continually expanding support.
 
-| **Category**           | **Feature**                              | **Support Level**        | **Notes**                                           |
-|-------------------------|------------------------------------------|--------------------------|----------------------------------------------------|
-| **Plugin UI**          | Selecting a folder for export            | ✅             |                                                    |
-|                        | Selecting a page of the document to export | ✅            |                                                    |
-|                        | Logging                                   | ✅             |                                                    |
-|                        | Appearance color scheme                  | ✅             |                                                    |
-| **Document**           | Page size                                | ✅             |                                                    |
-|                        | Choose the page to import                                | ✅            | 
-|                        | All pages                                | ✴️           | Coming soon!                                     |
-|                        | Layouts                                  | ❌           |                                      |
-| **Frames**             | Rotation                                 | ✅             |                                                    |
-|                        | Blend modes                              | ❌           |                                      |
-|                        | Mirror / Shear                           | ❌           |                                      |
-| **Text Frames**        | Font (specified but not exported)        | ✅             |                                                    |
-|                        | Font size                                | ✅             |                                                    |
-|                        | Tracking (letter spacing)                | ✅             |                                                    |
-|                        | Baseline shift                           | ✅             |                                                    |
-|                        | Underline                                | ✅             |                                                    |
-|                        | Strikethrough                            | ✅             |                                                    |
-|                        | Superscript                              | ✅️ |                                    |
-|                        | Subscript                                | ✅             |                                                    |
-|                        | All caps                                 | ✅             |                                                    |
-| **Alignment**          | Left                                     | ✅             |                                                    |
-|                        | Center                                   | ✅             |                                                    |
-|                        | Right                                    | ✅             |                                                    |
-|                        | Top                                      | ✅             |                                                    |
-|                        | Center (vertical)                        | ✅             |                                                    |
-|                        | Bottom                                   | ✅             |                                                    |
-| **Styles**             | Paragraph style                          | ✅             | Font specified but not exported                    |
-|                        | Character style                          | ✅             | Font specified but not exported                    |
-| **Image Frames**       | Image frame with arbitrary position      | ✅             |                                                    |
-|                        | Image frame with rotated content         | ✅             |                                                    |
-|                        | Image frame with stretched content       | ✅             |                                                    |
-| **Primitives**         | Rectangle, ellipse, triangle             | ✅             |                                                    |
-|                        | Stroke weight                            | ✅             |                                                    |
-|                        | Stroke color (predefined and custom)     | ✅             |                                                    |
-|                        | Fill color (predefined and custom)       | ✅             |                                                    |
-|                        | Rectangle corner radius                  | ✅             |                                                    |
-|                        | Triangle corner radius                   | ❌ |                                    |
-|                        | Polygon stroke weight                    | ❌  |                                    |
-| **Predefined Color Export** | CMYK swatch colors| ✅           |                                                    |
-|  | RGB swatch colors| ✅           |                                                    |
-|  | Spot color swatch colors| ✅           |                                                    |
-| **Preflight**          | List of potential problems               | ✅             |                                                    |
-|                        | Details (click on an item in the list)   | ✅             |                                                    |
-|                        | Center problem object (click on warning) | ✅             |                                                    |
-|                        | No document open behavior                | ✅             | Preflight does nothing if no document is open     |
-|                        | Switching documents                      | ✅             | Preflight results reset when switching documents  |
-| **Layers**             | Layer names                              | ✅             | InDesign® layer names converted to default names   |
-|                        | Hidden layers                            | ❌           | Hidden layers are not exported                    |
+| **Category**           | **Feature**                              | **Support Level** | **Notes**                                           |
+|------------------------|------------------------------------------|-------------------|----------------------------------------------------|
+| **Plugin UI**          | Selecting a folder for export            | ✅                |                                                    |
+|                        | Selecting a page of the document to export | ✅              |                                                    |
+|                        | Logging                                   | ✅                |                                                    |
+|                        | Appearance color scheme                  | ✅                |                                                    |
+| **Document**           | Page size                                | ✅                |                                                    |
+|                        | Choose the page to import                | ✅                |                                                    |
+|                        | All pages                                | ✅                |  See [Export](/GraFx-Studio/convert/Adobe-InDesign/#export-to-grafx-studio) for limitations |
+|                        | Layouts                                  | ❌                |                                                    |
+|                        | Bleeds                                   | ✅                | Exported from document settings                    |
+| **Frames**             | Rotation                                 | ✅                | Includes text, image, ellipse, polygon             |
+|                        | Blend modes                              | ⚠️                | Preflight: convert to PDF or ignore                |
+|                        | Mirror / Shear                           | ⚠️                | Shear triggers preflight                           |
+|                        | Z-index / stacking order                 | ✅                |                                                    |
+| **Text Frames**        | Font (name and style)                    | ✅                |                                                    |
+|                        | Font size                                | ✅                |                                                    |
+|                        | Tracking                                 | ✅                |                                                    |
+|                        | Baseline shift                           | ✅                |                                                    |
+|                        | Underline                                | ✅                |                                                    |
+|                        | Strikethrough                            | ✅                |                                                    |
+|                        | Superscript                              | ✅                |                                                    |
+|                        | Subscript                                | ✅                |                                                    |
+|                        | All caps                                 | ✅                |                                                    |
+|                        | Text color                               | ✅                |                                                    |
+|                        | Soft return, discretionary line break    | ✅                | Exported as expected                               |
+| **Alignment**          | Left                                     | ✅                |                                                    |
+|                        | Center                                   | ✅                |                                                    |
+|                        | Right                                    | ✅                |                                                    |
+|                        | Top                                      | ✅                |                                                    |
+|                        | Center (vertical)                        | ✅                |                                                    |
+|                        | Bottom                                   | ✅                |                                                    |
+| **Styles**             | Paragraph style                          | ✅                | Font must exist on platform                        |
+|                        | Character style                          | ✅                | Font must exist on platform                        |
+| **Image Frames**       | Arbitrary position                       | ✅                |                                                    |
+|                        | Rotated content                          | ✅                |                                                    |
+|                        | Stretched content                        | ✅                |                                                    |
+|                        | Fill / Fit mappings                      | ✅                | Preflight converts fit modes accordingly           |
+|                        | Horizontal / vertical flip               | ✅                |                                                    |
+|                        | Shear                                    | ⚠️                | Preflight warning                                  |
+|                        | High-resolution image support            | ✅                | Tested with 6000x6000 px                           |
+| **Primitives**         | Rectangle, ellipse, triangle             | ✅                |                                                    |
+|                        | Polygon                                  | ⚠️                | Stroke weight / size partially supported           |
+|                        | Stroke weight                            | ✅                |                                                    |
+|                        | Stroke color                             | ✅                | Predefined & custom                                |
+|                        | Fill color                               | ✅                | Predefined & custom                                |
+|                        | Corner radius                            | ✅                | Rectangle only                                     |
+|                        | Triangle corner radius                   | ❌                |                                                    |
+| **Colors**             | CMYK, RGB swatches                       | ✅                |                                                    |
+|                        | Spot colors                              | ✅                |                                                    |
+|                        | Custom RGB/CMYK                          | ✅                |                                                    |
+|                        | LAB, HSB                                 | ⚠️                | Preflight: converts to CMYK or black               |
+| **Preflight**          | Problem list                             | ✅                |                                                    |
+|                        | Details view                             | ✅                |                                                    |
+|                        | Centering object                         | ✅                | Clicking warning centers object                    |
+|                        | No document open                         | ✅                | Does nothing                                       |
+|                        | Switching documents resets preflight     | ✅                |                                                    |
+|                        | Frame stroke issues                      | ✅                | Can be ignored or converted                        |
+|                        | Tables not supported                     | ✅                | Converted to PDF                                   |
+|                        | Text overflow                            | ✅                | Can be ignored or converted to image               |
+|                        | Gradient color                           | ✅                | Preflight warning shown                            |
+|                        | Text variables converted                 | ✅                | Automatically mapped in Studio                     |
+| **Layers**             | Layer names                              | ✅                | Default names in Studio                            |
+|                        | Hidden layers                            | ❌                | Not exported                                       |
+|                        | Locked layers                            | ✅                | Not exported                                       |
+|                        | Hidden/locked objects                    | ✅                | Not exported                                       |
+| **Pages**              | Export specific page                     | ✅                | Page dropdown updated in real-time                 |
+|                        | Export all pages                         | ✅                | Max 50 pages                                       |
+|                        | Mixed page sizes                         | ✅                | Option to skip or unify sizes                      |
+|                        | Page numbering in .zip name              | ✅                | Example: 3_Test.zip                                |
+|                        | Layout dropdown dynamic refresh          | ✅                |                                                    |
+
 
 ### Legend (not John)
 
 - ✅ **Supported**: Fully supported
 - ✴️ **Not yet**: Planned to be released soon
-- ❌ **Unsupported**: The team is working hard to add this functionality
+- ❌ **Unsupported**: The team is working hard to add this functionality in the future
 
 ## Tips for Successful Conversion
 

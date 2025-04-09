@@ -1,28 +1,19 @@
 # Number Variables
 
-## Create a Number Variable
+Example: Price
 
-Under the Automate icon, click Variables, and add a variable with the "+" sign.
+<iframe width="690" height="388" src="https://www.youtube.com/embed/u6sHNdyIfj0?si=CXy3y0H2-RRPdsf_&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-![screenshot](num0.png)
+Example: Discount
 
-Choose "Number" as the Variable Type.
+<iframe width="690" height="388" src="https://www.youtube.com/embed/pmwwd4RSzAk?si=pdc1NQMStOIn0XzR&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-![screenshot-full](create-numbers.gif)
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
 
-## Set the Variable Name
 
-Double-click the name, or choose "Rename" under the "..." menu.
+## General Properties
 
-![screenshot](num2.png)
-
-## Set General Properties
-
-![screenshot-full](num1.png)
-
-### Visible
-
-Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
+![screenshot-full](num3.png)
 
 ### Range
 
@@ -67,11 +58,19 @@ The symbol used to separate the integer part and the decimal part.
 
 The “thousands separator” symbol is used to group digits into sets of three for easier readability of large numbers, commonly represented by a comma (,), period (.), or other symbols depending on regional conventions.
 
-## Appearance Settings
+## User Interface
+
+![screenshot-full](num4.png)
+
+See [User Interface](../../template-variables/define/#user-interface)
 
 ### Stepper
 
 Enable or disable the visibility of a stepper button to increase or decrease the number with a value defined in the Step size.
+
+### Visibility
+
+See [Visibility Conditions](../../template-variables/visibility/)
 
 ## Use in Actions
 

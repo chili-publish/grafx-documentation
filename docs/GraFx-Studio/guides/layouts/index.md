@@ -4,7 +4,7 @@
 
 Click on the **plus** sign or three dots "Add sub-layout"
 
-![Creat first Sub-Layout](sublayout-1.gif)
+![screenshot](layout06.png)
 
 A window appears to allow you to choose from a [list of Layout Presets](#reference-available-layout-preset-sizes).
 
@@ -22,9 +22,51 @@ Click create!
 
 In the properties panel, you'll see the layout size.
 
-![Skyscraper](sublayout-2.png)
+![screenshot-full](sublayout-2.png)
 
 If the values appear colored, it's because they differ from the base values. To learn more, read about the [Inheritance model](/GraFx-Studio/concepts/layout-intent/#inheritance-model).
+
+## Feature Channel
+
+### Add Layouts from Presets
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/ZA1YTtW-nT8?si=GfWlbRa11EHm5V-A&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Add Custom Layouts
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/nkGrke-PGQo?si=BuHlZbM4VTptQjfw&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Layout Settings
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/VAn-EuAvWr0?si=FbebOOxEB6z9kbwm&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Go to Youtube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
+
+## Layouts in the Studio UI
+
+See also [Studio UI](../../concepts/template-management/#studio-ui)
+
+Every Layout created, is available (by default) in Studio UI. You can also check this in [Run Mode](../../concepts/design-run/).
+
+In Studio UI or Run Mode, a dropdown will be available, with all "Available" Layouts.
+
+Layouts are "Available", if you set the property "Available".
+
+![screenshot](layout01.png)
+
+![screenshot-full](studioui01.png)
+
+If available, you can also set if a Layout is resizable in the End User Interfact (Studio UI).
+
+When set, the end user will be able to set the width and height of the layout, to be resized, up to a minimum and/or maximum size.
+
+![screenshot](layout03.png)
+
+In the Studio UI or Run Mode, you will see a width and height field, to custom resize your output.
+
+![screenshot](resize.png)
 
 ## Move the elements on the layout
 
@@ -32,15 +74,15 @@ Select an element in the page, and change the value of a property in the propert
 
 You can also move the elements around on the page.
 
-![Move elements around](alt-layout-1.png)
+![screenshot-full](alt-layout-1.png)
 
 The updated value will be colored, as it's changed compared to the inherited value.
 
-![Colored Values](alt-layout-2.png)
+![screenshot-full](alt-layout-2.png)
 
 You can reset the value to the inherited one, by clicking on the left turning arrow, and select the value you want to reset. Only changed values you can reset will appear in this dropdown. Or you can choose to resel all values **Reset Overrides**
 
-![Creat first sublayout](alt-layout-3.png)
+![screenshot-full](alt-layout-3.png)
 
 ## Change the animation
 
@@ -52,17 +94,17 @@ Select an element for which you want to change the animation.
 
 In the example below, we selected the Text frame "Discover"
 
-![Creat first sublayout](alt-layout-4.png)
+![screenshot-full](alt-layout-4.png)
 
 In the Animation Properties panel, change the values you want to change for this Layout.
 
 If you don't change values, they will be inherited from the base layout.
 
-![Change Animation values](alt-layout-5.png)
+![screenshot-full](alt-layout-5.png)
 
 If you want to disable the specific animation, de-select the specific animation with the respective buttons.
 
-![Animation buttons](alt-layout-6.png)
+![screenshot](alt-layout-6.png)
 
 The active options are shown with a lighter background.
 

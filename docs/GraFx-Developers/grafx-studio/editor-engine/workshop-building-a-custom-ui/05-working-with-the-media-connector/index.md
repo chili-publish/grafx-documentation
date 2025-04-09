@@ -20,7 +20,7 @@ Make note of that asset ID, this is how we will inform our GraFx Media connector
 
 
 ### Setting the asset for an image frame
-Let's create a function to update the image on our document to a new image we provide it. We will be using a [FrameController]() method to find our image frame in the document and then the ConnectorController to update the image.
+Let's create a function to update the image on our document to a new image we provide it. We will be using a [FrameController](https://github.com/chili-publish/studio-sdk/blob/5b063bb16c58966de4298317786e497ff66aa1d8/packages/sdk/src/controllers/FrameController.ts#L31) method to find our image frame in the document and then the ConnectorController to update the image.
 
 We will start with our `updateImage` function in the `index.js` file
 

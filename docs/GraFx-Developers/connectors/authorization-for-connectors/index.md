@@ -18,9 +18,9 @@ When a user first accesses a Connector and the code makes a `runtime.fetch` call
 
 ## Authorization Limitations
 
-While the Connector framework supports the most common authorization schemas, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the four provided types, you may need to develop a workaround solution.
+While the Connector framework supports the most common authorization schemas, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the 5 provided types, you may need to develop a workaround solution.
 
-For example, services like GraFx Media and GraFx Platform don't meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
+For example, services like GraFx Media and CHILI GraFx Platform don't meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
 
 ## Define Supported Authorization Types
 Before implementing authorization, you must define the supported authorization types in your `package.json` file. This ensures consistency between your CLI commands and your package configuration.
@@ -39,7 +39,7 @@ Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authoriza
 ```
 
 ## Implement Authorization
-To implement authorization in a Connector, you need a published Connector and the [Connector CLI]() tool. Use the following command:
+To implement authorization in a Connector, you need a published Connector and the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Use the following command:
 
 ```bash
 connector-cli set-auth \
@@ -105,9 +105,9 @@ Therefore, you can define different authorization types for each usage, allowing
 
 	  You can define different authorization types for each usage scenario. However, the actual authorization always occurs on the server to prevent token or credential leakage.
 
-!!! note "Each Usage Can Only Be Set Once"
+!!! note "Can not remove configured authorization"
 
-	  If you run the `set-auth` command twice with the same authorization usage `-au` value but different `-at` authorization types, the authorization type will just be ignored. At this moment there is no way to overwrite or erase authorization once set.
+	  At this moment there is no way to erase authorization once set. If you run the `set-auth` command multiple times with the same authorization usage `-au` value but different `-at` authorization types, the last one overwrites the previous one.
 
 ### Authorization Type (`-at`)
 
@@ -144,7 +144,6 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### Static Header Key
 ```typescript
 {
-  "name": string, // An arbitrary string value
   "key": string,  // HTTP header name
   "value": string // HTTP header value
 }
@@ -153,7 +152,6 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### OAuth 2.0 Client Credentials
 ```typescript
 {
-  "name": string,         // An arbitrary string value
   "clientId": string,     // OAuth 2.0 app client id
   "clientSecret": string, // OAuth 2.0 app client secret
   "scope": string,        // OAuth 2.0 app scope. Optional
@@ -164,7 +162,6 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### OAuth 2.0 Authorization Code
 ```typescript
 {
-  "name": string, // An arbitrary string value
   "clientId": string, // OAuth 2.0 app client id
   "clientSecret": string, // OAuth 2.0 app client secret
   "scope": string, // OAuth 2.0 app scope. Optional
@@ -183,7 +180,6 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### OAuth 2.0 Resource Owner Password
 ```typescript
 {
-  "name": string, // An arbitrary string value
   "clientId": string, // OAuth 2.0 app client id
   "clientSecret": string, // OAuth 2.0 app client secret
   "scope": string, // OAuth 2.0 app scope. Optional
@@ -209,7 +205,6 @@ First, create two JSON files with the necessary authorization data:
 #### OAuth 2.0 Client Credentials JSON
 ```json title="oauth-client-credentials.json"
 {
-  "name": "MyClientCredentials",
   "clientId": "abc123xyz789",
   "clientSecret": "s3cr3tk3y",
   "scope": "read write",
@@ -220,7 +215,6 @@ First, create two JSON files with the necessary authorization data:
 #### OAuth 2.0 Authorization Code JSON
 ```json title="oauth-authorization-code.json"
 {
-  "name": "MyAuthorizationCode",
   "clientId": "client123id",
   "clientSecret": "client123secret",
   "scope": "openid profile",

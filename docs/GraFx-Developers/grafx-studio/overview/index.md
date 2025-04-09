@@ -16,7 +16,7 @@ For more information see: [Integration Overview](/GraFx-Developers/grafx-studio/
 
 Built on-top of Flutter, the Editor Engine is a closed-source application loaded in a browser that provides interactive editing of Studio documents. These documents are defined in JSON.
 
-The Editor Engine has a minimal UI for interacting with frames and frame content loaded. However, to be useful, a UI will need to be added on top of the engine. You can do this by either building your own UI using the [Studio SDK]() to interact with the engine via JavaScript or by using a custom built UI.
+The Editor Engine has a minimal UI for interacting with frames and frame content loaded. However, to be useful, a UI will need to be added on top of the engine. You can do this by either building your own UI using the [Studio SDK](https://github.com/chili-publish/studio-sdk) to interact with the engine via JavaScript or by using a custom built UI.
 
 ### Learning Resources
 

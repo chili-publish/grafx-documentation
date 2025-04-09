@@ -1,5 +1,10 @@
 # Date Variables
 
+<iframe width="690" height="388" src="https://www.youtube.com/embed/qLGhpOnz6kk?si=Xh6Ao2Vw0YxKChKl&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## Create a Date Variable
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.
@@ -17,10 +22,6 @@ Double-click the name, or choose "Rename" under the "..." menu.
 ## Set General Properties
 
 ![screenshot-full](date2.png)
-
-### Visible
-
-Defines if the variable will be visible in the [Studio UI](/GraFx-Studio/concepts/template-management/#studio-ui) to the end user.
 
 ### Display Format
 
@@ -113,6 +114,10 @@ In Studio UI (My Projects), you will see what an end user can see.
 ![screenshot](date9.png)
 
 Current date is Aug 7, 2024. First possible date to select is Aug 15. Last possible date is 30 days after today: Sept 6. Saturdays and Sundays are excluded.
+
+## User Interface
+
+See [User Interface](../../template-variables/define/#user-interface) and [Visibility Conditions](../../template-variables/visibility/)
 
 ## Use in Actions
 

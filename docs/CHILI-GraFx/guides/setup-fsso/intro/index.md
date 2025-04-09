@@ -6,8 +6,8 @@ To setup [Federated Single Sign-On (FSSO)](/CHILI-GraFx/concepts/federated-singl
 
 This information depends on the preferred protocol:
 
-- [OpenID Connect (OIDC)](/CHILI-GraFx/guides/setup-fsso/oidc)
-- [Security Assertion Markup Language (SAML)](/CHILI-GraFx/guides/setup-fsso/saml)
+- [OpenID Connect (OIDC)](/CHILI-GraFx/guides/setup-fsso/oidc/)
+- [Security Assertion Markup Language (SAML)](/CHILI-GraFx/guides/setup-fsso/saml/)
 
 Consult the supported protocols, and initiate a support ticket with the Client Success team to assist you with the setup.
 

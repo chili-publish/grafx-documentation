@@ -9,36 +9,45 @@
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast: __Release notes__
+-   :material-clock-fast: **Release Notes**
 
     ---
 
-    **December 18 2024**: GraFx Studio - ==Another milestone achieved!==
+    **April 7, 2025**: GraFx Studio – ==Adobe® InDesign® plugin update==
+
+    New release enhances image alignment controls and export preflight checks, adds blending options, and includes general bug fixes and improvements.
     
-    GraFx Studio now supports multi-page documents. The new auto-grow feature lets frames expand automatically.  
-    A major improvement in CHILI GraFx Smart Templates.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/12/18/grafxstudio---multi-page--auto-grow/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/07/grafx-studio---adobe-indesign-plugin-update/)
 
     ---
 
-    **November 22 2024**: GraFx Studio - ==New milestone achieved!==
+    **March 28, 2025**: GraFx Studio – ==Connector for Canto DAM==
+
+    Spicy Labs added a media connector to allow the use of DAM assets from the Canto DAM solution.  
+    If you use Canto DAM, you can now integrate its assets into your smart templates.
     
-    Easily produce unlimited numbers of on-brand graphics at different output sizes with Anchoring, Layout Presets, and Design & Run mode
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/11/22/grafxstudio---new-milestone-achieved/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam/)
 
     ---
 
-    **October 14 2024**: ==Connect== with CHILI GraFx
+    **March 28, 2025**: GraFx Studio – ==Smart Crop Update==
+
+    You can now manually edit the Subject Area and Point of Interest of any asset, including those from external DAM systems via media connectors.  
+    This allows for precise adjustments to AI-generated data, ensuring Smart Crop focuses on the correct subject.
     
-    Unleash the power of [connectors](/GraFx-Studio/concepts/connectors/)
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2024/10/14/connect-with-chili-grafx/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio--smart-crop-update/)
 
     ---
 
-    **See all release notes**
+    **March 27, 2025**: GraFx Studio & CHILI GraFx – ==Several Updates==
+
+    Updates include Smart Crop preview, GraFx Media asset download, batch error reporting, data source improvements, and more.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/27/chili-grafx-and-grafx-studio-updates/)
+
+    ---
+
+    **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
     

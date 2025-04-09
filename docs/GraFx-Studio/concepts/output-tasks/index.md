@@ -12,11 +12,9 @@ Each output job is listed as an **Output Task** in the system, providing visibil
 
 ## Accessing the Output Task List
 
-The **Output Task List** can be accessed through the **Environment Settings**. Here, users (Template Designers, Subscription Admins and Environment Admins) can view all the output jobs associated with the current environment.
+The **Output Task List** can be accessed via **Output Tasks**, users (Template Designers, Subscription Admins and Environment Admins) can view all the output jobs associated with the current environment.
 
 ![screenshot-full](ot1.png)
-
-![screenshot-full](ot2.png)
 
 ## Output Task List Columns
 
@@ -35,13 +33,12 @@ The Output Task List contains several key details for each job, organized in the
 
 [^1]: Non-pdf output is listed here if it's a single output, batch output is only for pdf
 
-![screenshot-full](ot2.png)
-
 Behind the "..." menu, you can also 
 
 - Copy Task ID
 - Copy User Information
-- COpy Row Information
+- Copy Row Information
+- Download report
     
 ![screenshot](ot3.png)
     
@@ -84,6 +81,34 @@ Behind the "..." menu, you can also
     "owner":"samlp|chili-publish-prd|lfB36OFPlzFI-wKmwAb0cZx4hlL--qo3J7NqTmSZAu0",
     "outputAvailable":false
 }
+```
+
+**Download report**
+
+Will provide a repport on taks, including details why it failed.
+
+The report below tells you that the first record (record 0), had 3 issues.
+
+```JSON
+[
+	{
+		"recordNumber": 0,
+		"errorList": [
+			{
+				"type": "TextOverflow",
+				"details": "Text overflow in frame \"Description\""
+			},
+			{
+				"type": "TextOverflow",
+				"details": "Text overflow in frame \"Description\""
+			},
+			{
+				"type": "ImageLoadFailed",
+				"details": "Failed to get image: \"d4ad162d-a364-4406-b1b2-75e588ec4bee\" yielded no results"
+			}
+		]
+	}
+]
 ```
 
 ## Understanding Output Tasks

@@ -19,12 +19,28 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
-          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude '^https:\/\/cp' --exclude 'https://login.chiligrafx.com/login/callback' --exclude 'https://my.chili-publish.com' --exclude 'https://chili-publish.com/CGXGroups'
+          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' --exclude '^https:\/\/cp' --exclude 'https://login.chiligrafx.com/login/callback' --exclude 'https://my.chili-publish.com' --exclude 'https://chili-publish.com/CGXGroups' --exclude 'https://oauth2.googleapis.com/token'
           format: markdown
           # Add job summary in github action
           jobSummary: true
           # Fail job if one or more links are failing
           fail: true
 
-           
-   
+      - name: Check markdown links for missing trailing slash
+        run: |
+          echo "Checking markdown links for missing trailing slash in docs folder..."
+          RESULTS=$(grep -Prn '(?:(?<=^)|(?<=[^!]))\[[^\]]+\]\((?![^)]*\?h=)(\/[^)\s#]+)(?<!\/)\)' --include='*.md' docs/ || true)
+    
+          # Append summary to the GitHub job summary
+          echo "## Markdown Link Check Summary" >> $GITHUB_STEP_SUMMARY
+          if [ -z "$RESULTS" ]; then
+            echo "✅ No missing trailing slashes found in markdown links in the docs folder" >> $GITHUB_STEP_SUMMARY
+            echo "✅ No missing trailing slashes found"
+            exit 0
+          else
+            echo "❌ Found markdown links missing trailing slashes:" >> $GITHUB_STEP_SUMMARY
+            echo "$RESULTS" >> $GITHUB_STEP_SUMMARY
+            echo "❌ Links missing trailing slashes found:"
+            echo "$RESULTS"
+            exit 1
+          fi

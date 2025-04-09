@@ -73,6 +73,12 @@ Enabling this setting removed the dependency of fonts in the PDF.
 
 ![screenshot](os17.png)
 
+### Data source
+
+When enabled, the PDF will contain all records available in the Data source.
+
+![screenshot](output.png)
+
 ### Crop Marks
 
 What are [Crop Marks](/GraFx-Studio/concepts/crop-marks/)?

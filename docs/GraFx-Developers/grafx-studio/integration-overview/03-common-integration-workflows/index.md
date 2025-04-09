@@ -6,7 +6,7 @@ Let take a look at two fundamental workflows for integrating with GraFx, caterin
 
 This workflow decreases development time while still allowing you to integrate GraFx into your application.
 
-In this integration, documents are stored in GraFx, but end-users do not log into [chiligrafx.com](https://www.chiligrafx.com). Instead, they log into your custom application. Your application uses the [Environment API]() to communicate with GraFx, and when an end-user loads a document, it is loaded via a custom UI and then saved back to GraFx when they are done. Instead of managing documents on GraFx, you manage them in your application, usually via a database. The JSON documents are stored on GraFx, and you manage their life cycle in your application via their IDs.
+In this integration, documents are stored in GraFx, but end-users do not log into [chiligrafx.com](https://www.chiligrafx.com). Instead, they log into your custom application. Your application uses the [Environment API](/GraFx-Developers/environment-api/reference/) to communicate with GraFx, and when an end-user loads a document, it is loaded via a custom UI and then saved back to GraFx when they are done. Instead of managing documents on GraFx, you manage them in your application, usually via a database. The JSON documents are stored on GraFx, and you manage their life cycle in your application via their IDs.
 
 ### What You Will Need
 
@@ -25,10 +25,10 @@ In this integration, documents are stored in GraFx, but end-users do not log int
 1. Create a workflow for template designers to register their Templates into your application from GraFx Studio. They would just be registering the ID of the Template in a database.
 2. Generate a token with your client secret and ID with all permissions:
     - `https://integration-login.chiligrafx.com/oauth/token`
-    - See [Integration Permissions]()
+    - See [Integration Permissions](/GraFx-Developers/environment-api/02-managing-integrations/?h=#the-permissions-tab)
 3. Generate a token with your client secret and ID with read-only permissions:
     - `https://integration-login.chiligrafx.com/oauth/token`
-    - See [Integration Permissions]()
+    - See [Integration Permissions](/GraFx-Developers/environment-api/02-managing-integrations/?h=#the-permissions-tab)
 4. End-users, through your application, will pick a product, which will cause the following:
     - Copy the Template or create a Project using the all-permissions token:
         - Create a Project from a Template:
@@ -36,19 +36,19 @@ In this integration, documents are stored in GraFx, but end-users do not log int
         - Copy a Template:
             - GET `/api/v1/environment/{environment}/templates/{templateId}/download`
             - POST `/api/v1/environment/{environment}/templates`
-        - See [Understanding Templates and Projects]()
+        - See [Understanding Templates and Projects](/GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/)
     - Store the copied Template or Project ID in your application database
     - Download the JSON of your Template or Project:
         - Template: GET `/api/v1/environment/{environment}/templates/{templateId}/download`
         - Project: GET `/api/v1/environment/{environment}/projects/{projectId}/document`
     - Open the JSON Template or Project in a custom UI using the read-only token:
-        - See [Studio SDK Quickstart]()
-        - See [Studio UI]()
+        - See [Studio SDK Quickstart](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/)
+        - See [Studio UI](/GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/)
     - Save JSON back to Template or Project:
         - Template: UPDATE `/api/v1/environment/{environment}/projects/{projectId}/document` 
         - Project: UPDATE `/api/v1/environment/{environment}/templates/{templateId}`
     - You can generate a preview either:
-        - With [Studio SDK]() layout controller: `layout.getSelectedSnapshot()`
+        - With [Studio SDK](https://github.com/chili-publish/studio-sdk/blob/5b063bb16c58966de4298317786e497ff66aa1d8/packages/sdk/src/controllers/LayoutController.ts#L19) layout controller: `layout.getSelectedSnapshot()`
         - With REST API:
             - Template: GET `/api/v1/environment/{environment}/templates/{templateId}/preview/{previewType}`
             - Project: GET `/api/v1/environment/{environment}/projects/{projectId}/preview/{previewType}`
@@ -66,7 +66,7 @@ In this integration, documents are stored in GraFx, but end-users do not log int
 
 This workflow allows for maximum customization, as GraFx Studio becomes a very small part of your application.
 
-This integration removes the need for [chiligrafx.com](https://www.chiligrafx.com) outside of template designers. Assets are stored externally via Connectors, documents are stored externally, and the [Environment API]() is used only when outputting a render.
+This integration removes the need for [chiligrafx.com](https://www.chiligrafx.com) outside of template designers. Assets are stored externally via Connectors, documents are stored externally, and the [Environment API](/GraFx-Developers/environment-api/reference/) is used only when outputting a render.
 
 ### What You Will Need
 
@@ -79,23 +79,23 @@ This integration removes the need for [chiligrafx.com](https://www.chiligrafx.co
 
 ### The Plan
 
-1. Create a [Custom Media Connector]() for your asset management system and register it in your environment.
+1. Create a [Custom Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) for your asset management system and register it in your environment.
 2. Create a workflow for template designers to register their Templates into your application from GraFx Studio, which at minimum will just download a Template's JSON to store in your application's storage:
     - GET `/api/v1/environment/{environment}/templates/{templateId}/download`
 3. End-user workflow is completely decided by your application, and the integration application only interacts with GraFx Studio at two locations in the workflow:
     - When the end-user in your workflow opens an editor, you do the following:
         - Generate a token with your client secret and ID with read-only permissions:
             - `https://integration-login.chiligrafx.com/oauth/token`
-            - See [Integration Permissions]()
+            - See [Integration Permissions](/GraFx-Developers/environment-api/02-managing-integrations/?h=#the-permissions-tab)
         - Load your custom UI with your document JSON and token for authentication:
-            - See [Studio SDK Quickstart]()
-            - See [Studio UI]()
+            - See [Studio SDK Quickstart](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/)
+            - See [Studio UI](/GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/)
         - When done, get the JSON and store it back into your application storage
-            - It is also a good time to generate a preview with [Studio SDK]() layout controller: `layout.getSelectedSnapshot()`
+            - It is also a good time to generate a preview with [Studio SDK](https://github.com/chili-publish/studio-sdk/blob/5b063bb16c58966de4298317786e497ff66aa1d8/packages/sdk/src/controllers/LayoutController.ts#L19) layout controller: `layout.getSelectedSnapshot()`
     - When the application is ready to make an output (PDF, image, video):
         - Generate a token with your client secret and ID with all permissions:
             - `https://integration-login.chiligrafx.com/oauth/token`
-            - See [Integration Permissions]()
+            - See [Integration Permissions](/GraFx-Developers/environment-api/02-managing-integrations/?h=#the-permissions-tab)
         - Use the all-permissions token to generate output:
             - POST `/api/v1/environment/{environment}/output/animation`
             - POST `/api/v1/environment/{environment}/output/image`
