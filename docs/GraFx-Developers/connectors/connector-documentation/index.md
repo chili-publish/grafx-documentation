@@ -2,87 +2,80 @@
 
 ## Introduction
 
-You have build a great connector. Good job.
+Built a connector? Great job.
 
-Next to the bits and the bytes, a customer will also need documentation.
+Next step: document it for your users.
 
-An example of Connector Documentation, is the "[Google Sheets Data Connector](/GraFx-Studio/connectors/connector-google-sheets-data/)".
+See the [Google Sheets Data Connector](/GraFx-Studio/connectors/connector-google-sheets-data/) for inspiration. It explains:
 
-This documentation gives your users the insights to
+- How to deploy from Connector Hub
+- How to set up (auth, credentials, etc.)
+- How to use in a Smart Template
 
-- How to deploy your connector from the Connector HUB
-- How to setup your connector (authentication, credentials, ...)
-- How to use your connector in a template
+## How to Start
 
-## How do I start documenting?
+1. Read the [README](https://github.com/chili-publish/grafx-documentation/blob/main/README.md) and [Contributing Guide](https://github.com/chili-publish/grafx-documentation/blob/main/CONTRIBUTING.md)
+2. Download this [template zip](connector_infinity.zip) (it contains a basic structure)  
+![screenshot](connectordoc02.png)
+3. [Fork this repository](https://github.com/chili-publish/grafx-documentation/fork)
+4. Add your folder and assets
+5. Update `mkdocs.yml` navigation
+6. Commit and submit a Pull Request
 
-First read the [Read me](https://github.com/chili-publish/grafx-documentation/blob/main/README.md) file.
+Your docs will go live after review.
 
-ANd don't forget the [Contributing guide](https://github.com/chili-publish/grafx-documentation/blob/main/CONTRIBUTING.md). The basis to contribute to the CHILI GraFx Documentation.
+## Naming Convention
 
-1. Download this [zip](connector_base_.zip) file.  
-It contains a sample structure, where you can start from, but feel free to extend.
+Use folder name `connector-yourname`.  
+E.g. `connector-infinity` for "Infinity".
 
-2. Make a Fork of this Documentation repository
+![screenshot-full](connectordoc01.png)
 
-3. Add your folder (and subfolders) and assets to the file structure
+Your folder should go in the structure:
 
-4. Add a link to the mkdocs.yml navigation
+docs > GraFx-Studio > connectors > **connector-infinity**
 
-5. Commit, and make a Pull Request, to validate your contribution
+![screenshot-full](connectordoc03.png)
 
-4. Soon your Connector Documentation will be live
+## Folder Contents
 
-## Naming convention
+- `index.md`: your main doc (use [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/))
+- `infinity01.png`: add visuals to the same folder
 
-The example zip file contains a folder "connector-serrano".
-
-!!! info "Serrano"
-    Serrano is the fictitious name for the Connector we are going to document.
-    
-Change the name "serrano" to your connector name. If you need spaces, add a dash "**-**"
-
-E.g. If you connector will be named "Infinity", rename the folder to "connector-infinity"
-
-## Files in the folder
-
-- index.md will be the main file  
-Using markdown to describe the functionality. We use "[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/)" so you can use all the markdown in this reference.
-
-- example.png add images or screenshots to the same folder
+![screenshot-full](connectordoc02.png)
 
 ## Subfolders
 
-If your documentation is extensive, and having it all in 1 page is too much, feel free to add subfolders to your folders.
+Use subfolders if your documentation needs more than one page. Follow our contribution structure.
 
-Follow the same structure and guidelines as in the Contributing guide.
+## Navigation
 
-## What needs to be in documentation?
+Add your connector to the `mkdocs.yml`
 
-### Type of connector
+Under Media for media connectors, Data for data connectors.
 
-In the zip file, you'll find the three options. If you document your connector, your connector will be a "**Third Party**" connector.
+![screenshot-full](connectordoc04.png)
 
-Add a link to your company, as the vendor of the connector.
+## What to Document?
+
+The sections below are also present in the `index.md` in the zip file.
+
+### Connector Type
+
+Document as a **Third Party** connector. Add a link to your company.
 
 ### Installation
 
-Explain how a user can choose your connector from the [Connector Hub](/GraFx-Studio/guides/connector-hub/).
+Explain how to install via [Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
 ### Configuration
 
-Each connector will have configuration options.
+Add screenshots and explain each configuration field.
 
-Depending on your setup, more or less fields will be available.
+### External Setup
 
-Add a screenshot of all configuration screens, and explain each field.
+Explain what users need to configure on your side (auth setup, API keys, etc.).
 
-### Configuration on your side
+### Usage in Templates
 
-Explain how a user need to setup credentials or authentication on your end. If your DAM, PIM or other source needs a setup, explain how this is done.
-
-### How to use the connector
-
-Explain how your connector can be used in a GraFx Studio template
-
-As each setup is different, explain all possible use cases.
+Describe how to use your connector in a Smart Template. Include examples for common use cases.
