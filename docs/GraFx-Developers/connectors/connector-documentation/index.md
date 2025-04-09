@@ -68,6 +68,10 @@ Document as a **Third Party** connector. Add a link to your company.
 
 Explain how to install via [Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
+### Supported files
+
+Specifically for media connectors, list what kind of files are supporten, and specify ins- and outs.
+
 ### Configuration
 
 Add screenshots and explain each configuration field.
