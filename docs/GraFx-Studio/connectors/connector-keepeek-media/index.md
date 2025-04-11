@@ -1,4 +1,4 @@
-# Media Connector for Kepeek
+# Media Connector for Keepeek
 
 :fontawesome-regular-square: Built-in  
 :fontawesome-regular-square: Built by CHILI publish  
@@ -8,17 +8,17 @@
 
 ## Solution vendor website
 
-See [Kepeek's website](https://www.keepeek.com/en/solutions/digital-asset-management)
+See [Keepeek's website](https://www.keepeek.com/en/solutions/digital-asset-management)
 
 ## Installation
 
-The installation is done by enabling the Kepeek connector on the environment.
+The installation is done by enabling the Keepeek connector on the environment.
 
 [See Installation Through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
-## Kepeek Configuration 
+## Keepeek Configuration 
 
-Consult your [Kepeek documentation](https://www.keepeek.com/en-integrations/chili-publish-web-to-print) or Kepeek System Admin to obtain the correct values for the fields.
+Consult your [Keepeek documentation](https://www.keepeek.com/en-integrations/chili-publish-web-to-print) or Keepeek System Admin to obtain the correct values for the fields.
 
 ## CHILI GraFx Connector Configuration 
 
@@ -32,18 +32,18 @@ Then click the installed Connector to access the configuration.
 
 ### Configuration
 
-Your instance of the Connector needs to know which Kepeek instance it should communicate with and how to authenticate.
+Your instance of the Connector needs to know which Keepeek instance it should communicate with and how to authenticate.
 
 ![screenshot-full](sch01.png)
 
 **baseURL**
 
-Your Kepeek System Administrator will provide you with this information.
+Your Keepeek System Administrator will provide you with this information.
 
 For example
 
 ```html
-https://[your-domain].Kepeek.global
+https://[your-domain].keepeek.global
 ```
 
 **Proxy settings**
@@ -53,7 +53,7 @@ CHILI GraFx needs to know what domains are allowed to process
 For example
 
 ```html
-*.Kepeek.global
+*.keepeek.global
 ```
 
 ### Authentication
@@ -64,21 +64,21 @@ Select your type of authentication:
 
 **Server and Browser:** OAuth 2.0 Client Credentials
 
-- **Client ID** and **Client Secret**: These are [customer-specific credentials](https://support.Kepeek.com/hc/en-us/articles/23002535539601-Generating-API-Keys#How-to-generate-API-keys) provided by the Kepeek Admin.
+- **Client ID** and **Client Secret**: These are [customer-specific credentials](https://support.keepeek.com/hc/en-us/articles/23002535539601-Generating-API-Keys#How-to-generate-API-keys) provided by the Keepeek Admin.
 - **Token Endpoint**:  
 ```html
-https://oauth.Kepeek.global/oauth/api/oauth2/compatible/token
+https://oauth.keepeek.global/oauth/api/oauth2/compatible/token
 ```
 
-- **Scope**: Consult your Kepeek Admin to determine the appropriate scope.
+- **Scope**: Consult your Keepeek Admin to determine the appropriate scope.
 
-Consult your Kepeek System Admin for assistance in configuring these fields.
+Consult your Keepeek System Admin for assistance in configuring these fields.
 
-## Using Assets from Your Kepeek Dam
+## Using Assets from Your Keepeek Dam
 
 ### Place Assets in Your Template
 
-- Select the Kepeek Connector.
+- Select the Keepeek Connector.
 
 ![screenshot-full](sch07.png)
 
