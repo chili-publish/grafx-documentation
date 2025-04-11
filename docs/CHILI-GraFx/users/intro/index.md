@@ -2,9 +2,7 @@
 
 ## Introduction
 
-Five basic concepts define user management. Below you can find the details of each concept.
-
-There are four different concepts that make up the user management process in CHILI GraFx:
+CHILI GraFx user management is based on five core concepts:
 
 - Resources
 - Access
