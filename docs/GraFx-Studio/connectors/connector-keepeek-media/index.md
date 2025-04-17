@@ -8,7 +8,7 @@
 
 ## Solution vendor website
 
-See [Keepeek's website](https://www.keepeek.com/en/solutions/digital-asset-management)
+See [Graphique Alliance's website](https://graphique-alliance.com/)
 
 ## Installation
 
@@ -18,7 +18,7 @@ The installation is done by enabling the Keepeek connector on the environment.
 
 ## Keepeek Configuration 
 
-Consult your [Keepeek documentation](https://www.keepeek.com/en-integrations/chili-publish-web-to-print) or Keepeek System Admin to obtain the correct values for the fields.
+Contact [Graphique Alliance](https://graphique-alliance.com/contact/) to obtain the correct values for the fields.
 
 ## CHILI GraFx Connector Configuration 
 
