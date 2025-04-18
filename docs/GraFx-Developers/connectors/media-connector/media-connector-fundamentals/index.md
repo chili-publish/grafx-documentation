@@ -166,7 +166,7 @@ DownloadType / DownloadIntent | *web* (= browser based editing session, PNG/JPG 
 *thumbnail* (PNG / JPEG) | ✓ (e.g., Displaying small preview images on a webpage) |   |
 *mediumres* (PNG / JPEG) | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |
 *highres* (PNG / JPEG) | ✓ (e.g., Downloading a high-quality image for use on a high-resolution display) | ✓ (e.g., Printing a high-quality, large-scale image) | ✓ (e.g., Using as a frame in a high-quality animation)
-*fullres* (PDF / PNG / JPEG) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset wrapped to PNG / JPEG file ) | ✓ (e.g., Printing the original PDF or PNG / JPEG image file in its highest quality. For asset types other than PNG / JPEG / PDF one should serve the asset wrapped as a PDF file) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset wrapped to PNG / JPEG file )
+*fullres* (PDF / PNG / JPEG) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset converted to PNG / JPEG file ) | ✓ (e.g., Printing the original PDF or PNG / JPEG image file in its highest quality. For asset types other than PNG / JPEG / PDF one should serve the asset wrapped as a PDF file) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset converted to PNG / JPEG file )
 *original* | ✓ | ✓ | ✓
 
 ### detail Method
