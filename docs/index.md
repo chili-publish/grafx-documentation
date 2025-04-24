@@ -11,6 +11,12 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    **April 23, 2025**: GraFx Studio – ==Multi-line text & Arabic language support==
+
+    This update brings multi-line text variables, Arabic language support, and several other improvements.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/23/grafx-studio--multi-line-text--arabic-language-support/)
+
     ---
 
     **April 7, 2025**: GraFx Studio – ==Adobe® InDesign® plugin update==
