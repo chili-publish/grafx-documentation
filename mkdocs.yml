@@ -288,6 +288,7 @@ nav:
             - 'Variable Visibility Conditions': 'GraFx-Studio/guides/template-variables/visibility/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
+            - 'Multi-line text variables':      'GraFx-Studio/guides/template-variables/multi-line-text/index.md'
             - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
             - 'Variables private data':         'GraFx-Studio/guides/template-variables-private-date/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
