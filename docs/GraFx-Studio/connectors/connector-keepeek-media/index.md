@@ -64,7 +64,7 @@ Select your type of authentication:
 
 **Server and Browser:** OAuth 2.0 Client Credentials
 
-- **Client ID** and **Client Secret**: These are [customer-specific credentials](https://support.keepeek.com/hc/en-us/articles/23002535539601-Generating-API-Keys#How-to-generate-API-keys) provided by the Keepeek Admin.
+- **Client ID** and **Client Secret**: These are customer-specific credentials provided by the [Keepeek Admin](#keepeek-configuration).
 - **Token Endpoint**:  
 ```html
 https://oauth.keepeek.global/oauth/api/oauth2/compatible/token
