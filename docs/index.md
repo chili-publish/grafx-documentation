@@ -11,6 +11,14 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    **April 25, 2025**: GraFx Studio – ==Keepeek Media Connector==
+
+    Graphique Alliance contributed to the Connector Framework and enabled Smart Templates to integrate assets from the Keepeek DAM.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/25/grafx-studio--keepeek-media-connector/)
+
+    ---
+
     **April 25, 2025**: GraFx Studio – ==PNG & JPG batch output==
 
     In addition to PDF, you can now generate **PNG** and **JPG** files in batch.
@@ -41,23 +49,6 @@
     If you use Canto DAM, you can now integrate its assets into your smart templates.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam/)
-
-    ---
-
-    **March 28, 2025**: GraFx Studio – ==Smart Crop Update==
-
-    You can now manually edit the Subject Area and Point of Interest of any asset, including those from external DAM systems via media connectors.  
-    This allows for precise adjustments to AI-generated data, ensuring Smart Crop focuses on the correct subject.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio--smart-crop-update/)
-
-    ---
-
-    **March 27, 2025**: GraFx Studio & CHILI GraFx – ==Several Updates==
-
-    Updates include Smart Crop preview, GraFx Media asset download, batch error reporting, data source improvements, and more.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/27/chili-grafx-and-grafx-studio-updates/)
 
     ---
 
