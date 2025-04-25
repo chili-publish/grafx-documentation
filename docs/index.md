@@ -11,7 +11,7 @@
 
 -   :material-clock-fast: **Release Notes**
 
-    **April 25, 2025**: GraFx Studio – ==Multi-line text & Arabic language support==
+    **April 25, 2025**: GraFx Studio – ==PNG & JPG batch output==
 
     In addition to PDF, you can now generate **PNG** and **JPG** files in batch.
     
@@ -19,7 +19,7 @@
 
     ---
 
-    **April 23, 2025**: GraFx Studio – ==PNG & JPG batch output==
+    **April 23, 2025**: GraFx Studio – ==Multi-line text & Arabic language support==
 
     This update brings multi-line text variables, Arabic language support, and several other improvements.
     
