@@ -8,7 +8,7 @@ Data Connectors are particularly valuable for creating dynamic templates that ca
 
 CHILI publish and our community have developed several Data Connectors to enhance the functionality of GraFx Studio. Some common use cases include:
 
-- [Google Sheets Connector](/GraFx-Studio/connectors/connector-google-sheets-data): Import data from spreadsheet files
+- [Google Sheets Connector](/GraFx-Studio/connectors/connector-google-sheets-data/): Import data from spreadsheet files
 
 ## Tutorial Sequence
 
