@@ -57,6 +57,19 @@ img[alt=releasenotes] {
 	/* height: 250px; */
 }
 
+img[alt=screenshot-new] {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 img[alt=screenshot] {
 	width: 40%;
 	min-width: 250px;
@@ -118,6 +131,16 @@ img[alt="rn_icon"] {
 	background-color: #F0F0F0;
 	color: #000;
 }
+
+.md-nav__link--active {
+	text-decoration: underline;
+}
+
+.md-tabs__item--active {
+	color: var(--chilired);
+	font-weight: bold;
+}
+
 .md-tabs__link--active {
 	color: var(--md-typeset-a-color);
 	font-weight: bold;

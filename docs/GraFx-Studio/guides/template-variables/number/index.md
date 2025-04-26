@@ -1,5 +1,16 @@
 # Number Variables
 
+Example: Price
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/u6sHNdyIfj0?si=CXy3y0H2-RRPdsf_&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Example: Discount
+
+<iframe width="690" height="388" src="https://www.youtube.com/embed/pmwwd4RSzAk?si=pdc1NQMStOIn0XzR&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+
 ## General Properties
 
 ![screenshot-full](num3.png)

@@ -1,12 +1,14 @@
 # Media Connector for Acquia DAM
 
-|  | Connector type |
-| --- | --- |
-|  | Built-in |
-| :fontawesome-regular-square-check: | Built by CHILI publish |
-|  | Third party |
+:fontawesome-regular-square: Built-in  
+:fontawesome-regular-square-check: Built by CHILI publish  
+:fontawesome-regular-square: Third Party
 
 [See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
+
+## Solution vendor website
+
+See [Acquia's website](https://www.acquia.com/products/acquia-dam).
 
 ## Installation
 
