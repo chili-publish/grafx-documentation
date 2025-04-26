@@ -448,5 +448,6 @@ nav:
             - 'Data Connectors':
                 - 'Introduction': 'GraFx-Developers/connectors/data-connector/data-connector-introduction/index.md'
                 - 'Data Connector Fundamentals': 'GraFx-Developers/connectors/data-connector/data-connector-fundamentals/index.md'
+                - 'Build a Simple Connector': 'GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
             - 'Publish my connector':                         'GraFx-Developers/connectors/publish-my-connector/index.md'

@@ -15,9 +15,7 @@ CHILI publish and our community have developed several Data Connectors to enhanc
 For those new to building Data Connectors, we recommend following this structured learning path:
 
 1. [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/): Learn the basic concepts and architecture of Data Connectors.
-2. Build a Simple Data Connector (In progress): Create your first Data Connector with step-by-step guidance.
-3. Add Variable Settings To Your Connector(In progress): Enhance your connector with customizable settings.
-4. Add Environment Options To Your Connector(In progress): Learn to configure your connector for different environments.
+2. [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/): Create your first Data Connector with step-by-step guidance.
 
 ## Reference Documentation
 

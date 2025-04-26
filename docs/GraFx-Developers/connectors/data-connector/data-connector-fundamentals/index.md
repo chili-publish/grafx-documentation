@@ -127,6 +127,6 @@ The returned `DataModel` structure is used to define the types of data that your
 
 ## Next Steps
 
-1. Follow the Build a Simple Data Connector (In Progress) tutorial to learn how to build your first Data Connector.
+1. Follow the [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) tutorial to learn how to build your first Data Connector.
 2. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector.
 3. Explore the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) documentation to learn about the tools available for connector development.
