@@ -311,6 +311,7 @@ nav:
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
             - 'Canto DAM':                      'GraFx-Studio/connectors/connector-canto/index.md'
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
+            - 'Keepeek Media':                  'GraFx-Studio/connectors/connector-keepeek-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
         - 'Connectors: Data':
             - 'Google Sheets':                  
