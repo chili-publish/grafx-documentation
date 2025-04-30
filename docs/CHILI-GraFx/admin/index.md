@@ -18,9 +18,9 @@ Click on the avatar to choose a new picture for your account
 
 ### Reset my password
 
-You would only need to reset your password, if it got compromised.
+You only need to reset your password, if it gets compromised.
 
-Password have a lifecycle of 1 year, after that you'll be invited to create a new password.
+Passwords have a lifecycle of 1 year, after that you'll be invited to create a new password.
 
 ## Subscriptions
 
