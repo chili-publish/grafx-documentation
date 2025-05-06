@@ -94,34 +94,38 @@ The compliance of the CHILI publisher software is affected when:
 The effect of non-compliance is the temporary suspension of the CHILI publisher service for all environments and regions, until the compliance issue has been resolved. 
 
 
-## Secure Development (SDLC)
+## Secure Software Development Lifecycle (SSDLC)
 
-## Framework Security Controls	
+### Secure Coding Practices	
+
+The CHILI publish development team follows best practices for secure coding.
+
+### Framework Security Controls	
 
 CHILI publish leverages modern and secure frameworks with security controls to mitigate security risks.
 
  
-## Quality Assurance	
+### Quality Assurance	
 
 Our Quality Assurance (QA) department reviews and tests our code base. 
 
-## Separate Environments	
+### Separate Environments	
 
 Testing and staging environments are logically separated from the Production environment. Service Data will never be used for development and testing.  
 
 
-## Vulnerability Management
+### Vulnerability Management
 
-### Static Code Analysis	
+#### Static Code Analysis	
 
 The source code repositories are scanned for security issues via our integrated static analysis tooling.
 
 
-### Vulnerability Scanning
+#### Vulnerability Scanning
 
 CHILI leverages vulnerability management technology and tools to constantly guard against common vulnerabilities and exposures.
 
-### Third-party Penetration Testing	
+#### Third-party Penetration Testing	
 
 In addition to our extensive internal scanning and testing program, CHILI publish employs third-party security experts to perform detailed penetration tests on different applications within our family of products.
 
