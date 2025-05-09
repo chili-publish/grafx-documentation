@@ -52,3 +52,7 @@ Click the **three dots** at the end of any row to open the actions menu.
     "outputAvailable": true
   }
 ```
+
+- **Download report**  
+  Available when a task failed. Contains a JSON file, with the list of errors per failed record.
+
