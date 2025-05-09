@@ -11,6 +11,14 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    **May 8, 2025**: GraFx Studio – ==MP4 & GIF batch output==
+
+    You can now scale your content creation effortlessly—**all output formats** fully support batch generation. Just connect your template to a data source, and GraFx Studio will automatically generate output for each data record.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/05/08/grafx-studio--mp4--gif-batch-output/)
+
+    ---
+
     **April 25, 2025**: GraFx Studio – ==Keepeek Media Connector==
 
     Graphique Alliance contributed to the Connector Framework and enabled Smart Templates to integrate assets from the Keepeek DAM.
@@ -30,7 +38,6 @@
     **April 23, 2025**: GraFx Studio – ==Multi-line text & Arabic language support==
 
     This update brings multi-line text variables, Arabic language support, and several other improvements.
-
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/04/23/grafx-studio--multi-line-text--arabic-language-support/)
 
