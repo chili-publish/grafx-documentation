@@ -299,6 +299,7 @@ nav:
             - 'Example: Currency change':       'GraFx-Studio/guides/actions/example-currency/index.md'
         - 'How to: Output':
             - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
+            - 'Output tasks':                   'GraFx-Studio/guides/output/tasks/index.md'
             - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'

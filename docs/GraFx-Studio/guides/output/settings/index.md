@@ -4,133 +4,196 @@
 
 ## Create output settings
 
-In the GraFx Studio application, under manage, you can manage "Output settings"
+In GraFx Studio, go to **Manage > Output settings** to view and configure output settings.
 
-By default, there will be output settings for each output format. 
+By default, each output format has one preconfigured setting.
 
 ![screenshot-full](os00.png)
 
-To add a setting click the "+ create" button.
-
-Give your setting a relevant name, and choose the output file format.
+To add a new setting, click the **+ Create** button.  
+Give your setting a relevant name and choose an output file format.
 
 ![screenshot](os03.png)
 
-The created setting will appear in the list.
+The new setting will appear in the list.
 
 ![screenshot-full](os04.png)
 
-You can delete a setting, at the "..." menu at the right of the list.
+To delete a setting, use the **...** menu at the right end of the row.
 
 ![screenshot](os06.png)
 
-When you delete all of the (default) settings, "No output settings created" placeholder will be visible.
+If all settings are deleted, a placeholder will indicate no output settings exist.
 
 ![screenshot-full](os01.png)
 
 ---
 
-Depending on the chosen output file type, there are different settings available.
+Output settings vary depending on the file format.
 
-## Generic settings for all file types
+## Generic Settings (all formats)
 
 ![screenshot-full](os14.png)
 
 ### Name and description
 
-The name of your setting (1), is the name that will be shown in the [Studio UI](/GraFx-Studio/guides/create-projects/#customize-your-project).
-
-The description (2) will be shown as a second line in the export.
+- **Name** (1) appears in the [Studio UI](/GraFx-Studio/guides/create-projects/#customize-your-project)
+- **Description** (2) appears as a subtitle in the export UI
 
 ![screenshot-full](os15.png)
 
 ### Output format
 
-The output format (3) is the chosen file type. You can still change it in the settings detail.
+- Select the output format (3) — it can still be changed later.
 
 ### Watermark
 
-When checked, your output will have a visual watermark, and the output will not count as a render.
+- Enable this to apply a watermark to your output.
+- Renders with watermark **do not** count as billable.
+- Enter a non-empty watermark text.
 
-Add a word that will be used as the visual watermark. The word cannot be empty.
+---
 
-## PDF output settings
+## PDF Output Settings
 
-See [generic settings](#generic-settings-for-all-file-types)
+See [Generic Settings](#generic-settings-all-formats)
 
 ![screenshot-full](os12.png)
 
-### Bar width reduction
+### Bar Width Reduction
 
-Bar Width Reduction (BWR) is used in barcode printing to compensate for ink spread or "dot gain". It involves reducing the barcode bars' thickness so that they remain scannable after printing and ink spreading. The actual adjustment amount depends on various factors like ink, paper, and printer conditions. To get the right value, print a sample, measure the bar width, and compare it to the original file. The difference helps adjust the bar width to compensate for the printing process.
+Compensates for ink spread during printing (dot gain).  
+Use positive values to make bars thinner, negative to make them wider.
 
-Positive values make the bars smaller, negative values make the bars wider.
+### Outline Text
 
-### Outline text
-
-When enabled, the glyphs (characters used in the PDF) will be output as vector shapes. Fonts will not be embedded.
-Enabling this setting removed the dependency of fonts in the PDF.
+Outputs text as vector shapes instead of embedding fonts.  
+This removes font dependencies in the resulting PDF.
 
 ![screenshot](os17.png)
 
-### Data source
+### Data Source
 
-When enabled, the PDF will contain all records available in the Data source.
+When enabled, includes all records from the data source in the output.
 
 ![screenshot](output.png)
 
+### Error Handling
+
+Enable **Continue batch output after failure** to skip failed rows.  
+A report is available in [Output Tasks](../tasks/).
+
+![screenshot](errorhandling.png)
+
 ### Crop Marks
 
-What are [Crop Marks](/GraFx-Studio/concepts/crop-marks/)?
-
-Set the offset and weight (thickness) of the crop marks.
+See [Crop Marks](/GraFx-Studio/concepts/crop-marks/).  
+Define offset and weight (thickness).
 
 ![screenshot](os16.png)
 
-## JPG output settings
+---
+
+## JPG Output Settings
 
 ![screenshot-full](os13.png)
 
 ### Scaling
 
-Can be used to scale the output if your target channel requires a bigger or smaller image size.
-Higher-resolution images will be used (if available in your media) to produce higher-resolution output.
+Adjusts output resolution.  
+Higher resolution assets (if available) are used automatically.
 
 ### Quality
 
-Can be used to set the quality of the output. 100% will produce the highest quality but also the largest file size. 1% will produce the lowest quality but smallest file size.
+Set compression quality (1% to 100%).  
+Higher values mean larger file size but better image fidelity.
 
-## PNG output settings
+### Data Source
+
+Exports all data source records as individual JPG files in a ZIP.
+
+![screenshot](output.png)
+
+### Error Handling
+
+Enable **Continue batch output after failure** to skip failed rows.  
+A report is available in [Output Tasks](../tasks/).
+
+![screenshot](errorhandling.png)
+
+---
+
+## PNG Output Settings
 
 ![screenshot-full](os09.png)
 
 ### Scaling
 
-Can be used to scale the output if your target channel requires a bigger or smaller image size.
-Higher-resolution images will be used (if available in your media) to produce higher-resolution output.
+Same behavior as in JPG output.
 
-## GIF output settings
+### Data Source
+
+Exports all records as individual PNG files in a ZIP.
+
+![screenshot](output.png)
+
+### Error Handling
+
+Enable **Continue batch output after failure** to skip failed rows.  
+A report is available in [Output Tasks](../tasks/).
+
+![screenshot](errorhandling.png)
+
+---
+
+## GIF Output Settings
 
 ![screenshot-full](os11.png)
 
 ### Scaling
 
-Can be used to scale the output if your target channel requires a bigger or smaller image size.
-Higher-resolution images will be used (if available in your media) to produce higher-resolution output.
+Same behavior as in JPG and PNG output.
 
-### Frame rate
+### Frame Rate
 
-For animations, defines how many frames will be played per second.
+Set the number of animation frames per second.
 
-## MP4 output settings
+### Data Source
+
+Exports all records as individual GIFs in a ZIP.
+
+![screenshot](output.png)
+
+### Error Handling
+
+Enable **Continue batch output after failure** to skip failed rows.  
+A report is available in [Output Tasks](../tasks/).
+
+![screenshot](errorhandling.png)
+
+---
+
+## MP4 Output Settings
 
 ![screenshot-full](os10.png)
 
 ### Scaling
 
-Can be used to scale the output if your target channel requires a bigger or smaller image size.
-Higher-resolution images will be used (if available in your media) to produce higher-resolution output.
+Same as other image/video formats.
 
-### Frame rate
+### Frame Rate
 
-For animations, defines how many frames will be played per second.
+Set the number of animation frames per second.
+
+### Data Source
+
+Exports all records as MP4s in a ZIP.
+
+![screenshot](output.png)
+
+### Error Handling
+
+Enable **Continue batch output after failure** to skip failed rows.  
+A report is available in [Output Tasks](../tasks/).
+
+![screenshot](errorhandling.png)
