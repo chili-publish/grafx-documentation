@@ -161,12 +161,12 @@ The `intent` parameter specifies the platform the `download` was called:
 
 #### Supported Formats
 
-DownloadType / DownloadIntent | *web* (= browser based editing session) | *print* (= PDF output, High res image output) | *animation* (= Gif, mp4 output, compression will be applied)
+DownloadType / DownloadIntent | *web* (= browser based editing session, PNG/JPG output) | *print* (= PDF output, High res image output) | *animation* (= Gif, mp4 output, compression will be applied)
 -- | -- | -- | --
-*thumbnail* | ✓ (e.g., Displaying small preview images on a webpage) |   |
-*mediumres* | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |
-*highres* | ✓ (e.g., Downloading a high-quality image for use on a high-resolution display) | ✓ (e.g., Printing a high-quality, large-scale image) | ✓ (e.g., Using as a frame in a high-quality animation)
-*fullres* (PDF / PNG / JPEG) For image types other then PNG / JPEG one should serve the asset wrapped as a PDF file |   | ✓ (e.g., Printing the original PDF or image file in its highest quality) |
+*thumbnail* (PNG / JPEG) | ✓ (e.g., Displaying small preview images on a webpage) |   |
+*mediumres* (PNG / JPEG) | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |
+*highres* (PNG / JPEG) | ✓ (e.g., Downloading a high-quality image for use on a high-resolution display) | ✓ (e.g., Printing a high-quality, large-scale image) | ✓ (e.g., Using as a frame in a high-quality animation)
+*fullres* (PDF / PNG / JPEG) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset converted to PNG / JPEG file ) | ✓ (e.g., Printing the original PDF or PNG / JPEG image file in its highest quality. For asset types other than PNG / JPEG / PDF one should serve the asset wrapped as a PDF file) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset converted to PNG / JPEG file )
 *original* | ✓ | ✓ | ✓
 
 ### detail Method

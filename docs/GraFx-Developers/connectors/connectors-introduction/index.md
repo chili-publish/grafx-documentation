@@ -38,22 +38,22 @@ The following types of services are particularly well-suited for Connector integ
 
 GraFx Studio currently supports two types of Connectors:
 
-1. **Media Connectors** (Experimental): 
+1. **Media Connectors** (Experimental):
 
    - Purpose: Import images into documents and update variables with metadata
    - Status: Currently available as an experimental feature
 
-2. **Data Connectors** (In Development):
+2. **Data Connectors** (Experimental):
 
    - Purpose: Import data to update document variables
-   - Status: Currently in development, expected release in 2025
+   - Status: Currently available as an experimental feature
 
 ## Getting Started
 
 If you're interested in building a Connector:
 
 - For Media Connectors, please refer to our [Media Connector Introduction](/GraFx-Developers/connectors/media-connector/media-connector-introduction/) guide for detailed instructions and best practices.
-- For Data Connectors, please check back soon for updated information and documentation.
+- For Data Connectors, please refer to our [Data Connector Introduction](/GraFx-Developers/connectors/data-connector/data-connector-introduction/) guide for detailed instructions and best practices.
 
 ### Steps to build your connector
 

@@ -288,6 +288,7 @@ nav:
             - 'Variable Visibility Conditions': 'GraFx-Studio/guides/template-variables/visibility/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
             - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
+            - 'Multi-line text variables':      'GraFx-Studio/guides/template-variables/multi-line-text/index.md'
             - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
             - 'Variables private data':         'GraFx-Studio/guides/template-variables-private-date/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
@@ -310,6 +311,7 @@ nav:
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
             - 'Canto DAM':                      'GraFx-Studio/connectors/connector-canto/index.md'
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
+            - 'Keepeek Media':                  'GraFx-Studio/connectors/connector-keepeek-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
         - 'Connectors: Data':
             - 'Google Sheets':                  
@@ -444,6 +446,10 @@ nav:
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
                 - 'Add Configuration Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
                 - 'Add Environment Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
+            - 'Data Connectors':
+                - 'Introduction': 'GraFx-Developers/connectors/data-connector/data-connector-introduction/index.md'
+                - 'Data Connector Fundamentals': 'GraFx-Developers/connectors/data-connector/data-connector-fundamentals/index.md'
+                - 'Build a Simple Connector': 'GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
             - 'Document my connector':                          'GraFx-Developers/connectors/connector-documentation/index.md'
             - 'Publish my connector':                           'GraFx-Developers/connectors/publish-my-connector/index.md'
