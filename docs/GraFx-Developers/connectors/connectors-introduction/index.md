@@ -55,6 +55,13 @@ If you're interested in building a Connector:
 - For Media Connectors, please refer to our [Media Connector Introduction](/GraFx-Developers/connectors/media-connector/media-connector-introduction/) guide for detailed instructions and best practices.
 - For Data Connectors, please refer to our [Data Connector Introduction](/GraFx-Developers/connectors/data-connector/data-connector-introduction/) guide for detailed instructions and best practices.
 
+### Steps to build your connector
+
+- Build locally
+- Publish and test oneline
+- Commit to the open source Repository
+- Add documentation to this documentation repository
+
 ### Common Questions
 
 #### Q: Can Connectors be used to export data from GraFx Studio to external systems?
