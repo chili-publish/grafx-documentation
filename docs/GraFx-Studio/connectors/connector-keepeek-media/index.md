@@ -12,7 +12,7 @@ See [Graphique Alliance's website](https://graphique-alliance.com/)
 
 ## Installation
 
-The installation is done by enabling the Keepeek connector on the environment.
+The installation is done by enabling the Keepeek Connector in your environment.
 
 [See Installation Through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
@@ -22,7 +22,7 @@ Contact [Graphique Alliance](https://graphique-alliance.com/contact/) to obtain 
 
 ## CHILI GraFx Connector Configuration 
 
-From the overview of Environments, click on "Settings" on the right to your environment, where you want to install or configure the Connector.
+From the Environments overview, click on "Settings" on the right in the environment where you want to install or configure the Connector.
 
 ![screenshot-full](sch13.jpg)
 
@@ -40,7 +40,7 @@ Your instance of the Connector needs to know which Keepeek instance it should co
 
 Your Keepeek System Administrator will provide you with this information.
 
-For example
+For example:
 
 ```html
 https://[your-domain].keepeek.global
@@ -48,9 +48,9 @@ https://[your-domain].keepeek.global
 
 **Proxy settings**
 
-CHILI GraFx needs to know what domains are allowed to process
+CHILI GraFx needs to know what domains are allowed.
 
-For example
+For example:
 
 ```html
 *.keepeek.global
@@ -88,13 +88,13 @@ Consult your Keepeek System Admin for assistance in configuring these fields.
 
 ### Image Variables
 
-When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except is you have set configuration options (see below).
+When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the familiar grid of assets used when selecting an image, but also the Connector configuration options (see below).
 
 ![screenshot-full](var01.png)
 
 ### Metadata mapping
 
-See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details
+See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details.
 
 ![screenshot-full](var02.png)
 
@@ -102,10 +102,10 @@ See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#conce
 
 ![screenshot](var03.png)
 
-To filter the assets suggested to template users, you can use several methods.
+To filter the assets suggested to template users, you can use several methods, including:
 
 #### Folder
 
-When set, the user will be offered asset from this folder only.
+When set, the user will be offered assets from this folder only.
 
-The value van be fixed, or can be guided through another variable.
+The value can be fixed, or can be guided through another variable.
