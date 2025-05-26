@@ -1,61 +1,98 @@
-# Cropping an image
+# Cropping an Image
 
-## Placing an image
+## Placing an Image
 
-When creating an image frame, and assigning an asset to the frame, a default "Fill" will be selected.
+When you create an image frame and assign an asset to it, the default **Fill** mode is applied. This ensures the image fills the entire frame.
 
-This will ensure the image is placed in the frame, and fills the image frame.
+![screenshot-full](crop01.png)
 
-![screenshot-fullwidth](fill.png)
+## Cropping Options
 
-Entering crop mode, shows the actual borders of the placed image.
+There are two ways to crop an image:
 
-![screenshot-fullwidth](fill-crop.png)
+- Use **Manual Crop**
+- Use **Manual Crop Override** (while in Fill, Fit, or Smart Crop mode)
 
-## Cropping an image
+### Manual Crop
 
-### Entering crop mode
+Choose **Manual Crop** as the fit mode to freely adjust the image's position and scale in the frame. This setting applies to the image frame and is shared across all images placed in that frame.
 
-Select the image (frame) and enter crop mode in the properties panel.
+See below: [Cropping an Image](#cropping-an-image_1)
 
-![screenshot](crop-button.png)
+### Manual Crop Override
 
-You can also enter crop mode by double clicking on the image. (with the Arrow tool selected)
+This feature lets you override the automated crop (Fill, Fit, or Smart Crop) for a specific image in a specific frame and layout.
 
-### Arrow
+When you manually override a crop while using Fill, Fit, or Smart Crop, **GraFx Studio stores the override for the combination:
 
-Use the arrow-tool to manually positioning the image in the crop frame.
+**AssetID + FrameID + LayoutID**
 
-![screenshot-fullwidth](manual-position.png)
+This means that:  
 
-### Handles
+- The crop override applies only when this specific image is used in this specific frame and layout.
+- For all other images, the frame will use its default crop mode (Fill, Fit, or Smart Crop).
+- Overrides do **not** inherit from the parent layout.
 
-Use the frame handles (3) or crop handles (4) to resize the respective frames
+This is especially useful for lifestyle images, where a designer may want to fine-tune the framing manually instead of relying on automatic cropping.
 
-![screenshot-fullwidth](crophandles.png)
+## Cropping an Image
 
-### Apply crop
+### Entering Crop Mode
 
-Click the "Apply" button to apply. You can also hit the enter-key.
+You can enter crop mode in two ways:
 
-![screenshot-fullwidth](fill-crop.png)
+Select the image frame and use the crop tool in the properties panel  
 
-### Cancel or exit crop
+![screenshot](crop03.png)
 
-Hit the Escape key, or click "Cancel"
+Or, double-click the image (while the arrow tool is selected)  
 
-## Reset crop
+![screenshot-full](crop04.png)
 
-After applying an image crop, the fit remains present but “(cropped)” is added.
+### Adjusting the Crop
 
-The “Crop” button is still present to trigger image crop mode again. 
+**Use the arrow tool** to reposition the image inside the frame  
 
-You can reset the crop to again apply the selected fit mode.
+![screenshot-full](crop05.png)
 
-![screenshot](reset-crop.png)
+**Use the crop handles (4)** to change the crop boundaries  
 
-When the current layout is a "Sub-layout", resetting the crop will fall back to the Master layout settings.
+**Use the frame handles (3)** to resize the frame  
+
+![screenshot-full](crop08.png)
+
+### Apply or Cancel
+
+**Apply** the crop by clicking the "Apply" button or pressing **Enter**  
+
+![screenshot](crop09.png)
+
+**Cancel** the crop by clicking "Cancel" or pressing **Escape**
+
+## Resetting Crop
+
+### Reset Manual Crop
+
+To remove a manual crop and return to automated behavior, switch the fit mode to **Fill**, **Fit**, or **Smart Crop**.
+
+![screenshot](crop10.png)
+
+This resets the manual crop and reverts to any inherited crop settings from the master layout.
+
+### Reset Manual Crop Override
+
+When a crop override is active, you'll see a message under the crop mode selector:
+
+![screenshot](crop11.png)
+
+Click **Reset Override** to remove the crop override for that specific:
+
+- Image (`AssetID`)
+- Frame (`FrameID`)
+- Layout (`LayoutID`)
+
+Note: Manual Crop Overrides do **not** inherit from its parent layout.
 
 ## Undo / Redo
 
-Explained on the [concept page](/GraFx-Studio/concepts/crop/#undo)
+You can undo and redo crop changes. See the [Concept of Crop](/GraFx-Studio/concepts/crop/#undo) page for more details.
