@@ -86,6 +86,30 @@ See [Concept of Smart Crop](../../concepts/genie-smart-crop/) for more details
 
 See [How to use Smart Crop](../smart-crop/) for more details
 
+#### Manual Crop Override
+
+See also [Concept of Manual Crop Override](../../concepts/manual-crop-override/) for details.
+
+Select one of the automated crop modes
+
+- Fill
+- Fit
+- Smart Crop
+
+When the images is positioned (automatically), click the crop icon next to the fit mode.
+
+![screenshot-full](mco01.png)
+
+Position the image how you prefer it, and click apply.
+
+![screenshot-full](mco02.png)
+
+When a particular image has a manual crop override, it will display below the fit modes.
+
+![screenshot](mco03.png)
+
+The left round arrow resets the override, for that images, in that frame, in that layout.
+
 #### Aspect radio
 
 If the image and the frame have the exact aspect ratio, there will be no difference between fitt and fill.

@@ -247,6 +247,7 @@ nav:
             - 'Layers':                         'GraFx-Studio/concepts/layers/index.md'
             - 'Layouts':                        'GraFx-Studio/concepts/layouts/index.md'
             - 'Layout Intent':                  'GraFx-Studio/concepts/layout-intent/index.md'
+            - 'Manual Crop Override':           'GraFx-Studio/concepts/manual-crop-override/index.md'
             - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
             - 'Output Tasks':                   'GraFx-Studio/concepts/output-tasks/index.md'
             - 'Pages':                          'GraFx-Studio/concepts/pages/index.md'

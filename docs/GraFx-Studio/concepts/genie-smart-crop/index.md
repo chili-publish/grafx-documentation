@@ -44,6 +44,14 @@ If the automatic Smart Crop results aren't as expected, you can manually adjust 
 - Ensure there is sufficient space around the main subject in the original asset.  
   Without extra surrounding space, Smart Crop has limited room to adjust, potentially causing unwanted whitespace or scaling.
 
+### Manual Crop Override
+
+In certain use cases—such as lifestyle imagery—automatic cropping may not deliver the desired result.  
+**Manual Crop Override** lets you fine-tune how an image appears inside a specific layout and frame.  
+This override is stored per **image–layout–frame** combination and ensures that the next time this specific image is loaded in the same layout and frame, your custom crop position is preserved.
+
+[Learn more about Manual Crop Override](../manual-crop-override/)
+
 ### Best Practices
 
 - The Subject Area should fit closely around the primary subject.

@@ -50,6 +50,16 @@ With "Fill" mode, the image is scaled up, so the full frame is used. This (possi
 
 ![screenshot-fullwidth](fillmode.png)
 
+## Manual crop override
+
+To further refine your image layout, GraFx Studio supports **Manual Crop Override**.
+
+This lets you manually adjust the crop position of a specific image inside a frame for a specific layout. This override is remembered, and reapplied automatically when the same asset is used again in that frame and layout.
+
+This is particularly useful for lifestyle images where automated cropping (Fill, Fit, or Smart Crop) doesn't provide the ideal result.
+
+[Learn more about Manual Crop Override](../manual-crop-override/)
+
 ## Shape Frame
 
 ![screenshot-sullwidth](frame-shape.png)
