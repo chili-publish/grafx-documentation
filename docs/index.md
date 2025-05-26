@@ -11,6 +11,14 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    **May 26, 2025**: GraFx Studio – ==Manual Crop Override==
+
+    Template designers can now lock specific images to a manual crop, even when using automatic fit modes like Smart Crop. This gives you full control over how visuals are framed.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/05/23/grafx-studio--about-cropping/)
+
+    ---
+
     **May 8, 2025**: GraFx Studio – ==MP4 & GIF batch output==
 
     You can now scale your content creation effortlessly—**all output formats** fully support batch generation. Just connect your template to a data source, and GraFx Studio will automatically generate output for each data record.
@@ -32,31 +40,6 @@
     In addition to PDF, you can now generate **PNG** and **JPG** files in batch.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/04/25/grafx-studio--png--jpg-batch-output/)
-
-    ---
-
-    **April 23, 2025**: GraFx Studio – ==Multi-line text & Arabic language support==
-
-    This update brings multi-line text variables, Arabic language support, and several other improvements.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/23/grafx-studio--multi-line-text--arabic-language-support/)
-
-    ---
-
-    **April 7, 2025**: GraFx Studio – ==Adobe® InDesign® plugin update==
-
-    New release enhances image alignment controls and export preflight checks, adds blending options, and includes general bug fixes and improvements.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/07/grafx-studio---adobe-indesign-plugin-update/)
-
-    ---
-
-    **March 28, 2025**: GraFx Studio – ==Connector for Canto DAM==
-
-    Spicy Labs added a media connector to allow the use of DAM assets from the Canto DAM solution.  
-    If you use Canto DAM, you can now integrate its assets into your smart templates.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/03/28/grafx-studio---connector-for-canto-dam/)
 
     ---
 
