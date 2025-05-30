@@ -35,18 +35,3 @@ In edit mode, the template variable name is shown in a gray box in the text.
 If the frame is not wide enough to show the full name, the name will be truncated to avoid overflow.
 
 ![screenshot-full](variables-3.png)
-
-
-## Assign template variable to image frame
-
-Select the image frame you want to assign the template variable to.
-
-In the variable tab, choose the image variable from the "Insert variable" drop-down menu.
-
-![screenshot-full](assign.png)
-
-## Un-assign a template variable from an image frame
-
-To remove the template variable from the image frame, select the frame and choose "None" from the "Insert variable" drop-down menu.
-
-![screenshot-full](unassign.png)
