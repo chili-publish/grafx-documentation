@@ -38,7 +38,7 @@ In the **User Interface** settings, define the **Label**, **Placeholder**, **Hel
 
 Set the path, where the end-user can browse for images.
 
-The path can be fixed: **Set Value** or fed through a (text) variable having a path.
+The path can be fixed: **Set Value** or fed through a (text / list) variable having a path.
 
 ![screenshot-full](image05.png)
 
@@ -46,7 +46,7 @@ Choose "Allow Upload" and set a path, to allow end-users to upload assets.
 
 For uploads, you can define a minimum width and height in pixels.
 
-Once enabled, each uploaded file is stored in by default in an `Upload/` folder (for the GraFx Media connector), or in a custom path you specify.  
+Once enabled, each uploaded file is stored in the "Upload/" folder (for the GraFx Media connector), or in a custom path you specify.  
 Uploaded assets become available just like any other image variable source.
 
 ![screenshot-full](image06.png)
