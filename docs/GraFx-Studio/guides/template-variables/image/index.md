@@ -24,11 +24,17 @@ Optional: set the variable to be required and add [private data](/GraFx-Studio/g
 
 ### User Interface Settings
 
-In the **User Interface** settings, define the **Label**, **Placeholder** (help text), and [Visibility](/GraFx-Studio/guides/template-variables/visibility/).  
+In the **User Interface** settings, define the **Label**, **Placeholder**, **Help text** and [Visibility](/GraFx-Studio/guides/template-variables/visibility/).  
 
 ![screenshot-full](image04.png)
 
 ### Connector Settings
+
+!!! warning "GraFx Media"
+    The information below works for the (default) GraFx Media connector.
+    For settings specific to another Media Connector, please consult the documentation page for this connector.
+    
+    GraFx Media uses the concept of folders, other Media Connectors might use different terminology.
 
 Set the path, where the end-user can browse for images.
 
@@ -40,7 +46,7 @@ Choose "Allow Upload" and set a path, to allow end-users to upload assets.
 
 For uploads, you can define a minimum width and height in pixels.
 
-Once enabled, each uploaded file is stored in by default in an `uploads/` folder (for the GraFx Media connector), or in a custom path you specify.  
+Once enabled, each uploaded file is stored in by default in an `Upload/` folder (for the GraFx Media connector), or in a custom path you specify.  
 Uploaded assets become available just like any other image variable source.
 
 ![screenshot-full](image06.png)
@@ -50,6 +56,8 @@ Uploaded assets become available just like any other image variable source.
 Select the image frame you want to assign the template variable to.
 
 In the variable tab, choose the image variable from the "Insert variable" drop-down menu.
+
+You can also open the action menu of a variable (the 3 dots) and use the "Insert" option.
 
 ![screenshot-full](image07.png)
 
