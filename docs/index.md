@@ -11,6 +11,14 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    **May 30, 2025**: GraFx Studio – ==Image Upload==
+
+    Template designers can allow end-users to upload their own images directly in the Studio UI! This enables deeper personalization and flexibility for user-generated content, custom branding, and campaign variations.
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/05/30/grafx-studio--image-upload/)
+
+    ---
+
     **May 26, 2025**: GraFx Studio – ==Manual Crop Override==
 
     Template designers can now lock specific images to a manual crop, even when using automatic fit modes like Smart Crop. This gives you full control over how visuals are framed.
