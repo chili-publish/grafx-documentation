@@ -4,11 +4,11 @@
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/pP6_3Ej6x-U?si=yiwTweBam4j7zLRD&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[Go to Youtube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+[Go to YouTube to see all feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
 
-## Create an image variable
+## Create an Image Variable
 
-### The basics
+### The Basics
 
 Create a variable, and change the type to "Image" (default will be Single-line text)
 
@@ -24,7 +24,7 @@ Optional: set the variable to be required and add [private data](/GraFx-Studio/g
 
 ### User Interface Settings
 
-In the user interface settings, define the label, placeholder help text and [visibility](/GraFx-Studio/guides/template-variables/visibility/).
+In the **User Interface** settings, define the **Label**, **Placeholder** (help text), and [Visibility](/GraFx-Studio/guides/template-variables/visibility/).  
 
 ![screenshot-full](image04.png)
 
