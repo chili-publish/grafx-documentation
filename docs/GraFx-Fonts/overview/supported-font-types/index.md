@@ -7,16 +7,9 @@ GraFx Fonts supports [OTF](https://en.wikipedia.org/wiki/OpenType) and [TTF](htt
 	- Open Type Fonts (OTF)
 	- True Type Fonts (TTF)
 
-GraFx Fonts can ingest and serve both formats.  
-However, some writing systems and advanced typographic features rely on specialised **tables** inside the font file.  
-If a table is *not* implemented yet, that particular feature may be ignored (the text still renders, just without the extra behaviour).
-
-> **In short:**  
-> *If your font is OpenType/TrueType and the required tables appear with a **✓** in the list below, it is fully supported by the GraFx Fonts engine.*
-	
 ## These fonts are <u>NOT</u> Supported
 
-If not mentioned in the above list, font files are not supported.
+Except OTF or TTF, other font files are not supported.
 
 Some font types have similar names, we added them below as <u>NOT</u> supported to avoid confusion.
 
@@ -29,13 +22,19 @@ Some font types have similar names, we added them below as <u>NOT</u> supported 
 	
 ## Font-table support in CHILI GraFx
 
-Most modern desktop fonts are either **OpenType** or **TrueType** (`.otf`, `.ttf`).  
-GraFx Fonts can ingest and serve both formats.  
-However, some writing systems and advanced typographic features rely on specialised **tables** inside the font file.  
-If a table is *not* implemented yet, that particular feature may be ignored (the text still renders, just without the extra behaviour).
+GraFx Fonts stores your **TrueType** (`.ttf`) and **OpenType** (`.otf`) files and delivers them to **GraFx Studio**.  
+Whether every typographic feature actually shows up in the editor, however, depends on the **OpenType tables** that the GraFx Studio engine already understands.
 
-> **In short:**  
-> *If your font is OpenType/TrueType and the required tables appear with a **✓** in the list below, it is fully supported by the GraFx Fonts engine.*
+### Example: Ligatures
+
+Think of each table as a plug-in that unlocks extra behaviour.  
+For example, the `GSUB` table can contain a *ligature* rule that turns the letter sequence “f” + “i” into the single “ﬁ” glyph.  
+If GraFx Studio supports the relevant `GSUB` sub-table, the ligature will appear; if not, the two separate letters render instead (the text still prints—just without the fancy substitution).
+
+![screenshot](ligature.svg)
+
+> **In short**  
+> *If your font is OpenType/TrueType and the tables required for your language or feature are listed with a **✅**, GraFx Studio will display the full typographic behaviour.*
 
 ## How to read the table
 
@@ -141,7 +140,7 @@ Check whether the font relies on:
 
 Replacing the font with an updated OpenType that uses `GPOS 1/2` pair-kerning usually solves the issue.
 
-### “Can I use colour fonts?”
+### “Can I use color fonts?”
 
 `COLR` / `CPAL` tables (plus `SVG`, `sbix`, `CBDT/CBLC`) are **not** supported at this moment.  
 Colour glyphs will fall back to the primary outline data.
