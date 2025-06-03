@@ -55,4 +55,19 @@ Click the **three dots** at the end of any row to open the actions menu.
 
 - **Download report**  
   Available when a task failed. Contains a JSON file, with the list of errors per failed record.
+  
+### Available error codes
 
+These are potential error codes you can encounter in the error report.
+
+- Text Overflow
+- Image Load Failed
+- Font Load Failed
+- Missing Character in Font
+- Barcode Empty
+- Barcode Validation Error
+- Invalid Variable Value
+- Missing Variable Value
+- Document Load Action Failed
+- Action Failed
+- No Visible Pages
