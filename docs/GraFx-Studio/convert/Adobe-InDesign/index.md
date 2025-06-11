@@ -75,6 +75,17 @@ You can choose to ignore, or to export the object to a PDF asset, and place it a
 
 ![screenshot](convert20.png)
 
+   - Choose your Layout <a id="alt-layouts"></a>
+   
+Adobe® InDesign® supports Alternate Layouts (per page).  
+The GraFx Studio exporters allows you to choose what page and alternate layout to export.
+
+Choose your Alternate Layout, and this layout will be in the exporter file.
+
+![screenshot](alt2.png)
+
+![screenshot](alt1.png)
+
    - The plugin creates a `.zip` file containing the document and all necessary assets.
    
 ![screenshot-full](convert07.png)
@@ -156,7 +167,7 @@ If a feature isn’t mentioned, it’s not supported — for now! Stay tuned, as
 | **Document**           | Page size                                | ✅                |                                                    |
 |                        | Choose the page to import                | ✅                |                                                    |
 |                        | All pages                                | ✅                |  See [Export](/GraFx-Studio/convert/Adobe-InDesign/#export-to-grafx-studio) for limitations |
-|                        | Layouts                                  | ❌                |                                                    |
+|                        | Layouts                                  | ✅                | [Choose the Layout](#alt-layouts) you want to export|
 |                        | Bleeds                                   | ✅                | Exported from document settings                    |
 | **Frames**             | Rotation                                 | ✅                | Includes text, image, ellipse, polygon             |
 |                        | Blend modes                              | ⚠️                | Preflight: convert to PDF or ignore                |
