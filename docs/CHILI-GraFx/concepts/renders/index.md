@@ -93,9 +93,9 @@ We take your **contractual** rolling average and compare to quota.
 
 !!! Average calculation
 
-	E.g. 6 months rolling average calculation: Total of past 183 days divided by 6
+	E.g. 6 months rolling average calculation: Total of past 6 months divided by 6
 	
-	E.g. 3 months rolling average calculation: Total of past 92 days divided by 3
+	E.g. 3 months rolling average calculation: Total of past 3 months divided by 3
 
 ### What if I need a temporary burst?
 
