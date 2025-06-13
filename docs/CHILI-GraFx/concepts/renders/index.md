@@ -48,17 +48,15 @@ Watermarked output does not count as a render.
 
 When variable output is used, this is the formula to count renders.
 
-The first 50 renders are counted individually, then each subsequent set of 50 add 1 render.
+The first 50 renders are counted individually, then each subsequent set of 10 add 1 render.
 
 !!! Formula
 
 	**V** = Variable Data source size (e.g. 1000 records)
 
-	**Renders** = 50 + (V-50)/50
+	**Renders** = 50 + (V-50)/10
 
-	In this case: 50 + (1000-50)/50 = 50 + 19 = 69
-
-	The first 50 renders count as 50, then every 50 renders are counted as 1.
+	In this case: 50 + (1000-50)/10 = 50 + 95 = 145
 
 ## Fair use policy
 
@@ -68,7 +66,11 @@ Your dashboard will show the actual status of renders for the full subsciption (
 
 ![screenshot-full](renders01.png)
 
-The light blue line shows the "6 month rolling average".
+The light blue line shows the "rolling average".
+
+!!! info "Rolling average"
+
+    Depending on your contract, the rolling average calculation might differ in amount of months taken into the calculation.
 
 ---
 
@@ -79,11 +81,24 @@ When you select an environment, you'll see the details.
 
 Render quota are not a hard limit per month. If you generate more output than the render quota, we won’t block or watermark the output.
 
-The system will not stop working at the limit.
+When the rolling average exceeds the render quota, you will be invoiced an extra render pack to increase your render quota to at least the average.
+	
+## Frequently Asked
 
-When the 6 month rolling average exceeds the render quota, you will be invoiced an extra render pack to increase your render quota to at least the 6 month average.
+### How do you calculate my usage?
 
-!!! Average
-	6 month average calculation:
+We take your **contractual** rolling average and compare to quota.
 
-	Total of past 183 days divided by 6
+!!! Average calculation
+
+	E.g. 6 months rolling average calculation: Total of past 183 days divided by 6
+	
+	E.g. 3 months rolling average calculation: Total of past 92 days divided by 3
+
+### What if I need a temporary burst?
+
+There is no hard limit, so you can always burst to much higher than your quota.
+
+If the rolling average remains below the contract, nothing will change. 
+
+When the rolling average exceeds the render quota, you will be invoiced an extra render pack to increase your render quota to at least the average.
