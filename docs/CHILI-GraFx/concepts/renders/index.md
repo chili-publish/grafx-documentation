@@ -48,7 +48,9 @@ Watermarked output does not count as a render.
 
 When variable output is used, this is the formula to count renders.
 
-The first 50 renders are counted individually, then each subsequent set of 10 add 1 render.
+The first 50 renders are counted individually, then each subsequent set of 10 add 1 render[^1].
+
+[^1]: 1/10 is the default. Depending on your contract, the number might be different.
 
 !!! Formula
 
