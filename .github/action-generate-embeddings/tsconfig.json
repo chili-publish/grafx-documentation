@@ -1,0 +1,10 @@
+
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "strict": true
+    },
+    "include": ["generate_embeddings.ts"]
+  }
