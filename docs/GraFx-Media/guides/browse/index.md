@@ -4,7 +4,7 @@
 
 ![appscreen](dashboard.png)
 
-Initally, the top level directory structure is shown. The default view is by grid.
+Initially, the top-level directory structure is shown. The default view is by grid.
 
 The slider next to the search bar allows switching between grid and list view.
 

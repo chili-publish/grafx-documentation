@@ -2,7 +2,7 @@
 
 This guide is intended to let you create Smart Templates as quick as possible.
 
-## Loggin in
+## Logging in
 
 You received the welcome email, and you're ready to login.
 

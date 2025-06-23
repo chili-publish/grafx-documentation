@@ -22,7 +22,7 @@ The database will be represented as a JSON file, structured according to the fol
 
 ### TypeScript Definition
 
-??? abstract "TypeScript Defintion"
+??? abstract "TypeScript Definition"
 
     ```typescript
         type Token = {

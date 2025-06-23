@@ -30,7 +30,7 @@ Go to User Management
 
 #### Access through a group
 
-[Greate User Group](/CHILI-GraFx/guides/manage-user-groups/)
+[Create User Group](/CHILI-GraFx/guides/manage-user-groups/)
 
 [Group Membership](/CHILI-GraFx/guides/manage-group-membership/)
 

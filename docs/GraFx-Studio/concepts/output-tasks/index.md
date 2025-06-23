@@ -85,7 +85,7 @@ Behind the "..." menu, you can also
 
 **Download report**
 
-Will provide a repport on taks, including details why it failed.
+Will provide a report on tasks, including details on why it failed.
 
 The report below tells you that the first record (record 0), had 3 issues.
 

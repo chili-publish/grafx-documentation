@@ -1,4 +1,4 @@
-# Seciton 15: Implementing Preview Endpoints
+# Section 15: Implementing Preview Endpoints
 
 This section addresses the issue of missing preview functionality for store interfaces by introducing new server-side code that handles preview requests, based on the file type (project or template).
 
@@ -48,7 +48,7 @@ app.get("/preview/:type/:id", async (context) => {
 });
 ```
 
-This endpoint is unique to the other in that is has two URL parameters. The reason being is the preview URLs in CHILI are specific to the filetype: Tempalte or Project.
+This endpoint is unique from the others in that it has two URL parameters. The reason is that the preview URLs in CHILI are specific to the file type: Template or Project.
 
 The `getThumbnail` function returns a stream which we will pass to the body of our response.
 
