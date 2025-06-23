@@ -254,7 +254,7 @@ import { deleteCookie } from "hono/cookie";
 import { setUserCookie, getUserType } from "./utility.js";
 import { initDB } from "./database.js";
 
-const db = initDB(); // We initalize our database
+const db = initDB(); // We initialize our database
 
 const app = new Hono();
 // ...rest of server.js file

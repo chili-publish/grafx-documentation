@@ -84,7 +84,7 @@ On the page in CHILI GraFx, confirm your new password.
 
 ![steps](migrate-11.png)
 
-## 5. Loggin in to CHILI GraFx
+## 5. Logging in to CHILI GraFx
 
 Go to [CHILI GraFx](https://chiligrafx.com/) to login with your credentials
 

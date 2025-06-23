@@ -21,7 +21,7 @@ Unless you have an application and server setup to provide a token, we are going
 
 !!! danger "Kinda Bad Idea"
 
-        Usinng your client ID and secret on the frontend is considered a bad idea. In production, this should be handled on the backend.
+        Using your client ID and secret on the frontend is considered a bad idea. In production, this should be handled on the backend.
 
         Ironically, in this instance the Integration is readonly, so we do not care if users steal our authentication and make more tokens.
 

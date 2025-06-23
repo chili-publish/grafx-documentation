@@ -37,7 +37,7 @@ When done, you'll see the members under the "Members" tab.
 
 Group membership of federated users are managed in the third-party identity provider (IDP).
 
-All group membership operations are disabled for federated users because group membership information from the third-party IDP overrides the informaion in CGX.
+All group membership operations are disabled for federated users because group membership information from the third-party IDP overrides the information in CGX.
 
 When a user authenticates in a third-party IDP, the authentication must include the identifiers of the groups the user belongs to.
 

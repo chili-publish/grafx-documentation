@@ -42,7 +42,7 @@ This code will:
 - Remove the order from the database.
 - Invoke the `orderDone` function to check if the task is complete.
     - If `true`, the task is done and `orderDone` will download the file.
-    - If `false`, the task is not done, and will be readded to the database.
+    - If `false`, the task is not done and will be re-added to the database.
     - If a string, the task failed, and we throw and error. 
 
 !!! note

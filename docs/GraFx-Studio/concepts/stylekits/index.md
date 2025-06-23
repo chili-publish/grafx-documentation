@@ -9,7 +9,7 @@ Elements of a "stylekit":
 	- Swatch
 	- Fonts
 
-When you define a stylekit, you define elements that fit together in one group, so you can re-use the settings later in the document.
+When you define a stylekit, you define elements that fit together in one group, so you can reuse the settings later in the document.
 
 ## Text: Paragraph Styles
 

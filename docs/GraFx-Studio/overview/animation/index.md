@@ -13,7 +13,7 @@ For the 3 stages of animation, you can set animation properties.
 
 ### Easing type
 
-The ease type defines wether the animation should start fast, ends fast or both.
+The ease type defines whether the animation should start fast, end fast, or both.
 
 The Twee type defines [the type of animation](https://easings.net/){target="_blank"}.
 
