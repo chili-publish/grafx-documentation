@@ -58,7 +58,7 @@ Layouts are "Available", if you set the property "Available".
 
 ![screenshot-full](studioui01.png)
 
-If available, you can also set if a Layout is resizable in the End User Interfact (Studio UI).
+If available, you can also set if a layout is resizable in the End User Interface (Studio UI).
 
 When set, the end user will be able to set the width and height of the layout, to be resized, up to a minimum and/or maximum size.
 

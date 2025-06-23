@@ -131,6 +131,6 @@ Similar to the intro, you can set the 4 animation properties for the end of the 
 
 Control the length and position of each element (lightblue bar), by dragging their respective start- and endpoints.
 
-Intro (start) — Emphasis (middel) - Outro (end)
+Intro (start) — Emphasis (middle) - Outro (end)
 
 ![Intro_Outro](intro-outro-resize.gif)

@@ -27,7 +27,7 @@ Ensure you have Node.js version 18.x or greater.
 
 !!! warning
 
-    Becareful as some package mangers only install `node` and not the node package manager `npm`.
+    Be careful as some package managers only install `node` and not the Node Package Manager `npm`.
 
 ### Verify Installations
 You can test if the installs were successiful by running the following commands in your terminal:
@@ -43,7 +43,7 @@ npm --version
 
 If you see versions for both, especially node version ≥18, you're set. Need help? Consider reaching out to your IT department or chatting with [chatGPT](http://chat.openai.com) to help you with installing Node.js.
 
-## 2. Initilizing Our Project
+## 2. Initializing Our Project
 
 Create a project folder:
 ```
@@ -122,7 +122,7 @@ node server.js
 1. Visit `http://localhost:3000` in your browser
 2. You should see 'Hello Node.js!'.
 
-??? failure "Troublshooting"
+??? failure "Troubleshooting"
 
     If you do not get 'Hello Node.js!', here are some things to investigate:
 

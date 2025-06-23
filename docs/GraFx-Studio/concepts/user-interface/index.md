@@ -24,7 +24,7 @@ You can change the settings for the default.
 
 ## Access
 
-User Interfaces are only accesible for users with one of these roles
+User Interfaces are only accessible for users with one of these roles
 
 - Subscription admins
 - Environment admins

@@ -10,7 +10,7 @@ We welcome contributions from the community! To get started, please familiarize 
 
 The CHILI GraFx documentation is built using [MkDocs](https://www.mkdocs.org/), a static site generator that's geared towards project documentation. 
 
-If you are looking to just make a small change, such as editing a single page, you probably don't need to setup a documenation environment. Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+If you are looking to just make a small change, such as editing a single page, you probably don't need to set up a documentation environment. Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 However, if you are going to be making many changes you will need to setup a documentation environment. You can set up your documentation environment using one of the following methods:
 

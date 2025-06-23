@@ -39,7 +39,7 @@ This modification checks the user type and serves the appropriate page.
 
 To allow template registration, the `store-admin.html` must be updated to include a template registration form. Refer to the provided HTML snippet below and update it `store-admin.html`. 
 
-??? abstract "store-admin.html cotent"
+??? abstract "store-admin.html content"
 
     ```html
     <!DOCTYPE html>

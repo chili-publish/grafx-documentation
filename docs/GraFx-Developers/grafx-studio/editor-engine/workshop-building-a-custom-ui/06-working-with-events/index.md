@@ -3,7 +3,7 @@
 ## Reacting vs Telling
 Everything we have done up to this point has been imperative where we tell Studio to do something via the SDK and it does what we tell it. With events, we will turn this process around and instead ask Studio to to tell us when it does something so we can react.
 
-This is how this section will differ from pervious sections:
+This is how this section will differ from previous sections:
 
 | Previously | Working With Events|
 |----------|----------|

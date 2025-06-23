@@ -70,7 +70,7 @@ Adjust the start- and endpoint in the timeline, and test the animation.
 
 Expand the Outro section in the animation panel.
 
-Set the properties for one of the behaviours for the outro action, and test the animation untill you're happy.
+Set the properties for one of the behaviours for the outro action, and test the animation until you're happy.
 
 ## Feature Channel
 

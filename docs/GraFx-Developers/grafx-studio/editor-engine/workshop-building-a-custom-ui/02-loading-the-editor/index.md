@@ -75,7 +75,7 @@ The editor `<div>` will get a `height` property of `90vh`
 ```
 
 
-We can save our file and the web browser should refesh. Now our editor is a little more visible. The editor still does not show much because we have not loaded a document yet, but we will soon when we use the DocumentController in section 4.
+We can save our file and the web browser should refresh. Now our editor is a little more visible. The editor still does not show much because we have not loaded a document yet, but we will soon when we use the DocumentController in section 4.
 ![the styled editor loaded on the webpage](editor-styled.png)
 
 ##### The final index.html

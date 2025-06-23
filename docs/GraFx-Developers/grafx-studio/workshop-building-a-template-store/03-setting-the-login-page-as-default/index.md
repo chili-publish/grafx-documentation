@@ -187,14 +187,14 @@ node server.js
 
 !!! warning
 
-    You must restart the server with the `node` command everytime after modifying `server.js` or imported files.
+    You must restart the server with the `node` command every time after modifying `server.js` or imported files.
 
 **Verify your Setup**
 
 1. Visit `http://localhost:3000` in your browser.
 2. Confirm the presence of the "Admin" and "User" buttons on the login page.
 
-??? failure "Troublshooting"
+??? failure "Troubleshooting"
 
     If you do not get the login page, here are some things to investigate:
     

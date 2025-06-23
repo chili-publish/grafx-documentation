@@ -7,7 +7,7 @@ For this course, we will be using [Node.js](https://nodejs.org/) and using the N
 
 Now that we have Node installed the real fun can begin. To begin you can simply create a folder that will house your project. You can call this folder anything but I will call my folder "GraFx-Integration-Course"
 
-Next load up you favorite terminal emulation such as "Terminal" on MacOS or "cmd" on Windows and navigate to your newly created folder.
+Next, load up your favorite terminal emulator such as "Terminal" on macOS or "cmd" on Windows and navigate to your newly created folder.
 
 ##### Initializing npm
 We first need to tell Node Package Manager that our folder is a Node project. This way Node will setup the necessary files and folders to track our project.
@@ -21,7 +21,7 @@ Now we can install the two packages we need.
 ##### Parcel
 Parcel is a JavaScript bundler that also includes a local development web server. This is great for our use case because it will take all the JavaScript we create in our integration _and_ the JavaScript we use from the GraFx Editor-SDK package and bundle them together for our integration to use.
 
-We can also run our integration on a local web server and see the changes to our website everytime we save our code due to a feature called "hot-reloading".
+We can also run our integration on a local web server and see the changes to our website every time we save our code thanks to a feature called "hot-reloading".
 
 To install Parcel all we need to do is type this command
 ```sh
@@ -44,7 +44,7 @@ First we will create a new folder in our project directory called `src`. We will
 Once we have our `src` folder created we can navigate to it and create our website files.
 
 ##### index.html
-Our first file will the the index.html file that will hold the HTML code for our integration. For now lets just use the bare minimum HTML code for a website that will say "Hello World"
+Our first file will be the `index.html` file that will hold the HTML code for our integration. For now let's just use the bare minimum HTML code for a website that will say "Hello World".
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -78,7 +78,7 @@ Then you can visit our newly created website by going to
 
 
 ### Creating our JavaScript file
-Our next step is to to create a file to hold the JavaScript code for our integration. This JavaScript file will import our Editor-SDK so that we can use the nice features the SDK provides us within our own JavaScript logic.
+Our next step is to create a file to hold the JavaScript code for our integration. This JavaScript file will import our Editor-SDK so that we can use the nice features the SDK provides within our own JavaScript logic.
 
 Let's start by creating a index.js file in our `src` directory
 For now we can just include two lines in our `src/index.js` file
@@ -97,7 +97,7 @@ The body of our `index.html` file will now look like this
 </body>
 ```
 
-_Note: We must state that `type="module"` because we will be using the JavaScript module syntax which is a way to break up JavaScript code into small re-usable pieces and import them in to other "modules" for use. In particular You can find our more at the Mozzila documentation page on [JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)_
+_Note: We must state `type="module"` because we will be using the JavaScript module syntax, which is a way to break up JavaScript code into small reusable pieces and import them into other modules for use. You can find out more on the Mozilla documentation page for [JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)._ 
 
 If your server is still running from the previous lesson you can simply navigate to
 ``` html

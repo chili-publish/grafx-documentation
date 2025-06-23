@@ -111,7 +111,7 @@ Now, let's update our `query` method to handle this data and return the expected
       // Note: Consider to always use "ConnectorHttpError" to handle error case for HTTP response
       throw new ConnectorHttpError(
         resp.status,
-        `[PicsumPhoto conector]: Failed to fetch images from picsum.photos: ${resp.status}-${resp.statusText}`
+        `[PicsumPhoto connector]: Failed to fetch images from picsum.photos: ${resp.status}-${resp.statusText}`
       );
     }
 
@@ -121,7 +121,7 @@ Now, let's update our `query` method to handle this data and return the expected
     const dataFormatted = data.map((d) => ({
       id: d.id,
       name: d.id,
-      relativePath: '/', // Note: since picsum doens't have folder structure, we specify relativePath always as root directory
+      relativePath: '/', // Note: since picsum doesn't have folder structure, we specify relativePath always as the root directory
       extension: 'png', // Note: Although not required by Media type, it's good practice to define it when the possibility arises in DAM
       type: 0, // Note: define "0" if returned item is asset and "1" if it's a folder
       metaData: {},
@@ -132,7 +132,7 @@ Now, let's update our `query` method to handle this data and return the expected
       data: dataFormatted,
       links: {
         nextPage:
-          dataFormatted.length === options.pageSize ? `${pageNumber + 1}` : '', // Calculates next page based on recieved assets size
+          dataFormatted.length === options.pageSize ? `${pageNumber + 1}` : '', // Calculates next page based on received assets size
       },
     };
   }
@@ -329,7 +329,7 @@ async detail(
   // Handle error case
   if(!resp.ok) {
     // Note: Consider to always use "ConnectorHttpError" to handle error case for HTTP response
-    throw new ConnectorHttpError(resp.status, `[PicsumPhoto conector]: Failed to fetch images from picsum.photos: ${resp.status}-${resp.statusText}`);
+    throw new ConnectorHttpError(resp.status, `[PicsumPhoto connector]: Failed to fetch images from picsum.photos: ${resp.status}-${resp.statusText}`);
   }
   const assetDetail = JSON.parse(resp.text);
   return {

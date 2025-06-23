@@ -6,12 +6,12 @@ Layouts is a concept to reduce the time to produce variants, by creating several
 
 ## Think different
 
-In stead of thinking about ouput in your design, think by grouping concepts.
+Instead of thinking about output in your design, think by grouping concepts.
 
-A leaderboard or skyscraper add are conceptually very similar. The only difference are the dimensions or proportions. Even a square add could be derived from the leaderboard design.
+A leaderboard or skyscraper ad are conceptually very similar. The only difference is the dimensions or proportions. Even a square ad could be derived from the leaderboard design.
 If the content is similar, then it's probably a good candidate for a layout.
 
-Even the animation of elements can be different. In a leaderboard your could animate an item from the far left, and in the skyscraper from the bottom. These paramaters can be set different per layout.
+Even the animation of elements can be different. In a leaderboard you could animate an item from the far left, and in the skyscraper from the bottom. These parameters can be set differently per layout.
 
 ## The basic setup
 

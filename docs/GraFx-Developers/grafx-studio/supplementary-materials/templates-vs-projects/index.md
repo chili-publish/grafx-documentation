@@ -18,7 +18,7 @@ Quick the differences:
 
 GraFx Studio works with JSON files called Documents. You can load these JSON Documents into an instance of the Editor Engine or send them via the Environment API to get an output.
 
-The engine expects a certain format. Below you can find a outline of this formate with notes.
+The engine expects a certain format. Below you can find an outline of this format with notes.
 
 ```typescript
 {

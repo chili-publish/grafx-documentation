@@ -41,7 +41,7 @@ To authorize the requests, get a token as described above and then click the "Au
 
 ![authorize](authorize.png)
 
-Once actived, you can pick a endpoint, click "Try it out" and get an example request with the actual response.
+Once activated, you can pick an endpoint, click "Try it out" and get an example request with the actual response.
 
 Here is an example request (with the token removed for brevity)
 

@@ -129,7 +129,7 @@ export async function getToken({ id, secret }) {
 }
 ```
 
-This is generic code that will allow us to generate a token, but note that we haven't utilized the environment variables here to. The reason is because we will eventuall have two tokens:
+This is generic code that will allow us to generate a token, but note that we haven't utilized the environment variables here yet. The reason is because we will eventually have two tokens:
 
 - One for the server, which we will call "dangerous" in our code base because it has all the permissions
 - One for our frontend, which we will call "readonly" in our code base because it has only readonly permissions
