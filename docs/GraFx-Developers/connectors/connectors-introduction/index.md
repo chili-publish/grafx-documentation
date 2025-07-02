@@ -58,7 +58,7 @@ If you're interested in building a Connector:
 ### Steps to build your connector
 
 - Build locally
-- Publish and test oneline
+- Publish and test online
 - Commit to the open source Repository
 - Add documentation to this documentation repository
 
