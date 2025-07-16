@@ -374,8 +374,16 @@ nav:
             - 'Upload fonts':                   'GraFx-Fonts/guides/upload-fonts/index.md'
             - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
 
-    - 'GraFx Stylekits':
-        - 'Introduction':                       'GraFx-Stylekits/index.md'
+    - 'GraFx Brand Kits':
+        - 'Introduction':                       'GraFx-Brand-Kits/index.md'
+        - 'Application overview':               'GraFx-Brand-Kits/overview/index.md'
+        - 'Concepts':
+            - 'Brand Kit':                      'GraFx-Brand-Kits/concepts/brandkit/index.md'
+            - 'Elements':                       'GraFx-Brand-Kits/concepts/elements/index.md'
+        - 'How to':
+            - 'Create Brand Kit':               'GraFx-Brand-Kits/guides/create/index.md'
+            - 'Update Brand Kit':               'GraFx-Brand-Kits/guides/edit/index.md'
+            - 'Import Brand Kit':               'GraFx-Brand-Kits/guides/import/index.md'
 
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
