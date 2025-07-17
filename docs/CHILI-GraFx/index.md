@@ -1,6 +1,6 @@
 # CHILI GraFx
 
-![svg_icon](https://chilipublishdocs.imgix.net/logos/CHILI_LOGOS_GraFx_logo.svg)
+![applogo](/assets/CHILI_LOGOS_OK-03.svg)
 
 CHILI GraFx platform centralizes your account information, users, resources and documents.
 
