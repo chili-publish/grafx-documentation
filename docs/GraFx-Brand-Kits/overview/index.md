@@ -1,6 +1,6 @@
 # Application overview
 
-When you open the GraFx Brand Kits app (via the left-hand nav in the GraFx Platform), you’ll see:
+Open the GraFx Brand Kits application
 
 1. **Toolbar**  
    – **Create Brand Kit** button  
@@ -10,4 +10,6 @@ When you open the GraFx Brand Kits app (via the left-hand nav in the GraFx Platf
    – Each card shows the kit’s name, description and thumbnail  
    – Click a card to open its details  
 
-![brand-kits-list](path/to/brandkits-list.png)
+![screenshot-full](overview.png)
+
+![screenshot-full](brandkits_01.png)

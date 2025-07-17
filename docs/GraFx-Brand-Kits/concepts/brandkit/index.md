@@ -1,6 +1,5 @@
 # Brand Kit  
 
-A container of design tokens and assets (colours, fonts, media, paragraph & character styles) that define your visual identity.  
+A container of design tokens and assets (colors, fonts, media, paragraph - & character styles) that define a visual identity.  
 
-- Defined at the **environment** level  
-- Always has a single editable “Default” theme
+- Defined at the **environment** level
