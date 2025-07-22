@@ -25,6 +25,20 @@ Our versioning strategy follows the common Semantic Versioning (SemVer) approach
 For example, the Studio UI can be accessed via a URL like this:
 [https://studio-cdn.chiligrafx.com/studio-ui/1.27/latest/es-module/bundle.js](https://studio-cdn.chiligrafx.com/studio-ui/1.27/latest/es-module/bundle.js).
 
+
+### Read/Write Version Using the API
+
+It is possible to use the environment API to read the available versions, as well as read and write the version that is used in the environment. The API calls used are:
+
+- **Read Available Versions**: GET /api/v1/environment/settings/available-sdk-versions
+- **Read the Currently Used Version**: GET /api/v1/environment/{environment}/settings
+- **Update the Currently Used Version**: PATCH /api/v1/environment/{environment}/settings, with body:
+  ```json
+  {
+    "sdkVersionPublic": "major.minor" // (e.g., "1.25")
+  }
+  ```
+
 ## Things to Take into Consideration
 
 - **Document Compatibility**: It is not possible to open documents created with a newer version inside a session of an older version.
