@@ -23,7 +23,8 @@ Our versioning strategy follows the common Semantic Versioning (SemVer) approach
 - **Patch Versions**: While patch versions are shown, they have minimal relevance for integrators. We automatically apply patches to our most recent version, so it's best to use the latest version of a certain minor release for your integration.
 
 For example, the Studio UI can be accessed via a URL like this:
-[https://studio-cdn.chiligrafx.com/studio-ui/1.27/latest/es-module/bundle.js](https://studio-cdn.chiligrafx.com/studio-ui/1.27/latest/es-module/bundle.js).
+[https://studio-cdn.chiligrafx.com/studio-ui/{minor.version}/latest/es-module/bundle.js](https://studio-cdn.chiligrafx.com/studio-ui/{minor.version}/latest/es-module/bundle.js).
+Replace `{minor.version}` with the desired version number (e.g., `1.27`) to access the specific version of the Studio UI.
 
 ## Things to Take into Consideration
 
