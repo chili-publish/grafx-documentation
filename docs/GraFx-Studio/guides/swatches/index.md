@@ -6,26 +6,24 @@
 
 ## Define a swatch
 
-Open the **Resource Panel** > **Stylekit panel**.
+Open the **Resource Panel** > **Brand Kit panel**.
 
 ![screenshotsmall](bottom-quicktools-ui.png)
 
-![screenshot](stylekit.png)
+![screenshot](bk1.png)
 
 Select the second tab to view swatches
 
-![screenshot](swatch-1.png)
+![screenshot](bk3.png)
 
 Click on the "+" sign to add a new swatch.
 Each click on the "+" sign will add another (white) swatch.
-
-![screenshot](swatch-2.png)
 
 Click on the "..." menu next to the newly created swatch and choose edit or click the color to edit.
 
 You can rename by clicking "Rename" in the "..." menu.
 
-![screenshot](swatch-3.png)
+![screenshot](bk7.png)
 
 ### Color picker
 

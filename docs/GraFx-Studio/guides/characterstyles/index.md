@@ -7,30 +7,24 @@
 
 ## Define a character style
 
-Open the **Resource Panel** > **Stylekit panel**.
+Open the **Resource Panel** > **Brand Kit panel**.
 
 ![screenshotsmall](bottom-quicktools-ui.png)
 
-![screenshot](stylekit.png)
+![screenshot](bk1.png)
 
-Select the first tab to view paragraph- and character styles
-
-![screenshot](cs-2.png)
+Select the last tab (right) to view paragraph- and character styles
 
 Click on the "+" sign to ad a new character style (bottom section is for character styles).
 Each click on the "+" sign will add another (empty) character style.
 
-![screenshot](cs-3.png)
+![screenshot-full](bk8.png)
 
 Click on the "..." menu next to the newly created style and choose edit or click the pencil to edit the style.
 
 You can rename the style by clicking "Rename" in the "..." menu.
 
-![screenshot](cs-4.png)
-
 Set all properties you want for this character. Saving happens automatically.
-
-![screenshot](cs-9.png)
 
 ## Apply a character style
 
@@ -38,7 +32,7 @@ Select the text you want to apply the character style to.
 
 ![screenshot](cs-6.png)
 
-DIfferent than with paragraph styles, with character styles you need to select the character or words you want to apply the style to.
+Different than with paragraph styles, with character styles you need to select the character or words you want to apply the style to.
 
 In the properties panel on the right, select the character style from the dropdown list.
 

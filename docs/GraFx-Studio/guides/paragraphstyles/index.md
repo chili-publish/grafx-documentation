@@ -7,15 +7,15 @@
 
 ## Define a paragraph style
 
-Open the **Resource Panel** > **Stylekit panel**.
+Open the **Resource Panel** > **Brand Kit panel**.
 
 ![screenshotsmall](bottom-quicktools-ui.png)
 
-![screenshot](stylekit.png)
+![screenshot](bk1.png)
 
-Select the first tab to view paragraph- and character styles
+Select the last tab to view paragraph- and character styles
 
-![screenshot](ps-2.png)
+![screenshot](bk5.png)
 
 Click on the "+" sign to ad a new paragraph style.
 Each click on the "+" sign will add another (empty) paragraph style.
@@ -24,11 +24,9 @@ Each click on the "+" sign will add another (empty) paragraph style.
 
 Click on the "..." menu next to the newly created paragraph style and choose edit or click the pencil to edit the style.
 
-![screenshot](ps-4.png)
-
 Set all properties you want for this paragraph. Saving happens automatically.
 
-![screenshot-full](ps-8.png)
+![screenshot-full](bk8.png)
 
 ## Apply a paragraph style
 

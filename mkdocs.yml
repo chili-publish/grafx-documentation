@@ -216,6 +216,7 @@ nav:
         - 'Application overview':
             - 'Animation':                      'GraFx-Studio/overview/animation/index.md'
             - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
+            - 'Brand Kits':                     'GraFx-Studio/overview/brandkits/index.md'
             - 'Document Canvas':                'GraFx-Studio/overview/document-canvas/index.md'
             - 'Frames & Timeline':              'GraFx-Studio/overview/timeline/index.md'
             - 'Hamburger Menu':                 'GraFx-Studio/overview/hamburger-menu/index.md'
@@ -224,7 +225,6 @@ nav:
             - 'Page or Document':               'GraFx-Studio/overview/document/index.md'
             - 'Properties panel':               'GraFx-Studio/overview/properties/index.md'
             - 'Sidebar Tools':                  'GraFx-Studio/overview/sidebar/index.md'
-            - 'Stylekit':                       'GraFx-Studio/overview/stylekits/index.md'
             - 'Workspace elements':             'GraFx-Studio/overview/workspace-elements/index.md'
         - 'Concepts':
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
@@ -232,6 +232,7 @@ nav:
             - 'Anchoring':                      'GraFx-Studio/concepts/anchoring/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
             - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
+            - 'Brand Kits':                     'GraFx-Studio/concepts/brandkits/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
@@ -256,7 +257,6 @@ nav:
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Smart Crop':                     'GraFx-Studio/concepts/genie-smart-crop/index.md'
             - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
-            - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
@@ -267,6 +267,7 @@ nav:
                - 'Overview':                    'GraFx-Studio/guides/barcodes/overview/index.md'
                - 'Add a barcode':               'GraFx-Studio/guides/barcodes/add/index.md'
                - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
+            - 'Brand Kits':                     'GraFx-Studio/guides/brandkits/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
@@ -374,8 +375,16 @@ nav:
             - 'Upload fonts':                   'GraFx-Fonts/guides/upload-fonts/index.md'
             - 'Manage fonts':                   'GraFx-Fonts/guides/manage-fonts/index.md'
 
-    - 'GraFx Stylekits':
-        - 'Introduction':                       'GraFx-Stylekits/index.md'
+    - 'GraFx Brand Kits':
+        - 'Introduction':                       'GraFx-Brand-Kits/index.md'
+        - 'Application overview':               'GraFx-Brand-Kits/overview/index.md'
+        - 'Concepts':
+            - 'Brand Kit':                      'GraFx-Brand-Kits/concepts/brandkit/index.md'
+            - 'Elements':                       'GraFx-Brand-Kits/concepts/elements/index.md'
+        - 'How to':
+            - 'Create a Brand Kit':               'GraFx-Brand-Kits/guides/create/index.md'
+            - 'Edit a Brand Kit':               'GraFx-Brand-Kits/guides/edit/index.md'
+            - 'Import a Brand Kit':               'GraFx-Brand-Kits/guides/import/index.md'
 
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
