@@ -27,6 +27,6 @@ On the Brand Kit detail page:
 
 ## Remove an element
 
-- Click the "..." memu click the **Remove**
+- Click the "..." menu and select **Remove**
 
 ![screenshot](edit10.png)
