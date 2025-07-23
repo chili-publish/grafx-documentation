@@ -216,6 +216,7 @@ nav:
         - 'Application overview':
             - 'Animation':                      'GraFx-Studio/overview/animation/index.md'
             - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
+            - 'Brand Kits':                     'GraFx-Studio/overview/brandkits/index.md'
             - 'Document Canvas':                'GraFx-Studio/overview/document-canvas/index.md'
             - 'Frames & Timeline':              'GraFx-Studio/overview/timeline/index.md'
             - 'Hamburger Menu':                 'GraFx-Studio/overview/hamburger-menu/index.md'
@@ -224,7 +225,6 @@ nav:
             - 'Page or Document':               'GraFx-Studio/overview/document/index.md'
             - 'Properties panel':               'GraFx-Studio/overview/properties/index.md'
             - 'Sidebar Tools':                  'GraFx-Studio/overview/sidebar/index.md'
-            - 'Stylekit':                       'GraFx-Studio/overview/stylekits/index.md'
             - 'Workspace elements':             'GraFx-Studio/overview/workspace-elements/index.md'
         - 'Concepts':
             - 'Actions':                        'GraFx-Studio/concepts/actions/index.md'
@@ -232,6 +232,7 @@ nav:
             - 'Anchoring':                      'GraFx-Studio/concepts/anchoring/index.md'
             - 'Animation':                      'GraFx-Studio/concepts/animation/index.md'
             - 'Barcodes':                       'GraFx-Studio/concepts/barcodes/index.md'
+            - 'Brand Kits':                     'GraFx-Studio/concepts/brandkits/index.md'
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
@@ -256,7 +257,6 @@ nav:
             - 'Snapping':                       'GraFx-Studio/concepts/snapping/index.md'
             - 'Smart Crop':                     'GraFx-Studio/concepts/genie-smart-crop/index.md'
             - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
-            - 'Stylekits':                      'GraFx-Studio/concepts/stylekits/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
