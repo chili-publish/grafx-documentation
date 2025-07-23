@@ -5,7 +5,7 @@ Set of tools at the bottom of the sidebar.
 - Layouts
 - Layers & Animation
 - Resources
-    - Stylekit Panel
+    - Brand Kit Panel
     - Media
     - Data Source
     - Barcodes
