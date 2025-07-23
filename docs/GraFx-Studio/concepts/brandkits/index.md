@@ -34,4 +34,4 @@ In metal typesetting, a font is a particular size, weight, and style of a typefa
 
 Source "Wikipedia"
 
-Add font through [GraFx Fronts](/GraFx-Fonts/), and then add them to your Brand Kit.
+Add font through [GraFx Fonts](/GraFx-Fonts/), and then add them to your Brand Kit.
