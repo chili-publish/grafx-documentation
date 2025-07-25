@@ -115,3 +115,27 @@ Define the minimum and maximum frame size if needed.
 Adjust how the frame blends with its background.
 
 See [Blend Modes](/GraFx-Studio/guides/blendmodes/).
+
+## Text Direction
+
+GraFx Studio supports both LTR and RTL scripts
+
+### Automatic direction detection
+
+Text frames use the Unicode Bidirectional Algorithm to render each paragraph correctly. If you paste or type Arabic, Hebrew, or another RTL script, it will flow right-to-left without extra steps.
+
+### Alignment controls
+
+Use the standard horizontal alignment buttons (Left, Center, Right) to choose how your text is placed inside the frame. Note that setting “Right align” does **not** change direction—it only shifts the paragraph to the right margin.
+
+### Variable fields
+
+Text and list-variable input fields, as well as prefix/suffix inputs, accept RTL characters. These fields remain left-aligned in the editor but will render with the correct direction on canvas and in output.
+
+### Example
+
+1. Create a text frame and paste an Arabic phrase.
+2. Observe that the text flows RTL automatically.
+3. If you want the paragraph flush to the right edge, click the **Right align** button.
+
+![screenshot-full](rtl.png)
