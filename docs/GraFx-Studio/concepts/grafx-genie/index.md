@@ -21,7 +21,7 @@ A template variable makes sure a user can change the discount.
 
 ![screenshot-full](variable.png)
 
-Now, let's make an action, that will be triggerd when a template variable value changes.
+Now, let's make an action that will be triggered when a template variable value changes.
 
 ![screenshot-full](trigger.png)
 

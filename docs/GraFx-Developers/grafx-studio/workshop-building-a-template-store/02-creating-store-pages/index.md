@@ -24,5 +24,5 @@ Run the following commands in your terminal to create the pages:
     mkdir public; ni public/login.html, public/store-front.html, public/editor.html, public/store-admin.html -ItemType File
     ```
 
-These HTML files are empty for now but will be populated shortly in the follwing sections.
+These HTML files are empty for now but will be populated shortly in the following sections.
 

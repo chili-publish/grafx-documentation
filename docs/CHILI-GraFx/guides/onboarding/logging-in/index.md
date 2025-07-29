@@ -1,4 +1,4 @@
-# Onboarding: Loggin in
+# Onboarding: Logging in
 
 You received the welcome email, and you're ready to login.
 

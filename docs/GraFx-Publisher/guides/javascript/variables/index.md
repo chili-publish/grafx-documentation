@@ -15,7 +15,7 @@ This page contains JavaScript snippets for working with variables in Publisher.
     ```
 
 ### Set the value of a variable
-This will work to set the value of most variables in Publisher. Variables such as the list variable or button bar don't have a "single" value so this does not apply to them. Please see their speicfic page for more informaiton.
+This will work to set the value of most variables in Publisher. Variables such as the list variable or button bar don't have a "single" value, so this does not apply to them. Please see their specific page for more information.
 
 === "PublisherInterface"
     ```javascript

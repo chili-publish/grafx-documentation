@@ -29,7 +29,7 @@ Some example use cases are:
 
 Through the **GraFx Environment API** you can manage your CHILI GraFx environments.
 
-Some exmaple use cases are:
+Some example use cases are:
 
 - Adding Smart Templates
 - Adding Template Designer seats (later)

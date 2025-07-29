@@ -4,7 +4,7 @@ The properties panel appears with the selection of an item. The context of the s
 
 ## The basic properties
 
-Set the width, heigt, position and rotation of a frame.
+Set the width, height, position and rotation of a frame.
 
 If you selected an image frame, you can also choose the fit and crop of the image in the frame.
 

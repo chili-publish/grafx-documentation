@@ -27,7 +27,7 @@ Your connector needs to be documented
 
 ## Publish to GitHub
 
-- Create a [fork](https://github.com/chili-publish/studio-connector-framework) from the connector Framework Repository<br/>(if you haven't done that allready while building)
+- Create a [fork](https://github.com/chili-publish/studio-connector-framework) from the Connector Framework repository<br/>(if you haven't done that already while building)
 - Commit your fork
 - Create a Pull Request
 

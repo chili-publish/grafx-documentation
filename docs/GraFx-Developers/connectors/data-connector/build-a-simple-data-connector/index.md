@@ -204,7 +204,7 @@ To verify that your connector has been available successfully:
 
 1. Open GraFx Studio Designer Workspace.
 2. Create or open an existing template.
-3. Add text variables with same name as keys of the fileds we're returning from the connector. Assign them to text frames in your template
+3. Add text variables with the same names as the keys of the fields we're returning from the connector. Assign them to text frames in your template
 3. Open Data Source Panel and select your connector.
 4. Go to "Run" mode
 
