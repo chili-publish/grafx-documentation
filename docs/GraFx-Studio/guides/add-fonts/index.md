@@ -6,15 +6,15 @@
 
 ## How to
 
-Open the Stylekit panel.
+Open the Brand Kit panel.
 
 ![screenshotsmall](bottom-quicktools-ui.png)
 
-![screenshot](resources-panel.png)
+![screenshot](bk1.png)
 
 Select the fonts icon to check the already available fonts in your document.
 
-![screenshot](fonts-2.png)
+![screenshot](bk2.png)
 
 Click on the "+" sign to add a new font.
 
@@ -26,7 +26,7 @@ Select the font family you wish to add to your document.
 
 Remark: The full family will be added to your document.
 
-![screenshot](fonts-4.png)
+![screenshot](bk6.png)
 
 Your font family is now available to use in the document.
 

@@ -27,7 +27,7 @@ Variables set to be hidden, won't show in the end-user experience.
 ### Key Features in Design Mode:
 - **Static Layout**: Actions are inactive, letting you set up without interference  
 You can create text, image, barcode, and shape frames
-- **Focused Styling**: You can create a Stylekit with font families, paragraph- and character styles, and define colors
+- **Focused Styling**: You can create a Brand Kit with media, fonts, paragraph- and character styles, and define colors
 
 ### Elements Active in Design Mode:
 - **Anchoring**: Set fixed or relative positions to ensure consistent layout across sizes
