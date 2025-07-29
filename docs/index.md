@@ -33,7 +33,7 @@
     ---
 
 
-    **July 22, 2025**: GraFx Studio - ==Text stroke support, ==
+    **July 22, 2025**: GraFx Studio - ==Text stroke support==
 
     Text stroke: Add crisp outlines with rounded joins, perfectly rendered in editor and PDF.
     Other improvements and fixes
