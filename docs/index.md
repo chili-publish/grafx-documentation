@@ -11,6 +11,48 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    **July 28, 2025**: GraFx Genie Vision ==Update (for new assets only)==
+
+    ![rn_icon](/assets/icon-Grafx-Genie.svg)
+
+    Recognition of more contextual objects such as houses and buildings.
+    Overall improvements in person detection, eye detection and removed logo detection false positives
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/28/grafx-genie-vision/)
+
+    ---
+
+    **July 22, 2025**: Introducing: ==GraFx Brand Kits==
+
+    ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
+
+    Define your visual identity once: media, colors, fonts, character styles and paragraph styles. Apply it everywhere in GraFx Studio for lightning-fast, on-brand template creation.  
+
+    See [GraFx Brand Kits](/GraFx-Brand-Kits/)
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/22/introducing-grafx-brand-kits/)
+
+    ---
+
+
+    **July 22, 2025**: GraFx Studio - ==Text stroke support==
+
+    Text stroke: Add crisp outlines with rounded joins, perfectly rendered in editor and PDF.
+    Other improvements and fixes
+        
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/22/introducing-grafx-brand-kits/)
+
+    ---
+
+    **July 3, 2025**: GraFx Studio – ==Indic language support and translatable interface for project integrations==
+
+    Full support for Indic scripts (e.g., Hindi), with correct shaping and rendering for complex characters.
+    Improvements for per asset crop and other fixes
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/03/-grafx-studio-release-notes/)
+
+    ---
+
     **May 30, 2025**: GraFx Studio – ==Image Upload==
 
     Template designers can allow end-users to upload their own images directly in the Studio UI! This enables deeper personalization and flexibility for user-generated content, custom branding, and campaign variations.
@@ -24,30 +66,6 @@
     Template designers can now lock specific images to a manual crop, even when using automatic fit modes like Smart Crop. This gives you full control over how visuals are framed.
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/05/23/grafx-studio--about-cropping/)
-
-    ---
-
-    **May 8, 2025**: GraFx Studio – ==MP4 & GIF batch output==
-
-    You can now scale your content creation effortlessly—**all output formats** fully support batch generation. Just connect your template to a data source, and GraFx Studio will automatically generate output for each data record.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/05/08/grafx-studio--mp4--gif-batch-output/)
-
-    ---
-
-    **April 25, 2025**: GraFx Studio – ==Keepeek Media Connector==
-
-    Graphique Alliance contributed to the Connector Framework and enabled Smart Templates to integrate assets from the Keepeek DAM.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/25/grafx-studio--keepeek-media-connector/)
-
-    ---
-
-    **April 25, 2025**: GraFx Studio – ==PNG & JPG batch output==
-
-    In addition to PDF, you can now generate **PNG** and **JPG** files in batch.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/04/25/grafx-studio--png--jpg-batch-output/)
 
     ---
 
