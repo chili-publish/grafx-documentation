@@ -11,7 +11,7 @@
 
 -   :material-clock-fast: **Release Notes**
 
-    **July 28, 2025**: GraFx Genie Vision Update
+    **July 28, 2025**: GraFx Genie Vision Update (for new assets only)
 
     Recognition of more contextual objects such as houses and buildings.
     Overall improvements in person detection, eye detection and removed logo detection false positives
