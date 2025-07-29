@@ -403,6 +403,7 @@ nav:
                 - '02 Integration Levels':      'GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md'
                 - '03 Common Integration Workflows': 'GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md'
                 - '04 Managing Integrations and Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md'
+                - '05 Versioning your integration':          'GraFx-Developers/grafx-studio/integration-overview/05-versioning/index.md'                
             - 'Editor Engine' :
                 - 'Studio SDK Quickstart':
                     - '01 Overview':                'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md'

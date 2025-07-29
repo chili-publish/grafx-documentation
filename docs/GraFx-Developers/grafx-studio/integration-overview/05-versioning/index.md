@@ -8,9 +8,17 @@ Versioning allows you to control when and how you update your integration with G
 
 ## How to Pin Your Environment Version
 
-1. **Navigate to Settings**: Go to the settings of the environment you want to pin.
+1. **Navigate to Settings**: Go to the settings of the environment you want to pin.  
+
+![screenshot-full](ver03.png)
+
 2. **Locate Version Settings**: In the general settings, find the pencil icon underneath "GraFx Studio version." By default, it is set to "latest" to always use the latest version. Click the pencil icon.
+
+![screenshot-full](ver01.png)
+
 3. **Select Version**: In the modal that appears, you can select a specific version or choose "latest" if you want to always use the most recent version.
+
+![screenshot-full](ver02.png)
 
 ## How Does Versioning Work?
 
