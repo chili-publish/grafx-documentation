@@ -325,6 +325,7 @@ nav:
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
+            - 'for Adobe® Photoshop®':          'GraFx-Studio/convert/Adobe-Photoshop/index.md'
         - 'Integrate GraFx studio ...':         'GraFx-Developers/grafx-studio/overview/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
