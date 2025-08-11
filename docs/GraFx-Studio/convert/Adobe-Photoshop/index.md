@@ -75,7 +75,8 @@ You can choose to ignore, and the Kerning will default to Metric in GraFx Studio
    - Open **[GraFx Studio](https://chiligrafx.com/)**
    - Go to **Templates > Import .ZIP** and select the exported `.zip` file.
    - Name the template and locate the folder for the assets.
-   - Your Photoshop® document is now ready for automation in GraFx Studio.
+   - Your Photoshop® document is now ready for automation in GraFx Studio.  
+   ![screenshot-full](psd13.png)
 
 ## Preflight
 
