@@ -124,6 +124,10 @@ A placeholder that can hold "True" or "False".
 
 A Placeholder to hold a numeric value. Different than a text variable, you can set specific elements related to numbers.
 
+### Date
+
+A Placeholder to hold a date value. Different than a text variable, you can [set specific elements](../date/) related to dates.
+
 ## Variable settings
 
 ### Variable name
@@ -149,6 +153,10 @@ The default value your template variable will have.
 
 - Type: See [types](#types) above
 - Required: Disabled by default
+- Remove paragraph if empty: Disabled by default  
+Check to remove the full paragraph this variable is used on.  
+Available on (Single-line text, Multi-line text, Single-select list, Date)
+![screenshot-full](removeparagraph.gif)
 - [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
 A set of key-value pairs to assist you with automation.
 
