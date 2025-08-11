@@ -37,16 +37,22 @@ Click to download [the latest version of the plugin](https://studio-cdn.chiligra
 
 ### Export to GraFx Studio
 
-   - Go to **Plugins > CHILI GraFx plugins > GraFx Studio Exporter**
+   - Go to **Plugins > CHILI GraFx plugins > GraFx Studio Exporter**  
+   ![screenshot](psd01.png)
 
-   - Run preflight to avoid conversion issues.
+   - Run preflight to avoid conversion issues.  
+   ![screenshot](psd03.png)
 
-   Example of a potential issue: Small Caps text not supported.  
-   You can choose to ignore, or to export the object to a PDF asset, and place it as an asset.
+Example of a potential issue: Optical Kerning is not supported.  
+You can choose to ignore, and the Kerning will default to Metric in GraFx Studio, or to export the object to a PDF asset, and place it as an asset.
+
+![screenshot](psd04.png)  
 
    - Choose a destination folder and click **Export**.  
-     Required only once, can be changed at any moment.
-   - Choose the Artboard(s) to be exported.
+     Required only once, can be changed at any moment.  
+     ![screenshot](psd05.png)
+
+   - Choose the Artboard(s) to be exported.  
    - Choose "All artboards" to export all the artboards.
 
 !!! note "Limitations"
@@ -54,11 +60,14 @@ Click to download [the latest version of the plugin](https://studio-cdn.chiligra
     
     Users can skip differently sized artboards or convert them to match the first artboard.
 
-   - The plugin creates a `.zip` file containing the document and all necessary assets.
+   - The plugin creates a `.zip` file containing the document and all necessary assets.  
+   ![screenshot-full](psd06.png)
    
 !!! info "What's in the zip file?"
-    - A log file with info about the Plugin version, the Adobe App version, current Date and Plugin Warnings or Errors caught during the Document Preflight or Export
-    - The log file is named: GraFx_Studio_Exporter.log
+
+    ![screenshot](psd07.png)  
+    - A log file with info about the Plugin version, the Adobe App version, current Date and Plugin Warnings or Errors caught during the Document Preflight or Export  
+    - The log file is named: GraFx_Studio_Exporter.log  
     - The zip file name format: <selected_artboard>_<document_name>(<optional_duplicate_copy_version>).zip
 
 ### Import into GraFx Studio
