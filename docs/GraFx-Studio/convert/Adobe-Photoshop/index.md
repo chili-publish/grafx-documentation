@@ -18,21 +18,21 @@ While Photoshop® remains a great starting point for creative design, GraFx Stud
 - GraFx Studio Exporter (Adobe® Photoshop® plugin)
 - Importer in GraFx Studio
 
-## How to Install the Plugin
+## How to install the plugin
 
-### Download the Plugin
+### Download the plugin
 
 Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobePhotoshop/0.1.0/GraFxStudioExporter_Photoshop_0.1.0.ccx)
 
-### Install the Plugin
+### Install the plugin
 
-   - Locate the "GraFxStudioExporter_Photoshop_x.y.z.ccx" (x.y.z being the version)  
-   - Double click the ccx file  
+   - Locate the `GraFxStudioExporter_Photoshop_x.y.z.ccx` file (x.y.z being the version)  
+   - Double-click the CCX file  
    - Follow the steps to install the plugin in Adobe® Photoshop®
 
-## How to Convert a Document
+## How to convert a document
 
-### Prepare Your Photoshop® Document
+### Prepare your Photoshop® document
 
    - Open the Adobe® Photoshop® document you want to export  
    - Ensure all layers and assets are correctly set up
@@ -46,7 +46,7 @@ Click to download [the latest version of the plugin](https://studio-cdn.chiligra
    ![screenshot](psd03.png)
 
 Example of a potential issue: Optical Kerning is not supported  
-You can choose to ignore, and the Kerning will default to Metric in GraFx Studio, or to export the object to a PDF asset, and place it as an asset
+You can choose to ignore, and the kerning will default to Metric in GraFx Studio, or export the object to a PDF asset and place it as an asset
 
 ![screenshot](psd04.png)  
 
@@ -54,8 +54,8 @@ You can choose to ignore, and the Kerning will default to Metric in GraFx Studio
      Required only once, can be changed at any moment  
      ![screenshot](psd05.png)
 
-   - Choose the Artboard(s) to be exported  
-   - Choose "All artboards" to export all the artboards
+   - Choose the artboard(s) to be exported  
+   - Choose **All artboards** to export all the artboards
 
 !!! note "Limitations"
     Exported artboards must have the same size
@@ -68,8 +68,8 @@ You can choose to ignore, and the Kerning will default to Metric in GraFx Studio
 !!! info "What's in the zip file?"
 
     ![screenshot](psd07.png)  
-    - A log file with info about the Plugin version, the Adobe App version, current Date and Plugin Warnings or Errors caught during the Document Preflight or Export  
-    - The log file is named: GraFx_Studio_Exporter.log  
+    - A log file with info about the plugin version, the Adobe app version, current date, and plugin warnings or errors caught during the document preflight or export  
+    - The log file is named `GraFx_Studio_Exporter.log`  
     - The zip file name format: `<selected_artboard>_<document_name>(<optional_duplicate_copy_version>).zip`
 
 ### Import into GraFx Studio
@@ -86,23 +86,23 @@ You can choose to ignore, and the Kerning will default to Metric in GraFx Studio
 During preflight, the engine checks your document for compatibility with GraFx Studio  
 This ensures that the content you are converting can be adapted efficiently for automation and variations
 
-### How Preflight Works
+### How preflight works
 
 When you initiate a conversion, the preflight engine scans the document for features that may not be fully compatible with GraFx Studio  
-If any incompatible elements are found, preflight offers two solutions:
+If any incompatible elements are found, preflight offers three options:
 
-1. **Convert to PDF**: The element can be saved as a PDF asset and placed into the converted document, preserving its visual integrity  
-2. **Ignore**: The preflight engine will change the missing feature to a supported version  
-3. **Fix the Issue**: You can fix the element in Photoshop® and re-run the preflight
+1. **Convert to PDF** – The element is saved as a PDF asset and placed into the converted document, preserving its visual integrity  
+2. **Ignore** – The preflight engine changes the missing feature to a supported version  
+3. **Fix the issue** – You can adjust the element in Photoshop® and re-run the preflight
 
-!!! info "Placed Assets: Pros and Cons"
+!!! info "Placed assets: pros and cons"
 
     **Benefits**  
-    - **Preserves Quality**: When elements are saved as PDF assets, their original quality and appearance remain intact  
-    - **Simplifies Conversion**: For complex designs, converting to a PDF asset can streamline the process by avoiding the need for manual adjustments  
+    - **Preserves quality** – Original appearance is retained  
+    - **Simplifies conversion** – Avoids the need for manual adjustments for complex elements  
     
     **Limitations**  
-    - **Not Editable**: Placed assets are static. You cannot edit them within GraFx Studio
+    - **Not editable** – Static elements cannot be edited within GraFx Studio
 
 ## Compatibility
 
@@ -110,11 +110,11 @@ The plugin has been tested and is compatible with Adobe® Photoshop® versions f
 
 The latest tested version is 25.0 (January 2025)
 
-## Supported Features
+## Supported features
 
 As the GraFx Studio Exporter is **Experimental**, the list below will update frequently
 
-### Feature Support Table
+### Feature support table
 
 | **Category**           | **Feature**                              | **Support Level** | **Notes**                                           |
 |------------------------|------------------------------------------|-------------------|----------------------------------------------------|
@@ -139,18 +139,18 @@ As the GraFx Studio Exporter is **Experimental**, the list below will update fre
 
 ### Legend
 
-- ✅ **Supported**: Fully supported  
-- ⚠️ **Partially Supported**: Some limitations apply  
-- ❌ **Unsupported**: Not supported in current version  
+- ✅ **Supported** – Fully supported  
+- ⚠️ **Partially supported** – Some limitations apply  
+- ❌ **Unsupported** – Not supported in current version  
 
-## Tips for Successful Conversion
+## Tips for successful conversion
 
 - Avoid mixing character and inline styles in the same text object  
 - Make hidden layers visible before export if you want them included  
 - Use preflight to identify unsupported features before exporting  
 - Ensure all fonts used are installed in GraFx Studio’s environment  
 
-## Things to Consider
+## Things to consider
 
 - Color names are not preserved  
 - Unsupported shape types are converted to vector graphics with a preflight warning  
