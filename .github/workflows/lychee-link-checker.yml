@@ -28,7 +28,6 @@ jobs:
             --exclude 'https://oauth2.googleapis.com/token'
             --exclude '^https?://console\.cloud\.google\.com/.*'
             --exclude '^https://github\.com/chili-publish/studio-sdk/blob/.*/types/Actions\.d\.ts$'
-
             --exclude '^https://studio-cdn\.chiligrafx\.com/studio-ui/%7Bminor\.version%7D/latest/es-module/bundle\.js$'
           format: markdown
           # Add job summary in github action
