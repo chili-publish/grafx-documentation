@@ -19,14 +19,15 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
-          args: --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst' \
-            --exclude '^https:\/\/cp' \
-            --exclude 'https://login.chiligrafx.com/login/callback' \
-            --exclude 'https://my.chili-publish.com' \
-            --exclude 'https://chili-publish.com/CGXGroups' \
-            --exclude 'https://oauth2.googleapis.com/token' \
-            --exclude '^(https?|httpx)://console\.cloud\.google\.com/.*' \
-            --exclude '^https://github\.com/chili-publish/studio-sdk/blob/.*/types/Actions\.d\.ts$' \
+          args: >-
+            --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst'
+            --exclude '^https://cp'
+            --exclude 'https://login.chiligrafx.com/login/callback'
+            --exclude 'https://my.chili-publish.com'
+            --exclude 'https://chili-publish.com/CGXGroups'
+            --exclude 'https://oauth2.googleapis.com/token'
+            --exclude '^https?://console\.cloud\.google\.com/.*'
+            --exclude '^https://github\.com/chili-publish/studio-sdk/blob/.*/types/Actions\.d\.ts$'
             --exclude '^https://studio-cdn\.chiligrafx\.com/studio-ui/%7Bminor\.version%7D/latest/es-module/bundle\.js$'
           format: markdown
           # Add job summary in github action
