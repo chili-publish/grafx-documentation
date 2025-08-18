@@ -47,7 +47,7 @@ If GraFx Studio supports the relevant `GSUB` sub-table, the ligature will appear
 
 If a row shows **no entry** in the *Sub-table* column, the whole table is evaluated as a single unit.
 
-## Supported tables (and those still in progress)
+## Supported tables
 
 | Table tag | Sub-table / Format | Description | Supported |
 |-----------|--------------------|-------------|-----------|
