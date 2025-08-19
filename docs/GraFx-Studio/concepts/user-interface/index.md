@@ -74,7 +74,7 @@ The result: the User Interface settings determine what is shown in **My Projects
 
 ![Preview in Run Mode](ui15.png){.screenshot-full}
 
-You preview the behavior in [Run Mode](/GraFx-Studio/concepts/design-run/?h=run+mode) and test the different User Interfaces.
+You preview the behavior in [Run Mode](/GraFx-Studio/concepts/design-run/?h=run+mode) and test the different User Interfaces.  
 
 ## Access
 
