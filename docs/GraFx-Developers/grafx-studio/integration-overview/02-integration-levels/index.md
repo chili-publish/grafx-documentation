@@ -72,8 +72,7 @@ This level eliminates the need for GraFx.com for both end-users and designers, w
 
 Regardless of the chosen integration level, there are some common challenges due to the platform's evolving nature. These include:
 
-- **API Versioning:** The Environment API currently lacks proper versioning, potentially leading to unexpected changes. This is targeted for improvement by summer 2024.
 - **Project Sharing Limitations:** Currently, it's not possible to share projects with other users, including template designers and support staff. Solutions are planned, but until then integrations should provide support access.
 - **Custom Connectors in Development:** As custom connectors are still being refined, availability and stability may vary.
-- **User Isolation:** Tokens used for front-end integration cannot access projects managed by a different back-end token. Plans are in place to unify user access by end of 2024.
+- **User Isolation:** Tokens used for front-end integration cannot access projects managed by a different back-end token.
 
