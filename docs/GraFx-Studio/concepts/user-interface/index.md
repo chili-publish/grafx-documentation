@@ -70,6 +70,12 @@ If the **Layouts** section is enabled, you can configure two additional options:
 
 The result: the User Interface settings determine what is shown in **My Projects**, as long as the Smart Template supports those features.
 
+### Preview in Run Mode
+
+![Preview in Run Mode](ui15.png){.screenshot-full}
+
+You preview the behavior in [Run Mode](/GraFx-Studio/concepts/design-run/?h=run+mode) and test the different User Interfaces.
+
 ## Access
 
 User Interfaces are only accessible to users with one of these roles:
