@@ -26,7 +26,7 @@ You can still modify its settings.
 
 ![screenshot-full](ui4.png)
 
-User Interfaces also control the visibility and labeling of the form shown in the [**My Projects**](/GraFx-Studio/concepts/template-management/#my-projects) area of GraFx Studio. This is where end users create variations of Smart Templates stored in [Collections](/GraFx-Studio/concepts/template-management/#template-collection).
+User Interfaces also control the visibility and labeling of the form shown in the [My Projects](/GraFx-Studio/concepts/template-management/#my-projects) area of GraFx Studio. This is where end users create variations of Smart Templates stored in [Collections](/GraFx-Studio/concepts/template-management/#template-collection).
 
 ![screenshot-full](ui10.png)
 
