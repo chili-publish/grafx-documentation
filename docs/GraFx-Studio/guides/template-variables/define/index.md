@@ -88,6 +88,8 @@ A placeholder for text.
 
 [All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
 
+See also: [Text Direction](/GraFx-Studio/concepts/text-direction/)
+
 ### Multi-line Text
 
 A placeholder for multi-line text.
