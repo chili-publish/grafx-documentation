@@ -50,6 +50,14 @@ This means GraFx Studio will correctly render Arabic text with required ligature
 
 **Example:** The word “اللّغة” will display with the lam + lam + heh ligature when using a font that defines the `rlig` feature for Arabic.  
 
+### Text Direction
+
+More than 90% of the languages are considered Left-to-Right (LTR).
+
+To support the other 10%, CHILI GraFx supports Right-to-Left (RTL) script direction.
+
+As an example (Farsi, Persian) "این یک نمونه از فارسی است، راست به چپ." is also be supported.
+
 ## How to read the table
 
 | Column | Meaning |
