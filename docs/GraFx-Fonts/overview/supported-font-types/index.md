@@ -56,7 +56,7 @@ More than 90% of the languages are considered Left-to-Right (LTR).
 
 To support the other 10%, CHILI GraFx supports Right-to-Left (RTL) script direction.
 
-As an example (Farsi, Persian) "این یک نمونه از فارسی است، راست به چپ." is also be supported.
+As an example (Farsi, Persian) "این یک نمونه از فارسی است، راست به چپ." is also supported.
 
 ## How to read the table
 
