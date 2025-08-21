@@ -48,7 +48,7 @@ This means GraFx Studio will correctly render Arabic text with required ligature
 !!! note
     Support for Arabic and other complex scripts depends on the presence of the necessary GSUB and GPOS features in the font. If the font does not contain these ligature definitions, GraFx Studio cannot synthesize them automatically.
 
-**Example:** The word “اللّغة” will display with the lam + lam + heh ligature when using a font that defines the `rlig` feature for Arabic.  
+**Example:** The word “اللّغة” will display with the lam + lam ligature when using a font that defines the rlig feature for Arabic.
 
 ### Text Direction
 
