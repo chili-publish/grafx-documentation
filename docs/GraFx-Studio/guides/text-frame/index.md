@@ -44,6 +44,10 @@ If you prefer not to use predefined styles (recommended for consistency), you ca
 8. Apply superscript or subscript formatting.
 9. Add underline or strikethrough to text.
 
+!!! info "Text direction"
+    GraFx Studio automatically applies the correct text direction based on the script (left-to-right or right-to-left).  
+    See [Text direction](/GraFx-Studio/concepts/text-direction/) for details.
+
 ### Auto Resize
 
 For creative automation, text frames often need to handle datasets with varying text lengths. Set how the frame should respond to different content lengths:
@@ -115,3 +119,14 @@ Define the minimum and maximum frame size if needed.
 Adjust how the frame blends with its background.
 
 See [Blend Modes](/GraFx-Studio/guides/blendmodes/).
+
+### Text Color and Stroke
+
+You can style text with **fill color** and **stroke**:
+
+![Text fill color and Text stroke](text10.png){.screenshot-full}
+
+- **Fill color**: pick any color for the inside of the glyphs.  
+- **Stroke**: add an outline around the text and choose its color and thickness.  
+
+This allows text to stand out against complex backgrounds or follow brand guidelines precisely.

@@ -36,6 +36,28 @@ If GraFx Studio supports the relevant `GSUB` sub-table, the ligature will appear
 > **In short**  
 > *If your font is OpenType/TrueType and the tables required for your language or feature are listed with a **✅**, GraFx Studio will display the full typographic behaviour.*
 
+### Example: Arabic ligatures
+
+GraFx Studio supports both the **GSUB** (Glyph Substitution) and **GPOS** (Glyph Positioning) tables. These are the core OpenType tables required for complex script rendering, including Arabic.
+
+- **GSUB** provides substitution rules for ligatures and joining forms (`rlig`, `liga`, `calt`, `init`, `medi`, `fina`, `isol`).  
+- **GPOS** provides positioning rules for diacritics and marks (`mark`, `mkmk`).  
+
+This means GraFx Studio will correctly render Arabic text with required ligatures and contextual forms, *as long as the font itself defines these ligatures and features*.  
+
+!!! note
+    Support for Arabic and other complex scripts depends on the presence of the necessary GSUB and GPOS features in the font. If the font does not contain these ligature definitions, GraFx Studio cannot synthesize them automatically.
+
+**Example:** The word “اللّغة” will display with the lam + lam + heh ligature when using a font that defines the `rlig` feature for Arabic.  
+
+### Text Direction
+
+More than 90% of the languages are considered Left-to-Right (LTR).
+
+To support the other 10%, CHILI GraFx supports Right-to-Left (RTL) script direction.
+
+As an example (Farsi, Persian) "این یک نمونه از فارسی است، راست به چپ." is also be supported.
+
 ## How to read the table
 
 | Column | Meaning |

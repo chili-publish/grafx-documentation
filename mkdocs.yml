@@ -258,6 +258,7 @@ nav:
             - 'Smart Crop':                     'GraFx-Studio/concepts/genie-smart-crop/index.md'
             - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
+            - 'Text Direction':                 'GraFx-Studio/concepts/text-direction/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
         - 'How to: Design':
