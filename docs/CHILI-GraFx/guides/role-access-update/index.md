@@ -6,11 +6,11 @@
 
 If you have access to multiple subscriptions, first select the subscription where you want to make changes.
 
-![ui](changerole-1.png)
+![Subscription overview](changerole-1.png){.screenshot}
 
 If you have access to only 1 subscription, you will see your subscription only. (without dropdown icon)
 
-![ui](changerole-2.png)
+![Subscription details](changerole-2.png){.screenshot-full}
 
 ### Environment Admin
 
@@ -22,11 +22,11 @@ If you don't see an environment you should see, please contact your Subscription
 
 Go to User Management
 
-![ui](changerole-3.png)
+![CHILI GraFx User Management](changerole-3.png){.screenshot}
 
 #### Set Individual Access
 
-[Set individual access](/CHILI-GraFx/guides/set-individual-access/)
+[Set individual access](/CHILI-GraFx/guides/manage-individual-access/)
 
 #### Access through a group
 
