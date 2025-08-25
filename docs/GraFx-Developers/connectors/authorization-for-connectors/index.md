@@ -56,11 +56,11 @@ connector-cli set-auth \
 
 !!! note "Authorization is Optional"
 
-	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements. However, once authorization is configured for a Connector, it cannot currently be removed using the Connector CLI. If you need to change or remove an existing authorization method, you will need to recreate the Connector
+	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements. However, once authorization is configured for a Connector, it cannot currently be removed using the Connector CLI. If you need to change or remove an existing authorization method, you will need to recreate the Connector.
 
-!!! warning "Proxied Requests and Authorization Headers"
+!!! note "Authorization is Optional"
 
-		All POST requests made through a Connector are automatically proxied through CHILI servers, regardless of whether authorization is configured. If you include an Authorization header in your request via runtime.fetch, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
+	  All POST requests made through a Connector are automatically proxied through CHILI servers, regardless of whether authorization is configured. If you include an Authorization header in your request via runtime.fetch, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
 
 ### Connector ID (`--connectorId`)
 
