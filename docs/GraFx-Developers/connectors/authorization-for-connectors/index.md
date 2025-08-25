@@ -16,6 +16,7 @@ Hardcoding tokens directly into the Connector code is considered bad practice, a
 
 When a user first accesses a Connector and the code makes a `runtime.fetch` call, the GraFx Platform automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
 
+
 ## Authorization Limitations
 
 While the Connector framework supports the most common authorization schemas, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the 5 provided types, you may need to develop a workaround solution.
@@ -55,7 +56,11 @@ connector-cli set-auth \
 
 !!! note "Authorization is Optional"
 
-	  Authorization is optional for Connectors. By default, no authorization is used. However, once authorization is set, there is currently no method to remove it via the Connector CLI.
+	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements. However, once authorization is configured for a Connector, it cannot currently be removed using the Connector CLI. If you need to change or remove an existing authorization method, you will need to recreate the Connector
+
+!!! warning "Proxied Requests and Authorization Headers"
+
+		All POST requests made through a Connector are automatically proxied through CHILI servers, regardless of whether authorization is configured. If you include an Authorization header in your request via runtime.fetch, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
 
 ### Connector ID (`--connectorId`)
 
@@ -103,7 +108,7 @@ Therefore, you can define different authorization types for each usage, allowing
 
 !!! note "Authorization Always Happens on the Server"
 
-	  You can define different authorization types for each usage scenario. However, the actual authorization always occurs on the server to prevent token or credential leakage.
+	  It is important to note that all authorization is enforced server-side. This approach ensures that sensitive credentials—such as tokens, API keys, or other authentication data—are never exposed directly to the client. By processing authorization on the server, CHILI significantly reduces the risk of accidental credential leakage or malicious interception. When authorization is required, client requests do not communicate directly with the target service. Instead, the requests are securely proxied through CHILI's servers, which handle the authorization process on your behalf. 
 
 !!! note "Can not remove configured authorization"
 
@@ -123,7 +128,7 @@ This arguments expects one of the four supported types of authorization.
 
 In addition to specifying the authorization type using the `-at` argument, you must also define the supported authorization types in your `package.json` file. See [Define Supported Authorization Types](#define-supported-authorization-types)
 
-!!! warning "Each Usage Can Only Be Set Once"
+!!! warning "Browser Only Support"
 
     OAuth 2.0 Authorization Code is only supported with browser usage.
 
