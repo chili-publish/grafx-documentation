@@ -21,6 +21,10 @@
 	vertical-align: middle;
 }
 
+.md-typeset table:not([class]) th {
+    vertical-align: top;
+}
+
 .chilired {
 	color: var(--chilired);
 }
@@ -186,10 +190,6 @@ h3 {
 	font-weight: bold;
 	font-family: Satoshi, Ubuntu, sans-serif;
 	margin: 0.4em 0 0em;
-}
-
-.md-typeset table:not([class]) th {
-    vertical-align: middle;
 }
 
 .md-typeset table:not([class]) {
