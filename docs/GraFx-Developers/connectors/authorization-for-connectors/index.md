@@ -6,7 +6,7 @@ Connectors support various types of authorization to enable secure integration w
 
 When developing your Connector's JavaScript logic, you'll often need to make requests to external APIs. While the `runtime.fetch` method makes this process straightforward, handling API endpoints that require authorization or authentication can be challenging.
 
-Hardcoding tokens directly into the Connector code is considered bad practice, as this code may be accessible to other administrators in your environment. To address this security concern, the Connector CLI tool provides four different authorization types:
+Hardcoding tokens directly into the Connector code is considered bad practice, as these tokens may be accessible to other administrators in your environment. To address this security concern, the Connector CLI provides five different authorization types:
 
 - Static Header Key
 - OAuth 2.0 Client Credentials
@@ -14,21 +14,22 @@ Hardcoding tokens directly into the Connector code is considered bad practice, a
 - OAuth 2.0 Resource Owner Password (Password Grant)
 - OAuth 2.0 JWT Bearer Token
 
-When a user first accesses a Connector and the code makes a `runtime.fetch` call, the GraFx Platform automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
-
+When a user first accesses a Connector and the code makes a `runtime.fetch` call, CHILI GraFx automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
 
 ## Authorization Limitations
 
-While the Connector framework supports the most common authorization schemas, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the 5 provided types, you may need to develop a workaround solution.
+While the Connector framework supports the most common authorization schemes, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the five provided types, you may need to develop a workaround solution.
 
-For example, services like GraFx Media and CHILI GraFx Platform don't meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
+For example, services like GraFx Media and CHILI GraFx do not meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
 
 ## Define Supported Authorization Types
+
 Before implementing authorization, you must define the supported authorization types in your `package.json` file. This ensures consistency between your CLI commands and your package configuration.
 
 To do so, add or modify the `supportedAuth` property in your `package.json` file with the types of authentication your Connector supports.
 
 Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authorization Code:
+
 ```json
 {
 ...
@@ -40,6 +41,7 @@ Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authoriza
 ```
 
 ## Implement Authorization
+
 To implement authorization in a Connector, you need a published Connector and the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Use the following command:
 
 ```bash
@@ -58,15 +60,15 @@ connector-cli set-auth \
 
 	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements. However, once authorization is configured for a Connector, it cannot currently be removed using the Connector CLI. If you need to change or remove an existing authorization method, you will need to recreate the Connector.
 
-!!! warning "Always Proxy and Removal a Header"
+!!! warning "Proxying and Removing a Header"
 
-	  All POST requests made through a Connector are automatically proxied through CHILI servers, regardless of whether authorization is configured. If you include an Authorization header in your request via runtime.fetch, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
+	  All POST requests made through a Connector are automatically proxied through CHILI GraFx servers, regardless of whether authorization is configured. If you include an Authorization header in your request via `runtime.fetch`, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
 
 ### Connector ID (`--connectorId`)
 
-This argument is the ID of your connector published in your GraFx environment.
+This argument is the ID of your Connector published in your CHILI GraFx environment.
 
-To retrieve all Connectors to get lookup your ID, use the following API endpoint (with proper authorization header):
+To retrieve all Connectors and look up your ID, use the following API endpoint (with proper authorization header):
 
 ```bash
 GET https://{environment}.chili-publish.online/grafx/api/experimental/environment/{environment}/connectors
@@ -78,7 +80,7 @@ This argument expects the environment name that your Connector is published in.
 
 ### Base URL (`-b`)
 
-This argument expects the base URL for GraFx API calls, which will be in either of the following formats:
+This argument expects the base URL for CHILI GraFx API calls, which will be in either of the following formats:
 
 - Production Environments
 ```
@@ -94,39 +96,38 @@ https://{environment}.chili-publish-sandbox.online/grafx
 
     Ensure that the environment in your base URL matches the environment passed via the `-e` argument.
 
-
 ### Authorization Usage (`-au`)
 
 This argument expects one of two values that will specify the usage scenario for the authorization.
 
 Expected values:
 
-- **browser**: Connector authentication to use when Studio is loaded in the browser for Studio editors (e.g., Studio UI) or when using the SDK.
-- **server**: Connector authentication to use when Studio is loaded on GraFx servers for generating output (e.g., PDF, PNG, GIF).
+- **browser**: Connector authentication to use when GraFx Studio is loaded in the browser for editors (e.g., GraFx Studio UI) or when using the SDK.
+- **server**: Connector authentication to use when CHILI GraFx servers generate output (e.g., PDF, PNG, GIF).
 
 Therefore, you can define different authorization types for each usage, allowing your Connector to use separate authorization methods for browser and server interactions. Of course, you can choose the same authorization type for both usage types.
 
 !!! note "Authorization Always Happens on the Server"
 
-	  It is important to note that all authorization is enforced server-side. This approach ensures that sensitive credentials—such as tokens, API keys, or other authentication data—are never exposed directly to the client. By processing authorization on the server, CHILI significantly reduces the risk of accidental credential leakage or malicious interception. When authorization is required, client requests do not communicate directly with the target service. Instead, the requests are securely proxied through CHILI's servers, which handle the authorization process on your behalf. 
+	  It is important to note that all authorization is enforced server-side. This approach ensures that sensitive credentials—such as tokens, API keys, or other authentication data—are never exposed directly to the client. By processing authorization on the server, CHILI GraFx significantly reduces the risk of accidental credential leakage or malicious interception. When authorization is required, client requests do not communicate directly with the target service. Instead, the requests are securely proxied through CHILI GraFx servers, which handle the authorization process on your behalf. 
 
-!!! note "Can not remove configured authorization"
+!!! note "Cannot Remove Configured Authorization"
 
 	  At this moment there is no way to erase authorization once set. If you run the `set-auth` command multiple times with the same authorization usage `-au` value but different `-at` authorization types, the last one overwrites the previous one.
 
 ### Authorization Type (`-at`)
 
-This arguments expects one of the four supported types of authorization.
+This argument expects one of the supported types of authorization.
 
 | Auth Type | Reference | Usage Support | Expected Argument Value |
-|-----------|-----------|---------------|---------------------|
+|-----------|-----------|---------------|-------------------------|
 | Static Header Key | [MDN - Authorization Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) | browser and server | staticKey |
 | OAuth 2.0 Client Credentials | [OAuth 2.0 - Client Credentials](https://oauth.net/2/grant-types/client-credentials/) | browser and server | oAuth2ClientCredentials |
 | OAuth 2.0 Authorization Code | [OAuth 2.0 - Authorization Code](https://oauth.net/2/grant-types/authorization-code/) | browser | oAuth2AuthorizationCode |
 | OAuth 2.0 Resource Owner Password | [OAuth 2.0 - Password Grant](https://oauth.net/2/grant-types/password/) | browser and server | oAuth2ResourceOwnerPassword |
 | OAuth 2.0 JWT Bearer Token | [OAuth 2.0 - JWT Bearer Token Flow](https://datatracker.ietf.org/doc/html/rfc7523) | browser and server | oAuth2JwtBearer |
 
-In addition to specifying the authorization type using the `-at` argument, you must also define the supported authorization types in your `package.json` file. See [Define Supported Authorization Types](#define-supported-authorization-types)
+In addition to specifying the authorization type using the `-at` argument, you must also define the supported authorization types in your `package.json` file. See [Define Supported Authorization Types](#define-supported-authorization-types).
 
 !!! warning "Browser Only Support"
 
@@ -136,10 +137,10 @@ In addition to specifying the authorization type using the `-at` argument, you m
 
 #### OAuth 2.0 Considerations
 
-1. OAuth 2.0 responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception `expires_in` being mandatory.
+1. OAuth 2.0 responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception that `expires_in` is mandatory.
 2. The `grant_type` for OAuth 2.0 types is automatically set as per the specification and cannot be configured.
 3. `access_token` and `refresh_token` are cached internally for OAuth 2.0 types. There's currently no way to reset them without deleting the Connector.
-4. OAuth 2.0 Authorization Code is user-specific and not useful with an Integration User (used outside the GraFx Platform).
+4. OAuth 2.0 Authorization Code is user-specific and not useful with an Integration User (used outside CHILI GraFx).
 5. OAuth 2.0 Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios.
 
 ### Authorization Data File Requirements (`--auth-data-file`)
@@ -157,7 +158,7 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### OAuth 2.0 Client Credentials
 ```typescript
 {
-  "clientId": string,     // OAuth 2.0 app client id
+  "clientId": string,     // OAuth 2.0 app client ID
   "clientSecret": string, // OAuth 2.0 app client secret
   "scope": string,        // OAuth 2.0 app scope. Optional
   "tokenEndpoint": string // OAuth 2.0 app token endpoint URL
@@ -167,17 +168,17 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### OAuth 2.0 Authorization Code
 ```typescript
 {
-  "clientId": string, // OAuth 2.0 app client id
+  "clientId": string, // OAuth 2.0 app client ID
   "clientSecret": string, // OAuth 2.0 app client secret
   "scope": string, // OAuth 2.0 app scope. Optional
   "authorizationServerMetadata": {
     "authorization_endpoint": string, // OAuth 2.0 app authorization endpoint URL
     "token_endpoint": string, // OAuth 2.0 app token endpoint URL
-    "token_endpoint_auth_methods_supported": ["client_secret_basic", "client_secret_post"] // Describe the way of how "clientId" and "clientSecrets" are sending in HTTP requests
+    "token_endpoint_auth_methods_supported": ["client_secret_basic", "client_secret_post"] // The way in which "clientId" and "clientSecret" are sent in HTTP requests
   },
   "specCustomization": {
-    "codeParameterName": string, // Name of the "code" parameter that send in HTTP requests. Optional, default "code"
-    "requestContentType": "applicationJson" | "formUrlEncoded" // Defines which HTTP Content-Type will be used for HTTP request. Optional, default "formUrlEncoded"
+    "codeParameterName": string, // Name of the "code" parameter sent in HTTP requests. Optional, default "code"
+    "requestContentType": "applicationJson" | "formUrlEncoded" // Defines which HTTP Content-Type will be used for the request. Optional, default "formUrlEncoded"
   }
 }
 ```
@@ -185,23 +186,23 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 #### OAuth 2.0 Resource Owner Password
 ```typescript
 {
-  "clientId": string, // OAuth 2.0 app client id
+  "clientId": string, // OAuth 2.0 app client ID
   "clientSecret": string, // OAuth 2.0 app client secret
   "scope": string, // OAuth 2.0 app scope. Optional
-  "username": string, // User that has an access to the OAuth 2.0 app
-  "password": string, // Password of the username
-  "bodyFormat": "applicationJson" | "formUrlEncoded", // Defines which HTTP Content-Type will be used for token request. Optional, default "formUrlEncoded"
+  "username": string, // User with access to the OAuth 2.0 app
+  "password": string, // Password of the user
+  "bodyFormat": "applicationJson" | "formUrlEncoded", // Defines which HTTP Content-Type will be used for the token request. Optional, default "formUrlEncoded"
   "tokenEndpoint": string // OAuth 2.0 app token endpoint URL
 }
 ```
 
 #### OAuth 2.0 JWT Bearer Token
 
-Depends on the connector definition
+Depends on the Connector definition
 
 ## Example: Setting Multiple Authorization Types
 
-This example demonstrates how to set up a Connector with different authorization types for server and browser interactions. In this scenario, we'll use OAuth 2.0 Client Credentials for server interactions and OAuth Authorization Code for browser interactions.
+This example demonstrates how to set up a Connector with different authorization types for server and browser interactions. In this scenario, we'll use OAuth 2.0 Client Credentials for server interactions and OAuth 2.0 Authorization Code for browser interactions.
 
 ### Step 1: Prepare Authorization Data Files
 
