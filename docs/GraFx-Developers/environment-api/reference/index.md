@@ -6,7 +6,7 @@ You can access the specific interactive Swagger for your environment API via int
 
 ![ui](integration01.png)
 
-## Sanbox Reference
+## Sandbox Reference
 
 This link serves as an example.
 
