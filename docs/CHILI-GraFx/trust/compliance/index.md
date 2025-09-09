@@ -20,4 +20,4 @@ Our compliance team works hard to meet your organization’s compliance needs. W
 
 [Download statement of applicability](https://cdn6.chili-publish.com/hub/Legal/CHILI_publish_ISO27001_Statement_of_Applicability_v121_Jul17th_2024.pdf)
 
-[ISO 27001:2017 Certificate](https://cdn6.chili-publish.com/hub/Legal/NL_1853.1.1_CHILI_publish_NV_ISO_27001.pdf)
+[ISO 27001:2022 Certificate](https://cdn6.chili-publish.com/hub/Legal/NL_2009.1.1_CHILI_publish_NV_ISO_27001.pdf)
