@@ -31,10 +31,10 @@ These values define the absolute size range for the layout.
 In addition to dimensions, you can control proportions by enabling **Restrict proportions**.
 
 - **Lock aspect ratio**: Width and height always scale together.  
-  - Example: A circular sticker locked at 1:1 always remains round.  
+    - Example: A circular sticker locked at 1:1 always remains round.  
 
-- **Define aspect ratio range**: Allow resizing within a ratio window (width ÷ height).  
-  - Example: A banner can be resized between 3:2 (1.5) and 3:1 (3.0), but not as a square.  
+- **Define aspect ratio range**: Allow resizing within a ratio window (width ÷ height).
+    - Example: A banner can be resized between 3:2 (1.5) and 3:1 (3.0), but not as a square.  
 
 If users try to resize outside the allowed range, they’ll see a warning.
 
