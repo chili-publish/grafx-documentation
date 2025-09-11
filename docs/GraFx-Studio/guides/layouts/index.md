@@ -20,11 +20,14 @@ If your preset is not available in the list, choose "Custom" and define the name
 
 Click create!
 
-In the properties panel, you'll see the layout size.
+In the properties panel, you'll see all related options you can set.
 
 ![screenshot-full](sublayout-2.png)
 
 If the values appear colored, it's because they differ from the base values. To learn more, read about the [Inheritance model](/GraFx-Studio/concepts/layout-intent/#inheritance-model).
+
+See also how to [set Layout size constraints](/GraFx-Studio/guides/layout-size-constraints/).
+
 
 ## Feature Channel
 
@@ -60,13 +63,7 @@ Layouts are "Available", if you set the property "Available".
 
 If available, you can also set if a layout is resizable in the End User Interface (Studio UI).
 
-When set, the end user will be able to set the width and height of the layout, to be resized, up to a minimum and/or maximum size.
-
-![screenshot](layout03.png)
-
-In the Studio UI or Run Mode, you will see a width and height field, to custom resize your output.
-
-![screenshot](resize.png)
+See [Layout size constraints](/GraFx-Studio/guides/layouts/#layouts-in-the-studio-ui) on how to set the size and / or aspect ratio limits.
 
 ## Move the elements on the layout
 
