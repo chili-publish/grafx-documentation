@@ -2,7 +2,7 @@
 
 In this example, we start from a Layout, with print intent, set to A3 (297mm x 420mm).
 
-In the restrictions, the units of the layout will be uses.
+In the restrictions, the units of the layout will be used.
 
 ![Base Layout settings](resize1.png){.screenshot}
 
@@ -48,7 +48,7 @@ How this looks on the end-user side.
 #### Example
 
 To serve European and American sizes, we will limit the Aspect ratio between 0.65 and 0.71.
-This will allow the end user to finetune, but stay within aspect ration boundaries.
+This will allow the end user to finetune, but stay within aspect ratio boundaries.
 
 How did we arrive to these ratios?
 
