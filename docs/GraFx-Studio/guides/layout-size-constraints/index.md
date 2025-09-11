@@ -2,6 +2,7 @@
 
 In this example, we start from a Layout, with print intent, set to A3 (297mm x 420mm).
 
+
 In the restrictions, the units of the layout will be used.
 
 ![Base Layout settings](resize1.png){.screenshot}
