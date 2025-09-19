@@ -22,7 +22,7 @@ While InDesign® remains a great starting point for creative design, GraFx Studi
 
 ### Download the plugin
 
-Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/0.3.0/GraFxStudioExporter_InDesign_0.3.0.ccx)
+Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobeInDesign/latest/GraFxStudioExporter_InDesign_latest.ccx)
 
 ### Install the plugin
 
