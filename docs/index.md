@@ -11,61 +11,59 @@
 
 -   :material-clock-fast: **Release Notes**
 
-    **July 28, 2025**: GraFx Genie Vision ==Update (for new assets only)==
+    **Sept 23, 2025**: Drop Shadow & Stability Fixes  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.31</span>
 
-    ![rn_icon](/assets/icon-Grafx-Genie.svg)
+    Added drop shadow support for all frame types, improved image uploads, and fixed stability issues in GraFx Studio.  
 
-    Recognition of more contextual objects such as houses and buildings.
-    Overall improvements in person detection, eye detection and removed logo detection false positives
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/28/grafx-genie-vision/)
+    ![Drop Shadow](/release-notes/releasenotesassets/DropShadow.gif){.screenshot}
 
-    ---
-
-    **July 22, 2025**: Introducing: ==GraFx Brand Kits==
-
-    ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
-
-    Define your visual identity once: media, colors, fonts, character styles and paragraph styles. Apply it everywhere in GraFx Studio for lightning-fast, on-brand template creation.  
-
-    See [GraFx Brand Kits](/GraFx-Brand-Kits/)
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/22/introducing-grafx-brand-kits/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/09/23/drop-shadow--stability-fixes/)
 
     ---
 
+    **Sept 8, 2025**: Text Stroke & Smarter Studio Controls  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.30</span>
 
-    **July 22, 2025**: GraFx Studio - ==Text stroke support==
+    Added text stroke support in GraFx Brand Kits, with smarter layout size constraints and Studio UI improvements.  
 
-    Text stroke: Add crisp outlines with rounded joins, perfectly rendered in editor and PDF.
-    Other improvements and fixes
-        
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/22/introducing-grafx-brand-kits/)
-
-    ---
-
-    **July 3, 2025**: GraFx Studio – ==Indic language support and translatable interface for project integrations==
-
-    Full support for Indic scripts (e.g., Hindi), with correct shaping and rendering for complex characters.
-    Improvements for per asset crop and other fixes
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/07/03/-grafx-studio-release-notes/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/09/08/text-stroke--smarter-studio-controls/)
 
     ---
 
-    **May 30, 2025**: GraFx Studio – ==Image Upload==
+    **Aug 26, 2025**: GraFx Studio UI – Upload & Browse Assets  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.29</span>
 
-    Template designers can allow end-users to upload their own images directly in the Studio UI! This enables deeper personalization and flexibility for user-generated content, custom branding, and campaign variations.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/05/30/grafx-studio--image-upload/)
+    Improvements to asset upload and browsing experience in GraFx Studio UI.  
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/26/grafx-studio-ui--upload-and-browse-assets/)
 
     ---
 
-    **May 26, 2025**: GraFx Studio – ==Manual Crop Override==
+    **Aug 19, 2025**: GraFx Studio – User Interface Form Builder  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.28</span>
 
-    Template designers can now lock specific images to a manual crop, even when using automatic fit modes like Smart Crop. This gives you full control over how visuals are framed.
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/05/23/grafx-studio--about-cropping/)
+    New UI Form Builder lets you create structured forms for faster and more controlled template editing.  
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/19/grafx-studio--user-interface-form-builder/)
+
+    ---
+
+    **Aug 11, 2025**: GraFx Studio – Adobe® Photoshop® Exporter  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.27</span>
+
+    Export templates from GraFx Studio to Adobe® Photoshop® for further editing and collaboration.  
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/11/grafx-studio---adobe-photoshop-exporter/)
+
+    ---
+
+    **Aug 8, 2025**: Remove Paragraph When Variable Is Empty  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.26</span>
+
+    In automation, you can now remove paragraphs automatically if a variable value is empty.  
+
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/08/-grafx-studio-release-notes/)
 
     ---
 
@@ -74,8 +72,6 @@
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
     
 </div>
-
-
 ## The Platform & Applications
 
 <div class="grid cards" markdown>
