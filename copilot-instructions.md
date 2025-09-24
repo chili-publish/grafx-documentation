@@ -1,176 +1,177 @@
 # GitHub Copilot Instructions for CHILI GraFx Documentation
 
-This document provides guidelines for GitHub Copilot when working with the CHILI GraFx documentation repository.
+This document provides guidelines for GitHub Copilot when reviewing and assisting with the CHILI GraFx documentation repository. It ensures consistency with the official Documentation Project Instructions.
+
+---
 
 ## Project Overview
 
-This is a technical documentation site for CHILI GraFx products, built with MkDocs Material. The documentation covers multiple GraFx applications including Studio, Publisher, Media, Fonts, Brand Kits, and Developer resources.
+This is a technical documentation site for CHILI GraFx products, built with MkDocs Material. The documentation covers GraFx Studio, GraFx Publisher, GraFx Media, GraFx Fonts, GraFx Brand Kits, and Developer resources.
+
+---
 
 ## Language & Style Guidelines
 
 ### Language
-- **Primary Language**: English (US)
-- **Tone**: Professional, clear, and user-friendly
-- **Audience**: Technical users, developers, designers, and administrators
+- **Primary language**: English (US)
+- **Tone**: Neutral, concise, practical  
+  - Avoid marketing language.  
+  - Do not make roadmap promises or speculate on future features.  
+- **Audience**: Developers, Template Designers, administrators, technical users  
+- Always write in **second person** (“you”) and **active voice**.
 
 ### Spelling & Grammar
-- Use American English spelling (e.g., "color" not "colour", "center" not "centre")
-- Check for common typos and grammatical errors
-- Ensure consistent terminology throughout
+- Use US English spelling (`color`, `center`).  
+- Correct typos and grammar.  
+- Use consistent terminology across all docs.
 
-## Content Quality Standards
+---
 
-### Terminology Consistency
-- **CHILI GraFx** (with capital "F" in "GraFx")
-- **GraFx Studio** (not "GraFX Studio" or "Grafx Studio")
-- **GraFx Publisher** (not "GraFX Publisher" or "Grafx Publisher")
-- **GraFx Media** (not "GraFX Media" or "Grafx Media")
-- **GraFx Fonts** (not "GraFX Fonts" or "Grafx Fonts")
-- **GraFx Brand Kits** (not "GraFX Brand Kits" or "Grafx Brand Kits")
-- **Smart Templates** (capitalized)
-- **Template Designer** (capitalized)
-- **End-users** (with hyphen)
+## Terminology & Product Names
 
-### Technical Terms
-- Use "multichannel" (not "multi-channel")
-- Use "self-service" (with hyphen)
-- Use "real-time" (with hyphen)
-- Use "end-to-end" (with hyphens)
-- Use "plug-and-play" (with hyphens)
+### CHILI GraFx product names
+- **CHILI GraFx** (platform)  
+- **GraFx Studio**  
+- **GraFx Publisher**  
+- **GraFx Media**  
+- **GraFx Fonts**  
+- **GraFx Brand Kits**  
 
-### Product Names
-- Always use the exact product names as specified
-- Include version numbers when relevant (e.g., "v1.27")
-- Use proper trademark symbols when appropriate
+❌ Never use: *GraFX*, *Grafx*, *Graphics Studio*, etc.
 
-## File Structure & Organization
+### Key terms
+- **Smart Templates** (capitalized)  
+- **Template Designer** (capitalized)  
+- **End users** (two words, no hyphen)  
 
-### Directory Naming
-- Use kebab-case for directory names (e.g., `grafx-studio`, `brand-kits`)
-- Follow the established hierarchy: `docs/[Product-Name]/[section]/[subsection]/index.md`
+### Technical terms
+- Use:  
+  - `multichannel` (no hyphen)  
+  - `self-service`  
+  - `real-time`  
+  - `end-to-end`  
+  - `plug-and-play`  
 
-### File Naming
-- All documentation files should be named `index.md`
-- Use descriptive directory names to indicate content
-- Maintain consistent folder structure across products
+### Trademark usage
+- First mention must include ® where required (e.g., Adobe® InDesign®).  
+
+---
+
+## File & Directory Structure
+
+- Use **kebab-case** for directory names (`grafx-studio`, `brand-kits`).  
+- Follow hierarchy: `docs/[product]/[section]/[subsection]/index.md`.  
+- All documentation pages should be named **`index.md`**.  
+- Descriptive directory names indicate content.  
+
+---
 
 ## Markdown Standards
 
 ### Headers
-- Use `#` for main page titles
-- Use `##` for major sections
-- Use `###` for subsections
-- Maintain proper header hierarchy (no skipping levels)
+- `#` for main title, `##` for sections, `###` for subsections.  
+- Maintain proper hierarchy (don’t skip levels).  
 
 ### Links
-- Use relative paths for internal links
-- Include `.md` extension for markdown files in links
-- Use descriptive link text
-- Ensure all links are functional
+- Use **relative paths**.  
+- **Do not include `.md` extensions** in internal links.  
+- Use descriptive link text.  
 
 ### Images
-- Use descriptive alt text for all images
-- Place images in appropriate `assets/` directories
-- Use consistent image naming conventions
-- Include proper image sizing attributes when needed
+- Use this format only:  
+~~~markdown
+![Alt text](image.png){.screenshot}
+![Alt text](image.png){.screenshot-full}
+~~~
+- Always include descriptive alt text.  
 
 ### Code Blocks
-- Use appropriate language identifiers for syntax highlighting
-- Include comments explaining complex code
-- Ensure code examples are complete and functional
+- Use fenced code blocks with language identifiers **when it adds clarity**.  
+- Ensure examples are complete and functional.  
+- Add comments only for complex code.  
 
-## Content Patterns
-
-### Release Notes
-- Follow the established format with frontmatter
-- Include proper categorization (`Releases`, `Operational updates`)
-- Use consistent emoji patterns (✨ for new features, 🛠️ for improvements, 🐛 for fixes)
-- Include relevant screenshots and links to documentation
-
-### Guide Structure
-- Start with clear objectives
-- Provide step-by-step instructions
-- Include screenshots where helpful
-- End with next steps or related resources
-
-### Concept Pages
-- Define terms clearly
-- Provide context and use cases
-- Include examples where appropriate
-- Link to related concepts and guides
-
-## Quality Checks
-
-### Before Committing
-1. **Spelling**: Run spell check on all content
-2. **Links**: Verify all internal and external links work
-3. **Images**: Ensure all images load and have proper alt text
-4. **Consistency**: Check terminology consistency across the document
-5. **Structure**: Verify proper markdown formatting and hierarchy
-
-### Content Review
-- Ensure all product names are spelled correctly
-- Check for consistent use of technical terms
-- Verify all code examples are syntactically correct
-- Confirm all screenshots are current and relevant
-
-## Common Issues to Watch For
-
-### Spelling Mistakes
-- "GraFX" → "GraFx"
-- "Grafx" → "GraFx"
-- "colour" → "color"
-- "centre" → "center"
-- "realise" → "realize"
-- "organise" → "organize"
-
-### Formatting Issues
-- Inconsistent header levels
-- Missing image alt text
-- Broken internal links
-- Inconsistent bullet point formatting
-- Missing frontmatter in release notes
-
-### Content Issues
-- Outdated screenshots
-- Broken code examples
-- Inconsistent terminology
-- Missing context or explanations
-- Unclear instructions
-
-## MkDocs Specific Guidelines
-
-### Navigation
-- Ensure all pages are properly included in `mkdocs.yml`
-- Use consistent indentation in navigation structure
-- Verify page titles match navigation labels
-
-### Plugins
-- Be aware of the blog plugin for release notes
-- Understand the redirects plugin for moved content
-- Consider RSS feed implications for new content
-
-### Material Theme
-- Use appropriate Material Design icons
-- Follow the established color scheme
-- Maintain consistent card layouts for overview pages
-
-## Best Practices
-
-1. **Always test locally** before committing changes
-2. **Use descriptive commit messages** that explain what was changed
-3. **Keep screenshots current** and relevant to the content
-4. **Provide context** for technical concepts
-5. **Include examples** where they add value
-6. **Link to related content** to help users navigate
-7. **Use consistent formatting** across all documentation
-
-## Resources
-
-- [MkDocs Material Documentation](https://squidfunk.github.io/mkdocs-material/)
-- [CHILI GraFx Documentation Site](https://docs.chiligrafx.com/)
-- [CHILI publish Website](https://www.chili-publish.com/)
+### Admonitions
+- Use MkDocs Material admonitions with short bodies:  
+  - `!!! note` `|` `tip` `|` `warning` `|` `info`
 
 ---
 
-*This file should be updated as the documentation standards evolve and new patterns emerge.*
+## Content Patterns
+
+### Concept Pages
+- Define terms and explain why they matter.  
+- Provide context, relationships, constraints.  
+- No step-by-step instructions.  
+- Link to related guides.  
+
+### Guides (How-to)
+- Provide step-by-step instructions.  
+- Add screenshots where useful.  
+
+### Release Notes
+- Always include frontmatter:
+~~~yaml
+---
+draft: false
+date: YYYY-MM-DD
+categories:
+  - Releases
+---
+~~~
+- Categories:  
+  - `Releases`  
+  - `Operational updates` (downtime, planned changes, behavioral updates)  
+- Title: short, descriptive (emoji optional).  
+- Version label:  
+~~~markdown
+![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">vX.YY</span>
+~~~
+- Sections:  
+  - `## ✨ New & Improved`  
+  - `## 🛠️ What's Fixed`  
+- Subdivide by product when needed.  
+- Bullet points: short, start with action verbs.  
+- Add screenshots with alt text and proper formatting.  
+- Link to related guides or concept pages using relative links.  
+
+---
+
+## Quality Checks
+
+Before committing:
+1. Run spell check.  
+2. Verify all internal and external links work.  
+3. Confirm all images load, follow `.screenshot` formatting, and have alt text.  
+4. Check terminology consistency (product names, hyphens, casing).  
+5. Ensure code examples are valid and add clarity.  
+6. Confirm release notes use correct structure.  
+
+---
+
+## MkDocs Specific Rules
+
+- Ensure all pages are listed in `mkdocs.yml`.  
+- Match page titles with navigation labels.  
+- Keep consistent indentation in navigation.  
+- Use Material for MkDocs components and icons.  
+- Be aware of blog plugin for release notes, redirects plugin for moved content, and RSS implications.  
+
+---
+
+## Best Practices
+
+1. Test changes locally before committing.  
+2. Use descriptive commit messages.  
+3. Keep screenshots current and relevant.  
+4. Provide context for technical concepts.  
+5. Link to related content.  
+6. Use outcome-oriented headings for clarity.  
+7. Apply reader-first techniques (e.g., trigger → action → result, contrast, outcome-first).  
+
+---
+
+## Resources
+
+- MkDocs Material Documentation: https://squidfunk.github.io/mkdocs-material/  
+- CHILI GraFx Documentation Site: https://docs.chiligrafx.com/  
+- CHILI publish Website: https://www.chili-publish.com/  
