@@ -23,6 +23,24 @@ A list of all template variables that are available in the document shows
 
 ![screenshot](var03.png)
 
+## Create variables from a linked datasource
+
+If your document already has a linked datasource, you can automatically create template variables based on its field names. This speeds up Smart Template setup by generating variables in one step.
+
+In the **Data source** panel, choose the option to "**Create variables**" from the linked datasource. GraFx Studio will create a template variable for each **unique** field name it finds.
+
+![Create variables from datasource](create-datasource.png){.screenshot}
+
+!!! tip "After creation"
+    Review each new variable’s [type](#types) and [settings](#variable-settings) (Label, Placeholder, Help text). Organize them with **Group** to keep complex templates manageable.
+
+!!! warning "Duplicate field names"
+    If the datasource contains duplicate field names, variables for those duplicates are **not** created. A toast message will show the error. Make the field names unique in your datasource and run the action again.  
+
+    ![Create variables from datasource](create-datasource-double.png){.screenshot-full}
+
+    ![Create variables from datasource ereor](create-datasource-double-2.png){.screenshot-full}  
+
 ## Options
 
 Each template variable has a pencil icon, and three dots.
