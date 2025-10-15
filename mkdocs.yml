@@ -305,6 +305,7 @@ nav:
             - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
             - 'Image variables':                'GraFx-Studio/guides/template-variables/image/index.md'
             - 'Multi-line text variables':      'GraFx-Studio/guides/template-variables/multi-line-text/index.md'
+            - 'Single-line text variables':     'GraFx-Studio/guides/template-variables/single-line-text/index.md'
             - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
             - 'Variables private data':         'GraFx-Studio/guides/template-variables-private-data/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
