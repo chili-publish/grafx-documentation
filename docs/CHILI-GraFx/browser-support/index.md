@@ -21,6 +21,12 @@ We fully support **Chromium based browsers**
 
 These browsers provide the most reliable experience across CHILI GraFx applications.
 
+While CHILI GraFx offers first-party support for Chromium-based browsers, we officially support the **latest three stable versions** — assuming the browser receives regular security updates.
+
+**Keep in mind**: some Chromium-based browsers (especially smaller forks) may lag behind Chromium’s security patches. We recommend using a Chromium browser that maintains **frequent and timely updates** to ensure compatibility and security.
+
+We do **not display warnings or restrict access** for users on unsupported or best-effort browsers.
+
 ### 🧪 Best-effort support
 
 We aim to maintain compatibility with:
