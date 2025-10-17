@@ -11,6 +11,20 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    ---
+
+    **Oct 17, 2025**: Linear Gradients, Variable- & GraFx Genie Enhancements
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.32</span>
+    
+    Add linear gradients (RGB/CMYK/Hex/Spot), create variables from a linked datasource, "Prevent line break", performance gains, and GraFx Genie prompts up to 4,000 chars; plus fixes for Indic text, canvas loading, cursors, image-picker folders, and non-finite number handling.
+    
+    ![Linear gradient](/release-notes/releasenotesassets/gradient.png){.screenshot}
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/10/17/linear-gradients-variable---grafx-genie-enhancements/)
+    
+    ---
+
     **Sept 23, 2025**: Drop Shadow & Stability Fixes  
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.31</span>
 
@@ -37,33 +51,6 @@
     Improvements to asset upload and browsing experience in GraFx Studio UI.  
 
     [:octicons-arrow-right-24: Show details](/release-notes/2025/08/26/grafx-studio-ui--upload-and-browse-assets/)
-
-    ---
-
-    **Aug 19, 2025**: GraFx Studio – User Interface Form Builder  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.28</span>
-
-    New UI Form Builder lets you create structured forms for faster and more controlled template editing.  
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/19/grafx-studio--user-interface-form-builder/)
-
-    ---
-
-    **Aug 11, 2025**: GraFx Studio – Adobe® Photoshop® Exporter  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.27</span>
-
-    Export templates from GraFx Studio to Adobe® Photoshop® for further editing and collaboration.  
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/11/grafx-studio---adobe-photoshop-exporter/)
-
-    ---
-
-    **Aug 8, 2025**: Remove Paragraph When Variable Is Empty  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.26</span>
-
-    In automation, you can now remove paragraphs automatically if a variable value is empty.  
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/08/-grafx-studio-release-notes/)
 
     ---
 
