@@ -18,7 +18,7 @@ We make it seamless for customers to manage user access. All communications with
 
 ## Compliance
 
-We use guidance of general accepted security and privacy frameworks to help our customers to meet their own compliance standards. CHILI publish is ISO27001:2017 certified.
+We use guidance of general accepted security and privacy frameworks to help our customers to meet their own compliance standards. CHILI publish is ISO27001 certified.
 
 You can find the Certificate itself and The Statement of applicability [here](/CHILI-GraFx/trust/compliance/)
 
