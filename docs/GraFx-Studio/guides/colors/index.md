@@ -34,7 +34,7 @@ Define the color. Choose your type and set the values for the chosen color space
 
 ![screenshot](hex.png)
 
-The value is e hexadecimal representation of an RGB value.
+The value is a hexadecimal representation of an RGB value.
 
 Ranging from 00 (black) to FF (white).
 
