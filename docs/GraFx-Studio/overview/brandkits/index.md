@@ -24,7 +24,7 @@ Add media to your Brand Kit
 
 The pencil button allows editting the properties.
 
-The fill color can be a custom color, or a predefined [swatch](/GraFx-Studio/concepts/brandkits/#swatch).
+The fill color can be a custom color, or a predefined [color](/GraFx-Studio/concepts/brandkits/#color).
 
 ![screenshot](select-color.png)
 
@@ -33,9 +33,9 @@ The fill color can be a custom color, or a predefined [swatch](/GraFx-Studio/con
 
 ![screenshot](bk9.png)
 
-## Swatch
+## Color
 
-A swatch is a color saved inside a Brand Kit. You can reuse the swatch (predefined color) in paragraph- en character styles.
+A "color" is a predefined color saved inside a Brand Kit. You can reuse the color in paragraph- en character styles.
 
 ![screenshot](bk10.png)
 
