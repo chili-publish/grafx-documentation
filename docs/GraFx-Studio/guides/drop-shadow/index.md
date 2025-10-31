@@ -19,7 +19,7 @@ In the right sidebar, scroll to the **Appearance** section.
 
 **Customize the shadow**  
    
-- **Color**: Click the color box to choose a custom color or a saved swatch. Adjust opacity as needed.  
+- **Color**: Click the color box to choose a custom color or a saved color. Adjust opacity as needed.  
 ![Color picker for Drop shadow](shadow2.png){.screenshot}
 - **Blend mode**: Open the dropdown and select how the frame (including shadow) interacts with the background.
 - **Angle**: Enter a degree value or drag the angle dial to position the shadow.

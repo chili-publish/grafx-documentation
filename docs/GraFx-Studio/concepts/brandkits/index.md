@@ -7,7 +7,7 @@ Elements of a "Brand Kit":
 	- Media
 	- Text: paragraph styles
 	- Text: character styles
-	- Swatch
+	- Colors
 	- Fonts
 
 When you define a Brand Kit, you define elements that fit together in one group, so you can re-use the settings later in the document.
@@ -24,9 +24,9 @@ A paragraph style is a set of attributes, such as font size and color, that dete
 
 A character style is a collection of character formatting attributes that can be applied to text in a single step.
 
-## Swatch
+## Color
 
-A [swatch](/GraFx-Studio/guides/swatches/) is a color saved inside a Brand Kit. You can define a color, give it a name, and save the named color to be used later.
+A [color](/GraFx-Studio/guides/colors/) is a color saved inside a Brand Kit. You can define a color, give it a name, and save the named color to be used later.
 
 ## Fonts
 
