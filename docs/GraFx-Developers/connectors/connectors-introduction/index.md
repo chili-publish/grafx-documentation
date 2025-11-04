@@ -4,6 +4,8 @@ Connectors are a flexible framework that seamlessly integrates GraFx Studio capa
 
 This comprehensive guide is designed for developers interested in building their own Connectors, providing essential information and best practices.
 
+See also: [The concept of connectors](/GraFx-Studio/concepts/connectors/)
+
 ## Prerequisites for Building a Connector
 
 To successfully create a Connector, you should have:
@@ -38,15 +40,17 @@ The following types of services are particularly well-suited for Connector integ
 
 GraFx Studio currently supports two types of Connectors:
 
-### Media Connectors (Experimental)
+### Media Connectors
 
 - Purpose: Import images into documents and update variables with metadata
-- Status: Currently available as an experimental feature
 
-### Data Connectors (Experimental)
+See also: [Concept of Media Connectors](/GraFx-Studio/concepts/connectors-media/)
+
+### Data Connectors
 
 - Purpose: Import data to update document variables
-- Status: Currently available as an experimental feature
+
+See also: [Concept of Data Connectors](/GraFx-Studio/concepts/connectors-data/)
 
 ## Getting Started
 
@@ -68,4 +72,4 @@ If you're interested in building a Connector:
 A: Currently, Connectors are designed for importing data into GraFx Studio. The ability to export data is not available at this time.
 
 #### Q: How do I publish my Connector?
-A: At present, Connectors must be shared via third-party means and published using our CLI tool. We are developing a Connector Hub where approved Connectors will be available in the future.
+A: See [Publish my Connector](/GraFx-Developers/connectors/publish-my-connector/)
