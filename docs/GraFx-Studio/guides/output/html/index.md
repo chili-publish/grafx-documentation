@@ -37,7 +37,7 @@ Very similar in [Studio UI](/GraFx-Studio/concepts/template-management/?h=studio
 
 ### Choose Download (to HTML)
 
-Click "Downlaod" and choose your output setting in the dropdown.
+Click "Download" and choose your output setting in the dropdown.
 
 ![Download in Studio UI](html-05.png){.screenshot}
 

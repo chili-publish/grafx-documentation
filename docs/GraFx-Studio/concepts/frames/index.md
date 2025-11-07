@@ -28,7 +28,7 @@ You can set the [Blend mode](/GraFx-Studio/concepts/blendmodes/), Opacity and Dr
 
 ### Opacity
 
-When set to 100% the frame is opaque or not transparant. When set to 50%, the frame will be 50% transparent.
+When set to 100% the frame is opaque or not transparent. When set to 50%, the frame will be 50% transparent.
 
 ![Frame Appearance](frame01.png){.screenshot}
 
