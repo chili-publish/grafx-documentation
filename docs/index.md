@@ -12,7 +12,7 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Nov 7, 2025**: HTML output (experimental), Bulleted Lists and Opacity
+    **Nov 10, 2025**: HTML output (experimental), Bulleted Lists and Opacity
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.33</span>
     
