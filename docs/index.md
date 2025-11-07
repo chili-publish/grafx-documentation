@@ -18,7 +18,7 @@
     
     This version introduces HTML output (experimental), frame Opacity settings, and Bulleted list support in paragraph styles.  
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/07/html-output-bulleted-lists--frame-transparency/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/07/html-output-bulleted-lists--frame-opacity/)
     
     ---
 
