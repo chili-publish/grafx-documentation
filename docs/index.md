@@ -12,13 +12,13 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Nov 10, 2025**: HTML output (experimental), Bulleted Lists and Opacity
+    **Nov 14, 2025**: HTML output (experimental) and Frame Opacity
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.33</span>
     
-    This version introduces HTML output (experimental), frame Opacity settings, and Bulleted list support in paragraph styles.  
+    This version introduces HTML output (experimental), frame Opacity settings and many improvements.  
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/10/html-output-bulleted-lists--frame-opacity/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/14/html-output--frame-opacity/)
     
     ---
 
