@@ -18,6 +18,8 @@
     
     This version introduces HTML output (experimental), frame Opacity settings and many improvements.  
     
+    ![Linear gradient](/release-notes/releasenotesassets/html-code.png){.screenshot-tiny}
+
     [:octicons-arrow-right-24: Show details](/release-notes/2025/11/14/html-output--frame-opacity/)
     
     ---
