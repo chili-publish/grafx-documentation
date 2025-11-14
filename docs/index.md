@@ -16,7 +16,7 @@
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.33</span>
     
-    This version introduces HTML output (experimental), frame Opacity settings and many improvements.  
+    This version introduces HTML output (experimental), Frame Opacity settings and many improvements.  
     
     ![Linear gradient](/release-notes/releasenotesassets/html-code.png){.screenshot-tiny}
 
