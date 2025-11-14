@@ -94,6 +94,27 @@ Define offset and weight (thickness).
 
 ---
 
+## HTML Output Settings
+
+See [Generic Settings](#generic-settings-all-formats)
+
+![screenshot-full](os-18.png)
+
+### Data Source
+
+When enabled, includes all records from the data source in the output.
+
+![screenshot](output.png)
+
+### Error Handling
+
+Enable **Continue batch output after failure** to skip failed rows.  
+A report is available in [Output Tasks](../tasks/).
+
+![screenshot](errorhandling.png)
+
+---
+
 ## JPG Output Settings
 
 ![screenshot-full](os13.png)
