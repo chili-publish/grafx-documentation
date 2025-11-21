@@ -12,6 +12,18 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Nov 21, 2025**: Bulleted Lists & Minor improvements
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
+    
+    This update introduces bulleted lists in paragraph styles, improved frame selection precision, and extended HTML output with frame opacity.
+    
+    ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/21/bulleted-lists--improvements/)
+
+    ---
+
     **Nov 14, 2025**: HTML output (experimental) and Frame Opacity
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.33</span>
@@ -44,24 +56,6 @@
     ![Drop Shadow](/release-notes/releasenotesassets/DropShadow.gif){.screenshot}
 
     [:octicons-arrow-right-24: Show details](/release-notes/2025/09/23/drop-shadow--stability-fixes/)
-
-    ---
-
-    **Sept 8, 2025**: Text Stroke & Smarter Studio Controls  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.30</span>
-
-    Added text stroke support in GraFx Brand Kits, with smarter layout size constraints and Studio UI improvements.  
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/09/08/text-stroke--smarter-studio-controls/)
-
-    ---
-
-    **Aug 26, 2025**: GraFx Studio UI – Upload & Browse Assets  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.29</span>
-
-    Improvements to asset upload and browsing experience in GraFx Studio UI.  
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/08/26/grafx-studio-ui--upload-and-browse-assets/)
 
     ---
 
