@@ -10,8 +10,11 @@ Bulleted lists support up to five levels, each with its own icon and indent. Par
 
 1. Open your Brand Kit inside GraFx Studio and select **Text** → **Paragraph Styles**.  
 2. Pick a paragraph style or create one. In the *Edit Style* dialog, switch the **Paragraph** field to **Bulleted list**.  
-    ![Open Bulleted List setup in the Paragraph style definition](bl01.png){.screenshot}
+    ![Open Bulleted List setup in the Paragraph style definition](bl07.png){.screenshot}
 3. Choose the desired level (1–5), pick an icon from the gallery, and set the left indent and text indent. Repeat for each level you need.  
+4. Optionally, you can assign a character style to the bullets.  
+    ![Assign a character style to the bullets](bl06.png){.screenshot}  
+    ![Colored bullets](bl08.png){.screenshot}
 
 Changes take effect in all text that use that paragraph style.
 
