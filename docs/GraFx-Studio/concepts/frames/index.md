@@ -20,6 +20,23 @@ The rotation property of the frame is the angle of rotation, relative to the **c
 
 [All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
 
+## Appearance of a frame
+
+Each frame has an appearance panel.
+
+You can set the [Blend mode](/GraFx-Studio/concepts/blendmodes/), Opacity and Drop shadow.
+
+### Opacity
+
+When set to 100% the frame is opaque or not transparent. When set to 50%, the frame will be 50% transparent.
+
+![Frame Appearance](frame01.png){.screenshot}
+
+### Drop shadow
+
+When Drop shadow is selected, you'll see more options, related to [Drop shadow](/GraFx-Studio/concepts/drop-shadow/).
+
+![Frame Appearance](frame02.png){.screenshot}
 
 ## Image Frame
 

@@ -74,6 +74,23 @@ img[alt=screenshot-new] {
   display: block;
 }
 
+img[alt=screenshot-tiny],
+img.screenshot-tiny 
+{
+	width: 20%;
+	min-width: 150px;
+  height: auto;
+  max-height: 800px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  display: block;
+}
+
 img[alt=screenshot],
 img.screenshot {
 	width: 40%;

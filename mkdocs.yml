@@ -214,6 +214,7 @@ nav:
             - 'Compliance':                     'CHILI-GraFx/trust/compliance/index.md'
             - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
             - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
+            - 'User Generated Content':         'CHILI-GraFx/trust/user-generated-content/index.md'
             - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
         - 'Support':                            'CHILI-GraFx/support/index.md'
         - 'Browser support':                    'CHILI-GraFx/browser-support/index.md'
@@ -319,9 +320,10 @@ nav:
         - 'How to: Output':
             - 'Create output settings':         'GraFx-Studio/guides/output/settings/index.md'
             - 'Output tasks':                   'GraFx-Studio/guides/output/tasks/index.md'
-            - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'GIF':                            'GraFx-Studio/guides/output/gif/index.md'
+            - 'HTML':                           'GraFx-Studio/guides/output/html/index.md'
             - 'JPG and PNG':                    'GraFx-Studio/guides/output/image/index.md'
+            - 'MP4':                            'GraFx-Studio/guides/output/mp4/index.md'
             - 'PDF':                            'GraFx-Studio/guides/output/pdf/index.md'
         - 'How to':
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
