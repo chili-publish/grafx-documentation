@@ -20,7 +20,7 @@
     
     ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/21/bulleted-lists--improvements/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
 
     ---
 
