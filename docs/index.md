@@ -12,7 +12,7 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Nov 21, 2025**: Bulleted Lists & Minor improvements
+    **Dec 1, 2025**: Bulleted Lists & Minor improvements
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
     
@@ -20,7 +20,7 @@
     
     ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
     
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/21/bulleted-lists--improvements/)
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
 
     ---
 
