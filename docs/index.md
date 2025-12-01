@@ -12,7 +12,7 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Nov 21, 2025**: Bulleted Lists & Minor improvements
+    **Dec 1, 2025**: Bulleted Lists & Minor improvements
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
     
