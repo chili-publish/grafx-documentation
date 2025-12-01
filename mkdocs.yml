@@ -281,6 +281,7 @@ nav:
                - 'Available barcodes':          'GraFx-Studio/guides/barcodes/available/index.md'
             - 'Brand Kits':                     'GraFx-Studio/guides/brandkits/index.md'
             - 'Blend modes':                    'GraFx-Studio/guides/blendmodes/index.md'
+            - 'Bulleted List':                  'GraFx-Studio/guides/bulleted-lists/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Colors':                         'GraFx-Studio/guides/colors/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
