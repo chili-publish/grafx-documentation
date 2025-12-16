@@ -96,7 +96,7 @@ When you save a template in a newer minor version, that template cannot be opene
 
 1. **Know your version update plan.** If you have access to change the version of your production environment, coordinate with your development team to understand when and how updates are planned.
 2. **Coordinate with your development team.** Understand when version upgrades are planned and avoid saving critical templates immediately before a rollback might be needed.
-3. **Test in staging first.** If oyu have a staging environment, use that environment for testing new functionality. This allows you to test in the latest version without permanently locking your production templates to that version.
+3. **Test in staging first.** If you have a staging environment, use that environment for testing new functionality. This allows you to test in the latest version without permanently locking your production templates to that version.
 
 ---
 
