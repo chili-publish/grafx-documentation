@@ -57,6 +57,31 @@ In this example, **333.9 GB** is the total storage displayed in your overview.
 | Preview data  | 132.5 GB  | n.a. | 132.5 GB |
 | Total  		| **233.2 GB**  | **100.7 GB** | **333.9 GB** |
 
+## What happens if you run out of storage?
+
+There is **no hard storage cap** that will suddenly block your environments, uploads, or production.
+
+CHILI GraFx does **not** enforce a technical cutoff where things stop working once you reach a specific number.
+
+Instead:
+
+- Storage usage is **monitored continuously**
+- When your usage approaches contractual or expected thresholds, **we proactively reach out**
+- At that point, we **discuss options** together, such as:
+  - Adjusting your storage tier
+  - Reviewing cleanup opportunities
+  - Aligning storage growth with your production roadmap
+
+This approach avoids operational surprises and ensures your teams are never blocked mid-campaign because of an artificial limit.
+
+!!! info
+    Storage growth is a signal of adoption and scale—not a failure state. The goal is continuity, not enforcement.
+
+### Why this matters
+
+Hard limits create the wrong behavior: teams stop uploading assets, avoid previews, or work around the system.  
+CHILI GraFx is designed for **continuous production at scale**, so storage is handled as a **commercial and operational conversation**, not a runtime constraint.
+
 ## Conclusion
 Understanding how storage is calculated helps you manage your account effectively. The total storage footprint encompasses not only your uploaded files but also the additional space needed for previews, fonts, documents (templates), and backups, balancing performance with data security.
 
