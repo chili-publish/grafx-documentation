@@ -12,6 +12,17 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Dec 16, 2025**: Opacity import from Adobe plugins
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    
+    Opacity settings from Adobe® InDesign® and Adobe® Photoshop® are now preserved when importing designs into GraFx Studio.
+    
+    ![Opacity Settings](/release-notes/releasenotesassets/opacity2.png){.screenshot}
+    
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
+    
+    ---
     **Dec 1, 2025**: Bulleted Lists & Minor improvements
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
