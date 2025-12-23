@@ -219,6 +219,9 @@ nav:
         - 'Support':                            'CHILI-GraFx/support/index.md'
         - 'Browser support':                    'CHILI-GraFx/browser-support/index.md'
 
+    - 'GraFx Experience':
+        - 'Introduction':                       'GraFx-Experience/index.md'
+
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
         - 'Application overview':
