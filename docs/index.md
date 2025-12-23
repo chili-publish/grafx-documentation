@@ -12,6 +12,17 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Dec 23, 2025**: Numbered Lists
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.35</span>
+    
+    This update adds numbered lists to paragraph styles in GraFx Studio, enabling structured, multi-level numbering with configurable formats, symbols, and indents.
+    
+    ![Numbered lists](/release-notes/releasenotesassets/numbered-list.png){.screenshot}
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/23/numbered-lists/)
+
+    ---
     **Dec 16, 2025**: Opacity import from Adobe plugins
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -32,42 +43,7 @@
     ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
     
     [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
-
-    ---
-
-    **Nov 14, 2025**: HTML output (experimental) and Frame Opacity
     
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.33</span>
-    
-    This version introduces HTML output (experimental), Frame Opacity settings and many improvements.  
-    
-    ![Linear gradient](/release-notes/releasenotesassets/html-code.png){.screenshot-tiny}
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/14/html-output--frame-opacity/)
-    
-    ---
-
-    **Oct 17, 2025**: Linear Gradients, Variable- & GraFx Genie Enhancements
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.32</span>
-    
-    Add linear gradients (RGB/CMYK/Hex/Spot), create variables from a linked datasource, "Prevent line break", performance gains, and GraFx Genie prompts up to 4,000 chars; plus fixes for Indic text, canvas loading, cursors, image-picker folders, and non-finite number handling.
-    
-    ![Linear gradient](/release-notes/releasenotesassets/gradient.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/10/17/linear-gradients-variable---grafx-genie-enhancements/)
-    
-    ---
-
-    **Sept 23, 2025**: Drop Shadow & Stability Fixes  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.31</span>
-
-    Added drop shadow support for all frame types, improved image uploads, and fixed stability issues in GraFx Studio.  
-
-    ![Drop Shadow](/release-notes/releasenotesassets/DropShadow.gif){.screenshot}
-
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/09/23/drop-shadow--stability-fixes/)
-
     ---
 
     **See All Release Notes**
