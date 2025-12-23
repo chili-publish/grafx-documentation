@@ -19,8 +19,8 @@
     This update adds numbered lists to paragraph styles in GraFx Studio, enabling structured, multi-level numbering with configurable formats, symbols, and indents.
     
     ![Numbered lists](/release-notes/releasenotesassets/numbered-list.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/23/numbered-lists/)
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/23/numbered-lists--improvements/)
 
     ---
     **Dec 16, 2025**: Opacity import from Adobe plugins
