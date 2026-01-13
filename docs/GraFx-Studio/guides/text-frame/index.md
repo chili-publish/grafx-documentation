@@ -48,6 +48,27 @@ If you prefer not to use predefined styles (recommended for consistency), you ca
     GraFx Studio automatically applies the correct text direction based on the script (left-to-right or right-to-left).  
     See [Text direction](/GraFx-Studio/concepts/text-direction/) for details.
 
+### Text Columns
+
+Text frames can be divided into multiple columns. This allows you to flow text across columns within a single frame—useful for editorial layouts, descriptions, or dense content blocks.
+
+When a text frame is selected, configure columns in the **Text columns** section:
+
+![Text columns settings](columns1.png){.screenshot}
+
+- **Number of columns**  
+  Defines how many columns the text is split into. You can set **1 up to 10 columns** per text frame.
+  
+![Text columns gaps](columns2.png){.screenshot-full}
+
+- **Column gap**  
+  Sets the spacing between columns, using document units (for example, mm).
+
+Text flows automatically from one column to the next, respecting the frame size, alignment, and auto-resize behavior.
+
+!!! info "Interaction with auto-resize"
+    Column settings apply to the text layout inside the frame. Copyfitting, Auto-grow, and overflow rules still determine how the frame reacts when content exceeds available space.
+
 ### Auto Resize
 
 For creative automation, text frames often need to handle datasets with varying text lengths. Set how the frame should respond to different content lengths:
