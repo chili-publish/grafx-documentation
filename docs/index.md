@@ -12,6 +12,17 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Jan 12, 2026**: Text Columns
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.36</span>
+    
+    This update introduces multi-column text frames in GraFx Studio, allowing you to split text into up to 10 columns with configurable spacing.
+    
+    ![Text Columns](/GraFx-Studio/guides/text-frame/columns1.png){.screenshot}
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/12/text-columns/)
+
+    ---
     **Dec 23, 2025**: Numbered Lists
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.35</span>
