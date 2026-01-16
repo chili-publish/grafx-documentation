@@ -35,13 +35,12 @@ All outputs remain under user control.
 
 AI components are subject to the same security and compliance standards as the rest of the CHILI GraFx platform. Safeguards and controls are aligned with the risk level of the specific AI-enabled capability.
 
-## AI tools and features (placeholder)
+## AI tooling and qualification
 
-> **To be completed**  
-> This section will list the concrete AI-powered tools and features available in CHILI GraFx, including where they live in the platform and what problem they solve.
+CHILI GraFx does **not** maintain a fixed or exhaustive list of AI tools or features. AI capabilities evolve rapidly, and individual tools may be introduced, improved, or retired over time.
 
-- _[AI tool / feature name]_ — _short description_
-- _[AI tool / feature name]_ — _short description_
-- _[AI tool / feature name]_ — _short description_
+Instead of a static list:
 
----
+- All AI-powered functionality is evaluated under a **tool qualification policy**
+- Each capability is assessed for purpose, risk level, data handling, and security impact
+- Only AI components that meet CHILI GraFx’s compliance, security, and quality standards are made available in the platform
