@@ -49,4 +49,8 @@ Only AI components that pass these internal audits and meet compliance criteria 
 
 ## Ethical Engineering of Artificial Intelligence
 
-Our organization is committed to the ethical engineering of Artificial Intelligence, ensuring that our models are developed with rigorous impartiality and integrity. By adhering to strict validation protocols, we ensure our AI solutions operate with objectivity, delivering equitable outcomes that are free from systemic discrimination or unfair bias.
+CHILI GraFx is committed to the responsible engineering of artificial intelligence. AI components are designed, implemented, and validated using defined safeguards to ensure they operate within their intended scope.
+
+Where applicable, AI functionality is evaluated to reduce the risk of unintended bias and to ensure consistent and predictable behavior. AI is used to support creative and operational workflows, not to replace human judgment or decision-making.
+
+All AI capabilities are developed and deployed in line with CHILI GraFx’s broader governance, security, and compliance principles.
