@@ -215,6 +215,7 @@ nav:
             - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
             - 'GDPR':                           'CHILI-GraFx/trust/gdpr/index.md'
             - 'User Generated Content':         'CHILI-GraFx/trust/user-generated-content/index.md'
+            - 'AI in CHILI GraFx':              'CHILI-GraFx/trust/AI/index.md'
             - 'Definitions':                    'CHILI-GraFx/trust/definitions/index.md'
         - 'Support':                            'CHILI-GraFx/support/index.md'
         - 'Browser support':                    'CHILI-GraFx/browser-support/index.md'
