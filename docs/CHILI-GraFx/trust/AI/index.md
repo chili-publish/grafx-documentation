@@ -31,16 +31,20 @@ All outputs remain under user control.
 - There is no cross-customer data usage
 - There is no reuse of customer data outside the scope of the Services
 
-## Security and compliance
+## Security, Compliance, and AI Governance
 
-AI components are subject to the same security and compliance standards as the rest of the CHILI GraFx platform. Safeguards and controls are aligned with the risk level of the specific AI-enabled capability.
+AI components are subject to the same rigorous security and compliance standards as the rest of the CHILI GraFx platform. All AI-powered functionality is managed within our ISO-certified framework, ensuring that safeguards and controls are strictly aligned with the risk level of each specific capability.
 
-## AI tooling and qualification
+**AI Tooling and Dynamic Evaluation**
 
-CHILI GraFx does **not** maintain a fixed or exhaustive list of AI tools or features. AI capabilities evolve rapidly, and individual tools may be introduced, improved, or retired over time.
+Because AI capabilities evolve rapidly, CHILI GraFx does not maintain a fixed or exhaustive list of AI tools. Instead of a static list, we apply a continuous governance model to ensure every component remains compliant:
 
-Instead of a static list:
+- Integrated Risk Management: All AI tools undergo formal Risk Management and Tool Qualification before deployment.
+- External Dependency Evaluation: AI components are reviewed under our standard Third-Party Dependency protocols to ensure data integrity and security.
+- Purpose-Driven Assessment: Each capability is continuously assessed for data handling, security impact, and alignment with CHILI GraFx’s quality standards.
 
-- All AI-powered functionality is evaluated under a **tool qualification policy**
-- Each capability is assessed for purpose, risk level, data handling, and security impact
-- Only AI components that meet CHILI GraFx’s compliance, security, and quality standards are made available in the platform
+Only AI components that successfully pass these internal audits and meet our stringent compliance criteria are made available within the platform.
+
+## Ethical Engineering of Artificial Intelligence
+
+Our organization is fundamentally committed to the ethical engineering of Artificial Intelligence, ensuring that our models are developed with rigorous impartiality and integrity. By adhering to strict validation protocols, we ensure our AI solutions operate with objectivity, delivering equitable outcomes that are free from systemic discrimination or unfair bias.
