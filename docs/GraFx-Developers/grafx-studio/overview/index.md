@@ -56,10 +56,6 @@ CHILI GraFx provides a REST-like API that is used to managed resources on the pl
 
 Connectors allow the Editor Engine to link to and interact with other software applications or systems.
 
-!!! warning Experimental
-
-    Connectors are still experimental. Therefore, documentation and examples may be out of date, and APIs may change without notice.
-
 #### References
 
 - [Connector Template](https://github.com/chili-publish/grafx-connector-template) A template for creating connectors to integrate the Editor Engine with other software.
