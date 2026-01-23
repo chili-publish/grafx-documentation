@@ -220,6 +220,66 @@ nav:
         - 'Support':                            'CHILI-GraFx/support/index.md'
         - 'Browser support':                    'CHILI-GraFx/browser-support/index.md'
 
+    - 'GraFx Experience':
+        - 'Introduction':                       'GraFx-Experience/index.md'
+        - 'Overview':
+            - 'How it fits in CHILI GraFx':     'GraFx-Experience/overview/how-it-fits/index.md'
+            - 'Roles & permissions':            'GraFx-Experience/overview/roles-permissions/index.md'
+            - 'Concepts':
+                - 'Templates vs documents':     'GraFx-Experience/concepts/templates-vs-documents/index.md'
+                - 'Constraints & brand rules':  'GraFx-Experience/concepts/constraints-brand-rules/index.md'
+                - 'Variables in Experience':    'GraFx-Experience/concepts/variables-in-experience/index.md'
+                - 'Extensions':                 'GraFx-Experience/concepts/extensions/index.md'
+        - 'Getting started':
+            - 'Prerequisites':                  'GraFx-Experience/getting-started/prerequisites/index.md'
+            - 'Log in & access':                'GraFx-Experience/getting-started/login-access/index.md'
+            - 'First-time setup checklist':     'GraFx-Experience/getting-started/first-time-setup-checklist/index.md'
+
+        - 'Admin: Build the Experience':
+            - 'Admin overview':                     'GraFx-Experience/admin/overview/index.md'
+    
+            - 'Pages & navigation':
+                - 'Pages':                          'GraFx-Experience/admin/pages/index.md'
+                - 'Navigation structure':           'GraFx-Experience/admin/navigation/index.md'
+                - 'Page visibility & access':       'GraFx-Experience/admin/page-visibility/index.md'
+    
+            - 'Extensions':
+                - 'What are extensions':            'GraFx-Experience/admin/extensions/index.md'
+                - 'Available extensions':           'GraFx-Experience/admin/extensions/available/index.md'
+                - 'Using GraFx extensions':         'GraFx-Experience/admin/extensions/grafx/index.md'
+    
+            - 'Design Systems integration':
+                - 'Design Systems':                 'GraFx-Experience/admin/design-systems/index.md'
+    
+            - 'Access & governance':
+                - 'Users & groups':                 'GraFx-Experience/admin/users-groups/index.md'
+                - 'Permissions model':              'GraFx-Experience/admin/permissions/index.md'
+    
+            - 'Branding & login':
+                - 'Login page configuration':       'GraFx-Experience/admin/login-page/index.md'
+                - 'Branding & styling':             'GraFx-Experience/admin/branding/index.md'
+    
+        - 'Guides: End users':
+            - 'Using GraFx Experience':             'GraFx-Experience/guides/end-users/overview/index.md'
+            - 'Browse available content':           'GraFx-Experience/guides/end-users/browse/index.md'
+            - 'Create a document':                  'GraFx-Experience/guides/end-users/create-document/index.md'
+            - 'Edit within constraints':            'GraFx-Experience/guides/end-users/edit-within-constraints/index.md'
+            - 'Replace images':                     'GraFx-Experience/guides/end-users/replace-images/index.md'
+            - 'Save, export, and publish':          'GraFx-Experience/guides/end-users/save-export-publish/index.md'
+            - 'Work with translations':             'GraFx-Experience/guides/end-users/translations/index.md'
+    
+
+        - 'Troubleshooting':
+            - 'Access & permissions':           'GraFx-Experience/troubleshooting/access-permissions/index.md'
+            - 'Templates not loading':          'GraFx-Experience/troubleshooting/templates-not-loading/index.md'
+            - 'Media access issues':            'GraFx-Experience/troubleshooting/media-access/index.md'
+            - 'Export & publish issues':        'GraFx-Experience/troubleshooting/export-publish/index.md'
+        - 'Reference':
+            - 'Glossary':
+                - 'Design System':              'GraFx-Experience/reference/glossary/design-system/index.md'
+            - 'Terminology mapping':            'GraFx-Experience/reference/terminology-mapping/index.md'
+            - 'Known limitations':              'GraFx-Experience/reference/known-limitations/index.md'
+
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
         - 'Application overview':
