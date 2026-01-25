@@ -54,17 +54,6 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
     
     ---
-    **Dec 1, 2025**: Bulleted Lists & Minor improvements
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
-    
-    This update introduces bulleted lists in paragraph styles, improved frame selection precision, and extended HTML output with frame opacity.
-    
-    ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
-    
-    ---
 
     **See All Release Notes**
 
