@@ -12,6 +12,15 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
+    
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    
+    This update improves environment management and UI clarity, with environment-level settings access, a copyable technical environment name, and simplified GraFx Studio version display.
+    
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/19/platform-deployment-improvements--ui-fixes/)
+
+    ---
     **Jan 12, 2026**: Text Columns
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.36</span>
@@ -43,17 +52,6 @@
     ![Opacity Settings](/release-notes/releasenotesassets/opacity2.png){.screenshot}
     
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
-    
-    ---
-    **Dec 1, 2025**: Bulleted Lists & Minor improvements
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
-    
-    This update introduces bulleted lists in paragraph styles, improved frame selection precision, and extended HTML output with frame opacity.
-    
-    ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
     
     ---
 
