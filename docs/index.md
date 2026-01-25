@@ -12,6 +12,15 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
+    
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    
+    This update improves environment management and UI clarity, with environment-level settings access, a copyable technical environment name, and simplified GraFx Studio version display.
+    
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/19/platform-deployment-improvements--ui-fixes/)
+
+    ---
     **Jan 12, 2026**: Text Columns
     
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.36</span>
