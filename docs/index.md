@@ -20,7 +20,7 @@
     
     ![Constraints](/release-notes/releasenotesassets/constraints.gif)
     
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/27/image-constraints-list-controls-and-text-stability-improvements/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/26/image-constraints-list-controls-and-text-stability-improvements/)
 
     ---
     **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
