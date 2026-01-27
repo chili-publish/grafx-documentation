@@ -1,10 +1,17 @@
 ## Constraints
 
-In CHILI GraFx, **constraints** are designer-defined boundaries that control how template elements behave. They aren’t arbitrary limits — they encode design intent and protect layout and brand standards while allowing controlled user interaction.
+In CHILI GraFx, **constraints** define how much freedom an end user has when interacting with a template. They describe *what is allowed*, *within which boundaries*, and *under which conditions* — all as part of the design system authored by the template designer.
+
+Constraints are not about restricting creativity. They are about making intended flexibility explicit, so end users can confidently adapt designs without breaking layout, structure, or brand rules.
 
 ## Why Constraints Matter
 
-A design system sets visual and structural rules. Without constraints, templates are freeform and inconsistent. Constraints turn a design system into a governed editing space: they specify *what can change*, *how*, and *how much* — ensuring consistency at scale while giving users useful freedom.
+Design systems have always protected brand consistency by limiting what end users could change. That approach was safe, but often rigid.
+
+Constraints introduce a more refined model:  
+instead of simply locking things down, the template designer can now **open up controlled freedom**. End users gain more room to adapt content, positioning, or structure — while the design system still enforces its rules automatically.
+
+The result is more flexibility for end users, without sacrificing consistency, predictability, or governance at scale.
 
 ## What Constraints Do
 

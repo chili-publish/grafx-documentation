@@ -12,21 +12,61 @@ Drag a rectangle on the canvas. The frame will initially look like a crossed rec
 
 ![screen](image-2.png)
 
-## Image Frame Constraints
+## User Constraints for Image Frames
 
-You can define constraints on image frames to control how end users interact with them in Studio UI. Constraints restrict *resize*, *movement*, and *rotation* of the image frame according to the template designer’s rules.
+Image frames support **user constraints** that control how end users can interact with the frame in Studio UI. These constraints are defined by the template designer and determine which actions are allowed.
 
-### How It Works
+All constraint options are **disabled by default**. You explicitly enable only the interactions you want to allow.
 
-When an image frame has constraints:
+![User constraints for image frames](image-frame-user-constraints.png){.screenshot}
 
-- Resizing handles may be locked or limited.
-- Movement beyond defined bounds will be prevented.
-- Rotation handles will respect constraint definitions.
+### Available Constraint Options
+
+You can control the following interactions:
+
+- **Allow horizontal move**  
+  Enables movement along the X-axis.
+
+- **Allow vertical move**  
+  Enables movement along the Y-axis.
+
+- **Allow rotation**  
+  Allows the image frame to be rotated by the end user.
+
+- **Allow resize**  
+  Allows the image frame to be resized.
+
+- **Constrain proportions**  
+  Locks the aspect ratio during resize.
+
+### Constraint Dependencies
+
+Some constraints depend on others and cannot be enabled in isolation:
+
+- **Resize requires movement**  
+  When *Allow resize* is enabled, horizontal and vertical movement are enabled automatically.  
+  You can move a frame without resizing it, but you cannot resize a frame without allowing movement.
+
+- **Rotate requires movement**  
+  When *Allow rotation* is enabled, horizontal and vertical movement are enabled automatically.  
+
+- **Movement can be enabled independently**  
+  Horizontal and vertical movement can be enabled without allowing resize.
+
+- **Proportions only apply to resize**  
+  *Constrain proportions* is only relevant when resize is enabled.
+
+These dependencies ensure predictable behavior and prevent interaction states that would break layout logic.
+
+### What End Users Experience
+
+In Studio UI, end users only see the controls that are allowed by these constraints:
+- Disabled interactions are hidden or inactive.
+- Allowed interactions behave consistently and stay within the defined boundaries.
+
+This lets you open up flexibility where it makes sense, while keeping full control over layout integrity and brand consistency.
 
 ![Image frame constraints](constraints.gif){.screenshot-full}
-
-Once Studio UI loads a project with constrained image frames, users will only see permitted controls and interactions.
 
 ## Feature Channel
 
