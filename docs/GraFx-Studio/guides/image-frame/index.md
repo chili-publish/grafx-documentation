@@ -19,9 +19,12 @@ You can define constraints on image frames to control how end users interact wit
 ### How It Works
 
 When an image frame has constraints:
+
 - Resizing handles may be locked or limited.
 - Movement beyond defined bounds will be prevented.
 - Rotation handles will respect constraint definitions.
+
+![Image frame constraints](constraints.gif){.screenshot-full}
 
 Once Studio UI loads a project with constrained image frames, users will only see permitted controls and interactions.
 

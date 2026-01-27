@@ -4,7 +4,18 @@
 
 Numbered lists are ordered lists that automatically number each item. They’re part of the paragraph style system, just like [bulleted lists](/GraFx-Studio/guides/bulleted-lists/).
 
-Numbered lists support multiple levels, each with its own numbering format, symbol, and indentation. Paragraph styles define how numbering behaves, and you can convert any text to a numbered list or back to plain text at any time.
+Numbered lists support multiple levels, each with its own numbering format, symbol, and indentation. 
+
+### Paragraph Style
+
+Paragraph styles define how numbering behaves, and you can convert any text to a numbered list or back to plain text at any time.
+
+### Character Style Support
+
+Numbered list items support **character styles**, in addition to paragraph styles. That means:
+- You can style runs of text (bold, italic, color) within a numbered list item.
+- Styles apply consistently across all nesting levels.
+- This enables richer typographic control inside structured lists.
 
 ## Define numbered list styles in Paragraph Styles
 
@@ -55,6 +66,14 @@ Control alignment and spacing:
 4. Use the indent controls to increase or decrease the list level. Decreasing from level 1 removes numbering.
 
 ![Change indent level](nl05.png){.screenshot}
+
+### Keyboard Shortcuts for List Levels
+
+To speed up editing:
+- `Tab` or `Ctrl+]` increases the list level.
+- `Shift+Tab` or `Ctrl+[` decreases the list level.
+
+These shortcuts apply to both **numbered** and **bulleted** lists when the cursor is inside a list item.
 
 5. The result
 

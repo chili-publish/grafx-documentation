@@ -57,6 +57,17 @@ When inside a text frame, and the text cursor is active.
 
 [^1]: A the beginning of a line, and there is a line before, the (invisible) new-line character of the previous live will be selected.
 
+## Lists (bulleted and numbered)
+
+When the text cursor is inside a bulleted or numbered list item.
+
+| |Mac|Windows||
+|----|----|----|----|
+|Increase list level|Tab|Tab|✅|
+|Decrease list level|Shift+Tab|Shift+Tab|✅|
+|Increase list level (alternative)|Ctrl + ]|Ctrl + ]|✅|
+|Decrease list level (alternative)|Ctrl + [|Ctrl + [|✅️|
+
 ## Tools
 
 | |Mac|Windows||
