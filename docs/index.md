@@ -12,6 +12,17 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Jan 26, 2026**: Image Constraints, List Controls & Text Stability
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    
+    This update gives template designers more control and end users more flexibility, with image frame constraints, improved numbered list formatting and shortcuts, and multiple fixes that stabilize text behavior and UI interactions.
+    
+    ![Constraints](/release-notes/releasenotesassets/constraints.gif){.screenshot-full}
+    
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/27/image-constraints-list-controls-and-text-stability-improvements/)
+
+    ---
     **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
     
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
