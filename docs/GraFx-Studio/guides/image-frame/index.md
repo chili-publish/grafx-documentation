@@ -12,6 +12,19 @@ Drag a rectangle on the canvas. The frame will initially look like a crossed rec
 
 ![screen](image-2.png)
 
+## Image Frame Constraints
+
+You can define constraints on image frames to control how end users interact with them in Studio UI. Constraints restrict *resize*, *movement*, and *rotation* of the image frame according to the template designer’s rules.
+
+### How It Works
+
+When an image frame has constraints:
+- Resizing handles may be locked or limited.
+- Movement beyond defined bounds will be prevented.
+- Rotation handles will respect constraint definitions.
+
+Once Studio UI loads a project with constrained image frames, users will only see permitted controls and interactions.
+
 ## Feature Channel
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/KgVcr821tII?si=D-p32N58ssZSoD90&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
