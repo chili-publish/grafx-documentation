@@ -133,7 +133,8 @@ p img[alt=svg_icon] {
 	width: 100px;
 }
 
-img[alt="rn_icon"] {
+img[alt="rn_icon"],
+img.rn_icon {
   --md-icon-size: 3.0em;
   vertical-align: middle;
   display: inline-block;
