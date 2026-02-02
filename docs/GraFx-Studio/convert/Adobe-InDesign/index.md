@@ -1,12 +1,5 @@
 # GraFx Studio Exporter for Adobe® InDesign®
 
-!!! example "Experimental"
-	To give you early access to the latest and greatest, we are introducing some features as **"Experimental"**  
-	You’re welcome to explore and use these features, but keep in mind that their functionality may evolve  
-	If you’re working in production workflows, be aware that changes may still occur
-	
-	Please let us know through the support channels if you run into issues
-
 ## Introduction
 
 The InDesign Conversion Plugin allows you to export documents from Adobe® InDesign® and import them into **GraFx Studio**  
@@ -135,6 +128,38 @@ If any incompatible elements are found, preflight offers three options:
     - **Not editable** – Static elements cannot be edited within GraFx Studio  
       For example, if text is saved as a PDF asset, you cannot create a text variable to dynamically alter the text content
 
+## Drop Shadow support
+
+Drop shadows applied at the **object level** in Adobe® InDesign® are supported and converted into GraFx Studio with defined constraints.
+
+### Supported objects
+
+- Shapes
+- Image frames
+- Text frames
+
+### Supported parameters
+
+- Opacity
+- Distance
+- Angle
+- Size (mapped to **Blur** in GraFx Studio)
+- Global Light
+- X / Y offset
+
+### Not supported
+
+- Spread
+- Blend mode
+- Noise
+- Shadows applied to Stroke, Fill, Text, or Graphic separately
+
+### Preflight behavior
+
+- A **warning is always shown** when a drop shadow is detected
+- Unsupported parameters are ignored
+- Visual appearance is preserved where possible
+
 ## Compatibility
 
 The plugin has been tested and is compatible with Adobe® InDesign® versions from 2024 and 2025
@@ -143,7 +168,7 @@ The latest tested version is 20.1 (January 2025)
 
 ## Supported features
 
-As the GraFx Studio Exporter is **Experimental**, the list below will update frequently
+The table below describes how Adobe® InDesign® features are converted, including where preflight intervention or fallback rendering is applied.
 
 ### Feature support table
 
@@ -163,7 +188,7 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Layouts                                  | ✅                | [Choose the layout](#alt-layouts) you want to export |
 |                        | Bleeds                                   | ✅                | Exported from document settings                    |
 | **Frames**             | Rotation                                 | ✅                | Includes text, image, ellipse, polygon             |
-|                        | Blend modes                              | ⚠️                | Preflight: convert to PDF or ignore                |
+|                        | Blend modes                              | ⚠️                | Object-level only; stroke/fill/text may convert    |
 |                        | Mirror / Shear                           | ⚠️                | Shear triggers preflight                           |
 |                        | Z-index / stacking order                 | ✅                |                                                    |
 | **Text Frames**        | Font (name and style)                    | ✅                |                                                    |
@@ -211,8 +236,8 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Frame stroke issues                      | ✅                | Can be ignored or converted                        |
 |                        | Tables not supported                     | ✅                | Converted to PDF                                   |
 |                        | Text overflow                            | ✅                | Can be ignored or converted to image               |
-|                        | Gradient color                           | ✅                | Preflight warning shown                            |
 |                        | Text variables converted                 | ✅                | Automatically mapped in Studio                     |
+|                        | Unsupported gradients                    | ⚠️                | Radial gradients or unsupported color models trigger preflight |
 | **Layers**             | Layer names                              | ✅                | Default names in Studio                            |
 |                        | Hidden layers                            | ❌                | Not exported                                       |
 |                        | Locked layers                            | ✅                | Not exported                                       |
@@ -222,6 +247,14 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Mixed page sizes                         | ✅                | Option to skip or unify sizes                      |
 |                        | Page numbering in .zip name              | ✅                | Example: `3_Test.zip`                              |
 |                        | Layout dropdown dynamic refresh          | ✅                |                                                    |
+| **Visual Effects**     | Object opacity                           | ✅                | Applies to shapes, text, and image frames          |
+|                        | Drop shadow (object-level)               | ✅                | See Drop Shadow details below                      |
+|                        | Linear gradients                         | ✅                | Includes rotation and opacity                      |
+|                        | Gradient opacity                         | ✅                | Combined with object opacity                       |
+|                        | Blend modes (object)                     | ⚠️                | Object-level only; stroke, fill, or text convert   |
+|                        | Image frame graphic opacity              | ✅                | Graphic opacity is respected                       |
+|                        | Opacity with gradients                   | ✅                | Combined opacity preserved                         |
+|                        | Opacity with drop shadow                 | ✅                | Effect opacity is respected                        |
 
 ### Legend
 
@@ -258,7 +291,7 @@ After importing to GraFx Studio, leverage smart template features to add busines
 
 ## Things to consider
 
-- Colors not in RGB or CMYK color space (like HSB, LAB) revert to black  
+- Colors not in RGB or CMYK color space (like HSB, LAB) are converted to CMYK or black  
 - Adobe® Variables (like `<document_name>` `<current_date>`) are removed from text  
 - Any item frame in Adobe® InDesign® (text/image) might have properties (background color, stroke, opacity)  
   Frame options are not detected by preflight and will be missed after export  
