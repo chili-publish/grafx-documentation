@@ -97,13 +97,41 @@ If any incompatible elements are found, preflight offers three options:
     **Limitations**  
     - **Not editable** – Static elements cannot be edited within GraFx Studio
 
+## Drop Shadow support
+
+Drop shadows authored in Adobe® Photoshop® are supported and converted into GraFx Studio with defined constraints.
+
+### Supported objects
+
+- Shapes
+- Image frames
+- Text frames
+
+### Supported parameters
+
+- Opacity
+- Distance
+- Angle
+- Size (mapped to **Blur** in GraFx Studio)
+- Global Light
+
+### Not supported
+
+- Spread
+- Blend Mode
+- Noise
+
+### Preflight behavior
+
+- A warning is always displayed when a drop shadow is present
+- Unsupported parameters are ignored
+
+
 ## Compatibility
 
 The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 
 ## Supported features
-
-As the GraFx Studio Exporter is **Experimental**, the list below will update frequently
 
 ### Feature support table
 
@@ -127,6 +155,21 @@ As the GraFx Studio Exporter is **Experimental**, the list below will update fre
 |                        | Blend modes on vector export             | ⚠️                | Added later in Studio as image property            |
 | **Colors**             | RGB and CMYK modes                       | ✅                |                                                    |
 |                        | Export all unique colors as resources    | ✅                | Names not preserved (Color 1, Color 2…)            |
+| **Gradients**          | Linear gradients                         | ✅                | Rectangles, triangles, and ovals only               |
+|                        | Gradient rotation (angle)                | ✅                |                                                    |
+|                        | Gradient scale                           | ✅                | Photoshop-specific                                 |
+|                        | Align with Layer                         | ✅                | Photoshop-specific                                 |
+|                        | Reverse gradient                         | ✅                |                                                    |
+|                        | Non-linear gradient types                | ❌                | Converted to PDF for visual consistency             |
+|                        | Non-classic gradient modes               | ❌                | Converted to PDF for visual consistency             |
+| **Visual Effects**     | Drop shadow (object-level)               | ✅                | Warning always shown                                |
+
+!!! note
+    Only **Linear** gradient types and **Classic** gradient mode are supported.  
+    Radial, Reflected, Smooth, and other gradient types or methods are converted to PDF for visual consistency.
+    
+!!! warning
+    When a Drop Shadow is present, a warning message is always displayed.
 
 ### Legend
 
