@@ -162,9 +162,7 @@ Drop shadows applied at the **object level** in Adobe® InDesign® are supported
 
 ## Compatibility
 
-The plugin has been tested and is compatible with Adobe® InDesign® versions from 2024 and 2025
-
-The latest tested version is 20.1 (January 2025)
+The plugin has been tested and is compatible with Adobe InDesign 2025, 2026.
 
 ## Supported features
 

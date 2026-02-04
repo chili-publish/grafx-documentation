@@ -99,9 +99,7 @@ If any incompatible elements are found, preflight offers three options:
 
 ## Compatibility
 
-The plugin has been tested and is compatible with Adobe® Photoshop® versions from 2024 and 2025
-
-The latest tested version is 25.0 (January 2025)
+The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 
 ## Supported features
 
