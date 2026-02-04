@@ -1,12 +1,5 @@
 # GraFx Studio Exporter for Adobe® Photoshop®
 
-!!! example "Experimental"
-	To give you early access to the latest and greatest, we are introducing some features as **"Experimental"**  
-	You’re welcome to explore and use these features, but keep in mind that their functionality may evolve  
-	If you’re working in production workflows, be aware that changes may still occur
-	
-	Please let us know through the support channels if you run into issues
-
 ## Introduction
 
 The Photoshop Conversion Plugin allows you to export documents from Adobe® Photoshop® and import them into **GraFx Studio**  
@@ -104,15 +97,41 @@ If any incompatible elements are found, preflight offers three options:
     **Limitations**  
     - **Not editable** – Static elements cannot be edited within GraFx Studio
 
+## Drop Shadow support
+
+Drop shadows authored in Adobe® Photoshop® are supported and converted into GraFx Studio with defined constraints.
+
+### Supported objects
+
+- Shapes
+- Image frames
+- Text frames
+
+### Supported parameters
+
+- Opacity
+- Distance
+- Angle
+- Size (mapped to **Blur** in GraFx Studio)
+- Global Light
+
+### Not supported
+
+- Spread
+- Blend Mode
+- Noise
+
+### Preflight behavior
+
+- A warning is always displayed when a drop shadow is present
+- Unsupported parameters are ignored
+
+
 ## Compatibility
 
-The plugin has been tested and is compatible with Adobe® Photoshop® versions from 2024 and 2025
-
-The latest tested version is 25.0 (January 2025)
+The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 
 ## Supported features
-
-As the GraFx Studio Exporter is **Experimental**, the list below will update frequently
 
 ### Feature support table
 
@@ -136,6 +155,21 @@ As the GraFx Studio Exporter is **Experimental**, the list below will update fre
 |                        | Blend modes on vector export             | ⚠️                | Added later in Studio as image property            |
 | **Colors**             | RGB and CMYK modes                       | ✅                |                                                    |
 |                        | Export all unique colors as resources    | ✅                | Names not preserved (Color 1, Color 2…)            |
+| **Gradients**          | Linear gradients                         | ✅                | Rectangles, triangles, and ovals only               |
+|                        | Gradient rotation (angle)                | ✅                |                                                    |
+|                        | Gradient scale                           | ✅                | Photoshop-specific                                 |
+|                        | Align with Layer                         | ✅                | Photoshop-specific                                 |
+|                        | Reverse gradient                         | ✅                |                                                    |
+|                        | Non-linear gradient types                | ❌                | Converted to PDF for visual consistency             |
+|                        | Non-classic gradient modes               | ❌                | Converted to PDF for visual consistency             |
+| **Visual Effects**     | Drop shadow (object-level)               | ✅                | Warning always shown                                |
+
+!!! note
+    Only **Linear** gradient types and **Classic** gradient mode are supported.  
+    Radial, Reflected, Smooth, and other gradient types or methods are converted to PDF for visual consistency.
+    
+!!! warning
+    When a Drop Shadow is present, a warning message is always displayed.
 
 ### Legend
 
