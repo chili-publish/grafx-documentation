@@ -1,100 +1,109 @@
 # Color Management in PDF Output
 
-This page helps graphic designers understand how color management works in PDF generation so you can confidently control how your designs reproduce in print and digital workflows.
+This page helps Design System creators understand how color behaves in print so you can export predictable, brand-accurate PDFs from GraFx Studio.
 
-## Why color management matters
+## Why colors change between screen and print
 
-When you design, you see color on a screen.
+On screen, you see color made of **light (RGB)**.  
+In print, color is created with **ink (CMYK)** on paper.
 
-When your design is printed, those colors are reproduced using ink on paper.
+Light and ink behave differently.
 
-Screens use **RGB light**.  
-Print uses **CMYK ink**.
+This means:
 
-Those two worlds behave differently.
+- Bright RGB colors may not exist in CMYK.
+- The same CMYK values can look different on coated vs uncoated paper.
+- Without proper settings, brand colors may shift during export or printing.
 
-Without color management:
-- Brand colors shift
-- Dark images lose detail
-- Printed output looks dull or oversaturated
-- Different print vendors produce inconsistent results
+Color management ensures your design intent survives the transition from screen to press.
 
-Color management ensures that what you designed is translated predictably to the final output.
+## What an ICC profile does
 
----
+An **ICC profile** describes how a specific device or print condition reproduces color.
 
-## The role of ICC profiles
+You can think of it as a **translation dictionary**.
 
-An **ICC profile** is a description of how a device reproduces color.
+Examples of print conditions:
 
-It defines:
-- How a specific press prints
-- How a specific paper behaves
-- How colors are interpreted
-
-You can think of it as a translation dictionary between devices.
-
-Examples:
-- Coated paper profiles
-- Uncoated paper profiles
-- Newspaper profiles
+- Coated paper (glossy magazines, flyers)
+- Uncoated paper (letterheads, envelopes)
+- Newspaper
 - Web Coated (SWOP)
 - GRACoL
 - FOGRA
 
-Choosing the correct ICC profile ensures your colors are converted for the correct printing condition.
+Each condition reflects:
 
----
+- Ink behavior  
+- Paper absorption  
+- Total ink limits  
+- Press characteristics  
 
-## Color conversion (Color Transformation)
+When a PDF contains the correct ICC profile, downstream systems understand how the colors were intended to print.
 
-When converting from one color space to another (for example RGB → CMYK), the system must decide how to handle colors that cannot be reproduced exactly.
+## When color conversion is needed — a practical example
 
-This is controlled by the **rendering intent**.
+Imagine this situation:
 
-Typical intents:
+Your headquarters prepares a campaign brochure for the US market using **Coated GRACoL 2006** (glossy paper).
 
-- **Perceptual** – Adjusts all colors slightly to preserve visual relationships.
-- **Relative Colorimetric** – Keeps accurate colors where possible, clips out-of-gamut colors.
-- **Absolute Colorimetric** – Simulates the paper color.
-- **Saturation** – Prioritizes vividness over accuracy.
+Later, a European market needs to print the same design on **ISO Coated v2** or even on **uncoated paper** for in-store leaflets.
 
-For brand and marketing materials, Perceptual or Relative Colorimetric are most common.
+If you send the original CMYK values without conversion:
 
----
+- Reds may print darker.
+- Blues may shift toward purple.
+- Dark areas may lose detail.
+- Total ink coverage may exceed the press limits.
 
-## Output Intent embedding
+Color conversion recalculates the CMYK values for the new destination profile.
+
+The design looks visually consistent — even though the actual CMYK numbers change.
+
+That is the purpose of color transformation.
+
+## What Output Intent means in a PDF
 
 A PDF can contain an embedded ICC profile called the **Output Intent**.
 
-This tells the printer:
+This tells printers and RIP systems:
 
-> “This document was prepared for this exact print condition.”
+> “This document was prepared for this specific print condition.”
 
-Without Output Intent embedding:
+If no Output Intent is embedded:
+
 - The printer may assume a default profile.
-- Colors may be reinterpreted incorrectly.
-- Brand colors may shift.
+- Colors may be reinterpreted automatically.
+- Results may vary between vendors or regions.
 
-Embedding the correct profile increases predictability across print environments.
+Embedding the correct profile increases predictability and reduces production risk.
 
----
+## Your responsibility as a designer
 
-## What this means for designers
+In modern workflows, color accuracy is defined at export.
 
-As a designer, you do not need to become a color scientist.
+When you generate a PDF, you decide:
 
-You need to:
+- Which print condition the file represents.
+- Whether CMYK values should be converted.
+- Which ICC profile is embedded.
 
-- Understand the target output (coated, uncoated, newspaper, etc.)
-- Choose the correct ICC profile
-- Ensure the PDF is exported with proper color transformation
-- Embed the correct Output Intent
+These choices directly influence how your work reproduces in the real world.
 
-When these are aligned, your creative intent survives the transition from screen to press.
+You do not need to understand color science in depth.  
+You need to align export settings with the intended print condition.
 
----
+## How this connects to GraFx Studio
 
-## Related guides
+In GraFx Studio PDF output settings, you control:
+
+- PDF version  
+- Intended CMYK profile  
+- Target CMYK profile  
+- Output Intent embedding  
+
+When these settings match your production workflow, your exported PDFs remain consistent, compliant, and brand-safe.
+
+For configuration details, see:
 
 - [PDF Output Settings](/GraFx-Studio/guides/output/settings/#pdf-output-settings)
