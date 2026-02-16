@@ -8,7 +8,7 @@ This guide covers two fundamental approaches for integrating GraFx into your app
 |---|---|---|
 | **Document storage** | GraFx platform | Your own system |
 | **Asset storage** | GraFx platform (or custom connector) | Your asset management system (via custom connector) |
-| **Best for** | Teams who want to leverage GraFx infrastructure | Teams with existing storage systems, requre data analytics, or strict data residency requirements |
+| **Best for** | Teams who want to leverage GraFx infrastructure | Teams with existing storage systems, require data analytics, or strict data residency requirements |
 | **Setup effort** | Lower | Higher (requires custom connector) |
 
 ---
