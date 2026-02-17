@@ -17,6 +17,7 @@ This means:
 
 Color management ensures your design intent survives the transition from screen to press.
 
+
 ## Color model vs. color space
 
 A **color model** defines how color is expressed numerically.
@@ -35,7 +36,7 @@ It defines:
 - Gamut boundaries  
 - Print condition  
 
-Important:  
+Important:
 
 CMYK is not one universal standard.
 
@@ -47,6 +48,7 @@ For example:
 These are both CMYK values — but they do not produce the same visual result.
 
 CMYK numbers only make sense when tied to a specific color space.
+
 
 ## What an ICC profile does
 
@@ -65,7 +67,8 @@ Examples of print conditions:
 
 The ICC profile defines how colors should appear under that condition.
 
-When a PDF contains the correct ICC profile, downstream systems understand how the colors were intended to print.
+When color conversion is applied, the ICC profiles determine how colors are recalculated for the destination print condition.
+
 
 ## When color conversion is needed — practical example
 
@@ -77,7 +80,7 @@ Later, a regional team needs to print the same design on **FOGRA52** (uncoated p
 
 Both workflows use CMYK.
 
-But if you send the original CMYK numbers unchanged:
+If you send the original CMYK numbers unchanged:
 
 - Blues may become duller.
 - Reds may darken.
@@ -92,6 +95,7 @@ This is CMYK-to-CMYK conversion.
 
 It is one of the most common real-world use cases in multi-region retail production.
 
+
 ## Rendering intent — how out-of-gamut colors are handled
 
 Some colors in the source profile cannot be reproduced exactly in the destination profile.
@@ -102,14 +106,11 @@ Conceptually, it answers:
 
 > What should be preserved first — accuracy, contrast, or saturation?
 
-Common behavior:
-- Preserve overall look
-- Preserve accurate colors where possible
-
 In GraFx workflows, the rendering intent defined in the document is preserved.  
 If none is defined, a standard default is used.
 
-You typically do not need to change this — but it influences how conversion behaves.
+This influences how color conversion behaves.
+
 
 ## Black preservation and dark colors
 
@@ -121,34 +122,14 @@ During conversion:
 - Rich black backgrounds should not shift unexpectedly.
 - Very dark areas should retain detail.
 
-Modern color pipelines use black preservation and black point compensation to protect:
+Modern color pipelines protect:
 
-- Small black typography
-- Logos using pure black
-- Deep shadows in photography
+- Small black typography  
+- Logos using pure black  
+- Deep shadows in photography  
 
-Without these safeguards, black elements can become washed out or contaminated with extra color.
+Without these safeguards, black elements can become washed out or contaminated with additional color.
 
-## Embedding vs. converting — they are not the same
-
-Two separate actions exist in PDF output:
-
-### Color conversion  
-Changes the CMYK or RGB numbers to match a different destination profile.
-
-### Profile embedding (Output Intent)  
-Attaches an ICC profile to the PDF so downstream systems know the intended print condition.
-
-Embedding does **not** change colors.  
-Conversion **does** change color values.
-
-You may:
-
-- Embed without converting.
-- Convert and embed.
-- Convert between profiles within the same color model.
-
-Understanding this distinction prevents common workflow mistakes.
 
 ## Profile compatibility matters
 
@@ -166,7 +147,7 @@ Always align:
 
 - Intended print condition  
 - Destination print condition  
-- Output Intent profile  
+
 
 ## Your responsibility as a designer
 
@@ -176,12 +157,12 @@ When you generate a PDF, you decide:
 
 - Which print condition the file represents.
 - Whether CMYK values should be converted.
-- Which ICC profile is embedded.
 
 These choices directly influence how your work reproduces in the real world.
 
 You do not need to understand color science in depth.  
 You need to align export settings with the intended print condition.
+
 
 ## How this connects to GraFx Studio
 
@@ -190,7 +171,6 @@ In GraFx Studio PDF output settings, you control:
 - PDF version  
 - Intended CMYK profile  
 - Target CMYK profile  
-- Output Intent embedding  
 
 When these settings match your production workflow, your exported PDFs remain consistent, compliant, and brand-safe.
 
