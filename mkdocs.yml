@@ -169,6 +169,7 @@ nav:
         - 'Concepts':
             - 'Environments':                   'CHILI-GraFx/concepts/environments/index.md'
             - 'Federated Single Sign-On':       'CHILI-GraFx/concepts/federated-single-sign-on/index.md'
+            - 'GraFx Labs':                     'CHILI-GraFx/concepts/grafx-labs/index.md'
             - 'Integrations' :                  'CHILI-GraFx/concepts/integrations/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
@@ -198,6 +199,9 @@ nav:
               - 'OpenID Connect' :              'CHILI-GraFx/guides/setup-fsso/oidc/index.md'
               - 'SAML' :                        'CHILI-GraFx/guides/setup-fsso/saml/index.md'
               - 'Example: Federated groups with Entra ID' : 'CHILI-GraFx/guides/setup-fsso/example-federated-groups-entraid/index.md'
+        - 'GraFx Labs':
+            - 'GraFx Genie Product Image Creator':  'CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-creator/index.md'
+            - 'GraFx Genie Product Image Composer':  'CHILI-GraFx/guides/grafx-labs/graFx-genie-product-image-composer/index.md'
         - 'Integrate CHILI GraFx':              'GraFx-Developers/overview/index.md'
         - 'Step by step onboarding':
             - 'Intro' :                         'CHILI-GraFx/guides/onboarding/intro/index.md'
