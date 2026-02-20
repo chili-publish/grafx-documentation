@@ -1,18 +1,18 @@
 # GraFx Genie Product Image Creator
 
 !!! example "Experimental feature"
-    ![Product Image Composer – scene setup](/release-notes/releasenotesassets/grafx-labs02.png)  
+    ![Product Image Creator – interface](/release-notes/releasenotesassets/grafx-labs02.png){.screenshot}  
     This capability is part of GraFx Labs and is experimental.  
     It can change or be removed at any time.  
-    We look forward for your validation and feedback.
+    We look forward to your validation and feedback.
 
-GraFx Genie Product Image Creator allows to generate and iterate product visuals using AI inside CHILI GraFx.
+GraFx Genie Product Image Creator allows you to generate and iterate product visuals using AI inside CHILI GraFx.
 
 ## What it does
 
 - Generate new images using AI.
 - Use prompts to describe the desired visual.
-- Select an aspect ratio (for example 1:1 or 16:9).
+- Select an aspect ratio (for example, 1:1 or 16:9).
 - Upload a starting image from:
     - Your device
     - [GraFx Media](/GraFx-Media/)
@@ -32,11 +32,11 @@ The tool supports both:
 
 ### Add a brand-approved asset from GraFx Media
 
-![Table](table.png){.screenshot-full}
+![Table](table.png)
 
-### Add prompt to augment the asset
+### Add a prompt to augment the asset
 
-![Table with plants](table2.png){.screenshot-full}
+![Table with plants](table2.png)
 
 ## Result handling
 
@@ -70,3 +70,4 @@ Use this experiment when you want to:
 ## Related concepts
 
 - [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/)
+- [AI in CHILI GraFx](/CHILI-GraFx/trust/AI/)

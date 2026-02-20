@@ -79,3 +79,4 @@ Generated images are charged as digital PNG renders.
 ## Related concepts
 
 - [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/)
+- [AI in CHILI GraFx](/CHILI-GraFx/trust/AI/)
