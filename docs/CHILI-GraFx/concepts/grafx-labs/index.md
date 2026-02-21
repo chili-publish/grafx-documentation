@@ -24,8 +24,8 @@ These features:
 GraFx Labs is separated from production-grade capabilities.
 
 !!! warning
-    Features in GraFx Labs are experimental.
-    They can change or be removed at any time.
+    Features in GraFx Labs are experimental.  
+    They can change or be removed at any time.  
     They are not covered by SLOs.
 
 ## How it fits in the platform
