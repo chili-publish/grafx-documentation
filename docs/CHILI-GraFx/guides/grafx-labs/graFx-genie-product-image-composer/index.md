@@ -4,7 +4,7 @@
     ![Product Image Composer – scene setup](/release-notes/releasenotesassets/grafx-labs02.png)  
     This capability is part of GraFx Labs and is experimental.  
     It can change or be removed at any time.  
-    We look forward for your validation and feedback.
+    We look forward to your validation and feedback.
     
 **GraFx Genie Product Image Composer** allows you to build structured product shot compositions by combining products, backgrounds, and effects.
 
