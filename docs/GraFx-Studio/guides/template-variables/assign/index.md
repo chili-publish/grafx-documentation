@@ -73,7 +73,7 @@ Use variable highlighting when you:
 
 If no elements are highlighted, the variable may not be placed on the canvas.
 
-![Highlight icon](var-notused.png)
+![Canvas showing no highlighted placements for the selected variable](var-notused.png)
 
 !!! tip
     Use the search field in the Variables panel to quickly filter variables before highlighting one.
