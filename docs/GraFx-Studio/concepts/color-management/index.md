@@ -176,4 +176,4 @@ When these settings match your production workflow, your exported PDFs remain co
 
 For configuration details, see:
 
-- [PDF Output Settings](../../GraFx-Studio/guides/output/settings/#pdf-output-settings)
+- [PDF Output Settings](/GraFx-Studio/guides/output/settings/)
