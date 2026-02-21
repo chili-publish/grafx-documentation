@@ -35,3 +35,45 @@ In edit mode, the template variable name is shown in a gray box in the text.
 If the frame is not wide enough to show the full name, the name will be truncated to avoid overflow.
 
 ![screenshot-full](variables-3.png)
+
+## Find and locate placed variables using the highlight tool
+
+When working with complex templates, it can be difficult to see where a specific variable is used in the layout.  
+The highlight tool allows you to instantly visualize every placement of a selected template variable on the canvas.
+
+### How to highlight a variable
+
+1. Open the **Variables panel**.
+2. Locate the variable you want to inspect.
+3. Click the **Highlight** icon next to the variable name.
+
+![Highlight icon](hilite-icon.png)
+
+All placements of that variable are temporarily highlighted directly on the document canvas.
+
+![Variable highlight example](hilite-var.png){.screenshot-full}
+
+### What gets highlighted
+
+The tool highlights every place where the variable is applied, including:
+
+- Text frames containing the variable  
+- Image fields bound to the variable  
+
+This works even if elements are grouped or positioned in different areas of the layout.
+
+### When to use highlighting
+
+Use variable highlighting when you:
+
+- Want to safely rename a variable  
+- Need to validate all placements before editing logic  
+- Suspect a variable is placed multiple times  
+- Want to confirm whether a variable is actually used  
+
+If no elements are highlighted, the variable may not be placed on the canvas.
+
+![Highlight icon](var-notused.png)
+
+!!! tip
+    Use the search field in the Variables panel to quickly filter variables before highlighting one.
