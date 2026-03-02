@@ -4,8 +4,12 @@
     GraFx Labs is the area within CHILI GraFx where experimental capabilities are hosted.  
     Features in this environment are released for validation purposes.  
     They can change or be removed at any time and are not covered by SLOs.  
-    We welcome your feedback to help shape their evolution.
-
+    We welcome your feedback to help shape their evolution.  
+      
+    GraFx Labs uses advanced AI models.  
+    Each render is charged as a production output.  
+    Because Sandbox outputs are not billed, GraFx Labs is **not available** on [Sandbox](/CHILI-GraFx/concepts/sandbox/).
+    
 GraFx Labs helps innovation teams and platform owners experiment with new capabilities in CHILI GraFx before they become part of the production platform.
 
 ![GraFx Labs landing page](/release-notes/releasenotesassets/grafx-labs01.png){.screenshot-full}
