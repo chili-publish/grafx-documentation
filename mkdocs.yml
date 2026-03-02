@@ -276,6 +276,7 @@ nav:
             - 'Smart Crop':                     'GraFx-Studio/concepts/genie-smart-crop/index.md'
             - 'Self-service':                   'GraFx-Studio/concepts/self-service/index.md'
             - 'Template Management':            'GraFx-Studio/concepts/template-management/index.md'
+            - 'Tags':                           'GraFx-Studio/concepts/tags/index.md'
             - 'Text Direction':                 'GraFx-Studio/concepts/text-direction/index.md'
             - 'User Interfaces':                'GraFx-Studio/concepts/user-interface/index.md'
             - 'Variables':                      'GraFx-Studio/concepts/variables/index.md'
@@ -337,6 +338,7 @@ nav:
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
+            - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Connectors: Media':
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
             - 'Canto DAM':                      'GraFx-Studio/connectors/connector-canto/index.md'
