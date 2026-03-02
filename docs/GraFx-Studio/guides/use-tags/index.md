@@ -47,9 +47,9 @@ The tag appears in the Tags list with its creation date.
 5. In the **Assign tags to your template** panel, select one or more tags.  
    Use the **Search tag** field to filter the list if needed.
 
-![Assign Tags](tag05.png){.screenshot-full}
+![Assign Tags Template Menu](tag05.png){.screenshot-full}
 
-![Assign Tags](tag06.png){.screenshot-full}
+![Assign Tags Side Panel](tag06.png){.screenshot-full}
 
 To manage the available tags from this panel, click **Edit tags** at the top.
 
@@ -63,7 +63,7 @@ To manage the available tags from this panel, click **Edit tags** at the top.
 
 ![Filter Tags](tag07.png){.screenshot-full}
 
-![Filter Tags](tag08.png){.screenshot-full}
+![Filter Tags Show Result](tag08.png){.screenshot-full}
 
 ## Result
 
