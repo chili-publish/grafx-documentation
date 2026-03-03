@@ -1,5 +1,7 @@
 # Manage & Use Tags
 
+This guide covers creating tags, assigning them to templates, and filtering the template list by tag.
+
 ## Prerequisites
 
 - Access to GraFx Studio in your environment
@@ -34,6 +36,7 @@ The tag appears in the Tags list with its creation date.
 1. In **Manage > Tags**, hover over the tag you want to delete.
 2. Click the **···** menu on the right.
 3. Select **Delete**.
+4. Confirm the deletion in the dialog.
 
 !!! warning
     Deleting a tag removes it from every template it was assigned to. This cannot be undone.
@@ -44,14 +47,18 @@ The tag appears in the Tags list with its creation date.
 2. Hover over the template you want to tag.
 3. Click the **···** menu.
 4. Select **Assign tags**.
-5. In the **Assign tags to your template** panel, select one or more tags.  
+5. In the **Assign tags to your template** panel, select one or more tags.
    Use the **Search tag** field to filter the list if needed.
+
+!!! tip
+    If no tags appear in the list, create them first under **Manage > Tags**. See [Create a tag](#create-a-tag) above.
 
 ![Assign Tags Template Menu](tag05.png){.screenshot-full}
 
 ![Assign Tags Side Panel](tag06.png){.screenshot-full}
 
-To manage the available tags from this panel, click **Edit tags** at the top.
+!!! tip
+    To create or rename tags without leaving this panel, click **Edit tags** at the top.
 
 ## Filter templates by tag
 
@@ -67,7 +74,7 @@ To manage the available tags from this panel, click **Edit tags** at the top.
 
 ## Result
 
-Your templates are organized by tag and filterable by one or more tags. Designers can narrow the template library to the brand or campaign they are working on without scrolling through unrelated content.
+Your templates are organized by tag and filterable by one or more tags. Designers can go straight to the templates relevant to their current brand or campaign — no naming conventions needed, no scrolling through unrelated content.
 
 ## Related
 
