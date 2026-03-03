@@ -12,64 +12,71 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Jan 26, 2026**: Image Constraints, List Controls & Text Stability
-    
+    **Feb 24, 2026**: Tags for templates in GraFx Studio
+
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
-    
-    This update gives template designers more control and end users more flexibility, with image frame constraints, improved numbered list formatting and shortcuts, and multiple fixes that stabilize text behavior and UI interactions.
-    
-    ![Constraints](/release-notes/releasenotesassets/constraints.gif)
-    
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/26/image-constraints-list-controls-and-text-stability-improvements/)
+
+    Tags let template designers organize and filter templates by brand, campaign, or product line — no naming conventions needed, no scrolling through unrelated content.
+
+    ![Tags](/GraFx-Studio/guides/use-tags/tag08.png){.screenshot}
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/tags-for-templates-in-grafx-studio/)
 
     ---
-    **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
-    
+    **Feb 20, 2026**: GraFx Labs
+
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-    
-    This update improves environment management and UI clarity, with environment-level settings access, a copyable technical environment name, and simplified GraFx Studio version display.
-    
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/19/platform-deployment-improvements--ui-fixes/)
+
+    GraFx Labs is a new dedicated space to explore and validate experimental features before they become part of the core platform. Includes two GraFx Genie experiments: Product Image Creator and Product Image Composer.
+
+    ![GraFx Labs](/release-notes/releasenotesassets/grafx-labs.png){.screenshot}
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/20/-grafx-labs/)
 
     ---
-    **Jan 12, 2026**: Text Columns
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.36</span>
-    
-    This update introduces multi-column text frames in GraFx Studio, allowing you to split text into up to 10 columns with configurable spacing.
-    
-    ![Text Columns](/GraFx-Studio/guides/text-frame/columns1.png){.screenshot}
+    **Feb 17, 2026**: GraFx Publisher update
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/12/text-columns/)
+    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
+
+    Improves PDF output stability under heavy processing by reducing font-related memory consumption during output generation.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/17/grafx-publisher-update/)
 
     ---
-    **Dec 23, 2025**: Numbered Lists
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.35</span>
-    
-    This update adds numbered lists to paragraph styles in GraFx Studio, enabling structured, multi-level numbering with configurable formats, symbols, and indents.
-    
-    ![Numbered lists](/release-notes/releasenotesassets/numbered-list.png){.screenshot}
+    **Feb 16, 2026**: GraFx Studio
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/23/numbered-lists--improvements/)
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.38</span>
+
+    Variable highlighting, smarter asset name previews, and color value control in actions — giving template designers more visibility and precision.
+
+    ![Variable highlighting](/release-notes/releasenotesassets/var-hilite.gif){.screenshot}
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/16/grafx-studio/)
 
     ---
-    **Dec 16, 2025**: Opacity import from Adobe plugins
-    
+    **Feb 11, 2026**: Environment API – Advanced PDF Postprocessing
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Adds PDF version selection, configurable color transformation, and output intent embedding to the Environment API for precise control over PDF output.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/11/environment-api--advanced-pdf-postprocessing-controls/)
+
+    ---
+    **Feb 4, 2026**: Gradient & Drop Shadow for Plugins
+
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
-    
-    Opacity settings from Adobe® InDesign® and Adobe® Photoshop® are now preserved when importing designs into GraFx Studio.
-    
-    ![Opacity Settings](/release-notes/releasenotesassets/opacity2.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
-    
+
+    Gradient and drop shadow support improved for the Adobe InDesign and Photoshop plugins, preserving more creative intent when translating designs into GraFx Studio.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/04/gradient--drop-shadow-support-improvements-for-plugins/)
+
     ---
 
     **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-    
+
 </div>
 ## The Platform & Applications
 
@@ -96,7 +103,7 @@
     ---
 
     Enter the 'phygital' age of marketing by producing high-quality print and static digital output with **GraFx Publisher**.
-    
+
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Publisher/guides/hello-world/)
 
 -   ![tinyapplogo](/assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
@@ -104,7 +111,7 @@
     ---
 
     **GraFx Media** is the central repository to store your assets to be used in your Smart Templates.
-    
+
     [:octicons-arrow-right-24: Upload your media](/GraFx-Media/guides/upload-media/)
 
 -   ![tinyapplogo](/assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
@@ -112,7 +119,7 @@
     ---
 
     **GraFx Fonts** serves Fonts and Font families for GraFx Studio
-    
+
     [:octicons-arrow-right-24: Upload your fonts](/GraFx-Fonts/guides/upload-fonts/)
 
 -   :octicons-git-branch-24: __Developer Center__
@@ -120,7 +127,7 @@
     ---
 
     **Integrate** powerful GraFx Applications in your web application.
-    
+
     [:octicons-arrow-right-24: Start Integrating](/GraFx-Developers/)
 
 </div>
