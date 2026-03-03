@@ -1,149 +1,319 @@
-# AI Developer Reference
+# AI Developer Reference — CHILI GraFx
 
-For AI assistants, copilots, agents, and developers using them.  
-Short, deterministic answers with direct links.  
-No prose. No examples. No assumptions.
+This page is written for AI coding assistants, agents, and vibe coding tools (Cursor, Lovable, etc.).
 
-## Platform
+**How to use this page:**
 
-### What is [CHILI GraFx](chatgpt://generic-entity?number=0)?
-- API-first creative automation platform
-- Generates print and digital assets from templates and data
-- Used in brand portals, e-commerce, PIM, DAM, and custom applications
-- Overview: /GraFx-Developers/overview/
+1. Collect the required inputs listed below — ask the user to provide them.
+2. Identify which integration path matches what you are building.
+3. Follow the steps in order. Each step links to the detailed documentation.
 
-## API Discovery (Critical for Vibe Coding & POCs)
+Do not infer or guess environment-specific values. They must be provided explicitly.
 
-### What APIs exist?
-- **Platform API** (generic, cross-environment)
-- **Environment API** (scoped to one specific environment)
+---
 
-### Where is the Platform API Swagger?
-- Platform API Swagger URL:  
-  https://api.chiligrafx.com/swagger/index.html
-- Scope:
-  - Subscriptions
-  - Environments
-  - High-level platform configuration
-- Same for all customers and environments
+## Account structure
 
-### Where is the Environment API Swagger?
-- Environment API Swagger URL pattern:  
-  https://XYZ.chili-publish.online/grafx/swagger/index.html
-- `XYZ` is **different for each environment**
-- Scope:
-  - Templates
-  - Rendering
-  - Assets
-  - Data sources
-  - Environment-scoped operations
+A CHILI GraFx account is organized as follows:
 
-### How do I find the correct Environment API URL?
-- In the CHILI GraFx platform UI
-- Navigate to:
-  - **Platform → Integrations**
-  - Select the integration linked to your environment
-- The integration details contain:
-  - The **Environment API base URL**
-  - A **direct link to the Environment API Swagger page**
+- A customer has **one or more subscriptions**
+- Each subscription has **one or more environments** (production and/or sandbox)
+- Each environment has its own Technical Name, GUID, and credentials
 
-### Why must this be provided to vibe coding tools?
-- Each environment runs on a different subdomain (`XYZ`)
-- AI tools cannot infer the correct Environment API URL
-- The Environment API URL must be provided explicitly as input
+Always confirm with the user which **specific environment** they are targeting. Do not assume there is only one.
 
-### What inputs does a vibe coding tool need?
-- Platform API Swagger URL  
-  https://api.chiligrafx.com/swagger/index.html
-- Environment API Swagger URL  
-  https://XYZ.chili-publish.online/grafx/swagger/index.html
-- Environment API base URL: **{{FILL_ENVIRONMENT_API_BASE_URL}}**
-- Client ID: **{{FILL_CLIENT_ID}}**
-- Client Secret: **{{FILL_CLIENT_SECRET}}**
-- Subscription ID (if required): **{{FILL_SUBSCRIPTION_ID}}**
+## Required inputs — collect these before starting
 
-## Identifiers (GUIDs)
+Ask the user to provide the following. All values are specific to their environment.
 
-### What is a subscription?
-- Commercial and technical boundary
-- Owns one or more environments
-- Determines feature access and limits
-
-### How do I get the subscription GUID?
-- Visible in the platform UI at: **{{FILL_SUBSCRIPTION_GUID_UI_LOCATION}}**
-- Available via Platform API: **{{FILL_SUBSCRIPTION_GUID_API_YES_NO}}**
-- Stability: **{{FILL_SUBSCRIPTION_GUID_STABILITY}}**
-
-### What is an environment?
-- Isolated configuration and data space
-- Own credentials and storage
-- Used for dev, test, and production
-- Belongs to exactly one subscription
-
-### How do I get the environment GUID?
-- Visible in URLs as: **{{FILL_ENVIRONMENT_GUID_URL_PATTERN}}**
-- Visible in UI at: **{{FILL_ENVIRONMENT_GUID_UI_LOCATION}}**
-- Available via Platform API: **{{FILL_ENVIRONMENT_GUID_API_YES_NO}}**
-- Stability: **{{FILL_ENVIRONMENT_GUID_STABILITY}}**
-
-### What is a template identifier?
-- Unique GUID assigned to a Smart Template
-- Used in Environment API calls
-- May be versioned
-
-### How do I get the template GUID?
-- Created when template is:
-  - **{{FILL_TEMPLATE_CREATION_METHOD_1}}**
-  - **{{FILL_TEMPLATE_CREATION_METHOD_2}}**
-- Visible in UI at: **{{FILL_TEMPLATE_GUID_UI_LOCATION}}**
-- Appears in URLs as: **{{FILL_TEMPLATE_GUID_URL_PATTERN}}**
-- Stability: **{{FILL_TEMPLATE_GUID_STABILITY}}**
-
-### Other commonly used GUIDs
-- Asset GUID: **{{FILL_ASSET_GUID_SOURCE}}**
-- Render job GUID: **{{FILL_RENDER_JOB_GUID_SOURCE}}**
-- Data source GUID: **{{FILL_DATASOURCE_GUID_SOURCE}}**
-
-## Authentication
-
-### How do I authenticate?
-- OAuth 2.0
-- Client ID + Client Secret
-- Tokens are used against:
-  - Platform API
-  - Environment API
-- Authentication guide: /GraFx-Developers/guides/authentication/
-
-## Minimal POC Flow (Canonical)
-
-- Discover Platform API via generic Swagger
-- Discover Environment API via **Platform → Integrations**
-- Authenticate using Client ID and Secret
-- Call Environment API using environment-specific base URL
-
-| Step | Required Input |
+| Input | Where the user finds it |
 |---|---|
-| Discover platform | Platform API Swagger URL |
-| Discover environment | Environment API Swagger URL |
-| Authenticate | Client ID + Client Secret |
-| Scope calls | Environment API base URL |
-| Optional scope | Subscription GUID |
-| Render | Template GUID + data |
+| **Technical Name** | In CHILI GraFx: Settings (gear icon, bottom-left) → **Details** → **Technical name** (e.g. `cp-abc-123`) |
+| **Environment GUID** | Same page: **Details** → **ID** — or visible in the browser URL: `chiligrafx.com/environments/{ENVIRONMENT_GUID}/...` |
+| **Client ID** | **Integrations** → open your integration → **General** tab |
+| **Client Secret** | Same tab as Client ID |
+| **Environment API Swagger URL** | **Integrations** → open your integration — the direct link is listed there |
+| **Platform API Swagger URL** | **Integrations** → open your integration — the direct link is listed there |
 
-## TL;DR for AI Agents
+!!! tip
+    The **Integrations** section is the single place to find your Client ID, Client Secret, and direct links to both the Environment API Swagger and the Platform API Swagger. Send the user there first.
 
-- Platform: CHILI GraFx
-- Architecture: API-first
-- Two API layers:
-  - Platform API (global)
-  - Environment API (instance-specific)
-- Platform Swagger: https://api.chiligrafx.com/swagger/index.html
-- Environment Swagger: https://XYZ.chili-publish.online/grafx/swagger/index.html
-- `XYZ` is unique per environment and found in **Platform → Integrations**
-- Required inputs:
-  - Environment API base URL
-  - Client ID
-  - Client Secret
-  - (Optional) Subscription ID
-- Identifiers are GUID-based
-- Production-grade APIs, safe for experimentation
+The Technical Name is used as the **subdomain** in all environment-specific URLs:
+
+```
+https://{TECHNICAL_NAME}.chili-publish.online/grafx/...
+```
+
+Example — if the Technical Name is `cp-abc-123`:
+
+```
+https://cp-abc-123.chili-publish.online/grafx/swagger/index.html
+```
+
+---
+
+## What do you want to build?
+
+Choose the path that matches the goal:
+
+- **[Path A](#path-a--headless-output-via-api)** — Generate PDFs, images, or animations from templates. No UI shown to the end user.
+- **[Path B](#path-b--embed-the-editor-sdk)** — Embed the GraFx Studio template editor inside your own application.
+- **[Path C](#path-c--self-service-portal-studio-ui)** — Embed a self-service customization interface in your web portal, where end users can personalize templates.
+
+---
+
+## Path A — Headless output via API
+
+Use this when you want to programmatically generate output files (PDF, PNG, JPG, GIF, MP4, HTML) from templates — with no editor UI.
+
+### Step 1: Create an integration
+
+An integration is a set of API credentials scoped to your environment.
+
+1. In CHILI GraFx, go to **Integrations**.
+2. Click **Create Integration**. Give it a name.
+3. Open the **Permissions** tab and set permissions to **All Permissions**.
+4. Open the **General** tab and copy the **Client ID** and **Client Secret**.
+5. From the same page, copy the direct links to the **Environment API Swagger** and **Platform API Swagger**.
+
+See: [Managing Integrations](/GraFx-Developers/environment-api/02-managing-integrations/)
+
+### Step 2: Generate a token
+
+POST to the auth endpoint:
+
+```
+https://integration-login.chiligrafx.com/oauth/token
+```
+
+Request body:
+
+```json
+{
+  "grant_type": "client_credentials",
+  "audience": "https://chiligrafx.com",
+  "client_id": "{{CLIENT_ID}}",
+  "client_secret": "{{CLIENT_SECRET}}"
+}
+```
+
+The response contains `access_token`. Use it as `Authorization: Bearer {{TOKEN}}` in all API calls.
+
+!!! warning
+    Tokens with All Permissions must never be exposed to the frontend. Generate them server-side only.
+
+See: [Generating a Token](/GraFx-Developers/environment-api/03-generating-a-token/)
+
+### Step 3: Get the template GUID
+
+**Option 1 — User provides it directly.**
+The template GUID is visible in the browser URL when a template is open in GraFx Studio:
+
+```
+chiligrafx.com/environments/{ENVIRONMENT_GUID}/studio/templates/{TEMPLATE_GUID}
+```
+
+Ask the user to open the template and copy the GUID from the URL.
+
+**Option 2 — Discover via API.**
+To retrieve all templates in a folder, call:
+
+```
+GET /api/v1/environment/{{TECHNICAL_NAME}}/templates
+```
+
+This returns a list of templates with their GUIDs. Filter by folder if needed.
+
+See: [Environment API Swagger](https://{{TECHNICAL_NAME}}.chili-publish.online/grafx/swagger/index.html)
+
+### Step 4: Request output
+
+Start an output task:
+
+```
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/image
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/animation
+```
+
+Then poll for the result:
+
+```
+GET /api/v1/environment/{{TECHNICAL_NAME}}/output/tasks/{{TASK_ID}}
+```
+
+See: [Making API Calls](/GraFx-Developers/environment-api/04-making-api-calls/)
+
+---
+
+## Path B — Embed the editor (SDK)
+
+Use this when you want to load the GraFx Studio editor inside your own application.
+
+**First, ask the user which type of editor they are building:**
+
+- **Custom designer workspace** — full editor, tools redesigned or extended to the integrator's needs.
+- **Custom end-user workspace** — limited toolset, only specific interactions exposed to the end user. May include custom tools to manipulate canvas content.
+
+Both use the Studio SDK. The difference is which controllers and panels you expose. The SDK gives you programmatic control over all editor capabilities.
+
+### Step 1: Decide on integration level
+
+Review the available integration levels to choose how deeply to integrate with the platform:
+
+- Level 3: Custom front-end, documents stored on GraFx
+- Level 4: Custom front-end, documents managed externally
+- Level 5: Full external management — GraFx used as rendering engine only
+
+See: [Integration Levels](/GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/)
+
+### Step 2: Create two integrations
+
+You need two separate integrations. In CHILI GraFx, go to **Integrations** and create both:
+
+| Integration | Permissions | Used for |
+|---|---|---|
+| Frontend integration | **Read-only** | Loading the editor in the browser |
+| Backend integration | **All Permissions** | Server-side operations (saving, output) |
+
+See: [Managing Integrations](/GraFx-Developers/environment-api/02-managing-integrations/)
+
+### Step 3: Generate tokens
+
+- Use the **read-only** token in the frontend to load the editor. This token is safe to pass to the browser.
+- Use the **all-permissions** token on the server only. Never send it to the frontend.
+
+Same token endpoint as Path A.
+
+See: [Generating a Token](/GraFx-Developers/environment-api/03-generating-a-token/)
+
+### Step 4: Set up the SDK project
+
+**Choose how to load the SDK — ask the user which they prefer:**
+
+- **Latest version (live CDN)** — always loads the most recent release. Simpler to set up, but the behavior may change when CHILI GraFx updates.
+- **Fixed version (pinned)** — install a specific version via npm. Recommended for production integrations where stability is required.
+
+Install a specific version via npm:
+
+```
+npm install @chili-publish/studio-sdk@{VERSION}
+```
+
+Or install the latest:
+
+```
+npm install @chili-publish/studio-sdk
+```
+
+Requirements:
+
+- JavaScript runtime: Node.js (recommended for production)
+- Bundler: webpack, esbuild, or parcel
+- Web server: required to serve files over HTTP
+
+See: [SDK Quickstart](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/)
+
+### Step 5: Load the editor
+
+The editor runs inside an iframe. Use the SDK to communicate with it via controllers.
+
+Follow the full quickstart sequence:
+
+1. [Project setup](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/02-project-setup/)
+2. [Loading the SDK](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/03-loading-studio-sdk/)
+3. [Communicating with the SDK](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/04-communicating-with-sdk/)
+
+For a full working example with controllers, connectors, and events:
+
+See: [Workshop — Building a custom UI](/GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/00-workshop-overview/)
+
+---
+
+## Path C — Self-service portal (Studio UI)
+
+Use this when you want end users to customize templates in your web portal, without exposing the full designer interface.
+
+!!! note
+    This embeds the **end-user** interface (GraFx Experience / Studio UI), not the designer editor. End users can personalize templates; they cannot design them.
+
+### Step 1: Create an integration (read-only)
+
+In CHILI GraFx, go to **Integrations** and create a new integration with **Read-only** permissions.
+
+See: [Managing Integrations](/GraFx-Developers/environment-api/02-managing-integrations/)
+
+### Step 2: Generate a token (server-side only)
+
+Your server generates the token using the read-only Client ID and Client Secret. The token is passed to the frontend at runtime.
+
+Same token endpoint as Path A and B.
+
+!!! warning
+    Never expose your Client Secret to the frontend. Always generate the token server-side.
+
+### Step 3: Embed Studio UI
+
+Add a container to your HTML:
+
+```html
+<div id="studio-ui-container"></div>
+```
+
+Inject the script:
+
+```html
+<script src="https://studio-cdn.chiligrafx.com/studio-ui/latest/bundle.js"></script>
+```
+
+Initialize with your token and environment configuration. All configuration options and examples are on GitHub.
+
+See: [Integrate Studio UI](/GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/)
+
+See: [Studio UI on GitHub](https://github.com/chili-publish/studio-ui)
+
+For advanced configuration (custom panels, restricted variables, layout selection):
+
+See: [Advanced Integration on GitHub](https://github.com/chili-publish/studio-ui/blob/main/documentation/advanced-integration.md)
+
+---
+
+## API reference
+
+| Resource | URL |
+|---|---|
+| Platform API Swagger | `https://api.chiligrafx.com/swagger/index.html` |
+| Environment API Swagger (production) | `https://{TECHNICAL_NAME}.chili-publish.online/grafx/swagger/index.html` |
+| Environment API Swagger (sandbox) | `https://{TECHNICAL_NAME}.chili-publish-sandbox.online/grafx/swagger/index.html` |
+| Auth token endpoint | `https://integration-login.chiligrafx.com/oauth/token` |
+
+`{TECHNICAL_NAME}` is the subdomain — replace it with the actual value (e.g. `cp-abc-123`). Each environment has a different Technical Name and therefore a different Swagger URL.
+
+---
+
+## Identifier reference
+
+### Technical Name
+
+- Found in: Settings (gear icon) → **Details** → **Technical name**
+- Used as the subdomain in all Environment API URLs: `{{TECHNICAL_NAME}}.chili-publish.online`
+- Example: `cp-abc-123`
+
+### Environment GUID
+
+- Found in: Settings (gear icon) → **Details** → **ID**
+- Also visible in the browser URL: `chiligrafx.com/environments/{ENVIRONMENT_GUID}/...`
+- Example: `aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee`
+
+### Template GUID
+
+- Visible in the browser URL when a template is open:
+  `chiligrafx.com/environments/{ENVIRONMENT_GUID}/studio/templates/{TEMPLATE_GUID}`
+- Or retrieve all templates via API:
+  `GET /api/v1/environment/{{TECHNICAL_NAME}}/templates`
+
+### Client ID and Client Secret
+
+- Found in: **Integrations** → open your integration → **General** tab
+- Create a new integration at: **Integrations** → **Create Integration**
+- The same page also contains direct links to the **Environment API Swagger** and **Platform API Swagger**
+- See: [Managing Integrations](/GraFx-Developers/environment-api/02-managing-integrations/)
