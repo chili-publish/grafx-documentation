@@ -12,58 +12,56 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Feb 23, 2026**: CHILI GraFx Platform Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
+
+    ---
     **Jan 26, 2026**: Image Constraints, List Controls & Text Stability
-    
+
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
-    
+
     This update gives template designers more control and end users more flexibility, with image frame constraints, improved numbered list formatting and shortcuts, and multiple fixes that stabilize text behavior and UI interactions.
-    
+
     ![Constraints](/release-notes/releasenotesassets/constraints.gif)
-    
+
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/26/image-constraints-list-controls-and-text-stability-improvements/)
 
     ---
     **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
-    
+
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-    
+
     This update improves environment management and UI clarity, with environment-level settings access, a copyable technical environment name, and simplified GraFx Studio version display.
-    
+
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/19/platform-deployment-improvements--ui-fixes/)
 
     ---
     **Jan 12, 2026**: Text Columns
-    
+
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.36</span>
-    
+
     This update introduces multi-column text frames in GraFx Studio, allowing you to split text into up to 10 columns with configurable spacing.
-    
+
     ![Text Columns](/GraFx-Studio/guides/text-frame/columns1.png){.screenshot}
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/12/text-columns/)
 
     ---
     **Dec 23, 2025**: Numbered Lists
-    
+
     ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.35</span>
-    
+
     This update adds numbered lists to paragraph styles in GraFx Studio, enabling structured, multi-level numbering with configurable formats, symbols, and indents.
-    
+
     ![Numbered lists](/release-notes/releasenotesassets/numbered-list.png){.screenshot}
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/23/numbered-lists--improvements/)
 
-    ---
-    **Dec 16, 2025**: Opacity import from Adobe plugins
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-    
-    Opacity settings from Adobe® InDesign® and Adobe® Photoshop® are now preserved when importing designs into GraFx Studio.
-    
-    ![Opacity Settings](/release-notes/releasenotesassets/opacity2.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
-    
     ---
 
     **See All Release Notes**
