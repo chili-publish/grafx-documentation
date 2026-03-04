@@ -38,7 +38,7 @@ CHILI GraFx looks at the length of the animation. Not at the output framerate or
 	- An animation with a duration of 2,5 seconds: 3 renders
 	- An animation with a duration of 3 seconds: 3 renders
 
-Watermarked output does not count as a render.
+Watermarked output does not count as a render. Watermarked renders are tracked separately and shown as their own category in the dashboard, at both environment and subscription level.
 
 ### Static PDF output
 
