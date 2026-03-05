@@ -12,6 +12,7 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+
     **Mar 3, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
@@ -19,6 +20,15 @@
     Further improvements to font cache memory usage during output generation, reducing memory consumption for font-heavy documents.
 
     [:octicons-arrow-right-24: Full Release Note](release-notes/releaseposts/2026030301.md)
+
+    --- 
+    **Feb 23, 2026**: CHILI GraFx Platform Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
 
     ---
     **Jan 26, 2026**: Image Constraints, List Controls & Text Stability
