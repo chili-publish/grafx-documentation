@@ -18,7 +18,7 @@
 
     Resolved out-of-memory exceptions in image caching and enabled PDF images to be cached during output generation, improving reliability and performance for image-heavy documents.
 
-    [:octicons-arrow-right-24: Full Release Note](release-notes/releaseposts/2026030501.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030501.md)
 
     ---
     **Feb 23, 2026**: CHILI GraFx Platform Update
