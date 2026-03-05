@@ -12,6 +12,15 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Mar 5, 2026**: GraFx Publisher Update
+
+    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
+
+    Resolved out-of-memory exceptions in image caching and enabled PDF images to be cached during output generation, improving reliability and performance for image-heavy documents.
+
+    [:octicons-arrow-right-24: Full Release Note](release-notes/releaseposts/2026030501.md)
+
+    ---
     **Feb 23, 2026**: CHILI GraFx Platform Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -50,17 +59,6 @@
     ![Text Columns](/GraFx-Studio/guides/text-frame/columns1.png){.screenshot}
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/12/text-columns/)
-
-    ---
-    **Dec 23, 2025**: Numbered Lists
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.35</span>
-
-    This update adds numbered lists to paragraph styles in GraFx Studio, enabling structured, multi-level numbering with configurable formats, symbols, and indents.
-
-    ![Numbered lists](/release-notes/releasenotesassets/numbered-list.png){.screenshot}
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/23/numbered-lists--improvements/)
 
     ---
 
