@@ -19,6 +19,13 @@
     Resolved out-of-memory exceptions in image caching, enabled PDF image caching, and delivered further reductions to font cache memory usage — improving reliability and performance for output-heavy documents.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030501.md)
+    **Feb 24, 2026**: GraFx Publisher Update
+
+    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
+
+    Resolved an out-of-memory issue caused by the font cache growing unbounded during document processing, improving reliability for font-heavy documents.
+
+    [:octicons-arrow-right-24: Full Release Note](release-notes/releaseposts/2026022402.md)
 
     ---
     **Feb 23, 2026**: CHILI GraFx Platform Update
