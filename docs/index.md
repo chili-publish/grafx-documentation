@@ -16,7 +16,7 @@
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
 
-    Resolved out-of-memory exceptions in image caching and enabled PDF images to be cached during output generation, improving reliability and performance for image-heavy documents.
+    Resolved out-of-memory exceptions in image caching, enabled PDF image caching, and delivered further reductions to font cache memory usage — improving reliability and performance for output-heavy documents.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030501.md)
 
