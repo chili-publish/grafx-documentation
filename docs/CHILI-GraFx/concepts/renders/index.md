@@ -42,7 +42,7 @@ Watermarked output does not count as a render. Watermarked renders are tracked s
 
 ### AI-generated image output (GraFx Genie)
 
-Images generated through [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/) — for example via the GraFx Genie Product Image Creator or Product Image Composer — are charged as digital PNG renders.
+Images generated through [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/) — for example via the GraFx Genie Product Image Creator or Product Image Composer — are counted as Static Digital Output renders.
 
 1 render is counted per generated image.
 
