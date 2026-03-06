@@ -1,5 +1,7 @@
 # GraFx Experience
 
+![applogo](/assets/Logo_GraFx_Experience.svg)
+
 GraFx Experience is the end-user portal where brand users can browse, personalize, and produce on-brand content using Smart Templates built in GraFx Studio.
 
 The portal is set up and managed by CHILI publish. Customers access it — they do not build it.
