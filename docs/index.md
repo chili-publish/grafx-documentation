@@ -12,6 +12,15 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Photoshop packages containing frames with zero dimensions — such as hidden or conditional elements — can now be imported into GraFx Studio without errors.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030601.md)
+
+    ---
     **Mar 5, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
@@ -46,15 +55,6 @@
     Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022301.md)
-
-    ---
-    **Feb 20, 2026**: GraFx Labs
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    GraFx Labs is now available as a dedicated space to explore experimental features, starting with two GraFx Genie AI experiments for product image creation and composition.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022001.md)
 
     ---
 
