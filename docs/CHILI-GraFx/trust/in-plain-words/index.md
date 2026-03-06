@@ -125,7 +125,7 @@ Data is replicated across multiple locations to protect against loss. In the unl
 ## Other situations
 
 **Using AI features**
-CHILI GraFx uses AI to assist with things like design suggestions and smart template creation. Your data is used *only* to produce your result — never to train AI models, and never shared across customers.
+CHILI GraFx uses AI to assist with things like scripts (actions) suggestions. Your data is used *only* to produce your result — never to train AI models, and never shared across customers.
 
 **Contacting support**
 Support tickets are stored as Support Data in West Europe. Our support team includes people based outside of Europe — all vetted and contractually bound to the same privacy and security rules. Only include information in a ticket that is strictly necessary to resolve your issue. If you include personal data, the same responsibility rules apply as above.
