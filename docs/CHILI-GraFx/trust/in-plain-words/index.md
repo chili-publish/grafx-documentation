@@ -8,6 +8,21 @@ When you use CHILI GraFx, you share some information with us — that's normal f
 
 ---
 
+## Who's who
+
+Before diving into the use cases, it helps to understand the different roles in the ecosystem.
+
+**CHILI publish** is the platform provider. We build and operate CHILI GraFx.
+
+**Our customers** are the organisations that sign a contract with us. This can take two forms:
+
+- **A brand or company** using CHILI GraFx directly — for example, a retailer whose in-house team builds templates and generates output. In this case, the **template designer** and the **end user** are both part of the same organisation.
+- **An ISV (Independent Software Vendor)** that builds a product or service on top of CHILI GraFx and offers it to *their own* customers. In this case, the ISV sits between CHILI publish and the end users.
+
+**The ISV layer matters for data responsibility.** When an ISV offers a CHILI GraFx-powered solution to their customers, they take on the responsibility of governing how data flows within their product — including informing their customers about data processing, obtaining the necessary consents, and ensuring their own terms and privacy policies cover the use of CHILI GraFx as an underlying platform. CHILI publish remains the processor; the ISV is the controller for their customers' data.
+
+---
+
 ## Use case 1 — Logging in
 
 When you create an account or sign in, we store your **name, email address, role, and login credentials**. Your password is never stored as plain text — it's scrambled (hashed) so even we can't read it. Login is handled by a specialist security service called Auth0.
