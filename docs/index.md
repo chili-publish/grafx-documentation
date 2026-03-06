@@ -28,6 +28,35 @@
     Tags let you organize and filter templates by brand, campaign, or product line — so designers can find exactly what they need without scrolling through unrelated content.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022401.md)
+    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Photoshop packages with zero-dimension frames can now be imported into GraFx Studio without errors.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030601/)
+
+    ---
+    **Dec 16, 2025**: Opacity import from Adobe plugins
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Opacity settings from Adobe® InDesign® and Adobe® Photoshop® are now preserved when importing designs into GraFx Studio.
+
+    ![Opacity Settings](/release-notes/releasenotesassets/opacity2.png){.screenshot}
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
+    
+    ---
+    **Dec 1, 2025**: Bulleted Lists & Minor improvements
+    
+    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
+    
+    This update introduces bulleted lists in paragraph styles, improved frame selection precision, and extended HTML output with frame opacity.
+    
+    ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
+    
+    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
 
     ---
     **Feb 24, 2026**: GraFx Publisher Update
