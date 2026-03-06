@@ -103,7 +103,7 @@ When end users fill in a template through GraFx Experience, any data they enter 
 ## Our promises
 
 **🏠 Stored close to you**
-You choose where your data lives: Europe, US, Australia, UK, or France — all on Microsoft Azure.
+Your template files and assets (Service Data) are stored in the region you choose: Europe, US, Australia, UK, or France — all on Microsoft Azure. Account and login data (Platform Data) and support tickets are always stored in West Europe.
 
 **🔒 Encrypted everywhere**
 Data is encrypted in transit (HTTPS/TLS) and at rest — secure while stored and while travelling.
@@ -115,10 +115,10 @@ CHILI publish is ISO 27001 certified — an internationally recognised security 
 Systems are watched around the clock for unusual activity, with automatic alerts if something looks wrong.
 
 **🚫 Not sold, not shared**
-Your data is never sold to third parties or used for advertising. Full stop.
+Your data is never sold to third parties or used for advertising. Certain trusted sub-processors (such as Auth0 for authentication and our support platform) handle specific data as described in this guide — all under the same privacy and security obligations.
 
 **🔁 Backed up regularly**
-Data is replicated across multiple locations so it's never lost, even if something goes wrong in one place.
+Data is replicated across multiple locations to protect against loss. In the unlikely event of a serious incident, our recovery policies minimise disruption and data impact.
 
 ---
 
@@ -131,4 +131,7 @@ CHILI GraFx uses AI to assist with things like design suggestions and smart temp
 Support tickets are stored as Support Data in West Europe. Our support team includes people based outside of Europe — all vetted and contractually bound to the same privacy and security rules. Only include information in a ticket that is strictly necessary to resolve your issue. If you include personal data, the same responsibility rules apply as above.
 
 **Requesting data removal**
-Under GDPR, you have the right to request deletion or export of your data. CHILI GraFx will direct you to the company managing your account — they are the data controller and decide what happens to your data.
+Under GDPR, you have the right to request deletion or export of your data. How that request is handled depends on the type of data:
+
+- **Service Data** (your templates, assets, and output) is controlled by the company that manages your account. We will direct you to them, as they are the data controller and decide what happens to that data.
+- **Platform Data** (your login and account details) and **Support Data** are controlled by CHILI publish. Requests involving this data can be directed to [security@chili-publish.com](mailto:security@chili-publish.com).
