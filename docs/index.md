@@ -16,16 +16,27 @@
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
 
-    Resolved out-of-memory exceptions in image caching, enabled PDF image caching, and delivered further reductions to font cache memory usage — improving reliability and performance for output-heavy documents.
+    More reliable output for image-heavy documents, faster PDF image processing, and continued memory improvements for output-heavy jobs.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030501.md)
+
+    ---
+    **Feb 24, 2026**: Tags for templates in GraFx Studio
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Tags let you organize and filter templates by brand, campaign, or product line — so designers can find exactly what they need without scrolling through unrelated content.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022401.md)
+
+    ---
     **Feb 24, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
 
-    Resolved an out-of-memory issue caused by the font cache growing unbounded during document processing, improving reliability for font-heavy documents.
+    Documents referencing a large number of fonts now generate more reliably, with reduced risk of crashes or failed output jobs.
 
-    [:octicons-arrow-right-24: Full Release Note](release-notes/releaseposts/2026022402.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022402.md)
 
     ---
     **Feb 23, 2026**: CHILI GraFx Platform Update
@@ -34,38 +45,16 @@
 
     Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022301.md)
 
     ---
-    **Jan 26, 2026**: Image Constraints, List Controls & Text Stability
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    This update gives template designers more control and end users more flexibility, with image frame constraints, improved numbered list formatting and shortcuts, and multiple fixes that stabilize text behavior and UI interactions.
-
-    ![Constraints](/release-notes/releasenotesassets/constraints.gif)
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/26/image-constraints-list-controls-and-text-stability-improvements/)
-
-    ---
-    **Jan 19, 2026**: Platform Deployment Improvements & UI Fixes
+    **Feb 20, 2026**: GraFx Labs
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    This update improves environment management and UI clarity, with environment-level settings access, a copyable technical environment name, and simplified GraFx Studio version display.
+    GraFx Labs is now available as a dedicated space to explore experimental features, starting with two GraFx Genie AI experiments for product image creation and composition.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/19/platform-deployment-improvements--ui-fixes/)
-
-    ---
-    **Jan 12, 2026**: Text Columns
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.36</span>
-
-    This update introduces multi-column text frames in GraFx Studio, allowing you to split text into up to 10 columns with configurable spacing.
-
-    ![Text Columns](/GraFx-Studio/guides/text-frame/columns1.png){.screenshot}
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/01/12/text-columns/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022001.md)
 
     ---
 
