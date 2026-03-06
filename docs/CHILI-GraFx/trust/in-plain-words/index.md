@@ -2,7 +2,7 @@
 *A plain-language guide — no legal jargon, just the facts*
 
 > 📋 **This is an explainer, not a contract.**
-> We wrote this so you can understand how we handle your data without needing a law degree — or a strong coffee. The binding details live in your contract and our [Data Processing Agreement](mailto:security@chili-publish.com). If there's ever a conflict between this document and the actual agreement, the agreement wins. (Sorry, the lawyers insisted.)
+> We wrote this so you can understand how we handle your data without needing a law degree — or a strong coffee. The binding details live in your contract and our Data Processing Agreement. If there's ever a conflict between this document and the actual agreement, the agreement wins. (Sorry, the lawyers insisted.)
 
 When you use CHILI GraFx, you share some information with us — that's normal for any online service. This guide walks through the most common situations and explains what data is involved, where it goes, and who is responsible for it.
 
