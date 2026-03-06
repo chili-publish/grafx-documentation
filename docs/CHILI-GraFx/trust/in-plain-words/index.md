@@ -117,7 +117,3 @@ Support tickets are stored as Support Data in West Europe. Our support team incl
 
 **Requesting data removal**
 Under GDPR, you have the right to request deletion or export of your data. CHILI GraFx will direct you to the company managing your account — they are the data controller and decide what happens to your data.
-
----
-
-*Based on [docs.chiligrafx.com/trust](/CHILI-GraFx/trust/introduction/) · CHILI publish NV · Questions? [security@chili-publish.com](mailto:security@chili-publish.com)*
