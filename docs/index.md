@@ -12,6 +12,7 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+
     **Mar 8, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -19,6 +20,15 @@
     New Vision API endpoints for subject types, fallback text for font previews, and a targeted PATCH endpoint for updating individual subject types.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
+    ---
+    **Mar 8, 2026**: CHILI GraFx Platform API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Invitation emails now always display the correct subscription name, and system administrators can assign support roles to users via the new system-permissions API endpoint.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
+
 
     ---
     **Mar 5, 2026**: GraFx Publisher Update
