@@ -12,13 +12,13 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Mar 8, 2026**: CHILI GraFx Platform API Update
+    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Invitation emails now always display the correct subscription name, and system administrators can assign support roles to users via the new system-permissions API endpoint.
+    Photoshop packages containing frames with zero dimensions — such as hidden or conditional elements — can now be imported into GraFx Studio without errors.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/06/grafx-studio-photoshop-plugin-121/)
 
     ---
     **Mar 5, 2026**: GraFx Publisher Update
