@@ -9,8 +9,74 @@
 
 <div class="grid cards" markdown>
 
+-   :material-clock-fast: **Release Notes**
 
-    
+    ---
+
+    **Mar 8, 2026**: CHILI GraFx Environment API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
+
+    ---
+
+    **Mar 8, 2026**: CHILI GraFx Platform API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Existing users invited to a new subscription now receive an email with the subscription name and sign-in guidance.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
+
+    ---
+
+    **Mar 5, 2026**: GraFx Publisher Update
+
+    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
+
+    More reliable output for image-heavy documents, faster PDF image processing, and continued memory improvements for output-heavy jobs.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/05/grafx-publisher-update/)
+
+    ---
+
+    **Feb 24, 2026**: Tags for templates in GraFx Studio
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Tags let you organize and filter templates by brand, campaign, or product line — so designers can find exactly what they need without scrolling through unrelated content.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/tags-for-templates-in-grafx-studio/)
+
+    ---
+
+    **Feb 24, 2026**: GraFx Publisher Update
+
+    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
+
+    Documents referencing a large number of fonts now generate more reliably, with reduced risk of crashes or failed output jobs.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/grafx-publisher-update/)
+
+    ---
+
+    **Feb 23, 2026**: CHILI GraFx Platform Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
+
+    ---
+
+    **See All Release Notes**
+
+    [:octicons-arrow-right-24: Show all release notes](/release-notes/)
+
 </div>
 ## The Platform & Applications
 
