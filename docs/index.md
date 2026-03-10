@@ -12,15 +12,27 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    **Mar 8, 2026**: CHILI GraFx Environment API Update
 
-    Photoshop packages containing frames with zero dimensions — such as hidden or conditional elements — can now be imported into GraFx Studio without errors.
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/06/grafx-studio-photoshop-plugin-121/)
+    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
     ---
+
+    **Mar 8, 2026**: CHILI GraFx Platform API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Existing users invited to a new subscription now receive an email with the subscription name and sign-in guidance.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
+
+    ---
+
     **Mar 5, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
@@ -30,6 +42,7 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/05/grafx-publisher-update/)
 
     ---
+
     **Feb 24, 2026**: Tags for templates in GraFx Studio
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -39,6 +52,7 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/tags-for-templates-in-grafx-studio/)
 
     ---
+
     **Feb 24, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
@@ -48,6 +62,7 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/grafx-publisher-update/)
 
     ---
+
     **Feb 23, 2026**: CHILI GraFx Platform Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -61,7 +76,7 @@
     **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-    
+
 </div>
 ## The Platform & Applications
 
