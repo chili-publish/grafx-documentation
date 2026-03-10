@@ -13,6 +13,16 @@
 
     ---
 
+    **Mar 10, 2026**: GraFx Publisher 2026.0.5
+
+    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
+
+    Batch PDF output jobs now complete more reliably. An intermittent error that caused random failures in datasource-driven output batches has been resolved.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/10/grafx-publisher-202605/)
+
+    ---
+
     **Mar 8, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     Documents referencing a large number of fonts now generate more reliably, with reduced risk of crashes or failed output jobs.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/grafx-publisher-update/)
-
-    ---
-
-    **Feb 23, 2026**: CHILI GraFx Platform Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
 
     ---
 
