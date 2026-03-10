@@ -40,6 +40,15 @@ CHILI GraFx looks at the length of the animation. Not at the output framerate or
 
 Watermarked output does not count as a render. Watermarked renders are tracked separately and shown as their own category in the dashboard, at both environment and subscription level.
 
+### AI-generated image output (GraFx Genie)
+
+Images generated through [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/) — for example via the GraFx Genie Product Image Creator or Product Image Composer — are counted as Static Digital Output renders.
+
+1 render is counted per generated image.
+
+!!! note
+    GraFx Labs is only available in Production environments.
+
 ### Static PDF output
 
 1 render is counted towards each PDF file.
