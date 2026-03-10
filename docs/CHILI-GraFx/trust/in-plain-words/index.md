@@ -86,17 +86,20 @@ In this scenario, the data originates **outside of CHILI GraFx's infrastructure*
 
 GraFx Experience is the branded, end-user-facing layer built on top of CHILI GraFx. Your organisation chooses to offer GraFx Experience as a front-end solution, allowing non-technical users — customers, sales teams, retailers — to personalise and generate output from pre-built templates.
 
-When end users fill in a template through GraFx Experience, any data they enter flows through CHILI GraFx infrastructure to generate the output. That data is processed in your environment and stored in the same region as your other service data.
+**GraFx Experience is currently available in one region only — Europe (EU).** This means that data handled within GraFx Experience is processed and stored in the EU, regardless of which region your CHILI GraFx environment is hosted in.
+
+When end users fill in a template through GraFx Experience, data flows in two directions: output generation goes through your CHILI GraFx environment (in your chosen region), while data stored within GraFx Experience itself — such as projects and user inputs — is persisted in the EU.
 
 **What this means in practice:**
 
 - Your organisation — as the operator of GraFx Experience — is the data controller for what your end users submit
 - You are responsible for informing your end users about how their data is used, and for having a lawful basis to collect and process it
-- CHILI GraFx processes that data as the processor, bound by the same security and privacy obligations as in all other use cases
+- Data that flows through CHILI GraFx for output generation is handled as Service Data, with the same security and privacy obligations as all other use cases
+- Data stored within GraFx Experience is kept in the EU, independent of your chosen CHILI GraFx region
 
-> ⚠️ **Your responsibility:** If your GraFx Experience collects personal data from end users, make sure your own privacy notice covers this and that you have a lawful basis for the processing. CHILI GraFx will handle the data securely as processor.
+> ⚠️ **Your responsibility:** If your GraFx Experience collects personal data from end users, make sure your own privacy notice covers this — including the EU data location — and that you have a lawful basis for the processing.
 
-`Service Data · stored in your chosen region · your organisation is data controller`
+`Service Data · EU only (GraFx Experience) · your chosen region (output) · your organisation is data controller`
 
 ---
 
