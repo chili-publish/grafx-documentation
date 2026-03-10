@@ -17,15 +17,16 @@
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    New Vision API endpoints for subject types, fallback text for font previews, and a targeted PATCH endpoint for updating individual subject types.
+    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
+
     ---
     **Mar 8, 2026**: CHILI GraFx Platform API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    Invitation emails now always display the correct subscription name, and system administrators can assign support roles to users via the new system-permissions API endpoint.
+    Existing users invited to a new subscription now receive an email with the subscription name and sign-in guidance.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
 
