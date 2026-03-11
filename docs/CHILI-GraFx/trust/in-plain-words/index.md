@@ -6,6 +6,12 @@
 
 When you use CHILI GraFx, you share some information with us — that's normal for any online service. This guide walks through the most common situations and explains what data is involved, where it goes, and who is responsible for it.
 
+Throughout this guide, we refer to three types of data:
+
+- **Platform Data** — your account and login information: name, email address, role, and credentials. Always stored in West Europe (Amsterdam).
+- **Service Data** — the content you create and store: templates, assets, output files, and related settings. Stored in the region you choose when setting up your environment.
+- **Support Data** — information you share with our support team via tickets. Stored in West Europe (Amsterdam).
+
 ---
 
 ## Who's who
@@ -88,7 +94,7 @@ GraFx Experience is the branded, end-user-facing layer built on top of CHILI Gra
 
 **GraFx Experience is currently available in one region only — Europe (EU).** This means that data handled within GraFx Experience is processed and stored in the EU, regardless of which region your CHILI GraFx environment is hosted in.
 
-When end users fill in a template through GraFx Experience, data flows in two directions: output generation goes through your CHILI GraFx environment (in your chosen region), while data stored within GraFx Experience itself — such as projects and user inputs — is persisted in the EU.
+GraFx Experience and CHILI GraFx are two separate systems — data is not copied or replicated between them. GraFx Experience stores its own data (such as projects and user inputs) in the EU. When an end user triggers output generation, that request is sent to your CHILI GraFx environment (in your chosen region) to produce the result — but your CHILI GraFx environment does not permanently store the data entered in GraFx Experience.
 
 **What this means in practice:**
 
@@ -128,7 +134,14 @@ Data is replicated across multiple locations to protect against loss. In the unl
 ## Other situations
 
 **Using AI features**
-CHILI GraFx uses AI to assist with things like scripts (actions) suggestions. Your data is used *only* to produce your result — never to train AI models, and never shared across customers.
+
+CHILI GraFx includes several AI-powered features, each with different data handling:
+
+*GraFx Genie for actions (script suggestions)* — Uses the OpenAI API to generate script suggestions based on your input. We do not use ChatGPT directly. Your prompts are sent to the OpenAI API but are not used to train AI models. No other customer data is sent.
+
+*GraFx Genie vision (smart crop)* — Runs entirely within CHILI GraFx infrastructure. No data leaves our systems.
+
+*GraFx Labs image generation* — Uses third-party services from Google and Black Forest Labs to generate images. The images and prompts you provide are sent to these services but are not used for model training. No other customer data is shared with them. Note: GraFx Labs features are experimental and clearly marked as such.
 
 **Contacting support**
 Support tickets are stored as Support Data in West Europe. Our support team includes people based outside of Europe — all vetted and contractually bound to the same privacy and security rules. Only include information in a ticket that is strictly necessary to resolve your issue. If you include personal data, the same responsibility rules apply as above.
