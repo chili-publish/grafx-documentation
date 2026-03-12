@@ -12,56 +12,71 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
+
+    **Mar 12, 2026**: GraFx Studio 1.39 — Text Constraints & Page Duplication
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Define exactly what end users can edit in text frames — including whether the frame can be moved, and which inline styles are permitted. Pages can now also be duplicated directly in the document.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/grafx-studio-139-text-constraints-page-duplication/)
+
+    ---
+
     **Mar 5, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
 
     More reliable output for image-heavy documents, faster PDF image processing, and continued memory improvements for output-heavy jobs.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026030501.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/05/grafx-publisher-update/)
 
     ---
+
     **Feb 24, 2026**: Tags for templates in GraFx Studio
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
     Tags let you organize and filter templates by brand, campaign, or product line — so designers can find exactly what they need without scrolling through unrelated content.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022401.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/tags-for-templates-in-grafx-studio/)
 
     ---
+
     **Feb 24, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
 
     Documents referencing a large number of fonts now generate more reliably, with reduced risk of crashes or failed output jobs.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022402.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/grafx-publisher-update/)
 
     ---
+
     **Feb 23, 2026**: CHILI GraFx Platform Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
     Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022301.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
 
     ---
+
     **Feb 20, 2026**: GraFx Labs
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
     GraFx Labs is now available as a dedicated space to explore experimental features, starting with two GraFx Genie AI experiments for product image creation and composition.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/releaseposts/2026022001.md)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/20/grafx-labs/)
 
     ---
 
     **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-    
+
 </div>
 ## The Platform & Applications
 
