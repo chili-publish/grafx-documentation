@@ -21,32 +21,18 @@ In GraFx Studio, designers:
 
 GraFx Experience consumes these Design Systems and enforces the rules defined in GraFx Studio.
 
-### Connection to GraFx Media
+### Connection to GraFx Media and your DAM
 
-**GraFx Media** provides the visual assets used during execution.
+**GraFx Media** is the built-in asset library — a natural starting point for teams that want to get up and running quickly. Images, videos, and other media stored in GraFx Media are immediately available in GraFx Experience, giving users access to approved assets without any additional setup.
 
-Images, videos, and other media used in GraFx Experience come from approved sources. This ensures:
-- Brand consistency
-- Reuse of approved assets
-- No dependency on local files or ad-hoc uploads
+That said, CHILI GraFx is DAM-agnostic. Through the **Connector Framework** in GraFx Studio, you can connect any external DAM or content system to the platform. This means GraFx Experience can work within your existing asset ecosystem — whether you use GraFx Media, an enterprise DAM, or any other content source.
 
 ### Connection to GraFx Brand Kits
 
 **GraFx Brand Kits** define brand identity.
 
-Colors, fonts, and styles are centralized and reused across the platform.  
+Colors, fonts, and styles are centralized and reused across the platform.
 GraFx Experience applies these automatically so end users do not need to understand brand guidelines to stay compliant.
-
-### DAM-agnostic by design
-
-GraFx Experience does not require a specific DAM.
-
-You can:
-- Use **GraFx Media** as the asset source
-- Connect external DAMs and other content systems using the **Connector Framework**
-- Pull in data from other platforms through the platform’s APIs and connectors
-
-The Connector Framework provides a standardized way to integrate external content and data systems into the CHILI GraFx platform, so Experience can operate within your existing tech ecosystem.
 
 ### End-to-end flow
 
