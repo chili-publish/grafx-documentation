@@ -36,7 +36,7 @@ The following constraints control how the frame itself can be manipulated:
 
 - **Allow horizontal move** — Enables movement along the X-axis.
 - **Allow vertical move** — Enables movement along the Y-axis.
-- **Allow rotation** — Allows the frame to be rotated. Not available for the selected frame when Auto-grow is active.
+- **Allow rotation** — Allows the frame to be rotated. Not available on layouts where Auto-grow is active for the selected frame.
 - **Allow resize** — Allows the frame to be resized.
 
 ### Allow Inline Text Editing
