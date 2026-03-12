@@ -214,6 +214,7 @@ nav:
             - 'GraFx Media intro':              'GraFx-Media/overview/elements/index.md'
         - 'Trust':
             - 'Introduction':                   'CHILI-GraFx/trust/introduction/index.md'
+            - 'In plain words':                 'CHILI-GraFx/trust/in-plain-words/index.md'
             - 'Security Policy':                'CHILI-GraFx/trust/security-policy/index.md'
             - 'Compliance':                     'CHILI-GraFx/trust/compliance/index.md'
             - 'Data centers':                   'CHILI-GraFx/trust/data-centers/index.md'
