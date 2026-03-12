@@ -28,7 +28,7 @@ Text frames support **user constraints** that control how end users can interact
 
 All constraint options are **disabled by default**. You explicitly enable only the interactions you want to allow.
 
-![Text frame selected with the User Constraints panel open showing all options disabled](text-frame-user-constraints.png){.screenshot-full}
+![Text frame selected with the User Constraints panel open showing all options disabled](tc01.png){.screenshot}
 
 ### Frame Constraints
 
@@ -48,7 +48,7 @@ When **Allow inline text editing** is enabled, end users can edit the text conte
 
 When inline text editing is enabled, a set of sub-options becomes available to define exactly which styling actions the end user can take.
 
-![User Constraints panel with inline text editing enabled, showing paragraph style, character style, color, and font size sub-options](text-frame-inline-editing-constraints.png){.screenshot-full}
+![User Constraints panel with inline text editing enabled, showing paragraph style, character style, color, and font size sub-options](tc02.png){.screenshot}
 
 #### Paragraph style
 
@@ -56,7 +56,7 @@ Enable **Allow paragraph style selection** to let end users apply paragraph styl
 
 Click **Manage** to choose which paragraph styles from your Brand Kit are available. The display shows how many styles are currently permitted out of the total (e.g. "1 of 2 paragraph styles allowed").
 
-![Paragraph style selection showing Brand Kit paragraph styles with toggles to allow or restrict each one](text-frame-select-paragraph-styles.png){.screenshot-full}
+![Paragraph style selection showing Brand Kit paragraph styles with toggles to allow or restrict each one](tc03.png){.screenshot}
 
 #### Character style
 
@@ -64,7 +64,7 @@ Enable **Allow character style selection** to let end users apply character styl
 
 Click **Manage** to choose which character styles are available.
 
-![Character style selection showing Brand Kit character styles with toggles to allow or restrict each one](text-frame-select-character-styles.png){.screenshot-full}
+![Character style selection showing Brand Kit character styles with toggles to allow or restrict each one](tc04.png){.screenshot}
 
 #### Color
 
@@ -72,35 +72,33 @@ Enable **Allow color selection** to let end users change the text color.
 
 Click **Manage** to choose which Brand Kit colors are available.
 
-![Color selection showing Brand Kit colors with toggles to allow or restrict each one](text-frame-select-colors.png){.screenshot-full}
+![Color selection showing Brand Kit colors with toggles to allow or restrict each one](tc05.png){.screenshot}
 
 #### Font size
 
 Enable **Allow font size editing** to let end users change the font size. When enabled, set a **Min font size** and **Max font size** to constrain the permitted range.
 
-![Font size constraint settings showing the Allow font size editing checkbox with Min and Max font size inputs](text-frame-font-size-constraint.png){.screenshot}
+![Font size constraint settings showing the Allow font size editing checkbox with Min and Max font size inputs](tc06.png){.screenshot}
 
 ### What End Users Experience
 
 When inline text editing is allowed, the end user can double-click the text frame to enter edit mode. A toolbar appears at the top of the canvas with controls for the options the template designer has permitted.
 
-![The inline editing toolbar showing paragraph style, character style, font size, and color controls](text-frame-enduser-toolbar.png){.screenshot-full}
-
 The toolbar only shows the controls that have been enabled:
 
 - **Paragraph style dropdown** — only the permitted paragraph styles appear in the list.
 
-![The paragraph style dropdown open in run mode, showing only the allowed styles](text-frame-enduser-paragraph-styles.png){.screenshot-full}
+![The paragraph style dropdown open in run mode, showing only the allowed styles](tc07.png){.screenshot-full}
 
 - **Character style dropdown** — only the permitted character styles appear in the list.
 
-![The character style dropdown open in run mode, showing only the allowed styles](text-frame-enduser-character-styles.png){.screenshot-full}
+![The character style dropdown open in run mode, showing only the allowed styles](tc08.png){.screenshot-full}
 
 - **Font size stepper** — the + and − buttons adjust the font size, constrained to the Min and Max range set by the template designer.
 
 - **Color picker** — only the permitted Brand Kit colors are shown.
 
-![The color picker open in run mode, showing only the allowed Brand Kit colors](text-frame-enduser-color.png){.screenshot-full}
+![The color picker open in run mode, showing only the allowed Brand Kit colors](tc09.png){.screenshot-full}
 
 Controls for options that are not enabled are not shown — the end user only sees what they are allowed to use.
 
