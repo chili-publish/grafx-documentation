@@ -29,6 +29,8 @@ Changes made in GraFx Studio → New draft created (version 2)
    Test draft → Publish draft → Published (version 2) — new projects use version 2
 ```
 
+![The Versions tab on a template in the extension admin console showing one published version and one draft version with their status badges and publish controls](template-versions-tab.png){.screenshot-full}
+
 ## Syncing changes from GraFx Studio
 
 When a Design System is updated in GraFx Studio, those changes are not automatically reflected in the extension. An admin must manually sync the template to pull in the latest version.

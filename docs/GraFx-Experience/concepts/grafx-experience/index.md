@@ -12,6 +12,8 @@ The portal is set up and configured by CHILI publish. Customers receive access t
 - Open a Design System and personalize allowed content (text, images, colors)
 - Produce output (download, export, or send to a production channel)
 
+![The GraFx Experience portal showing the campaigns page with campaign cards](portal-campaigns-page.png){.screenshot-full}
+
 ## How Design Systems get into the portal
 
 Design Systems from GraFx Studio are made available through the **CHILI GraFx extension**. The extension is the bridge between GraFx Experience and CHILI GraFx.

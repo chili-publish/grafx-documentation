@@ -21,6 +21,8 @@ In the extension admin console, go to **Fields** and click **New field**. Fill i
 
 Click **Save** to create the field.
 
+![The New field form showing the Name, Description, Type dropdown with Select and User Group options, and the Used on checkboxes for Template, Project, Production channel, and Production output](new-field-form.png){.screenshot-full}
+
 !!! note
     Fields in use cannot be deleted. To remove a field, first remove it from all templates, projects, and channels where it is assigned.
 

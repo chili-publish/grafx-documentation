@@ -26,6 +26,8 @@ Select fields can be used as filters on the campaigns page, and as display infor
 **User Group**
 Links a field to user groups defined in GraFx Experience. Used to control access — a template with a User Group field will only be visible to users who belong to one of the selected groups. When no User Group field is assigned to a template, the template is visible to all users.
 
+![The Fields list in the extension admin console showing Select and User Group type fields](fields-list.png){.screenshot-full}
+
 ## Where fields are used
 
 A field can be applied to one or more of the following:

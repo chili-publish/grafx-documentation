@@ -14,6 +14,8 @@ When an end user opens a campaign and starts editing, the extension loads the De
 
 The extension is configured through its own admin console. The key objects it manages are:
 
+![The CHILI GraFx extension admin console showing the main navigation with Templates, Fields, Production Channels, and Settings](extension-admin-console.png){.screenshot-full}
+
 **Templates**
 A template in the extension is a record that points to a Design System in GraFx Studio. It holds metadata (name, description, status, main visual) and configuration (fields, workflow settings). The link between the two systems is the **GraFx External ID** — the unique identifier of the Design System in GraFx Studio. Templates appear to end users as campaigns in the portal.
 

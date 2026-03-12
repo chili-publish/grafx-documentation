@@ -23,6 +23,8 @@ Enter the Client ID and Client Secret from the integration you created in Step 1
 
 The extension will authenticate against your CHILI GraFx environment and load the available settings (user interfaces, output settings).
 
+![The Environment settings panel in the extension admin console showing the Client ID and Client Secret input fields and the Save and Refresh buttons](environment-settings.png){.screenshot-full}
+
 ## Step 3: Verify the connection
 
 After saving, use the **Refresh** button in the Environment settings to sync the latest settings from CHILI GraFx. If the connection is successful, the available GraFx Studio user interfaces and output settings will appear in the extension.

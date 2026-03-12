@@ -22,6 +22,8 @@ When an end user sends a project to a production channel, a **production output*
 
 Admins can view all production outputs across the platform and monitor their status. End users can track their own orders on the Orders page of the portal.
 
+![The Production Channels overview in the extension admin console showing Print and Digital channels with their contact details and user group access](production-channels-overview.png){.screenshot-full}
+
 ## Output previews
 
 Separate from production outputs, the extension also generates **preview files** for templates and projects. These are preview images or PDFs used to check the visual result before sending to production. Preview settings (file type, output options) are configured per layout intent in the extension settings.

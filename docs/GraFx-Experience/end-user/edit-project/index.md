@@ -10,6 +10,8 @@ When you open a project, the editing experience shows:
 - **Customize panel** on the left — all editable variables for the selected tab
 - **Canvas** on the right — a live preview of the layout(s) updating as you make changes
 
+![The editing experience showing the All layouts tab selected, the Customize panel on the left with variable fields, and the canvas preview on the right](editing-experience-overview.png){.screenshot-full}
+
 ## Editing all layouts at once
 
 The **All layouts** tab is selected by default. Changes made here apply to every layout in your project simultaneously.
@@ -32,6 +34,8 @@ The Customize panel shows all the variables available in the template. Depending
 - **Image** — replace an image by uploading a file or selecting from the media library
 
 When you change a variable, all affected layouts are highlighted in the layout tabs so you can see exactly what will change.
+
+![The Customize panel showing a mix of variable types: a dropdown, a text field, a number input, and an image selector](customize-panel-variables.png){.screenshot-full}
 
 ## Adding layouts
 

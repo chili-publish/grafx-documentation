@@ -24,6 +24,8 @@ In the extension admin console, go to **Production Channels** and click **New pr
 
 Click **Save** to create the channel.
 
+![The New production channel form showing Name, Type dropdown with Print and Digital, contact fields, and user group access settings](new-production-channel-form.png){.screenshot-full}
+
 ## Step 2: Add custom fields (optional)
 
 If you need to capture additional order information — such as a cost center or internal reference — you can add custom fields to the channel. These fields appear when a user places an order via this channel.

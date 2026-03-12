@@ -47,6 +47,8 @@ How it works: a user in the "Content Manager" group will only see campaigns wher
 
 Click **Add row** to add multiple permission rules for different user groups.
 
+![The GraFx Content Exploration widget settings panel showing the Component mode, Filter fields, Field visibility, and Template view permissions configuration](widget-settings.png){.screenshot-full}
+
 ## Step 4: Save and publish
 
 Click **Save** in the widget settings, then **Save & Publish** the page to make it live.
