@@ -13,13 +13,13 @@
 
     ---
 
-    **Mar 12, 2026**: GraFx Studio 1.39 — Text Constraints & Page Duplication
+    **Mar 12, 2026**: GraFx Studio 1.39
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Define exactly what end users can edit in text frames — including whether the frame can be moved, and which inline styles are permitted. Pages can now also be duplicated directly in the document.
+    Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/grafx-studio-139-text-constraints-page-duplication/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/grafx-studio-139/)
   
     ---
     **Mar 8, 2026**: CHILI GraFx Environment API Update
