@@ -13,6 +13,26 @@
 
     ---
 
+    **Mar 10, 2026**: CHILI GraFx Extension 1.11
+
+    ![rn_icon](/assets/icon-GraFx-Experience.svg)
+
+    Several reliability and display fixes in the CHILI GraFx extension embedded in GraFx Experience.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/10/chili-grafx-extension-111/)
+
+    ---
+
+    **Mar 10, 2026**: GraFx Experience 2.111
+
+    ![rn_icon](/assets/icon-GraFx-Experience.svg)
+
+    Administrators can now control who sees templates, projects, and production outputs using global permission groups.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/10/grafx-experience-2111/)
+
+    ---
+
     **Mar 8, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -33,6 +53,16 @@
 
     ---
 
+    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Photoshop packages with empty effect groups now import correctly into GraFx Studio.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/06/grafx-studio-photoshop-plugin-121/)
+
+    ---
+
     **Mar 5, 2026**: GraFx Publisher Update
 
     ![rn_icon](/assets/icon-GraFx-Publisher.svg)
@@ -40,36 +70,6 @@
     More reliable output for image-heavy documents, faster PDF image processing, and continued memory improvements for output-heavy jobs.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/05/grafx-publisher-update/)
-
-    ---
-
-    **Feb 24, 2026**: Tags for templates in GraFx Studio
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Tags let you organize and filter templates by brand, campaign, or product line — so designers can find exactly what they need without scrolling through unrelated content.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/tags-for-templates-in-grafx-studio/)
-
-    ---
-
-    **Feb 24, 2026**: GraFx Publisher Update
-
-    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
-
-    Documents referencing a large number of fonts now generate more reliably, with reduced risk of crashes or failed output jobs.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/24/grafx-publisher-update/)
-
-    ---
-
-    **Feb 23, 2026**: CHILI GraFx Platform Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
 
     ---
 
