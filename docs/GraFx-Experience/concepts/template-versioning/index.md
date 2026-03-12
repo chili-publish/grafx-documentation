@@ -9,7 +9,7 @@ Every template in the extension has one or more versions. A version is either a 
 **Draft**
 A draft version is not yet visible to end users. When a new template is first created, it starts as a draft. It must be published before end users can create projects from it.
 
-When changes are made to a Smart Template in GraFx Studio, a new draft version is created in the extension. This lets you review and test the changes before releasing them.
+When changes are made to a Design System in GraFx Studio, a new draft version is created in the extension. This lets you review and test the changes before releasing them.
 
 **Published**
 The published version is the one end users see and work with. When you publish a version, it becomes the active version. New projects are always created from the most recent published version.
@@ -31,7 +31,7 @@ Changes made in GraFx Studio → New draft created (version 2)
 
 ## Syncing changes from GraFx Studio
 
-When a Smart Template is updated in GraFx Studio, those changes are not automatically reflected in the extension. An admin must manually sync the template to pull in the latest version.
+When a Design System is updated in GraFx Studio, those changes are not automatically reflected in the extension. An admin must manually sync the template to pull in the latest version.
 
 Syncing is available for both draft and published versions. After syncing, review the changes and publish when ready.
 
@@ -39,4 +39,4 @@ Syncing is available for both draft and published versions. After syncing, revie
 
 Before publishing, you can test a draft version by creating a project from it directly in the admin console. All available layouts will be included, and a test project is created for the admin user. This lets you verify the layout, variables, and output before releasing the version to end users.
 
-See [Configure a Smart Template](../../guides/configure-smart-template/) for step-by-step instructions on creating and publishing template versions.
+See [Configure a Design System](../../guides/configure-design-system/) for step-by-step instructions on creating and publishing template versions.

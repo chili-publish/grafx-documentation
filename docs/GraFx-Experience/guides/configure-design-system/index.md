@@ -1,16 +1,16 @@
-# Configure a Smart Template for GraFx Experience
+# Configure a Design System
 
-This guide explains how to make a GraFx Studio Smart Template available in GraFx Experience by linking and configuring it in the CHILI GraFx extension.
+This guide explains how to make a GraFx Studio Design System available in GraFx Experience by linking and configuring it in the CHILI GraFx extension.
 
 ## Before you start
 
-- The Smart Template must exist in GraFx Studio.
+- The Design System must exist in GraFx Studio.
 - The extension must be connected to your CHILI GraFx environment. See [Connect the extension to CHILI GraFx](../connect-to-chili-grafx/).
 - You need access to the CHILI GraFx extension admin console in GraFx Experience.
 
 ## Step 1: Get the GraFx External ID
 
-The GraFx External ID is the unique identifier of the Smart Template in GraFx Studio.
+The GraFx External ID is the unique identifier of the Design System in GraFx Studio.
 
 You can find it in two ways:
 
@@ -67,7 +67,7 @@ Open GraFx Experience as an end user and go to the campaigns page. Confirm the t
 
 ## Updating a template after changes in GraFx Studio
 
-When a Smart Template is updated in GraFx Studio, the extension does not automatically pick up those changes. To update the template:
+When a Design System is updated in GraFx Studio, the extension does not automatically pick up those changes. To update the template:
 
 1. Open the template in the extension admin console.
 2. Create a new version using the **Resync** option.
