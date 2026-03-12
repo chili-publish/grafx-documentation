@@ -1,6 +1,12 @@
 # GraFx Experience — end user overview
 
-GraFx Experience is a branded portal that gives end users access to on-brand content. Through the portal, you can browse campaigns, personalize Design Systems within defined brand rules, and produce output — without needing design skills or access to GraFx Studio.
+Someone on your brand team already did the hard work. The design is locked in, the brand colors are set, the rules are in place.
+
+Your job is to make it yours.
+
+The portal gives you access to campaign materials that are ready to personalize. You pick the formats you need, adjust what you're allowed to adjust — a headline, a product, a region — and produce your output. Print-ready, on-brand, and done.
+
+No design software. No back-and-forth with the creative team. No risk of breaking the brand.
 
 !!! note
     The portal is set up and branded for your organization. Page names (such as Campaigns, Projects, Orders) may differ depending on how your portal is configured. This documentation uses the default names.
@@ -20,6 +26,8 @@ Once a project is ready, you can download it as a print-ready or digital file, o
 All your projects are saved and accessible from the Projects page. You can return to any project at any time to continue editing, produce more output, or organize projects into lists.
 
 ## Getting around the portal
+
+The table below uses the default page names. Your portal may use different labels — if you don't see a page called "Campaigns", look for something similar in your navigation.
 
 | Page | What it's for |
 |---|---|

@@ -221,11 +221,37 @@ nav:
 
     - 'GraFx Experience':
         - 'Introduction':                           'GraFx-Experience/index.md'
+        - 'Overview':
+            - 'How it fits':                        'GraFx-Experience/overview/how-it-fits/index.md'
+            - 'Roles & permissions':                'GraFx-Experience/overview/roles-permissions/index.md'
+        - 'Getting started':
+            - 'Prerequisites':                      'GraFx-Experience/getting-started/prerequisites/index.md'
+            - 'Login & access':                     'GraFx-Experience/getting-started/login-access/index.md'
+            - 'First-time setup checklist':         'GraFx-Experience/getting-started/first-time-setup-checklist/index.md'
         - 'Concepts':
             - 'GraFx Experience':                   'GraFx-Experience/concepts/grafx-experience/index.md'
             - 'CHILI GraFx extension':              'GraFx-Experience/concepts/chili-grafx-extension/index.md'
+            - 'Fields':                             'GraFx-Experience/concepts/fields/index.md'
+            - 'Template versioning':                'GraFx-Experience/concepts/template-versioning/index.md'
+            - 'Production channels':                'GraFx-Experience/concepts/production-channels/index.md'
         - 'How to':
-            - 'Configure a Design System':           'GraFx-Experience/guides/configure-design-system/index.md'
+            - 'Connect to CHILI GraFx':             'GraFx-Experience/guides/connect-to-chili-grafx/index.md'
+            - 'Configure a Design System':          'GraFx-Experience/guides/configure-design-system/index.md'
+            - 'Manage fields':                      'GraFx-Experience/guides/manage-fields/index.md'
+            - 'Configure the campaigns page':       'GraFx-Experience/guides/configure-campaigns-page/index.md'
+            - 'Set up a production channel':        'GraFx-Experience/guides/set-up-production-channel/index.md'
+        - 'Admin':
+            - 'Admin overview':                     'GraFx-Experience/admin/overview/index.md'
+            - 'Pages':                              'GraFx-Experience/admin/pages/index.md'
+            - 'Navigation':                         'GraFx-Experience/admin/navigation/index.md'
+            - 'Visibility & access':                'GraFx-Experience/admin/page-visibility/index.md'
+            - 'Design Systems':                     'GraFx-Experience/admin/design-systems/index.md'
+        - 'End user':
+            - 'Overview':                           'GraFx-Experience/end-user/overview/index.md'
+            - 'Browse campaigns & start a project': 'GraFx-Experience/end-user/browse-and-start/index.md'
+            - 'Edit a project':                     'GraFx-Experience/end-user/edit-project/index.md'
+            - 'Manage your projects':               'GraFx-Experience/end-user/manage-projects/index.md'
+            - 'Download and order output':          'GraFx-Experience/end-user/output-and-download/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
