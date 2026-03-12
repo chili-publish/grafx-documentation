@@ -225,7 +225,7 @@ nav:
             - 'GraFx Experience':                   'GraFx-Experience/concepts/grafx-experience/index.md'
             - 'CHILI GraFx extension':              'GraFx-Experience/concepts/chili-grafx-extension/index.md'
         - 'How to':
-            - 'Configure a Smart Template':         'GraFx-Experience/guides/configure-smart-template/index.md'
+            - 'Configure a Design System':           'GraFx-Experience/guides/configure-design-system/index.md'
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
