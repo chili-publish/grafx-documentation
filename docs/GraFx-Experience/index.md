@@ -2,11 +2,19 @@
 
 ![applogo](/assets/Logo_GraFx_Experience.svg)
 
-GraFx Experience is the end-user portal where brand users can browse, personalize, and produce on-brand content using Design Systems built in GraFx Studio.
+## The story behind GraFx Experience
 
-The portal is set up and managed by CHILI publish. Customers access it — they do not build it.
+A store owner in Lyon needs a poster for next week's promotion. A field marketer in Tokyo wants social media assets for a local product launch. A franchise operator in São Paulo needs in-store signage — on-brand, fast, and without involving a designer.
 
-The connection between the portal and GraFx Studio is provided by the **CHILI GraFx extension**.
+They all have one thing in common: someone at HQ already did the hard work.
+
+A Design System designer built the campaign material in GraFx Studio — with brand colors locked in, approved imagery, the right fonts, and all the rules that keep things consistent. A Design System is not just a file. It is the brand logic, the guardrails, and the creative framework all in one.
+
+To make that campaign available to the people who need it, HQ sets up a branded portal — their own corner of the web where end users can log in, browse available campaigns, and start personalizing. That portal is **GraFx Experience**.
+
+The bridge between the Design Systems in GraFx Studio and the portal is the **CHILI GraFx extension** — where HQ defines which Design Systems are exposed, who can access them, and how output is produced.
+
+Everyone plays their part. Designers create. HQ publishes. Local teams activate.
 
 ## In this section
 
