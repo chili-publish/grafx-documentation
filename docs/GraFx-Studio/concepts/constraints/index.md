@@ -26,11 +26,11 @@ This ensures edits stay within safe, predictable bounds and that outputs remain 
 
 The available constraints depend on the type of frame selected.
 
-**Image and shape frames** support movement (horizontal and vertical), rotation, and resize.
+**Image frames** support movement (horizontal and vertical), rotation, and resize.
 
 **Text frames** support the same movement, rotation, and resize options — and additionally expose **inline text editing constraints**. When inline editing is enabled, the template designer can further control exactly which styling options are available to the end user: which paragraph styles, character styles, and Brand Kit colors are permitted, and whether font size can be changed (and within what range).
 
-This makes text frame constraints the most granular of all frame types. They control not just *where* the frame can go, but also *what* the end user can do inside it.
+This makes text frame constraints the most granular of the two frame types. They control not just *where* the frame can go, but also *what* the end user can do inside it.
 
 See [User Constraints for Text Frames](/GraFx-Studio/guides/text-frame/#user-constraints-for-text-frames) and [User Constraints for Image Frames](/GraFx-Studio/guides/image-frame/#user-constraints-for-image-frames) for the full options per frame type.
 
