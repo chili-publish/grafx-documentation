@@ -4,6 +4,8 @@ Fields are reusable metadata elements that allow admins to enrich templates, pro
 
 A field is defined once and can then be assigned to templates, projects, production channels, or outputs. The same field can be used across multiple templates.
 
+Fields are managed in the **general settings** of GraFx Experience — not inside the CHILI GraFx extension. This separation allows fields to be used beyond GraFx content, for example in other editors and tools in the platform, making it possible to define permissions and metadata consistently across content types.
+
 ## What fields are used for
 
 Fields serve two distinct purposes:
@@ -16,7 +18,7 @@ User group fields define which groups of users can see and work with a specific 
 
 ## Field types
 
-There are two field types:
+More field types are being added over time. Currently supported:
 
 **Select**
 A list of predefined options. When assigned to a template, an admin picks one or more of those options as the field's value. Examples: Template Type (Employer Branding, Campaign, Social Media), Output Intent (Print, Digital), Region (Europe, North America).
@@ -26,7 +28,7 @@ Select fields can be used as filters on the campaigns page, and as display infor
 **User Group**
 Links a field to user groups defined in GraFx Experience. Used to control access — a template with a User Group field will only be visible to users who belong to one of the selected groups. When no User Group field is assigned to a template, the template is visible to all users.
 
-![The Fields list in the extension admin console showing Select and User Group type fields](fields-list.png){.screenshot-full}
+![The Fields list in GraFx Experience general settings showing Select and User Group type fields](fields-list.png){.screenshot-full}
 
 ## Where fields are used
 

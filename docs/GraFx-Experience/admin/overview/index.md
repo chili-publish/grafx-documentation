@@ -7,10 +7,13 @@ You define access, structure content, and shape what end users see and do.
 
 Users are organized into **groups**. Groups determine what users can see and do in Experience.
 
-- Invite users and assign global roles (User, Admin, Account Owner).  
-- Add users to groups that grant specific access.  
-- Edit or remove users, roles, and group memberships.  
+- Invite users and assign roles: **User**, **Tenant admin**, or **Content admin**.
+- Add users to groups that grant specific access.
+- Edit or remove users, roles, and group memberships.
 - Suspend or re-enable users.
+
+!!! note
+    The **Account Owner** role cannot be assigned by invitation. It is set at the account level and cannot be granted through the admin interface.
 
 Group configuration is the primary mechanism for managing access.
 

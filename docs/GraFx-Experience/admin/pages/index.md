@@ -36,10 +36,8 @@ To edit an existing page:
 
 Choose a page type when creating:
 
-- **Blank page** – start with an empty canvas and add elements.
+- **Blank page** – start with an empty canvas and add components. GraFx components (such as campaigns, projects, and output) can be placed on a blank page, and the page can be enriched with other content as needed.
 - **Assets page** – configured to display media content.
-- **Layouts page** – includes layout or smart content widgets.
-- **GraFx Studio page** – includes embedded Experience interaction.
 
 Different page types provide different built-in widgets and behaviors.
 
