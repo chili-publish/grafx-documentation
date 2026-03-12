@@ -5,7 +5,8 @@ This guide explains how to make a GraFx Studio Smart Template available in GraFx
 ## Before you start
 
 - The Smart Template must exist in GraFx Studio.
-- You need access to the CHILI GraFx extension in GraFx Experience.
+- The extension must be connected to your CHILI GraFx environment. See [Connect the extension to CHILI GraFx](../connect-to-chili-grafx/).
+- You need access to the CHILI GraFx extension admin console in GraFx Experience.
 
 ## Step 1: Get the GraFx External ID
 
@@ -18,31 +19,59 @@ You can find it in two ways:
 
 ## Step 2: Create a template record in the extension
 
-In the CHILI GraFx extension, go to **Templates** and create a new template. Fill in:
+In the CHILI GraFx extension admin console, go to **Templates** and click **New template**. Fill in:
 
 | Field | Description |
 |---|---|
 | Reference | Internal identifier for this template record |
-| Name | Display name shown to portal users |
-| Description | Optional — helps users understand what the template is for |
+| Name | Display name shown to portal users as the campaign name |
+| Description | Optional — shown on the campaign card in the portal |
 | GraFx External ID | Paste the GUID from GraFx Studio |
 | Status | Set to Active to make it visible in the portal |
 | Supported locales | Languages this template supports |
-| Main visual | Thumbnail shown to portal users in the template browser |
+| Main visual | Thumbnail shown on the campaign card in the portal. If not set, the brand logo is used as fallback. |
+
+Click **Save** to create the template.
+
+!!! note
+    A newly created template starts as a draft. It must be published before end users can create projects from it. See Step 5.
 
 ## Step 3: Add fields
 
-Attach metadata fields to the template to support filtering and access control. Examples: Brand, Output type, Region.
+Attach fields to the template to support filtering and access control on the campaigns page.
 
-Fields are defined in **Fields** in the extension. Once defined, assign values on the template.
+Fields are defined centrally in **Fields** in the extension. Once defined, assign them to this template and set their values.
+
+- Use **Select** fields to categorize the template (e.g. Template Type = Social Media).
+- Use **User Group** fields to restrict which user groups can see this template. If no user group field is assigned, the template is visible to all users.
+
+See [Manage fields](../manage-fields/) for instructions on creating and assigning fields.
 
 ## Step 4: Configure workflow settings
 
-Under **Workflow settings**, select:
+Under **Workflow settings**, you can link specific GraFx Studio user interfaces to specific user groups. This controls which editing experience a user sees when they open the template.
 
-- **GraFx User Interface** — which Studio UI the end user sees when they open the template
-- **User groups** — which groups in GraFx Experience can access this template
+Workflows are defined in GraFx Studio. Select the user group and assign the corresponding user interface.
 
-## Step 5: Verify
+If no workflow settings are configured, all users see the default GraFx Studio user interface for this template.
 
-Open GraFx Experience as an end user and confirm the template appears in the portal with the correct name, thumbnail, and access settings.
+## Step 5: Publish the template version
+
+After saving, open the template detail page and go to **Versions**. The first version will be in draft status.
+
+Click **Publish** to make the template available to end users. Until a version is published, the template will not appear in the portal even if its status is set to Active.
+
+## Step 6: Verify
+
+Open GraFx Experience as an end user and go to the campaigns page. Confirm the template appears with the correct name, thumbnail, intent tags, and that access is restricted as expected.
+
+## Updating a template after changes in GraFx Studio
+
+When a Smart Template is updated in GraFx Studio, the extension does not automatically pick up those changes. To update the template:
+
+1. Open the template in the extension admin console.
+2. Create a new version using the **Resync** option.
+3. Test the draft version if needed.
+4. Click **Publish** to release the updated version to end users.
+
+See [Template versioning](../../concepts/template-versioning/) for a full explanation of the version lifecycle.
