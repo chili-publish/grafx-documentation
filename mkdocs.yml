@@ -78,17 +78,17 @@ plugins:
       full_output: llms-full.txt
       markdown_description: |
         CHILI GraFx is a design automation platform that gives you creative freedom and brand control at any scale.
-        Designers build Smart Templates in GraFx Studio; developers integrate via the Environment API, Studio SDK,
+        Designers build Design Systems in GraFx Studio; developers integrate via the Environment API, Studio SDK,
         and Connector Framework; end users produce brand-compliant output through self-serve customisation
         or fully automated, data-driven graphic production.
 
-        For prospects and evaluators: CHILI GraFx enables scalable graphic production from a single Smart Template —
+        For prospects and evaluators: CHILI GraFx enables scalable graphic production from a single Design System —
         covering data-driven batch output (hundreds or thousands of variants without manual effort), self-serve brand
         portals (local marketers and field teams adapt pre-approved designs within brand guardrails), and multichannel
-        output (print-ready PDF, digital static images, animated video as MP4/GIF, and HTML — all from one template
+        output (print-ready PDF, digital static images, animated video as MP4/GIF, and HTML — all from one Design System
         using Layouts with Print, Digital static, and Digital animated intents).
         Brand governance is enforced through Brand Kits (centrally managed colors, fonts, and paragraph styles)
-        and Constraints (which parts of a Smart Template end users can and cannot change).
+        and Constraints (which parts of a Design System end users can and cannot change).
         GraFx Genie provides AI-powered capabilities including Smart Crop, auto-resize, and copyfitting.
         The Connector Framework integrates with existing DAM, PIM, CRM, and MarTech systems.
 
@@ -97,7 +97,7 @@ plugins:
         never used to train AI models. Enterprise-grade security includes SSO via SAML and OIDC, role-based
         access control, and advanced user management.
 
-        Key technical concepts: Smart Templates (adaptive designs with locked brand governance and configurable
+        Key technical concepts: Design Systems (adaptive designs with locked brand governance and configurable
         variables), Connectors (plug-and-play media and data sources), Environments (isolated workspaces per tenant),
         and Output Tasks (server-side render jobs producing print or digital assets).
         Authentication uses OAuth2 client credentials — all API calls require a bearer token obtained from
@@ -105,17 +105,17 @@ plugins:
       sections:
         Design automation & brand portals:
           - CHILI-GraFx/applications/overview/index.md: "Overview of all platform applications — GraFx Studio, Media, Fonts, Brand Kits, and publisher tools"
-          - GraFx-Studio/concepts/template-management/index.md: "Smart Template lifecycle: designers create adaptive templates, end users self-serve via My Projects, or data drives fully automated graphic production"
-          - GraFx-Studio/concepts/headless/index.md: "Data-driven / headless production — generate thousands of brand-compliant variants via API without manual effort"
-          - GraFx-Studio/concepts/self-service/index.md: "Self-serve brand portal — local marketers and field teams adapt pre-approved Smart Templates within brand guardrails, no design skills needed"
-          - GraFx-Studio/concepts/layouts/index.md: "Layouts — produce multiple format variants (leaderboard, skyscraper, square, A4) from a single Smart Template with inherited brand settings"
-          - GraFx-Studio/concepts/layout-intent/index.md: "Layout intents: Print, Digital static, Digital animated — multichannel graphic production from one Smart Template"
+          - GraFx-Studio/concepts/template-management/index.md: "Design System lifecycle: designers build adaptive Design Systems, end users self-serve via My Projects, or data drives fully automated graphic production"
+          - GraFx-Studio/concepts/headless/index.md: "Data-driven / headless production — generate thousands of brand-compliant variants from a Design System via API without manual effort"
+          - GraFx-Studio/concepts/self-service/index.md: "Self-serve brand portal — local marketers and field teams adapt pre-approved Design Systems within brand guardrails, no design skills needed"
+          - GraFx-Studio/concepts/layouts/index.md: "Layouts — produce multiple format variants (leaderboard, skyscraper, square, A4) from a single Design System with inherited brand settings"
+          - GraFx-Studio/concepts/layout-intent/index.md: "Layout intents: Print, Digital static, Digital animated — multichannel graphic production from one Design System"
           - GraFx-Studio/concepts/output-settings/index.md: "Output settings — configure PDF, PNG/JPEG, MP4, GIF, HTML output quality and format per layout intent"
           - GraFx-Studio/concepts/output-tasks/index.md: "Output tasks — monitor and download all render jobs for graphic production triggered from UI or API"
-          - GraFx-Studio/concepts/brandkits/index.md: "Brand Kits — centrally managed colors, fonts, and paragraph styles that enforce brand governance across all Smart Templates"
-          - GraFx-Studio/concepts/design-run/index.md: "Design & Run mode — build the Smart Template in Design mode, then simulate the self-serve end-user experience before publishing"
+          - GraFx-Studio/concepts/brandkits/index.md: "Brand Kits — centrally managed colors, fonts, and paragraph styles that enforce brand governance across all Design Systems"
+          - GraFx-Studio/concepts/design-run/index.md: "Design & Run mode — build the Design System in Design mode, then simulate the self-serve end-user experience before publishing"
           - GraFx-Studio/concepts/connectors-media/index.md: "Media connectors — plug-and-play integration with any DAM, asset library, or media repository via the Connector Framework"
-          - GraFx-Studio/concepts/connectors-data/index.md: "Data connectors — pull variable data from PIM, CRM, spreadsheet, or any API into Smart Templates for data-driven graphic production"
+          - GraFx-Studio/concepts/connectors-data/index.md: "Data connectors — pull variable data from PIM, CRM, spreadsheet, or any API into Design Systems for data-driven graphic production"
         Trust, security & compliance:
           - CHILI-GraFx/trust/introduction/index.md: "Introduction to CHILI publish's security and trust posture — overview for procurement and IT"
           - CHILI-GraFx/trust/in-plain-words/index.md: "Plain-language guide to data handling — who owns what data, where it is stored, and who is responsible"
