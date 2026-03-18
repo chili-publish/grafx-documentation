@@ -4,7 +4,7 @@ hooks:
   - hooks.py
 
 site_name: CHILI GraFx Guides
-site_description: Explore CHILI GraFx Documentation to build Smart Templates and integrate Creative Automation into your solution
+site_description: Explore CHILI GraFx documentation — the design automation platform for scalable, on-brand graphic production using Design Systems, multichannel output, and brand portals.
 site_url: https://docs.chiligrafx.com/
 
 theme:
