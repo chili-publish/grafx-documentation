@@ -360,6 +360,7 @@ nav:
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Color Management':               'GraFx-Studio/concepts/color-management/index.md'
             - 'Components':                     'GraFx-Studio/concepts/components/index.md'
+            - 'Components - Variable mapping':  'GraFx-Studio/concepts/component-mapping/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
             - 'Connectors for Data':            'GraFx-Studio/concepts/connectors-data/index.md'
             - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
