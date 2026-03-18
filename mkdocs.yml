@@ -1,5 +1,8 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
+hooks:
+  - hooks.py
+
 site_name: CHILI GraFx Guides
 site_description: Explore CHILI GraFx Documentation to build Smart Templates and integrate Creative Automation into your solution
 site_url: https://docs.chiligrafx.com/
