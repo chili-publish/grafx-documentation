@@ -2,7 +2,7 @@
 
 This guide walks you through creating a component in GraFx Studio. A component is built in its own workspace, which is similar to the Template Designer Workspace but with a focused set of features for reusable design elements.
 
-See [Components](/GraFx-Studio/concepts/components/) for an introduction to what components are and when to use them.
+See [Components](/GraFx-Studio/concepts/components/) for an introduction to what components are and when to use them. New to components? Start with the [tutorial](/GraFx-Studio/guides/components-tutorial/) for a full end-to-end walkthrough.
 
 ## Create a component
 

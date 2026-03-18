@@ -2,7 +2,7 @@
 
 This guide explains how to place components on a template canvas, configure how they fill their frame, and map their variables to template variables.
 
-See [Components](/GraFx-Studio/concepts/components/) for an introduction, or [Build a component](/GraFx-Studio/guides/build-component/) to create one first.
+See [Components](/GraFx-Studio/concepts/components/) for an introduction, or [Build a component](/GraFx-Studio/guides/build-component/) to create one first. New to components? Start with the [tutorial](/GraFx-Studio/guides/components-tutorial/) for a full end-to-end walkthrough.
 
 ## Place a component
 
