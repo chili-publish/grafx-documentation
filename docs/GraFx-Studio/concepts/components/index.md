@@ -16,6 +16,18 @@ This means:
 - **Consistent brand execution** — the logic and look live in one place, not duplicated across dozens of templates
 - **Faster campaign rollouts** — HQ updates the component once, field teams immediately work with the latest version
 
+## When to use a component
+
+Not every design element needs to be a component. Use one when at least one of these is true:
+
+**The same element appears on more than one template.** A pricing block, a disclaimer footer, a brand badge — if it lives in five templates today, it will need updating in five templates next time the brand changes. A component fixes that.
+
+**The same element is placed more than once on the same page or template.** A coupon sheet with six coupons, a leaflet with six product ads — if you're repeating the same design element, a component lets each instance show different data without rebuilding the element each time.
+
+**The design is owned centrally but used locally.** When a brand or HQ team controls the design and business logic, but local teams or operators just place and populate it, a component enforces that boundary. The local user can connect variables; they cannot edit the design.
+
+**You might not need a component if** the element only appears in one place, will never be reused, and no one else needs to be protected from accidentally changing it. In that case, building it directly in the template is simpler.
+
 ## How components relate to templates
 
 A Component is a separate resource in GraFx Studio, alongside Templates and Collections. It has its own workspace, its own variables, and its own Brand Kit.
@@ -25,6 +37,18 @@ When a template designer places a component on a template, it behaves like a fra
 Data flows **one-way**: from the template into the component. The template can pass values to component variables, but a component cannot send data back to the template.
 
 ![Components overview — grid of available components](components-overview.png)
+
+## What happens when a component is updated
+
+When you save a change to a component, every template that uses it reflects the updated design automatically. You do not need to reopen, republish, or reconfigure the templates.
+
+**Variable mappings are preserved** when you update the component design, adjust layouts, or change actions — as long as the variable names remain the same. Existing connections between component variables and template variables stay intact.
+
+**Adding a new variable** to the component makes it appear in the mapping modal the next time a template designer opens it. Existing mappings are not affected. The new variable shows up under **Not mapped** until the designer connects it.
+
+**Removing or renaming a variable** in the component breaks any existing mapping to that variable. The template variable that was created for it is not deleted, but the connection is lost and will need to be re-mapped.
+
+> **Note:** Verify the exact propagation behaviour with your platform administrator or CHILI GraFx support before relying on automatic updates in a production environment.
 
 ## Use cases
 
@@ -63,9 +87,9 @@ A component can have multiple layouts — for example a square, a horizontal, an
 
 See [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) for details on Scale, Resize, and Scale and resize.
 
-## Differences from templates
+## How components differ from templates
 
-Components are intentionally more constrained than templates. The focus for components is on print and PDF output, as a component is always an ingredient of a template — not a final product in itself.
+Components are intentionally more constrained than templates. This is by design: a component is a building block, not a finished product. The constraints keep it clean, predictable, and safe to reuse across many templates.
 
 | Feature | Template | Component |
 |---|---|---|
@@ -83,6 +107,12 @@ Components are intentionally more constrained than templates. The focus for comp
 | Design & Run Mode | ✅ | ✅ |
 
 ## Get started
+
+New to components? The tutorial walks you through the complete journey:
+
+- [Tutorial: Build and use a pricing component](/GraFx-Studio/guides/components-tutorial/) — follow a full worked example from blank component to finished coupon sheet
+
+Or go directly to the reference guides:
 
 - [Build a component](/GraFx-Studio/guides/build-component/) — create a component in the component workspace
 - [Use components in a template](/GraFx-Studio/guides/use-components/) — place, configure, and map component variables
