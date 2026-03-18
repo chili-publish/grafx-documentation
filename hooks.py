@@ -11,10 +11,10 @@ def on_post_build(config, **kwargs):
     """
     site_dir = config["site_dir"]
     for filename in ("llms.txt", "llms-full.txt"):
-        filepath = os.path.join(site_dir, filename)
-        if os.path.exists(filepath):
-            with open(filepath, "r", encoding="utf-8") as f:
-                content = f.read()
-            content = content.replace("/index.md", "/")
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(content)
+        if not os.path.exists(filepath):
+            continue
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
+        content = content.replace("/index.md", "/")
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
