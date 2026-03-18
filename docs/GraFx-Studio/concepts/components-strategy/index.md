@@ -16,14 +16,14 @@ This changes what your team spends time on. Less rebuilding the same element for
 
 ## The investment model
 
-Building a component takes more upfront time than embedding the same element directly in a template. The payback comes from every subsequent reuse — and from brand updates that change one file instead of many.
+Building a design element as a component takes roughly the same time as building it directly in a template. The difference shows up immediately from the second use onwards — and every time the brand updates.
 
 | Approach | First template | Second template | Brand update |
 |---|---|---|---|
-| Element built directly in templates | Fast | Same time again | Update every template |
-| Element built as a component | Slower | Fast | Update component once |
+| Element built directly in templates | — | Same time again | Update every template |
+| Element built as a component | — | Reuse, no rebuild | Update component once |
 
-The crossover typically comes sooner than expected, because brand updates and campaign variants are more frequent than they appear at planning time.
+No upfront cost. Immediate gain on every subsequent use.
 
 ---
 
