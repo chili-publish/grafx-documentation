@@ -1,8 +1,74 @@
-# CHILI GraFx Connectors
+# Connectors
 
-CHILI GraFx Connectors provide a seamless way to integrate CHILI GraFx capabilities with third-party systems, facilitating efficient workflow automation and data exchange.
+## What are connectors?
 
-![ui](connector1.png)
+Connectors link CHILI GraFx with the tools and systems your organization already uses — such as a DAM, PIM, or cloud storage platform. They let you **browse, search, and insert assets directly** into your templates without leaving the editor.  
+
+Instead of downloading files from one system and uploading them into another, a connector gives you **seamless access to approved assets** right where you work.
+
+## How it works
+
+1. **Choose a connector**  
+   Your administrator configures one or more connectors (for example, Canto, Keepeek, Sitecore Content Hub, Kadanza DAM, or Google Sheets).  
+   Once connected, you’ll see the source listed in the **Media panel** or as **Data source** of GraFx Studio.
+
+2. **Browse or search**  
+   Use the familiar folder structure or search bar to find your image, video, or data record.  
+
+3. **Insert into your design**  
+   Click to place the asset into your frame. CHILI GraFx links it directly to the source system, ensuring you always get the latest version.  
+
+4. **Update automatically**  
+   When the source asset is updated, your linked materials can be refreshed automatically — keeping all local variants consistent with brand or product updates.
+
+---
+
+## Example 1: Connecting to a Google Sheet
+
+Imagine you manage a weekly product flyer. Your product information — such as names, prices, and promotions — lives in a **Google Sheet**.
+
+With a **data connector** to Google Sheets, your template in GraFx Studio can automatically read that information.  
+Each product frame in your layout can display live data from the sheet:
+
+| Product | Price | Promotion |
+|----------|--------|-----------|
+| Apple Juice | €2.49 | 2 for 1 |
+| Cereal Bars | €1.99 | 20% off |
+
+When your marketing team updates the sheet (for example, changes a price or adds a new promotion), your layout instantly reflects those changes when refreshed — **no copy-paste, no errors, always current**.
+
+---
+
+## Example 2: Combining Data and Media Connectors
+
+Now imagine the same Google Sheet also contains a **reference to an image** for each product:
+
+| Product | Price | Image ID |
+|----------|--------|----------|
+| Apple Juice | €2.49 | `IMG-00123` |
+| Cereal Bars | €1.99 | `IMG-00456` |
+
+Those image IDs correspond to assets stored in your company’s **Digital Asset Management (DAM)** system — connected to CHILI GraFx through a **media connector** (for example, Canto or Sitecore Content Hub).
+
+Here’s how it works together:
+
+1. The **data connector** reads product information and image references from the Google Sheet.  
+
+2. The **media connector** uses those image references to automatically fetch the correct visuals from the DAM.  
+
+3. GraFx Studio combines both: the product data from Google Sheets and the matching product images from the DAM.  
+
+The result?  
+Each product block in your flyer shows the correct text *and* the correct image — all pulled automatically from your connected systems.  
+When the content team updates the sheet or replaces an image in the DAM, your template stays up to date with one click.
+
+---
+
+## Typical use cases
+
+- **Marketing teams:** Pull the latest approved product visuals from the DAM into campaign templates.  
+- **Retailers:** Connect to a PIM or spreadsheet to automatically fill in product names, prices, and images.  
+- **Agencies:** Work directly with client-hosted content systems without manual transfers.  
 
 ## Connector Hub
 
