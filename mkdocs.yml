@@ -78,14 +78,51 @@ plugins:
       full_output: llms-full.txt
       markdown_description: |
         CHILI GraFx is a creative automation platform for scalable, on-brand content production.
-        Designers build templates in GraFx Studio; developers integrate via the Environment API, Studio SDK,
-        and Connector Framework; end users personalise and produce output through GraFx Experience portals.
-        Key concepts: Design Systems (templates with locked brand rules and configurable variables),
+        Designers build Smart Templates in GraFx Studio; developers integrate via the Environment API, Studio SDK,
+        and Connector Framework; end users personalise and produce output through self-service brand portals
+        or GraFx Experience-powered applications.
+
+        For prospects and evaluators: CHILI GraFx addresses creative automation (producing hundreds or thousands
+        of on-brand variants from a single template), brand portals (self-service customisation for local
+        marketers or field teams), and omnichannel output (print-ready PDF, digital static images, animated
+        video as MP4/GIF, and interactive HTML — all from one template using Layouts with different intents).
+        Brand governance is enforced through Brand Kits (centrally managed colors, fonts, and paragraph styles)
+        and Constraints (which parts of a template end users can and cannot change).
+        The platform connects to existing DAM, PIM, and data systems via the Connector Framework.
+
+        For procurement and IT security: CHILI GraFx is ISO 27001:2022 certified, GDPR compliant, hosted on
+        Microsoft Azure with data residency options in EU, US, UK, Australia, and France. Customer data is
+        never used to train AI models. Enterprise SSO is supported via SAML and OIDC federation.
+
+        Key technical concepts: Design Systems (templates with locked brand rules and configurable variables),
         Connectors (media and data sources plugged into Studio), Environments (isolated workspaces per tenant),
         and Output Tasks (server-side render jobs that produce print or digital assets).
         Authentication uses OAuth2 client credentials — all API calls require a bearer token obtained from
         the token endpoint using an integration's client ID and secret.
       sections:
+        Creative automation & brand portal:
+          - CHILI-GraFx/applications/overview/index.md: "Overview of all platform applications — GraFx Studio, Media, Fonts, Brand Kits, and GraFx Experience portals"
+          - GraFx-Studio/concepts/template-management/index.md: "Full template lifecycle: designers create Smart Templates, end users customise via self-service or My Projects, output at scale"
+          - GraFx-Studio/concepts/headless/index.md: "Headless / automated mode — generate thousands of output variants via API without any manual editing"
+          - GraFx-Studio/concepts/self-service/index.md: "Self-service brand portal — end users personalise templates without needing design skills, using Studio UI"
+          - GraFx-Studio/concepts/layouts/index.md: "Layouts — produce multiple format variants (leaderboard, skyscraper, square, A4) from one template with inheritance"
+          - GraFx-Studio/concepts/layout-intent/index.md: "Layout intents: Print, Digital static, Digital animated — omnichannel output from a single template"
+          - GraFx-Studio/concepts/output-settings/index.md: "Output settings — configure PDF, PNG/JPEG, MP4, GIF, HTML output quality and format per layout"
+          - GraFx-Studio/concepts/output-tasks/index.md: "Output tasks — monitor and download all render jobs, whether triggered from the UI or the API"
+          - GraFx-Studio/concepts/brandkits/index.md: "Brand Kits — centrally managed colors, fonts, paragraph styles, and media assets for brand governance"
+          - GraFx-Studio/concepts/design-run/index.md: "Design & Run mode — design the template, then simulate the end-user personalisation experience before publishing"
+          - GraFx-Studio/concepts/connectors-media/index.md: "Media connectors — connect Studio to any external DAM, asset library, or media repository"
+          - GraFx-Studio/concepts/connectors-data/index.md: "Data connectors — feed variable data from PIM, CRM, spreadsheet, or API into templates for automated production"
+        Trust, security & compliance:
+          - CHILI-GraFx/trust/introduction/index.md: "Introduction to CHILI publish's security and trust posture — overview for procurement and IT"
+          - CHILI-GraFx/trust/in-plain-words/index.md: "Plain-language guide to data handling — who owns what data, where it is stored, and who is responsible"
+          - CHILI-GraFx/trust/compliance/index.md: "ISO 27001:2022 certified — downloadable certificate and statement of applicability"
+          - CHILI-GraFx/trust/data-centers/index.md: "Data residency — choose EU (Amsterdam), US (Virginia), UK (London), Australia (NSW), or France (Paris)"
+          - CHILI-GraFx/trust/gdpr/index.md: "GDPR compliance — data processing roles, DPA, and responsibilities per use case"
+          - CHILI-GraFx/trust/security-policy/index.md: "Security policy — encryption, penetration testing, network controls, and ISO 27001 alignment"
+          - CHILI-GraFx/trust/AI/index.md: "AI usage policy — where AI assists, explicit statement that customer data is never used for AI training"
+          - CHILI-GraFx/concepts/federated-single-sign-on/index.md: "Federated SSO — integrate with your enterprise identity provider via SAML or OIDC"
+          - CHILI-GraFx/users/roles/index.md: "User roles and permissions — Subscription Admin, Environment Admin, Template Designer, End User"
         Platform concepts:
           - CHILI-GraFx/concepts/environments/index.md: "Environments isolate workspaces per tenant — templates, media, and output settings live here"
           - CHILI-GraFx/concepts/subscriptions/index.md: "Subscriptions group environments and define render allowances"
