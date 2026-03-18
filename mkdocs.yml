@@ -459,7 +459,7 @@ nav:
             - 'Google Sheets':                  
                 - 'Connector setup':            'GraFx-Studio/connectors/connector-google-sheets-data/index.md'
                 - 'Google Credentials':         'GraFx-Studio/connectors/connector-google-sheets-data/google-setup/index.md'
-                - 'In a Smart Template':        'GraFx-Studio/connectors/connector-google-sheets-data/in-smart-template/index.md'
+                - 'In a Design System':        'GraFx-Studio/connectors/connector-google-sheets-data/in-smart-template/index.md'
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
