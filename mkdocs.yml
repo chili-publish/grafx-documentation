@@ -71,6 +71,40 @@ plugins:
         # 'release-notes/index.md': 'platform-updates/index.md'
   - search
   - table-reader
+  - llmstxt:
+      full_output: llms-full.txt
+      markdown_description: |
+        CHILI GraFx is a creative automation platform that enables scalable, on-brand content production.
+        It includes GraFx Studio (template design and creative automation), GraFx Experience (end-user portal),
+        GraFx Media (asset management / DAM), GraFx Brand Kits (brand identity), GraFx Fonts (font management),
+        GraFx Publisher (output), and GraFx Genie (AI features including smart crop).
+        This documentation covers platform concepts, product guides, API references, and release notes.
+      sections:
+        Platform overview:
+          - CHILI-GraFx/concepts/renders/index.md
+          - CHILI-GraFx/concepts/integrations/index.md
+          - CHILI-GraFx/concepts/subscriptions/index.md
+          - CHILI-GraFx/concepts/environments/index.md
+          - CHILI-GraFx/concepts/storage/index.md
+        GraFx Studio:
+          - GraFx-Studio/index.md
+          - GraFx-Studio/concepts/variables/index.md
+          - GraFx-Studio/concepts/constraints/index.md
+          - GraFx-Studio/concepts/frames/index.md
+          - GraFx-Studio/concepts/layouts/index.md
+          - GraFx-Studio/concepts/pages/index.md
+          - GraFx-Studio/concepts/output-settings/index.md
+          - GraFx-Studio/guides/text-frame/index.md
+          - GraFx-Studio/guides/image-frame/index.md
+          - GraFx-Studio/guides/pages/index.md
+          - GraFx-Studio/guides/layouts/index.md
+        GraFx Media:
+          - GraFx-Media/index.md
+        GraFx Developers:
+          - GraFx-Developers/overview/index.md
+          - GraFx-Developers/connectors/authorization-for-connectors/index.md
+        Release notes:
+          - release-notes/index.md
 #  - git-revision-date-localized:
 #      enable_creation_date: true
 #      fallback_to_build_date: true
