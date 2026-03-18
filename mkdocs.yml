@@ -4,7 +4,7 @@ hooks:
   - hooks.py
 
 site_name: CHILI GraFx Guides
-site_description: Explore CHILI GraFx documentation — the design automation platform for scalable, on-brand graphic production using Design Systems, multichannel output, and brand portals.
+site_description: Explore CHILI GraFx documentation - the design automation platform for scalable, on-brand graphic production using Design Systems, multichannel output, and brand portals.
 site_url: https://docs.chiligrafx.com/
 
 theme:
@@ -82,10 +82,10 @@ plugins:
         and Connector Framework; end users produce brand-compliant output through self-serve customisation
         or fully automated, data-driven graphic production.
 
-        For prospects and evaluators: CHILI GraFx enables scalable graphic production from a single Design System —
+        For prospects and evaluators: CHILI GraFx enables scalable graphic production from a single Design System -
         covering data-driven batch output (hundreds or thousands of variants without manual effort), self-serve brand
         portals (local marketers and field teams adapt pre-approved designs within brand guardrails), and multichannel
-        output (print-ready PDF, digital static images, animated video as MP4/GIF, and HTML — all from one Design System
+        output (print-ready PDF, digital static images, animated video as MP4/GIF, and HTML - all from one Design System
         using Layouts with Print, Digital static, and Digital animated intents).
         Brand governance is enforced through Brand Kits (centrally managed colors, fonts, and paragraph styles)
         and Constraints (which parts of a Design System end users can and cannot change).
@@ -100,62 +100,62 @@ plugins:
         Key technical concepts: Design Systems (adaptive designs with locked brand governance and configurable
         variables), Connectors (plug-and-play media and data sources), Environments (isolated workspaces per tenant),
         and Output Tasks (server-side render jobs producing print or digital assets).
-        Authentication uses OAuth2 client credentials — all API calls require a bearer token obtained from
+        Authentication uses OAuth2 client credentials - all API calls require a bearer token obtained from
         the token endpoint using an integration's client ID and secret.
       sections:
         Design automation & brand portals:
-          - CHILI-GraFx/applications/overview/index.md: "Overview of all platform applications — GraFx Studio, Media, Fonts, Brand Kits, and publisher tools"
+          - CHILI-GraFx/applications/overview/index.md: "Overview of all platform applications - GraFx Studio, Media, Fonts, Brand Kits, and publisher tools"
           - GraFx-Studio/concepts/template-management/index.md: "Design System lifecycle: designers build adaptive Design Systems, end users self-serve via My Projects, or data drives fully automated graphic production"
-          - GraFx-Studio/concepts/headless/index.md: "Data-driven / headless production — generate thousands of brand-compliant variants from a Design System via API without manual effort"
-          - GraFx-Studio/concepts/self-service/index.md: "Self-serve brand portal — local marketers and field teams adapt pre-approved Design Systems within brand guardrails, no design skills needed"
-          - GraFx-Studio/concepts/layouts/index.md: "Layouts — produce multiple format variants (leaderboard, skyscraper, square, A4) from a single Design System with inherited brand settings"
-          - GraFx-Studio/concepts/layout-intent/index.md: "Layout intents: Print, Digital static, Digital animated — multichannel graphic production from one Design System"
-          - GraFx-Studio/concepts/output-settings/index.md: "Output settings — configure PDF, PNG/JPEG, MP4, GIF, HTML output quality and format per layout intent"
-          - GraFx-Studio/concepts/output-tasks/index.md: "Output tasks — monitor and download all render jobs for graphic production triggered from UI or API"
-          - GraFx-Studio/concepts/brandkits/index.md: "Brand Kits — centrally managed colors, fonts, and paragraph styles that enforce brand governance across all Design Systems"
-          - GraFx-Studio/concepts/design-run/index.md: "Design & Run mode — build the Design System in Design mode, then simulate the self-serve end-user experience before publishing"
-          - GraFx-Studio/concepts/connectors-media/index.md: "Media connectors — plug-and-play integration with any DAM, asset library, or media repository via the Connector Framework"
-          - GraFx-Studio/concepts/connectors-data/index.md: "Data connectors — pull variable data from PIM, CRM, spreadsheet, or any API into Design Systems for data-driven graphic production"
+          - GraFx-Studio/concepts/headless/index.md: "Data-driven / headless production - generate thousands of brand-compliant variants from a Design System via API without manual effort"
+          - GraFx-Studio/concepts/self-service/index.md: "Self-serve brand portal - local marketers and field teams adapt pre-approved Design Systems within brand guardrails, no design skills needed"
+          - GraFx-Studio/concepts/layouts/index.md: "Layouts - produce multiple format variants (leaderboard, skyscraper, square, A4) from a single Design System with inherited brand settings"
+          - GraFx-Studio/concepts/layout-intent/index.md: "Layout intents: Print, Digital static, Digital animated - multichannel graphic production from one Design System"
+          - GraFx-Studio/concepts/output-settings/index.md: "Output settings - configure PDF, PNG/JPEG, MP4, GIF, HTML output quality and format per layout intent"
+          - GraFx-Studio/concepts/output-tasks/index.md: "Output tasks - monitor and download all render jobs for graphic production triggered from UI or API"
+          - GraFx-Studio/concepts/brandkits/index.md: "Brand Kits - centrally managed colors, fonts, and paragraph styles that enforce brand governance across all Design Systems"
+          - GraFx-Studio/concepts/design-run/index.md: "Design & Run mode - build the Design System in Design mode, then simulate the self-serve end-user experience before publishing"
+          - GraFx-Studio/concepts/connectors-media/index.md: "Media connectors - plug-and-play integration with any DAM, asset library, or media repository via the Connector Framework"
+          - GraFx-Studio/concepts/connectors-data/index.md: "Data connectors - pull variable data from PIM, CRM, spreadsheet, or any API into Design Systems for data-driven graphic production"
         Trust, security & compliance:
-          - CHILI-GraFx/trust/introduction/index.md: "Introduction to CHILI publish's security and trust posture — overview for procurement and IT"
-          - CHILI-GraFx/trust/in-plain-words/index.md: "Plain-language guide to data handling — who owns what data, where it is stored, and who is responsible"
-          - CHILI-GraFx/trust/compliance/index.md: "ISO 27001:2022 certified — downloadable certificate and statement of applicability"
-          - CHILI-GraFx/trust/data-centers/index.md: "Data residency — choose EU (Amsterdam), US (Virginia), UK (London), Australia (NSW), or France (Paris)"
-          - CHILI-GraFx/trust/gdpr/index.md: "GDPR compliance — data processing roles, DPA, and responsibilities per use case"
-          - CHILI-GraFx/trust/security-policy/index.md: "Security policy — encryption, penetration testing, network controls, and ISO 27001 alignment"
-          - CHILI-GraFx/trust/AI/index.md: "AI usage policy — where AI assists, explicit statement that customer data is never used for AI training"
-          - CHILI-GraFx/concepts/federated-single-sign-on/index.md: "Federated SSO — integrate with your enterprise identity provider via SAML or OIDC"
-          - CHILI-GraFx/users/roles/index.md: "User roles and permissions — Subscription Admin, Environment Admin, Template Designer, End User"
+          - CHILI-GraFx/trust/introduction/index.md: "Introduction to CHILI publish's security and trust posture - overview for procurement and IT"
+          - CHILI-GraFx/trust/in-plain-words/index.md: "Plain-language guide to data handling - who owns what data, where it is stored, and who is responsible"
+          - CHILI-GraFx/trust/compliance/index.md: "ISO 27001:2022 certified - downloadable certificate and statement of applicability"
+          - CHILI-GraFx/trust/data-centers/index.md: "Data residency - choose EU (Amsterdam), US (Virginia), UK (London), Australia (NSW), or France (Paris)"
+          - CHILI-GraFx/trust/gdpr/index.md: "GDPR compliance - data processing roles, DPA, and responsibilities per use case"
+          - CHILI-GraFx/trust/security-policy/index.md: "Security policy - encryption, penetration testing, network controls, and ISO 27001 alignment"
+          - CHILI-GraFx/trust/AI/index.md: "AI usage policy - where AI assists, explicit statement that customer data is never used for AI training"
+          - CHILI-GraFx/concepts/federated-single-sign-on/index.md: "Federated SSO - integrate with your enterprise identity provider via SAML or OIDC"
+          - CHILI-GraFx/users/roles/index.md: "User roles and permissions - Subscription Admin, Environment Admin, Template Designer, End User"
         Platform concepts:
-          - CHILI-GraFx/concepts/environments/index.md: "Environments isolate workspaces per tenant — templates, media, and output settings live here"
+          - CHILI-GraFx/concepts/environments/index.md: "Environments isolate workspaces per tenant - templates, media, and output settings live here"
           - CHILI-GraFx/concepts/subscriptions/index.md: "Subscriptions group environments and define render allowances"
           - CHILI-GraFx/concepts/integrations/index.md: "Integrations are OAuth2 client credentials used to authenticate API calls"
-          - CHILI-GraFx/concepts/renders/index.md: "Renders are the unit of consumption — each output job costs a number of renders"
+          - CHILI-GraFx/concepts/renders/index.md: "Renders are the unit of consumption - each output job costs a number of renders"
           - CHILI-GraFx/concepts/storage/index.md: "Storage concepts for assets and templates"
         Environment API:
           - GraFx-Developers/environment-api/01-overview/index.md: "Overview of the REST API that manages templates, output, media, and users"
           - GraFx-Developers/environment-api/02-managing-integrations/index.md: "How to create and manage integrations (OAuth2 clients) in the admin panel"
-          - GraFx-Developers/environment-api/03-generating-a-token/index.md: "How to obtain a bearer token using client credentials — required for all API calls"
+          - GraFx-Developers/environment-api/03-generating-a-token/index.md: "How to obtain a bearer token using client credentials - required for all API calls"
           - GraFx-Developers/environment-api/04-making-api-calls/index.md: "How to call the Environment API with a bearer token, including base URLs and headers"
-          - GraFx-Developers/environment-api/reference/index.md: "Full API reference — all endpoints, request/response schemas"
+          - GraFx-Developers/environment-api/reference/index.md: "Full API reference - all endpoints, request/response schemas"
         GraFx Studio integration:
-          - GraFx-Developers/grafx-studio/overview/index.md: "Overview of integration options — headless output, embedded editor, or self-service portal"
+          - GraFx-Developers/grafx-studio/overview/index.md: "Overview of integration options - headless output, embedded editor, or self-service portal"
           - GraFx-Developers/grafx-studio/integration-overview/01-overview/index.md: "How Studio integrations work at a high level"
           - GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md: "Three integration levels: API-only, embedded editor (SDK), or full self-service portal"
           - GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md: "Common workflows: headless output, user-facing editor, template management"
-          - GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md: "Authentication setup for Studio integrations — tokens, scopes, and connector auth"
-          - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md: "Studio SDK quickstart — embed the GraFx Studio editor in your own application"
+          - GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md: "Authentication setup for Studio integrations - tokens, scopes, and connector auth"
+          - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md: "Studio SDK quickstart - embed the GraFx Studio editor in your own application"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/02-project-setup/index.md: "Project setup for the Studio SDK"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/03-loading-studio-sdk/index.md: "How to load and initialise the Studio SDK"
-          - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/04-communicating-with-sdk/index.md: "How to communicate with the SDK — controllers, events, and actions"
+          - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/04-communicating-with-sdk/index.md: "How to communicate with the SDK - controllers, events, and actions"
           - GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/index.md: "How to embed the full Studio UI inside your application"
           - GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md: "Difference between templates (master designs) and projects (user instances)"
           - GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md: "How to drive variable data printing via the Output API"
           - GraFx-Developers/grafx-studio/references/index.md: "SDK and API references for Studio integration"
         Connectors:
-          - GraFx-Developers/connectors/connectors-introduction/index.md: "What connectors are — pluggable media and data sources for Studio templates"
+          - GraFx-Developers/connectors/connectors-introduction/index.md: "What connectors are - pluggable media and data sources for Studio templates"
           - GraFx-Developers/connectors/pre-requisites/index.md: "Prerequisites for building a connector"
-          - GraFx-Developers/connectors/authorization-for-connectors/index.md: "How connector authentication works — OAuth2, static tokens, and auth flows"
+          - GraFx-Developers/connectors/authorization-for-connectors/index.md: "How connector authentication works - OAuth2, static tokens, and auth flows"
           - GraFx-Developers/connectors/media-connector/media-connector-introduction/index.md: "Media connectors let Studio browse and use assets from any DAM or storage system"
           - GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md: "Core concepts for building a media connector"
           - GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md: "Step-by-step guide to building a working media connector"
@@ -164,20 +164,20 @@ plugins:
           - GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/index.md: "Step-by-step guide to building a working data connector"
           - GraFx-Developers/connectors/publish-my-connector/index.md: "How to publish and distribute a connector"
         GraFx Studio concepts:
-          - GraFx-Studio/index.md: "GraFx Studio overview — the template design and creative automation application"
-          - GraFx-Studio/concepts/variables/index.md: "Variables are the editable fields in a template — text, image, list, and more"
-          - GraFx-Studio/concepts/constraints/index.md: "Constraints control what end users can change on a frame — move, resize, rotate, edit text"
-          - GraFx-Studio/concepts/frames/index.md: "Frames are the building blocks of a template — image, text, and shape frames"
+          - GraFx-Studio/index.md: "GraFx Studio overview - the template design and creative automation application"
+          - GraFx-Studio/concepts/variables/index.md: "Variables are the editable fields in a template - text, image, list, and more"
+          - GraFx-Studio/concepts/constraints/index.md: "Constraints control what end users can change on a frame - move, resize, rotate, edit text"
+          - GraFx-Studio/concepts/frames/index.md: "Frames are the building blocks of a template - image, text, and shape frames"
           - GraFx-Studio/concepts/layouts/index.md: "Layouts define the dimensions and output intent of a template"
           - GraFx-Studio/concepts/output-settings/index.md: "Output settings control file format, resolution, and rendering options"
           - GraFx-Studio/concepts/connectors/index.md: "How connectors are used inside Studio templates"
-          - GraFx-Studio/concepts/headless/index.md: "Headless output — generating assets via API without the editor UI"
+          - GraFx-Studio/concepts/headless/index.md: "Headless output - generating assets via API without the editor UI"
           - GraFx-Studio/guides/text-frame/index.md: "Text frame properties, typography, auto-grow, copyfitting, and user constraints"
           - GraFx-Studio/guides/image-frame/index.md: "Image frame properties, fit modes, crop, and user constraints"
           - GraFx-Studio/guides/layouts/index.md: "Creating and managing layouts"
-          - GraFx-Studio/guides/pages/index.md: "Working with pages — add, duplicate, hide, delete"
+          - GraFx-Studio/guides/pages/index.md: "Working with pages - add, duplicate, hide, delete"
         GraFx Media:
-          - GraFx-Media/index.md: "GraFx Media overview — the built-in DAM for storing and managing brand assets"
+          - GraFx-Media/index.md: "GraFx Media overview - the built-in DAM for storing and managing brand assets"
         Release notes:
           - release-notes/index.md: "Latest platform and product release notes"
 #  - git-revision-date-localized:
