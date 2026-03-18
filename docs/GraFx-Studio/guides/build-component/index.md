@@ -1,6 +1,6 @@
 # Build a component
 
-This guide walks you through creating a component in GraFx Studio. A component is built in its own workspace, which is similar to the template designer workspace but with a focused set of features for reusable design elements.
+This guide walks you through creating a component in GraFx Studio. A component is built in its own workspace, which is similar to the Template Designer Workspace but with a focused set of features for reusable design elements.
 
 See [Components](/GraFx-Studio/concepts/components/) for an introduction to what components are and when to use them.
 
@@ -20,7 +20,7 @@ You can also import an existing component from a `.ZIP` file using the **Import 
 
 ## The component workspace
 
-The component workspace opens after you create or open a component. It looks similar to the template designer workspace — the same canvas, the same left toolbar, the same properties panel on the right.
+The component workspace opens after you create or open a component. It looks similar to the Template Designer Workspace — the same canvas, the same left toolbar, the same properties panel on the right.
 
 The key difference is what is **not** there, by design:
 
@@ -69,11 +69,11 @@ A component has its own Brand Kit, separate from the template's Brand Kit. This 
 
 If you want the template to be able to change a color or style inside a component, that value needs to be exposed as a variable and mapped from the template.
 
-## Design & Run mode
+## Design & Run Mode
 
-Both Design mode and Run mode are available in the component workspace. Use Run mode to test how variables and actions behave inside the component before placing it in a template.
+Both Design Mode and Run Mode are available in the component workspace. Use Run Mode to test how variables and actions behave inside the component before placing it in a template.
 
-When a component is placed inside a template, it always runs as a project — both in the template's Design mode and Run mode.
+When a component is placed inside a template, it always runs as a project — both in the template's Design Mode and Run Mode.
 
 ## Next step
 

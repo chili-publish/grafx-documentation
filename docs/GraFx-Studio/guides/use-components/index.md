@@ -6,7 +6,7 @@ See [Components](/GraFx-Studio/concepts/components/) for an introduction, or [Bu
 
 ## Place a component
 
-Open the template in the designer workspace. In the left toolbar, click the **Resources** icon at the bottom.
+Open the template in the Template Designer Workspace. In the left toolbar, click the **Resources** icon at the bottom.
 
 ![Resources icon in the left toolbar of the template workspace](resources-icon.png)
 
@@ -30,7 +30,7 @@ You can place the same component multiple times on the same page. Each placement
 
 This is the basis for use cases like a coupon sheet (same pricing component, once per coupon) or a leaflet page (same product ad component, once per product).
 
-## Resize mode
+## Resize Mode
 
 A component can have multiple layouts — for example a square, horizontal, and vertical version of the same design. The **Resize Mode** setting controls how the component fills the frame you've placed it in, and which internal layout is used.
 

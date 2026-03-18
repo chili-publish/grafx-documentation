@@ -57,11 +57,11 @@ Variable mapping is done per component instance. This means the same component p
 
 See [Variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping) for the full workflow.
 
-## Resize mode
+## Resize Mode
 
 A component can have multiple layouts — for example a square, a horizontal, and a vertical version of the same design. When a component is placed on a template, the **Resize Mode** setting controls how the component fills its frame and which internal layout is used.
 
-See [Resize mode](/GraFx-Studio/guides/use-components/#resize-mode) for details on Scale, Resize, and Scale and resize.
+See [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) for details on Scale, Resize, and Scale and resize.
 
 ## Differences from templates
 
@@ -80,7 +80,7 @@ Components are intentionally more constrained than templates. The focus for comp
 | Brand Kit | ✅ | ✅ |
 | Actions | ✅ | ✅ |
 | Connectors (media & data) | ✅ | ✅ |
-| Design & Run mode | ✅ | ✅ |
+| Design & Run Mode | ✅ | ✅ |
 
 ## Get started
 
