@@ -13,6 +13,16 @@
 
     ---
 
+    **Mar 19, 2026**: Components for GraFx Studio
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Design a pricing block, a product ad, or any branded element once — then place and reuse it across as many templates as you need. Update the component once, and every template reflects the change automatically.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/19/components-for-grafx-studio/)
+
+    ---
+
     **Mar 12, 2026**: Text constraints, page duplication, and stability improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
