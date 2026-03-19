@@ -2,7 +2,7 @@
 
 A Component is a reusable design element that can be placed inside a template. Think of it as a self-contained building block — with its own layout, brand rules, and business logic — that you design once and reuse across as many templates as you need.
 
-![Components in GraFx Studio navigation](components-nav.png)
+![Components in GraFx Studio navigation](comp01.png)
 
 ## Why components
 
@@ -78,6 +78,8 @@ When the brand updates the ad design or changes the business logic, the update i
 Each component exposes its own set of variables. These are the values a template designer can connect to template-level variables through [variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping).
 
 Variable mapping is done per component instance. This means the same component placed three times on a page can carry three completely different sets of values — one per instance.
+
+![Components variable mapping](comp02.png)
 
 See [Variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping) for the full workflow.
 
