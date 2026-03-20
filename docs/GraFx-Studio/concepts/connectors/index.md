@@ -124,4 +124,4 @@ Each type of connector has a designated **default** connector, and there can onl
 
 For media connectors, **GraFx Media** is the default connector. This means that whenever you work in the TD Workspace and access media assets, the GraFx Media connector is used unless you configure another connector as the default.
 
-You can change the default connector from the connector list. Open the three-dot menu next to the connector you want to set as default and select **Set as default**. The option is disabled if the connector is already the default. Only one default connector can be active per connector type (e.g., media or data).
+You can change the default connector from the connector list. Open the three-dot menu next to the connector you want to set as default and select **Set as default**. The option is disabled if the connector is already the default. Only one default media connector can be active at a time.

@@ -68,7 +68,7 @@ If a connector was available in the past but has been set to 'not available' aga
 
 ## Set a Default Connector
 
-Each connector type (media or data) can have one default connector. The default is used automatically in the Template Designer Workspace unless a template specifies otherwise.
+Each media connector type can have one default connector. The default is used automatically in the Template Designer Workspace unless a template specifies otherwise.
 
 To set a connector as default, open the **three-dot menu** next to the connector in the list and select **Set as default**. The option is disabled if the connector is already the default.
 
