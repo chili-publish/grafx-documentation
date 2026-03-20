@@ -72,6 +72,8 @@ Each connector type (media or data) can have one default connector. The default 
 
 To set a connector as default, open the **three-dot menu** next to the connector in the list and select **Set as default**. The option is disabled if the connector is already the default.
 
+![screenshot](ch08.png)
+
 ## Connector Version Updates
 
 When a new version of an installed connector is available, a notification badge appears on the connector in both the connector list and the connector settings. This lets you see at a glance which connectors have an update ready without checking each one individually.
