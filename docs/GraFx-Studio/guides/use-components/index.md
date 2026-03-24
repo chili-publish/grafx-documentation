@@ -56,7 +56,7 @@ Combines both modes: the component first selects the best-matching layout (Scale
 
 Use Scale and resize when you want automatic layout selection **and** a clean fill of the frame with no white space.
 
-![Three component instances showing Scale, Resize, and Scale and resize behaviour](resize-mode-comparison.png)
+![Three component instances showing Scale, Resize, and Scale and resize behavior](resize-mode-comparison.png)
 
 ## Variable mapping
 

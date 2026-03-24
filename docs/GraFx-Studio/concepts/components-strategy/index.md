@@ -1,6 +1,6 @@
 # Components — design studio perspective
 
-Components change how a design studio organises its work, governs brand output, and delivers campaigns to local teams. This page is for studio managers and team leads — focused on what changes about how your team operates, not on how to use the component workspace.
+Components change how a design studio organizes its work, governs brand output, and delivers campaigns to local teams. This page is for studio managers and team leads. It is focused on what changes about how your team operates, not on how to use the component workspace.
 
 ---
 
@@ -35,7 +35,7 @@ Build a component when:
 - The element is repeated multiple times within the same template
 - The design must be protected — local teams can fill in data, but must never be able to change the design itself
 
-Elements that only exist in one template and will never be reused are simpler to build directly.
+Elements that only exist once in one template and will never be reused are simpler to build directly.
 
 ---
 
@@ -43,7 +43,7 @@ Elements that only exist in one template and will never be reused are simpler to
 
 In a traditional workflow, brand governance depends on guidelines, approvals, and training. Enforcement relies on people following rules they may not remember.
 
-A component's internal design cannot be edited from the template. Local teams interacting with the template see only the variables exposed to them — typography, layout, colour, and business logic are locked inside the component and managed centrally by the studio. The template simply does not give them the option to break the brand.
+A component's internal design cannot be edited from the template. Local teams interacting with the template see only the variables exposed to them — typography, layout, color, and business logic are locked inside the component and managed centrally by the studio. The template simply does not give them the option to break the brand.
 
 ---
 

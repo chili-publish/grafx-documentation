@@ -221,13 +221,13 @@ When the ad design needs updating — a new font, a different layout, revised pr
 
 ## Combining scenarios
 
-These patterns work together. A multi-page catalogue might combine:
+These patterns work together. A multi-page catalog might combine:
 
 - A **header component** shared between front and back (scenario 4)
 - **Six product ads per page** driven by independent variable sets (scenario 5)
 - Spread **across multiple pages** (scenario 3)
 
-GraFx Studio groups the template variables by component instance in the variable list, so even a template with many mapped components stays organised.
+GraFx Studio groups the template variables by component instance in the variable list, so even a template with many mapped components stays organized.
 
 ![Variable list showing variables grouped by component instance name](variable-list-grouped.png)
 

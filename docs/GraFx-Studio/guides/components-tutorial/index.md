@@ -20,7 +20,7 @@ For a pricing element, you need to display three things per coupon:
 - A **product name** (short text)
 - A **price** (text, e.g. "€ 2.99")
 
-These become the component's variables. Everything else — background colour, typography, layout, brand rules — is part of the design and will be fixed inside the component.
+These become the component's variables. Everything else — background color, typography, layout, brand rules — is part of the design and will be fixed inside the component.
 
 > **Naming tip:** Give your variables clear, descriptive names now. They appear by name in the mapping modal when template designers connect them to template variables. `product_image`, `product_name`, and `price` are immediately understandable. `var_1`, `var_2`, `var_3` are not.
 
@@ -58,7 +58,7 @@ Add three frames to the canvas:
 2. A **text frame** for the product name — place it on the right, upper half
 3. A **text frame** for the price — place it on the right, lower half
 
-Apply your Brand Kit colours, fonts, and any background shapes. Keep the design clean — this element will be repeated across many templates.
+Apply your Brand Kit colors, fonts, and any background shapes. Keep the design clean — this element will be repeated across many templates.
 
 ![Component canvas showing the image frame and two text frames arranged in a coupon layout](tutorial-component-canvas.png)
 
@@ -100,7 +100,7 @@ Switch back to **Design Mode** and make any adjustments needed.
 
 ## Step 7 — Save the component
 
-The component is ready. Save it. It is now available in the Components library for any template designer in the environment to use.
+The component is ready. Save it. It is now available in the Components library for any template designer – including yourself – in the environment to use.
 
 ---
 
@@ -204,7 +204,7 @@ Both coupons display their own product independently, using the same pricing com
 - A `Coupon sheet — 2up` template with two independent instances of that component
 - Six template variables connecting the template to the component
 
-If the pricing component design ever needs to change — a new font, an updated colour, a revised layout — you edit the component once. The coupon sheet template (and every other template using the component) updates automatically.
+If the pricing component design ever needs to change — a new font, an updated color, a revised layout — you edit the component once. The coupon sheet template (and every other template using the component) updates automatically.
 
 ---
 

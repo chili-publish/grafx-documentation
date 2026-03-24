@@ -34,7 +34,7 @@ A Component is a separate resource in GraFx Studio, alongside Templates and Coll
 
 When a template designer places a component on a template, it behaves like a frame — it can be moved, resized, and positioned on the canvas. The component's internal design and logic remain managed within the component itself.
 
-Data flows **one-way**: from the template into the component. The template can pass values to component variables, but a component cannot send data back to the template.
+Data flows **one way**: from the template into the component. The template can pass values to component variables, but a component cannot send data back to the template.
 
 ![Components overview — grid of available components](components-overview.png)
 
@@ -48,7 +48,7 @@ When you save a change to a component, every template that uses it reflects the 
 
 **Removing or renaming a variable** in the component breaks any existing mapping to that variable. The template variable that was created for it is not deleted, but the connection is lost and will need to be re-mapped.
 
-> **Note:** Verify the exact propagation behaviour with your platform administrator or CHILI GraFx support before relying on automatic updates in a production environment.
+> **Note:** Verify the exact propagation behavior with your platform administrator or CHILI GraFx support before relying on automatic updates in a production environment.
 
 ## Use cases
 
@@ -112,7 +112,7 @@ Components are intentionally more constrained than templates. This is by design:
 
 New to components? The tutorial walks you through the complete journey:
 
-- [Tutorial: Build and use a pricing component](/GraFx-Studio/guides/components-tutorial/) — follow a full worked example from blank component to finished coupon sheet
+- [Tutorial: Build and use a pricing component](/GraFx-Studio/guides/components-tutorial/) — follow a fully working example from blank component to finished coupon sheet
 
 Or go directly to the reference guides:
 
