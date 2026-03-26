@@ -29,7 +29,7 @@ Templates support a draft and published version cycle. Changes made in GraFx Stu
 Define where output goes after a user finishes personalizing a template — a download, a print partner, or a digital endpoint. See [Production channels](../production-channels/) for details.
 
 **Projects**
-When an end user creates a campaign, the result is a project — a named, saved instance of a template with the user's chosen layouts and variable values. Admins can monitor all projects across the platform from the extension's admin console.
+When an end user creates a project from a campaign, the result is a named, saved instance of a template with the user's chosen layouts and variable values. Admins can monitor all projects across the platform from the extension's admin console.
 
 ## Connecting the extension to CHILI GraFx
 
