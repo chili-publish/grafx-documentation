@@ -5,7 +5,7 @@ Before you begin using GraFx Experience for production, complete the items below
 ## User access & identity
 
 - [ ] Your user account exists (local or federated via SSO).  
-- [ ] You have been assigned at least one group with right permissions.
+- [ ] You have been assigned at least one group with the right permissions.
 - [ ] You can log in and see the GraFx Experience entry screen.
 
 ## Environment readiness
