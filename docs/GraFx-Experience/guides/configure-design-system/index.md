@@ -66,7 +66,7 @@ Click **Publish** to make the template available to end users. Until a version i
 
 ## Step 6: Verify
 
-Open GraFx Experience as an end user and go to the campaigns page. Confirm the template appears with the correct name, thumbnail, intent tags, and that access is restricted as expected.
+Open GraFx Experience as an end user and go to the campaigns page. Confirm the template appears with the correct name, thumbnail, assigned fields, and that access is restricted as expected.
 
 ## Updating a template after changes in GraFx Studio
 
