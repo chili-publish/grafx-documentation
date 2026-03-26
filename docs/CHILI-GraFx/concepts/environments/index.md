@@ -28,6 +28,20 @@ The dropdown at the top will show all visible environments for you.
 
 Or you could click on the CHILI GraFx logo, to return to the platform home.
 
+### Environment Settings Access
+
+Environment-specific settings are available at the environment level.
+Environment Admins and Subscription Admins (see [roles](/CHILI-GraFx/users/roles/#roles)) can access these settings via the gear icon in the left navigation (bottom).
+
+![Gear icon to access environment setting](settings02.png){.screenshot-full}
+
+These settings apply only to the selected environment and do not affect other environments.
+
+The settings are also available in the environment overview.
+
+![Gear icon to access environment setting](settings01.png){.screenshot-full}
+
+
 ### Isolation
 
 One of the crucial features of an environment is its isolation from others. No data interchange or interaction is possible between different environments[^1]. This isolation ensures the security and integrity of data, where each environment functions independently.
@@ -43,6 +57,13 @@ The existence of separate Sandbox and Production environments allows for thoroug
 ### User Interface and API
 
 Both the user interface (UI) and the application programming interface (API) of CHILI GraFx are subject to this environmental split.
+
+Each environment has a technical name, which can be copied directly from Environment Settings.
+This name is commonly used in integrations, API calls, and configuration.
+
+![Copy Key](settings03.png){.screenshot-full}
+
+
 
 ### Hosting and Control
 

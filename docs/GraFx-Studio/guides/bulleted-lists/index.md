@@ -31,3 +31,7 @@ Changes take effect in all text that use that paragraph style.
 ## Notes
 
 - Bullet icons use the paragraph style’s font. Unsupported glyphs fall back to a replacement character.
+
+## See also
+
+[Numbered Lists](/GraFx-Studio/guides/numbered-lists/)

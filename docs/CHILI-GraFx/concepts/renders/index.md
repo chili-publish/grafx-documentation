@@ -38,7 +38,16 @@ CHILI GraFx looks at the length of the animation. Not at the output framerate or
 	- An animation with a duration of 2,5 seconds: 3 renders
 	- An animation with a duration of 3 seconds: 3 renders
 
-Watermarked output does not count as a render.
+Watermarked output does not count as a render. Watermarked renders are tracked separately and shown as their own category in the dashboard, at both environment and subscription level.
+
+### AI-generated image output (GraFx Genie)
+
+Images generated through [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/) — for example via the GraFx Genie Product Image Creator or Product Image Composer — are counted as Static Digital Output renders.
+
+1 render is counted per generated image.
+
+!!! note
+    GraFx Labs is only available in Production environments.
 
 ### Static PDF output
 

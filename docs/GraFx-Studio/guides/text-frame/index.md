@@ -22,6 +22,96 @@ See [Work with variables](/GraFx-Studio/guides/template-variables/assign/).
 
 See [Frame properties](/GraFx-Studio/concepts/frames/).
 
+## User Constraints for Text Frames
+
+Text frames support **user constraints** that control how end users can interact with the frame and its content in Studio UI. These constraints are defined by the template designer.
+
+All constraint options are **disabled by default**. You explicitly enable only the interactions you want to allow.
+
+![Text frame selected with the User Constraints panel open showing all options disabled](tc01.png){.screenshot}
+
+### Frame Constraints
+
+The following constraints control how the frame itself can be manipulated:
+
+- **Allow horizontal move** — Enables movement along the X-axis.
+- **Allow vertical move** — Enables movement along the Y-axis.
+- **Allow rotation** — Allows the frame to be rotated. Not available on layouts where Auto-grow is active for the selected frame.
+- **Allow resize** — Allows the frame to be resized.
+
+### Allow Inline Text Editing
+
+When **Allow inline text editing** is enabled, end users can edit the text content of the frame directly — selecting text and applying styles within the frame.
+
+!!! note
+    Inline text editing is only available on text frames that do not use variables. Frames with variables continue to use the standard variable editing experience.
+
+When inline text editing is enabled, a set of sub-options becomes available to define exactly which styling actions the end user can take.
+
+![User Constraints panel with inline text editing enabled, showing paragraph style, character style, color, and font size sub-options](tc02.png){.screenshot}
+
+#### Paragraph style
+
+Enable **Allow paragraph style selection** to let end users apply paragraph styles within the frame.
+
+Click **Manage** to choose which paragraph styles from your Brand Kit are available. The display shows how many styles are currently permitted out of the total (e.g. "1 of 2 paragraph styles allowed").
+
+![Paragraph style selection showing Brand Kit paragraph styles with toggles to allow or restrict each one](tc03.png){.screenshot}
+
+#### Character style
+
+Enable **Allow character style selection** to let end users apply character styles within the frame.
+
+Click **Manage** to choose which character styles are available.
+
+![Character style selection showing Brand Kit character styles with toggles to allow or restrict each one](tc04.png){.screenshot}
+
+#### Color
+
+Enable **Allow color selection** to let end users change the text color.
+
+Click **Manage** to choose which Brand Kit colors are available.
+
+![Color selection showing Brand Kit colors with toggles to allow or restrict each one](tc05.png){.screenshot}
+
+#### Font size
+
+Enable **Allow font size editing** to let end users change the font size. When enabled, set a **Min font size** and **Max font size** to constrain the permitted range.
+
+![Font size constraint settings showing the Allow font size editing checkbox with Min and Max font size inputs](tc06.png){.screenshot}
+
+### What End Users Experience
+
+When inline text editing is allowed, the end user can double-click the text frame to enter edit mode. A toolbar appears at the top of the canvas with controls for the options the template designer has permitted.
+
+The toolbar only shows the controls that have been enabled:
+
+- **Paragraph style dropdown** — only the permitted paragraph styles appear in the list.
+
+![The paragraph style dropdown open in run mode, showing only the allowed styles](tc07.png){.screenshot-full}
+
+- **Character style dropdown** — only the permitted character styles appear in the list.
+
+![The character style dropdown open in run mode, showing only the allowed styles](tc08.png){.screenshot-full}
+
+- **Font size stepper** — the + and − buttons adjust the font size, constrained to the Min and Max range set by the template designer.
+
+- **Color picker** — only the permitted Brand Kit colors are shown.
+
+![The color picker open in run mode, showing only the allowed Brand Kit colors](tc09.png){.screenshot-full}
+
+Controls for options that are not enabled are not shown — the end user only sees what they are allowed to use.
+
+### Constraint Dependencies
+
+The same movement dependencies that apply to image frames apply here:
+
+- **Resize requires movement** — When *Allow resize* is enabled, horizontal and vertical movement are enabled automatically.
+- **Rotate requires movement** — When *Allow rotation* is enabled, horizontal and vertical movement are enabled automatically.
+- **Movement can be enabled independently** — Horizontal and vertical movement can be enabled without allowing resize.
+
+See [Constraints](/GraFx-Studio/concepts/constraints/) for a conceptual overview.
+
 ## Text Properties
 
 ### Text Style
@@ -47,6 +137,27 @@ If you prefer not to use predefined styles (recommended for consistency), you ca
 !!! info "Text direction"
     GraFx Studio automatically applies the correct text direction based on the script (left-to-right or right-to-left).  
     See [Text direction](/GraFx-Studio/concepts/text-direction/) for details.
+
+### Text Columns
+
+Text frames can be divided into multiple columns. This allows you to flow text across columns within a single frame—useful for editorial layouts, descriptions, or dense content blocks.
+
+When a text frame is selected, configure columns in the **Text columns** section:
+
+![Text columns settings](columns1.png){.screenshot}
+
+- **Number of columns**  
+  Defines how many columns the text is split into. You can set **1 up to 10 columns** per text frame.
+  
+![Text columns gaps](columns2.png){.screenshot-full}
+
+- **Column gap**  
+  Sets the spacing between columns, using document units (for example, mm).
+
+Text flows automatically from one column to the next, respecting the frame size, alignment, and auto-resize behavior.
+
+!!! info "Interaction with auto-resize"
+    Column settings apply to the text layout inside the frame. Copyfitting, Auto-grow, and overflow rules still determine how the frame reacts when content exceeds available space.
 
 ### Auto Resize
 

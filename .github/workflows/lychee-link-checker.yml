@@ -13,14 +13,15 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.7.0
+        uses: lycheeverse/lychee-action@v2.8.0
         with:
           # All supported file formats to be verified and accept 403 (Forbidden) as correct link
           args: >-
             --verbose -a 200,202,403 './**/*.md' './**/*.html' './**/*.rst'
+            --root-dir '${{ github.workspace }}/docs'
             --exclude '^https://cp'
             --exclude 'https://login.chiligrafx.com/login/callback'
             --exclude 'https://my.chili-publish.com'

@@ -58,7 +58,7 @@ connector-cli set-auth \
 
 !!! note "Authorization is Optional"
 
-	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements. However, once authorization is configured for a Connector, it cannot currently be removed using the Connector CLI. If you need to change or remove an existing authorization method, you will need to recreate the Connector.
+	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements.
 
 !!! warning "Proxying and Removing a Header"
 
@@ -111,9 +111,9 @@ Therefore, you can define different authorization types for each usage, allowing
 
 	  It is important to note that all authorization is enforced server-side. This approach ensures that sensitive credentials—such as tokens, API keys, or other authentication data—are never exposed directly to the client. By processing authorization on the server, CHILI GraFx significantly reduces the risk of accidental credential leakage or malicious interception. When authorization is required, client requests do not communicate directly with the target service. Instead, the requests are securely proxied through CHILI GraFx servers, which handle the authorization process on your behalf. 
 
-!!! note "Cannot Remove Configured Authorization"
+!!! note "Changing Authorization"
 
-	  At this moment there is no way to erase authorization once set. If you run the `set-auth` command multiple times with the same authorization usage `-au` value but different `-at` authorization types, the last one overwrites the previous one.
+	  To replace the authorization type, run the `set-auth` command again with the same `-au` value and a different `-at` type — the last one overwrites the previous one.
 
 ### Authorization Type (`-at`)
 

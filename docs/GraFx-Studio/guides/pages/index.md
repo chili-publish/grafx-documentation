@@ -61,6 +61,12 @@ Click the **Eye** icon on the page, or **"..."** > **Hide Page**
     - Layouts with a **digital intent** use the first **visible page** instead of always using page 1.  
       If you hide page 1, it affects all digital layouts.
 
+## Duplicate Pages
+
+Click **"..."** > **Duplicate Page**
+
+The duplicate is inserted directly after the original page and contains all the same frames, content, and layout settings. Use this as a starting point for a new variation without having to rebuild the page from scratch.
+
 ## Delete Pages
 
 Click **"..."** > **Delete Page**

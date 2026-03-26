@@ -12,68 +12,72 @@
 -   :material-clock-fast: **Release Notes**
 
     ---
-    **Dec 16, 2025**: Opacity import from Adobe plugins
+
+    **Mar 26, 2026**: GraFx Genie — Product Image Creator update
+
+    ![rn_icon](/assets/icon-Grafx-Genie.svg)
+
+    The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
     
+    ---
+    
+    **Mar 20, 2026**: Connector updates and platform UX improvements
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Connector update notifications, set-as-default moved to the connector list, localized dates in environment tables, newest-first default sorting, and a connector auth fix.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/20/connector-updates-and-platform-ux-improvements/)
+
+    ---
+
+    **Mar 12, 2026**: Text constraints, page duplication, and stability improvements
+
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
-    
-    Opacity settings from Adobe® InDesign® and Adobe® Photoshop® are now preserved when importing designs into GraFx Studio.
-    
-    ![Opacity Settings](/release-notes/releasenotesassets/opacity2.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2025/12/16/opacity-import-with-plugins/)
-    
-    ---
-    **Dec 1, 2025**: Bulleted Lists & Minor improvements
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.34</span>
-    
-    This update introduces bulleted lists in paragraph styles, improved frame selection precision, and extended HTML output with frame opacity.
-    
-    ![Bulleted lists](/release-notes/releasenotesassets/bulletedlists.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/12/01/bulleted-lists--improvements/)
+
+    Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
 
     ---
 
-    **Nov 14, 2025**: HTML output (experimental) and Frame Opacity
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.33</span>
-    
-    This version introduces HTML output (experimental), Frame Opacity settings and many improvements.  
-    
-    ![Linear gradient](/release-notes/releasenotesassets/html-code.png){.screenshot-tiny}
+    **Mar 8, 2026**: CHILI GraFx Environment API Update
 
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/11/14/html-output--frame-opacity/)
-    
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
+
     ---
 
-    **Oct 17, 2025**: Linear Gradients, Variable- & GraFx Genie Enhancements
-    
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.32</span>
-    
-    Add linear gradients (RGB/CMYK/Hex/Spot), create variables from a linked datasource, "Prevent line break", performance gains, and GraFx Genie prompts up to 4,000 chars; plus fixes for Indic text, canvas loading, cursors, image-picker folders, and non-finite number handling.
-    
-    ![Linear gradient](/release-notes/releasenotesassets/gradient.png){.screenshot}
-    
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/10/17/linear-gradients-variable---grafx-genie-enhancements/)
-    
+    **Mar 8, 2026**: CHILI GraFx Platform API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Existing users invited to a new subscription now receive an email with the subscription name and sign-in guidance.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
+
     ---
 
-    **Sept 23, 2025**: Drop Shadow & Stability Fixes  
-    ![rn_icon](/assets/icon-GraFx-Studio.svg) <span class="version-label">v1.31</span>
+    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
 
-    Added drop shadow support for all frame types, improved image uploads, and fixed stability issues in GraFx Studio.  
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    ![Drop Shadow](/release-notes/releasenotesassets/DropShadow.gif){.screenshot}
+    Photoshop documents with empty effect groups now import correctly into GraFx Studio.
 
-    [:octicons-arrow-right-24: Show details](/release-notes/2025/09/23/drop-shadow--stability-fixes/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/06/grafx-studio-photoshop-plugin-121/)
+
 
     ---
 
     **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
-    
+
 </div>
 ## The Platform & Applications
 

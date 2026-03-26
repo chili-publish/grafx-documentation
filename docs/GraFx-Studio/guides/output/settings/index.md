@@ -92,6 +92,45 @@ Define offset and weight (thickness).
 
 ![screenshot](os16.png)
 
+### PDF Output Conversion
+
+![PDF Output version](os20.png){.screenshot}
+
+In **Convert to version**, choose the required PDF version.
+
+Example:
+- PDF 1.4, 1.5, 1.6 or 1.7 (default)
+
+Select the version required by your production partner.
+
+### Color Management
+
+![Convert CMYK colors](os21.png){.screenshot}
+
+Enable **Convert CMYK colors** to activate color transformation during export.
+
+When enabled, you must define:
+
+- **Intended CMYK profile** (required)  
+- **Target CMYK profile** (required)
+
+#### Intended CMYK profile (required, if "Convert CMYK colors" is checked)
+
+Defines the original print condition the document is assumed to be prepared for.
+
+This setting tells the system how existing CMYK values should be interpreted.
+
+#### Target CMYK profile (required, if "Convert CMYK colors" is checked)
+
+Defines the destination print condition to which colors are converted.
+
+!!! warning
+    If the intended and target profiles do not reflect the actual production workflow, visible color shifts may occur.
+
+For a deeper explanation of color management concepts, see:
+
+- [Color Management in CHILI GraFx](/GraFx-Studio/concepts/color-management/)
+
 ---
 
 ## HTML Output Settings

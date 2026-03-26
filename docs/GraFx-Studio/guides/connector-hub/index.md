@@ -66,6 +66,18 @@ If a connector was available in the past but has been set to 'not available' aga
 
 ![screenshot-full](ch03.png)
 
+## Set a Default Connector
+
+Each media connector type can have one default connector. The default is used automatically in the Template Designer Workspace unless a template specifies otherwise.
+
+To set a connector as default, open the **three-dot menu** next to the connector in the list and select **Set as default**. The option is disabled if the connector is already the default.
+
+![screenshot](ch08.png)
+
+## Connector Version Updates
+
+When a new version of an installed connector is available, a notification badge appears on the connector in both the connector list and the connector settings. This lets you see at a glance which connectors have an update ready without checking each one individually.
+
 ## Create a Custom Connector
 
 See the Developer Documentation for detailed instructions on how to [build your custom connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/).

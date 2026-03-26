@@ -3,3 +3,4 @@
 /site
 /temp
 /__pycache__
+*.pyc

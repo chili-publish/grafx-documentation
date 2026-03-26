@@ -16,6 +16,14 @@ Double-click the name, or choose "Rename" under the "..." menu.
 
 ![screenshot](slt01.png)
 
+## Maximum Length Constraints
+
+If a text variable has a defined maximum length:
+- Users cannot type beyond that limit in Studio UI.
+- The template will enforce the limit in exports, preventing overflow or layout breakage.
+
+This limit applies to all single-line text variables.
+
 ## Set General Properties
 
 ![screenshot-full](slt00.png)
