@@ -13,6 +13,16 @@
 
     ---
 
+    **Mar 26, 2026**: CHILI GraFx Environment API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Tags endpoints are now part of the public Environment API — manage and assign tags to templates programmatically as part of your integration workflow.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/chili-grafx-environment-api-update/)
+
+    ---
+
     **Mar 26, 2026**: GraFx Genie — Product Image Creator update
 
     ![rn_icon](/assets/icon-Grafx-Genie.svg)
@@ -60,17 +70,6 @@
     Existing users invited to a new subscription now receive an email with the subscription name and sign-in guidance.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
-
-    ---
-
-    **Mar 6, 2026**: GraFx Studio Photoshop Plugin 1.2.1
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Photoshop documents with empty effect groups now import correctly into GraFx Studio.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/06/grafx-studio-photoshop-plugin-121/)
-
 
     ---
 
