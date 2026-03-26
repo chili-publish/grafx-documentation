@@ -13,6 +13,16 @@
 
     ---
 
+    **Mar 26, 2026**: GraFx Genie — Product Image Creator update
+
+    ![rn_icon](/assets/icon-Grafx-Genie.svg)
+
+    The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
+    
+    ---
+    
     **Mar 20, 2026**: Connector updates and platform UX improvements
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -61,15 +71,6 @@
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/06/grafx-studio-photoshop-plugin-121/)
 
-    ---
-
-    **Mar 5, 2026**: GraFx Publisher Update
-
-    ![rn_icon](/assets/icon-GraFx-Publisher.svg)
-
-    More reliable output for image-heavy documents, faster PDF image processing, and continued memory improvements for output-heavy jobs.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/05/grafx-publisher-update/)
 
     ---
 
