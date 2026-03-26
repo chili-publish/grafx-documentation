@@ -13,6 +13,16 @@
 
     ---
 
+    **Mar 26, 2026**: GraFx Genie — Product Image Creator update
+
+    ![rn_icon](/assets/icon-Grafx-Genie.svg)
+
+    The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
+
+    ---
+
     **Mar 12, 2026**: Text constraints, page duplication, and stability improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -79,16 +89,6 @@
     Watermarked renders are now shown as a separate category at both environment and subscription level. Connector authentication can now be fully removed via a new [None] option.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/23/chili-grafx-platform-update/)
-
-    ---
-
-    **Feb 20, 2026**: GraFx Labs
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    GraFx Labs is now available as a dedicated space to explore experimental features, starting with two GraFx Genie AI experiments for product image creation and composition.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/02/20/grafx-labs/)
 
     ---
 
