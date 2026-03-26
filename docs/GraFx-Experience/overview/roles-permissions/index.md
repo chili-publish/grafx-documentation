@@ -18,7 +18,7 @@ Global roles control broad access to the platform:
 
 - **User** — Can log in and access Experience features based on group permissions.
 - **Admin** — Can configure platform settings, manage groups, environments, and permissions.
-- **Account Owner** — Has full control, including billing and subscription management.
+- **Account Owner** — Has full control of the GraFx Experience application, including all configuration and user management. This role is not necessarily tied to license or billing responsibility.
 
 Being an Admin or Account Owner does not automatically grant access to specific assets or workflows — group permissions determine visibility and actions.
 
@@ -70,7 +70,7 @@ A user with no group membership cannot perform any actions.
 Roles give *broad platform access*:
 - **User** can sign in and use the Experience app.
 - **Admin** can configure system and manage access.
-- **Account Owner** adds subscription control.
+- **Account Owner** has full application control.
 
 Groups give *specific operational permissions*:
 - Groups determine what users can see and do on a detailed level.

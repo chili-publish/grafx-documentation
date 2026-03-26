@@ -1,16 +1,16 @@
 # Manage fields
 
-This guide explains how to create fields in the CHILI GraFx extension and assign them to templates, projects, production channels, and outputs.
+This guide explains how to create fields and assign them to templates, projects, production channels, and outputs.
 
 See [Fields](../../concepts/fields/) for a conceptual explanation of what fields are and how they work.
 
 ## Before you start
 
-- You need access to the CHILI GraFx extension admin console in GraFx Experience.
+- You need admin access to GraFx Experience.
 
 ## Create a field
 
-In the extension admin console, go to **Fields** and click **New field**. Fill in:
+In the GraFx Experience general settings, go to **Fields** and click **New field**. Fill in:
 
 | Setting | Description |
 |---|---|
@@ -32,7 +32,7 @@ After creating a Select field, open it and add the available options — for exa
 
 ## Assign a field to a template
 
-Open a template in the extension admin console and go to the **Fields** section. Select the field from the list of available fields and set its value.
+Open a template in the GraFx Experience admin and go to the **Fields** section. Select the field from the list of available fields and set its value.
 
 - For **Select** fields: choose one or more options from the predefined list.
 - For **User Group** fields: select the user groups that should have access to this template.

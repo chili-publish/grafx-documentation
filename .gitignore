@@ -2,3 +2,4 @@
 .DS_Store
 /site
 /temp
+/__pycache__

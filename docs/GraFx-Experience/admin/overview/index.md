@@ -66,7 +66,7 @@ This determines how users personalize content in a governed way.
 Extensions add functionality to your portal:
 
 - Activate the **GraFx Experience layer** extension
-- Enable other extensions (media, translations, layouts)
+- Enable other extensions (media, translations)
 - Configure how extensions are presented
 
 Extensions extend the portal’s capabilities beyond the core.
