@@ -15,8 +15,7 @@ The GraFx External ID is the unique identifier of the Design System in GraFx Stu
 You can find it in two ways:
 
 - **In the GraFx Studio URL:** Open the template in GraFx Studio. The GUID appears in the browser URL bar.
-- **In the extension template list:** The GraFx External ID column shows the ID once a template is linked.
-
+- **In the extension template list (already-linked templates):** The GraFx External ID column shows the ID after a template has been linked.
 ## Step 2: Create a template record in the extension
 
 In the CHILI GraFx extension admin console, go to **Templates** and click **New template**. Fill in:
