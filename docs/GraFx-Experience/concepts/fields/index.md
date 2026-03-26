@@ -1,6 +1,6 @@
 # Fields
 
-Fields are reusable metadata elements that allow admins to enrich templates, projects, and production entities with structured information.
+Fields are reusable metadata elements that allow admins to enrich templates, projects, production channels, and outputs with structured information.
 
 A field is defined once and can then be assigned to templates, projects, production channels, or outputs. The same field can be used across multiple templates.
 
