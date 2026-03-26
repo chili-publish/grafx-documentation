@@ -20,6 +20,9 @@
     The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
+    
+    ---
+    
     **Mar 20, 2026**: Connector updates and platform UX improvements
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
