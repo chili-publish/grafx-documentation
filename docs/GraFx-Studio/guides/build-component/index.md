@@ -2,6 +2,9 @@
 
 This guide walks you through creating a component in GraFx Studio. A component is built in its own workspace, which is similar to the Template Designer Workspace but with a focused set of features for reusable design elements.
 
+!!! info "Components are designed for print and PDF output"
+    Components do not support digital animated intent. If your template targets digital or animated output, build that content directly in the template rather than in a component.
+
 See [Components](/GraFx-Studio/concepts/components/) for an introduction to what components are and when to use them. New to components? Start with the [tutorial](/GraFx-Studio/guides/components-tutorial/) for a full end-to-end walkthrough.
 
 ## Create a component
@@ -32,7 +35,7 @@ The key difference is what is **not** there, by design:
 | User Interface settings | ❌ | UI settings belong at the template level |
 | Bleed & slug | ❌ | Print production settings live on the template |
 | Private data | ❌ | Not supported in components |
-| Nesting (components inside components) | ❌ | Not supported in V1 |
+| Add component as a frame | ❌ | Not supported in V1 |
 | Change page size via actions | ❌ | The template determines the frame size — the component adapts to the space it's given |
 
 Everything else works as expected: you can add frames, apply Brand Kit styles, create layouts, define variables, and use actions.
