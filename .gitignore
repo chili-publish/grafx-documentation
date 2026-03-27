@@ -2,4 +2,5 @@
 .DS_Store
 /site
 /temp
+/__pycache__
 *.pyc
