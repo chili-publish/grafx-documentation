@@ -41,6 +41,12 @@ A team managing templates for two brands — `Chill_Home` and `Chill_Chips` — 
 - Tags are scoped to the environment. A tag created in one environment is not available in another.
 - Deleting a tag removes it from every template it was assigned to. This cannot be undone.
 
+## Manage tags via API
+
+Tags can also be managed programmatically using the Environment API. Use the Tags endpoints to create, update, delete, and assign tags to templates as part of an integration or automation workflow.
+
+See the [Environment API reference](/GraFx-Developers/environment-api/reference/) for available endpoints.
+
 ## Related
 
 - [Manage & Use Tags](/GraFx-Studio/guides/use-tags/)
