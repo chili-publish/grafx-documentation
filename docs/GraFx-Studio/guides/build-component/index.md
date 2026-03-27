@@ -33,8 +33,11 @@ The key difference is what is **not** there, by design:
 | Bleed & slug | ❌ | Print production settings live on the template |
 | Private data | ❌ | Not supported in components |
 | Nesting (components inside components) | ❌ | Not supported in V1 |
+| Change page size via actions | ❌ | The template determines the frame size — the component adapts to the space it's given |
 
 Everything else works as expected: you can add frames, apply Brand Kit styles, create layouts, define variables, and use actions.
+
+> **Actions and page size:** If an action inside a component attempts to change the page size, it will fail with an "Action failed" error at output time. This is by design — a component renders within the frame the template provides. To adapt a component's appearance to different frame sizes, use [multiple layouts](/GraFx-Studio/guides/build-component/#layouts-in-a-component) and [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) instead.
 
 ## Layouts in a component
 

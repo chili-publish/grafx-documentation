@@ -120,7 +120,10 @@ Components are intentionally more constrained than templates. This is by design:
 | Private data | ✅ | ❌ |
 | List variable type | ✅ | ❌ |
 | Nesting (components inside components) | ✅ | ❌ |
+| Page size (set via actions) | ✅ | ❌ |
 | Brand Kit | ✅ | ✅ |
+
+> A component renders within the space the template provides — the template controls the frame size, not the component. To adapt a component's appearance to different frame proportions, use multiple layouts and Resize Mode. Actions that attempt to change the page size inside a component will not execute.
 | Actions | ✅ | ✅ |
 | Connectors (media & data) | ✅ | ✅ |
 | Design & Run Mode | ✅ | ✅ |
