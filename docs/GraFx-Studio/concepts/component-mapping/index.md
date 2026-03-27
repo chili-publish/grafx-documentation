@@ -245,6 +245,40 @@ GraFx Studio groups the template variables by component instance in the variable
 
 ---
 
+## Constraint compatibility
+
+Component variables can carry constraints — a number variable might be restricted to a specific range, a date variable might define a start date, end date, or excluded days. When you map a component variable to a template variable, these constraints apply at every point where a value enters the system.
+
+### At mapping time
+
+If a component variable has a range constraint and the template variable you're mapping to has an incompatible or non-overlapping range, the mapping row shows an error state. The mapping cannot be applied until the ranges are made consistent — by updating either the component variable or the template variable.
+
+### At runtime — manual input (Studio and Studio UI)
+
+If a user manually enters a value that falls outside the component variable's allowed range, the Engine rejects the value and the UI restores the previous valid value. The user cannot save an out-of-range value.
+
+### At runtime — data source
+
+If a data source supplies a value that falls outside the component variable's range, a toast notification informs the user that the value is not valid. The value is replaced with the variable's default.
+
+### In batch output
+
+If a batch row contains a value outside the component variable's range, that row is excluded from the generated output file. The error is recorded in the error report, which can be downloaded from the output task page.
+
+---
+
+## Required component variables
+
+A component variable can be marked as **required**. This signals that a value must be present for the component to render correctly.
+
+When you map a required component variable to a template variable, the template variable is **not** automatically set to required. There is no visual indicator in Run Mode or Studio UI that the template variable feeds into a required component variable.
+
+If output is generated while the mapped template variable is empty, the output fails. The error is included in the error report on the output task page.
+
+> **Tip for template designers:** When working with a component that has required variables, verify with the component author which variables are required. Document this in the template or communicate it to the operators who will fill in the values.
+
+---
+
 ## Related
 
 - [Components](/GraFx-Studio/concepts/components/) — what components are and why they exist

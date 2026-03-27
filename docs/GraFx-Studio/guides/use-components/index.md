@@ -113,6 +113,13 @@ After applying the mapping, the new template variables appear in the variable li
 
 These variables work like any other template variable — they can be used in actions, exposed in Studio UI, or driven by a data source.
 
+## Constraint compatibility
+
+When you map a component variable to an existing template variable, GraFx Studio checks whether the two variables are compatible. If the component variable has a range constraint (e.g. a number variable restricted to `[-10, -5]`) and the template variable has an overlapping or incompatible range (e.g. `[0, 10]`), the mapping row shows an **error state** and the mapping cannot be applied until the ranges are made consistent — either by updating the component variable or the template variable.
+
+!!! warning "Required variables are not inherited"
+    If a component variable is marked as **required**, mapping it to a template variable does **not** automatically make the template variable required. There is no visual indicator in Run Mode or Studio UI that a mapped template variable feeds into a required component variable. If output is generated while the value is empty, the output will fail. Check the error report on the output task page for details.
+
 ## Reset a mapping
 
 To remove all mappings for a component instance, open **Manage mapping** and click **Reset**. This clears all connections without deleting the template variables that were created.

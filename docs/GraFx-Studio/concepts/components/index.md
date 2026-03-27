@@ -81,6 +81,23 @@ Variable mapping is done per component instance. This means the same component p
 
 ![Components variable mapping](comp02.png)
 
+### Variable constraints
+
+Component variables can carry constraints that limit what values are valid:
+
+- **Number variables** can define a minimum and maximum value (e.g. a price component might restrict the range to `[0, 999]`)
+- **Date variables** can define a start date, an end date, and excluded days
+
+These constraints are set inside the component and apply at the template level whenever the variable is mapped. If a value falls outside the allowed range — whether entered manually, supplied by a data source, or coming from a batch row — the platform enforces the constraint and reports the error. See [Constraint compatibility](/GraFx-Studio/concepts/component-mapping/#constraint-compatibility) for how this works in each context.
+
+### Required variables
+
+A component variable can be marked as **required**. This means a value must be present for output to succeed.
+
+When you map a required component variable to a template variable, the template variable is **not** automatically set to required. There is also no visual indicator in Run Mode or Studio UI that the underlying component variable requires a value.
+
+If output is generated while a required component variable is empty, the output will fail. The error is reported in the error report, which can be downloaded from the output task page.
+
 See [Variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping) for the full workflow.
 
 ## Resize Mode
