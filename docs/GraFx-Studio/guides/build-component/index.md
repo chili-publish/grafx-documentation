@@ -69,6 +69,14 @@ A component has its own Brand Kit, separate from the template's Brand Kit. This 
 
 If you want the template to be able to change a color or style inside a component, that value needs to be exposed as a variable and mapped from the template.
 
+## Component Canvas
+
+In template designs, elements can extend beyond the canvas boundary. This is commonly used to hide part of an image — when templates render for end users, any elements outside the canvas are not visible.
+
+However, with components, elements outside the canvas **will** be rendered when the component is used in a template. This can lead to unwanted results.
+
+To avoid this, you should either [crop the image in Studio](GraFx-Studio/guides/cropping) or crop the underlying asset before importing it into Studio, so that it fits entirely within the component canvas.
+
 ## Design & Run Mode
 
 Both Design Mode and Run Mode are available in the component workspace. Use Run Mode to test how variables and actions behave inside the component before placing it in a template.
