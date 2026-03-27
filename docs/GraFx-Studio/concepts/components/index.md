@@ -128,6 +128,11 @@ Components are intentionally more constrained than templates. This is by design:
 | Connectors (media & data) | ✅ | ✅ |
 | Design & Run Mode | ✅ | ✅ |
 
+!!! info "Output and animation"
+    Templates that use components support print, static digital, and animated digital (GIF, MP4) output. When rendering animated output, the component frame can be animated in the template timeline — but the content inside the component does not animate.
+
+    HTML output is not supported for templates that include components.
+
 ## Get started
 
 New to components? The tutorial walks you through the complete journey:

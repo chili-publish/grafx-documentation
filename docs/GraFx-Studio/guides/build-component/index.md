@@ -2,8 +2,12 @@
 
 This guide walks you through creating a component in GraFx Studio. A component is built in its own workspace, which is similar to the Template Designer Workspace but with a focused set of features for reusable design elements.
 
-!!! info "Components are designed for print and PDF output"
-    Components do not support digital animated intent. If your template targets digital or animated output, build that content directly in the template rather than in a component.
+!!! info "Output capabilities when using components"
+    Templates that use components support **print**, **static digital**, and **animated digital** (GIF, MP4) output.
+
+    When rendering animated output, the component frame can be animated in the template timeline. The content inside the component does not animate.
+
+    **HTML output is not supported** for templates that include components.
 
 See [Components](/GraFx-Studio/concepts/components/) for an introduction to what components are and when to use them. New to components? Start with the [tutorial](/GraFx-Studio/guides/components-tutorial/) for a full end-to-end walkthrough.
 
@@ -29,7 +33,7 @@ The key difference is what is **not** there, by design:
 
 | Feature | Not available in components | Reason |
 |---|---|---|
-| Digital animated intent | ❌ | Components focus on print and PDF output |
+| Digital animated intent | ❌ | Animation intent is set on the parent template. Component content does not animate — but the component frame can be animated in the template timeline. |
 | Multi-page | ❌ | A component is a single reusable element, not a document |
 | Output / Export button | ❌ | Output is produced by the parent template, not the component |
 | User Interface settings | ❌ | UI settings belong at the template level |

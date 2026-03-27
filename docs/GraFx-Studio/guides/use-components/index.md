@@ -4,6 +4,9 @@ This guide explains how to place components on a template canvas, configure how 
 
 See [Components](/GraFx-Studio/concepts/components/) for an introduction, or [Build a component](/GraFx-Studio/guides/build-component/) to create one first. New to components? Start with the [tutorial](/GraFx-Studio/guides/components-tutorial/) for a full end-to-end walkthrough.
 
+!!! warning "HTML output not supported"
+    Templates that include components cannot be exported as HTML. Print, static digital, and animated digital (GIF, MP4) output are all supported.
+
 ## Place a component
 
 Open the template in the Template Designer Workspace. In the left toolbar, click the **Resources** icon at the bottom.
