@@ -90,44 +90,60 @@
 
     [:octicons-arrow-right-24: Getting started](/CHILI-GraFx/admin/)
 
+-   ![tinyapplogo](/assets/icon-GraFx-Experience.svg) __GraFx Experience__
+
+    ---
+
+    **GraFx Experience** is the portal where end users browse, personalize, and produce content from Smart Templates.
+
+    [:octicons-arrow-right-24: Get started](/GraFx-Experience/)
+
 -   ![tinyapplogo](/assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
 
     ---
 
     **GraFx Studio** is the multichannel Smart Template editor for (animated) digital and print output.
 
-    [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
+    [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
+-   ![tinyapplogo](/assets/icon-GraFx-Brandkits.svg) __GraFx Brand Kits__
 
     ---
 
-    Enter the 'phygital' age of marketing by producing high-quality print and static digital output with **GraFx Publisher**.
-    
-    [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Publisher/guides/hello-world/)
+    **GraFx Brand Kits** centralizes your brand's colors, fonts, and styles — ready to use across all your Smart Templates.
+
+    [:octicons-arrow-right-24: Get started](/GraFx-Brand-Kits/)
 
 -   ![tinyapplogo](/assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
 
     ---
 
     **GraFx Media** is the central repository to store your assets to be used in your Smart Templates.
-    
-    [:octicons-arrow-right-24: Upload your media](/GraFx-Media/guides/upload-media/)
+
+    [:octicons-arrow-right-24: Upload your media](/GraFx-Media/)
 
 -   ![tinyapplogo](/assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
 
     ---
 
     **GraFx Fonts** serves Fonts and Font families for GraFx Studio
-    
-    [:octicons-arrow-right-24: Upload your fonts](/GraFx-Fonts/guides/upload-fonts/)
+
+    [:octicons-arrow-right-24: Upload your fonts](/GraFx-Fonts/)
+
+-   ![tinyapplogo](/assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
+
+    ---
+
+    Enter the 'phygital' age of marketing by producing high-quality print and static digital output with **GraFx Publisher**.
+
+    [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Publisher/)
 
 -   :octicons-git-branch-24: __Developer Center__
 
     ---
 
     **Integrate** powerful GraFx Applications in your web application.
-    
+
     [:octicons-arrow-right-24: Start Integrating](/GraFx-Developers/)
 
 </div>
