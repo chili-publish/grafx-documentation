@@ -119,7 +119,7 @@ Components are intentionally more constrained than templates. This is by design:
 | Bleed & slug | ✅ | ❌ |
 | Private data | ✅ | ❌ |
 | List variable type | ✅ | ❌ |
-| Nesting (components inside components) | ✅ | ❌ |
+| Add component as a frame | ✅ | ❌ |
 | Page size (set via actions) | ✅ | ❌ |
 | Brand Kit | ✅ | ✅ |
 
