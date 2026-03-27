@@ -17,7 +17,7 @@ The **My projects** tab shows all projects you have created. Each project card d
 
 Use the **search bar**, **sort**, and **filter** controls to find projects quickly.
 
-![The My projects tab showing a grid of project cards with thumbnail previews, project names, layout counts, last-edited dates, and Edit and Print/Download buttons](my-projects.png){.screenshot-full}
+![The My projects tab showing a grid of project cards with thumbnail previews, project names, layout counts, last-edited dates, and Edit and Print/Download buttons](ge14.png){.screenshot-full}
 
 ## All projects
 

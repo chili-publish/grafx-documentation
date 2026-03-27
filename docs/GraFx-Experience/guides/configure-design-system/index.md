@@ -32,7 +32,7 @@ In the CHILI GraFx extension admin console, go to **Templates** and click **New 
 
 Click **Save** to create the template.
 
-![The New template form in the extension admin console with fields for Reference, Name, Description, GraFx External ID, Status, Supported locales, and Main visual](new-template-form.png){.screenshot-full}
+![The New template form in the extension admin console with fields for Reference, Name, Description, GraFx External ID, Status, Supported locales, and Main visual](ge11.png){.screenshot-full}
 
 !!! note
     A newly created template starts as a draft. It must be published before end users can create projects from it. See Step 5.

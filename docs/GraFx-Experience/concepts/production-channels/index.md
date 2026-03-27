@@ -22,7 +22,7 @@ When an end user sends a project to a production channel, a **production output*
 
 Admins can view all production outputs across the platform and monitor their status. End users can track their own orders on the Orders page of the portal.
 
-![The Production Channels overview in the extension admin console showing Print and Digital channels with their contact details and user group access](production-channels-overview.png){.screenshot-full}
+![The Production Channels overview in the extension admin console showing Print and Digital channels with their contact details and user group access](ge5.png){.screenshot-full}
 
 ## Output previews
 

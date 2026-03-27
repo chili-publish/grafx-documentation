@@ -8,7 +8,13 @@ It's Thursday afternoon. A store owner in Lyon needs a promotional poster — th
 
 There's no designer available. No time to brief one. But the poster needs to be on-brand: the right colors, approved imagery, correct legal text. Getting it wrong isn't an option.
 
-She logs into a portal. Finds the campaign. Picks her layout. Updates the headline, swaps in the local offer, and downloads a print-ready file — in minutes, without touching anything she shouldn't.
+She logs into a portal. Finds the campaign. Picks her layout. 
+
+![Pick the necessary layouts](ge1.png){.screenshot-full}
+
+She Updates the headline, swaps in the local offer, and downloads a print-ready file — in minutes, without touching anything she shouldn't.
+
+![Updating content all at once](ge2.png){.screenshot-full}
 
 How is that possible? Because someone at HQ already did the hard work.
 

@@ -13,7 +13,7 @@ The options shown depend on the output intents of the layouts in your project:
 
 Downloads are processed in the background. When ready, they appear on the **Downloads** tab of the Projects page.
 
-![The Print dropdown on a project card showing Download Print, Download Digital, and available production partner options](output-dropdown.png){.screenshot-full}
+![The Print dropdown on a project card showing Download Print, Download Digital, and available production partner options](ge15.png){.screenshot}
 
 ## Ordering via a production partner
 
@@ -41,7 +41,7 @@ Enter the number of prints you need for each layout. If you entered multiple del
 
 Review the full order summary and click **Place order** to send it to the production partner.
 
-![The order review screen showing the selected layouts, delivery addresses, quantities per address, and the Place order button](order-review.png){.screenshot-full}
+![The order review screen showing the selected layouts, delivery addresses, quantities per address, and the Place order button](ge16.png){.screenshot-full}
 
 ## Tracking orders
 

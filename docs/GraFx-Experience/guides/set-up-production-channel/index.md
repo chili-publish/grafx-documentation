@@ -24,7 +24,7 @@ In the extension admin console, go to **Production Channels** and click **New pr
 
 Click **Save** to create the channel.
 
-![The New production channel form showing Name, Type dropdown with Print and Digital, contact fields, and user group access settings](new-production-channel-form.png){.screenshot-full}
+![The New production channel form showing Name, Type dropdown with Print and Digital, contact fields, and user group access settings](ge8.png){.screenshot-full}
 
 ## Step 2: Add custom fields (optional)
 
