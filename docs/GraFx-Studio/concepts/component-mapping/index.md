@@ -23,7 +23,7 @@ See [Use components in a template](/GraFx-Studio/guides/use-components/#variable
 
 ## Scenario 1 — One component, one page
 
-You're designing a product card template. There's one price tag in the design — one component, placed once. Each component variable connects to one template variable.
+You're designing a product card template. There's one price tag in the design — one component, placed once. Because the price tag is a component, the same widget can be reused across other templates without rebuilding it. Here, it just appears once, and each component variable connects to one template variable.
 
 ![Template canvas showing a single price tag component placed on the page](scenario-1-canvas.png)
 
