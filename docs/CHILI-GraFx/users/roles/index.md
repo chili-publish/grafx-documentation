@@ -72,7 +72,7 @@ For GraFx Studio, the impact depends on the pricebook: on a CPO pricebook, Conte
 
 A Template Designer Seat (TDS) is a paid add-on that grants template creation and editing permissions. The number of available seats is defined by your contract — if you have 100 users and 5 seats, only 5 users can hold this role at any time.
 
-A Template Designer Seat can be assigned to any role: End User, Subscription Admin, or Environment Admin. Once assigned, the user gains access to the TD Workspace and can create, edit, and delete templates and components.
+A Template Designer Seat can be assigned to any role: End User, Subscription Admin, Environment Admin, or Content Administrator. Once assigned, the user gains access to the TD Workspace and can create, edit, and delete templates and components.
 
 See [Template Designer Seat](/CHILI-GraFx/users/template-designer/) for how to assign and manage seats.
 

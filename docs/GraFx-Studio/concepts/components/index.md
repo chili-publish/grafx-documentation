@@ -122,11 +122,11 @@ Components are intentionally more constrained than templates. This is by design:
 | Add component as a frame | ✅ | ❌ |
 | Page size (set via actions) | ✅ | ❌ |
 | Brand Kit | ✅ | ✅ |
-
-> A component renders within the space the template provides — the template controls the frame size, not the component. To adapt a component's appearance to different frame proportions, use multiple layouts and Resize Mode. Actions that attempt to change the page size inside a component will not execute.
 | Actions | ✅ | ✅ |
 | Connectors (media & data) | ✅ | ✅ |
 | Design & Run Mode | ✅ | ✅ |
+
+> A component renders within the space the template provides — the template controls the frame size, not the component. To adapt a component's appearance to different frame proportions, use multiple layouts and Resize Mode. Actions that attempt to change the page size inside a component will not execute.
 
 !!! info "Output and animation"
     Templates that use components support print, static digital, and animated digital (GIF, MP4) output. When rendering animated output, the component frame can be animated in the template timeline — but the content inside the component does not animate.

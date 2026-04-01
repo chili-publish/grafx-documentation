@@ -85,7 +85,7 @@ In template designs, elements can extend beyond the canvas boundary. This is com
 
 However, with components, elements outside the canvas **will** be rendered when the component is used in a template. This can lead to unwanted results.
 
-To avoid this, you should either [crop the image in Studio](GraFx-Studio/guides/cropping) or crop the underlying asset before importing it into Studio, so that it fits entirely within the component canvas.
+To avoid this, you should either [crop the image in Studio](/GraFx-Studio/guides/cropping) or crop the underlying asset before importing it into Studio, so that it fits entirely within the component canvas.
 
 ## Design & Run Mode
 
