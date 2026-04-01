@@ -1,172 +1,84 @@
-# User management
+# Roles and permissions
 
-## Overview
+CHILI GraFx uses role-based access control. Every user has one or more **roles** that determine what they can see and do across the platform. Roles can be combined — a single user can be both a Subscription Admin and an Environment Admin, for example.
 
-The first table shows the roles and their permissions.  
-You can assign these roles to all users in your subscription.
+In addition to roles, **Template Designer Seats** grant extra permissions. Seats are a paid add-on with a limited number per subscription. Any role can be combined with a Template Designer Seat.
 
-Any user can have 1 or more roles at the same time.
+## Access matrix
 
-| Roles | End User | SA | EA | CA[^1] |
-|:---:|:---:|:---:|:---:|:---:|
-|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| 🚫 | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| 🚫 | 🚫 | 🚫 | ✅[^1]|
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| 🚫 | ✅ | ✅ | ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| 🚫 | ✅ | ✅ | ✅ |
+The table below shows what each role can access. A Template Designer Seat (TDS) can be added to any role.
 
-Template designer seats give a user extra permissions, and can only be assigned according to the available seats.
+### Application access
 
-E.g. If you have 100 users, and 5 Template Designer **Seats**, you can only give 5 users a Template Designer Seat.
+|  | EU | SA | EA | TDS | CA[^1] |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| ![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg) GraFx Studio | ✅ | ✅ | ✅ | ✅ | ✅ |
+| ![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg) GraFx Studio — TD Workspace | 🚫 | 🚫 | 🚫 | ✅ | ✅[^1] |
+| ![smallapplogo](/assets/CHILI_publisher_RGB.svg) GraFx Publisher | 🚫 | ✅ | ✅ | ✅ | ✅ |
+| ![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg) GraFx Media | 🚫 | ✅ | ✅ | ✅ | ✅ |
+| ![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg) GraFx Fonts | 🚫 | ✅ | ✅ | ✅ | ✅ |
 
-|  | Template Designer Seat (TDS) |
-|:---:|:---:|
-|![smallapplogo](/assets/CHILI_publisher_RGB.svg)| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)<br/>TD Workspace| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg)| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg)| ✅ |
-|![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg)| ✅ |
+### Feature access
 
-End users, Subscription Admins and Environment Admins can function as Template Designers when they are allocated a Template Designer Seat.
+|  | EU | SA | EA | TDS | CA[^1] |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| Templates — view and use | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Templates — create and edit | 🚫 | 🚫 | 🚫 | ✅ | ✅[^1] |
+| [Components](/GraFx-Studio/concepts/components/) — view and use | 🚫 | Read only | Read only | ✅ | ✅[^2] |
+| [Components](/GraFx-Studio/concepts/components/) — create and edit | 🚫 | 🚫 | 🚫 | ✅ | ✅[^2] |
+| User management | 🚫 | ✅ (subscription) | ✅ (environment) | 🚫 | 🚫 |
 
-[^1]: [Content Admin](/CHILI-GraFx/users/roles/#content-administrator) is a role introduced to support Legacy Customers. See [Content Admin](/CHILI-GraFx/users/roles/#content-administrator) for more details.
+Users without component edit rights can open a component in read-only mode — the Template Designer Workspace opens, but no changes can be saved. Users without creation rights will not see the **Create component** button.
 
-!!! Info "Legend"
-	**Roles**
+[^1]: [Content Administrator](#content-administrator-ca) is a legacy role for converted CHILI publisher Online customers. On a CPO pricebook, CA can create templates and access the TD Workspace. On a GraFx pricebook, a Template Designer Seat is required instead.
+[^2]: CA on a CPO pricebook has read + write access to components. CA on a GraFx pricebook has no access to the components page.
 
-	- *End User*: [End User](#end-user)
-	- *CA*: [Content Admin](#content-administrator)
-	- *EA*: [Environment Admin](#environment-admin)
-	- *CA*: [Content Admin](#content-administrator)
-
-	**Extra permissions**
-	
-	- *TDS*: [Template Designer](#template-designer)
-
-	**Specific application**
-
-	- *TD Workspace*: The workspace where Template Designers can edit Smart Templates in GraFx Studio
-	
 ## Roles
 
-### Subscription Admin
+### Subscription Admin (SA)
 
-**Definition**: A Subscription Admin manages the subscription(s) they are assigned to
+A Subscription Admin manages the subscription(s) they are assigned to. This is the highest-level administrative role.
 
-Permissions
+Permissions include viewing subscription details and usage reporting, managing users across all environments in the subscription (invite, update, remove), requesting add-ons, and contacting the Client Success Manager directly.
 
-- View all subscription(s) assigned to
-- View usage reporting
-- View subscription details
-- View an overview of all the environments in a subscription
-- Request add-ons (eg. extra storage)
-- Directly contact to Client Success Manager
-- User management for all users in the subscription (CRUD)
-- Invite users to all available environments in the subscription
+!!! tip
+    A Subscription Admin can assign or remove the Subscription Admin role for other users.
 
-In the API, this role is labeled as "SA".
+### Environment Admin (EA)
 
-!!! info "CRUD?"
-	CRUD is an acronym for
-	- Create (users in this case, i.e. Invite users)
-	- Retrieve (see the user list)
-	- Update (change details of a user)
-	- Delete (remove them from the list)
+An Environment Admin manages one or more CHILI GraFx environments, as assigned by a Subscription Admin.
 
-!!! Tip "Subscription Admin"
-	**Important**: a Subscription Admin can assign the role 'Subscription Admin' to other users on 'User Detail page'.
-	A Subscription Admin can take away the role of another **Subscription Admin**.
+Permissions include managing environment settings (e.g. branding), managing users within their environment(s) (invite, update, remove), and accessing all applications available to SA-level users within those environments.
 
-### Environment Admin
+### End User (EU)
 
-**Definition**: An Environment Admin manages the CHILI GraFx environment(s) where they are assigned to by their Subscription Admin
+An End User works within the CHILI GraFx environments they are assigned to. This is the default role and cannot be removed.
 
-Permissions
+End Users can access GraFx Studio to create [My Projects](/GraFx-Studio/guides/create-projects/) based on Collections, using the fonts and media made available in the template. Access to other applications requires an additional role.
 
-- Access to environments where you are Environment Admin
-- View an overview of all the environments where you are Environment Admin
-- Manage the CHILI GraFx environment where you are Environment Admin
-	- Environment Settings (eg. branding)
-	- User management (CRUD actions) for the users of environments where you are Environment Admin
-- Invite users to the Environment
+!!! info "Need to create templates?"
+    If an End User needs to create or edit templates, they must be assigned a [Template Designer Seat](#template-designer-seat).
 
-In the API, this is labeled as "EA".
+### Content Administrator (CA)
 
-### End User
+!!! warning "Legacy role"
+    Content Administrator is only available to subscriptions converted from CHILI publisher Online. It is not visible on new subscriptions.
 
-**Definition**: An "End User" works as an end user in the CHILI GraFx environment(s) to which they are assigned. This is the default role, and cannot be removed.
+A Content Administrator can create and use GraFx Publisher templates with no seat limit for converted CHILI publisher Online customers.
 
-Permissions
+For GraFx Studio, the impact depends on the pricebook: on a CPO pricebook, Content Administrators can create templates (output may be watermarked). On a GraFx pricebook, a [Template Designer Seat](#template-designer-seat) is required to create or edit templates.
 
-- Access to the environments the End User is assigned to
-- View an overview of all the environments where the End User has access
-- Limited in what applications they can access (see table)
-- Create "[My projects](/GraFx-Studio/guides/create-projects/)" based on Collections (using fonts & media that are made available in the template)
+## Template Designer Seat
 
-In the API, this is labeled as "EU". (End User)
+A Template Designer Seat (TDS) is a paid add-on that grants template creation and editing permissions. The number of available seats is defined by your contract — if you have 100 users and 5 seats, only 5 users can hold this role at any time.
 
-!!! Warning "Template Designer"
-	- If an End User wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer).
-	See also [Phased approach in roles](#overview-of-role-access)
+A Template Designer Seat can be assigned to any role: End User, Subscription Admin, or Environment Admin. Once assigned, the user gains access to the TD Workspace and can create, edit, and delete templates and components.
 
-### Content Administrator
+See [Template Designer Seat](/CHILI-GraFx/users/template-designer/) for how to assign and manage seats.
 
-**Definition**: A content Administrator is a legacy role, available to users that have been converted from CHILI publisher Online.
+## Next steps
 
-Impact on **GraFx Publisher**
-
-A content Administrator can create and use GraFx Publisher templates. There is no  limit to Content Administrators for converted CHILI publisher Online customers.
-
-This role will not be visible to Subscriptions without a prior CHILI publisher Online subscription.
-
-Impact on **GraFx Studio**
-
-Content Administrators will be able to create Templates in GraFx Studio, but the output will be watermarked, if you are on a CHILI publisher Online contract.
-
-To be able to make/edit GraFx Studio Templates while on a CHILI GraFx contract, you need [Template Designer Seats](/CHILI-GraFx/users/roles/#template-designer).
-
-## Template Designer
-
-A template Designer Seat can be assigned to a limited amount of people, depending on the amount of seats you subscribed to.
-
-See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
-
-## Component access
-
-Access to [components](/GraFx-Studio/concepts/components/) in GraFx Studio depends on your role and subscription type.
-
-| Role | Component access |
-|:---|:---:|
-| Template Designer (any role + TDS) | Read + write |
-| SA | Read only |
-| EA | Read only |
-| CA (CPO pricebook) | Read + write |
-| CA (GraFx pricebook) | No access |
-| EU | No access |
-
-Users without edit rights can open a component in read-only mode — the workspace opens, but no changes can be made.
-
-Users without creation rights will not see the **Create component** button in the components overview.
-
-## User creation and invitation
-
-### First user
-
-The first user will be the [Subscription Admin](/CHILI-GraFx/users/roles/#subscription-admin), and is created by CHILI publish, as a result of a signed contract.
-
-### Subsequent Users
-
-Other users can be invited to CHILI GraFx by
-
-- A Subscription Admin
-- An Environment Admin
-
-Only the Subscription Admin & the Environment Admin can access the User Management page on CHILI GraFx where they can:
-
-- View an overview of the users
-- Invite users to CHILI GraFx
-- Give access to users
-
-## Changing roles
-
-Click here to see how to [change roles & Environment access](/CHILI-GraFx/users/update/).
+- [Invite users](/CHILI-GraFx/users/creation/) — create and invite users to your subscription or environment
+- [Change roles](/CHILI-GraFx/users/update/) — update a user's role or environment access
+- [Deactivate users](/CHILI-GraFx/users/deactivate/) — temporarily disable a user account
+- [Delete users](/CHILI-GraFx/users/delete/) — permanently remove a user
