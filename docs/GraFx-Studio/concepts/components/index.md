@@ -133,6 +133,12 @@ Components are intentionally more constrained than templates. This is by design:
 
     HTML output is not supported for templates that include components.
 
+## Permissions
+
+Access to components is role-based. Users without edit rights can open a component in read-only mode. The **Create component** button is only visible to users with creation rights.
+
+See [User roles — component access](/CHILI-GraFx/users/roles/#component-access) for the full access matrix.
+
 ## Get started
 
 New to components? The tutorial walks you through the complete journey:

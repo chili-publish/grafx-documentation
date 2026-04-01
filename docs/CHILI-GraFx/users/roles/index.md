@@ -131,6 +131,23 @@ A template Designer Seat can be assigned to a limited amount of people, dependin
 
 See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
 
+## Component access
+
+Access to [components](/GraFx-Studio/concepts/components/) in GraFx Studio depends on your role and subscription type.
+
+| Role | Component access |
+|:---|:---:|
+| Template Designer (any role + TDS) | Read + write |
+| SA | Read only |
+| EA | Read only |
+| CA (CPO pricebook) | Read + write |
+| CA (GraFx pricebook) | No access |
+| EU | No access |
+
+Users without edit rights can open a component in read-only mode — the workspace opens, but no changes can be made.
+
+Users without creation rights will not see the **Create component** button in the components overview.
+
 ## User creation and invitation
 
 ### First user
