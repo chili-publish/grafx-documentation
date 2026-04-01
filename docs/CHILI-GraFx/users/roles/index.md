@@ -35,24 +35,24 @@ Users without component edit rights can open a component in read-only mode — t
 
 ## Roles
 
-### Subscription Admin (SA)
+### Subscription Admin
 
-A Subscription Admin manages the subscription(s) they are assigned to. This is the highest-level administrative role.
+A Subscription Admin (SA) manages the subscription(s) they are assigned to. This is the highest-level administrative role.
 
 Permissions include viewing subscription details and usage reporting, managing users across all environments in the subscription (invite, update, remove), requesting add-ons, and contacting the Client Success Manager directly.
 
 !!! tip
     A Subscription Admin can assign or remove the Subscription Admin role for other users.
 
-### Environment Admin (EA)
+### Environment Admin
 
-An Environment Admin manages one or more CHILI GraFx environments, as assigned by a Subscription Admin.
+An Environment Admin (EA) manages one or more CHILI GraFx environments, as assigned by a Subscription Admin.
 
 Permissions include managing environment settings (e.g. branding), managing users within their environment(s) (invite, update, remove), and accessing all applications available to SA-level users within those environments.
 
-### End User (EU)
+### End User
 
-An End User works within the CHILI GraFx environments they are assigned to. This is the default role and cannot be removed.
+An End User (EU) works within the CHILI GraFx environments they are assigned to. This is the default role and cannot be removed.
 
 End Users can access GraFx Studio to create [My Projects](/GraFx-Studio/guides/create-projects/) based on Collections, using the fonts and media made available in the template. Access to other applications requires an additional role.
 
