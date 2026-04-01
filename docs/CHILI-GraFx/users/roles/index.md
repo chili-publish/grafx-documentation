@@ -30,7 +30,7 @@ The table below shows what each role can access. A Template Designer Seat (TDS) 
 
 Users without component edit rights can open a component in read-only mode — the Template Designer Workspace opens, but no changes can be saved. Users without creation rights will not see the **Create component** button.
 
-[^1]: [Content Administrator](#content-administrator-ca) is a legacy role for converted CHILI publisher Online customers. On a CPO pricebook, CA can create templates and access the TD Workspace. On a GraFx pricebook, a Template Designer Seat is required instead.
+[^1]: [Content Administrator](#content-administrator) is a legacy role for converted CHILI publisher Online customers. On a CPO pricebook, CA can create templates and access the TD Workspace. On a GraFx pricebook, a Template Designer Seat is required instead.
 [^2]: CA on a CPO pricebook has read + write access to components. CA on a GraFx pricebook has no access to the components page.
 
 ## Roles
@@ -57,18 +57,18 @@ An End User works within the CHILI GraFx environments they are assigned to. This
 End Users can access GraFx Studio to create [My Projects](/GraFx-Studio/guides/create-projects/) based on Collections, using the fonts and media made available in the template. Access to other applications requires an additional role.
 
 !!! info "Need to create templates?"
-    If an End User needs to create or edit templates, they must be assigned a [Template Designer Seat](#template-designer-seat).
+    If an End User needs to create or edit templates, they must be assigned a [Template Designer Seat](#template-designer).
 
-### Content Administrator (CA)
+### Content Administrator
 
 !!! warning "Legacy role"
     Content Administrator is only available to subscriptions converted from CHILI publisher Online. It is not visible on new subscriptions.
 
 A Content Administrator can create and use GraFx Publisher templates with no seat limit for converted CHILI publisher Online customers.
 
-For GraFx Studio, the impact depends on the pricebook: on a CPO pricebook, Content Administrators can create templates (output may be watermarked). On a GraFx pricebook, a [Template Designer Seat](#template-designer-seat) is required to create or edit templates.
+For GraFx Studio, the impact depends on the pricebook: on a CPO pricebook, Content Administrators can create templates (output may be watermarked). On a GraFx pricebook, a [Template Designer Seat](#template-designer) is required to create or edit templates.
 
-## Template Designer Seat
+## Template Designer
 
 A Template Designer Seat (TDS) is a paid add-on that grants template creation and editing permissions. The number of available seats is defined by your contract — if you have 100 users and 5 seats, only 5 users can hold this role at any time.
 
