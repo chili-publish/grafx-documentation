@@ -279,6 +279,16 @@ If output is generated while the mapped template variable is empty, the output f
 
 ---
 
+## Actions and the propagation boundary
+
+Variable mapping flows in one direction: template → component. This has a direct consequence for Actions configured inside a component.
+
+If an Action inside a component sets or changes a variable value at runtime, that change stays within the component. The template-side variable — the one the component is mapped to — is **not updated**. At output time, the engine reads the template-side value, which remains unchanged. The output reflects the template's value, not what the component's Action produced.
+
+This also means that if you expect output behavior to be driven by logic inside a component — for example, a layout name, a position, or a calculated value — that logic needs to live on the **template side** instead. A component's Actions are scoped to the component's own rendering; they cannot push results back through the mapping to the template.
+
+See [Actions in a component](/GraFx-Studio/guides/build-component/#actions-in-a-component) for a full explanation, including the output processing order behaviour and guidance on what is safe to put in component Actions.
+
 ## Related
 
 - [Components](/GraFx-Studio/concepts/components/) — what components are and why they exist

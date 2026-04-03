@@ -34,7 +34,7 @@ A Component is a separate resource in GraFx Studio, alongside Templates and Coll
 
 When a template designer places a component on a template, it behaves like a frame — it can be moved, resized, and positioned on the canvas. The component's internal design and logic remain managed within the component itself.
 
-Data flows **one way**: from the template into the component. The template can pass values to component variables, but a component cannot send data back to the template.
+Data flows **one way**: from the template into the component. The template can pass values to component variables, but a component cannot send data back to the template. This applies to Actions as well — if an Action inside a component changes a variable value, that change stays within the component. The template never sees it, and the output is driven by the template-side value, not the component-side update. See [Actions in a component](/GraFx-Studio/guides/build-component/#actions-in-a-component) for the full implications.
 
 ![Components overview — grid of available components](components-overview.png)
 

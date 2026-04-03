@@ -107,7 +107,6 @@ In the API, this is labeled as "EU". (End User)
 
 !!! Warning "Template Designer"
 	- If an End User wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer).
-	See also [Phased approach in roles](#overview-of-role-access)
 
 ### Content Administrator
 

@@ -44,7 +44,46 @@ The key difference is what is **not** there, by design:
 
 Everything else works as expected: you can add frames, apply Brand Kit styles, create layouts, define variables, and use actions.
 
-> **Actions and page size:** If an action inside a component attempts to change the page size, it will fail with an "Action failed" error at output time. This is by design — a component renders within the frame the template provides. To adapt a component's appearance to different frame sizes, use [multiple layouts](/GraFx-Studio/guides/build-component/#layouts-in-a-component) and [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) instead.
+## Actions in a component
+
+Actions are available in the component workspace and work the same way as in templates — you define a trigger and a JavaScript block that runs when the trigger fires. They are useful for controlling visibility, switching layouts, applying styles, or responding to variable changes **within the component's own scope**.
+
+However, there are two important limitations that are easy to overlook.
+
+### Variable changes do not propagate to the template
+
+Data flows one way: from the template into the component. If an Action inside a component sets or modifies a variable value, that change stays within the component. The template never receives it.
+
+This means: if you map a component variable to a template variable, and an Action inside the component updates that component variable at runtime, the template-side variable is **not updated**. At output time, the engine reads the template-side value — which is still whatever it was before the Action ran — and that is what appears in the output.
+
+!!! warning "Component Actions cannot drive template output"
+    Do not use Actions inside a component to set values that you expect to appear in the template or in the output. Those values will silently remain empty or unchanged on the template side.
+
+    If you need logic that affects output-level variable values, build that Action on the **template**, not inside the component.
+
+### Output processing order may differ from workspace order
+
+When GraFx Studio generates output, it processes template variables in an internal order that does not necessarily match the order they appear in the workspace or variable list. If an Action in a component fires in response to one variable and changes something (like a frame position), a subsequent variable processed by the engine may overwrite that result.
+
+The consequence: what you see on the canvas in Design Mode or Run Mode may not match what the output renders. The system is working as designed — but the workspace and the output engine apply values in a different sequence.
+
+!!! warning "Canvas ≠ output when Actions affect positions or layout"
+    If a component uses Actions that change frame positions, layout selection, or other properties based on variable values, always validate the actual output — not just the canvas preview. Discrepancies between canvas and output are a known consequence of the variable processing order at output time.
+
+### What Actions in a component are safe for
+
+Actions inside a component work reliably for anything that stays within the component's own rendering scope:
+
+- Showing or hiding frames based on component variables
+- Switching between internal layouts
+- Applying styles or copyfitting rules
+- Responding to a variable change to adjust the internal design
+
+For everything else — especially anything that needs to surface in the template or in the output — build the Action on the template side, where it has full visibility over the output rendering process.
+
+### Page size
+
+If an Action inside a component attempts to change the page size, it will fail with an "Action failed" error at output time. A component renders within the frame the template provides — it cannot change the frame itself. To adapt a component's appearance to different frame sizes, use [multiple layouts](#layouts-in-a-component) and [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) instead.
 
 ## Layouts in a component
 
