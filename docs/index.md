@@ -51,9 +51,9 @@
     The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
-    
+
     ---
-    
+
     **Mar 20, 2026**: Connector updates and platform UX improvements
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -71,26 +71,6 @@
     Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
-
-    ---
-
-    **Mar 8, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
-
-    ---
-
-    **Mar 8, 2026**: CHILI GraFx Platform API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Existing users invited to a new subscription now receive an email with the subscription name and sign-in guidance.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-platform-api-update/)
 
     ---
 
