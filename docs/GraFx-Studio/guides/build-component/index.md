@@ -95,7 +95,7 @@ These layouts are what makes [Resize mode](/GraFx-Studio/guides/use-components/#
 
 Variables work the same way as in templates, with one difference: **the List variable type is not available** in components.
 
-List variables present a dropdown of predefined options to the end user. Since variable mapping flows one-way from template into the component, a list variable on the component side would create a conflict — the template variable driving the value wouldn't know which options to respect. For this reason, only mappable variable types are supported in V1.
+List variables present a dropdown of predefined options to the end user. Since variable mapping flows one-way from template into the component, a list variable on the component side would create a conflict — the template variable driving the value wouldn't know which options to respect. For this reason, only mappable variable types are supported in components.
 
 Supported variable types in components:
 
@@ -105,6 +105,9 @@ Supported variable types in components:
 - Image
 - Boolean (toggle)
 - Date
+
+!!! note "Image variables require a different setup"
+    Image variables can be created in a component and used to drive image frames. Because each image variable is tied to a specific connector, they cannot be directly mapped from a template image variable. See [Passing an image into a component](#passing-an-image-into-a-component) for the setup.
 
 ![Variables panel in the component workspace](component-variables.png){.screenshot-full}
 
@@ -137,3 +140,47 @@ When a component is placed inside a template, it always runs as a project — bo
 Once your component is built, place it in a template:
 
 [Use components in a template →](/GraFx-Studio/guides/use-components/)
+
+## Passing an image into a component
+
+Because each image variable is tied to a specific connector, image variables cannot be directly mapped between a template and a component — the template has no visibility into how the component's connector is configured. The solution is to pass the asset ID through a text variable and use Actions to apply it on each side.
+
+**Both the template and the component must use the same connector.** The asset ID is only valid if both sides can resolve it through the same source.
+
+### Set up the component side
+
+In the component workspace, you need two variables and one Action:
+
+1. An **Image** variable — for example, `Product Image` — connected to your connector, driving the image frame.
+2. A **Single-line text** variable — for example, `ImageID` — this is the bridge that receives the asset ID from the template.
+3. An Action with trigger **Variable value changed → ImageID**, and the following script:
+
+```javascript
+setVariableValue("Product Image", getTriggeredVariableValue());
+```
+
+When `ImageID` receives a new value through the mapping, this Action immediately applies it to the image variable.
+
+### Set up the template side
+
+For each component instance placed on the template, you need two variables and one Action:
+
+1. An **Image** variable — for example, `ProductImage1` — connected to the same connector as the component. This is what the end user interacts with to pick an image.
+2. A **Single-line text** variable — for example, `ProductImageID1` — this carries the asset ID to the component.
+3. An Action with trigger **Variable value changed → ProductImage1**, and the following script:
+
+```javascript
+setVariableValue("ProductImageID1", getTriggeredVariableValue());
+```
+
+When the end user selects an image, the asset ID is written to `ProductImageID1` automatically.
+
+### Map the variables
+
+In the template, open **Manage mapping** for the component instance and map the component's `ImageID` to the template's `ProductImageID1`. Text-to-text mapping works without restriction.
+
+### How it works at runtime
+
+When an end user picks an image through `ProductImage1`, the template Action writes its asset ID to `ProductImageID1`. That value flows through the mapping into the component's `ImageID`. The component Action fires and sets `Product Image` to that ID — the correct image appears inside the component.
+
+For templates with multiple instances of the same component, repeat the template-side variable pair and Action for each instance (`ProductImage2` / `ProductImageID2`, and so on), mapping each instance to its own ID variable.

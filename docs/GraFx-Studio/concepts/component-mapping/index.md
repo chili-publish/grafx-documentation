@@ -2,7 +2,7 @@
 
 Think of a component as a reusable visual widget. You build it once — layout, brand rules, logic — then place it on a template as many times as you need. Each placement is independent: same widget, but each one can show different content.
 
-**Variable mapping** is how you tell each placement what to show. You connect the component's own variables — like `price` or `product_image` — to variables that live in the template. The template holds the actual values; the component displays them.
+**Variable mapping** is how you tell each placement what to show. You connect the component's own variables — like `price` or `product_name` — to variables that live in the template. The template holds the actual values; the component displays them.
 
 This page walks through the most common design scenarios, from the simplest single placement to full leaflet layouts.
 
