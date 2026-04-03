@@ -2,7 +2,7 @@
 
 A Component is a reusable design element that can be placed inside a template. Think of it as a self-contained building block — with its own layout, brand rules, and business logic — that you design once and reuse across as many templates as you need.
 
-![Components in GraFx Studio navigation](comp01.png)
+![Components in GraFx Studio navigation](comp01.png){.screenshot-full}
 
 ## Why components
 
@@ -36,7 +36,7 @@ When a template designer places a component on a template, it behaves like a fra
 
 Data flows **one way**: from the template into the component. The template can pass values to component variables, but a component cannot send data back to the template. This applies to Actions as well — if an Action inside a component changes a variable value, that change stays within the component. The template never sees it, and the output is driven by the template-side value, not the component-side update. See [Actions in a component](/GraFx-Studio/guides/build-component/#actions-in-a-component) for the full implications.
 
-![Components overview — grid of available components](components-overview.png)
+![Components overview — grid of available components](comp03.png){.screenshot-full}
 
 ## What happens when a component is updated
 
@@ -79,7 +79,7 @@ Each component exposes its own set of variables. These are the values a template
 
 Variable mapping is done per component instance. This means the same component placed three times on a page can carry three completely different sets of values — one per instance.
 
-![Components variable mapping](comp02.png)
+![Components variable mapping](comp02.png){.screenshot-full}
 
 ### Variable constraints
 

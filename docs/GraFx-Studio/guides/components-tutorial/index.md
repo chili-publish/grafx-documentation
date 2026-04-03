@@ -1,10 +1,10 @@
 # Tutorial: Build and use a pricing component
 
-This tutorial walks through the complete journey of creating a component and using it in a template — from a blank workspace to a finished two-coupon sheet where each coupon shows different product data.
+This tutorial walks through the complete journey of creating a component and using it in a template — from a blank workspace to a finished two-coupon sheet where each coupon shows a different price.
 
-**What you'll build:** A `Pricing element` component with three variables, placed twice on a coupon sheet template, with independent variable mapping per instance.
+**What you'll build:** A `Price Element` component with two variables — `Price` and `Regular Price` — placed twice on a template, with independent variable mapping per instance.
 
-**Time:** approximately 20–30 minutes.
+**Time:** approximately 15–20 minutes.
 
 **Before you start:** You should be familiar with the Template Designer Workspace and know how to create variables in a template. If not, review [Variables](/GraFx-Studio/concepts/variables/) first.
 
@@ -12,17 +12,16 @@ This tutorial walks through the complete journey of creating a component and usi
 
 ## Step 1 — Plan before you build
 
-Before opening the workspace, take a moment to decide what the component needs. This saves time later.
+Before opening the workspace, decide what the component needs to display and expose as variables. This saves time later.
 
-For a pricing element, you need to display three things per coupon:
+For a pricing element, you need to show two values per coupon:
 
-- A **product image**
-- A **product name** (short text)
-- A **price** (text, e.g. "€ 2.99")
+- A **price** (e.g. €89.99)
+- A **regular price** (e.g. €109.99) — shown as a strikethrough to indicate the discount
 
-These become the component's variables. Everything else — background color, typography, layout, brand rules — is part of the design and will be fixed inside the component.
+These become the component's two variables. Everything else — the yellow badge design, typography, layout, brand rules — is part of the fixed design inside the component.
 
-> **Naming tip:** Give your variables clear, descriptive names now. They appear by name in the mapping modal when template designers connect them to template variables. `product_image`, `product_name`, and `price` are immediately understandable. `var_1`, `var_2`, `var_3` are not.
+> **Naming tip:** Give variables clear, descriptive names. They appear by name in the mapping modal when template designers connect them to template variables. `Price` and `Regular Price` are immediately understandable.
 
 ---
 
@@ -30,186 +29,175 @@ These become the component's variables. Everything else — background color, ty
 
 In GraFx Studio, click **Components** in the left navigation.
 
-![Components selected in GraFx Studio navigation](tutorial-components-nav.png)
+![Components selected in GraFx Studio left navigation](tutorial-components-nav.png){.screenshot}
 
-The Components overview opens. Click **+ Create component** in the top right.
+The Components overview opens, showing all available components. Click **+ Create component** in the top right.
 
-![Components overview with the + Create component button highlighted](tutorial-create-component.png)
+![Components overview page with grid of components](tutorial-create-component.png){.screenshot}
 
-Give the component a clear name: `Pricing element`. Click **Create**.
+Give the component a clear name: `Price Element`. Click **Create**.
 
-The component workspace opens — it looks like the Template Designer Workspace, with the same canvas, toolbar, and properties panel.
-
----
-
-## Step 3 — Set the component size
-
-The component has one page and one layout. Set the canvas size to match the coupon dimensions you'll use on the template — for example 90mm × 55mm (a standard coupon size).
-
-This is the component's default size. When the component is placed on a template, the template designer can resize the frame, and Resize Mode controls how the component responds.
+The component workspace opens — it looks similar to the Template Designer Workspace, with the same canvas, toolbar, and properties panel.
 
 ---
 
-## Step 4 — Design the layout
+## Step 3 — Design the layout
 
-Add three frames to the canvas:
+Design the pricing badge on the canvas. For this tutorial, the Price Element is a yellow rounded badge that shows the price prominently, with the regular price below it in a smaller strikethrough style.
 
-1. An **image frame** for the product image — place it on the left side
-2. A **text frame** for the product name — place it on the right, upper half
-3. A **text frame** for the price — place it on the right, lower half
+You can add multiple layouts to handle different frame orientations — for example a horizontal, vertical, and square version of the same badge.
 
-Apply your Brand Kit colors, fonts, and any background shapes. Keep the design clean — this element will be repeated across many templates.
+![Component workspace showing multiple layouts in the layouts panel](tutorial-component-canvas.png){.screenshot-full}
 
-![Component canvas showing the image frame and two text frames arranged in a coupon layout](tutorial-component-canvas.png)
+Keep the design self-contained. Everything a template designer should not be able to change — colors, fonts, the badge shape — lives inside the component and is not exposed as a variable.
 
 ---
 
-## Step 5 — Add variables and connect them to the frames
+## Step 4 — Add variables
 
-Open the **Variables** panel. Add three variables:
+Open the **Variables** panel. Add two variables:
 
 | Variable name | Type |
 |---|---|
-| `product_image` | Image |
-| `product_name` | Single-line text |
-| `price` | Single-line text |
+| `Price` | Number |
+| `Regular Price` | Number |
 
-![Variables panel showing the three variables added to the component](tutorial-variables-panel.png)
+![Variables panel in the component workspace showing Price and Regular Price](tutorial-variables-panel.png){.screenshot-full}
 
-Now connect each variable to its frame:
+Use the **Variable type** dropdown to set each variable to **Number**. Number variables support formatting options — decimal separator, currency symbol, and number of decimal places — which you configure in the variable settings.
 
-- Select the **image frame** → in the properties panel, link the image source to `product_image`
-- Select the **product name text frame** → link the text content to `product_name`
-- Select the **price text frame** → link the text content to `price`
+![Variable type dropdown showing all supported variable types](tutorial-variable-types.png){.screenshot}
 
-The frames now display whatever values come in through those variables.
+Connect each variable to the appropriate text frame on the canvas:
+
+- Select the **price text frame** → in the properties panel, link the text content to `Price`
+- Select the **regular price text frame** → link the text content to `Regular Price`
+
+The frames now display whatever values are passed in through those variables.
 
 ---
 
-## Step 6 — Test in Run Mode
+## Step 5 — Test in Run Mode
 
 Switch to **Run Mode** to check that the variables work correctly before placing the component in a template.
 
-![Component workspace in Run Mode with test values entered in each variable field](tutorial-run-mode.png)
+![Component workspace in Run Mode with test values entered in the variable fields](runmode.png){.screenshot-full}
 
-Enter test values — any product name, price, and a placeholder image. Confirm the layout looks right, text fits as expected, and the image displays correctly.
+Enter test values — for example `89.99` for Price and `109.99` for Regular Price. Confirm the layout looks right and the numbers format as expected.
 
-Switch back to **Design Mode** and make any adjustments needed.
-
----
-
-## Step 7 — Save the component
-
-The component is ready. Save it. It is now available in the Components library for any template designer – including yourself – in the environment to use.
+Switch back to **Design Mode** and adjust as needed.
 
 ---
 
-## Step 8 — Create the coupon sheet template
+## Step 6 — Save the component
 
-Switch to **Templates** in the left navigation and create a new template. Name it `Coupon sheet — 2up`.
-
-Set the page size to accommodate two coupons side by side — for example 200mm × 75mm for a two-up landscape layout with a small margin between coupons.
-
-![New template canvas for the two-coupon sheet layout](tutorial-template-canvas.png)
+The component is ready. Save it. It is now available in the Components library for any template designer in the environment to use.
 
 ---
 
-## Step 9 — Place the first component instance
+## Step 7 — Create the template
 
-In the Template Designer Workspace, click the **Resources** icon in the bottom left toolbar.
+Switch to **Templates** in the left navigation and create a new template. Name it something like `Store Display`.
 
-![Resources icon in the left toolbar](tutorial-resources-icon.png)
-
-Select **Components**. The component browser opens. Search for `Pricing` and click `Pricing element`.
-
-![Component browser with Pricing element shown in search results](tutorial-component-browser.png)
-
-The component is placed as a frame on the canvas. Move and resize it to sit in the left half of the template — this will be coupon 1.
-
-![Template canvas showing the first Pricing element instance placed on the left side](tutorial-instance-1-placed.png)
+Set up your template canvas — for example a landscape banner layout that has room for two component instances side by side.
 
 ---
 
-## Step 10 — Place the second component instance
+## Step 8 — Place the first component instance
 
-Click **Pricing element** in the component browser again. A second independent instance is placed on the canvas.
+In the Template Designer Workspace, click the **Resources** icon in the bottom left toolbar. Select **Components**.
 
-Move and resize it to sit in the right half of the template — this will be coupon 2.
+![Resources panel showing Components highlighted](tutorial-resources-icon.png){.screenshot}
 
-![Template canvas showing both Pricing element instances side by side](tutorial-both-instances.png)
+The component browser opens. Search for `Price` and click `Price Element` to place it on the canvas.
+
+![Component browser showing the Price Element component](tutorial-component-browser.png){.screenshot}
+
+Move and resize the component frame to position it on the template.
 
 ---
 
-## Step 11 — Map variables for instance 1
+## Step 9 — Place the second instance
 
-Select the **first component frame** (coupon 1). In the right properties panel, find the **Component Variables** section and click **Manage mapping**.
+Click `Price Element` in the component browser again. A second independent instance is placed on the canvas.
 
-![Component Variables section with Manage mapping button for instance 1](tutorial-manage-mapping-1.png)
+Move and resize it to sit alongside the first instance — each one will show a different product price.
 
-The mapping modal opens. All three component variables appear under the **Not mapped** tab.
+![Template canvas showing two Price Element instances placed side by side](tutorial-both-instances.png){.screenshot-full}
 
-For each variable, leave **Map to** set to **New variable** and click **Apply**. GraFx Studio creates three new template variables:
+---
+
+## Step 10 — Map variables for instance 1
+
+Select the **first component frame**. In the right properties panel, find the **Component Variables** section and click **Manage mapping**.
+
+The **Map component elements to variables** modal opens.
+
+![Map component elements to variables modal](tutorial-mapping-modal.png){.screenshot-full}
+
+Both component variables appear under the **Not mapped** tab.
+
+![Not mapped tab showing Price and Regular Price unmapped](tutorial-unmapped.png){.screenshot}
+
+Leave **Map to** set to **New variable** for both and click **Apply**. GraFx Studio creates two new template variables:
 
 | Component variable | New template variable |
 |---|---|
-| `product_image` | `product_image` |
-| `product_name` | `product_name` |
-| `price` | `price` |
+| `Price` | `Item Price` |
+| `Regular Price` | `Item Regular Price` |
 
-![Mapping modal showing three component variables mapped to new template variables](tutorial-mapping-instance-1.png)
-
----
-
-## Step 12 — Map variables for instance 2
-
-Select the **second component frame** (coupon 2). Click **Manage mapping** again.
-
-This time, you already have template variables from instance 1. You want coupon 2 to show **different** data, so map each variable to a **New variable** again. GraFx Studio creates a second set:
-
-| Component variable | New template variable |
-|---|---|
-| `product_image` | `product_image_2` |
-| `product_name` | `product_name_2` |
-| `price` | `price_2` |
-
-> **Why are these named `_2`?** GraFx Studio automatically avoids duplicate names. The first instance created `product_image`, so the second set gets `product_image_2`. You can rename them in the Variables panel to anything that makes sense — `product_image_coupon_1` and `product_image_coupon_2`, for example.
-
-![Mapping modal for instance 2 showing the second set of template variables](tutorial-mapping-instance-2.png)
+![Mapping modal showing variables mapped to new template variables](tutorial-newvarmapping.png){.screenshot}
 
 ---
 
-## Step 13 — Check the variable list
+## Step 11 — Map variables for instance 2
 
-Open the **Variables** panel. You'll see all six template variables, grouped by component instance.
+Select the **second component frame**. Click **Manage mapping** again.
 
-![Variables panel showing both component groups with their mapped variables](tutorial-variable-list.png)
+In this tutorial, instance 2 is mapped to the **same** template variables as instance 1 — `Item Price` and `Item Regular Price`. Set **Map to** to **Variable** and choose the existing variables from the dropdown.
+
+![Map to dropdown showing existing variable options](tutorial-existingvarmapping.png){.screenshot}
+
+Both component instances now share the same two template variables. Change `Item Price` once, and both instances update.
+
+> **Want each instance to show different data?** Set **Map to** to **New variable** instead. GraFx Studio creates a second set of template variables — for example `Item Price 2` and `Item Regular Price 2` — giving each instance its own independent values.
+
+---
+
+## Step 12 — Check the variable list
+
+Open the **Variables** panel. You'll see `Item Price` and `Item Regular Price` listed as regular template variables — not in a component group. Because instance 2 was mapped to existing variables, no new variables were created and no new group was added.
+
+![Variables panel showing component groups with mapped variables](varlist.png){.screenshot}
+
+If you had mapped instance 2 to new variables, a second component group would appear with its own set. In this tutorial there is one group — from instance 1 — and the existing variables are shared.
 
 These variables work like any other template variable — they can be filled in manually in Run Mode, driven by a data connector, or used in actions.
 
 ---
 
-## Step 14 — Test the complete template
+## Step 13 — Test the complete template
 
-Switch to **Run Mode**. Enter values for all six variables — two different products, two different prices, two different images.
+Switch to **Run Mode**. Enter values for each instance — two different prices, two different regular prices.
 
-![Template in Run Mode showing two coupons with different product data](tutorial-result.png)
+![Template in Run Mode showing two Price Element instances with different values](templaterunmode.png){.screenshot-full}
 
-Both coupons display their own product independently, using the same pricing component design.
+Both component instances display their own price independently, using the same component design.
 
 ---
 
 ## What you've built
 
-- A `Pricing element` component with three variables, reusable across any template
-- A `Coupon sheet — 2up` template with two independent instances of that component
-- Six template variables connecting the template to the component
+- A `Price Element` component with two Number variables, reusable across any template
+- A template with two instances of that component, both connected to the same two template variables
+- An understanding of when to map to new variables (independent data per instance) vs existing variables (shared data across instances)
 
-If the pricing component design ever needs to change — a new font, an updated color, a revised layout — you edit the component once. The coupon sheet template (and every other template using the component) updates automatically.
+If the pricing component design ever needs to change — a new font, an updated color, a different badge shape — you edit the component once. Every template using it updates automatically.
 
 ---
 
 ## Next steps
 
 - [Component variable mapping](/GraFx-Studio/concepts/component-mapping/) — understand all mapping patterns including multi-page and shared mappings
-- [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) — add multiple layouts to your component so it adapts to different frame sizes
+- [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) — add multiple layouts so the component adapts to different frame sizes
 - [Build a component](/GraFx-Studio/guides/build-component/) — full reference for the component workspace

@@ -11,15 +11,13 @@ See [Components](/GraFx-Studio/concepts/components/) for an introduction, or [Bu
 
 Open the template in the Template Designer Workspace. In the left toolbar, click the **Resources** icon at the bottom.
 
-![Resources icon in the left toolbar of the template workspace](resources-icon.png)
-
 The Resources panel opens. Select **Components**.
 
-![Resources panel with Components highlighted](resources-components.png)
+![Resources icon in the left toolbar of the template workspace](resources-icon.png){.screenshot}
 
 The component browser opens, showing all available components. Use the search field to find a component by name.
 
-![Component browser with search results showing Component-Price](component-browser-search.png)
+![Component browser with search results showing Component-Price](component-browser-search.png){.screenshot}
 
 Click a component to place it on the canvas. The component is placed as a frame at the center of the active layout.
 
@@ -29,7 +27,7 @@ Click a component to place it on the canvas. The component is placed as a frame 
 
 You can place the same component multiple times on the same page. Each placement is an independent instance with its own position, size, and variable mapping.
 
-![Three instances of the same pricing component placed on a template canvas](component-multiple-instances.png)
+![Two instances of the same pricing component placed on a template canvas](scenario-2-canvas.png){.screenshot-full}
 
 This is the basis for use cases like a coupon sheet (same pricing component, once per coupon) or a leaflet page (same product ad component, once per product).
 
@@ -39,7 +37,7 @@ A component can have multiple layouts — for example a square, horizontal, and 
 
 With a component frame selected, find the **Resize Mode** section in the right properties panel.
 
-![Resize Mode dropdown in the properties panel with three options](resize-mode-dropdown.png)
+![Resize Mode dropdown in the properties panel with three options](resize-mode-dropdown.png){.screenshot-full}
 
 ### Scale
 
@@ -59,8 +57,6 @@ Combines both modes: the component first selects the best-matching layout (Scale
 
 Use Scale and resize when you want automatic layout selection **and** a clean fill of the frame with no white space.
 
-![Three component instances showing Scale, Resize, and Scale and resize behavior](resize-mode-comparison.png)
-
 ## Variable mapping
 
 Variable mapping is how you connect the component's variables to variables at the template level. This is what allows each component instance to show different data — even when it's the same component placed multiple times on the same page.
@@ -69,11 +65,9 @@ Variable mapping is how you connect the component's variables to variables at th
 
 Select a component frame on the canvas. In the right properties panel, find the **Component Variables** section and click **Manage mapping**.
 
-![Component Variables section in the properties panel with Manage mapping button](manage-mapping-button.png)
-
 The **Map component elements to variables** modal opens.
 
-![Map component elements to variables modal with Not mapped and Mapped tabs](mapping-modal.png)
+![Map component elements to variables modal with Not mapped and Mapped tabs](mapping-modal.png){.screenshot-full}
 
 ### The mapping modal
 
@@ -81,6 +75,10 @@ The modal has two tabs:
 
 - **Not mapped** — component variables that are not yet connected to a template variable
 - **Mapped** — component variables that have already been connected
+
+![Unmapped Component Variables](unmapped.png){.screenshot}
+
+![Mapped Component Variables](mapped.png){.screenshot}
 
 Each row shows:
 
@@ -94,7 +92,7 @@ If the template does not yet have matching variables, set **Map to** to **New va
 
 The summary at the bottom of the modal shows how many mappings will be created and how many new variables will be added. Click **Apply** to confirm.
 
-![Mapping modal showing two component variables mapped to new variables](mapping-new-variables.png)
+![Mapping modal showing two component variables mapped to new variables](newvarmapping.png){.screenshot-full}
 
 ### Map to an existing variable
 
@@ -102,7 +100,7 @@ If the template already has variables — for example because another instance o
 
 This is also how you connect two component instances to the **same** template variable, if you want them to always show the same value.
 
-![Map to dropdown expanded showing New variable and Variable options](mapping-existing-variable.png)
+![Map to dropdown expanded showing New variable and Variable options](existingvarmapping.png){.screenshot-full}
 
 ### Per-instance mapping
 
@@ -111,8 +109,6 @@ Each component instance on the canvas has its own mapping configuration. A templ
 ### Mapped variables in the variable list
 
 After applying the mapping, the new template variables appear in the variable list under a **Component** group, named after the component instance.
-
-![Variable list showing Component group with mapped variables](variable-list-component-group.png)
 
 These variables work like any other template variable — they can be used in actions, exposed in Studio UI, or driven by a data source.
 

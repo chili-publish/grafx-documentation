@@ -15,15 +15,13 @@ See [Components](/GraFx-Studio/concepts/components/) for an introduction to what
 
 In GraFx Studio, select **Components** from the left navigation.
 
-![Components selected in GraFx Studio left navigation](components-nav.png)
+![Components selected in GraFx Studio left navigation](components-nav.png){.screenshot}
 
 The Components overview shows all components in your environment, with the same grid and list view options as the Templates overview.
 
-![Components overview page with grid of components](components-overview.png)
+![Components overview page with grid of components](components-overview.png){.screenshot}
 
 To create a new component, click **+ Create component** in the top right.
-
-You can also import an existing component from a `.ZIP` file using the **Import .ZIP** button.
 
 ## The component workspace
 
@@ -91,7 +89,7 @@ A component can have multiple layouts, just like a template. Each layout can hav
 
 These layouts are what makes [Resize mode](/GraFx-Studio/guides/use-components/#resize-mode) powerful: when the component is placed on a template, GraFx Studio can automatically pick the best-matching layout based on the frame size.
 
-![Component workspace showing multiple layouts](component-layouts.png)
+![Component workspace showing multiple layouts](component-layouts.png){.screenshot-full}
 
 ## Variables in a component
 
@@ -108,7 +106,9 @@ Supported variable types in components:
 - Boolean (toggle)
 - Date
 
-![Variables panel in the component workspace](component-variables.png)
+![Variables panel in the component workspace](component-variables.png){.screenshot-full}
+
+![Variables panel in the component workspace](component-variable-types.png){.screenshot}
 
 Variables defined in a component are the values that template designers can connect to template variables through [variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping). Keep your variable names clear and descriptive — they appear by name in the mapping modal.
 

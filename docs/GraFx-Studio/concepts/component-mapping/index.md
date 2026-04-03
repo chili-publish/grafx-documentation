@@ -25,28 +25,25 @@ See [Use components in a template](/GraFx-Studio/guides/use-components/#variable
 
 You're designing a product card template. There's one price tag in the design — one component, placed once. Because the price tag is a component, the same widget can be reused across other templates without rebuilding it. Here, it just appears once, and each component variable connects to one template variable.
 
-![Template canvas showing a single price tag component placed on the page](scenario-1-canvas.png)
+![Template canvas showing a single price tag component placed on the page](scenario-1-canvas.png){.screenshot-full}
 
-When you open **Manage mapping** for the component, you see three component variables: `price`, `product_name`, and `product_image`. You map each one to a new template variable with the same name.
+When you open **Manage mapping** for the component, you see two component variables: `price`, `regular price`. You map each one to a new template variable with the same name.
 
-That's it — three connections, and the component shows whatever the template variables contain.
+That's it — two connections, and the component shows whatever the template variables contain.
 
 ??? note "The structure behind this"
     ```mermaid
     flowchart LR
         subgraph Template
-            T1["price"]
-            T2["product_name"]
-            T3["product_image"]
+            T1["Item Price"]
+            T2["Item Regular Price"]
         end
-        subgraph "Price tag (instance 1)"
+        subgraph "Price Eleent (instance 1)"
             C1["price"]
-            C2["product_name"]
-            C3["product_image"]
+            C2["regular price"]
         end
         T1 --> C1
         T2 --> C2
-        T3 --> C3
     ```
 
 ---
@@ -55,42 +52,36 @@ That's it — three connections, and the component shows whatever the template v
 
 You're now building a coupon sheet. Two coupons sit side by side on the same page. Both use the same price tag component, but each coupon shows a different product.
 
-![Template canvas with two price tag component instances placed side by side on one page](scenario-2-canvas.png)
+![Template canvas with two price tag component instances placed side by side on one page](scenario-2-canvas.png){.screenshot-full}
 
 You place the component twice. Then you open **Manage mapping** for each instance separately:
 
-- **Instance 1:** map `price` → `price_1`, `product_name` → `product_name_1`, `product_image` → `product_image_1`
-- **Instance 2:** map `price` → `price_2`, `product_name` → `product_name_2`, `product_image` → `product_image_2`
+- **Instance 1:** map `price` → `Item price`, `regular price` → `Item Regular Price`
+- **Instance 2:** map `price` → `Item price 2`, `regular price` → `Item Regular Price 2`
 
-The template now has six variables — a `_1` set and a `_2` set. Each coupon reads from its own set and shows its own product independently.
+The template now has four variables. Each coupon reads from its own set and shows its own product independently.
 
 ??? note "The structure behind this"
     ```mermaid
     flowchart LR
         subgraph Template
-            T1["price_1"]
-            T2["product_name_1"]
-            T3["product_image_1"]
-            T4["price_2"]
-            T5["product_name_2"]
-            T6["product_image_2"]
+            T1["Item Price"]
+            T2["Item Regular Price"]
+            T4["Item Price 2"]
+            T5["Item Regular Price 2"]
         end
         subgraph "Price tag (instance 1)"
             C1A["price"]
-            C2A["product_name"]
-            C3A["product_image"]
+            C2A["regular price"]
         end
         subgraph "Price tag (instance 2)"
             C1B["price"]
-            C2B["product_name"]
-            C3B["product_image"]
+            C2B["regular price"]
         end
         T1 --> C1A
         T2 --> C2A
-        T3 --> C3A
         T4 --> C1B
         T5 --> C2B
-        T6 --> C3B
     ```
 
 ---
@@ -99,7 +90,7 @@ The template now has six variables — a `_1` set and a `_2` set. Each coupon re
 
 The coupon sheet spans two pages — one coupon per page. The setup is the same as scenario 2: two instances, two independent mappings, two sets of template variables. The only difference is that each component lives on a different page of the template.
 
-![Two-page template showing one price tag component per page](scenario-3-canvas.png)
+![Two-page template showing one price tag component per page](scenario-3-canvas.png){.screenshot-full}
 
 Mapping doesn't change based on which page a component is on. You still open **Manage mapping** for each instance separately and connect it to its own variable set.
 
@@ -107,29 +98,23 @@ Mapping doesn't change based on which page a component is on. You still open **M
     ```mermaid
     flowchart LR
         subgraph Template
-            T1["price_1"]
-            T2["product_name_1"]
-            T3["product_image_1"]
-            T4["price_2"]
-            T5["product_name_2"]
-            T6["product_image_2"]
+            T1["Item Price"]
+            T2["Item Regular Price"]
+            T4["Item Price 2"]
+            T5["Item Regular Price 2"]
         end
-        subgraph "Page 1 — instance 1"
+        subgraph "Price tag (instance 1 on page 1)"
             C1A["price"]
-            C2A["product_name"]
-            C3A["product_image"]
+            C2A["regular price"]
         end
-        subgraph "Page 2 — instance 2"
+        subgraph "Price tag (instance 2 on page 2)"
             C1B["price"]
-            C2B["product_name"]
-            C3B["product_image"]
+            C2B["regular price"]
         end
         T1 --> C1A
         T2 --> C2A
-        T3 --> C3A
         T4 --> C1B
         T5 --> C2B
-        T6 --> C3B
     ```
 
 ---
@@ -138,98 +123,45 @@ Mapping doesn't change based on which page a component is on. You still open **M
 
 You're designing a brochure. A product badge appears on the front cover and again on the back cover. Both should always show the same product — no separate data per page.
 
-![Two-page template showing the same component on page 1 and page 2, both connected to the same variables](scenario-4-canvas.png)
+![Two-page template showing the same component on page 1 and page 2, both connected to the same variables](scenario-4-canvas.png){.screenshot-full}
 
 You place the component on page 1 and again on page 2. When you open **Manage mapping** for page 2's instance, instead of creating new variables, you map each component variable to the **existing** template variables — the same ones already used by page 1.
 
-Now both placements read from the same source. Change `product_name` once, and it updates on both pages simultaneously.
+Now both placements read from the same source. Change `price` once, and it updates on both pages simultaneously.
 
 ??? note "The structure behind this"
     ```mermaid
     flowchart LR
         subgraph Template
-            T1["price"]
-            T2["product_name"]
-            T3["product_image"]
+            T1["Item Price"]
+            T2["Item Regular Price"]
         end
         subgraph "Page 1 (front) — instance 1"
             C1A["price"]
-            C2A["product_name"]
-            C3A["product_image"]
+            C2A["regular price"]
         end
         subgraph "Page 2 (back) — instance 2"
             C1B["price"]
-            C2B["product_name"]
-            C3B["product_image"]
+            C2B["regular price"]
         end
         T1 --> C1A
         T2 --> C2A
-        T3 --> C3A
         T1 --> C1B
         T2 --> C2B
-        T3 --> C3B
     ```
 
-The template only needs three variables, regardless of how many times the component appears — as long as all instances should always show the same thing.
+The template only needs two variables, regardless of how many times the component appears — as long as all instances should always show the same thing.
 
----
-
-## Scenario 5 — Six placements on one page
-
-You're designing a retail leaflet page: six product ads arranged in a grid, all using the same ad component, each showing a different product.
-
-![Leaflet page with six product ad component instances arranged in a 2×3 grid](scenario-5-canvas.png)
-
-You place the component six times. Then you open **Manage mapping** for each instance and connect it to its own set of product variables: `price_1` through `price_6`, `product_name_1` through `product_name_6`, and so on.
-
-The design is defined once in the component. Six placements, six independent mappings, six different products — all on one page.
-
-![Mapping modal for instance 3, showing component variables connected to the _3 set of template variables](scenario-5-mapping.png)
-
-When the ad design needs updating — a new font, a different layout, revised promo logic — you change the component once. Every instance on every template that uses it updates automatically.
-
-??? note "The structure behind this"
-    ```mermaid
-    flowchart LR
-        subgraph Template
-            direction TB
-            T1["price_1 … image_1"]
-            T2["price_2 … image_2"]
-            T3["price_3 … image_3"]
-            T4["price_4 … image_4"]
-            T5["price_5 … image_5"]
-            T6["price_6 … image_6"]
-        end
-        subgraph "Ad component — 6 instances"
-            direction TB
-            I1["Instance 1"]
-            I2["Instance 2"]
-            I3["Instance 3"]
-            I4["Instance 4"]
-            I5["Instance 5"]
-            I6["Instance 6"]
-        end
-        T1 --> I1
-        T2 --> I2
-        T3 --> I3
-        T4 --> I4
-        T5 --> I5
-        T6 --> I6
-    ```
-
----
 
 ## Combining scenarios
 
 These patterns work together. A multi-page catalog might combine:
 
 - A **header component** shared between front and back (scenario 4)
-- **Six product ads per page** driven by independent variable sets (scenario 5)
+- **Two product ads per page** driven by independent variable sets (scenario 2)
 - Spread **across multiple pages** (scenario 3)
 
 GraFx Studio groups the template variables by component instance in the variable list, so even a template with many mapped components stays organized.
-
-![Variable list showing variables grouped by component instance name](variable-list-grouped.png)
 
 ---
 
