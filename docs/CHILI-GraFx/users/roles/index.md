@@ -107,7 +107,6 @@ In the API, this is labeled as "EU". (End User)
 
 !!! Warning "Template Designer"
 	- If an End User wants to create templates in the CHILI GraFx environment this user needs to have an additional role: [Template Designer](#template-designer).
-	See also [Phased approach in roles](#overview-of-role-access)
 
 ### Content Administrator
 
@@ -130,6 +129,23 @@ To be able to make/edit GraFx Studio Templates while on a CHILI GraFx contract, 
 A template Designer Seat can be assigned to a limited amount of people, depending on the amount of seats you subscribed to.
 
 See the [Template Designer Seat](/CHILI-GraFx/users/template-designer/) page
+
+## Component access
+
+Access to [components](/GraFx-Studio/concepts/components/) in GraFx Studio depends on your role and subscription type.
+
+| Role | Component access |
+|:---|:---:|
+| Template Designer (any role + TDS) | Read + write |
+| SA | Read only |
+| EA | Read only |
+| CA (CPO pricebook) | Read + write |
+| CA (GraFx pricebook) | No access |
+| EU | No access |
+
+Users without edit rights can open a component in read-only mode — the workspace opens, but no changes can be made.
+
+Users without creation rights will not see the **Create component** button in the components overview.
 
 ## User creation and invitation
 

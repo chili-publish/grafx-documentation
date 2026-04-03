@@ -13,13 +13,13 @@
 
     ---
 
-    **Mar 30, 2026**: CHILI GraFx Environment API Update
+    **Apr 3, 2026**: Components, image crop, and improvements
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Template creation and modification dates are now returned by the API, making it easier to track changes and sync templates in your integration.
+    Components are now available in GraFx Studio — design a pricing block, product ad, or any branded element once, then reuse it across templates. Plus image crop constraints for end users, connector shared headers, and a range of fixes.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/30/chili-grafx-environment-api-update/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/03/grafx-studio-components-image-crop-and-improvements/)
 
     ---
 
@@ -67,7 +67,7 @@
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
+    More control over subject types via API — manage subject type assignments programmatically as part of your environment integration workflow.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
