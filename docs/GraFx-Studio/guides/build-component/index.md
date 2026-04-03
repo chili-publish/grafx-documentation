@@ -29,16 +29,16 @@ The component workspace opens after you create or open a component. It looks sim
 
 The key difference is what is **not** there, by design:
 
-| Feature | Not available in components | Reason |
-|---|---|---|
-| Digital animated intent | ❌ | Animation intent is set on the parent template. Component content does not animate — but the component frame can be animated in the template timeline. |
-| Multi-page | ❌ | A component is a single reusable element, not a document |
-| Output / Export button | ❌ | Output is produced by the parent template, not the component |
-| User Interface settings | ❌ | UI settings belong at the template level |
-| Bleed & slug | ❌ | Print production settings live on the template |
-| Private data | ❌ | Not supported in components |
-| Add component as a frame | ❌ | Not supported in V1 |
-| Change page size via actions | ❌ | The template determines the frame size — the component adapts to the space it's given |
+| Feature | Reason |
+|---|---|
+| Digital animated intent | Animation intent is set on the parent template. Component content does not animate — but the component frame can be animated in the template timeline. |
+| Multi-page | A component is a single reusable element, not a document |
+| Output / Export button | Output is produced by the parent template, not the component |
+| User Interface settings | UI settings belong at the template level |
+| Bleed & slug | Print production settings live on the template |
+| Private data | Not supported in components |
+| Add component as a frame | Not supported in V1 |
+| Change page size via actions | The template determines the frame size — the component adapts to the space it's given |
 
 Everything else works as expected: you can add frames, apply Brand Kit styles, create layouts, define variables, and use actions.
 
