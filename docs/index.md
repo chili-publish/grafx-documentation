@@ -13,28 +13,17 @@
 
     ---
 
-    **Apr 1, 2026**: Components for GraFx Studio
+    **Apr 3, 2026**: Components, image crop, and improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Design a pricing block, a product ad, or any branded element once — then place and reuse it across as many templates as you need. Update the component once, and every template reflects the change automatically.
+    Components are now available in GraFx Studio — design a pricing block, product ad, or any branded element once, then reuse it across templates. Plus image crop constraints for end users, connector shared headers, and a range of fixes.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/01/components-for-grafx-studio/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/03/grafx-studio-components-image-crop-and-improvements/)
 
-    ---
-
-    **Mar 12, 2026**: Text constraints, page duplication, and stability improvements
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
-  
     ---
 
     **Mar 26, 2026**: CHILI GraFx Environment API Update
-
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
@@ -71,6 +60,16 @@
     Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
+
+    ---
+
+    **Mar 8, 2026**: CHILI GraFx Environment API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    More control over subject types via API — manage subject type assignments programmatically as part of your environment integration workflow.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
     ---
 
