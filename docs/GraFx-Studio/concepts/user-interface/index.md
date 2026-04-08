@@ -76,7 +76,11 @@ If the **Variables** section is enabled, one additional option is available:
 
 - **Show variable groups** — toggles whether variables are displayed in their defined groups or as a flat list
 
-![screenshot](ui-variable-groups.png){.screenshot}
+Click the settings icon next to **Variables** to open the variables panel.
+
+![The settings icon next to the Variables section in the Form builder](variable-settings-01.png){.screenshot}
+
+![The variables settings panel with the Show variable groups toggle enabled](variable-settings-02.png){.screenshot}
 
 When enabled, end users see variables organized by the groups defined in the Smart Template. When disabled, all variables appear as a single flat list, regardless of how they are grouped in the template.
 
