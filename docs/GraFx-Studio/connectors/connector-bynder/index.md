@@ -74,13 +74,13 @@ https://[your-domain].bynder.com/v6/authentication/oauth2/token
 
 - **Scope**: Consult your Canto Admin to determine the appropriate scope. Asset:read and collection:read are minumum requirements.
 
-Consult your Canto System Admin for assistance in configuring these fields.
+Consult your Bynder System Admin for assistance in configuring these fields.
 
-## Using Assets from Your Canto Dam
+## Using Assets from Your Bynder Dam
 
 ### Place Assets in Your Template
 
-- Select the Canto Connector.
+- Select the Bynder Connector.
 
 -- Add Screenshot
 
