@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 14, 2026**: CHILI GraFx Environment API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Components bundled in a plugin export can now be imported directly through the Environment API, making it easier to distribute and deploy components as part of a plugin package.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/14/chili-grafx-environment-api-update/)
+
+    ---
+
     **Apr 3, 2026**: Components, image crop, and improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -20,6 +30,16 @@
     Components are now available in GraFx Studio — design a pricing block, product ad, or any branded element once, then reuse it across templates. Plus image crop constraints for end users, connector shared headers, and a range of fixes.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/03/grafx-studio-components-image-crop-and-improvements/)
+
+    ---
+
+    **Mar 30, 2026**: CHILI GraFx Environment API Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Template creation and modification dates are now available via the Environment API, giving integrations access to accurate timestamps for each template.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/30/chili-grafx-environment-api-update/)
 
     ---
 
@@ -50,26 +70,6 @@
     Connector update notifications, set-as-default moved to the connector list, localized dates in environment tables, newest-first default sorting, and a connector auth fix.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/20/connector-updates-and-platform-ux-improvements/)
-
-    ---
-
-    **Mar 12, 2026**: Text constraints, page duplication, and stability improvements
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
-
-    ---
-
-    **Mar 8, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    More control over subject types via API — manage subject type assignments programmatically as part of your environment integration workflow.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
     ---
 
