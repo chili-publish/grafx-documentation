@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 15, 2026**: Adobe InDesign and Photoshop Plugin Update v1.3.0
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Text columns, bullet and numbered lists, nested frame handling, and locked layer export — plus fidelity fixes for both the InDesign and Photoshop plugins.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/15/adobe-indesign-and-photoshop-plugin-update-v1-3-0/)
+
+    ---
+
     **Apr 3, 2026**: Components, image crop, and improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -60,16 +70,6 @@
     Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
-
-    ---
-
-    **Mar 8, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    More control over subject types via API — manage subject type assignments programmatically as part of your environment integration workflow.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
     ---
 
