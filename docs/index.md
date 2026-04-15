@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 15, 2026**: Adobe InDesign and Photoshop Plugin Update v1.3.0
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Text columns, bullet and numbered lists, nested frame handling, and locked layer export — plus fidelity fixes for both the InDesign and Photoshop plugins.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/15/adobe-indesign-and-photoshop-plugin-update-v1-3-0/)
+  
+    ---
+  
     **Apr 14, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
