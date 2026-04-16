@@ -485,6 +485,7 @@ nav:
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Connectors: Media':
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
+            - 'Bynder DAM':                     'GraFx-Studio/connectors/connector-bynder/index.md'
             - 'Canto DAM':                      'GraFx-Studio/connectors/connector-canto/index.md'
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Keepeek Media':                  'GraFx-Studio/connectors/connector-keepeek-media/index.md'
