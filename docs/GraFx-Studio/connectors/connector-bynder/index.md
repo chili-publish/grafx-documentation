@@ -34,13 +34,13 @@ Then click the installed Connector to access the configuration.
 
 ### Configuration
 
-Your instance of the Connector needs to know which Canto instance it should communicate with and how to authenticate.
+Your instance of the Connector needs to know which Bynder instance it should communicate with and how to authenticate.
 
 ![screenshot-full](sc03.png)
 
 **baseURL**
 
-Your Canto System Administrator will provide you with this information.
+Your Bynder System Administrator will provide you with this information.
 
 For example
 
@@ -72,7 +72,7 @@ Select your type of authentication:
 https://[your-domain].bynder.com/v6/authentication/oauth2/token
 ```
 
-- **Scope**: Consult your Canto Admin to determine the appropriate scope. Asset:read and collection:read are minumum requirements.
+- **Scope**: Consult your Canto Admin to determine the appropriate scope. Asset:read and collection:read are minimum requirements.
 
 Consult your Bynder System Admin for assistance in configuring these fields.
 
@@ -84,25 +84,25 @@ Consult your Bynder System Admin for assistance in configuring these fields.
 
 ![screenshot-full](sc05.png)
 
-![screenshot-full](sc05.png)
-
 ![screenshot-full](sc06.png)
+
+![screenshot-full](sc07.png)
 
 ### Image Variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except is you have set configuration options (see below).
 
--- Add Screenshot
+![screenshot-full](sc08.png)
 
 ### Metadata mapping
 
 See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details
 
--- Add Screenshot
+![screenshot-full](sc09.png)
 
 ### Configuration Options
 
--- Add Screenshot
+![screenshot-full](sc10.png)
 
 To filter the assets suggested to template users, you can use several methods.
 
