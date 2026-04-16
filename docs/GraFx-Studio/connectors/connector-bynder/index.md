@@ -26,17 +26,17 @@ Consult your [Bynder documentation](https://support.bynder.com/hc/en-us/articles
 
 From the overview of Environments, click on "Settings" on the right to your environment, where you want to install or configure the Connector.
 
--- Add Screenshot
+![screenshot-full](sc01.png)
 
 Then click the installed Connector to access the configuration.
 
--- Add Screenshot
+![screenshot-full](sc02.png)
 
 ### Configuration
 
 Your instance of the Connector needs to know which Canto instance it should communicate with and how to authenticate.
 
--- Add Screenshot
+![screenshot-full](sc03.png)
 
 **baseURL**
 
@@ -60,7 +60,7 @@ For example
 
 ### Authentication
 
--- Add Screenshot
+![screenshot-full](sc04.png)
 
 Select your type of authentication:
 
@@ -82,11 +82,11 @@ Consult your Bynder System Admin for assistance in configuring these fields.
 
 - Select the Bynder Connector.
 
--- Add Screenshot
+![screenshot-full](sc05.png)
 
--- Add Screenshot
+![screenshot-full](sc05.png)
 
--- Add Screenshot
+![screenshot-full](sc06.png)
 
 ### Image Variables
 
