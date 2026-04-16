@@ -1,5 +1,3 @@
-#WORK IN PROGRESS - DRAFT
-
 # Media Connector for Bynder
 
 :fontawesome-regular-square: Built-in  
