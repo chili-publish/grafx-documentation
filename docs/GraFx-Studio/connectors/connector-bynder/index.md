@@ -88,7 +88,7 @@ Consult your Bynder System Admin for assistance in configuring these fields.
 
 ### Image Variables
 
-When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except is you have set configuration options (see below).
+When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except if you have set configuration options (see below).
 
 ![screenshot-full](sc08.png)
 
