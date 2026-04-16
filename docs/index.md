@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 16, 2026**: New Connector: Bynder
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Connect your Bynder DAM to GraFx Studio — browse and place assets directly from your Bynder library, with support for OAuth 2.0, metadata mapping, and collection filtering.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/16/new-connector-bynder/)
+
+	---
+	
     **Apr 15, 2026**: Adobe InDesign and Photoshop Plugin Update v1.3.0
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
