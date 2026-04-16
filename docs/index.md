@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 16, 2026**: New Connector: Bynder
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Connect your Bynder DAM to GraFx Studio — browse and place assets directly from your Bynder library, with support for OAuth 2.0, metadata mapping, and collection filtering.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/16/new-connector-bynder/)
+
+    ---
+
     **Mar 30, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
-
-    ---
-
-    **Mar 8, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
     ---
 
