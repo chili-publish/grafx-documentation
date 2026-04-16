@@ -70,7 +70,7 @@ Select your type of authentication:
 https://[your-domain].bynder.com/v6/authentication/oauth2/token
 ```
 
-- **Scope**: Consult your Canto Admin to determine the appropriate scope. Asset:read and collection:read are minimum requirements.
+- **Scope**: Consult your Bynder Admin to determine the appropriate scope. asset:read and collection:read are minimum requirements.
 
 Consult your Bynder System Admin for assistance in configuring these fields.
 
