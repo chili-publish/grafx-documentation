@@ -70,6 +70,23 @@ If the **Layouts** section is enabled, you can configure two additional options:
 
 The result: the User Interface settings determine what is shown in **My Projects**, as long as the Smart Template supports those features.
 
+### Variable-specific options
+
+If the **Variables** section is enabled, one additional option is available:
+
+- **Show variable groups** — toggles whether variables are displayed in their defined groups or as a flat list
+
+Click the settings icon next to **Variables** to open the variables panel.
+
+![The settings icon next to the Variables section in the Form builder](variable-settings-01.png){.screenshot}
+
+![The variables settings panel with the Show variable groups toggle enabled](variable-settings-02.png){.screenshot}
+
+When enabled, end users see variables organized by the groups defined in the Smart Template. When disabled, all variables appear as a single flat list, regardless of how they are grouped in the template.
+
+!!! info
+    Variable groups are defined in the **Variables** panel of the Template Designer Workspace. If no groups are defined in the template, this setting has no visible effect.
+
 ### Preview in Run Mode
 
 ![Preview in Run Mode](ui15.png){.screenshot-full}
