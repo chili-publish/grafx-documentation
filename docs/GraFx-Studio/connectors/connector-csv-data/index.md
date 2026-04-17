@@ -20,11 +20,23 @@ You can deploy multiple instances of the connector, each pointing to a different
 
 Once installed, open the connector in your **Connector overview** and go to **Configuration**.
 
-The only setting is:
-
 - **CSV File URL** — the full public URL of your CSV file.
+- **Allowed Domains** — a list of domains the connector is permitted to fetch from.
 
 Paste in your URL and save. The connector will fetch and parse the file on every use.
+
+### Allowed Domains
+
+Because the connector fetches files from public URLs, it's good practice to restrict which domains it can reach. The **Allowed Domains** setting lets you define an explicit list — the connector will only fetch CSV files hosted on those domains and refuse any other URL.
+
+For example, if your CSV files are always hosted on `cdn.example.com`, add that domain to the list. Any request to a different domain will be blocked, even if a valid URL is provided.
+
+This protects against a template or integration accidentally — or intentionally — pointing the connector at an untrusted source.
+
+Wildcards are supported. Use `*.example.com` to allow all subdomains of a domain — for example, if your files are spread across multiple subdomains like `cdn.example.com` and `assets.example.com`, a single wildcard entry covers all of them.
+
+!!! tip
+    Keep the list as specific as possible. Use an exact hostname (e.g. `cdn.example.com`) when your files always come from one place. Use a wildcard (e.g. `*.example.com`) only when you genuinely need to cover multiple subdomains.
 
 ## Hosting requirement
 
