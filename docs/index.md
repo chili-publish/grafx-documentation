@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 17, 2026**: New Data Connector: CSV
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Use any publicly accessible CSV file as a data source in GraFx Studio — no authentication needed. Column headers become template variables automatically, with built-in type inference and pagination.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/17/new-data-connector-csv/)
+
+    ---
+
     **Apr 16, 2026**: New Connector: Bynder
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -21,8 +31,8 @@
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/16/new-connector-bynder/)
 
-	---
-	
+    ---
+
     **Apr 15, 2026**: Adobe InDesign and Photoshop Plugin Update v1.3.0
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -60,36 +70,6 @@
     Template creation and modification dates are now available via the Environment API, giving integrations access to accurate timestamps for each template.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/30/chili-grafx-environment-api-update/)
-
-    ---
-
-    **Mar 26, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Tags endpoints are now part of the public Environment API — manage and assign tags to templates programmatically as part of your integration workflow.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/chili-grafx-environment-api-update/)
-
-    ---
-
-    **Mar 26, 2026**: GraFx Genie — Product Image Creator update
-
-    ![rn_icon](/assets/icon-Grafx-Genie.svg)
-
-    The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
-
-    ---
-
-    **Mar 20, 2026**: Connector updates and platform UX improvements
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Connector update notifications, set-as-default moved to the connector list, localized dates in environment tables, newest-first default sorting, and a connector auth fix.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/20/connector-updates-and-platform-ux-improvements/)
 
     ---
 
