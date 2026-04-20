@@ -50,7 +50,7 @@ The AI assistant built into CHILI GraFx. GraFx Genie shows up in several places 
 - [Smart Crop in GraFx Media](/GraFx-Media/concepts/genie-smart-crop/) — automatically detects the subject area and point of interest when an asset is uploaded, so images crop intelligently in templates.
 - [Smart Crop in GraFx Studio](/GraFx-Studio/concepts/genie-smart-crop/) — uses the metadata set in GraFx Media to position images correctly within frames based on layout and subject position.
 - [Product Image Creator](/CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-creator/) — generates product images from a prompt. Part of GraFx Labs (experimental).
-- [Product Image Composer](/CHILI-GraFx/guides/grafx-labs/graFx-genie-product-image-composer/) — composes product scenes from multiple elements. Part of GraFx Labs (experimental).
+- [Product Image Composer](/CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-composer/) — composes product scenes from multiple elements. Part of GraFx Labs (experimental).
 
 ## GraFx Labs
 

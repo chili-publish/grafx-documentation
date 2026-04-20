@@ -437,7 +437,7 @@ CHILI GraFx Client
 | Administration | `/CHILI-GraFx/admin/` |
 | User Management (8) | `/CHILI-GraFx/users/intro/`, `/users/scope/`, `/users/roles/`, `/users/template-designer/`, `/users/creation/`, `/users/deactivate/`, `/users/delete/`, `/users/transition/` |
 | How-to Guides (11) | `/CHILI-GraFx/guides/role-access-update/`, `/guides/manage-individual-access/`, `/guides/manage-user-groups/`, `/guides/manage-group-membership/`, `/guides/manage-group-access/`, `/guides/create-studio-template/`, `/guides/create-publisher-template/`, `/guides/setup-fsso/intro/`, `/guides/setup-fsso/oidc/`, `/guides/setup-fsso/saml/`, `/guides/setup-fsso/example-federated-groups-entraid/` |
-| GraFx Labs (2) | `/CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-creator/`, `/guides/grafx-labs/graFx-genie-product-image-composer/` |
+| GraFx Labs (2) | `/CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-creator/`, `/guides/grafx-labs/grafx-genie-product-image-composer/` |
 | Onboarding (7) | `/CHILI-GraFx/guides/onboarding/intro/`, `/onboarding/migration/`, `/onboarding/logging-in/`, `/onboarding/navigation/`, `/onboarding/applications/`, `/onboarding/upgrade/` |
 | Trust (8) | `/CHILI-GraFx/trust/introduction/`, `/trust/security-policy/`, `/trust/compliance/`, `/trust/data-centers/`, `/trust/gdpr/`, `/trust/user-generated-content/`, `/trust/AI/`, `/trust/definitions/` |
 | Other | `/CHILI-GraFx/support/`, `/CHILI-GraFx/browser-support/` |
