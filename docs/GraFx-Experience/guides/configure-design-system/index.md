@@ -62,7 +62,6 @@ After saving, open the template detail page and go to **Versions**. The first ve
 
 Click **Publish** to make the template available to end users. Until a version is published, the template will not appear in the portal even if its status is set to Active.
 
-![The Versions tab on a template showing the first version in Draft status with the Publish button visible](template-versions-publish.png){.screenshot-full}
 
 ## Step 6: Verify
 

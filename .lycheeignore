@@ -1,0 +1,43 @@
+# ── CHILI internal / legacy URLs ─────────────────────────────────────────────
+# Matches all https://cp-*.chili-publish.online placeholder/example URLs
+^https://cp
+^https://my\.chili-publish\.com
+^https://chili-publish\.com/CGXGroups
+^https://login\.chiligrafx\.com/login/callback
+
+# ── Auth-required external sites ─────────────────────────────────────────────
+# Support portal — Zendesk, requires login for deep article URLs
+^https://mysupport\.chili-publish\.com
+
+# Academy — requires login
+^https://product\.chili-publish\.academy
+
+# Google Cloud Console — requires auth
+^https?://console\.cloud\.google\.com
+
+# ── OAuth / API endpoints not meant to be browsed ────────────────────────────
+^https://oauth2\.googleapis\.com/token
+
+# ── Code examples — localhost URLs are never reachable ───────────────────────
+^http://localhost
+
+# ── Versioned SDK paths with literal template braces ─────────────────────────
+^https://studio-cdn\.chiligrafx\.com/studio-ui/%7Bminor\.version%7D/latest/es-module/bundle\.js$
+
+# ── GitHub SDK types file — versioned blob, frequently moved ─────────────────
+^https://github\.com/chili-publish/studio-sdk/blob/.*/types/Actions\.d\.ts$
+
+# ── YouTube embeds — some video IDs return 404 (removed / made private) ──────
+youtube\.com/embed/f6hQiLs--Q4
+
+# ── Legacy 2023 release notes — old underscore-style URL scheme ──────────────
+# These were the original URL slugs before the site was restructured.
+# The pages no longer exist at these paths; historical posts are not edited.
+/GraFx_
+/CHILI_GraFx
+
+# ── MkDocs blog-generated release note URLs ───────────────────────────────────
+# Cross-references between release note posts use the blog-generated URL format
+# (e.g. /release-notes/YYYY/MM/DD/slug/). These paths only exist in the built
+# output, not as source files, so lychee cannot verify them at check time.
+release-notes/\d{4}/\d{2}/\d{2}/

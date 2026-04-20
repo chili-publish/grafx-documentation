@@ -104,7 +104,7 @@ Click the "Subject Area" button, and you'll be able to set the Subject Area and 
 
 ![screenshot-full](sc03.png)
 
-See also [Concept of Smart Crop](/concepts/genie-smart-crop/) and [Set Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
+See also [Concept of Smart Crop](/GraFx-Studio/concepts/genie-smart-crop/) and [Set Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
 
 !!! warning "Watch out!"
     If you set the Subject Area here, it will impact all templates where this asset is used, as the Subject Area and POI are stored alongside the media.
