@@ -47,5 +47,5 @@ If a different image is loaded, or the same image is used in a different frame/l
 
 ## See also
 
-- [Image Crop Modes](/GraFx-Studio/concepts/image-crop-modes/)
-- [How to Apply a Manual Crop Override](/GraFx-Studio/guides/manual-crop-override/)
+- [Image Crop Modes](/GraFx-Studio/concepts/crop/)
+- [How to Apply a Manual Crop Override](/GraFx-Studio/guides/cropping/)
