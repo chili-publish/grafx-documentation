@@ -39,6 +39,14 @@ You can control the following interactions:
 - **Constrain proportions**  
   Locks the aspect ratio during resize.
 
+- **Allow crop**  
+  When enabled, end users see a crop icon and can drag the image within the frame. Frame size and position stay fixed — only the image position inside the frame changes.
+
+  Behaviour differs by fit mode:
+
+  - **Fit, Fill, or Smart crop frames:** each image gets its own individual crop offset.
+  - **Manual crop frames:** the crop offset is shared across all images in the frame.
+
 ### Constraint Dependencies
 
 Some constraints depend on others and cannot be enabled in isolation:
