@@ -13,77 +13,63 @@
 
     ---
 
-<<<<<<< Docs/roles-page-rework
-    **Apr 1, 2026**: Components for GraFx Studio
+    **Apr 17, 2026**: New Data Connector: CSV
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Design a pricing block, a product ad, or any branded element once — then place and reuse it across as many templates as you need. Update the component once, and every template reflects the change automatically.
+    Use any publicly accessible CSV file as a data source in GraFx Studio — no authentication needed. Column headers become template variables automatically, with built-in type inference and pagination.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/01/components-for-grafx-studio/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/17/new-data-connector-csv/)
 
     ---
 
-    **Mar 12, 2026**: Text constraints, page duplication, and stability improvements
+    **Apr 16, 2026**: New Connector: Bynder
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Text constraints, page duplication, improved anchored frame duplication, unique IDs in template JSON, and a range of stability fixes.
+    Connect your Bynder DAM to GraFx Studio — browse and place assets directly from your Bynder library, with support for OAuth 2.0, metadata mapping, and collection filtering.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/12/text-constraints-page-duplication-and-stability-improvements/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/16/new-connector-bynder/)
+
+    ---
+
+    **Apr 15, 2026**: Adobe InDesign and Photoshop Plugin Update v1.3.0
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Text columns, bullet and numbered lists, nested frame handling, and locked layer export — plus fidelity fixes for both the InDesign and Photoshop plugins.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/15/adobe-indesign-and-photoshop-plugin-update-v1-3-0/)
   
     ---
+  
+    **Apr 14, 2026**: CHILI GraFx Environment API Update
 
-=======
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Components bundled in a plugin export can now be imported directly through the Environment API, making it easier to distribute and deploy components as part of a plugin package.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/14/chili-grafx-environment-api-update/)
+
+    ---
+
+    **Apr 3, 2026**: Components, image crop, and improvements
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Components are now available in GraFx Studio — design a pricing block, product ad, or any branded element once, then reuse it across templates. Plus image crop constraints for end users, connector shared headers, and a range of fixes.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/03/grafx-studio-components-image-crop-and-improvements/)
+
+    ---
+
     **Mar 30, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    Template creation and modification dates are now returned by the API, making it easier to track changes and sync templates in your integration.
+    Template creation and modification dates are now available via the Environment API, giving integrations access to accurate timestamps for each template.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/30/chili-grafx-environment-api-update/)
-
-    ---
-
->>>>>>> main
-    **Mar 26, 2026**: CHILI GraFx Environment API Update
-
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Tags endpoints are now part of the public Environment API — manage and assign tags to templates programmatically as part of your integration workflow.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/chili-grafx-environment-api-update/)
-
-    ---
-
-    **Mar 26, 2026**: GraFx Genie — Product Image Creator update
-
-    ![rn_icon](/assets/icon-Grafx-Genie.svg)
-
-    The AI model powering the Product Image Creator in GraFx Labs has been upgraded — product images now render with more accurate detail, better composition, and sharper results.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/26/grafx-genie-product-image-creator-update/)
-
-    ---
-
-    **Mar 20, 2026**: Connector updates and platform UX improvements
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Connector update notifications, set-as-default moved to the connector list, localized dates in environment tables, newest-first default sorting, and a connector auth fix.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/20/connector-updates-and-platform-ux-improvements/)
-
-    ---
-
-    **Mar 8, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    API access for subject types — the categories Vision AI uses for smart crop — plus fallback text in font lists when a preview can't be shown.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/08/chili-grafx-environment-api-update/)
 
     ---
 
