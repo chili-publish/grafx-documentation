@@ -76,7 +76,9 @@ Click **Manage** to choose which Brand Kit colors are available.
 
 #### Font size
 
-Enable **Allow font size editing** to let end users change the font size. When enabled, set a **Min font size** and **Max font size** to constrain the permitted range.
+**Allow font size editing** is **enabled by default** when inline text editing is turned on. If you do not want end users to change font sizes, disable this option explicitly.
+
+When enabled, set a **Min font size** and **Max font size** to constrain the permitted range.
 
 ![Font size constraint settings showing the Allow font size editing checkbox with Min and Max font size inputs](tc06.png){.screenshot}
 
