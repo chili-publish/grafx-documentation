@@ -47,6 +47,7 @@ This ensures:
 ## Current experiments
 
 - [GraFx Genie Product Image Creator](/CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-creator/)
+- [GraFx Genie Product Image Composer](/CHILI-GraFx/guides/grafx-labs/grafx-genie-product-image-composer/)
 
 ## Typical use cases
 
