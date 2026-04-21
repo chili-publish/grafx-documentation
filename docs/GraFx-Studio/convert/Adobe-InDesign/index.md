@@ -189,6 +189,8 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Blend modes                              | ⚠️                | Object-level only; stroke/fill/text may convert    |
 |                        | Mirror / Shear                           | ⚠️                | Shear triggers preflight                           |
 |                        | Z-index / stacking order                 | ✅                |                                                    |
+|                        | Nested text frames                       | ✅                | Preflight warning shown — convert to PDF or ignore |
+|                        | Nested frames in shapes                  | ✅                | Detected and included in preflight report          |
 | **Text Frames**        | Font (name and style)                    | ✅                |                                                    |
 |                        | Font size                                | ✅                |                                                    |
 |                        | Tracking                                 | ✅                |                                                    |
@@ -200,6 +202,9 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | All caps                                 | ✅                |                                                    |
 |                        | Text color                               | ✅                |                                                    |
 |                        | Soft return, discretionary line break    | ✅                | Exported as expected                               |
+|                        | Text columns                             | ✅                | Multi-column frames exported with column structure intact |
+|                        | Bullet lists                             | ⚠️                | Exported; indentation may differ slightly          |
+|                        | Numbered lists                           | ⚠️                | Exported; exact numbered markers may not be preserved |
 | **Alignment**          | Left                                     | ✅                |                                                    |
 |                        | Center                                   | ✅                |                                                    |
 |                        | Right                                    | ✅                |                                                    |
@@ -238,7 +243,7 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Unsupported gradients                    | ⚠️                | Radial gradients or unsupported color models trigger preflight |
 | **Layers**             | Layer names                              | ✅                | Default names in Studio                            |
 |                        | Hidden layers                            | ❌                | Not exported                                       |
-|                        | Locked layers                            | ✅                | Not exported                                       |
+|                        | Locked layers                            | ✅                | Exported as PDF                                    |
 |                        | Hidden/locked objects                    | ✅                | Not exported                                       |
 | **Pages**              | Export specific page                     | ✅                | Page dropdown updated in real time                 |
 |                        | Export all pages                         | ✅                | Max 50 pages                                       |
