@@ -5,3 +5,4 @@
 /__pycache__
 *.pyc
 .claude/skills/doc-health-check/SKILL.md
+CLAUDE.md
