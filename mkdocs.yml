@@ -393,9 +393,6 @@ nav:
             - 'Bleed':                          'GraFx-Studio/concepts/bleed/index.md'
             - 'Blend modes':                    'GraFx-Studio/concepts/blendmodes/index.md'
             - 'Color Management':               'GraFx-Studio/concepts/color-management/index.md'
-            - 'Components':                     'GraFx-Studio/concepts/components/index.md'
-            - 'Components - Variable mapping':  'GraFx-Studio/concepts/component-mapping/index.md'
-            - 'Components - Studio strategy':   'GraFx-Studio/concepts/components-strategy/index.md'
             - 'Connectors':                     'GraFx-Studio/concepts/connectors/index.md'
             - 'Connectors for Data':            'GraFx-Studio/concepts/connectors-data/index.md'
             - 'Connectors for Media':           'GraFx-Studio/concepts/connectors-media/index.md'
@@ -439,8 +436,6 @@ nav:
             - 'Bulleted Lists':                 'GraFx-Studio/guides/bulleted-lists/index.md'
             - 'Character Styles':               'GraFx-Studio/guides/characterstyles/index.md'
             - 'Colors':                         'GraFx-Studio/guides/colors/index.md'
-            - 'Components - Build':             'GraFx-Studio/guides/build-component/index.md'
-            - 'Components - Use':               'GraFx-Studio/guides/use-components/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
             - 'Drop Shadow':                    'GraFx-Studio/guides/drop-shadow/index.md'
@@ -488,8 +483,6 @@ nav:
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
-        - 'Tutorials':
-            - 'Components: Build a pricing component': 'GraFx-Studio/guides/components-tutorial/index.md'
         - 'Connectors: Media':
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
             - 'Bynder DAM':                     'GraFx-Studio/connectors/connector-bynder/index.md'
