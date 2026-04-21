@@ -21,7 +21,7 @@ This flexibility opens up numerous possibilities for customizing and enhancing t
 
 Since you don't want to pass secure credentials, your server side code will need to generate a token.
 
-[This page](/CHILI-GraFx/guides/integrations/#step-4-generating-an-access-token) explains how.
+[This page](/CHILI-GraFx/concepts/integrations/) explains how.
 
 ## Quick start
 

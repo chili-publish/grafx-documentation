@@ -39,6 +39,14 @@ You can control the following interactions:
 - **Constrain proportions**  
   Locks the aspect ratio during resize.
 
+- **Allow crop**  
+  When enabled, end users see a crop icon and can drag the image within the frame. Frame size and position stay fixed — only the image position inside the frame changes.
+
+  Behaviour differs by fit mode:
+
+  - **Fit, Fill, or Smart crop frames:** each image gets its own individual crop offset.
+  - **Manual crop frames:** the crop offset is shared across all images in the frame.
+
 ### Constraint Dependencies
 
 Some constraints depend on others and cannot be enabled in isolation:
@@ -104,7 +112,7 @@ Click the "Subject Area" button, and you'll be able to set the Subject Area and 
 
 ![screenshot-full](sc03.png)
 
-See also [Concept of Smart Crop](/concepts/genie-smart-crop/) and [Set Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
+See also [Concept of Smart Crop](/GraFx-Studio/concepts/genie-smart-crop/) and [Set Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
 
 !!! warning "Watch out!"
     If you set the Subject Area here, it will impact all templates where this asset is used, as the Subject Area and POI are stored alongside the media.

@@ -112,7 +112,7 @@ Pull requests from external sources will be denied.
 The releasenotes uses a blog-style structure: each entry has its own page.
 The pages can be found under docs/release-notes/releaseposts/[releasenote].md
 
-![screensho](/docs/release-notes/releasenotesassets/releaseposts.png)
+The files follow the naming convention: `yyyyMMddxx.md`
 
 Where each file has the naming convention: yyyyMMddxx.md
 - yyyy 4 digit year e.g. 2024

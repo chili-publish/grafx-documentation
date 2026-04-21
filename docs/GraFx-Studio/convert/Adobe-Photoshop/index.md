@@ -146,6 +146,9 @@ The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 | **Text Objects**       | Font (name and style)                     | ✅                |                                                    |
 |                        | Small Caps                               | ❌                | Converted to lowercase; preflight warning shown    |
 |                        | Text styles (character/inline mix)       | ⚠️                | May miss styles; avoid using both in same object   |
+|                        | Text columns                             | ✅                | Column layout text layers now supported            |
+|                        | Bullet lists                             | ⚠️                | Exported; indentation may differ slightly          |
+|                        | Numbered lists                           | ⚠️                | Exported; exact numbered markers may not be preserved |
 | **Paragraph/Character Styles** | Automatic generation of styles   | ✅                | Generated for each text object                     |
 |                        | Preserve original style names            | ❌                | Default names like 'Paragraph Style 1'             |
 | **Shapes**             | Basic shape export                       | ✅                |                                                    |
@@ -163,6 +166,9 @@ The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 |                        | Non-linear gradient types                | ❌                | Converted to PDF for visual consistency             |
 |                        | Non-classic gradient modes               | ❌                | Converted to PDF for visual consistency             |
 | **Visual Effects**     | Drop shadow (object-level)               | ✅                | Warning always shown                                |
+
+!!! note
+    Some effect names in preflight warnings differ from Photoshop's UI. For example, **Satin** appears as *chromeFX* in the preflight output.
 
 !!! note
     Only **Linear** gradient types and **Classic** gradient mode are supported.  
