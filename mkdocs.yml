@@ -443,7 +443,6 @@ nav:
             - 'Components - Use':               'GraFx-Studio/guides/use-components/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
-            - 'Default Template':               'GraFx-Studio/guides/default-template/index.md'
             - 'Drop Shadow':                    'GraFx-Studio/guides/drop-shadow/index.md'
             - 'Fonts':                          'GraFx-Studio/guides/add-fonts/index.md'
             - 'Gradients':                      'GraFx-Studio/guides/gradients/index.md'
