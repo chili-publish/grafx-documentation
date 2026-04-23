@@ -491,6 +491,7 @@ nav:
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Tutorials':
             - 'Components: Build a pricing component': 'GraFx-Studio/tutorials/components-tutorial/index.md'
+            - 'Default Template':               'GraFx-Studio/tutorials/default-template/index.md'
         - 'Connectors: Media':
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
             - 'Bynder DAM':                     'GraFx-Studio/connectors/connector-bynder/index.md'
