@@ -443,6 +443,7 @@ nav:
             - 'Components - Use':               'GraFx-Studio/guides/use-components/index.md'
             - 'Create Layouts':                 'GraFx-Studio/guides/layouts/index.md'
             - 'Crop images':                    'GraFx-Studio/guides/cropping/index.md'
+            - 'Default Template':               'GraFx-Studio/guides/default-template/index.md'
             - 'Drop Shadow':                    'GraFx-Studio/guides/drop-shadow/index.md'
             - 'Fonts':                          'GraFx-Studio/guides/add-fonts/index.md'
             - 'Gradients':                      'GraFx-Studio/guides/gradients/index.md'
@@ -489,7 +490,7 @@ nav:
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Tutorials':
-            - 'Components: Build a pricing component': 'GraFx-Studio/guides/components-tutorial/index.md'
+            - 'Components: Build a pricing component': 'GraFx-Studio/tutorials/components-tutorial/index.md'
         - 'Connectors: Media':
             - 'Acquia DAM':                     'GraFx-Studio/connectors/connector-acquia-dam/index.md'
             - 'Bynder DAM':                     'GraFx-Studio/connectors/connector-bynder/index.md'
