@@ -33,7 +33,7 @@ This is the basis for use cases like a coupon sheet (same pricing component, onc
 
 ## Resize Mode
 
-A component can have multiple layouts — for example a square, horizontal, and vertical version of the same design. The **Resize Mode** setting controls how the component fills the frame you've placed it in, and which internal layout is used.
+A component can have multiple layouts — for example a square, horizontal, and vertical version of the same design. The **Resize Mode** setting controls how the component fills the frame you've placed it in.
 
 With a component frame selected, find the **Resize Mode** section in the right properties panel.
 
@@ -41,23 +41,39 @@ With a component frame selected, find the **Resize Mode** section in the right p
 
 ### Scale
 
-Scale always fits the component inside the frame. It scales down (or up) to fit while preserving its aspect ratio, using whichever internal layout is currently active. Any space in the frame that the component doesn't cover appears as white space. The component's own page size is unchanged — only the visual scale adapts.
+Scale always fits the component inside the frame. It scales down (or up) to fit while preserving its aspect ratio, using whichever internal layout is currently active. Any space in the frame that the component doesn't cover appears as white space.
 
-On top of that default, any scripted logic you've added inside the component runs on its triggers. A script can switch to a different internal layout, and when it does the new layout's page is again fit inside the frame — so the "fit inside" behaviour holds regardless, just potentially with a different layout driving the look.
+Use Scale when you want the component to fit cleanly in any frame size without distortion.
 
-A common use is to pick a layout based on aspect ratio — the example below does exactly that. A component is a self-contained page in its own right, so inside the action `getPageWidth()` and `getPageHeight()` give you the current layout's native dimensions, and `selectLayout` swaps the active layout.
+### Resize
 
-Open the component, add a new action, and on the **Triggers** tab add both **Document loaded** and **Page size changed** so the action runs when the template opens and when the active page size changes.
+The component **stretches to fill the entire frame** by applying the anchoring, copyfitting, and autogrow rules configured inside the component.
+
+Use Resize when the component's internal layout is flexible enough to fill any frame size gracefully.
+
+### Scale and resize
+
+Scale and resize always keeps the component inside the frame — like Scale — and in addition lets the component's internal resize rules (anchoring, copyfitting, autogrow) expand or reposition elements to use more of the available space. The frame boundary is always respected, so nothing extends outside the frame.
+
+Use Scale and resize when you want the component to fill the frame as much as its internal rules allow, without overflowing the frame or distorting the design.
+
+### Switching layouts via an action
+
+Resize Mode controls how the component fits the frame, but not which internal layout is active. Layout switching is not part of any Resize Mode — it happens only when an action inside the component calls `selectLayout`. The mechanism below works the same way in all three modes, though it's most useful with **Scale**, where aspect ratio is preserved and picking the right layout prevents unnecessary white space.
+
+When the frame is resized in the template, a **Page size changed** event fires inside the component, regardless of which Resize Mode is selected. Use that event together with **Document loaded** (for the initial open) to run a script that picks a layout.
+
+The example below chooses between a vertical and horizontal layout based on aspect ratio. A component is a self-contained page in its own right, so inside the action `getPageWidth()` and `getPageHeight()` give you the component's current page dimensions, and `selectLayout` swaps the active layout.
+
+Open the component, add a new action, and on the **Triggers** tab add both **Document loaded** and **Page size changed**.
 
 ![Triggers tab with Document loaded and Page size changed selected](triggers.png){.screenshot-full}
 
-On the **Action** tab, paste the script below. It reads the page dimensions and calls `selectLayout` with the name of the layout you want to switch to.
-
-Replace the "vertical" and "horizontal" layouts, with the layouts you have defined. Feel free to add more elaborate logic to it.
+On the **Action** tab, paste the script below. It reads the page dimensions and calls `selectLayout` with the name of the layout to switch to. Replace `"vertical"` and `"horizontal"` with the names of the layouts you've defined — and feel free to extend the logic for more than two layouts.
 
 ![Action tab with the aspect-ratio script](action.png){.screenshot-full}
 
-Script to place inside the component.
+Script to place inside the component:
 
 ```javascript
 /* Based on the aspect ratio of the page, select one layout or the other.
@@ -72,20 +88,6 @@ if (aspectRatio > 1) {
   selectLayout("horizontal");
 }
 ```
-
-Use Scale when you want the component to fit cleanly in any frame size without distortion, optionally with scripted layout-switching to keep the design appropriate for the frame's shape.
-
-### Resize
-
-The component **stretches to fill the entire frame** by applying the anchoring, copyfitting, and autogrow rules configured inside the component. No layout switching occurs — the component uses its current layout and adapts its contents to the frame size.
-
-Use Resize when the component's internal layout is flexible enough to fill any frame size gracefully.
-
-### Scale and resize
-
-Scale and resize always keeps the component inside the frame — like Scale — and in addition lets the component's internal resize rules (anchoring, copyfitting, autogrow) expand or reposition elements to use more of the available space. The frame boundary is always respected, so nothing extends outside the frame.
-
-Use Scale and resize when you want the component to fill the frame as much as its internal rules allow, without overflowing the frame or distorting the design.
 
 ## Variable mapping
 
