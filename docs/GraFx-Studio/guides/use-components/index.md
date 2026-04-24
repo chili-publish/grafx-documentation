@@ -33,7 +33,7 @@ This is the basis for use cases like a coupon sheet (same pricing component, onc
 
 ## Resize Mode
 
-A component can have multiple layouts — for example a square, horizontal, and vertical version of the same design. The **Resize Mode** setting controls how the component fills the frame you've placed it in, and which internal layout is used.
+A component can have multiple layouts — for example a square, horizontal, and vertical version of the same design. The **Resize Mode** setting controls how the component fills the frame you've placed it in.
 
 With a component frame selected, find the **Resize Mode** section in the right properties panel.
 
@@ -41,21 +41,53 @@ With a component frame selected, find the **Resize Mode** section in the right p
 
 ### Scale
 
-The component looks at the size of the frame and automatically **switches to the internal layout whose aspect ratio best matches**. It scales to fill the shortest dimension, preserving the aspect ratio. Any remaining space on the longer dimension appears as white space.
+Scale always fits the component inside the frame. It scales down (or up) to fit while preserving its aspect ratio, using whichever internal layout is currently active. Any space in the frame that the component doesn't cover appears as white space.
 
-Use Scale when you want the component to always present the most appropriate layout for the frame shape — without distorting the design.
+Use Scale when you want the component to fit cleanly in any frame size without distortion.
 
 ### Resize
 
-The component **stretches to fill the entire frame** by applying the anchoring, copyfitting, and autogrow rules configured inside the component. No layout switching occurs — the component uses its current layout and adapts its contents to the frame size.
+The component **stretches to fill the entire frame** by applying the anchoring, copyfitting, and autogrow rules configured inside the component.
 
 Use Resize when the component's internal layout is flexible enough to fill any frame size gracefully.
 
 ### Scale and resize
 
-Combines both modes: the component first selects the best-matching layout (Scale), then applies the internal resize rules to eliminate any remaining white space (Resize).
+Scale and resize always keeps the component inside the frame — like Scale — and in addition lets the component's internal resize rules (anchoring, copyfitting, autogrow) expand or reposition elements to use more of the available space. The frame boundary is always respected, so nothing extends outside the frame.
 
-Use Scale and resize when you want automatic layout selection **and** a clean fill of the frame with no white space.
+Use Scale and resize when you want the component to fill the frame as much as its internal rules allow, without overflowing the frame or distorting the design.
+
+### Switching layouts via an action
+
+Resize Mode controls how the component fits the frame, but not which internal layout is active. Layout switching is not part of any Resize Mode — it happens only when an action inside the component calls `selectLayout`. The mechanism below works the same way in all three modes, though it's most useful with **Scale**, where aspect ratio is preserved and picking the right layout prevents unnecessary white space.
+
+When the frame is resized in the template, a **Page size changed** event fires inside the component, regardless of which Resize Mode is selected. Use that event together with **Document loaded** (for the initial open) to run a script that picks a layout.
+
+The example below chooses between a vertical and horizontal layout based on aspect ratio. A component is a self-contained page in its own right, so inside the action `getPageWidth()` and `getPageHeight()` give you the component's current page dimensions, and `selectLayout` swaps the active layout.
+
+Open the component, add a new action, and on the **Triggers** tab add both **Document loaded** and **Page size changed**.
+
+![Triggers tab with Document loaded and Page size changed selected](triggers.png){.screenshot-full}
+
+On the **Action** tab, paste the script below. It reads the page dimensions and calls `selectLayout` with the name of the layout to switch to. Replace `"vertical"` and `"horizontal"` with the names of the layouts you've defined — and feel free to extend the logic for more than two layouts.
+
+![Action tab with the aspect-ratio script](action.png){.screenshot-full}
+
+Script to place inside the component:
+
+```javascript
+/* Based on the aspect ratio of the page, select one layout or the other.
+   For a taller aspect ratio, select the vertical layout; otherwise the horizontal one. */
+const pageWidth = getPageWidth();
+const pageHeight = getPageHeight();
+const aspectRatio = pageHeight / pageWidth;
+
+if (aspectRatio > 1) {
+  selectLayout("vertical");
+} else {
+  selectLayout("horizontal");
+}
+```
 
 ## Variable mapping
 
