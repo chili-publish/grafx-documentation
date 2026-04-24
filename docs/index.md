@@ -13,13 +13,13 @@
 
     ---
 
-    **Apr 20, 2026**: Subject types, Brand Kit sync, and improvements
+    **Apr 24, 2026**: Subject types, Brand Kit sync, and improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Subject type classification for Smart Crop, Brand Kit sync, clearer feedback on autogrow with rotation, and fixes for PDF overprint and image variable metadata mappings.
+    Subject types for Smart Crop, centrally managed in the platform, plus Brand Kit sync with auto and manual options. Clearer info messages on autogrow interactions, and fixes for PDF overprint and image variable metadata mappings.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/20/grafx-studio-and-platform-subject-types-brand-kit-sync-and-improvements/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/24/grafx-studio-and-platform-subject-types-brand-kit-sync-and-improvements/)
 
     ---
 
