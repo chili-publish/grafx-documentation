@@ -23,3 +23,40 @@ Confirm, since your Brand Kit elements will replace the current definitions in t
 ![screenshot](bk19.png)
 
 You are now ready to use your Brand Kit elements in your Document.
+
+## Keep a Brand Kit in sync
+
+Once a Brand Kit is imported, the template can stay aligned with the source Brand Kit in **GraFx Brand Kits**. When an element is updated centrally (for example a new brand color, or a revised paragraph style), those changes can be pulled into the template without re-importing.
+
+Sync is controlled from the Brand Kit panel header, which now surfaces three controls next to the Brand Kit name: the Brand Kit selector, the manual sync button, and the auto-sync toggle.
+
+![screenshot](brandkit-select.png)
+
+The **Brand Kit selector** (the swap icon) lets you switch the template to a different imported Brand Kit.
+
+### Auto-sync
+
+The **Auto-sync toggle** controls whether the template stays aligned automatically:
+
+![screenshot](brandkit-sync-toggle.png)
+
+- When **auto-sync is on**, Studio compares the template's Brand Kit against the source every time the template is opened and every time the Brand Kit panel is opened, and applies any changes in a single step. A toast message confirms when a sync has been applied.
+- When **auto-sync is off**, the template keeps its current Brand Kit values until you sync manually.
+
+Newly imported Brand Kits have auto-sync enabled by default.
+
+### Manual sync
+
+The circular-arrows button next to the Brand Kit selector pulls the latest version of the source Brand Kit on demand. Hover shows the *Sync Brand Kit* tooltip. Useful when auto-sync is off, or to force an update in-session after a Brand Kit change.
+
+![screenshot](brandkit-sync.png)
+
+!!! info "What a sync changes"
+    Sync applies only the differences between the template and the source:
+
+    - New elements in the source are added to the template.
+    - Updated elements are replaced with their latest values.
+    - Removed elements in the source are **not** deleted from the template — existing user content is preserved.
+    - A renamed element is added as a new element (names act as identifiers).
+
+    A sync is a single undoable step — use undo/redo to revert it.

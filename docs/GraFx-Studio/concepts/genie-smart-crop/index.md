@@ -33,6 +33,25 @@ Clear guidelines ensure consistent results:
 - The defined **Subject Area** should completely fill the specified **Subject Position**.
 - If whitespace appears, the image will scale up to fill the space automatically.
 
+## Subject types
+
+A single asset can hold more than one Subject Area and Point of Interest, grouped under a **subject type** — for example *person*, *product*, or *logo*. Each subject type stores its own Subject Area and POI, so the same image can be cropped differently depending on the intent.
+
+- Subject types are defined centrally on the environment. See [Manage Subject Types](/CHILI-GraFx/guides/manage-subject-types/).
+- The **Default** type is the one detected automatically on upload and is used when no subject type is selected on an image frame.
+- On an image frame with Smart Crop active, the template designer selects which subject type to apply — see [Select a Subject type](../../guides/smart-crop/#select-a-subject-type).
+- Per-type Subject Areas and POIs are set from the media detail view — see [Subject type](../../../GraFx-Media/guides/smart-crop-subject-area/#subject-type).
+
+Switching the **Subject type** dropdown on an image frame re-runs Smart Crop against the Subject Area and POI stored for that type — the frame stays the same, but what's inside it changes:
+
+![screenshot-full](smart-crop-default.png)
+
+![screenshot-full](smart-crop-people.png)
+
+![screenshot-full](smart-crop-product.png)
+
+*Default* keeps the full scene, *People* centres on the person, and *Product* zooms in on the grocery bag — all from the same source asset and the same frame.
+
 ## How to Adjust Smart Crop Results
 
 If the automatic Smart Crop results aren't as expected, you can manually adjust the settings.

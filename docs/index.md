@@ -13,6 +13,16 @@
 
     ---
 
+    **Apr 24, 2026**: Subject types, Brand Kit sync, and improvements
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Subject types for Smart Crop, centrally managed in the platform, plus Brand Kit sync with auto and manual options. Clearer info messages on autogrow interactions, and fixes for PDF overprint and image variable metadata mappings.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/24/grafx-studio-and-platform-subject-types-brand-kit-sync-and-improvements/)
+
+    ---
+
     **Apr 17, 2026**: New Data Connector: CSV
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -61,15 +71,6 @@
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/03/grafx-studio-components-image-crop-and-improvements/)
 
-    ---
-
-    **Mar 30, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Template creation and modification dates are now available via the Environment API, giving integrations access to accurate timestamps for each template.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/03/30/chili-grafx-environment-api-update/)
 
     ---
 

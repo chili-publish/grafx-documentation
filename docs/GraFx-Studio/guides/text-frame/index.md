@@ -227,6 +227,12 @@ Define the minimum and maximum frame size if needed.
 !!! info "Rotation"
     Auto-grow does not work for rotated frames. If auto-grow is enabled, anchoring for that direction is automatically set to a compatible mode.
 
+!!! info "Info messages on autogrow frames"
+    When Auto-grow is active, Studio shows info messages in the properties panel to explain related restrictions:
+
+    - Enabling **Constrain proportions** on an autogrow frame shows: *"Frame handles will not be available on layouts where auto-grow is active for selected frame."*
+    - Applying **Rotation** to an autogrow frame shows: *"Rotation will not be available on layouts where auto-grow is active for selected frame."*
+
 ### Appearance
 
 Adjust how the frame blends with its background.
