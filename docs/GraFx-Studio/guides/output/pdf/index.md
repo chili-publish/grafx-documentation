@@ -29,3 +29,10 @@ Choose the right [output setting](/GraFx-Studio/concepts/output-settings/), you 
 ![screenshot](export.png)
 
 When the export is ready, your browser will download the file into your downloads folder.
+
+## Embedded PDF assets
+
+When you place a PDF as an asset inside an image frame, its content is embedded in the final PDF output.
+
+!!! info "Overprint"
+    Overprint statements inside embedded PDF assets are preserved in the final output — the overprint behavior of the source PDF is kept in the exported document.

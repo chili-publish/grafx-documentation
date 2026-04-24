@@ -17,7 +17,7 @@ By default, the Fill property of an Image Frame is set to **Fill**.
 Change this to **Smart Crop** to enable the AI-driven cropping feature.
 
 > **Note**:  
-> Smart Crop requires the Subject Area to be defined in advance. See [how to set a Subject Area in GraFx Media](../../../GraFx-Media/guides/smart-crop-subject-area/).
+> Smart Crop requires the Subject Area to be defined in advance. See [how to set a Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/).
 
 After setting the Subject Area (e.g., the runner on the right side of the image below), GraFx Genie will automatically focus on this subject. (because it's defined in GraFx Media)
 
@@ -38,6 +38,19 @@ A box appears over your image frame. Adjust its size and position to specify exa
 Your subject will now fit within the defined Subject Position box.
 
 ![screenshot-full](sc11.png)
+
+## Select a Subject type
+
+When Smart Crop is active on an image frame, a **Subject type** dropdown is available in the properties panel, below the Fit mode. It lets you pick which subject type to use when cropping the image.
+
+The dropdown lists **Default** plus every subject type defined on the environment:
+
+- **Default** uses the automatically detected Subject Area and POI from the asset.
+- Selecting another subject type (for example *person* or *product*) tells Smart Crop to use the Subject Area and POI stored for that type on the asset, defined in the [media detail view](/GraFx-Media/guides/smart-crop-subject-area/#subject-type).
+
+The dropdown is only active when an image is placed on the frame. If a previously selected subject type is no longer available on the environment, the frame falls back to **Default**.
+
+See [Manage Subject Types](/CHILI-GraFx/guides/manage-subject-types/) for how the list is configured.
 
 ## Feature Channel
 
