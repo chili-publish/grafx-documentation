@@ -109,11 +109,36 @@ Therefore, you can define different authorization types for each usage, allowing
 
 !!! note "Authorization Always Happens on the Server"
 
-	  It is important to note that all authorization is enforced server-side. This approach ensures that sensitive credentials—such as tokens, API keys, or other authentication data—are never exposed directly to the client. By processing authorization on the server, CHILI GraFx significantly reduces the risk of accidental credential leakage or malicious interception. When authorization is required, client requests do not communicate directly with the target service. Instead, the requests are securely proxied through CHILI GraFx servers, which handle the authorization process on your behalf. 
+	  It is important to note that all authorization is enforced server-side. This approach ensures that sensitive credentials—such as tokens, API keys, or other authentication data—are never exposed directly to the client. By processing authorization on the server, CHILI GraFx significantly reduces the risk of accidental credential leakage or malicious interception. When authorization is required, client requests do not communicate directly with the target service. Instead, the requests are securely proxied through CHILI GraFx servers, which handle the authorization process on your behalf.
 
-!!! note "Changing Authorization"
+#### Change/Remove Configured Authentication
 
-	  To replace the authorization type, run the `set-auth` command again with the same `-au` value and a different `-at` type — the last one overwrites the previous one.
+You can remove or replace configured authentication in two ways:
+
+1. **Override with `set-auth`**: Run `set-auth` again for the same `-au` (`browser` or `server`) with a new authorization type. The new configuration replaces the previous one.
+2. **Delete with `delete-auth`**: Run `delete-auth` for the same `-au` to remove the configured authentication completely.
+
+Example command to override existing authentication:
+
+```bash
+connector-cli set-auth \
+    --connectorId <connector-id> \
+    -e <environment> \
+    -b <base-url> \
+    -au <auth-usage> \
+    -at <auth-type> \
+    --auth-data-file <path-to-auth-file>
+```
+
+Example command to delete configured authentication:
+
+```bash
+connector-cli delete-auth \
+    --connectorId <connector-id> \
+    -e <environment> \
+    -b <base-url> \
+    -au <auth-usage>
+```
 
 ### Authorization Type (`-at`)
 
