@@ -39,23 +39,25 @@ With a component frame selected, find the **Resize Mode** section in the right p
 
 ![Resize Mode dropdown in the properties panel with three options](resize-mode-dropdown.png){.screenshot-full}
 
+In short: **Scale** fits the component inside the frame. **Resize** gives the component the frame's dimensions and lets it adapt internally. **Scale and resize** does both — scale first, then resize to fill what's left.
+
 ### Scale
 
-Scale always fits the component inside the frame. It scales down (or up) to fit while preserving its aspect ratio, using whichever internal layout is currently active. Any space in the frame that the component doesn't cover appears as white space.
+The component is scaled to fit inside the frame, preserving its aspect ratio. Everything inside scales with it — including the real-world size of text. Any space the component doesn't cover appears as white space.
 
-Use Scale when you want the component to fit cleanly in any frame size without distortion.
+Use Scale when you want the design to look the same, just bigger or smaller — for example resizing an A4 layout to A5.
 
 ### Resize
 
-The component **stretches to fill the entire frame** by applying the anchoring, copyfitting, and autogrow rules configured inside the component.
+The frame's width and height become the component's dimensions. The component adapts internally using anchoring, copyfitting, autogrow, and actions — but absolute sizes such as font size stay the same.
 
-Use Resize when the component's internal layout is flexible enough to fill any frame size gracefully.
+Use Resize when a component must occupy different frame sizes while keeping its text consistent — for example, a promo block that spans one or two slots on a leaflet without the font getting bigger.
 
 ### Scale and resize
 
-Scale and resize always keeps the component inside the frame — like Scale — and in addition lets the component's internal resize rules (anchoring, copyfitting, autogrow) expand or reposition elements to use more of the available space. The frame boundary is always respected, so nothing extends outside the frame.
+The component is scaled to fit, then — if its aspect ratio doesn't match the frame — its width or height is extended so it fills the frame. Internal rules handle that extension, so nothing overflows.
 
-Use Scale and resize when you want the component to fill the frame as much as its internal rules allow, without overflowing the frame or distorting the design.
+Use Scale and resize when you want the component to fill the frame without leaving white space and without text getting bigger.
 
 ### Switching layouts via an action
 
