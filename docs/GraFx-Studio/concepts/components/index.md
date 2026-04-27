@@ -102,9 +102,11 @@ See [Variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping) fo
 
 ## Resize Mode
 
-A component can have multiple layouts — for example a square, a horizontal, and a vertical version of the same design. When a component is placed on a template, the **Resize Mode** setting controls how the component fills its frame and which internal layout is used.
+A component can have multiple layouts — for example a square, a horizontal, and a vertical version of the same design. When a component is placed on a template, the **Resize Mode** setting controls how it fills its frame.
 
-See [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) for details on Scale, Resize, and Scale and resize.
+In short: Scale fits the component inside the frame, Resize gives the component the frame's dimensions and lets it adapt internally, and Scale and resize does both — scale first, then resize to fill what's left.
+
+See [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) for details.
 
 ## How components differ from templates
 
