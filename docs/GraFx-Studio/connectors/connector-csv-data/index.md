@@ -56,7 +56,7 @@ The connector handles a wide range of real-world CSV files without any manual co
 - **Excel exports**: UTF-8 BOM (added by Excel's "Save as CSV UTF-8") is stripped automatically.
 - **Line endings**: both Windows (CRLF) and Unix (LF) are supported.
 - **Blank rows**: empty rows, including trailing newlines, are ignored.
-- **Missing headers**: if a column header cell is empty, the column is named `Column1`, `Column2`, and so on.
+- **Empty headers**: columns with an empty header cell are silently ignored — they will not appear in the data model or as variables in your template.
 
 ## Using the connector in a template
 
@@ -85,23 +85,74 @@ To generate output across all records, create an [output setting](/GraFx-Studio/
 
 ## Column types
 
-Column types are inferred automatically by sampling all values in the column. You don't need to configure anything — the connector figures it out.
+Column types are inferred automatically by scanning all non-empty values in the column. You don't need to configure anything — the connector figures it out.
 
-| CSV values | Variable type |
+If any value in a column contradicts the detected type, the entire column falls back to **Single-line text** so no data is lost.
+
+### Boolean
+
+**GraFx Studio type:** `boolean`
+
+Detected when every non-empty value in the column is exactly `true` or `false` (case-insensitive).
+
+| ✅ Accepted | ❌ Not accepted |
 |---|---|
-| `true` / `false` (any case) | Boolean |
-| Numeric values (not starting with `0` or `+`) | Number |
-| Dates in `YYYY-MM-DD` or ISO 8601 format | Date |
-| Everything else, or mixed columns | Single-line text |
+| `true` | `yes` |
+| `false` | `no` |
+| `TRUE` | `1` / `0` |
+| `False` | `on` / `off` |
 
-Leading zeros are preserved as text — a value like `007` will not be converted to a number.
+### Number
 
-If a column contains mixed types (for example, mostly numbers but with `"N/A"` in some cells), the entire column is treated as single-line text. No data is lost.
+**GraFx Studio type:** `number`
+
+Detected when every non-empty value is a valid finite number. Values starting with `0` (except `0` itself) or `+` are intentionally excluded — this protects things like product codes, postal codes, and phone numbers from being mis-detected as numbers.
+
+| ✅ Accepted | ❌ Not accepted |
+|---|---|
+| `42` | `007` (leading zero) |
+| `3.14` | `+44` (leading plus) |
+| `-100` | `Infinity` |
+| `0` | `NaN` |
+| `1000000` | `1,000` (comma formatting) |
+| | `N/A` |
+
+### Date
+
+**GraFx Studio type:** `date`
+
+Detected when every non-empty value matches ISO 8601 format (`YYYY-MM-DD` or a full datetime) **and** represents a valid calendar date.
+
+| ✅ Accepted | ❌ Not accepted |
+|---|---|
+| `1973-01-01` | `1/01/1973` (D/MM/YYYY) |
+| `2024-12-31` | `01/01/1973` (DD/MM/YYYY) |
+| `2024-06-15T14:30:00Z` | `01-01-1973` |
+| `2024-06-15T14:30:00+02:00` | `January 1, 1973` |
+| | `2024-13-45` (invalid calendar date) |
+
+!!! warning "Spreadsheet exports often use regional date formats"
+    Most spreadsheet applications export dates in a regional format such as `1/01/1973`. These will **not** be detected as `date` — they will fall back to Single-line text. To use the `date` type, make sure your CSV exports dates in `YYYY-MM-DD` format.
+
+### Single-line text (fallback)
+
+**GraFx Studio type:** `singleLine`
+
+Applied to any column that does not match the rules above, or any column where values are mixed types. No data is lost — the original text is kept exactly as it appears in the file.
+
+| Examples |
+|---|
+| `Hello world` |
+| `Product-001` |
+| `007` (leading zero) |
+| `1/01/1973` (non-ISO date) |
+| A column mixing numbers and text |
+| An empty column (header present, no values underneath) |
 
 ## CSV file guidelines
 
 - The first row must be the **header row** — column names must match your template variable names.
-- Every column should have a header. Empty header cells are auto-named but harder to work with.
+- Every column should have a header. Columns with empty headers are silently dropped, so any data underneath them is ignored.
 - Avoid columns with mixed types if you need a specific type (number, date, boolean) — a single inconsistent value causes the whole column to fall back to text.
 - Leading-zero values (product codes, postal codes) should stay as text — the connector will not convert them to numbers.
 - The file must be reachable without authentication, and served with `Content-Type: application/json`.
