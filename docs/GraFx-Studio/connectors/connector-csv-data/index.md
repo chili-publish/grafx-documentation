@@ -38,15 +38,6 @@ Wildcards are supported. Use `*.example.com` to allow all subdomains of a domain
 !!! tip
     Keep the list as specific as possible. Use an exact hostname (e.g. `cdn.example.com`) when your files always come from one place. Use a wildcard (e.g. `*.example.com`) only when you genuinely need to cover multiple subdomains.
 
-## Hosting requirement
-
-!!! warning "Serve your CSV with Content-Type: application/json"
-    The connector runtime can only read the contents of a response when the server sends a `Content-Type` header that contains `"json"`. For any other content type, the response is returned in a format the connector cannot read.
-
-    This means your CSV file must be hosted on a server where you can set the response `Content-Type` to `application/json` — even though the file itself contains CSV text. The content of the file is not affected; only the header matters.
-
-    Most static hosting services (AWS S3, Azure Blob Storage, CDNs, GitHub raw with a proxy) allow you to override the content type per file or per bucket.
-
 ## Supported CSV formats
 
 The connector handles a wide range of real-world CSV files without any manual configuration:
@@ -104,4 +95,4 @@ If a column contains mixed types (for example, mostly numbers but with `"N/A"` i
 - Every column should have a header. Empty header cells are auto-named but harder to work with.
 - Avoid columns with mixed types if you need a specific type (number, date, boolean) — a single inconsistent value causes the whole column to fall back to text.
 - Leading-zero values (product codes, postal codes) should stay as text — the connector will not convert them to numbers.
-- The file must be reachable without authentication, and served with `Content-Type: application/json`.
+- The file must be reachable without authentication.
