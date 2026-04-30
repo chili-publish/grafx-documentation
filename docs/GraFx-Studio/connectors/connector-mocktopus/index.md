@@ -1,5 +1,9 @@
 # Mocktopus Data Connector
+<img src="Mocktopus.svg" style="float:left; margin-right:12px; width:48px;" alt="Mockingbird">
+
 > A many-tentacled connector that pretends to connect to everything but actually connects to nothing.
+
+<div style="clear:left;"></div>
 
 :fontawesome-regular-square: Built-in
 :fontawesome-regular-square: Built by CHILI publish :fontawesome-regular-square-check: Third Party

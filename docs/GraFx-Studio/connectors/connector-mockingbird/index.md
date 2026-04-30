@@ -1,6 +1,10 @@
 # Mockingbird Media Connector
 
+<img src="Mockingbird.svg" style="float:left; margin-right:12px; width:48px;" alt="Mockingbird">
+
 > A connector that sings back any media you ask for, but never leaves the cage. Unless you open it.
+
+<div style="clear:left;"></div>
 
 :fontawesome-regular-square: Built-in
 :fontawesome-regular-square: Built by CHILI publish :fontawesome-regular-square-check: Third Party
