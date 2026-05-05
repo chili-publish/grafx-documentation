@@ -20,6 +20,17 @@
     Image frames can now be clipped to rectangle, ellipse, or polygon shapes — with stroke and corner radius — without needing a shape frame on top. Plus character limits for single-line and multi-line text variables in both Studio and Studio UI, and fixes for output status reporting and component sizing across layouts.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/05/grafx-studio-clipping-masks-and-character-limits/)
+                                                        
+    ---
+                                                        
+    **Apr 29, 2026**: Connector CLI v1.12.0
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    A new `delete-auth` command for cleanly removing connector authentication, plus reliability improvements: clearer validation when configuring auth, explicit no-cache headers on connector responses, and more consistent response content types.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/29/connector-cli-v1120/)
+
 
     ---
 
