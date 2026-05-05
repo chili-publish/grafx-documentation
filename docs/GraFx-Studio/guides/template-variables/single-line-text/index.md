@@ -22,7 +22,7 @@ You can cap the number of characters a single-line text variable accepts. This i
 
 Set the limit in the variable's settings panel. When the limit is left empty, no cap is enforced.
 
-![Maximum length setting in the variable settings](slt-max-length-setting.png){.screenshot}
+![Maximum length setting in the variable settings](limit01.png){.screenshot}
 
 The limit is enforced everywhere the variable can be edited:
 
@@ -30,7 +30,9 @@ The limit is enforced everywhere the variable can be edited:
 - Once the limit is reached, no further input is accepted.
 - Pasting text longer than the limit truncates the pasted text to fit.
 
-![Remaining-characters counter on the input](slt-max-length-counter.png){.screenshot}
+![Remaining-characters counter on the input](counter1.png){.screenshot}
+
+![Remaining-characters counter on the input](counter2.png){.screenshot}
 
 The same limit is applied when the value comes in from a data source, ensuring consistent enforcement across manual and automated workflows.
 

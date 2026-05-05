@@ -82,7 +82,7 @@ Every image frame has a **clipping mask** that defines its visible silhouette. B
 
 With a single image frame selected, the **Clipping mask** section appears in the property panel.
 
-![Clipping mask section](clipping-mask-section.png){.screenshot}
+![Clipping mask section](clippingmask01.png){.screenshot}
 
 ### Assign shape
 
@@ -93,8 +93,6 @@ The **Assign shape** dropdown sets the shape used to clip the image:
 - **Polygon** — clips the image to a triangle fitted inside the frame's bounding box.
 
 The image is always clipped within the frame's existing width, height, and rotation — the shape only affects the silhouette.
-
-![Assign shape dropdown](clipping-mask-assign-shape.png){.screenshot}
 
 !!! note "Re-selecting the active shape resets the corner radius"
     Picking the same shape that's already selected (for example Rectangle when the shape is already Rectangle) resets the corner radius to zero. This is intentional; use Undo to restore the previous values.
@@ -107,7 +105,7 @@ The corner-radius controls behave the same way they do on shape frames (see [Fra
 - **Polygon** — a single corner-radius input that applies to all three corners.
 - **Ellipse** — no corner-radius controls (an ellipse has no corners).
 
-![Corner radius controls per shape](clipping-mask-corner-radius.png){.screenshot}
+![Corner radius controls per shape](cm02.png){.screenshot-full}
 
 ### Stroke
 
@@ -117,11 +115,11 @@ The clipping mask supports an outline that traces the clipped path exactly, incl
 - **Stroke color** — colour picker, including Brand Kit colours.
 - **Stroke weight** — thickness in pixels.
 
-![Stroke controls in Appearance](clipping-mask-stroke.png){.screenshot}
+![Stroke controls in Appearance](cm03.png){.screenshot-full}
 
 ### Returning to the default look
 
-There's no separate "Off" toggle for the clipping mask. To return an image frame to its plain-rectangle look, set **Assign shape** back to **Rectangle**, clear the corner radius, and disable the stroke under Appearance.
+There's no separate "Off" toggle for the clipping mask. To return an image frame to its plain-rectangle look, set **Assign shape** back to **Rectangle**, clear the corner radius, and disable the stroke under Appearance. Clipping mask changes are part of the undo stack, so you can also revert recent changes with **Undo** (Ctrl/Cmd + Z).
 
 ## Feature Channel
 

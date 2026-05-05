@@ -50,7 +50,7 @@ You can cap the total number of characters a multi-line text variable accepts. T
 
 Set the limit in the variable's settings panel. When the limit is left empty, no cap is enforced.
 
-![Maximum length setting in the variable settings](mlt-max-length-setting.png){.screenshot}
+![Maximum length setting in the variable settings](limit01.png){.screenshot}
 
 The limit is enforced everywhere the variable can be edited:
 
@@ -58,7 +58,7 @@ The limit is enforced everywhere the variable can be edited:
 - Once the limit is reached, no further input is accepted.
 - Pasting text longer than the limit truncates the pasted text to fit.
 
-![Remaining-characters counter on the input](mlt-max-length-counter.png){.screenshot}
+![Remaining-characters counter on the input](limit03.png){.screenshot}
 
 Line-break characters (soft and hard) count towards the limit, the same way visible characters do. The same limit is applied when the value comes in from a data source, ensuring consistent enforcement across manual and automated workflows.
 
