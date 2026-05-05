@@ -44,6 +44,24 @@ Double-click the name, or choose "Rename" under the "..." menu.
     - Metadata mapping via media connectors
     - Data sources
 
+## Maximum Length
+
+You can cap the total number of characters a multi-line text variable accepts. This is useful for keeping descriptions, addresses, or any layout-critical copy within bounds — both at design time and when end users fill in templates.
+
+Set the limit in the variable's settings panel. When the limit is left empty, no cap is enforced.
+
+![Maximum length setting in the variable settings](mlt-max-length-setting.png){.screenshot}
+
+The limit is enforced everywhere the variable can be edited:
+
+- **Template Designer (Studio Workspace)** and **Studio UI** both show a counter on the input indicating how many characters remain.
+- Once the limit is reached, no further input is accepted.
+- Pasting text longer than the limit truncates the pasted text to fit.
+
+![Remaining-characters counter on the input](mlt-max-length-counter.png){.screenshot}
+
+Line-break characters (soft and hard) count towards the limit, the same way visible characters do. The same limit is applied when the value comes in from a data source, ensuring consistent enforcement across manual and automated workflows.
+
 ## User Interface
 
 ![screenshot-full](mlt04.png)

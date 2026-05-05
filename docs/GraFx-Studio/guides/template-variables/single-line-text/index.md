@@ -16,13 +16,23 @@ Double-click the name, or choose "Rename" under the "..." menu.
 
 ![screenshot](slt01.png)
 
-## Maximum Length Constraints
+## Maximum Length
 
-If a text variable has a defined maximum length:
-- Users cannot type beyond that limit in Studio UI.
-- The template will enforce the limit in exports, preventing overflow or layout breakage.
+You can cap the number of characters a single-line text variable accepts. This is useful for keeping headlines, product names, or any layout-critical copy within bounds — both at design time and when end users fill in templates.
 
-This limit applies to all single-line text variables.
+Set the limit in the variable's settings panel. When the limit is left empty, no cap is enforced.
+
+![Maximum length setting in the variable settings](slt-max-length-setting.png){.screenshot}
+
+The limit is enforced everywhere the variable can be edited:
+
+- **Template Designer (Studio Workspace)** and **Studio UI** both show a counter on the input indicating how many characters remain.
+- Once the limit is reached, no further input is accepted.
+- Pasting text longer than the limit truncates the pasted text to fit.
+
+![Remaining-characters counter on the input](slt-max-length-counter.png){.screenshot}
+
+The same limit is applied when the value comes in from a data source, ensuring consistent enforcement across manual and automated workflows.
 
 ## Set General Properties
 

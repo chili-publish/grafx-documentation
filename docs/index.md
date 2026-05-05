@@ -13,6 +13,16 @@
 
     ---
 
+    **May 5, 2026**: GraFx Studio: Clipping masks and character limits
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Image frames can now be clipped to rectangle, ellipse, or polygon shapes — with stroke and corner radius — without needing a shape frame on top. Plus character limits for single-line and multi-line text variables in both Studio and Studio UI, and fixes for output status reporting and component sizing across layouts.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/05/grafx-studio-clipping-masks-and-character-limits/)
+
+    ---
+
     **Apr 24, 2026**: Subject types, Brand Kit sync, and improvements
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -50,9 +60,9 @@
     Text columns, bullet and numbered lists, nested frame handling, and locked layer export — plus fidelity fixes for both the InDesign and Photoshop plugins.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/15/adobe-indesign-and-photoshop-plugin-update-v1-3-0/)
-  
+
     ---
-  
+
     **Apr 14, 2026**: CHILI GraFx Environment API Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,17 +70,6 @@
     Components bundled in a plugin export can now be imported directly through the Environment API, making it easier to distribute and deploy components as part of a plugin package.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/14/chili-grafx-environment-api-update/)
-
-    ---
-
-    **Apr 3, 2026**: Components, image crop, and improvements
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Components are now available in GraFx Studio — design a pricing block, product ad, or any branded element once, then reuse it across templates. Plus image crop constraints for end users, connector shared headers, and a range of fixes.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/03/grafx-studio-components-image-crop-and-improvements/)
-
 
     ---
 
