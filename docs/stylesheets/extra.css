@@ -141,6 +141,13 @@ img.rn_icon {
   height: var(--md-icon-size);
 }
 
+img[alt="connector_icon"],
+img.connector_icon {
+  float: left;
+  width: 48px;
+  margin-right: 12px;
+}
+
 .version-label {
   font-size: 0.8em;
   font-weight: bold;

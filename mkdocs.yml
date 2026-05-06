@@ -499,12 +499,14 @@ nav:
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Keepeek Media':                  'GraFx-Studio/connectors/connector-keepeek-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
+            - 'Mockingbird':                    'GraFx-Studio/connectors/connector-mockingbird/index.md'
         - 'Connectors: Data':
             - 'CSV':                            'GraFx-Studio/connectors/connector-csv-data/index.md'
             - 'Google Sheets':
                 - 'Connector setup':            'GraFx-Studio/connectors/connector-google-sheets-data/index.md'
                 - 'Google Credentials':         'GraFx-Studio/connectors/connector-google-sheets-data/google-setup/index.md'
-                - 'In a Design System':        'GraFx-Studio/connectors/connector-google-sheets-data/in-smart-template/index.md'
+                - 'In a Design System':         'GraFx-Studio/connectors/connector-google-sheets-data/in-smart-template/index.md'
+            - 'Mocktopus':                      'GraFx-Studio/connectors/connector-mocktopus/index.md'
         - 'Plugins':
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
