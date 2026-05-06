@@ -1,20 +1,21 @@
 # Mocktopus Data Connector
-<img src="Mocktopus.svg" style="float:left; margin-right:12px; width:48px;" alt="Mockingbird">
 
-> A many-tentacled connector that pretends to connect to everything but actually connects to nothing.
+!!! info "Mocktopus"
 
-<div style="clear:left;"></div>
+	![Mocktopus](Mocktopus.svg){.connector_icon}
+	A many-tentacled connector that pretends to connect to everything but actually connects to nothing.
 
-:fontawesome-regular-square: Built-in
-:fontawesome-regular-square: Built by CHILI publish :fontawesome-regular-square-check: Third Party
+:fontawesome-regular-square: Built-in  
+:fontawesome-regular-square: Built by CHILI publish  
+:fontawesome-regular-square-check: Third Party
 
-[See Connector types](https://docs.chiligrafx.com/GraFx-Studio/concepts/connectors/#types-of-connectors)
+[See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
 Mocktopus is a data connector that generates realistic-looking fake data from a declarative schema. No external service, no credentials, no network required. It is designed for testing and prototyping GraFx Studio templates before a real data source is available.
 
 ## Installation
 
-[See installation through Connector Hub](https://docs.chiligrafx.com/GraFx-Studio/guides/connector-hub/)
+[See installation through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
 ## Supported field types
 
@@ -30,9 +31,9 @@ Mocktopus generates data based on a schema you define. The following field types
 | `list` | A single value picked from a pipe-delimited list |
 | `image` | A seeded image ID (for use with an image variable) |
 
-## Configuration Options
+## Configuration
 
- Each template can have its own schema and settings, so there is no need to deploy multiple connector instances. In **Resources** assigning Mocktopus as the **Output data source** for the template and set the required configuration options.
+Each template can have its own schema and settings, so there is no need to deploy multiple connector instances. In **Resources**, assign Mocktopus as the **Output data source** for the template and set the required configuration options.
 
 ### Schema (required)
 

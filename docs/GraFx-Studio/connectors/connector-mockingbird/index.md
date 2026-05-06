@@ -1,21 +1,23 @@
 # Mockingbird Media Connector
 
-<img src="Mockingbird.svg" style="float:left; margin-right:12px; width:48px;" alt="Mockingbird">
 
-> A connector that sings back any media you ask for, but never leaves the cage. Unless you open it.
+!!! info "Mockingbird"
 
-<div style="clear:left;"></div>
+	![Mockingbird](Mockingbird.svg){.connector_icon}
 
-:fontawesome-regular-square: Built-in
-:fontawesome-regular-square: Built by CHILI publish :fontawesome-regular-square-check: Third Party
+	A connector that sings back any media you ask for, but never leaves the cage. Unless you open it.
 
-[See Connector types](https://docs.chiligrafx.com/GraFx-Studio/concepts/connectors/#types-of-connectors)
+:fontawesome-regular-square: Built-in  
+:fontawesome-regular-square: Built by CHILI publish  
+:fontawesome-regular-square-check: Third Party
+
+[See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
 Mockingbird is a media connector that provides a catalogue of 100 placeholder images for testing and prototyping GraFx Studio templates before a real media source is available. It can run in two modes: **offline** (default), where no external service, credentials, or network access are required, and **remote**, where each asset is fetched from [picsum.photos](https://picsum.photos).
 
 ## Installation
 
-[See installation through Connector Hub](https://docs.chiligrafx.com/GraFx-Studio/guides/connector-hub/)
+[See installation through Connector Hub](/GraFx-Studio/guides/connector-hub/)
 
 ## Modes
 
@@ -31,6 +33,6 @@ Each asset fetches a deterministic photo from [picsum.photos](https://picsum.pho
 
 ## Configuration
 
-Once installed, open the connector in your Connector overview and go to Configuration. 
+Once installed, open the connector in your **Connector overview** and go to **Configuration**.
 
 The only option is **Use remote images** (runtime option, text): set to `"true"` to enable remote mode. Any other value (including empty) uses offline mode.
