@@ -87,7 +87,7 @@ After deploying and configuring Mocktopus, assign it as the data source on a Sma
 
 ### Generating a schema from an existing template
 
-If you already have a GraFx template with variables defined, the included `ConvertTemplateToSchema.ps1` PowerShell script can generate a ready-to-paste schema string automatically.
+If you have a GraFx template with variables already defined, use the `ConvertTemplateToSchema.ps1` PowerShell script to automatically generate a ready-to-paste schema string. You can find the script in the connector's repository [here](https://github.com/chili-publish/studio-connector-framework/blob/main/src/connectors/mocktopus/ConvertTemplateToSchema.ps1).
 
 **Requirements:** PowerShell 7+ (`pwsh`)
 
