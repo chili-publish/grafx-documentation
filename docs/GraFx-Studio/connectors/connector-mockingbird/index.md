@@ -33,6 +33,6 @@ Each asset fetches a deterministic photo from [picsum.photos](https://picsum.pho
 
 ## Configuration
 
-Once installed, open the connector in your **Connector overview** and go to **Configuration**.
+Once installed, open the connector in your **Connector overview** and go to **Configuration** tab.
 
 The only option is **Use remote images** (runtime option, text): set to `"true"` to enable remote mode. Any other value (including empty) uses offline mode.
