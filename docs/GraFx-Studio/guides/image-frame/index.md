@@ -76,6 +76,51 @@ This lets you open up flexibility where it makes sense, while keeping full contr
 
 ![Image frame constraints](constraints.gif){.screenshot-full}
 
+## Clipping mask
+
+Every image frame has a **clipping mask** that defines its visible silhouette. By default, the mask is a Rectangle without a stroke — visually identical to a regular image frame — so existing templates keep working unchanged. Changing the shape, adding a corner radius, or enabling a stroke is what produces a visible effect.
+
+With a single image frame selected, the **Clipping mask** section appears in the property panel.
+
+![Clipping mask section](clippingmask01.png){.screenshot}
+
+### Assign shape
+
+The **Assign shape** dropdown sets the shape used to clip the image:
+
+- **Rectangle** (default) — the standard image frame look. Combine with a corner radius to round the edges.
+- **Ellipse** — clips the image to an ellipse fitted inside the frame's bounding box.
+- **Polygon** — clips the image to a triangle fitted inside the frame's bounding box.
+
+The image is always clipped within the frame's existing width, height, and rotation — the shape only affects the silhouette.
+
+!!! note "Re-selecting the active shape resets the corner radius"
+    Picking the same shape that's already selected (for example Rectangle when the shape is already Rectangle) resets the corner radius to zero. This is intentional; use Undo to restore the previous values.
+
+### Corner radius
+
+The corner-radius controls behave the same way they do on shape frames (see [Frame: Shape](/GraFx-Studio/guides/shape-frame/#corner-radius)):
+
+- **Rectangle** — four corner-radius inputs, plus a **Same for each corner** checkbox to keep all four in sync.
+- **Polygon** — a single corner-radius input that applies to all three corners.
+- **Ellipse** — no corner-radius controls (an ellipse has no corners).
+
+![Corner radius controls per shape](cm02.png){.screenshot-full}
+
+### Stroke
+
+The clipping mask supports an outline that traces the clipped path exactly, including any drop shadow on the frame. Stroke controls live under the **Appearance** section:
+
+- **Enable stroke** — toggles the stroke on or off.
+- **Stroke color** — colour picker, including Brand Kit colours.
+- **Stroke weight** — thickness in pixels.
+
+![Stroke controls in Appearance](cm03.png){.screenshot-full}
+
+### Returning to the default look
+
+There's no separate "Off" toggle for the clipping mask. To return an image frame to its plain-rectangle look, set **Assign shape** back to **Rectangle**, clear the corner radius, and disable the stroke under Appearance. Clipping mask changes are part of the undo stack, so you can also revert recent changes with **Undo** (Ctrl/Cmd + Z).
+
 ## Feature Channel
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/KgVcr821tII?si=D-p32N58ssZSoD90&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

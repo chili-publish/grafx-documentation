@@ -52,6 +52,12 @@ Look [here](/GraFx-Studio/concepts/crop/) to see how to work with cropping.
 
 ![screenshot-fullwidth](../crop/rectcrop.png)
 
+### Clipping mask
+
+Every image frame has a **clipping mask** that defines its visible silhouette. By default, the mask is a Rectangle without a stroke, so an image frame looks like a regular rectangular frame. Switching the shape to **Ellipse** or **Polygon**, applying a corner radius, or enabling a stroke produces a visible effect — useful for circular avatars, rounded product cards, or polygonal hero crops without putting a separate shape frame on top.
+
+See [Clipping mask](/GraFx-Studio/guides/image-frame/#clipping-mask) on the image frame guide for the available controls.
+
 ### Fit- or Fill mode
 
 ![screenshot-fullwidth](fit-fill.png)
