@@ -21,7 +21,7 @@ Mockingbird is a media connector that provides a catalogue of 100 placeholder im
 
 ## Modes
 
-Mockingbird operates in one of two modes, controlled by a configuration option.
+Mockingbird operates in one of two modes, controlled by an environment (runtime) option.
 
 ### Offline mode (default)
 
