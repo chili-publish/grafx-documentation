@@ -1,6 +1,8 @@
-# Mockingbird Media Connector
+<div align="center">
+  <img src="https://studio-cdn.chiligrafx.com/shared/demo-connectors/Mockingbird.svg" alt="Mockingbird" width="96" />
+</div>
 
-<img src="Mockingbird.svg" style="float:left; margin-right:12px; width:48px;" alt="Mockingbird">
+# Mockingbird Media Connector
 
 > A connector that sings back any media you ask for, but never leaves the cage. Unless you open it.
 

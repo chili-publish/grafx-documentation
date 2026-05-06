@@ -1,5 +1,8 @@
+<div align="center">
+  <img src="https://studio-cdn.chiligrafx.com/shared/demo-connectors/Mocktopus.svg" alt="Mocktopus" width="96" />
+</div>
+
 # Mocktopus Data Connector
-<img src="Mocktopus.svg" style="float:left; margin-right:12px; width:48px;" alt="Mockingbird">
 
 > A many-tentacled connector that pretends to connect to everything but actually connects to nothing.
 
