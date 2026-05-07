@@ -125,6 +125,19 @@ The returned `DataModel` structure is used to define the types of data that your
 - `multiLine`: For multi-line text
 - `date`: For date values
 
+!!! Warning "Template variable mapping"
+    Data returned by a Data Connector can be mapped to template variables. Most supported schema types map 1:1, with a few exceptions.
+
+    There are no dedicated `image` or `list` types in the supported data model. To map data to an `Image Variable` or a `List Variable`, return that field as `singleLine`.
+
+    In general, the mapping between data model types and template variables is:
+
+    - `singleLine` can be mapped to `Single-Line Text`, `Image`, or `List` variables
+    - `multiLine` can be mapped to `Multi-Line Text` variable
+    - `number` can be mapped to `Number` variable
+    - `boolean` can be mapped to `Boolean` variable
+    - `date` can be mapped to `Date` variable
+
 ## Next Steps
 
 1. Follow the [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) tutorial to learn how to build your first Data Connector.
