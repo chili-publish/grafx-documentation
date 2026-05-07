@@ -125,6 +125,7 @@ The returned `DataModel` structure is used to define the types of data that your
 - `multiLine`: For multi-line text
 - `date`: For date values
 
+<!-- markdownlint-disable MD046 -->
 !!! Warning "Template variable mapping"
     Data returned by a Data Connector can be mapped to template variables. Most supported schema types map 1:1, with a few exceptions.
 
@@ -137,6 +138,7 @@ The returned `DataModel` structure is used to define the types of data that your
     - `number` can be mapped to `Number` variable
     - `boolean` can be mapped to `Boolean` variable
     - `date` can be mapped to `Date` variable
+<!-- markdownlint-enable MD046 -->
 
 ## Next Steps
 
