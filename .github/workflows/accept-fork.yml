@@ -1,7 +1,18 @@
 name: Apply Deploy Label
 
+# We use pull_request_target (not pull_request) so the workflow file is
+# always sourced from main rather than the PR head ref. For fork PRs,
+# pull_request would use the fork branch's copy of this file — which is
+# stale on branches forked before this workflow existed in its current
+# form, causing the artifact upload step to silently not exist.
+#
+# This is safe because this workflow never checks out or executes any
+# code from the fork: it only reads metadata (PR number + head SHA)
+# from the trusted event payload and writes it to an artifact. The
+# actual fork-code checkout happens in deploy-fork.yml, which is
+# workflow_run-triggered and pins to the recorded head SHA explicitly.
 on:
-  pull_request:
+  pull_request_target:
     types: [labeled]
 
 jobs:
