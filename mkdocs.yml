@@ -90,6 +90,9 @@ plugins:
         using Layouts with Print, Digital static, and Digital animated intents).
         Brand governance is enforced through Brand Kits (centrally managed colors, fonts, and paragraph styles)
         and Constraints (which parts of a Design System end users can and cannot change).
+        Components are reusable, centrally managed design building blocks placed inside templates — a pricing block,
+        badge, or coupon designed once and updated everywhere, with one-way data flow from template to component
+        and their own brand and variable scope.
         GraFx Genie provides AI-powered capabilities including Smart Crop, auto-resize, and copyfitting.
         The Connector Framework integrates with existing DAM, PIM, CRM, and MarTech systems.
 
@@ -99,7 +102,8 @@ plugins:
         access control, and advanced user management.
 
         Key technical concepts: Design Systems (adaptive designs with locked brand governance and configurable
-        variables), Connectors (plug-and-play media and data sources), Environments (isolated workspaces per tenant),
+        variables), Components (reusable, centrally governed design building blocks with one-way data flow from
+        template to component), Connectors (plug-and-play media and data sources), Environments (isolated workspaces per tenant),
         and Output Tasks (server-side render jobs producing print or digital assets).
         Authentication uses OAuth2 client credentials - all API calls require a bearer token obtained from
         the token endpoint using an integration's client ID and secret.
