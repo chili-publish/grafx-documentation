@@ -5,10 +5,18 @@ on:
     types: [labeled]
 
 jobs:
-  build_and_deploy_job:
+  save-pr-info:
     if: github.event.label.name == 'Accept for Deploy'
     runs-on: ubuntu-latest
-    name: Accept
+    name: Save PR info for fork deploy
     steps:
-      - name: Accept
-        run: echo "Accepted"
+      - name: Save PR data
+        run: |
+          mkdir -p ./pr
+          echo "${{ github.event.pull_request.number }}"   > ./pr/number
+          echo "${{ github.event.pull_request.head.sha }}" > ./pr/sha
+      - name: Upload PR info artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr
+          path: pr/

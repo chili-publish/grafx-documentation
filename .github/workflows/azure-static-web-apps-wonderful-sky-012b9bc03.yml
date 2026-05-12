@@ -11,8 +11,14 @@ on:
 
 jobs:
   build_and_deploy_job:
-    # if non forked PR, run the deploy
-    if: github.repository == 'chili-publish/grafx-documentation' && (github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed'))
+    # Run for pushes to main, and for PRs only when the head is in this same repo.
+    # Fork PRs are handled separately by deploy-fork.yml after a maintainer applies
+    # the "Accept for Deploy" label.
+    if: |
+      (github.event_name == 'push') ||
+      (github.event_name == 'pull_request'
+       && github.event.action != 'closed'
+       && github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
