@@ -196,7 +196,17 @@ connector-cli publish \
 
 ### Step 3: Enabling the connector
 
-The connector published in the previous step is initially unavailable for use in GraFx Studio Designer Workspace. To activate it, access the connector's settings in the Platform for the desired environment and turn on the `Availability` switch next to the newly deployed connector.
+The connector published in the previous step is initially unavailable for use in GraFx Studio Designer Workspace. To activate it, run:
+
+```bash
+connector-cli update \
+        -e <environment-name> \
+        -b <base-url> \
+        --connectorId <connectorId> \
+        --enabled true
+```
+
+Use the same `-e` and `-b` values as when publishing. Replace `<connectorId>` with the connector ID returned when you published the connector.
 
 ### Step 4: Verifying
 

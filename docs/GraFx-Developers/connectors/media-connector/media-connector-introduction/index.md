@@ -17,7 +17,7 @@ For those new to building Media Connectors, we recommend following this structur
 1. [Media Connector Fundamentals](/GraFx-Developers/connectors/media-connector/media-connector-fundamentals/): Learn the basic concepts and architecture of Media Connectors.
 2. [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/): Create your first Media Connector with step-by-step guidance.
 3. [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/): Enhance your connector with customizable settings.
-4. [Add Environment Options To Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/): Learn to configure your connector for different environments.
+4. [Add Environment (Runtime) Options To Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/): Learn to configure your connector for different environments.
 
 ## Reference Documentation
 
