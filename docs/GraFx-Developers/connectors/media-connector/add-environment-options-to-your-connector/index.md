@@ -1,4 +1,4 @@
-# Add Environment Options to Your Connector
+# Add Environment (Runtime) Options to Your Connector
 
 This guide is about adding options that are set at the environment level for your Connector code. This is typically used of defining a value that will be shared among your Connector that is tied to every variable and document. For example, defining a base URL.
 
@@ -10,7 +10,7 @@ This guide is about adding options that are set at the environment level for you
 - Completed  [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/) tutorial or started from this [git project](https://github.com/seancrowe/simple-media-connector/tree/Add-Settings-To-Your-Connector)
 
 
-## Adding an Environment Option
+## Adding an Environment (Runtime) Option
 
 We'll add an option to define the base URL for the picsum.photos API that our Connector will use throughout the published environment.
 

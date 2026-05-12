@@ -648,7 +648,7 @@ nav:
                 - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md'
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/index.md'
                 - 'Add Configuration Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/index.md'
-                - 'Add Environment Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
+                - 'Add Environment (Runtime) Options To Your Connector': 'GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/index.md'
             - 'Data Connectors':
                 - 'Introduction': 'GraFx-Developers/connectors/data-connector/data-connector-introduction/index.md'
                 - 'Data Connector Fundamentals': 'GraFx-Developers/connectors/data-connector/data-connector-fundamentals/index.md'
