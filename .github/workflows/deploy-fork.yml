@@ -6,6 +6,18 @@ on:
     types:
       - completed
 
+# workflow_run runs with a restricted GITHUB_TOKEN by default.
+# We explicitly grant:
+#   actions: read         -> required by actions/download-artifact@v4 to fetch
+#                            the 'pr' artifact from the upstream Apply Deploy Label run.
+#   contents: read        -> required by actions/checkout to fetch the PR head SHA.
+#   pull-requests: write  -> lets Azure/static-web-apps-deploy post the preview URL
+#                            comment back on the PR.
+permissions:
+  actions: read
+  contents: read
+  pull-requests: write
+
 jobs:
   build_and_deploy_job:
     if: github.event.workflow_run.conclusion == 'success'
