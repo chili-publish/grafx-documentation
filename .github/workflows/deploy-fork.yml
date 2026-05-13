@@ -70,7 +70,7 @@ jobs:
       # pull_request event context. We trigger via workflow_run, so we post
       # the staging URL ourselves. pull-requests: write is granted above.
       - name: Comment staging URL on PR
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const prNumber = Number('${{ steps.pr.outputs.number }}');
