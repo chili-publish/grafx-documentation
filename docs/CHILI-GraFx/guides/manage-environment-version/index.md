@@ -1,4 +1,4 @@
-# Manage environment versions
+# Manage environment version
 
 Every GraFx Studio environment is tied to a Studio version. This setting controls which version of Studio templates and projects in that environment open and save in. Pin to a specific version for stability, or set it to **Latest** to auto-update with each new release.
 
