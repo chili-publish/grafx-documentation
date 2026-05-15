@@ -162,17 +162,11 @@ Drop shadows applied at the **object level** in Adobe® InDesign® are supported
 
 ## Clipping mask support
 
-A clipping mask is a shape that crops an image frame so only the part inside the shape shows through. The exporter translates InDesign® clipping setups into Studio-native clipping masks on image frames.
-
-### Supported
+A clipping mask is a shape that crops an image frame so only the part inside the shape shows through. The exporter translates InDesign® clipping setups into Studio-native clipping masks on image frames:
 
 - **Built-in shapes** as clipping mask — rectangle, ellipse — with stroke and corner-radius properties preserved
 - **Custom paths** as clipping mask — converted to a path-based clipping mask in Studio, with the path's stroke preserved
 - **Nested shapes containing images** — when an image frame is pasted inside a shape (or several nested shapes), the topmost shape is exported as the clipping path and the image's own clipping is applied on top. Intermediate frames between the topmost shape and the image are omitted.
-
-### Not yet supported
-
-- **Complex paths** — for example, multiple unconnected paths, or a path that contains another path
 
 Unsupported clipping setups are flagged by preflight before export.
 
