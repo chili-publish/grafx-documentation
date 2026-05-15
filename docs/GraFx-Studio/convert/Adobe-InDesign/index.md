@@ -93,13 +93,13 @@ Choose your alternate layout, and this layout will be in the exporter file
    ![macOS Finder dialog showing the exported 1_CHILLtronicsAd.zip ready to select](convert07.png){.screenshot}
 
    - Name the template and locate the folder for the assets  
-   ![Import file modal in GraFx Studio with Template name "CHILLtronics Ad" and Assets destination folder "/Test"](convert09.png)
+   ![Import file modal in GraFx Studio with Template name "CHILLtronics Ad" and Assets destination folder "/Test"](convert09.png){.screenshot}
 
    - You can follow the progress in the top right-hand corner  
-   ![Progress indicator in GraFx Studio showing 1_CHILLtronicsAd.zip uploaded successfully](convert10.png)
+   ![Progress indicator in GraFx Studio showing 1_CHILLtronicsAd.zip uploaded successfully](convert10.png){.screenshot}
 
    - Your InDesign® document is now ready for automation in GraFx Studio  
-   ![Imported InDesign document opened in the GraFx Studio template designer, ready for automation](convert11.png)
+   ![Imported InDesign document opened in the GraFx Studio template designer, ready for automation](convert11.png){.screenshot}
 
 ## Preflight
 
