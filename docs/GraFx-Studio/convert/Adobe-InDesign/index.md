@@ -32,25 +32,25 @@ Click to download [the latest version of the plugin](https://studio-cdn.chiligra
 
 Example: `Blue.png` is missing
 
-![screenshot](convert17.png)
+![Adobe InDesign Links panel showing Blue.png with a Missing status in the Link Info section](convert17.png){.screenshot}
 
 All assets are linked correctly
 
-![screenshot](convert18.png)
+![Adobe InDesign Links panel with all three image assets — Blue.png, CHILL Transparent.png, and CHILLtronics C15 Pro.png — properly linked](convert18.png){.screenshot}
 
 ### Export to GraFx Studio
 
    - Go to **Plugins > CHILI GraFx plugins > GraFx Studio Exporter**  
-   ![screenshot](convert01.png)
+   ![Adobe InDesign Plug-Ins menu showing the CHILI GraFx plugins submenu with the GraFx Studio Exporter option highlighted](convert01.png){.screenshot}
 
    - Run preflight to avoid conversion issues  
-   ![screenshot](convert03.png)  
-   ![screenshot](convert04.png)
+   ![GraFx Studio Exporter panel with the message "Run preflight to identify issues before exporting" and a Run preflight button](convert03.png){.screenshot}  
+   ![GraFx Studio Exporter panel after preflight showing "No errors or warnings found", with Run again and Continue buttons](convert04.png){.screenshot}
 
 Example of a potential issue: Frame stroke type not supported  
 You can choose to ignore, or export the object to a PDF asset and place it as an asset
 
-![screenshot-full](convert19.png)
+![GraFx Studio Exporter preflight detail showing an Unsupported stroke type warning for a text frame, with Convert to PDF and Ignore options](convert19.png){.screenshot-full}
 
    - Choose a destination folder and click **Export**  
      Required only once, can be changed at any moment  
@@ -64,7 +64,7 @@ You can choose to ignore, or export the object to a PDF asset and place it as an
     
     A maximum of 50 pages can be exported, with any additional pages excluded
 
-![screenshot](convert20.png)
+![GraFx Studio Exporter export screen with Folder path, Choose folder button, an Export page dropdown set to 1, and Back to preflight / Export buttons](convert20.png){.screenshot}
 
    - Choose your layout <a id="alt-layouts"></a>  
 
@@ -73,14 +73,14 @@ The GraFx Studio exporter allows you to choose which page and alternate layout t
 
 Choose your alternate layout, and this layout will be in the exporter file
 
-![screenshot](alt2.png)  
-![screenshot](alt1.png)
+![Adobe InDesign Pages panel showing alternate layouts A4 V (vertical) and A4 H (horizontal) for the same page](alt2.png){.screenshot}  
+![GraFx Studio Exporter page-selection dropdown open, listing All pages and individual pages grouped under each alternate layout (A4 V and A4 H)](alt1.png){.screenshot}
 
    - The plugin creates a `.zip` file containing the document and all necessary assets  
-   ![screenshot-full](convert07.png)
+   ![macOS Finder dialog showing the exported 1_CHILLtronicsAd.zip in the Exports folder, ready to select](convert07.png){.screenshot-full}
 
 !!! info "What's in the zip file?"
-    ![screenshot](convert21.png)  
+    ![Contents of the exported zip: an assets folder with PDF fallbacks, a document.json file, a GraFx_Studio_Exporter.log file, and the inner 1_CHILLtronicsAd.zip](convert21.png){.screenshot}  
     - A log file with info about the plugin version, the Adobe app version, current date, and plugin warnings or errors caught during the document preflight or export  
     - The log file is named `GraFx_Studio_Exporter.log`  
     - The zip file name format: `<selected_page>_<document_name>(<optional_duplicate_copy_version>).zip`
@@ -89,17 +89,17 @@ Choose your alternate layout, and this layout will be in the exporter file
 
    - Open **[GraFx Studio](https://chiligrafx.com/)**  
    - Go to **Templates > Import .ZIP** and select the exported `.zip` file  
-   ![screenshot-full](convert06.png)  
-   ![screenshot](convert07.png)
+   ![GraFx Studio Templates page with Import .ZIP and Create template buttons in the top right](convert06.png){.screenshot-full}  
+   ![macOS Finder dialog showing the exported 1_CHILLtronicsAd.zip ready to select](convert07.png){.screenshot}
 
    - Name the template and locate the folder for the assets  
-   ![screenshot](convert09.png)
+   ![Import file modal in GraFx Studio with Template name "CHILLtronics Ad" and Assets destination folder "/Test"](convert09.png)
 
    - You can follow the progress in the top right-hand corner  
-   ![screenshot](convert10.png)
+   ![Progress indicator in GraFx Studio showing 1_CHILLtronicsAd.zip uploaded successfully](convert10.png)
 
    - Your InDesign® document is now ready for automation in GraFx Studio  
-   ![screenshot](convert11.png)
+   ![Imported InDesign document opened in the GraFx Studio template designer, ready for automation](convert11.png)
 
 ## Preflight
 
@@ -116,7 +116,7 @@ If any incompatible elements are found, preflight offers three options:
 2. **Ignore** – The preflight engine changes the missing feature to a supported version (e.g., stroke type in the example)  
 3. **Fix the issue** – You can adjust the feature in Adobe® InDesign® and re-run the preflight
 
-![screenshot-full](convert19.png)
+![GraFx Studio Exporter preflight detail showing an Unsupported stroke type warning for a text frame, with Convert to PDF and Ignore options](convert19.png){.screenshot-full}
 
 !!! info "Placed assets: pros and cons"
 
@@ -163,6 +163,8 @@ Drop shadows applied at the **object level** in Adobe® InDesign® are supported
 ## Clipping mask support
 
 A clipping mask is a shape that crops an image frame so only the part inside the shape shows through. The exporter translates InDesign® clipping setups into Studio-native clipping masks on image frames:
+
+![Image with clipping mask and rounded corners](clip01.png){.screenshot-full}
 
 - **Built-in shapes** as clipping mask — rectangle, ellipse — with stroke and corner-radius properties preserved
 - **Custom paths** as clipping mask — converted to a path-based clipping mask in Studio, with the path's stroke preserved
