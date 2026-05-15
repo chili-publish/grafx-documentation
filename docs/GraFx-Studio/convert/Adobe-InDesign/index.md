@@ -160,6 +160,22 @@ Drop shadows applied at the **object level** in Adobe® InDesign® are supported
 - Unsupported parameters are ignored
 - Visual appearance is preserved where possible
 
+## Clipping mask support
+
+A clipping mask is a shape that crops an image frame so only the part inside the shape shows through. The exporter translates InDesign® clipping setups into Studio-native clipping masks on image frames.
+
+### Supported
+
+- **Built-in shapes** as clipping mask — rectangle, ellipse — with stroke and corner-radius properties preserved
+- **Custom paths** as clipping mask — converted to a path-based clipping mask in Studio, with the path's stroke preserved
+- **Nested shapes containing images** — when an image frame is pasted inside a shape (or several nested shapes), the topmost shape is exported as the clipping path and the image's own clipping is applied on top. Intermediate frames between the topmost shape and the image are omitted.
+
+### Not yet supported
+
+- **Complex paths** — for example, multiple unconnected paths, or a path that contains another path
+
+Unsupported clipping setups are flagged by preflight before export.
+
 ## Compatibility
 
 The plugin has been tested and is compatible with Adobe InDesign 2025, 2026.
@@ -220,6 +236,9 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Horizontal / vertical flip               | ✅                |                                                    |
 |                        | Shear                                    | ⚠️                | Preflight warning                                  |
 |                        | High-resolution image support            | ✅                | Tested with 6000×6000 px                           |
+|                        | Clipping mask — built-in shape           | ✅                | Rectangle, ellipse; stroke and corner radius preserved |
+|                        | Clipping mask — custom path              | ✅                | Path stroke preserved; complex paths trigger preflight |
+|                        | Clipping mask — nested shape with image  | ✅                | Topmost shape used as clipping path; intermediate frames omitted |
 | **Primitives**         | Rectangle, ellipse, triangle             | ✅                |                                                    |
 |                        | Polygon                                  | ⚠️                | Stroke weight/size partially supported             |
 |                        | Stroke weight                            | ✅                |                                                    |
