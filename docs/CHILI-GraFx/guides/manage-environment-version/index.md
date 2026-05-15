@@ -13,21 +13,21 @@ To set or change the GraFx Studio version of an environment:
 
     **From inside an environment:** click the settings icon.
 
-    ![Settings icon shown from inside an environment, used to open environment settings](env-settings-icon.png)
+    ![Settings icon shown from inside an environment, used to open environment settings](env-settings-icon.png){.screenshot-full}
 
     **From the environments overview** at [https://chiligrafx.com/environments](https://chiligrafx.com/environments): hover over an environment and click the settings button.
 
-    ![Environments overview at chiligrafx.com/environments showing the settings button revealed when hovering over an environment tile](envs-overview-settings.png)
+    ![Environments overview at chiligrafx.com/environments showing the settings button revealed when hovering over an environment tile](envs-overview-settings.png){.screenshot-full}
 
 2. In environment settings, find the **GraFx Studio version** field. By default this is **Latest** — meaning the environment auto-updates to the newest Studio release as soon as it ships. When set to Latest, the resolved version is shown in parentheses, e.g. `Latest (1.42.x)`.
 
-    ![Environment Details panel showing the GraFx Studio version field set to Latest (1.42.x), with a pencil icon for editing](env-version-display.png)
+    ![Environment Details panel showing the GraFx Studio version field set to Latest (1.42.x), with a pencil icon for editing](env-version-display.png){.screenshot-full}
 
 3. Click the **pencil icon** next to the version.
 
 4. In the **GraFx Studio version** dialog, choose a specific version to pin to, or select **Latest** to switch back to automatic updates. Click **Update** to confirm.
 
-    ![GraFx Studio version dialog with a Version dropdown set to Latest (1.42.x) and Cancel and Update buttons](env-version-edit.png)
+    ![GraFx Studio version dialog with a Version dropdown set to Latest (1.42.x) and Cancel and Update buttons](env-version-edit.png){.screenshot-full}
 
 After you change the version, the environment settings reflect your choice.
 
