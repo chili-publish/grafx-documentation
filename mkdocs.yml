@@ -492,6 +492,7 @@ nav:
         - 'How to':
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
+            - 'Manage Environment Version':     'GraFx-Studio/guides/manage-environment-version/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Tutorials':
