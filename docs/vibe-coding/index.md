@@ -128,12 +128,19 @@ See: [Environment API Swagger](https://{{TECHNICAL_NAME}}.chili-publish.online/g
 
 ### Step 4: Request output
 
-Start an output task:
+Start an output task — pick the endpoint that matches the format you want:
 
 ```
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/pdf
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/jpg
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/png
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/mp4
+POST /api/v1/environment/{{TECHNICAL_NAME}}/output/gif
 POST /api/v1/environment/{{TECHNICAL_NAME}}/output/image
 POST /api/v1/environment/{{TECHNICAL_NAME}}/output/animation
 ```
+
+Use the format-specific endpoints (`pdf`, `jpg`, `png`, `mp4`, `gif`) when you know the target format up front; the generic `image` and `animation` endpoints exist for callers that decide the concrete format (e.g. `jpg` vs `png`, `mp4` vs `gif`) from the request body.
 
 Then poll for the result:
 
