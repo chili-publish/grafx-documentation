@@ -91,6 +91,7 @@ The **Assign shape** dropdown sets the shape used to clip the image:
 - **Rectangle** (default) — the standard image frame look. Combine with a corner radius to round the edges.
 - **Ellipse** — clips the image to an ellipse fitted inside the frame's bounding box.
 - **Polygon** — clips the image to a triangle fitted inside the frame's bounding box.
+- **Custom** — clips the image with a custom shape (for example a shape imported from an InDesign export). The custom path is fitted inside the frame's bounding box.
 
 The image is always clipped within the frame's existing width, height, and rotation — the shape only affects the silhouette.
 

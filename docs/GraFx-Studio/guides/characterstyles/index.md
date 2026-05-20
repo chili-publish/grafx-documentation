@@ -41,3 +41,9 @@ In the properties panel on the right, select the character style from the dropdo
 Your selected text now has the character style applied.
 
 ![screenshot](cs-8.png)
+
+## Background color
+
+A character style can include a **background color** — a colored fill that sits behind the characters the style is applied to. This is the typographic equivalent of a text highlight, useful for callouts, badges, labels, and short emphasized runs of text inside a paragraph.
+
+Enable the background color in the character style editor and pick any Brand Kit color (gradients are supported). Once enabled, every text selection that uses the style picks up the background automatically, and the background scales with copyfitting so it stays aligned with the text it follows.
