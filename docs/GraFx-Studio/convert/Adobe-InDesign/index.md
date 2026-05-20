@@ -166,6 +166,9 @@ A clipping mask is a shape that crops an image frame so only the part inside the
 
 ![Image with clipping mask and rounded corners](clip01.png){.screenshot-full}
 
+!!! info "How the exporter detects a clipping mask"
+    Clipping mask handling kicks in when a shape **contains an image**. Shapes without an image inside are exported to Studio as standalone shape assets — they keep their geometry, fill, and stroke, but don't act as a clipping mask. Place an image inside the shape in InDesign® if you want it converted to a clipping mask.
+
 - **Built-in shapes** as clipping mask — rectangle, ellipse — with stroke and corner-radius properties preserved
 - **Custom paths** as clipping mask — converted to a path-based clipping mask in Studio, with the path's stroke preserved
 - **Nested shapes containing images** — when an image frame is pasted inside a shape, the **immediate parent shape** is exported as the clipping path, and the image's own clipping is applied on top. If that parent shape is itself nested inside further shapes, those additional parent frames are **ignored** and not exported.
