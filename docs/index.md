@@ -13,6 +13,16 @@
 
     ---
 
+    **May 20, 2026**: GraFx Studio Adobe® InDesign® plugin: Clipping masks
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    The InDesign® exporter (v1.4.0) now preserves clipping masks on image frames when exporting to GraFx Studio — built-in shapes, custom paths, and nested shape-with-image setups are all supported, with strokes and corner radius carried over.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-adobe-indesign-plugin-clipping-masks/)
+
+    ---
+
     **May 5, 2026**: GraFx Studio: Clipping masks and character limits
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -20,9 +30,9 @@
     Image frames can now be clipped to rectangle, ellipse, or polygon shapes — with stroke and corner radius — without needing a shape frame on top. Plus character limits for single-line and multi-line text variables in both Studio and Studio UI, and fixes for output status reporting and component sizing across layouts.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/05/grafx-studio-clipping-masks-and-character-limits/)
-                                                        
+
     ---
-                                                        
+
     **Apr 29, 2026**: Connector CLI v1.12.0
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -30,7 +40,6 @@
     A new `delete-auth` command for cleanly removing connector authentication, plus reliability improvements: clearer validation when configuring auth, explicit no-cache headers on connector responses, and more consistent response content types.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/29/connector-cli-v1120/)
-
 
     ---
 
@@ -61,26 +70,6 @@
     Connect your Bynder DAM to GraFx Studio — browse and place assets directly from your Bynder library, with support for OAuth 2.0, metadata mapping, and collection filtering.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/16/new-connector-bynder/)
-
-    ---
-
-    **Apr 15, 2026**: Adobe InDesign and Photoshop Plugin Update v1.3.0
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Text columns, bullet and numbered lists, nested frame handling, and locked layer export — plus fidelity fixes for both the InDesign and Photoshop plugins.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/15/adobe-indesign-and-photoshop-plugin-update-v1-3-0/)
-
-    ---
-
-    **Apr 14, 2026**: CHILI GraFx Environment API Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Components bundled in a plugin export can now be imported directly through the Environment API, making it easier to distribute and deploy components as part of a plugin package.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/14/chili-grafx-environment-api-update/)
 
     ---
 
