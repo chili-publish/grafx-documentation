@@ -13,13 +13,13 @@
 
     ---
 
-    **May 20, 2026**: GraFx Studio: Character backgrounds and kerning
+    **May 20, 2026**: GraFx Studio: Backgrounds on Character Styles and kerning
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
     GraFx Studio v1.43 adds background color to character styles, applies font-built-in kerning in the Text Layout Engine, and extends clipping masks with a Custom shape option. Plus fixes for Components text and animation, image variable settings, preflight aspect ratio reporting, and large image variable uploads.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-character-backgrounds-and-kerning/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-backgrounds-on-character-styles-and-kerning/)
 
     ---
 
