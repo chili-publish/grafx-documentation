@@ -168,7 +168,7 @@ A clipping mask is a shape that crops an image frame so only the part inside the
 
 - **Built-in shapes** as clipping mask — rectangle, ellipse — with stroke and corner-radius properties preserved
 - **Custom paths** as clipping mask — converted to a path-based clipping mask in Studio, with the path's stroke preserved
-- **Nested shapes containing images** — when an image frame is pasted inside a shape (or several nested shapes), the topmost shape is exported as the clipping path and the image's own clipping is applied on top. Intermediate frames between the topmost shape and the image are omitted.
+- **Nested shapes containing images** — when an image frame is pasted inside a shape, the **immediate parent shape** is exported as the clipping path, and the image's own clipping is applied on top. If that parent shape is itself nested inside further shapes, those additional parent frames are **ignored** and not exported.
 
 Unsupported clipping setups are flagged by preflight before export.
 
@@ -234,7 +234,7 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | High-resolution image support            | ✅                | Tested with 6000×6000 px                           |
 |                        | Clipping mask — built-in shape           | ✅                | Rectangle, ellipse; stroke and corner radius preserved |
 |                        | Clipping mask — custom path              | ✅                | Path stroke preserved; complex paths trigger preflight |
-|                        | Clipping mask — nested shape with image  | ✅                | Topmost shape used as clipping path; intermediate frames omitted |
+|                        | Clipping mask — nested shape with image  | ✅                | Immediate parent shape used as clipping path; deeper parent frames are ignored |
 | **Primitives**         | Rectangle, ellipse, triangle             | ✅                |                                                    |
 |                        | Polygon                                  | ⚠️                | Stroke weight/size partially supported             |
 |                        | Stroke weight                            | ✅                |                                                    |

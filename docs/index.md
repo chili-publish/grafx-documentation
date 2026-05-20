@@ -13,13 +13,13 @@
 
     ---
 
-    **May 15, 2026**: GraFx Studio Adobe® InDesign® plugin: Clipping masks
+    **May 20, 2026**: GraFx Studio Adobe® InDesign® plugin: Clipping masks
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
     The InDesign® exporter (v1.4.0) now preserves clipping masks on image frames when exporting to GraFx Studio — built-in shapes, custom paths, and nested shape-with-image setups are all supported, with strokes and corner radius carried over.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/15/grafx-studio-adobe-indesign-plugin-clipping-masks/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-adobe-indesign-plugin-clipping-masks/)
 
     ---
 
