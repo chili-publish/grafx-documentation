@@ -177,6 +177,11 @@ plugins:
           - GraFx-Studio/concepts/output-settings/index.md: "Output settings control file format, resolution, and rendering options"
           - GraFx-Studio/concepts/connectors/index.md: "How connectors are used inside Studio templates"
           - GraFx-Studio/concepts/headless/index.md: "Headless output - generating assets via API without the editor UI"
+          - GraFx-Studio/concepts/components/index.md: "Components - reusable, centrally managed design building blocks placed inside templates, with one-way data flow from template to component and their own brand and variable scope"
+          - GraFx-Studio/concepts/components-strategy/index.md: "How to decide what belongs in a component vs. the host template"
+          - GraFx-Studio/concepts/component-mapping/index.md: "Mapping template variables to component variables when placing a component"
+          - GraFx-Studio/concepts/grafx-genie/index.md: "GraFx Genie - AI assistant that writes Actions (JavaScript logic) so non-developers can build Smart Templates"
+          - GraFx-Studio/concepts/genie-smart-crop/index.md: "Genie Smart Crop - AI-driven subject-aware cropping for image frames"
           - GraFx-Studio/guides/text-frame/index.md: "Text frame properties, typography, auto-grow, copyfitting, and user constraints"
           - GraFx-Studio/guides/image-frame/index.md: "Image frame properties, fit modes, crop, and user constraints"
           - GraFx-Studio/guides/layouts/index.md: "Creating and managing layouts"
@@ -307,6 +312,7 @@ nav:
             - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
             - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
             - 'Manage Subject Types' :          'CHILI-GraFx/guides/manage-subject-types/index.md'
+            - 'Manage Environment Version' :    'CHILI-GraFx/guides/manage-environment-version/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
             - 'Setup FSSO' :
@@ -492,6 +498,7 @@ nav:
         - 'How to':
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
+            - 'Manage Environment Version':     'GraFx-Studio/guides/manage-environment-version/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Tutorials':

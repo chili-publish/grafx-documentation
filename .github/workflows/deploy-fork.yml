@@ -8,7 +8,7 @@ on:
 
 # workflow_run runs with a restricted GITHUB_TOKEN by default.
 # We explicitly grant:
-#   actions: read         -> required by actions/download-artifact@v4 to fetch
+#   actions: read         -> required by actions/download-artifact@v8 to fetch
 #                            the 'pr' artifact from the upstream Apply Deploy Label run.
 #   contents: read        -> required by actions/checkout to fetch the PR head SHA.
 #   pull-requests: write  -> lets Azure/static-web-apps-deploy post the preview URL
@@ -25,7 +25,7 @@ jobs:
     name: Build and Deploy Fork PR
     steps:
       - name: Download PR info
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: pr
           run-id: ${{ github.event.workflow_run.id }}
@@ -70,7 +70,7 @@ jobs:
       # pull_request event context. We trigger via workflow_run, so we post
       # the staging URL ourselves. pull-requests: write is granted above.
       - name: Comment staging URL on PR
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const prNumber = Number('${{ steps.pr.outputs.number }}');
