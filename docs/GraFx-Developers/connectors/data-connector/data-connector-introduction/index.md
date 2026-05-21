@@ -23,7 +23,7 @@ For batch and variable-data-printing workflows where Studio iterates forward thr
 
 ### Data Source Variable
 
-For templates where an end user (or API caller) picks a single row to populate the document, with forward/backward navigation and lookup by row ID.
+For templates where an end user (or API caller) picks a single row to populate the document, with forward/backward navigation and lookup by row ID. DSV support is an **opt-in extension** that a Data Connector must explicitly implement — a connector that only covers the Output Data Source basics will not be selectable as a DSV source.
 
 1. [Data Connector Fundamentals — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/): Bidirectional paging, `getPageItemById`, and `DataSourceVariableDataModel`.
 2. [Build a Data Connector — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/build-a-data-source-variable-connector/): Implement the `dataSourceVariable` capability on an existing connector.

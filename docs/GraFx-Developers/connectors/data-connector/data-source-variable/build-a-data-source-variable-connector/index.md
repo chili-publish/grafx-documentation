@@ -1,6 +1,10 @@
 # Build a Data Connector — Data Source Variable use case
 
-This guide extends the Mockaroo-based connector from [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) to support the **Data Source Variable** use case, by adding `dataSourceVariable: true`, bidirectional `getPage`, `getPageItemById`, and `getModel` returning `itemIdPropertyName`.
+This guide extends the Mockaroo-based connector from [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) to support the **Data Source Variable** use case.
+
+!!! warning "DSV is an opt-in extension"
+
+    A Data Connector built from the CLI scaffold supports the Output Data Source use case only. To make it usable as the source for a Data Source Variable in Studio, you must explicitly add `dataSourceVariable: true` to `getCapabilities`, a bidirectional `getPage`, a `getPageItemById`, and a `getModel` that returns `itemIdPropertyName` — the steps below walk through each one. Without these additions, the Data Connector will **not** be selectable as a DSV source.
 
 For the contract and type definitions, see [Data Connector Fundamentals — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/).
 
