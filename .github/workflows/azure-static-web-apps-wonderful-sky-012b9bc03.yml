@@ -9,6 +9,18 @@ on:
     branches:
       - main
 
+# Serialize runs that target the same ref so two near-simultaneous merges to
+# main can't race each other to upload to Azure SWA (which would otherwise let
+# the slower-finishing deploy of an older commit overwrite the faster-finishing
+# deploy of a newer commit). Grouping by github.ref means:
+#   - all push:main runs share one group  -> prod deploys run strictly in order
+#   - each PR has its own group           -> different PRs still build in parallel
+# cancel-in-progress: false so an in-flight upload is never killed mid-deploy.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+
 jobs:
   build_and_deploy_job:
     # Run for pushes to main, and for PRs only when the head is in this same repo.
