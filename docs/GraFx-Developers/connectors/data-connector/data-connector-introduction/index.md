@@ -16,13 +16,17 @@ For those new to building Data Connectors, we recommend following this structure
 
 ### Output Data Source
 
+For batch and variable-data-printing workflows where Studio iterates forward through every row of the source.
+
 1. [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/): Learn the basic concepts and architecture of Data Connectors.
 2. [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/): Create your first Data Connector with step-by-step guidance.
 
 ### Data Source Variable
 
-1. [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/): Bidirectional paging, `getPageItemById`, and `DataSourceVariableDataModel`.
-2. [Build a Data Connector](/GraFx-Developers/connectors/data-connector/data-source-variable/build-a-data-source-variable-connector/): Implement the `dataSourceVariable` capability on an existing connector.
+For templates where an end user (or API caller) picks a single row to populate the document, with forward/backward navigation and lookup by row ID.
+
+1. [Data Connector Fundamentals — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/): Bidirectional paging, `getPageItemById`, and `DataSourceVariableDataModel`.
+2. [Build a Data Connector — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/build-a-data-source-variable-connector/): Implement the `dataSourceVariable` capability on an existing connector.
 
 ## Reference Documentation
 

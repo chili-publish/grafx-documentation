@@ -1,8 +1,8 @@
-# Build a Data Connector
+# Build a Data Connector — Data Source Variable use case
 
-For the **Data Source Variable** use case. This guide extends the Mockaroo-based connector from [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) with `dataSourceVariable: true`, bidirectional `getPage`, `getPageItemById`, and `getModel` returning `itemIdPropertyName`.
+This guide extends the Mockaroo-based connector from [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) to support the **Data Source Variable** use case, by adding `dataSourceVariable: true`, bidirectional `getPage`, `getPageItemById`, and `getModel` returning `itemIdPropertyName`.
 
-For the contract and type definitions, see [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/).
+For the contract and type definitions, see [Data Connector Fundamentals — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/).
 
 ## Requirements
 
@@ -145,11 +145,11 @@ async getPage(
 ```
 
 !!! note "Production connectors"
-    Loading the full dataset on every `getPage` call is acceptable for a tutorial only. In production, use your API's native paging and encode API cursors in the tokens instead.
+    Loading the full dataset on every `getPage` call is acceptable for a tutorial only. In production, use your API's native paging and encode API cursors in the tokens instead. The same applies to `getPageItemById` below — fetch only the row needed plus the adjacent-page tokens, not the entire dataset.
 
 ## Step 4: Implement getPageItemById
 
-Return a single row by ID plus navigation tokens for adjacent pages:
+Return a single row by ID plus navigation tokens for adjacent pages. For simplicity, this tutorial assumes the default sort order — a production implementation should also respect `pageOptions.sorting` when computing the row's page position so that the returned `previousPageToken` and `continuationToken` match the order Studio is paging through.
 
 ```typescript
 async getPageItemById(

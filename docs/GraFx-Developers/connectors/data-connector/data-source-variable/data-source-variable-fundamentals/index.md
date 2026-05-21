@@ -1,8 +1,8 @@
-# Data Connector Fundamentals
+# Data Connector Fundamentals — Data Source Variable use case
 
-For the **Data Source Variable** use case. Set `dataSourceVariable: true` in `getCapabilities` and implement **`Data.DataSourceVariableCapability`** on your connector class. The sections below describe each method. For general connector concepts (isolation, runtime, `getConfigurationOptions`), see [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/).
+This page covers the additions a Data Connector needs in order to support the **Data Source Variable** use case. Set `dataSourceVariable: true` in `getCapabilities` and implement **`Data.DataSourceVariableCapability`** on your connector class. The sections below describe each method. For general connector concepts (isolation, runtime, `getConfigurationOptions`), see [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/).
 
-!!! Note
+!!! note
 
     The same connector can also be used for the **Output Data Source** use case on a template. Studio calls `getPage` for both; Output Data Source relies on forward paging via `continuationToken` only. `getPageItemById` is not used there.
 
