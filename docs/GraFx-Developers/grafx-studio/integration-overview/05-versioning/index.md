@@ -111,6 +111,12 @@ If you use [Studio UI](https://github.com/chili-publish/studio-ui), the pre-buil
 **CDN URL Structure**
 
 ```
+https://studio-cdn.chiligrafx.com/studio-ui/{major}.{minor}/{patch}/es-module/bundle.js
+```
+
+We recommend always using `latest` as the patch version.
+
+```
 https://studio-cdn.chiligrafx.com/studio-ui/{major}.{minor}/latest/es-module/bundle.js
 ```
 
@@ -121,6 +127,8 @@ The `latest` path segment in the URL automatically handles the patch version, en
     The patch version of the Studio UI is not directly related to the patch version of the GraFx Studio SDK. The Studio UI is updated independently of the SDK, and its patch version is managed separately.
 
     In practice, the patch version of the Studio UI is not relevant to your integration. You should always load the latest available version of the Studio UI, regardless of the patch version of the SDK you are using.
+
+    This is only true for the patch version. You should always ensure that the major and minor versions match the SDK version set on your environment in GraFx.
 
 **Example: Loading Version 1.26**
 
@@ -142,9 +150,13 @@ To always load the most recent version of Studio UI (matching an environment set
 ></script>
 ```
 
-!!! info "Loading the Absolute Latest Version"
+!!! warning "Loading the Absolute Latest Version"
 
     Only use the absolute latest URL if your environment is also configured to run on "latest." Mismatched versions between your integration and environment will cause problems.
+
+**Regarding Stylesheet Versions**
+
+In older code integrating Studio UI, you may come across a Studio UI URL that links to a stylesheet, like `https://studio-cdn.chiligrafx.com/studio-ui/latest/main.css`. Versioning **does not** apply to this resource. This is no longer used as Studio UI now uses CSS in JS. You can freely leave this always pulling `latest` or remove the reference entirely in your own code.
 
 ### Using the Studio SDK Directly
 
