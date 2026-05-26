@@ -167,6 +167,8 @@ plugins:
           - GraFx-Developers/connectors/data-connector/data-connector-introduction/index.md: "Data connectors feed variable data into Studio templates from external sources"
           - GraFx-Developers/connectors/data-connector/data-connector-fundamentals/index.md: "Core concepts for building a data connector"
           - GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/index.md: "Step-by-step guide to building a working data connector"
+          - GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/index.md: "Data Source Variable use case - data connector fundamentals (bidirectional paging, getPageItemById)"
+          - GraFx-Developers/connectors/data-connector/data-source-variable/build-a-data-source-variable-connector/index.md: "Data Source Variable use case - build a data connector with dataSourceVariable capability"
           - GraFx-Developers/connectors/publish-my-connector/index.md: "How to publish and distribute a connector"
         GraFx Studio concepts:
           - GraFx-Studio/index.md: "GraFx Studio overview - the template design and creative automation application"
@@ -660,6 +662,9 @@ nav:
                 - 'Introduction': 'GraFx-Developers/connectors/data-connector/data-connector-introduction/index.md'
                 - 'Data Connector Fundamentals': 'GraFx-Developers/connectors/data-connector/data-connector-fundamentals/index.md'
                 - 'Build a Simple Connector': 'GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/index.md'
+                - 'Data Source Variable':
+                    - 'Data Connector Fundamentals': 'GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/index.md'
+                    - 'Build a Data Connector': 'GraFx-Developers/connectors/data-connector/data-source-variable/build-a-data-source-variable-connector/index.md'
             - 'Authorization for Connectors': 'GraFx-Developers/connectors/authorization-for-connectors/index.md'
             - 'Document my connector':                          'GraFx-Developers/connectors/connector-documentation/index.md'
             - 'Publish my connector':                           'GraFx-Developers/connectors/publish-my-connector/index.md'
