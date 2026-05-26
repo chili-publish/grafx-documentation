@@ -7,6 +7,7 @@ A smart template holds **one set of content** and **many layouts**. The content 
 A chef writes **one recipe** — the ingredients, the quantities, the steps. The same recipe appears in a glossy cookbook spread, a magazine sidebar, a 4×6 recipe card, and a cooking app. The presentation differs completely. The recipe does not.
 
 Each outlet decides photo or no photo, one column or two, big type or small. What none gets to do is **change the recipe itself**. A cookbook can't quietly swap butter for margarine because the column was tight — the moment it does, it isn't presenting the recipe anymore; it's publishing a different dish.
+
 | Cookbook world | Smart template |
 |---|---|
 | The recipe — ingredients, quantities, steps | The content — the single source of truth |
