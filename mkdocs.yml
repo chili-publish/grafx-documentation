@@ -382,6 +382,7 @@ nav:
 
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
+        - 'Recipe vs Cookbook':                 'GraFx-Studio/recipe-vs-cookbook/index.md'
         - 'Application overview':
             - 'Animation':                      'GraFx-Studio/overview/animation/index.md'
             - 'Bottom Quick Tools':             'GraFx-Studio/overview/bottom-quicktools/index.md'
