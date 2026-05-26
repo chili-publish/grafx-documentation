@@ -13,6 +13,16 @@
 
     ---
 
+    **May 21, 2026**: CHILI GraFx Environment API: Multi-layout template previews
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Integrators can now retrieve a preview thumbnail for any specific layout-and-page combination of a multi-layout template — not just the default. Useful for portals that surface a design system as a single template with many variants, letting end users preview each variant before picking one. New optional `layoutId` / `pageId` query parameters, fully backwards-compatible.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/21/chili-grafx-environment-api-multi-layout-template-previews/)
+
+    ---
+
     **May 20, 2026**: GraFx Studio: Backgrounds on Character Styles and kerning
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -60,16 +70,6 @@
     Subject types for Smart Crop, centrally managed in the platform, plus Brand Kit sync with auto and manual options. Clearer info messages on autogrow interactions, and fixes for PDF overprint and image variable metadata mappings.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/24/grafx-studio-and-platform-subject-types-brand-kit-sync-and-improvements/)
-
-    ---
-
-    **Apr 17, 2026**: New Data Connector: CSV
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Use any publicly accessible CSV file as a data source in GraFx Studio — no authentication needed. Column headers become template variables automatically, with built-in type inference and pagination.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/17/new-data-connector-csv/)
 
     ---
 
