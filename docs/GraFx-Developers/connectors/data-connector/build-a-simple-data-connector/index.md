@@ -235,4 +235,5 @@ In this tutorial, you've learned how to:
 ## Next Steps
 
 1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on connector functionality and best practices.
-2. Implement proper authorization by following the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) documentation for production use.
+2. To extend this connector to also support the **Data Source Variable** use case (end-user row selection with forward/backward navigation), see [Build a Data Connector — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/build-a-data-source-variable-connector/).
+3. Implement proper authorization by following the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) documentation for production use.
