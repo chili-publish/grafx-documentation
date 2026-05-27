@@ -82,20 +82,21 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
+          # No `subscriptionId` in the creds JSON: the Product CI/CD SP has
+          # only data-plane (Storage Blob Data Contributor) access on the
+          # docs-cdn storage account; it isn't enrolled in any subscription's
+          # IAM. If we pass subscriptionId, azure/login adds `--subscription`
+          # to `az login` and fails because the SP can't see that
+          # subscription. `allow-no-subscriptions: true` lets login succeed
+          # without any subscription context. All our `az storage blob`
+          # calls use --auth-mode login (data plane) and target a specific
+          # account by name, so no subscription is needed.
           creds: >-
             {
               "clientId":       "${{ vars.AZ_AD_CLIENT_ID_CP_PDT_INT_CICD_SP }}",
               "clientSecret":   "${{ secrets.AZ_AD_CLIENT_SECRET_CP_PDT_INT_CICD_SP }}",
-              "tenantId":       "${{ vars.AZ_TENANT_ID }}",
-              "subscriptionId": "${{ vars.AZ_SUBSCRIPTION_ID_GRAFX_PRD }}"
+              "tenantId":       "${{ vars.AZ_TENANT_ID }}"
             }
-          # The Product CI/CD SP has Storage Blob Data Contributor on the
-          # docs-cdn storage account (data-plane) but isn't enrolled in the
-          # subscription's IAM. Without this flag, azure/login fails when it
-          # tries to set the subscription as the active context. We don't
-          # actually need subscription context -- all our `az storage blob`
-          # calls use --auth-mode login (data plane) and target a specific
-          # account by name.
           allow-no-subscriptions: true
 
       - name: Collect CDN assets from site/ into a staging dir

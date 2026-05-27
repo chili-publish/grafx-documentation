@@ -66,15 +66,15 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
+          # See azure-static-web-apps-...yml for the full explanation: our SP
+          # has only data-plane access, no subscription IAM membership, so
+          # we omit subscriptionId from creds and set allow-no-subscriptions.
           creds: >-
             {
               "clientId":       "${{ vars.AZ_AD_CLIENT_ID_CP_PDT_INT_CICD_SP }}",
               "clientSecret":   "${{ secrets.AZ_AD_CLIENT_SECRET_CP_PDT_INT_CICD_SP }}",
-              "tenantId":       "${{ vars.AZ_TENANT_ID }}",
-              "subscriptionId": "${{ vars.AZ_SUBSCRIPTION_ID_GRAFX_PRD }}"
+              "tenantId":       "${{ vars.AZ_TENANT_ID }}"
             }
-          # See azure-static-web-apps-...yml for explanation -- our SP has
-          # data-plane access only, no subscription IAM membership.
           allow-no-subscriptions: true
 
       - name: Collect CDN assets from site/ into a staging dir
