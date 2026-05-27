@@ -73,6 +73,9 @@ jobs:
               "tenantId":       "${{ vars.AZ_TENANT_ID }}",
               "subscriptionId": "${{ vars.AZ_SUBSCRIPTION_ID_GRAFX_PRD }}"
             }
+          # See azure-static-web-apps-...yml for explanation -- our SP has
+          # data-plane access only, no subscription IAM membership.
+          allow-no-subscriptions: true
 
       - name: Collect CDN assets from site/ into a staging dir
         run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
