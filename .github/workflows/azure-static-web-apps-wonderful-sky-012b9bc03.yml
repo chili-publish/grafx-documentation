@@ -42,10 +42,126 @@ jobs:
           python-version: 3.x
       - name: Install MkDocs
         run: pip install -r requirements.txt
-      - name:  build documentation 
-        run: mkdocs build   
-      - name: copy config file
-        run: cp staticwebapp.config.json site   
+      - name: Build documentation
+        run: mkdocs build
+
+      # ===== CDN offload pipeline (DT-973) =====
+      # Binary assets (png/jpg/svg/gif/mp4/webm/pdf/webp) are served from
+      # docs-cdn.chiligrafx.com; the SWA artifact only carries HTML/CSS/JS.
+      # See scripts/cdn/ for the underlying tools and the design notes in
+      # the DT-973 ticket.
+
+      - name: Compute CDN target
+        id: cdn
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ] && [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            echo "container=assets" >> "$GITHUB_OUTPUT"
+            echo "dest_path=" >> "$GITHUB_OUTPUT"
+            echo "url_prefix=/assets/" >> "$GITHUB_OUTPUT"
+            echo "is_main=true" >> "$GITHUB_OUTPUT"
+          else
+            PR_NUM="${{ github.event.pull_request.number }}"
+            echo "container=staging" >> "$GITHUB_OUTPUT"
+            echo "dest_path=pr-$PR_NUM/assets/" >> "$GITHUB_OUTPUT"
+            echo "url_prefix=/staging/pr-$PR_NUM/assets/" >> "$GITHUB_OUTPUT"
+            echo "is_main=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: >-
+            {
+              "clientId":       "${{ vars.AZ_AD_CLIENT_ID_CP_PDT_INT_CICD_SP }}",
+              "clientSecret":   "${{ secrets.AZ_AD_CLIENT_SECRET_CP_PDT_INT_CICD_SP }}",
+              "tenantId":       "${{ vars.AZ_TENANT_ID }}",
+              "subscriptionId": "${{ vars.AZ_SUBSCRIPTION_ID_GRAFX_PRD }}"
+            }
+
+      - name: Collect CDN assets from site/ into a staging dir
+        run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
+
+      - name: Upload assets to blob
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
+              --destination "${{ steps.cdn.outputs.container }}" \
+              --destination-path "${{ steps.cdn.outputs.dest_path }}" \
+              --source build/cdn-upload/ \
+              --overwrite true \
+              --auth-mode login
+
+      # ---- Inline orphan deletion (main branch only) ----
+      # PR builds use a fresh per-PR prefix in the staging container, so there
+      # are no orphans to delete -- the lifecycle policy on `pr-*` purges them
+      # entirely after 30 days.
+
+      - name: List current blobs in /assets/ (main only)
+        if: steps.cdn.outputs.is_main == 'true'
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az storage blob list \
+              --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
+              --container-name assets \
+              --auth-mode login \
+              --query "[].name" -o tsv | sort > current.txt
+            echo "Remote blob count: $(wc -l < current.txt)"
+
+      - name: Compute orphans with safety guards (main only)
+        if: steps.cdn.outputs.is_main == 'true'
+        run: |
+          (cd build/cdn-upload && find . -type f | sed 's|^\./||') | sort > expected.txt
+          comm -23 current.txt expected.txt > orphans.txt
+          expected_count=$(wc -l < expected.txt)
+          orphan_count=$(wc -l < orphans.txt)
+          echo "Expected files in build: $expected_count"
+          echo "Orphans to delete: $orphan_count"
+          # Guard 1: a sane build should have >= 500 in-scope files.
+          if [ "$expected_count" -lt 500 ]; then
+            echo "::error::Refusing to delete: expected tree has fewer than 500 files ($expected_count). Aborting before any deletes."
+            exit 1
+          fi
+          # Guard 2: a normal main build deletes ~0-5 files; a sudden spike
+          # almost certainly indicates a bug in the diff or in the build.
+          if [ "$orphan_count" -gt 50 ]; then
+            echo "::error::Refusing to delete: would remove $orphan_count blobs in one run (>50). Aborting before any deletes."
+            exit 1
+          fi
+
+      - name: Delete orphan blobs (main only)
+        if: steps.cdn.outputs.is_main == 'true'
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            if [ ! -s orphans.txt ]; then
+              echo "No orphans to delete"
+              exit 0
+            fi
+            while IFS= read -r blob; do
+              echo "Deleting orphan: $blob"
+              az storage blob delete \
+                --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
+                --container-name assets --name "$blob" --auth-mode login
+            done < orphans.txt
+
+      - name: Rewrite asset references in HTML to CDN URLs (strict)
+        run: |
+          python3 scripts/cdn/rewrite_urls.py \
+            site/ \
+            https://docs-cdn.chiligrafx.com \
+            "${{ steps.cdn.outputs.url_prefix }}" \
+            --strict
+
+      - name: Strip binary assets from SWA upload
+        run: python3 scripts/cdn/strip_assets.py site/
+
+      # ===== End CDN offload pipeline =====
+
+      - name: Copy SWA config file
+        run: cp staticwebapp.config.json site
       - name: Deploy to azure
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
