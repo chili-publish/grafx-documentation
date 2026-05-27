@@ -42,6 +42,9 @@ jobs:
         with:
           ref: ${{ steps.pr.outputs.sha }}
           submodules: true
+          # GITHUB_TOKEN is not used by any later git command; don't persist
+          # it in .git/config where it could leak to other tooling.
+          persist-credentials: false
 
       - name: Setup Python
         uses: actions/setup-python@v6

@@ -25,10 +25,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ASSET_EXTS = {
-    ".png", ".jpg", ".jpeg", ".gif", ".svg",
-    ".mp4", ".webm", ".pdf", ".webp",
-}
+from _assets import ASSET_EXTS
 
 
 def parse_args() -> argparse.Namespace:

@@ -20,6 +20,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
+# Least-privilege default for GITHUB_TOKEN; per-job blocks below grant only
+# what's actually needed.
+permissions: {}
+
 
 jobs:
   build_and_deploy_job:
@@ -33,10 +37,18 @@ jobs:
        && github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    # Checkout needs `contents: read`. SWA action posts preview-URL comment on
+    # PRs, which needs `pull-requests: write`. Nothing else GITHUB_TOKEN here.
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v6
         with:
           submodules: true
+          # GITHUB_TOKEN is not used by any later step; don't persist it in
+          # .git/config where it could leak to other tooling.
+          persist-credentials: false
       - uses: actions/setup-python@v6
         with:
           python-version: 3.x
@@ -178,6 +190,8 @@ jobs:
     if: github.repository == 'chili-publish/grafx-documentation' && github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
+    # SWA close action uses its own API token; no GITHUB_TOKEN scopes needed.
+    permissions: {}
     steps:
       - name: Close Pull Request
         id: closepullrequest

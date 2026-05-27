@@ -17,7 +17,7 @@ import shutil
 import sys
 from pathlib import Path
 
-ASSET_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".mp4", ".webm", ".pdf", ".webp"}
+from _assets import ASSET_EXTS
 
 if len(sys.argv) != 3:
     print(__doc__)

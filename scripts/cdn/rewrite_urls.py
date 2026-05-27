@@ -46,10 +46,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ASSET_EXTS = {
-    ".png", ".jpg", ".jpeg", ".gif", ".svg",
-    ".mp4", ".webm", ".pdf", ".webp",
-}
+from _assets import ASSET_EXTS
 
 # HTML attributes that may carry a URL we want to rewrite.
 # Matches: foo="...", foo='...'
@@ -73,10 +70,23 @@ def is_external(url: str) -> bool:
     ))
 
 
+def split_url_suffix(url: str) -> tuple[str, str]:
+    """Split URL into (path_part, suffix) where suffix is ?query and/or #fragment.
+
+    Returns ("", "") for the empty string. Suffix is empty when there is no
+    query or fragment. Keeping these intact lets the rewriter preserve
+    cache-busting hints (foo.png?v=2) and SVG fragment selectors (sprite.svg#icon).
+    """
+    for i, ch in enumerate(url):
+        if ch in ("?", "#"):
+            return url[:i], url[i:]
+    return url, ""
+
+
 def url_ext(url: str) -> str:
     """Return lowercase extension, stripped of query/fragment."""
-    clean = url.split("?", 1)[0].split("#", 1)[0]
-    return Path(clean).suffix.lower()
+    path_part, _ = split_url_suffix(url)
+    return Path(path_part).suffix.lower()
 
 
 def resolve_site_rel(url: str, host_file: Path, site_root: Path) -> Path | None:
@@ -127,15 +137,18 @@ class Rewriter:
         """Return rewritten URL if we should, else the original."""
         if is_external(url):
             return url
-        ext = url_ext(url)
+        # Split off ?query / #fragment up-front so we can reattach to the CDN
+        # URL at the end -- preserves things like sprite.svg#icon and ?v=hash.
+        path_part, suffix = split_url_suffix(url)
+        ext = Path(path_part).suffix.lower()
         if ext not in ASSET_EXTS:
             return url
-        rel = resolve_site_rel(url, host_file, self.site_root)
+        rel = resolve_site_rel(path_part, host_file, self.site_root)
         if rel is None:
             # Asset extension but resolves outside site/ — leave it, flag in strict.
             self.unresolved.append((host_file, url))
             return url
-        new = build_cdn_url(rel, self.cdn_base, self.path_prefix)
+        new = build_cdn_url(rel, self.cdn_base, self.path_prefix) + suffix
         self.rewrites_total += 1
         self.rewrites_by_ext[ext] += 1
         if self.verbose:
