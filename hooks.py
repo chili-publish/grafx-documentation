@@ -93,20 +93,21 @@ def _strip_sitemap(site_dir):
 
 def _strip_llms(content, filename):
     """Remove GraFx Publisher references from an llms.txt file's content."""
+    result = content
     # Drop the "## GraFx Publisher" section (heading through the next heading or
     # page separator) from the full dump.
     if filename == "llms-full.txt":
-        content = re.sub(
+        result = re.sub(
             r"^## GraFx Publisher\n.*?(?=^#|^_{3,})",
             "",
-            content,
+            result,
             flags=re.DOTALL | re.MULTILINE,
         )
     # Drop any remaining line that links into an excluded folder.
     segments = tuple(f"/{prefix}" for prefix in EXCLUDE_PREFIXES)
     kept = [
         line
-        for line in content.splitlines(keepends=True)
+        for line in result.splitlines(keepends=True)
         if not ("](" in line and any(seg in line for seg in segments))
     ]
     return "".join(kept)
