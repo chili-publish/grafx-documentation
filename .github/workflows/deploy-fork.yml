@@ -64,7 +64,7 @@ jobs:
       # the lifecycle policy.
 
       - name: Azure Login
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           # See azure-static-web-apps-...yml for the full explanation: our SP
           # has only data-plane access, no subscription IAM membership, so
