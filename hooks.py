@@ -1,6 +1,22 @@
 import os
 from datetime import date
 
+# Remove GraFx Publisher from local search. Pages stay published; they just
+# don't appear in the site search box.
+SEARCH_EXCLUDE_PREFIXES = ("GraFx-Publisher/",)
+
+
+def on_page_markdown(markdown, page, config, files, **kwargs):
+    """Set search.exclude on pages under SEARCH_EXCLUDE_PREFIXES.
+
+    Applied by path, so new pages added under those folders are covered without
+    editing each file's front matter. Runs before the search index is built.
+    """
+    if page.file.src_uri.startswith(SEARCH_EXCLUDE_PREFIXES):
+        search_meta = page.meta.setdefault("search", {})
+        search_meta["exclude"] = True
+    return markdown
+
 
 def on_post_build(config, **kwargs):
     """Post-build fixes for llms.txt and llms-full.txt.
