@@ -80,7 +80,7 @@ jobs:
           fi
 
       - name: Azure Login
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           # No `subscriptionId` in the creds JSON: the Product CI/CD SP has
           # only data-plane (Storage Blob Data Contributor) access on the
