@@ -81,7 +81,7 @@ jobs:
         run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
 
       - name: Upload assets to staging blob
-        uses: azure/cli@v2
+        uses: azure/cli@v3
         with:
           inlineScript: |
             az storage blob upload-batch \

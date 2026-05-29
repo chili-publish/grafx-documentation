@@ -103,7 +103,7 @@ jobs:
         run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
 
       - name: Upload assets to blob
-        uses: azure/cli@v2
+        uses: azure/cli@v3
         with:
           inlineScript: |
             az storage blob upload-batch \
@@ -121,7 +121,7 @@ jobs:
 
       - name: List current blobs in /assets/ (main only)
         if: steps.cdn.outputs.is_main == 'true'
-        uses: azure/cli@v2
+        uses: azure/cli@v3
         with:
           inlineScript: |
             az storage blob list \
@@ -154,7 +154,7 @@ jobs:
 
       - name: Delete orphan blobs (main only)
         if: steps.cdn.outputs.is_main == 'true'
-        uses: azure/cli@v2
+        uses: azure/cli@v3
         with:
           inlineScript: |
             if [ ! -s orphans.txt ]; then
