@@ -13,6 +13,16 @@
 
     ---
 
+    **May 29, 2026**: CHILI GraFx Environment API: Source files preserved in print output
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    JPG and PNG image assets now keep their original source file during print output, so a CMYK JPEG is no longer converted to RGB — preserving the original color space and quality in the final PDF.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/29/chili-grafx-environment-api-source-files-preserved-in-print-output/)
+
+    ---
+
     **May 21, 2026**: CHILI GraFx Environment API: Multi-layout template previews
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     A new `delete-auth` command for cleanly removing connector authentication, plus reliability improvements: clearer validation when configuring auth, explicit no-cache headers on connector responses, and more consistent response content types.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/29/connector-cli-v1120/)
-
-    ---
-
-    **Apr 24, 2026**: Subject types, Brand Kit sync, and improvements
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Subject types for Smart Crop, centrally managed in the platform, plus Brand Kit sync with auto and manual options. Clearer info messages on autogrow interactions, and fixes for PDF overprint and image variable metadata mappings.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/24/grafx-studio-and-platform-subject-types-brand-kit-sync-and-improvements/)
 
     ---
 
