@@ -15,7 +15,7 @@ While Photoshop® remains a great starting point for creative design, GraFx Stud
 
 ### Download the plugin
 
-Click to download [the latest version of the plugin](https://studio-cdn.chiligrafx.com/plugins/AdobePhotoshop/latest/GraFxStudioExporter_Photoshop_latest.ccx)
+Get the latest plugin from the [GraFx Studio plugin downloads](/GraFx-Studio/convert/downloads/) page.
 
 ### Install the plugin
 

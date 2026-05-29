@@ -224,3 +224,114 @@ h3 {
 .md-typeset table:not([class]) td {
     border-top: 0rem solid var(--md-typeset-table-color);
 }
+
+/* plugin downloads page: product logo in the H1 + pill link to the other page */
+.md-typeset h1 .dl-hero-icon {
+	height: 1.5em;
+	vertical-align: -0.35em;
+	margin-right: .3em;
+}
+.md-typeset a.dl-switch {
+	display: inline-block;
+	font-size: .8em;
+	font-weight: bold;
+	margin-left: .25em;
+	padding: .2em .85em;
+	border: .05rem solid var(--md-default-fg-color--lighter);
+	border-radius: 1em;
+	white-space: nowrap;
+}
+
+/* ── Plugin downloads matrix ─────────────────────────────────────────
+   Wraps a Markdown table (via md_in_html) on the GraFx Studio and GraFx
+   Publisher "Plugin downloads" pages. The .studio / .publisher modifier on
+   the wrapping div picks which product column is highlighted and which is
+   grayed out, so users grab the right plugin. Columns are always ordered
+   Studio (2nd) then Publisher (3rd); only the styling swaps per page. */
+/* Material renders data tables as display:inline-block (shrinks to content)
+   and may wrap them in a .md-typeset__table div — neutralise both so the
+   matrix spans the full content width. */
+.md-typeset .plugin-matrix .md-typeset__table {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.md-typeset .plugin-matrix table {
+	display: table;
+	width: 100%;
+	max-width: 100%;
+	table-layout: fixed;
+	border: .05rem solid var(--md-default-fg-color--lightest);
+	border-radius: .15rem;
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+	margin: 1.2em 0;
+}
+.md-typeset .plugin-matrix th,
+.md-typeset .plugin-matrix td {
+	border: .05rem solid var(--md-default-fg-color--lightest);
+	padding: .9em .7em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* left column: source-application labels */
+.md-typeset .plugin-matrix tbody td:first-child {
+	text-align: left;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/* column headers + stacked product icon */
+.md-typeset .plugin-matrix thead th {
+	background: var(--md-default-fg-color--lightest);
+}
+.md-typeset .plugin-matrix thead th:first-child {
+	background: transparent;
+}
+.md-typeset .plugin-matrix .matrix-icon {
+	display: block;
+	height: 2.4em;
+	margin: 0 auto .35em;
+}
+
+/* download button + guide / variant links */
+.md-typeset .plugin-matrix .md-button {
+	margin: .15em 0;
+	padding: .3em 1em;
+}
+.md-typeset .plugin-matrix .guide-link,
+.md-typeset .plugin-matrix .variant-link {
+	display: block;
+	font-size: .75em;
+	margin-top: .4em;
+}
+
+/* genuinely empty combination: neutral em-dash */
+.md-typeset .plugin-matrix .none {
+	color: var(--md-default-fg-color--light);
+	font-size: 1.2em;
+}
+
+/* active product column: highlighted header (Studio = col 2, Publisher = col 3) */
+.md-typeset .plugin-matrix.studio thead th:nth-child(2),
+.md-typeset .plugin-matrix.publisher thead th:nth-child(3) {
+	background: var(--secondary);
+	color: #000;
+}
+
+/* other product column: grayed out, but still linkable to its own page */
+.md-typeset .plugin-matrix.studio th:nth-child(3),
+.md-typeset .plugin-matrix.studio td:nth-child(3),
+.md-typeset .plugin-matrix.publisher th:nth-child(2),
+.md-typeset .plugin-matrix.publisher td:nth-child(2) {
+	opacity: .5;
+	background: var(--md-default-fg-color--lightest);
+}
+.md-typeset .plugin-matrix.studio td:nth-child(3) a,
+.md-typeset .plugin-matrix.publisher td:nth-child(2) a {
+	color: var(--md-default-fg-color);
+	font-size: .85em;
+}

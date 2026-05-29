@@ -2,11 +2,7 @@
 
 ## Download
 
-Download the newest version
-
-[Version 8.0 (Unsigned)](https://s3.eu-central-1.amazonaws.com/releases.chili-publish.com/releases/Desktop_Tools/8.0.0.2_Id_202603181325/Chili_InDesign_Extensions_8.0.0.2_Unsigned.zip)
-
-[Version 8.0](https://s3.eu-central-1.amazonaws.com/releases.chili-publish.com/releases/Desktop_Tools/8.0.0.2_Id_202603181325/Chili_InDesign_Extensions_8.0.0.2.zip)
+Get the latest plugin from the [GraFx Publisher plugin downloads](/GraFx-Publisher/convert/downloads/) page.
 
 The plugin has been tested and is compatible with Adobe® InDesign® versions from 2024 and 2025.
 

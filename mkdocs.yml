@@ -524,6 +524,7 @@ nav:
             - 'Conversion':                     'GraFx-Studio/convert/intro/index.md'
             - 'for Adobe® InDesign®':           'GraFx-Studio/convert/Adobe-InDesign/index.md'
             - 'for Adobe® Photoshop®':          'GraFx-Studio/convert/Adobe-Photoshop/index.md'
+            - 'Plugin downloads':               'GraFx-Studio/convert/downloads/index.md'
         - 'Integrate GraFx studio ...':         'GraFx-Developers/grafx-studio/overview/index.md'
     - 'GraFx Publisher':
         - 'Introduction':                       'GraFx-Publisher/index.md'
@@ -543,6 +544,7 @@ nav:
             - 'Conversion':                     'GraFx-Publisher/convert/intro/index.md'
             - 'for Adobe® InDesign®':             'GraFx-Publisher/convert/Adobe-InDesign/index.md'
             - 'for Adobe® Illustrator®':          'GraFx-Publisher/convert/Adobe-Illustrator/index.md'
+            - 'Plugin downloads':               'GraFx-Publisher/convert/downloads/index.md'
             
 
     - 'GraFx Media':
