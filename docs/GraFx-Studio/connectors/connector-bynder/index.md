@@ -43,7 +43,7 @@ Your Bynder System Administrator will provide you with this information.
 For example
 
 ```html
-https://[your-domain].bynder.com
+[your-domain].bynder.com
 ```
 
 **Proxy settings**
