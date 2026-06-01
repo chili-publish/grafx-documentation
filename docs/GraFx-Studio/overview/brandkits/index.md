@@ -22,7 +22,7 @@ Add media to your Brand Kit
 
 ![screenshot](bk8.png)
 
-The pencil button allows editting the properties.
+The pencil button allows editing the properties.
 
 The fill color can be a custom color, or a predefined [color](/GraFx-Studio/concepts/brandkits/#color).
 

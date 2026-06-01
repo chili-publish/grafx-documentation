@@ -59,7 +59,7 @@ This function will create a new variable within the document and return the ID o
     }
     ```
 
-###Variable Types
+### Variable Types
 
 |Variable Type Name|dataType|
 |------------------|--------|
@@ -111,7 +111,7 @@ This function will create a new variable within the document and return the ID o
     ```
 
 
-###Force variables in a frame to re-render
+### Force variables in a frame to re-render
 === "PublisherInterface"
     ```javascript
     const frameTagOrID = "myFrame";
@@ -123,7 +123,7 @@ This function will create a new variable within the document and return the ID o
     editorObject.SetProperty(`document.allFrames[${frameTagOrID}]`, "variablesUpdatedOnce", false);
     ```
 
-###Save document if all variables have values
+### Save document if all variables have values
 === "PublisherInterface"
     ```javascript
     async function validateAndSave() {

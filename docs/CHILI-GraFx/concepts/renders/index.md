@@ -73,7 +73,7 @@ The first 50 renders are counted individually, then each subsequent set of 10 ad
 
 In your subscription, you're entitled to a render quota.
 
-Your dashboard will show the actual status of renders for the full subsciption (all environments, with a delay of ±1 day).
+Your dashboard will show the actual status of renders for the full subscription (all environments, with a delay of ±1 day).
 
 ![screenshot-full](renders01.png)
 

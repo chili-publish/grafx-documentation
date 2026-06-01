@@ -253,10 +253,10 @@ extra:
       name: CHILI publish on Instagram
       
   consent:
-    title: CHILI Grafx uses cookies
+    title: CHILI GraFx uses cookies
     description: >-
         This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.
-        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Pravacy Statement</a>
+        <a href="https://www.chili-publish.com/legal/" target="_blank">CHILI publish Privacy Statement</a>
     cookies:
       analytics:
         name: Google Analytics
