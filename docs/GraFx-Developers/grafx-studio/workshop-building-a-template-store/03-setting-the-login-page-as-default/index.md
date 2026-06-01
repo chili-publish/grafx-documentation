@@ -171,8 +171,7 @@ Here is what we changed:
 
     **Summary**
 
-    That's pretty much what the code is doing. It's setting up a stand on the internet where people can ask for a specific thing (in this case, a web page), and you know how to give them exactly what they're asking for!;
-    ```
+    That's pretty much what the code is doing. It's setting up a stand on the internet where people can ask for a specific thing (in this case, a web page), and you know how to give them exactly what they're asking for!
 
 ## 3. 🧪Testing the Login Page
 

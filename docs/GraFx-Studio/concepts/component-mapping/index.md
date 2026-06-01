@@ -38,7 +38,7 @@ That's it — two connections, and the component shows whatever the template var
             T1["Item Price"]
             T2["Item Regular Price"]
         end
-        subgraph "Price Eleent (instance 1)"
+        subgraph "Price Element (instance 1)"
             C1["price"]
             C2["regular price"]
         end

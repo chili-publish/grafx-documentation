@@ -1,4 +1,4 @@
-#List Variable Manipulation Examples
+# List Variable Manipulation Examples
 These JavaScript snippets are more specific to the `List` variable type.
 
 ### Get the name of the currently selected item
