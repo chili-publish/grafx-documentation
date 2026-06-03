@@ -30,6 +30,11 @@
 # ── YouTube embeds — some video IDs return 404 (removed / made private) ──────
 youtube\.com/embed/f6hQiLs--Q4
 
+# ── Rate-limited external hosts ──────────────────────────────────────────────
+# Wikimedia Commons throttles CI runners with 429 Too Many Requests, which the
+# link checker treats as a failure even though the image is reachable in a browser.
+^https://upload\.wikimedia\.org
+
 # ── Legacy 2023 release notes — old underscore-style URL scheme ──────────────
 # These were the original URL slugs before the site was restructured.
 # The pages no longer exist at these paths; historical posts are not edited.
