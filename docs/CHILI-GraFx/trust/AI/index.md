@@ -6,7 +6,7 @@ CHILI GraFx uses artificial intelligence to support creative automation workflow
 
 AI is applied selectively and always in support of existing platform capabilities. Today, AI powers three distinct capabilities:
 
-- **GraFx Genie Actions** — generates template logic (code) from your input, helping you build smart, automated templates faster.
+- **GraFx Genie Actions** — generates template logic (code) from your input, helping you build smart, automated templates faster. See [Actions](/GraFx-Studio/guides/actions/create/).
 - **GraFx Genie Vision** — analyses uploaded images to detect the subject and the Point of Interest, producing the metadata that powers [Smart Crop](/GraFx-Media/concepts/genie-smart-crop/).
 - **GraFx Labs** — an experimental space that currently exposes AI-powered image generation and manipulation. See [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/).
 
