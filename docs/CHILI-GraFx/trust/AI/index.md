@@ -36,7 +36,7 @@ CHILI GraFx aims to make it clear when content has been shaped by AI. How this i
 
 - **GraFx Genie Actions** produces standard template logic in plain JavaScript — the same kind of script a developer would write by hand. It is reviewed and controlled by the template designer and runs only within the fenced logic of a template.
 - **GraFx Genie Vision** records, in the asset's metadata, whether its Subject Area and Point of Interest were determined by AI or set manually — so it is always possible to tell AI-detected values apart from human-defined ones. These values can be reviewed and overridden by the user at any time.
-- **GraFx Labs** labels AI-generated images as created using generative AI (recorded as a *Content Creator: Created using Generative AI* marker on the image), so generated visuals can be recognised as such.
+- **GraFx Labs** labels AI-generated images as created using generative AI (recorded as a *Content Creator: Created using Generative AI* metadata tag on the image), so generated visuals can be recognised as such.
 
 ## Handling metadata from your content
 
