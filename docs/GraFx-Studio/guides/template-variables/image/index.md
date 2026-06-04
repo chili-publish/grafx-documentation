@@ -44,6 +44,9 @@ The path can be fixed: **Set Value** or fed through a (text / list) variable hav
 
 Choose "Allow Upload" and set a path, to allow end-users to upload assets.
 
+!!! note "Supported upload formats"
+    Uploads are limited to three file formats: **PNG**, **JPG** and **TIFF**. This is not configurable.
+
 For uploads, you can define a minimum width and height in pixels.
 
 Once enabled, each uploaded file is stored in the "Upload/" folder (for the GraFx Media connector), or in a custom path you specify.  
