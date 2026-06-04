@@ -42,7 +42,7 @@ The path can be fixed: **Set Value** or fed through a (text / list) variable hav
 
 ![screenshot-full](image05.png)
 
-Choose "Allow Upload" and set a path, to allow end-users to upload assets.
+Choose "Allow Upload" and set a path, to allow end-users to upload assets. We support 3 different types of assets: JPG, PNG, and TIFF. Currently there is no way to control which assets are allowed.
 
 For uploads, you can define a minimum width and height in pixels.
 
