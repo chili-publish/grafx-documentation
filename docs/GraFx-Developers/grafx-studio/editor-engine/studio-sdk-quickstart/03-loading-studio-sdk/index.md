@@ -142,11 +142,13 @@ Where you will need to fill in the "ENVIRONMENT API BASE" and "TOKEN HERE" with 
 
 Learn how to generate a token [here](/GraFx-Developers/environment-api/03-generating-a-token/).
 
-## Step 4 - Load A Document
+## Step 5 - Load A Document
 
 In a production server, we will need to pull the document JSON from the [Environment API](/GraFx-Developers/environment-api/reference/) or from your own host or database. The Editor Engine does not care where the JSON comes from, as long as it is the correct format.
 
 The `document.load` function allows us to pass in the JSON. For this example, we can load in a demo document for testing. Update your `index.ts` with the following code.
+
+**Note:** When loading a document, you must verify that the token is still valid.
 
 ```javascript
 import StudioSDK, { WellKnownConfigurationKeys } from "@chili-publish/studio-sdk";
