@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 5, 2026**: CHILI GraFx Environment API: Application settings and output download reliability
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    The Environment API settings endpoint now reports which applications are enabled per environment, and downloading an expired output returns a clear response instead of a generic server error.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/05/chili-grafx-environment-api-application-settings-and-output-download-reliability/)
+
+    ---
+
     **May 29, 2026**: CHILI GraFx Environment API: Source files preserved in print output
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     Image frames can now be clipped to rectangle, ellipse, or polygon shapes — with stroke and corner radius — without needing a shape frame on top. Plus character limits for single-line and multi-line text variables in both Studio and Studio UI, and fixes for output status reporting and component sizing across layouts.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/05/grafx-studio-clipping-masks-and-character-limits/)
-
-    ---
-
-    **Apr 29, 2026**: Connector CLI v1.12.0
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    A new `delete-auth` command for cleanly removing connector authentication, plus reliability improvements: clearer validation when configuring auth, explicit no-cache headers on connector responses, and more consistent response content types.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/04/29/connector-cli-v1120/)
 
     ---
 
