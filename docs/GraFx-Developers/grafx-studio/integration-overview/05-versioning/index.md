@@ -220,6 +220,24 @@ GET /api/v1/environment/{environment}/settings
 
 **Response:** Returns the `sdkVersionPublic` field containing the `major.minor` version (e.g., `"1.26"` or `"latest"`).
 
+The `/settings` endpoint also returns an `applicationsConfig` object describing which CHILI GraFx applications are enabled for the environment. Each application has an `enabled` flag and an optional list of `features`:
+
+```json
+{
+  "sdkVersionPublic": "latest",
+  "applicationsConfig": {
+    "fonts":      { "enabled": true,  "features": [] },
+    "media":      { "enabled": true,  "features": [] },
+    "studio":     { "enabled": true,  "features": [] },
+    "labs":       { "enabled": false, "features": [] },
+    "brand-kits": { "enabled": true,  "features": ["default_sync"] },
+    "publisher":  { "enabled": true,  "features": [] }
+  }
+}
+```
+
+`applicationsConfig` drives application availability in the UI; it does not affect versioning or restrict access to API features. The set of applications and features is currently fixed.
+
 Use this value to:
 
 - Dynamically construct your Studio UI CDN URL

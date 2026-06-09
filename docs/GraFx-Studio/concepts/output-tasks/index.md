@@ -134,3 +134,5 @@ API-triggered output jobs are also listed as **Output Tasks**. Whether triggered
 Tasks remain available for 7 days
 
 Download remains available for 4 hours
+
+Once the download window has passed, the generated file is cleared from temporary storage. Requesting it after that point returns a clear "no longer available" response rather than a generic error, so an integration can reliably tell an expired output apart from a genuine failure and react accordingly (for example, by regenerating the output).
