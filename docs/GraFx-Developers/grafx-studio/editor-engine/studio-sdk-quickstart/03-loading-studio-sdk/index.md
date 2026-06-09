@@ -103,7 +103,7 @@ console.log(`Listening on http://localhost:${server.port} ...`);
     **Summary**
     The overall purpose of this code is to compile TypeScript code into JavaScript using Bun, then fix a specific syntax error in the generated JavaScript file. This workaround is necessary because of a bug in the Bun build process that incorrectly formats a part of the output code, causing runtime errors about `StudioSDK` not being a constructor. By programmatically reading the output file, applying the fix, and writing it back, this code ensures that the final JavaScript is error-free and ready for execution.
 
-## Step 3 - 🧪 Test Studio
+## Step 4 - 🧪 Test Studio
 
 Test our server script by running `bun server.ts` and testing the page on `http://localhost:3000`.
 
@@ -111,7 +111,7 @@ You will see the words "GraFx Studio" and the loading of Editor Engine as a gray
 
 Then `crtl + c` to stop the bun process.
 
-## Step 4 - Authenticate
+## Step 5 - Authenticate
 
 In this quick start guide, we are going to be using the built in Media and Font Connectors. To do that, we need to make sure the SDK has the correct base URL for the Environment API and correct token for authentication.
 
@@ -142,11 +142,13 @@ Where you will need to fill in the "ENVIRONMENT API BASE" and "TOKEN HERE" with 
 
 Learn how to generate a token [here](/GraFx-Developers/environment-api/03-generating-a-token/).
 
-## Step 4 - Load A Document
+## Step 6 - Load A Document
 
 In a production server, we will need to pull the document JSON from the [Environment API](/GraFx-Developers/environment-api/reference/) or from your own host or database. The Editor Engine does not care where the JSON comes from, as long as it is the correct format.
 
 The `document.load` function allows us to pass in the JSON. For this example, we can load in a demo document for testing. Update your `index.ts` with the following code.
+
+**Note:** Before calling `document.load`, ensure your access token has not expired (refresh/regenerate it if needed; see [Managing Integrations](/GraFx-Developers/environment-api/02-managing-integrations/) for token expiration/refresh details).
 
 ```javascript
 import StudioSDK, { WellKnownConfigurationKeys } from "@chili-publish/studio-sdk";
