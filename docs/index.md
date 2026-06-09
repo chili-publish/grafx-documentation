@@ -13,13 +13,13 @@
 
     ---
 
-    **Jun 9, 2026**: CHILI GraFx Environment API: Application settings and output download reliability
+    **Jun 5, 2026**: CHILI GraFx Environment API: Application settings and output download reliability
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
     The Environment API settings endpoint now reports which applications are enabled per environment, and downloading an expired output returns a clear response instead of a generic server error.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/09/chili-grafx-environment-api-application-settings-and-output-download-reliability/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/05/chili-grafx-environment-api-application-settings-and-output-download-reliability/)
 
     ---
 
