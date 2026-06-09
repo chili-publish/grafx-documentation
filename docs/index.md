@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 9, 2026**: GraFx Media: TIFF images supported in print output
+
+    ![rn_icon](/assets/icon-GraFx-Media.svg)
+
+    TIFF images stored in GraFx Media now work in PDF output — served at full resolution with their original color space preserved, so a CMYK TIFF stays CMYK all the way to the final print-ready PDF.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/09/grafx-media-tiff-images-supported-in-print-output/)
+
+    ---
+
     **Jun 5, 2026**: CHILI GraFx Environment API: Application settings and output download reliability
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     The InDesign® exporter (v1.4.0) now preserves clipping masks on image frames when exporting to GraFx Studio — built-in shapes, custom paths, and nested shape-with-image setups are all supported, with strokes and corner radius carried over. 
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-adobe-indesign-plugin-clipping-masks/)
-
-    ---
-
-    **May 5, 2026**: GraFx Studio: Clipping masks and character limits
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    Image frames can now be clipped to rectangle, ellipse, or polygon shapes — with stroke and corner radius — without needing a shape frame on top. Plus character limits for single-line and multi-line text variables in both Studio and Studio UI, and fixes for output status reporting and component sizing across layouts.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/05/grafx-studio-clipping-masks-and-character-limits/)
 
     ---
 
