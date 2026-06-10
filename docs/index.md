@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 10, 2026**: CHILI GraFx Environment API: Updated Swagger examples and faster responses
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    The Swagger examples for the Media and Template GET endpoints have been refreshed to match what the API returns today, and frequently used operations respond faster thanks to more efficient cache communication.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/10/chili-grafx-environment-api-updated-swagger-examples-and-faster-responses/)
+
+    ---
+
     **Jun 9, 2026**: GraFx Media: TIFF images supported in print output
 
     ![rn_icon](/assets/icon-GraFx-Media.svg)
@@ -60,16 +70,6 @@
     GraFx Studio v1.43 adds background color to character styles, applies font-built-in kerning in the Text Layout Engine, and extends clipping masks with a Custom shape option. Plus fixes for Components text and animation, image variable settings, preflight aspect ratio reporting, and large image variable uploads.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-backgrounds-on-character-styles-and-kerning/)
-
-    ---
-
-    **May 20, 2026**: GraFx Studio Adobe® InDesign® plugin: Clipping masks
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    The InDesign® exporter (v1.4.0) now preserves clipping masks on image frames when exporting to GraFx Studio — built-in shapes, custom paths, and nested shape-with-image setups are all supported, with strokes and corner radius carried over. 
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-adobe-indesign-plugin-clipping-masks/)
 
     ---
 
