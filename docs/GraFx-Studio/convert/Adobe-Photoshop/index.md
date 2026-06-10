@@ -127,6 +127,20 @@ Drop shadows authored in Adobe® Photoshop® are supported and converted into Gr
 - Unsupported parameters are ignored
 
 
+## Clipping mask support
+
+A clipping mask is a shape that crops an image so only the part inside the shape shows through. The exporter translates Photoshop® clipping setups into Studio-native clipping masks on image frames:
+
+- **Built-in shapes** as clipping mask — Rectangle, Ellipse, Polygon — with stroke and corner properties preserved
+- **Custom paths** as clipping mask — converted to a path-based clipping mask in Studio
+
+Stroke color and width on clipping masks are preserved, as are corner properties.
+
+!!! info "A preflight warning is shown for every document containing clipping masks"
+    A clipping mask in Photoshop® is effectively an object with a fill, which is normally invisible. If the mask extends outside the clipped image, Photoshop® shows that overflowing fill — GraFx Studio does not. The plugin doesn't check whether a mask actually extends outside its frame, so one global warning is shown whenever the document contains at least one clipping mask. If your masks stay within their frames, you can safely ignore it.
+
+Unsupported clipping setups — such as merged or combined shapes, masks on a group of layers, or complex paths — are flagged by preflight.
+
 ## Compatibility
 
 The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
@@ -154,6 +168,8 @@ The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 | **Shapes**             | Basic shape export                       | ✅                |                                                    |
 |                        | Line shapes                              | ❌                | Exported as vector graphics; preflight warning     |
 |                        | Merged shapes on one layer               | ❌                | Exported as vector graphics; preflight warning     |
+|                        | Clipping mask — built-in shape           | ✅                | Rectangle, Ellipse, Polygon; stroke and corner properties preserved |
+|                        | Clipping mask — custom path              | ✅                | Stroke color and width preserved; complex paths trigger preflight |
 | **Blending**           | Most blend modes                         | ✅                | Unsupported modes trigger preflight                |
 |                        | Blend modes on vector export             | ⚠️                | Added later in Studio as image property            |
 | **Colors**             | RGB and CMYK modes                       | ✅                |                                                    |
