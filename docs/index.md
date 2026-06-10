@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 10, 2026**: GraFx Studio Adobe® Photoshop® plugin: Clipping masks
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    Version 1.4.0 of the Photoshop® exporter preserves clipping masks on export — built-in shapes (Rectangle, Ellipse, Polygon) and custom paths become Studio-native clipping masks, with stroke and corner properties intact.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/10/grafx-studio-adobe-photoshop-plugin-clipping-masks/)
+
+    ---
+
     **Jun 10, 2026**: CHILI GraFx Environment API: Updated Swagger examples and faster responses
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     Integrators can now retrieve a preview thumbnail for any specific layout-and-page combination of a multi-layout template — not just the default. Useful for portals that surface a design system as a single template with many variants, letting end users preview each variant before picking one. New optional `layoutId` / `pageId` query parameters, fully backwards-compatible.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/21/chili-grafx-environment-api-multi-layout-template-previews/)
-
-    ---
-
-    **May 20, 2026**: GraFx Studio: Backgrounds on Character Styles and kerning
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    GraFx Studio v1.43 adds background color to character styles, applies font-built-in kerning in the Text Layout Engine, and extends clipping masks with a Custom shape option. Plus fixes for Components text and animation, image variable settings, preflight aspect ratio reporting, and large image variable uploads.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/20/grafx-studio-backgrounds-on-character-styles-and-kerning/)
 
     ---
 
