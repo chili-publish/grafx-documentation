@@ -28,6 +28,20 @@ Get the latest plugin from the [GraFx Studio plugin downloads](/GraFx-Studio/con
 ### Prepare your InDesign® document
 
    - Open the Adobe® InDesign® document you want to export  
+   - Make sure the pdf settings last used do not have crop marks, bleed etc.  
+
+The plugin uses these settings when it converts images on conversion. The [High Quality Print] is used by default.
+
+![InDesign File menu showing Adobe PDF Presets submenu with CHILI Correct highlighted](convert22.png){.screenshot}
+
+If bleed (and other) marks are applied to these settings.
+
+![Export Adobe PDF dialog showing Marks and Bleeds tab with all marks unchecked and bleed set to 0mm](convert23.png){.screenshot}
+
+The images in the conversion will have the marks on them which more than likely would not be desirable.
+
+![Example showing an exported image with unwanted crop marks and bleed marks visible around the content](convert24.png){.screenshot}
+
    - Ensure all assets are properly linked  
 
 Example: `Blue.png` is missing
