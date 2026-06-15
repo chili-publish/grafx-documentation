@@ -34,7 +34,7 @@ The plugin uses these settings when it converts images on conversion. The [High 
 
 ![InDesign File menu showing Adobe PDF Presets submenu with CHILI Correct highlighted](convert22.png){.screenshot}
 
-If bleed (and other) marks are applied to these settings.
+Make sure bleed (and other) marks are turned off in these settings.
 
 ![Export Adobe PDF dialog showing Marks and Bleeds tab with all marks unchecked and bleed set to 0mm](convert23.png){.screenshot}
 
