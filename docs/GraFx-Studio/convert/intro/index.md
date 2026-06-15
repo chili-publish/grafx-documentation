@@ -8,6 +8,14 @@ GraFx Studio allows you to **convert your existing designs** from desktop tools 
 These templates form the foundation for automating the creation of multichannel content—whether it's print, digital static, or animated digital output  
 The conversion process ensures that the creative work you’ve already done doesn’t go to waste but becomes a **starting point for automation**
 
+## A note on fonts
+
+Although variable fonts will show in your design when working in Adobe® Photoshop® and InDesign®, and you will be able to convert your document to a Studio document, you will not be able to load a variable font type to GraFx Fonts as variable fonts are not supported.
+
+![GraFx Fonts upload dialog showing a variable font error tooltip stating variable fonts are not currently supported](convert17.png){.screenshot-full}
+
+You will need to upload a true or open type font weight that matches the ones used in the variable font within your document. For example, if you use Bold and Regular weights in your document, you'll need to upload these two weights of font as a true or open type font version.
+
 ## The conversion process
 
 Below is the abstract process of conversion. For specific conversions see:
