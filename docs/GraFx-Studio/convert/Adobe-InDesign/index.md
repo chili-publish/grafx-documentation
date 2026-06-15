@@ -38,7 +38,7 @@ If bleed (and other) marks are applied to these settings.
 
 ![Export Adobe PDF dialog showing Marks and Bleeds tab with all marks unchecked and bleed set to 0mm](convert23.png){.screenshot}
 
-The images in the conversion will have the marks on them which more than likely would not be desirable.
+Otherwise the images in the conversion will have the marks on them which more than likely would not be desirable.
 
 ![Example showing an exported image with unwanted crop marks and bleed marks visible around the content](convert24.png){.screenshot}
 
