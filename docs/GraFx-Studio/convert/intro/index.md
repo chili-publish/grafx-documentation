@@ -10,11 +10,13 @@ The conversion process ensures that the creative work you’ve already done does
 
 ## A note on fonts
 
-Although variable fonts will show in your design when working in Adobe® Photoshop® and InDesign®, and you will be able to convert your document to a Studio document, you will not be able to load a variable font type to GraFx Fonts as variable fonts are not supported.
+Variable fonts display correctly in Adobe® Photoshop® and InDesign®, and your document will convert to a Studio document — but GraFx Fonts does not support variable fonts, so they cannot be uploaded.
 
 ![GraFx Fonts upload dialog showing a variable font error tooltip stating variable fonts are not currently supported](convert17.png){.screenshot-full}
 
-You will need to upload a true or open type font weight that matches the ones used in the variable font within your document. For example, if you use Bold and Regular weights in your document, you'll need to upload these two weights of font as a true or open type font version.
+To resolve this, upload a TrueType or OpenType version of each font weight your design uses. For example, if your document uses Bold and Regular, upload those two weights as separate static font files.
+
+See [Supported font types](/GraFx-Fonts/overview/supported-font-types/) for the full list of supported font formats.
 
 ## The conversion process
 
