@@ -24,11 +24,7 @@ Here, you will see an overview of the installed connectors.
 
 Navigate to the list of installed connectors (see above) and click **+ Add connector**.
 
-A pop-up window will display.
-
-![screenshot-full](ch04.png)
-
-Choose **Connector Hub**. A list of available connectors will be shown.
+A modal opens with the list of available connectors.
 
 ![screenshot-full](ch07.png)
 
