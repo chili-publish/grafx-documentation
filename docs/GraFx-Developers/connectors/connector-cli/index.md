@@ -26,8 +26,6 @@ This will give you an overview of the available commands
 
 Connectors deployed via Connector CLI appear in the environment's Connectors settings page in a disabled state. The availability toggle is visible (showing the current state) but no edit actions are available. Hovering over the row shows a tooltip explaining that the connector must be managed via Connector CLI.
 
-To add a new CLI connector to an environment, click **+ Add connector** in the platform UI — a modal opens with the list of available connectors to browse and deploy.
-
 ## Github
 
 For more information on the Connector Framework and CLI, see the [public repository](https://github.com/chili-publish/studio-connector-framework)
