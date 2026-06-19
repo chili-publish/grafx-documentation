@@ -13,13 +13,13 @@
 
     ---
 
-    **Jun 19, 2026**: CHILI GraFx Environment API: Font preview fix and conditional requests
+    **Jun 19, 2026**: CHILI GraFx Environment API: Font preview fix
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    GET and HEAD responses now include an ETag, so repeat reads can return 304 Not Modified and skip re-downloading unchanged data — and font previews for newly uploaded fonts now wrap correctly in the square preview.
+    Font previews for newly uploaded fonts now wrap correctly in the square preview instead of rendering on a single line; previews that were already affected have been refreshed.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/chili-grafx-environment-api-font-preview-fix-and-conditional-requests/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/chili-grafx-environment-api-font-preview-fix/)
 
     ---
 
