@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 17, 2026**: CHILI GraFx Platform Update
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Token generation from integration settings, sort templates and components by date, clearer Connector CLI labelling, separate server/browser auth for single-auth connectors, Brand Kit asset management improvements, and two bug fixes.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/17/chili-grafx-platform-update/)
+
+    ---
+
     **Jun 10, 2026**: GraFx Studio Adobe® Photoshop® plugin: Clipping masks
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -60,16 +70,6 @@
     JPG and PNG image assets now keep their original source file during print output, so a CMYK JPEG is no longer converted to RGB — preserving the original color space and quality in the final PDF.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/29/chili-grafx-environment-api-source-files-preserved-in-print-output/)
-
-    ---
-
-    **May 21, 2026**: CHILI GraFx Environment API: Multi-layout template previews
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Integrators can now retrieve a preview thumbnail for any specific layout-and-page combination of a multi-layout template — not just the default. Useful for portals that surface a design system as a single template with many variants, letting end users preview each variant before picking one. New optional `layoutId` / `pageId` query parameters, fully backwards-compatible.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/21/chili-grafx-environment-api-multi-layout-template-previews/)
 
     ---
 

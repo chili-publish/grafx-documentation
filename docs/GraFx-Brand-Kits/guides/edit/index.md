@@ -20,7 +20,7 @@ On the Brand Kit detail page:
 
 - Colors: Click the color tile and edit the values
 - Fonts: Only add and remove fonts is possible
-- Media: Only add and remove assets is available
+- Media: Add, remove, or replace assets using the "..." context menu. If an asset has been deleted from GraFx Media, the Brand Kit shows an *"Image not available"* placeholder — use the context menu to replace or delete it.
 - Paragraph- and Character styles: click the "Edit Style" button
 
 ![screenshot](edit09.png)
