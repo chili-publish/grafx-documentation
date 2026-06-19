@@ -38,7 +38,7 @@ jobs:
           echo "sha=$(cat sha)"       >> $GITHUB_OUTPUT
 
       - name: Checkout PR head
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ steps.pr.outputs.sha }}
           submodules: true

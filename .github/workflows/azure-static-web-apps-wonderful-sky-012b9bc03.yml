@@ -43,7 +43,7 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
           # GITHUB_TOKEN is not used by any later step; don't persist it in
