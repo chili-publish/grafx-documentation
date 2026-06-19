@@ -38,7 +38,7 @@ If you want the image to focus on a different subject, you can manually adjust t
 
 ![screenshot-full](sc8.png)
 
-In both cases, the preview images will show the effect of your choice in the 3 different aspect ratios.
+In both cases, the preview images will show the effect of your choice across 5 different aspect ratios. The previews are grouped with a **Subject alignment** setting, so you can also see how nudging the subject left, center, or right — and top, middle, or bottom — affects the crop.
 
 ![screenshot](sc9.png)
 

@@ -39,6 +39,18 @@ Your subject will now fit within the defined Subject Position box.
 
 ![screenshot-full](sc11.png)
 
+## Subject alignment
+
+When the image has room to move after Smart Crop has zoomed, you can nudge the subject toward a side inside the Subject Position instead of leaving it centered. With Smart Crop selected, use the **Subject alignment** control in the properties panel to set the horizontal alignment (left, center, or right) and the vertical alignment (top, middle, or bottom) independently.
+
+This is useful when a subject should sit against a particular edge of the layout — for example, a product that should stay close to a headline — and keep that position across different frame sizes and aspect ratios.
+
+The subject moves only as far as the image allows: once there is no more image to reveal on that side, it cannot shift further. Subject alignment is available on frames that use the latest Smart Crop version.
+
+## Applying a new Smart Crop version
+
+To keep existing templates stable, each image frame remembers the Smart Crop version it first used, so updates to the algorithm never change how your current projects look. When you select a frame that is still using an older version, the workspace shows a **New smart crop available — apply it** message with a button to update that frame to the latest version. The message does not appear when the frame already uses the latest version, or when it has a manual crop override.
+
 ## Select a Subject type
 
 When Smart Crop is active on an image frame, a **Subject type** dropdown is available in the properties panel, below the Fit mode. It lets you pick which subject type to use when cropping the image.

@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 19, 2026**: GraFx Studio: Improved Smart Crop and More
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    A more predictable Smart Crop algorithm with guaranteed framing, a new Subject alignment setting, automatic versioning with a one-click upgrade, and five live previews — plus variable-mapping, connector, and text improvements.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/grafx-studio-improved-smart-crop-and-more/)
+
+    ---
+
     **Jun 17, 2026**: CHILI GraFx Platform Update
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     The Environment API settings endpoint now reports which applications are enabled per environment, and downloading an expired output returns a clear response instead of a generic server error.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/05/chili-grafx-environment-api-application-settings-and-output-download-reliability/)
-
-    ---
-
-    **May 29, 2026**: CHILI GraFx Environment API: Source files preserved in print output
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    JPG and PNG image assets now keep their original source file during print output, so a CMYK JPEG is no longer converted to RGB — preserving the original color space and quality in the final PDF.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/05/29/chili-grafx-environment-api-source-files-preserved-in-print-output/)
 
     ---
 
