@@ -34,6 +34,22 @@ After you change the version, the environment settings reflect your choice.
 !!! note "Existing templates and projects don't auto-upgrade"
     Changing the environment version doesn't migrate existing content. Templates and projects keep their current saved version until someone opens and saves them — at which point they're saved in the new version.
 
+## Refresh GraFx Experience
+
+If this environment is linked to GraFx Experience, you also need to refresh the GraFx version there after changing it. Otherwise there's a mismatch between the version running in the browser and the version running on the server, which causes output failures.
+
+To refresh GraFx Experience:
+
+1. Open your GraFx Experience admin settings.
+
+2. Find the GraFx extension: click **Extensions** (1), click **Installed** (2), locate **GraFx** in the list and click the three dots **...** (3), then click **Settings** (4).
+
+    ![GraFx Experience installed extensions page with the Extensions and Installed navigation expanded and the GraFx extension's three-dot menu open showing the Settings option](env-extensions-settings.png){.screenshot-full}
+
+3. On the settings page, find the **Refresh** button under **GraFx version** and click it. This syncs the two environments so they run the same version.
+
+    ![GraFx Experience extension settings page highlighting the Refresh button under the GraFx version section](env-settings-refresh.png){.screenshot-full}
+
 ## When to pin vs. stay on Latest
 
 Pinning a version gives you control over when new Studio releases reach your environment. Without a deliberate versioning strategy, automatic updates can introduce behavior changes, break existing templates, or disrupt production workflows.
