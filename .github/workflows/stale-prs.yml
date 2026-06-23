@@ -1,0 +1,72 @@
+name: Close stale PRs
+
+# Auto-mark and close pull requests that have gone inactive, so their Azure
+# Static Web Apps preview environments get reaped instead of piling up against
+# the "max staging environments" cap.
+#
+# How the cleanup actually happens: when this workflow CLOSES a stale PR, that
+# fires a `pull_request: closed` event, which the close_pull_request_job in
+# azure-static-web-apps-wonderful-sky-012b9bc03.yml handles by tearing down the
+# PR's preview environment.
+#
+# IMPORTANT: events created with the default GITHUB_TOKEN do NOT trigger other
+# workflows (GitHub's recursion guard). So for the auto-reap chain to work, set
+# a repo secret named STALE_PR_PAT (a fine-grained PAT / machine-user token with
+# pull-requests: write). Without it, this workflow still marks and closes stale
+# PRs, but their preview environments won't be reaped automatically — they'd
+# need a manual cleanup.
+#
+# Issues are intentionally left untouched; this only manages pull requests.
+
+on:
+  schedule:
+    - cron: "30 6 * * *"   # daily at 06:30 UTC
+  workflow_dispatch: {}     # allow manual runs from the Actions tab
+
+permissions:
+  pull-requests: write       # label, comment on, and close PRs
+  contents: read
+
+concurrency:
+  group: stale-prs
+  cancel-in-progress: false
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    name: Close stale PRs
+    steps:
+      - uses: actions/stale@v9
+        with:
+          # Use a PAT if provided (so closing a PR triggers the SWA close job);
+          # otherwise fall back to GITHUB_TOKEN (closes PRs, but no auto-reap).
+          repo-token: ${{ secrets.STALE_PR_PAT || secrets.GITHUB_TOKEN }}
+
+          # --- never touch issues ---
+          days-before-issue-stale: -1
+          days-before-issue-close: -1
+
+          # --- pull request timing ---
+          days-before-pr-stale: 30   # inactive 30 days -> marked stale
+          days-before-pr-close: 7    # 7 more days of silence -> closed
+          stale-pr-label: stale
+
+          # Don't auto-close PRs the team has explicitly parked, and never
+          # touch drafts (work-in-progress) or accepted fork deploys.
+          exempt-pr-labels: "on hold,blocked,do not close,Accept for Deploy"
+          exempt-draft-pr: true
+
+          stale-pr-message: >
+            This PR has had no activity for 30 days, so it has been marked
+            stale. It will be closed in 7 days unless there's further activity.
+            Push a commit or leave a comment to keep it open. (Closing it lets
+            its documentation preview environment be cleaned up automatically.)
+          close-pr-message: >
+            Closing this PR after 37 days of inactivity. Its Static Web Apps
+            preview environment will be torn down automatically. Reopen it any
+            time to pick the work back up.
+
+          # Oldest PRs first; cap work per run so a backlog doesn't all fire at
+          # once and trip the SWA staging cap from the other direction.
+          ascending: true
+          operations-per-run: 60
