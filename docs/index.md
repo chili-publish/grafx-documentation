@@ -17,7 +17,7 @@
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    Font previews for newly uploaded fonts now wrap correctly in the square preview instead of rendering on a single line; previews that were already affected have been refreshed.
+    Font previews for newly uploaded fonts now wrap correctly in the square preview instead of rendering on a single line.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/chili-grafx-environment-api-font-preview-fix/)
 
