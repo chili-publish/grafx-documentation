@@ -193,7 +193,7 @@ Select the text frame and enable "Copyfitting" to adjust font size to fit the fr
 
 Set the minimum and maximum percentages for font size adjustments.
 
-> Note: When Copyfitting is enabled, Auto-grow is disabled.
+> Note: Copyfitting and Auto-grow can now be enabled together on the same frame. The frame grows to fit longer text, while copyfitting keeps the text within the frame's size limits.
 
 #### Auto-grow
 
@@ -204,7 +204,7 @@ Set the minimum and maximum percentages for font size adjustments.
 
 Enable "Auto-grow" to allow the frame to expand as needed to fit content of varying lengths. For instance, records in a dataset might contain differing character counts.
 
-> Note: When Auto-grow is enabled, Copyfitting is disabled.
+> Note: Auto-grow and Copyfitting can now be enabled together on the same frame — see [Copyfitting](#copyfitting).
 
 Choose one or two growth directions (e.g., left, right, up, down). 
 
