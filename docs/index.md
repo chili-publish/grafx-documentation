@@ -20,6 +20,16 @@
     A more predictable Smart Crop algorithm with guaranteed framing, a new Subject alignment setting, automatic versioning with a one-click upgrade, and five live previews — plus variable-mapping, connector, and text improvements.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/grafx-studio-improved-smart-crop-and-more/)
+  
+    --- 
+  
+    **Jun 19, 2026**: CHILI GraFx Environment API: Font preview fix
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Font previews for newly uploaded fonts now wrap correctly in the square preview instead of rendering on a single line.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/chili-grafx-environment-api-font-preview-fix/)
 
     ---
 
