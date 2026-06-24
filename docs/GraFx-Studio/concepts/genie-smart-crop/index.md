@@ -28,10 +28,15 @@ The following steps explain how Smart Crop works within GraFx Studio:
 
 ## Rules of Smart Crop
 
-Clear guidelines ensure consistent results:
+Smart Crop follows a clear order of priorities to produce consistent, predictable results:
 
-- The defined **Subject Area** should completely fill the specified **Subject Position**.
-- If whitespace appears, the image will scale up to fill the space automatically.
+- **The frame is always filled completely.** The image is scaled and positioned so there are never any empty edges.
+- **The Point of Interest always stays inside the Subject Position.** The spot you mark as essential is guaranteed to remain visible.
+- **As much of the Subject Area as possible is kept inside the Subject Position.** If the Subject Area is too large to fit entirely, Smart Crop crops into it as little as possible — and never at the expense of the Point of Interest.
+
+When the image still has room to move after these rules are satisfied, the frame's **Subject alignment** setting decides which way the subject leans within the Subject Position — see [Subject alignment](../../guides/smart-crop/#subject-alignment).
+
+Each image frame also remembers the Smart Crop version it was built with, so updates to the algorithm never change how existing templates look. When a newer version is available for a frame, you can apply it from the workspace — see [Applying a new Smart Crop version](../../guides/smart-crop/#applying-a-new-smart-crop-version).
 
 ## Subject types
 

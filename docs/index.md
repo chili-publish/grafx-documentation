@@ -23,6 +23,16 @@
 
     ---
 
+    **Jun 23, 2026**: GraFx Studio: Improved Smart Crop and More
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    GraFx Studio's AI-powered Smart Crop gets a major upgrade: a more predictable algorithm with guaranteed framing, a new Subject alignment setting, automatic versioning with a one-click upgrade, and five live previews — plus variable-mapping, connector, and text improvements.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/23/grafx-studio-improved-smart-crop-and-more/)
+  
+    --- 
+  
     **Jun 19, 2026**: CHILI GraFx Environment API: Font preview fix
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
