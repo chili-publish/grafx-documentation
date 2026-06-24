@@ -13,6 +13,16 @@
 
     ---
 
+    **Jun 24, 2026**: CHILI GraFx Environment API: Exclude headers from connector proxy requests
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Connector proxy requests can now drop specific headers via the new `X-GraFx-Proxy-Exclude-Headers` header — so the connector's `Authorization` header isn't forwarded to pre-signed CDN URLs that already carry their own auth.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/24/chili-grafx-environment-api-exclude-headers-from-connector-proxy-requests/)
+
+    ---
+
     **Jun 19, 2026**: CHILI GraFx Environment API: Font preview fix
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,16 +70,6 @@
     TIFF images stored in GraFx Media now work in PDF output — served at full resolution with their original color space preserved, so a CMYK TIFF stays CMYK all the way to the final print-ready PDF.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/09/grafx-media-tiff-images-supported-in-print-output/)
-
-    ---
-
-    **Jun 5, 2026**: CHILI GraFx Environment API: Application settings and output download reliability
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    The Environment API settings endpoint now reports which applications are enabled per environment, and downloading an expired output returns a clear response instead of a generic server error.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/05/chili-grafx-environment-api-application-settings-and-output-download-reliability/)
 
     ---
 
