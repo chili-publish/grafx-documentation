@@ -17,7 +17,7 @@
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    A more predictable Smart Crop algorithm with guaranteed framing, a new Subject alignment setting, automatic versioning with a one-click upgrade, and five live previews — plus variable-mapping, connector, and text improvements.
+    GraFx Studio's AI-powered Smart Crop gets a major upgrade: a more predictable algorithm with guaranteed framing, a new Subject alignment setting, automatic versioning with a one-click upgrade, and five live previews — plus variable-mapping, connector, and text improvements.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/23/grafx-studio-improved-smart-crop-and-more/)
   
