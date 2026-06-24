@@ -382,6 +382,13 @@ nav:
             - 'Manage your projects':               'GraFx-Experience/end-user/manage-projects/index.md'
             - 'Download and order output':          'GraFx-Experience/end-user/output-and-download/index.md'
 
+    - 'GraFx Genie - AI':
+        - 'Introduction':                       'GraFx-Genie/index.md'
+        - 'Smart Crop':                         'GraFx-Genie/concepts/smart-crop/index.md'
+        - 'Genie for Actions':                  'GraFx-Genie/concepts/genie-for-actions/index.md'
+        - 'Product Image Creator':              'GraFx-Genie/concepts/product-image-creator/index.md'
+        - 'Product Image Composer':             'GraFx-Genie/concepts/product-image-composer/index.md'
+
     - 'GraFx Studio':
         - 'Introduction':                       'GraFx-Studio/index.md'
         - 'Application overview':
@@ -591,12 +598,12 @@ nav:
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
 
 
-    - 'Platform Updates':
+    - 'Updates':
         - 'Overview':                           'release-notes/index.md'
         - 'Experimental':                       'release-notes/experimental/index.md'
         - 'RSS feed':                           'release-notes/rss/index.md'
 
-    - 'Developer Center':
+    - 'Dev. Center':
         - 'Overview':                           'GraFx-Developers/overview/index.md'
         - 'Environment API':
             - 'Quickstart':
