@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Close stale PRs
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
           # Use a PAT if provided (so closing a PR triggers the SWA close job);
           # otherwise fall back to GITHUB_TOKEN (closes PRs, but no auto-reap).
