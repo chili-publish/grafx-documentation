@@ -153,7 +153,7 @@ plugins:
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/02-project-setup/index.md: "Project setup for the Studio SDK"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/03-loading-studio-sdk/index.md: "How to load and initialise the Studio SDK"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/04-communicating-with-sdk/index.md: "How to communicate with the SDK - controllers, events, and actions"
-          - GraFx-Developers/grafx-studio/editor-engine/hello-world/index.md: "Hello World tutorial - a single no-build HTML page that loads GraFx Studio and sets a template variable through the SDK, no authentication required"
+          - GraFx-Developers/grafx-studio/editor-engine/hello-world/index.md: "Hello World tutorial - embed the full GraFx Studio UI end-user editor in a web page and drive it through the SDK (set a variable), using an environment, project, and access token"
           - GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/index.md: "How to embed the full Studio UI inside your application"
           - GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md: "Difference between templates (master designs) and projects (user instances)"
           - GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md: "How to drive variable data printing via the Output API"
@@ -621,7 +621,7 @@ nav:
                     - '02 Project Setup':           'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/02-project-setup/index.md'
                     - '03 Loading Studio Sdk':      'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/03-loading-studio-sdk/index.md'
                     - '04 Communicating With Sdk':  'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/04-communicating-with-sdk/index.md'
-                - 'Hello World: Load Studio & Set a Variable': 'GraFx-Developers/grafx-studio/editor-engine/hello-world/index.md'
+                - 'Hello World: Integrate Studio UI': 'GraFx-Developers/grafx-studio/editor-engine/hello-world/index.md'
                 - 'Workshop Building a Custom UI':
                     - '00 Workshop Overview':                   'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/00-workshop-overview/index.md'
                     - '01 Setting up the project':              'GraFx-Developers/grafx-studio/editor-engine/workshop-building-a-custom-ui/01-setting-up-the-project/index.md'
