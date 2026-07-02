@@ -52,7 +52,7 @@ To refresh GraFx Experience:
 
 ## When to pin vs. stay on Latest
 
-Pinning a version gives you control over when new Studio releases reach your environment. Without a deliberate versioning strategy, automatic updates can introduce behavior changes, break existing templates, or disrupt production workflows.
+Pinning a version gives you control over when new Studio releases reach your environment. A deliberate versioning strategy helps you adopt new features and prepare for potential behavior changes at your own pace, so updates don't catch existing templates or production workflows off guard.
 
 Common patterns:
 
