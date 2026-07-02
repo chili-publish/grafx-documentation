@@ -4,7 +4,7 @@ This chapter provides a comprehensive guide to managing the lifecycle of your Gr
 
 ## Why Versioning Matters
 
-Versioning gives you control over when and how updates are applied to your GraFx Studio integration. Without a deliberate versioning strategy, automatic updates can introduce unexpected behavior changes, break existing templates, or disrupt production workflows.
+Versioning gives you control over when and how updates are applied to your GraFx Studio integration. A deliberate versioning strategy helps you adopt new features and prepare for potential behavior changes at your own pace, so updates don't catch existing templates or production workflows off guard.
 
 By understanding and implementing proper version management, you ensure stability and compatibility for your production environments while retaining the flexibility to adopt new features and bug fixes at your own pace.
 
@@ -441,25 +441,7 @@ Whichever approach you take, **having a documented update plan is essential**. Y
 
 ## How to Pin Your Environment Version
 
-Follow these steps to pin your environment to a specific version:
-
-**Step 1: Navigate to Settings**
-
-Open the settings page for the environment you want to configure.
-
-![The environment settings navigation showing the path to version settings](ver03.png)
-
-**Step 2: Locate Version Settings**
-
-In the General Settings section, find the "GraFx Studio version" field. By default, it displays "latest." Click the pencil icon to edit.
-
-![The GraFx Studio version field with pencil icon for editing](ver01.png)
-
-**Step 3: Select Your Version**
-
-In the modal that appears, select your desired `major.minor` version from the dropdown list, or choose "latest" to return to automatic updates.
-
-![The version selection modal showing available version options](ver02.png)
+To pin your environment version through the UI, follow the steps in [Set the GraFx Studio version](/CHILI-GraFx/guides/manage-environment-version/#set-the-grafx-studio-version). To do it programmatically, use the [Environment Version Management API](#environment-version-management-via-api) described above.
 
 ---
 
