@@ -61,7 +61,7 @@ Common patterns:
 - **Single-environment setups:** pin to a specific version and update on a schedule you control.
 
 !!! info "Staying ahead of changes"
-    We communicate upcoming changes in release notes, and in cases of potential breaking changes we will communicate via email ahead of time so you can prepare. In rare cases, an urgent fix — such as a security or SLA-related update — may ship with behavior changes on a shorter notice cycle. Pinning your production environment gives you full control over when those changes take effect.
+    We communicate changes in release notes, and in cases of potential breaking changes we will communicate via email ahead of time so you can prepare. In rare cases, an urgent fix — such as a security or SLA-related update — may ship with behavior changes on a shorter notice cycle. Pinning your production environment gives you full control over when those changes take effect.
 
 
 ## Compatibility rules
