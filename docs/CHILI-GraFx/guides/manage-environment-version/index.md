@@ -52,13 +52,16 @@ To refresh GraFx Experience:
 
 ## When to pin vs. stay on Latest
 
-Pinning a version gives you control over when new Studio releases reach your environment. Without a deliberate versioning strategy, automatic updates can introduce behavior changes, break existing templates, or disrupt production workflows.
+Pinning a version gives you control over when new Studio releases reach your environment. A deliberate versioning strategy helps you adopt new features and prepare for potential behavior changes at your own pace, so updates don't catch existing templates or production workflows off guard.
 
 Common patterns:
 
 - **Production environments:** pin to a specific version. Test new releases in a separate environment first, then update production once you're confident.
 - **Test or staging environments:** stay on Latest to catch issues with new releases before they affect production.
 - **Single-environment setups:** pin to a specific version and update on a schedule you control.
+
+!!! info "Staying ahead of changes"
+    We communicate changes in release notes, and in cases of potential breaking changes we will communicate via email ahead of time so you can prepare. In rare cases, an urgent fix — such as a security or SLA-related update — may ship with behavior changes on a shorter notice cycle. Pinning your production environment gives you full control over when those changes take effect.
 
 
 ## Compatibility rules
