@@ -23,7 +23,7 @@ Only the differences live in each theme — everything else follows the master b
 
 Digital output wants RGB colors; print-ready PDF wants CMYK. Instead of maintaining two Brand Kits, define your palette in RGB on the default theme and create a **Print** theme that overrides each color with its CMYK counterpart.
 
-The same named color — "Primary", "Accent" — resolves to the right color space for the channel, so designs stay color-accurate from screen to press.
+The same named color — "Primary", "Accent" — resolves to the right color space for the channel, so designs stay color-accurate from screen to press. In [design-token terms](/GraFx-Brand-Kits/concepts/elements/): one token, two values — `color.primary = #0055FF` for digital, `color.primary.print = cmyk(100, 60, 0, 0)` for print.
 
 Theme switching can be automated with [Actions](/GraFx-Studio/concepts/actions/): using `switchTheme(name)`, a template can for example switch to the Print theme whenever the selected layout changes to a print layout.
 

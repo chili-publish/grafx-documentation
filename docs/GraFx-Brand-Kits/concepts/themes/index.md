@@ -12,6 +12,8 @@ Every Brand Kit has a **default theme** that holds the complete set of elements 
 
 This makes the default theme the single source of truth, and keeps each theme small: a theme only stores its differences.
 
+If you come from a design-token world: themes are the value-mapping layer. The same named [element](/GraFx-Brand-Kits/concepts/elements/) resolves to a different value per theme — like token modes, where `color.primary` holds an RGB value for digital and a CMYK value for print.
+
 !!! info "Good to know"
     - **The font list is shared across all themes** — by design, a theme does not add or remove fonts. Styles, however, can be overridden per theme to use a different font from the shared list.
     - The **structure** of a Brand Kit (adding, renaming, removing elements) is managed on the default theme; other themes override values only.
