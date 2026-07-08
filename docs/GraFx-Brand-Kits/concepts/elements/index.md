@@ -10,4 +10,6 @@ Within each Brand Kit you can manage:
 | **Paragraph styles**  | Font, size, spacing, alignment for paragraphs            |
 | **Character styles**  | Font, size, formatting for inline text                   |
 
+Elements are defined on the Brand Kit's default [theme](/GraFx-Brand-Kits/concepts/themes/) and can be overridden per theme.
+
 ![screenshot-full](brandkits_01.png)

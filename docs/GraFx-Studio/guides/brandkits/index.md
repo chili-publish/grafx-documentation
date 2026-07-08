@@ -24,6 +24,31 @@ Confirm, since your Brand Kit elements will replace the current definitions in t
 
 You are now ready to use your Brand Kit elements in your Document.
 
+## Switch themes
+
+If the Brand Kit has [themes](/GraFx-Brand-Kits/concepts/themes/), the Brand Kit panel shows a **theme selector**. When you open a template, the default theme is selected.
+
+Switching to another theme updates every brand-bound value in the template — colors, text styles, and media — on the canvas and in the property panels. A color swatch bound to "Primary" shows the value of the active theme; text styles and image bindings follow along.
+
+!!! info "Structure is managed on the default theme"
+    Adding, renaming, removing, or duplicating Brand Kit elements is only possible on the default theme. On a non-default theme these controls are disabled or hidden, and an info icon in the panel explains this. To add an element to a theme, add it to the default theme first — the theme inherits it, and you can then override its value.
+
+The Brand Kit's font list is shared across all themes — by design, a theme does not add or remove fonts. To use a different font in a theme, override a paragraph or character style: styles can use a different font from the shared list per theme.
+
+### Switch themes with Actions or the SDK
+
+Themes can also be switched programmatically — for example, switching to a Print theme when the layout changes. Two [Actions](/GraFx-Studio/concepts/actions/) helper functions are available:
+
+```
+getActiveThemeName(): string
+```
+
+```
+switchTheme(name: string): void
+```
+
+Integrations can use the equivalent Studio SDK brand kit theme methods.
+
 ## Keep a Brand Kit in sync
 
 Once a Brand Kit is imported, the template can stay aligned with the source Brand Kit in **GraFx Brand Kits**. When an element is updated centrally (for example a new brand color, or a revised paragraph style), those changes can be pulled into the template without re-importing.
@@ -40,7 +65,7 @@ The **Auto-sync toggle** controls whether the template stays aligned automatical
 
 ![screenshot](brandkit-sync-toggle.png)
 
-- When **auto-sync is on**, Studio compares the template's Brand Kit against the source every time the template is opened and every time the Brand Kit panel is opened, and applies any changes in a single step. A toast message confirms when a sync has been applied.
+- When **auto-sync is on**, Studio compares the template's Brand Kit against the source every time the template is opened, and applies any changes in a single step. A toast message confirms when a sync has been applied.
 - When **auto-sync is off**, the template keeps its current Brand Kit values until you sync manually.
 
 Newly imported Brand Kits have auto-sync enabled by default.
@@ -60,3 +85,5 @@ The circular-arrows button next to the Brand Kit selector pulls the latest versi
     - A renamed element is added as a new element (names act as identifiers).
 
     A sync is a single undoable step — use undo/redo to revert it.
+
+    Sync is theme-aware: it applies to the selected theme and restores its settings to the source Brand Kit's state.
