@@ -24,4 +24,4 @@ See [Use cases](/GraFx-Brand-Kits/concepts/use-cases/) for typical scenarios, an
 
 ## Themes in GraFx Studio
 
-In the Studio workspace, the Brand Kit panel offers a theme selector: switching the theme updates all brand-bound values — colors, text styles, media — on the canvas and in the property panels. Themes can also be switched programmatically via Actions and the Studio SDK. See [How to use Brand Kits in a template](/GraFx-Studio/guides/brandkits/).
+In the Studio workspace, the Brand Kit panel offers a theme selector: switching the theme updates all Brand Kit elements used in the template — colors, text styles, media — on the canvas and in the property panels. Themes can also be switched programmatically via Actions and the Studio SDK. See [How to use Brand Kits in a template](/GraFx-Studio/guides/brandkits/).

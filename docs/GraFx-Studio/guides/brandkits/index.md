@@ -28,7 +28,7 @@ You are now ready to use your Brand Kit elements in your Document.
 
 If the Brand Kit has [themes](/GraFx-Brand-Kits/concepts/themes/), the Brand Kit panel shows a **theme selector**. When you open a template, the default theme is selected.
 
-Switching to another theme updates every brand-bound value in the template — colors, text styles, and media — on the canvas and in the property panels. A color swatch bound to "Primary" shows the value of the active theme; text styles and image bindings follow along.
+Switching to another theme updates every Brand Kit element used in the template — colors, text styles, and media — on the canvas and in the property panels. A color swatch using the Brand Kit color "Primary" shows the value of the active theme; text styles and media from the Brand Kit follow along.
 
 !!! info "Structure is managed on the default theme"
     Adding, renaming, removing, or duplicating Brand Kit elements is only possible on the default theme. On a non-default theme these controls are disabled or hidden, and an info icon in the panel explains this. To add an element to a theme, add it to the default theme first — the theme inherits it, and you can then override its value.
