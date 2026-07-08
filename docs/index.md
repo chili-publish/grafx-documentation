@@ -13,6 +13,16 @@
 
     ---
 
+    **Jul 8, 2026**: Upcoming Change: Superscript Font Features in GraFx Studio
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    An upcoming GraFx Studio 1.46.0 fix makes superscript text follow the settings defined in the font. Templates using fonts with custom superscript features may render slightly differently.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/08/upcoming-change-superscript-font-features-in-grafx-studio/)
+
+    ---
+
     **Jun 24, 2026**: CHILI GraFx Environment API: Exclude headers from connector proxy requests
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -60,26 +70,6 @@
     Version 1.4.0 of the Photoshop® exporter preserves clipping masks on export — built-in shapes (Rectangle, Ellipse, Polygon) and custom paths become Studio-native clipping masks, with stroke and corner properties intact.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/10/grafx-studio-adobe-photoshop-plugin-clipping-masks/)
-
-    ---
-
-    **Jun 10, 2026**: CHILI GraFx Environment API: Updated Swagger examples and faster responses
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    The Swagger examples for the Media and Template GET endpoints have been refreshed to match what the API returns today, and frequently used operations respond faster thanks to more efficient cache communication.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/10/chili-grafx-environment-api-updated-swagger-examples-and-faster-responses/)
-
-    ---
-
-    **Jun 9, 2026**: GraFx Media: TIFF images supported in print output
-
-    ![rn_icon](/assets/icon-GraFx-Media.svg)
-
-    TIFF images stored in GraFx Media now work in PDF output — served at full resolution with their original color space preserved, so a CMYK TIFF stays CMYK all the way to the final print-ready PDF.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/09/grafx-media-tiff-images-supported-in-print-output/)
 
     ---
 
