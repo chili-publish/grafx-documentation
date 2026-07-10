@@ -51,3 +51,46 @@ curl -X 'GET' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer <BEARER TOKEN>'
 ```
+
+## Caching with ETags
+
+GET endpoints of the Environment API return an `ETag` response header. An ETag is a version fingerprint of the resource: it changes whenever the resource changes, and stays the same as long as the resource is untouched.
+
+You can use the ETag to make conditional requests. Send the value back in the `If-None-Match` request header, and the API compares it with the current version:
+
+- If the resource has not changed, the API responds with `304 Not Modified` and an empty body — reuse your cached copy.
+- If the resource has changed, the API responds with `200 OK`, the full response body, and a new `ETag`.
+
+This saves bandwidth and makes polling or frequently repeated calls significantly cheaper.
+
+### Example flow
+
+First request — the response carries an `ETag` header:
+
+```curl
+curl -X 'GET' \
+  'https://sandbox1.chili-publish-sandbox.online/grafx/api/v1/environment/cp-exp-321/templates/<TEMPLATE ID>' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer <BEARER TOKEN>'
+
+< HTTP/1.1 200 OK
+< ETag: "5"
+```
+
+Follow-up request — send the value back in `If-None-Match`:
+
+```curl
+curl -X 'GET' \
+  'https://sandbox1.chili-publish-sandbox.online/grafx/api/v1/environment/cp-exp-321/templates/<TEMPLATE ID>' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer <BEARER TOKEN>' \
+  -H 'If-None-Match: "5"'
+
+< HTTP/1.1 304 Not Modified
+```
+
+### Good to know
+
+- ETags also update when a **related resource** changes. For example, a change to a font style refreshes the ETag of templates using it, so a cached template never hides a change in one of its dependencies.
+- Weak ETags (prefixed with `W/`) are handled correctly, so conditional requests keep working when proxies or CDNs sit between your integration and the API.
+- The Swagger reference documents the `ETag` and `If-None-Match` headers on the endpoints that support them.
