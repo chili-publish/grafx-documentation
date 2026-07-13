@@ -43,7 +43,7 @@ GraFx Studio integrations have the added bonus of not needing any extra steps to
 
 ### Is Studio UI My Only Integration Option?
 
-No, [Studio UI](https://github.com/chili-publish/studio-ui) is just the easiest direct alternative to existing GraFx Publisher `iframe` integrations. You can check out the [Studio SDK Quickstart Guide](/GraFx-Developers/grafx-studio/studio-ui-quickstart/01-overview/) for more details on working directly with the SDK. That said, we would generally recommend working with [Studio UI](https://github.com/chili-publish/studio-ui) rather than trying to build out your own UI wrapper.
+No, [Studio UI](https://github.com/chili-publish/studio-ui) is just the easiest direct alternative to existing GraFx Publisher `iframe` integrations. You can check out the [Studio SDK Quickstart Guide](/GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/) for more details on working directly with the SDK. That said, we would generally recommend working with [Studio UI](https://github.com/chili-publish/studio-ui) rather than trying to build out your own UI wrapper.
 
 ---
 
@@ -61,7 +61,7 @@ https://{yourEnvironmentName}.chili-publish.online/grafx/swagger
 
 ### Authentication
 
-The Environment API uses Bearer Token authorization, and a standard oAuth2 Client Credentials flow to generate tokens. This means that instead of environment-specific `/apikey` endpoints to generate authentication headers, you would use our generic oAuth server endpoint to generate tokens (see [Generating a Token](/GraFxDevelopers/environment-api/02-generating-a-token/)).
+The Environment API uses Bearer Token authorization, and a standard oAuth2 Client Credentials flow to generate tokens. This means that instead of environment-specific `/apikey` endpoints to generate authentication headers, you would use our generic oAuth server endpoint to generate tokens (see [Generating a Token](/GraFx-Developers/environment-api/03-generating-a-token/)).
 
 ### Content Type
 
