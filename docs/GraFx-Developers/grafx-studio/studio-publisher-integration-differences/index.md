@@ -15,7 +15,7 @@ In frontend integrations, these two layers often work in tandem. For the purpose
 
 ## Editor Integrations
 
-Integrating the GraFx Publisher editor is done by directly embedding an authenticated editor URL in an `iframe` element on your own site. While this makes for a very simple integration process, there are a few fundamental drawbacks to relying on `iframe` integrations. In light of those drawbacks, GraFx Studio was designed to not rely on `iframe` embedding for integrating the editor. Instead, we provide open-source libraries to directly build the editor elements in your own sites.
+Integrating the GraFx Publisher editor is done by directly embedding an authenticated editor URL in an `iframe` element on your own site, which delivers the full editor UI experience in a single package. While this makes for a very simple integration process, there is a fundamental drawback to having the entire experience delivered by one URL inside an `iframe`. GraFx Studio, by contrast, was built from the ground up around a clear split between the **engine** and the **editor** — two experiences that live separately. So instead of a single URL that packages the whole UI into an `iframe`, we provide open-source libraries that let you build the editor elements directly in your own sites.
 
 The simple answer for how to integrate the GraFx Studio editor is to use [Studio UI](https://github.com/chili-publish/studio-ui), an open-source, pre-built end-user workspace. **If you are looking for a direct alternative to plug-and-play GraFx Publisher `iframe` integrations, this is what you should use.**
 
