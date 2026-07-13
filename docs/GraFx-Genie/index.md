@@ -18,17 +18,20 @@
 
   Do NOT duplicate the detailed product pages in this section's nav — link to them.
   When a new Genie capability ships, add a page here using this pattern and one line below.
+
+  Style rules: always write "GraFx Genie" in full (never bare "Genie"), American English
+  spelling, and no em-dashes in the rendered content.
 -->
 
 # GraFx Genie
 
 ![applogo](/assets/icon-Grafx-Genie.svg)
 
-GraFx Genie is the AI assistant woven through CHILI GraFx. It helps you produce faster while staying on-brand — from cropping images automatically to writing the logic behind Smart Templates and generating product visuals.
+GraFx Genie is your AI assistant in CHILI GraFx. It helps you produce faster while staying on-brand: from cropping images automatically to writing the logic behind Smart Templates and generating product visuals.
 
-This is the home for everything GraFx Genie. Each capability has its own page explaining what it is and how Genie helps, with links to where the feature lives.
+This is the home for everything GraFx Genie. Each capability has its own page explaining what it is and how GraFx Genie helps, with links to where the feature lives.
 
-- [Smart Crop](/GraFx-Genie/concepts/smart-crop/) — Genie detects the subject of an image and crops it to fit any frame or aspect ratio.
-- [Genie for Actions](/GraFx-Genie/concepts/genie-for-actions/) — Genie writes the JavaScript behind Smart Template Actions for you.
-- [Product Image Creator](/GraFx-Genie/concepts/product-image-creator/) — Genie generates product visuals from a prompt or a starting image.
-- [Product Image Composer](/GraFx-Genie/concepts/product-image-composer/) — Genie composes product shots from products, backgrounds, and effects.
+- [Smart Crop](/GraFx-Genie/concepts/smart-crop/): GraFx Genie detects the subject of an image and crops it to fit any frame or aspect ratio.
+- [GraFx Genie for Actions](/GraFx-Genie/concepts/genie-for-actions/): GraFx Genie writes the JavaScript behind Smart Template Actions for you.
+- [Product Image Creator](/GraFx-Genie/concepts/product-image-creator/): GraFx Genie generates product visuals from a prompt or a starting image.
+- [Product Image Composer](/GraFx-Genie/concepts/product-image-composer/): GraFx Genie composes product shots from product images, backgrounds, and effects.
