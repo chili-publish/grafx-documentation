@@ -4,13 +4,13 @@
 
 Smart Crop is the GraFx Genie capability that positions an image inside a frame automatically, keeping the most important part of the picture in view whatever the frame's size or aspect ratio. One source image can become a social post, a banner, and a print ad, each correctly framed, without manual cropping for every variant.
 
-This page explains what Smart Crop is and how it works. The step-by-step guides live in GraFx Media, GraFx Studio, and the platform settings, all linked below.
+Smart Crop works across GraFx Media, GraFx Studio, and the platform settings. The step-by-step guide for each is linked below.
 
 > **TODO (build session):** add a short hero image or the feature video here, matching the existing Smart Crop pages.
 
 ## The Full Picture
 
-Smart Crop spans three places: the image's metadata is set in **GraFx Media**, the crop is applied in **GraFx Studio**, and the available **subject types** are defined in the **platform settings**.
+From upload to output, this is how Smart Crop works:
 
 1. An image is uploaded to GraFx Media.
 2. GraFx Genie analyzes it and stores two pieces of metadata on the asset: a **Subject Area** and a **Point of Interest**.
@@ -37,7 +37,7 @@ Smart Crop spans three places: the image's metadata is set in **GraFx Media**, t
 | **Subject Position** | The area *inside the frame* where the subject should appear. Set on the frame in GraFx Studio. Not the same as the Subject Area. |
 | **Subject type** | A category (such as *person* or *product*) that lets one asset store a different Subject Area and POI per intent. |
 | **Default** | The Subject Area and POI detected automatically on upload. Always present; used when no subject type is selected. |
-| **Fill mode** | How an image fills its frame: Fit, Fill, Smart Crop, or Manual. Smart Crop is one of these modes. |
+| **Fill mode** | How an image fills its frame: Fit, Fill, Smart Crop, or Manual. See [Crop modes](/GraFx-Studio/concepts/crop/). |
 
 ## How GraFx Genie detects the subject
 
@@ -65,7 +65,7 @@ The **Default** subject type is detected automatically and is always available. 
 
 ## When automatic cropping isn't enough
 
-Smart Crop handles most cases, but some images, such as lifestyle photography, need manual fine-tuning:
+Smart Crop handles most cases, but some images, such as lifestyle photos, need manual fine-tuning:
 
 - **Subject Position** lets you control where the subject lands in a specific frame (for example, to the left when text sits on the right). See [Use Smart Crop on an image frame](/GraFx-Studio/guides/smart-crop/).
 - **Manual Crop Override** lets you lock a hand-tuned crop for one image in one frame and layout, while every other image keeps using Smart Crop. See [Manual Crop Override](/GraFx-Studio/concepts/manual-crop-override/).
@@ -73,11 +73,3 @@ Smart Crop handles most cases, but some images, such as lifestyle photography, n
 ## Prerequisites & limits
 
 > **TODO / [CONFIRM] (build session):** supported file types, minimum resolution, where GraFx Genie runs, and any credit/billing implications of GraFx Genie processing. Confirm with `chili-docs` / an SME before publishing.
-
-## Learn more
-
-- [Set the Subject Area & POI in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
-- [Use Smart Crop on an image frame in GraFx Studio](/GraFx-Studio/guides/smart-crop/)
-- [Manage subject types](/CHILI-GraFx/guides/manage-subject-types/)
-- [Crop modes (Fit, Fill, Smart Crop, Manual)](/GraFx-Studio/concepts/crop/)
-- [Manual Crop Override](/GraFx-Studio/concepts/manual-crop-override/)

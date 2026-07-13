@@ -13,7 +13,7 @@
 
 ## How GraFx Genie helps
 
-GraFx Genie turns a text prompt, and optionally a starting image, into a finished visual. You pick an aspect ratio (for example 1:1 or 16:9), enter a description, and GraFx Genie generates the image. You can iterate until it's right, and start from a brand-approved asset in GraFx Media so the output stays on-brand rather than being generated from scratch.
+GraFx Genie turns a text prompt, and optionally a starting image, into a finished visual. You pick an aspect ratio (for example 1:1 or 16:9), enter a description, and GraFx Genie generates the image. You can iterate until it's right. To keep the output on-brand, start from a brand-approved asset in GraFx Media instead of generating from scratch.
 
 ## Where to find it
 

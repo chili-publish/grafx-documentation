@@ -13,7 +13,14 @@
 
 ## How GraFx Genie helps
 
-GraFx Genie assembles the scene for you in a few steps: choose an aspect ratio, set a background (upload, browse GraFx Media, or generate with AI), add product images (upload, GraFx Media, or AI), and apply special effects such as bokeh, lens flare, caustics, or volumetric lighting. You stay on-brand by pulling approved assets from GraFx Media, while GraFx Genie handles the composition and rendering.
+GraFx Genie assembles the scene for you in a few steps:
+
+1. Choose an aspect ratio.
+2. Set a background: upload one, browse GraFx Media, or generate one with AI.
+3. Add product images: upload, GraFx Media, or AI.
+4. Apply special effects such as bokeh, lens flare, caustics, or volumetric lighting.
+
+You stay on-brand by pulling approved assets from GraFx Media, while GraFx Genie handles the composition and rendering.
 
 ## Where to find it
 

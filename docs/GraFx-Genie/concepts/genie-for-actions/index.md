@@ -9,7 +9,7 @@
 
 ## What it is
 
-In GraFx Studio, **Actions** are the JavaScript logic that turns a template into a Smart Template. For example: showing an extra asset when a discount drops below a threshold, or adjusting a layout when a value changes. **GraFx Genie for Actions** writes that script for you.
+In GraFx Studio, **Actions** are the JavaScript scripts that turn a template into a Smart Template. For example: showing an extra asset when a discount drops below a threshold, or adjusting a layout when a value changes. **GraFx Genie for Actions** writes that script for you.
 
 ## How GraFx Genie helps
 
@@ -17,7 +17,7 @@ Writing Actions normally means writing JavaScript. With GraFx Genie, you describ
 
 ## Where to find it
 
-GraFx Genie for Actions is part of **GraFx Studio**, alongside the Actions that power Smart Templates. The detailed documentation is there:
+GraFx Genie for Actions is part of **GraFx Studio**, alongside the Actions that power Smart Templates. The detailed documentation is in the GraFx Studio section:
 
 - [GraFx Genie for Actions](/GraFx-Studio/concepts/grafx-genie/): how GraFx Genie assists with Actions, with a worked example.
 - [Actions](/GraFx-Studio/concepts/actions/): what Actions are and how triggers use them.
