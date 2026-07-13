@@ -1,6 +1,6 @@
 # Introduction
 
-![applogo](/assets/CHILI_LOGOS_OK-07.svg)
+![GraFx Fonts](/assets/icon-GraFx-Fonts.svg){.applogo}
 
 The fonts application for [GraFx Studio](/GraFx-Studio/)
 

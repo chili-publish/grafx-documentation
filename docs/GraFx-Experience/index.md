@@ -1,6 +1,6 @@
 # GraFx Experience
 
-![applogo](/assets/Logo_GraFx_Experience.svg)
+![GraFx Experience](/assets/icon-GraFx-Experience.svg){.applogo}
 
 ## The story behind GraFx Experience
 

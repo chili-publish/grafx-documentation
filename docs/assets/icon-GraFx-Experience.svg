@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89.2 89.2">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 89.2 89.2">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
   <defs>
     <style>
-      .cls-1 {
-        fill: url(#linear-gradient-3);
+      .st0 {
+        fill: url(#linear-gradient2);
       }
 
-      .cls-2 {
-        fill: url(#linear-gradient-2);
+      .st1 {
+        fill: url(#linear-gradient1);
       }
 
-      .cls-3 {
+      .st2 {
         fill: url(#linear-gradient);
       }
 
-      .cls-4 {
+      .st3 {
         fill: #fff;
       }
     </style>
-    <linearGradient id="linear-gradient" x1="-1883.36" y1="7293.68" x2="-1765.5" y2="7338.1" gradientTransform="translate(-819.47 -7445.08) rotate(-20.65)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="-1958.66" y1="7512.54" x2="-1840.8" y2="7556.96" gradientTransform="translate(-826.1981 -7676.0112) rotate(-20.65)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ffc91f"/>
       <stop offset=".26" stop-color="#ffc61e"/>
       <stop offset=".42" stop-color="#ffbe1a"/>
@@ -28,19 +29,19 @@
       <stop offset=".93" stop-color="#cd6800"/>
       <stop offset="1" stop-color="#ba5c00"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="34.78" y1="72.9" x2="48.95" y2="52.53" gradientTransform="translate(0 92.24) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient1" x1="34.77" y1="-121.1" x2="48.94" y2="-141.47" gradientTransform="translate(0 -101.76) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#ffd14a"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="53.62" y1="22.08" x2="39.54" y2="42.68" gradientTransform="translate(0 92.24) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient2" x1="53.62" y1="-171.93" x2="39.54" y2="-151.33" gradientTransform="translate(0 -101.76) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#ffd14a"/>
     </linearGradient>
   </defs>
-  <circle class="cls-3" cx="44.6" cy="44.6" r="44.6"/>
+  <circle class="st2" cx="44.6" cy="44.6" r="44.6"/>
   <g>
-    <path class="cls-2" d="M36.99,19.6h-19.84l6.2,9.03,11.71,16.11h17.78v-25.13h-15.85Z"/>
-    <path class="cls-1" d="M51.77,69.81l19.82.06-6.2-9.03-11.25-16.11h-18.9v25.14h8.19l8.33-.06Z"/>
-    <path class="cls-4" d="M36.87,69.87h-19.72l17.91-25.14,16.55-25.14h19.83l-34.58,50.27Z"/>
+    <path class="st1" d="M36.99,19.6h-19.84l6.2,9.03,11.71,16.11h17.78v-25.13h-15.85Z"/>
+    <path class="st0" d="M51.77,69.81l19.82.06-6.2-9.03-11.25-16.11h-18.9v25.14h8.19l8.33-.06h.01Z"/>
+    <path class="st3" d="M36.87,69.87h-19.72l17.91-25.14,16.55-25.14h19.83l-34.58,50.27h.01Z"/>
   </g>
 </svg>

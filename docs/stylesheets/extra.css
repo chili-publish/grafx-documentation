@@ -32,7 +32,8 @@
 	font-size:2.5em;
 	font-weight:bold;
 }
-img[alt=applogo] {
+img[alt=applogo],
+.applogo {
 	width: 200px;
 }
 img[alt=smallapplogo] {
