@@ -1,8 +1,7 @@
 ---
-draft: false
-date: 2026-07-08T10:38:01
-categories:
-  - Operational updates
+search:
+  exclude: true
+noindex: true
 ---
 
 # Upcoming Change: Superscript and Subscript Rendering in GraFx Studio

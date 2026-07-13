@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {{ super() }}
+  {% if page.meta and page.meta.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+{% endblock %}
