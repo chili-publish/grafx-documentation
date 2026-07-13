@@ -5,6 +5,9 @@
 	
 	This feature and related endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your production code on experimental features.
 
+!!! warning "Components are not supported"
+	HTML output does not support components. If your template uses components, it will fail during output.
+
 ## Create an output setting
 
 [How to create an export setting?](/GraFx-Studio/guides/output/settings/)
