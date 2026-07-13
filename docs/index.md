@@ -13,13 +13,13 @@
 
     ---
 
-    **Jul 10, 2026**: CHILI GraFx Environment API: ETag caching, large output requests
+    **Jul 10, 2026**: CHILI GraFx Environment API: Large output requests fix
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    ETag-based caching is now more reliable and fully documented — related resources refresh correctly and weak ETags are supported. Plus a fix for `413` errors on output requests with large templates.
+    Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-etag-caching-large-output-requests/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
 
     ---
 

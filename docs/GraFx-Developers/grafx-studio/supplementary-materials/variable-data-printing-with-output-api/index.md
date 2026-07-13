@@ -82,7 +82,7 @@ Key points:
 
 ### Limitations
 
-There's a hard limit of 10,000 rows (objects) or 10 MB for the `variables` property, whichever comes first. The rest of the request body (such as `documentContent`) does not count towards this 10 MB limit. To exceed these limits, you'll need to make multiple output requests and merge the results if a single PDF is required.
+There's a hard limit of 10,000 rows (objects) or 10 MB for the `variables` property, whichever comes first. The rest of the request body (such as `documentContent`) does not count towards this 10 MB limit; however, the infrastructure enforces a separate hard limit of 20 MB on the total request, so output can still fail if a very large document pushes the request past that threshold. To exceed these limits, you'll need to make multiple output requests and merge the results if a single PDF is required.
 
 ## Variable Type Details
 
