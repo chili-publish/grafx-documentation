@@ -21,7 +21,7 @@ The simple answer for how to integrate the GraFx Studio editor is to use [Studio
 
 ### Can I Integrate GraFx Studio via `iframe`?
 
-The short answer is "no". One of the main reasons the GraFx Publisher editor works well with `iframes` is that GraFx Publisher editor URLs come pre-authenticated with an active API key. This means that anybody who has an active GraFx Publisher editor URL can directly access the template, without having ever authenticated through GraFx. GraFx Studio URLs, on the other hand, do **not** come pre-authenticated, so placing a Template or Project URL directly in an `iframe` will redirect users to login via GraFx rather than open the editor experience directly.
+The short answer is "no". GraFx Publisher used pre-authenticated URLs that came with the full editor workspace packaged in. GraFx Studio does not provide such a URL, so placing a Template or Project URL directly in an `iframe` will simply redirect users to log in via GraFx rather than open the editor experience directly.
 
 In reality, this question demands a much more nuanced and complex answer. But, in the context of moving an integration from GraFx Publisher to GraFx Studio, there is no means of obtaining a direct, pre-authenticated GraFx Studio editor URL to embed in an `iframe`.
 
