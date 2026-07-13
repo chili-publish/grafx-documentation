@@ -23,7 +23,7 @@ The simple answer for how to integrate the GraFx Studio editor is to use [Studio
 
 The short answer is "no". GraFx Publisher used pre-authenticated URLs that came with the full editor workspace packaged in. GraFx Studio does not provide such a URL, so placing a Template or Project URL directly in an `iframe` will simply redirect users to log in via GraFx rather than open the editor experience directly.
 
-In reality, this question demands a much more nuanced and complex answer. But, in the context of moving an integration from GraFx Publisher to GraFx Studio, there is no means of obtaining a direct, pre-authenticated GraFx Studio editor URL to embed in an `iframe`.
+GraFx Studio instead provides a rendering engine you plug directly into. Using the [Studio SDK](https://chili-publish.github.io/studio-sdk/), you pass it the parent element for the engine to load, a Studio document JSON, an integration token, and a GraFx Environment API base URL, and behind the scenes it sets up and renders the Studio document. For the full end-user experience, we instead recommend [Studio UI](https://github.com/chili-publish/studio-ui), which comes with a complete end-user UX along with a `studioUILoaderConfig` function — you supply similar information through one simple build function, together with the project ID.
 
 ### How are Workspaces and View Preferences Handled in GraFx Studio?
 
