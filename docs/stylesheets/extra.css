@@ -336,3 +336,46 @@ h3 {
 	color: var(--md-default-fg-color);
 	font-size: .85em;
 }
+/* Header quick links (Platform Updates / Developer Center).
+   Markup lives in overrides/partials/header.html; their nav sections are
+   hidden from the tab bar below. Shown only at the same breakpoint as the
+   tab bar; below it, the drawer nav still lists both sections. */
+.md-header__links {
+	display: none;
+	align-items: center;
+	white-space: nowrap;
+	margin-right: 1.2rem;
+}
+.md-header__links a {
+	color: inherit;
+	font-size: .7rem;
+	margin-left: .8rem;
+	opacity: .9;
+}
+.md-header__links a:hover {
+	opacity: .6;
+}
+.md-header__links a.md-header__link--active {
+	color: var(--chilired);
+	font-weight: bold;
+	opacity: 1;
+}
+@media screen and (min-width: 76.25em) {
+	.md-header__links {
+		display: flex;
+	}
+}
+/* Genie stars badge on the Genie top nav tab only.
+   The href selector covers pages outside the Genie section; .genie-tab is
+   added by javascripts/nav-tabs.js and covers pages inside it, where the
+   relative href no longer contains "GraFx-Genie". */
+.md-tabs__link[href*="GraFx-Genie"]::after,
+.md-tabs__link.genie-tab::after {
+	content: "";
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.2em;
+	vertical-align: super;
+	background: url("../assets/genie-stars.svg") no-repeat center / contain;
+}
