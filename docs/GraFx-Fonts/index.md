@@ -1,4 +1,4 @@
-# Introduction
+# GraFx Fonts
 
 ![GraFx Fonts](/assets/icon-GraFx-Fonts.svg){.applogo}
 

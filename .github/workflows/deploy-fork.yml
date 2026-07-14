@@ -92,12 +92,13 @@ jobs:
               --overwrite true \
               --auth-mode login
 
-      - name: Rewrite asset references in HTML to CDN URLs (strict)
+      - name: Rewrite asset references in HTML/CSS to CDN URLs (strict)
         run: |
           python3 scripts/cdn/rewrite_urls.py \
             site/ \
             https://docs-cdn.chiligrafx.com \
             "/staging/pr-${{ steps.pr.outputs.number }}/assets/" \
+            --include-css \
             --strict
 
       - name: Strip binary assets from SWA upload

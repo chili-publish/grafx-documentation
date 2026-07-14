@@ -168,12 +168,13 @@ jobs:
                 --container-name assets --name "$blob" --auth-mode login
             done < orphans.txt
 
-      - name: Rewrite asset references in HTML to CDN URLs (strict)
+      - name: Rewrite asset references in HTML/CSS to CDN URLs (strict)
         run: |
           python3 scripts/cdn/rewrite_urls.py \
             site/ \
             https://docs-cdn.chiligrafx.com \
             "${{ steps.cdn.outputs.url_prefix }}" \
+            --include-css \
             --strict
 
       - name: Strip binary assets from SWA upload
