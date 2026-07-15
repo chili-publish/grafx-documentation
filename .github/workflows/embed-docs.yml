@@ -39,6 +39,8 @@ jobs:
       - name: Embed documentation
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DOCS_EMBEDDING_MODEL: text-embedding-3-large
+          DOCS_EMBEDDING_DIM: "3072"
         run: |
           LIMIT_ARG=""
           if [ -n "${{ github.event.inputs.limit }}" ]; then
