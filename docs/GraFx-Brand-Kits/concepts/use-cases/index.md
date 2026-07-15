@@ -8,7 +8,7 @@ With [themes](/GraFx-Brand-Kits/concepts/themes/), that single source of truth c
 
 The variations typically follow one of these dimensions: **brand**, **channel**, or **region**.
 
-## Brand, sub-brand, and flavor
+## Brand, sub-brand, campaign, and flavor
 
 A company rarely has just one face. A master brand often coexists with sub-brands, product lines, or flavors that share most of the identity but differ in a few defining elements.
 
@@ -19,6 +19,13 @@ Model this with the master brand as the default theme, and one theme per sub-bra
 
 Only the differences live in each theme — everything else follows the master brand automatically.
 
+![Digital Brand Default](theme10.png){.screenshot-full}
+
+![Digital Brand Campaign 1](bk20.png){.screenshot-full}
+
+![Print Brand Campaign 2](bk21.png){.screenshot-full}
+
+
 ## Channel: digital (RGB) vs. print (CMYK)
 
 Digital output wants RGB colors; print-ready PDF wants CMYK. Instead of maintaining two Brand Kits, define your palette in RGB on the default theme and create a **Print** theme that overrides each color with its CMYK counterpart.
@@ -26,6 +33,10 @@ Digital output wants RGB colors; print-ready PDF wants CMYK. Instead of maintain
 The same named color — "Primary", "Accent" — resolves to the right color space for the channel, so designs stay color-accurate from screen to press. In [design-token terms](/GraFx-Brand-Kits/concepts/elements/): one token, two values — `color.primary = #0055FF` for digital, `color.primary.print = cmyk(100, 60, 0, 0)` for print.
 
 Theme switching can be automated with [Actions](/GraFx-Studio/concepts/actions/): using `switchTheme(name)`, a template can for example switch to the Print theme whenever the selected layout changes to a print layout.
+
+![Digital Brand Kit](theme10.png){.screenshot-full}
+
+![Print Brand Kit](theme11.png){.screenshot-full}
 
 ## Region: local scripts and fonts
 

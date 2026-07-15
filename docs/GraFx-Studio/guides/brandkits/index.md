@@ -8,25 +8,27 @@
 
 In the Brand Kit panel, click the Import Icon
 
-![screenshot](bk16.png)
+![screenshot](bk16.png){.screenshot}
 
 Choose the Brand Kit you created
 
-![screenshot-full](bk17.png)
+![screenshot-full](bk17.png){.screenshot-full}
 
 Click Apply
 
-![screenshot-full](bk18.png)
+![screenshot-full](bk18.png){.screenshot-full}
 
 Confirm, since your Brand Kit elements will replace the current definitions in the document.
 
-![screenshot](bk19.png)
+![screenshot](bk19.png){.screenshot}
 
 You are now ready to use your Brand Kit elements in your Document.
 
 ## Switch themes
 
 If the Brand Kit has [themes](/GraFx-Brand-Kits/concepts/themes/), the Brand Kit panel shows a **theme selector**. When you open a template, the default theme is selected.
+
+![Switch Brand Kit Theme](bk20.png){.screenshot}
 
 Switching to another theme updates every Brand Kit element used in the template — colors, text styles, and media — on the canvas and in the property panels. A color swatch using the Brand Kit color "Primary" shows the value of the active theme; text styles and media from the Brand Kit follow along.
 
@@ -39,12 +41,12 @@ The Brand Kit's font list is shared across all themes — by design, a theme doe
 
 Themes can also be switched programmatically — for example, switching to a Print theme when the layout changes. Two [Actions](/GraFx-Studio/concepts/actions/) helper functions are available:
 
-```
-getActiveThemeName(): string
+``` JavaScript
+getActiveThemeName()
 ```
 
-```
-switchTheme(name: string): void
+``` JavaScript
+switchTheme(name: string)
 ```
 
 Integrations can use the equivalent Studio SDK brand kit theme methods.
@@ -55,7 +57,7 @@ Once a Brand Kit is imported, the template can stay aligned with the source Bran
 
 Sync is controlled from the Brand Kit panel header, which now surfaces three controls next to the Brand Kit name: the Brand Kit selector, the manual sync button, and the auto-sync toggle.
 
-![screenshot](brandkit-select.png)
+![screenshot](brandkit-select.png){.screenshot}
 
 The **Brand Kit selector** (the swap icon) lets you switch the template to a different imported Brand Kit.
 
@@ -63,9 +65,9 @@ The **Brand Kit selector** (the swap icon) lets you switch the template to a dif
 
 The **Auto-sync toggle** controls whether the template stays aligned automatically:
 
-![screenshot](brandkit-sync-toggle.png)
+![screenshot](brandkit-sync-toggle.png){.screenshot}
 
-- When **auto-sync is on**, Studio compares the template's Brand Kit against the source every time the template is opened, and applies any changes in a single step. A toast message confirms when a sync has been applied.
+- When **auto-sync is on**, Studio compares the template's Brand Kit against the source every time the template is opened and every time the Brand Kit panel is opened, and applies any changes in a single step. A toast message confirms when a sync has been applied.
 - When **auto-sync is off**, the template keeps its current Brand Kit values until you sync manually.
 
 Newly imported Brand Kits have auto-sync enabled by default.
@@ -74,7 +76,7 @@ Newly imported Brand Kits have auto-sync enabled by default.
 
 The circular-arrows button next to the Brand Kit selector pulls the latest version of the source Brand Kit on demand. Hover shows the *Sync Brand Kit* tooltip. Useful when auto-sync is off, or to force an update in-session after a Brand Kit change.
 
-![screenshot](brandkit-sync.png)
+![screenshot](brandkit-sync.png){.screenshot}
 
 !!! info "What a sync changes"
     Sync applies only the differences between the template and the source:
