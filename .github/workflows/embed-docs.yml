@@ -1,0 +1,54 @@
+name: Embed docs for AI search
+
+# Manual only. A full re-embed of the site costs real OpenAI usage, so this
+# never runs on push/PR — trigger it deliberately from the Actions tab. The
+# produced JSONL artifact feeds grafx-genie's documentation vector store
+# (AIML-36) via scripts/load_doc_embeddings.py.
+#
+# Per AIML-37 this embeds ALL products including GraFx-Publisher, which the
+# public search box excludes (see hooks.py EXCLUDE_PREFIXES). The AI store
+# intentionally indexes more than the on-site search — this divergence is by
+# ticket requirement, not an oversight.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max pages to embed (blank = whole site)"
+        required: false
+        default: ""
+
+# Least-privilege, matching the repo default. This job only reads the repo and
+# calls OpenAI; it needs no write scopes.
+permissions:
+  contents: read
+
+jobs:
+  embed:
+    runs-on: ubuntu-latest
+    name: Chunk + embed documentation
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Embed documentation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          LIMIT_ARG=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
+          fi
+          python scripts/embed_docs.py --out build/doc_records.jsonl $LIMIT_ARG
+
+      - name: Upload embedding records
+        uses: actions/upload-artifact@v7
+        with:
+          name: doc-records
+          path: build/doc_records.jsonl
+          retention-days: 7
