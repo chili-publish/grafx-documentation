@@ -581,10 +581,13 @@ nav:
         - 'Concepts':
             - 'Brand Kit':                      'GraFx-Brand-Kits/concepts/brandkit/index.md'
             - 'Elements':                       'GraFx-Brand-Kits/concepts/elements/index.md'
+            - 'Themes':                         'GraFx-Brand-Kits/concepts/themes/index.md'
+            - 'Use cases':                      'GraFx-Brand-Kits/concepts/use-cases/index.md'
         - 'How to':
             - 'Create a Brand Kit':               'GraFx-Brand-Kits/guides/create/index.md'
             - 'Edit a Brand Kit':               'GraFx-Brand-Kits/guides/edit/index.md'
             - 'Import a Brand Kit':               'GraFx-Brand-Kits/guides/import/index.md'
+            - 'Manage themes':                  'GraFx-Brand-Kits/guides/themes/index.md'
 
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'
