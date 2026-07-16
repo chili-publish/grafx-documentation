@@ -11,8 +11,9 @@
 
 -   :material-clock-fast: **Release Notes**
 
-    ---
 
+    ---
+  
     **Jul 14, 2026**: CHILI GraFx: Brand Kit Themes
 
     ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
@@ -20,6 +21,16 @@
     One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs — a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/14/chili-grafx-brand-kit-themes/)
+
+    ---
+
+    **Jul 10, 2026**: CHILI GraFx Environment API: Large output requests fix
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
 
     ---
 
