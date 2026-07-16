@@ -4,7 +4,7 @@ This document lists the steps required for setting up Federated Single Sign-On f
 
 ## 1. Gather necessary info
 
-Our Client Success team will provide you following details:
+Our Client Success team will provide you with the following details:
 
 | **Name**            | **Description**                                          |
 | ------------------- | -------------------------------------------------------- |
@@ -16,13 +16,12 @@ CHILI publish recommends testing FSSO on a separate 'test' domain initially. Giv
 ## 2. Configure your IDP
 
 Create a SAML application in your IDP, using the gathered information.
-The **email address** should be used as the "name identifier" in SAML responses.
+The **email address** should be used as the subject's `NameID` in SAML responses.
 
-Please configure your IDP to provide at least following claims in SAML responses:
+Please configure your IDP to provide at least the following claims in SAML responses:
 
-| **Claim name**                                                                    | **Required?** | **Description**                                                                                                                 |
-| --------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`            | Required      | The unique identifier of the user                                                                                               |
+| **Claim name** | **Required?** | **Description** |
+| -------------- | ------------- ||
 | `email` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`   | Required      | The email address of the user                                                                                                   |
 | `given_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` | Required      | The given name of the user                                                                                                      |
 | `family_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`  | Required      | The family name of the user                                                                                                     |
@@ -32,7 +31,7 @@ Please configure your IDP to provide at least following claims in SAML responses
 
 Next CHILI publish needs to configure a few things on the CHILI GraFx side, so your users get redirected to your IDP when logging into CHILI GraFx.
 
-Please provide us following metadata:
+Please provide us with thefollowing metadata:
 
 | **Name**                 | **Description**                                          |
 | ------------------------ | -------------------------------------------------------- |
