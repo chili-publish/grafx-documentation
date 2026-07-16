@@ -1,6 +1,4 @@
-# GraFx Genie
-
-![GraFx Genie](/assets/icon-Grafx-Genie.svg){.applogo}
+# ![](/assets/icon-Grafx-Genie.svg){.applogo-inline} GraFx Genie
 
 GraFx Genie is your AI assistant in CHILI GraFx. It helps you produce faster while staying on-brand: from cropping images automatically to writing the logic behind Smart Templates and generating product visuals.
 

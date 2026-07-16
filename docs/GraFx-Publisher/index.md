@@ -1,6 +1,4 @@
-# GraFx Publisher
-
-![GraFx Publisher](/assets/icon-GraFx-Publisher.svg){.applogo}
+# ![](/assets/icon-GraFx-Publisher.svg){.applogo-inline} GraFx Publisher
 
 GraFx Publisher is the evolution of **CHILI publisher Online** (CPO) into the platform of CHILI GraFx.
 

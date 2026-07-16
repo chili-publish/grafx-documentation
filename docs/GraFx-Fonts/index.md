@@ -1,6 +1,4 @@
-# GraFx Fonts
-
-![GraFx Fonts](/assets/icon-GraFx-Fonts.svg){.applogo}
+# ![](/assets/icon-GraFx-Fonts.svg){.applogo-inline} GraFx Fonts
 
 The fonts application for [GraFx Studio](/GraFx-Studio/)
 
