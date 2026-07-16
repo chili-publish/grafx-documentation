@@ -31,7 +31,7 @@ Please configure your IDP to provide us with the following claims in SAML respon
 
 Next CHILI publish needs to configure a few things on the CHILI GraFx side, so your users get redirected to your IDP when logging into CHILI GraFx.
 
-Please provide us with thefollowing metadata:
+Please provide us with the following metadata:
 
 | **Name**                 | **Description**                                          |
 | ------------------------ | -------------------------------------------------------- |
