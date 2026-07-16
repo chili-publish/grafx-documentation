@@ -1,7 +1,5 @@
 # Smart Crop
 
-![rn_icon](/assets/icon-Grafx-Genie.svg){.rn_icon}
-
 Smart Crop is the GraFx Genie capability that positions an image inside a frame automatically, keeping the most important part of the picture in view whatever the frame's size or aspect ratio. One source image can become a social post, a banner, and a print ad, each correctly framed, without manual cropping for every variant.
 
 Smart Crop works across GraFx Media, GraFx Studio, and the platform settings. The step-by-step guide for each is linked below.

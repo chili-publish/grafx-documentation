@@ -1,11 +1,4 @@
-<!--
-  GraFx Genie capability page — follows the GraFx Genie hub pattern:
-  1. What it is  2. How GraFx Genie helps  3. Where to find it (links out)
--->
-
 # GraFx Genie Product Image Creator
-
-![rn_icon](/assets/icon-Grafx-Genie.svg){.rn_icon}
 
 ## What it is
 
