@@ -18,7 +18,7 @@ CHILI publish recommends testing FSSO on a separate 'test' domain initially. Giv
 Create a SAML application in your IDP, using the gathered information.
 The **email address** should be used as the subject's `NameID` in SAML responses.
 
-Please configure your IDP to provide at least the following claims in SAML responses:
+Please configure your IDP to provide us with the following claims in SAML responses:
 
 | **Claim name**                                                                    | **Required?** | **Description**                                                                                                                 |
 | --------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
