@@ -6,9 +6,9 @@ This document lists the steps required for setting up Federated Single Sign-On f
 
 Our Client Success team will provide you following details:
 
-| **Name**            | **Description**                                    |
-| ------------------- | -------------------------------------------------- |
-| Redirect URI        | `https://login.chiligrafx.com/login/callback`      |
+| **Name**            | **Description**                                          |
+| ------------------- | -------------------------------------------------------- |
+| Redirect URI        | `https://login.chiligrafx.com/login/callback`            |
 | Service Provider ID | The name CHILI GraFx will identify itself as on your IDP |
 
 CHILI publish recommends testing FSSO on a separate 'test' domain initially. Given the variability in protocols and differences among various Identity Provider (IDP) services, there’s a risk of incompatible configurations. By enabling FSSO for the test domain first, you can verify the correctness of the configuration without impacting your users.
@@ -18,14 +18,15 @@ CHILI publish recommends testing FSSO on a separate 'test' domain initially. Giv
 Create a SAML application in your IDP, using the gathered information.
 The **email address** should be used as the subject's `NameID` in SAML responses.
 
-Please configure your IDP to provide at least following required attributes in SAML responses:
+Please configure your IDP to provide at least following claims in SAML responses:
 
-| **Attribute name**                    | **Description**                                           |
-| ------------------------------------- | --------------------------------------------------------- |
-| `email`                               | The email address of the user                             |
-| `given_name`                          | The given name of the user                                |
-| `family_name`                         | The family name of the user                               |
-| `https://chili-publish.com/CGXGroups` | A list of UUIDs of the CHILI GraFx groups the user should be in |
+| **Claim name**                                                                    | **Required?** | **Description**                                                                                                                 |
+| --------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`            | Required      | The unique identifier of the user                                                                                               |
+| `email` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`   | Required      | The email address of the user                                                                                                   |
+| `given_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` | Required      | The given name of the user                                                                                                      |
+| `family_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`  | Required      | The family name of the user                                                                                                     |
+| `https://chili-publish.com/CGXGroups`                                             | Optional      | A list of UUIDs of the CHILI GraFx groups the user should be in. <br> This is only required if you use group-based permissions. |
 
 ## 3. CHILI GraFx Configuration
 
@@ -33,9 +34,9 @@ Next CHILI publish needs to configure a few things on the CHILI GraFx side, so y
 
 Please provide us following metadata:
 
-| **Name**                 | **Description**                                    |
-| ------------------------ | -------------------------------------------------- |
-| Sign In URL              | `https://login.chiligrafx.com/login/callback`      |
+| **Name**                 | **Description**                                          |
+| ------------------------ | -------------------------------------------------------- |
+| Sign In URL              | `https://login.chiligrafx.com/login/callback`            |
 | X509 Signing Certificate | The name CHILI GraFx will identify itself as on your IDP |
 
 Alternatively, you can provide the **SAML metadata URL**.  
