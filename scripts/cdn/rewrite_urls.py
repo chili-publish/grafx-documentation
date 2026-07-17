@@ -24,6 +24,12 @@ Arguments:
                   /staging/pr-482/assets/             (PR preview)
 
 Options:
+  --override-list   File with one site-relative asset path per line. Assets
+                    on this list are rewritten with --override-prefix instead
+                    of path_prefix. Used by PR builds: default everything to
+                    prod /assets/, override only the PR-specific assets to
+                    /staging/pr-<N>/assets/. Requires --override-prefix.
+  --override-prefix Prefix applied to assets in --override-list.
   --strict          Fail with exit code 2 if any unrewritten reference still
                     points at an in-scope asset extension. Recommended in CI.
   --dry-run         Don't modify files; just report what would change.
@@ -117,11 +123,19 @@ class Rewriter:
         strict: bool,
         dry_run: bool,
         verbose: bool,
+        override_paths: set[str] | None = None,
+        override_prefix: str | None = None,
     ):
         self.site_root = site_root
         self.cdn_base = cdn_base
         # Normalise prefix: always one leading and one trailing slash.
         self.path_prefix = "/" + path_prefix.strip("/") + "/"
+        # Per-file override (PR builds): assets on this list get a different
+        # prefix (the staging one) than the default (prod /assets/).
+        self.override_paths = override_paths or set()
+        self.override_prefix = (
+            "/" + override_prefix.strip("/") + "/" if override_prefix else None
+        )
         self.strict = strict
         self.dry_run = dry_run
         self.verbose = verbose
@@ -129,6 +143,7 @@ class Rewriter:
         self.files_modified = 0
         self.files_scanned = 0
         self.rewrites_total = 0
+        self.rewrites_overridden = 0
         self.rewrites_by_ext: dict[str, int] = defaultdict(int)
         # Strict-mode collector
         self.unresolved: list[tuple[Path, str]] = []
@@ -148,7 +163,12 @@ class Rewriter:
             # Asset extension but resolves outside site/ — leave it, flag in strict.
             self.unresolved.append((host_file, url))
             return url
-        new = build_cdn_url(rel, self.cdn_base, self.path_prefix) + suffix
+        if self.override_prefix and rel.as_posix() in self.override_paths:
+            prefix = self.override_prefix
+            self.rewrites_overridden += 1
+        else:
+            prefix = self.path_prefix
+        new = build_cdn_url(rel, self.cdn_base, prefix) + suffix
         self.rewrites_total += 1
         self.rewrites_by_ext[ext] += 1
         if self.verbose:
@@ -230,6 +250,13 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("site_dir", help="Root of the mkdocs build (e.g. site/)")
     p.add_argument("cdn_base", help="CDN base URL (e.g. https://docs-cdn.chiligrafx.com)")
     p.add_argument("path_prefix", help="Path prefix (e.g. /assets/ or /staging/pr-482/assets/)")
+    p.add_argument("--override-list", metavar="FILE",
+                   help="File with one site-relative asset path per line; "
+                        "these assets get --override-prefix instead of "
+                        "path_prefix.")
+    p.add_argument("--override-prefix", metavar="PREFIX",
+                   help="Prefix for assets in --override-list "
+                        "(e.g. /staging/pr-482/assets/).")
     p.add_argument("--strict", action="store_true",
                    help="Fail (exit 2) if any in-scope asset refs remain unrewritten.")
     p.add_argument("--dry-run", action="store_true",
@@ -251,6 +278,24 @@ def main() -> int:
         print(f"error: site_dir is not a directory: {site_root}", file=sys.stderr)
         return 1
 
+    if bool(args.override_list) != bool(args.override_prefix):
+        print("error: --override-list and --override-prefix must be used "
+              "together", file=sys.stderr)
+        return 1
+
+    override_paths: set[str] = set()
+    if args.override_list:
+        try:
+            override_paths = {
+                line.strip()
+                for line in Path(args.override_list).read_text(
+                    encoding="utf-8").splitlines()
+                if line.strip()
+            }
+        except OSError as e:
+            print(f"error: cannot read --override-list: {e}", file=sys.stderr)
+            return 1
+
     rewriter = Rewriter(
         site_root=site_root,
         cdn_base=args.cdn_base,
@@ -258,6 +303,8 @@ def main() -> int:
         strict=args.strict,
         dry_run=args.dry_run,
         verbose=args.verbose,
+        override_paths=override_paths,
+        override_prefix=args.override_prefix,
     )
 
     # Build the list of files to process
@@ -279,10 +326,14 @@ def main() -> int:
         rewriter.rewrite_file(file_path, process_css_urls=process_css)
 
     # Summary
+    override_note = (
+        f" ({rewriter.rewrites_overridden} to override prefix)"
+        if rewriter.override_prefix else ""
+    )
     print(
         f"Scanned {rewriter.files_scanned} file(s); "
         f"modified {rewriter.files_modified}; "
-        f"rewrote {rewriter.rewrites_total} reference(s)."
+        f"rewrote {rewriter.rewrites_total} reference(s){override_note}."
         f"{' (dry run, no files written)' if args.dry_run else ''}",
         file=sys.stderr,
     )
