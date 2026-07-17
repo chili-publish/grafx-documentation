@@ -1,0 +1,89 @@
+name: CDN MD5 baseline migration
+
+# One-time (re-runnable) manual job that re-uploads the full prod asset set
+# to the `assets` container with --put-md5, so every blob carries a
+# Content-MD5 property.
+#
+# Why: the incremental deploy pipeline compares local MD5s against blob
+# Content-MD5 (azcopy sync --compare-hash=MD5 on main; diff_assets.py on
+# PRs). Blobs uploaded historically via `az storage blob upload-batch` may
+# lack Content-MD5 (notably large files uploaded in blocks), and any blob
+# without it is always treated as "changed" — correct but slow. Run this
+# once from the Actions tab after merging the incremental pipeline; safe to
+# re-run anytime.
+#
+# Note: this job only (re)uploads — it never deletes. Orphans are handled by
+# the gated sync on the next main deploy.
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  backfill_md5:
+    runs-on: ubuntu-latest
+    name: Re-upload prod assets with Content-MD5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          submodules: true
+          persist-credentials: false
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+
+      - name: Install MkDocs
+        run: pip install -r requirements.txt
+
+      - name: Build documentation
+        run: mkdocs build
+
+      - name: Azure Login
+        uses: azure/login@v3
+        with:
+          # Same data-plane-only SP as the deploy workflows; see
+          # azure-static-web-apps-...yml for the full explanation.
+          creds: >-
+            {
+              "clientId":       "${{ vars.AZ_AD_CLIENT_ID_CP_PDT_INT_CICD_SP }}",
+              "clientSecret":   "${{ secrets.AZ_AD_CLIENT_SECRET_CP_PDT_INT_CICD_SP }}",
+              "tenantId":       "${{ vars.AZ_TENANT_ID }}"
+            }
+          allow-no-subscriptions: true
+
+      - name: Collect CDN assets from site/ into a staging dir
+        run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
+
+      - name: Re-upload all assets with --put-md5
+        env:
+          AZCOPY_AUTO_LOGIN_TYPE: AZCLI
+        run: |
+          azcopy copy "build/cdn-upload/*" \
+            "https://${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}.blob.core.windows.net/assets/" \
+            --recursive --put-md5 --overwrite=true
+
+      - name: Verify Content-MD5 coverage
+        run: |
+          az storage blob list \
+            --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
+            --container-name assets \
+            --auth-mode login \
+            --num-results "*" \
+            --query "[?properties.contentSettings.contentMd5==null].name" \
+            -o tsv > missing-md5.txt
+          missing=$(wc -l < missing-md5.txt)
+          total_uploaded=$(find build/cdn-upload -type f | wc -l)
+          echo "Uploaded $total_uploaded file(s); blobs still without Content-MD5: $missing"
+          if [ "$missing" -gt 0 ]; then
+            echo "::warning::$missing blob(s) still lack Content-MD5 (likely orphans not in the current build — the next main sync will delete them):"
+            cat missing-md5.txt
+          fi
