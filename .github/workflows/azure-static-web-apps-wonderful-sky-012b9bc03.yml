@@ -49,7 +49,7 @@ jobs:
           # GITHUB_TOKEN is not used by any later step; don't persist it in
           # .git/config where it could leak to other tooling.
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: 3.x
       - name: Install MkDocs
