@@ -9,7 +9,7 @@ Our Client Success team will provide you with the following details:
 | **Name**            | **Description**                                                                |
 | ------------------- | ------------------------------------------------------------------------------ |
 | Redirect URI        | `https://login.chiligrafx.com/login/callback`                                  |
-| Service Provider ID | The identifier (Entity ID) CHILI GraFx will use to identify itself to your IdP |
+| Service Provider ID | The identifier (Entity ID) CHILI GraFx will use to identify itself to your IDP |
 
 CHILI publish recommends testing FSSO on a separate 'test' domain initially. Given the variability in protocols and differences among various Identity Provider (IDP) services, there’s a risk of incompatible configurations. By enabling FSSO for the test domain first, you can verify the correctness of the configuration without impacting your users.
 
