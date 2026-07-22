@@ -50,8 +50,8 @@
       {% include "partials/alternate.html" %}
     {% endif %}
     <nav class="md-header__links" aria-label="Quick links">
-      <a href="/release-notes/">Platform Updates</a>
-      <a href="/GraFx-Developers/overview/">Developer Center</a>
+      <a href="{{ 'release-notes/' | url }}" data-section="release-notes">Platform Updates</a>
+      <a href="{{ 'GraFx-Developers/overview/' | url }}" data-section="GraFx-Developers">Developer Center</a>
     </nav>
     {% if "material/search" in config.plugins %}
       {% set search = config.plugins["material/search"] | attr("config") %}

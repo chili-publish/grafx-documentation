@@ -12,10 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Highlight the header quick link whose section is being viewed,
-  // matching the active styling of the regular tabs.
-  document.querySelectorAll(".md-header__links a").forEach(function (link) {
-    var section = new URL(link.href, window.location.origin).pathname.split("/")[1];
-    if (section && window.location.pathname.split("/")[1] === section) {
+  // matching the active styling of the regular tabs. Each link declares its
+  // section via data-section (see overrides/partials/header.html), so the
+  // check works regardless of the site's base URL / subdirectory hosting.
+  var segments = window.location.pathname.split("/");
+  document.querySelectorAll(".md-header__links a[data-section]").forEach(function (link) {
+    if (segments.indexOf(link.dataset.section) !== -1) {
       link.classList.add("md-header__link--active");
     }
   });

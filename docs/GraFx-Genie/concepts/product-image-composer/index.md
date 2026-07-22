@@ -23,4 +23,4 @@ Product Image Composer is part of **GraFx Labs**, the area for experimental capa
 - [GraFx Labs overview](/CHILI-GraFx/concepts/grafx-labs/): what GraFx Labs is and how experimental features work.
 
 !!! example "Experimental"
-    GraFx Labs features can change or be removed at any time and are not covered by SLOs. Each render is charged as a production output, so GraFx Labs is not available on [Sandbox](/CHILI-GraFx/concepts/sandbox/).
+    Part of [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/), where features can change or be removed at any time. See the GraFx Labs overview for SLO and billing details.
