@@ -20,12 +20,12 @@ The **email address** should be used as the subject's `NameID` in SAML responses
 
 Please configure your IDP to include at least the required claims below in SAML responses:
 
-| **Claim name**                                                                    | **Requirement** | **Description**                                                                                                                 |
-| --------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `email` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`   | Required        | The email address of the user                                                                                                   |
-| `given_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` | Required        | The given name of the user                                                                                                      |
-| `family_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`  | Required        | The family name of the user                                                                                                     |
-| `https://chili-publish.com/CGXGroups`                                             | Optional        | A list of UUIDs of the CHILI GraFx groups the user should be in. <br> This is only required if you use group-based permissions. |
+| **Claim name**                                                                    | **Requirement** | **Description**                                                                                                                  |
+| --------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `email` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`   | Required        | The email address of the user                                                                                                    |
+| `given_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` | Required        | The given name of the user                                                                                                       |
+| `family_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`  | Required        | The family name of the user                                                                                                      |
+| `https://chili-publish.com/CGXGroups`                                             | Optional        | A list of UUIDs of the CHILI GraFx groups the user should be in. <br/> This is only required if you use group-based permissions. |
 
 ## 3. CHILI GraFx Configuration
 
