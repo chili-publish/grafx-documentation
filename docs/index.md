@@ -11,65 +11,66 @@
 
 -   :material-clock-fast: **Release Notes**
 
-    ---
-
-    **Jun 19, 2026**: CHILI GraFx Environment API: Font preview fix
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Font previews for newly uploaded fonts now wrap correctly in the square preview instead of rendering on a single line.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/19/chili-grafx-environment-api-font-preview-fix/)
 
     ---
-
-    **Jun 17, 2026**: CHILI GraFx Platform Update
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Token generation from integration settings, sort templates and components by date, clearer Connector CLI labelling, separate server/browser auth for single-auth connectors, Brand Kit asset management improvements, and two bug fixes.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/17/chili-grafx-platform-update/)
-
-    ---
-
-    **Jun 10, 2026**: GraFx Studio Adobe® Photoshop® plugin: Clipping masks
+  
+    **Jul 22, 2026**: GraFx Studio: Convert RGB Colors to CMYK in PDF Output
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    Version 1.4.0 of the Photoshop® exporter preserves clipping masks on export — built-in shapes (Rectangle, Ellipse, Polygon) and custom paths become Studio-native clipping masks, with stroke and corner properties intact.
+    PDF output settings can now convert RGB content to the target CMYK profile as a complementary step to CMYK conversion — with an RGB source profile dropdown for unmanaged colors, in the UI and via `postProcessing.colorTransformation` in the Environment API.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/10/grafx-studio-adobe-photoshop-plugin-clipping-masks/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/22/grafx-studio-convert-rgb-colors-to-cmyk-in-pdf-output/)
 
     ---
 
-    **Jun 10, 2026**: CHILI GraFx Environment API: Updated Swagger examples and faster responses
+    **Jul 15, 2026**: Upcoming Change: Superscript and Subscript Rendering in GraFx Studio
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    The Swagger examples for the Media and Template GET endpoints have been refreshed to match what the API returns today, and frequently used operations respond faster thanks to more efficient cache communication.
+    From GraFx Studio 1.46.0, superscript and subscript text follows the metrics built into each font instead of a single fixed style — review templates that use this formatting before adopting the new version.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/10/chili-grafx-environment-api-updated-swagger-examples-and-faster-responses/)
-
-    ---
-
-    **Jun 9, 2026**: GraFx Media: TIFF images supported in print output
-
-    ![rn_icon](/assets/icon-GraFx-Media.svg)
-
-    TIFF images stored in GraFx Media now work in PDF output — served at full resolution with their original color space preserved, so a CMYK TIFF stays CMYK all the way to the final print-ready PDF.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/09/grafx-media-tiff-images-supported-in-print-output/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/15/upcoming-change-superscript-and-subscript-rendering-in-grafx-studio/)
 
     ---
 
-    **Jun 5, 2026**: CHILI GraFx Environment API: Application settings and output download reliability
+    **Jul 14, 2026**: CHILI GraFx: Brand Kit Themes
+
+    ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
+
+    One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs — a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/14/chili-grafx-brand-kit-themes/)
+
+    ---
+
+    **Jul 10, 2026**: CHILI GraFx Environment API: Large output requests fix
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    The Environment API settings endpoint now reports which applications are enabled per environment, and downloading an expired output returns a clear response instead of a generic server error.
+    Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/05/chili-grafx-environment-api-application-settings-and-output-download-reliability/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
+
+    ---
+
+    **Jun 24, 2026**: CHILI GraFx Environment API: Exclude headers from connector proxy requests
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Connector proxy requests can now drop specific headers via the new `X-GraFx-Proxy-Exclude-Headers` header — so the connector's `Authorization` header isn't forwarded to pre-signed CDN URLs that already carry their own auth.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/24/chili-grafx-environment-api-exclude-headers-from-connector-proxy-requests/)
+
+    ---
+
+    **Jun 23, 2026**: GraFx Studio: Improved Smart Crop and More
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    GraFx Studio's AI-powered Smart Crop gets a major upgrade: a more predictable algorithm with guaranteed framing, a new Subject alignment setting, automatic versioning with a one-click upgrade, and five live previews — plus variable-mapping, connector, and text improvements.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/23/grafx-studio-improved-smart-crop-and-more/)
 
     ---
 

@@ -49,7 +49,7 @@ jobs:
           # GITHUB_TOKEN is not used by any later step; don't persist it in
           # .git/config where it could leak to other tooling.
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: 3.x
       - name: Install MkDocs
@@ -62,21 +62,33 @@ jobs:
       # docs-cdn.chiligrafx.com; the SWA artifact only carries HTML/CSS/JS.
       # See scripts/cdn/ for the underlying tools and the design notes in
       # the DT-973 ticket.
+      #
+      # Upload strategy (incremental — DT-973 follow-up):
+      #   main -> `azcopy sync` against the `assets` container. Only new or
+      #           changed blobs (by MD5) are uploaded; orphans are deleted by
+      #           sync itself. A dry-run gate aborts if more than 10 blobs
+      #           would be deleted.
+      #   PRs  -> assets whose MD5 matches a prod blob are NOT uploaded at
+      #           all; their HTML refs are rewritten straight to prod
+      #           /assets/. Only PR-specific (new or changed) assets are
+      #           uploaded to staging/pr-<N>/assets/ and rewritten to that
+      #           prefix. Staging is purged by the 30-day lifecycle policy.
+      #
+      # azcopy notes: mtimes are meaningless in CI (fresh checkout + build),
+      # so sync MUST use --compare-hash=MD5. That requires Content-MD5 on the
+      # destination blobs — every upload path sets --put-md5, and the one-time
+      # backfill lives in cdn-md5-baseline.yml (workflow_dispatch).
 
       - name: Compute CDN target
         id: cdn
         run: |
           if [ "$GITHUB_EVENT_NAME" = "push" ] && [ "$GITHUB_REF" = "refs/heads/main" ]; then
-            echo "container=assets" >> "$GITHUB_OUTPUT"
-            echo "dest_path=" >> "$GITHUB_OUTPUT"
-            echo "url_prefix=/assets/" >> "$GITHUB_OUTPUT"
             echo "is_main=true" >> "$GITHUB_OUTPUT"
           else
             PR_NUM="${{ github.event.pull_request.number }}"
-            echo "container=staging" >> "$GITHUB_OUTPUT"
-            echo "dest_path=pr-$PR_NUM/assets/" >> "$GITHUB_OUTPUT"
-            echo "url_prefix=/staging/pr-$PR_NUM/assets/" >> "$GITHUB_OUTPUT"
             echo "is_main=false" >> "$GITHUB_OUTPUT"
+            echo "staging_dest=staging/pr-$PR_NUM/assets" >> "$GITHUB_OUTPUT"
+            echo "pr_prefix=/staging/pr-$PR_NUM/assets/" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Azure Login
@@ -102,79 +114,103 @@ jobs:
       - name: Collect CDN assets from site/ into a staging dir
         run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
 
-      - name: Upload assets to blob
-        uses: azure/cli@v3
-        with:
-          inlineScript: |
-            az storage blob upload-batch \
-              --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
-              --destination "${{ steps.cdn.outputs.container }}" \
-              --destination-path "${{ steps.cdn.outputs.dest_path }}" \
-              --source build/cdn-upload/ \
-              --overwrite true \
-              --auth-mode login
+      # ---- Main: incremental sync with dry-run safety gate ----
 
-      # ---- Inline orphan deletion (main branch only) ----
-      # PR builds use a fresh per-PR prefix in the staging container, so there
-      # are no orphans to delete -- the lifecycle policy on `pr-*` purges them
-      # entirely after 30 days.
-
-      - name: List current blobs in /assets/ (main only)
+      - name: Sync dry run + safety gate (main only)
         if: steps.cdn.outputs.is_main == 'true'
-        uses: azure/cli@v3
-        with:
-          inlineScript: |
-            az storage blob list \
-              --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
-              --container-name assets \
-              --auth-mode login \
-              --query "[].name" -o tsv | sort > current.txt
-            echo "Remote blob count: $(wc -l < current.txt)"
-
-      - name: Compute orphans with safety guards (main only)
-        if: steps.cdn.outputs.is_main == 'true'
+        env:
+          AZCOPY_AUTO_LOGIN_TYPE: AZCLI
         run: |
-          (cd build/cdn-upload && find . -type f | sed 's|^\./||') | sort > expected.txt
-          comm -23 current.txt expected.txt > orphans.txt
-          expected_count=$(wc -l < expected.txt)
-          orphan_count=$(wc -l < orphans.txt)
-          echo "Expected files in build: $expected_count"
-          echo "Orphans to delete: $orphan_count"
+          set -euo pipefail
           # Guard 1: a sane build should have >= 500 in-scope files.
-          if [ "$expected_count" -lt 500 ]; then
-            echo "::error::Refusing to delete: expected tree has fewer than 500 files ($expected_count). Aborting before any deletes."
+          file_count=$(find build/cdn-upload -type f | wc -l)
+          echo "Files in build: $file_count"
+          if [ "$file_count" -lt 500 ]; then
+            echo "::error::Refusing to sync: build has fewer than 500 in-scope files ($file_count). Aborting before any changes."
             exit 1
           fi
+          azcopy sync build/cdn-upload/ \
+            "https://${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}.blob.core.windows.net/assets" \
+            --compare-hash=MD5 --put-md5 --delete-destination=true \
+            --dry-run --output-type text | tee sync-dryrun.txt
+          delete_count=$(grep -c '^DRYRUN: remove' sync-dryrun.txt || true)
+          upload_count=$(grep -c '^DRYRUN: copy' sync-dryrun.txt || true)
+          echo "Sync plan: $upload_count upload(s), $delete_count deletion(s)"
           # Guard 2: a normal main build deletes ~0-5 files; a sudden spike
-          # almost certainly indicates a bug in the diff or in the build.
-          if [ "$orphan_count" -gt 50 ]; then
-            echo "::error::Refusing to delete: would remove $orphan_count blobs in one run (>50). Aborting before any deletes."
+          # almost certainly indicates a bug in the build or the baseline.
+          if [ "$delete_count" -gt 10 ]; then
+            echo "::error::Refusing to sync: dry run would delete $delete_count blobs (>10). Aborting before any changes."
             exit 1
           fi
 
-      - name: Delete orphan blobs (main only)
+      - name: Sync assets to CDN (main only)
         if: steps.cdn.outputs.is_main == 'true'
-        uses: azure/cli@v3
-        with:
-          inlineScript: |
-            if [ ! -s orphans.txt ]; then
-              echo "No orphans to delete"
-              exit 0
-            fi
-            while IFS= read -r blob; do
-              echo "Deleting orphan: $blob"
-              az storage blob delete \
-                --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
-                --container-name assets --name "$blob" --auth-mode login
-            done < orphans.txt
+        env:
+          AZCOPY_AUTO_LOGIN_TYPE: AZCLI
+        run: |
+          azcopy sync build/cdn-upload/ \
+            "https://${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}.blob.core.windows.net/assets" \
+            --compare-hash=MD5 --put-md5 --delete-destination=true
 
-      - name: Rewrite asset references in HTML/CSS to CDN URLs (strict)
+      # ---- PRs: upload only assets that differ from the prod baseline ----
+      # Everything that already exists in /assets/ with an identical MD5 is
+      # served from prod; only genuinely new/changed assets go to staging.
+      # No orphan handling needed -- the lifecycle policy on `pr-*` purges
+      # the staging container after 30 days.
+
+      - name: List prod asset baseline (PR only)
+        if: steps.cdn.outputs.is_main != 'true'
+        run: |
+          az storage blob list \
+            --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
+            --container-name assets \
+            --auth-mode login \
+            --num-results "*" \
+            --query "[].{name:name, md5:properties.contentSettings.contentMd5}" \
+            -o json > build/prod-assets.json
+
+      - name: Split PR-specific assets from prod baseline (PR only)
+        if: steps.cdn.outputs.is_main != 'true'
+        run: |
+          python3 scripts/cdn/diff_assets.py \
+            build/cdn-upload/ build/prod-assets.json build/pr-assets.txt
+
+      - name: Upload PR-specific assets to staging (PR only)
+        if: steps.cdn.outputs.is_main != 'true'
+        env:
+          AZCOPY_AUTO_LOGIN_TYPE: AZCLI
+        run: |
+          if [ ! -s build/pr-assets.txt ]; then
+            echo "No PR-specific assets -- nothing to upload."
+            exit 0
+          fi
+          azcopy copy "build/cdn-upload/*" \
+            "https://${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}.blob.core.windows.net/${{ steps.cdn.outputs.staging_dest }}/" \
+            --recursive --put-md5 --overwrite=true
+
+      # ---- Rewrite HTML refs ----
+      # main: everything points at /assets/.
+      # PRs:  default is prod /assets/; only the PR-specific assets listed in
+      #       build/pr-assets.txt are overridden to the staging prefix.
+
+      - name: Rewrite asset references to CDN URLs (main only, strict)
+        if: steps.cdn.outputs.is_main == 'true'
         run: |
           python3 scripts/cdn/rewrite_urls.py \
             site/ \
             https://docs-cdn.chiligrafx.com \
-            "${{ steps.cdn.outputs.url_prefix }}" \
-            --include-css \
+            /assets/ \
+            --strict
+
+      - name: Rewrite asset references to CDN URLs (PR, strict)
+        if: steps.cdn.outputs.is_main != 'true'
+        run: |
+          python3 scripts/cdn/rewrite_urls.py \
+            site/ \
+            https://docs-cdn.chiligrafx.com \
+            /assets/ \
+            --override-list build/pr-assets.txt \
+            --override-prefix "${{ steps.cdn.outputs.pr_prefix }}" \
             --strict
 
       - name: Strip binary assets from SWA upload
