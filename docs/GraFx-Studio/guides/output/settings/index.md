@@ -77,6 +77,8 @@ This removes font dependencies in the resulting PDF.
 When enabled, includes all records from the data source in the output.
 
 ![screenshot](output.png)
+!!! warning
+    If the datasource option is enabled, the template or project has to have a valid datasource attached in order for the output option to show on screen.
 
 ### Error Handling
 
