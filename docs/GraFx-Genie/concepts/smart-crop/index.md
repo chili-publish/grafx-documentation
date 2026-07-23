@@ -10,7 +10,7 @@ Smart Crop works across GraFx Media, GraFx Studio, and the platform settings. Th
 
 From upload to output, this is how Smart Crop works:
 
-1. An image is uploaded to GraFx Media.
+1. An image is uploaded to GraFx Media, or comes from an external DAM system connected through a media connector.
 2. GraFx Genie analyzes it and stores two pieces of metadata on the asset: a **Subject Area** and a **Point of Interest**.
 3. The asset is placed into an image frame in a GraFx Studio Smart Template.
 4. The frame's fit mode is set to **Smart Crop**.
@@ -18,18 +18,12 @@ From upload to output, this is how Smart Crop works:
 6. Optionally, a **Subject Position** (where the subject should sit inside the frame) and a **Subject type** are chosen on the frame.
 7. The stored metadata is used wherever the template is rendered: on screen, in output, and through the API.
 
-![screenshot-full](step1-2.png)
-
-![screenshot-full](step3-10.png)
-
-Images from an external DAM system, connected through a media connector, can also be used. The other steps stay the same.
-
 ## Where to manage Smart Crop
 
 | You want to… | Do it in | Page |
 |---|---|---|
-| Review or adjust an image's Subject Area and Point of Interest | GraFx Media | [Set the Subject Area & POI](/GraFx-Media/guides/smart-crop-subject-area/) |
-| Review or adjust the Subject Area and POI of an external DAM image | GraFx Studio | [Image frames: Smart Crop](/GraFx-Studio/guides/image-frame/#smart-crop) |
+| Review or adjust the Subject Area and POI of an asset | GraFx Media or GraFx Studio | [Set the Subject Area & POI](/GraFx-Media/guides/smart-crop-subject-area/), [Image frames: Smart Crop](/GraFx-Studio/guides/image-frame/#smart-crop) |
+| Review or adjust the Subject Area and POI of an external DAM asset | GraFx Studio | [Image frames: Smart Crop](/GraFx-Studio/guides/image-frame/#smart-crop) |
 | Turn on Smart Crop for a frame, set the Subject Position, pick a subject type | GraFx Studio | [Use Smart Crop on an image frame](/GraFx-Studio/guides/smart-crop/) |
 | Define the list of subject types for the environment | Platform settings | [Manage subject types](/CHILI-GraFx/guides/manage-subject-types/) |
 
