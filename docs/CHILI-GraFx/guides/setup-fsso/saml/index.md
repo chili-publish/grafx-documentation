@@ -4,7 +4,7 @@ This document lists the steps required for setting up Federated Single Sign-On f
 
 ## 1. Gather necessary info
 
-Our Client Success team will provide you with the following details:
+Contact our Client Success team via a support ticket to obtain the following details:
 
 | **Name**            | **Description**                                                                |
 | ------------------- | ------------------------------------------------------------------------------ |
