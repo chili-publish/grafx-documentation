@@ -46,7 +46,13 @@ def require_embedding_config() -> tuple[str, int]:
             "DOCS_EMBEDDING_MODEL and DOCS_EMBEDDING_DIM must both be set to match "
             "grafx-genie's store (e.g. text-embedding-3-large / 3072)"
         )
-    return model, int(dim)
+    try:
+        dim_int = int(dim)
+    except ValueError:
+        raise SystemExit(f"DOCS_EMBEDDING_DIM must be a positive integer, got {dim!r}")
+    if dim_int <= 0:
+        raise SystemExit(f"DOCS_EMBEDDING_DIM must be a positive integer, got {dim_int}")
+    return model, dim_int
 
 
 def strip_frontmatter(md: str) -> str:
