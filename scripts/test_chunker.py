@@ -36,12 +36,22 @@ def test_oversized_section_splits_with_overlap():
     chunks = chunk_page(md, max_chars=800, overlap=50)
     assert len(chunks) > 1
     assert all(c.section == "Big" for c in chunks)
-    assert all(len(c.text) <= 1200 for c in chunks)  # bounded (max + overlap slack)
+    assert all(len(c.text) <= 800 for c in chunks)  # bounded by the passed max_chars
+
+
+def test_oversized_single_paragraph_is_bounded():
+    para = "word " * 400  # ~2000 chars in ONE paragraph (no blank lines)
+    md = "## Wall\n\n" + para
+    chunks = chunk_page(md, max_chars=800, overlap=50)
+    assert len(chunks) > 1
+    assert all(c.section == "Wall" for c in chunks)
+    assert all(len(c.text) <= 800 for c in chunks)
 
 
 def test_code_block_kept_whole_even_if_oversized():
-    big_code = "```\n" + ("x = 1\n" * 300) + "```"
+    big_code = "```\n" + ("x = 1\n\ny = 2\n" * 100) + "```"  # blank lines INSIDE the fence
     md = f"## Code\n\n{big_code}"
     chunks = chunk_page(md, max_chars=200)
     fenced = [c for c in chunks if "```" in c.text]
-    assert len(fenced) == 1  # the fence was not split apart
+    assert len(fenced) == 1                    # the fence was not split apart
+    assert fenced[0].text.count("```") == 2    # both markers in one chunk

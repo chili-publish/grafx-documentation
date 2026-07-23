@@ -62,25 +62,107 @@ def _split_into_blocks(markdown: str) -> list[tuple[str, str]]:
     return blocks
 
 
-def _split_oversized(text: str, max_chars: int, overlap: int) -> list[str]:
-    """Greedy paragraph-packing with character overlap for a too-long block.
+def _tokenize_units(text: str) -> list[tuple[str, str]]:
+    """Split a block into atomic units: ('code', fenced_block) or ('prose', paragraph).
 
-    Never splits inside a code fence: a fenced block is emitted whole even if
-    it exceeds max_chars (splitting code is worse than an oversized chunk).
+    A fenced code block is emitted whole, including any blank lines inside it,
+    so re.split on blank lines can never tear a fence apart. Prose between
+    fences is split on blank lines into paragraphs.
     """
-    paragraphs = re.split(r"\n\s*\n", text)
+    units: list[tuple[str, str]] = []
+    lines = text.split("\n")
+    prose: list[str] = []
+
+    def flush_prose():
+        if not prose:
+            return
+        joined = "\n".join(prose)
+        for para in re.split(r"\n\s*\n", joined):
+            if para.strip():
+                units.append(("prose", para.strip()))
+        prose.clear()
+
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if _FENCE.match(line.strip()):
+            flush_prose()
+            fence = [line]
+            i += 1
+            while i < len(lines):
+                fence.append(lines[i])
+                closed = bool(_FENCE.match(lines[i].strip()))
+                i += 1
+                if closed:
+                    break
+            units.append(("code", "\n".join(fence)))
+        else:
+            prose.append(line)
+            i += 1
+    flush_prose()
+    return units
+
+
+def _hard_split(text: str, max_chars: int, overlap: int) -> list[str]:
+    """Split an oversized prose paragraph into <= max_chars pieces, word-aware,
+    carrying a character-overlap tail between consecutive pieces. A lone token
+    longer than max_chars (e.g. a huge URL) is character-sliced as a last resort.
+    """
+    pieces: list[str] = []
+    current = ""
+    for word in text.split():
+        while len(word) > max_chars:
+            if current:
+                pieces.append(current)
+                current = ""
+            pieces.append(word[:max_chars])
+            word = word[max_chars:]
+        candidate = f"{current} {word}".strip() if current else word
+        if len(candidate) <= max_chars:
+            current = candidate
+        else:
+            pieces.append(current)
+            tail = current[-overlap:] if overlap else ""
+            current = f"{tail} {word}".strip() if tail else word
+    if current:
+        pieces.append(current)
+    return pieces
+
+
+def _split_oversized(text: str, max_chars: int, overlap: int) -> list[str]:
+    """Pack an oversized block into <= max_chars chunks.
+
+    Fenced code blocks stay atomic (emitted whole even if they exceed max_chars,
+    since splitting code is worse than an oversized chunk). Oversized prose
+    paragraphs are hard-split so no non-code chunk exceeds max_chars. Adjacent
+    units are greedily packed with a character overlap between chunks.
+    """
+    atoms: list[tuple[str, str]] = []
+    for kind, unit in _tokenize_units(text):
+        if kind == "prose" and len(unit) > max_chars:
+            atoms.extend(("prose", piece) for piece in _hard_split(unit, max_chars, overlap))
+        else:
+            atoms.append((kind, unit))
+
     out: list[str] = []
     current = ""
-    for para in paragraphs:
-        if not para.strip():
+    for kind, unit in atoms:
+        if kind == "code" and len(unit) > max_chars:
+            if current:
+                out.append(current)
+                current = ""
+            out.append(unit)
             continue
-        candidate = f"{current}\n\n{para}".strip() if current else para
-        if len(candidate) <= max_chars or not current:
+        candidate = f"{current}\n\n{unit}".strip() if current else unit
+        if len(candidate) <= max_chars:
             current = candidate
         else:
             out.append(current)
             tail = current[-overlap:] if overlap else ""
-            current = f"{tail}\n\n{para}".strip() if tail else para
+            candidate = f"{tail}\n\n{unit}".strip() if tail else unit
+            if len(candidate) > max_chars:  # overlap tail pushed us over; drop it
+                candidate = unit
+            current = candidate
     if current:
         out.append(current)
     return out
