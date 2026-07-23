@@ -74,6 +74,11 @@ def build_records(
     """Zip chunks with their embeddings into records for one page."""
     if len(chunks) != len(embeddings):
         raise ValueError(f"{len(chunks)} chunks but {len(embeddings)} embeddings for {src_uri}")
+    for i, emb in enumerate(embeddings):
+        if len(emb) != dim:
+            raise ValueError(
+                f"embedding {i} for {src_uri} has length {len(emb)}, expected dim={dim}"
+            )
     page_url = page_url_from_src(src_uri, site_url)
     return [
         Record(
