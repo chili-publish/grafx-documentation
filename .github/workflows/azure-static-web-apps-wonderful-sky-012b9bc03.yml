@@ -138,8 +138,12 @@ jobs:
           echo "Sync plan: $upload_count upload(s), $delete_count deletion(s)"
           # Guard 2: a normal main build deletes ~0-5 files; a sudden spike
           # almost certainly indicates a bug in the build or the baseline.
-          if [ "$delete_count" -gt 10 ]; then
-            echo "::error::Refusing to sync: dry run would delete $delete_count blobs (>10). Aborting before any changes."
+          # Temporarily raised 10 -> 25 to let through the one-time cleanup
+          # from the GraFx Genie docs consolidation (#749), which orphaned 18
+          # legacy images now merged into the new GraFx-Genie section.
+          # TODO: revert to 10 after this lands and syncs successfully.
+          if [ "$delete_count" -gt 25 ]; then
+            echo "::error::Refusing to sync: dry run would delete $delete_count blobs (>25). Aborting before any changes."
             exit 1
           fi
 
