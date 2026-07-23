@@ -38,8 +38,7 @@ Please provide us with the following metadata:
 | Sign In URL              | The URL of your IDP that CHILI GraFx should redirect to during sign-in                                                           |
 | X509 Signing Certificate | The certificate used by your IDP to sign SAML responses. This is used by CHILI GraFx to verify the authenticity of the responses |
 
-Alternatively, you can provide the **SAML metadata URL**.  
-Above values can be derived from it.
+Alternatively, you can provide the **SAML metadata URL**, the above values can be derived from that.
 
 Please inform us of the **domain** you’d like to use for testing FSSO.
 
