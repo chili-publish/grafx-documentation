@@ -200,6 +200,7 @@ jobs:
             site/ \
             https://docs-cdn.chiligrafx.com \
             /assets/ \
+            --include-css \
             --strict
 
       - name: Rewrite asset references to CDN URLs (PR, strict)
@@ -211,6 +212,7 @@ jobs:
             /assets/ \
             --override-list build/pr-assets.txt \
             --override-prefix "${{ steps.cdn.outputs.pr_prefix }}" \
+            --include-css \
             --strict
 
       - name: Strip binary assets from SWA upload

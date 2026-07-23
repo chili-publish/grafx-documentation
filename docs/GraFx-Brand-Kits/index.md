@@ -1,7 +1,5 @@
 
-# GraFx Brand Kits
-
-![applogo](/assets/logo-GraFx-Brandkits.svg)
+# ![](/assets/icon-GraFx-Brandkits.svg){.applogo-inline} GraFx Brand Kits
 
 GraFx Brand Kits lets you define and manage your organization’s visual identity in one place. 
 

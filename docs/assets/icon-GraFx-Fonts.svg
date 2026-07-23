@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 125.36 127.62"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2,.cls-3{fill:#fff;}.cls-4{fill:url(#linear-gradient-2);opacity:.9;}.cls-3{opacity:.7;}</style><linearGradient id="linear-gradient" x1="542.14" y1="-79.8" x2="653.99" y2="-21.89" gradientTransform="translate(-455.83 328.45) rotate(-20.65)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff8c00"/><stop offset=".19" stop-color="#ff7d00"/><stop offset=".55" stop-color="#ff5600"/><stop offset="1" stop-color="#ff1e00"/></linearGradient><linearGradient id="linear-gradient-2" x1="70.77" y1="72.44" x2="42.42" y2="49.51" gradientUnits="userSpaceOnUse"><stop offset=".05" stop-color="#ff6b1a"/><stop offset=".2" stop-color="#ff9d68" stop-opacity=".97"/><stop offset=".48" stop-color="#fff" stop-opacity=".9"/></linearGradient></defs><circle class="cls-1" cx="62.68" cy="67.2" r="44.63"/><path class="cls-3" d="M69.89,60.64l-3.62,4.24v7.91c1.03,.67,2.26,1.06,3.58,1.06,3.65,0,6.61-2.96,6.61-6.61s-2.94-6.58-6.57-6.6Z"/><polygon class="cls-2" points="63.33 68.32 47.65 86.72 66.27 86.72 66.27 72.8 66.27 64.88 63.33 68.32"/><path class="cls-4" d="M63.73,47.7c-8.92,.53-16.02,9.05-16.08,19.5v19.52l15.69-18.4,2.93-3.44,3.62-4.24,11.06-12.97s-16.92,0-17.22,.03Z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 89.26 89.26">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient);
+      }
+
+      .st1, .st2 {
+        fill: #fff;
+      }
+
+      .st3 {
+        fill: url(#linear-gradient1);
+        opacity: .9;
+      }
+
+      .st3, .st2 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        opacity: .7;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="452.4" y1="142.31" x2="564.25" y2="200.22" gradientTransform="translate(-468.24 66.37) rotate(-20.65)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8c00"/>
+      <stop offset=".19" stop-color="#ff7d00"/>
+      <stop offset=".55" stop-color="#ff5600"/>
+      <stop offset="1" stop-color="#ff1e00"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="52.73" y1="244.23" x2="24.38" y2="221.3" gradientTransform="translate(0 -194.36)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#ff6b1a"/>
+      <stop offset=".2" stop-color="#ff9d68" stop-opacity=".97"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <circle class="st0" cx="44.63" cy="44.63" r="44.63"/>
+  <path class="st2" d="M51.84,38.07l-3.62,4.24v7.91c1.03.67,2.26,1.06,3.58,1.06,3.65,0,6.61-2.96,6.61-6.61s-2.94-6.58-6.57-6.6Z"/>
+  <polygon class="st1" points="45.28 45.75 29.6 64.15 48.22 64.15 48.22 50.23 48.22 42.31 45.28 45.75"/>
+  <path class="st3" d="M45.68,25.13c-8.92.53-16.02,9.05-16.08,19.5v19.52l15.69-18.4,2.93-3.44,3.62-4.24,11.06-12.97s-16.92,0-17.22.03Z"/>
+</svg>
