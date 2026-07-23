@@ -508,7 +508,6 @@ nav:
         - 'How to':
             - 'Create a project':               'GraFx-Studio/guides/create-projects/index.md'
             - 'Manage Collections' :            'GraFx-Studio/guides/manage-collections/index.md'
-            - 'Manage Environment Version':     'GraFx-Studio/guides/manage-environment-version/index.md'
             - 'Manage User interfaces':         'GraFx-Studio/guides/manage-user-interfaces/index.md'
             - 'Use Tags':                       'GraFx-Studio/guides/use-tags/index.md'
         - 'Tutorials':
@@ -590,10 +589,13 @@ nav:
         - 'Concepts':
             - 'Brand Kit':                      'GraFx-Brand-Kits/concepts/brandkit/index.md'
             - 'Elements':                       'GraFx-Brand-Kits/concepts/elements/index.md'
+            - 'Themes':                         'GraFx-Brand-Kits/concepts/themes/index.md'
+            - 'Use cases':                      'GraFx-Brand-Kits/concepts/use-cases/index.md'
         - 'How to':
             - 'Create a Brand Kit':               'GraFx-Brand-Kits/guides/create/index.md'
             - 'Edit a Brand Kit':               'GraFx-Brand-Kits/guides/edit/index.md'
             - 'Import a Brand Kit':               'GraFx-Brand-Kits/guides/import/index.md'
+            - 'Manage themes':                  'GraFx-Brand-Kits/guides/themes/index.md'
 
 #    - 'Solutions':
 #        - 'Multiple adds in Real Estate':       'solutions/realestate.md'

@@ -2,6 +2,9 @@
 
 On the Brand Kit detail page:
 
+!!! info "Editing themes"
+    Your edits apply to the theme selected in the theme bar at the top of the page. On the default theme you edit the Brand Kit itself; on any other theme, changes are saved as overrides on that theme. See [Manage themes](/GraFx-Brand-Kits/guides/themes/).
+
 ## Add an element
 
 - Click the “+” in the empty tile for Colors, Fonts & Media.

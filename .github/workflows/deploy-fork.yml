@@ -47,7 +47,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: 3.x
 
@@ -58,10 +58,11 @@ jobs:
         run: mkdocs build
 
       # ===== CDN offload pipeline (DT-973) =====
-      # Fork PRs always upload to the `staging` container, prefixed by PR
-      # number (matches the same-repo PR layout from the main workflow).
-      # No orphan-delete step here -- staging is per-PR and gets cleaned by
-      # the lifecycle policy.
+      # Fork PRs follow the same incremental layout as same-repo PRs: assets
+      # whose MD5 matches a prod blob in /assets/ are not uploaded at all
+      # (their refs are rewritten to prod); only PR-specific assets go to
+      # staging/pr-<N>/assets/. No orphan-delete step here -- staging is
+      # per-PR and gets cleaned by the lifecycle policy.
 
       - name: Azure Login
         uses: azure/login@v3
@@ -80,25 +81,41 @@ jobs:
       - name: Collect CDN assets from site/ into a staging dir
         run: python3 scripts/cdn/collect_assets.py site/ build/cdn-upload/
 
-      - name: Upload assets to staging blob
-        uses: azure/cli@v3
-        with:
-          inlineScript: |
-            az storage blob upload-batch \
-              --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
-              --destination staging \
-              --destination-path "pr-${{ steps.pr.outputs.number }}/assets/" \
-              --source build/cdn-upload/ \
-              --overwrite true \
-              --auth-mode login
+      - name: List prod asset baseline
+        run: |
+          az storage blob list \
+            --account-name "${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}" \
+            --container-name assets \
+            --auth-mode login \
+            --num-results "*" \
+            --query "[].{name:name, md5:properties.contentSettings.contentMd5}" \
+            -o json > build/prod-assets.json
 
-      - name: Rewrite asset references in HTML/CSS to CDN URLs (strict)
+      - name: Split PR-specific assets from prod baseline
+        run: |
+          python3 scripts/cdn/diff_assets.py \
+            build/cdn-upload/ build/prod-assets.json build/pr-assets.txt
+
+      - name: Upload PR-specific assets to staging
+        env:
+          AZCOPY_AUTO_LOGIN_TYPE: AZCLI
+        run: |
+          if [ ! -s build/pr-assets.txt ]; then
+            echo "No PR-specific assets -- nothing to upload."
+            exit 0
+          fi
+          azcopy copy "build/cdn-upload/*" \
+            "https://${{ vars.DOCS_CDN_STORAGE_ACCOUNT_NAME }}.blob.core.windows.net/staging/pr-${{ steps.pr.outputs.number }}/assets/" \
+            --recursive --put-md5 --overwrite=true
+
+      - name: Rewrite asset references to CDN URLs (strict)
         run: |
           python3 scripts/cdn/rewrite_urls.py \
             site/ \
             https://docs-cdn.chiligrafx.com \
-            "/staging/pr-${{ steps.pr.outputs.number }}/assets/" \
-            --include-css \
+            /assets/ \
+            --override-list build/pr-assets.txt \
+            --override-prefix "/staging/pr-${{ steps.pr.outputs.number }}/assets/" \
             --strict
 
       - name: Strip binary assets from SWA upload

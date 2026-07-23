@@ -127,6 +127,28 @@ Defines the destination print condition to which colors are converted.
 !!! warning
     If the intended and target profiles do not reflect the actual production workflow, visible color shifts may occur.
 
+#### Convert RGB colors to CMYK colors
+
+Enable **Convert RGB colors to CMYK colors** to also convert RGB content — such as photos and colors defined in RGB — to the target CMYK profile during export.
+
+RGB conversion is a complementary step to CMYK conversion:
+
+- The switch becomes available once both the **Intended CMYK profile** and **Target CMYK profile** are set. Until then, it is visible but disabled, with a tooltip explaining why.
+- RGB colors with an embedded profile are converted using that embedded profile.
+- For unmanaged RGB colors (no embedded profile), select the assumed source profile in the **RGB source profile** dropdown that appears when the switch is on.
+
+Available RGB source profiles:
+
+- Adobe RGB (1998)
+- Apple RGB
+- Color Match RGB
+- HDTV (Rec. 709)
+- PAL/SECAM
+- SDTV NTSC
+- SDTV PAL
+- SMPTE-C
+- sRGB IEC61966-2.1
+
 For a deeper explanation of color management concepts, see:
 
 - [Color Management in CHILI GraFx](/GraFx-Studio/concepts/color-management/)

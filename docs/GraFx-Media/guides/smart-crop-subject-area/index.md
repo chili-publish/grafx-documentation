@@ -14,15 +14,15 @@ To understand the concept, see [**Smart Crop**](../../concepts/genie-smart-crop/
 
 In **GraFx Media**, select an uploaded asset to view its details.
 
-![screenshot-full](sc1.png)
+![screenshot-full](sc1.png){.screenshot}
 
 ## Setting the Subject Area
 
 Click **Set Subject Area** to define or adjust the focal area of your image.
 
-![screenshot](sc4.png)
+![screenshot](sc4.png){.screenshot}
 
-![screenshot-full](sc5.png)
+![screenshot-full](sc5.png){.screenshot}
 
 A default **Subject Area** and **Point of Interest (POI)** are automatically detected upon upload. If these match your needs, no further action is required.
 
@@ -30,19 +30,39 @@ A default **Subject Area** and **Point of Interest (POI)** are automatically det
 
 If you want the image to focus on a different Point of Interest (POI).
 
-![screenshot-full](sc7.png)
+![screenshot-full](sc7.png){.screenshot}
 
-![screenshot-full](sc6.png)
+![screenshot-full](sc6.png){.screenshot}
 
 If you want the image to focus on a different subject, you can manually adjust the Subject Area.
 
-![screenshot-full](sc8.png)
+![screenshot-full](sc8.png){.screenshot}
 
-In both cases, the preview images will show the effect of your choice in the 3 different aspect ratios.
+In both cases, the preview images show the effect of your choice across 5 different aspect ratios.
 
-![screenshot](sc9.png)
+![screenshot](sc9.png){.screenshot}
 
 Hit "Apply" to save the new Subject Area and POI.
+
+!!! warning "This affects every template using the asset"
+    The Subject Area and Point of Interest are stored on the asset itself, not on a template. Changing them updates how the asset is cropped everywhere it is used — in all templates that already reference it, not just new ones.
+
+## Subject alignment
+
+Grouped with the live previews is a **Subject alignment** dropdown. It controls where the subject sits within a frame's Subject Position when Smart Crop has room to move the image, and lets you preview that effect right here while setting the Subject Area and Point of Interest.
+
+![Subject Alignment](sc13.png){.screenshot}
+
+Choose from a 3×3 grid of positions:
+
+- **Top left**, **Top center**, **Top right**
+- **Center left**, **Center** (the default), **Center right**
+- **Bottom left**, **Bottom center**, **Bottom right**
+
+The subject moves only as far as the image allows: once there is no more image to reveal on that side, it cannot shift further.
+
+!!! info "Preview aid, not an asset property"
+    In GraFx Media this setting is part of the live preview box — it shows how alignment would affect the crop, but it is not saved on the asset. The alignment that actually applies is set per image frame in GraFx Studio — see [Subject alignment](/GraFx-Studio/guides/smart-crop/#subject-alignment).
 
 ## Subject type
 
