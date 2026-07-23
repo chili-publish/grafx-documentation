@@ -29,9 +29,7 @@ Please configure your IDP to include at least the required claims below in SAML 
 
 ## 3. CHILI GraFx Configuration
 
-Next CHILI publish needs to configure a few things on the CHILI GraFx side, so your users get redirected to your IDP when logging into CHILI GraFx.
-
-Please provide us with the following metadata:
+Once you've created a SAML application in your IDP, provide us the following metadata so we can configure things to redirect users to your IDP when logging into CHILI GraFx:
 
 | **Name**                 | **Description**                                                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
