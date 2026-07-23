@@ -261,8 +261,11 @@ def parse_args() -> argparse.Namespace:
                    help="Fail (exit 2) if any in-scope asset refs remain unrewritten.")
     p.add_argument("--dry-run", action="store_true",
                    help="Don't modify files; just report what would change.")
-    p.add_argument("--include-css", action="store_true",
-                   help="Also rewrite url(...) refs in .css files.")
+    p.add_argument("--include-css", action=argparse.BooleanOptionalAction, default=True,
+                   help="Also rewrite url(...) refs in .css files (default: enabled). "
+                        "CSS in docs/stylesheets/ references assets (e.g. SVG "
+                        "backgrounds) that strip_assets.py removes from the SWA "
+                        "upload, so skipping CSS breaks those references.")
     p.add_argument("--include-xml", action=argparse.BooleanOptionalAction, default=True,
                    help="Also process .xml files (default: enabled).")
     p.add_argument("--verbose", action="store_true",

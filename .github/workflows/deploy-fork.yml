@@ -116,6 +116,7 @@ jobs:
             /assets/ \
             --override-list build/pr-assets.txt \
             --override-prefix "/staging/pr-${{ steps.pr.outputs.number }}/assets/" \
+            --include-css \
             --strict
 
       - name: Strip binary assets from SWA upload
