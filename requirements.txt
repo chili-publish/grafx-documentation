@@ -7,3 +7,5 @@ mkdocs-table-reader-plugin
 mkdocs-rss-plugin
 mkdocs-llmstxt
 openpyxl
+openai
+
