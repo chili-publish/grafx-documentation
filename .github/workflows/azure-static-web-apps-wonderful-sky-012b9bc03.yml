@@ -42,6 +42,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
+      actions: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -237,6 +238,19 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/site" # App source code path
           ###### End of Repository/Build Configurations ######
+
+      - name: Trigger docs embedding (main only)
+        # AIML-37 (Brian): re-embed docs into grafx-genie's store after a
+        # prod deploy. Gated to push:main so PR previews never kick off a
+        # (paid) full-site re-embed. Fire-and-forget: gh returns once the
+        # dispatch is accepted and the embed runs as its own workflow.
+        # Needs the actions: write scope added above; continue-on-error so a
+        # dispatch hiccup never fails an otherwise-successful deploy.
+        if: steps.cdn.outputs.is_main == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run embed-docs.yml --ref main
 
   close_pull_request_job:
     if: github.repository == 'chili-publish/grafx-documentation' && github.event_name == 'pull_request' && github.event.action == 'closed'
