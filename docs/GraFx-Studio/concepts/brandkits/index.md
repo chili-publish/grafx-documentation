@@ -12,6 +12,8 @@ Elements of a "Brand Kit":
 
 When you define a Brand Kit, you define elements that fit together in one group, so you can re-use the settings later in the document.
 
+A Brand Kit can have [themes](/GraFx-Brand-Kits/concepts/themes/) — variations that override colors, text styles, or media while inheriting everything else from the default theme. In the Studio workspace, the Brand Kit panel lets you [switch between themes](/GraFx-Studio/guides/brandkits/#switch-themes). The font list is shared across all themes, but style overrides can use a different font per theme.
+
 ## Media
 
 A collection of assets readily available to use in your document.

@@ -96,6 +96,18 @@ This is CMYK-to-CMYK conversion.
 It is one of the most common real-world use cases in multi-region retail production.
 
 
+## RGB content in print output
+
+Templates often contain RGB content — photos from a DAM, or brand colors defined for screen.
+
+During PDF export, RGB colors can be converted to the target CMYK profile as a complementary step to the CMYK conversion:
+
+- RGB colors with an embedded profile are converted using that profile.
+- Unmanaged RGB colors (no embedded profile) use the RGB source profile you select, such as sRGB or Adobe RGB (1998).
+
+This ensures on-screen imagery reproduces predictably under the intended print condition.
+
+
 ## Rendering intent — how out-of-gamut colors are handled
 
 Some colors in the source profile cannot be reproduced exactly in the destination profile.
@@ -171,6 +183,7 @@ In GraFx Studio PDF output settings, you control:
 - PDF version  
 - Intended CMYK profile  
 - Target CMYK profile  
+- Whether RGB colors are converted to CMYK, and which RGB source profile to assume for unmanaged colors  
 
 When these settings match your production workflow, your exported PDFs remain consistent, compliant, and brand-safe.
 
