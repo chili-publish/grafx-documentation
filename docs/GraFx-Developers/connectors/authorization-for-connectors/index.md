@@ -164,9 +164,24 @@ In addition to specifying the authorization type using the `-at` argument, you m
 
 1. OAuth 2.0 responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception that `expires_in` is mandatory.
 2. The `grant_type` for OAuth 2.0 types is automatically set as per the specification and cannot be configured.
-3. `access_token` and `refresh_token` are cached internally for OAuth 2.0 types. There's currently no way to reset them without deleting the Connector.
+3. `access_token` and `refresh_token` are cached internally for OAuth 2.0 types. For OAuth 2.0 Authorization Code you can clear your own cached session — see [Signing out of an OAuth 2.0 Authorization Code session](#signing-out-of-an-oauth-20-authorization-code-session). For the other OAuth 2.0 types there is no way to reset them without deleting the Connector.
 4. OAuth 2.0 Authorization Code is user-specific and not useful with an Integration User (used outside CHILI GraFx).
 5. OAuth 2.0 Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios.
+
+#### Signing Out of an OAuth 2.0 Authorization Code Session
+
+Because OAuth 2.0 Authorization Code authorizes each user individually, every user builds up their own authorization session for a Connector. To end your own session, call:
+
+```
+POST /api/v1/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code/logout
+```
+
+The next time you access the Connector, the sign-in flow runs again. Use this when you want to connect as a different account in the external system, or when a session no longer works and you want to re-authorize from scratch.
+
+Note the following:
+
+- The session is resolved from the access token, so the call only ends the session of the user making it. Other users of the same Connector are unaffected, and you cannot sign out on someone else's behalf.
+- Any user with access to the environment can call the endpoint, but a user token is required — Integration (machine-to-machine) tokens are rejected, since these sessions belong to a person rather than to an integration.
 
 ### Authorization Data File Requirements (`--auth-data-file`)
 
