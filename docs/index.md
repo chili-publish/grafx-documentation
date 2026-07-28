@@ -21,6 +21,13 @@
     The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — normalizes pasted connector IDs, enables watch mode by default, and supports the global `sleep(ms)` helper.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
+    **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Connectors using OAuth 2.0 Authorization Code can now clear a user's own authorization session through a new logout endpoint — so you can reconnect as a different account without deleting and republishing the Connector.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/chili-grafx-environment-api-sign-out-of-a-connector-connection/)
 
     ---
 
