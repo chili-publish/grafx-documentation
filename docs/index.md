@@ -18,9 +18,12 @@
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — normalizes pasted connector IDs, enables watch mode by default, and supports the global `sleep(ms)` helper.
+    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — cleans up pasted asset IDs, and supports the global `sleep(ms)` helper.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
+
+    ---
+
     **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -68,16 +71,6 @@
     Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
-
-    ---
-
-    **Jun 24, 2026**: CHILI GraFx Environment API: Exclude headers from connector proxy requests
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Connector proxy requests can now drop specific headers via the new `X-GraFx-Proxy-Exclude-Headers` header — so the connector's `Authorization` header isn't forwarded to pre-signed CDN URLs that already carry their own auth.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/06/24/chili-grafx-environment-api-exclude-headers-from-connector-proxy-requests/)
 
     ---
 
