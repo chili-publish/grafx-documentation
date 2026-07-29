@@ -1,12 +1,12 @@
 # Authorization for Connectors
 
-Connectors support various types of authorization to enable secure integration with external systems. This document outlines the process of adding authorization to a Connector and explains the different authorization types available.
+Connectors support various types of authorization to enable secure integration with external systems. This document outlines the process of adding authorization to a connector and explains the different authorization types available.
 
 ## Understanding Authorization
 
-When developing your Connector's JavaScript logic, you'll often need to make requests to external APIs. While the `runtime.fetch` method makes this process straightforward, handling API endpoints that require authorization or authentication can be challenging.
+When developing your connector's JavaScript logic, you'll often need to make requests to external APIs. While the `runtime.fetch` method makes this process straightforward, handling API endpoints that require authorization or authentication can be challenging.
 
-Hardcoding tokens directly into the Connector code is considered bad practice, as these tokens may be accessible to other administrators in your environment. To address this security concern, the Connector CLI provides five different authorization types:
+Hardcoding tokens directly into the connector code is considered bad practice, as these tokens may be accessible to other administrators in your environment. To address this security concern, the Connector CLI provides five different authorization types:
 
 - Static Header Key
 - OAuth 2.0 Client Credentials
@@ -14,19 +14,19 @@ Hardcoding tokens directly into the Connector code is considered bad practice, a
 - OAuth 2.0 Resource Owner Password (Password Grant)
 - OAuth 2.0 JWT Bearer Token
 
-When a user first accesses a Connector and the code makes a `runtime.fetch` call, CHILI GraFx automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
+When a user first accesses a connector and the code makes a `runtime.fetch` call, CHILI GraFx automatically runs the required authentication workflow. The authentication result is then cached and added to subsequent requests automatically.
 
 ## Authorization Limitations
 
-While the Connector framework supports the most common authorization schemes, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the five provided types, you may need to develop a workaround solution.
+While the Connector Framework supports the most common authorization schemes, it's important to note that completely customizable authorization is not possible. If your specific authorization requirements don't align with the five provided types, you may need to develop a workaround solution.
 
-For example, services like GraFx Media and CHILI GraFx do not meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector framework.
+For example, services like GraFx Media and CHILI GraFx do not meet the requirements of any of the supported authorization types. In such cases, you would need to implement an intermediary service that adapts the authorization workflow to work within the Connector Framework.
 
 ## Define Supported Authorization Types
 
 Before implementing authorization, you must define the supported authorization types in your `package.json` file. This ensures consistency between your CLI commands and your package configuration.
 
-To do so, add or modify the `supportedAuth` property in your `package.json` file with the types of authentication your Connector supports.
+To do so, add or modify the `supportedAuth` property in your `package.json` file with the types of authentication your connector supports.
 
 Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authorization Code:
 
@@ -42,7 +42,7 @@ Example of a `package.json` supporting Static Header Key and OAuth 2.0 Authoriza
 
 ## Implement Authorization
 
-To implement authorization in a Connector, you need a published Connector and the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Use the following command:
+To implement authorization in a connector, you need a published connector and the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) tool. Use the following command:
 
 ```bash
 connector-cli set-auth \
@@ -58,17 +58,17 @@ connector-cli set-auth \
 
 !!! note "Authorization is Optional"
 
-	  By default, no authorization is applied. This allows you to quickly set up and test a Connector without dealing with authentication requirements.
+	  By default, no authorization is applied. This allows you to quickly set up and test a connector without dealing with authentication requirements.
 
 !!! warning "Proxying and Removing a Header"
 
-	  All POST requests made through a Connector are automatically proxied through CHILI GraFx servers, regardless of whether authorization is configured. If you include an Authorization header in your request via `runtime.fetch`, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
+	  All POST requests made through a connector are automatically proxied through CHILI GraFx servers, regardless of whether authorization is configured. If you include an Authorization header in your request via `runtime.fetch`, that header will be stripped out before it reaches the target API. Please use Static Header Key to set an Authorization header.
 
 ### Connector ID (`--connectorId`)
 
-This argument is the ID of your Connector published in your CHILI GraFx environment.
+This argument is the ID of your connector published in your CHILI GraFx environment.
 
-To retrieve all Connectors and look up your ID, use the following API endpoint (with proper authorization header):
+To retrieve all connectors and look up your ID, use the following API endpoint (with proper authorization header):
 
 ```bash
 GET https://{environment}.chili-publish.online/grafx/api/experimental/environment/{environment}/connectors
@@ -76,7 +76,7 @@ GET https://{environment}.chili-publish.online/grafx/api/experimental/environmen
 
 ### Environment (`-e`)
 
-This argument expects the environment name that your Connector is published in.
+This argument expects the environment name that your connector is published in.
 
 ### Base URL (`-b`)
 
@@ -105,7 +105,7 @@ Expected values:
 - **browser**: Connector authentication to use when GraFx Studio is loaded in the browser for editors (e.g., GraFx Studio UI) or when using the SDK.
 - **server**: Connector authentication to use when CHILI GraFx servers generate output (e.g., PDF, PNG, GIF).
 
-Therefore, you can define different authorization types for each usage, allowing your Connector to use separate authorization methods for browser and server interactions. Of course, you can choose the same authorization type for both usage types.
+Therefore, you can define different authorization types for each usage, allowing your connector to use separate authorization methods for browser and server interactions. Of course, you can choose the same authorization type for both usage types.
 
 !!! note "Authorization Always Happens on the Server"
 
@@ -164,23 +164,23 @@ In addition to specifying the authorization type using the `-at` argument, you m
 
 1. OAuth 2.0 responses must comply with the [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) format, with the exception that `expires_in` is mandatory.
 2. The `grant_type` for OAuth 2.0 types is automatically set as per the specification and cannot be configured.
-3. `access_token` and `refresh_token` are cached internally for OAuth 2.0 types. For OAuth 2.0 Authorization Code you can clear your own cached session — see [Signing out of an OAuth 2.0 Authorization Code session](#signing-out-of-an-oauth-20-authorization-code-session). For the other OAuth 2.0 types there is no way to reset them without deleting the Connector.
+3. `access_token` and `refresh_token` are cached internally for OAuth 2.0 types. For OAuth 2.0 Authorization Code you can clear your own cached session — see [Signing out of an OAuth 2.0 Authorization Code session](#signing-out-of-an-oauth-20-authorization-code-session). For the other OAuth 2.0 types there is no way to reset them without deleting the connector.
 4. OAuth 2.0 Authorization Code is user-specific and not useful with an Integration User (used outside CHILI GraFx).
 5. OAuth 2.0 Authorization Code is limited to "browser" usage, which may restrict its applicability in certain scenarios.
 
 #### Signing Out of an OAuth 2.0 Authorization Code Session
 
-Because OAuth 2.0 Authorization Code authorizes each user individually, every user builds up their own authorization session for a Connector. To end your own session, call:
+Because OAuth 2.0 Authorization Code authorizes each user individually, every user builds up their own authorization session for a connector. To end your own session, call:
 
 ```
 POST /api/v1/environment/{environment}/connectors/{connectorId}/auth/oauth-authorization-code/logout
 ```
 
-The next time you access the Connector, the sign-in flow runs again. Use this when you want to connect as a different account in the external system, or when a session no longer works and you want to re-authorize from scratch.
+The next time you access the connector, the sign-in flow runs again. Use this when you want to connect as a different account in the external system, or when a session no longer works and you want to re-authorize from scratch.
 
 Note the following:
 
-- The session is resolved from the access token, so the call only ends the session of the user making it. Other users of the same Connector are unaffected, and you cannot sign out on someone else's behalf.
+- The session is resolved from the access token, so the call only ends the session of the user making it. Other users of the same connector are unaffected, and you cannot sign out on someone else's behalf.
 - Any user with access to the environment can call the endpoint, but a user token is required — Integration (machine-to-machine) tokens are rejected, since these sessions belong to a person rather than to an integration.
 
 ### Authorization Data File Requirements (`--auth-data-file`)
@@ -238,11 +238,11 @@ Each authorization type requires a specific JSON schema. The `grant_type` for OA
 
 #### OAuth 2.0 JWT Bearer Token
 
-Depends on the Connector definition
+Depends on the connector definition
 
 ## Example: Setting Multiple Authorization Types
 
-This example demonstrates how to set up a Connector with different authorization types for server and browser interactions. In this scenario, we'll use OAuth 2.0 Client Credentials for server interactions and OAuth 2.0 Authorization Code for browser interactions.
+This example demonstrates how to set up a connector with different authorization types for server and browser interactions. In this scenario, we'll use OAuth 2.0 Client Credentials for server interactions and OAuth 2.0 Authorization Code for browser interactions.
 
 ### Step 1: Prepare Authorization Data Files
 
@@ -316,4 +316,4 @@ connector-cli set-auth \
     --auth-data-file path/to/oauth-authorization-code.json
 ```
 
-By following these steps, we've configured our Connector to use OAuth 2.0 Client Credentials for server-side interactions and OAuth 2.0 Authorization Code for browser-based interactions. This setup allows for secure communication with external APIs in both scenarios.
+By following these steps, we've configured our connector to use OAuth 2.0 Client Credentials for server-side interactions and OAuth 2.0 Authorization Code for browser-based interactions. This setup allows for secure communication with external APIs in both scenarios.

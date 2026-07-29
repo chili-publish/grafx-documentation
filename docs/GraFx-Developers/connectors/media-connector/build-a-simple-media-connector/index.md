@@ -171,7 +171,7 @@ connector-cli publish \
 
 !!! note "Grab the Connector ID"
 
-    Make sure to copy and save the resulting Connector ID after publishing. Currently, there is no way to retrieve this ID later without using the Environment API.
+    Make sure to copy and save the resulting connector ID after publishing. Currently, there is no way to retrieve this ID later without using the Environment API.
 
 ### Step 3: Enabling the connector
 
@@ -461,7 +461,7 @@ After fixing the preview for `thumbnail`
 
 ## Conclusion
 
-Congratulations! You've successfully built your first Media Connector for GraFx Studio. This connector allows you to integrate images from picsum.photos into the GraFx Studio Designer Workspace.
+Congratulations! You've successfully built your first media connector for GraFx Studio. This connector allows you to integrate images from picsum.photos into the GraFx Studio Designer Workspace.
 
 ### Key Accomplishments
 
@@ -477,4 +477,4 @@ In this tutorial, you've learned how to:
 ## Next Steps
 
 1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on connector functionality and best practices.
-2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/) tutorial to learn how to add variable settings in your Connectors.
+2. Follow the [Add Variable Settings To Your Connector](/GraFx-Developers/connectors/media-connector/add-variable-settings-to-your-connector/) tutorial to learn how to add variable settings in your connectors.

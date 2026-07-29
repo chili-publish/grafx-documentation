@@ -1,6 +1,6 @@
 # Media Connector Fundamentals
 
-A Media Connector is a JavaScript class that provides methods utilized by the Studio Engine and the Studio SDK. This guide offers a high-level overview of Connectors.
+A media connector is a JavaScript class that provides methods utilized by the Studio Engine and the Studio SDK. This guide offers a high-level overview of connectors.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ A Media Connector is a JavaScript class that provides methods utilized by the St
 
 ## Isolation
 
-Media Connectors run in a limited isolated environment, which means they don't have access to many browser APIs or Node.js APIs. This isolation serves two primary purposes:
+Media connectors run in a limited isolated environment, which means they don't have access to many browser APIs or Node.js APIs. This isolation serves two primary purposes:
 
 1. **Security**: JavaScript runs on the server, so it's crucial that it cannot directly access APIs that could compromise customer data.
 2. **Performance**: By limiting available APIs, scripts remain small and easier to optimize for performance.
@@ -19,7 +19,7 @@ Due to this isolation, you cannot access the `window` object or many commonly us
 
 ## Runtime
 
-Instead of browser globals, Connectors use a `ConnectorRuntimeContext`, which is passed to the constructor of a Connector class. It's common practice to store this on a `runtime` property:
+Instead of browser globals, connectors use a `ConnectorRuntimeContext`, which is passed to the constructor of a connector class. It's common practice to store this on a `runtime` property:
 
 ```typescript
 export default class MyConnector implements Media.MediaConnector {
@@ -37,7 +37,7 @@ Think of your JavaScript as running inside a limited JavaScript engine, with `ru
 
 ## Connector Methods
 
-Your Connector class needs to implement five key methods:
+Your connector class needs to implement five key methods:
 
 1. getCapabilities
 2. getConfigurationOptions
@@ -47,7 +47,7 @@ Your Connector class needs to implement five key methods:
 
 ### getCapabilities Method
 
-This method communicates to the SDK what features the Connector supports:
+This method communicates to the SDK what features the connector supports:
 
 ```typescript
 getCapabilities(): Media.MediaConnectorCapabilities {
@@ -65,7 +65,7 @@ getCapabilities(): Media.MediaConnectorCapabilities {
 
 ### getConfigurationOptions Method
 
-The `getConfigurationOptions`  method allows Connector developers to define customizable settings that template designers can use to modify the behavior of the Connector.
+The `getConfigurationOptions`  method allows connector developers to define customizable settings that template designers can use to modify the behavior of the connector.
 
 ```typescript
 getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
@@ -77,7 +77,7 @@ getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
 }
 ```
 
-When you define configuration options in this method, you're essentially telling the SDK, "My Connector supports these customization options." These values can then be accessed and utilized in other methods of your Connector through the `context` argument.
+When you define configuration options in this method, you're essentially telling the SDK, "My connector supports these customization options." These values can then be accessed and utilized in other methods of your connector through the `context` argument.
 
 ### query Method
 
@@ -189,5 +189,5 @@ Although not strictly required by the type signature, the Template Designer Work
 
 ## Next Steps
 
-1. Follow the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial to learn how to build a simple Connectors.
-2. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector.
+1. Follow the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) tutorial to learn how to build a simple connector.
+2. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your connector.
