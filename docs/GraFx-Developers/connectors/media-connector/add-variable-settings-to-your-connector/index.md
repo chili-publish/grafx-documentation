@@ -1,6 +1,6 @@
 # Add Configuration Options To Your Connector
 
-This guide focuses on adding configurable settings to your Connector within the GraFx Studio Designer Workspace, specifically for image variables. The primary goal is to empower designers to tailor your Connector's functionality for various end-user scenarios, enhancing the flexibility and relevance of the final product.
+This guide focuses on adding configurable settings to your connector within the GraFx Studio Designer Workspace, specifically for image variables. The primary goal is to empower designers to tailor your connector's functionality for various end-user scenarios, enhancing the flexibility and relevance of the final product.
 
 ## Requirements
 
@@ -13,11 +13,11 @@ This guide focuses on adding configurable settings to your Connector within the 
 
 The `getConfigurationOptions` method is crucial for defining settings that appear in the GraFx Studio and are stored in the document JSON. It's important to note that this method, while named similarly, is distinct from `runtime.options` or `QueryOptions` passed to the `query` method.
 
-Settings values are passed via the `context` parameter in the `query`, `download`, and `detail` methods. This allows designers to customize Connector behavior at the individual image variable level.
+Settings values are passed via the `context` parameter in the `query`, `download`, and `detail` methods. This allows designers to customize connector behavior at the individual image variable level.
 
 !!! note "One Way Communication"
 
-    This type of configuration is a one way communication from image variable in template to Connector.
+    This type of configuration is a one way communication from image variable in template to connector.
 
 ## Adding a Rectangle/Square Image Setting
 
@@ -86,7 +86,7 @@ Key changes in this method:
 The "wide" setting controls how the image is loaded into the frame. To best observe this effect:
 
 1. Publish your updated connector using the method described in the previously.
-2. In your document, add or select an existing image variable using this Connector.
+2. In your document, add or select an existing image variable using this connector.
 3. Set up an image frame with the mode set to "Fit" and linked to the variable.
 4. Locate the new "Display images as rectangular instead of square" setting in the connector options.
 5. Toggle this setting and observe how it affects the images in both the selector and the document frame.
@@ -97,11 +97,11 @@ This demonstrates that our connector is not just affecting the image selection p
 
 By completing this guide, you have:
 
-- Introduction of configurable settings for image variables in the Connector.
+- Introduction of configurable settings for image variables in the connector.
 - Introduction of an wide option allowing designers to choose between rectangular and square displays.
 - Enhancements to the download method to incorporate the new wide setting, affecting some `previewTypes`.
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on Connector functionality and best practices.
-2. Follow the [Add Environment (Runtime) Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/) tutorial to learn how to add environment (runtime) options in your Connectors.
+1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on connector functionality and best practices.
+2. Follow the [Add Environment (Runtime) Options to Your Connector](/GraFx-Developers/connectors/media-connector/add-environment-options-to-your-connector/) tutorial to learn how to add environment (runtime) options in your connectors.

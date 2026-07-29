@@ -1,14 +1,14 @@
 # Data Connector Fundamentals — Data Source Variable use case
 
-This page covers the additions a Data Connector needs in order to support the **Data Source Variable** use case. Set `dataSourceVariable: true` in `getCapabilities` and implement **`Data.DataSourceVariableCapability`** on your connector class. The sections below describe each method. For general connector concepts (isolation, runtime, `getConfigurationOptions`), see [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/).
+This page covers the additions a data connector needs in order to support the **Data Source Variable** use case. Set `dataSourceVariable: true` in `getCapabilities` and implement **`Data.DataSourceVariableCapability`** on your connector class. The sections below describe each method. For general connector concepts (isolation, runtime, `getConfigurationOptions`), see [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/).
 
 !!! warning "Required for DSV"
 
-    DSV support is an **opt-in extension** on top of a Data Connector. The CLI scaffold (`connector-cli new --type=data`) produces only the Output Data Source basics. Without `dataSourceVariable: true` in `getCapabilities` plus the methods described below, the Data Connector will **not** be selectable as the source for a Data Source Variable in Studio.
+    DSV support is an **opt-in extension** on top of a data connector. The CLI scaffold (`connector-cli new --type=data`) produces only the Output Data Source basics. Without `dataSourceVariable: true` in `getCapabilities` plus the methods described below, the data connector will **not** be selectable as the source for a Data Source Variable in Studio.
 
 !!! note "One connector, two use cases"
 
-    The same Data Connector can serve both use cases. Studio calls `getPage` for both; Output Data Source relies on forward paging via `continuationToken` only and does not call `getPageItemById`.
+    The same data connector can serve both use cases. Studio calls `getPage` for both; Output Data Source relies on forward paging via `continuationToken` only and does not call `getPageItemById`.
 
 ```typescript
 export default class MyConnector implements Data.DataConnector, Data.DataSourceVariableCapability {
@@ -137,7 +137,7 @@ async getModel(context: Connector.Dictionary): Promise<Data.DataSourceVariableDa
 
 Each row returned from `getPage` and `getPageItemById` must include `itemIdPropertyName` with a string-convertible value.
 
-Property types: `singleLine`, `multiLine`, `number`, `boolean`, and `date`. See [Template variable mapping](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/#getmodel-method) in Data Connector Fundamentals for how model types map to template variables.
+Property types: `singleLine`, `multiLine`, `number`, `boolean`, and `date`. See [Template variable mapping in Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/#getmodel-method) for how model types map to template variables.
 
 ## Next Steps
 

@@ -3,7 +3,7 @@
 You've built a connector! Congratulations.
 
 !!! info
-    PS If you are looking for documentation on "How to start building a connector", you need to be [here](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) for Media Connectors.
+    PS If you are looking for documentation on "How to start building a connector", you need to be [here](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/) for media connectors.
 
 ## Requirements
 
@@ -58,6 +58,6 @@ The team will review your submitted code and validate.
 Once the code and functionality is validated, the CHILI publish team will publish your connector. (merge the pull request)
 At the same time, the documentation pull request will also be published.
 
-Once the code is merged, the Connector will be available in the Connector Hub
+Once the code is merged, the connector will be available in the Connector Hub
 
-Your Connector is now available in the [Connector Hub](/GraFx-Studio/guides/connector-hub/)
+Your connector is now available in the [Connector Hub](/GraFx-Studio/guides/connector-hub/)

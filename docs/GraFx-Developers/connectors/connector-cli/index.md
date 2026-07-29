@@ -59,7 +59,7 @@ The debugger provides these globals from the connector runtime, so code that dep
 
 ## Connectors in the platform UI
 
-Connectors deployed via Connector CLI appear in the environment's Connectors settings page in a disabled state. The availability toggle is visible (showing the current state) but no edit actions are available. Hovering over the row shows a tooltip explaining that the connector must be managed via Connector CLI.
+Connectors deployed via Connector CLI appear in the environment's **Connectors** settings page in a disabled state. The availability toggle is visible (showing the current state) but no edit actions are available. Hovering over the row shows a tooltip explaining that the connector must be managed via Connector CLI.
 
 ## Github
 

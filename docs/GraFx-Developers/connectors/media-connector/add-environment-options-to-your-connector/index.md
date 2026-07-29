@@ -1,6 +1,6 @@
 # Add Environment (Runtime) Options to Your Connector
 
-This guide is about adding options that are set at the environment level for your Connector code. This is typically used of defining a value that will be shared among your Connector that is tied to every variable and document. For example, defining a base URL.
+This guide is about adding options that are set at the environment level for your connector code. This is typically used of defining a value that will be shared among your connector that is tied to every variable and document. For example, defining a base URL.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ This guide is about adding options that are set at the environment level for you
 
 ## Adding an Environment (Runtime) Option
 
-We'll add an option to define the base URL for the picsum.photos API that our Connector will use throughout the published environment.
+We'll add an option to define the base URL for the picsum.photos API that our connector will use throughout the published environment.
 
 Modify the `options` property in your `package.json` to add the new option:
 
@@ -83,7 +83,7 @@ async download(
 
 ## Publishing and Testing
 
-When publishing your Connector with the new environment option, include the `-ro` (required option) argument in your command.
+When publishing your connector with the new environment option, include the `-ro` (required option) argument in your command.
 
 We recommend publishing this as a new connector to test your changes. If you need a refresher on publishing a connector, refer to the [Build a Simple Media Connector](/GraFx-Developers/connectors/media-connector/build-a-simple-media-connector/#publishing-the-connector) guide or consult the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) documentation.
 
@@ -104,10 +104,10 @@ After publishing, test your connector as we did in [Add Configuratio Options To 
 
 By completing this guide, you have:
 
-- Added an environment-level option to your Connector configuration.
-- Modified your Connector code to utilize the new environment option.
-- Learned how to publish a Connector with required options using the Connector CLI.
-- Gained understanding of how environment options can be used to make your Connector more flexible and configurable.
+- Added an environment-level option to your connector configuration.
+- Modified your connector code to utilize the new environment option.
+- Learned how to publish a connector with required options using the Connector CLI.
+- Gained understanding of how environment options can be used to make your connector more flexible and configurable.
 
 ## Clean up
 
@@ -125,4 +125,4 @@ connector-cli delete \
 
 ## Next Steps
 
-1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on Connector functionality and best practices.
+1. Review the [Comprehensive Connector Documentation](/GraFx-Developers/connectors/connectors-introduction/) for in-depth information on connector functionality and best practices.

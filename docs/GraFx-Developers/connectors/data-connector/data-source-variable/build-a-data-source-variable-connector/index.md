@@ -4,7 +4,7 @@ This guide extends the Mockaroo-based connector from [Build a Simple Data Connec
 
 !!! warning "DSV is an opt-in extension"
 
-    A Data Connector built from the CLI scaffold supports the Output Data Source use case only. To make it usable as the source for a Data Source Variable in Studio, you must explicitly add `dataSourceVariable: true` to `getCapabilities`, a bidirectional `getPage`, a `getPageItemById`, and a `getModel` that returns `itemIdPropertyName` — the steps below walk through each one. Without these additions, the Data Connector will **not** be selectable as a DSV source.
+    A data connector built from the CLI scaffold supports the Output Data Source use case only. To make it usable as the source for a Data Source Variable in Studio, you must explicitly add `dataSourceVariable: true` to `getCapabilities`, a bidirectional `getPage`, a `getPageItemById`, and a `getModel` that returns `itemIdPropertyName` — the steps below walk through each one. Without these additions, the data connector will **not** be selectable as a DSV source.
 
 For the contract and type definitions, see [Data Connector Fundamentals — Data Source Variable use case](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/).
 
@@ -235,7 +235,7 @@ connector-cli update \
 3. With the variable selected, open the **Connector** tab and choose your newly published connector.
 4. Switch to **Run mode** and confirm that rows load, selection works, and forward and backward pagination behave as expected.
 
-If the connector does not appear on the Connector tab, confirm `dataSourceVariable: true` in `getCapabilities` and that the connector is enabled in your environment.
+If the connector does not appear on the **Connector** tab, confirm `dataSourceVariable: true` in `getCapabilities` and that the connector is enabled in your environment.
 
 ## Conclusion
 
