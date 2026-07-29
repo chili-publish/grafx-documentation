@@ -2,13 +2,13 @@
 
 Connectors are a flexible framework that seamlessly integrates GraFx Studio capabilities with third-party systems, enabling efficient workflow automation and data exchange. Currently, the data model focuses on importing external data into GraFx Studio.
 
-This comprehensive guide is designed for developers interested in building their own Connectors, providing essential information and best practices.
+This comprehensive guide is designed for developers interested in building their own connectors, providing essential information and best practices.
 
 See also: [The concept of connectors](/GraFx-Studio/concepts/connectors/)
 
 ## Prerequisites for Building a Connector
 
-To successfully create a Connector, you should have:
+To successfully create a connector, you should have:
 
 - Proficiency in modern JavaScript and familiarity with TypeScript
 - Node.js or Bun.js installed on your development environment
@@ -17,11 +17,11 @@ To successfully create a Connector, you should have:
 
 ## Why Build a Connector?
 
-Connectors are invaluable for organizations looking to leverage GraFx Studio while seamlessly integrating data from their existing systems. By building a Connector, you create a bridge between GraFx Studio and various external services, enhancing overall functionality and user experience.
+Connectors are invaluable for organizations looking to leverage GraFx Studio while seamlessly integrating data from their existing systems. By building a connector, you create a bridge between GraFx Studio and various external services, enhancing overall functionality and user experience.
 
 ### GraFx Studio and Connectors
 
-GraFx Studio offers an in-browser document editor, and Connectors allow users to effortlessly import information from external systems. This integration enables real-time template modifications during editing or output generation. For example, users can:
+GraFx Studio offers an in-browser document editor, and connectors allow users to effortlessly import information from external systems. This integration enables real-time template modifications during editing or output generation. For example, users can:
 
 - Pull images from a Digital Asset Management (DAM) system
 - Import pricing information from a Product Information Management (PIM) platform
@@ -29,7 +29,7 @@ GraFx Studio offers an in-browser document editor, and Connectors allow users to
 
 ### Ideal Services for Connectors
 
-The following types of services are particularly well-suited for Connector integration:
+The following types of services are particularly well-suited for connector integration:
 
 - Digital Asset Management (DAM) systems
 - Product Information Management (PIM) platforms
@@ -38,7 +38,7 @@ The following types of services are particularly well-suited for Connector integ
 
 ## Types of Connectors
 
-GraFx Studio currently supports two types of Connectors:
+GraFx Studio currently supports two types of connectors:
 
 ### Media Connectors
 
@@ -54,10 +54,10 @@ See also: [Concept of Data Connectors](/GraFx-Studio/concepts/connectors-data/)
 
 ## Getting Started
 
-If you're interested in building a Connector:
+If you're interested in building a connector:
 
-- For Media Connectors, please refer to our [Media Connector Introduction](/GraFx-Developers/connectors/media-connector/media-connector-introduction/) guide for detailed instructions and best practices.
-- For Data Connectors, please refer to our [Data Connector Introduction](/GraFx-Developers/connectors/data-connector/data-connector-introduction/) guide for detailed instructions and best practices.
+- For media connectors, please refer to our [Media Connector Introduction](/GraFx-Developers/connectors/media-connector/media-connector-introduction/) guide for detailed instructions and best practices.
+- For data connectors, please refer to our [Data Connector Introduction](/GraFx-Developers/connectors/data-connector/data-connector-introduction/) guide for detailed instructions and best practices.
 
 ### Steps to build your connector
 
@@ -69,7 +69,7 @@ If you're interested in building a Connector:
 ### Common Questions
 
 #### Q: Can Connectors be used to export data from GraFx Studio to external systems?
-A: Currently, Connectors are designed for importing data into GraFx Studio. The ability to export data is not available at this time.
+A: Currently, connectors are designed for importing data into GraFx Studio. The ability to export data is not available at this time.
 
 #### Q: How do I publish my Connector?
 A: See [Publish my Connector](/GraFx-Developers/connectors/publish-my-connector/)

@@ -222,7 +222,7 @@ You should see the mock user data displayed in the template
 
 ## Conclusion
 
-Congratulations! You've successfully built your first Data Connector for GraFx Studio. This connector allows you to integrate mock user data from Mockaroo into the GraFx Studio Designer Workspace.
+Congratulations! You've successfully built your first data connector for GraFx Studio. This connector allows you to integrate mock user data from Mockaroo into the GraFx Studio Designer Workspace.
 
 ### Key Accomplishments
 

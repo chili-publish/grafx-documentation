@@ -1,6 +1,6 @@
 # Data Connector Fundamentals
 
-A Data Connector is a JavaScript class that implements the `Data.DataConnector` interface, providing methods utilized by the Studio Engine and the Studio SDK. This guide offers a high-level overview of Data Connectors.
+A data connector is a JavaScript class that implements the `Data.DataConnector` interface, providing methods utilized by the Studio Engine and the Studio SDK. This guide offers a high-level overview of data connectors.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ A Data Connector is a JavaScript class that implements the `Data.DataConnector` 
 
 ## Isolation
 
-Data Connectors run in a limited isolated environment, which means they don't have access to many browser APIs or Node.js APIs. This isolation serves two primary purposes:
+Data connectors run in a limited isolated environment, which means they don't have access to many browser APIs or Node.js APIs. This isolation serves two primary purposes:
 
 1. **Security**: JavaScript runs on the server, so it's crucial that it cannot directly access APIs that could compromise customer data.
 2. **Performance**: By limiting available APIs, scripts remain small and easier to optimize for performance.
@@ -19,7 +19,7 @@ Due to this isolation, you cannot access the `window` object or many commonly us
 
 ## Runtime
 
-Instead of browser globals, Connectors use a `ConnectorRuntimeContext`, which is passed to the constructor of a Connector class. It's common practice to store this on a `runtime` property:
+Instead of browser globals, connectors use a `ConnectorRuntimeContext`, which is passed to the constructor of a connector class. It's common practice to store this on a `runtime` property:
 
 ```typescript
 export default class MyConnector implements Data.DataConnector {
@@ -35,7 +35,7 @@ The `runtime` object provides methods like `fetch` and `logError` to replace sim
 
 ## Connector Methods
 
-Your Data Connector class needs to implement four key methods:
+Your data connector class needs to implement four key methods:
 
 1. getCapabilities
 2. getConfigurationOptions
@@ -44,7 +44,7 @@ Your Data Connector class needs to implement four key methods:
 
 ### getCapabilities Method
 
-This method communicates to the SDK what features the Connector supports:
+This method communicates to the SDK what features the connector supports:
 
 ```typescript
 getCapabilities(): Data.DataConnectorCapabilities {
@@ -58,7 +58,7 @@ getCapabilities(): Data.DataConnectorCapabilities {
 
 ### getConfigurationOptions Method
 
-The `getConfigurationOptions` method allows Connector developers to define customizable settings that template designers can use to modify the behavior of the Connector.
+The `getConfigurationOptions` method allows connector developers to define customizable settings that template designers can use to modify the behavior of the connector.
 
 ```typescript
 getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
@@ -70,7 +70,7 @@ getConfigurationOptions(): Connector.ConnectorConfigValue[] | null {
 }
 ```
 
-When you define configuration options in this method, you're essentially telling the SDK, "My Connector supports these customization options." These values can then be accessed and utilized in other methods of your Connector through the `context` argument.
+When you define configuration options in this method, you're essentially telling the SDK, "My connector supports these customization options." These values can then be accessed and utilized in other methods of your connector through the `context` argument.
 
 ### getPage Method
 
@@ -127,7 +127,7 @@ The returned `DataModel` structure is used to define the types of data that your
 
 <!-- markdownlint-disable MD046 -->
 !!! Warning "Template variable mapping"
-    Data returned by a Data Connector can be mapped to template variables. Most supported schema types map 1:1, with a few exceptions.
+    Data returned by a data connector can be mapped to template variables. Most supported schema types map 1:1, with a few exceptions.
 
     There are no dedicated `image` or `list` types in the supported data model. To map data to an `Image Variable` or a `List Variable`, return that field as `singleLine`.
 
@@ -142,7 +142,7 @@ The returned `DataModel` structure is used to define the types of data that your
 
 ## Next Steps
 
-1. Follow the [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) tutorial to learn how to build your first Data Connector.
+1. Follow the [Build a Simple Data Connector](/GraFx-Developers/connectors/data-connector/build-a-simple-data-connector/) tutorial to learn how to build your first data connector.
 2. For the Data Source Variable use case (`dataSourceVariable` capability), see [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-source-variable/data-source-variable-fundamentals/) under **Data Source Variable** in the navigation.
-3. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your Connector.
+3. Review the [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for understanding how to add authorization to your connector.
 4. Explore the [Connector CLI](/GraFx-Developers/connectors/connector-cli/) documentation to learn about the tools available for connector development.
