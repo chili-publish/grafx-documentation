@@ -160,6 +160,8 @@ plugins:
         Connectors:
           - GraFx-Developers/connectors/connectors-introduction/index.md: "What connectors are - pluggable media and data sources for Studio templates"
           - GraFx-Developers/connectors/pre-requisites/index.md: "Prerequisites for building a connector"
+          - GraFx-Developers/connectors/connector-cli/index.md: "Connector CLI - create, build, debug, test, and publish connectors"
+          - GraFx-Developers/connectors/connector-cli/project-structure/index.md: "Connector project layout - entry point, local TypeScript modules, and config files"
           - GraFx-Developers/connectors/authorization-for-connectors/index.md: "How connector authentication works - OAuth2, static tokens, and auth flows"
           - GraFx-Developers/connectors/media-connector/media-connector-introduction/index.md: "Media connectors let Studio browse and use assets from any DAM or storage system"
           - GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md: "Core concepts for building a media connector"
@@ -664,7 +666,9 @@ nav:
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Connectors':
             - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
-            - 'Connector CLI': 'GraFx-Developers/connectors/connector-cli/index.md'
+            - 'Connector CLI':
+                - 'Overview': 'GraFx-Developers/connectors/connector-cli/index.md'
+                - 'Project structure': 'GraFx-Developers/connectors/connector-cli/project-structure/index.md'
             - 'Media Connectors':
                 - 'Introduction': 'GraFx-Developers/connectors/media-connector/media-connector-introduction/index.md'
                 - 'Media Connector Fundamentals': 'GraFx-Developers/connectors/media-connector/media-connector-fundamentals/index.md'
