@@ -72,6 +72,14 @@ The **Auto-sync toggle** controls whether the template stays aligned automatical
 
 Newly imported Brand Kits have auto-sync enabled by default.
 
+!!! info "Auto-sync can be switched off for the whole environment"
+    Whether templates may sync automatically is governed centrally. In **Environment Settings › General**, the **Brand Kit sync settings** card holds a single toggle, **Automatically update templates when Brand Kits change**:
+
+    - **On** (the default) — newly imported Brand Kits sync automatically, and an individual template can still switch its auto-sync toggle off.
+    - **Off** — newly imported Brand Kits do not sync automatically, and the template's auto-sync toggle is shown disabled, so a template cannot opt back in.
+
+    Manual sync is unaffected either way. Integrations can read and set this through `applicationsConfig.brand_kits.features.default_sync` on the environment settings endpoint.
+
 ### Manual sync
 
 The circular-arrows button next to the Brand Kit selector pulls the latest version of the source Brand Kit on demand. Hover shows the *Sync Brand Kit* tooltip. Useful when auto-sync is off, or to force an update in-session after a Brand Kit change.

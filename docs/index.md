@@ -14,13 +14,13 @@
 
     ---
   
-    **Jul 28, 2026**: Connector CLI v1.12.1
+    **Aug 3, 2026**: GraFx Studio: Data Source Variables
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — cleans up pasted asset IDs, and supports the global `sleep(ms)` helper.
+    A new **Data source** variable type holds a reference to a single record — from a data connector or injected by an integration — that the end user picks from a table or a dropdown. Component variables can now be mapped straight to its columns, and Brand Kit sync can be governed at environment level.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/03/grafx-studio-data-source-variables/)
 
     ---
 
@@ -31,6 +31,16 @@
     Connectors using OAuth 2.0 Authorization Code can now clear a user's own authorization session through a new logout endpoint — so you can reconnect as a different account without deleting and republishing the Connector.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/chili-grafx-environment-api-sign-out-of-a-connector-connection/)
+
+    ---
+
+    **Jul 28, 2026**: Connector CLI v1.12.1
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — cleans up pasted asset IDs, and supports the global `sleep(ms)` helper.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
 
     ---
 
@@ -61,16 +71,6 @@
     One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs — a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/14/chili-grafx-brand-kit-themes/)
-
-    ---
-
-    **Jul 10, 2026**: CHILI GraFx Environment API: Large output requests fix
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
 
     ---
 

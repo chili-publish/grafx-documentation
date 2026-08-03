@@ -148,6 +148,10 @@ A Placeholder to hold a numeric value. Different than a text variable, you can s
 
 A Placeholder to hold a date value. Different than a text variable, you can [set specific elements](../date/) related to dates.
 
+### Data source
+
+A reference to a single record from an external data source — a row from a connector, or a record supplied by an integration. The end user selects the record, and everything mapped to its columns updates at once. See [Data source variables](../data-source/).
+
 ## Variable settings
 
 ### Variable name
