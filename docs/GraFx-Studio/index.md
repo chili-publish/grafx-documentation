@@ -9,7 +9,7 @@ Got Questions?
 [Contact us about GraFx Studio](https://www.chili-publish.com/request-a-demo/)
 
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/HQ6qXDbnCys?si=IwVBsHy_5-uP6qFF&controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/rQ4jh4x7oto?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-See more videos on the [GraFx Studio Tutorials channel](https://www.youtube.com/watch?v=HQ6qXDbnCys&list=PLLHtQ1R6R-B9ciy4dwvnskHXQDOepNiSP)
+See more videos in the [Getting Started with GraFx Studio playlist](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
