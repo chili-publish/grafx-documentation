@@ -12,7 +12,7 @@ No authentication is required. If your CSV file is publicly reachable, the conne
 
 ## Installation
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/IvAuarBAiBo?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/IvAuarBAiBo?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Add the CSV Data Connector to CHILI GraFx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Getting Started with GraFx Studio — full course](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
 
@@ -55,7 +55,7 @@ The connector handles a wide range of real-world CSV files without any manual co
 
 ## Using the connector in a template
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/NIxvXryDzRA?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/NIxvXryDzRA?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Create a data source from an Excel or CSV file" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Getting Started with GraFx Studio — full course](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
 
@@ -150,7 +150,7 @@ Applied to any column that does not match the rules above, or any column where v
 
 ## CSV file guidelines
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/quoYAwkWXA0?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/quoYAwkWXA0?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Host your CSV file online" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Getting Started with GraFx Studio — full course](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
 

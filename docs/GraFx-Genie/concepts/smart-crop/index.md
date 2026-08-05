@@ -6,7 +6,7 @@ Smart Crop is the GraFx Genie capability that positions an image inside a frame 
 
 Smart Crop works across GraFx Media, GraFx Studio, and the platform settings. The step-by-step guide for each is linked below.
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/0t98I2ckuFE?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/0t98I2ckuFE?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="What Smart Crop is and how it differs from fill mode" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **More on Smart Crop, from the [Getting Started with GraFx Studio](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM) course:**
 

@@ -1,6 +1,6 @@
 # Upload fonts
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/9okRyIPa3RQ?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/9okRyIPa3RQ?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Upload and manage custom fonts in GraFx Fonts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Getting Started with GraFx Studio — full course](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
 

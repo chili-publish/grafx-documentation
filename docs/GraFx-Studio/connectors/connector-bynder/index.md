@@ -12,7 +12,7 @@ See [Bynder's website](https://www.bynder.com/en/products/digital-asset-manageme
 
 ## Installation
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/Cj4gMex9cJ4?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/Cj4gMex9cJ4?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Add the Bynder DAM connector to CHILI GraFx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Getting Started with GraFx Studio — full course](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
 
@@ -80,7 +80,7 @@ Consult your Bynder System Admin for assistance in configuring these fields.
 
 ## Using Assets from Your Bynder Dam
 
-<iframe width="690" height="388" src="https://www.youtube.com/embed/uP1h1m8xdic?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="690" height="388" src="https://www.youtube.com/embed/uP1h1m8xdic?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Access your Bynder DAM library from GraFx Studio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Getting Started with GraFx Studio — full course](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
 
