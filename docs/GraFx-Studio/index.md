@@ -12,4 +12,8 @@ Got Questions?
 <iframe width="800" height="450" src="https://www.youtube.com/embed/rQ4jh4x7oto?controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-See more videos in the [Getting Started with GraFx Studio playlist](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
+!!! tip "Follow the full course"
+    **Getting Started with GraFx Studio** is a 57-part course that builds a complete design system
+    for a grocery brand, then automates asset production across out-of-home, social, and display.
+
+    [:octicons-link-external-24: Watch the course on YouTube](https://www.youtube.com/playlist?list=PLOzpLl2aXHcM)
