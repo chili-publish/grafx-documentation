@@ -188,6 +188,7 @@ plugins:
           - GraFx-Studio/guides/image-frame/index.md: "Image frame properties, fit modes, crop, and user constraints"
           - GraFx-Studio/guides/layouts/index.md: "Creating and managing layouts"
           - GraFx-Studio/guides/pages/index.md: "Working with pages - add, duplicate, hide, delete"
+          - GraFx-Studio/guides/template-variables/data-source/index.md: "Data source variables - let an end user pick one record from a data connector and populate all mapped template variables from that row"
         GraFx Media:
           - GraFx-Media/index.md: "GraFx Media overview - the built-in DAM for storing and managing brand assets"
         Release notes:
@@ -485,12 +486,12 @@ nav:
             - 'Define template variables':      'GraFx-Studio/guides/template-variables/define/index.md'
             - 'Variable Visibility Conditions': 'GraFx-Studio/guides/template-variables/visibility/index.md'
             - 'Add template variables':         'GraFx-Studio/guides/template-variables/assign/index.md'
-            - 'Data source variables':          'GraFx-Studio/guides/template-variables/data-source/index.md'
             - 'Date variables':                 'GraFx-Studio/guides/template-variables/date/index.md'
             - 'Image variables':                'GraFx-Studio/guides/template-variables/image/index.md'
             - 'Multi-line text variables':      'GraFx-Studio/guides/template-variables/multi-line-text/index.md'
             - 'Single-line text variables':     'GraFx-Studio/guides/template-variables/single-line-text/index.md'
             - 'Number variables':               'GraFx-Studio/guides/template-variables/number/index.md'
+            - 'Data source variables':          'GraFx-Studio/guides/template-variables/data-source/index.md'
             - 'Variables private data':         'GraFx-Studio/guides/template-variables-private-data/index.md'
             - 'Create Actions':                 'GraFx-Studio/guides/actions/create/index.md'
             - 'Write Actions Javascript':       'GraFx-Studio/guides/actions/javascript/index.md'

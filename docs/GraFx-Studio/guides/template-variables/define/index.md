@@ -150,7 +150,9 @@ A Placeholder to hold a date value. Different than a text variable, you can [set
 
 ### Data source
 
-A reference to a single record from an external data source — a row from a connector, or a record supplied by an integration. The end user selects the record, and everything mapped to its columns updates at once. See [Data source variables](../data-source/).
+A table of records with one row selected. Instead of holding a single value, it lets the end user pick a row — a product, a store, a customer — which components in the template can then read from.
+
+Data comes either from a [data connector](/GraFx-Studio/concepts/connectors-data/) or is pushed in by an integration. See [Data source variables](../data-source/).
 
 ## Variable settings
 
