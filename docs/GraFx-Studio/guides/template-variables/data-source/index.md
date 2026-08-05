@@ -1,8 +1,12 @@
 # Data source variables
 
-A **data source variable** holds a table of records and remembers which one is selected. Instead of typing a product name, price and description into three separate variables, the end user picks one row — "Apple, 0.60 euro" — and everything mapped to that data source updates at once.
+Picture a local marketeer opening a template to customise a promotion. The document has three product slots to fill, each one a [component](/GraFx-Studio/guides/use-components/) with its own name, price and image. Filling those by hand means typing every field for every product — and getting each one exactly right.
 
-The records come from an external system, and the variable keeps only a reference to the selected row. That makes it the right tool for self-service work: pick your store, pick your product, get your poster.
+A **data source variable** turns that into a single choice. The marketeer picks a row from a dataset — one product — and that product's name, price and image flow into the component the designer mapped it to. Three picks, three filled promotions, nothing typed by hand.
+
+That is what a data source variable does: it links to a set of records, keeps a **reference to the one row the user selected**, and feeds that row's values into the template — in most cases through a [component](/GraFx-Studio/guides/use-components/).
+
+The records come from an external system: pulled through a data connector, or pushed in by an integration. The variable stores only the reference to the selected row, not a copy of the data — which is what makes it the right tool for self-service work: pick your product, get your poster.
 
 !!! info "Template Variables"
     When referring to **variables** we can mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](/GraFx-Studio/concepts/variables/#javascript-variables)**. On this page we are talking about Template variables.
