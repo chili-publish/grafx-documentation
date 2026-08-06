@@ -20,3 +20,13 @@ Elements are defined on the Brand Kit's default [theme](/GraFx-Brand-Kits/concep
     So while we don't use the token terminology, a Brand Kit is fully compatible with a token-based design system.
 
 ![screenshot-full](brandkits_01.png)
+
+## Descriptions
+
+Media and colors can carry an optional **description**: a short, free-text explanation of what the element is for — "primary logo, for light backgrounds", or "accent color, reserved for calls to action". Names identify an element; descriptions say when to reach for it.
+
+Descriptions are read by automation as much as by people. [GraFx Genie](/GraFx-Genie/) uses them to pick the right asset or color for a given context, where a name on its own would be ambiguous.
+
+A description belongs to the element itself rather than to a [theme](/GraFx-Brand-Kits/concepts/themes/): it is set on the default theme and shared by every theme of the Brand Kit.
+
+Descriptions are managed through the Brand Kit endpoints of the Environment API.

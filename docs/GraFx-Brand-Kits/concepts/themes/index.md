@@ -17,6 +17,7 @@ If you come from a design-token world: themes are the value-mapping layer. The s
 !!! info "Good to know"
     - **The font list is shared across all themes** — by design, a theme does not add or remove fonts. Styles, however, can be overridden per theme to use a different font from the shared list.
     - The **structure** of a Brand Kit (adding, renaming, removing elements) is managed on the default theme; other themes override values only.
+    - **Descriptions of media and colors are shared across all themes** — a description explains what an element is for, so it is set on the default theme and read-only elsewhere. See [Elements](/GraFx-Brand-Kits/concepts/elements/#descriptions).
 
 ## Why themes
 
