@@ -17,7 +17,7 @@
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    Media and colors in a Brand Kit now take an optional `description` explaining what the element is for — shared across all themes, and used by GraFx Genie to pick the right logo or color for a given context.
+    Media and colors in a Brand Kit now take an optional `description` that explains what the element is for. The description is shared across all themes and is managed through the Environment API.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/06/chili-grafx-environment-api-descriptions-for-brand-kit-media-and-colors/)
 
@@ -27,7 +27,7 @@
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    Connectors using OAuth 2.0 Authorization Code can now clear a user's own authorization session through a new logout endpoint — so you can reconnect as a different account without deleting and republishing the Connector.
+    Connectors using OAuth 2.0 Authorization Code can now clear a user's own authorization session through a new logout endpoint, so you can reconnect as a different account without deleting and republishing the Connector.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/chili-grafx-environment-api-sign-out-of-a-connector-connection/)
 
@@ -37,7 +37,7 @@
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — cleans up pasted asset IDs, and supports the global `sleep(ms)` helper.
+    The connector debugger now reports execution metrics for every method invocation, including duration and every outgoing `fetch` call. It also cleans up pasted asset IDs and supports the global `sleep(ms)` helper.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
 
@@ -47,7 +47,7 @@
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
 
-    PDF output settings can now convert RGB content to the target CMYK profile as a complementary step to CMYK conversion — with an RGB source profile dropdown for unmanaged colors, in the UI and via `postProcessing.colorTransformation` in the Environment API.
+    PDF output settings can now convert RGB content to the target CMYK profile as a complementary step to CMYK conversion, with an RGB source profile dropdown for unmanaged colors. Available in the UI and via `postProcessing.colorTransformation` in the Environment API.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/22/grafx-studio-convert-rgb-colors-to-cmyk-in-pdf-output/)
 
@@ -57,7 +57,7 @@
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    From GraFx Studio 1.46.0, superscript and subscript text follows the metrics built into each font instead of a single fixed style — review templates that use this formatting before adopting the new version.
+    From GraFx Studio 1.46.0, superscript and subscript text follows the metrics built into each font instead of a single fixed style. Review templates that use this formatting before adopting the new version.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/15/upcoming-change-superscript-and-subscript-rendering-in-grafx-studio/)
 
@@ -67,7 +67,7 @@
 
     ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
 
-    One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs — a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
+    One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs, such as a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/14/chili-grafx-brand-kit-themes/)
 

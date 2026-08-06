@@ -23,10 +23,8 @@ Elements are defined on the Brand Kit's default [theme](/GraFx-Brand-Kits/concep
 
 ## Descriptions
 
-Media and colors can carry an optional **description**: a short, free-text explanation of what the element is for — "primary logo, for light backgrounds", or "accent color, reserved for calls to action". Names identify an element; descriptions say when to reach for it.
+Media and colors can carry an optional **description**: a short, free-text explanation of what the element is for, such as "primary logo, for light backgrounds" or "accent color, reserved for calls to action". A name identifies an element; a description tells you when to use it.
 
-Descriptions are read by automation as much as by people. [GraFx Genie](/GraFx-Genie/) uses them to pick the right asset or color for a given context, where a name on its own would be ambiguous.
+A description belongs to the element itself rather than to a [theme](/GraFx-Brand-Kits/concepts/themes/). You set it on the default theme, and every theme of the Brand Kit shares it.
 
-A description belongs to the element itself rather than to a [theme](/GraFx-Brand-Kits/concepts/themes/): it is set on the default theme and shared by every theme of the Brand Kit.
-
-Descriptions are managed through the Brand Kit endpoints of the Environment API.
+You manage descriptions through the Brand Kit endpoints of the Environment API.
