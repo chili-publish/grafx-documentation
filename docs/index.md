@@ -11,9 +11,18 @@
 
 -   :material-clock-fast: **Release Notes**
 
+    ---
+
+    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
 
     ---
-  
+
     **Jul 28, 2026**: Connector CLI v1.12.1
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -64,21 +73,12 @@
 
     ---
 
-    **Jul 10, 2026**: CHILI GraFx Environment API: Large output requests fix
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
-
-    ---
-
     **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
 </div>
+
 ## The Platform & Applications
 
 <div class="grid cards" markdown>
