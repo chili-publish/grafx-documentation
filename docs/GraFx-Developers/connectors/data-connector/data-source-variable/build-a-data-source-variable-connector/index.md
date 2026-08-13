@@ -58,7 +58,7 @@ The property names must match the keys you return on each `DataItem` from `getPa
 
 Mockaroo's free API does not support cursor-based pagination. For this tutorial, fetch a larger batch once, keep it in memory for the request lifecycle, and use **opaque tokens** that encode a numeric offset.
 
-Add helpers at the top of your connector class (or in the same file):
+Add these helpers at the top of your `connector.ts` file, outside the connector class, or in a local `.ts` helper module (see [Project structure](/GraFx-Developers/connectors/connector-cli/project-structure/)):
 
 ```typescript
 const TOTAL_MOCK_RECORDS = 200;

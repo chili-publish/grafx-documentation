@@ -71,7 +71,7 @@ Before we begin, you'll need to set up a Mockaroo account, create a schema, and 
         bun install
         ```
 
-4. Open `connector.ts` as this is the main connector file we will be modifying.
+4. Open `connector.ts` as this is the main connector file we will be modifying. (You can split helpers into other local `.ts` files later — see [Project structure](/GraFx-Developers/connectors/connector-cli/project-structure/).)
 
 ## Modifying the getPage Method
 

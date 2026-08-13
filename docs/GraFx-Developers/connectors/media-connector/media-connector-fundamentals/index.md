@@ -15,7 +15,7 @@ Media connectors run in a limited isolated environment, which means they don't h
 1. **Security**: JavaScript runs on the server, so it's crucial that it cannot directly access APIs that could compromise customer data.
 2. **Performance**: By limiting available APIs, scripts remain small and easier to optimize for performance.
 
-Due to this isolation, you cannot access the `window` object or many commonly used methods like `console.log`.
+Due to this isolation, you cannot access the `window` object or many commonly used methods like `console.log`. You also cannot import arbitrary npm packages — only local project `.ts` modules and `@chili-publish/studio-connectors` are allowed at build time. See [Connector CLI](/GraFx-Developers/connectors/connector-cli/).
 
 ## Runtime
 
