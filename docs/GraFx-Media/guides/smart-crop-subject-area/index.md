@@ -38,7 +38,9 @@ If you want the image to focus on a different subject, you can manually adjust t
 
 ![screenshot-full](sc8.png){.screenshot}
 
-In both cases, the preview images show the effect of your choice across 5 different aspect ratios.
+In both cases, the preview images show the effect of your choice across 5 different aspect ratios. The previews update continuously while you drag a Subject Area or Point of Interest handle, so you can see the result as you position it rather than only after releasing.
+
+Dragging the Point of Interest toward the middle of the Subject Area snaps it to the center. Dotted guides appear while you drag, and only when the Point of Interest is actually aligned with the middle.
 
 ![screenshot](sc9.png){.screenshot}
 

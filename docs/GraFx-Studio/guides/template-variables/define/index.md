@@ -148,6 +148,12 @@ A Placeholder to hold a numeric value. Different than a text variable, you can s
 
 A Placeholder to hold a date value. Different than a text variable, you can [set specific elements](../date/) related to dates.
 
+### Data source
+
+A table of records with one row selected. Instead of holding a single value, it lets the end user pick a row — a product, a store, a customer — which components in the template can then read from.
+
+Data comes either from a [data connector](/GraFx-Studio/concepts/connectors-data/) or is pushed in by an integration. See [Data source variables](../data-source/).
+
 ## Variable settings
 
 ### Variable name
