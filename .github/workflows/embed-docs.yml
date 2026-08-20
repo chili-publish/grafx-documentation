@@ -17,9 +17,10 @@ on:
         required: false
         default: ""
 
-# Least-privilege, matching the repo default. This job only reads the repo and
-# calls OpenAI; it needs no write scopes.
+# Least-privilege: embedding reads the repo, and the reusable ingest workflow
+# reads the artifact produced by this run.
 permissions:
+  actions: read
   contents: read
 
 jobs:
@@ -54,3 +55,12 @@ jobs:
           name: doc-records
           path: build/doc_records.jsonl
           retention-days: 7
+
+  ingest-main:
+    name: Ingest documentation embeddings to MAIN
+    needs: embed
+    uses: chili-publish/grafx-genie/.github/workflows/docs-ingest.yml@main
+    secrets: inherit
+    with:
+      artifact-name: doc-records
+      target: MAIN
