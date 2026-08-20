@@ -2,8 +2,8 @@ name: Embed docs for AI search
 
 # Manual only. A full re-embed of the site costs real OpenAI usage, so this
 # never runs on push/PR — trigger it deliberately from the Actions tab. The
-# produced JSONL artifact feeds grafx-genie's documentation vector store
-# (AIML-36) via scripts/load_doc_embeddings.py.
+# produced JSONL artifact is handed to grafx-genie's private ingest workflow
+# (AIML-36) through a GitHub App-authenticated workflow dispatch.
 #
 # Per AIML-37 this embeds ALL products including GraFx-Publisher, which the
 # public search box excludes (see hooks.py EXCLUDE_PREFIXES). The AI store
@@ -17,10 +17,9 @@ on:
         required: false
         default: ""
 
-# Least-privilege: embedding reads the repo, and the reusable ingest workflow
-# reads the artifact produced by this run.
+# The repository token is only used to check out this public repository. The
+# private cross-repository dispatch uses a separately scoped GitHub App token.
 permissions:
-  actions: read
   contents: read
 
 jobs:
@@ -56,11 +55,34 @@ jobs:
           path: build/doc_records.jsonl
           retention-days: 7
 
-  ingest-main:
-    name: Ingest documentation embeddings to MAIN
+  dispatch-ingest-main:
+    name: Dispatch documentation ingest to MAIN
     needs: embed
-    uses: chili-publish/grafx-genie/.github/workflows/docs-ingest.yml@main
-    secrets: inherit
-    with:
-      artifact-name: doc-records
-      target: MAIN
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ vars.GH_APP_ID_CHILI_INFRA_WORKFLOW_DISPATCHER }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY_CHILI_INFRA_WORKFLOW_DISPATCHER }}
+          owner: ${{ github.repository_owner }}
+          repositories: grafx-genie
+          permission-actions: write
+
+      - name: Dispatch private ingest workflow
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: 'grafx-genie',
+              workflow_id: 'docs-ingest.yml',
+              ref: 'main',
+              inputs: {
+                'artifact-name': 'doc-records',
+                'artifact-run-id': '${{ github.run_id }}',
+                target: 'MAIN',
+              },
+            })
