@@ -113,6 +113,8 @@ Select the version required by your production partner.
 
 Enable **Convert CMYK colors** to activate color transformation during export.
 
+This applies to every CMYK color in the template, including the pixel data of placed CMYK images. Spot colors are not converted — they stay separate inks.
+
 When enabled, you must define:
 
 - **Intended CMYK profile** (required)  
@@ -152,6 +154,21 @@ Available RGB source profiles:
 - SDTV PAL
 - SMPTE-C
 - sRGB IEC61966-2.1
+
+#### What gets converted
+
+| Content | Convert CMYK colors | Also converting RGB to CMYK |
+|---------|---------------------|-----------------------------|
+| CMYK colors in text and vector elements | Converted | Converted |
+| Placed CMYK images | Converted | Converted |
+| RGB colors in text and vector elements | Not converted | Converted |
+| Placed RGB images | Not converted | Converted |
+| Embedded RGB profiles | Kept | Replaced by the target profile |
+| Spot colors | Kept as separate inks | Kept as separate inks |
+
+Conversion changes color values only. Images keep their original pixel dimensions, and are not resampled.
+
+Content inside a placed PDF is converted in the same way as content you place directly in a frame.
 
 For a deeper explanation of color management concepts, see:
 
