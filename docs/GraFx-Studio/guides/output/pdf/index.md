@@ -46,12 +46,18 @@ When you place a PDF as an asset inside an image frame, its content is embedded 
 | Spot colors | Stay separate inks, so they still separate correctly for print |
 | Transparency and blend modes | Kept, including transparency placed over a spot color |
 | Overprint | Kept, as described below |
-| Layers | Optional content groups are carried into the output document |
-| Images inside the PDF | Kept at their original resolution, and are not resampled |
-| Color profiles | Carried over with the content they apply to |
+| Layers | Optional content groups are carried into the output document, except when you convert the output to PDF 1.4 |
+| Images inside the PDF | Kept at their original resolution, and are not resampled. Color conversion can change their color values |
+| Color profiles | Carried over with the content they apply to, unless color conversion replaces them |
 
 !!! info "Overprint"
     Overprint statements inside embedded PDF assets are preserved in the final output — the overprint behavior of the source PDF is kept in the exported document.
+
+!!! warning "Color management"
+    Color conversion applies to placed PDFs too. With **Convert all CMYK colors** enabled in your [output settings](/GraFx-Studio/guides/output/settings/#color-management), the CMYK colors inside a placed PDF are converted to the target profile. Enabling **Convert RGB colors to CMYK** converts its RGB colors, images, and embedded RGB profiles as well. The content stays vector — only the color values change.
+
+!!! warning "Converting to PDF 1.4"
+    PDF 1.4 does not support layers. If you set **Convert to version** to PDF 1.4 in your [output settings](/GraFx-Studio/guides/output/settings/#pdf-output-conversion), the layers of a placed PDF are removed. The artwork on those layers is still drawn, and everything else in this table is unaffected.
 
 ### What is not preserved
 
