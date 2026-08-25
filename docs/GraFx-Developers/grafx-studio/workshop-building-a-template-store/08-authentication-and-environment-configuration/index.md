@@ -135,7 +135,7 @@ This is generic code that will allow us to generate a token, but note that we ha
 - One for our frontend, which we will call "readonly" in our code base because it has only readonly permissions
 
 
-## 5. Function For Getting Our Danergous Token
+## 5. Function For Getting Our Dangergous Token
 
 Within `utility.js`, we will use the `getToken` function from `chili.js` to implement token generation and handling logic.
 
