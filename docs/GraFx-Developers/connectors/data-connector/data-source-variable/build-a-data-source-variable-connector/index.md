@@ -237,6 +237,8 @@ connector-cli update \
 
 If the connector does not appear on the **Connector** tab, confirm `dataSourceVariable: true` in `getCapabilities` and that the connector is enabled in your environment.
 
+For the full template-designer workflow — including mapping the connector's columns to template variables — see [Data source variables](/GraFx-Studio/guides/template-variables/data-source/).
+
 ## Conclusion
 
 You added `dataSourceVariable: true`, bidirectional `getPage`, `getPageItemById`, and `getModel` with `itemIdPropertyName` to your connector.
