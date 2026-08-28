@@ -32,6 +32,16 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
 
     ---
+  
+    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
+
+    ---
 
     **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
 
@@ -62,7 +72,7 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/03/grafx-studio-data-source-variables/)
 
     ---
-
+  
     **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
