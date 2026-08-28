@@ -1,19 +1,26 @@
 # Data source variables
 
+A **data source variable** is a variable type that sources data from an external system — a PIM, a CRM, an ERP — and makes it available inside the template for the end user to choose from. It presents that data as a table of records and keeps a **reference to the one row the user selected**.
+
+!!! warning "Data source variables work only with components"
+    The values of the selected row reach your design by being mapped to the variables of a [component](/GraFx-Studio/guides/use-components/) placed in the template. There is no way to feed a data source variable into a plain text or image frame directly.
+
+    So before a data source variable is of any use, the content it should fill has to be built as a component. See [Use a record to fill a component](#use-a-record-to-fill-a-component).
+
+The records are either pulled in through a data connector or pushed in by an integration. The variable stores only the reference to the selected row, not a copy of the data, which is what makes it the right tool for self-service work: pick your product, get your poster.
+
+!!! info "Template Variables"
+    When referring to **variables** we can mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](/GraFx-Studio/concepts/variables/#javascript-variables)**. On this page we are talking about Template variables.
+
+## A typical use case
+
 Picture a local marketeer opening a template to customise a promotion. The document has three product slots to fill, each one a [component](/GraFx-Studio/guides/use-components/) with its own name, price and image. Filling those by hand means typing every field for every product — and getting each one exactly right.
 
 ![Overview picture](ds01.png){.screenshot-full}
 
-A **data source variable** turns that into a single choice. The marketeer picks a row from a dataset — one product — and that product's name, price and image flow into the component the designer mapped it to. Three picks, three filled promotions, nothing typed by hand.
+A data source variable turns that into a single choice. The marketeer picks a row from a dataset — one product — and that product's name, price and image flow into the component the designer mapped it to. Three picks, three filled promotions, nothing typed by hand.
 
 ![Select a row from a data source](ds02.png){.screenshot-full}
-
-That is what a data source variable does: it links to a set of records, keeps a **reference to the one row the user selected**, and feeds that row's values into the template — in most cases through a [component](/GraFx-Studio/guides/use-components/).
-
-The records come from an external system: pulled through a data connector, or pushed in by an integration. The variable stores only the reference to the selected row, not a copy of the data — which is what makes it the right tool for self-service work: pick your product, get your poster.
-
-!!! info "Template Variables"
-    When referring to **variables** we can mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)** or **[JavaScript variables](/GraFx-Studio/concepts/variables/#javascript-variables)**. On this page we are talking about Template variables.
 
 ## Not the same as an output data source
 
@@ -33,7 +40,7 @@ A template can use both together. See [Data connectors](/GraFx-Studio/concepts/c
 A data source variable is populated in one of two ways, chosen per variable:
 
 - **Connector** (default) — GraFx Studio *pulls* the data through a [data connector](/GraFx-Developers/connectors/data-connector/data-connector-introduction/). Use this when the data lives in a system you can reach: a PIM, a CRM, a spreadsheet, an API.
-- **Data injection** — an integration *pushes* the data in via the SDK. Use this when the surrounding application already has the data in hand and routing it through a connector would be a detour.
+- **Data injection** — the records are handed to the template by the application that embeds GraFx Studio. Nothing is fetched: the integration *pushes* a set of rows in through the SDK at runtime, and you declare the columns yourself so the template knows their shape. Use this when the surrounding application already has the data in hand and routing it through a connector would be a detour.
 
 Both end up in the same place: a table of rows with a selected row. Only the plumbing differs.
 
@@ -124,7 +131,7 @@ From then on:
 
 ## Use a record to fill a component
 
-The most direct payoff of a data source variable is filling a [component](/GraFx-Studio/guides/use-components/) from one record. A component exposes its own variables; instead of mapping each to a template variable and populating those one by one, you map them straight to the **columns of the data source variable**. Select one record, and the whole component updates — a product card taking its name, price, and image from the row the end user picked.
+This is how a data source variable actually reaches your design, and it is the only route: a [component](/GraFx-Studio/guides/use-components/) is filled from one record. A component exposes its own variables; instead of mapping each to a template variable and populating those one by one, you map them straight to the **columns of the data source variable**. Select one record, and the whole component updates — a product card taking its name, price, and image from the row the end user picked.
 
 Select the component frame, then click **Manage mapping** in the **Component** section of the properties panel. The button is disabled — with the tooltip *"Select a component to enable mapping."* — until a component is selected.
 
