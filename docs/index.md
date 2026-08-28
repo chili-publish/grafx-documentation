@@ -11,8 +11,19 @@
 
 -   :material-clock-fast: **Release Notes**
 
+
     ---
 
+    **Aug 11, 2026**: Upcoming Planned Downtime: 14 September 2026
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    On Monday 14 September we perform infrastructure updates that require a brief period of server downtime. Check the schedule for the region your GraFx environments run in.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
+
+    ---
+  
     **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -23,53 +34,33 @@
 
     ---
 
-    **Jul 28, 2026**: Connector CLI v1.12.1
+    **Aug 06, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit media and colors
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — cleans up pasted asset IDs, and supports the global `sleep(ms)` helper.
+    Media and colors in a Brand Kit now take an optional `description`, a free-text explanation of what the element is for. Descriptions are set on the default theme and shared across all themes.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/06/chili-grafx-environment-api-descriptions-for-brand-kit-media-and-colors/)
 
     ---
 
+    **Aug 03, 2026**: GraFx Studio: Data Source Variables
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    A new **Data source** variable type holds a reference to a single record, from a data connector or injected by an integration, that the end user picks from a table or a dropdown. Component variables can be mapped straight to its columns.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/03/grafx-studio-data-source-variables/)
+
+    ---
+  
     **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
 
-    Connectors using OAuth 2.0 Authorization Code can now clear a user's own authorization session through a new logout endpoint — so you can reconnect as a different account without deleting and republishing the Connector.
+    A new logout endpoint ends the calling user's own OAuth 2.0 Authorization Code session for a Connector, so you can re-authorize as a different account without deleting and republishing the Connector.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/chili-grafx-environment-api-sign-out-of-a-connector-connection/)
-
-    ---
-
-    **Jul 22, 2026**: GraFx Studio: Convert RGB Colors to CMYK in PDF Output
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    PDF output settings can now convert RGB content to the target CMYK profile as a complementary step to CMYK conversion — with an RGB source profile dropdown for unmanaged colors, in the UI and via `postProcessing.colorTransformation` in the Environment API.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/22/grafx-studio-convert-rgb-colors-to-cmyk-in-pdf-output/)
-
-    ---
-
-    **Jul 15, 2026**: Upcoming Change: Superscript and Subscript Rendering in GraFx Studio
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    From GraFx Studio 1.46.0, superscript and subscript text follows the metrics built into each font instead of a single fixed style — review templates that use this formatting before adopting the new version.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/15/upcoming-change-superscript-and-subscript-rendering-in-grafx-studio/)
-
-    ---
-
-    **Jul 14, 2026**: CHILI GraFx: Brand Kit Themes
-
-    ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
-
-    One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs — a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/14/chili-grafx-brand-kit-themes/)
 
     ---
 

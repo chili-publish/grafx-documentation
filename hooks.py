@@ -3,10 +3,13 @@ import os
 import re
 from datetime import date
 
-# Remove GraFx Publisher from search. Pages stay published; they're just kept
-# out of the local search box, marked noindex for Google, and dropped from the
-# sitemap.
-EXCLUDE_PREFIXES = ("GraFx-Publisher/",)
+# Remove GraFx Publisher and unlisted landing pages from search. Pages stay
+# published; they're just kept out of the local search box, marked noindex for
+# Google, and dropped from the sitemap.
+#
+# "landing/" holds direct-link landing pages: not in the nav, not in search,
+# not indexed. Anything dropped in docs/landing/ is covered automatically.
+EXCLUDE_PREFIXES = ("GraFx-Publisher/", "landing/")
 
 NOINDEX_META = '<meta name="robots" content="noindex, nofollow">'
 
