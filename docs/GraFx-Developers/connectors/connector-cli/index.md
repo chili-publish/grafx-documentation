@@ -22,6 +22,37 @@ connector-cli -h
 
 This will give you an overview of the available commands
 
+## Project structure
+
+!!! note "Requires Connector CLI 1.13.0 or later"
+
+    Support for multiple `*.ts` files in a connector project was added in Connector CLI 1.13.0.
+
+Connector projects use `connector.ts` as the entry point and may include additional local `.ts` helper modules. The CLI bundles them into a single `out/connector.js`. See [Project structure](/GraFx-Developers/connectors/connector-cli/project-structure/) for the full layout.
+
+When the CLI builds your project, only these imports are allowed:
+
+1. **Relative / local project `.ts` files** — e.g. `./helpers`, `../utils/format`
+2. **`@chili-publish/studio-connectors`** — types and interfaces for the connector runtime
+
+Any other npm or third-party package is rejected at compile time.
+
+## Build a connector
+
+```bash
+connector-cli build
+```
+
+Compiles the project to `out/connector.js`. On a one-shot build, a compile failure exits with an error.
+
+### Watch mode
+
+```bash
+connector-cli build -w
+```
+
+Recompiles when any project `.ts` file changes. If a save introduces a compile error, the CLI logs the diagnostics and **keeps watching** — it does not exit.
+
 ## Debug a connector
 
 The `debug` command starts a local debug server with a browser-based debugger, where you can invoke your connector's methods and inspect what they return — without publishing anything to an environment first.
@@ -34,7 +65,7 @@ Open the reported URL in your browser, fill in the parameters for the method you
 
 ### Watch mode
 
-The debug application always runs in watch mode: the CLI recompiles `connector.ts` whenever you save it and reloads the browser tab, so your changes are immediately testable. There is no flag to turn this off.
+The debug application always runs in watch mode: the CLI recompiles whenever you save any project `.ts` file and reloads the browser tab, so your changes are immediately testable. There is no flag to turn this off. Compile errors are logged in the terminal; the previous successful build remains loaded until the next successful recompile.
 
 ### Execution metrics
 

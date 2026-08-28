@@ -100,11 +100,21 @@ When the rolling average exceeds the render quota, you will be invoiced an extra
 
 We take your **contractual** rolling average and compare to quota.
 
+The average is calculated over a rolling window of days rather than calendar months, so it doesn't shift with the length of the month. The window moves every day: one day drops off the back as today is added at the front.
+
 !!! Average calculation
 
-	E.g. 6 months rolling average calculation: Total of past 6 months divided by 6
+	E.g. 6 months rolling average calculation: Total of past 183 days divided by 6
 	
-	E.g. 3 months rolling average calculation: Total of past 3 months divided by 3
+	E.g. 3 months rolling average calculation: Total of past 91 days divided by 3
+
+The Platform API reports both your average and the number of days it was calculated over:
+
+```
+GET /api/v1/subscriptions/{subscriptionId}
+```
+
+The `averageRendersPeriodDays` property returns the averaging period that applies to your subscription.
 
 ### What if I need a temporary burst?
 

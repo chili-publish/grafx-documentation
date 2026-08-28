@@ -68,6 +68,8 @@ The dropdown lists **Default** plus every subject type defined on the environmen
 
 The dropdown is only active when an image is placed on the frame. If a previously selected subject type is no longer available on the environment, the frame falls back to **Default**.
 
+When the environment defines no subject types beyond **Default**, the dropdown is hidden from the properties panel entirely, since there is nothing to choose. It stays visible in the image details panel and in GraFx Media even then, so the feature remains discoverable while editing an asset's Subject Area and POI.
+
 See [Manage Subject Types](/CHILI-GraFx/guides/manage-subject-types/) for how the list is configured.
 
 ## Feature Channel

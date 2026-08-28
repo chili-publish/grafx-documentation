@@ -58,7 +58,7 @@ The property names must match the keys you return on each `DataItem` from `getPa
 
 Mockaroo's free API does not support cursor-based pagination. For this tutorial, fetch a larger batch once, keep it in memory for the request lifecycle, and use **opaque tokens** that encode a numeric offset.
 
-Add helpers at the top of your connector class (or in the same file):
+Add these helpers at the top of your `connector.ts` file, outside the connector class, or in a local `.ts` helper module (see [Project structure](/GraFx-Developers/connectors/connector-cli/project-structure/)):
 
 ```typescript
 const TOTAL_MOCK_RECORDS = 200;
@@ -236,6 +236,8 @@ connector-cli update \
 4. Switch to **Run mode** and confirm that rows load, selection works, and forward and backward pagination behave as expected.
 
 If the connector does not appear on the **Connector** tab, confirm `dataSourceVariable: true` in `getCapabilities` and that the connector is enabled in your environment.
+
+For the full template-designer workflow — including mapping the connector's columns to template variables — see [Data source variables](/GraFx-Studio/guides/template-variables/data-source/).
 
 ## Conclusion
 
