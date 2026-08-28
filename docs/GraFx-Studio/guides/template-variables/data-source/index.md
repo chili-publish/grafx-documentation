@@ -2,7 +2,11 @@
 
 Picture a local marketeer opening a template to customise a promotion. The document has three product slots to fill, each one a [component](/GraFx-Studio/guides/use-components/) with its own name, price and image. Filling those by hand means typing every field for every product — and getting each one exactly right.
 
+![Overview picture](ds01.png){.screenshot-full}
+
 A **data source variable** turns that into a single choice. The marketeer picks a row from a dataset — one product — and that product's name, price and image flow into the component the designer mapped it to. Three picks, three filled promotions, nothing typed by hand.
+
+![Select a row from a data source](ds02.png){.screenshot-full}
 
 That is what a data source variable does: it links to a set of records, keeps a **reference to the one row the user selected**, and feeds that row's values into the template — in most cases through a [component](/GraFx-Studio/guides/use-components/).
 
@@ -39,6 +43,8 @@ Open the variables panel from the properties panel on the right (the wrench & sc
 
 Add a variable and set its **Variable type** to **Data source**. The **General** tab then shows:
 
+![Create a data source variable](ds03.png){.screenshot}
+
 - **Required** — optional toggle. It stays **disabled** until the variable actually has a source: a connector is selected, or the source is set to Data injection with at least one field. Remove every field from a Data injection schema and Required switches back off and disables again.
 - A **DATA SOURCE** section with a **Select connector** dropdown, set to **Connector** by default.
 
@@ -49,6 +55,8 @@ Until the source is configured, the **Default state** panel shows **"No preview 
 ### Connector
 
 With **Connector** selected in the **DATA SOURCE** section, click **Configure your connector** to open the **Connector** tab, then:
+
+![Configure the connector for the Data Source Variable](ds04.png){.screenshot}
 
 1. Pick the connector from the dropdown.
 2. Fill in the **configuration options**. These are dynamic — the connector declares them, so what you see depends on the connector. Commonly a search or query parameter, an endpoint, or a record type.
@@ -84,8 +92,13 @@ Two rules govern what happens when the pushed data doesn't match the schema:
 
 On the **User interface** tab, **Show variable as** controls the end-user presentation:
 
+![List or Table view for Data Source Variable](ds05.png){.screenshot}
+
 - **Table** (default) — the end user opens a table of all rows and clicks one, much like the output data source table, but with navigation both **forwards and backwards**. Nothing else to configure.
 - **List** — the end user picks from a simple dropdown that loads more rows as they scroll. Because a list shows one line per row, you must choose which column supplies that line.
+
+![Example of Table view](ds06.png){.screenshot-full}
+
 
 When you select **List**, a **Display column** dropdown appears. Pick the column to use as the visible label.
 
