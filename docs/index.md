@@ -13,6 +13,16 @@
 
     ---
 
+    **Aug 27, 2026**: Connector CLI v1.14.0 — debugger reliability and UX
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    The local debugger now surfaces TypeScript compile errors as a full-page overlay, keeps method inputs across the session, and no longer opens a browser unless you pass `--open`.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/27/connector-cli-v1140--debugger-reliability-and-ux/)
+
+    ---
+
     **Aug 12, 2026**: Connector CLI v1.13.0 — multi-file connector compilation
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -30,16 +40,6 @@
     On Monday 14 September we perform infrastructure updates that require a brief period of server downtime. Check the schedule for the region your GraFx environments run in.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
-
-    ---
-  
-    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
 
     ---
 
@@ -70,16 +70,6 @@
     A new **Data source** variable type holds a reference to a single record, from a data connector or injected by an integration, that the end user picks from a table or a dropdown. Component variables can be mapped straight to its columns.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/03/grafx-studio-data-source-variables/)
-
-    ---
-  
-    **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    A new logout endpoint ends the calling user's own OAuth 2.0 Authorization Code session for a Connector, so you can re-authorize as a different account without deleting and republishing the Connector.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/chili-grafx-environment-api-sign-out-of-a-connector-connection/)
 
     ---
 
