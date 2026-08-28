@@ -39,7 +39,9 @@ With a component frame selected, find the **Resize Mode** section in the right p
 
 ![Resize Mode dropdown in the properties panel with three options](resize-mode-dropdown.png){.screenshot-full}
 
-In short: **Scale** fits the component inside the frame. **Resize** gives the component the frame's dimensions and lets it adapt internally. **Scale and resize** does both — scale first, then resize to fill what's left.
+In short: **Scale** fits the component inside the frame. **Resize** gives the component the frame's dimensions and lets it adapt internally. **Scale and resize** does both — scale first, then resize to fill what's left. **Scale** is the default.
+
+Resize Mode is an inheritable property: when a layout overrides it, the dropdown is marked in the usual warning color, and the override can be reset like any other inherited setting.
 
 ### Scale
 
@@ -117,7 +119,7 @@ The modal has two tabs:
 Each row shows:
 
 - **Component element** — the variable defined in the component, with its type icon
-- **Map to** — how the connection is made: to a new variable or an existing one
+- **Map to** — how the connection is made: to a new variable, an existing one, or a data source column
 - **Variable** — the template variable that will receive or supply the value
 
 ### Map to a new variable
@@ -135,6 +137,23 @@ If the template already has variables — for example because another instance o
 This is also how you connect two component instances to the **same** template variable, if you want them to always show the same value.
 
 ![Map to dropdown expanded showing New variable and Variable options](existingvarmapping.png){.screenshot-full}
+
+### Map to a data source column
+
+Set **Map to** to **Data source column** to connect the component variable directly to a column of a [Data source variable](/GraFx-Studio/guides/template-variables/data-source/) — pick the Data source variable, then one of its columns.
+
+This is the fastest way to fill a whole component from a single record: the end user selects one row, and every mapped element of the component updates at once. A product card can take its name, price, and image from the record that was picked.
+
+Column types are checked the same way variable types are: a number variable maps only to a numeric column, a date variable only to a date column. Component **image** variables map to a text column, which holds the image reference.
+
+!!! note "Components cannot own a Data source variable"
+    **Data source** is not available as a variable type inside the component editor. A component gets record data through mapping from the template that places it, which keeps the component reusable across templates that use different data sources.
+
+### Hide a component variable from mapping
+
+Not every variable in a component is meant to be mapped — an intermediate value assembled by an action, or a flag driving a visibility condition, only clutters the mapping list.
+
+In a component variable's general settings, the **Available for mapping** toggle controls this. It is on by default, so existing components are unaffected. Switch it off and the variable no longer appears in the parent template's mapping list; any mapping configured earlier is no longer applied.
 
 ### Per-instance mapping
 

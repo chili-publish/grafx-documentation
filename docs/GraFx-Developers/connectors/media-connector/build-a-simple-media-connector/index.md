@@ -38,7 +38,7 @@ cd <projectName>
     bun install
     ```
 
-4. Open `connector.ts` as this is the main connector file we will be modifying.
+4. Open `connector.ts` as this is the main connector file we will be modifying. (You can split helpers into other local `.ts` files later — see [Project structure](/GraFx-Developers/connectors/connector-cli/project-structure/).)
 
 ## Modifying the Query Method
 
