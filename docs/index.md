@@ -32,6 +32,26 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
 
     ---
+  
+    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
+
+    ---
+
+    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
+
+    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+
+    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
+
+    ---
 
     **Aug 06, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit media and colors
 
@@ -52,7 +72,7 @@
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/03/grafx-studio-data-source-variables/)
 
     ---
-
+  
     **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
 
     ![rn_icon](/assets/icon-CHILI-GraFx.svg)
@@ -63,21 +83,12 @@
 
     ---
 
-    **Jul 28, 2026**: Connector CLI v1.12.1
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    The debugger now reports execution metrics for every method invocation, including duration and each outgoing `fetch`. Pasted asset IDs are cleaned up automatically, watch mode is always on, and `sleep(ms)` works locally.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
-
-    ---
-
     **See All Release Notes**
 
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
 </div>
+
 ## The Platform & Applications
 
 <div class="grid cards" markdown>

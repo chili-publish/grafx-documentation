@@ -69,6 +69,15 @@ The first 50 renders are counted individually, then each subsequent set of 10 ad
 
 	In this case: 50 + (1000-50)/10 = 50 + 95 = 145
 
+### Previews
+
+Previews are the images shown while you work — for example the layout thumbnails GraFx Experience displays when you select layouts for a new project. A preview is not an output you can download, so it does not count as a render.
+
+Previews of a **project** are the exception. These are generated through the regular output routines, using the Output Settings configured in GraFx Experience, and count as renders like any other output.
+
+!!! tip
+	If you'd rather not have project previews count towards your quota, configure the Output Settings used for them to apply a watermark. Watermarked output is tracked separately and does not count as a render.
+
 ## Fair use policy
 
 In your subscription, you're entitled to a render quota.
