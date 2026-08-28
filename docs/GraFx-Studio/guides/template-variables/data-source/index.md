@@ -178,7 +178,16 @@ The variable shows an error and offers a retry. It does not silently fall back t
 
 ### Empty and invalid values
 
-Values that arrive empty or invalid follow the standard data exception rules, the same ones that apply to an output data source: text, list, image and date variables are cleared, while number and boolean variables fall back to their default with a toast message. See [Handling data exceptions](/GraFx-Studio/concepts/connectors-data/#handling-data-exceptions).
+Values that arrive empty or invalid follow the standard data exception rules, but what you see depends on where the data is applied.
+
+In the Studio UI, the template stays usable:
+
+- **Text**, **list**, **image** and **date** variables are cleared. An invalid value also shows a toast message.
+- **Number** and **boolean** variables fall back to their default value, with a toast message.
+
+In output, there is no fallback: if one or more errors occur while applying a record, **the entire record fails**, and the reason appears in the error report on the output task page.
+
+See [Handling data exceptions](/GraFx-Studio/concepts/connectors-data/#handling-data-exceptions) for the full rules.
 
 ### In output
 
