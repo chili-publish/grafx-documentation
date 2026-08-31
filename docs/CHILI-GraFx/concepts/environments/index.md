@@ -14,15 +14,15 @@ This means, you first will need to select an environment, before you can start a
 
 When entering the platform, you don't see the applications, before you choose an Environment.
 
-![screenshotsmall](env1.png)
+![screenshotsmall](env1.png){.screenshotsmall}
 
 Choose an environment
 
-![screenshotsmall](env2.png)
+![screenshotsmall](env2.png){.screenshotsmall}
 
 Once in the environment, you can select the application you want to work in.
 
-![screenshotsmall](env3.png)
+![screenshotsmall](env3.png){.screenshotsmall}
 
 The dropdown at the top will show all visible environments for you.
 

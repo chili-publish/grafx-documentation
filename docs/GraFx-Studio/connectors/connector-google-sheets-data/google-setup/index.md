@@ -6,13 +6,13 @@ Enable the API!
 
 Find the Settings for Google Sheets, in the [API library](https://console.cloud.google.com/apis/library/browse?inv=1&invt=AbrOXg&q=sheets)
 
-![screenshot](../google20.png)
+![screenshot](../google20.png){.screenshot}
 
 If the API is enabled, we're all set, if not, **Enable** the API
 
 In the screenshot below, it is already enabled.
 
-![screenshot](../google21.png)
+![screenshot](../google21.png){.screenshot}
 
 ## Service Account
 
@@ -23,25 +23,25 @@ Go to [Google Cloud Console](https://console.cloud.google.com/welcome).
 
 Go to API and Services
 
-![screenshot](../google07.png)
+![screenshot](../google07.png){.screenshot}
 
 Go to Credentials, and create a new Service account. Go through all steps.
 
-![screenshot-full](../google08.png)
+![screenshot-full](../google08.png){.screenshot-full}
 
 You now have the Service Account credentials.
 
-![screenshot-full](../google02.png)
+![screenshot-full](../google02.png){.screenshot-full}
 
 If you have not done during the initial creation, go to the created credentials, and add a private KEY.
 
 Create a private key, in the **Keys** section.
 
-![screenshot-full](../google04.png)
+![screenshot-full](../google04.png){.screenshot-full}
 
 Choose JSON format
 
-![screenshot](../google05.png)
+![screenshot](../google05.png){.screenshot}
 
 After confirmation, a JSON file will be downloaded to your computer. (see example below)
 
@@ -71,11 +71,11 @@ Choose API and services > Credentials
 
 Start creation of OAuth client ID
 
-![screenshot-full](../google13.png)
+![screenshot-full](../google13.png){.screenshot-full}
 
 Important to set an **Authorised redirect URI**
 
-![screenshot-full](../google03.png)
+![screenshot-full](../google03.png){.screenshot-full}
 
 It should be set to this URI
 
@@ -89,19 +89,19 @@ Where is the Environment Key?
 
 Open GraFx Publisher (on CHILI GraFx), and take the Key from the URI, it's the first element.
 
-![screenshot](../google10.png) 
+![screenshot](../google10.png){.screenshot} 
 
 Below is an example, your Environment Key will be unique to your setup.
 
-![screenshot-full](../google11.png) 
+![screenshot-full](../google11.png){.screenshot-full} 
 
 Set the {CONNECTOR_ID} to the ID of your Connector Instance
 
 You can grab the connector ID from the URI, if you are in the Connector setup (in CHILI GraFx)
 
-![screenshot](../google12.png)
+![screenshot](../google12.png){.screenshot}
 
-![screenshot-full](../google09.png)
+![screenshot-full](../google09.png){.screenshot-full}
 
 At the end, you'll get a JSON file. We'll refer to elements in the setup below.
 

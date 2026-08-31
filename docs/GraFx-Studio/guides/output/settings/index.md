@@ -12,24 +12,24 @@ In GraFx Studio, go to **Manage > Output settings** to view and configure output
 
 By default, each output format has one preconfigured setting.
 
-![screenshot-full](os00.png)
+![screenshot-full](os00.png){.screenshot-full}
 
 To add a new setting, click the **+ Create** button.  
 Give your setting a relevant name and choose an output file format.
 
-![screenshot](os03.png)
+![screenshot](os03.png){.screenshot}
 
 The new setting will appear in the list.
 
-![screenshot-full](os04.png)
+![screenshot-full](os04.png){.screenshot-full}
 
 To delete a setting, use the **...** menu at the right end of the row.
 
-![screenshot](os06.png)
+![screenshot](os06.png){.screenshot}
 
 If all settings are deleted, a placeholder will indicate no output settings exist.
 
-![screenshot-full](os01.png)
+![screenshot-full](os01.png){.screenshot-full}
 
 ---
 
@@ -37,14 +37,14 @@ Output settings vary depending on the file format.
 
 ## Generic Settings (all formats)
 
-![screenshot-full](os14.png)
+![screenshot-full](os14.png){.screenshot-full}
 
 ### Name and description
 
 - **Name** (1) appears in the [Studio UI](/GraFx-Studio/guides/create-projects/#customize-your-project)
 - **Description** (2) appears as a subtitle in the export UI
 
-![screenshot-full](os15.png)
+![screenshot-full](os15.png){.screenshot-full}
 
 ### Output format
 
@@ -62,7 +62,7 @@ Output settings vary depending on the file format.
 
 See [Generic Settings](#generic-settings-all-formats)
 
-![screenshot-full](os12.png)
+![screenshot-full](os12.png){.screenshot-full}
 
 ### Bar Width Reduction
 
@@ -74,27 +74,27 @@ Use positive values to make bars thinner, negative to make them wider.
 Outputs text as vector shapes instead of embedding fonts.  
 This removes font dependencies in the resulting PDF.
 
-![screenshot](os17.png)
+![screenshot](os17.png){.screenshot}
 
 ### Data Source
 
 When enabled, includes all records from the data source in the output.
 
-![screenshot](output.png)
+![screenshot](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![screenshot](errorhandling.png){.screenshot}
 
 ### Crop Marks
 
 See [Crop Marks](/GraFx-Studio/concepts/crop-marks/).  
 Define offset and weight (thickness).
 
-![screenshot](os16.png)
+![screenshot](os16.png){.screenshot}
 
 ### PDF Output Conversion
 
@@ -163,26 +163,26 @@ For a deeper explanation of color management concepts, see:
 
 See [Generic Settings](#generic-settings-all-formats)
 
-![screenshot-full](os-18.png)
+![screenshot-full](os-18.png){.screenshot-full}
 
 ### Data Source
 
 When enabled, includes all records from the data source in the output.
 
-![screenshot](output.png)
+![screenshot](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![screenshot](errorhandling.png){.screenshot}
 
 ---
 
 ## JPG Output Settings
 
-![screenshot-full](os13.png)
+![screenshot-full](os13.png){.screenshot-full}
 
 ### Scaling
 
@@ -198,20 +198,20 @@ Higher values mean larger file size but better image fidelity.
 
 Exports all data source records as individual JPG files in a ZIP.
 
-![screenshot](output.png)
+![screenshot](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![screenshot](errorhandling.png){.screenshot}
 
 ---
 
 ## PNG Output Settings
 
-![screenshot-full](os09.png)
+![screenshot-full](os09.png){.screenshot-full}
 
 ### Scaling
 
@@ -221,20 +221,20 @@ Same behavior as in JPG output.
 
 Exports all records as individual PNG files in a ZIP.
 
-![screenshot](output.png)
+![screenshot](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![screenshot](errorhandling.png){.screenshot}
 
 ---
 
 ## GIF Output Settings
 
-![screenshot-full](os11.png)
+![screenshot-full](os11.png){.screenshot-full}
 
 ### Scaling
 
@@ -248,20 +248,20 @@ Set the number of animation frames per second.
 
 Exports all records as individual GIFs in a ZIP.
 
-![screenshot](output.png)
+![screenshot](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![screenshot](errorhandling.png){.screenshot}
 
 ---
 
 ## MP4 Output Settings
 
-![screenshot-full](os10.png)
+![screenshot-full](os10.png){.screenshot-full}
 
 ### Scaling
 
@@ -275,11 +275,11 @@ Set the number of animation frames per second.
 
 Exports all records as MP4s in a ZIP.
 
-![screenshot](output.png)
+![screenshot](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![screenshot](errorhandling.png){.screenshot}

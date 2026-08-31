@@ -6,7 +6,7 @@ When dragging frames around, you'll see bright lines appear.
 
 These lines are alignment guides that align with other objects and reference points on the canvas.
 
-![animation](snapping.gif)
+![animation](snapping.gif){.screenshot}
 
 ## Snap points
 

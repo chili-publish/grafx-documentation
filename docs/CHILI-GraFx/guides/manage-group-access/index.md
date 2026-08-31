@@ -7,11 +7,11 @@
 
 Click the "Access" tab, on the group page.
 
-![screenshot-full](ug013.png)
+![screenshot-full](ug013.png){.screenshot-full}
 
 Click "Manage Access" to add or revoke access to that group.
 
-![screenshot](ug014.png)
+![screenshot](ug014.png){.screenshot}
 
 Under Access, add or remove the Environments.
 

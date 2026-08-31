@@ -12,7 +12,7 @@ Templates are typically created by experienced designers who establish the visua
 
 A GraFx Studio template is created by a template Designer using [GraFx Studio](/GraFx-Studio/).
 
-![screen](templates.png)
+![screen](templates.png){.screenshot-full}
 
 ## User Interface
 
@@ -20,7 +20,7 @@ A GraFx Studio template is created by a template Designer using [GraFx Studio](/
 
 A User Interface is a placeholder to gather settings for each Layout Intent. In stead of having to set different settings to achieve your desired outcome, you can group them in 1 "User Interface"
 
-![screenshot-full](ui1.png)
+![screenshot-full](ui1.png){.screenshot-full}
 
 
 ## Template collection
@@ -31,7 +31,7 @@ A Template Collection is a group of GraFx Studio templates.
 
 A collection will serve as a basis for end users to start creating "Projects".
 
-![screen](collections.png)
+![screen](collections.png){.screenshot-full}
 
 ## My projects
 
@@ -43,7 +43,7 @@ An end user starts a "project" (document) by choosing a template from a Template
 
 The template is saved in "My Projects".
 
-![screen](myprojects.png)
+![screen](myprojects.png){.screenshot-full}
 
 ## Studio UI
 
@@ -53,7 +53,7 @@ The Studio UI is the page for end user, with ease of use in mind.
 
 Only limited elements need to be provided to make a variant or version of a template. These elements are offered in an end-user friendly way, we call this the Studio UI.
 
-![screen](studio-ui.png)
+![screen](studio-ui.png){.screenshot-full}
 
 ## Process
 
@@ -69,32 +69,32 @@ In the contextual menu, add the template to a collection.
 
 If the collection does not exist yet, add it via "Collections"
 
-![screen](add-to-collection.png)
+![screen](add-to-collection.png){.screenshot-full}
 
 ### Set the User Interface
 
 Define the User interface that will be used for this collection.
 
-![screenshot](ui10.png)
+![screenshot](ui10.png){.screenshot}
 
-![screenshot](ui11.png)
+![screenshot](ui11.png){.screenshot}
 
 ### End-user
 
 An end user will see the available collections under "My Projects".
 
-![screen](start-project.png)
+![screen](start-project.png){.screenshot-full}
 
 (End-user view with no Environment Admin access, nor Template Designer access)
 
 After opening the Collection, the end user chooses a template
 
-![screen](select-template.png)
+![screen](select-template.png){.screenshot-full}
 
 The project is opened in the Studio UI interface. This shows only the relevant information to make a variant from the template.
 
-![screen](studio-ui.png)
+![screen](studio-ui.png){.screenshot-full}
 
 Projects from end users are stored under My Projects
 
-![screen](myprojects.png)
+![screen](myprojects.png){.screenshot-full}

@@ -6,34 +6,34 @@
 
 ## Browse
 
-![appscreen](dashboard.png)
+![appscreen](dashboard.png){.screenshot-full}
 
 Initially, the top-level directory structure is shown. The default view is by grid.
 
 The slider next to the search bar allows switching between grid and list view.
 
-![appscreen](change-view.png)
+![appscreen](change-view.png){.screenshotsmall}
 
-![appscreen](list-view.png)
+![appscreen](list-view.png){.screenshot-full}
 
 A single click on a folder will bring you one level down, and show the folder contents.
 
-![appscreen](browse-2.png)
+![appscreen](browse-2.png){.screenshot-full}
 
 ## Sort
 
 In front of the search bar, you can select the field and order how the assets will be sorted.
 
-![appscreen](sort.png)
+![appscreen](sort.png){.screenshot}
 
 
 ## Details
 
 Click on the asset or "view details" under the three dots menu "...", to show the details and meta-data.
 
-![appscreen](view-details.png)
+![appscreen](view-details.png){.screenshotsmall}
 
-![appscreen](download.png)
+![appscreen](download.png){.screenshot-full}
 
 Available details:
 

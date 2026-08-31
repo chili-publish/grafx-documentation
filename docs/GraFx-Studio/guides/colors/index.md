@@ -8,13 +8,13 @@
 
 Open the **Resource Panel** > **Brand Kit panel**.
 
-![screenshotsmall](bottom-quicktools-ui.png)
+![screenshotsmall](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](bk1.png)
+![screenshot](bk1.png){.screenshot}
 
 Select the second tab to view colors
 
-![screenshot](bk3.png)
+![screenshot](bk3.png){.screenshot}
 
 Click on the "+" sign to add a new color.
 Each click on the "+" sign will add another (white) color.
@@ -23,7 +23,7 @@ Click on the "..." menu next to the newly created color and choose edit or click
 
 You can rename by clicking "Rename" in the "..." menu.
 
-![screenshot](bk7.png)
+![screenshot](bk7.png){.screenshot}
 
 ### Color picker
 
@@ -32,7 +32,7 @@ Define the color. Choose your type and set the values for the chosen color space
 
 #### Hex
 
-![screenshot](hex.png)
+![screenshot](hex.png){.screenshot}
 
 The value is a hexadecimal representation of an RGB value.
 
@@ -42,7 +42,7 @@ Ranging from 00 (black) to FF (white).
 
 #### RGB
 
-![screenshot](rgb.png)
+![screenshot](rgb.png){.screenshot}
 
 The 3 values represent a decimal value for each of the 3 RGB channels.
 
@@ -50,7 +50,7 @@ The 3 values represent a decimal value for each of the 3 RGB channels.
 
 #### CMYK
 
-![screenshot](cmyk.png)
+![screenshot](cmyk.png){.screenshot}
 
 Mostly used in print, but also available in CSS4, CMYK is a subtractive color system.
 
@@ -60,7 +60,7 @@ A subtractive color mixing model predicts the resultant spectral power distribut
 
 #### SPOT
 
-![screenshot](spot0.png)
+![screenshot](spot0.png){.screenshot}
 
 A spot color is a pre-mixed, standardized ink used in printing to achieve precise and consistent colors that cannot be easily reproduced with traditional CMYK printing. 
 
@@ -70,12 +70,12 @@ In addition to being a pre-mixed ink for precise color matching, spot colors are
 
 You can define a SPOT color with a name. This color will appear in the PDF output as a separate "ink". The secondary color defines how the color is shown in your design.
 
-![screenshot](spot2.png)
+![screenshot](spot2.png){.screenshot}
 
 ## Apply a color
 
 Where you can choose a color (character style or paragraph style), you'll be able to click the color and choose the color.
 
-![screenshot-full](swatch-5.png)
+![screenshot-full](swatch-5.png){.screenshot-full}
 
 Select "custom" to define a color ad-hoc.

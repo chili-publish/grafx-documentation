@@ -3,7 +3,7 @@
 ### What is a Controller?
 Controllers are the primary method of interfacing with GraFx Studio, the Studio SDK exposes multiple different controllers for you to utilize in your integration. These controllers expose certain behaviors of GraFx Studio and provide you with an easy to use interface to control these behaviors.
 
-![screenshot](controllers.png)
+![screenshot](controllers.png){.screenshot}
 
 Currently there are 19 controllers in the SDK, but you see the list of them on the Studio SDK documentation [here](https://chili-publish.github.io/studio-sdk/#controllers)
 
@@ -13,15 +13,15 @@ Controllers follow a simple naming convention so normally you can determine wher
 	http://localhost:1234
 ```
 
-![screenshot](controllers-console.png)
+![screenshot](controllers-console.png){.screenshot}
 
 As you can see there are many options there, and normally you can assume what they might be related to. For example, if we wanted to manipulate a frame on page, chances are we could find functions for that in the FrameController which we can access by typing `window.SDK.frame.` and then we can see what functions are available.
 
-![screenshot](frame-controller.png)
+![screenshot](frame-controller.png){.screenshot}
 
 This method of exploring makes it really easy to try controllers and their functions out live in our integration and test them out. You can also read about the functions of the FrameController on the [github documentation](https://chili-publish.github.io/studio-sdk/classes/controllers_FrameController.FrameController.html) for the Studio SDK. You can find the expected parameters for each function and what the function does on our source documentation.
 
-![ui-full](method-documentation.png)
+![ui-full](method-documentation.png){.screenshot-full}
 
 Now that we touched on what the Studio SDK controllers can do for you, lets start using them in our integration :D
 
@@ -90,7 +90,7 @@ We are simply adding `async` in front of our function and then awaiting the `loa
 
 Now with the server running our integration page should look something like this
 
-![Integration with default document loaded](document-loaded.png)
+![Integration with default document loaded](document-loaded.png){.screenshot-full}
 
 For now, we can safely ignore the "running" message until we hookup the media connector.
 
@@ -140,7 +140,7 @@ Next let's add button that creates a text frame.
 
 To do this we can look at the Studio SDK documentation and find under our FrameController the [addFrame()](https://chili-publish.github.io/studio-sdk/classes/controllers_FrameController.FrameController.html) method.
 
-![addFrame method documentation](method-addframe.png)
+![addFrame method documentation](method-addframe.png){.screenshot-full}
 
 This takes a [FrameTypeEnum](https://chili-publish.github.io/studio-sdk/enums/types_FrameTypes.FrameTypeEnum.html) but as you can see clicking FrameTypeEnum in the documentation will let you know what valid types are part of that Enum. Add the moment there are "text", "shape" and "image" frame enum types.
 
@@ -158,7 +158,7 @@ Then we can simply just add another `<button>` to our `index.html` calling that 
 ```
 
 Now when we click that button we should get a new text frame being added.
-![new text frame](new-text-frame.png)
+![new text frame](new-text-frame.png){.screenshot-full}
 
 What if we did not know where and how big we wanted our text box to be? I now present you, the `Text Frame Tool`
 
@@ -167,7 +167,7 @@ The [ToolController](https://chili-publish.github.io/studio-sdk/classes/controll
 
 To change to the text frame tool we can simply expose the SDK function to our window and make a `Text Tool` button that will call our function with the tool name. You can find the names of all the tools `index.js` by clicking on the `ToolType` enum and reading the [SDK page](https://chili-publish.github.io/studio-sdk/enums/index.ToolType.html)
 
-![tool enum sdk documentation page](tool-enum.png)
+![tool enum sdk documentation page](tool-enum.png){.screenshot-full}
 
 So we can add a function to our window that accepts a tool name and calls our SDK function with that tool.
 
@@ -187,7 +187,7 @@ Then we can create our buttons in the `index.html` above our other buttons and p
 
 Now on our integration we should have the ability to select our text tool and click then draw a text frame where we would like it. We can also play around with our hand tool and return back to the select.
 
-![text tool being used](text-tool.png)
+![text tool being used](text-tool.png){.screenshot-full}
 
 ---
 This brings us to the end of section 4! Hopefully you now have a basic understanding of interacting with the Studio SDK via the Controllers. You should be able to find functions for the tasks you want to perform by looking through that [SDK Documentation](https://chili-publish.github.io/studio-sdk/) mentioned above.

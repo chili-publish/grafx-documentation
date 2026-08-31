@@ -8,11 +8,11 @@ See [Upload Fonts](/GraFx-Fonts/guides/upload-fonts/)
 
 At the top level (Font Families) click the "..." icon of a family, and choose "Delete".
 
-![Img](delete.png)
+![Img](delete.png){.screenshot-full}
 
 A confirmation will be asked before you delete the font family. Deleting a font family might break existing templates.
 
-![Img](confirm-delete.png)
+![Img](confirm-delete.png){.screenshot-full}
 
 ## Remove a Font Style
 
@@ -20,8 +20,8 @@ At the top level, click a font to see its styles.
 
 At the styles level, click the "..." icon, and choose "Delete"
 
-![Img](styles.png)
+![Img](styles.png){.screenshot-full}
 
 Confirm to delete the style. As with the font family, deleting even a single style might break existing templates.
 
-![Img](style-delete-confirm.png)
+![Img](style-delete-confirm.png){.screenshot-full}

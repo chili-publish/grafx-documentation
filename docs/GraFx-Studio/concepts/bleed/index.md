@@ -24,6 +24,6 @@ To view the bleed, toggle the preview mode off.
 
 You can use the shortcut "W", or deselect "Preview mode" under the hamburger menu > view.
 
-![ui](showbleed.gif)
+![ui](showbleed.gif){.screenshot}
 
 In this example, the "Eye" of the Owl will be cut off when trimming after being printed.

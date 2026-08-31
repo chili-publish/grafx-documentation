@@ -6,7 +6,7 @@
 
 To make Smart Templates in GraFx Studio, you'll need a "template designer seat." Once your template is ready, it moves to the stage where end users can interact with it, specifically in "[My Projects](/GraFx-Studio/guides/create-projects/)." This area is where templates come to life, allowing end users to consume and customize them to fit their needs.
 
-![screenshot-full](studio-ui.png)
+![screenshot-full](studio-ui.png){.screenshot-full}
 
 **In your webportal**
 

@@ -2,31 +2,31 @@
 
 ## Concept
 
-![screenshot](crop.png)
+![screenshot](crop.png){.screenshot}
 
 Cropping enables manual positioning and scaling of the assets within the image frame and allows to resize of the frame itself.
 
 ## Image frame and Crop frame
 
-![screenshot](cropframes.png)
+![screenshot](cropframes.png){.screenshot}
 
 The Image frame (1) and the crop frame (2) are 2 elements influencing the size & crop of the image.
 
 When your frame and image both have the same aspect ratio, the image frame and crop frame will be the same.
 
-![screenshot](defaultcrop.png)
+![screenshot](defaultcrop.png){.screenshot}
 
 When your image has a different ratio than the frame it fits in, the default crop frame will be different.
 
 In the example below, the image is landscape while the image frame is square(-ish).
 
-![screenshot](rectcrop.png)
+![screenshot](rectcrop.png){.screenshot}
 
 Entering crop mode, enables you to handle both frames independently.
 
 The Image handles (3) allow you to influence the image. The crop handles (4) enable you to change the visible part or crop of the image.
 
-![screenshot](crophandles.png)
+![screenshot](crophandles.png){.screenshot}
 
 ## Inheritance model
 
@@ -50,7 +50,7 @@ Replacing an image can be done by a user, or through integration. In either way,
 
 ### Crop Reset
 
-![screenshot](crop-button.png)
+![screenshot](crop-button.png){.screenshot}
 
 The crop reset button (reverse arrow) will reset the image fit to the chosen [fit mode](/GraFx-Studio/concepts/frames/#fit-or-fill-mode).
 
@@ -58,7 +58,7 @@ All changes made to the cropping, positioning or rotation will be reset to the f
 
 ### Undo or redo
 
-![screenshot](undo.png)
+![screenshot](undo.png){.screenshot}
 
 One undo or redo action is the combination of all changes made during 1 crop manipulation.
 

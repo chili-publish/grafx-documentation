@@ -33,19 +33,19 @@ Get the latest plugin from the [GraFx Studio plugin downloads](/GraFx-Studio/con
 ### Export to GraFx Studio
 
    - Go to **Plugins > CHILI GraFx plugins > GraFx Studio Exporter**  
-   ![screenshot](psd01.png)
+   ![screenshot](psd01.png){.screenshot}
 
    - Run preflight to avoid conversion issues  
-   ![screenshot](psd03.png)
+   ![screenshot](psd03.png){.screenshot}
 
 Example of a potential issue: Optical Kerning is not supported  
 You can choose to ignore, and the kerning will default to Metric in GraFx Studio, or export the object to a PDF asset and place it as an asset
 
-![screenshot](psd04.png)  
+![screenshot](psd04.png){.screenshot}  
 
    - Choose a destination folder and click **Export**  
      Required only once, can be changed at any moment  
-     ![screenshot](psd05.png)
+     ![screenshot](psd05.png){.screenshot}
 
    - Choose the artboard(s) to be exported  
    - Choose **All artboards** to export all the artboards
@@ -56,11 +56,11 @@ You can choose to ignore, and the kerning will default to Metric in GraFx Studio
     Users can skip differently sized artboards or convert them to match the first artboard
 
    - The plugin creates a `.zip` file containing the document and all necessary assets  
-   ![screenshot-full](psd06.png)
+   ![screenshot-full](psd06.png){.screenshot-full}
    
 !!! info "What's in the zip file?"
 
-    ![screenshot](psd07.png)  
+    ![screenshot](psd07.png){.screenshot}  
     - A log file with info about the plugin version, the Adobe app version, current date, and plugin warnings or errors caught during the document preflight or export  
     - The log file is named `GraFx_Studio_Exporter.log`  
     - The zip file name format: `<selected_artboard>_<document_name>(<optional_duplicate_copy_version>).zip`
@@ -71,7 +71,7 @@ You can choose to ignore, and the kerning will default to Metric in GraFx Studio
    - Go to **Templates > Import .ZIP** and select the exported `.zip` file  
    - Name the template and locate the folder for the assets  
    - Your Photoshop® document is now ready for automation in GraFx Studio  
-   ![screenshot-full](psd13.png)
+   ![screenshot-full](psd13.png){.screenshot-full}
 
 ## Preflight
 

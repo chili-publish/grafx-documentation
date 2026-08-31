@@ -4,7 +4,7 @@
 
 You can access the specific interactive Swagger for your environment API via integration setup.
 
-![ui](integration01.png)
+![ui](integration01.png){.screenshot}
 
 ## Sanbox Reference
 

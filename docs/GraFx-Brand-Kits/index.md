@@ -7,4 +7,4 @@ Once you’ve set up a Brand Kit, template designers and end users can apply its
 
 With [themes](/GraFx-Brand-Kits/concepts/themes/), a single Brand Kit can carry variations of the brand — a sub-brand, a print color palette, a regional text style — each theme overriding only what differs from the default.
 
-![screenshot-full](brandkits_01.png)
+![screenshot-full](brandkits_01.png){.screenshot-full}

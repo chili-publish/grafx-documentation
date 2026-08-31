@@ -78,15 +78,15 @@ As an Environment Admin, navigate to:
 
 My Environments > [Your Environment] > Settings > Connectors
 
-![screenshot-full](ch01.png)
+![screenshot-full](ch01.png){.screenshot-full}
 
 Select the **Connectors** tab.
 
-![screenshot-full](ch02.png)
+![screenshot-full](ch02.png){.screenshot-full}
 
 Here, you will see an overview of the installed connectors.
 
-![screenshot-full](ch03.png)
+![screenshot-full](ch03.png){.screenshot-full}
 
 ## Types of Connectors
 

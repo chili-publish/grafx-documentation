@@ -9,24 +9,24 @@
 
 Open the **Resource Panel** > **Brand Kit panel**.
 
-![screenshotsmall](bottom-quicktools-ui.png)
+![screenshotsmall](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](bk1.png)
+![screenshot](bk1.png){.screenshot}
 
 Select the last tab to view paragraph- and character styles
 
-![screenshot](bk5.png)
+![screenshot](bk5.png){.screenshot}
 
 Click on the "+" sign to ad a new paragraph style.
 Each click on the "+" sign will add another (empty) paragraph style.
 
-![screenshot](ps-3.png)
+![screenshot](ps-3.png){.screenshot}
 
 Click on the "..." menu next to the newly created paragraph style and choose edit or click the pencil to edit the style.
 
 Set all properties you want for this paragraph. Saving happens automatically.
 
-![screenshot-full](bk8.png)
+![screenshot-full](bk8.png){.screenshot-full}
 
 ## Apply a paragraph style
 
@@ -35,4 +35,4 @@ A paragraph is defined between the start of a sentence, up to the end-of-line ch
 
 In the properties panel on the right, select the paragraph style from the dropdown list.
 
-![screenshot](ps-6.png)
+![screenshot](ps-6.png){.screenshot}

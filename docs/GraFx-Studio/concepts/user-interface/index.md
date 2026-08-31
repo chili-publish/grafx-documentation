@@ -2,7 +2,7 @@
 
 A **User Interface** is a configuration that groups settings for a specific [Layout Intent](/GraFx-Studio/concepts/layout-intent/). Instead of configuring individual settings separately, you can define a single User Interface to apply them together.
 
-![screenshot-full](ui1.png)
+![screenshot-full](ui1.png){.screenshot-full}
 
 User Interfaces can be created for specific customers (e.g. to match output requirements) or for targeted use cases.
 
@@ -10,7 +10,7 @@ User Interfaces can be created for specific customers (e.g. to match output requ
 
 For each Layout Intent, you can add one or more [Output Settings](/GraFx-Studio/concepts/output-settings/).
 
-![screenshot-full](ui2.png)
+![screenshot-full](ui2.png){.screenshot-full}
 
 Before assigning them in the User Interface, make sure you’ve defined your Output Settings.
 
@@ -18,19 +18,19 @@ Before assigning them in the User Interface, make sure you’ve defined your Out
 
 A default User Interface is always available. It is recognizable by square brackets and cannot be deleted.
 
-![screenshot-full](ui3.png)
+![screenshot-full](ui3.png){.screenshot-full}
 
 You can still modify its settings.
 
 ## Form builder
 
-![screenshot-full](ui4.png)
+![screenshot-full](ui4.png){.screenshot-full}
 
 User Interfaces also control the visibility and labeling of the form shown in the [My Projects](/GraFx-Studio/concepts/template-management/#my-projects) area of GraFx Studio. This is where end users create variations of Smart Templates stored in [Collections](/GraFx-Studio/concepts/template-management/#template-collection).
 
-![screenshot-full](ui10.png)
+![screenshot-full](ui10.png){.screenshot-full}
 
-![screenshot-full](ui11.png)
+![screenshot-full](ui11.png){.screenshot-full}
 
 Depending on the User Interface configuration, end users will see more or fewer options when creating a project.
 
@@ -49,7 +49,7 @@ For each section, you can:
 - Set a **Section heading**
 - Add optional **help text**
 
-![screenshot](ui7.png)
+![screenshot](ui7.png){.screenshot}
 
 ### Layout-specific options
 
@@ -58,13 +58,13 @@ If the **Layouts** section is enabled, you can configure two additional options:
 - **Layout selector** — toggles whether the layout dropdown appears
 - **Layout resizing** — toggles whether the layout resizing option is available
 
-![screenshot](ui6.png)
+![screenshot](ui6.png){.screenshot}
 
 !!! info
     For layouts to appear in the selector, they must be marked as **available** in the Smart Template.  
     Similarly, layout resizing must be enabled in the template before it can be used.
 
-    ![screenshot](ui8.png)
+    ![screenshot](ui8.png){.screenshot}
 
     [See also: Layouts in GraFx Studio](/GraFx-Studio/guides/layouts/#layouts-in-the-studio-ui)
 

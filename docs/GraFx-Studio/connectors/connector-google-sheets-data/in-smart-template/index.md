@@ -2,27 +2,27 @@
 
 In the example below, we'll use a [publicly available read-only Google sheet](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
 
-![screenshot-full](../sheet.png)
+![screenshot-full](../sheet.png){.screenshot-full}
 
 ## Create Variables in GraFx Studio
 
 - In your template, create variables corresponding to the column names in Google Sheets.
 - As long as the names match and a data source is connected, the values will be populated automatically.
 
-![screenshot](../variables.png)
+![screenshot](../variables.png){.screenshot}
 
 ## Link the Google Sheet
 
 - Select the Connector Instance (for the right Authentication method)
 
-![screenshot](../datasource.png)
+![screenshot](../datasource.png){.screenshot}
 
-![screenshot](../connector.png)
+![screenshot](../connector.png){.screenshot}
 
 - Copy the link of the [public document](https://docs.google.com/spreadsheets/d/1ApwDcYH6CK5pXjKEbTe5Ie-Y2wVsrHxJoKKN8x4Xd_w/edit?usp=sharing).
 - Paste it into the data source field.
 
-![screenshot](../sheetsetup.png)
+![screenshot](../sheetsetup.png){.screenshot}
 
 ## Preview in Run Mode or Studio UI
 
@@ -30,11 +30,11 @@ In the example below, we'll use a [publicly available read-only Google sheet](ht
 
 ## Run Mode (in Studio Workspace)
 
-![screenshot-full](../runmode.png)
+![screenshot-full](../runmode.png){.screenshot-full}
 
 ## Studio UI
 
-![screenshot-full](../studioui.png)
+![screenshot-full](../studioui.png){.screenshot-full}
 
 ## Output
 
@@ -42,14 +42,14 @@ To generate output with dynamic data, create an [output setting](../../../guides
 
 Ensure the **Data source** is enabled for batch processing.
 
-![screenshot](../output.png)
+![screenshot](../output.png){.screenshot}
 
 !!! note "PDF only"
     Only PDF output will use the data source. Soon the other formats will support batch output too.
 
 When set to "Use data source", your output will have a page for each record in the data source.
 
-![screenshot-full](../output2.png)
+![screenshot-full](../output2.png){.screenshot-full}
 
 ## Google Sheet Setup guidelines
 
@@ -59,14 +59,14 @@ When set to "Use data source", your output will have a page for each record in t
 - **Column Data Type**
     - All values are considered: "Single Line Text"
     - Format Numbers as Numbers  
-    ![screenshot](../format_number.png)
+    ![screenshot](../format_number.png){.screenshot}
     - Format Date as "Date" or "Date Time"  
-    ![screenshot](../format_date.png)
+    ![screenshot](../format_date.png){.screenshot}
     - Booleans: Boolean columns must always have a value (cells cannot be empty)
     - Booleans: Define boolean columns using checkboxes  
-    ![screenshot](../format_boolean.png)
+    ![screenshot](../format_boolean.png){.screenshot}
 - **Row Structure**: The sheet must **NOT** contain empty rows between rows with data  
-![screenshot](../format_empty.png)
+![screenshot](../format_empty.png){.screenshot}
 - **Sharing**  
 **OAuth2.0 JWT Bearer authentication**: Share it with the service account setup during configuration of the Connector.  
 **OAuth2.0 Authorisation Code**: share with the user who is authorising.  

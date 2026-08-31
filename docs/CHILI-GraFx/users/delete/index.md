@@ -12,8 +12,8 @@ This ensures complete removal of the user's access and data from the platform.
 
 In the user management, hover over the three dots on the right.
 
-![ui-full](delete01.png)
+![ui-full](delete01.png){.screenshot-full}
 
 Confirm the action, if you are sure.
 
-![ui-full](delete02.png)
+![ui-full](delete02.png){.screenshot}

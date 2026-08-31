@@ -2,7 +2,7 @@
 
 Smart Crop is the GraFx Genie capability that positions an image inside a frame automatically, keeping the most important part of the picture in view whatever the frame's size or aspect ratio. One source image can become a social post, a banner, and a print ad, each correctly framed, without manual cropping for every variant.
 
-![screenshot-full](poi-ad.png)
+![screenshot-full](poi-ad.png){.screenshot-full}
 
 Smart Crop works across GraFx Media, GraFx Studio, and the platform settings. The step-by-step guide for each is linked below.
 
@@ -50,7 +50,7 @@ From upload to output, this is how Smart Crop works:
 
 When an image is uploaded, GraFx Genie Vision examines it and sets the Default Subject Area and Point of Interest. GraFx Genie recognizes people and a range of contextual objects, and places the Point of Interest on the most relevant feature. For a person, that means detecting the eyes.
 
-![screenshot](poi.png)
+![screenshot](poi.png){.screenshot}
 
 !!! info "Set once, never changed automatically"
     GraFx Genie sets the Subject Area and POI when the image is first processed, and never updates them automatically afterwards. Improvements to GraFx Genie's detection only apply to newly uploaded assets.
@@ -80,11 +80,11 @@ A single image can hold more than one Subject Area and Point of Interest, groupe
 
 Switching the **Subject type** dropdown on an image frame re-runs Smart Crop against the Subject Area and POI stored for that type. The frame stays the same, but what's inside it changes:
 
-![screenshot-full](smart-crop-default.png)
+![screenshot-full](smart-crop-default.png){.screenshot-full}
 
-![screenshot-full](smart-crop-people.png)
+![screenshot-full](smart-crop-people.png){.screenshot-full}
 
-![screenshot-full](smart-crop-product.png)
+![screenshot-full](smart-crop-product.png){.screenshot-full}
 
 *Default* keeps the full scene, *People* centers on the person, and *Product* zooms in on the grocery bag, all from the same source asset and the same frame.
 

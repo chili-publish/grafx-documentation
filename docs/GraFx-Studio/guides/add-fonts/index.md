@@ -8,26 +8,26 @@
 
 Open the Brand Kit panel.
 
-![screenshotsmall](bottom-quicktools-ui.png)
+![screenshotsmall](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](bk1.png)
+![screenshot](bk1.png){.screenshot}
 
 Select the fonts icon to check the already available fonts in your document.
 
-![screenshot](bk2.png)
+![screenshot](bk2.png){.screenshot}
 
 Click on the "+" sign to add a new font.
 
 The available fonts are shown ([GraFx Fonts](/GraFx-Fonts/) application).
 
-![screenshot](fonts-3.png)
+![screenshot](fonts-3.png){.screenshot}
 
 Select the font family you wish to add to your document.
 
 Remark: The full family will be added to your document.
 
-![screenshot](bk6.png)
+![screenshot](bk6.png){.screenshot}
 
 Your font family is now available to use in the document.
 
-![screenshot](fonts-5.png)
+![screenshot](fonts-5.png){.screenshot}

@@ -12,7 +12,7 @@ Each output task lists the following details:
 - **Records**: Number of records processed
 - **Date Created**: The date and time the task was created
 
-![screenshot-full](ot1.png)
+![screenshot-full](ot1.png){.screenshot-full}
 
 Use the **Search** bar or **Select filters** to narrow down the list of tasks.
 
@@ -20,7 +20,7 @@ Use the **Search** bar or **Select filters** to narrow down the list of tasks.
 
 Click the **three dots** at the end of any row to open the actions menu.
 
-![screenshot-full](ot2.png)
+![screenshot-full](ot2.png){.screenshot-full}
 
 ### Available Actions
 

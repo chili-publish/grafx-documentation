@@ -6,7 +6,7 @@ Private data can impact your custom end-user interface. Integrations can use the
 
 ## Manage Private Data
 
-![screenshot-full](private-data01.png)
+![screenshot-full](private-data01.png){.screenshot-full}
 
 ### Access the Variable Settings
 

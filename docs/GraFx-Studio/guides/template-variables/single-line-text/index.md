@@ -4,7 +4,7 @@
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.
 
-![screenshot-full](slt00.png)
+![screenshot-full](slt00.png){.screenshot-full}
 
 Choose "Single-line text" as the type.
 
@@ -14,7 +14,7 @@ Single-line text variables allow entering text in a single line.
 
 Double-click the name, or choose "Rename" under the "..." menu.
 
-![screenshot](slt01.png)
+![screenshot](slt01.png){.screenshot}
 
 ## Maximum Length
 
@@ -38,7 +38,7 @@ The same limit is applied when the value comes in from a data source, ensuring c
 
 ## Set General Properties
 
-![screenshot-full](slt00.png)
+![screenshot-full](slt00.png){.screenshot-full}
 
 - You can switch between single-line and multi-line text variable types at any time.
 - When switching types, the value of the variable will be cleared.

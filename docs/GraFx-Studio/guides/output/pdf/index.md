@@ -4,9 +4,9 @@
 
 In the tree of layouts, select the one you wish to output.
 
-![Output](output-1.png)
+![Output](output-1.png){.screenshot}
 
-![Output](output-2.png)
+![Output](output-2.png){.screenshot-full}
 
 ## The timeline
 
@@ -24,9 +24,9 @@ Click "Hamburger menu" and Export.
 
 Choose the right [output setting](/GraFx-Studio/concepts/output-settings/), you have predefined as PDF output.
 
-![screenshot](pdf.png)
+![screenshot](pdf.png){.screenshot}
 
-![screenshot](export.png)
+![screenshot](export.png){.screenshot}
 
 When the export is ready, your browser will download the file into your downloads folder.
 

@@ -14,19 +14,19 @@ This variable is a text variable, containing the old price for a discounted prod
 
 The action will execute the change, based on the presence of a value in that variable.
 
-![Movie](demo.gif)
+![Movie](demo.gif){.screenshot}
 
 ### The variable
 
 A text variable "Old price" is defined.
 
-![screenshot](variable.png)
+![screenshot](variable.png){.screenshot}
 
 ### The trigger
 
 An action is defined (See [Create Actions](/GraFx-Studio/guides/actions/create/) on how to do this)
 
-![screenshot](action-definition.png)
+![screenshot](action-definition.png){.screenshot}
 
 Step 1 is to define the trigger, that will initiate the action.
 
@@ -36,7 +36,7 @@ The trigger is initiated when
 - or when the document is loaded (to be sure we check when opening the document)
 - or when a layout is changed
 
-![screenshot](action-triggers.png)
+![screenshot](action-triggers.png){.screenshot}
 
 ### Action
 

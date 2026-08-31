@@ -1,6 +1,6 @@
 # Layouts
 
-![Properties](layout-1.png)
+![Properties](layout-1.png){.screenshot-full}
 
 Layouts is a concept to reduce the time to produce variants, by creating several variants from the same document.
 
@@ -19,17 +19,17 @@ This design could be an abstract version, or a first version of the add.
 
 The properties of the design can be found on the right, in the properties panel.
 
-![Base Design](layout-2.png)
+![Base Design](layout-2.png){.screenshot}
 
 The properties of the elements on the page are shown when you select the element.
 
-![Base Design](layout-3.png)
+![Base Design](layout-3.png){.screenshot}
 
 The properties of the animation of the elements show when you select the animaction icon in the properties panel.
 
 Click on **intro**, **emphasis** and **outro** to expand the respective properties.
 
-![Base Design](prop-panel.gif)
+![Base Design](prop-panel.gif){.screenshot}
 
 ## Inheritance
 
@@ -39,7 +39,7 @@ In the properties panel you see values "Inheriting from [Layout]".
 
 This means that values for this property have been taken from the master of this layout.
 
-![master](master.png)
+![master](master.png){.screenshot-full}
 
 The master of this layout is the one above the current layout, in the Layout menu.
 
@@ -47,7 +47,7 @@ In this example **Base Design** is the master for **Skyscraper**, and **Skyscrap
 
 When switching layouts, the document will zoom to fit.
 
-![inherited](inherited-values.png)
+![inherited](inherited-values.png){.screenshot}
 
 When a value is colored (and the bullet next to **inherited** is colored), it means the current value for this layout is different than the master's value.
 
@@ -55,6 +55,6 @@ If it's white, it's the value taken from the master.
 
 ### Reset inherited values
 
-![inherited](inherited-values.gif)
+![inherited](inherited-values.gif){.screenshot}
 
 Reset all values, or only individual values by the left-turning arrow. A dropdown will provide you with the options to reset to the master's values.

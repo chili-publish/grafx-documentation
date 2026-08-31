@@ -10,7 +10,7 @@ Before you can generate a token, you must create an Integration. Check out our g
 
 After setting up an Integration with the necessary permissions, navigate to the General tab. Here, you'll find your Client ID and Client Secret.
 
-![screenshot](integration5.png)	
+![screenshot](integration5.png){.screenshot}	
 
 ## 3. Request a Token
 Use the Client ID and Client Secret to request a token. Make a POST request to:

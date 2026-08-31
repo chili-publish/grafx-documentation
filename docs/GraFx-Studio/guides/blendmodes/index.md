@@ -6,4 +6,4 @@
 
 [Overview of blend modes](/GraFx-Studio/concepts/blendmodes/)
 
-![Frame](applyblendmode.png)
+![Frame](applyblendmode.png){.screenshot-full}

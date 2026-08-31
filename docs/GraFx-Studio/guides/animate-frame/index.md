@@ -12,7 +12,7 @@ We will also refer to [Animation panel](/GraFx-Studio/overview/animation/)
 
 Click on the Layers icon in the [bottom quick tools panel](/GraFx-Studio/overview/bottom-quicktools/).
 
-![Timeline change](timeline.png)
+![Timeline change](timeline.png){.screenshot-full}
 
 **Select the frame**
 
@@ -30,11 +30,11 @@ Expand the **intro** section of the animation panel.
 
 Select 1 or more of the behaviours you want to apply to the intro of the animation. Then select the properties linked to the behaviour.
 
-![Timeline change](prop-panel.gif)
+![Timeline change](prop-panel.gif){.screenshot}
 
 Adjust the length of the animation in the timeline.
 
-![Timeline change](duration-resize.gif)
+![Timeline change](duration-resize.gif){.screenshot-full}
 
 !!! Tip
 	If you are distracted by other frames animating through your current frame, you can hide the other frame by clicking the **eye** next to these frames.

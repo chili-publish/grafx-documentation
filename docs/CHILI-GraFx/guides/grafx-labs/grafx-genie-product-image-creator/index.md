@@ -1,7 +1,7 @@
 # GraFx Genie Product Image Creator
 
 !!! example "Experimental feature"
-    ![Product Image Creator – interface](/release-notes/releasenotesassets/grafx-labs02.png)
+    ![Product Image Creator – interface](/release-notes/releasenotesassets/grafx-labs02.png){.screenshot}
     This capability is part of GraFx Labs and is experimental.  
     It can change or be removed at any time.  
     We look forward to your validation and feedback.
@@ -32,11 +32,11 @@ The tool supports both:
 
 ### Add a brand-approved asset from GraFx Media
 
-![Table](table.png)
+![Table](table.png){.screenshot-full}
 
 ### Add a prompt to augment the asset
 
-![Table with plants](table2.png)
+![Table with plants](table2.png){.screenshot-full}
 
 ## Result handling
 

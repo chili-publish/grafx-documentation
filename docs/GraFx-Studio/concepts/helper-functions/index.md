@@ -4,11 +4,11 @@
 
 Actions are defined in the Automation panel, Actions & Variable tab.
 
-![screenshot](panel1.png)
+![screenshot](panel1.png){.screenshot}
 
-![screenshot](editaction.png)
+![screenshot](editaction.png){.screenshot}
  
-![screenshot](actioneditor.png)
+![screenshot](actioneditor.png){.screenshot}
 
 When writing actions, you can start with the base objects, and with the dot-notation drill down to the function or value you're looking for.
 
@@ -24,7 +24,7 @@ studio.stylekit.colors.copy("characterstyle1", "characterstyle2");
 
 When writing code, add a dot, and the Action Editor will suggest possible functions that are relevant in this context.
 
-![appscreen](dotnotation.png)
+![appscreen](dotnotation.png){.screenshot-full}
 
 For many often used functions, we created helper functions.
 
@@ -42,27 +42,27 @@ There are several approaches, to finding the function you might need.
 
 For certain objects, you can "set" a parameter or "get" information about an element on the page. When you type "get" or "set", a list of relevant functions will appear.
 
-![appscreen](get.png)
+![appscreen](get.png){.screenshot}
 
-![appscreen](set.png)
+![appscreen](set.png){.screenshot}
 
 #### Keywords
 
 Another method to identify a helper function is to begin typing a keyword that seems relevant to you, such as: frame, variable, document, page, etc. The Action editor will then suggest a list of related helper functions.
 
-![appscreen](variable.png)
+![appscreen](variable.png){.screenshot}
 
-![appscreen](image.png)
+![appscreen](image.png){.screenshot-full}
 
-![appscreen](frame.png)
+![appscreen](frame.png){.screenshot}
 
-![appscreen](page.png)
+![appscreen](page.png){.screenshot-full}
 
 #### Category names
 
 Alternatively, you can start typing one of the [4 categories](#groups-of-functions) of functions (detailed below). The Action Editor will display a list of available functions.
 
-![appscreen](helpers.png)
+![appscreen](helpers.png){.screenshot-full}
 
 #### Combine methods
 
@@ -76,7 +76,7 @@ A function requires info or input to handle your request. This input is sometime
 
 There is no need to learn them by heart. When you start typing a function end with an open bracket "**(**", and the Action Editor will show an info panel what info to expect.
 
-![appscreen](params.png)
+![appscreen](params.png){.screenshot-full}
 
 In this case, the function needs the name of a frame (as a String, i.e. text) and also needs the state of visibility: True or False.
 

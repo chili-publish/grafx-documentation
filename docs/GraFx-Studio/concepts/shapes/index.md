@@ -8,9 +8,9 @@ Select (E) for ellipse
 
 Select (Y) for polygon (don't ask Y)
 
-![Properties](shapes-ui.png)
+![Properties](shapes-ui.png){.screenshot}
 
-![Properties](shapes-intro.png)
+![Properties](shapes-intro.png){.screenshot-full}
 
 ## Shape properties
 
@@ -22,4 +22,4 @@ Select (Y) for polygon (don't ask Y)
 - Rotation (inherited property)
 - Corner radius
 
-![Properties](shape-properties.png)
+![Properties](shape-properties.png){.screenshot}

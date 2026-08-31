@@ -2,7 +2,7 @@
 
 The fonts application for [GraFx Studio](/GraFx-Studio/)
 
-![asset](dashboard.png)
+![asset](dashboard.png){.screenshot-full}
 
 ## Fonts for your applications
 

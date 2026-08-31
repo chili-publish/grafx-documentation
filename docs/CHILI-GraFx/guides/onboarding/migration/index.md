@@ -4,7 +4,7 @@
 
 You have received an email, notifying your account is setup.
 
-![steps](migrate-1.png)
+![steps](migrate-1.png){.steps}
 
 ## 2. Reset your password
 
@@ -12,13 +12,13 @@ You have received an email, notifying your account is setup.
 
 Before you start, reset your password. [here](https://my.chili-publish.com/Account/ResetPassword), using your email as your login.
 
-![steps](migrate-2.png)
+![steps](migrate-2.png){.steps}
 
 ### Confirm the email
 
 You will receive an email, where you need to follow the link to confirm you initiated the password reset.
 
-![steps](migrate-3.png)
+![steps](migrate-3.png){.steps}
 
 ### Enter new password
 
@@ -36,7 +36,7 @@ Your password should follow these guidelines:
 
 Confirm "Change password"
 
-![steps](migrate-4.png)
+![steps](migrate-4.png){.steps}
 
 ## 3. Logging in
 
@@ -44,7 +44,7 @@ Confirm "Change password"
 
 Go to [My CHILI publish](https://my.chili-publish.com) and log in.
 
-![steps](migrate-5.png)
+![steps](migrate-5.png){.steps}
 
 !!! Warning
 	You did migrate before?
@@ -59,38 +59,38 @@ These steps are only necessary, if you did not migrate yet
 
 The first time you arrive on CHILI GraFx, arriving from My CHILI publish, you'll be prompted to migrate.
 
-![steps](migrate-6.png)
+![steps](migrate-6.png){.steps}
 
 ### Confirm your email address
 
 The Email field will be pre-populated with your login (email).
 Confirm your email.
 
-![steps](migrate-7.png)
+![steps](migrate-7.png){.steps}
 
 ### E-mail link
 
 You'll receive an email, where you need to confirm the migration to CHILI GraFx.
 
-![steps](migrate-8.png)
+![steps](migrate-8.png){.steps}
 
-![steps](migrate-9.png)
+![steps](migrate-9.png){.steps}
 
 ### Confirm your new password
 
 On the page in CHILI GraFx, confirm your new password.
 
-![steps](migrate-10.png)
+![steps](migrate-10.png){.steps}
 
-![steps](migrate-11.png)
+![steps](migrate-11.png){.steps}
 
 ## 5. Logging in to CHILI GraFx
 
 Go to [CHILI GraFx](https://chiligrafx.com/) to login with your credentials
 
-![steps](migrate-12.png)
+![steps](migrate-12.png){.steps}
 
-![steps](migrate-13.png)
+![steps](migrate-13.png){.steps}
 
 Congratulations, you are now ready to start your **Creative Automation** journey!
 
@@ -101,11 +101,11 @@ Congratulations, you are now ready to start your **Creative Automation** journey
 In the platform, you can click the question mark, in the bottom-right corner.
 Click "Support" to access the support platform. (use the same CHILI GraFx credentials to login).
 
-![steps](migrate-14.png)
+![steps](migrate-14.png){.steps}
 
-![steps](migrate-15.png)
+![steps](migrate-15.png){.steps}
 
-![steps](migrate-16.png)
+![steps](migrate-16.png){.steps}
 
 Choose the "Log in with GraFx" button.
 

@@ -13,7 +13,7 @@ If no discount is entered, all frames are hidden. If a discount is selected, it 
 
 If a discount of -50% is chosen, a "Super promo!" shape and text will be shown.
 
-![Movie](demo.gif)
+![Movie](demo.gif){.screenshot}
 
 ### The variable
 
@@ -21,7 +21,7 @@ A list variable "Discount" is defined.
 
 The items in the list contain the discount options.
 
-![screenshot](variable.png)
+![screenshot](variable.png){.screenshot}
 
 ### The trigger
 
@@ -35,7 +35,7 @@ The trigger is initiated when
 - or when the document is loaded (to be sure we check when opening the document)
 - or when a layout is changed
 
-![screenshot](action-definition.png)
+![screenshot](action-definition.png){.screenshot}
 
 ### Action
 

@@ -9,17 +9,17 @@ Blend Modes determine how two graphics or colors blend together. Each blend mode
 | Examples      | | | |
 | -- | -- | -- | -- |
 | Normal              | Screen             | Overlay             | Darken |
-|![Frame](normal.png)| ![Frame](screen.png)|![Frame](overlay.png)|![Frame](darken.png)|
+|![Frame](normal.png){.screenshotsmall}| ![Frame](screen.png){.screenshotsmall}|![Frame](overlay.png){.screenshotsmall}|![Frame](darken.png){.screenshotsmall}|
 | Lighten             | Color Dodge             | Color Burn            | Hard light |
-|![Frame](lighten.png)| ![Frame](colordodge.png)|![Frame](colorburn.png)|![Frame](hardlight.png)|
+|![Frame](lighten.png){.screenshotsmall}| ![Frame](colordodge.png){.screenshotsmall}|![Frame](colorburn.png){.screenshotsmall}|![Frame](hardlight.png){.screenshotsmall}|
 | Soft light            | Difference              | Exclusion             | Multiply |
-|![Frame](softlight.png)| ![Frame](difference.png)|![Frame](exclusion.png)|![Frame](multiply.png)|
+|![Frame](softlight.png){.screenshotsmall}| ![Frame](difference.png){.screenshotsmall}|![Frame](exclusion.png){.screenshotsmall}|![Frame](multiply.png){.screenshotsmall}|
 | Hue             | Saturation              | Color             | Luminosity |
-|![Frame](hue.png)| ![Frame](saturation.png)|![Frame](color.png)|![Frame](luminosity.png)|
+|![Frame](hue.png){.screenshotsmall}| ![Frame](saturation.png){.screenshotsmall}|![Frame](color.png){.screenshotsmall}|![Frame](luminosity.png){.screenshotsmall}|
 
 The above examples show blend modes in action on a graphic. You can also apply them to a frame with text.
 
-![Frame](blendmode-text.png)
+![Frame](blendmode-text.png){.screenshot-full}
 
 ### Normal
 The default blend mode which draws the new graphics over the existing graphics.

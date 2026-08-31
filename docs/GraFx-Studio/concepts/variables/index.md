@@ -28,9 +28,9 @@ var total = firstvalue + secondvalue; // total will hold the value 30
 
 ### Example Use-Cases
 
-![image](template-variable-1.png)
+![image](template-variable-1.png){.screenshot-full}
 
-![image](template-variable-2.png)
+![image](template-variable-2.png){.screenshot-full}
 
 
 ## Bridging Actions and Templates

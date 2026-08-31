@@ -17,33 +17,33 @@ Writing Actions normally means writing JavaScript. With GraFx Genie, you describ
 
 You have a retail template. A template variable field allows the users of the template to enter a discount percentage. When the discount drops below, say, 30%, you (as a template designer) want to show an extra asset to highlight the steep discount.
 
-![screenshot-full](template.png)
+![screenshot-full](template.png){.screenshot-full}
 
 A template variable makes sure a user can change the discount.
 
-![screenshot-full](variable.png)
+![screenshot-full](variable.png){.screenshot-full}
 
 Now, let's make an Action that will be triggered when a template variable value changes.
 
-![screenshot-full](trigger.png)
+![screenshot-full](trigger.png){.screenshot-full}
 
 To create the Action, click on the Action tab.
 
-![screenshot-full](action.png)
+![screenshot-full](action.png){.screenshot-full}
 
 You can now ask GraFx Genie to write the script for you. Click on the GraFx Genie icon.
 
-![screenshot-full](genie-icon.png)
+![screenshot-full](genie-icon.png){.screenshot-full}
 
-![screenshot-full](genie1.png)
+![screenshot-full](genie1.png){.screenshot-full}
 
 Ask GraFx Genie what functionality you need in your Smart Template.
 
-![screenshot-full](genie2.png)
+![screenshot-full](genie2.png){.screenshot-full}
 
 GraFx Genie will now suggest a JavaScript you can use to perform the functionality.
 
-![screenshot-full](action2.png)
+![screenshot-full](action2.png){.screenshot-full}
 
 As you see, GraFx Genie knows about the context. Without specifying that discount is a template variable name, it will understand and use this information to write the script.
 

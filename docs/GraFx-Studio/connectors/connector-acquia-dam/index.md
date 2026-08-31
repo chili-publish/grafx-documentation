@@ -22,7 +22,7 @@ Your instance of the Connector needs to know which Acquia DAM instance it should
 
 Once installed, navigate to the Connector overview, and select **Acquia DAM**. Start with **Configuration**.
 
-![screenshot-full](config.png)
+![screenshot-full](config.png){.screenshot-full}
 
 Consult your Acquia System Admin to get the correct values for the fields.
 
@@ -37,7 +37,7 @@ You will need specific credentials from your Acquia DAM installation to set up t
 
 You can set the authentication for machine-to-machine and browser separately or use the same setup for both.
 
-![screenshot-full](config-auth.png)
+![screenshot-full](config-auth.png){.screenshot-full}
 
 Consult your Acquia System Admin to get the correct values for the fields.
 
@@ -64,15 +64,15 @@ This means if the credentials only allow access to certain assets, only those as
 - Select the Acquia DAM Connector.
 - Double-click the asset to assign it to the image frame.
 
-![screenshot-full](acquia_assets.gif)
+![screenshot-full](acquia_assets.gif){.screenshot-full}
 
 ### Image Variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will get the same list of assets when you select an image.
 
-![screenshot-full](var1.png)
+![screenshot-full](var1.png){.screenshot-full}
 
-![screenshot-full](var2.png)
+![screenshot-full](var2.png){.screenshot-full}
 
 ### DAM Queries & Variables
 
@@ -82,7 +82,7 @@ You may want to filter the assets suggested to the template user by using catego
 
 In the Acquia DAM solution, you can use a query language.
 
-![screenshot-full](assets1.png)
+![screenshot-full](assets1.png){.screenshot-full}
 
 By using the query language, you can filter down to the right selection of assets.
 
@@ -90,13 +90,13 @@ By using the query language, you can filter down to the right selection of asset
 
     Use `cat:{wine}` to filter down to only wines.
 
-![screenshot-full](assets2.png)
+![screenshot-full](assets2.png){.screenshot-full}
 
 !!! tip "Description"
 
     Add `cat:{wine} des:{white}` to further filter to only wines with the word "white" in the description.
     
-![screenshot-full](assets3.png)
+![screenshot-full](assets3.png){.screenshot-full}
 
 #### How To
 
@@ -104,16 +104,16 @@ DAM queries are set at the connector level for a specific frame.
 
 Set the value of the query in the connector settings.
 
-![screenshot-full](query1.png)
+![screenshot-full](query1.png){.screenshot-full}
 
 If a fixed query is not sufficient, you can use a variable.
 
-![screenshot-full](query2.png)
+![screenshot-full](query2.png){.screenshot-full}
 
-![screenshot-full](query3.png)
+![screenshot-full](query3.png){.screenshot-full}
 
 To further automate, you can use [Actions](/GraFx-Studio/guides/actions/create/) to influence and set the query according to other variables or inputs the Smart Template receives.
 
-![screenshot-full](query4.png)
+![screenshot-full](query4.png){.screenshot-full}
 
 In the image above, the action sets the `DamSearchString` to have different DAM queries depending on a chosen category. That text variable is then used in the image variable (see image above).

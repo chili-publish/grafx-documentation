@@ -6,11 +6,11 @@
 
 In the properties panel (right), choose the wrench & screwdriver tool.
 
-![screenshot](var01.png)
+![screenshot](var01.png){.screenshot}
 
 Then choose **Variables**
 
-![screenshot](var02.png)
+![screenshot](var02.png){.screenshot}
 
 A panel will appear, where you can define your template variables.
 
@@ -21,7 +21,7 @@ A list of all template variables that are available in the document shows
 - Pencil icon (when hovering over the variable)
 - "..." menu (when hovering over the variable)
 
-![screenshot](var03.png)
+![screenshot](var03.png){.screenshot}
 
 ## Create variables from a linked datasource
 
@@ -88,15 +88,15 @@ You can group variables in a group or folder. This allows you to stay organised 
 
 Shift-select multiple variables, and group them. After grouping, you can rename the group.
 
-![screenshot](group01.png)
+![screenshot](group01.png){.screenshot}
 
-![screenshot](group02.png)
+![screenshot](group02.png){.screenshot}
 
 ## Types
 
 Create a variable. Then, in the properties panel, choose the variable type. Different use cases demand different variable types.
 
-![screenshot](vartypes.png)
+![screenshot](vartypes.png){.screenshot}
 
 ### Single-line Text
 
@@ -158,7 +158,7 @@ Data comes either from a [data connector](/GraFx-Studio/concepts/connectors-data
 
 ### Variable name
 
-![screenshot](var07.png)
+![screenshot](var07.png){.screenshot}
 
 In the list of variables, you can double click or "Rename" the variable Name.
 
@@ -169,28 +169,28 @@ In the list of variables, you can double click or "Rename" the variable Name.
 
 ### Default state
 
-![screenshot](var04.png)
+![screenshot](var04.png){.screenshot}
 
 The default value your template variable will have.
 
 ### General properties
 
-![screenshot](var05.png)
+![screenshot](var05.png){.screenshot}
 
 - Type: See [types](#types) above
 - Required: Disabled by default
 - Remove paragraph if empty: Disabled by default  
 Check to remove the full paragraph this variable is used on.  
 Available on (Single-line text, Multi-line text, Single-select list, Date)
-![screenshot-full](removeparagraph.gif)
+![screenshot-full](removeparagraph.gif){.screenshot-full}
 - [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
 A set of key-value pairs to assist you with automation.
 
 ### User Interface
 
-![screenshot](var14.png)
+![screenshot](var14.png){.screenshot}
 
-![screenshot](var08.png)
+![screenshot](var08.png){.screenshot}
 
 These settings define how the template variable is presented:
 
@@ -202,7 +202,7 @@ These settings define how the template variable is presented:
 
 Choose how visibility is set
 
-![screenshot](var13.png)
+![screenshot](var13.png){.screenshot}
 
 - Always (default)
 - Never

@@ -79,11 +79,11 @@ When defining the Subject Area on a media detail view, a **Subject type** dropdo
 - **Default** is the Subject Area and POI detected automatically on upload. This is what Smart Crop uses when no subject type is selected on the image frame.
 - Selecting a custom subject type (for example *People*) loads the Subject Area and POI stored for that type, if any. Adjust and **Apply** to save a variant specific to that type.
 
-![screenshot-full](subject-type-default.png)
+![screenshot-full](subject-type-default.png){.screenshot-full}
 
-![screenshot-full](subject-type-people.png)
+![screenshot-full](subject-type-people.png){.screenshot-full}
 
-![screenshot-full](subject-type-product.png)
+![screenshot-full](subject-type-product.png){.screenshot-full}
 
 Switching between subject types in the dropdown shows the stored values for each — in the example above, *Default* keeps the full scene, *People* tightens around the person, and *Product* zooms in further on the face. *Cancel* discards any unapplied changes as before.
 

@@ -8,11 +8,11 @@ This is where **Visibility Conditions** come into play.
 
 In the **User Interface** tab of a variable, you can define its visibility settings.
 
-![screenshot-full](var08.png)
+![screenshot-full](var08.png){.screenshot-full}
 
 Three options are available:
 
-![screenshot](var13.png)
+![screenshot](var13.png){.screenshot}
 
 - **Always** (default)
 - **Never**
@@ -24,17 +24,17 @@ If you select **Conditional**, you can define the conditions under which the var
 
 You can add one or more conditions. **All conditions must be met** for the variable to be displayed.
 
-![screenshot](var09.png)
+![screenshot](var09.png){.screenshot}
 
 Click **Visibility Conditions**.
 
-![screenshot-full](var10.png)
+![screenshot-full](var10.png){.screenshot-full}
 
 Click **+ Add Condition** and define the criteria that must be met for the variable to be visible.
 
-![screenshot-full](var11.png)
+![screenshot-full](var11.png){.screenshot-full}
 
-![screenshot-full](var12.png)
+![screenshot-full](var12.png){.screenshot-full}
 
 ## Deprecated in Actions
 
@@ -49,6 +49,6 @@ Click **+ Add Condition** and define the criteria that must be met for the varia
     - **You do not use `SetVisible` in Actions** if you want to maintain visibility conditions.
     - **You only use Actions or Visibility Conditions**, but not both.
 
-![screenshot-full](var14.png)
+![screenshot-full](var14.png){.screenshot-full}
 
 The Action Editor will display **SetVisible** as ~~strikethrough~~ to indicate that it is deprecated. Hovering over the function will also display a **deprecated** warning.

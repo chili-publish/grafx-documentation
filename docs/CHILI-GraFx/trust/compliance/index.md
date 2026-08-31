@@ -16,7 +16,7 @@ These classifications are [listed on our website](https://www.chili-publish.com/
 
 Our compliance team works hard to meet your organization’s compliance needs. We are proud to announce we are ISO27001:2017 certified.
 
-![Logo](iso-27001-2022.png)
+![Logo](iso-27001-2022.png){.screenshot-full}
 
 [Download statement of applicability](https://cdn6.chili-publish.com/hub/Legal/CHILI_publish_ISO27001_Statement_of_Applicability_v121_Jul17th_2024.pdf)
 

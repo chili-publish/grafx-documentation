@@ -9,15 +9,15 @@ On the Brand Kit detail page:
 
 - Click the “+” in the empty tile for Colors, Fonts & Media.
 
-![screenshot](edit05.png)
+![screenshot](edit05.png){.screenshot}
 
 - Click on the "Add" button for Paragraph styles or Character styles.  
 
-![screenshot](edit07.png)
+![screenshot](edit07.png){.screenshot}
 
 - Fill in the required fields or add items.  
 
-![screenshot](edit06.png)
+![screenshot](edit06.png){.screenshot}
 
 ## Edit an element
 
@@ -26,10 +26,10 @@ On the Brand Kit detail page:
 - Media: Add, remove, or replace assets using the "..." context menu. If an asset has been deleted from GraFx Media, the Brand Kit shows an *"Image not available"* placeholder — use the context menu to replace or delete it.
 - Paragraph- and Character styles: click the "Edit Style" button
 
-![screenshot](edit09.png)
+![screenshot](edit09.png){.screenshot}
 
 ## Remove an element
 
 - Click the "..." menu and select **Remove**
 
-![screenshot](edit10.png)
+![screenshot](edit10.png){.screenshot}

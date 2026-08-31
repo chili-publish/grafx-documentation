@@ -2,7 +2,7 @@
 
 "Output settings" in GraFx Studio allows template designers and admins to tailor settings for various outputs like PDFs, images, and animations. 
 
-![ui-full](outputsettings.png)
+![ui-full](outputsettings.png){.screenshot-full}
 
 Template designers and admins can fine-tune parameters such as scaling and quality, saving these configurations for consistent, efficient production. 
 

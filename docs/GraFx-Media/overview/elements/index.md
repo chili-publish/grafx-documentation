@@ -2,7 +2,7 @@
 
 When opening GraFx Media, you see the action banner (1) and below all top level folders (2).
 
-![appscreen](dashboard.png)
+![appscreen](dashboard.png){.screenshot}
 <br/>
 
 <span class="reddot">1</span>
@@ -16,7 +16,7 @@ Similar to what you're used to in any OS, a view on the folders and their conten
 
 ## Action banner
 
-![appscreen](action-banner.png)
+![appscreen](action-banner.png){.screenshot-full}
 <br/>
 
 <span class="reddot">3</span>

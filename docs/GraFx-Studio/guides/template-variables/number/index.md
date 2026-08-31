@@ -13,7 +13,7 @@ Example: Discount
 
 ## General Properties
 
-![screenshot-full](num3.png)
+![screenshot-full](num3.png){.screenshot-full}
 
 ### Range
 
@@ -27,7 +27,7 @@ Set the number of decimal places that will be displayed.
 
 #### Decimal Character Style
 
-![screenshot-full](ds0.png)
+![screenshot-full](ds0.png){.screenshot-full}
 
 Specify a character style specific for the decimal part of a number.
 
@@ -35,15 +35,15 @@ Specify a character style specific for the decimal part of a number.
 
 The chosen Paragraph style for the frame is "Text".
 
-![screenshot-full](ds1.png)
+![screenshot-full](ds1.png){.screenshot-full}
 
 A specific character style is defined and has the property to show as "Superscript".
 
-![screenshot-full](ds2.png)
+![screenshot-full](ds2.png){.screenshot-full}
 
 The 'decimal' character style "Cents" is set to "Superscript" to use it as character style for the decimal part.
 
-![screenshot-full](ds3.png)
+![screenshot-full](ds3.png){.screenshot-full}
 
 If you want to use the decimal character style, you need to make sure that there are no style overrides on the number variable (you can use the "Clear style overrides" button in the text properties panel to remove the style overrides)
 
@@ -60,7 +60,7 @@ The “thousands separator” symbol is used to group digits into sets of three 
 
 ## User Interface
 
-![screenshot-full](num4.png)
+![screenshot-full](num4.png){.screenshot-full}
 
 See [User Interface](../../template-variables/define/#user-interface)
 

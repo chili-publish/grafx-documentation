@@ -4,9 +4,9 @@
 
 In the tree of layouts, select the one you wish to output.
 
-![Output](output-1.png)
+![Output](output-1.png){.screenshot}
 
-![Output](output-2.png)
+![Output](output-2.png){.screenshot-full}
 
 ## Timeline
 
@@ -22,6 +22,6 @@ If you were to remove all animations, as initially shown, the position and size 
 
 Click "Export as" and choose PNG or JPG in the dropdown.
 
-![Output](export.png)
+![Output](export.png){.screenshotsmall}
 
 When the export is ready, your browser will download the file into your downloads folder.

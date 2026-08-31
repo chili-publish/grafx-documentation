@@ -6,7 +6,7 @@
 
 Navigate to GraFx Studio, and click the "+ Create template" buttons.
 
-![Template](template.png)
+![Template](template.png){.screenshot-full}
 
 An untitled file will be created, and GraFx Studio will open with the "Untitled" file.
 
@@ -18,10 +18,10 @@ To (re)name the file, you can do so in GraFx Studio, or in the template overview
 
 Click on the name on top of the screen.
 
-![Template](rename1.png)
+![Template](rename1.png){.screenshot}
 
 ## Rename in CHILI GraFx
 
 Click the three dots, and choose "rename"
 
-![Template](rename2.png)
+![Template](rename2.png){.screenshot}

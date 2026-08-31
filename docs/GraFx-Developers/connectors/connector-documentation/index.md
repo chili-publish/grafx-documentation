@@ -16,7 +16,7 @@ See the [Google Sheets Data Connector](/GraFx-Studio/connectors/connector-google
 
 1. Read the [README](https://github.com/chili-publish/grafx-documentation/blob/main/README.md) and [Contributing Guide](https://github.com/chili-publish/grafx-documentation/blob/main/CONTRIBUTING.md)
 2. Download this [template zip](connector_infinity.zip) (it contains a basic structure)  
-![screenshot](connectordoc02.png)
+![screenshot](connectordoc02.png){.screenshot}
 3. [Fork this repository](https://github.com/chili-publish/grafx-documentation/fork)
 4. Add your folder and assets
 5. Update `mkdocs.yml` navigation
@@ -29,20 +29,20 @@ Your docs will go live after review.
 Use folder name `connector-yourname`.  
 E.g. `connector-infinity` for "Infinity".
 
-![screenshot-full](connectordoc01.png)
+![screenshot-full](connectordoc01.png){.screenshot-full}
 
 Your folder should go in the structure:
 
 docs > GraFx-Studio > connectors > **connector-infinity**
 
-![screenshot-full](connectordoc03.png)
+![screenshot-full](connectordoc03.png){.screenshot-full}
 
 ## Folder Contents
 
 - `index.md`: your main doc (use [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/))
 - `infinity01.png`: add visuals to the same folder
 
-![screenshot-full](connectordoc02.png)
+![screenshot-full](connectordoc02.png){.screenshot-full}
 
 ## Subfolders
 
@@ -54,7 +54,7 @@ Add your connector to the `mkdocs.yml`
 
 Under Media for media connectors, Data for data connectors.
 
-![screenshot-full](connectordoc04.png)
+![screenshot-full](connectordoc04.png){.screenshot-full}
 
 ## What to Document?
 

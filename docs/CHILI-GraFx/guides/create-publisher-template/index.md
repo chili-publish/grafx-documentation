@@ -6,4 +6,4 @@
 
 Navigate to GraFx Publisher, and [create your document in the Backoffice](https://chilipublishdocs.atlassian.net/wiki/search?text=create%20first%20document){target=_blank}.
 
-![Template](publisher.png)
+![Template](publisher.png){.screenshot-full}

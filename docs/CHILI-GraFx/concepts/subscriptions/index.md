@@ -2,13 +2,13 @@
 
 Your account can hold 1 or more subscriptions. Choosing "My subscriptions" in the account drop down will display a dashboard of the first active subscription.
 
-![screenshot-full](https://chilipublishdocs.imgix.net/CHILI_GraFx/mysubscription_summary.png)
+![screenshot-full](https://chilipublishdocs.imgix.net/CHILI_GraFx/mysubscription_summary.png){.screenshot-full}
 
-![screenshot-full](https://chilipublishdocs.imgix.net/CHILI_GraFx/mysubscription_addons.png)
+![screenshot-full](https://chilipublishdocs.imgix.net/CHILI_GraFx/mysubscription_addons.png){.screenshot-full}
 
 If you have more than 1 subscription, you can change subscriptions in the dropdown next to the home button.
 
-![screenshotsmall](https://chilipublishdocs.imgix.net/CHILI_GraFx/myaccount4.png?w=830&q=80)
+![screenshotsmall](https://chilipublishdocs.imgix.net/CHILI_GraFx/myaccount4.png?w=830&q=80){.screenshotsmall}
 
 # Add-ons
 

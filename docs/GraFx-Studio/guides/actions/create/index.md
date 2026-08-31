@@ -8,13 +8,13 @@ By default, a new document will not have any Actions.
 
 You can add an Action using the "+" sign or edit existing ones with the pencil icon.
 
-![screenshot](actionlist.png)
+![screenshot](actionlist.png){.screenshot}
 
 ## Define Triggers for the Action
 
 In the Action, first select a Trigger - an event that will kick off the Action.
 
-![screenshot](trigger.png)
+![screenshot](trigger.png){.screenshot}
 
 If applicable, select the scope for the Trigger.
 
@@ -24,7 +24,7 @@ The scope is the object (frame, variable, etc.) that will be monitored. You can 
 	When referring to **variables** in this context we mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)**.
 
 
-![screenshot](triggerscope.png)
+![screenshot](triggerscope.png){.screenshot}
 
 What Triggers are available?
 
@@ -32,7 +32,7 @@ What Triggers are available?
 
 The chosen layout is changed.
 
-![screenshot](layouts.png)
+![screenshot](layouts.png){.screenshot}
 
 ### Frame moved
 
@@ -40,7 +40,7 @@ When the position (or size) of a frame changes.
 
 This Trigger is detected when the X, Y, width, height, or rotation changes.
 
-![screenshot](framelocation.png)
+![screenshot](framelocation.png){.screenshot}
 
 ### Page size changed
 
@@ -66,11 +66,11 @@ The example below reads the value of the variable "reduction" and translates it 
 
 If the value is "promo", then the position of the frame (shape: "promoPop") behind the price will be offset outside the page or returned to the actual position.
 
-![screenshot](action.png)
+![screenshot](action.png){.screenshot}
 
-![screenshot](promoYes.png)
+![screenshot](promoYes.png){.screenshot}
 
-![screenshot](promoNo.png)
+![screenshot](promoNo.png){.screenshot}
 
 ## Order of execution
 
@@ -78,7 +78,7 @@ When creating a new action the default name “Action 1” is given. Every new a
 
 The order of the actions in the list defines the order of execution. This means that if an event triggers multiple actions, the first one in the list will be executed first. The order can be changed by drag and drop.
 
-![Reorder Actions](reorder-actions.gif)
+![Reorder Actions](reorder-actions.gif){.screenshot}
 
 It is possible that an action causes another event to fire, which can trigger another action. If this happens, all actions triggered by the first event will be executed first. When they are all processed, the actions triggered by the new event will be executed. As an example, we have this list of actions:
 

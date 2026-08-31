@@ -12,20 +12,20 @@ However, their access settings and group memberships are retained. This ensures 
 
 In the user management, hover over the three dots on the right.
 
-![ui-full](deactivate01.png)
+![ui-full](deactivate01.png){.screenshot-full}
 
 Confirm the deactivation
 
-![ui](deactivate02.png)
+![ui](deactivate02.png){.screenshot}
 
 The user will appear gray.
 
-![ui-full](deactivate03.png)
+![ui-full](deactivate03.png){.screenshot-full}
 
 ### Activate
 
 Click Activate under the same "..." menu to reactivate the user.
 
-![ui-full](deactivate04.png)
+![ui-full](deactivate04.png){.screenshot-full}
 
-![ui-full](deactivate05.png)
+![ui-full](deactivate05.png){.screenshot}

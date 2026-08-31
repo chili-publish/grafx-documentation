@@ -24,17 +24,17 @@ Contact [Graphique Alliance](https://graphique-alliance.com/contact/) to obtain 
 
 From the Environments overview, click on "Settings" on the right in the environment where you want to install or configure the Connector.
 
-![screenshot-full](sch13.jpg)
+![screenshot-full](sch13.jpg){.screenshot-full}
 
 Then click the installed Connector to access the configuration.
 
-![screenshot-full](sch12.png)
+![screenshot-full](sch12.png){.screenshot-full}
 
 ### Configuration
 
 Your instance of the Connector needs to know which Keepeek instance it should communicate with and how to authenticate.
 
-![screenshot-full](sch01.png)
+![screenshot-full](sch01.png){.screenshot-full}
 
 **baseURL**
 
@@ -58,7 +58,7 @@ For example:
 
 ### Authentication
 
-![screenshot-full](sch02.png)
+![screenshot-full](sch02.png){.screenshot-full}
 
 Select your type of authentication:
 
@@ -80,27 +80,27 @@ Consult your Keepeek System Admin for assistance in configuring these fields.
 
 - Select the Keepeek Connector.
 
-![screenshot-full](sch07.png)
+![screenshot-full](sch07.png){.screenshot-full}
 
-![screenshot-full](sch08.png)
+![screenshot-full](sch08.png){.screenshot-full}
 
-![screenshot-full](sch09.png)
+![screenshot-full](sch09.png){.screenshot-full}
 
 ### Image Variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the familiar grid of assets used when selecting an image, but also the Connector configuration options (see below).
 
-![screenshot-full](var01.png)
+![screenshot-full](var01.png){.screenshot-full}
 
 ### Metadata mapping
 
 See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details.
 
-![screenshot-full](var02.png)
+![screenshot-full](var02.png){.screenshot-full}
 
 ### Configuration Options
 
-![screenshot](var03.png)
+![screenshot](var03.png){.screenshot}
 
 To filter the assets suggested to template users, you can use several methods, including:
 

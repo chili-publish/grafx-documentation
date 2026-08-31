@@ -2,7 +2,7 @@
 
 ## Code 128
 
-![screenshot](code128.png)
+![screenshot](code128.png){.screenshot}
 
 ### Settings
 
@@ -25,7 +25,7 @@
 
 ## Code 39
 
-![screenshot](code39.png)
+![screenshot](code39.png){.screenshot}
 
 ### Settings
 
@@ -47,7 +47,7 @@ Default: default bar height + text height
 
 ## Code 93
 
-![screenshot](code93.png)
+![screenshot](code93.png){.screenshot}
 
 ### Settings
 
@@ -69,7 +69,7 @@ Default: default bar height + text height
 
 ## DataMatrix
 
-![screenshot](datamatrix.png)
+![screenshot](datamatrix.png){.screenshot}
 
 ### Settings
 
@@ -88,7 +88,7 @@ Default: default bar height + text height
 
 ## EAN-8
 
-![screenshot](ean8.png)
+![screenshot](ean8.png){.screenshot}
 
 ### Settings
 
@@ -108,7 +108,7 @@ Default: default bar height + text height
 
 ## EAN-13
 
-![screenshot](ean13.png)
+![screenshot](ean13.png){.screenshot}
 
 ### Settings
 
@@ -128,7 +128,7 @@ Default: default bar height + text height
 
 ## GS1-128
 
-![screenshot](gs1-128.png)
+![screenshot](gs1-128.png){.screenshot}
 
 ### Settings
 
@@ -153,7 +153,7 @@ Default: default bar height + text height
 
 ## QR Code
 
-![screenshot](qr.png)
+![screenshot](qr.png){.screenshot}
 
 ### Settings
 
@@ -178,7 +178,7 @@ Default: default bar height + text height
 
 ## UPC-A
 
-![screenshot](upca.png)
+![screenshot](upca.png){.screenshot}
 
 ### Settings
 
@@ -198,7 +198,7 @@ Default: default bar height + text height
 
 ## UPC-E
 
-![screenshot](upce.png)
+![screenshot](upce.png){.screenshot}
 
 ### Settings
 

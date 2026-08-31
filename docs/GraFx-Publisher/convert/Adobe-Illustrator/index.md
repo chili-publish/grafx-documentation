@@ -11,12 +11,12 @@ The latest tested version is 29.2.1 (January 2025).
 
 ## Converter Overview
 
-![screenshot](converter0.png)
+![screenshot](converter0.png){.screenshot}
 
 
 ### Server Connection Setup
 
-![screenshot](converter1.png)
+![screenshot](converter1.png){.screenshot}
 
 - **Preset**: Save your server connection as a preset for easy future access.
 - **URL**: Enter the URL to your GraFx Publisher instance. 
@@ -28,7 +28,7 @@ The latest tested version is 29.2.1 (January 2025).
 
 ### Exporting to GraFx Publisher
 
-![screenshot](converter2.png)
+![screenshot](converter2.png){.screenshot}
 
 Configure your export settings:
 
@@ -41,11 +41,11 @@ Configure your export settings:
 
 Identify potential issues before conversion with Preflight checks.
 
-![screenshot](converter3.png)
+![screenshot](converter3.png){.screenshot}
 
 ### Preferences
 
-![screenshot](converter4.png)
+![screenshot](converter4.png){.screenshot}
 
 Customize your settings:
 

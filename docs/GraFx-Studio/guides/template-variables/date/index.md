@@ -9,7 +9,7 @@
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.
 
-![screenshot](date0.png)
+![screenshot](date0.png){.screenshot}
 
 Choose "Date" as the Variable Type.
 
@@ -17,11 +17,11 @@ Choose "Date" as the Variable Type.
 
 Double-click the name, or choose "Rename" under the "..." menu.
 
-![screenshot](date1.png)
+![screenshot](date1.png){.screenshot}
 
 ## Set General Properties
 
-![screenshot-full](date2.png)
+![screenshot-full](date2.png){.screenshot-full}
 
 ### Display Format
 
@@ -29,7 +29,7 @@ A date can be displayed in several formats, depending on the local preferences. 
 
 You can experiment by entering different combinations of characters to define the Display Format you want in your template.
 
-![awesome-Raph-explainer](displayformat.gif)
+![awesome-Raph-explainer](displayformat.gif){.screenshot-full}
 
 The initial value (upon creation) for the formatting is "dd/MM/yyyy"
 
@@ -64,9 +64,9 @@ Will display the name of the month or day in the chosen language
 
 Will work for patterns which output words such as `MMM`, `MMMM`, `cc` and `ccc`. Default is `en_US`.
 
-![screenshot-full](date3.png)
+![screenshot-full](date3.png){.screenshot-full}
 
-![screenshot-full](date4.png)
+![screenshot-full](date4.png){.screenshot-full}
 
 ### Start & End Date
 
@@ -78,7 +78,7 @@ A start and end date can be
 - Specific Date
 - Relative Date
 
-![screenshot](date5.png)
+![screenshot](date5.png){.screenshot}
 
 #### Specific Date
 
@@ -90,14 +90,14 @@ Setting a number relative to the current date (current = when you open the docum
 
 As an example, setting 0 in the "Start date" (Type Relative Date), prevents the end user to pick a date in the past.
 
-![screenshot](date10.png)
+![screenshot](date10.png){.screenshot}
 
 
 ### Excluded days
 
 Choose what days of the week should be excluded from the selection available for the end user.
 
-![screenshot](date6.png)
+![screenshot](date6.png){.screenshot}
 
 ### The result
 
@@ -105,13 +105,13 @@ Your settings will define how the date picker is displayed.
 
 In the Template Designer Workspace you'll see a preview
 
-![screenshot](date7.png)
+![screenshot](date7.png){.screenshot}
 
 In Studio UI (My Projects), you will see what an end user can see.
 
-![screenshot](date8.png)
+![screenshot](date8.png){.screenshot}
 
-![screenshot](date9.png)
+![screenshot](date9.png){.screenshot}
 
 Current date is Aug 7, 2024. First possible date to select is Aug 15. Last possible date is 30 days after today: Sept 6. Saturdays and Sundays are excluded.
 

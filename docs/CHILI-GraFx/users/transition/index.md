@@ -43,7 +43,7 @@ When logged in through GraFx Publisher, you'll see this URL:
 
 https://chiligrafx.com/environments/[some-number]/publisher
 
-![screenshot](GraFx-Publisher_01.png)
+![screenshot](GraFx-Publisher_01.png){.screenshot}
 
 ## Create a GraFx Publisher API user
 
@@ -51,11 +51,11 @@ To create API users, you need to login via the original URL.
 
 If you logged in via the right URL, you'll see this:
 
-![screenshot](GraFx-Publisher_02.png)
+![screenshot](GraFx-Publisher_02.png){.screenshot}
 
 Continue with "Users" and create the "API" user. We called it "AP1" but feel free to give the user a different name.
 
-![screenshot](GraFx-Publisher_03.png)
+![screenshot](GraFx-Publisher_03.png){.screenshot}
 
 Now link your API user with the user groups you need.
 
@@ -63,11 +63,11 @@ Now link your API user with the user groups you need.
 
 When logging into Publisher you'll see this:
 
-![screenshot](GraFx-Publisher_04.png)
+![screenshot](GraFx-Publisher_04.png){.screenshot}
 
 Continue with "User groups" and create a group. We called it "end user". Then select the permission categories and individual permissions you users will need.
 
-![screenshot](GraFx-Publisher_05.png)
+![screenshot](GraFx-Publisher_05.png){.screenshot}
 
 Please note these groups are specific for CHILI GraFx Publisher and work for API users for Publisher.
 

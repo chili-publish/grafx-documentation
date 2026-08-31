@@ -11,7 +11,7 @@ Follow the instructions in the [integration guide](/GraFx-Developers/grafx-studi
 
 Make sure to set limited permissions:
 
-![permissions](permissions.png)
+![permissions](permissions.png){.screenshot}
 
 Once you have your integration, copy the client ID and secret and move to the next part.
 

@@ -42,24 +42,29 @@ h1 .applogo-inline {
 	vertical-align: -0.18em;
 	margin-right: 0.35em;
 }
-img[alt=smallapplogo] {
+img[alt=smallapplogo],
+img.smallapplogo {
 	width: 70px;
 }
-img[alt=tinyapplogo] {
+img[alt=tinyapplogo],
+img.tinyapplogo {
 	--md-icon-size: 3.0em;
 	vertical-align: middle;
 	display: inline-flex;
 	height: var(--md-icon-size);
 }
-img[alt=steps] {
+img[alt=steps],
+img.steps {
 	margin-left: 50px;
 	border: 1pt #DDDDDD solid;
 }
-p:has(img[alt=releasenotes]) {
+p:has(img[alt=releasenotes]),
+p:has(img.releasenotes) {
 	width: 100%;
 	text-align: center;
 }
-p:has(img[alt=steps]) {
+p:has(img[alt=steps]),
+p:has(img.steps) {
 	width: 60%;
 	text-align: center;
 }
@@ -136,7 +141,8 @@ img.screenshot-full {
 
 }
 
-p img[alt=svg_icon] {
+p img[alt=svg_icon],
+p img.svg_icon {
 	width: 100px;
 }
 

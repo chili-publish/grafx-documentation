@@ -6,25 +6,25 @@ See also what is a [User Interface](/GraFx-Studio/concepts/user-interface/)
 
 In your environment, go to **GraFx Studio** > **Manage** > **User Interfaces**
 
-![screenshot](ui4.png)
+![screenshot](ui4.png){.screenshot}
 
 Click "Create"... 
 
-![screenshot](ui5.png)
+![screenshot](ui5.png){.screenshot}
 
 ... and provide a **Unique** name.
 
-![screenshot-full](ui6.png)
+![screenshot-full](ui6.png){.screenshot-full}
 
 You can now edit the settings for this User Interface
 
 ## Edit
 
-![screenshot-full](ui8.png)
+![screenshot-full](ui8.png){.screenshot-full}
 
 Click a settings or choose "Edit user interface" in the "..." menu.
 
-![screenshot](ui7.png)
+![screenshot](ui7.png){.screenshot}
 
 Update the name (should still be unique)
 
@@ -36,7 +36,7 @@ For each of the 3 [Layout Intents](/GraFx-Studio/concepts/layout-intent/), you c
 
 Choose "Delete" in the "..." menu.
 
-![screenshot-full](ui8.png)
+![screenshot-full](ui8.png){.screenshot-full}
 
 ## Layout Intents
 
@@ -54,14 +54,14 @@ You can edit the settings, but not change the name nor delete them.
 
 In [collections](/GraFx-Studio/guides/manage-collections/), go to Collection Settings.
 
-![screenshot](ui10.png)
+![screenshot](ui10.png){.screenshot}
 
 Set the created **User Interface**
 
-![screenshot](ui11.png)
+![screenshot](ui11.png){.screenshot}
 
 For each new [project](/GraFx-Studio/concepts/template-management/#my-projects) created based on this template in the collection, the user interface will be applied.
 
 This means only the output settings will be available, for the specific layout Intent.
 
-![screenshot](ui12.png)
+![screenshot](ui12.png){.screenshot}

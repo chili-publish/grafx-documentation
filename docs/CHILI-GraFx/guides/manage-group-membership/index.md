@@ -4,11 +4,11 @@
 
 Go to User Management, click "Groups", click on the group you want to manage. "Graphics Production Team"
 
-![screenshot](ug013.png)
+![screenshot](ug013.png){.screenshot}
 
 The members will be listed, if no members are present, click "+ Assign members"
 
-![screenshot-full](ug007.png)
+![screenshot-full](ug007.png){.screenshot-full}
 
 To add members, click on the second tab "Add members". You'll see a list of users, that have not been assigned as a member.
 
@@ -17,21 +17,21 @@ If you don't see the user you want to add:
 - They are already a member
 - They don't exist as a user in the Subscription
 
-![screenshot](ug009.png)
+![screenshot](ug009.png){.screenshot}
 
 Click on the "+" (plus) sign to add the user to the current group.
 
 They disappear from the list, and will be under the "Assigned members" tab.
 
-![screenshot](ug010.png)
+![screenshot](ug010.png){.screenshot}
 
 Under "Assigned members" you can "delete" a member. This will revoke group membership, but will nog remove the user from the Subscription.
 
-![screenshot](ug011.png)
+![screenshot](ug011.png){.screenshot}
 
 When done, you'll see the members under the "Members" tab.
 
-![screenshot-full](ug012.png)
+![screenshot-full](ug012.png){.screenshot-full}
 
 ## Manage membership of Federated users
 
@@ -43,7 +43,7 @@ When a user authenticates in a third-party IDP, the authentication must include 
 
 To get the identifier from a group, click on "Copy group ID" in the group drop-down.
 
-![screenshot-full](ug014.png)
+![screenshot-full](ug014.png){.screenshot-full}
 
 For additional information on the claims used, check the related security protocol guides: [SAML](/CHILI-GraFx/guides/setup-fsso/saml/) and [OpenID Connect](/CHILI-GraFx/guides/setup-fsso/oidc/).
 

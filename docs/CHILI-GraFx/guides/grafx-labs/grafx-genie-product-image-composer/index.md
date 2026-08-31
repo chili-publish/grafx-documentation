@@ -1,7 +1,7 @@
 # GraFx Genie Product Image Composer
 
 !!! example "Experimental feature"
-    ![Product Image Composer – scene setup](/release-notes/releasenotesassets/grafx-labs02.png)  
+    ![Product Image Composer – scene setup](/release-notes/releasenotesassets/grafx-labs02.png){.screenshot}  
     This capability is part of GraFx Labs and is experimental.  
     It can change or be removed at any time.  
     We look forward to your validation and feedback.

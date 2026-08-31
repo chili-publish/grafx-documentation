@@ -16,25 +16,25 @@ When a new frame (text, image, etc.) is created, anchoring is set to Relative by
 
 The default Target is set to Page.
 
-![screenshot-full](anchor_guide_02.png)
+![screenshot-full](anchor_guide_02.png){.screenshot-full}
 
 ## Properties Menu
 
 Select a frame, and you'll see the **Anchoring** section in the properties panel. Additional options may appear based on your selections.
 
-![screenshot-full](anchor_guide_01.png)
+![screenshot-full](anchor_guide_01.png){.screenshot-full}
 
 ## Types of Anchors
 
 Select a frame, then adjust the Horizontal and/or Vertical anchor.
 
-![screenshot-full](anchor_guide_05.gif)
+![screenshot-full](anchor_guide_05.gif){.screenshot-full}
 
 ### Relative (%)
 
 The image frame below is anchored to the page by default, with Left and Right set to 5%, Top at 14%, and Bottom at 38%.
 
-![screenshot-full](anchor_guide_03.png)
+![screenshot-full](anchor_guide_03.png){.screenshot-full}
 
 If the page size changes (e.g., from 1080 px to 1200 px), the frame's relative position remains the same at 5% from the left and right. However, the actual pixel distance will change:
 
@@ -51,7 +51,7 @@ If the page size changes (e.g., from 1080 px to 1200 px), the frame's relative p
     You can still enter the exact pixel location of a frame to start, and the percentages will show on the selected frame. (when set to relative)
     
 
-![screenshot-full](anchor_guide_04.gif)
+![screenshot-full](anchor_guide_04.gif){.screenshot-full}
 
 ### Left, Right, Top, Bottom
 
@@ -61,19 +61,19 @@ Selecting these anchors sets the frame to a fixed offset from the chosen side(s)
 
 A fixed offset (in pixels, mm, inches, etc.) is set from the left target. If the page width changes, the left offset remains constant.
 
-![screenshot-full](anchor_guide_06.gif)
+![screenshot-full](anchor_guide_06.gif){.screenshot-full}
 
 #### Right
 
 A fixed offset is set from the right target. If the page width changes, the right offset remains constant.
 
-![screenshot-full](anchor_guide_07.gif)
+![screenshot-full](anchor_guide_07.gif){.screenshot-full}
 
 #### Left & Right
 
 A fixed offset is maintained on both the left and right sides. If the page width changes, both offsets remain unchanged.
 
-![screenshot-full](anchor_guide_08.gif)
+![screenshot-full](anchor_guide_08.gif){.screenshot-full}
 
 #### Top
 
@@ -93,7 +93,7 @@ The selected frame stays centered **relative** to the target (page or frame), an
 
 When moving the frame, it remains positioned relative to the center of the target.
 
-![screenshot-full](anchor_guide_09.gif)
+![screenshot-full](anchor_guide_09.gif){.screenshot-full}
 
 ## Anchor Targets
 
@@ -101,13 +101,13 @@ By default the anchor target is the page, meaning any chosen anchor option (rela
 
 You can modify the target by selecting a new option below the Horizontal and Vertical anchor settings.
 
-![screenshot](anchor_guide_10.png)
+![screenshot](anchor_guide_10.png){.screenshot}
 
 The box with four circles around it represents your frame. The animation next to it shows the effect of your anchor settings. In the animation, the blue box represents your frame, and the gray area represents your page.
 
 Click the circles (left, top, right, bottom) or the center cross to adjust the anchor settings. Depending on the settings, some anchor targets may be restricted (e.g., if the left side is anchored, the right anchor cannot be set).
 
-![screenshot](anchor_guide_11.png)
+![screenshot](anchor_guide_11.png){.screenshot}
 
 ## Anchoring effect on a frame
 
@@ -134,11 +134,11 @@ This setup anchors the left side of the house image to the left side of the "Rea
 
 The interface shows the offset in pixels (e.g., 79.50).
 
-![screenshot-full](anchor_guide_12.png)
+![screenshot-full](anchor_guide_12.png){.screenshot-full}
 
 The solid anchor line on the left of the house image shows the offset (79.50) and stops at the left side of the "Realtor" frame.
 
-![screenshot-full](anchor_guide_13.png)
+![screenshot-full](anchor_guide_13.png){.screenshot-full}
 
 ## Reference: Anchoring effect on a frame
 

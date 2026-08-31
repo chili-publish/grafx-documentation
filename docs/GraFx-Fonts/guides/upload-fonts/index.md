@@ -12,39 +12,39 @@ Adding fonts to CHILI GraFx requires a valid license. Before uploading, check yo
 
 Click the upload button
 
-![appscreen](uploadbutton.png)
+![appscreen](uploadbutton.png){.screenshot-full}
 
 Select 1 or more files to upload
 
-![appscreen](selectfiles.png)
+![appscreen](selectfiles.png){.screenshot-full}
 
 Confirm you have the license.
 
-![appscreen](confirmlicense.png)
+![appscreen](confirmlicense.png){.screenshot}
 
 Listen carefully while uploading.
 
-![appscreen](elevator.png)
+![appscreen](elevator.png){.screenshot-full}
 
 GraFx Fonts will read the metadata from the font files and suggest the categorization of the fonts according the family and [style](https://en.wikipedia.org/wiki/Font#Characteristics).
 
-![appscreen](confirmstyles.png)
+![appscreen](confirmstyles.png){.screenshot-full}
 
 At this moment in the upload process, you can still choose to NOT upload a specific font to the GraFx Fonts application.
 
 Click the waste bin next to the font (style) you wish NOT to upload.
 
-![appscreen](wastebin.png)
+![appscreen](wastebin.png){.screenshot-full}
 
 ## Upload ready
 
 After you confirmed the upload, your font family will appear in the list.
 
-![appscreen](result2.png)
+![appscreen](result2.png){.screenshot}
 
 Click the font family to see its contents (the font styles).
 
-![appscreen](harry.png)
+![appscreen](harry.png){.screenshot-full}
 
 
 ## Warnings
@@ -53,7 +53,7 @@ Click the font family to see its contents (the font styles).
 
 When GraFx Fonts detects a duplicate, you'll see a warning icon.
 
-![appscreen](error.png)
+![appscreen](error.png){.screenshot-full}
 
 You can choose to delete (not to upload) the font, or categorize it differently.
 
@@ -76,4 +76,4 @@ Once uploaded, the new metadata will be used in GraFx Studio to categorize the f
 
 In the example below, the _italic_ was not encoded correctly for 2 out of 3 fonts. And therefore also marked as duplicates, since the non-italic version was available in the repository.
 
-![appscreen](wrontmetadata.png)
+![appscreen](wrontmetadata.png){.screenshot-full}
