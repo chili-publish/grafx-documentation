@@ -6,15 +6,15 @@ Now, for this course we are going to simply find an asset on our environment and
 
 Click on the GraFx Media icon on the left hand panel to load up the available assets on your environment. If your environment has assets, you should see some folders you can browse through to find assets.
 
-![grafx media browser webpage](grafx-media.png)
+![grafx media browser webpage](grafx-media.png){.screenshot-full}
 
 Once you have found an asset you want to display in an image frame, you can click the `...` button to bring up the option to view asset details.
 
-![grafx media asset icon](media-asset.png)
+![grafx media asset icon](media-asset.png){.screenshot}
 
 In the asset details panel, you will see the ID for the asset. Copy this ID, we will use it to tell our GraFx Media connector which asset we want to use for our image frame.
 
-![grafx asset info panel](media-info.png)
+![grafx asset info panel](media-info.png){.screenshot}
 
 Make note of that asset ID, this is how we will inform our GraFx Media connector which asset we want to use. For this course, we will just create a simple button, that when pressed will replace the image frame on the document with
 

@@ -6,6 +6,7 @@ mkdocs-redirects
 mkdocs-table-reader-plugin
 mkdocs-rss-plugin
 mkdocs-llmstxt
+mkdocs-glightbox
 openpyxl
 openai
 

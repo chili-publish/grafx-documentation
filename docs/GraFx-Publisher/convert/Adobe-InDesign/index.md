@@ -12,7 +12,7 @@ The latest tested version is 20.1 (January 2025).
 
 You can find the GraFx Publisher converter in Adobe® InDesign® under the "Window" menu.
 
-![screenshot](extension1.png)
+![The Adobe InDesign Window menu with Extensions open, listing CHILI Converter and three other CHILI entries](extension1.png){.screenshot}
 
 There are two ways of working: online and offline.
 When working offline the conversion of the document will happen locally and the end result will be a GraFx Publisher Package file [.zip] saved to your local drive.
@@ -40,11 +40,11 @@ Working in online modus also offers you the possibility to convert a GraFx Publi
 - Auto login: click this button to login to the server and environment
 - Status: displays the connection status
 
-![screenshot](extension2.png)
+![The CHILI Converter panel's Cloud section, with Url and Environment filled in and Status "Not connected"](extension2.png){.screenshot}
 
 ## Import settings panel
 
-![screenshot](extension4.png)
+![The Import settings section, with destination folders, Log level "Debug" and the Document options checkboxes](extension4.png){.screenshot}
 
 - **Preset**: From the drop down menu you can select previously saved login settings. When you regularly need to connect to different servers this will save you time.
 - **New - Save - Delete**: Via these buttons you can save and create presets for different connections to GraFx Publisher servers or different environments on one server.
@@ -66,7 +66,7 @@ Paths can be entered manually or selected via the browse button. If the destinat
 
 ## Export to GraFx Publisher
 
-![screenshot](extension5.png)
+![The "Export to GraFx Publisher" section, with Destination "Cloud", "All" pages ticked and the Go! button](extension5.png){.screenshot}
 
 - **Source** specifies the document to convert (as multiple document can be opened in InDesign®)
 - **Destination** allows to switch between online (server) or offline (package) conversion
@@ -79,7 +79,7 @@ Paths can be entered manually or selected via the browse button. If the destinat
 
 ## Export to InDesign®
 
-![screenshot](extension6.png)
+![The "Export to InDesign" section, its Environment, Layout and destination fields still empty](extension6.png){.screenshot}
 
 - **Environment** let's you specify the environment where the target document can be found
 - **Document Name** Select the file for conversion
@@ -94,7 +94,7 @@ Paths can be entered manually or selected via the browse button. If the destinat
 
 With the installation of the converter 3 PDF presets are configured in Adobe® InDesign® as well, that control the conversion to PDF of locked layers and images.
 
-![screenshot](extension7.png)
+![The Adobe InDesign "Adobe PDF Presets" dialog, with "Converter – Locked Layers High Res" selected](extension7.png){.screenshot}
 
 The default presets are tested and guaranteed to work with GraFx Publisher and we offer full support for these.
 You're welcome to change the settings at your own risk. Changes to these default settings are beyond our responsibility.

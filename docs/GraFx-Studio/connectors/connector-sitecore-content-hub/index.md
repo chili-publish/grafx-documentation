@@ -34,17 +34,17 @@ https://<env-name>.chili-publish.online/grafx/api/v1/environment/<env-name>/conn
 
 From the overview of Environments, click on "Settings" on the right to your environment, where you want to install or configure the Connector.
 
-![screenshot-full](sch13.jpg)
+![The My environments overview, where Settings on the production environment row is arrowed in red](sch13.jpg){.screenshot-full}
 
 Then click the installed Connector to access the configuration.
 
-![screenshot-full](sch12.png)
+![The Connectors tab of an environment, with an arrow pointing at the Sitecore Content Hub row](sch12.png){.screenshot-full}
 
 ### Base Configuration
 
 Your instance of the Connector needs to know which Sitecore Content Hub instance it should communicate with and how to authenticate.
 
-![screenshot-full](sch01.png)
+![The connector's Configuration tab with empty BASE_URL, relationMetadataIncludes and allowed domain fields](sch01.png){.screenshot-full}
 
 ### Authentication
 
@@ -55,7 +55,7 @@ This is the flow where username and password (contenthub credentials) are needed
 
 **Supported on Browser:** OAuth 2.0 Authorization Code (Browser only)
 
-![screenshot](sch02.png)
+![The Authentication tab before a method is picked, showing an empty Select... dropdown](sch02.png){.screenshot}
 
 - **Client ID** and **Client Secret**: These are [customer-specific credentials](https://doc.sitecore.com/ch/en/users/content-hub/create-an-oauth-client.html) provided by the Sitecore Admin when creating integrations within Sitecore.
 - **Username** and **Password**: User-specific credentials for authentication.
@@ -64,7 +64,7 @@ This is the flow where username and password (contenthub credentials) are needed
 
 You can configure separate authentication for machine-to-machine and browser use cases or use the same setup for both.
 
-![screenshot-full](sch04.png)
+![Separate authentication switched on: Server on OAuth 2.0 Resource Owner Password, Browser on OAuth 2.0 Authorization Code](sch04.png){.screenshot-full}
 
 - **Authorization Endpoint** https://<SITECORE_CONTENTHUB_PATH>/oauth/authorize
 - **Token Endpoint** https://{SITECORE_CONTENTHUB_PATH}/oauth/token
@@ -96,15 +96,15 @@ For example:
 
 - Select the Sitecore Content Hub Connector.
 
-![screenshot-full](sch07.png)
+![The Resources button in the left GraFx Studio toolbar, with its tooltip showing](sch07.png){.screenshot-full}
 
-![screenshot-full](sch08.png)
+![The Resources panel, with Media listed above Data source and Barcodes](sch08.png){.screenshot-full}
 
-![screenshot-full](sch09.png)
+![The Media view offering two sources: GraFx Media and Sitecore Content Hub](sch09.png){.screenshot-full}
 
 Depending on the configuration, you may need to authenticate.
 
-![screenshot-full](sch10.png)
+![The Sitecore Authorization prompt asking to Grant or Deny the GraFx Studio Connector access on your behalf](sch10.png){.screenshot-full}
 
 - Once authenticated, Sitecore assets behave like any other asset in GraFx Studio.
 
@@ -112,7 +112,7 @@ Depending on the configuration, you may need to authenticate.
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same list of assets when selecting an image.
 
-![screenshot-full](var01.png)
+![The Media dialog listing Sitecore Content Hub assets for the ProductShot image variable](var01.png){.screenshot-full}
 
 ### Configuration Options
 
@@ -128,7 +128,7 @@ Queries are set at the variable level.
 
 Set the query value in the connector settings.
 
-![screenshot-full](var02.png)
+![Connector settings for ProductShot, with Show only approved assets, Search Query and Locale set to en-US](var02.png){.screenshot-full}
 
 For more dynamic queries, you can use [variables](/GraFx-Studio/concepts/variables/), [actions](/GraFx-Studio/concepts/actions/), and [GraFx Genie](/GraFx-Studio/concepts/grafx-genie/) to automate and refine your queries.
 

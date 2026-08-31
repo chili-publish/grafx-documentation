@@ -4,7 +4,7 @@
 
 Click the Text tool in the [sidebar](/GraFx-Studio/overview/sidebar/). Drag a frame on the document.
 
-![ui](creattextframe.gif)
+![Dragging a new text frame onto a document that already holds a photo, with the Text tool picked in the sidebar](creattextframe.gif){.screenshot-full}
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/QLiOtG2CULo?si=v3bbEqajZyIEr8_0&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -124,7 +124,7 @@ Choose a predefined [paragraph style](/GraFx-Studio/guides/paragraphstyles/) or 
 
 If you prefer not to use predefined styles (recommended for consistency), you can manually set typographic properties for the selected text.
 
-![screenshot](typography.png)
+![The TEXT panel with Arial Regular 12 set, and the nine typographic controls numbered from font family to underline](typography.png){.screenshot}
 
 1. Select a font family, weight, and size.
 2. Adjust vertical spacing between characters.
@@ -169,17 +169,17 @@ For creative automation, text frames often need to handle datasets with varying 
 - Copyfitting
 - Auto-grow
 
-![screenshot](autoresize.png)
+![The AUTO RESIZE section with both the Copyfitting and Auto-grow toggles switched off](autoresize.png){.screenshot}
 
 #### Text Overflow
 
 With no resizing option selected, text that exceeds the frame will trigger a yellow Text overflow indicator below the frame.
 
-![screenshot](overflow.png)
+![The bottom edge of a selected frame on the canvas, with a yellow warning badge beside a refresh button](overflow.png){.screenshot}
 
 See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how Batch output should handle text overflow.
 
-![screenshot](errorhandling.png)
+![Error handling settings with Fail output set to On errors and Continue batch output after failure switched off](errorhandling.png){.screenshot}
 
 #### Copyfitting
 
@@ -189,7 +189,7 @@ See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how 
 
 Select the text frame and enable "Copyfitting" to adjust font size to fit the frame by allowing slight reduction or growth.
 
-![screenshot](copyfit.png)
+![Copyfitting switched on with Minimum 10% and Maximum 1000%, and a tooltip reading Copyfitting is applied on the greyed-out Auto-grow toggle](copyfit.png){.screenshot}
 
 Set the minimum and maximum percentages for font size adjustments.
 
@@ -208,11 +208,11 @@ Enable "Auto-grow" to allow the frame to expand as needed to fit content of vary
 
 Choose one or two growth directions (e.g., left, right, up, down). 
 
-![screenshot](autogrow-left.png)
+![Auto-grow switched on with a single horizontal arrow selected in the Direction picker](autogrow-left.png){.screenshot}
 
 When selecting "Left" or "Right," you can also add the opposite direction for bidirectional growth.
 
-![screenshot](autogrow-left-right.png)
+![Auto-grow with both the left and right arrows selected in the Direction picker for bidirectional growth](autogrow-left-right.png){.screenshot}
 
 When "Up" is selected, you can also add "Down."
 
@@ -222,7 +222,7 @@ Define the minimum and maximum frame size if needed.
 
 > Note: When the maximum height is reached, the text will overflow.
 
-![screenshot](autogrow-min-max.png)
+![Auto-grow with the up and down arrows selected, Min height 20 px and Max height 150 px](autogrow-min-max.png){.screenshot}
 
 !!! info "Rotation"
     Auto-grow does not work for rotated frames. If auto-grow is enabled, anchoring for that direction is automatically set to a compatible mode.

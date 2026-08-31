@@ -8,26 +8,26 @@
 
 Open the Brand Kit panel.
 
-![screenshotsmall](bottom-quicktools-ui.png)
+![The bottom of the sidebar, where the lowest icon opens the Resources panel](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](bk1.png)
+![The Resources panel listing Brand Kit, Media, Data Source and Barcodes](bk1.png){.screenshot}
 
 Select the fonts icon to check the already available fonts in your document.
 
-![screenshot](bk2.png)
+![The Brand Kit panel open on the Media tab, with the fonts icon third in the tab row](bk2.png){.screenshot}
 
 Click on the "+" sign to add a new font.
 
 The available fonts are shown ([GraFx Fonts](/GraFx-Fonts/) application).
 
-![screenshot](fonts-3.png)
+![The GraFx Fonts dialog previewing Bitter, Lato, Oswald and Roboto with their style counts](fonts-3.png){.screenshot}
 
 Select the font family you wish to add to your document.
 
 Remark: The full family will be added to your document.
 
-![screenshot](bk6.png)
+![The fonts tab of the Brand Kit listing Signika and Roboto, with the "+" to add another](bk6.png){.screenshot}
 
 Your font family is now available to use in the document.
 
-![screenshot](fonts-5.png)
+![The Text properties of a selected frame, the font family dropdown now showing Satoshi](fonts-5.png){.screenshot}

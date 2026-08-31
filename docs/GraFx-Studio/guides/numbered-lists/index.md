@@ -65,7 +65,7 @@ Control alignment and spacing:
 
 4. Use the indent controls to increase or decrease the list level. Decreasing from level 1 removes numbering.
 
-![Change indent level](nl05.png){.screenshot}
+![Text toolbar with the Increase indent tooltip showing next to the numbered list button](nl05.png){.screenshot}
 
 ### Keyboard Shortcuts for List Levels
 
@@ -77,7 +77,7 @@ These shortcuts apply to both **numbered** and **bulleted** lists when the curso
 
 5. The result
 
-![Change indent level](nl06.png){.screenshot-full}
+![Level 2 set to Format a, b, c… in Edit Style, with the finished A, B, a), b), C list beside it](nl06.png){.screenshot-full}
 
 ## See also
 

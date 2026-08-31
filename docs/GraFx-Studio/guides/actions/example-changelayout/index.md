@@ -13,7 +13,7 @@ This variable is a List variable, containing the names of the possible output si
 
 The action will execute the change, based on the change of the List variable.
 
-![Movie](changelayout.gif)
+![Picking another Ad size and the Back to school ad switching to the layout of that name](changelayout.gif){.screenshot-full}
 
 ### The variable
 
@@ -21,13 +21,13 @@ A list variable "Ad size" is defined.
 
 The items in the list contain the names of the output you'll need.
 
-![screenshot](listvariable.png)
+![The Ad size list variable with the items Large square, Skyscraper, Leaderboard and Landscape](listvariable.png){.screenshot}
 
 ### The trigger
 
 An action is defined (See [Create Actions](/GraFx-Studio/guides/actions/create/) on how to do this)
 
-![screenshot](action-definition.png)
+![Action list holding one action, Banner size changed, with 1 trigger](action-definition.png){.screenshot}
 
 Step 1 is to define the trigger, that will initiate the action.
 
@@ -35,7 +35,7 @@ PS: You can have 1 or more triggers, to initiate the action.
 
 In this case, the trigger is initiated when the "Variable value changed", specified by the "Ad size" variable.
 
-![screenshot](trigger.png)
+![Triggers tab of Edit action, set to Variable value changed on the Ad size variable](trigger.png){.screenshot}
 
 ### Action
 

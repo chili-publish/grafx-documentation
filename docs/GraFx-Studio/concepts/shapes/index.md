@@ -8,9 +8,9 @@ Select (E) for ellipse
 
 Select (Y) for polygon (don't ask Y)
 
-![Properties](shapes-ui.png)
+![The shape tool flyout with Rectangle (R), Ellipse (E) and Polygon (Y)](shapes-ui.png){.screenshot}
 
-![Properties](shapes-intro.png)
+![An ellipse selected on the canvas, with its fill set to hex #63AECE in the Color picker](shapes-intro.png){.screenshot-full}
 
 ## Shape properties
 
@@ -22,4 +22,4 @@ Select (Y) for polygon (don't ask Y)
 - Rotation (inherited property)
 - Corner radius
 
-![Properties](shape-properties.png)
+![Shape properties, with a corner radius of 236.5 and Same for each corner ticked](shape-properties.png){.screenshot}

@@ -4,9 +4,9 @@
 
 In the tree of layouts, select the one you wish to output.
 
-![Output](output-1.png)
+![Layouts panel with the Leaderboard layout selected for PDF output](output-1.png){.screenshot}
 
-![Output](output-2.png)
+![The Leaderboard layout on canvas — the Chill Water banner that will become the PDF](output-2.png){.screenshot-full}
 
 ## The timeline
 
@@ -24,9 +24,9 @@ Click "Hamburger menu" and Export.
 
 Choose the right [output setting](/GraFx-Studio/concepts/output-settings/), you have predefined as PDF output.
 
-![screenshot](pdf.png)
+![The hamburger menu open on File, Edit, Frame, View and Export](pdf.png){.screenshot}
 
-![screenshot](export.png)
+![The Export panel with PDF chosen under Output, above the Export button](export.png){.screenshot}
 
 When the export is ready, your browser will download the file into your downloads folder.
 

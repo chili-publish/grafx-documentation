@@ -6,7 +6,7 @@ If your account was locked out, and you don't have access to the support portal,
 
 In the CHILI GraFx platform, you can also access the link to support.
 
-![screenshot-full](support01.png)
+![The help menu at the lower right of the platform, with the Support link circled](support01.png){.screenshot-full}
 
 ## Step by step
 
@@ -22,7 +22,7 @@ Using your GraFx account, you can access the support portal: [MySupport](https:/
 
 Click the Support link to view existing support tickets or create a new one.
 
-![screenshot-full](support02.png)
+![The CHILI MySupport home page, with the Support tile enlarged next to Mastering CHILI and Documentation](support02.png){.screenshot-full}
 
 After creating a ticket, you will receive an email with a summary of the ticket. To update the ticket you may come back to [MySupport](https://mysupport.chili-publish.com) or reply to the summary email. When a Client Success Engineer or another team member replies to your ticket, you will receive an email notification.
 

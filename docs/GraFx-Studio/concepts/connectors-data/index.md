@@ -12,9 +12,9 @@ In the **Data Source** panel (under **Resources**) on the left in GraFx Studio, 
 
 Multiple connectors can be deployed. One setup might require a different authentication method. This can be done by deploying multiple instances of the Google Sheets connector, each with different parameters.
 
-![screenshot-full](data01.png)
+![The Resources panel, with Data source highlighted among the resource categories](data01.png){.screenshot-full}
 
-![screenshot-full](data02.png)
+![The Data source panel with the Google Sheets connector selected and a spreadsheet URL set](data02.png){.screenshot-full}
 
 The data of that data source is now available, and will populate the variable values in the document.[^1]
 

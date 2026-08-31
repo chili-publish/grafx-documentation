@@ -15,7 +15,7 @@
 
     **Aug 27, 2026**: Connector CLI v1.14.0 — debugger reliability and UX
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    ![GraFx Studio icon for the Connector CLI v1.14.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
     The local debugger now surfaces TypeScript compile errors as a full-page overlay, keeps method inputs across the session, and no longer opens a browser unless you pass `--open`.
 
@@ -25,7 +25,7 @@
 
     **Aug 12, 2026**: Connector CLI v1.13.0 — multi-file connector compilation
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    ![GraFx Studio icon for the Connector CLI v1.13.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
     Connector logic can now be split across local `.ts` modules: the CLI bundles relative imports into a single `out/connector.js` for publish, test, and debug. Watch mode covers every project file.
 
@@ -35,7 +35,7 @@
 
     **Aug 11, 2026**: Upcoming Planned Downtime: 14 September 2026
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![CHILI GraFx icon for the planned downtime release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
 
     On Monday 14 September we perform infrastructure updates that require a brief period of server downtime. Check the schedule for the region your GraFx environments run in.
 
@@ -45,7 +45,7 @@
 
     **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![CHILI GraFx icon for the release note on previews and renders](/assets/icon-CHILI-GraFx.svg){.rn_icon}
 
     Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
 
@@ -55,7 +55,7 @@
 
     **Aug 06, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit media and colors
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![CHILI GraFx icon for the Environment API release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
 
     Media and colors in a Brand Kit now take an optional `description`, a free-text explanation of what the element is for. Descriptions are set on the default theme and shared across all themes.
 
@@ -65,7 +65,7 @@
 
     **Aug 03, 2026**: GraFx Studio: Data Source Variables
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    ![GraFx Studio icon for the Data Source Variables release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
     A new **Data source** variable type holds a reference to a single record, from a data connector or injected by an integration, that the end user picks from a table or a dropdown. Component variables can be mapped straight to its columns.
 
@@ -83,7 +83,7 @@
 
 <div class="grid cards" markdown>
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-02.svg) __CHILI GraFx__
+-   ![CHILI GraFx platform logo](/assets/CHILI_LOGOS_OK-02.svg){.tinyapplogo} __CHILI GraFx__
 
     ---
 
@@ -91,7 +91,7 @@
 
     [:octicons-arrow-right-24: Getting started](/CHILI-GraFx/admin/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
+-   ![GraFx Studio application logo](/assets/CHILI_LOGOS_OK-10.svg){.tinyapplogo} __GraFx Studio__
 
     ---
 
@@ -99,7 +99,7 @@
 
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
+-   ![GraFx Publisher application logo](/assets/CHILI_LOGOS_OK-21.svg){.tinyapplogo} __GraFx Publisher__
 
     ---
 
@@ -107,7 +107,7 @@
     
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Publisher/guides/hello-world/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
+-   ![GraFx Media application logo](/assets/CHILI_LOGOS_OK-12.svg){.tinyapplogo} __GraFx Media__
 
     ---
 
@@ -115,7 +115,7 @@
     
     [:octicons-arrow-right-24: Upload your media](/GraFx-Media/guides/upload-media/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
+-   ![GraFx Fonts application logo](/assets/CHILI_LOGOS_OK-08.svg){.tinyapplogo} __GraFx Fonts__
 
     ---
 
@@ -173,7 +173,7 @@
 
 ---
 
-![svg_icon](/assets/CHILI_LOGOS_OK-01.svg)
+![CHILI publish company logo](/assets/CHILI_LOGOS_OK-01.svg){.svg_icon}
 
 All information on this portal is documentation on the products and services of [CHILI publish](https://www.chili-publish.com/contact-sales/).
 

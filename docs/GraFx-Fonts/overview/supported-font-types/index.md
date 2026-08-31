@@ -31,7 +31,7 @@ Think of each table as a plug-in that unlocks extra behaviour.
 For example, the `GSUB` table can contain a *ligature* rule that turns the letter sequence “f” + “i” into the single “ﬁ” glyph.  
 If GraFx Studio supports the relevant `GSUB` sub-table, the ligature will appear; if not, the two separate letters render instead (the text still prints—just without the fancy substitution).
 
-![screenshot](ligature.svg)
+![Two rows of letter pairs, f plus i and f plus l, each with an arrow to the single ligature glyph](ligature.svg){.screenshot}
 
 > **In short**  
 > *If your font is OpenType/TrueType and the tables required for your language or feature are listed with a **✅**, GraFx Studio will display the full typographic behaviour.*

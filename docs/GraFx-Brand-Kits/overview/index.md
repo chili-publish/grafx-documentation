@@ -10,6 +10,6 @@ Open the GraFx Brand Kits application
    – Each card shows the kit’s name, description and thumbnail  
    – Click a card to open its details  
 
-![screenshot-full](overview.png)
+![The Brand Kits toolbar with "Create Brand Kit", above a single "CHILI publish - Corporate" card](overview.png){.screenshot-full}
 
-![screenshot-full](brandkits_01.png)
+![The card opened into the Brand Kit's details: Colors, Fonts, Media, paragraph and character styles](brandkits_01.png){.screenshot-full}

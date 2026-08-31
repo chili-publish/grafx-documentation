@@ -20,7 +20,7 @@ You can deploy multiple instances of the connector, each with different settings
 
 Once installed, navigate to the **Connector overview**, and select your deployed **Google Sheets** connector. Start with **Configuration**.
 
-![screenshot-full](config.png)
+![The Configuration tab of the Google Sheets connector, with Name, Description, Version 1.0.0 and the allowed proxy domain](config.png){.screenshot-full}
 
 - **Name**: Choose a name to distinguish your connector setup.
 - **Description**: Give more context what this connector does, what is specific about it.
@@ -38,7 +38,7 @@ To authenticate with Google Sheets, you need to provide [credentials](google-set
 
 You can configure **Server Authentication** and **Browser Authentication** separately or use a single setup for both.
 
-![screenshot](separate.png)
+![The Enable separate server and browser authentication toggle switched on](separate.png){.screenshot}
 
 - **Server Authentication** Always required: defines the method on how the CHILI GraFx Server will talk to the Google Sheets server
 - **Browser Authentication** Optionally, you can define how the browser needs to talk to Google Sheets, to pull data in
@@ -71,12 +71,12 @@ Below is an example (where **actual credentials have been removed** for security
 ```
 
 
-![screenshot-full](auth_1.png)
+![The Authentication tab with the 1. Server authentication column outlined in red: OAuth 2.0 JWT Bearer Token, Issuer, RS256 and Private key](auth_1.png){.screenshot-full}
 
 - **Authorization method**: Select the required authentication method.
 - **Separate or same method**: Enable to configure different methods for Server and Browser authentication.
 
-![screenshot](separate.png)
+![The same separate authentication toggle, shown here as the Separate or same method setting](separate.png){.screenshot}
 
 - **Token endpoint**:  
 see [JSON](#1-server-authentication): **token_uri**  
@@ -99,9 +99,9 @@ To try out your setup, open a test Google Sheets document with public access.
 !!! warning "Public data"
     Beware to not share data you would like to keep private, as the sheet will be public to anyone with the link.
 
-![screenshot](google22.png)
+![A red arrow pointing at the Share button in the top bar of a Google Sheets document](google22.png){.screenshot}
 
-![screenshot-full](google23.png)
+![General access in the Google Sheets share dialog, with red arrows marking Anyone with the link and the Viewer role](google23.png){.screenshot-full}
 
 Now, [add 1 variable to a Smart Template](in-smart-template/#create-variables-in-grafx-studio), and preview in Run Mode.
 
@@ -138,7 +138,7 @@ A **modified** example to use as reference: [^1]
 ```
 
 
-![screenshot-full](auth_2.png)
+![The same tab with the 2. Browser authentication column outlined in red: OAuth 2.0 Authorization Code, Client ID, Client secret and Scope](auth_2.png){.screenshot-full}
 
 **OAuth 2.0 Authorization Code**
 

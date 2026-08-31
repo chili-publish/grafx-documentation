@@ -48,8 +48,8 @@ Once the business logic is set, GraFx Studio can quickly produce multiple varian
 
 Offer self-service to end users
 
-![screenshot-full](convert15.png)
+![Run mode Customize panel with ProductName, ProductShot and Price fields beside the CHILLtronics ad](convert15.png){.screenshot-full}
 
 Lights-out automation using the API
 
-![screenshot-full](convert16.png)
+![Python code posting a batch of variables to the GraFx output/pdf endpoint](convert16.png){.screenshot-full}
