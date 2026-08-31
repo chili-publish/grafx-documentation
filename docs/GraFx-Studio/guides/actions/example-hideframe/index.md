@@ -14,7 +14,7 @@ This variable is a text variable, containing the old price for a discounted prod
 
 The action will execute the change, based on the presence of a value in that variable.
 
-![Emptying the Old price variable and the old price frame vanishing from the Back to school ad](demo.gif){.screenshot}
+![Emptying the Old price variable and the old price frame vanishing from the Back to school ad](demo.gif){.screenshot-full}
 
 ### The variable
 

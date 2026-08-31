@@ -14,7 +14,7 @@ If you selected an image frame, you can also choose the fit and crop of the imag
 
 In some cases (e.g. Barcodes), extra properties can be found behind the "..." (three dots) menu.
 
-![The three dots menu in the properties panel revealing extra properties](properties.gif){.screenshot}
+![The three dots menu in the properties panel revealing extra properties](properties.gif){.screenshot-full}
 
 
 ## Animation properties

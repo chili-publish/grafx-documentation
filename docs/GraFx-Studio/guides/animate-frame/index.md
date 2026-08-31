@@ -30,7 +30,7 @@ Expand the **intro** section of the animation panel.
 
 Select 1 or more of the behaviours you want to apply to the intro of the animation. Then select the properties linked to the behaviour.
 
-![The animation tab with its Intro, Emphasis and Outro sections, the pointer on Intro](prop-panel.gif){.screenshot}
+![The animation tab with its Intro, Emphasis and Outro sections, the pointer on Intro](prop-panel.gif){.screenshot-full}
 
 Adjust the length of the animation in the timeline.
 

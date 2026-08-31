@@ -11,7 +11,7 @@ A trigger is set to act upon the currency.
 
 The currency symbol will change with the selection.
 
-![Switching the Currency variable and the price on the Back to school ad changing its currency symbol](demo.gif){.screenshot}
+![Switching the Currency variable and the price on the Back to school ad changing its currency symbol](demo.gif){.screenshot-full}
 
 ### The variable
 

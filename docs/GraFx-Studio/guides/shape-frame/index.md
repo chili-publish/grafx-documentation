@@ -10,7 +10,7 @@ Select the shape tool in the sidebar and choose a shape. You can also use the sh
 
 Drag a rectangle on the canvas. The selected shape will be drawn inside the frame.
 
-![Dragging a shape frame onto the canvas after picking Rectangle from the shape tool submenu](draw-frame-shape.gif){.screenshot}
+![Dragging a shape frame onto the canvas after picking Rectangle from the shape tool submenu](draw-frame-shape.gif){.screenshot-full}
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/7GTTI5Yfomk?si=vYznyBiq0POidTw-&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

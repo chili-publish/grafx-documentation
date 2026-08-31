@@ -101,7 +101,7 @@ A text frame looks like a rectangular box when selected.
 
 ## Select a Frame
 
-![Selecting a photo frame and a "Hello owl!" text frame together, then rotating them as one](frame-rotate.gif){.screenshot}
+![Selecting a photo frame and a "Hello owl!" text frame together, then rotating them as one](frame-rotate.gif){.screenshot-full}
 
 Use the "Select" tool, to select 1 or more frames. You can select multiple frames by holding the Shift key.
 

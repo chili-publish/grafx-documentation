@@ -13,7 +13,7 @@ This variable is a List variable, containing the names of the possible output si
 
 The action will execute the change, based on the change of the List variable.
 
-![Picking another Ad size and the Back to school ad switching to the layout of that name](changelayout.gif){.screenshot}
+![Picking another Ad size and the Back to school ad switching to the layout of that name](changelayout.gif){.screenshot-full}
 
 ### The variable
 

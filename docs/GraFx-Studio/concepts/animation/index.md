@@ -39,7 +39,7 @@ You can always make the duration longer.
 
 Dragging to the left will work up to the longest blue bar. I.e. if a frames shows up to 5 seconds point, you will not be able to reduce the duration below 5 seconds.
 
-![Dragging the divider left until it stops at the longest frame bar](timeline-reduce.gif){.screenshot}
+![Dragging the divider left until it stops at the longest frame bar](timeline-reduce.gif){.screenshot-full}
 
 As soon as you adjust the length of the timeline, and add frames, they will take the new length of the timeline.
 

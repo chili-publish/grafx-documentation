@@ -29,7 +29,7 @@ The properties of the animation of the elements show when you select the animact
 
 Click on **intro**, **emphasis** and **outro** to expand the respective properties.
 
-![Expanding the Intro, Emphasis and Outro sections in the animation tab](prop-panel.gif){.screenshot}
+![Expanding the Intro, Emphasis and Outro sections in the animation tab](prop-panel.gif){.screenshot-full}
 
 ## Inheritance
 
@@ -55,6 +55,6 @@ If it's white, it's the value taken from the master.
 
 ### Reset inherited values
 
-![Opening the reset dropdown with Reset Overrides, Reset Width and Reset Height](inherited-values.gif){.screenshot}
+![Opening the reset dropdown with Reset Overrides, Reset Width and Reset Height](inherited-values.gif){.screenshot-full}
 
 Reset all values, or only individual values by the left-turning arrow. A dropdown will provide you with the options to reset to the master's values.
