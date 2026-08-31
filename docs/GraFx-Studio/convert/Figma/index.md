@@ -25,30 +25,46 @@ Figma is a great place to design, but it isn't built to produce hundreds of vari
 
 ### Export to GraFx Studio
 
-- Open the plugin in Figma
-- Select the page in **Select page for export**
-- Select the frame in **Select frame for export**
+- Run **GraFx Studio Exporter** from Figma's quick actions or plugin menu
+
+![Figma quick-action search with GraFx Studio Exporter listed under Recents](1.png){.screenshot-full}
+
+- Select the page and frame to export at the top of the panel
+
+![The GraFx Studio Exporter panel showing the page and frame selector, with Run Preflight available and Export not yet enabled](2.png){.screenshot-full}
 
 !!! note "One frame per export"
     Only a single frame can be exported at a time. Everything inside that frame is included.
 
 - Run **Preflight** to identify issues before exporting
-- Review the warnings, then click **Export**
+- Review the warnings, then click **Export** — which stays disabled until preflight has run
+
+![Preflight finished with the message "No errors or warnings found" and the Export button enabled](4.png){.screenshot-full}
+
 - Choose a destination folder — you are asked for this on every export
 - The plugin creates a `.zip` file containing the document and all necessary assets
 
+![The save dialog for the exported zip, with the file name set to the frame name and the type set to Compressed (zipped) Folder](5.png){.screenshot-full}
+
 ### Import into GraFx Studio
 
-- Open **[GraFx Studio](https://chiligrafx.com/)**
-- Go to **Templates > Import .ZIP** and select the exported `.zip` file
-- Name the template and choose the folder for the assets
+- Open **[GraFx Studio](https://chiligrafx.com/)** and go to **Templates > Import .ZIP**
+
+![The Templates page in GraFx Studio with the Import .ZIP button](6.png){.screenshot-full}
+
+- Select the exported `.zip` file, then name the template and choose the folder for the assets
+
+![The Import file dialog with a template name and an assets destination folder filled in](8.png){.screenshot-full}
+
 - Your Figma design is now ready for automation in GraFx Studio
+
+![The imported design open in the GraFx Studio template designer](10.png){.screenshot-full}
 
 ## Preflight
 
 **Preflight** is the first step in the conversion process. It scans the selected frame for anything that GraFx Studio cannot reproduce exactly, and reports it before you export — so you decide what happens instead of discovering it afterwards in Studio.
 
-Preflight in the Figma plugin works the same way as preflight in the Adobe plugins: you get a list of warnings for the selected frame, and you can expand any warning to choose what to do with that item. When nothing needs attention, the dialog shows **No error or warnings**.
+Preflight in the Figma plugin works the same way as preflight in the Adobe plugins: you get a list of warnings for the selected frame, and you can expand any warning to choose what to do with that item. When nothing needs attention, the panel shows **No errors or warnings found**.
 
 !!! warning "Known limitations in this version"
     - Clicking a preflight warning does not select or center the corresponding frame in Figma
