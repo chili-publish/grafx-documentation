@@ -13,6 +13,16 @@
 
     ---
 
+    **Aug 31, 2026**: GraFx Studio: Figma plugin (experimental)
+
+    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+
+    An experimental GraFx Studio Exporter for Figma exports a selected frame — text, styles, colors, shapes, images, gradients, and effects — into an importable `.zip`, with preflight before export.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/31/grafx-studio-figma-plugin-experimental/)
+
+    ---
+
     **Aug 27, 2026**: Connector CLI v1.14.0 — debugger reliability and UX
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -60,16 +70,6 @@
     Media and colors in a Brand Kit now take an optional `description`, a free-text explanation of what the element is for. Descriptions are set on the default theme and shared across all themes.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/06/chili-grafx-environment-api-descriptions-for-brand-kit-media-and-colors/)
-
-    ---
-
-    **Aug 03, 2026**: GraFx Studio: Data Source Variables
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    A new **Data source** variable type holds a reference to a single record, from a data connector or injected by an integration, that the end user picks from a table or a dropdown. Component variables can be mapped straight to its columns.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/03/grafx-studio-data-source-variables/)
 
     ---
 
