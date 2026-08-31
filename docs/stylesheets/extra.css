@@ -385,3 +385,18 @@ h3 {
 	vertical-align: super;
 	background: url("/assets/genie-stars.svg") no-repeat center / contain;
 }
+
+/* Image lightbox (glightbox). The plugin wraps each zoomable image in an
+   anchor at build time. Keep that anchor a plain inline box: several image
+   styles above use percentage widths (e.g. img.screenshot is 40%), which would
+   resolve against a shrink-to-fit box instead of the paragraph if the anchor
+   became inline-block. Only the cursor changes. */
+.md-typeset a.glightbox {
+	cursor: zoom-in;
+	color: inherit;
+	border: none;
+}
+.md-typeset a.glightbox:hover img,
+.md-typeset a.glightbox:focus-visible img {
+	filter: brightness(0.97);
+}

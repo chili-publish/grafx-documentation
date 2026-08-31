@@ -73,6 +73,18 @@ plugins:
         'releasenotes/index.md': 'release-notes/index.md'
         # 'release-notes/index.md': 'platform-updates/index.md'
   - search
+  # Click a screenshot to open it full screen. Every image is wrapped unless it
+  # carries one of the skip classes below, or the .off-glb class that hooks.py
+  # adds to alt-text-styled icons (see SKIP_LIGHTBOX_ALTS there).
+  - glightbox:
+      auto_caption: false   # most screenshots use alt="screenshot" as a style hook
+      skip_classes:
+        - rn_icon
+        - applogo
+        - applogo-inline
+        - connector_icon
+        - matrix-icon
+        - dl-hero-icon
   - table-reader
   - llmstxt:
       full_output: llms-full.txt

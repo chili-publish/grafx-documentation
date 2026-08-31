@@ -13,16 +13,53 @@ EXCLUDE_PREFIXES = ("GraFx-Publisher/", "landing/")
 
 NOINDEX_META = '<meta name="robots" content="noindex, nofollow">'
 
+# Decorative images that must never open in the lightbox (glightbox).
+#
+# glightbox's own `skip_classes` option only sees CSS classes, but a large part
+# of the site styles icons through their alt text instead (extra.css selectors
+# like `img[alt=rn_icon]`). Those images carry no class at all, so they would be
+# made clickable. The markdown hook below tags them with `.off-glb` — the class
+# glightbox always skips — so both conventions are covered.
+SKIP_LIGHTBOX_ALTS = (
+    "rn_icon",
+    "svg_icon",
+    "connector_icon",
+    "matrix-icon",
+    "applogo",
+    "smallapplogo",
+    "tinyapplogo",
+)
+
+# ![alt](src) optionally followed by an attr_list block, e.g. {.screenshot}
+IMAGE_RE = re.compile(r"!\[(?P<alt>[^\]\n]*)\]\((?P<src>[^)\n]*)\)(?P<attrs>\{[^}\n]*\})?")
+
+
+def _skip_lightbox(match):
+    """Add the glightbox skip class to a decorative image, keeping any attrs."""
+    if match.group("alt").strip() not in SKIP_LIGHTBOX_ALTS:
+        return match.group(0)
+    attrs = match.group("attrs")
+    if attrs is None:
+        suffix = "{.off-glb}"
+    elif "off-glb" in attrs:
+        suffix = attrs
+    else:
+        suffix = attrs[:-1].rstrip() + " .off-glb}"
+    return f"![{match.group('alt')}]({match.group('src')}){suffix}"
+
 
 def on_page_markdown(markdown, page, config, files, **kwargs):
     """Remove EXCLUDE_PREFIXES pages from the local search index.
 
     Applied by path, so new pages under those folders are covered without
     editing each file's front matter. Runs before the search index is built.
+
+    Also tags alt-text-styled icons with `.off-glb` so glightbox leaves them
+    alone — see SKIP_LIGHTBOX_ALTS above.
     """
     if page.file.src_uri.startswith(EXCLUDE_PREFIXES):
         page.meta.setdefault("search", {})["exclude"] = True
-    return markdown
+    return IMAGE_RE.sub(_skip_lightbox, markdown)
 
 
 def on_post_page(output, page, config, **kwargs):
