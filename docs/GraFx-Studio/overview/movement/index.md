@@ -6,7 +6,7 @@ Navigating happens with a mouse or trackpad.
 
 *Using a trackpad*:
 
-![appscreen](drag-hand.png)
+![The Hand tool selected in the sidebar](drag-hand.png)
 
 *With the hand-tool selected*: You can drag the canvas to work on other areas of your document.
 

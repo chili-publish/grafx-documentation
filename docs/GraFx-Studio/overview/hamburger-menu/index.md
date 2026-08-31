@@ -2,25 +2,25 @@
 
 This is the main menu, with quick access to functions you need for your Smart Template.
 
-![screenshot](hamburger1.png)
+![The hamburger menu open, with Back to templates, File, Edit, Frames, View and Export](hamburger1.png){.screenshot}
 
 ## File
 
 Save and rename your Smart Template.
 
-![screenshot](file.png)
+![The File submenu, with Save, Save as and Rename](file.png){.screenshot}
 
 ## Edit
 
 All the usual undo, redo, cut, copy, paste, duplicate, and delete functions.
 
-![screenshot](edit.png)
+![The Edit submenu, with Undo, Redo, Cut, Copy, Paste, Duplicate and Delete](edit.png){.screenshot}
 
 ## Frame
 
 Move the frame up or down. (See [Z-index](/GraFx-Studio/concepts/frames/#z-index))
 
-![screenshot](frame.png)
+![The Frame submenu, with Bring to front, Bring forward, Send backward and Send to back greyed out](frame.png){.screenshot}
 
 Available when a frame is selected, and if relevant.
 
@@ -34,10 +34,10 @@ Toggle View mode (enables or disables frame borders and the bleed box).
 
 Zoom the canvas in or out.
 
-![screenshot](view.png)
+![The View submenu, with Preview mode, Zoom in, Zoom out, Zoom to page and Zoom to 100%](view.png){.screenshot}
 
 ## Export
 
 Shows the export dialog, with all [output settings](/GraFx-Studio/concepts/output-settings/) you have defined.
 
-![screenshot](export.png)
+![The Export dialog, with PDF selected as the output](export.png){.screenshot}

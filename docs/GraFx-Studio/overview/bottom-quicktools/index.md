@@ -10,10 +10,10 @@ Set of tools at the bottom of the sidebar.
     - Data Source
     - Barcodes
 
-![screenshotsmall](bottom-quicktools-ui.png)
+![The Quick Tools at the bottom of the sidebar](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](resources-panel.png)
+![The Resources panel, listing Brand Kit, Media, Data Source and Barcodes](resources-panel.png){.screenshot}
 
 E.g. When selecting the **Layers and Animation** tool, an extra properties panel will open.
 
-![appscreen](animation-timeline.png)
+![The Layers and Animation panel open at the bottom of the editor, with a timeline bar for each layer](animation-timeline.png)
