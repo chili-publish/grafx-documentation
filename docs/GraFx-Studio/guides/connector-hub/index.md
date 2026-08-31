@@ -10,15 +10,15 @@ As an Environment Admin, navigate to:
 
 My Environments > [Your Environment] > Settings > Connectors
 
-![screenshot-full](ch01.png)
+![The My environments list filtered to 101, with an arrow pointing at the Settings button](ch01.png){.screenshot-full}
 
 Select the tab **Connectors**.
 
-![screenshot-full](ch02.png)
+![The environment settings tabs Integrations, Output tasks and Connectors, with Connectors active](ch02.png){.screenshot-full}
 
 Here, you will see an overview of the installed connectors.
 
-![screenshot-full](ch03.png)
+![The Connectors list with the default GraFx Media connector, next to the Add connector button](ch03.png){.screenshot-full}
 
 ## Add a Connector
 
@@ -26,7 +26,7 @@ Navigate to the list of installed connectors (see above) and click **+ Add conne
 
 A modal opens with the list of available connectors.
 
-![screenshot-full](ch07.png)
+![The Add connector modal listing Acquia DAM, Canto, Google Sheets and Sitecore Content Hub with their builders](ch07.png){.screenshot-full}
 
 Select the connector you want to deploy or install in your environment.
 
@@ -60,7 +60,7 @@ If a connector was available in the past but has been set to 'not available' aga
 - However, you cannot add a new variable with the connector when it is set to 'not available'.
 - You can still update existing variables that use the connector.
 
-![screenshot-full](ch03.png)
+![The Available column of the same Connectors list, with the GraFx Media toggle switched off](ch03.png){.screenshot-full}
 
 ## Set a Default Connector
 
@@ -68,7 +68,7 @@ Each media connector type can have one default connector. The default is used au
 
 To set a connector as default, open the **three-dot menu** next to the connector in the list and select **Set as default**. The option is disabled if the connector is already the default.
 
-![screenshot](ch08.png)
+![The three-dot menu beside an available connector, offering Set as default](ch08.png){.screenshot}
 
 ## Connector Version Updates
 

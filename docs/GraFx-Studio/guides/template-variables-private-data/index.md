@@ -6,7 +6,7 @@ Private data can impact your custom end-user interface. Integrations can use the
 
 ## Manage Private Data
 
-![screenshot-full](private-data01.png)
+![The Private data dialog holding the key-value pairs source_ID and UI_part, beside the variable settings](private-data01.png){.screenshot-full}
 
 ### Access the Variable Settings
 

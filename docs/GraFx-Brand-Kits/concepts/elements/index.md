@@ -19,7 +19,7 @@ Elements are defined on the Brand Kit's default [theme](/GraFx-Brand-Kits/concep
 
     So while we don't use the token terminology, a Brand Kit is fully compatible with a token-based design system.
 
-![screenshot-full](brandkits_01.png)
+![A Brand Kit's default theme holding named colour swatches, three fonts, logo media and two paragraph styles](brandkits_01.png){.screenshot-full}
 
 ## Descriptions
 

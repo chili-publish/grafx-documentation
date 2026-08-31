@@ -2,7 +2,7 @@
 
 Account & Platform administration can be found under the dropdown in the avatar on the top right.
 
-![Account Dropdown](myaccount2.png)
+![Account Dropdown](myaccount2.png){.screenshot-full}
 
 ## My account
 
@@ -10,11 +10,11 @@ Account & Platform administration can be found under the dropdown in the avatar 
 
 The central place to see and update your account details.
 
-![My Account](myaccount1.png)
+![My account page listing first name, last name, client name, email and creation date](myaccount1.png){.screenshot-full}
 
 Click on the avatar to choose a new picture for your account
 
-![My Account](myaccount5.png)
+![The same page after uploading a photo, which replaces the initials in the avatar](myaccount5.png){.screenshot-full}
 
 ### Reset my password
 

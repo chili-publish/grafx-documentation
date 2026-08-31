@@ -6,11 +6,11 @@ See concept [Shape frames](/GraFx-Studio/concepts/frames/#shape-frame)
 
 Select the shape tool in the sidebar and choose a shape. You can also use the shortcut for the shape you wish to draw.
 
-![screenhot](tool-shape.png)
+![The shape tool submenu in the sidebar, listing Rectangle, Ellipse and Polygon with their shortcuts](tool-shape.png){.screenshot}
 
 Drag a rectangle on the canvas. The selected shape will be drawn inside the frame.
 
-![screen](draw-frame-shape.gif)
+![Dragging a shape frame onto the canvas after picking Rectangle from the shape tool submenu](draw-frame-shape.gif){.screenshot-full}
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/7GTTI5Yfomk?si=vYznyBiq0POidTw-&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -28,7 +28,7 @@ Some shapes can have a corner radius. (see below).
 
 A corner radius can be entered in the property panel, or can be set through the corner radius handle.
 
-![animation](corner-radius.gif)
+![Dragging the corner radius handle on a selected rectangle while the four radius fields update](corner-radius.gif){.screenshot-full}
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/sNTJv-RUyU0?si=lGmlMNKT5Uf-ZpKC&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -39,7 +39,7 @@ A corner radius can be entered in the property panel, or can be set through the 
 
 By default you can set the corner radius for all corners.
 
-![screenhot](corner-radius.png)
+![The four Corner radius fields set to 0, with "Same for each corner" ticked below them](corner-radius.png){.screenshot}
 
 By deselecting the "Same for each corner", you can specify a corner radius for each corner individually.
 
@@ -47,7 +47,7 @@ By deselecting the "Same for each corner", you can specify a corner radius for e
 
 By design, an ellipse does not have a corner radius. This will fit an ellipse shape inside the rectangular frame.
 
-![screenshot](ellipse.png)
+![An ellipse fitted inside its rectangular frame, the selection handles sitting on the frame edges](ellipse.png){.screenshot}
 
 ### Polygon
 
@@ -55,7 +55,7 @@ Drawing a rectangular frame to fit a polygon will draw a triangle.
 
 A triangle has 1 corner radius setting, and will apply that setting to all (3) corners.
 
-![screenshot](poly.png)
+![A triangle in a tall frame, with a single Corner radius of 2.66 in the properties panel](poly.png){.screenshot}
 
 ## Maximum / minimum corner radius
 
@@ -67,4 +67,4 @@ In the properties panel, you can now set the value above 50. Visually, this will
 
 When you now make a different layout, that is much bigger in size, and the frame would be much bigger, then this corner radius would be visible again.
 
-![screenshot-fullwidth](max-radius.gif)
+![The square frame on the Rectangle layout, its Width and Height both set to 350 px](max-radius.gif){.screenshot-full}

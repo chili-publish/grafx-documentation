@@ -8,19 +8,19 @@
 
 In the Brand Kit panel, click the Import Icon
 
-![screenshot](bk16.png){.screenshot}
+![The Brand Kit panel's text tab, with a red arrow pointing to the import icon](bk16.png){.screenshot}
 
 Choose the Brand Kit you created
 
-![screenshot-full](bk17.png){.screenshot-full}
+![The Brand Kits picker, listing the single kit CHILI publish Corporate](bk17.png){.screenshot-full}
 
 Click Apply
 
-![screenshot-full](bk18.png){.screenshot-full}
+![The kit CHILI publish Corporate selected in the picker, with Apply highlighted](bk18.png){.screenshot-full}
 
 Confirm, since your Brand Kit elements will replace the current definitions in the document.
 
-![screenshot](bk19.png){.screenshot}
+![The Replace Brand Kit dialog, warning that references to the current kit will be lost](bk19.png){.screenshot}
 
 You are now ready to use your Brand Kit elements in your Document.
 
@@ -57,7 +57,7 @@ Once a Brand Kit is imported, the template can stay aligned with the source Bran
 
 Sync is controlled from the Brand Kit panel header, which now surfaces three controls next to the Brand Kit name: the Brand Kit selector, the manual sync button, and the auto-sync toggle.
 
-![screenshot](brandkit-select.png){.screenshot}
+![The Brand Kit panel header with the swap icon outlined, above the Auto-sync toggle switched on](brandkit-select.png){.screenshot}
 
 The **Brand Kit selector** (the swap icon) lets you switch the template to a different imported Brand Kit.
 
@@ -65,7 +65,7 @@ The **Brand Kit selector** (the swap icon) lets you switch the template to a dif
 
 The **Auto-sync toggle** controls whether the template stays aligned automatically:
 
-![screenshot](brandkit-sync-toggle.png){.screenshot}
+![The Brand Kit sync section of the panel, with Auto-sync switched off](brandkit-sync-toggle.png){.screenshot}
 
 - When **auto-sync is on**, Studio compares the template's Brand Kit against the source every time the template is opened and every time the Brand Kit panel is opened, and applies any changes in a single step. A toast message confirms when a sync has been applied.
 - When **auto-sync is off**, the template keeps its current Brand Kit values until you sync manually.
@@ -84,7 +84,7 @@ Newly imported Brand Kits have auto-sync enabled by default.
 
 The circular-arrows button next to the Brand Kit selector pulls the latest version of the source Brand Kit on demand. Hover shows the *Sync Brand Kit* tooltip. Useful when auto-sync is off, or to force an update in-session after a Brand Kit change.
 
-![screenshot](brandkit-sync.png){.screenshot}
+![The Sync Brand Kit tooltip hanging under the panel header, next to the circular-arrows button](brandkit-sync.png){.screenshot}
 
 !!! info "What a sync changes"
     Sync applies only the differences between the template and the source:

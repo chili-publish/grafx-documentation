@@ -12,39 +12,39 @@ Adding fonts to CHILI GraFx requires a valid license. Before uploading, check yo
 
 Click the upload button
 
-![appscreen](uploadbutton.png)
+![An empty GraFx Fonts library showing the "Upload your first fonts" prompt and the Upload button top right](uploadbutton.png){.screenshot-full}
 
 Select 1 or more files to upload
 
-![appscreen](selectfiles.png)
+![A file picker listing Satoshi OpenType files, with Black, Bold and Regular highlighted as the selection](selectfiles.png){.screenshot-full}
 
 Confirm you have the license.
 
-![appscreen](confirmlicense.png)
+![The "Confirm font upload" dialog with the licence declaration ticked, above Cancel and Upload](confirmlicense.png){.screenshot}
 
 Listen carefully while uploading.
 
-![appscreen](elevator.png)
+![The upload dialog with a spinner and the message "Fonts uploading… Elevator music playing"](elevator.png){.screenshot-full}
 
 GraFx Fonts will read the metadata from the font files and suggest the categorization of the fonts according the family and [style](https://en.wikipedia.org/wiki/Font#Characteristics).
 
-![appscreen](confirmstyles.png)
+![The "Upload 3 fonts" step, with the Satoshi files detected as Bold 700, Black 900 and Regular 400](confirmstyles.png){.screenshot-full}
 
 At this moment in the upload process, you can still choose to NOT upload a specific font to the GraFx Fonts application.
 
 Click the waste bin next to the font (style) you wish NOT to upload.
 
-![appscreen](wastebin.png)
+![A single upload row for Satoshi-BoldItalic.otf, with the waste bin icon at the end outlined](wastebin.png){.screenshot-full}
 
 ## Upload ready
 
 After you confirmed the upload, your font family will appear in the list.
 
-![appscreen](result2.png)
+![Roboto and Satoshi family cards, with an arrow pointing at Satoshi's new "3 styles - OTF" label](result2.png){.screenshot}
 
 Click the font family to see its contents (the font styles).
 
-![appscreen](harry.png)
+![The Satoshi family opened, listing the three uploaded styles "Black 900", "Bold 700" and "Regular 400"](harry.png){.screenshot-full}
 
 
 ## Warnings
@@ -53,7 +53,7 @@ Click the font family to see its contents (the font styles).
 
 When GraFx Fonts detects a duplicate, you'll see a warning icon.
 
-![appscreen](error.png)
+![A Satoshi-Black.otf row with a warning icon and tooltip saying the font already exists](error.png){.screenshot-full}
 
 You can choose to delete (not to upload) the font, or categorize it differently.
 
@@ -76,4 +76,4 @@ Once uploaded, the new metadata will be used in GraFx Studio to categorize the f
 
 In the example below, the _italic_ was not encoded correctly for 2 out of 3 fonts. And therefore also marked as duplicates, since the non-italic version was available in the repository.
 
-![appscreen](wrontmetadata.png)
+![Three italic files, two of them read as "Light 300" and "Medium 500" and flagged, blocking "Upload fonts"](wrontmetadata.png){.screenshot-full}

@@ -17,7 +17,7 @@ Barcodes are created and configured in GraFx Studio (different than in GraFx Pub
 - Click a barcode from the Barcode library
 - Configure using the properties panel
 
-![screenshot-full](barcodes1.gif)
+![Placing a QR code from the Barcode library, then setting its value and size in the properties panel](barcodes1.gif){.screenshot-full}
 
 ## Barcode-specific settings
 
@@ -38,13 +38,13 @@ The Bar height property is a decimal number in the unit of the layout
 
 Show the character that indicates the light margin
 
-![screenshot-full](barcodes2.gif)
+![Switching on Show light margin indicator, which adds a > sign after the barcode value](barcodes2.gif){.screenshot-full}
 
 ## Start and Stop characters
 
 Show the start and stop character
 
-![screenshot-full](barcodes3.gif)
+![Switching on Show start/stop characters, which wraps the CODE-39 value in asterisks](barcodes3.gif){.screenshot-full}
 
 
 ## Quiet zone
@@ -64,9 +64,9 @@ The appearance is the color for a specific part of the barcode.
 - Background represents the background color
 - Blend mode: apply [blend modes](/GraFx-Studio/concepts/blendmodes/), similar to image frames
 
-![screenshot-full](qr1.png)
+![A red QR code with the Color picker open on Custom CMYK, and Fill and Background under Appearance](qr1.png){.screenshot-full}
 
-![screenshot-full](qr_blend.png)
+![QR code over a tablet image with the Blend mode list open and Hard light selected](qr_blend.png){.screenshot-full}
 
 ## Magnification
 

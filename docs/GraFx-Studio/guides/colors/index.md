@@ -8,13 +8,13 @@
 
 Open the **Resource Panel** > **Brand Kit panel**.
 
-![screenshotsmall](bottom-quicktools-ui.png)
+![A pink arrow pointing at the Resources icon at the bottom of the side toolbar](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](bk1.png)
+![The Resources panel listing Brand Kit above Media, Data source and Barcodes](bk1.png){.screenshot}
 
 Select the second tab to view colors
 
-![screenshot](bk3.png)
+![The Brand Kit panel on its second tab, Colors still empty beside the "+" button](bk3.png){.screenshot}
 
 Click on the "+" sign to add a new color.
 Each click on the "+" sign will add another (white) color.
@@ -23,7 +23,7 @@ Click on the "..." menu next to the newly created color and choose edit or click
 
 You can rename by clicking "Rename" in the "..." menu.
 
-![screenshot](bk7.png)
+![One saved colour in the Colors list, CHILI publish red, with its swatch and hex value #FD0048](bk7.png){.screenshot}
 
 ### Color picker
 
@@ -32,7 +32,7 @@ Define the color. Choose your type and set the values for the chosen color space
 
 #### Hex
 
-![screenshot](hex.png)
+![The Color picker set to HEX, with a saturation field, hue slider and the value #A22D70](hex.png){.screenshot}
 
 The value is a hexadecimal representation of an RGB value.
 
@@ -42,7 +42,7 @@ Ranging from 00 (black) to FF (white).
 
 #### RGB
 
-![screenshot](rgb.png)
+![The Color picker set to RGB, the same shade split into three fields reading 162, 45 and 112](rgb.png){.screenshot}
 
 The 3 values represent a decimal value for each of the 3 RGB channels.
 
@@ -50,7 +50,7 @@ The 3 values represent a decimal value for each of the 3 RGB channels.
 
 #### CMYK
 
-![screenshot](cmyk.png)
+![The Color picker set to CMYK, with Cyan 0%, Magenta 72%, Yellow 31% and Key (Black) 36%](cmyk.png){.screenshot}
 
 Mostly used in print, but also available in CSS4, CMYK is a subtractive color system.
 
@@ -60,7 +60,7 @@ A subtractive color mixing model predicts the resultant spectral power distribut
 
 #### SPOT
 
-![screenshot](spot0.png)
+![The colour type dropdown open over the picker, listing HEX, RGB, CMYK and a ticked SPOT](spot0.png){.screenshot}
 
 A spot color is a pre-mixed, standardized ink used in printing to achieve precise and consistent colors that cannot be easily reproduced with traditional CMYK printing. 
 
@@ -70,12 +70,12 @@ In addition to being a pre-mixed ink for precise color matching, spot colors are
 
 You can define a SPOT color with a name. This color will appear in the PDF output as a separate "ink". The secondary color defines how the color is shown in your design.
 
-![screenshot](spot2.png)
+![SPOT with a CMYK secondary colour, the Spot name field holding VarnishLayer](spot2.png){.screenshot}
 
 ## Apply a color
 
 Where you can choose a color (character style or paragraph style), you'll be able to click the color and choose the color.
 
-![screenshot-full](swatch-5.png)
+![Edit Style for Character Style 1 with its Fill colour open on the Color panel's Custom tab at #FF0000](swatch-5.png){.screenshot-full}
 
 Select "custom" to define a color ad-hoc.

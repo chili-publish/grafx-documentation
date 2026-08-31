@@ -4,25 +4,25 @@
 
 Click on the **plus** sign or three dots "Add sub-layout"
 
-![screenshot](layout06.png)
+![The Layouts panel, pointing at the plus sign on the A4 row above its A5 and Facebook Landscape Ad sub-layouts](layout06.png){.screenshot}
 
 A window appears to allow you to choose from a [list of Layout Presets](#reference-available-layout-preset-sizes).
 
-![screenshot-full](layoutpresets01.png)
+![The Create new layout dialog on the Preset tab, showing the Print group of 23 sizes as thumbnail cards](layoutpresets01.png){.screenshot-full}
 
 Select 1 or more presets you would like to add to your Layout List.
 
-![screenshot-full](layoutpresets02.png)
+![The same preset grid with the A4 and Letter cards ticked and outlined](layoutpresets02.png){.screenshot-full}
 
 If your preset is not available in the list, choose "Custom" and define the name, size and intent of your Layout.
 
-![screenshot-full](layoutpresets03.png)
+![The Custom tab of the dialog, with a Skyscraper layout at 800 by 200 px, Digital animated intent and a 5s duration](layoutpresets03.png){.screenshot-full}
 
 Click create!
 
 In the properties panel, you'll see all related options you can set.
 
-![screenshot-full](sublayout-2.png)
+![A Poster sub-layout selected, its properties marked "Inheriting from A4" with the overridden width and height in orange](sublayout-2.png){.screenshot-full}
 
 If the values appear colored, it's because they differ from the base values. To learn more, read about the [Inheritance model](/GraFx-Studio/concepts/layout-intent/#inheritance-model).
 
@@ -57,9 +57,9 @@ In Studio UI or Run Mode, a dropdown will be available, with all "Available" Lay
 
 Layouts are "Available", if you set the property "Available".
 
-![screenshot](layout01.png)
+![The User interface section of a layout, with Available switched on and Resizable switched off](layout01.png){.screenshot}
 
-![screenshot-full](studioui01.png)
+![Studio UI for an end user, pointing at the Layout dropdown above the Customize fields](studioui01.png){.screenshot-full}
 
 If available, you can also set if a layout is resizable in the End User Interface (Studio UI).
 
@@ -71,15 +71,15 @@ Select an element in the page, and change the value of a property in the propert
 
 You can also move the elements around on the page.
 
-![screenshot-full](alt-layout-1.png)
+![The Discover Regular! text frame selected in the SkyScraper layout, its position still inheriting from the base design](alt-layout-1.png){.screenshot-full}
 
 The updated value will be colored, as it's changed compared to the inherited value.
 
-![screenshot-full](alt-layout-2.png)
+![The same frame after nudging it, where Y now reads 92 px in orange because it overrides the inherited value](alt-layout-2.png){.screenshot-full}
 
 You can reset the value to the inherited one, by clicking on the left turning arrow, and select the value you want to reset. Only changed values you can reset will appear in this dropdown. Or you can choose to resel all values **Reset Overrides**
 
-![screenshot-full](alt-layout-3.png)
+![The reset arrow's dropdown open, offering Reset Overrides and Reset Y as the only changed value](alt-layout-3.png){.screenshot-full}
 
 ## Change the animation
 
@@ -91,17 +91,17 @@ Select an element for which you want to change the animation.
 
 In the example below, we selected the Text frame "Discover"
 
-![screenshot-full](alt-layout-4.png)
+![The Layers panel open on the timeline, with the discover layer selected and its animation bars highlighted](alt-layout-4.png){.screenshot-full}
 
 In the Animation Properties panel, change the values you want to change for this Layout.
 
 If you don't change values, they will be inherited from the base layout.
 
-![screenshot-full](alt-layout-5.png)
+![The animation properties panel with Intro sliding from Top Right and Outro sliding to Bottom Left, both at 100%](alt-layout-5.png){.screenshot-full}
 
 If you want to disable the specific animation, de-select the specific animation with the respective buttons.
 
-![screenshot](alt-layout-6.png)
+![The row of four animation buttons, with only the leftmost one active on a lighter background](alt-layout-6.png){.screenshot}
 
 The active options are shown with a lighter background.
 

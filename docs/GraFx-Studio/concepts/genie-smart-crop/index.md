@@ -2,7 +2,7 @@
 
 In GraFx Studio, Smart Crop is applied on image frames in a Smart Template. Set the frame's fit mode to **Smart Crop**, and GraFx Genie positions the image so the subject stays in view.
 
-![screenshot-full](/GraFx-Genie/concepts/smart-crop/poi-ad.png)
+![One "Let's travel" photo smart-cropped into banner, square and portrait ads, the runner still in view](/GraFx-Genie/concepts/smart-crop/poi-ad.png){.screenshot-full}
 
 ## Read more
 

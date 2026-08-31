@@ -13,7 +13,7 @@ If no discount is entered, all frames are hidden. If a discount is selected, it 
 
 If a discount of -50% is chosen, a "Super promo!" shape and text will be shown.
 
-![Movie](demo.gif)
+![Back to school ad with the Discount list open on No discount, -10%, -30% and -50%](demo.gif){.screenshot-full}
 
 ### The variable
 
@@ -21,7 +21,7 @@ A list variable "Discount" is defined.
 
 The items in the list contain the discount options.
 
-![screenshot](variable.png)
+![The Discount variable as a Single Select List, with list items No discount, -10%, -30% and -50%](variable.png){.screenshot}
 
 ### The trigger
 
@@ -35,7 +35,7 @@ The trigger is initiated when
 - or when the document is loaded (to be sure we check when opening the document)
 - or when a layout is changed
 
-![screenshot](action-definition.png)
+![The Triggers tab of Edit action, listing Variable value changed, Document loaded and Selected layout changed](action-definition.png){.screenshot}
 
 ### Action
 

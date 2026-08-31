@@ -1,8 +1,8 @@
-# ![](/assets/icon-GraFx-Fonts.svg){.applogo-inline} GraFx Fonts
+# ![GraFx Fonts logo](/assets/icon-GraFx-Fonts.svg){.applogo-inline} GraFx Fonts
 
 The fonts application for [GraFx Studio](/GraFx-Studio/)
 
-![asset](dashboard.png)
+![The GraFx Fonts library as a grid of font cards, each previewing the pangram sentence](dashboard.png){.screenshot-full}
 
 ## Fonts for your applications
 

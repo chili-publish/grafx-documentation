@@ -1,6 +1,6 @@
 # Layouts
 
-![Properties](layout-1.png)
+![Base Design layout with Skyscraper and Leaderboard sub-layouts, sized 336 by 280 px](layout-1.png){.screenshot-full}
 
 Layouts is a concept to reduce the time to produce variants, by creating several variants from the same document.
 
@@ -19,17 +19,17 @@ This design could be an abstract version, or a first version of the add.
 
 The properties of the design can be found on the right, in the properties panel.
 
-![Base Design](layout-2.png)
+![The Base Design banner on the canvas, with the layout's width and height on the right](layout-2.png){.screenshot}
 
 The properties of the elements on the page are shown when you select the element.
 
-![Base Design](layout-3.png)
+![Bottle image selected on the banner, showing its X, Y, width, height and rotation](layout-3.png){.screenshot}
 
 The properties of the animation of the elements show when you select the animaction icon in the properties panel.
 
 Click on **intro**, **emphasis** and **outro** to expand the respective properties.
 
-![Base Design](prop-panel.gif)
+![Expanding the Intro, Emphasis and Outro sections in the animation tab](prop-panel.gif){.screenshot-full}
 
 ## Inheritance
 
@@ -39,7 +39,7 @@ In the properties panel you see values "Inheriting from [Layout]".
 
 This means that values for this property have been taken from the master of this layout.
 
-![master](master.png)
+![Layouts panel with SkyScraper nested under its master, Base Design](master.png){.screenshot-full}
 
 The master of this layout is the one above the current layout, in the Layout menu.
 
@@ -47,7 +47,7 @@ In this example **Base Design** is the master for **Skyscraper**, and **Skyscrap
 
 When switching layouts, the document will zoom to fit.
 
-![inherited](inherited-values.png)
+![Width 160 px and Height 600 px in yellow, under Inheriting from Base Design](inherited-values.png){.screenshot}
 
 When a value is colored (and the bullet next to **inherited** is colored), it means the current value for this layout is different than the master's value.
 
@@ -55,6 +55,6 @@ If it's white, it's the value taken from the master.
 
 ### Reset inherited values
 
-![inherited](inherited-values.gif)
+![Opening the reset dropdown with Reset Overrides, Reset Width and Reset Height](inherited-values.gif){.screenshot-full}
 
 Reset all values, or only individual values by the left-turning arrow. A dropdown will provide you with the options to reset to the master's values.

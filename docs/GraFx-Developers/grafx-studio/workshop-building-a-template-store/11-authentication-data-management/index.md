@@ -46,7 +46,7 @@ Follow the instructions in the [integration guide](/GraFx-Developers/grafx-studi
 
 Make sure to set limited permissions:
 
-![permissions](permissions.png)
+![Read-only integration: the Permissions tab with Read ticked for Fonts, Media and the Studio scopes](permissions.png){.screenshot}
 
 !!! question "How does this Integration interact with our new Project?"
 

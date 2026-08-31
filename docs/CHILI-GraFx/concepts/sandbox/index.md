@@ -8,7 +8,7 @@ This means that any changes made in the sandbox will not affect the production d
 
 Output generated in a sandbox environment has a watermark and is not counted as a [render](/CHILI-GraFx/concepts/renders/).
 
-![screenshot](sample.jpeg)
+![Sandbox output of a "Citytrip to Paris" poster, with a diagonal SAMPLE watermark across it](sample.jpeg){.screenshot}
 
 ## Production
 

@@ -30,7 +30,7 @@ You have two options for configuring which version your environment uses:
 
 The version displayed in environment settings as "GraFx Studio version" represents the SDK version, with all other components automatically matched.
 
-![The environment settings panel showing the GraFx Studio version selector set to "latest"](ver01.png)
+![The environment settings panel showing the GraFx Studio version selector set to "latest"](ver01.png){.screenshot-full}
 
 When set to "latest," updates happen automatically as new versions are released. Environmental administrators can also pin the version to a specific release when greater control is required.
 
