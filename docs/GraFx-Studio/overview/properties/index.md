@@ -8,24 +8,24 @@ Set the width, height, position and rotation of a frame.
 
 If you selected an image frame, you can also choose the fit and crop of the image in the frame.
 
-![screenshot](size-properties.png)
+![The basic properties of a selected frame: position, size, rotation, and image fit and crop](size-properties.png){.screenshot}
 
 ## Extended properties
 
 In some cases (e.g. Barcodes), extra properties can be found behind the "..." (three dots) menu.
 
-![screenshot](properties.gif)
+![The three dots menu in the properties panel revealing extra properties](properties.gif){.screenshot}
 
 
 ## Animation properties
 
 By default, a frame is not animated. With these setting, you can set the behaviour of the intro, emphasis and outro of the animation.
 
-![screenshot](animation-properties.png)
+![The animation properties of a frame, with the Intro, Emphasis and Outro sections](animation-properties.png){.screenshot}
 
 ## Automation properties
 
-![screenshot](automationpanel.png)
+![The automation properties of a frame, with the Actions and Variables sections](automationpanel.png){.screenshot}
 
 ### Variables
 
