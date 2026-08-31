@@ -68,7 +68,8 @@ In self-service or data-driven design, you don’t always know how content will 
 
 - Drop shadows apply per object/frame.  
 - Units adapt automatically to the layout’s configured [intent](/GraFx-Studio/concepts/layout-intent/) and units.  
-- Only one drop shadow effect can be applied at a time.
+- Only one drop shadow effect can be applied at a time.  
+- Drop shadow is not supported on an image frame that contains a PDF asset. See [Embedded PDF assets](/GraFx-Studio/guides/output/pdf/#embedded-pdf-assets).
 
 ## Next
 

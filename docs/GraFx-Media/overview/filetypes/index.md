@@ -17,3 +17,9 @@ Your upload window will only allow supported file types. The other files will be
 ![image](filetypes.png)
 
 ![image](filetypes-windows.png)
+
+## PDF assets
+
+When you use a PDF as an asset in a Smart Template, its vector content is kept on PDF output. The PDF is not flattened.
+
+See [Embedded PDF assets](/GraFx-Studio/guides/output/pdf/#embedded-pdf-assets) for what is and is not carried over.

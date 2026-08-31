@@ -70,6 +70,9 @@ In addition to being a pre-mixed ink for precise color matching, spot colors are
 
 You can define a SPOT color with a name. This color will appear in the PDF output as a separate "ink". The secondary color defines how the color is shown in your design.
 
+!!! info "Spot colors in placed PDFs"
+    Spot colors inside a PDF you place as an asset also stay separate inks. See [Embedded PDF assets](/GraFx-Studio/guides/output/pdf/#embedded-pdf-assets).
+
 ![screenshot](spot2.png)
 
 ## Apply a color
