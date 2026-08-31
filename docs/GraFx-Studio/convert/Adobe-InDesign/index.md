@@ -64,7 +64,7 @@ All assets are linked correctly
 Example of a potential issue: Frame stroke type not supported  
 You can choose to ignore, or export the object to a PDF asset and place it as an asset
 
-![GraFx Studio Exporter preflight detail showing an Unsupported stroke type warning for a text frame, with Convert to PDF and Ignore options](convert19.png){.screenshot-full}
+![The Adobe InDesign Stroke panel set to a Triple stroke type, beside the preflight warning it raises](convert19.png){.screenshot-full}
 
    - Choose a destination folder and click **Export**  
      Required only once, can be changed at any moment  
@@ -130,7 +130,7 @@ If any incompatible elements are found, preflight offers three options:
 2. **Ignore** – The preflight engine changes the missing feature to a supported version (e.g., stroke type in the example)  
 3. **Fix the issue** – You can adjust the feature in Adobe® InDesign® and re-run the preflight
 
-![GraFx Studio Exporter preflight detail showing an Unsupported stroke type warning for a text frame, with Convert to PDF and Ignore options](convert19.png){.screenshot-full}
+![Preflight result for Layer 1: TextFrame, with Ignore chosen instead of Convert to PDF, above Run again and Continue](convert19.png){.screenshot-full}
 
 !!! info "Placed assets: pros and cons"
 

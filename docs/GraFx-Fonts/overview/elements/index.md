@@ -2,13 +2,13 @@
 
 When opening GraFx Fonts, you see the action banner and below all font families.
 
-![appscreen](dashboard.png){.screenshot-full}
+![The GraFx Fonts home screen, with the action banner above a single Satoshi family card](dashboard.png){.screenshot-full}
 
 ## Action banner
 
 The area of the application where you interact with the contents. You can search, sort and change the view.
 
-![appscreen](action-banner.png){.screenshot-full}
+![The action banner with callouts 1 to 5 on the Name sort field, sort order, Search, Upload and view buttons](action-banner.png){.screenshot-full}
 
 <span class="reddot">1</span>
 **Sort Field:** 
@@ -36,10 +36,10 @@ The list of font families show the fonts grouped in families.
 
 ### Font family
 
-![appscreen](family.png){.screenshot-full}
+![A single family card previewing the pangram, labelled Satoshi with "10 styles - OTF" underneath](family.png){.screenshot-full}
 
 Below the family, the amount of styles and the [Font type](/GraFx-Fonts/overview/supported-font-types/) is indicated.
 
 Click on the font, to see the styles in the family.
 
-![appscreen](family-styles.png){.screenshot-full}
+![The Satoshi family opened, showing its ten styles from "Black 900" to "Regular 400 Italic"](family-styles.png){.screenshot-full}

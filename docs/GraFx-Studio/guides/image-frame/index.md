@@ -6,11 +6,11 @@ See concept [Image frames](/GraFx-Studio/concepts/frames/#image-frame)
 
 Select the image tool in the sidebar. You can also use the shortcut for the shape you wish to draw.
 
-![screenshotsmall](image-1.png){.screenshotsmall}
+![The Image tool active in the toolbar, its tooltip showing the shortcut key I](image-1.png){.screenshotsmall}
 
 Drag a rectangle on the canvas. The frame will initially look like a crossed rectangle.
 
-![screen](image-2.png){.screenshot-full}
+![An empty image frame on the canvas, drawn as a crossed rectangle with selection handles](image-2.png){.screenshot-full}
 
 ## User Constraints for Image Frames
 
@@ -132,11 +132,11 @@ There's no separate "Off" toggle for the clipping mask. To return an image frame
 
 With the frame selected, open the **resource panel** > **media panel**, and select an asset.
 
-![screenshotsmall](bottom-quicktools-ui.png){.screenshotsmall}
+![An arrow pointing at the resource panel icon at the foot of the quick tools bar](bottom-quicktools-ui.png){.screenshotsmall}
 
-![screenshot](image-3.png){.screenshot}
+![The Resources panel, with Media, Data source and Barcodes listed below the brand assets entry](image-3.png){.screenshot}
 
-![screenshot](image-4.png){.screenshot}
+![The GraFx Media panel open on a folder of house photos, with the first thumbnail selected](image-4.png){.screenshot}
 
 The initial fit of the asset in the frame is to fill the frame. (see Fill properties below)
 
@@ -146,17 +146,17 @@ Similar to setting Subject Area and POI in GraFx Media, you can do this in GraFx
 
 This also allows the Template Designer to overrule the POI and Subject area sent by an external Asset Provider (user Media Connectors).
 
-![screenshot](sc01.png){.screenshot}
+![An arrow pointing at the diagonal-arrows icon on a media thumbnail](sc01.png){.screenshot}
 
 Click on the diagonal arrows to see the details of the asset.
 
 The information about the asset is displayed, and the option to define the subject area and POI.
 
-![screenshot-full](sc02.png){.screenshot-full}
+![Asset details listing Type PNG and Dimensions 1920x1080 px, with a Subject area button under SMART CROP](sc02.png){.screenshot-full}
 
 Click the "Subject Area" button, and you'll be able to set the Subject Area and POI.
 
-![screenshot-full](sc03.png){.screenshot-full}
+![Crop handles and a round point-of-interest marker over the photo, with Cancel and Apply in the panel](sc03.png){.screenshot-full}
 
 See also [Concept of Smart Crop](/GraFx-Studio/concepts/genie-smart-crop/) and [Set Subject Area in GraFx Media](/GraFx-Media/guides/smart-crop-subject-area/)
 
@@ -172,25 +172,25 @@ Similar properties as with all frames. See [Basic properties](/GraFx-Studio/conc
 
 ### Fill properties
 
-![screenshot-full](sc5.png){.screenshot-full}
+![The IMAGE fit dropdown open on Fill, listing Fit, Smart crop and Manual crop](sc5.png){.screenshot-full}
 
 #### Fit
 
 Choose the Fit property, to fit the full image inside the frame. Whitespace is created if needed, to fit the full image.
 
-![screenshot](image-7.png){.screenshot}
+![The whole portrait photo sits inside a wider frame, leaving whitespace to left and right](image-7.png){.screenshot}
 
 #### Fill
 
 Choose the Fill property, to fill the full frame with the image. No whitespace is left inside the frame. Part of the image is hidden.
 
-![screenshot](image-6.png){.screenshot}
+![The portrait photo covers the narrower frame, with the hidden strips above and below dimmed](image-6.png){.screenshot}
 
 #### Smart Crop
 
 Choose the Smart Crop property, to let GraFx Genie assist to position the subject area and POI in the frame.
 
-![screenshot](sc12.png){.screenshot}
+![Smart crop set on a tall frame, green subject-area corners keeping the running athlete in view](sc12.png){.screenshot}
 
 See [Concept of Smart Crop](../../concepts/genie-smart-crop/) for more details
 
@@ -208,15 +208,15 @@ Select one of the automated crop modes
 
 When the images is positioned (automatically), click the crop icon next to the fit mode.
 
-![screenshot-full](mco01.png){.screenshot-full}
+![An arrow pointing at the crop icon beside the Fill dropdown, with 0% offsets shown around the frame](mco01.png){.screenshot-full}
 
 Position the image how you prefer it, and click apply.
 
-![screenshot-full](mco02.png){.screenshot-full}
+![Crop mode active, the image dragged inside the frame, with the note Crop applies to this image only above Apply](mco02.png){.screenshot-full}
 
 When a particular image has a manual crop override, it will display below the fit modes.
 
-![screenshot](mco03.png){.screenshot}
+![The IMAGE panel reading Manual crop override applied to this image, with a reset arrow beside it](mco03.png){.screenshot}
 
 The left round arrow resets the override, for that images, in that frame, in that layout.
 
@@ -224,9 +224,9 @@ The left round arrow resets the override, for that images, in that frame, in tha
 
 If the image and the frame have the exact aspect ratio, there will be no difference between fitt and fill.
 
-![screenshot-full](fit.png){.screenshot-full}
+![Fit chosen for a frame with the same aspect ratio as the photo, so no whitespace appears](fit.png){.screenshot-full}
 
-![screenshot-full](fill.png){.screenshot-full}
+![Fill chosen on the same frame, giving a result identical to Fit](fill.png){.screenshot-full}
 
 #### Manual Crop
 

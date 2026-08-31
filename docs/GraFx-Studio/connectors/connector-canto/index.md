@@ -24,17 +24,17 @@ Consult your [Canto documentation](https://support.canto.com/hc/en-us/articles/2
 
 From the overview of Environments, click on "Settings" on the right to your environment, where you want to install or configure the Connector.
 
-![screenshot-full](sch13.jpg){.screenshot-full}
+![The My environments list, with a red arrow on the Settings button of the production environment row](sch13.jpg){.screenshot-full}
 
 Then click the installed Connector to access the configuration.
 
-![screenshot-full](sch12.png){.screenshot-full}
+![The environment's Connectors list, with an arrow pointing at the Canto row of type Media](sch12.png){.screenshot-full}
 
 ### Configuration
 
 Your instance of the Connector needs to know which Canto instance it should communicate with and how to authenticate.
 
-![screenshot-full](sch01.png){.screenshot-full}
+![The Canto connector's Configuration tab, with a baseURL and the allowed domain *.canto.global](sch01.png){.screenshot-full}
 
 **baseURL**
 
@@ -58,7 +58,7 @@ For example
 
 ### Authentication
 
-![screenshot-full](sch02.png){.screenshot-full}
+![Authentication tab set to OAuth 2.0 Client Credentials, with the Canto token endpoint filled in](sch02.png){.screenshot-full}
 
 Select your type of authentication:
 
@@ -80,27 +80,27 @@ Consult your Canto System Admin for assistance in configuring these fields.
 
 - Select the Canto Connector.
 
-![screenshot-full](sch07.png){.screenshot-full}
+![The Resources icon at the bottom of the GraFx Studio toolbar, with its tooltip showing](sch07.png){.screenshot-full}
 
-![screenshot-full](sch08.png){.screenshot-full}
+![The open Resources panel, where Media sits alongside Data source and Barcodes](sch08.png){.screenshot-full}
 
-![screenshot-full](sch09.png){.screenshot-full}
+![The media browser's connector switcher, with Canto ticked above GraFx Media](sch09.png){.screenshot-full}
 
 ### Image Variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except is you have set configuration options (see below).
 
-![screenshot-full](var01.png){.screenshot-full}
+![The Media dialog showing CHILLtronics phone and tablet assets from Canto, next to the variable's Configuration options](var01.png){.screenshot-full}
 
 ### Metadata mapping
 
 See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details
 
-![screenshot](var02.png){.screenshot}
+![Arrows pointing at the link tab and the Metadata mapping section of an image variable connected to Canto](var02.png){.screenshot}
 
 ### Configuration Options
 
-![screenshot](var03.png){.screenshot}
+![Canto configuration options: Folder View, Keyword filter, Tag filter, Album filter and the approval toggles](var03.png){.screenshot}
 
 To filter the assets suggested to template users, you can use several methods.
 
@@ -124,7 +124,7 @@ When set, only assets from that album will be presented.
     For the Album filter, you need to set the album ID.  
     You'll find the ID in the URL when browsing your albums in Canto.  
     
-    ![screenshot](var04.png){.screenshot}
+    ![A Canto album URL with the album ID after /album/ boxed in red](var04.png){.screenshot}
 
 #### Only show approved
 

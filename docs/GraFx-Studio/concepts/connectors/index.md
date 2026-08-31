@@ -78,15 +78,15 @@ As an Environment Admin, navigate to:
 
 My Environments > [Your Environment] > Settings > Connectors
 
-![screenshot-full](ch01.png){.screenshot-full}
+![My environments list, with an arrow pointing at the Settings button for one production environment](ch01.png){.screenshot-full}
 
 Select the **Connectors** tab.
 
-![screenshot-full](ch02.png){.screenshot-full}
+![Environment settings tabs, with Connectors selected next to Integrations and Output tasks](ch02.png){.screenshot-full}
 
 Here, you will see an overview of the installed connectors.
 
-![screenshot-full](ch03.png){.screenshot-full}
+![The connector list, starting with the default GraFx Media entry, and the Add connector button](ch03.png){.screenshot-full}
 
 ## Types of Connectors
 

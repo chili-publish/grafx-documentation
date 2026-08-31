@@ -1,4 +1,4 @@
-# ![](/assets/icon-GraFx-Studio.svg){.applogo-inline} GraFx Studio
+# ![GraFx Studio app icon](/assets/icon-GraFx-Studio.svg){.applogo-inline} GraFx Studio
 
 GraFx Studio is the multichannel Smart Template editor for (animated) digital and print output.
 

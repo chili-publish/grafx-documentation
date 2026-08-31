@@ -20,21 +20,21 @@ Choose "Insert" from the variable "..." menu to insert it into a text frame
 
 Insert the content of a text variable into a text frame.
 
-![screenshot-full](text_insert.png){.screenshot-full}
+![The "..." menu open on the text variable Headline, offering Insert above Settings](text_insert.png){.screenshot-full}
 
 Insert the content of list variable into a text frame.
 
-![screenshot-full](list_insert.png){.screenshot-full}
+![The "..." menu open on the list variable CampaignType, with Insert highlighted](list_insert.png){.screenshot-full}
 
 In edit mode, the template variable name is shown in a gray box in the text.
 
-![screenshot-full](variables-1.png){.screenshot-full}
+![Settings for the single-line text variable whatkindofworldwelivein, whose default value is Brave](variables-1.png){.screenshot-full}
 
-![screenshot-full](variables-2.png){.screenshot-full}
+![Text frame in edit mode where the grey box with the variable name spills past the frame edge](variables-2.png){.screenshot-full}
 
 If the frame is not wide enough to show the full name, the name will be truncated to avoid overflow.
 
-![screenshot-full](variables-3.png){.screenshot-full}
+![The same text in a narrower frame, where the variable name is cut short to whatkindof](variables-3.png){.screenshot-full}
 
 ## Find and locate placed variables using the highlight tool
 

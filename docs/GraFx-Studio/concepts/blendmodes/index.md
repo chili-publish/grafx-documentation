@@ -9,17 +9,17 @@ Blend Modes determine how two graphics or colors blend together. Each blend mode
 | Examples      | | | |
 | -- | -- | -- | -- |
 | Normal              | Screen             | Overlay             | Darken |
-|![Frame](normal.png){.screenshotsmall}| ![Frame](screen.png){.screenshotsmall}|![Frame](overlay.png){.screenshotsmall}|![Frame](darken.png){.screenshotsmall}|
+|![Normal: the white bottle sits fully opaque over the green splash background](normal.png){.screenshotsmall}| ![Screen: the bottle lightens until its label text almost disappears](screen.png){.screenshotsmall}|![Overlay: the splash shows faintly through the bottle and the label turns yellow-green](overlay.png){.screenshotsmall}|![Darken: the darker green splash takes over the bottle, leaving only the cap clear](darken.png){.screenshotsmall}|
 | Lighten             | Color Dodge             | Color Burn            | Hard light |
-|![Frame](lighten.png){.screenshotsmall}| ![Frame](colordodge.png){.screenshotsmall}|![Frame](colorburn.png){.screenshotsmall}|![Frame](hardlight.png){.screenshotsmall}|
+|![Lighten: the bottle keeps its white body and the darker splash stays behind it](lighten.png){.screenshotsmall}| ![Color dodge: the bottle is blown out to near-white with a bright yellow band at its base](colordodge.png){.screenshotsmall}|![Color burn: the bottle darkens to deep green with the splash burned through it](colorburn.png){.screenshotsmall}|![Hard light: a high-contrast result with a bright bottle and the splash pushed back](hardlight.png){.screenshotsmall}|
 | Soft light            | Difference              | Exclusion             | Multiply |
-|![Frame](softlight.png){.screenshotsmall}| ![Frame](difference.png){.screenshotsmall}|![Frame](exclusion.png){.screenshotsmall}|![Frame](multiply.png){.screenshotsmall}|
+|![Soft light: the splash reads softly through the bottle and the label fades to pale green](softlight.png){.screenshotsmall}| ![Difference: the bottle inverts to deep purple with a dark red droplet logo](difference.png){.screenshotsmall}|![Exclusion: the bottle inverts to a softer mauve and most of the label washes out](exclusion.png){.screenshotsmall}|![Multiply: the green splash shows through the whole bottle, darkening it](multiply.png){.screenshotsmall}|
 | Hue             | Saturation              | Color             | Luminosity |
-|![Frame](hue.png){.screenshotsmall}| ![Frame](saturation.png){.screenshotsmall}|![Frame](color.png){.screenshotsmall}|![Frame](luminosity.png){.screenshotsmall}|
+|![Hue: the bottle turns pale mint and the logo outlines shift to pink](hue.png){.screenshotsmall}| ![Saturation: the bottle drops to grey while the background stays green](saturation.png){.screenshotsmall}|![Color: a grey bottle keeping its green droplet logo against the green background](color.png){.screenshotsmall}|![Luminosity: the bottle picks up a pale green tint from the background](luminosity.png){.screenshotsmall}|
 
 The above examples show blend modes in action on a graphic. You can also apply them to a frame with text.
 
-![Frame](blendmode-text.png){.screenshot-full}
+![A text frame reading "chill water the purest" with Color burn chosen in the Blend mode dropdown](blendmode-text.png){.screenshot-full}
 
 ### Normal
 The default blend mode which draws the new graphics over the existing graphics.

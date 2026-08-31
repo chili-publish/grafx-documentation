@@ -4,7 +4,7 @@
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.
 
-![screenshot-full](mlt01.png){.screenshot-full}
+![Variables panel with the + above Variable list, beside settings for a new Description variable](mlt01.png){.screenshot-full}
 
 Choose "Multi-line text" as the type.
 
@@ -14,11 +14,11 @@ Multi-line text variables allow entering text with multiple lines or paragraphs,
 
 Double-click the name, or choose "Rename" under the "..." menu.
 
-![screenshot](mlt02.png){.screenshot}
+![The variable name field in edit mode, with Description selected for renaming](mlt02.png){.screenshot}
 
 ## Set General Properties
 
-![screenshot-full](mlt03.png){.screenshot-full}
+![Variable settings with Variable type on Multi-line text and the Prefix/suffix section expanded](mlt03.png){.screenshot-full}
 
 - You can switch between single-line and multi-line text variable types at any time.
 - When switching types, the value of the variable will be cleared.
@@ -64,6 +64,6 @@ Line-break characters (soft and hard) count towards the limit, the same way visi
 
 ## User Interface
 
-![screenshot-full](mlt04.png){.screenshot-full}
+![User interface section with Label Full Product Description, help text and Visibility set to Always](mlt04.png){.screenshot-full}
 
 See [User Interface](../../template-variables/define/#user-interface) and [Visibility Conditions](../../template-variables/visibility/)

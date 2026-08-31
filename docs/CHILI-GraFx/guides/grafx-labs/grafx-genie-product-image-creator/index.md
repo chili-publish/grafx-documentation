@@ -32,7 +32,7 @@ The tool supports both:
 
 ### Add a brand-approved asset from GraFx Media
 
-![Table](table.png){.screenshot-full}
+![The starting asset from GraFx Media: a wooden dining table and white chairs in a sunlit room](table.png){.screenshot-full}
 
 ### Add a prompt to augment the asset
 

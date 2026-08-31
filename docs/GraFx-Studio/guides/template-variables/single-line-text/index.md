@@ -4,7 +4,7 @@
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.
 
-![screenshot-full](slt00.png){.screenshot-full}
+![Variable list holding one new variable, Firstname, next to its variable settings](slt00.png){.screenshot-full}
 
 Choose "Single-line text" as the type.
 
@@ -14,7 +14,7 @@ Single-line text variables allow entering text in a single line.
 
 Double-click the name, or choose "Rename" under the "..." menu.
 
-![screenshot](slt01.png){.screenshot}
+![The name Firstname selected for editing in the variable list](slt01.png){.screenshot}
 
 ## Maximum Length
 
@@ -30,15 +30,15 @@ The limit is enforced everywhere the variable can be edited:
 - Once the limit is reached, no further input is accepted.
 - Pasting text longer than the limit truncates the pasted text to fit.
 
-![Remaining-characters counter on the input](counter1.png){.screenshot}
+![Headline input with 13 characters still allowed, its text trailing off in an ellipsis](counter1.png){.screenshot}
 
-![Remaining-characters counter on the input](counter2.png){.screenshot}
+![The same Headline input in focus, with the counter down to 0 characters left](counter2.png){.screenshot}
 
 The same limit is applied when the value comes in from a data source, ensuring consistent enforcement across manual and automated workflows.
 
 ## Set General Properties
 
-![screenshot-full](slt00.png){.screenshot-full}
+![General properties of the variable: Required, Remove paragraph if empty, Prevent line break and Prefix/suffix](slt00.png){.screenshot-full}
 
 - You can switch between single-line and multi-line text variable types at any time.
 - When switching types, the value of the variable will be cleared.

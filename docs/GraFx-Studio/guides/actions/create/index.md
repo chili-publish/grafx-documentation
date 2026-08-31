@@ -8,13 +8,13 @@ By default, a new document will not have any Actions.
 
 You can add an Action using the "+" sign or edit existing ones with the pencil icon.
 
-![screenshot](actionlist.png){.screenshot}
+![The ACTION LIST in the Automation panel, with four saved actions and the + button for adding one](actionlist.png){.screenshot}
 
 ## Define Triggers for the Action
 
 In the Action, first select a Trigger - an event that will kick off the Action.
 
-![screenshot](trigger.png){.screenshot}
+![The Triggers tab of Edit action listing three triggers and the Add trigger button](trigger.png){.screenshot}
 
 If applicable, select the scope for the Trigger.
 
@@ -24,7 +24,7 @@ The scope is the object (frame, variable, etc.) that will be monitored. You can 
 	When referring to **variables** in this context we mean **[Template variables](/GraFx-Studio/concepts/variables/#template-variables)**.
 
 
-![screenshot](triggerscope.png){.screenshot}
+![The scope dropdown open beside Variable value changed, with Any variable at the top and Old price ticked](triggerscope.png){.screenshot}
 
 What Triggers are available?
 
@@ -32,7 +32,7 @@ What Triggers are available?
 
 The chosen layout is changed.
 
-![screenshot](layouts.png){.screenshot}
+![The Layouts panel with Rectangle selected, above the Skyscraper and Leaderboard layouts](layouts.png){.screenshot}
 
 ### Frame moved
 
@@ -40,7 +40,7 @@ When the position (or size) of a frame changes.
 
 This Trigger is detected when the X, Y, width, height, or rotation changes.
 
-![screenshot](framelocation.png){.screenshot}
+![A selected logo frame on the canvas next to its X, Y, Width, Height and Rotation values in the properties panel](framelocation.png){.screenshot}
 
 ### Page size changed
 
@@ -66,11 +66,11 @@ The example below reads the value of the variable "reduction" and translates it 
 
 If the value is "promo", then the position of the frame (shape: "promoPop") behind the price will be offset outside the page or returned to the actual position.
 
-![screenshot](action.png){.screenshot}
+![The Action tab of Edit action, with a script that reads the Old price variable and calls setVisible on the matching frames](action.png){.screenshot}
 
-![screenshot](promoYes.png){.screenshot}
+![The magenta price shape reading $10,99 sitting inside the page at X 177 px](promoYes.png){.screenshot}
 
-![screenshot](promoNo.png){.screenshot}
+![The same price shape offset to X 320 px, so it now sits outside the page edge](promoNo.png){.screenshot}
 
 ## Order of execution
 

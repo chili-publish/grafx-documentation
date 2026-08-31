@@ -14,15 +14,15 @@ To understand the concept, see [**Smart Crop**](../../concepts/genie-smart-crop/
 
 In **GraFx Media**, select an uploaded asset to view its details.
 
-![screenshot-full](sc1.png){.screenshot}
+![Media detail view of the Chicken Burger Combo asset, with the Smart Crop Subject area button in the details panel](sc1.png){.screenshot}
 
 ## Setting the Subject Area
 
 Click **Set Subject Area** to define or adjust the focal area of your image.
 
-![screenshot](sc4.png){.screenshot}
+![Close-up of the SMART CROP section of the details panel, holding a single Subject area button](sc4.png){.screenshot}
 
-![screenshot-full](sc5.png){.screenshot}
+![Subject area editor with the detected area covering the whole image and the Point of Interest on the fries pack](sc5.png){.screenshot}
 
 A default **Subject Area** and **Point of Interest (POI)** are automatically detected upon upload. If these match your needs, no further action is required.
 
@@ -30,19 +30,19 @@ A default **Subject Area** and **Point of Interest (POI)** are automatically det
 
 If you want the image to focus on a different Point of Interest (POI).
 
-![screenshot-full](sc7.png){.screenshot}
+![Zoomed canvas with an arrow showing the Point of Interest dragged from the fries pack onto the chicken fillet](sc7.png){.screenshot}
 
-![screenshot-full](sc6.png){.screenshot}
+![Point of Interest now sitting on the burger fillet, with the preview crops beside it recentred on the burger](sc6.png){.screenshot}
 
 If you want the image to focus on a different subject, you can manually adjust the Subject Area.
 
-![screenshot-full](sc8.png){.screenshot}
+![Subject area handles pulled in around the burger alone, so all five live previews crop out the fries and cup](sc8.png){.screenshot}
 
 In both cases, the preview images show the effect of your choice across 5 different aspect ratios. The previews update continuously while you drag a Subject Area or Point of Interest handle, so you can see the result as you position it rather than only after releasing.
 
 Dragging the Point of Interest toward the middle of the Subject Area snaps it to the center. Dotted guides appear while you drag, and only when the Point of Interest is actually aligned with the middle.
 
-![screenshot](sc9.png){.screenshot}
+![The Smart Crop panel with Subject type Default, the five LIVE PREVIEW ratios and Subject alignment on Center](sc9.png){.screenshot}
 
 Hit "Apply" to save the new Subject Area and POI.
 
@@ -79,11 +79,11 @@ When defining the Subject Area on a media detail view, a **Subject type** dropdo
 - **Default** is the Subject Area and POI detected automatically on upload. This is what Smart Crop uses when no subject type is selected on the image frame.
 - Selecting a custom subject type (for example *People*) loads the Subject Area and POI stored for that type, if any. Adjust and **Apply** to save a variant specific to that type.
 
-![screenshot-full](subject-type-default.png){.screenshot-full}
+![Subject type Default: the area spans the whole photo and the Point of Interest rests on the woman's face](subject-type-default.png){.screenshot-full}
 
-![screenshot-full](subject-type-people.png){.screenshot-full}
+![Subject type People: the area is tightened around the woman's head and shoulders](subject-type-people.png){.screenshot-full}
 
-![screenshot-full](subject-type-product.png){.screenshot-full}
+![Subject type Product: the area is drawn around the milk bottle and greens in the grocery bag](subject-type-product.png){.screenshot-full}
 
 Switching between subject types in the dropdown shows the stored values for each — in the example above, *Default* keeps the full scene, *People* tightens around the person, and *Product* zooms in further on the face. *Cancel* discards any unapplied changes as before.
 

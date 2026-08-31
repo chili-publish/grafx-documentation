@@ -12,11 +12,11 @@ The table below shows what each role can access. A Template Designer Seat (TDS) 
 
 |  | EU | SA | EA | TDS | CA[^1] |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| ![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg){.smallapplogo} GraFx Studio | ✅ | ✅ | ✅ | ✅ | ✅ |
-| ![smallapplogo](/assets/CHILI_LOGOS_OK-09.svg){.smallapplogo} GraFx Studio — TD Workspace | 🚫 | 🚫 | 🚫 | ✅ | ✅[^1] |
-| ![smallapplogo](/assets/CHILI_publisher_RGB.svg){.smallapplogo} GraFx Publisher | 🚫 | ✅ | ✅ | ✅ | ✅ |
-| ![smallapplogo](/assets/CHILI_LOGOS_OK-11.svg){.smallapplogo} GraFx Media | 🚫 | ✅ | ✅ | ✅ | ✅ |
-| ![smallapplogo](/assets/CHILI_LOGOS_OK-07.svg){.smallapplogo} GraFx Fonts | 🚫 | ✅ | ✅ | ✅ | ✅ |
+| ![GraFx Studio icon](/assets/CHILI_LOGOS_OK-09.svg){.smallapplogo} GraFx Studio | ✅ | ✅ | ✅ | ✅ | ✅ |
+| ![GraFx Studio icon, TD Workspace row](/assets/CHILI_LOGOS_OK-09.svg){.smallapplogo} GraFx Studio — TD Workspace | 🚫 | 🚫 | 🚫 | ✅ | ✅[^1] |
+| ![GraFx Publisher icon](/assets/CHILI_publisher_RGB.svg){.smallapplogo} GraFx Publisher | 🚫 | ✅ | ✅ | ✅ | ✅ |
+| ![GraFx Media icon](/assets/CHILI_LOGOS_OK-11.svg){.smallapplogo} GraFx Media | 🚫 | ✅ | ✅ | ✅ | ✅ |
+| ![GraFx Fonts icon](/assets/CHILI_LOGOS_OK-07.svg){.smallapplogo} GraFx Fonts | 🚫 | ✅ | ✅ | ✅ | ✅ |
 
 ### Feature access
 

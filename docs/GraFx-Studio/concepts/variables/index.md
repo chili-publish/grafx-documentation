@@ -28,9 +28,9 @@ var total = firstvalue + secondvalue; // total will hold the value 30
 
 ### Example Use-Cases
 
-![image](template-variable-1.png){.screenshot-full}
+![The Headline single line text variable set to Back to school, matching the ad on the canvas](template-variable-1.png){.screenshot-full}
 
-![image](template-variable-2.png){.screenshot-full}
+![The same Headline variable changed to Back to work, and the canvas following suit](template-variable-2.png){.screenshot-full}
 
 
 ## Bridging Actions and Templates

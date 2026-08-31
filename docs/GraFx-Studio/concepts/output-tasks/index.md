@@ -14,7 +14,7 @@ Each output job is listed as an **Output Task** in the system, providing visibil
 
 The **Output Task List** can be accessed via **Output Tasks**, users (Template Designers, Subscription Admins and Environment Admins) can view all the output jobs associated with the current environment.
 
-![screenshot-full](ot1.png){.screenshot-full}
+![The Output tasks list with one failed and several finished jobs, and the record count per task](ot1.png){.screenshot-full}
 
 ## Output Task List Columns
 
@@ -40,7 +40,7 @@ Behind the "..." menu, you can also
 - Copy Row Information
 - Download report
     
-![screenshot](ot3.png){.screenshot}
+![The row menu on an output task, with three copy options and Download report](ot3.png){.screenshot}
     
 **Task ID** Copies the unique ID (GUID) used for the task. Using API calls, this task ID is used to poll the status of the task.
 

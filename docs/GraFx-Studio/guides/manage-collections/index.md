@@ -6,9 +6,9 @@ See also: [Template process](/GraFx-Studio/concepts/template-management/#templat
 
 To create your first collection, click the "Create collection" button, and name the collection.
 
-![screenshot-fullwidth](empty-collection.png){.screenshot-full}
+![The empty Collections page reading Create your first collection, above the Create collection button](empty-collection.png){.screenshot-full}
 
-![screenshot-fullwidth](create-collection.png){.screenshot-full}
+![The Create collection dialog with the Collection name (required) field still empty](create-collection.png){.screenshot-full}
 
 A collection will appear in the list of collections.
 
@@ -18,7 +18,7 @@ Start at the templates, and choose to add to the collection from the contextual 
 
 A list of collections is presented. You can select 1 or more collections, where the templates will be added.
 
-![screen](add-to-collection.png){.screenshot-full}
+![The Add to collection panel over the templates grid, with POS material and Print ticked](add-to-collection.png){.screenshot-full}
 
 ### References vs actual templates
 

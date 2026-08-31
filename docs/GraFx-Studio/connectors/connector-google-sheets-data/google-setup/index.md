@@ -6,13 +6,13 @@ Enable the API!
 
 Find the Settings for Google Sheets, in the [API library](https://console.cloud.google.com/apis/library/browse?inv=1&invt=AbrOXg&q=sheets)
 
-![screenshot](../google20.png){.screenshot}
+![The API Library in the Google Cloud console, searched for sheets, returning the Google Sheets API](../google20.png){.screenshot}
 
 If the API is enabled, we're all set, if not, **Enable** the API
 
 In the screenshot below, it is already enabled.
 
-![screenshot](../google21.png){.screenshot}
+![Product details for the Google Sheets API, showing the status API Enabled](../google21.png){.screenshot}
 
 ## Service Account
 
@@ -23,25 +23,25 @@ Go to [Google Cloud Console](https://console.cloud.google.com/welcome).
 
 Go to API and Services
 
-![screenshot](../google07.png){.screenshot}
+![The Quick access panel on the console home page, with the APIs and services card](../google07.png){.screenshot}
 
 Go to Credentials, and create a new Service account. Go through all steps.
 
-![screenshot-full](../google08.png){.screenshot-full}
+![The Create credentials menu on the Credentials page, pointing at Service account](../google08.png){.screenshot-full}
 
 You now have the Service Account credentials.
 
-![screenshot-full](../google02.png){.screenshot-full}
+![The Credentials page with the new entry listed under Service Accounts](../google02.png){.screenshot-full}
 
 If you have not done during the initial creation, go to the created credentials, and add a private KEY.
 
 Create a private key, in the **Keys** section.
 
-![screenshot-full](../google04.png){.screenshot-full}
+![The Keys tab of a service account, with the Add key menu open on Create new key](../google04.png){.screenshot-full}
 
 Choose JSON format
 
-![screenshot](../google05.png){.screenshot}
+![The Create private key dialog, with JSON chosen over P12 as the key type](../google05.png){.screenshot}
 
 After confirmation, a JSON file will be downloaded to your computer. (see example below)
 
@@ -71,11 +71,11 @@ Choose API and services > Credentials
 
 Start creation of OAuth client ID
 
-![screenshot-full](../google13.png){.screenshot-full}
+![The Create credentials menu on the Credentials page, pointing at OAuth client ID](../google13.png){.screenshot-full}
 
 Important to set an **Authorised redirect URI**
 
-![screenshot-full](../google03.png){.screenshot-full}
+![The Client ID for Web application page, with one entry filled in under Authorised redirect URIs](../google03.png){.screenshot-full}
 
 It should be set to this URI
 
@@ -89,19 +89,19 @@ Where is the Environment Key?
 
 Open GraFx Publisher (on CHILI GraFx), and take the Key from the URI, it's the first element.
 
-![screenshot](../google10.png){.screenshot} 
+![The GraFx Publisher tile in CHILI GraFx, with its tooltip showing on hover](../google10.png){.screenshot} 
 
 Below is an example, your Environment Key will be unique to your setup.
 
-![screenshot-full](../google11.png){.screenshot-full} 
+![A GraFx Publisher browser tab, with the first part of the address, the Environment Key, boxed in red](../google11.png){.screenshot-full} 
 
 Set the {CONNECTOR_ID} to the ID of your Connector Instance
 
 You can grab the connector ID from the URI, if you are in the Connector setup (in CHILI GraFx)
 
-![screenshot](../google12.png){.screenshot}
+![The Connectors list under Environments, pointing at the Google Sheets connector instance](../google12.png){.screenshot}
 
-![screenshot-full](../google09.png){.screenshot-full}
+![Close-up of the address bar, with the connector ID after settings/connectors boxed in red](../google09.png){.screenshot-full}
 
 At the end, you'll get a JSON file. We'll refer to elements in the setup below.
 

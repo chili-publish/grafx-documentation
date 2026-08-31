@@ -6,15 +6,15 @@ Utilizing default connectors and interacting with the Environment API necessitat
 
 Navigate to [Environments](https://chiligrafx.com/environments) and click the pencil icon, right of the Environment.
 
-![screen](integration1.png){.screenshot-full}
+![My environments list, with numbered callouts on the Environments icon and an environment's edit pencil](integration1.png){.screenshot-full}
 
 ### Add a new Integration
 
-![screen](integration2.png){.screenshot-full}
+![The Integrations tab of an environment, with the Create integration button called out](integration2.png){.screenshot-full}
 
 Click the "Create Integration" button.
 
-![screen](integration3.png){.screenshot}
+![The Create integration dialog, with the Name and Description fields still empty](integration3.png){.screenshot}
 
 Provide a meaningful name and description for your integration to easily identify it later.
 
@@ -24,7 +24,7 @@ Click "Create Integration" to finish.
 
 Click an existing integration to edit its details.
 
-![screenshot](integration4.png){.screenshot}
+![List of existing integrations for an environment, grouped under a Custom integration heading](integration4.png){.screenshot}
 
 ## Authentication
 
@@ -43,13 +43,13 @@ These credentials include a `Client ID` and `Client Secret`. These credentials a
 
     Tokens, especially those with comprehensive permissions, pose a significant security risk if mishandled. Tokens cannot be invalidated and will have their permissions until they expire. It's imperative to manage these tokens with extreme caution to prevent unauthorized access.
 
-![screenshot](integration5.png){.screenshot}
+![General tab of an integration, with Client ID, masked Client Secret and Rotate client secret](integration5.png){.screenshot}
 
 ### The Permissions tab
 The `Permissions` tab is where you can control the level of access your integration has to your environment.
 Permissions are presented as API scopes, and will determine the access your integration has on the environment.
 
-![screenshot](integration6.png){.screenshot}
+![Permissions tab with cleared Read, List and Write boxes for Fonts, Media and the Studio scopes](integration6.png){.screenshot}
 
 Integrations necessitate two distinct types of users, each requiring different permissions:
 

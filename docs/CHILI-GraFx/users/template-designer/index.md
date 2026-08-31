@@ -22,11 +22,11 @@ Assigned permissions
 
 Template designer seats (role) are assigned on the Subscription page
 
-![Template Designer Seat](tds_assign_seat.png){.screenshot-full}
+![The Manage seats dialog on the Add users tab, with plus buttons to grant a seat to each listed user](tds_assign_seat.png){.screenshot-full}
 
 In the Assigned Seats tab, you can free seats to allow other users in your seat.
 
-![Template Designer Seat](tds_remove_seat.png){.screenshot-full}
+![The Assigned seats tab showing 2 of 7 seats used, each row with a bin icon to free the seat](tds_remove_seat.png){.screenshot-full}
 
 !!! warning "Important for CHILI publish Online customers"
 	The restriction does not apply for GraFx Publisher, for customers that had a previous CHILI publish Online subscription. You are still able to add users, and assign the [Content Administrator](/CHILI-GraFx/users/roles/#content-administrator) role, and these people will be able to make and use GraFx Publisher templates.

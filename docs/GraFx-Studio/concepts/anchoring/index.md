@@ -4,7 +4,7 @@ Anchoring lets you attach frames to the **page** or to other **frames** in your 
 
 Imagine placing a logo 10% from the top and 15% from the left of your design—anchoring makes this easy to maintain across varying layouts.
 
-![screenshot-full](anchor01.png){.screenshot-full}
+![Logo frame on the Default layout, with 10%, 15%, 64% and 59% offsets to the page edges](anchor01.png){.screenshot-full}
 
 ## Benefits of Anchoring
 
@@ -16,7 +16,7 @@ Anchoring a frame to the **page** is the most straightforward anchoring concept.
 
 This method anchors a frame to a specific side of the page, usually in a relative position. When you place a frame on the page, anchoring records its position relative to the page, so it remains consistent even if the page size changes.
 
-![screenshot-full](anchor02.png){.screenshot-full}
+![The same logo frame on a wider page, still holding its 10% top and 15% left page offsets](anchor02.png){.screenshot-full}
 
 ## Anchor to Frame
 
@@ -24,7 +24,7 @@ Anchoring a frame to **another frame** allows you to set precise relationships b
 
 For example, if a text frame is anchored to a logo frame, the text will maintain the same offset from the logo, even if the page size changes or when the position or size of the logo frame changes.
 
-![screenshot-full](anchor03.png){.screenshot-full}
+![Headline text frame anchored to the logo frame, with a 71 offset marked between the two](anchor03.png){.screenshot-full}
 
 ## Inheritance
 
@@ -32,15 +32,15 @@ Anchoring settings follow the [Inheritance Model](/GraFx-Studio/concepts/layouts
 
 When creating sub-layouts, anchoring maintains relative positions across different page sizes. In the example below, a default layout uses a square format where all frames are positioned relative to the page.
 
-![screenshot-full](anchor04.png){.screenshot-full}
+![Square Default layout with the property image selected and both anchors set to Relative (%)](anchor04.png){.screenshot-full}
 
 For a landscape sub-layout, anchoring automatically adapts frame positions to the new page size, preserving the original layout's relative spacing.
 
-![screenshot-full](anchor05.png){.screenshot-full}
+![Landscape sub-layout inheriting from Default, the property image now 1920 px wide](anchor05.png){.screenshot-full}
 
 A vertical sub-layout applies the same principle—only the page size changes, while the frames maintain their relative positioning.
 
-![screenshot-full](anchor06.png){.screenshot-full}
+![Vertical sub-layout inheriting from Default, the property image 1080 by 928 px](anchor06.png){.screenshot-full}
 
 If you want to make specific adjustments, you can manually move a frame or change the anchoring type. 
 
@@ -56,7 +56,7 @@ When moving a frame, these settings will also override the inheritance model:
 
 [^1]: Available soon! Mentioned here because it will also override inheritance when available.
 
-![screenshot-full](anchor07.png){.screenshot-full}
+![A moved text frame with overrides in yellow, Horizontal set to Left and the reset menu open](anchor07.png){.screenshot-full}
 
 ## What’s Next?
 

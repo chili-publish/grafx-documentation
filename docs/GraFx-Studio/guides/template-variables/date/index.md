@@ -9,7 +9,7 @@
 
 Under the Automate icon, click Variables, and add a variable with the "+" sign.
 
-![screenshot](date0.png){.screenshot}
+![The Variable type dropdown open, with Date highlighted below Single line text, Image, Boolean and Number](date0.png){.screenshot}
 
 Choose "Date" as the Variable Type.
 
@@ -17,11 +17,11 @@ Choose "Date" as the Variable Type.
 
 Double-click the name, or choose "Rename" under the "..." menu.
 
-![screenshot](date1.png){.screenshot}
+![The "..." menu beside a date variable, listing Settings, Rename, Duplicate, Delete and Group](date1.png){.screenshot}
 
 ## Set General Properties
 
-![screenshot-full](date2.png){.screenshot-full}
+![Settings for a date variable named ValidThrough, with Display format, Start date, End date and Excluded days sections](date2.png){.screenshot-full}
 
 ### Display Format
 
@@ -29,7 +29,7 @@ A date can be displayed in several formats, depending on the local preferences. 
 
 You can experiment by entering different combinations of characters to define the Display Format you want in your template.
 
-![awesome-Raph-explainer](displayformat.gif){.screenshot-full}
+![Editing the Display format field to MM/dd/yyyy while the date on the canvas updates to 07/10/2024](displayformat.gif){.screenshot-full}
 
 The initial value (upon creation) for the formatting is "dd/MM/yyyy"
 
@@ -64,9 +64,9 @@ Will display the name of the month or day in the chosen language
 
 Will work for patterns which output words such as `MMM`, `MMMM`, `cc` and `ccc`. Default is `en_US`.
 
-![screenshot-full](date3.png){.screenshot-full}
+![Format cccc dd MMM yyyy (ccc) with Language Finnish, rendering lauantai 01 huhtik. 1815 (la) on the canvas](date3.png){.screenshot-full}
 
-![screenshot-full](date4.png){.screenshot-full}
+![The same format with Language switched to German, rendering Samstag 01 Apr. 1815 (Sa)](date4.png){.screenshot-full}
 
 ### Start & End Date
 
@@ -78,7 +78,7 @@ A start and end date can be
 - Specific Date
 - Relative Date
 
-![screenshot](date5.png){.screenshot}
+![Start date of Type Specific date set to 08/15/2024, and End date of Type Relative date set to 30](date5.png){.screenshot}
 
 #### Specific Date
 
@@ -90,14 +90,14 @@ Setting a number relative to the current date (current = when you open the docum
 
 As an example, setting 0 in the "Start date" (Type Relative Date), prevents the end user to pick a date in the past.
 
-![screenshot](date10.png){.screenshot}
+![Start date of Type Relative date set to 0, so the calendar greys out every day before 7 August 2024](date10.png){.screenshot}
 
 
 ### Excluded days
 
 Choose what days of the week should be excluded from the selection available for the end user.
 
-![screenshot](date6.png){.screenshot}
+![The Excluded days section with a toggle per weekday, Saturday and Sunday switched on](date6.png){.screenshot}
 
 ### The result
 
@@ -105,13 +105,13 @@ Your settings will define how the date picker is displayed.
 
 In the Template Designer Workspace you'll see a preview
 
-![screenshot](date7.png){.screenshot}
+![Dark preview of the picker above the settings, opening on 15 August with earlier days and weekends greyed out](date7.png){.screenshot}
 
 In Studio UI (My Projects), you will see what an end user can see.
 
-![screenshot](date8.png){.screenshot}
+![End user's date picker on August 2024 with 22 chosen, and 1 to 14 plus every weekend unselectable](date8.png){.screenshot}
 
-![screenshot](date9.png){.screenshot}
+![The same picker paged on to September 2024, where only 2 to 6 September remain selectable](date9.png){.screenshot}
 
 Current date is Aug 7, 2024. First possible date to select is Aug 15. Last possible date is 30 days after today: Sept 6. Saturdays and Sundays are excluded.
 

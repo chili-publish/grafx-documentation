@@ -7,11 +7,11 @@
 
 Click the "Access" tab, on the group page.
 
-![screenshot-full](ug013.png){.screenshot-full}
+![Access tab of a user group, listing one environment with the End User and Environment Admin roles](ug013.png){.screenshot-full}
 
 Click "Manage Access" to add or revoke access to that group.
 
-![screenshot](ug014.png){.screenshot}
+![The Manage access dialog, with one environment picked and its role set to End User](ug014.png){.screenshot}
 
 Under Access, add or remove the Environments.
 

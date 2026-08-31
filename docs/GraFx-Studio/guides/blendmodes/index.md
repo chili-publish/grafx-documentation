@@ -6,4 +6,4 @@
 
 [Overview of blend modes](/GraFx-Studio/concepts/blendmodes/)
 
-![Frame](applyblendmode.png){.screenshot-full}
+![The Blend mode list under Appearance open on Normal, Screen, Overlay and Darken, with the bottle frame selected](applyblendmode.png){.screenshot-full}

@@ -2,7 +2,7 @@
 
 ## GraFx Experience
 
-![svg_icon](/assets/Logo_GraFx_Experience.svg){.svg_icon}
+![GraFx Experience logo](/assets/Logo_GraFx_Experience.svg){.svg_icon}
 
 The end-user portal that makes Design Systems accessible to distributed teams. Local users — store owners, marketers, regional teams — can personalise and produce on-brand output without touching the underlying template.
 
@@ -10,7 +10,7 @@ The end-user portal that makes Design Systems accessible to distributed teams. L
 
 ## GraFx Studio
 
-![svg_icon](/assets/icon-GraFx-Studio.svg){.svg_icon}
+![GraFx Studio icon](/assets/icon-GraFx-Studio.svg){.svg_icon}
 
 Create Smart Templates to allow your customers to serve **multichannel animated**, **static digital** and **print** output.
 
@@ -18,7 +18,7 @@ Create Smart Templates to allow your customers to serve **multichannel animated*
 
 ## GraFx Brand Kits
 
-![svg_icon](/assets/icon-GraFx-Brandkits.svg){.svg_icon}
+![Brand Kits icon](/assets/icon-GraFx-Brandkits.svg){.svg_icon}
 
 Define and manage your organisation's visual identity in one place — colors, fonts, images, and styles. Once set up, template designers and end users can apply Brand Kit elements directly in GraFx Studio.
 
@@ -26,7 +26,7 @@ Define and manage your organisation's visual identity in one place — colors, f
 
 ## GraFx Media
 
-![svg_icon](/assets/icon-GraFx-Media.svg){.svg_icon}
+![GraFx Media icon](/assets/icon-GraFx-Media.svg){.svg_icon}
 
 Central repository for your digital assets, used across GraFx Studio and GraFx Publisher. GraFx Genie automatically detects subject areas and points of interest on upload, enabling Smart Crop in templates.
 
@@ -34,7 +34,7 @@ Central repository for your digital assets, used across GraFx Studio and GraFx P
 
 ## GraFx Fonts
 
-![svg_icon](/assets/icon-GraFx-Fonts.svg){.svg_icon}
+![GraFx Fonts icon](/assets/icon-GraFx-Fonts.svg){.svg_icon}
 
 Repository for your fonts, available across GraFx Studio and GraFx Publisher.
 
@@ -42,7 +42,7 @@ Repository for your fonts, available across GraFx Studio and GraFx Publisher.
 
 ## GraFx Genie
 
-![svg_icon](/assets/icon-Grafx-Genie.svg){.svg_icon}
+![GraFx Genie icon](/assets/icon-Grafx-Genie.svg){.svg_icon}
 
 The AI assistant built into CHILI GraFx. GraFx Genie shows up in several places across the platform:
 
@@ -63,7 +63,7 @@ An experimental area inside CHILI GraFx where new AI-driven capabilities are hos
 
 ## GraFx Publisher
 
-![svg_icon](/assets/icon-GraFx-Publisher.svg){.svg_icon}
+![GraFx Publisher icon](/assets/icon-GraFx-Publisher.svg){.svg_icon}
 
 Legacy application. Create Smart Templates to allow your customers to serve **static digital** and **print** output.
 

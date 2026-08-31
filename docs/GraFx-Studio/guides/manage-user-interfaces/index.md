@@ -6,25 +6,25 @@ See also what is a [User Interface](/GraFx-Studio/concepts/user-interface/)
 
 In your environment, go to **GraFx Studio** > **Manage** > **User Interfaces**
 
-![screenshot](ui4.png){.screenshot}
+![The GraFx Studio side menu with User interfaces selected under Manage](ui4.png){.screenshot}
 
 Click "Create"... 
 
-![screenshot](ui5.png){.screenshot}
+![The dark blue Create button, marked with a plus sign](ui5.png){.screenshot}
 
 ... and provide a **Unique** name.
 
-![screenshot-full](ui6.png){.screenshot-full}
+![The Create user interface dialog with its required Name field filled in as MyNewUI](ui6.png){.screenshot-full}
 
 You can now edit the settings for this User Interface
 
 ## Edit
 
-![screenshot-full](ui8.png){.screenshot-full}
+![The user interfaces list with the "..." menu open on MyNewUI, offering Edit user interface](ui8.png){.screenshot-full}
 
 Click a settings or choose "Edit user interface" in the "..." menu.
 
-![screenshot](ui7.png){.screenshot}
+![The MyNewUI edit page, with empty output settings pickers for Print, Digital static and Digital animated](ui7.png){.screenshot}
 
 Update the name (should still be unique)
 
@@ -36,7 +36,7 @@ For each of the 3 [Layout Intents](/GraFx-Studio/concepts/layout-intent/), you c
 
 Choose "Delete" in the "..." menu.
 
-![screenshot-full](ui8.png){.screenshot-full}
+![The same "..." menu on MyNewUI, where Delete sits in red under Edit user interface](ui8.png){.screenshot-full}
 
 ## Layout Intents
 
@@ -54,14 +54,14 @@ You can edit the settings, but not change the name nor delete them.
 
 In [collections](/GraFx-Studio/guides/manage-collections/), go to Collection Settings.
 
-![screenshot](ui10.png){.screenshot}
+![The Collections page with a card's "..." menu open, Collection settings highlighted](ui10.png){.screenshot}
 
 Set the created **User Interface**
 
-![screenshot](ui11.png){.screenshot}
+![MyCollection settings with the User interface dropdown open and Customer X ticked](ui11.png){.screenshot}
 
 For each new [project](/GraFx-Studio/concepts/template-management/#my-projects) created based on this template in the collection, the user interface will be applied.
 
 This means only the output settings will be available, for the specific layout Intent.
 
-![screenshot](ui12.png){.screenshot}
+![The Download panel over a Hello World canvas, with Output limited to GIF Customer X](ui12.png){.screenshot}

@@ -27,25 +27,25 @@ To start, the length of the timeline will be 5 seconds long.
 
 Show the timeline by enabling the "Layers / Animation" panel in the [bottom quicktools panel](/GraFx-Studio/overview/bottom-quicktools/).
 
-![Timeline duration](show-timeline.png){.screenshot-full}
+![Layers panel switched on, with a five-second timeline for a Text and an Image frame](show-timeline.png){.screenshot-full}
 
 ### Adjust the length of the timeline
 
 Drag the vertical divider to the left or right.
 
-![Duration change](timeline-divider.png){.screenshotsmall}
+![Close-up of the dashed vertical divider that marks the end of the timeline](timeline-divider.png){.screenshotsmall}
 
 You can always make the duration longer.
 
 Dragging to the left will work up to the longest blue bar. I.e. if a frames shows up to 5 seconds point, you will not be able to reduce the duration below 5 seconds.
 
-![Timeline change](timeline-reduce.gif){.screenshot}
+![Dragging the divider left until it stops at the longest frame bar](timeline-reduce.gif){.screenshot}
 
 As soon as you adjust the length of the timeline, and add frames, they will take the new length of the timeline.
 
 You can also adjust the length of the animation in the animation panel, changing the length.
 
-![Timeline duration](timeline-duration.png){.screenshot-full}
+![The animation tab with the Duration field set to 5s](timeline-duration.png){.screenshot-full}
 
 ### Move the scrubber
 
@@ -55,7 +55,7 @@ You can drag the white white left and right.
 
 Each second is divided in 100 [centiseconds](https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)#Less_than_one_second){target="_blank"}.
 
-![Properties](timeline-move.gif){.screenshot-full}
+![Dragging the scrubber along the timeline above the water and bottle layers](timeline-move.gif){.screenshot-full}
 
 !!! Alert
 	The actual frames per second in the animated output, will define how many frames will be output to the rendered file.
@@ -70,7 +70,7 @@ The frame will appear "immediately", and will stay all the way to the end.
 
 All frames added to the page, will take the full length of the current timeline.
 
-![Properties](timeline.png){.screenshot}
+![Ad canvas beside the timeline, where water, bottle, logo, discover, regular and button each have a bar](timeline.png){.screenshot}
 
 If you resize the timeline, newly added frames will take this new length by default.
 
@@ -78,7 +78,7 @@ If you resize the timeline, newly added frames will take this new length by defa
 
 Scroll all the way to the left (horizontal scroll), and select the edge (when your cursor changes into a double sided arrow). Now drag the edge to the left or right. (left won't work, if it's at the beginning)
 
-![Timeline change](change-duration.gif){.screenshot-full}
+![Dragging the start edge of the bottle frame's bar to change when the frame appears](change-duration.gif){.screenshot-full}
 
 You can do the same, for the end of the bar for that frame in the timeline.
 
@@ -86,7 +86,7 @@ You can do the same, for the end of the bar for that frame in the timeline.
 
 By default, no animations are set. By selecting the animation panel in the properties, you can set the **intro**, **emphasis** and **outro** for the selected frame.
 
-![Intro_Outro](intro-outro.gif){.screenshot-full}
+![Setting intro, emphasis and outro for the bottle frame, choosing Bounce as the emphasis style](intro-outro.gif){.screenshot-full}
 
 ### Intro
 
@@ -133,4 +133,4 @@ Control the length and position of each element (lightblue bar), by dragging the
 
 Intro (start) — Emphasis (middle) - Outro (end)
 
-![Intro_Outro](intro-outro-resize.gif){.screenshot-full}
+![Dragging the boundary between the intro and emphasis segments to resize them](intro-outro-resize.gif){.screenshot-full}

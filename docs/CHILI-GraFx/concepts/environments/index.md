@@ -14,15 +14,15 @@ This means, you first will need to select an environment, before you can start a
 
 When entering the platform, you don't see the applications, before you choose an Environment.
 
-![screenshotsmall](env1.png){.screenshotsmall}
+![Platform home with no applications shown, hovering the My environments icon in the left navigation](env1.png){.screenshotsmall}
 
 Choose an environment
 
-![screenshotsmall](env2.png){.screenshotsmall}
+![My environments page with a search box and the first environment in the Name list](env2.png){.screenshotsmall}
 
 Once in the environment, you can select the application you want to work in.
 
-![screenshotsmall](env3.png){.screenshotsmall}
+![Inside a Production environment, with the application rail on the left and GraFx Studio Templates open](env3.png){.screenshotsmall}
 
 The dropdown at the top will show all visible environments for you.
 
@@ -33,13 +33,13 @@ Or you could click on the CHILI GraFx logo, to return to the platform home.
 Environment-specific settings are available at the environment level.
 Environment Admins and Subscription Admins (see [roles](/CHILI-GraFx/users/roles/#roles)) can access these settings via the gear icon in the left navigation (bottom).
 
-![Gear icon to access environment setting](settings02.png){.screenshot-full}
+![Gear icon at the bottom of the left navigation, below the GraFx Studio menu](settings02.png){.screenshot-full}
 
 These settings apply only to the selected environment and do not affect other environments.
 
 The settings are also available in the environment overview.
 
-![Gear icon to access environment setting](settings01.png){.screenshot-full}
+![Settings button on an environment row in the My environments list, next to its type and used storage](settings01.png){.screenshot-full}
 
 
 ### Isolation

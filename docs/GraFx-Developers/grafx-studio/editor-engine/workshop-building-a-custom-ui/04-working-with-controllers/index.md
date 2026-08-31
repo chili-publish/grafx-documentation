@@ -3,7 +3,7 @@
 ### What is a Controller?
 Controllers are the primary method of interfacing with GraFx Studio, the Studio SDK exposes multiple different controllers for you to utilize in your integration. These controllers expose certain behaviors of GraFx Studio and provide you with an easy to use interface to control these behaviors.
 
-![screenshot](controllers.png){.screenshot}
+![Studio SDK documentation's Controllers list, from ActionController down to ToolController](controllers.png){.screenshot}
 
 Currently there are 19 controllers in the SDK, but you see the list of them on the Studio SDK documentation [here](https://chili-publish.github.io/studio-sdk/#controllers)
 
@@ -13,15 +13,15 @@ Controllers follow a simple naming convention so normally you can determine wher
 	http://localhost:1234
 ```
 
-![screenshot](controllers-console.png){.screenshot}
+![Browser console autocomplete after typing window.SDK., listing action, animation, canvas through frame](controllers-console.png){.screenshot}
 
 As you can see there are many options there, and normally you can assume what they might be related to. For example, if we wanted to manipulate a frame on page, chances are we could find functions for that in the FrameController which we can access by typing `window.SDK.frame.` and then we can see what functions are available.
 
-![screenshot](frame-controller.png){.screenshot}
+![Console autocomplete for window.SDK.frame., listing addFrame through reorderFrames](frame-controller.png){.screenshot}
 
 This method of exploring makes it really easy to try controllers and their functions out live in our integration and test them out. You can also read about the functions of the FrameController on the [github documentation](https://chili-publish.github.io/studio-sdk/classes/controllers_FrameController.FrameController.html) for the Studio SDK. You can find the expected parameters for each function and what the function does on our source documentation.
 
-![ui-full](method-documentation.png){.screenshot-full}
+![Source documentation for addFrame, describing its frameType, x, y, width and height parameters](method-documentation.png){.screenshot-full}
 
 Now that we touched on what the Studio SDK controllers can do for you, lets start using them in our integration :D
 

@@ -14,19 +14,19 @@ This variable is a text variable, containing the old price for a discounted prod
 
 The action will execute the change, based on the presence of a value in that variable.
 
-![Movie](demo.gif){.screenshot}
+![Emptying the Old price variable and the old price frame vanishing from the Back to school ad](demo.gif){.screenshot}
 
 ### The variable
 
 A text variable "Old price" is defined.
 
-![screenshot](variable.png){.screenshot}
+![The single-line text variable Old price, selected in the variable list with an empty default value](variable.png){.screenshot}
 
 ### The trigger
 
 An action is defined (See [Create Actions](/GraFx-Studio/guides/actions/create/) on how to do this)
 
-![screenshot](action-definition.png){.screenshot}
+![Action list with Banner size changed and Old price changed, the latter carrying 3 triggers](action-definition.png){.screenshot}
 
 Step 1 is to define the trigger, that will initiate the action.
 
@@ -36,7 +36,7 @@ The trigger is initiated when
 - or when the document is loaded (to be sure we check when opening the document)
 - or when a layout is changed
 
-![screenshot](action-triggers.png){.screenshot}
+![Three triggers listed: Variable value changed on Old price, Document loaded and Selected layout changed](action-triggers.png){.screenshot}
 
 ### Action
 

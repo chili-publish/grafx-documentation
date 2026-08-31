@@ -6,11 +6,11 @@
 
 In the properties panel (right), choose the wrench & screwdriver tool.
 
-![screenshot](var01.png){.screenshot}
+![Arrows pointing at the wrench-and-screwdriver tab and at VARIABLES in the list below it](var01.png){.screenshot}
 
 Then choose **Variables**
 
-![screenshot](var02.png){.screenshot}
+![The VARIABLE LIST holding one Firstname variable, with its settings panel open alongside](var02.png){.screenshot}
 
 A panel will appear, where you can define your template variables.
 
@@ -21,7 +21,7 @@ A list of all template variables that are available in the document shows
 - Pencil icon (when hovering over the variable)
 - "..." menu (when hovering over the variable)
 
-![screenshot](var03.png){.screenshot}
+![The three-dots menu on text_firstname, offering Settings, Rename, Duplicate, Delete, Move to bottom and Group](var03.png){.screenshot}
 
 ## Create variables from a linked datasource
 
@@ -29,7 +29,7 @@ If your document already has a linked datasource, you can automatically create t
 
 In the **Data source** panel, choose the option to "**Create variables**" from the linked datasource. GraFx Studio will create a template variable for each **unique** field name it finds.
 
-![Create variables from datasource](create-datasource.png){.screenshot}
+![Data source panel with the Google Sheets connector chosen and a Create variables button at the foot](create-datasource.png){.screenshot}
 
 !!! tip "After creation"
     Review each new variable’s [type](#types) and [settings](#variable-settings) (Label, Placeholder, Help text). Organize them with **Group** to keep complex templates manageable.
@@ -37,9 +37,9 @@ In the **Data source** panel, choose the option to "**Create variables**" from t
 !!! warning "Duplicate field names"
     If the datasource contains duplicate field names, variables for those duplicates are **not** created. A toast message will show the error. Make the field names unique in your datasource and run the action again.  
 
-    ![Create variables from datasource](create-datasource-double.png){.screenshot-full}
+    ![A Google Sheets table with arrows marking columns B and G, both headed Width](create-datasource-double.png){.screenshot-full}
 
-    ![Create variables from datasource ereor](create-datasource-double-2.png){.screenshot-full}  
+    ![Toast reading 6 variables created successfully, 1 duplicate variable was skipped](create-datasource-double-2.png){.screenshot-full}  
 
 ## Options
 
@@ -88,15 +88,15 @@ You can group variables in a group or folder. This allows you to stay organised 
 
 Shift-select multiple variables, and group them. After grouping, you can rename the group.
 
-![screenshot](group01.png){.screenshot}
+![Menu for a multiple selection, with Group highlighted under Delete, Move to top and Move to bottom](group01.png){.screenshot}
 
-![screenshot](group02.png){.screenshot}
+![The list after grouping: a folder called New group holding three indented variables](group02.png){.screenshot}
 
 ## Types
 
 Create a variable. Then, in the properties panel, choose the variable type. Different use cases demand different variable types.
 
-![screenshot](vartypes.png){.screenshot}
+![The Variable type dropdown open on Single line text, with Image, Single select list, Boolean and Number below](vartypes.png){.screenshot}
 
 ### Single-line Text
 
@@ -158,7 +158,7 @@ Data comes either from a [data connector](/GraFx-Studio/concepts/connectors-data
 
 ### Variable name
 
-![screenshot](var07.png){.screenshot}
+![The name text_firstname selected in an inline edit field in the VARIABLE LIST](var07.png){.screenshot}
 
 In the list of variables, you can double click or "Rename" the variable Name.
 
@@ -169,28 +169,28 @@ In the list of variables, you can double click or "Rename" the variable Name.
 
 ### Default state
 
-![screenshot](var04.png){.screenshot}
+![DEFAULT STATE for Firstname, showing the placeholder John Doe and the help text Enter your firstname](var04.png){.screenshot}
 
 The default value your template variable will have.
 
 ### General properties
 
-![screenshot](var05.png){.screenshot}
+![GENERAL settings with Required off and Remove paragraph if empty on, above PREFIX/SUFFIX and PRIVATE DATA](var05.png){.screenshot}
 
 - Type: See [types](#types) above
 - Required: Disabled by default
 - Remove paragraph if empty: Disabled by default  
 Check to remove the full paragraph this variable is used on.  
 Available on (Single-line text, Multi-line text, Single-select list, Date)
-![screenshot-full](removeparagraph.gif){.screenshot-full}
+![The email line dropping out of an address block on the canvas when the Email variable is emptied](removeparagraph.gif){.screenshot-full}
 - [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
 A set of key-value pairs to assist you with automation.
 
 ### User Interface
 
-![screenshot](var14.png){.screenshot}
+![An arrow pointing at the paintbrush tab beside the sliders tab in the settings panel](var14.png){.screenshot}
 
-![screenshot](var08.png){.screenshot}
+![USER INTERFACE tab with empty Placeholder and Help text fields, and VISIBILITY set to Conditional](var08.png){.screenshot}
 
 These settings define how the template variable is presented:
 
@@ -202,7 +202,7 @@ These settings define how the template variable is presented:
 
 Choose how visibility is set
 
-![screenshot](var13.png){.screenshot}
+![The VISIBILITY dropdown open on Always, Never and Conditional, with Conditional ticked](var13.png){.screenshot}
 
 - Always (default)
 - Never

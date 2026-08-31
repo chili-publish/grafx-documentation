@@ -84,7 +84,7 @@ In your subscription, you're entitled to a render quota.
 
 Your dashboard will show the actual status of renders for the full subscription (all environments, with a delay of ±1 day).
 
-![screenshot-full](renders01.png){.screenshot-full}
+![Total renders per month for the whole subscription, with render quota and 6 month average lines](renders01.png){.screenshot-full}
 
 The light blue line shows the "rolling average".
 
@@ -96,7 +96,7 @@ The light blue line shows the "rolling average".
 
 When you select an environment, you'll see the details.
 
-![screenshot-full](renders02.png){.screenshot-full}
+![Renders for a single environment, split by output type such as PDF and Batch](renders02.png){.screenshot-full}
 
 
 Render quota are not a hard limit per month. If you generate more output than the render quota, we won’t block or watermark the output.

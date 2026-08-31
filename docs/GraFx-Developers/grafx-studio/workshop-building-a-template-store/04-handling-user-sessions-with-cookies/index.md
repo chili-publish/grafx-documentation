@@ -324,7 +324,7 @@ node server.js
 3. Click one of the buttons and verify the page refreshes.
 4. Use the browser's Developer Tools (Application tab) to check for the set cookie.
 
-![cookie](cookie.jpg){.screenshot}
+![Application tab of developer tools, with the user_cookie entry and its encoded value called out](cookie.jpg){.screenshot}
 
 ??? failure "Cookie not showing?"
 

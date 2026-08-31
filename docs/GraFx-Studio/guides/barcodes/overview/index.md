@@ -2,7 +2,7 @@
 
 ## Code 128
 
-![screenshot](code128.png){.screenshot}
+![Code 128 barcode with the value CODE-128 printed below the bars](code128.png){.screenshot}
 
 ### Settings
 
@@ -25,7 +25,7 @@
 
 ## Code 39
 
-![screenshot](code39.png){.screenshot}
+![Code 39 barcode reading *CODE-39*, with asterisk start and stop characters in the value below](code39.png){.screenshot}
 
 ### Settings
 
@@ -47,7 +47,7 @@ Default: default bar height + text height
 
 ## Code 93
 
-![screenshot](code93.png){.screenshot}
+![Code 93 barcode with the value CODE-93 set below the bars in a narrower symbol](code93.png){.screenshot}
 
 ### Settings
 
@@ -69,7 +69,7 @@ Default: default bar height + text height
 
 ## DataMatrix
 
-![screenshot](datamatrix.png){.screenshot}
+![Square DataMatrix code with solid L-shaped finder edges and no human-readable value](datamatrix.png){.screenshot}
 
 ### Settings
 
@@ -88,7 +88,7 @@ Default: default bar height + text height
 
 ## EAN-8
 
-![screenshot](ean8.png){.screenshot}
+![EAN-8 barcode for 0123 4565, its eight digits embedded below the bars between light-margin arrows](ean8.png){.screenshot}
 
 ### Settings
 
@@ -108,7 +108,7 @@ Default: default bar height + text height
 
 ## EAN-13
 
-![screenshot](ean13.png){.screenshot}
+![EAN-13 barcode for 0 123456 789012, with the leading digit sitting outside the bars](ean13.png){.screenshot}
 
 ### Settings
 
@@ -128,7 +128,7 @@ Default: default bar height + text height
 
 ## GS1-128
 
-![screenshot](gs1-128.png){.screenshot}
+![GS1-128 barcode whose value below the bars carries the application identifier (10) 123456](gs1-128.png){.screenshot}
 
 ### Settings
 
@@ -153,7 +153,7 @@ Default: default bar height + text height
 
 ## QR Code
 
-![screenshot](qr.png){.screenshot}
+![Square QR code with finder patterns in three corners and no printed value](qr.png){.screenshot}
 
 ### Settings
 
@@ -178,7 +178,7 @@ Default: default bar height + text height
 
 ## UPC-A
 
-![screenshot](upca.png){.screenshot}
+![UPC-A barcode for 0 12345 67890 5, with the first and last digits set outside the guard bars](upca.png){.screenshot}
 
 ### Settings
 
@@ -198,7 +198,7 @@ Default: default bar height + text height
 
 ## UPC-E
 
-![screenshot](upce.png){.screenshot}
+![UPC-E barcode for 0 123456 5, the compressed form, taller than it is wide](upce.png){.screenshot}
 
 ### Settings
 

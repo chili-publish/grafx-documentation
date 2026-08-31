@@ -12,15 +12,15 @@ The first user could also be created after a migration from MyCP. If you had a u
 
 With the [Subscription Admin](/CHILI-GraFx/users/roles/#subscription-admin) or [Environment Admin](/CHILI-GraFx/users/roles/#environment-admin) role, you can invite users.
 
-![Invite Users](invite-users-start.png){.screenshot-full}
+![The Users tab of User Management, with an arrow pointing at the Invite user button](invite-users-start.png){.screenshot-full}
 
 Enter 1 or more email addresses of the people you want to invite.
 
-![Invite Users](invite-users.png){.screenshot-full}
+![Step 1 of 3 of the Invite user dialog, with five email addresses entered](invite-users.png){.screenshot-full}
 
 Assigning the environment and role happens in the next step.
 
-![Invite Users](invite-role.png){.screenshot-full}
+![Individual access step, with the role dropdown open on User, Content Admin (GraFx Publisher) and Environment Admin](invite-role.png){.screenshot-full}
 
 #### Invitation expiration
 

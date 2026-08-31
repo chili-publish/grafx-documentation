@@ -11,6 +11,6 @@ The crop marks have a fixed length of 6 mm (recommended by the [Ghent Workgroup]
     Registration color means 100% of all process and spot colors, regardless of the colors that are used in the document.  
     [See Wikipedia on Registration Black](https://en.wikipedia.org/wiki/Printing_registration#Registration_black)
 
-![screenshot-full](cm02.png){.screenshot-full}
+![A "Nice Background" page with crop marks at all four corners, outside the trim and bleed boxes](cm02.png){.screenshot-full}
 
 See [How to add cropmarks to your output (settings)](/GraFx-Studio/guides/output/settings/#crop-marks)

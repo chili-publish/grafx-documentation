@@ -39,7 +39,7 @@ What is great about the Swagger documentation it describes what it required, giv
 
 To authorize the requests, get a token as described above and then click the "Authorize" at the top of the page.
 
-![authorize](authorize.png){.screenshot-full}
+![Swagger page for the CHILI GraFx Platform API, with an arrow pointing at the Authorize button](authorize.png){.screenshot-full}
 
 Once activated, you can pick an endpoint, click "Try it out" and get an example request with the actual response.
 

@@ -10,4 +10,4 @@ This approach is ideal for scenarios where you want to automate the creation of 
 
 Headless automation empowers you to use the powerful capabilities of GraFx Studio while keeping everything behind the scenes, providing flexibility and efficiency for high-volume or fully automated workflows.
 
-![screenshot-full](code.png){.screenshot-full}
+![Python code posting a batch of variables to the environment output/pdf endpoint and returning a task ID](code.png){.screenshot-full}

@@ -2,15 +2,15 @@
 
 Smart Crop starts in GraFx Media. When you upload an image, GraFx Genie recognizes the subject and stores two pieces of metadata on the asset. That metadata is then used to position the image accurately in your templates and final output.
 
-![screenshot-full](step1-2.png){.screenshot-full}
+![Two-step diagram: 1 the uploaded beach photo, 2 the same photo with a Subject Area box and focus point added](step1-2.png){.screenshot-full}
 
 - The **Subject Area** is the boundary around the most important element in the image.
 
-![screenshot](subject.png){.screenshot}
+![Red arrow pointing at the corner of the Subject Area rectangle drawn around the running woman](subject.png){.screenshot}
 
 - The **Point of Interest** is the specific point within the Subject Area where the focus should be placed.
 
-![screenshot](focus.png){.screenshot}
+![Red arrow pointing at the blue Point of Interest dot on the runner's eye inside the Subject Area](focus.png){.screenshot}
 
 ## Read more
 

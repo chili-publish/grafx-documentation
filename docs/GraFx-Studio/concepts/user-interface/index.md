@@ -2,7 +2,7 @@
 
 A **User Interface** is a configuration that groups settings for a specific [Layout Intent](/GraFx-Studio/concepts/layout-intent/). Instead of configuring individual settings separately, you can define a single User Interface to apply them together.
 
-![screenshot-full](ui1.png){.screenshot-full}
+![The User interfaces overview, listing Web output, Customer X, Print Output and the default interface](ui1.png){.screenshot-full}
 
 User Interfaces can be created for specific customers (e.g. to match output requirements) or for targeted use cases.
 
@@ -10,7 +10,7 @@ User Interfaces can be created for specific customers (e.g. to match output requ
 
 For each Layout Intent, you can add one or more [Output Settings](/GraFx-Studio/concepts/output-settings/).
 
-![screenshot-full](ui2.png){.screenshot-full}
+![The Customer X interface with PDF, PNG and GIF output settings assigned per layout intent](ui2.png){.screenshot-full}
 
 Before assigning them in the User Interface, make sure you’ve defined your Output Settings.
 
@@ -18,19 +18,19 @@ Before assigning them in the User Interface, make sure you’ve defined your Out
 
 A default User Interface is always available. It is recognizable by square brackets and cannot be deleted.
 
-![screenshot-full](ui3.png){.screenshot-full}
+![The User interfaces list with the default user interface row highlighted in pink](ui3.png){.screenshot-full}
 
 You can still modify its settings.
 
 ## Form builder
 
-![screenshot-full](ui4.png){.screenshot-full}
+![The Full Configuration interface, with Data source, Layouts and Variables enabled in the Form builder](ui4.png){.screenshot-full}
 
 User Interfaces also control the visibility and labeling of the form shown in the [My Projects](/GraFx-Studio/concepts/template-management/#my-projects) area of GraFx Studio. This is where end users create variations of Smart Templates stored in [Collections](/GraFx-Studio/concepts/template-management/#template-collection).
 
-![screenshot-full](ui10.png){.screenshot-full}
+![Business Card project in My Projects, with an arrow pointing at the Layouts section](ui10.png){.screenshot-full}
 
-![screenshot-full](ui11.png){.screenshot-full}
+![The same project without the Layouts section, leaving only the Customize fields](ui11.png){.screenshot-full}
 
 Depending on the User Interface configuration, end users will see more or fewer options when creating a project.
 
@@ -49,7 +49,7 @@ For each section, you can:
 - Set a **Section heading**
 - Add optional **help text**
 
-![screenshot](ui7.png){.screenshot}
+![The Variables section panel, with Section heading set to Customize and an empty Help text field](ui7.png){.screenshot}
 
 ### Layout-specific options
 
@@ -58,13 +58,13 @@ If the **Layouts** section is enabled, you can configure two additional options:
 - **Layout selector** — toggles whether the layout dropdown appears
 - **Layout resizing** — toggles whether the layout resizing option is available
 
-![screenshot](ui6.png){.screenshot}
+![The Layouts section panel, with Show layout selector and Show width and height inputs both on](ui6.png){.screenshot}
 
 !!! info
     For layouts to appear in the selector, they must be marked as **available** in the Smart Template.  
     Similarly, layout resizing must be enabled in the template before it can be used.
 
-    ![screenshot](ui8.png){.screenshot}
+    ![Layout settings in the Smart Template, with Available and Resizable on and min and max sizes in mm](ui8.png){.screenshot}
 
     [See also: Layouts in GraFx Studio](/GraFx-Studio/guides/layouts/#layouts-in-the-studio-ui)
 

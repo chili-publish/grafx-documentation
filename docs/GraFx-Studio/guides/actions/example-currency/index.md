@@ -11,7 +11,7 @@ A trigger is set to act upon the currency.
 
 The currency symbol will change with the selection.
 
-![Movie](demo.gif){.screenshot}
+![Switching the Currency variable and the price on the Back to school ad changing its currency symbol](demo.gif){.screenshot}
 
 ### The variable
 
@@ -19,13 +19,13 @@ A list variable "Currency" is defined.
 
 The items in the list contain the currency options.
 
-![screenshot](variable.png){.screenshot}
+![The Currency list variable with the items Dollar, Euro and Pound, beside the template's variable list](variable.png){.screenshot}
 
 ### The trigger
 
 An action is defined (See [Create Actions](/GraFx-Studio/guides/actions/create/) on how to do this)
 
-![screenshot](action.png){.screenshot}
+![Action list with the menu open on Currency changed, offering Edit, Rename, Duplicate and Delete](action.png){.screenshot}
 
 First step is to define the trigger, that will initiate the action.
 
@@ -35,7 +35,7 @@ The trigger is initiated when
 - or when the document is loaded (to be sure we check when opening the document)
 - or when a layout is changed
 
-![screenshot](trigger.png){.screenshot}
+![Triggers tab of Edit action with three triggers: a variable value change, Document loaded and Selected layout changed](trigger.png){.screenshot}
 
 ### Action
 

@@ -2,7 +2,7 @@
 
 When opening GraFx Media, you see the action banner (1) and below all top level folders (2).
 
-![appscreen](dashboard.png){.screenshot}
+![GraFx Media with marker 1 on the action banner and marker 2 on the grid of top-level folders below it](dashboard.png){.screenshot}
 <br/>
 
 <span class="reddot">1</span>
@@ -16,7 +16,7 @@ Similar to what you're used to in any OS, a view on the folders and their conten
 
 ## Action banner
 
-![appscreen](action-banner.png){.screenshot-full}
+![The action banner with markers 3 to 8 on sort field, sort order, search, Create folder, Upload and view toggle](action-banner.png){.screenshot-full}
 <br/>
 
 <span class="reddot">3</span>

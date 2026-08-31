@@ -4,7 +4,7 @@
 
 When you create an image frame and assign an asset to it, the default **Fill** mode is applied. This ensures the image fills the entire frame.
 
-![screenshot-full](crop01.png){.screenshot-full}
+![A mountain photo captioned Extreme Sports filling its frame, with the IMAGE fit mode set to Fill and Position Center](crop01.png){.screenshot-full}
 
 ## Cropping Options
 
@@ -43,29 +43,29 @@ You can enter crop mode in two ways:
 
 Select the image frame and use the crop tool in the properties panel  
 
-![screenshot](crop03.png){.screenshot}
+![A red arrow pointing at the crop tool button beside the Fill fit mode dropdown in the IMAGE section](crop03.png){.screenshot}
 
 Or, double-click the image (while the arrow tool is selected)  
 
-![screenshot-full](crop04.png){.screenshot-full}
+![Crop mode entered on the mountain photo: the full image showing outside the crop frame, with Cancel and Apply in the panel](crop04.png){.screenshot-full}
 
 ### Adjusting the Crop
 
 **Use the arrow tool** to reposition the image inside the frame  
 
-![screenshot-full](crop05.png){.screenshot-full}
+![A narrow crop frame moved to the left of the wide image frame, with the dimmed remainder of the photo visible around it](crop05.png){.screenshot-full}
 
 **Use the crop handles (4)** to change the crop boundaries  
 
 **Use the frame handles (3)** to resize the frame  
 
-![screenshot-full](crop08.png){.screenshot-full}
+![The same crop, with red arrow 3 marking a square frame handle at the outer corner and arrow 4 marking a bracket crop handle](crop08.png){.screenshot-full}
 
 ### Apply or Cancel
 
 **Apply** the crop by clicking the "Apply" button or pressing **Enter**  
 
-![screenshot](crop09.png){.screenshot}
+![The IMAGE section in crop mode, reading Crop applies to this image only above the Cancel and Apply buttons](crop09.png){.screenshot}
 
 **Cancel** the crop by clicking "Cancel" or pressing **Escape**
 
@@ -75,7 +75,7 @@ Or, double-click the image (while the arrow tool is selected)
 
 To remove a manual crop and return to automated behavior, switch the fit mode to **Fill**, **Fit**, or **Smart Crop**.
 
-![screenshot](crop10.png){.screenshot}
+![The fit mode dropdown set to Manual crop, ready to be switched back to an automated mode](crop10.png){.screenshot}
 
 This resets the manual crop and reverts to any inherited crop settings from the master layout.
 
@@ -83,7 +83,7 @@ This resets the manual crop and reverts to any inherited crop settings from the 
 
 When a crop override is active, you'll see a message under the crop mode selector:
 
-![screenshot](crop11.png){.screenshot}
+![The message Manual crop override applied to this image under the Fill dropdown, with a reset arrow button beside it](crop11.png){.screenshot}
 
 Click **Reset Override** to remove the crop override for that specific:
 

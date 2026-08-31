@@ -28,17 +28,17 @@ Consult your [Bynder documentation](https://support.bynder.com/hc/en-us/articles
 
 From the overview of Environments, click on "Settings" on the right to your environment, where you want to install or configure the Connector.
 
-![screenshot-full](sc01.png){.screenshot-full}
+![My environments list, with a search box and Name, Type and Used storage columns](sc01.png){.screenshot-full}
 
 Then click the installed Connector to access the configuration.
 
-![screenshot-full](sc02.png){.screenshot-full}
+![The Connectors list for an environment, with the Bynder media connector row toggled off](sc02.png){.screenshot-full}
 
 ### Configuration
 
 Your instance of the Connector needs to know which Bynder instance it should communicate with and how to authenticate.
 
-![screenshot-full](sc03.png){.screenshot-full}
+![Bynder connector Configuration tab, with the baseURL runtime option and Proxy settings allowed domain](sc03.png){.screenshot-full}
 
 **baseURL**
 
@@ -62,7 +62,7 @@ For example
 
 ### Authentication
 
-![screenshot-full](sc04.png){.screenshot-full}
+![Bynder Authentication tab set to OAuth 2.0 Client Credentials, with Client ID, secret and token endpoint filled in](sc04.png){.screenshot-full}
 
 Select your type of authentication:
 
@@ -88,27 +88,27 @@ Consult your Bynder System Admin for assistance in configuring these fields.
 
 - Select the Bynder Connector.
 
-![screenshot-full](sc05.png){.screenshot-full}
+![The GraFx Studio side toolbar with the Resources tooltip showing](sc05.png){.screenshot-full}
 
-![screenshot-full](sc06.png){.screenshot-full}
+![The Resources panel, with Media highlighted among the Data source and Barcodes categories](sc06.png){.screenshot-full}
 
-![screenshot-full](sc07.png){.screenshot-full}
+![Grid of Bynder assets with the connector picker open and Bynder ticked over GraFx Media](sc07.png){.screenshot-full}
 
 ### Image Variables
 
 When using [image variables](/GraFx-Studio/guides/template-variables/assign/#assign-template-variable-to-image-frame), you will see the same grid of assets when selecting an image, except if you have set configuration options (see below).
 
-![screenshot-full](sc08.png){.screenshot-full}
+![The Media picker of Bynder assets opened from the Product image variable's Select image field](sc08.png){.screenshot-full}
 
 ### Metadata mapping
 
 See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#concept-2-making-assets-available-and-exposing-metadata) for more details
 
-![screenshot-full](sc09.png){.screenshot-full}
+![Variable settings with arrows marking the connector tab and the Metadata mapping Manage button](sc09.png){.screenshot-full}
 
 ### Configuration Options
 
-![screenshot-full](sc10.png){.screenshot-full}
+![Browse options with Allow Browse on, and Collection Name and View as collections set to Set value](sc10.png){.screenshot-full}
 
 To filter the assets suggested to template users, you can use several methods.
 

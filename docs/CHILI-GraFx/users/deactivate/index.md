@@ -12,20 +12,20 @@ However, their access settings and group memberships are retained. This ensures 
 
 In the user management, hover over the three dots on the right.
 
-![ui-full](deactivate01.png){.screenshot-full}
+![Users list with a row's "..." menu open, offering Deactivate user above the red Delete user](deactivate01.png){.screenshot-full}
 
 Confirm the deactivation
 
-![ui](deactivate02.png){.screenshot}
+![Deactivate User confirmation dialog offering Cancel or "Yes, deactivate"](deactivate02.png){.screenshot}
 
 The user will appear gray.
 
-![ui-full](deactivate03.png){.screenshot-full}
+![Two user rows, the lower one greyed out and marked "(inactive)" after deactivation](deactivate03.png){.screenshot-full}
 
 ### Activate
 
 Click Activate under the same "..." menu to reactivate the user.
 
-![ui-full](deactivate04.png){.screenshot-full}
+![The same "..." menu on the inactive row, where Deactivate user has become Activate user](deactivate04.png){.screenshot-full}
 
-![ui-full](deactivate05.png){.screenshot}
+![Activate User confirmation dialog offering Cancel or "Yes, activate"](deactivate05.png){.screenshot}

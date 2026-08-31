@@ -11,12 +11,12 @@ The latest tested version is 29.2.1 (January 2025).
 
 ## Converter Overview
 
-![screenshot](converter0.png){.screenshot}
+![The Adobe Illustrator Window menu with the "CHILI Converter" entry highlighted in the panel list](converter0.png){.screenshot}
 
 
 ### Server Connection Setup
 
-![screenshot](converter1.png){.screenshot}
+![The CHILI AI Converter window on its Cloud tab, with Url and Environment filled in and Status "Not connected"](converter1.png){.screenshot}
 
 - **Preset**: Save your server connection as a preset for easy future access.
 - **URL**: Enter the URL to your GraFx Publisher instance. 
@@ -28,7 +28,7 @@ The latest tested version is 29.2.1 (January 2025).
 
 ### Exporting to GraFx Publisher
 
-![screenshot](converter2.png){.screenshot}
+![The "Export to GraFx Publisher" tab, with Destination "Cloud", three folder fields and Document name "Clock"](converter2.png){.screenshot}
 
 Configure your export settings:
 
@@ -41,11 +41,11 @@ Configure your export settings:
 
 Identify potential issues before conversion with Preflight checks.
 
-![screenshot](converter3.png){.screenshot}
+![The Preflight tab reporting "Preflight passed" with no issues for document Untitled-3](converter3.png){.screenshot}
 
 ### Preferences
 
-![screenshot](converter4.png){.screenshot}
+![The Preferences tab with Language "Default", the overwrite options, Log level "Info" and Version 8.0.0.0](converter4.png){.screenshot}
 
 Customize your settings:
 

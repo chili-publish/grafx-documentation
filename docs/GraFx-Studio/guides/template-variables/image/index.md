@@ -12,21 +12,21 @@
 
 Create a variable, and change the type to "Image" (default will be Single-line text)
 
-![screenshot](image01.png){.screenshot}
+![The Variable type dropdown open on the MyImage variable, with Image highlighted below Single-line text and Multi-line text](image01.png){.screenshot}
 
 Optional: Choose a default image.
 
-![screenshot-full](image02.png){.screenshot-full}
+![The DEFAULT STATE section with a chosen PNG default image shown as a thumbnail and filename, and a cross to clear it](image02.png){.screenshot-full}
 
 Optional: set the variable to be required and add [private data](/GraFx-Studio/guides/template-variables-private-data/).
 
-![screenshot-full](image03.png){.screenshot-full}
+![The GENERAL tab with Variable type set to Image, the Required toggle off, and PRIVATE DATA showing 0 key-value pairs added](image03.png){.screenshot-full}
 
 ### User Interface Settings
 
 In the **User Interface** settings, define the **Label**, **Placeholder**, **Help text** and [Visibility](/GraFx-Studio/guides/template-variables/visibility/).  
 
-![screenshot-full](image04.png){.screenshot-full}
+![The USER INTERFACE tab with Label MyImage, Help text Select an image, and the Visibility dropdown open on Always, Never and Conditional](image04.png){.screenshot-full}
 
 ### Connector Settings
 
@@ -40,7 +40,7 @@ Set the path, where the end-user can browse for images.
 
 The path can be fixed: **Set Value** or fed through a (text / list) variable having a path.
 
-![screenshot-full](image05.png){.screenshot-full}
+![BROWSE OPTIONS on the GraFx Media connector, with Allow Browse on, the Folder set by value and Include subfolders on](image05.png){.screenshot-full}
 
 Choose "Allow Upload" and set a path, to allow end-users to upload assets. We support 3 different types of assets: JPG, PNG, and TIFF.
 
@@ -52,7 +52,7 @@ For uploads, you can define a minimum width and height in pixels.
 Once enabled, each uploaded file is stored in the "Upload/" folder (for the GraFx Media connector), or in a custom path you specify.  
 Uploaded assets become available just like any other image variable source.
 
-![screenshot-full](image06.png){.screenshot-full}
+![UPLOAD OPTIONS with Allow Upload on, an upload folder set by value, and Min width 1920 px by Min height 1080 px](image06.png){.screenshot-full}
 
 ## Assign image variable to image frame
 
@@ -62,10 +62,10 @@ In the variable tab, choose the image variable from the "Insert variable" drop-d
 
 You can also open the action menu of a variable (the 3 dots) and use the "Insert" option.
 
-![screenshot-full](image07.png){.screenshot-full}
+![A selected image frame holding a garden still-life photo, with Insert variable set to MyImage in the Variables tab](image07.png){.screenshot-full}
 
 ## Un-assign a template variable from an image frame
 
 To remove the template variable from the image frame, select the frame and choose "None" from the "Insert variable" drop-down menu.
 
-![screenshot-full](unassign.png){.screenshot-full}
+![An empty crossed-through image frame, with the Insert variable dropdown open and None ticked above the image variable](unassign.png){.screenshot-full}

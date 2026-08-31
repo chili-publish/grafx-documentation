@@ -69,7 +69,7 @@ npx parcel src/index.html
 ```
 
 Hopefully you will see a message like this
-![screenshot](server-started.png){.screenshot}
+![Terminal output of npx parcel src/index.html, reporting the server running at localhost:1234](server-started.png){.screenshot}
 
 Then you can visit our newly created website by going to
 ``` html
@@ -113,7 +113,7 @@ Now the we should open "Developer Tools" in our browser (if you need help doing 
 
 I will be using Chrome for this example and so by opening the "Console" tab in my developers tools and reloading my integration page I can see that our "I'm alive!" console log is firing.
 
-![screenshot-full](javascript-linked.png){.screenshot-full}
+![The Hello World page with the Console tab of developer tools open, logging "I'm alive!"](javascript-linked.png){.screenshot-full}
 
 **Wahoo!** this means that our custom JavaScript code is now being called from our integration :D
 
