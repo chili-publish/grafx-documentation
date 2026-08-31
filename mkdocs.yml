@@ -74,14 +74,18 @@ plugins:
         # 'release-notes/index.md': 'platform-updates/index.md'
   - search
   # Click a screenshot to open it full screen. Every image is wrapped unless it
-  # carries one of the skip classes below, or the .off-glb class that hooks.py
-  # adds to alt-text-styled icons (see SKIP_LIGHTBOX_ALTS there).
+  # carries one of the skip classes below, so an icon must always be given its
+  # class in Markdown — alt text is never a styling or behaviour signal.
   - glightbox:
-      auto_caption: false   # most screenshots use alt="screenshot" as a style hook
+      auto_caption: false
       skip_classes:
+        # product icons and logos — zooming these is meaningless
         - rn_icon
+        - svg_icon
         - applogo
         - applogo-inline
+        - smallapplogo
+        - tinyapplogo
         - connector_icon
         - matrix-icon
         - dl-hero-icon
