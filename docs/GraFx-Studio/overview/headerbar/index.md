@@ -1,6 +1,6 @@
 # Header bar
 
-![The Design and Automate tabs in the header bar, with Design selected](headerbar.png)
+![The Design and Automate tabs in the header bar, with Design selected](headerbar.png){.screenshotsmall}
 
 Depending on your need, you can choose a different overall toolset to
 

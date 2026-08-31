@@ -16,4 +16,4 @@ Set of tools at the bottom of the sidebar.
 
 E.g. When selecting the **Layers and Animation** tool, an extra properties panel will open.
 
-![The Layers and Animation panel open at the bottom of the editor, with a timeline bar for each layer](animation-timeline.png)
+![The Layers and Animation panel open at the bottom of the editor, with a timeline bar for each layer](animation-timeline.png){.screenshot-full}

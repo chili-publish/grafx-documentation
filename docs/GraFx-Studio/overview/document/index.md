@@ -2,7 +2,7 @@
 
 Your document or page of the document.
 
-![The editor with the document, the page you design on, labelled](editor-doc.png)
+![The editor with the document, the page you design on, labelled](editor-doc.png){.screenshot-full}
 
 When opening the canvas, the document is zoomed to fit. 
 
