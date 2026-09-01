@@ -99,9 +99,11 @@ Figma text styles are exported and recreated in GraFx Studio, covering:
 - Underline, strikethrough, superscript, subscript
 - Background text color (applied when underline + negative offset + thickness ≥ 50%)
 
+!!! info "Line height set to Auto"
+    Text using the default **Line height** value `Auto` converts with a line height of 120%, applied silently — no preflight warning is shown. Set an explicit line height in Figma if you want a different value in the template.
+
 !!! warning "Known limitations in this version"
     - Figma text styles are currently mapped to a mix of paragraph and character styles in GraFx Studio. The visual appearance of styled text is preserved in the template, but the style structure does not yet line up one-to-one with Figma
-    - The default **Line height** value `Auto` triggers a preflight warning
     - The default **Vertical trim** value `Standard` triggers a preflight warning
 
 ## Color styles
