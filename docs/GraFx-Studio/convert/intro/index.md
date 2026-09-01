@@ -23,7 +23,8 @@ See [Supported font types](/GraFx-Fonts/overview/supported-font-types/) for the 
 Below is the abstract process of conversion. For specific conversions see:
 
 - [How to convert an Adobe® InDesign® document](/GraFx-Studio/convert/Adobe-InDesign/)  
-- [How to convert an Adobe® Photoshop® document](/GraFx-Studio/convert/Adobe-Photoshop/)
+- [How to convert an Adobe® Photoshop® document](/GraFx-Studio/convert/Adobe-Photoshop/)  
+- [How to convert a Figma design](/GraFx-Studio/convert/Figma/) (experimental)
 
 ### Export from desktop tools
 
@@ -31,7 +32,8 @@ Using a GraFx Studio Exporter plugin, you can export your document into a CHILI 
 Currently, GraFx Studio Exporter plugins are available for:
 
 - Adobe® InDesign® (multiple pages, alternate layouts)  
-- Adobe® Photoshop® (multiple artboards)
+- Adobe® Photoshop® (multiple artboards)  
+- Figma (a single frame, experimental)
 
 ### Import into GraFx Studio
 
