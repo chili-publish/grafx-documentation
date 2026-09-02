@@ -65,7 +65,7 @@ jobs:
         uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ vars.GH_APP_ID_CHILI_INFRA_WORKFLOW_DISPATCHER }}
-          private-key: ${{ secrets.GH_APP_PRIVATE_KEY_CHILI_INFRA_WORKFLOW_DISPATCHER }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY_CHILI_GENIE_WORKFLOW_DISPATCHER }}
           owner: ${{ github.repository_owner }}
           repositories: grafx-genie
           permission-actions: write
