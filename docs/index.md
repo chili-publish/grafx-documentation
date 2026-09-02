@@ -13,6 +13,16 @@
 
     ---
 
+    **Sep 02, 2026**: GraFx Studio: Editor load fix for Chromium 152
+
+    ![GraFx Studio icon for the Chromium 152 editor load fix release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    A change in Chromium 152 stopped the GraFx Studio editor from loading, leaving the canvas gray. Fixed in version 1.46 — environments on an earlier version need to update.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/02/grafx-studio-editor-load-fix-for-chromium-152/)
+
+    ---
+
     **Aug 31, 2026**: GraFx Studio: Figma plugin (experimental)
 
     ![rn_icon](/assets/icon-GraFx-Studio.svg)
@@ -60,16 +70,6 @@
     Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
-
-    ---
-
-    **Aug 06, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit media and colors
-
-    ![CHILI GraFx icon for the Environment API release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    Media and colors in a Brand Kit now take an optional `description`, a free-text explanation of what the element is for. Descriptions are set on the default theme and shared across all themes.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/06/chili-grafx-environment-api-descriptions-for-brand-kit-media-and-colors/)
 
     ---
 
