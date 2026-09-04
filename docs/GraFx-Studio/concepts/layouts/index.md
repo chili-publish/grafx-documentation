@@ -58,3 +58,9 @@ If it's white, it's the value taken from the master.
 ![Opening the reset dropdown with Reset Overrides, Reset Width and Reset Height](inherited-values.gif){.screenshot-full}
 
 Reset all values, or only individual values by the left-turning arrow. A dropdown will provide you with the options to reset to the master's values.
+
+## Private data
+
+Besides its visual properties, a layout can carry [Private Data](/GraFx-Studio/concepts/private-data/): key-value pairs that are invisible in GraFx Studio and to the end user, but readable by a custom integration. It is how an integration can tell what a format is meant for — a channel, a placement, an identifier in your own system — without that showing up anywhere in the interface.
+
+See [Private data on layouts](/GraFx-Studio/guides/layouts/#private-data) for how to set it.

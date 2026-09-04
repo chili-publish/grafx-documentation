@@ -29,6 +29,36 @@ If the values appear colored, it's because they differ from the base values. To 
 See also how to [set Layout size constraints](/GraFx-Studio/guides/layout-size-constraints/).
 
 
+## Private data
+
+A layout can carry [Private Data](/GraFx-Studio/concepts/private-data/): key-value pairs that stay invisible in GraFx Studio and in the end-user interface, but that a custom integration can read through the Studio SDK. Use it to tell your integration something about the format that GraFx Studio has no field for — the channel the layout is produced for, a placement code, or an identifier from your own campaign system.
+
+<!-- TODO Bram: screenshot of the Private data section in the layout properties panel, and of the Manage dialog with two example key-value pairs -->
+
+### Add key-value pairs
+
+- Select the layout in the **Layouts** panel, so its properties appear in the properties panel.
+- In the **Private data** section, click **Manage**.
+- Click **Add key-value pair**.
+- In the **Key** field, enter a custom identifier (e.g. `channel`).
+- In the **Value** field, enter the corresponding value (e.g. `meta-feed`).
+- Add as many pairs as your integration needs.
+- Click **Done** to save.
+
+The section header shows how many pairs are stored, so you can tell at a glance whether a layout carries private data.
+
+### Edit or delete key-value pairs
+
+- To change a key or a value, click the text in the field and edit it.
+- To remove a pair, click the trash icon next to the entry.
+- Click **Done** to save.
+
+!!! warning
+    Keys are what your integration looks for. Renaming `channel` to `CHANNEL`, or deleting a pair, will break any integration that expects the old key — so update the integration along with the template.
+
+<!-- TODO Bram / Product review: for variables we document that unsaved key-value pairs are lost if you change the variable before saving. Confirm whether the same applies to layouts before we add that note here. -->
+
+
 ## Feature Channel
 
 ### Add Layouts from Presets
