@@ -4,6 +4,9 @@ You can manage [Private Data](/GraFx-Studio/concepts/private-data/) for variable
 
 Private data can impact your custom end-user interface. Integrations can use the private data to add tags to variables to trigger specific UI workflows.
 
+!!! tip "Also available on layouts"
+    Private Data is not limited to variables. You can attach the same kind of key-value pairs to a layout — see [Private data on layouts](/GraFx-Studio/guides/layouts/#private-data).
+
 ## Manage Private Data
 
 ![The Private data dialog holding the key-value pairs source_ID and UI_part, beside the variable settings](private-data01.png){.screenshot-full}
