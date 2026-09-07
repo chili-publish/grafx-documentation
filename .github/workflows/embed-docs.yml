@@ -5,6 +5,14 @@ name: Embed docs for AI search
 # produced JSONL artifact is handed to grafx-genie's private ingest workflow
 # (AIML-36) through a GitHub App-authenticated workflow dispatch.
 #
+# One embed, every universe. We dispatch with target: ALL, so grafx-genie
+# loads this one corpus into DEV, MAIN, UAT and PRD under a single build id.
+# DEV is the canary there: MAIN, UAT and PRD start only after DEV swaps clean,
+# so a corpus that trips a guard never reaches production. Narrowing to one
+# universe is a manual dispatch on grafx-genie's own docs-ingest.yml, not
+# something this workflow should do -- a re-embed costs OpenAI usage, and
+# paying it to update one environment leaves the other three stale.
+#
 # Per AIML-37 this embeds ALL products including GraFx-Publisher, which the
 # public search box excludes (see hooks.py EXCLUDE_PREFIXES). The AI store
 # intentionally indexes more than the on-site search — this divergence is by
@@ -55,8 +63,8 @@ jobs:
           path: build/doc_records.jsonl
           retention-days: 7
 
-  dispatch-ingest-main:
-    name: Dispatch documentation ingest to MAIN
+  dispatch-ingest:
+    name: Dispatch documentation ingest to all universes
     needs: embed
     runs-on: ubuntu-latest
     steps:
@@ -83,6 +91,6 @@ jobs:
               inputs: {
                 'artifact-name': 'doc-records',
                 'artifact-run-id': '${{ github.run_id }}',
-                target: 'MAIN',
+                target: 'ALL',
               },
             })
