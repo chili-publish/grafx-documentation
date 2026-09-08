@@ -69,6 +69,20 @@ The first 50 renders are counted individually, then each subsequent set of 10 ad
 
 	In this case: 50 + (1000-50)/10 = 50 + 95 = 145
 
+#### The output task is what counts, not the number of files
+
+The formula is applied per [output task](/GraFx-Studio/concepts/output-tasks/), based on the number of records in that task. How the result is delivered makes no difference: whether the task produces one PDF containing all records or several PDF files each containing a part of them, the render count is identical.
+
+!!! Note
+	**Same task, same renders**
+
+	A task with 100 records: 50 + (100-50)/10 = **55 renders**
+
+	- 1 PDF with 100 records: 55 renders
+	- 4 PDFs of 25 records, from that same task: 55 renders
+
+	Splitting those 100 records over 4 **separate** output tasks of 25 records is a different story. Each task is then counted on its own: 4 × 25 = 100 renders, because none of them passes the first 50 records where the discount starts.
+
 ### Previews
 
 Previews are the images shown while you work — for example the layout thumbnails GraFx Experience displays when you select layouts for a new project. A preview is not an output you can download, so it does not count as a render.
