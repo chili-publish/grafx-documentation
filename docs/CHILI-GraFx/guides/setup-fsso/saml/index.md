@@ -27,6 +27,9 @@ Please configure your IDP to include at least the required claims below in SAML 
 | `family_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`  | Required        | The family name of the user                                                                                                      |
 | `https://chili-publish.com/CGXGroups`                                             | Optional        | A list of UUIDs of the CHILI GraFx groups the user should be in. <br/> This is only required if you use group-based permissions. |
 
+!!! info "Email is case sensitive"
+	The provided email address should be provided in all lowercase. This to avoid issues during the authentication processes.
+
 ## 3. CHILI GraFx Configuration
 
 Once you've created a SAML application in your IDP, provide us the following metadata so we can configure things to redirect users to your IDP when logging into CHILI GraFx:
@@ -43,6 +46,7 @@ Please inform us of the **domain** you’d like to use for testing FSSO.
 ## 4. Testing
 
 Once CHILI publish has enabled FSSO for the test domain, please verify that users with an email address in that domain are able to log on and get the expected permissions.
+Note that the users will need to be invited to the GraFx platform to be able to access environments.
 
 ## 5. Enable FSSO
 
