@@ -71,6 +71,7 @@ plugins:
         'CHILI-GraFx/users/index.md': 'CHILI-GraFx/users/intro/index.md'
         'GraFx-Studio/releasenotes.md': 'release-notes/index.md'
         'releasenotes/index.md': 'release-notes/index.md'
+        'release-notes/experimental/index.md': 'release-notes/feature-maturity/index.md'
         # 'release-notes/index.md': 'platform-updates/index.md'
   - search
   # Click a screenshot to open it full screen. Every image is wrapped unless it
@@ -624,7 +625,7 @@ nav:
 
     - 'Platform Updates':
         - 'Overview':                           'release-notes/index.md'
-        - 'Experimental':                       'release-notes/experimental/index.md'
+        - 'Feature maturity':                   'release-notes/feature-maturity/index.md'
         - 'RSS feed':                           'release-notes/rss/index.md'
 
     - 'Developer Center':
