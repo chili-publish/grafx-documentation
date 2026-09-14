@@ -13,6 +13,16 @@
 
     ---
 
+    **Sep 14, 2026**: GraFx Studio: Overprint and constraints
+
+    ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/14/grafx-studio-overprint-and-constraints/)
+
+    ---
+
     **Sep 02, 2026**: GraFx Studio: Editor load fix for Chromium 152
 
     ![GraFx Studio icon for the Chromium 152 editor load fix release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -60,16 +70,6 @@
     On Monday 14 September we perform infrastructure updates that require a brief period of server downtime. Check the schedule for the region your GraFx environments run in.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
-
-    ---
-
-    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
-
-    ![CHILI GraFx icon for the release note on previews and renders](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
 
     ---
 

@@ -18,15 +18,48 @@ Drag a rectangle on the canvas. The selected shape will be drawn inside the fram
 
 
 
+## User Constraints for Shape Frames
+
+Shape frames support **user constraints** that control how end users can interact with the frame in Studio UI. These constraints are defined by the template designer and determine which actions are allowed.
+
+All constraint options are **disabled by default**. You explicitly enable only the interactions you want to allow.
+
+<!-- TODO screenshot (REL-69): the User constraints section in the properties panel of a selected shape frame. Save as shape-frame-user-constraints.png next to this page and uncomment:
+![User constraints for shape frames](shape-frame-user-constraints.png){.screenshot}
+-->
+
+### Available Constraint Options
+
+- **Allow horizontal move**  
+  Enables movement along the X-axis.
+
+- **Allow vertical move**  
+  Enables movement along the Y-axis.
+
+- **Allow rotation**  
+  Allows the shape frame to be rotated by the end user.
+
+- **Allow resize**  
+  Allows the shape frame to be resized.
+
+- **Constrain proportions**  
+  Locks the aspect ratio during resize.
+
+The same dependencies apply as for other frame types: enabling resize or rotation also enables horizontal and vertical movement, and *Constrain proportions* is only relevant when resize is enabled. See [Constraints](/GraFx-Studio/concepts/constraints/).
+
 ## Properties
 
 Similar properties as with all frames. See [Basic properties](/GraFx-Studio/concepts/frames/#basic-properties).
+
+The rotation and corner radius fields are collapsed by default. Click the **...** icon in the properties panel to show them.
 
 ### Corner radius
 
 Some shapes can have a corner radius. (see below).
 
 A corner radius can be entered in the property panel, or can be set through the corner radius handle.
+
+Values are expressed in the unit of the layout — pixels, millimeters or inches, depending on the [layout intent](/GraFx-Studio/concepts/layout-intent/). The unit is shown inside the input field, and the corner icon highlights along with the field you are editing.
 
 ![Dragging the corner radius handle on a selected rectangle while the four radius fields update](corner-radius.gif){.screenshot-full}
 
@@ -39,7 +72,8 @@ A corner radius can be entered in the property panel, or can be set through the 
 
 By default you can set the corner radius for all corners.
 
-![The four Corner radius fields set to 0, with "Same for each corner" ticked below them](corner-radius.png){.screenshot}
+<!-- TODO screenshot (REL-69): retake — the restructured Corner radius section has two input fields instead of four, shows the layout unit inside each field, and highlights the corner icon together with its field -->
+![The Corner radius fields set to 0, with "Same for each corner" ticked below them](corner-radius.png){.screenshot}
 
 By deselecting the "Same for each corner", you can specify a corner radius for each corner individually.
 
@@ -56,6 +90,21 @@ Drawing a rectangular frame to fit a polygon will draw a triangle.
 A triangle has 1 corner radius setting, and will apply that setting to all (3) corners.
 
 ![A triangle in a tall frame, with a single Corner radius of 2.66 in the properties panel](poly.png){.screenshot}
+
+## Overprint
+
+On a layout with a **Print** intent, the properties panel offers two overprint toggles for the selected shape frame:
+
+- **Overprint on fill** — the shape's fill prints on top of the inks underneath instead of knocking them out.
+- **Overprint on stroke** — the same, for the shape's stroke.
+
+Both are off by default, and each toggle is only selectable when the matching fill or stroke color is active. Removing a fill or stroke switches its overprint off.
+
+<!-- TODO screenshot (REL-69): the Overprint section in the shape frame properties panel, both toggles visible. Save as shape-frame-overprint.png next to this page and uncomment:
+![Overprint on fill and Overprint on stroke in the shape frame properties panel](shape-frame-overprint.png){.screenshot}
+-->
+
+Overprint applies to CMYK and spot colors only, and the toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
 
 ## Maximum / minimum corner radius
 
