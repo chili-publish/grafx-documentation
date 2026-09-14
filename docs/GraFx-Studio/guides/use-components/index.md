@@ -165,6 +165,23 @@ After applying the mapping, the new template variables appear in the variable li
 
 These variables work like any other template variable — they can be used in actions, exposed in Studio UI, or driven by a data source.
 
+## User constraints on a component frame
+
+A component frame supports the same **user constraints** as other frame types, controlling how end users can manipulate the frame itself in Studio UI:
+
+- **Allow horizontal move**
+- **Allow vertical move**
+- **Allow rotation**
+- **Allow resize**, with **Constrain proportions**
+
+All options are disabled by default. Enabling resize or rotation also enables horizontal and vertical movement. See [Constraints](/GraFx-Studio/concepts/constraints/).
+
+<!-- TODO screenshot (REL-69): the User constraints section in the properties panel of a selected component frame. Save as component-frame-user-constraints.png next to this page and uncomment:
+![User constraints on a component frame](component-frame-user-constraints.png){.screenshot}
+-->
+
+These constraints govern the frame on the canvas. They are unrelated to the variable range checks described below.
+
 ## Constraint compatibility
 
 When you map a component variable to an existing template variable, GraFx Studio checks whether the two variables are compatible. If the component variable has a range constraint (e.g. a number variable restricted to `[-10, -5]`) and the template variable has an overlapping or incompatible range (e.g. `[0, 10]`), the mapping row shows an **error state** and the mapping cannot be applied until the ranges are made consistent — either by updating the component variable or the template variable.

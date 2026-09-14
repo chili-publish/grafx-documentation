@@ -36,3 +36,5 @@ When you place a PDF as an asset inside an image frame, its content is embedded 
 
 !!! info "Overprint"
     Overprint statements inside embedded PDF assets are preserved in the final output — the overprint behavior of the source PDF is kept in the exported document.
+
+    Overprint you set yourself on text, shape, and barcode frames is written into the exported PDF as well. See [Overprint](/GraFx-Studio/concepts/overprint/).
