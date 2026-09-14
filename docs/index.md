@@ -17,7 +17,7 @@
 
     ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
-    Overprint toggles arrive on text, shape, and barcode frames in print layouts, so black type and barcodes no longer knock out the inks beneath them. User constraints now cover shape and component frames too.
+    Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/14/grafx-studio-overprint-and-constraints/)
 

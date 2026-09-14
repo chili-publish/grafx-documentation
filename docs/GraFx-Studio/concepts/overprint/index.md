@@ -45,5 +45,7 @@ When you generate a PDF, GraFx Studio writes the overprint setting into the grap
 
 Overprint statements inside embedded PDF assets are preserved as well — see [PDF output](/GraFx-Studio/guides/output/pdf/).
 
-!!! note "Checking your output"
-    The canvas in GraFx Studio does not simulate overprint. To verify the result, open the exported PDF in Adobe® Acrobat® Pro and use **Print Production > Output Preview**, with **Show Overprinting** switched on under color warnings.
+!!! warning "Known limitation in this version"
+    The canvas in GraFx Studio does not simulate overprint, so an overprinted element looks the same on screen whether the toggle is on or off.
+
+    To verify the result, open the exported PDF in Adobe® Acrobat® Pro and use **Print Production > Output Preview**, with **Show Overprinting** switched on under color warnings.
