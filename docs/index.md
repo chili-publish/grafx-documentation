@@ -13,6 +13,16 @@
 
     ---
 
+    **Sep 15, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit text styles
+
+    ![CHILI GraFx icon for the Brand Kit text style descriptions release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+
+    Paragraph styles and character styles in a Brand Kit now take an optional description, explaining what each style is for. Like media and color descriptions, it is shared across every theme.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/15/chili-grafx-environment-api-descriptions-for-brand-kit-text-styles/)
+
+    ---
+
     **Sep 02, 2026**: GraFx Studio: Editor load fix for Chromium 152
 
     ![GraFx Studio icon for the Chromium 152 editor load fix release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -60,16 +70,6 @@
     On Monday 14 September we perform infrastructure updates that require a brief period of server downtime. Check the schedule for the region your GraFx environments run in.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
-
-    ---
-
-    **Aug 07, 2026**: CHILI GraFx: Previews no longer counted as renders
-
-    ![CHILI GraFx icon for the release note on previews and renders](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    Template previews in GraFx Experience are no longer counted as production renders, or reported as Image output — so your render figures reflect real production. Project previews still count unless you watermark them.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/07/chili-grafx-previews-no-longer-counted-as-renders/)
 
     ---
 
