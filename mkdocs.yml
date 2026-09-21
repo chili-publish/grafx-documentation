@@ -539,6 +539,7 @@ nav:
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
             - 'Keepeek Media':                  'GraFx-Studio/connectors/connector-keepeek-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
+            - 'URL Connector':                  'GraFx-Studio/connectors/connector-URL/index.md'
             - 'Mockingbird':                    'GraFx-Studio/connectors/connector-mockingbird/index.md'
         - 'Connectors: Data':
             - 'CSV':                            'GraFx-Studio/connectors/connector-csv-data/index.md'
