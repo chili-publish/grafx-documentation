@@ -13,13 +13,13 @@
 
     ---
 
-    **Sep 14, 2026**: GraFx Studio: Overprint and constraints
+    **Sep 21, 2026**: GraFx Studio: Overprint and constraints
 
     ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
     Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/14/grafx-studio-overprint-and-constraints/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/21/grafx-studio-overprint-and-constraints/)
 
     ---
 
