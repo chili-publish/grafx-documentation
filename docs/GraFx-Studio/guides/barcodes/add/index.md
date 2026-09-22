@@ -64,7 +64,12 @@ A barcode has no stroke, so there is no stroke toggle. Both options are off by d
 ![Overprint on fill and Overprint for background in the barcode frame properties panel](barcode-overprint.png){.screenshot}
 -->
 
-Printing a barcode over a colored panel is the classic case for overprint: without it, a slight plate shift leaves a white halo around the bars that can hurt scannability. Overprint applies to CMYK and spot colors only, and the toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
+Printing a barcode over a colored panel is the classic case for overprint: without it, a slight plate shift leaves a white halo around the bars that can hurt scannability.
+
+!!! warning "Only spot colors defined in CMYK"
+    Overprint takes effect only when the bars or background use a [spot color](/GraFx-Studio/guides/colors/#spot) whose secondary color is defined in CMYK. On process CMYK colors, RGB colors, and RGB-based spot colors the toggle can be switched on but changes nothing in the output.
+
+The toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
 
 ## Personalize QR Code
 

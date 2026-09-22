@@ -104,7 +104,10 @@ Both are off by default, and each toggle is only selectable when the matching fi
 ![Overprint on fill and Overprint on stroke in the shape frame properties panel](shape-frame-overprint.png){.screenshot}
 -->
 
-Overprint applies to CMYK and spot colors only, and the toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
+!!! warning "Only spot colors defined in CMYK"
+    Overprint takes effect only when the fill or stroke uses a [spot color](/GraFx-Studio/guides/colors/#spot) whose secondary color is defined in CMYK. On process CMYK colors, RGB colors, and RGB-based spot colors the toggle can be switched on but changes nothing in the output.
+
+The toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
 
 ## Maximum / minimum corner radius
 

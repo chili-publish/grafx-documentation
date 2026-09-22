@@ -12,18 +12,29 @@ Setting an element to overprint removes the knockout: the background ink prints 
 
 Typical cases where designers reach for overprint:
 
-- 100% black text placed on a colored background
+- Black text placed on a colored background
 - Fine strokes and rules that would break up if the plates shift
 - Barcodes printed over a colored panel, where a white halo hurts scannability
-- Varnish, foil, and other finishing layers defined as spot colors
+- Varnish, foil, and other finishing layers
 
 ## When overprint applies
+
+!!! warning "Overprint only works on spot colors defined in CMYK"
+    In GraFx Studio, overprint takes effect **only** when the fill or stroke uses a [spot color](/GraFx-Studio/guides/colors/#spot) whose secondary color is defined in **CMYK**.
+
+    It has no effect on:
+
+    - process CMYK colors
+    - RGB colors
+    - spot colors whose secondary color is defined in RGB
+
+    The toggle can still be switched on for those colors, but the exported PDF prints them as a normal knockout. Before you rely on overprint, check that the color is a spot color and that its secondary color is CMYK.
 
 Overprint is a press instruction, so it only means something in a print context:
 
 - **Print intent only.** The overprint controls appear in the frame properties panel when the layout uses the Print intent. They are hidden for digital intents. See [Layout intent](/GraFx-Studio/concepts/layout-intent/).
-- **CMYK and spot colors only.** Overprint describes how inks interact on paper. It has no effect on RGB colors. See [How to work with colors](/GraFx-Studio/guides/colors/).
-- **Fill and stroke are separate.** Each has its own toggle, so you can overprint a stroke while the fill stays a knockout, or the other way round. Switching a color from CMYK to RGB and back preserves the overprint setting.
+- **CMYK-based spot colors only.** See the warning above. Spot colors are defined in the Brand Kit panel — see [How to work with colors](/GraFx-Studio/guides/colors/#spot).
+- **Fill and stroke are separate.** Each has its own toggle, so you can overprint a stroke while the fill stays a knockout, or the other way round. Switching a color between CMYK and RGB and back preserves the overprint setting.
 
 ## Where you set it
 
