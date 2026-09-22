@@ -8,13 +8,17 @@
 
 ## Introduction
 
-The URL Connector is a built-in media connector for accessing public URLs for images.
+The URL Connector is a media connector for accessing public URLs for images.
 
 For example: `https://tcob.space/images/public-image.png`
 
-It is listed here because the URL Connector uses the same **Connector Architecture** as other connectors.
+## Installation
 
-There is no configuration on the connector page and it is turned on by default.
+The installation is done by enabling the URL Connector in your environment.
+
+[See installation through Connector Hub](/GraFx-Studio/guides/connector-hub/)
+
+Once installed, the connector appears in your connector list. There is no configuration on the connector page.
 
 ![GraFx Studio Connectors page showing URL connector listed as a Media type](sc01.png){.screenshot-full}
 
