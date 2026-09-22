@@ -202,6 +202,7 @@ plugins:
           - GraFx-Studio/concepts/component-mapping/index.md: "Mapping template variables to component variables when placing a component"
           - GraFx-Studio/concepts/grafx-genie/index.md: "GraFx Genie - AI assistant that writes Actions (JavaScript logic) so non-developers can build Smart Templates"
           - GraFx-Studio/concepts/genie-smart-crop/index.md: "Genie Smart Crop - AI-driven subject-aware cropping for image frames"
+          - GraFx-Studio/concepts/overprint/index.md: "Overprint - print one ink on top of another instead of knocking out the inks underneath, on text, shape and barcode frames in print intent"
           - GraFx-Studio/guides/text-frame/index.md: "Text frame properties, typography, auto-grow, copyfitting, and user constraints"
           - GraFx-Studio/guides/image-frame/index.md: "Image frame properties, fit modes, crop, and user constraints"
           - GraFx-Studio/guides/layouts/index.md: "Creating and managing layouts"
@@ -457,6 +458,7 @@ nav:
             - 'Manual Crop Override':           'GraFx-Studio/concepts/manual-crop-override/index.md'
             - 'Output settings':                'GraFx-Studio/concepts/output-settings/index.md'
             - 'Output Tasks':                   'GraFx-Studio/concepts/output-tasks/index.md'
+            - 'Overprint':                      'GraFx-Studio/concepts/overprint/index.md'
             - 'Pages':                          'GraFx-Studio/concepts/pages/index.md'
             - 'Private Data':                   'GraFx-Studio/concepts/private-data/index.md'
             - 'Shapes':                         'GraFx-Studio/concepts/shapes/index.md'
