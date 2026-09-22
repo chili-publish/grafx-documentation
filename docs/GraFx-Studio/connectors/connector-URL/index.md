@@ -1,8 +1,8 @@
 # URL Connector
 
-:fontawesome-regular-square-check: Built-in  
+:fontawesome-regular-square: Built-in  
 :fontawesome-regular-square: Built by CHILI publish  
-:fontawesome-regular-square: Third Party
+:fontawesome-regular-square-check: Third Party
 
 [See Connector types](/GraFx-Studio/concepts/connectors/#types-of-connectors)
 
