@@ -40,6 +40,8 @@ Overprint is a press instruction, so it only means something in a print context:
 
 Overprint is set per element, in the frame properties panel:
 
+![Overprint settings in the properties panel of a shape frame](overprint-settings.png){.screenshot-full}
+
 | Frame type | Available toggles | Guide |
 |---|---|---|
 | Text | Fill, Stroke | [Text frames](/GraFx-Studio/guides/text-frame/#overprint) |

@@ -176,9 +176,10 @@ A component frame supports the same **user constraints** as other frame types, c
 
 All options are disabled by default. Enabling resize or rotation also enables horizontal and vertical movement. See [Constraints](/GraFx-Studio/concepts/constraints/).
 
-<!-- TODO screenshot (REL-69): the User constraints section in the properties panel of a selected component frame. Save as component-frame-user-constraints.png next to this page and uncomment:
-![User constraints on a component frame](component-frame-user-constraints.png){.screenshot}
--->
+<video width="690" autoplay="true" loop="true" muted="true">
+  <source src="component-frame-user-constraints.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 These constraints govern the frame on the canvas. They are unrelated to the variable range checks described below.
 
