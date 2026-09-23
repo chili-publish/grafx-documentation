@@ -13,13 +13,13 @@
 
     ---
 
-    **Sep 15, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit text styles
+    **Sep 21, 2026**: GraFx Studio: Overprint and constraints
 
-    ![CHILI GraFx icon for the Brand Kit text style descriptions release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+    ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
-    Paragraph styles and character styles in a Brand Kit now take an optional description, explaining what each style is for. Like media and color descriptions, it is shared across every theme.
+    Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/15/chili-grafx-environment-api-descriptions-for-brand-kit-text-styles/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/21/grafx-studio-overprint-and-constraints/)
 
     ---
 
