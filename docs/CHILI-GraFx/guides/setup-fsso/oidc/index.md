@@ -20,7 +20,7 @@ Please configure your IDP to provide at least following claims in the **ID token
 | **Claim name**                        | **Description**                                           |
 | ------------------------------------- | --------------------------------------------------------- |
 | `sub`                                 | The user ID. Should be set to the email address           |
-| `email`                               | The email address of the user                             |
+| `email`                               | The email address of the user in lower case               |
 | `given_name`                          | The given name of the user                                |
 | `family_name`                         | The family name of the user                               |
 | `https://chili-publish.com/CGXGroups` | A list of UUIDs of the CHILI GraFx groups the user should be in |
@@ -39,7 +39,8 @@ Please inform us of the **domain** you’d like to use for testing FSSO.
 
 ## 4. Testing
 
-Once CHILI publish has enabled FSSO for the test domain, please verify that users with an email address in that domain are able to log on and get the expected permissions.
+Once CHILI publish has enabled FSSO for the test domain, please verify that users with an email address in that domain are invited to GraFx, able to log on and get the expected permissions.
+If no GraFx groups are passed in the response, the default user group will be applied.
 
 ## 5. Enable FSSO
 
