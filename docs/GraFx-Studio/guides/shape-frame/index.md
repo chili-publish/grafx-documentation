@@ -24,9 +24,10 @@ Shape frames support **user constraints** that control how end users can interac
 
 All constraint options are **disabled by default**. You explicitly enable only the interactions you want to allow.
 
-<!-- TODO screenshot (REL-69): the User constraints section in the properties panel of a selected shape frame. Save as shape-frame-user-constraints.png next to this page and uncomment:
-![User constraints for shape frames](shape-frame-user-constraints.png){.screenshot}
--->
+<video width="690" autoplay="true" loop="true" muted="true">
+  <source src="shape-frame-user-constraints.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Available Constraint Options
 
