@@ -2,33 +2,49 @@
 
 ## Sandbox
 
-A sandbox environment is like a test version of the CHILI GraFx platform or applications that allows you to experiment with new features without affecting the live production data. With each new release, the sandbox environments will have the latest version of the platform and/or applications, but with separate data.
+A sandbox environment is like a test version of the CHILI GraFx platform or applications, with its own separate data. It is a safe place to experiment with new features, explore connectors and extensions, and try out integrations without affecting the live production data.
 
-This means that any changes made in the sandbox will not affect the production data. The sandbox allows you to test new features to make sure they work properly before they are used in the live version.
+This means that any changes made in the sandbox will not affect the production data.
 
 Output generated in a sandbox environment has a watermark and is not counted as a [render](/CHILI-GraFx/concepts/renders/).
 
 ![Sandbox output of a "Citytrip to Paris" poster, with a diagonal SAMPLE watermark across it](sample.jpeg){.screenshot}
 
+### What you can use it for
+
+- **Explore connectors.** Set up and try [media and data connectors](/GraFx-Studio/concepts/connectors/), or build and debug your own, without affecting production.
+- **Try extensions and integrations.** Connect extensions such as the [CHILI GraFx extension](/GraFx-Experience/concepts/chili-grafx-extension/), or integrations that call the API, and see how they work end-to-end.
+- **Try new versions.** Check new features and your existing setup on a newer GraFx Studio version before you move production to it. See [Testing](#testing).
+
+### Templates
+
+Build and maintain templates in a production environment. Designers need a [Template Designer Seat](/CHILI-GraFx/concepts/subscriptions/#template-designer-seats) there.
+
+A sandbox is for trying things out, not for building or keeping your template library. Sandbox data stays in the sandbox. Templates saved there do not move to production.
+
+If you want to try things against a realistic copy of production, you can request a copy of your production environment into the sandbox through support.
+
 ## Production
 
-Production is the live version of CHILI GraFx that customers use to access and use the actual platform and applications. It is where all the real work happens, and any changes made in production are immediately reflected to the end-users. 
+Production is the live version of CHILI GraFx that customers use to access and use the actual platform and applications. It is where all the real work happens, including building and maintaining templates, and any changes made in production are immediately reflected to the end users.
 
 ## Why two versions?
 
-The reason for having a separate sandbox is to allow developers, testers, and customers to test new features without affecting the live production data. This is important because it ensures that any issues or bugs are identified and fixed before they affect the people who are using the live version.
+The reason for having a separate sandbox is to allow developers, testers, and customers to try things out, such as new features, connectors, extensions, and integrations, without affecting the live production data. This ensures that any issues are identified and fixed before they affect the people who are using the live version.
 
 ## UI and API
 
-Both the platform and application UI (the way the platform looks) and API (the way the platform works behind the scenes) are subject to the split between sandbox and production. Whenever there are new features added to the platform or applications, they are first deployed in the sandbox before being used in production.
+Both the platform and application UI (the way the platform looks) and API (the way the platform works behind the scenes) are subject to the split between sandbox and production.
 
 ## Testing
 
-We encourage you to setup a strategy to include testing the sandbox as part of your product or platform lifecycle. This will ensure a more stable result.
+We encourage you to set up a strategy to include testing the sandbox as part of your product or platform lifecycle. This will ensure a more stable result.
 
-## Sandbox on multi tenant vs private tenant
+Releases are available to all environments at the same time. If you pin the GraFx Studio version on production, you can move the sandbox to a newer version first, try it with your own setup, and update production when you are confident. See [Manage Environment Version](/CHILI-GraFx/guides/manage-environment-version/).
 
-Depending on your contract CHILI GraFx is hosted on a multi-tenant or private tenant setup.
+## Sandbox on multi-tenant vs private tenant
+
+Depending on your contract, CHILI GraFx is hosted on a multi-tenant or private tenant setup.
 
 The timeframe when a Sandbox is updated is equal for all customers on the same tenant.
 
