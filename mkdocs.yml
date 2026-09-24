@@ -55,6 +55,9 @@ plugins:
   - rss:
         use_git: false
         match_path: release-notes/releaseposts/.*
+        categories:
+          - categories
+          - tags
         image: assets/images/favicon.png
         feed_ttl: 1440
         abstract_delimiter: "<!-- more -->"
