@@ -22,8 +22,6 @@ Build and maintain templates in a production environment. Designers need a [Temp
 
 A sandbox is for trying things out, not for building or keeping your template library. Sandbox data stays in the sandbox. Templates saved there do not move to production.
 
-If you want to try things against a realistic copy of production, you can request a copy of your production environment into the sandbox through support.
-
 ## Production
 
 Production is the live version of CHILI GraFx that customers use to access and use the actual platform and applications. It is where all the real work happens, including building and maintaining templates, and any changes made in production are immediately reflected to the end users.
