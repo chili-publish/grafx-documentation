@@ -13,6 +13,16 @@
 
     ---
 
+    **Sep 28, 2026**: GraFx Studio: InDesign® and Photoshop® plugins 1.5.0
+
+    ![GraFx Studio icon for the InDesign and Photoshop plugins 1.5.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    The InDesign® plugin now exports text backgrounds and overprint settings. The Photoshop® plugin warns about documents that are not 72 PPI and lets you keep their size in px or mm.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/28/grafx-studio-indesign-and-photoshop-plugins-150/)
+
+    ---
+
     **Sep 21, 2026**: GraFx Studio: Overprint and constraints
 
     ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -20,6 +30,16 @@
     Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/21/grafx-studio-overprint-and-constraints/)
+
+    ---
+
+    **Sep 15, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit text styles
+
+    ![CHILI GraFx icon for the Brand Kit text style descriptions release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+
+    Paragraph styles and character styles in a Brand Kit now take an optional description, shared across every theme and returned in the resolved theme.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/15/chili-grafx-environment-api-descriptions-for-brand-kit-text-styles/)
 
     ---
 
@@ -35,7 +55,7 @@
 
     **Aug 31, 2026**: GraFx Studio: Figma plugin (experimental)
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    ![GraFx Studio icon for the Figma plugin release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
     An experimental GraFx Studio Exporter for Figma exports a selected frame — text, styles, colors, shapes, images, gradients, and effects — into an importable `.zip`, with preflight before export.
 
@@ -50,26 +70,6 @@
     The local debugger now surfaces TypeScript compile errors as a full-page overlay, keeps method inputs across the session, and no longer opens a browser unless you pass `--open`.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/27/connector-cli-v1140--debugger-reliability-and-ux/)
-
-    ---
-
-    **Aug 12, 2026**: Connector CLI v1.13.0 — multi-file connector compilation
-
-    ![GraFx Studio icon for the Connector CLI v1.13.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    Connector logic can now be split across local `.ts` modules: the CLI bundles relative imports into a single `out/connector.js` for publish, test, and debug. Watch mode covers every project file.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/12/connector-cli-v1130--multi-file-connector-compilation/)
-
-    ---
-
-    **Aug 11, 2026**: Upcoming Planned Downtime: 14 September 2026
-
-    ![CHILI GraFx icon for the planned downtime release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    On Monday 14 September we perform infrastructure updates that require a brief period of server downtime. Check the schedule for the region your GraFx environments run in.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/11/upcoming-planned-downtime-14-september-2026/)
 
     ---
 
