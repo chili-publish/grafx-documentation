@@ -97,6 +97,17 @@ If any incompatible elements are found, preflight offers three options:
     **Limitations**  
     - **Not editable** – Static elements cannot be edited within GraFx Studio
 
+### Document resolution
+
+GraFx Studio works at a fixed resolution of **72 PPI**. A Photoshop® document can use any resolution, so one size cannot always be kept in both pixels and millimeters after conversion.
+
+When the document resolution differs from 72 PPI, preflight shows a warning and asks which dimensions to preserve:
+
+- **Pixels (px)** — the artboard keeps its exact pixel size. A 2100 × 1500 px document stays 2100 × 1500 px in GraFx Studio.
+- **Millimeters (mm)** — the artboard keeps its physical size, and the pixel size is recalculated at 72 PPI. A 2100 × 1500 px document at 300 PPI becomes 504 × 360 px.
+
+Documents at 72 PPI convert without this warning.
+
 ## Drop Shadow support
 
 Drop shadows authored in Adobe® Photoshop® are supported and converted into GraFx Studio with defined constraints.
@@ -156,6 +167,7 @@ The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 |                        | Logging                                   | ✅                |                                                    |
 | **Document**           | Artboard size                            | ✅                | All artboards must be same size                    |
 |                        | Multiple artboards                       | ✅                | Exported as multiple pages in GraFx Studio         |
+|                        | Document resolution other than 72 PPI    | ✅                | Preflight warning; choose to preserve px or mm — see [Document resolution](#document-resolution) |
 |                        | Hidden layers                            | ❌                | Not exported                                       |
 | **Text Objects**       | Font (name and style)                     | ✅                |                                                    |
 |                        | Small Caps                               | ❌                | Converted to lowercase; preflight warning shown    |
