@@ -45,6 +45,11 @@ jobs:
           # GITHUB_TOKEN is not used by any later git command; don't persist
           # it in .git/config where it could leak to other tooling.
           persist-credentials: false
+          # actions/checkout v7 refuses to check out fork code in a
+          # workflow_run context unless explicitly allowed. This is safe here
+          # because the workflow only runs after a maintainer reviewed the PR
+          # and applied the 'Accept for Deploy' label.
+          allow-unsafe-pr-checkout: true
 
       - name: Setup Python
         uses: actions/setup-python@v7
