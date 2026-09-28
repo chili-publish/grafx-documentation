@@ -16,4 +16,10 @@ Your upload window will only allow supported file types. The other files will be
 
 ![macOS file picker greying out a .txt and an .mp4 while the PDF and PNG stay selectable](filetypes.png){.screenshot-full}
 
-![Windows file picker listing only the supported files, a PNG and a PDF, with unsupported ones hidden](filetypes-windows.png){.screenshot-full}
+![image](filetypes-windows.png)
+
+## PDF assets
+
+When you use a PDF as an asset in a Smart Template, its vector content is kept on PDF output. The PDF is not flattened.
+
+See [Embedded PDF assets](/GraFx-Studio/guides/output/pdf/#embedded-pdf-assets) for what is and is not carried over.
