@@ -26,7 +26,7 @@ In [run mode](/GraFx-Studio/concepts/design-run/) select the right layout.
 
 Click "Export as" and choose your output setting in the dropdown.
 
-![Output](html-03.png){.screenshot}
+![The Export panel in run mode with HTML output chosen under Output](html-03.png){.screenshot}
 
 When the export is ready, your browser will download the zip file into your downloads folder.
 

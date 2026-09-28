@@ -6,34 +6,34 @@
 
 ## Browse
 
-![appscreen](dashboard.png)
+![GraFx Media home in grid view, showing the top-level folders sorted by Name](dashboard.png){.screenshot-full}
 
 Initially, the top-level directory structure is shown. The default view is by grid.
 
 The slider next to the search bar allows switching between grid and list view.
 
-![appscreen](change-view.png)
+![The two-button grid and list view toggle, with the grid icon selected](change-view.png){.screenshotsmall}
 
-![appscreen](list-view.png)
+![The same top-level folders in list view, as rows under NAME and TYPE columns](list-view.png){.screenshot-full}
 
 A single click on a folder will bring you one level down, and show the folder contents.
 
-![appscreen](browse-2.png)
+![Inside the Display screen folder: a components subfolder followed by coloured PNG background assets](browse-2.png){.screenshot-full}
 
 ## Sort
 
 In front of the search bar, you can select the field and order how the assets will be sorted.
 
-![appscreen](sort.png)
+![The sort dropdown open on SORT BY with Name ticked, beside the ascending and descending arrows](sort.png){.screenshot}
 
 
 ## Details
 
 Click on the asset or "view details" under the three dots menu "...", to show the details and meta-data.
 
-![appscreen](view-details.png)
+![An asset thumbnail with its "..." menu open on a single View Details entry](view-details.png){.screenshotsmall}
 
-![appscreen](download.png)
+![Asset details for Chicken Burger Combo, with a red arrow pointing at the download icon top right](download.png){.screenshot-full}
 
 Available details:
 

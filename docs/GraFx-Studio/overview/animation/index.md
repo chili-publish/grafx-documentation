@@ -1,6 +1,6 @@
 # Item Animation
 
-![Properties](animation-properties.png)
+![The animation properties of a frame, with the Intro, Emphasis and Outro sections](animation-properties.png){.screenshot}
 
 For the 3 stages of animation, you can set animation properties.
 

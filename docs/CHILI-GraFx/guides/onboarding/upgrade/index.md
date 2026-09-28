@@ -38,12 +38,12 @@ You will be able to connect third party Identity Providers to CHILI GraFx
 
 Logging on to [CHILI GraFx](https://chiligrafx.com){target="_blank"} will bring you to this screen
 
-![screenshot-full](upgrade-1.png)
+![Upgrade wizard start screen in a browser window, with the Let's do this! button below the intro text](upgrade-1.png){.screenshot-full}
 
 
 ### Step 2: Provide your email
 
-![screenshot-full](upgrade-2.png)
+![Enter your email step with an empty Email field and Confirm your email, beside the user management slide](upgrade-2.png){.screenshot-full}
 
 Provide your email, you used to login to My CHILI publish before.
 
@@ -51,11 +51,11 @@ If you use enter email that is in use, you will get notified.
 
 If your email is known in the platform, CHILI GraFx will let you know.
 
-![screenshot-full](upgrade-3.png)
+![The same step with the Email field outlined in red and the error "Email is already used."](upgrade-3.png){.screenshot-full}
 
 
 ### Step 2: Confirm your email
 
-![screenshot-full](upgrade-4.png)
+![Success step "Awesome, it worked!" with a tick and a Resend email link below the address used](upgrade-4.png){.screenshot-full}
 
 A confirmation email awaits you, and will bring you to the activated CHILI GraFx dashboard.

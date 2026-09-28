@@ -186,6 +186,27 @@ To move a page, such as 'JavaScript' under 'Concepts' to under `Guide`, follow t
 2. Move the directory to the new location: `docs/GraFx-Studio/guide/javascript/`. Keep in mind that all sub-folders will be moved.
 3. Update `mkdocs.yml` to change your page on the documentation navigation, as well as any sub-pages that were also under the original `docs/GraFx-Studio/concepts/javascript/`.
 
+#### Example: Adding an Unlisted Landing Page
+
+Sometimes a page is meant to be shared as a direct link rather than browsed to — for example, an explanation written for one audience that would confuse everyone else. These live under `docs/landing/`.
+
+1. Create the directory and page: `docs/landing/my-topic/index.md`.
+2. Do **not** add it to `mkdocs.yml` — leaving it out of the navigation is what keeps it out of the menu.
+
+Everything under `docs/landing/` is handled automatically by `hooks.py`: the page is dropped from the site search index, marked `noindex` for search engines, and removed from `sitemap.xml`. No front matter is needed.
+
+To render the page full width, without the sidebar and table of contents, add:
+
+```yaml
+---
+hide:
+  - navigation
+  - toc
+---
+```
+
+Keep in mind that an unlisted page is not a private one. It stays publicly reachable by anyone who has, or guesses, the URL. If the page shouldn't be trivially guessable, append a random token to the folder name — for example `docs/landing/my-topic-f1b6e654/`.
+
 ### Adding Images or Files
 
 Images or files used on a page must be stored in the same folder as the page's `index.md`. Images must be under 1 MB and consist of original material or content freely available for commercial use without the need for attribution. Exceptions apply for content that depicts CHILI publish software.

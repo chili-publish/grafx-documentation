@@ -55,17 +55,35 @@ Recompiles when any project `.ts` file changes. If a save introduces a compile e
 
 ## Debug a connector
 
+!!! note "Requires Connector CLI 1.14.0 or later"
+
+    Browser compile-error overlay, optional browser launch (`--open`, similar to other local development tools), and `--host` were introduced in Connector CLI 1.14.0.
+
 The `debug` command starts a local debug server with a browser-based debugger, where you can invoke your connector's methods and inspect what they return — without publishing anything to an environment first.
 
 ```bash
 connector-cli debug -p 3300
 ```
 
-Open the reported URL in your browser, fill in the parameters for the method you want to test, and invoke it.
+The server prints the debug URL and does **not** open a browser by default. Open the reported URL yourself, or pass `--open` to launch it:
+
+```bash
+connector-cli debug --open
+```
+
+Bind to a specific host when you need remote access (for example from another device on the network):
+
+```bash
+connector-cli debug --host 0.0.0.0
+```
+
+Fill in the parameters for the method you want to test, and invoke it.
 
 ### Watch mode
 
-The debug application always runs in watch mode: the CLI recompiles whenever you save any project `.ts` file and reloads the browser tab, so your changes are immediately testable. There is no flag to turn this off. Compile errors are logged in the terminal; the previous successful build remains loaded until the next successful recompile.
+The debug application always runs in watch mode: the CLI recompiles whenever you save any project `.ts` file and reloads the browser tab, so your changes are immediately testable. There is no flag to turn this off.
+
+If a save introduces a compile error, the CLI logs the diagnostics in the terminal **and** shows them as a full-page overlay in the debugger. A successful recompile clears the overlay and reloads with the new build. Until the first successful compile, the connector script is not available in the browser.
 
 ### Execution metrics
 

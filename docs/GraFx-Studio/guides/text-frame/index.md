@@ -4,7 +4,7 @@
 
 Click the Text tool in the [sidebar](/GraFx-Studio/overview/sidebar/). Drag a frame on the document.
 
-![ui](creattextframe.gif)
+![Dragging a new text frame onto a document that already holds a photo, with the Text tool picked in the sidebar](creattextframe.gif){.screenshot-full}
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/QLiOtG2CULo?si=v3bbEqajZyIEr8_0&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -124,12 +124,12 @@ Choose a predefined [paragraph style](/GraFx-Studio/guides/paragraphstyles/) or 
 
 If you prefer not to use predefined styles (recommended for consistency), you can manually set typographic properties for the selected text.
 
-![screenshot](typography.png)
+![The TEXT panel with Arial Regular 12 set, and the nine typographic controls numbered from font family to underline](typography.png){.screenshot}
 
 1. Select a font family, weight, and size.
 2. Adjust vertical spacing between characters.
 3. Adjust horizontal spacing between characters.
-4. Align text: left, center, right, or justified.
+4. Align text: left, center, right, or justified. Justified alignment stretches the wrapped lines only — the last line of a paragraph keeps its natural alignment.
 5. Align text vertically to the top (default), center, or bottom of the frame.
 6. Shift the baseline of the selected text.
 7. Override capitalization by choosing "lowercase" or "uppercase."
@@ -169,17 +169,17 @@ For creative automation, text frames often need to handle datasets with varying 
 - Copyfitting
 - Auto-grow
 
-![screenshot](autoresize.png)
+![The AUTO RESIZE section with both the Copyfitting and Auto-grow toggles switched off](autoresize.png){.screenshot}
 
 #### Text Overflow
 
 With no resizing option selected, text that exceeds the frame will trigger a yellow Text overflow indicator below the frame.
 
-![screenshot](overflow.png)
+![The bottom edge of a selected frame on the canvas, with a yellow warning badge beside a refresh button](overflow.png){.screenshot}
 
 See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how Batch output should handle text overflow.
 
-![screenshot](errorhandling.png)
+![Error handling settings with Fail output set to On errors and Continue batch output after failure switched off](errorhandling.png){.screenshot}
 
 #### Copyfitting
 
@@ -189,9 +189,13 @@ See also [Output Settings](/GraFx-Studio/guides/output/settings/) to define how 
 
 Select the text frame and enable "Copyfitting" to adjust font size to fit the frame by allowing slight reduction or growth.
 
-![screenshot](copyfit.png)
+<!-- TODO screenshot (REL-69): retake — the Maximum now prefills at 10000%, this image still shows 1000% -->
+![Copyfitting switched on with Minimum 10% and Maximum 1000%, and a tooltip reading Copyfitting is applied on the greyed-out Auto-grow toggle](copyfit.png){.screenshot}
 
-Set the minimum and maximum percentages for font size adjustments.
+Set the minimum and maximum percentages for font size adjustments. The allowed range is 1% to 10000%. On a newly created template, enabling copyfitting prefills a **Minimum of 10%** and a **Maximum of 10000%**, so large layout formats have room to grow without retyping the value.
+
+!!! note "Templates created before this release"
+    Existing templates keep the values they were saved with. Opening or selecting a frame does not change them. Switching copyfitting off and on again applies the new default.
 
 > Note: Copyfitting and Auto-grow can now be enabled together on the same frame. The frame grows to fit longer text, while copyfitting keeps the text within the frame's size limits.
 
@@ -208,11 +212,11 @@ Enable "Auto-grow" to allow the frame to expand as needed to fit content of vary
 
 Choose one or two growth directions (e.g., left, right, up, down). 
 
-![screenshot](autogrow-left.png)
+![Auto-grow switched on with a single horizontal arrow selected in the Direction picker](autogrow-left.png){.screenshot}
 
 When selecting "Left" or "Right," you can also add the opposite direction for bidirectional growth.
 
-![screenshot](autogrow-left-right.png)
+![Auto-grow with both the left and right arrows selected in the Direction picker for bidirectional growth](autogrow-left-right.png){.screenshot}
 
 When "Up" is selected, you can also add "Down."
 
@@ -222,7 +226,7 @@ Define the minimum and maximum frame size if needed.
 
 > Note: When the maximum height is reached, the text will overflow.
 
-![screenshot](autogrow-min-max.png)
+![Auto-grow with the up and down arrows selected, Min height 20 px and Max height 150 px](autogrow-min-max.png){.screenshot}
 
 !!! info "Rotation"
     Auto-grow does not work for rotated frames. If auto-grow is enabled, anchoring for that direction is automatically set to a compatible mode.
@@ -253,3 +257,21 @@ This allows text to stand out against complex backgrounds or follow brand guidel
 <iframe width="690" height="388" src="https://www.youtube.com/embed/psgJRxl1-2o?si=i810EETsSSalgcfM&controls=1&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
+
+### Overprint
+
+On a layout with a **Print** intent, the properties panel offers two overprint toggles:
+
+- **Overprint on fill** — the glyphs print on top of the inks underneath instead of knocking them out.
+- **Overprint on stroke** — the same, for the text stroke.
+
+Overprint on text is applied to the **selected text**, not to the whole frame, so enter text edit mode and select the characters you want to set. Both toggles are off by default, and each one is only selectable when the matching fill or stroke color is active.
+
+<!-- TODO screenshot (REL-69): the Overprint section in the text frame properties panel, with text selected in text edit mode. Save as text-frame-overprint.png next to this page and uncomment:
+![Overprint on fill and Overprint on stroke in the text frame properties panel](text-frame-overprint.png){.screenshot}
+-->
+
+!!! warning "Only spot colors defined in CMYK"
+    Overprint takes effect only when the text fill or stroke uses a [spot color](/GraFx-Studio/guides/colors/#spot) whose secondary color is defined in CMYK. On process CMYK colors, RGB colors, and RGB-based spot colors the toggle can be switched on but changes nothing in the output.
+
+The toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).

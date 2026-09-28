@@ -3,7 +3,7 @@
 
 !!! info "Mockingbird"
 
-	![Mockingbird](Mockingbird.svg){.connector_icon}
+	![The Mockingbird connector logo, a dark blue bird whose wings form an M](Mockingbird.svg){.connector_icon}
 
 	A connector that sings back any media you ask for, but never leaves the cage. Unless you open it.
 

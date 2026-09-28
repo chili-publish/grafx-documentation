@@ -109,9 +109,9 @@ Supported variable types in components:
 !!! note "Image variables require a different setup"
     Image variables can be created in a component and used to drive image frames. Because each image variable is tied to a specific connector, they cannot be directly mapped from a template image variable. See [Passing an image into a component](#passing-an-image-into-a-component) for the setup.
 
-![Variables panel in the component workspace](component-variables.png){.screenshot-full}
+![The component's Price variable set to Number, with Number formatting open beside the price tag on canvas](component-variables.png){.screenshot-full}
 
-![Variables panel in the component workspace](component-variable-types.png){.screenshot}
+![The Variable type list in a component: Single-line text, Multi-line text, Image, Boolean, Number and Date](component-variable-types.png){.screenshot}
 
 Variables defined in a component are the values that template designers can connect to template variables through [variable mapping](/GraFx-Studio/guides/use-components/#variable-mapping). Keep your variable names clear and descriptive — they appear by name in the mapping modal.
 

@@ -20,9 +20,9 @@ Variables set to be hidden, won't show in the end-user experience.
 
 **Design Mode** is optimized for layout and style tasks, with actions inactive.
 
-![screenshot](dr1.png)
+![The Design and Run switch set to Design, with the frame creation tools in the left toolbar](dr1.png){.screenshot}
 
-![screenshot-full](dr1_1.png)
+![Design Mode with the Color picker open on a saved CMYK colour and Variable settings on the right](dr1_1.png){.screenshot-full}
 
 ### Key Features in Design Mode:
 - **Static Layout**: Actions are inactive, letting you set up without interference  
@@ -39,9 +39,9 @@ You can create text, image, barcode, and shape frames
 
 In **Run Mode**, the template operates as it would for end users, activating logic and interactions for realistic testing.
 
-![screenshot](dr2.png)
+![The same switch set to Run, with the Customize panel showing a single Headline field](dr2.png){.screenshot}
 
-![screenshot-full](dr2-1.png)
+![Run Mode with only the Customize panel beside the canvas and a Download button in the toolbar](dr2-1.png){.screenshot-full}
 
 ### Key Features in Run Mode:
 - **Live Actions**: Business logic is triggered in response to changes, reflecting end-user interactions.
@@ -56,9 +56,9 @@ For example, when viewing a layout with a **Print Intent**, only print-specific 
 
 Conversely, when viewing a layout with a **Digital Animated Intent**, only the digital animated output settings will appear. This selective display provides a clear, intent-specific experience that mirrors the end-user environment.
 
-![screenshot](dr3.png)
+![The user interface picker open in Run Mode, listing Print Only, Digital Only and the default interface](dr3.png){.screenshot}
 
-![screenshot](dr4.png)
+![The Download dialog offering a single PDF output setting for the selected interface](dr4.png){.screenshot}
 
 ### Elements Active in Run Mode:
 - **Actions**: All interactions and business logic execute in real time.

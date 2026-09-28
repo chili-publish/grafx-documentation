@@ -4,13 +4,13 @@ A frame is a construct to place elements on a page.
 
 A frame is a rectangular shape that can hold contents and can have properties of itself.
 
-![screenshot-fullwidth](frame-1.png)
+![An empty frame selected on the canvas, with its X, Y, Width, Height and Rotation values alongside](frame-1.png){.screenshot}
 
 ## Basic Properties
 
 Position is defined by the **top left** corner of the rectangle, relative to the **top left** corner of the document.
 
-![screenshot-fullwidth](frame-2.png)
+![A 150 by 60 px frame placed at X 10 px, Y 10 px from the top left corner of the document](frame-2.png){.screenshot-full}
 
 The width and height define the size of the frame.
 
@@ -30,13 +30,13 @@ You can set the [Blend mode](/GraFx-Studio/concepts/blendmodes/), Opacity and Dr
 
 When set to 100% the frame is opaque or not transparent. When set to 50%, the frame will be 50% transparent.
 
-![Frame Appearance](frame01.png){.screenshot}
+![The Appearance panel with Blend mode Normal, Opacity 50% and Drop shadow unchecked](frame01.png){.screenshot}
 
 ### Drop shadow
 
 When Drop shadow is selected, you'll see more options, related to [Drop shadow](/GraFx-Studio/concepts/drop-shadow/).
 
-![Frame Appearance](frame02.png){.screenshot}
+![Drop shadow ticked in the Appearance panel, revealing Angle, Distance and Blur controls](frame02.png){.screenshot}
 
 ## Image Frame
 
@@ -44,13 +44,13 @@ An image frame is made to hold static images.
 
 An image frame looks like a rectangular box when selected and has a cross when no media is available for the frame.
 
-![screenshot-fullwidth](frame-types-2.png)
+![Three frames: one holding the chill water logo, an empty one marked with a cross, and a text frame](frame-types-2.png){.screenshot}
 
 When media is selected / active for the frame, it will show the media.
 
 Look [here](/GraFx-Studio/concepts/crop/) to see how to work with cropping.
 
-![screenshot-fullwidth](../crop/rectcrop.png)
+![A selected image frame showing its active media, a photo of a smartwatch on a wrist](../crop/rectcrop.png){.screenshot}
 
 ### Clipping mask
 
@@ -60,7 +60,7 @@ See [Clipping mask](/GraFx-Studio/guides/image-frame/#clipping-mask) on the imag
 
 ### Fit- or Fill mode
 
-![screenshot-fullwidth](fit-fill.png)
+![The Image dropdown open on Fit and Fill, with the photo fitted and empty space above and below](fit-fill.png){.screenshot}
 
 By default, a placed asset is "fitted" in the frame. This means the maximum size of the  picture is shown, maintaining the aspect ratio.
 
@@ -71,7 +71,7 @@ This means that parts of the frame will remain empty.
 
 With "Fill" mode, the image is scaled up, so the full frame is used. This (possibly) results in parts of the image hidden outside of the frame.
 
-![screenshot-fullwidth](fillmode.png)
+![Fill chosen in the Image dropdown, so the photo covers the whole frame and is cropped at the edges](fillmode.png){.screenshot-full}
 
 ## Manual crop override
 
@@ -85,7 +85,7 @@ This is particularly useful for lifestyle images where automated cropping (Fill,
 
 ## Shape Frame
 
-![screenshot-sullwidth](frame-shape.png)
+![A grey Rectangle shape frame selected, with Corner radius, Fill and Stroke in its properties](frame-shape.png){.screenshot-full}
 
 A shape frame draws the selected shape. (Rectangle, Ellipse, Polygon).
 
@@ -93,7 +93,7 @@ The shape can be used as a (dynamic) background for e.g. a button. Since a shape
 
 ## Text Frame
 
-![screenshot](frame-types.png)
+![A rectangular text frame holding the words Text Frame, beside an empty image frame](frame-types.png){.screenshot}
 
 A text frame is made to hold text.
 
@@ -101,7 +101,7 @@ A text frame looks like a rectangular box when selected.
 
 ## Select a Frame
 
-![ui](frame-rotate.gif)
+![Selecting a photo frame and a "Hello owl!" text frame together, then rotating them as one](frame-rotate.gif){.screenshot-full}
 
 Use the "Select" tool, to select 1 or more frames. You can select multiple frames by holding the Shift key.
 
@@ -111,7 +111,7 @@ When multiple frames are selected, you can move and rotate them together.
 
 Z-depth or Z-index refers to the Z-coordinate in the Cartesian coordinate system. 
 
-![screenshot](https://upload.wikimedia.org/wikipedia/commons/6/69/Coord_system_CA_0.svg)
+![Diagram of a three-dimensional Cartesian coordinate system, with the X, Y and Z axes labelled](https://upload.wikimedia.org/wikipedia/commons/6/69/Coord_system_CA_0.svg){.screenshot}
 
 !!! Alert
 	There is no actual height difference, but the Z-axis is used to refer to the relative position of the other frames.

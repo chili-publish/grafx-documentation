@@ -21,6 +21,10 @@ export default class MyConnector implements Data.DataConnector, Data.DataSourceV
 - Completed [Data Connector Fundamentals](/GraFx-Developers/connectors/data-connector/data-connector-fundamentals/)
 - Basic understanding of modern JavaScript and asynchronous programming (Promises)
 
+!!! tip "How this looks to a template designer"
+
+    For the Studio-side view — creating a data source variable, mapping columns to template variables, and how record selection behaves in Run mode and Studio UI — see [Data source variables](/GraFx-Studio/guides/template-variables/data-source/).
+
 ### getCapabilities Method
 
 ```typescript

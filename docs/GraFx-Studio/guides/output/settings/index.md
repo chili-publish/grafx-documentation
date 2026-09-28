@@ -12,24 +12,24 @@ In GraFx Studio, go to **Manage > Output settings** to view and configure output
 
 By default, each output format has one preconfigured setting.
 
-![screenshot-full](os00.png)
+![Output settings list with one preconfigured setting per format, and the + Create button](os00.png){.screenshot-full}
 
 To add a new setting, click the **+ Create** button.  
 Give your setting a relevant name and choose an output file format.
 
-![screenshot](os03.png)
+![Create output setting dialog named Print Quality PDF, with the Output format list open on JPG, PNG, MP4, GIF and PDF](os03.png){.screenshot}
 
 The new setting will appear in the list.
 
-![screenshot-full](os04.png)
+![The list with the new Print Quality PDF setting added below the default MP4, PDF and PNG rows](os04.png){.screenshot-full}
 
 To delete a setting, use the **...** menu at the right end of the row.
 
-![screenshot](os06.png)
+![The row menu open, offering Edit output settings and Delete](os06.png){.screenshot}
 
 If all settings are deleted, a placeholder will indicate no output settings exist.
 
-![screenshot-full](os01.png)
+![The empty state reading No output settings created, with a single Create button](os01.png){.screenshot-full}
 
 ---
 
@@ -37,14 +37,14 @@ Output settings vary depending on the file format.
 
 ## Generic Settings (all formats)
 
-![screenshot-full](os14.png)
+![Name, Description and Output format numbered 1 to 3, with the Download preview numbered 4](os14.png){.screenshot-full}
 
 ### Name and description
 
 - **Name** (1) appears in the [Studio UI](/GraFx-Studio/guides/create-projects/#customize-your-project)
 - **Description** (2) appears as a subtitle in the export UI
 
-![screenshot-full](os15.png)
+![A description typed as PDF settings for high quality print, repeated as the subtitle in the Download preview](os15.png){.screenshot-full}
 
 ### Output format
 
@@ -62,7 +62,7 @@ Output settings vary depending on the file format.
 
 See [Generic Settings](#generic-settings-all-formats)
 
-![screenshot-full](os12.png)
+![The whole PDF panel: Bar width reduction, Outline text, Data source, Crop marks, Error handling and Watermark](os12.png){.screenshot-full}
 
 ### Bar Width Reduction
 
@@ -74,27 +74,27 @@ Use positive values to make bars thinner, negative to make them wider.
 Outputs text as vector shapes instead of embedding fonts.  
 This removes font dependencies in the resulting PDF.
 
-![screenshot](os17.png)
+![The Outline text switch, shown off, above the note that it removes font dependencies](os17.png){.screenshot}
 
 ### Data Source
 
 When enabled, includes all records from the data source in the output.
 
-![screenshot](output.png)
+![Data source section of the PDF settings, with Use data source switched on](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![Error handling section of the PDF settings, with Continue batch output after failure switched on](errorhandling.png){.screenshot}
 
 ### Crop Marks
 
 See [Crop Marks](/GraFx-Studio/concepts/crop-marks/).  
 Define offset and weight (thickness).
 
-![screenshot](os16.png)
+![Crop marks switched on, with Offset set to 3 Millimeters and Weight to 0.25 Points](os16.png){.screenshot}
 
 ### PDF Output Conversion
 
@@ -163,26 +163,26 @@ For a deeper explanation of color management concepts, see:
 
 See [Generic Settings](#generic-settings-all-formats)
 
-![screenshot-full](os-18.png)
+![HTML output settings, the format tagged Experimental, with no scaling or quality controls](os-18.png){.screenshot-full}
 
 ### Data Source
 
 When enabled, includes all records from the data source in the output.
 
-![screenshot](output.png)
+![Data source section of the HTML settings, with Use data source switched on](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![Error handling section of the HTML settings, with Continue batch output after failure switched on](errorhandling.png){.screenshot}
 
 ---
 
 ## JPG Output Settings
 
-![screenshot-full](os13.png)
+![JPG output settings, with Scaling on 1x and Quality on 90%](os13.png){.screenshot-full}
 
 ### Scaling
 
@@ -198,20 +198,20 @@ Higher values mean larger file size but better image fidelity.
 
 Exports all data source records as individual JPG files in a ZIP.
 
-![screenshot](output.png)
+![Data source section of the JPG settings, with Use data source switched on](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![Error handling section of the JPG settings, with Continue batch output after failure switched on](errorhandling.png){.screenshot}
 
 ---
 
 ## PNG Output Settings
 
-![screenshot-full](os09.png)
+![PNG output settings, with a Scaling dropdown on 1x and no quality slider](os09.png){.screenshot-full}
 
 ### Scaling
 
@@ -221,20 +221,20 @@ Same behavior as in JPG output.
 
 Exports all records as individual PNG files in a ZIP.
 
-![screenshot](output.png)
+![Data source section of the PNG settings, with Use data source switched on](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![Error handling section of the PNG settings, with Continue batch output after failure switched on](errorhandling.png){.screenshot}
 
 ---
 
 ## GIF Output Settings
 
-![screenshot-full](os11.png)
+![GIF output settings, with Scaling on 1x and Frame rate on 5 fps](os11.png){.screenshot-full}
 
 ### Scaling
 
@@ -248,20 +248,20 @@ Set the number of animation frames per second.
 
 Exports all records as individual GIFs in a ZIP.
 
-![screenshot](output.png)
+![Data source section of the GIF settings, with Use data source switched on](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![Error handling section of the GIF settings, with Continue batch output after failure switched on](errorhandling.png){.screenshot}
 
 ---
 
 ## MP4 Output Settings
 
-![screenshot-full](os10.png)
+![MP4 output settings, with Scaling on 1x and Frame rate on 30 fps](os10.png){.screenshot-full}
 
 ### Scaling
 
@@ -275,11 +275,11 @@ Set the number of animation frames per second.
 
 Exports all records as MP4s in a ZIP.
 
-![screenshot](output.png)
+![Data source section of the MP4 settings, with Use data source switched on](output.png){.screenshot}
 
 ### Error Handling
 
 Enable **Continue batch output after failure** to skip failed rows.  
 A report is available in [Output Tasks](../tasks/).
 
-![screenshot](errorhandling.png)
+![Error handling section of the MP4 settings, with Continue batch output after failure switched on](errorhandling.png){.screenshot}

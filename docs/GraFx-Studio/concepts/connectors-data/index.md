@@ -12,13 +12,22 @@ In the **Data Source** panel (under **Resources**) on the left in GraFx Studio, 
 
 Multiple connectors can be deployed. One setup might require a different authentication method. This can be done by deploying multiple instances of the Google Sheets connector, each with different parameters.
 
-![screenshot-full](data01.png)
+![The Resources panel, with Data source highlighted among the resource categories](data01.png){.screenshot-full}
 
-![screenshot-full](data02.png)
+![The Data source panel with the Google Sheets connector selected and a spreadsheet URL set](data02.png){.screenshot-full}
 
 The data of that data source is now available, and will populate the variable values in the document.[^1]
 
 [^1]: See Data Connector specifics on how to setup
+
+## Two ways to use a data connector
+
+A data connector can feed a template in two different ways:
+
+- **Output data source** — GraFx Studio iterates forward through every row to produce a batch of outputs. This is the variable-data-printing workflow described above.
+- **Data source variable** — a variable that holds a table of records with one row selected. It does **not** drive output; the selected row is read by components inside a single document. Data can also be pushed in by an integration instead of pulled through a connector. See [Data source variables](/GraFx-Studio/guides/template-variables/data-source/).
+
+The same connector can serve both, but the data source variable use case is an **opt-in extension** that the connector must explicitly implement.
 
 ## Handling Data Exceptions
 

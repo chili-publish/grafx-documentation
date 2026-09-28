@@ -1,4 +1,4 @@
-# ![](/assets/icon-GraFx-Media.svg){.applogo-inline} GraFx Media
+# ![GraFx Media app icon](/assets/icon-GraFx-Media.svg){.applogo-inline} GraFx Media
 
 GraFx Media is the central repository to store your assets to be used in your Smart Templates.
 

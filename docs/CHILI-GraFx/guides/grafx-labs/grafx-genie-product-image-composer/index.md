@@ -1,7 +1,7 @@
 # GraFx Genie Product Image Composer
 
 !!! example "Experimental feature"
-    ![Product Image Composer – scene setup](/release-notes/releasenotesassets/grafx-labs02.png)  
+    ![Product Image Composer – scene setup](/release-notes/releasenotesassets/grafx-labs02.png){.screenshot}  
     This capability is part of GraFx Labs and is experimental.  
     It can change or be removed at any time.  
     We look forward to your validation and feedback.
@@ -48,7 +48,7 @@ This enables flexible product sourcing within a controlled composition environme
 
 Example: Choose a bag of "Chill Chips" to place it on the bar. Position the asset where you want it to be.
 
-![Chips on the bar](bar-chips.png){.screenshot-full}
+![Step 3: Product Shots, with the chips bag selected and its handles shown on the bar background](bar-chips.png){.screenshot-full}
 
 ## Step 4: Special Effects
 
@@ -61,7 +61,7 @@ Enhance the scene with effects such as:
 
 Example: Rendered image
 
-![Chips on the bar](rendered.jpg){.screenshot-full}
+![The finished render: the chips bag on a wooden bar counter with bokeh lights behind it](rendered.jpg){.screenshot-full}
 
 ## When to use it
 

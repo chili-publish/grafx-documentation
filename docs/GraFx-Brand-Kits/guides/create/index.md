@@ -7,14 +7,14 @@
 1. Navigate to **GraFx Brand Kits** in the platform sidebar.  
 2. Click **+ Create Brand Kit**.  
 
-![screenshot-full](create01.png)
+![The Brand Kits toolbar with sort and search fields, and "+ Create Brand Kit" at the top right](create01.png){.screenshot-full}
 
 3. Enter a **Name**.
 
-![screenshot-full](create02.png)
+![The "Create Brand Kit" dialog with "CHILI publish - Corporate" typed into the required name field](create02.png){.screenshot-full}
 
 4. Click **+ Create Brand Kit**.  
 
 You’ll be taken to the new Brand Kit’s detail page, where you can begin adding elements.
 
-![screenshot-full](create03.png)
+![The new Brand Kit's detail page, with empty Colors, Fonts and Media sections showing only "+" tiles](create03.png){.screenshot-full}

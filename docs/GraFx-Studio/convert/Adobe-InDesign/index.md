@@ -64,7 +64,7 @@ All assets are linked correctly
 Example of a potential issue: Frame stroke type not supported  
 You can choose to ignore, or export the object to a PDF asset and place it as an asset
 
-![GraFx Studio Exporter preflight detail showing an Unsupported stroke type warning for a text frame, with Convert to PDF and Ignore options](convert19.png){.screenshot-full}
+![The Adobe InDesign Stroke panel set to a Triple stroke type, beside the preflight warning it raises](convert19.png){.screenshot-full}
 
    - Choose a destination folder and click **Export**  
      Required only once, can be changed at any moment  
@@ -130,7 +130,7 @@ If any incompatible elements are found, preflight offers three options:
 2. **Ignore** – The preflight engine changes the missing feature to a supported version (e.g., stroke type in the example)  
 3. **Fix the issue** – You can adjust the feature in Adobe® InDesign® and re-run the preflight
 
-![GraFx Studio Exporter preflight detail showing an Unsupported stroke type warning for a text frame, with Convert to PDF and Ignore options](convert19.png){.screenshot-full}
+![Preflight result for Layer 1: TextFrame, with Ignore chosen instead of Convert to PDF, above Run again and Continue](convert19.png){.screenshot-full}
 
 !!! info "Placed assets: pros and cons"
 
@@ -189,6 +189,27 @@ A clipping mask is a shape that crops an image frame so only the part inside the
 
 Unsupported clipping setups are flagged by preflight before export.
 
+## Text background support
+
+Adobe® InDesign® has no native text background, so designers often simulate one: a thick underline with a negative offset, which moves the underline up behind the glyphs so it covers them like a highlight.
+
+The exporter recognizes this technique and converts it into a GraFx Studio [text background](/GraFx-Studio/guides/characterstyles/#background-color):
+
+- Any underline with a **negative offset** and a **positive weight** is exported as a text background
+- The technique is recognized whether it is set in a paragraph style, a character style, or directly on the text
+
+Underlines without a negative offset are exported as regular underlines.
+
+## Overprint support
+
+[Overprint](/GraFx-Studio/concepts/overprint/) tells the press to print an element on top of the inks underneath, instead of knocking them out. The exporter carries over the **Overprint Fill** and **Overprint Stroke** settings from the Adobe® InDesign® Attributes panel:
+
+- **Text frames** — overprint on fill and stroke
+- **Shape frames** — overprint on fill and stroke
+
+!!! warning "Overprint only takes effect on CMYK-based spot colors"
+    In GraFx Studio, overprint only applies in a layout with the Print intent, and only when the fill or stroke uses a spot color whose secondary color is defined in CMYK. The setting is still exported for other colors, but the PDF output prints them as a normal knockout. See [When overprint applies](/GraFx-Studio/concepts/overprint/#when-overprint-applies).
+
 ## Compatibility
 
 The plugin has been tested and is compatible with Adobe InDesign 2025, 2026.
@@ -225,6 +246,7 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Tracking                                 | ✅                |                                                    |
 |                        | Baseline shift                           | ✅                |                                                    |
 |                        | Underline                                | ✅                |                                                    |
+|                        | Text background                          | ✅                | Underline with negative offset and positive weight — see [Text background](#text-background-support) |
 |                        | Strikethrough                            | ✅                |                                                    |
 |                        | Superscript                              | ✅                |                                                    |
 |                        | Subscript                                | ✅                |                                                    |
@@ -257,6 +279,7 @@ Some unsupported features are listed for clarity where it matters most.
 |                        | Stroke weight                            | ✅                |                                                    |
 |                        | Stroke color                             | ✅                | Predefined & custom                                |
 |                        | Fill color                               | ✅                | Predefined & custom                                |
+|                        | Overprint fill / stroke                  | ✅                | Text and shape frames — see [Overprint](#overprint-support) |
 |                        | Corner radius                            | ✅                | Rectangle only                                     |
 |                        | Triangle corner radius                   | ❌                |                                                    |
 | **Colors**             | CMYK, RGB swatches                       | ✅                |                                                    |

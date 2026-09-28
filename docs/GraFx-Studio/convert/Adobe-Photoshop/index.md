@@ -33,19 +33,19 @@ Get the latest plugin from the [GraFx Studio plugin downloads](/GraFx-Studio/con
 ### Export to GraFx Studio
 
    - Go to **Plugins > CHILI GraFx plugins > GraFx Studio Exporter**  
-   ![screenshot](psd01.png)
+   ![The Adobe Photoshop Plugins menu open, with CHILI GraFx plugins expanded to show GraFx Studio Exporter](psd01.png){.screenshot}
 
    - Run preflight to avoid conversion issues  
-   ![screenshot](psd03.png)
+   ![The empty GraFx Studio Exporter panel in Photoshop, prompting Run preflight to identify issues before exporting](psd03.png){.screenshot}
 
 Example of a potential issue: Optical Kerning is not supported  
 You can choose to ignore, and the kerning will default to Metric in GraFx Studio, or export the object to a PDF asset and place it as an asset
 
-![screenshot](psd04.png)  
+![A preflight result in the exporter panel reporting one kerning issue, with Convert to PDF and Ignore options](psd04.png){.screenshot}  
 
    - Choose a destination folder and click **Export**  
      Required only once, can be changed at any moment  
-     ![screenshot](psd05.png)
+     ![The exporter panel's export step, with a Folder path, Choose folder button, the All artboards dropdown and Export](psd05.png){.screenshot}
 
    - Choose the artboard(s) to be exported  
    - Choose **All artboards** to export all the artboards
@@ -56,11 +56,11 @@ You can choose to ignore, and the kerning will default to Metric in GraFx Studio
     Users can skip differently sized artboards or convert them to match the first artboard
 
    - The plugin creates a `.zip` file containing the document and all necessary assets  
-   ![screenshot-full](psd06.png)
+   ![The chosen destination folder holding the single exported ZIP archive of 4.3 MB](psd06.png){.screenshot-full}
    
 !!! info "What's in the zip file?"
 
-    ![screenshot](psd07.png)  
+    ![The unpacked ZIP contents: an assets folder of PDFs, document.json and GraFx_Studio_Exporter.log](psd07.png){.screenshot}  
     - A log file with info about the plugin version, the Adobe app version, current date, and plugin warnings or errors caught during the document preflight or export  
     - The log file is named `GraFx_Studio_Exporter.log`  
     - The zip file name format: `<selected_artboard>_<document_name>(<optional_duplicate_copy_version>).zip`
@@ -71,7 +71,7 @@ You can choose to ignore, and the kerning will default to Metric in GraFx Studio
    - Go to **Templates > Import .ZIP** and select the exported `.zip` file  
    - Name the template and locate the folder for the assets  
    - Your Photoshop® document is now ready for automation in GraFx Studio  
-   ![screenshot-full](psd13.png)
+   ![The imported document open in GraFx Studio, its headline text frame selected over a shelving photo with the Resources panel at the left](psd13.png){.screenshot-full}
 
 ## Preflight
 
@@ -96,6 +96,17 @@ If any incompatible elements are found, preflight offers three options:
     
     **Limitations**  
     - **Not editable** – Static elements cannot be edited within GraFx Studio
+
+### Document resolution
+
+GraFx Studio works at a fixed resolution of **72 PPI**. A Photoshop® document can use any resolution, so one size cannot always be kept in both pixels and millimeters after conversion.
+
+When the document resolution differs from 72 PPI, preflight shows a warning and asks which dimensions to preserve:
+
+- **Pixels (px)** — the artboard keeps its exact pixel size. A 2100 × 1500 px document stays 2100 × 1500 px in GraFx Studio.
+- **Millimeters (mm)** — the artboard keeps its physical size, and the pixel size is recalculated at 72 PPI. A 2100 × 1500 px document at 300 PPI becomes 504 × 360 px.
+
+Documents at 72 PPI convert without this warning.
 
 ## Drop Shadow support
 
@@ -156,6 +167,7 @@ The plugin has been tested and is compatible with Adobe Photoshop 2025, 2026.
 |                        | Logging                                   | ✅                |                                                    |
 | **Document**           | Artboard size                            | ✅                | All artboards must be same size                    |
 |                        | Multiple artboards                       | ✅                | Exported as multiple pages in GraFx Studio         |
+|                        | Document resolution other than 72 PPI    | ✅                | Preflight warning; choose to preserve px or mm — see [Document resolution](#document-resolution) |
 |                        | Hidden layers                            | ❌                | Not exported                                       |
 | **Text Objects**       | Font (name and style)                     | ✅                |                                                    |
 |                        | Small Caps                               | ❌                | Converted to lowercase; preflight warning shown    |

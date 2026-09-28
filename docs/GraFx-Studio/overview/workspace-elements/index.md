@@ -4,7 +4,7 @@ When opening the GraFx Studio editor, you will see the full workspace
 
 ## Elements on screen
 
-![appscreen](editor-labeled.png)
+![The full GraFx Studio workspace](editor-labeled.png){.screenshot-full}
 
 ### 1 Sidebar
 
@@ -37,7 +37,7 @@ Contextual bottom panel will hold information for relevant tools.
 
 E.g. the Layers/Animation timeline will be displayed here
 
-![appscreen](panel-labeled.png)
+![The Layouts panel and the hamburger menu, marked 7 and 8](panel-labeled.png){.screenshot}
 
 ### 7 Quick Tools Details
 

@@ -11,7 +11,7 @@ Also see the concept [Smart Crop](../../concepts/genie-smart-crop/).
 
 In your Smart Template, place an Image Frame and select a source image asset.
 
-![screenshot-full](sc6.png)
+![Runner photo in a landscape image frame, with Smart crop chosen in the Image section of the properties panel](sc6.png){.screenshot-full}
 
 By default, the Fill property of an Image Frame is set to **Fill**.  
 Change this to **Smart Crop** to enable the AI-driven cropping feature.
@@ -25,19 +25,19 @@ After setting the Subject Area (e.g., the runner on the right side of the image 
 
 If another object or text overlaps your image frame, define a specific area (Subject Position) within the frame for the subject to appear clearly.
 
-![screenshot-full](sc7.png)
+![Tall image frame beside the Sports headline, whose letters run straight across the runner's upper body](sc7.png){.screenshot-full}
 
 To define the Subject Position, click the **Subject Position** button in the properties panel:
 
-![screenshot-full](sc8.png)
+![Close-up of the Image section, with the Subject position button under the Smart crop dropdown](sc8.png){.screenshot-full}
 
 A box appears over your image frame. Adjust its size and position to specify exactly where your subject should appear. Click **Apply** to confirm.
 
-![screenshot-full](sc10.png)
+![Green subject position box drawn over the lower part of the image frame, with Cancel and Apply in the panel](sc10.png){.screenshot-full}
 
 Your subject will now fit within the defined Subject Position box.
 
-![screenshot-full](sc11.png)
+![The runner now sitting in the lower half of the frame, clear of the Sports headline above her](sc11.png){.screenshot-full}
 
 ## Subject alignment
 
@@ -67,6 +67,8 @@ The dropdown lists **Default** plus every subject type defined on the environmen
 - Selecting another subject type (for example *person* or *product*) tells Smart Crop to use the Subject Area and POI stored for that type on the asset, defined in the [media detail view](/GraFx-Media/guides/smart-crop-subject-area/#subject-type).
 
 The dropdown is only active when an image is placed on the frame. If a previously selected subject type is no longer available on the environment, the frame falls back to **Default**.
+
+When the environment defines no subject types beyond **Default**, the dropdown is hidden from the properties panel entirely, since there is nothing to choose. It stays visible in the image details panel and in GraFx Media even then, so the feature remains discoverable while editing an asset's Subject Area and POI.
 
 See [Manage Subject Types](/CHILI-GraFx/guides/manage-subject-types/) for how the list is configured.
 

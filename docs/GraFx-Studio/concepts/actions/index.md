@@ -4,11 +4,11 @@
 
 "Hi Jane. The customer asked if we can make this price stand out when it's a promotion?"
 
-![](ad1.png)
+![Spicemart chips ad with the 5 for $2,99 price set in plain black text](ad1.png){.screenshot-full}
 
 Jane: "Like this?"
 
-![](ad2.png)
+![The same ad with the price standing out on a purple rounded shape behind it](ad2.png){.screenshot-full}
 
 "Yes, perfect! And now let's make this happen automatically for all 76,500 items."
 
@@ -48,6 +48,6 @@ The second tab in the Trigger popup screen shows the Action editor.
 
 Enter your JavaScript code that should be executed.
 
-![image](actioncode.png)
+![The Action tab of the trigger popup, with setFrameVisible("Frame 1", true) entered on line 1](actioncode.png){.screenshot-full}
 
 See further [How to create an action](/GraFx-Studio/guides/actions/create/) and [Intro to writing JavaScript](/GraFx-Studio/guides/actions/javascript/)

@@ -1,6 +1,6 @@
 # Sidebar (top section)
 
-![appscreen](sidebar.png)
+![The sidebar tools, from Select at the top to Zoom at the bottom](sidebar.png){.screenshotsmall}
 
 Tools to interact with the page or document.
 
@@ -17,7 +17,7 @@ From top to bottom
 
 When your cursor is not IN a text frame, you can use the shortcuts mentioned next to the  tool to switch tools.
 
-![appscreen](sidebar-tooltips.png)
+![Tooltip beside the Select tool showing its name and keyboard shortcut, V](sidebar-tooltips.png){.screenshotsmall}
 
 ## Select
 

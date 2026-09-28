@@ -2,7 +2,7 @@
 
 See also: [Pages & Layout Intents](/GraFx-Studio/concepts/pages/)
 
-![screenshot-full](multipage.gif)
+![Working through a multi-page A4 print document in the Design workspace, starting from page 1 on its own](multipage.gif){.screenshot-full}
 
 ## Feature Channel
 
@@ -22,7 +22,7 @@ Choose **Layouts** > **Pages** > **Add Page**
 
 Drag a page before or after another page.
 
-![screenshot-full](arrangepages.gif)
+![Dragging a page thumbnail to a new position in the Pages panel of a three-page document](arrangepages.gif){.screenshot-full}
 
 ## Hide Pages
 
@@ -35,14 +35,14 @@ Click the **Eye** icon on the page, or **"..."** > **Hide Page**
 - Hidden pages can still be selected and edited.
 - Hidden pages do not output.
 
-  ![screenshot](page01.png)  
-  ![screenshot](page02.png)
+  ![Pages panel with page 1 greyed out as hidden, while page 2 stays visible on the canvas](page01.png){.screenshot}  
+  ![Pages panel numbering the visible pages 1 to 3, with Page 2 first and rotate, reset and delete buttons](page02.png){.screenshot}
 
 - Visibility applies to all [layouts](/GraFx-Studio/concepts/layouts/).  
   It is not possible to hide different pages in different layouts.
 - When a document is loaded, the first visible page is selected.
 
-  ![screenshot](page01.png)
+  ![Page 2 selected on opening, because page 1 is hidden and page 2 is the first visible page](page01.png){.screenshot}
 
 !!! info "[Studio UI](/GraFx-Studio/concepts/template-management/) Considerations"
 
@@ -51,7 +51,7 @@ Click the **Eye** icon on the page, or **"..."** > **Hide Page**
       When only one page is visible, the panel is hidden.  
       In the example below, page 1 is hidden, so it is not shown in the panel:
 
-      ![screenshot-full](page03.png)
+      ![Page navigation strip starting at Page 2, with the hidden page 1 left out of the snapshots](page03.png){.screenshot-full}
 
     - Page numbers only reflect visible pages (the end-user doesn’t need to know about hidden pages).
     - Upon loading, the first visible page is selected.

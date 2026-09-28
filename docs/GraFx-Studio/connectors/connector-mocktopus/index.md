@@ -2,7 +2,7 @@
 
 !!! info "Mocktopus"
 
-	![Mocktopus](Mocktopus.svg){.connector_icon}
+	![The Mocktopus connector logo, a dark blue octopus whose tentacles form an M](Mocktopus.svg){.connector_icon}
 	A many-tentacled connector that pretends to connect to everything but actually connects to nothing.
 
 :fontawesome-regular-square: Built-in  

@@ -11,66 +11,65 @@
 
 -   :material-clock-fast: **Release Notes**
 
-
-    ---
-  
-    **Jul 28, 2026**: Connector CLI v1.12.1
-
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
-
-    The connector debugger now reports execution metrics for every method invocation — duration plus every outgoing `fetch` call — cleans up pasted asset IDs, and supports the global `sleep(ms)` helper.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/connector-cli-v1121/)
-
     ---
 
-    **Jul 28, 2026**: CHILI GraFx Environment API: Sign out of a connector connection
+    **Sep 28, 2026**: GraFx Studio: InDesign® and Photoshop® plugins 1.5.0
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![GraFx Studio icon for the InDesign and Photoshop plugins 1.5.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
-    Connectors using OAuth 2.0 Authorization Code can now clear a user's own authorization session through a new logout endpoint — so you can reconnect as a different account without deleting and republishing the Connector.
+    The InDesign® plugin now exports text backgrounds and overprint settings. The Photoshop® plugin warns about documents that are not 72 PPI and lets you keep their size in px or mm.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/28/chili-grafx-environment-api-sign-out-of-a-connector-connection/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/28/grafx-studio-indesign-and-photoshop-plugins-150/)
 
     ---
 
-    **Jul 22, 2026**: GraFx Studio: Convert RGB Colors to CMYK in PDF Output
+    **Sep 21, 2026**: GraFx Studio: Overprint and constraints
 
-    ![rn_icon](/assets/icon-GraFx-Studio.svg)
+    ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
-    PDF output settings can now convert RGB content to the target CMYK profile as a complementary step to CMYK conversion — with an RGB source profile dropdown for unmanaged colors, in the UI and via `postProcessing.colorTransformation` in the Environment API.
+    Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/22/grafx-studio-convert-rgb-colors-to-cmyk-in-pdf-output/)
-
-    ---
-
-    **Jul 15, 2026**: Upcoming Change: Superscript and Subscript Rendering in GraFx Studio
-
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
-
-    From GraFx Studio 1.46.0, superscript and subscript text follows the metrics built into each font instead of a single fixed style — review templates that use this formatting before adopting the new version.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/15/upcoming-change-superscript-and-subscript-rendering-in-grafx-studio/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/21/grafx-studio-overprint-and-constraints/)
 
     ---
 
-    **Jul 14, 2026**: CHILI GraFx: Brand Kit Themes
+    **Sep 15, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit text styles
 
-    ![rn_icon](/assets/icon-GraFx-Brandkits.svg)
+    ![CHILI GraFx icon for the Brand Kit text style descriptions release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
 
-    One Brand Kit, multiple variations: themes inherit from the default theme and override only what differs — a sub-brand accent color or a CMYK print palette. Manage themes in GraFx Brand Kits, switch them in the Studio workspace, or programmatically via Actions and the SDK.
+    Paragraph styles and character styles in a Brand Kit now take an optional description, shared across every theme and returned in the resolved theme.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/14/chili-grafx-brand-kit-themes/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/15/chili-grafx-environment-api-descriptions-for-brand-kit-text-styles/)
 
     ---
 
-    **Jul 10, 2026**: CHILI GraFx Environment API: Large output requests fix
+    **Sep 02, 2026**: GraFx Studio: Editor load fix for Chromium 152
 
-    ![rn_icon](/assets/icon-CHILI-GraFx.svg)
+    ![GraFx Studio icon for the Chromium 152 editor load fix release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
-    Output requests for large documents no longer fail with `413` errors — the 10MB size limit now applies only to the `variables` property instead of the entire request body.
+    A change in Chromium 152 stopped the GraFx Studio editor from loading, leaving the canvas gray. Fixed in version 1.46 — environments on an earlier version need to update.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/07/10/chili-grafx-environment-api-large-output-requests-fix/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/02/grafx-studio-editor-load-fix-for-chromium-152/)
+
+    ---
+
+    **Aug 31, 2026**: GraFx Studio: Figma plugin (experimental)
+
+    ![GraFx Studio icon for the Figma plugin release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    An experimental GraFx Studio Exporter for Figma exports a selected frame — text, styles, colors, shapes, images, gradients, and effects — into an importable `.zip`, with preflight before export.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/31/grafx-studio-figma-plugin-experimental/)
+
+    ---
+
+    **Aug 27, 2026**: Connector CLI v1.14.0 — debugger reliability and UX
+
+    ![GraFx Studio icon for the Connector CLI v1.14.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    The local debugger now surfaces TypeScript compile errors as a full-page overlay, keeps method inputs across the session, and no longer opens a browser unless you pass `--open`.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/27/connector-cli-v1140--debugger-reliability-and-ux/)
 
     ---
 
@@ -79,11 +78,12 @@
     [:octicons-arrow-right-24: Show all release notes](/release-notes/)
 
 </div>
+
 ## The Platform & Applications
 
 <div class="grid cards" markdown>
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-02.svg) __CHILI GraFx__
+-   ![CHILI GraFx platform logo](/assets/CHILI_LOGOS_OK-02.svg){.tinyapplogo} __CHILI GraFx__
 
     ---
 
@@ -91,7 +91,7 @@
 
     [:octicons-arrow-right-24: Getting started](/CHILI-GraFx/admin/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-10.svg) __GraFx Studio__
+-   ![GraFx Studio application logo](/assets/CHILI_LOGOS_OK-10.svg){.tinyapplogo} __GraFx Studio__
 
     ---
 
@@ -99,7 +99,7 @@
 
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Studio/guides/hello-world/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-21.svg) __GraFx Publisher__
+-   ![GraFx Publisher application logo](/assets/CHILI_LOGOS_OK-21.svg){.tinyapplogo} __GraFx Publisher__
 
     ---
 
@@ -107,7 +107,7 @@
     
     [:octicons-arrow-right-24: Make your first Smart Template](/GraFx-Publisher/guides/hello-world/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-12.svg) __GraFx Media__
+-   ![GraFx Media application logo](/assets/CHILI_LOGOS_OK-12.svg){.tinyapplogo} __GraFx Media__
 
     ---
 
@@ -115,7 +115,7 @@
     
     [:octicons-arrow-right-24: Upload your media](/GraFx-Media/guides/upload-media/)
 
--   ![tinyapplogo](/assets/CHILI_LOGOS_OK-08.svg) __GraFx Fonts__
+-   ![GraFx Fonts application logo](/assets/CHILI_LOGOS_OK-08.svg){.tinyapplogo} __GraFx Fonts__
 
     ---
 
@@ -173,7 +173,7 @@
 
 ---
 
-![svg_icon](/assets/CHILI_LOGOS_OK-01.svg)
+![CHILI publish company logo](/assets/CHILI_LOGOS_OK-01.svg){.svg_icon}
 
 All information on this portal is documentation on the products and services of [CHILI publish](https://www.chili-publish.com/contact-sales/).
 

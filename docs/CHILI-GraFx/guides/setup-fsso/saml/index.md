@@ -22,7 +22,7 @@ Please configure your IDP to include at least the required claims below in SAML 
 
 | **Claim name**                                                                    | **Requirement** | **Description**                                                                                                                  |
 | --------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `email` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`   | Required        | The email address of the user                                                                                                    |
+| `email` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`   | Required        | The email address of the user in lower case                                                                                      |
 | `given_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` | Required        | The given name of the user                                                                                                       |
 | `family_name` or `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`  | Required        | The family name of the user                                                                                                      |
 | `https://chili-publish.com/CGXGroups`                                             | Optional        | A list of UUIDs of the CHILI GraFx groups the user should be in. <br/> This is only required if you use group-based permissions. |
@@ -42,7 +42,8 @@ Please inform us of the **domain** you’d like to use for testing FSSO.
 
 ## 4. Testing
 
-Once CHILI publish has enabled FSSO for the test domain, please verify that users with an email address in that domain are able to log on and get the expected permissions.
+Once CHILI publish has enabled FSSO for the test domain, please verify that users with an email address in that domain are invited to GraFx, able to log on and get the expected permissions.
+If no user groups are passed along in the response, the default user group and permissions will be assigned.
 
 ## 5. Enable FSSO
 

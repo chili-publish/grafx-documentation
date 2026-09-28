@@ -29,7 +29,7 @@ Some properties will not be visible, because the definition of this barcode don'
 
 Some properties can be found under the "..." (three dots) menu
 
-![screenshot-full](barcodes1.gif)
+![Adding a barcode from the Resources panel of an empty A4 print document and setting its properties](barcodes1.gif){.screenshot-full}
 
 ## Values in barcodes
 
@@ -37,7 +37,7 @@ Some properties can be found under the "..." (three dots) menu
 
 By default, you can enter a static value in the barcode properties. (Set value)
 
-![screenshot-full](staticvalue.png)
+![QR code frame with Set value chosen and a fixed URL typed into the QR code properties](staticvalue.png){.screenshot-full}
 
 ### Variable value
 
@@ -45,11 +45,31 @@ To unleash the power of real Creative Automation, you can link a value to a vari
 
 Start by defining your variable. [See Variables](/GraFx-Studio/guides/template-variables/define/)
 
-![screenshot-full](variables.png)
+![Single line text variable MyURL holding a web address, with the QR code frame selected on the page](variables.png){.screenshot-full}
 
 Link the variable to your Bar- or QR code.
 
-![screenshot-full](variablevalue.png)
+![QR code properties with Link to variable selected and MyURL picked from the dropdown](variablevalue.png){.screenshot-full}
+
+## Overprint
+
+On a layout with a **Print** intent, the properties panel offers two overprint toggles for the selected barcode frame:
+
+- **Overprint on fill** — the bars print on top of the inks underneath instead of knocking them out.
+- **Overprint for background** — the same, for the barcode background.
+
+A barcode has no stroke, so there is no stroke toggle. Both options are off by default, and each one is only selectable when the matching color is active.
+
+<!-- TODO screenshot (REL-69): the Overprint section in the barcode frame properties panel. Save as barcode-overprint.png next to this page and uncomment:
+![Overprint on fill and Overprint for background in the barcode frame properties panel](barcode-overprint.png){.screenshot}
+-->
+
+Printing a barcode over a colored panel is the classic case for overprint: without it, a slight plate shift leaves a white halo around the bars that can hurt scannability.
+
+!!! warning "Only spot colors defined in CMYK"
+    Overprint takes effect only when the bars or background use a [spot color](/GraFx-Studio/guides/colors/#spot) whose secondary color is defined in CMYK. On process CMYK colors, RGB colors, and RGB-based spot colors the toggle can be switched on but changes nothing in the output.
+
+The toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
 
 ## Personalize QR Code
 

@@ -2,7 +2,7 @@
 
 The canvas is the area where your document is displayed.
 
-![appscreen](editor-labeled.png)
+![The editor with the canvas, the area around the document, labelled](editor-labeled.png){.screenshot-full}
 
 When opening the canvas, the document is zoomed to fit.
 

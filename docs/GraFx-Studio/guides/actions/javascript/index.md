@@ -22,7 +22,7 @@ Add a **dot** "." and the JavaScript editor (Monaco) will suggest objects that f
 
 In this case, it will suggest using one of the available objects in the document.
 
-![screen](js1.png)
+![Autocomplete after typing studio., with frames highlighted at the top of the object list](js1.png){.screenshot-full}
 
 By hitting the "tab" key, the editor will autocomplete with the selected suggestion.
 
@@ -30,17 +30,17 @@ Add another **dot** and the next suggestion will appear.
 
 You will see the properties you can set or the functions you can call for this object.
 
-![screen](js2.png)
+![Autocomplete after studio.frames., listing all, assignVariable, byName through to setY](js2.png){.screenshot}
 
 Functions will need parentheses () and once you start with the opening parenthesis (, you will see the next suggestion.
 
 The popup will show what the function expects. In this case, a name (of the frame) and a number for the X position of that frame.
 
-![screen](js3.png)
+![The signature popup for setX in the Create action dialog, naming the frame and the X position](js3.png){.screenshot-full}
 
 Provide the necessary information.
 
-![screen](js4.png)
+![A single completed line of code: studio.frames.setX("bottle", 120)](js4.png){.screenshot-full}
 
 Continue to add logic around your statement.
 
@@ -49,11 +49,11 @@ Continue to add logic around your statement.
     
     You'll find information on using [Variables](https://www.w3schools.com/js/js_variables.asp), how to work with [Operators](https://www.w3schools.com/js/js_operators.asp), [If-then-else statements](https://www.w3schools.com/js/js_if_else.asp), [Loops](https://www.w3schools.com/js/js_loop_while.asp), and many more topics to get you started.
 
-![screen](js5.png)
+![The setX call wrapped in an if statement that tests the variable reduction against promo](js5.png){.screenshot-full}
 
 You can add "console.log" statements to show debug information in the browser console.
 
-![screen](js6.png)
+![The browser DevTools Console printing "Seems like it's a promo" from the console.log statement](js6.png){.screenshot}
 
 ## Security
 

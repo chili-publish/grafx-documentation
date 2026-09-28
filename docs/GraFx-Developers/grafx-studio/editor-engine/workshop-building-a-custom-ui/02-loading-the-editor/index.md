@@ -51,7 +51,7 @@ initEditor();
 ```
 
 Now, if our webserver is still running we can see that it will refresh when we save our JavaScript file and a blank editor should appear!
-![A blank editor loaded on a webpage](editor-loaded.png)
+![A blank editor loaded on a webpage](editor-loaded.png){.screenshot-full}
 
 ### Making our page look better
 _This section assumes a basic knowledge of some CSS, this section will not explain the CSS in depth but [web.dev](https://web.dev/learn/css/) has great information for learning if you are interested. If not you can simply just copy the final HTML with the styling._
@@ -76,7 +76,7 @@ The editor `<div>` will get a `height` property of `90vh`
 
 
 We can save our file and the web browser should refresh. Now our editor is a little more visible. The editor still does not show much because we have not loaded a document yet, but we will soon when we use the DocumentController in section 4.
-![the styled editor loaded on the webpage](editor-styled.png)
+![the styled editor loaded on the webpage](editor-styled.png){.screenshot-full}
 
 ##### The final index.html
 ```html

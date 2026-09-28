@@ -187,6 +187,8 @@ In GraFx Studio PDF output settings, you control:
 
 When these settings match your production workflow, your exported PDFs remain consistent, compliant, and brand-safe.
 
+Ink behavior on press is a separate decision from color conversion. Where inks should print on top of each other instead of knocking out, see [Overprint](/GraFx-Studio/concepts/overprint/).
+
 For configuration details, see:
 
 - [PDF Output Settings](/GraFx-Studio/guides/output/settings/)

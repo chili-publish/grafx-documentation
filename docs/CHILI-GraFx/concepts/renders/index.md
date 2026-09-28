@@ -69,13 +69,47 @@ The first 50 renders are counted individually, then each subsequent set of 10 ad
 
 	In this case: 50 + (1000-50)/10 = 50 + 95 = 145
 
+#### The output task is what counts, not the number of files
+
+The formula is applied per [output task](/GraFx-Studio/concepts/output-tasks/), based on the number of records in that task. How the result is delivered makes no difference: whether the task produces one PDF containing all records or several PDF files each containing a part of them, the render count is identical.
+
+Splitting a single task across several files is a deliberate option, set through the [Output API](/GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/) in your integration. The `maxRecordsPerFile` property defines how many records end up in each PDF file:
+
+```json
+"maxRecordsPerFile": 2400
+```
+
+The task still counts as one, whatever value you use.
+
+!!! info
+	`maxRecordsPerFile` is available via the API only. There is no equivalent setting in the GraFx Studio interface.
+
+!!! Note
+	**Same task, same renders**
+
+	A task with 100 records: 50 + (100-50)/10 = **55 renders**
+
+	- 1 PDF with 100 records: 55 renders
+	- 4 PDFs of 25 records, from that same task (`"maxRecordsPerFile": 25`): 55 renders
+
+	Splitting those 100 records over 4 **separate** output tasks of 25 records is a different story. Each task is then counted on its own: 4 × 25 = 100 renders, because none of them passes the first 50 records where the discount starts.
+
+### Previews
+
+Previews are the images shown while you work — for example the layout thumbnails GraFx Experience displays when you select layouts for a new project. A preview is not an output you can download, so it does not count as a render.
+
+Previews of a **project** are the exception. These are generated through the regular output routines, using the Output Settings configured in GraFx Experience, and count as renders like any other output.
+
+!!! tip
+	If you'd rather not have project previews count towards your quota, configure the Output Settings used for them to apply a watermark. Watermarked output is tracked separately and does not count as a render.
+
 ## Fair use policy
 
 In your subscription, you're entitled to a render quota.
 
 Your dashboard will show the actual status of renders for the full subscription (all environments, with a delay of ±1 day).
 
-![screenshot-full](renders01.png)
+![Total renders per month for the whole subscription, with render quota and 6 month average lines](renders01.png){.screenshot-full}
 
 The light blue line shows the "rolling average".
 
@@ -87,7 +121,7 @@ The light blue line shows the "rolling average".
 
 When you select an environment, you'll see the details.
 
-![screenshot-full](renders02.png)
+![Renders for a single environment, split by output type such as PDF and Batch](renders02.png){.screenshot-full}
 
 
 Render quota are not a hard limit per month. If you generate more output than the render quota, we won’t block or watermark the output.
@@ -100,11 +134,21 @@ When the rolling average exceeds the render quota, you will be invoiced an extra
 
 We take your **contractual** rolling average and compare to quota.
 
+The average is calculated over a rolling window of days rather than calendar months, so it doesn't shift with the length of the month. The window moves every day: one day drops off the back as today is added at the front.
+
 !!! Average calculation
 
-	E.g. 6 months rolling average calculation: Total of past 6 months divided by 6
+	E.g. 6 months rolling average calculation: Total of past 183 days divided by 6
 	
-	E.g. 3 months rolling average calculation: Total of past 3 months divided by 3
+	E.g. 3 months rolling average calculation: Total of past 91 days divided by 3
+
+The Platform API reports both your average and the number of days it was calculated over:
+
+```
+GET /api/v1/subscriptions/{subscriptionId}
+```
+
+The `averageRendersPeriodDays` property returns the averaging period that applies to your subscription.
 
 ### What if I need a temporary burst?
 

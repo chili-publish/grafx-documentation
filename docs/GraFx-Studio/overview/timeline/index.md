@@ -1,6 +1,6 @@
 # Frames & Timeline
 
-![Properties](timeline.png)
+![The Layers panel with a timeline bar for each frame: water, bottle, logo, discover, regular and button](timeline.png){.screenshot-full}
 
 !!! Alert
 	While the panel is called "Layers" it show the frames.

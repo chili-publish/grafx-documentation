@@ -4,11 +4,11 @@
 
 Actions are defined in the Automation panel, Actions & Variable tab.
 
-![screenshot](panel1.png)
+![The Actions panel with the action list, showing one action with one trigger](panel1.png){.screenshot}
 
-![screenshot](editaction.png)
+![The Edit action dialog on the Triggers tab, with a trigger set to Variable value changed for Any variable](editaction.png){.screenshot}
  
-![screenshot](actioneditor.png)
+![The Action tab of the Edit action dialog, with setFrameVisible("Frame 1", true) on line 1](actioneditor.png){.screenshot}
 
 When writing actions, you can start with the base objects, and with the dot-notation drill down to the function or value you're looking for.
 
@@ -24,7 +24,7 @@ studio.stylekit.colors.copy("characterstyle1", "characterstyle2");
 
 When writing code, add a dot, and the Action Editor will suggest possible functions that are relevant in this context.
 
-![appscreen](dotnotation.png)
+![Autocomplete after typing studio.stylekit., suggesting characterStyles, colors and paragraphStyles](dotnotation.png){.screenshot-full}
 
 For many often used functions, we created helper functions.
 
@@ -42,27 +42,27 @@ There are several approaches, to finding the function you might need.
 
 For certain objects, you can "set" a parameter or "get" information about an element on the page. When you type "get" or "set", a list of relevant functions will appear.
 
-![appscreen](get.png)
+![Typing get, listing helper functions from getAllItemsFromListVariable to getPageWidth](get.png){.screenshot}
 
-![appscreen](set.png)
+![Typing set, with setBooleanVariableValue highlighted at the top of the set functions](set.png){.screenshot}
 
 #### Keywords
 
 Another method to identify a helper function is to begin typing a keyword that seems relevant to you, such as: frame, variable, document, page, etc. The Action editor will then suggest a list of related helper functions.
 
-![appscreen](variable.png)
+![Typing variable, matching VariableType plus the get, set and copy variable helpers](variable.png){.screenshot}
 
-![appscreen](image.png)
+![Typing image, with only getImageVariableValue and setImageVariableValue suggested](image.png){.screenshot-full}
 
-![appscreen](frame.png)
+![Typing frame, matching FrameType and the get and set frame helpers](frame.png){.screenshot}
 
-![appscreen](page.png)
+![Typing page, matching getPageHeight, getPageWidth, setPageSize and copyParagraphStyleFromTo](page.png){.screenshot-full}
 
 #### Category names
 
 Alternatively, you can start typing one of the [4 categories](#groups-of-functions) of functions (detailed below). The Action Editor will display a list of available functions.
 
-![appscreen](helpers.png)
+![Typing the copy category, listing all four copy helper functions](helpers.png){.screenshot-full}
 
 #### Combine methods
 
@@ -76,7 +76,7 @@ A function requires info or input to handle your request. This input is sometime
 
 There is no need to learn them by heart. When you start typing a function end with an open bracket "**(**", and the Action Editor will show an info panel what info to expect.
 
-![appscreen](params.png)
+![Parameter info panel for setFrameVisible, describing the frame name and visibility arguments](params.png){.screenshot-full}
 
 In this case, the function needs the name of a frame (as a String, i.e. text) and also needs the state of visibility: True or False.
 
