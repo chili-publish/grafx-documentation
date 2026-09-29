@@ -136,6 +136,8 @@ If the template already has variables — for example because another instance o
 
 This is also how you connect two component instances to the **same** template variable, if you want them to always show the same value.
 
+Component **image** variables map to a **Single-line text** or **Single-select list** template variable that holds the asset ID. See [Passing an image into a component](/GraFx-Studio/guides/build-component/#passing-an-image-into-a-component).
+
 ![Map to dropdown expanded showing New variable and Variable options](existingvarmapping.png){.screenshot-full}
 
 ### Map to a data source column
