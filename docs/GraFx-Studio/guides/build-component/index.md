@@ -107,7 +107,7 @@ Supported variable types in components:
 - Date
 
 !!! note "Image variables require a different setup"
-    Image variables can be created in a component and used to drive image frames. Because each image variable is tied to a specific connector, they cannot be directly mapped from a template image variable. See [Passing an image into a component](#passing-an-image-into-a-component) for the setup.
+    Image variables can be created in a component and used to drive image frames. Because each image variable is tied to a specific connector, they cannot be mapped from a template image variable. Instead, map them from a template text or list variable that holds the asset ID. See [Passing an image into a component](#passing-an-image-into-a-component) for the setup.
 
 ![The component's Price variable set to Number, with Number formatting open beside the price tag on canvas](component-variables.png){.screenshot-full}
 
@@ -143,27 +143,23 @@ Once your component is built, place it in a template:
 
 ## Passing an image into a component
 
-Because each image variable is tied to a specific connector, image variables cannot be directly mapped between a template and a component — the template has no visibility into how the component's connector is configured. The solution is to pass the asset ID through a text variable and use Actions to apply it on each side.
+Because each image variable is tied to a specific connector, image variables cannot be directly mapped between a template and a component — the template has no visibility into how the component's connector is configured. The solution is to pass the asset ID instead: map the component's image variable to a template **Single-line text** variable or **Single-select list** variable that holds the ID.
 
 **Both the template and the component must use the same connector.** The asset ID is only valid if both sides can resolve it through the same source.
 
 ### Set up the component side
 
-In the component workspace, you need two variables and one Action:
+In the component workspace, you need one **Image** variable — for example, `Product Image` — connected to your connector, driving the image frame.
 
-1. An **Image** variable — for example, `Product Image` — connected to your connector, driving the image frame.
-2. A **Single-line text** variable — for example, `ImageID` — this is the bridge that receives the asset ID from the template.
-3. An Action with trigger **Variable value changed → ImageID**, and the following script:
-
-```javascript
-setVariableValue("Product Image", getTriggeredVariableValue());
-```
-
-When `ImageID` receives a new value through the mapping, this Action immediately applies it to the image variable.
+No text variable or Action is needed on the component side. The asset ID that arrives through the mapping is applied to `Product Image` directly.
 
 ### Set up the template side
 
-For each component instance placed on the template, you need two variables and one Action:
+The asset ID can come from a text variable or from a list variable, depending on how the end user chooses the image.
+
+#### From a text variable
+
+Use this when the end user browses the connector and picks any image. For each component instance placed on the template, you need two variables and one Action:
 
 1. An **Image** variable — for example, `ProductImage1` — connected to the same connector as the component. This is what the end user interacts with to pick an image.
 2. A **Single-line text** variable — for example, `ProductImageID1` — this carries the asset ID to the component.
@@ -175,12 +171,25 @@ setVariableValue("ProductImageID1", getTriggeredVariableValue());
 
 When the end user selects an image, the asset ID is written to `ProductImageID1` automatically.
 
+#### From a list variable
+
+Use this when the end user selects a product or image by name, from a dropdown. For each component instance placed on the template, you need one **Single-select list** variable — for example, `ProductImageList1` — with one list item per image:
+
+- Set the item's value to the asset ID of the image.
+- Set the item's display name to the product or image name — for example, `Blue sneaker`. This is what the end user sees in the dropdown.
+
+When the end user selects a name, the asset ID behind it is passed to the component. No Action is needed.
+
 ### Map the variables
 
-In the template, open **Manage mapping** for the component instance and map the component's `ImageID` to the template's `ProductImageID1`. Text-to-text mapping works without restriction.
+In the template, open **Manage mapping** for the component instance and map the component's `Product Image` to the template's `ProductImageID1` — or to `ProductImageList1` if you use a list variable. Set **Map to** to **Variable** and choose the template variable from the dropdown.
+
+Component image variables can also be mapped to a text column of a Data source variable. See [Map to a data source column](/GraFx-Studio/guides/use-components/#map-to-a-data-source-column).
 
 ### How it works at runtime
 
-When an end user picks an image through `ProductImage1`, the template Action writes its asset ID to `ProductImageID1`. That value flows through the mapping into the component's `ImageID`. The component Action fires and sets `Product Image` to that ID — the correct image appears inside the component.
+When an end user picks an image through `ProductImage1`, the template Action writes its asset ID to `ProductImageID1`. That value flows through the mapping straight into the component's `Product Image` — the correct image appears inside the component.
 
-For templates with multiple instances of the same component, repeat the template-side variable pair and Action for each instance (`ProductImage2` / `ProductImageID2`, and so on), mapping each instance to its own ID variable.
+With a list variable, the end user selects a product or image name instead. The asset ID of that item flows through the mapping the same way.
+
+For templates with multiple instances of the same component, repeat the template-side setup for each instance (`ProductImage2` / `ProductImageID2`, or `ProductImageList2`, and so on), mapping each instance to its own variable.
