@@ -107,7 +107,7 @@ Supported variable types in components:
 - Date
 
 !!! note "Image variables require a different setup"
-    Image variables can be created in a component and used to drive image frames. Because each image variable is tied to a specific connector, they cannot be directly mapped from a template image variable. See [Passing an image into a component](#passing-an-image-into-a-component) for the setup.
+    A component image variable can't be mapped to a template image variable. Map it to a text or list variable holding the asset ID instead. See [Passing an image into a component](#passing-an-image-into-a-component).
 
 ![The component's Price variable set to Number, with Number formatting open beside the price tag on canvas](component-variables.png){.screenshot-full}
 
@@ -143,44 +143,45 @@ Once your component is built, place it in a template:
 
 ## Passing an image into a component
 
-Because each image variable is tied to a specific connector, image variables cannot be directly mapped between a template and a component — the template has no visibility into how the component's connector is configured. The solution is to pass the asset ID through a text variable and use Actions to apply it on each side.
+A component's image variable can't be mapped to a template image variable. Instead, map it to a template variable that holds the image's **asset ID**. The component then loads that image itself.
 
-**Both the template and the component must use the same connector.** The asset ID is only valid if both sides can resolve it through the same source.
+!!! note "Use the same connector"
+    The component loads the image through its own connector, so the asset ID must come from that connector — for example, a GraFx Media ID when the component uses GraFx Media.
 
-### Set up the component side
+In the component, you only need an **Image** variable — for example, `Product Image` — driving the image frame.
 
-In the component workspace, you need two variables and one Action:
+In the template, choose how the end user picks the image:
 
-1. An **Image** variable — for example, `Product Image` — connected to your connector, driving the image frame.
-2. A **Single-line text** variable — for example, `ImageID` — this is the bridge that receives the asset ID from the template.
-3. An Action with trigger **Variable value changed → ImageID**, and the following script:
+- **From a fixed set of images, by name** → use a [list variable](#choose-from-a-list)
+- **By browsing the connector for any image** → use an [image variable and a text variable](#browse-for-any-image)
 
-```javascript
-setVariableValue("Product Image", getTriggeredVariableValue());
-```
+### Choose from a list
 
-When `ImageID` receives a new value through the mapping, this Action immediately applies it to the image variable.
+1. Create a **Single-select list** variable — for example, `ProductImageList1`.
+2. Add one item per image. Set its value to the asset ID, and its display name to what the end user sees — for example, `Blue sneaker`.
+3. Open **Manage mapping** for the component and map `Product Image` to `ProductImageList1`.
 
-### Set up the template side
+When the end user picks **Blue sneaker**, the component shows that image.
 
-For each component instance placed on the template, you need two variables and one Action:
+### Browse for any image
 
-1. An **Image** variable — for example, `ProductImage1` — connected to the same connector as the component. This is what the end user interacts with to pick an image.
-2. A **Single-line text** variable — for example, `ProductImageID1` — this carries the asset ID to the component.
-3. An Action with trigger **Variable value changed → ProductImage1**, and the following script:
+The template's image variable can't be mapped directly, so an Action copies its asset ID into a text variable first.
 
-```javascript
-setVariableValue("ProductImageID1", getTriggeredVariableValue());
-```
+1. Create an **Image** variable — for example, `ProductImage1` — using the same connector as the component. This is what the end user browses.
+2. Create a **Single-line text** variable — for example, `ProductImageID1`.
+3. Add an Action with trigger **Variable value changed → ProductImage1**:
 
-When the end user selects an image, the asset ID is written to `ProductImageID1` automatically.
+    ```javascript
+    setVariableValue("ProductImageID1", getTriggeredVariableValue());
+    ```
 
-### Map the variables
+4. Open **Manage mapping** for the component and map `Product Image` to `ProductImageID1`.
 
-In the template, open **Manage mapping** for the component instance and map the component's `ImageID` to the template's `ProductImageID1`. Text-to-text mapping works without restriction.
+When the end user picks an image, the Action copies its ID and the component shows the same image.
 
-### How it works at runtime
+### Good to know
 
-When an end user picks an image through `ProductImage1`, the template Action writes its asset ID to `ProductImageID1`. That value flows through the mapping into the component's `ImageID`. The component Action fires and sets `Product Image` to that ID — the correct image appears inside the component.
-
-For templates with multiple instances of the same component, repeat the template-side variable pair and Action for each instance (`ProductImage2` / `ProductImageID2`, and so on), mapping each instance to its own ID variable.
+- **Several instances:** repeat the template setup for each one (`ProductImageList2`, `ProductImageID2`, …).
+- **From a data source:** you can also map `Product Image` to a text column of a Data source variable. See [Map to a data source column](/GraFx-Studio/guides/use-components/#map-to-a-data-source-column).
+- **Wrong or missing ID:** the component shows the "Image not found" placeholder.
+- **Older components** that use an extra text variable and Action inside the component keep working. You can remove those and map `Product Image` directly.
