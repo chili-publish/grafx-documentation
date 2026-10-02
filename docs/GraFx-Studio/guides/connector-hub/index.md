@@ -68,6 +68,8 @@ Each media connector type can have one default connector. The default is used au
 
 To set a connector as default, open the **three-dot menu** next to the connector in the list and select **Set as default**. The option is disabled if the connector is already the default.
 
+This works for every media connector, including the built-in GraFx Media connector — so you can always switch back to GraFx Media as the default.
+
 ![The three-dot menu beside an available connector, offering Set as default](ch08.png){.screenshot}
 
 ## Connector Version Updates

@@ -13,6 +13,16 @@
 
     ---
 
+    **Oct 02, 2026**: CHILI GraFx Platform Update
+
+    ![CHILI GraFx icon for the October 2 platform update release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+
+    The three-dot menu on an item is available while its preview is still loading, and GraFx Media can be set back as the default media connector.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/02/chili-grafx-platform-update/)
+
+    ---
+
     **Sep 28, 2026**: GraFx Studio: InDesign® and Photoshop® plugins 1.5.0
 
     ![GraFx Studio icon for the InDesign and Photoshop plugins 1.5.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -60,16 +70,6 @@
     An experimental GraFx Studio Exporter for Figma exports a selected frame — text, styles, colors, shapes, images, gradients, and effects — into an importable `.zip`, with preflight before export.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/31/grafx-studio-figma-plugin-experimental/)
-
-    ---
-
-    **Aug 27, 2026**: Connector CLI v1.14.0 — debugger reliability and UX
-
-    ![GraFx Studio icon for the Connector CLI v1.14.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    The local debugger now surfaces TypeScript compile errors as a full-page overlay, keeps method inputs across the session, and no longer opens a browser unless you pass `--open`.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/27/connector-cli-v1140--debugger-reliability-and-ux/)
 
     ---
 
