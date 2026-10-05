@@ -6,7 +6,7 @@ The Figma plugin lets you export a frame from Figma and import it into **GraFx S
 Figma is a great place to design, but it isn't built to produce hundreds of variants across formats and channels — that is what GraFx Studio does. The plugin turns finished Figma design work into a starting point for automation instead of something you rebuild by hand.
 
 !!! example "Experimental"
-    The Figma plugin is released as [experimental](/release-notes/experimental/). It is not published on the Figma Community, so you download it from the [plugin downloads](/GraFx-Studio/convert/downloads/) page and install it yourself. Behavior and supported features can still change between versions.
+    The Figma plugin is released as [experimental](/release-notes/feature-maturity/#experimental-being-retired). It is not published on the Figma Community, so you download it from the [plugin downloads](/GraFx-Studio/convert/downloads/) page and install it yourself. Behavior and supported features can still change between versions.
 
 **Current version:** 0.8.0 Experimental
 **Supported operating systems:** Windows and macOS

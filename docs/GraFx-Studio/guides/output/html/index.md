@@ -3,7 +3,7 @@
 !!! example "HTML output is Experimental"
 	To give you early access to the latest and greatest, we will release some features as "**Experimental**".
 	
-	This feature and related endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your production code on experimental features.
+	This feature and related endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your production code on experimental features. See [Feature maturity](/release-notes/feature-maturity/).
 
 !!! warning "Components are not supported"
 	HTML output does not support components. If your template uses components, it will fail during output.
