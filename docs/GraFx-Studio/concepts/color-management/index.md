@@ -108,6 +108,20 @@ During PDF export, RGB colors can be converted to the target CMYK profile as a c
 This ensures on-screen imagery reproduces predictably under the intended print condition.
 
 
+## What color conversion applies to
+
+Color conversion works on color values wherever they occur in the document — it is not limited to text and vector elements.
+
+- Colors in text and vector elements are converted.
+- The pixel data of placed images is converted. A CMYK image is re-profiled when CMYK conversion is on, and an RGB image is converted when RGB conversion is on as well.
+- Content inside a placed PDF is treated the same as content placed directly in a frame.
+- Spot colors are not converted. They stay separate inks, so they still separate correctly on press.
+
+Conversion changes color values, not resolution. Images keep their original pixel dimensions.
+
+See [Color Management output settings](/GraFx-Studio/guides/output/settings/#color-management) for how to configure this.
+
+
 ## Rendering intent — how out-of-gamut colors are handled
 
 Some colors in the source profile cannot be reproduced exactly in the destination profile.
@@ -186,6 +200,8 @@ In GraFx Studio PDF output settings, you control:
 - Whether RGB colors are converted to CMYK, and which RGB source profile to assume for unmanaged colors  
 
 When these settings match your production workflow, your exported PDFs remain consistent, compliant, and brand-safe.
+
+Ink behavior on press is a separate decision from color conversion. Where inks should print on top of each other instead of knocking out, see [Overprint](/GraFx-Studio/concepts/overprint/).
 
 For configuration details, see:
 

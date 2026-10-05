@@ -23,7 +23,7 @@ Elements are defined on the Brand Kit's default [theme](/GraFx-Brand-Kits/concep
 
 ## Descriptions
 
-Media and colors can carry an optional **description**: a short, free-text explanation of what the element is for, such as "primary logo, for light backgrounds" or "accent color, reserved for calls to action". A name identifies an element; a description tells you when to use it.
+Media, colors, paragraph styles and character styles can carry an optional **description**: a short, free-text explanation of what the element is for, such as "primary logo, for light backgrounds", "accent color, reserved for calls to action" or "body copy, for long-form text". A name identifies an element; a description tells you when to use it.
 
 A description belongs to the element itself rather than to a [theme](/GraFx-Brand-Kits/concepts/themes/). You set it on the default theme, and every theme of the Brand Kit shares it.
 

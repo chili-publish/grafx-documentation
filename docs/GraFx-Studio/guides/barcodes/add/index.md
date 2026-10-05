@@ -51,6 +51,26 @@ Link the variable to your Bar- or QR code.
 
 ![QR code properties with Link to variable selected and MyURL picked from the dropdown](variablevalue.png){.screenshot-full}
 
+## Overprint
+
+On a layout with a **Print** intent, the properties panel offers two overprint toggles for the selected barcode frame:
+
+- **Overprint on fill** — the bars print on top of the inks underneath instead of knocking them out.
+- **Overprint for background** — the same, for the barcode background.
+
+A barcode has no stroke, so there is no stroke toggle. Both options are off by default, and each one is only selectable when the matching color is active.
+
+<!-- TODO screenshot (REL-69): the Overprint section in the barcode frame properties panel. Save as barcode-overprint.png next to this page and uncomment:
+![Overprint on fill and Overprint for background in the barcode frame properties panel](barcode-overprint.png){.screenshot}
+-->
+
+Printing a barcode over a colored panel is the classic case for overprint: without it, a slight plate shift leaves a white halo around the bars that can hurt scannability.
+
+!!! warning "Only spot colors defined in CMYK"
+    Overprint takes effect only when the bars or background use a [spot color](/GraFx-Studio/guides/colors/#spot) whose secondary color is defined in CMYK. On process CMYK colors, RGB colors, and RGB-based spot colors the toggle can be switched on but changes nothing in the output.
+
+The toggles are hidden on digital layouts. See [Overprint](/GraFx-Studio/concepts/overprint/).
+
 ## Personalize QR Code
 
 <iframe width="690" height="388" src="https://www.youtube.com/embed/XCFzT2arycI?si=H13NfUda7_LdFPj8&controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

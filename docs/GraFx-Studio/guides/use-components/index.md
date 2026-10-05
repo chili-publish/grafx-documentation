@@ -136,6 +136,8 @@ If the template already has variables — for example because another instance o
 
 This is also how you connect two component instances to the **same** template variable, if you want them to always show the same value.
 
+Component **image** variables map to a **Single-line text** or **Single-select list** template variable that holds the asset ID. See [Passing an image into a component](/GraFx-Studio/guides/build-component/#passing-an-image-into-a-component).
+
 ![Map to dropdown expanded showing New variable and Variable options](existingvarmapping.png){.screenshot-full}
 
 ### Map to a data source column
@@ -164,6 +166,24 @@ Each component instance on the canvas has its own mapping configuration. A templ
 After applying the mapping, the new template variables appear in the variable list under a **Component** group, named after the component instance.
 
 These variables work like any other template variable — they can be used in actions, exposed in Studio UI, or driven by a data source.
+
+## User constraints on a component frame
+
+A component frame supports the same **user constraints** as other frame types, controlling how end users can manipulate the frame itself in Studio UI:
+
+- **Allow horizontal move**
+- **Allow vertical move**
+- **Allow rotation**
+- **Allow resize**, with **Constrain proportions**
+
+All options are disabled by default. Enabling resize or rotation also enables horizontal and vertical movement. See [Constraints](/GraFx-Studio/concepts/constraints/).
+
+<video width="690" autoplay="true" loop="true" muted="true">
+  <source src="component-frame-user-constraints.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+These constraints govern the frame on the canvas. They are unrelated to the variable range checks described below.
 
 ## Constraint compatibility
 
