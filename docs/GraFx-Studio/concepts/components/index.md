@@ -108,7 +108,7 @@ See [Resize Mode](/GraFx-Studio/guides/use-components/#resize-mode) for details.
 
 ## How components differ from templates
 
-Components are intentionally more constrained than templates. This is by design: a component is a building block, not a finished product. The constraints keep it clean, predictable, and safe to reuse across many templates.
+Components are intentionally more limited than templates. This is by design: a component is a building block, not a finished product. The limitations keep it clean, predictable, and safe to reuse across many templates.
 
 | Feature | Template | Component |
 |---|---|---|
