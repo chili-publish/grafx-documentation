@@ -37,6 +37,9 @@ The key difference is what is **not** there, by design:
 | User Interface settings | UI settings belong at the template level |
 | Bleed & slug | Print production settings live on the template |
 | Private data | Not supported in components |
+| List and data source variable types | Lists and data sources are provided by the template and passed in through variable mapping |
+| Variable visibility conditions | Component variables are not shown to end users; the template controls which variables they see |
+| Frame constraints | End users don't move or resize frames inside a component; constraints apply to the component frame in the template |
 | Add component as a frame | Not supported in V1 |
 | Change page size via actions | The template determines the frame size — the component adapts to the space it's given |
 
