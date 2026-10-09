@@ -42,13 +42,11 @@ Data flows **one way**: from the template into the component. The template can p
 
 When you save a change to a component, every template that uses it reflects the updated design automatically. You do not need to reopen, republish, or reconfigure the templates.
 
-**Variable mappings are preserved** when you update the component design, adjust layouts, or change actions — as long as the variable names remain the same. Existing connections between component variables and template variables stay intact.
+**Variable mappings are preserved** when you update the component design, adjust layouts, change actions, or rename a variable. Mapping is based on the variable's ID, not its name, so existing connections between component variables and template variables stay intact.
 
 **Adding a new variable** to the component makes it appear in the mapping modal the next time a template designer opens it. Existing mappings are not affected. The new variable shows up under **Not mapped** until the designer connects it.
 
-**Removing or renaming a variable** in the component breaks any existing mapping to that variable. The template variable that was created for it is not deleted, but the connection is lost and will need to be re-mapped.
-
-> **Note:** Verify the exact propagation behavior with your platform administrator or CHILI GraFx support before relying on automatic updates in a production environment.
+**Removing a variable** from the component breaks any existing mapping to that variable. The template variable that was created for it is not deleted, but the connection is lost and will need to be re-mapped.
 
 ## Use cases
 
@@ -121,14 +119,17 @@ Components are intentionally more constrained than templates. This is by design:
 | Bleed & slug | ✅ | ❌ |
 | Private data | ✅ | ❌ |
 | List variable type | ✅ | ❌ |
+| Data source variable type | ✅ | ❌ |
+| Variable visibility conditions | ✅ | ❌ |
+| Frame constraints | ✅ | ❌ |
 | Add component as a frame | ✅ | ❌ |
 | Page size (set via actions) | ✅ | ❌ |
 | Brand Kit | ✅ | ✅ |
-
-> A component renders within the space the template provides — the template controls the frame size, not the component. To adapt a component's appearance to different frame proportions, use multiple layouts and Resize Mode. Actions that attempt to change the page size inside a component will not execute.
 | Actions | ✅ | ✅ |
 | Connectors (media & data) | ✅ | ✅ |
 | Design & Run Mode | ✅ | ✅ |
+
+> A component renders within the space the template provides — the template controls the frame size, not the component. To adapt a component's appearance to different frame proportions, use multiple layouts and Resize Mode. Actions that attempt to change the page size inside a component will not execute.
 
 !!! info "Output and animation"
     Templates that use components support print, static digital, and animated digital (GIF, MP4) output. When rendering animated output, the component frame can be animated in the template timeline — but the content inside the component does not animate.
