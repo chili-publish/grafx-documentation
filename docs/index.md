@@ -13,6 +13,16 @@
 
     ---
 
+    **Oct 06, 2026**: GraFx Experience 1.22: project card carousel and multi-claim SSO mapping
+
+    ![GraFx Experience icon for the GraFx Experience 1.22 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
+
+    Project cards show a carousel of the template's main visual and each layout, and admins can map multiple SAML or OpenID Connect claims to user groups.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/06/grafx-experience-122-project-card-carousel-and-multi-claim-sso-mapping/)
+
+    ---
+
     **Oct 02, 2026**: CHILI GraFx Platform Update
 
     ![CHILI GraFx icon for the October 2 platform update release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
@@ -60,16 +70,6 @@
     A change in Chromium 152 stopped the GraFx Studio editor from loading, leaving the canvas gray. Fixed in version 1.46 — environments on an earlier version need to update.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/02/grafx-studio-editor-load-fix-for-chromium-152/)
-
-    ---
-
-    **Aug 31, 2026**: GraFx Studio: Figma plugin (experimental)
-
-    ![GraFx Studio icon for the Figma plugin release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    An experimental GraFx Studio Exporter for Figma exports a selected frame — text, styles, colors, shapes, images, gradients, and effects — into an importable `.zip`, with preflight before export.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/31/grafx-studio-figma-plugin-experimental/)
 
     ---
 
