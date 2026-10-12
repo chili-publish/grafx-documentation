@@ -13,13 +13,13 @@
 
     ---
 
-    **Oct 12, 2026**: CHILI GraFx Environment API: Faster font lookups and more reliable connectors
+    **Oct 12, 2026**: CHILI GraFx Environment API: Unpublished changes, font lookups, and connectors
 
-    ![CHILI GraFx icon for the faster font lookups and connector reliability release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+    ![CHILI GraFx icon for the unpublished changes, font lookups, and connectors release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
 
-    Font families load faster in environments with a large font library, and an interrupted connector save can no longer make every connector in the environment disappear.
+    Components return whether they have unpublished changes, font family lookups are lighter, and an interrupted connector save no longer makes every connector disappear.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-faster-font-lookups-and-more-reliable-connectors/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-unpublished-changes-font-lookups-and-connectors/)
 
     ---
 
