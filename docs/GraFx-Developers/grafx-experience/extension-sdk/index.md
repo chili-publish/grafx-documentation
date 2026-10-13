@@ -16,7 +16,7 @@ You do not need to build your own `postMessage` protocol. Use `createExtensionSD
 
 - A [local extension](/GraFx-Developers/grafx-experience/create-local-extension/) with **SDK authentication** enabled, and **Experience pages** and/or **Admin Console pages** enabled
 - Node.js and npm
-- An HTTPS URL where you can host the app
+- Hosting for the app, reachable over HTTPS — see [Hosting your extension](/GraFx-Developers/grafx-experience/overview/#hosting-your-extension)
 
 !!! warning "Enable SDK authentication"
     Without **SDK authentication** on the local extension, the iframe does not receive a scoped JWT, and `connect()` cannot complete a useful handshake for API calls.
@@ -70,7 +70,9 @@ Tokens from `connect()` have `token_type: extension_sdk`. If you validate the to
 
 ## Step 4: Host and embed
 
-1. Deploy the app over HTTPS.
+Your extension app runs on hosting of your choice — your own, your customer's, or a third party's. For now, CHILI GraFx does not host extension apps.
+
+1. Deploy the app over HTTPS, on hosting of your choice.
 2. In the **Admin Console**, go to **Extensions** > **Installed** and open your local extension.
 3. Set **Base URL** to the origin of your app, and add the page paths your app serves.
 4. Enable **Active** and save.

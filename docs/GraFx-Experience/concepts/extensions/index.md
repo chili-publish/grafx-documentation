@@ -79,4 +79,7 @@ If a shared extension does not appear under **Installed**, contact CHILI publish
 
 Developers can build an extension as a web app that GraFx Experience embeds in the portal or the **Admin Console**. The Extension SDK handles the connection to the platform and authenticated API calls.
 
+!!! info "You choose where your extension runs"
+    Your extension app runs on hosting of your choice — your own, your customer's, or a third party's. For now, CHILI GraFx does not host extension apps. See [Hosting your extension](/GraFx-Developers/grafx-experience/overview/#hosting-your-extension).
+
 See [Extend GraFx Experience](/GraFx-Developers/grafx-experience/overview/) in the Developer Center.

@@ -95,7 +95,7 @@ Capabilities define what the extension can do on the platform.
 
 When you enable **Experience pages** or **Admin Console pages**:
 
-- Set **Base URL** to the HTTPS origin where your app is hosted.
+- Set **Base URL** to the HTTPS origin where your app is hosted. See [Hosting your extension](/GraFx-Developers/grafx-experience/overview/#hosting-your-extension).
 - Add at least one page, with a title and a path that your app serves.
 
 Experience pages then appear as a page type in the page editor, named after your extension. See [How extensions appear in the portal](/GraFx-Experience/concepts/extensions/#how-extensions-appear-in-the-portal).

@@ -6,13 +6,28 @@ See also: [The concept of extensions](/GraFx-Experience/concepts/extensions/)
 
 ## What you are building
 
-An extension is a web app that GraFx Experience loads in an iframe. You host the app yourself, over HTTPS. GraFx Experience embeds it on the pages the extension registers, and passes it the context it needs: who the user is, which installation it runs on, and a scoped token to call the platform API.
+An extension is a web app that GraFx Experience loads in an iframe. It runs on hosting of your choice, over HTTPS. GraFx Experience embeds it on the pages the extension registers, and passes it the context it needs: who the user is, which installation it runs on, and a scoped token to call the platform API.
 
 With an extension, you can:
 
 - Add pages to a space in the portal
 - Add pages to the **Admin Console**
 - Read and change platform data — for example users, groups, projects, or assets — through the Experience Extension API
+
+## Hosting your extension
+
+!!! info "You choose where your extension runs"
+    Your extension app runs on hosting of your choice — your own, your customer's, or a third party's. For now, CHILI GraFx does not host extension apps.
+
+GraFx Experience does not need your code — only a URL. You deploy the app wherever suits you, and register its HTTPS address as the **Base URL** of your [local extension](/GraFx-Developers/grafx-experience/create-local-extension/#capabilities). GraFx Experience then embeds the app from that address on the pages the extension registers.
+
+Any hosting works, as long as:
+
+- The app is reachable over **HTTPS**
+- It serves the page paths you register on the extension
+- It is available whenever your users open those pages
+
+See [Step 4: Host and embed](/GraFx-Developers/grafx-experience/extension-sdk/#step-4-host-and-embed) for the deployment steps.
 
 ## Two ways to integrate
 
@@ -30,7 +45,7 @@ To build an extension, you need:
 - Admin access to the **Admin Console** of your GraFx Experience installation
 - Familiarity with modern JavaScript and TypeScript
 - Node.js and npm
-- An HTTPS URL where you can host the extension app
+- Hosting for the extension app, reachable over HTTPS
 
 ## How to build an extension
 
