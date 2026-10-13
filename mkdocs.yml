@@ -543,6 +543,7 @@ nav:
             - 'Bynder DAM':                     'GraFx-Studio/connectors/connector-bynder/index.md'
             - 'Canto DAM':                      'GraFx-Studio/connectors/connector-canto/index.md'
             - 'GraFx Media':                    'GraFx-Studio/connectors/connector-grafx-media/index.md'
+            - 'Kadanza DAM':                    'GraFx-Studio/connectors/connector-kadanza/index.md'
             - 'Keepeek Media':                  'GraFx-Studio/connectors/connector-keepeek-media/index.md'
             - 'Sitecore Content Hub':           'GraFx-Studio/connectors/connector-sitecore-content-hub/index.md'
             - 'URL Connector':                  'GraFx-Studio/connectors/connector-URL/index.md'
