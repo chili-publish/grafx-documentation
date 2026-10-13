@@ -69,7 +69,7 @@ Extensions add functionality to your portal:
 - Enable other extensions (media, translations)
 - Configure how extensions are presented
 
-Extensions extend the portal’s capabilities beyond the core. See [Extensions](/GraFx-Experience/concepts/extensions/).
+Extensions extend the portal’s capabilities beyond the core.
 
 ## Branding & login
 

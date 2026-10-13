@@ -14,12 +14,6 @@ You can also extend the capabilities of CHILI GraFx and GraFx Studio by building
     - [What are connectors?](/GraFx-Studio/concepts/connectors/)
     - [Build your own connector](/GraFx-Developers/connectors/connectors-introduction/)
 
-You can extend GraFx Experience by building extensions that add your own pages and integrations to the portal.
-
-- **Extensions**
-    - [What are extensions?](/GraFx-Experience/concepts/extensions/)
-    - [Build your own extension](/GraFx-Developers/grafx-experience/overview/)
-
 
 ## Application Explanations
 

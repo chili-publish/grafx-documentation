@@ -385,7 +385,6 @@ nav:
             - 'First-time setup checklist':         'GraFx-Experience/getting-started/first-time-setup-checklist/index.md'
         - 'Concepts':
             - 'GraFx Experience':                   'GraFx-Experience/concepts/grafx-experience/index.md'
-            - 'Extensions':                         'GraFx-Experience/concepts/extensions/index.md'
             - 'CHILI GraFx extension':              'GraFx-Experience/concepts/chili-grafx-extension/index.md'
             - 'Fields':                             'GraFx-Experience/concepts/fields/index.md'
             - 'Template versioning':                'GraFx-Experience/concepts/template-versioning/index.md'
@@ -408,7 +407,6 @@ nav:
             - 'Edit a project':                     'GraFx-Experience/end-user/edit-project/index.md'
             - 'Manage your projects':               'GraFx-Experience/end-user/manage-projects/index.md'
             - 'Download and order output':          'GraFx-Experience/end-user/output-and-download/index.md'
-        - 'Build an extension ...':                 'GraFx-Developers/grafx-experience/overview/index.md'
 
     - 'GraFx Genie':
         - 'Introduction':                       'GraFx-Genie/index.md'
@@ -694,12 +692,6 @@ nav:
                 - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md'
                 - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
-        - 'Extend GraFx Experience':
-            - 'Overview':                       'GraFx-Developers/grafx-experience/overview/index.md'
-            - 'Create a local extension':       'GraFx-Developers/grafx-experience/create-local-extension/index.md'
-            - 'Build with the Extension SDK':   'GraFx-Developers/grafx-experience/extension-sdk/index.md'
-            - 'Authentication':                 'GraFx-Developers/grafx-experience/authentication/index.md'
-            - 'Experience Extension API':       'GraFx-Developers/grafx-experience/api-reference/index.md'
         - 'Connectors':
             - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
             - 'Connector CLI':
