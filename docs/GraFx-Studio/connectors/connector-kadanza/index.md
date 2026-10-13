@@ -32,15 +32,17 @@ Then click the installed connector to access the configuration.
 
 Your instance of the connector needs to know which Kadanza DAM instance it should communicate with and how to authenticate.
 
+![The Kadanza connector's Configuration tab, with BASE_URL set to https://dam2.kadanza.io, an empty DEBUG field and *.kadanza.io as allowed domain](config.png){.screenshot-full}
+
 **BASE_URL**
 
-The URL of your Kadanza DAM instance. Your Kadanza DAM administrator will provide you with this information.
-
-For example:
+The URL of your Kadanza DAM instance. For most customers, this is:
 
 ```html
-https://[your-domain]
+https://dam2.kadanza.io
 ```
+
+If your organization has a dedicated Kadanza DAM instance, the URL is different. Your Kadanza DAM administrator will provide you with the correct value.
 
 **DEBUG**
 
@@ -48,18 +50,44 @@ Leave this empty for normal use. When set to any value, the connector writes det
 
 **Proxy settings**
 
-CHILI GraFx needs to know which domains are allowed. Add the domain of your Kadanza DAM instance.
+CHILI GraFx needs to know which domains are allowed.
+
+For example:
+
+```html
+*.kadanza.io
+```
 
 ### Authentication
 
 Select your type of authentication. The Kadanza connector supports:
 
-- **OAuth 2.0 Resource Owner Password** — for **Server** and **Browser**. The connector signs in to Kadanza DAM with one fixed account. Every user sees the assets that account has access to.
+- **OAuth 2.0 Resource Owner Password** — for **Server** and **Browser**. The connector signs in to Kadanza DAM with one fixed account, such as a service account. Every user sees the assets that account has access to.
 - **OAuth 2.0 Authorization Code** — for **Browser** only. Each user signs in with their own Kadanza account, so they see only the assets they are allowed to access in Kadanza DAM.
 
-For both types, you need the **Client ID**, **Client Secret**, and the token endpoint from your Kadanza DAM administrator. Authorization Code also needs the authorization endpoint. The client credentials can be sent either as a Basic authorization header or in the request body.
+By default, server and browser use the same authentication. Turn on **Enable separate server and browser authentication** to set them up differently.
+
+![The Authentication tab, set to OAuth 2.0 Resource Owner Password for server and browser, with Client ID, Client secret, Username, Password and Token endpoint filled in](config-auth.png){.screenshot-full}
+
+**OAuth 2.0 Resource Owner Password**
+
+- **Client ID** and **Client secret**: provided by your Kadanza DAM administrator.
+- **Username** and **Password**: the Kadanza account the connector signs in with.
+- **Token endpoint**:
+
+```html
+https://idp.kadanza.io/oauth2/token
+```
+
+- **Scope**: leave empty, unless your Kadanza DAM administrator tells you otherwise.
+
+**OAuth 2.0 Authorization Code**
+
+You need the **Client ID**, **Client secret**, token endpoint, and authorization endpoint from your Kadanza DAM administrator. The client credentials can be sent either as a Basic authorization header or in the request body.
 
 Because Authorization Code is browser-only, use Resource Owner Password for **Server** authentication. The credentials you set there determine which assets are available when CHILI GraFx generates output.
+
+Use **Test authentication** to check your settings before you save.
 
 See [Authorization for Connectors](/GraFx-Developers/connectors/authorization-for-connectors/) for more details on each authorization type.
 
@@ -88,15 +116,15 @@ See [Concept of metadata mapping](/GraFx-Studio/concepts/connectors-media/#conce
 
 ### Configuration Options
 
-Kadanza DAM organizes assets in **categories**, which work like folders and can contain subcategories. A **category group** (also called an entry point) bundles one or more top-level categories.
+Kadanza DAM organizes assets in **categories**, which work like folders and can contain subcategories. An **entry point** (called a category group in the connector settings) bundles one or more top-level categories.
 
 To control which assets template users are offered, set one or more of these options on the image variable. Each value can be fixed, or linked to another variable.
 
 #### Category group (entrypoint) ID
 
-When set, users start at the top-level categories of this category group, shown as folders. They can browse into each category and its subcategories.
+When set, users start at the top-level categories of this entry point, shown as folders. They can browse into each category and its subcategories.
 
-A search started at the top level searches all categories in the group, including subcategories. A search started inside a category searches that category only.
+A search started at the top level searches all categories in the entry point, including subcategories. A search started inside a category searches that category only.
 
 #### Category ID
 
@@ -104,7 +132,19 @@ When set, users start inside this category. They see its subcategories as folder
 
 A search searches the current category only, not its subcategories.
 
-If both **Category group (entrypoint) ID** and **Category ID** are set, the category group is used.
+If both **Category group (entrypoint) ID** and **Category ID** are set, the entry point is used.
+
+#### Find the IDs
+
+Kadanza DAM administrators can find the IDs in the Kadanza DAM **Admin console**, under **Assets**:
+
+- **Entry points**: the **ID** column shows the ID to use for **Category group (entrypoint) ID**.
+
+![The Entry points page in the Kadanza Admin console, with the ID column highlighted](entry-points.png){.screenshot-full}
+
+- **Categories**: the **ID** column shows the ID to use for **Category ID**.
+
+![The Categories page in the Kadanza Admin console, with the ID column highlighted](categories.png){.screenshot-full}
 
 !!! tip "No category set"
     When neither option is set, users see one flat list of all assets they have access to, without folders.
@@ -123,4 +163,4 @@ When a user types `shoe`, the connector searches Kadanza DAM for `_all:shoe`.
 
 The search query only applies when the user types in the search field. When it is not set, the typed text is used as a plain search.
 
-To find the right search syntax and the IDs for categories and category groups, consult your Kadanza DAM administrator.
+For the right search syntax, consult your Kadanza DAM administrator.
