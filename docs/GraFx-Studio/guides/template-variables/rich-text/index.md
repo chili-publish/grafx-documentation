@@ -20,15 +20,15 @@ The rules refer to styles **by name**. The paragraph and character styles themse
 
 ## Set up rich text import rules
 
-<!-- TODO Bram: confirm the exact menu path and add screenshots (rule set list, rule set details with a few rules, Import structure from Brand Kit modal). Zeplin/Figma refs on GRAFX-5982, GRAFX-5985, GRAFX-5991. -->
+<!-- TODO Bram: add screenshots (side menu, rule set list, rule set details with a few rules, Import structure from Brand Kit modal). -->
 
-In your environment, open **GraFx Studio** and go to **Rich text import rules**, next to **User interfaces**.
+In your environment, go to **GraFx Studio** > **Manage** > **Rich text import rules**, just below **User interfaces**. The page lists the rule sets in your environment.
 
 Rich text import rules use the same roles and permissions as Brand Kits.
 
 ### Create a rule set
 
-Click **Create rule set** and give it a name. Names are unique within the environment; if the name is already taken, a number is added.
+Click **Create new set of rules** and give it a name. Names are unique within the environment; if the name is already taken, a number is added.
 
 A new rule set starts with one rule: a **Linebreak** for the `br` element. Remove it if you don't need it.
 
@@ -47,6 +47,8 @@ Click **Add rule**. Each rule is one row:
 You decide the tag names. They don't have to be HTML: if your source system writes `<headline>` or `<price>`, use those names in your rules.
 
 The elements `p`, `ol`, `ul` and `li` are reserved for paragraphs. A rule for one of them always applies a **Paragraph style**.
+
+You don't need rules for lists: `ul` and `ol` are converted automatically (see [Lists](#lists)).
 
 ### Match on attributes
 
@@ -102,7 +104,7 @@ In the **General** tab, the **Rich text import rules** section has a dropdown wi
 
 ### General properties
 
-- **Required**
+- **Required** — the value must contain printable text. Empty markup such as `<p></p>` counts as empty
 - **Remove paragraph if empty** — removes the paragraph that holds the variable when the variable has no value
 - [Private data](/GraFx-Studio/concepts/private-data/)
 
@@ -130,7 +132,7 @@ The rules are loaded when a template or project opens, in the Template Designer,
 
 ### Elements with a matching rule
 
-Each element is formatted by the rule that matches it. When more than one rule matches the same element, the rule with the most matches wins — so a rule for `p` with `class` = `intro` beats a plain rule for `p`.
+Each element is formatted by the rule that matches it. When more than one rule matches the same element, the rule with the most matches wins — so a rule for `p` with `class` = `intro` beats a plain rule for `p`. If two rules match equally well, the first one in the rule set wins.
 
 Elements can be nested. With nested character styles, the innermost one wins.
 
@@ -139,6 +141,15 @@ Elements can be nested. With nested character styles, the innermost one wins.
 An element that has no matching rule is ignored: its tags are removed and its text is kept. That also applies to `p` — without a rule for `p`, no new paragraph is started.
 
 If a rule points to a style name that doesn't exist in the template, the text is shown without that style.
+
+### Lists
+
+Unordered and ordered lists are converted automatically, without a rule:
+
+- `<ul>` with `<li>` items becomes a bulleted list
+- `<ol>` with `<li>` items becomes a numbered list
+
+Converted lists use the default paragraph style, with the default bullets or numbering. See also [Bulleted lists](/GraFx-Studio/guides/bulleted-lists/) and [Numbered lists](/GraFx-Studio/guides/numbered-lists/).
 
 ### Line breaks
 

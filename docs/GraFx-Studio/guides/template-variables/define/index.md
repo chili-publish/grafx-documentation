@@ -173,11 +173,11 @@ In the list of variables, you can double click or "Rename" the variable Name.
 
 ### Description
 
-<!-- TODO Bram: confirm the exact field label and location, and add a screenshot (Figma ref on WRS-3238). -->
+<!-- TODO Bram: add a screenshot of the Description section. -->
 
-An optional description of what the variable is for. A variable name like `txt_hl_2` says little to the next designer; a description such as "Second headline, only used on the square layout" does. GraFx Genie also reads the description, so it has more context than the name alone when it writes Actions.
+An optional description of what the variable is for. Enter it in the **Description** section of the variable settings, just above **Private data**. A variable name like `txt_hl_2` says little to the next designer; a description such as "Second headline, only used on the square layout" does. GraFx Genie also reads the description, so it has more context than the name alone when it writes Actions.
 
-- The description is stored in the template, with the variable.
+- The description is stored in the template, with the variable. It is for internal use only and isn't shown to end users.
 - You can set it, change it, or clear it at any time.
 - When you [map a component variable](/GraFx-Studio/guides/use-components/#map-to-a-new-variable) to a **new** template variable, its description is copied to the new variable. Mapping to an existing variable or to a data source column doesn't copy it.
 
