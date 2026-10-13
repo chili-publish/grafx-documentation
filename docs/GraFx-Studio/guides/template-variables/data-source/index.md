@@ -87,6 +87,8 @@ Because nothing is pulling data, GraFx Studio cannot discover the shape of it. Y
 
 At least one field is needed before List mode can be configured.
 
+Field names must be unique within the schema. If two fields share a name, GraFx Studio shows an error; rename one of them to continue. Unique names keep [component mappings](#use-a-record-to-fill-a-component) pointing at the right field.
+
 Two rules govern what happens when the pushed data doesn't match the schema:
 
 - Extra fields in the incoming data are **ignored**.

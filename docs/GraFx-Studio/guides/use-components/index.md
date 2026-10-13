@@ -128,6 +128,8 @@ If the template does not yet have matching variables, set **Map to** to **New va
 
 The summary at the bottom of the modal shows how many mappings will be created and how many new variables will be added. Click **Apply** to confirm.
 
+A new variable takes over the [description](/GraFx-Studio/guides/template-variables/define/#description) of the component variable. A component **rich text** variable gets a new **Multi-line text** variable — see [Rich text variables in components](/GraFx-Studio/guides/template-variables/rich-text/#rich-text-variables-in-components).
+
 ![Mapping modal showing two component variables mapped to new variables](newvarmapping.png){.screenshot-full}
 
 ### Map to an existing variable
@@ -137,6 +139,8 @@ If the template already has variables — for example because another instance o
 This is also how you connect two component instances to the **same** template variable, if you want them to always show the same value.
 
 Component **image** variables map to a **Single-line text** or **Single-select list** template variable that holds the asset ID. See [Passing an image into a component](/GraFx-Studio/guides/build-component/#passing-an-image-into-a-component).
+
+Component **rich text** variables map to a **Single-line text** or **Multi-line text** template variable.
 
 ![Map to dropdown expanded showing New variable and Variable options](existingvarmapping.png){.screenshot-full}
 

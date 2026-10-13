@@ -113,6 +113,7 @@ A get function will retrieve a value
 	- getFrameX
 	- getFrameY
 	- getImageVariableValue
+	- getLayoutIntent
 	- getListVariableValue
 	- getPageHeight
 	- getPageWidth

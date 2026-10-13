@@ -112,6 +112,10 @@ See also: [Text Direction](/GraFx-Studio/concepts/text-direction/)
 
 A placeholder for multi-line text.
 
+### Rich text
+
+A placeholder for text that carries its own markup, such as `<h1>` or `<span class="highlight">`. Rich text import rules turn the tags into the paragraph and character styles of your template. See [Rich text variables](/GraFx-Studio/guides/template-variables/rich-text/).
+
 ### Image
 
 A placeholder for a reference to an image in the (GraFx) Media pool, or other sources through **Connectors**
@@ -167,6 +171,18 @@ In the list of variables, you can double click or "Rename" the variable Name.
     The variable name is the technical name, that will be used for further automation.
     In the appearance tab you can set the (display) label, that will be shown in the [Studio UI interface](/GraFx-Studio/concepts/template-management/?h=studio#studio-ui).
 
+### Description
+
+<!-- TODO Bram: confirm the exact field label and location, and add a screenshot (Figma ref on WRS-3238). -->
+
+An optional description of what the variable is for. A variable name like `txt_hl_2` says little to the next designer; a description such as "Second headline, only used on the square layout" does. GraFx Genie also reads the description, so it has more context than the name alone when it writes Actions.
+
+- The description is stored in the template, with the variable.
+- You can set it, change it, or clear it at any time.
+- When you [map a component variable](/GraFx-Studio/guides/use-components/#map-to-a-new-variable) to a **new** template variable, its description is copied to the new variable. Mapping to an existing variable or to a data source column doesn't copy it.
+
+For developers: set it with `setVariableDescription` in the [GraFx Studio SDK](https://github.com/chili-publish/studio-sdk). Variables without a description don't have a `description` property in the document JSON.
+
 ### Default state
 
 ![DEFAULT STATE for Firstname, showing the placeholder John Doe and the help text Enter your firstname](var04.png){.screenshot}
@@ -181,7 +197,7 @@ The default value your template variable will have.
 - Required: Disabled by default
 - Remove paragraph if empty: Disabled by default  
 Check to remove the full paragraph this variable is used on.  
-Available on (Single-line text, Multi-line text, Single-select list, Date)
+Available on (Single-line text, Multi-line text, Rich text, Single-select list, Date)
 ![The email line dropping out of an address block on the canvas when the Email variable is emptied](removeparagraph.gif){.screenshot-full}
 - [Private data](/GraFx-Studio/concepts/private-data/?h=private)  
 A set of key-value pairs to assist you with automation.
