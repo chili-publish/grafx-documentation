@@ -49,7 +49,9 @@ To build an extension, you need:
 
 ## How to build an extension
 
-Follow these pages in order:
+New to extensions? Start with the [Hello world tutorial](/GraFx-Developers/grafx-experience/hello-world/): it takes you from an empty folder to a working page in the portal.
+
+For the full picture, follow these pages in order:
 
 1. [Create a local extension](/GraFx-Developers/grafx-experience/create-local-extension/) — register the extension in the **Admin Console** and choose its permissions and capabilities.
 2. [Build with the Extension SDK](/GraFx-Developers/grafx-experience/extension-sdk/) — scaffold the app, connect to the host, call the API, and embed the app.
