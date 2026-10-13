@@ -13,6 +13,16 @@
 
     ---
 
+    **Oct 12, 2026**: CHILI GraFx Environment API: Unpublished changes, font lookups, and connectors
+
+    ![CHILI GraFx icon for the unpublished changes, font lookups, and connectors release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+
+    Components return whether they have unpublished changes, font family lookups are lighter, and an interrupted connector save no longer makes every connector disappear.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-unpublished-changes-font-lookups-and-connectors/)
+
+    ---
+
     **Oct 02, 2026**: CHILI GraFx Platform Update
 
     ![CHILI GraFx icon for the October 2 platform update release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
@@ -60,16 +70,6 @@
     A change in Chromium 152 stopped the GraFx Studio editor from loading, leaving the canvas gray. Fixed in version 1.46 — environments on an earlier version need to update.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/02/grafx-studio-editor-load-fix-for-chromium-152/)
-
-    ---
-
-    **Aug 31, 2026**: GraFx Studio: Figma plugin (experimental)
-
-    ![GraFx Studio icon for the Figma plugin release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    An experimental GraFx Studio Exporter for Figma exports a selected frame — text, styles, colors, shapes, images, gradients, and effects — into an importable `.zip`, with preflight before export.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/08/31/grafx-studio-figma-plugin-experimental/)
 
     ---
 
