@@ -8,6 +8,38 @@ What you will build:
 - A call to the platform API that reads the signed-in user
 - A page that shows "Hello, {first name}!" in the branding of your portal
 
+## How it works
+
+The extension is a small web app on your own hosting. When a user opens its page in a space, GraFx Experience loads the app in an iframe. The app asks the platform who is signed in, and shows "Hello, {first name}!" in the colors and font of your portal, together with the space, page, and locale it runs in.
+
+The app communicates with GraFx Experience in two ways. The Extension SDK handles both.
+
+**With the portal, through browser messages.** GraFx Experience adds its own address to the iframe URL as `tenantUrl`. The SDK only accepts messages from that address. When the app starts, the SDK sends a handshake request (`HANDSHAKE_INIT`) to the portal. The portal answers (`HANDSHAKE_ACK`) with:
+
+- The context of the page — space, page, and locale
+- The branding of the portal — primary color, font, and corner radius
+- A short-lived token (JWT) for the signed-in user, limited to the permissions of the extension
+
+When the token is about to expire, the SDK asks the portal for a new one in the same way.
+
+**With the platform API, over HTTPS.** With that token, the app calls the API directly — in this tutorial, `/platform/v1/api/users/me`. The SDK adds the token and the identifier of your installation to every request. The call runs as the signed-in user, and only within the permissions of the extension.
+
+```mermaid
+sequenceDiagram
+    participant Portal as GraFx Experience portal
+    participant App as Extension app (your hosting)
+    participant API as Platform API
+    Portal->>App: Load app in iframe (with tenantUrl)
+    App->>Portal: HANDSHAKE_INIT
+    Portal->>App: HANDSHAKE_ACK (context, branding, token)
+    App->>API: GET /platform/v1/api/users/me (with token)
+    API->>App: Signed-in user
+    App->>Portal: REQUEST_TOKEN_REFRESH (before expiry)
+    Portal->>App: TOKEN_REFRESH (new token)
+```
+
+In short: the portal provides the context and the access, your hosting runs the app, and the API does what the user is allowed to do — within the permissions of the extension.
+
 ## Before you start
 
 - Admin access to the **Admin Console** of your GraFx Experience installation
