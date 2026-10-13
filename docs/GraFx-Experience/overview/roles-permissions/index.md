@@ -57,6 +57,8 @@ A user with no group membership cannot perform any actions.
 - Supported via federated identity providers.
 - When enabled, the identity provider passes group information at login.
 - Group membership from the identity provider determines access and permissions.
+- Admins can map one or more claims from the identity provider (SAML or OpenID Connect) to user groups. Each claim has its own mapping of claim values to user groups.
+- At every login, all mapped claims are evaluated. The user receives every matching user group, together with the default SSO groups.
 - This method centralizes identity and simplifies user provisioning.
 
 ## Assigning roles & groups
