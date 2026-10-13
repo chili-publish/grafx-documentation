@@ -694,11 +694,11 @@ nav:
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Extend GraFx Experience':
             - 'Overview':                       'GraFx-Developers/grafx-experience/overview/index.md'
-            - 'Tutorial: Hello world':          'GraFx-Developers/grafx-experience/hello-world/index.md'
             - 'Create a local extension':       'GraFx-Developers/grafx-experience/create-local-extension/index.md'
             - 'Build with the Extension SDK':   'GraFx-Developers/grafx-experience/extension-sdk/index.md'
             - 'Authentication':                 'GraFx-Developers/grafx-experience/authentication/index.md'
             - 'Experience Extension API':       'GraFx-Developers/grafx-experience/api-reference/index.md'
+            - 'Tutorial: Hello world':          'GraFx-Developers/grafx-experience/hello-world/index.md'
         - 'Connectors':
             - 'Introduction': 'GraFx-Developers/connectors/connectors-introduction/index.md'
             - 'Connector CLI':
