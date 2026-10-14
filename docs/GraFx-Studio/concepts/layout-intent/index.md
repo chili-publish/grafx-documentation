@@ -62,3 +62,20 @@ The size did not color, since it's converted from Pixels, and will reflect the s
 
 ![Timeline of a digital animated layout, with a five-second bar for Image 2 and Image 1](animation.png){.screenshot-full}
 
+## Use the intent in Actions
+
+[Actions](/GraFx-Studio/concepts/actions/) can read the intent of a layout, so a template can react to the kind of output it is producing — for example, switch to a print-friendly Brand Kit theme whenever a print layout is selected.
+
+The [helper function](/GraFx-Studio/concepts/helper-functions/) `getLayoutIntent` takes a layout name and returns `print`, `digitalStatic` or `digitalAnimated`.
+
+```javascript
+// Trigger: Select layout changed
+if (getLayoutIntent(getSelectedLayoutName()) === 'print') {
+  switchTheme('Print');
+} else {
+  switchTheme('Digital');
+}
+```
+
+The intent is always read from the layout that is selected at that moment, including after a layout or page size change.
+

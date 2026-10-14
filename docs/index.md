@@ -13,6 +13,16 @@
 
     ---
 
+    **Oct 13, 2026**: GraFx Studio: Rich text variables
+
+    ![GraFx Studio icon for the rich text variables release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    A new Rich text variable type turns tagged text from a data feed into your template's paragraph and character styles, using import rules managed per environment.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/13/grafx-studio-rich-text-variables/)
+
+    ---
+
     **Oct 06, 2026**: GraFx Experience 1.22: project card carousel and multi-claim SSO mapping
 
     ![GraFx Experience icon for the GraFx Experience 1.22 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
@@ -60,16 +70,6 @@
     Paragraph styles and character styles in a Brand Kit now take an optional description, shared across every theme and returned in the resolved theme.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/15/chili-grafx-environment-api-descriptions-for-brand-kit-text-styles/)
-
-    ---
-
-    **Sep 02, 2026**: GraFx Studio: Editor load fix for Chromium 152
-
-    ![GraFx Studio icon for the Chromium 152 editor load fix release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    A change in Chromium 152 stopped the GraFx Studio editor from loading, leaving the canvas gray. Fixed in version 1.46 — environments on an earlier version need to update.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/02/grafx-studio-editor-load-fix-for-chromium-152/)
 
     ---
 

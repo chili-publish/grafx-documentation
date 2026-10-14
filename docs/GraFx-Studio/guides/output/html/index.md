@@ -5,9 +5,6 @@
 	
 	This feature and related endpoints (for the API) are not yet final: syntax might change, response could be different, etc. Don't base your production code on experimental features. See [Feature maturity](/release-notes/feature-maturity/).
 
-!!! warning "Components are not supported"
-	HTML output does not support components. If your template uses components, it will fail during output.
-
 ## Create an output setting
 
 [How to create an export setting?](/GraFx-Studio/guides/output/settings/)
@@ -47,3 +44,9 @@ Click "Download" and choose your output setting in the dropdown.
 If you don't see the correct output settings, check the [User interface](/GraFx-Studio/guides/manage-user-interfaces/), and if it's assigned to the Collection before you create a project.
 
 More on the [workflow](/GraFx-Studio/concepts/template-management/#process) on how to make templates available in My projects with the right output settings.
+
+## Components and images in HTML output
+
+- **Component frames** are rendered in HTML output, including their [resize mode](/GraFx-Studio/guides/use-components/#resize-mode) (Scale, Resize, or Scale and resize) and background color.
+- **Image frames** are clipped to the shape of the frame. When the frame has a stroke, the stroke is drawn on top of the clipped image.
+- Every asset in the exported zip file gets a unique file name, for example `logo.png` and `logo_2.png`.
