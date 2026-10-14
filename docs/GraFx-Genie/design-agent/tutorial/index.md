@@ -105,4 +105,4 @@ A recap you can paste into a handover note or a ticket.
 
 - Give the agent context once, so every session starts further ahead: [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/) and [custom skills](/GraFx-Genie/design-agent/skills/).
 - Keep [What you can ask](/GraFx-Genie/design-agent/commands/) open the first few times; it lists what the agent understands, by area.
-- Check [What's new](/GraFx-Genie/design-agent/whats-new/) now and then; the Beta changes often.
+- Keep an eye on the [release notes](/release-notes/); the Beta changes often.

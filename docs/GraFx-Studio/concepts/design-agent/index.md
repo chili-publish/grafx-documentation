@@ -4,8 +4,7 @@ You have a design in GraFx Studio and a long list of structural work ahead: vari
 
 Open it from the GraFx Genie icon in the left panel of the template workspace.
 
-!!! example "Beta"
-    The Design Agent is in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is). Results can vary between runs; everything it does is a regular, editable change to the template.
+The Design Agent is available in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is).
 
 ## Read more
 

@@ -6,8 +6,7 @@
 
 # Design Agent (Beta)
 
-!!! example "Beta"
-    The GraFx Genie Design Agent is available in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is). Results can differ between runs of the same prompt. Everything the agent does is a regular, editable change to your template, and every turn can be undone in one step.
+The GraFx Genie Design Agent is available in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is).
 
 ## What it is
 
@@ -59,7 +58,6 @@ Most teams start at 1 to learn what the agent does, and move to 3 for the work t
 - [What you can ask](/GraFx-Genie/design-agent/commands/): a reference of the commands and questions the agent understands, by area.
 - [Guide: adapt an existing design](/GraFx-Genie/design-agent/adapt-a-design/) and [Guide: design from scratch](/GraFx-Genie/design-agent/design-from-scratch/): two worked examples.
 - [Enable, disable and data](/GraFx-Genie/design-agent/manage/): the environment-level opt-out, roles, and what is logged.
-- [What's new](/GraFx-Genie/design-agent/whats-new/): dated change log of the Beta.
 
 ## How a conversation works
 

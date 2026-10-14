@@ -22,7 +22,7 @@ Skills complement [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-d
 
 ## Where skills live
 
-Skills are managed per environment in **Environment settings › Skills** (in the settings menu between **Connectors** and **Subject types**). Subscription Admins and Environment Admins manage them, see [roles](/CHILI-GraFx/users/roles/). Every environment can hold up to **10** skills.
+Skills are a platform concept, see [Skills](/CHILI-GraFx/concepts/skills/). They are managed per environment in **Environment settings › Skills** (in the settings menu between **Connectors** and **Subject types**) by Subscription Admins and Environment Admins, see [roles](/CHILI-GraFx/users/roles/) and [Manage skills](/CHILI-GraFx/guides/manage-skills/). Every environment can hold up to **10** skills.
 
 ![The Skills page in environment settings: a list of skills with an Enabled toggle per skill, and the Import Skill and Create skill buttons in the header](skills-list.png){.screenshot-full}
 

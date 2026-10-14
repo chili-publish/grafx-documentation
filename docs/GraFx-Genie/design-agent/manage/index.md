@@ -21,7 +21,7 @@ Only Subscription Admins and Environment Admins can change the opt-out, see [rol
 ## Who can use it
 
 - **Use the chat:** anyone who can open a template in the GraFx Studio workspace, that is, users with a Template Designer seat.
-- **Manage custom skills:** Subscription Admins and Environment Admins, in **Environment settings › Skills**. See [custom skills](/GraFx-Genie/design-agent/skills/).
+- **Manage custom skills:** Subscription Admins and Environment Admins, in **Environment settings › Skills**. See [Manage skills](/CHILI-GraFx/guides/manage-skills/) and [custom skills](/GraFx-Genie/design-agent/skills/).
 - **Manage Brand Kit descriptions:** anyone who can edit the Brand Kit in GraFx Brand Kits. See [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/).
 
 ## Usage
