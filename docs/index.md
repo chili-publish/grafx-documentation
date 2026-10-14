@@ -23,13 +23,13 @@
 
     ---
 
-    **Oct 12, 2026**: CHILI GraFx Environment API: Unpublished changes, font lookups, and connectors
+    **Oct 06, 2026**: GraFx Experience 1.22: project card carousel and multi-claim SSO mapping
 
-    ![CHILI GraFx icon for the unpublished changes, font lookups, and connectors release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+    ![GraFx Experience icon for the GraFx Experience 1.22 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
 
-    Components return whether they have unpublished changes, font family lookups are lighter, and an interrupted connector save no longer makes every connector disappear.
+    Project cards show a carousel of the template's main visual and each layout, and admins can map multiple SAML or OpenID Connect claims to user groups.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-unpublished-changes-font-lookups-and-connectors/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/06/grafx-experience-122-project-card-carousel-and-multi-claim-sso-mapping/)
 
     ---
 

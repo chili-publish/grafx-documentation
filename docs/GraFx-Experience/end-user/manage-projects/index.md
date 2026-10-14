@@ -9,7 +9,7 @@ All saved projects are accessible from the **Projects** page. This page gives yo
 
 The **My projects** tab shows all projects you have created. Each project card displays:
 
-- A thumbnail preview
+- A preview carousel of the project's layouts (see [Project card previews](#project-card-previews))
 - The project name
 - The number of print and digital layouts included
 - The date and author of the last edit
@@ -19,6 +19,16 @@ Use the **search bar**, **sort**, and **filter** controls to find projects quick
 
 ![The My projects tab showing a grid of project cards with thumbnail previews, project names, layout counts, last-edited dates, and Edit and Print/Download buttons](ge14.png){.screenshot-full}
 
+## Project card previews
+
+Each project card shows a carousel you can page through, so you can recognize a project without opening it. The carousel works the same in grid and list view, in **My projects**, **All projects**, and your lists.
+
+- If the template has a main visual, it is shown first, followed by one slide for each layout in the project.
+- If the template has no main visual, the carousel starts with the layout previews.
+- If no visual or preview is available, the card shows a single fallback image without carousel controls.
+
+Only the layouts included in the project are shown. While a layout preview is still being generated, the card shows the main visual greyed out with a loading indicator. If a preview could not be generated, the template image is shown in its place.
+
 ## All projects
 
 The **All projects** tab shows projects created by other users in your organization. Which projects are visible depends on your user group and the access permissions configured by your admin.
@@ -26,6 +36,8 @@ The **All projects** tab shows projects created by other users in your organizat
 ## Downloads
 
 The **Downloads** tab shows all output files you have requested. When a file is ready, the status updates and you can download it from this page.
+
+A download that produces several files at once appears as a single entry with the total number of files it contains. Use **Download all** to get every file in that entry as one ZIP file.
 
 ## Lists
 
