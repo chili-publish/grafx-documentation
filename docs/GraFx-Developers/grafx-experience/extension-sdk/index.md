@@ -52,7 +52,7 @@ const { authToken, extensionDetails, designTokens } = await sdk.connect({
 - Context fields are `null` when the surface does not provide them. For example, **Admin Console** pages have no `spaceId` or `pageId`.
 
 !!! tip "React apps"
-    Wrap your app in a provider that connects once, waits to render the UI until the handshake succeeds, and calls `destroy()` only on `pagehide`. See [Building a React extension](https://github.com/kadanza-io/extension-sdk/blob/main/docs/react-guide.md) in the SDK repository.
+    Wrap your app in a provider that connects once, waits to render the UI until the handshake succeeds, and calls `destroy()` only on `pagehide`. See [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md) in the SDK repository.
 
 ## Step 3: Call the platform API
 
@@ -79,14 +79,14 @@ Your extension app runs on hosting of your choice — your own, your customer's,
 
 GraFx Experience loads the iframe from your **Base URL** and adds a `tenantUrl` query parameter with the origin of the parent page. The SDK uses that value to validate messages from the host.
 
-Use hash routing so in-app navigation does not drop `tenantUrl`. To let the portal know about route changes, call `emitNavigationChange` — see [Navigation](https://github.com/kadanza-io/extension-sdk/blob/main/docs/flows.md#navigation) in the SDK repository.
+Use hash routing so in-app navigation does not drop `tenantUrl`. To let the portal know about route changes, call `emitNavigationChange` — see [Navigation](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/flows.md#navigation) in the SDK repository.
 
 ## Further reading
 
 | Resource | What it covers |
 |---|---|
-| [Building a React extension](https://github.com/kadanza-io/extension-sdk/blob/main/docs/react-guide.md) | Provider, handshake gate, API calls, navigation tracker |
-| [Flows](https://github.com/kadanza-io/extension-sdk/blob/main/docs/flows.md) | Handshake, design tokens, `apiCall`, token refresh, page settings, navigation |
-| [Embedding](https://github.com/kadanza-io/extension-sdk/blob/main/docs/embedding.md) | How the host embeds an extension: iframe `src`, `tenantUrl`, host API |
+| [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md) | Provider, handshake gate, API calls, navigation tracker |
+| [Flows](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/flows.md) | Handshake, design tokens, `apiCall`, token refresh, page settings, navigation |
+| [Embedding](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/embedding.md) | How the host embeds an extension: iframe `src`, `tenantUrl`, host API |
 | [SDK API reference](https://kadanza-io.github.io/extension-sdk/) | Classes, interfaces, and payloads |
 | [npm package](https://www.npmjs.com/package/@kadanza/extension-sdk) | Installation and versions |
