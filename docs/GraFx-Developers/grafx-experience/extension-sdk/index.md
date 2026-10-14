@@ -1,27 +1,27 @@
 # Build with the Extension SDK
 
-This guide walks you through building an embedded GraFx Experience extension with the Extension SDK: scaffold the app, connect to the host, call the platform API, and embed the app through your local extension.
+This guide shows how to build an extension app with the Extension SDK: set up the app, connect to GraFx Experience, call the platform API, and embed the app.
 
 ## How it works
 
-Your extension is a web app that GraFx Experience loads in an iframe. The Extension SDK (`@kadanza/extension-sdk`) handles everything between your app and the portal:
+GraFx Experience loads your app in an iframe. The Extension SDK (`@kadanza/extension-sdk`) handles:
 
-- The **handshake** with the host page
-- The **scoped JWT** that lets your app act on behalf of the current user
-- **Authenticated calls** to the [Experience Extension API](/GraFx-Developers/grafx-experience/api-reference/)
+- The **handshake** with the portal
+- The **token** that lets your app act for the signed-in user
+- **API calls** to the [Experience Extension API](/GraFx-Developers/grafx-experience/api-reference/)
 
-You do not need to build your own `postMessage` protocol. Use `createExtensionSDK()` and the flows documented in the SDK.
+You don't need to write your own `postMessage` code. Use `createExtensionSDK()` and the flows in the SDK.
 
 ## Before you start
 
-- A [local extension](/GraFx-Developers/grafx-experience/create-local-extension/) with **SDK authentication** enabled, and **Experience pages** and/or **Admin Console pages** enabled
+- A [local extension](/GraFx-Developers/grafx-experience/create-local-extension/) with **SDK authentication** on, and **Experience pages** and/or **Admin Console pages** on
 - Node.js and npm
-- Hosting for the app, reachable over HTTPS — see [Hosting your extension](/GraFx-Developers/grafx-experience/overview/#hosting-your-extension)
+- Hosting for the app, reachable over HTTPS. See [Hosting your extension](/GraFx-Developers/grafx-experience/overview/#hosting-your-extension).
 
-!!! warning "Enable SDK authentication"
-    Without **SDK authentication** on the local extension, the iframe does not receive a scoped JWT, and `connect()` cannot complete a useful handshake for API calls.
+!!! warning "Turn on SDK authentication"
+    Without it, your app doesn't receive a token and can't call the API.
 
-## Step 1: Scaffold the app
+## Step 1: Set up the app
 
 Use React, Vite, and TypeScript:
 
@@ -31,9 +31,9 @@ cd my-extension
 npm install @kadanza/extension-sdk react-router-dom
 ```
 
-Use **`HashRouter`**, not `BrowserRouter`. Hash routing keeps the `tenantUrl` query parameter that the host adds to the iframe URL intact while your app navigates.
+Use **`HashRouter`**, not `BrowserRouter`. GraFx Experience adds a `tenantUrl` parameter to the iframe URL, and hash routing keeps it in place while your app navigates.
 
-## Step 2: Connect to the host
+## Step 2: Connect to GraFx Experience
 
 ```typescript
 import { createExtensionSDK } from "@kadanza/extension-sdk";
@@ -46,17 +46,17 @@ const { authToken, extensionDetails, designTokens } = await sdk.connect({
 });
 ```
 
-- Create the SDK once per app. Later calls to `createExtensionSDK()` return the same instance.
-- Pass `routingType: "client-hash"` so GraFx Experience can change routes without reloading the iframe.
-- `connect()` resolves when the host acknowledges the handshake.
-- Context fields are `null` when the surface does not provide them. For example, **Admin Console** pages have no `spaceId` or `pageId`.
+- Create the SDK once. Later calls to `createExtensionSDK()` return the same instance.
+- `routingType: "client-hash"` lets GraFx Experience change routes without reloading the iframe.
+- `connect()` resolves when GraFx Experience answers the handshake.
+- Fields the page doesn't provide are `null`. For example, **Admin Console** pages have no `spaceId` or `pageId`.
 
 !!! tip "React apps"
-    Wrap your app in a provider that connects once, waits to render the UI until the handshake succeeds, and calls `destroy()` only on `pagehide`. See [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md) in the SDK repository.
+    Wrap your app in a provider that connects once, shows the UI only after the handshake, and calls `destroy()` on `pagehide`. See [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md).
 
 ## Step 3: Call the platform API
 
-Use `sdk.apiCall()` with root-relative paths from the [Experience Extension API](/GraFx-Developers/grafx-experience/api-reference/). The SDK adds the `Authorization` and `X-Tenant` headers for you.
+Use `sdk.apiCall()` with paths from the [Experience Extension API](/GraFx-Developers/grafx-experience/api-reference/). The SDK adds the `Authorization` and `X-Tenant` headers.
 
 ```typescript
 const user = await sdk.apiCall<{ firstName: string }>(
@@ -64,29 +64,27 @@ const user = await sdk.apiCall<{ firstName: string }>(
 );
 ```
 
-Calls are limited to the [API permissions](/GraFx-Developers/grafx-experience/create-local-extension/#api-permissions) of your local extension.
-
-Tokens from `connect()` have `token_type: extension_sdk`. If you validate the token on your own back end, see [Extension SDK JWT claims](/GraFx-Developers/grafx-experience/authentication/#extension-sdk-jwt-claims).
+Calls are limited to the [API permissions](/GraFx-Developers/grafx-experience/create-local-extension/#api-permissions) of your extension. To validate the token on your own back end, see [Extension SDK JWT claims](/GraFx-Developers/grafx-experience/authentication/#extension-sdk-jwt-claims).
 
 ## Step 4: Host and embed
 
-Your extension app runs on hosting of your choice — your own, your customer's, or a third party's. For now, CHILI GraFx does not host extension apps.
+You host the app yourself, or your customer or a third party hosts it. For now, CHILI GraFx does not host extension apps.
 
-1. Deploy the app over HTTPS, on hosting of your choice.
-2. In the **Admin Console**, go to **Extensions** > **Installed** and open your local extension.
-3. Set **Base URL** to the origin of your app, and add the page paths your app serves.
-4. Enable **Active** and save.
+1. Deploy the app over HTTPS.
+2. In the **Admin Console**, go to **Extensions** > **Installed** and open your extension.
+3. Set **Base URL** to your app's address, and add the page paths it serves.
+4. Turn on **Active** and save.
 
-GraFx Experience loads the iframe from your **Base URL** and adds a `tenantUrl` query parameter with the origin of the parent page. The SDK uses that value to validate messages from the host.
+GraFx Experience loads your app from the **Base URL** and adds a `tenantUrl` parameter with the portal's address. The SDK only accepts messages from that address.
 
-Use hash routing so in-app navigation does not drop `tenantUrl`. To let the portal know about route changes, call `emitNavigationChange` — see [Navigation](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/flows.md#navigation) in the SDK repository.
+When your app changes route, call `emitNavigationChange` so the portal knows. See [Navigation](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/flows.md#navigation).
 
 ## Further reading
 
-| Resource | What it covers |
+| Resource | Covers |
 |---|---|
-| [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md) | Provider, handshake gate, API calls, navigation tracker |
+| [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md) | Provider, handshake, API calls, navigation |
 | [Flows](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/flows.md) | Handshake, design tokens, `apiCall`, token refresh, page settings, navigation |
-| [Embedding](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/embedding.md) | How the host embeds an extension: iframe `src`, `tenantUrl`, host API |
+| [Embedding](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/embedding.md) | How GraFx Experience embeds your app |
 | [SDK API reference](https://kadanza-io.github.io/extension-sdk/) | Classes, interfaces, and payloads |
 | [npm package](https://www.npmjs.com/package/@kadanza/extension-sdk) | Installation and versions |

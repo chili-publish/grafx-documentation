@@ -1,84 +1,82 @@
 # Authentication
 
-Extensions authenticate in two ways, depending on where the code runs:
+How an extension authenticates depends on where its code runs:
 
-| Where your code runs | How it authenticates |
+| Where the code runs | How it authenticates |
 |---|---|
-| **Embedded in the portal or Admin Console** | The Extension SDK delivers a scoped JWT during the handshake. See [Extension SDK JWT claims](#extension-sdk-jwt-claims). |
+| **In the portal or Admin Console** | The Extension SDK receives a token during the handshake. See [Extension SDK JWT claims](#extension-sdk-jwt-claims). |
 | **On a server, connected to an external service** | The extension's OAuth application issues access and refresh tokens. See [OAuth refresh tokens](#oauth-refresh-tokens). |
 
 ## Extension OAuth applications
 
-Extensions that connect to external services, or host embedded widgets, authenticate through an **OAuth application** registered for that extension.
-
-Typical flow:
+Extensions that connect to external services use an **OAuth application** registered for that extension.
 
 1. An admin installs and configures the extension in the **Admin Console**.
-2. The integrator completes the interactive OAuth authorization flow once.
+2. The integrator signs in through the OAuth flow once.
 3. GraFx Experience issues an **access token** and a **refresh token**.
-4. The integration uses the refresh token to get new access tokens when needed.
+4. The integration uses the refresh token to get new access tokens.
 
-This applies to server-side integrations built on the Extension Framework — not to regular end-user sign-in.
+This only applies to server-side integrations, not to end users signing in.
 
 ## OAuth refresh tokens
 
-Extension OAuth applications use **rolling refresh tokens**, so integrations stay connected without repeating the sign-in flow.
+Refresh tokens roll over, so integrations stay connected without signing in again.
 
 | Rule | Detail |
 |---|---|
-| **Initial validity** | A refresh token is valid for **30 days** from issuance. |
-| **Renewal on use** | Each time the integration exchanges the refresh token for a new access token, validity extends for another **30 days** from that moment. |
-| **Indefinite connection** | An integration that refreshes at least once every 30 days keeps working without repeating the OAuth flow. |
-| **Idle expiry** | A refresh token that is not used for **30 consecutive days** is rejected. Complete the OAuth authorization flow again to get a new one. |
-| **Reusability** | Refresh tokens stay usable within their validity window — using one does not immediately invalidate it. |
-| **Scope** | Applies only to **extension OAuth applications**. Regular user sign-in and web sessions are unchanged. |
-| **Revocation** | Disabling or uninstalling an extension revokes its refresh tokens. |
+| **Validity** | A refresh token is valid for **30 days**. |
+| **Renewal** | Each time you use it to get a new access token, it's valid for another **30 days**. |
+| **Staying connected** | Refresh at least once every 30 days and the integration keeps working. |
+| **Expiry** | A refresh token unused for **30 days** stops working. Go through the OAuth flow again to get a new one. |
+| **Reuse** | Using a refresh token doesn't invalidate it. |
+| **Scope** | Only for **extension OAuth applications**. User sign-in is not affected. |
+| **Revocation** | Disabling or uninstalling the extension revokes its refresh tokens. |
 
-!!! tip "Keep integrations alive"
-    Schedule your integration to refresh its access token regularly — at least once every 30 days — so the refresh token never reaches idle expiry.
+!!! tip "Stay connected"
+    Schedule your integration to refresh at least once every 30 days.
 
 ## Extension SDK JWT claims
 
-When an embedded extension connects through the Extension SDK, GraFx Experience issues a JWT with `token_type` set to `extension_sdk`. The token is delivered in the handshake (`connect()`). Use these claims to validate the token and to identify the user, installation, and extension.
+When your app connects through the Extension SDK, GraFx Experience issues a JWT with `token_type` set to `extension_sdk`. Your app receives it from `connect()`. Use its claims to validate the token and to see who the user is and which installation and extension it's for.
 
 ### Standard claims
 
 | Claim | Description |
 |---|---|
-| **`iss`** | Issuer — the identity provider URL for your environment. Use it to verify the token source and to find the JWK set for signature validation. |
-| **`aud`** | Audience — the extension identifier, for example `ext:grafx-vdp`. |
-| **`sub`** | Subject — the GraFx Experience user ID. |
-| **`exp`** | Expiration time (Unix timestamp). |
-| **`iat`** | Issued-at time (Unix timestamp). |
-| **`jti`** | Unique token identifier. |
+| **`iss`** | Issuer: the identity provider URL. Use it to verify the token and find the keys (JWK set) to check the signature. |
+| **`aud`** | Audience: the extension, for example `ext:grafx-vdp`. |
+| **`sub`** | Subject: the user ID. |
+| **`exp`** | Expiry time (Unix timestamp). |
+| **`iat`** | Issue time (Unix timestamp). |
+| **`jti`** | Unique token ID. |
 
 ### Platform claims
 
 | Claim | Description |
 |---|---|
 | **`email`** | Email address of the signed-in user. |
-| **`tenant_id`** | UUID of the installation (tenant). |
-| **`ext_id`** | UUID of the extension instance on this installation. |
+| **`tenant_id`** | ID of the installation (tenant). |
+| **`ext_id`** | ID of the extension on this installation. |
 | **`ext_key`** | Extension key, for example `assets` or `grafx-vdp`. |
-| **`token_type`** | Always `extension_sdk` for SDK tokens. |
-| **`scope`** | OAuth scopes granted to this token. |
-| **`roles`** | Array of role identifiers for the signed-in user. |
-| **`amr`** | Authentication methods reference. |
+| **`token_type`** | Always `extension_sdk`. |
+| **`scope`** | OAuth scopes granted to the token. |
+| **`roles`** | The user's roles. |
+| **`amr`** | How the user authenticated. |
 
 ### Role values
 
-The **`roles`** claim lists the platform roles of the user. See [Roles & permissions](/GraFx-Experience/overview/roles-permissions/) for what each role means.
+For what each role means, see [Roles & permissions](/GraFx-Experience/overview/roles-permissions/).
 
-| Role value | Role |
+| Value | Role |
 |---|---|
-| **`ROLE_USER`** | User — access to spaces and content based on group permissions. |
-| **`ROLE_TENANT_ADMIN`** | Admin — access to the page editor and the **Admin Console**. |
-| **`ROLE_TENANT_OWNER`** | Account Owner — same platform access as Admin; one per installation. |
+| **`ROLE_USER`** | User. Access to spaces and content through group permissions. |
+| **`ROLE_TENANT_ADMIN`** | Admin. Access to the page editor and the **Admin Console**. |
+| **`ROLE_TENANT_OWNER`** | Account Owner. Same access as Admin; one per installation. |
 
-Use **`roles`** to gate features in your extension — for example, show admin-only actions only when `ROLE_TENANT_ADMIN` or `ROLE_TENANT_OWNER` is present.
+Use **`roles`** to show admin-only features only to `ROLE_TENANT_ADMIN` or `ROLE_TENANT_OWNER`.
 
-!!! warning "Validate with `iss`"
-    Always verify the JWT signature against the JWK set published by the issuer in **`iss`**. Do not trust tokens from an unexpected issuer URL.
+!!! warning "Always check the issuer"
+    Verify the signature against the JWK set of the issuer in **`iss`**. Reject tokens from any other issuer.
 
 ### Example payload
 
@@ -99,4 +97,4 @@ Use **`roles`** to gate features in your extension — for example, show admin-o
 }
 ```
 
-Issuer URLs differ per environment. Contact CHILI publish to confirm the correct **`iss`** value for development, UAT, and production.
+The issuer URL differs per environment. Contact CHILI publish for the right **`iss`** value for development, UAT, and production.
