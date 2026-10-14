@@ -4,6 +4,7 @@ GraFx Genie is the AI built into CHILI GraFx. It helps you produce faster while 
 
 Each capability has its own page: what it is, how GraFx Genie helps, and where to find it.
 
+- [Design Agent (Beta)](/GraFx-Genie/design-agent/): chat with your Design System in GraFx Studio. Describe what to create or change, and GraFx Genie builds layouts, variables, Actions and animations from your Brand Kit, following your own custom skills.
 - [Smart Crop](/GraFx-Genie/concepts/smart-crop/): GraFx Genie detects the subject of an image and crops it to fit any frame or aspect ratio.
 - [GraFx Genie for Actions](/GraFx-Genie/concepts/actions/): GraFx Genie writes the JavaScript behind Smart Template Actions for you.
 - [Product Image Creator](/GraFx-Genie/concepts/product-image-creator/): GraFx Genie generates product visuals from a prompt or a starting image.

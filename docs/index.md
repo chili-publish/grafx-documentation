@@ -13,6 +13,16 @@
 
     ---
 
+    **Oct 14, 2026**: GraFx Genie: Design Agent (Beta)
+
+    ![GraFx Genie icon for the Design Agent Beta release note](/assets/icon-Grafx-Genie.svg){.rn_icon}
+
+    Chat with your Design System in the GraFx Studio workspace: the Design Agent explains, adapts and builds templates from your Brand Kit, guided by descriptions and custom skills, with an opt-out per environment.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/14/grafx-genie-design-agent-beta/)
+
+    ---
+
     **Oct 13, 2026**: GraFx Studio: Rich text variables
 
     ![GraFx Studio icon for the rich text variables release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -20,6 +30,16 @@
     A new Rich text variable type turns tagged text from a data feed into your template's paragraph and character styles, using import rules managed per environment.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/13/grafx-studio-rich-text-variables/)
+
+    ---
+
+    **Oct 12, 2026**: CHILI GraFx Environment API: Unpublished changes, font lookups, and connectors
+
+    ![CHILI GraFx icon for the October 12 Environment API release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+
+    Components report whether they have unpublished changes, reading font families is lighter on the server, and connector changes are saved more safely.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-unpublished-changes-font-lookups-and-connectors/)
 
     ---
 
@@ -50,26 +70,6 @@
     The InDesign® plugin now exports text backgrounds and overprint settings. The Photoshop® plugin warns about documents that are not 72 PPI and lets you keep their size in px or mm.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/28/grafx-studio-indesign-and-photoshop-plugins-150/)
-
-    ---
-
-    **Sep 21, 2026**: GraFx Studio: Overprint and constraints
-
-    ![GraFx Studio icon for the overprint and constraints release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    Overprint toggles for fill and stroke on text, shape, and barcode frames in print layouts. User constraints now also apply to shape and component frames.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/21/grafx-studio-overprint-and-constraints/)
-
-    ---
-
-    **Sep 15, 2026**: CHILI GraFx Environment API: Descriptions for Brand Kit text styles
-
-    ![CHILI GraFx icon for the Brand Kit text style descriptions release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    Paragraph styles and character styles in a Brand Kit now take an optional description, shared across every theme and returned in the resolved theme.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/15/chili-grafx-environment-api-descriptions-for-brand-kit-text-styles/)
 
     ---
 

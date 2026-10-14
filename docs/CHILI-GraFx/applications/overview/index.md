@@ -46,6 +46,7 @@ Repository for your fonts, available across GraFx Studio and GraFx Publisher.
 
 The AI assistant built into CHILI GraFx. GraFx Genie shows up in several places across the platform:
 
+- [Design Agent (Beta)](/GraFx-Genie/design-agent/) — a chat in the GraFx Studio workspace. Describe what to create or change, and the agent builds layouts, variables, Actions and animations from your Brand Kit, following your own custom skills.
 - [GraFx Genie for Actions](/GraFx-Studio/concepts/grafx-genie/) — helps template designers write JavaScript Actions without needing to code. Describe what you need, and Genie generates the script.
 - [Smart Crop in GraFx Media](/GraFx-Media/concepts/genie-smart-crop/) — automatically detects the subject area and point of interest when an asset is uploaded, so images crop intelligently in templates.
 - [Smart Crop in GraFx Studio](/GraFx-Studio/concepts/genie-smart-crop/) — uses the metadata set in GraFx Media to position images correctly within frames based on layout and subject position.
