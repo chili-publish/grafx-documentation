@@ -4,11 +4,12 @@ CHILI GraFx uses artificial intelligence to support creative automation workflow
 
 ## Where AI is used
 
-AI is applied selectively and always in support of existing platform capabilities. Today, AI powers three distinct capabilities:
+AI is applied selectively and always in support of existing platform capabilities. Today, AI powers four distinct capabilities:
 
 - **GraFx Genie Actions** — generates template logic (code) from your input, helping you build smart, automated templates faster. See [Actions](/GraFx-Studio/guides/actions/create/).
 - **GraFx Genie Vision** — analyses uploaded images to detect the subject and the Point of Interest, producing the metadata that powers [Smart Crop](/GraFx-Media/concepts/genie-smart-crop/).
 - **GraFx Labs** — an experimental space that currently exposes AI-powered image generation and manipulation. See [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/).
+- **GraFx Genie Design Agent** — a conversational agent inside GraFx Studio that reads an approved design and proposes the design system build (layouts, variables, actions, data connections), calling on GraFx Genie Actions for any logic it needs. It proposes a plan and generates nothing until that plan is approved. See [GraFx Genie](/GraFx-Genie/).
 
 AI augments these workflows without removing user control.
 
@@ -37,6 +38,7 @@ CHILI GraFx aims to make it clear when content has been shaped by AI. How this i
 - **GraFx Genie Actions** produces standard template logic in plain JavaScript — the same kind of script a developer would write by hand. It is reviewed and controlled by the template designer and runs only within the fenced logic of a template.
 - **GraFx Genie Vision** records, in the asset's metadata, whether its Subject Area and Point of Interest were determined by AI or set manually — so it is always possible to tell AI-detected values apart from human-defined ones. These values can be reviewed and overridden by the user at any time.
 - **GraFx Labs** labels AI-generated images as created using generative AI (recorded as a *Content Creator: Created using Generative AI* metadata tag on the image), so generated visuals can be recognised as such.
+- **GraFx Genie Design Agent** sets out what it found in the design and what it intends to build before making any change, and only carries out the build once that plan is approved.
 
 ## Handling metadata from your content
 
