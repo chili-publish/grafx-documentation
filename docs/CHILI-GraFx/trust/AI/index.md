@@ -4,9 +4,10 @@ CHILI GraFx uses artificial intelligence to support creative automation workflow
 
 ## Where AI is used
 
-AI is applied selectively and always in support of existing platform capabilities. Today, AI powers three distinct capabilities:
+AI is applied selectively and always in support of existing platform capabilities. Today, AI powers four distinct capabilities:
 
 - **GraFx Genie Actions** — generates template logic (code) from your input, helping you build smart, automated templates faster. See [Actions](/GraFx-Studio/guides/actions/create/).
+- **GraFx Genie Design Agent (Beta)** — a conversational assistant in the GraFx Studio workspace that applies template changes you describe (layouts, variables, Actions, animations, designs built from your Brand Kit). Every change is a regular, editable and undoable template operation. It can be switched off per environment. See [Design Agent](/GraFx-Genie/design-agent/).
 - **GraFx Genie Vision** — analyses uploaded images to detect the subject and the Point of Interest, producing the metadata that powers [Smart Crop](/GraFx-Media/concepts/genie-smart-crop/).
 - **GraFx Labs** — an experimental space that currently exposes AI-powered image generation and manipulation. See [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/).
 
@@ -35,6 +36,7 @@ All outputs remain under user control.
 CHILI GraFx aims to make it clear when content has been shaped by AI. How this is surfaced depends on the capability, because each produces a different kind of output:
 
 - **GraFx Genie Actions** produces standard template logic in plain JavaScript — the same kind of script a developer would write by hand. It is reviewed and controlled by the template designer and runs only within the fenced logic of a template.
+- **GraFx Genie Design Agent** makes the same changes to a template a designer makes by hand, through the same operations. Each conversation turn is a single undo step, and the resulting template carries no special marking: it is inspected, edited and governed exactly like a template built manually.
 - **GraFx Genie Vision** records, in the asset's metadata, whether its Subject Area and Point of Interest were determined by AI or set manually — so it is always possible to tell AI-detected values apart from human-defined ones. These values can be reviewed and overridden by the user at any time.
 - **GraFx Labs** labels AI-generated images as created using generative AI (recorded as a *Content Creator: Created using Generative AI* metadata tag on the image), so generated visuals can be recognised as such.
 

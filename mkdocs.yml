@@ -410,6 +410,17 @@ nav:
 
     - 'GraFx Genie':
         - 'Introduction':                       'GraFx-Genie/index.md'
+        - 'Design Agent (Beta)':
+            - 'Introduction':                   'GraFx-Genie/design-agent/index.md'
+            - 'Tutorial: work effectively':     'GraFx-Genie/design-agent/tutorial/index.md'
+            - 'Prepare your template':          'GraFx-Genie/design-agent/template-setup/index.md'
+            - 'Brand Kit descriptions':         'GraFx-Genie/design-agent/brand-kit-descriptions/index.md'
+            - 'Custom skills':                  'GraFx-Genie/design-agent/skills/index.md'
+            - 'What you can ask':               'GraFx-Genie/design-agent/commands/index.md'
+            - 'Guide: adapt a design':          'GraFx-Genie/design-agent/adapt-a-design/index.md'
+            - 'Guide: design from scratch':     'GraFx-Genie/design-agent/design-from-scratch/index.md'
+            - 'Enable, disable and data':       'GraFx-Genie/design-agent/manage/index.md'
+            - "What's new":                     'GraFx-Genie/design-agent/whats-new/index.md'
         - 'Smart Crop':                         'GraFx-Genie/concepts/smart-crop/index.md'
         - 'Actions':                            'GraFx-Genie/concepts/actions/index.md'
         - 'Product Image Creator':              'GraFx-Genie/concepts/product-image-creator/index.md'
@@ -450,6 +461,7 @@ nav:
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Crop Marks':                     'GraFx-Studio/concepts/crop-marks/index.md'
             - 'Design & Run':                   'GraFx-Studio/concepts/design-run/index.md'
+            - 'Design Agent (Beta)':            'GraFx-Studio/concepts/design-agent/index.md'
             - 'Drop Shadow':                    'GraFx-Studio/concepts/drop-shadow/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'Gradients':                      'GraFx-Studio/concepts/gradients/index.md'
