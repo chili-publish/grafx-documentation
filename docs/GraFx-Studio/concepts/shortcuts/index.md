@@ -81,8 +81,8 @@ When the text cursor is inside a bulleted or numbered list item.
 |Image|I|I|✅|
 |Path/Pen|P|P|❇️|
 |Hand (=move canvas)|H|H|✅|
-|Zoom tool|Z (zoom in)|Z (zoom in)|✅|
-||Holding Option (zoom out)|Holding Alt (zoom out)|✅|
+|Zoom tool|Hold Z (zoom in)|Hold Z (zoom in)|✅|
+||Hold Option+Z (zoom out)|Hold Alt+Z (zoom out)|✅|
 
 ## View
 
