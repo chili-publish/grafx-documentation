@@ -72,17 +72,17 @@ When the text cursor is inside a bulleted or numbered list item.
 
 | |Mac|Windows||
 |----|----|----|----|
-|Select|⌘V|V|✅|
-|Rectangle|⌘R|R|✅|
-|Ellipse|⌘E|E|✅|
-|Polygon|⌘Y|Y|✅|
-|Line|⌘L|L|❇️|
-|Text|⌘T|T|✅|
-|Image|⌘I|I|✅|
-|Path/Pen (not in MVP)|⌘P|P|❇️|
-|Hand (=move canvas)|⌘H|H|✅|
-|Zoom tool|⌘Z (zoom in)|Z (zoom in)|✅|
-||Holding alt (zoom out)|Holding alt (zoom out)|✅|
+|Select|V|V|✅|
+|Rectangle|R|R|✅|
+|Ellipse|E|E|✅|
+|Polygon|Y|Y|✅|
+|Line|L|L|❇️|
+|Text|T|T|✅|
+|Image|I|I|✅|
+|Path/Pen|P|P|❇️|
+|Hand (=move canvas)|H|H|✅|
+|Zoom tool|Z (zoom in)|Z (zoom in)|✅|
+||Holding Option (zoom out)|Holding Alt (zoom out)|✅|
 
 ## View
 
