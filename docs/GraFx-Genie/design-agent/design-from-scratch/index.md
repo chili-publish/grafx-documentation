@@ -18,7 +18,7 @@ Then:
 
 1. Create a new template in GraFx Studio.
 2. [Import the Brand Kit](/GraFx-Studio/guides/brandkits/#import-a-brand-kit).
-3. Open the Design Agent from the GraFx Genie icon in the left panel.
+3. Open the Design Agent from the GraFx Genie button at the bottom of the left sidebar.
 
 A template with no colors and no text styles cannot be designed on; the agent will say so.
 
@@ -58,7 +58,7 @@ The agent adds a child layout with that size and intent, keeps the elements that
 
 The agent lists the deployed data connectors as chips, configures the one you pick, matches columns to variables by name and asks what to do with columns that have no variable yet. Switch to Run Mode to step through records.
 
-From here the template works two ways: the brand team produces the weekly leaflet page and banners in batch, and field marketers self-serve banners from the same Design System in [GraFx Experience](/GraFx-Experience/), fast and on-brand because every element came from the kit.
+From here the template works two ways: the brand team produces the weekly leaflet page and banners in batch, and field marketers self-serve banners from the same Design System in [GraFx Experience](/GraFx-Experience/), on-brand because every element came from the kit.
 
 ## Making it repeatable
 

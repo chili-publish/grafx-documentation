@@ -39,7 +39,7 @@ Watch the Layers panel update, then undo it with ++ctrl+z++ (++cmd+z++ on macOS)
 
 ## 3. Ask for a plan, then execute it
 
-> What would you change to turn this into a template local teams can use?
+> What would you change to turn this into a template end users can use?
 
 You get a proposal: which frames should become variables, what should be locked, where logic is needed. The agent does not act on its own proposal. Pick the parts you agree with and ask for them:
 

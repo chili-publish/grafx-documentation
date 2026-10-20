@@ -17,7 +17,7 @@ Think of it as a design colleague who knows GraFx Studio inside out, works from 
 Three things to know before you start:
 
 - **If you can do it in the interface, you can ask for it.** The agent's reach is the GraFx Studio workspace itself: layouts, pages, frames, text, variables, Actions, animation, Brand Kit, media, components, data sources, barcodes. The few things it cannot reach yet are listed under [known limitations](#known-limitations) below.
-- **It only does what you ask.** The agent does not tidy up, optimise or add things on its own initiative. Ask for a plan if you want suggestions; ask for a change if you want a change.
+- **It only does what you ask.** The agent does not tidy up, optimize or add things on its own initiative. Ask for a plan if you want suggestions; ask for a change if you want a change.
 - **It works as is, and works better with context.** On any template the agent can explain, change and build. The more it knows about your brand and your way of working, from [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/), [variable descriptions](/GraFx-Studio/guides/template-variables/define/#description) and [custom skills](/GraFx-Genie/design-agent/skills/), the closer its first result is to what you meant.
 
 ![The GraFx Genie chat open over an empty A4 template in the GraFx Studio workspace, asking "How can I help you today?"](chat-open.png){.screenshot-full}
@@ -32,18 +32,15 @@ The Design Agent does that work from a conversation. Big picture, it can:
 - **Turn a design into a template.** Make frames editable as variables, lock what must not change, add toggles and conditions through Actions, link image frames to GraFx Media or a connected DAM, set up a data source for batch output.
 - **Adapt a design to other formats.** Add layouts by name, canvas preset or custom size, rework the arrangement for a different proportion, make frames pin, stretch, grow or copyfit per layout, add animation to animated layouts.
 - **Generate a design from scratch.** Starting from a Brand Kit, describe a page and the agent composes it: colors, text styles, media and components from the kit, placed on a layout of the size you asked for.
-- **Follow your organisation's rules.** Brand Kit element descriptions tell the agent when to use which color, image, style or component. Custom skills add your own guidelines and design-system guidance at environment level.
-
-### Why the agent sometimes succeeds where a manual edit fails
-
-The agent takes the whole template into account on every request: all layouts, not just the one on screen; every Action that refers to a frame; every variable a component maps to; the Brand Kit and its descriptions. A change made by hand on one layout can break another, or leave an Action pointing at a frame that no longer exists. The agent checks those dependencies before it acts, which is why "delete the old badge" through the chat warns you about the Action that uses it, and why a layout reworked by the agent keeps its anchors consistent across the tree.
+- **Follow your organization's rules.** Brand Kit element descriptions tell the agent when to use which color, image, style or component. Custom skills add your own guidelines and design-system guidance at environment level.
+- **Warn you about dependencies.** Before it deletes something, the agent checks what refers to it, so "delete the old badge" warns you about the Action that uses it.
 
 ## Three ways to start
 
 How much the agent can do unattended depends on what you give it:
 
 1. **From scratch.** Open any template, or a blank one, and talk. The agent explains, changes and builds from the names and properties it finds in the document. Good for exploring, troubleshooting and quick edits.
-2. **From a Brand Kit.** Import a Brand Kit with [descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/) on its colors, media, text styles and components. The agent now designs with your palette and picks the right element for the purpose: generating pages and adapting designs becomes reliable.
+2. **From a Brand Kit.** Import a Brand Kit with [descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/) on its colors, media, text styles and components. The agent now designs with your palette and picks the right element for the purpose: generating and adapting designs becomes on-brand by default.
 3. **From a Brand Kit and custom skills.** Add [custom skills](/GraFx-Genie/design-agent/skills/) that describe your campaign formats, naming, image sources and rules. A request like "prepare this for the Spring campaign" now produces the same structure every time, the way your team would build it.
 
 Most teams start at 1 to learn what the agent does, and move to 3 for the work they repeat.
@@ -57,7 +54,7 @@ Most teams start at 1 to learn what the agent does, and move to 3 for the work t
 - [Custom skills](/GraFx-Genie/design-agent/skills/): adding your own instructions in environment settings, with best practices.
 - [What you can ask](/GraFx-Genie/design-agent/commands/): a reference of the commands and questions the agent understands, by area.
 - [Guide: adapt an existing design](/GraFx-Genie/design-agent/adapt-a-design/) and [Guide: design from scratch](/GraFx-Genie/design-agent/design-from-scratch/): two worked examples.
-- [Enable, disable and data](/GraFx-Genie/design-agent/manage/): the environment-level opt-out, roles, and what is logged.
+- [Availability and usage](/GraFx-Genie/design-agent/manage/): the environment-level opt-out, roles, and usage.
 
 ## How a conversation works
 
@@ -75,7 +72,7 @@ Type what you want and press ++enter++. ++shift+enter++ inserts a line break. Wh
 
 A message you send is a **turn**. A turn can involve several steps: the agent may read the document, measure a frame, apply a change, check the result and correct it before replying. For longer operations such as animating a layout, generating a design or writing an Action, the chat shows the stages of that work as they complete, so you know what is happening.
 
-The ++up++ and ++down++ arrow keys walk through the prompts you sent earlier in the session, like a terminal: handy to repeat a command on another layout. **Clear chat** empties the thread and that history.
+The ++up++ and ++down++ arrow keys walk through the prompts you sent earlier in the session, like a terminal: handy to repeat a command on another layout.
 
 ### The agent asks before guessing
 
@@ -83,7 +80,7 @@ When a request is ambiguous, the agent pauses and asks, often with choice chips 
 
 ![The agent asking "should the lifestyle image be a static asset or variable-driven?", with two chips: Static image and Variable image](chat-question.png){.screenshot-full}
 
-When the turn is done, the reply summarises what was created or changed, naming the frames and variables involved, and the result is on the canvas.
+When the turn is done, the reply summarizes what was created or changed, naming the frames and variables involved, and the result is on the canvas.
 
 ![The reply after choosing Variable image: the agent created the Lifestyle image variable, bound it to the Lifestyle photo frame, and the two new frames show on the A4 page](chat-reply.png){.screenshot-full}
 
@@ -91,11 +88,11 @@ Before destructive operations, such as deleting all child layouts or deleting a 
 
 ### Stop and undo
 
-A **Stop** control is shown while a turn is running. One click ends the turn: the step in progress finishes, nothing further is started, and the request is put back in the text box so you can adjust and resend it. Stopping does not revert what already landed on the canvas; use undo for that.
+A **Stop** control is shown while a turn is running. One click ends the turn and puts your request back in the text box, so you can adjust and resend it. What already landed on the canvas stays; use undo for that.
 
 Every turn is a **single undo step**. Whatever the agent changed in one turn, from one frame to a complete generated design, ++ctrl+z++ (++cmd+z++ on macOS) reverts it in one go. This also holds for a stopped turn.
 
-If nothing arrives from the agent for 30 seconds, the turn is aborted and the chat tells you the document was not changed. If a turn needs more steps than one turn allows, the chat shows a warning with a **Continue** option.
+If the connection to GraFx Genie goes silent, the chat retries once and then ends the turn with an error. Changes made before that stay on the canvas; undo reverts them. If a turn needs more steps than one turn allows, the chat shows a warning with a **Continue** option.
 
 ### Answers grounded in the documentation
 
@@ -107,7 +104,7 @@ When you ask how something works ("how do image variables work?", "what is the d
 
 The name suggests an agent that creates designs, and it can. Its main job, however, is to turn a design into a robust, repeatable template that a Design System can run on. It understands design because placing a QR code or reflowing a landscape layout requires it, not because it replaces the designer.
 
-It also does not publish, approve or distribute anything, it does not alter the assets in your Brand Kit or GraFx Media, and it does not bypass the rules you built into a template. Local users in [GraFx Experience](/GraFx-Experience/) never interact with the Design Agent: it lives in the GraFx Studio workspace and is available to users with a Template Designer seat.
+It also does not publish, approve or distribute anything, it does not alter the assets in your Brand Kit or GraFx Media, and it does not bypass the rules you built into a template. End users in [GraFx Experience](/GraFx-Experience/) never interact with the Design Agent: it lives in the GraFx Studio workspace and is available to users with a Template Designer seat.
 
 ### Known limitations
 
@@ -120,7 +117,7 @@ It also does not publish, approve or distribute anything, it does not alter the 
 
 ## Where to find it
 
-The Design Agent is part of **GraFx Studio**, in the template workspace. Availability is controlled per environment, see [Enable, disable and data](/GraFx-Genie/design-agent/manage/).
+The Design Agent is part of **GraFx Studio**, in the template workspace. Availability is controlled per environment, see [Availability and usage](/GraFx-Genie/design-agent/manage/).
 
 - [GraFx Studio](/GraFx-Studio/): the Smart Template editor the agent works in.
 - [GraFx Brand Kits](/GraFx-Brand-Kits/): the source of truth the agent designs from.

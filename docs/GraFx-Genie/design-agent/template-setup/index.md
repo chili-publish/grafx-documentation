@@ -1,6 +1,6 @@
 # Prepare your template for the Design Agent
 
-The [Design Agent](/GraFx-Genie/design-agent/) works on any template as is. It works better with context, and this page is about giving it that context. The agent does not see your screen. It reads the template the way the GraFx Studio SDK exposes it: the names of layouts, frames and variables, the Brand Kit attached to the template, its colors, text styles, media and components, the data source, the Actions. The better that structure describes itself, the better the agent's work. This page explains what the agent reads, and how to set a template up so it reads well, whether you adapt an existing design or start from a blank page.
+The [Design Agent](/GraFx-Genie/design-agent/) works on any template as is. It works better with context, and this page is about giving it that context. The agent does not see your screen. It reads the template the way the GraFx Studio SDK exposes it: the names of layouts, frames and variables, the Brand Kit imported in the template, its colors, text styles, media and components, the data source, the Actions. The better that structure describes itself, the better the agent's work. This page explains what the agent reads, and how to set a template up so it reads well, whether you adapt an existing design or start from a blank page.
 
 ## What the agent reads
 
@@ -17,7 +17,7 @@ The [Design Agent](/GraFx-Genie/design-agent/) works on any template as is. It w
 
 On top of the template, the agent is guided by your environment's [custom skills](/GraFx-Genie/design-agent/skills/) and, for how-to questions, by the GraFx documentation.
 
-## Attach a Brand Kit
+## Import a Brand Kit
 
 The Brand Kit is the agent's single source of truth for everything visual. A template without colors and text styles cannot be designed on: the design pipeline refuses to compose when it has no palette to work from.
 
@@ -25,7 +25,7 @@ The Brand Kit is the agent's single source of truth for everything visual. A tem
 2. [Import it in the template](/GraFx-Studio/guides/brandkits/#import-a-brand-kit) from the Brand Kit panel in GraFx Studio. Keep auto-sync on, so a kit update reaches the template without re-importing.
 3. Give elements a [description](/GraFx-Genie/design-agent/brand-kit-descriptions/) that says when to use them. "Primary" is a name; "main brand color, use for headlines and the background of price badges" is an instruction.
 
-The agent takes colors, media, text styles and components from the Brand Kit attached to the template. If the template has local colors and styles as well, those are visible to the agent too, but the Brand Kit is what makes its choices consistent across templates.
+The agent takes colors, media, text styles and components from the Brand Kit imported in the template. If the template has local colors and styles as well, those are visible to the agent too, but the Brand Kit is what makes its choices consistent across templates.
 
 ## Name things the way you would say them
 

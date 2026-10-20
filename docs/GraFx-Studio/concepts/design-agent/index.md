@@ -2,7 +2,7 @@
 
 You have a design in GraFx Studio and a long list of structural work ahead: variables, layouts per channel, anchoring, Actions for badges and toggles, a data source. The **GraFx Genie Design Agent** does that work from a chat in the workspace. Describe what you want, and the agent operates GraFx Studio for you, reading the open template and your Brand Kit, asking when something is unclear, and applying changes you can inspect, edit and undo in one step.
 
-Open it from the GraFx Genie icon in the left panel of the template workspace.
+Open it from the GraFx Genie button at the bottom of the left sidebar of the template workspace.
 
 The Design Agent is available in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is).
 

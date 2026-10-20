@@ -39,6 +39,8 @@ Select a skill in the list to open its detail page. Edit the fields directly, or
 
 Use the **Enabled** toggle in the list. A disabled skill is kept but not used by GraFx Genie.
 
+GraFx Genie reads the skills when a template is opened. Reopen the template to pick up a new, changed, enabled or disabled skill.
+
 ## Export and import skills
 
 - **Export**: open the actions menu on a skill and choose **Export** to download it as a JSON file.

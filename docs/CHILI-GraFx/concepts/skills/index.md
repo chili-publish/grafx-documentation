@@ -1,10 +1,10 @@
 # Skills
 
-A **skill** is a reusable, plain-language instruction that tells GraFx Genie *how* to carry out a kind of task in your environment. Where a Brand Kit tells GraFx Genie what your brand looks like, a skill tells it how your organisation works: which layouts a campaign needs, where approved imagery lives, how variables are named, what must never be editable.
+A **skill** is a reusable, plain-language instruction that tells GraFx Genie *how* to carry out a kind of task in your environment. Where a Brand Kit tells GraFx Genie what your brand looks like, a skill tells it how your organization works: which layouts a campaign needs, where approved imagery lives, how variables are named, what must never be editable.
 
 Skills are defined **per environment**, in **Environment settings › Skills**, and read by GraFx Genie at the start of every session. Each skill has a name, a description that says when it applies, and Markdown instructions that say what to do. GraFx Genie reads the names and descriptions on every prompt, loads the skills that match the request, and follows their instructions. An environment can hold up to 10 skills.
 
-Today, skills are used by the [GraFx Genie Design Agent](/GraFx-Genie/design-agent/) in GraFx Studio; a skill can be limited to specific GraFx Genie applications, or left available to all of them.
+Today, skills are used by the [GraFx Genie Design Agent](/GraFx-Genie/design-agent/) in GraFx Studio.
 
 ## Why skills
 
@@ -15,8 +15,8 @@ Typical skills:
 - The set of layouts a campaign template must have, and how each is arranged.
 - How image variables are linked to a DAM, and which folders hold approved assets.
 - Variable naming, grouping and defaults.
-- How a custom connector is organised.
-- Organisation-specific vocabulary, such as in-store zones.
+- How a custom connector is organized.
+- Organization-specific vocabulary, such as in-store zones.
 - Hard rules: legal copy on print layouts, logo clear space, elements that are never variable.
 
 A skill is for rules and procedures that recur. A one-off instruction belongs in the chat; a fact about one Brand Kit element belongs in that element's [description](/GraFx-Brand-Kits/concepts/elements/#descriptions).

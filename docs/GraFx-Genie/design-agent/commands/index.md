@@ -38,7 +38,7 @@ A few habits make every request land better:
 
 | You want to | Say for example | Notes |
 |---|---|---|
-| Add frames | "Add a text frame for the subhead under the headline", "Add an image frame 80 × 80 mm top-right", "Add a QR code bottom-right, 20 mm", "Add a shape behind the price" | Text, image, shape and barcode frames. Without a position, a new frame lands as a visible, roughly centred box. |
+| Add frames | "Add a text frame for the subhead under the headline", "Add an image frame 80 × 80 mm top-right", "Add a QR code bottom-right, 20 mm", "Add a shape behind the price" | Text, image, shape and barcode frames. Without a position, a new frame lands as a visible, roughly centered box. |
 | Style shapes | "Make the badge shape *Price Red* with a 2 mm white stroke and 4 mm corner radius" | Fill, stroke and corner radius apply to shape frames. |
 | Clip an image | "Clip the lifestyle image to a circle" | Circle, ellipse, rounded, polygon, rectangle, or none. |
 | Order | "Bring the logo to the front", "Send the background one step back" | |
@@ -52,7 +52,7 @@ A few habits make every request land better:
 | You want to | Say for example | Notes |
 |---|---|---|
 | Change copy | "Change the headline to *Holiday meals, ready to go*", "Add a paragraph about delivery under the body copy" | Selected text frame when none is named. |
-| Format | "Make the headline 48 pt, centred, in *Fresh Green*", "Apply the *Legal* paragraph style to the footer" | |
+| Format | "Make the headline 48 pt, centered, in *Fresh Green*", "Apply the *Legal* paragraph style to the footer" | |
 | Turn text into a variable | "Turn the word *Christmas* in the headline into a variable", "Make the headline, subhead and body editable" | Keeps the current styling; the current text becomes the default. |
 
 ## Variables
@@ -82,7 +82,7 @@ Variable visibility conditions are set in the variable settings, not through the
 | You want to | Say for example | Notes |
 |---|---|---|
 | Make a layout responsive | "Make this layout responsive" | The agent snapshots the layout, sets anchors, auto-grow and copyfit, resizes to test sizes, restores the original size and corrects what did not hold. If restoring fails it tells you the page may still be at the test size. |
-| Specific behaviour per layout | "Pin the logo to the top-left on all layouts", "Let the body copy grow with its content", "Copyfit the headline on the Story layout" | Anchor (pin/stretch), [auto-grow](/GraFx-Studio/guides/text-frame/), copyfit. |
+| Specific behavior per layout | "Pin the logo to the top-left on all layouts", "Let the body copy grow with its content", "Copyfit the headline on the Story layout" | Anchor (pin/stretch), [auto-grow](/GraFx-Studio/guides/text-frame/), copyfit. |
 
 ## Animation
 
@@ -151,4 +151,4 @@ See the [design from scratch guide](/GraFx-Genie/design-agent/design-from-scratc
 | Stop a running turn | Click **Stop**. What already landed stays; the request returns to the text box. |
 | Undo a turn | ++ctrl+z++ / ++cmd+z++, one step per turn. |
 | Repeat an earlier prompt | ++up++ / ++down++ in the text box. |
-| Start over | **Clear chat**. |
+| Start over | Reopen the template. A new session starts with an empty chat. |

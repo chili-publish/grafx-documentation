@@ -1,6 +1,6 @@
 # Guide: turn an existing design into a Design System
 
-This guide follows a typical first session with the [Design Agent](/GraFx-Genie/design-agent/): a finished creative comes in from a desktop application, and in one conversation it becomes a template that local teams can produce from in [GraFx Experience](/GraFx-Experience/). The example is an in-store sign for prepackaged holiday meals, needed in print and on digital displays.
+This guide follows a typical first session with the [Design Agent](/GraFx-Genie/design-agent/): a finished creative comes in from a desktop application, and in one conversation it becomes a template that end users can produce from in [GraFx Experience](/GraFx-Experience/). The example is an in-store sign for prepackaged holiday meals, needed in print and on digital displays.
 
 You can follow the same steps with a design drawn in GraFx Studio; the import is optional.
 
@@ -8,13 +8,13 @@ You can follow the same steps with a design drawn in GraFx Studio; the import is
 
 - The design is open in the GraFx Studio workspace. Imported from [Figma](/GraFx-Studio/convert/Figma/), [Adobe InDesign](/GraFx-Studio/convert/Adobe-InDesign/) or [Adobe Photoshop](/GraFx-Studio/convert/Adobe-Photoshop/), or built in GraFx Studio.
 - A Brand Kit is imported, with [descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/) on its elements.
-- Frames have recognisable names, or you are happy to let the agent rename them.
+- Frames have recognizable names, or you are happy to let the agent rename them.
 
 See [Prepare your template](/GraFx-Genie/design-agent/template-setup/) for the full checklist.
 
 ## 1. Ask for a plan
 
-Open the chat from the GraFx Genie icon in the left panel and start with a question rather than an instruction:
+Open the chat from the GraFx Genie button at the bottom of the left sidebar and start with a question rather than an instruction:
 
 > How do I turn this design into a design system?
 
@@ -24,7 +24,7 @@ The agent reads the document and reports what it finds: which text frames look l
 
 > Make the lifestyle image, the headline and the deck editable. Lock the legal disclaimer so teams can't touch it.
 
-The agent creates an image variable seeded with the current lifestyle photo, two text variables with the current copy as default (styling is kept), links each to its frame, and sets [constraints](/GraFx-Studio/concepts/constraints/) on the disclaimer frame. Check the Variables panel: names and descriptions are there, ready for the form local users will see.
+The agent creates an image variable seeded with the current lifestyle photo, two text variables with the current copy as default (styling is kept), links each to its frame, and sets [constraints](/GraFx-Studio/concepts/constraints/) on the disclaimer frame. Check the Variables panel: names and descriptions are there, ready for the form end users will see.
 
 If you prefer your own naming or grouping, say so now, or capture it once in a [custom skill](/GraFx-Genie/design-agent/skills/) so you never have to say it again.
 
@@ -55,7 +55,7 @@ The first request creates a list variable and the logic to swap the badge artwor
 
 > Link the lifestyle image to the *Campaigns/Approved* folder in our DAM.
 
-If a media connector is deployed in the environment, the agent points the image variable at that connector and folder; otherwise GraFx Media is used. Local users can now pick another approved lifestyle image.
+If a media connector is deployed in the environment, the agent points the image variable at that connector and folder; otherwise GraFx Media is used. End users can now pick another approved lifestyle image.
 
 ## 7. Make it resize well (optional)
 
@@ -69,7 +69,7 @@ The agent sets [anchors](/GraFx-Studio/concepts/anchoring/), auto-grow and copyf
 
 ## 8. Test, then publish
 
-Switch to Run Mode and go through the form as a local user would: pick a layout, change the image, edit the headline and deck, choose a badge, toggle it off. Ask the agent "what did you change?" for a recap you can paste into a handover note.
+Switch to Run Mode and go through the form as an end user would: pick a layout, change the image, edit the headline and deck, choose a badge, toggle it off. Ask the agent "what did you change?" for a recap you can paste into a handover note.
 
 Save the template and make it available in GraFx Experience as you would any other template. Nothing about a template built with the agent is different from one built by hand.
 

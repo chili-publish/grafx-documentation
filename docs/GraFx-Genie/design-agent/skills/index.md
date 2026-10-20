@@ -11,9 +11,9 @@ Skills shine for anything you would otherwise repeat in every chat:
 - **Layout sets.** "For a *Seasonal* campaign, add these layouts: A4 portrait, A3 portrait, 1080×1080, 1080×1920, Full HD landscape (animated). Landscape layouts put the image on the left."
 - **Variable and naming conventions.** How variables are named and grouped, which ones are always required, what goes into the description.
 - **Image selection guidance.** Which DAM folder, which subject types, when a lifestyle image is appropriate and when a packshot.
-- **Connector guidance.** How a custom media or data connector is organised: folder structure, metadata fields, the column that holds the price.
+- **Connector guidance.** How a custom media or data connector is organized: folder structure, metadata fields, the column that holds the price.
 - **Tone of voice.** How placeholder and default copy should sound.
-- **Organisation-specific vocabulary.** For example the in-store zones a retailer uses (*Transition*, *Impulse*, *Destination*) and what each means for the design.
+- **Organization-specific vocabulary.** For example the in-store zones a retailer uses (*Transition*, *Impulse*, *Destination*) and what each means for the design.
 - **Hard rules.** Legal copy that must be present on print layouts, logo clear space, elements that must never be variable.
 
 A skill is not the place for a single one-line preference you can simply type in the chat, nor for a one-off task. It is for rules and procedures that recur.
@@ -22,34 +22,15 @@ Skills complement [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-d
 
 ## Where skills live
 
-Skills are a platform concept, see [Skills](/CHILI-GraFx/concepts/skills/). They are managed per environment in **Environment settings › Skills** (in the settings menu between **Connectors** and **Subject types**) by Subscription Admins and Environment Admins, see [roles](/CHILI-GraFx/users/roles/) and [Manage skills](/CHILI-GraFx/guides/manage-skills/). Every environment can hold up to **10** skills.
+Skills are a platform concept, see [Skills](/CHILI-GraFx/concepts/skills/). Subscription Admins and Environment Admins manage them per environment in **Environment settings › Skills**: see [Manage skills](/CHILI-GraFx/guides/manage-skills/) for creating, editing, enabling, importing, exporting and deleting skills, and for the field limits. Every environment can hold up to **10** skills.
 
-![The Skills page in environment settings: a list of skills with an Enabled toggle per skill, and the Import Skill and Create skill buttons in the header](skills-list.png){.screenshot-full}
+Each skill has a **name**, a **description** and **instructions**. The agent reads the names and descriptions of all enabled skills on every prompt to decide which ones to load, then follows the instructions of the skills it loaded. The description is the trigger: the more specific it is, the more reliably the skill is picked up.
 
-Each skill has:
+The agent reads the skills when a template is opened. Reopen the template to pick up a new or changed skill.
 
-| Field | Required | Notes |
-|---|---|---|
-| **Name** | yes | Up to 64 characters. The agent uses it to recognise when the skill applies, so make it say what the skill is for. |
-| **Description** | yes | Up to 1,024 characters. When the skill should be used. This is the trigger: the agent reads the names and descriptions of all skills on every prompt to decide which ones to load. The more specific, the more reliably it triggers. |
-| **Instructions** | yes | Up to 20,000 characters, in Markdown. What the agent applies once the skill is loaded. |
-| **Enabled** | — | On by default. Switch off in the list to keep a skill without the agent using it. |
-| **Application** | no | Which GraFx Genie applications may use the skill. Leave empty to make it available to all of them. |
+## Let GraFx Genie write the skill
 
-![A skill's detail page with the Name, Description and Instructions fields, their character counters, and the Edit skill with GraFx Genie button](skill-detail.png){.screenshot-full}
-
-## Create a skill
-
-You can let the agent write the skill, or write it yourself.
-
-### With GraFx Genie
-
-1. In **Environment settings › Skills**, click **Create**.
-2. Describe what the skill should do, in your own words, as if you were briefing a colleague. Concrete facts (folder names, sizes, field names, counts) are copied into the skill as you wrote them.
-3. Click **Create Skill**. GraFx Genie generates the name, the description and the Markdown instructions, grounded in what the agent can actually do in GraFx Studio and in the documentation, and opens the skill's detail page.
-4. Read the result and adjust where needed.
-
-The prompt you typed is stored with the skill (it is not shown in the UI), so a later edit by GraFx Genie knows where the skill came from.
+When you create a skill in environment settings, you can describe what it should do in your own words, as if you were briefing a colleague, and let GraFx Genie generate the name, description and Markdown instructions. Concrete facts (folder names, sizes, field names, counts) are copied into the skill as you wrote them, and the result is grounded in what the agent can actually do in GraFx Studio and in the documentation. The prompt you typed is stored with the skill (it is not shown in the UI), so a later edit with **Edit skill with GraFx Genie** knows where the skill came from.
 
 <!-- TODO Bram: screenshot of the Create skill modal -->
 
@@ -57,20 +38,6 @@ The prompt you typed is stored with the skill (it is not shown in the UI), so a 
     When your brief mentions things the agent can read at runtime (the available layout presets, the deployed connectors, the Brand Kit colors, the templates in the environment), the generated skill instructs the agent to look them up rather than hard-coding a list that would go stale.
 
     Requests that would expose how the agent works internally are refused. "Explain how a media connector is structured" is fine; "list all the steps the agent takes" is not.
-
-### Manually
-
-Click **Create**, then fill in the name, description and instructions yourself. All three fields need content before the skill can be saved. The instructions are Markdown: headings, lists and tables all work, and a clear structure helps the agent follow them in order.
-
-## Edit a skill
-
-Open a skill from the list. Edit the fields directly, or click **Edit skill with GraFx Genie**, describe the change ("add 1200×628 to the social formats", "stop requiring a QR code on A5"), and let GraFx Genie rewrite the skill. Follow-up prompts are stored with the skill, like the original brief.
-
-Delete a skill from its menu in the list, or select several and delete them together.
-
-## Move skills between environments
-
-A skill can be **exported** as a JSON file from its menu, and **imported** in another environment with the **Import Skill** button next to **Create skill**. This is the way to build and test skills in a Sandbox environment and move them to production once they behave. Import is one file at a time and respects the limit of 10 skills per environment.
 
 ## Best practices for custom skills
 
@@ -90,7 +57,7 @@ The agent decides which skills to load from their **name and description**, then
 
 **Expect style skills to be applied on request.** A skill about tone of voice or general style is picked up when a request matches it. Mention the style in the chat ("write the placeholder copy, use our tone of voice") if you want to be sure.
 
-**Where a skill overlaps with the agent's built-in way of working, the built-in behaviour generally wins.** Skills are for adding your rules, not for overriding how GraFx Studio features work.
+**Where a skill overlaps with the agent's built-in way of working, the built-in behavior generally wins.** Skills are for adding your rules, not for overriding how GraFx Studio features work.
 
 **Test in the chat.** After saving, ask the agent for the task the skill covers and check the canvas. If it did not pick the skill up, sharpen the description. If it picked it up and got a step wrong, sharpen that step.
 
@@ -173,7 +140,7 @@ Use the layout preset where one exists; otherwise create a custom size.
 # Variables
 
 - Names are Title Case, in the language of the brand team: "Headline", "Subhead", "Promo price 1".
-- Group variables by what the local user edits together: "Copy", "Prices", "Images", "Options".
+- Group variables by what the end user edits together: "Copy", "Prices", "Images", "Options".
   Reuse an existing group with the same name; do not create "Copy 2".
 - Every variable gets a one-sentence description that says where it appears and any length limit.
 - Text variables for headlines are required, with a default taken from the current frame text.
