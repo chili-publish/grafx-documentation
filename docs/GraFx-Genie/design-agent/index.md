@@ -82,7 +82,7 @@ When a request is ambiguous, the agent pauses and asks, often with choice chips 
 
 When the turn is done, the reply summarizes what was created or changed, naming the frames and variables involved, and the result is on the canvas.
 
-![The reply after choosing Variable image: the agent created the Lifestyle image variable, bound it to the Lifestyle photo frame, and the two new frames show on the A4 page](chat-reply.png){.screenshot-full}
+![The reply after choosing Variable image: the agent created the Lifestyle image variable, bound it to the Lifestyle photo frame, and the two new frames show on the A4 page](chat-reply.png){.screenshot}
 
 Before destructive operations, such as deleting all child layouts or deleting a variable that an Action refers to, the agent reports what is affected and asks for confirmation first.
 
@@ -98,7 +98,7 @@ If the connection to GraFx Genie goes silent, the chat retries once and then end
 
 When you ask how something works ("how do image variables work?", "what is the difference between layouts and pages?", "walk me through anchoring"), the agent searches the GraFx documentation (the CHILI GraFx, GraFx Studio, GraFx Brand Kits, GraFx Fonts, GraFx Media and GraFx Genie sections) before answering. The chat shows *Searching the documentation* and then *Writing the reply*. The reply links to the page it used, opening in a new tab, and says so when the documentation did not cover the question. A how-to question does not change the canvas; a request phrased as a question ("how do I get this red?") is treated as a request to make the change.
 
-![The agent's answer to "How does copyfitting work?", ending with a link to the copyfitting documentation](chat-docs-answer.png){.screenshot-full}
+![The agent's answer to "How does copyfitting work?", ending with a link to the copyfitting documentation](chat-docs-answer.png){.screenshot}
 
 ## What the Design Agent is not
 

@@ -10,7 +10,7 @@ See [Elements](/GraFx-Brand-Kits/concepts/elements/#descriptions) for the concep
 
 Open the Brand Kit in **GraFx Brand Kits**. Each element type sits in its own card (Colors, Media, Fonts, Paragraph Styles, Character Styles, Components). Selecting an element shows its preview on the left and its name, properties and a **Description** text area on the right.
 
-<!-- TODO Bram: screenshot of a color card with the description text area filled in -->
+![Descriptions](brand-kit-descriptiong.png){.screenshot-full}
 
 A few rules:
 

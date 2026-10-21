@@ -17,7 +17,7 @@ Start by asking, not instructing:
 
 The reply walks through the variables and where they appear, the layouts, and the Actions as trigger → effect, in plain language.
 
-![The agent explaining a simple A4 template: its Headline and Lifestyle photo frames, the image variable, the single layout with 3 mm bleed, and the absence of Actions](chat-explain.png){.screenshot-full}
+![The agent explaining a simple A4 template: its Headline and Lifestyle photo frames, the image variable, the single layout with 3 mm bleed, and the absence of Actions](chat-explain.png){.screenshot}
 
 Now pick something you are curious about:
 

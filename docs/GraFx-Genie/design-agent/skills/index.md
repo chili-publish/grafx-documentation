@@ -22,6 +22,8 @@ Skills complement [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-d
 
 ## Where skills live
 
+![Skills](skills.png){.screenshot-full}
+
 Skills are a platform concept, see [Skills](/CHILI-GraFx/concepts/skills/). Subscription Admins and Environment Admins manage them per environment in **Environment settings › Skills**: see [Manage skills](/CHILI-GraFx/guides/manage-skills/) for creating, editing, enabling, importing, exporting and deleting skills, and for the field limits. Every environment can hold up to **10** skills.
 
 Each skill has a **name**, a **description** and **instructions**. The agent reads the names and descriptions of all enabled skills on every prompt to decide which ones to load, then follows the instructions of the skills it loaded. The description is the trigger: the more specific it is, the more reliably the skill is picked up.
@@ -32,7 +34,9 @@ The agent reads the skills when a template is opened. Reopen the template to pic
 
 When you create a skill in environment settings, you can describe what it should do in your own words, as if you were briefing a colleague, and let GraFx Genie generate the name, description and Markdown instructions. Concrete facts (folder names, sizes, field names, counts) are copied into the skill as you wrote them, and the result is grounded in what the agent can actually do in GraFx Studio and in the documentation. The prompt you typed is stored with the skill (it is not shown in the UI), so a later edit with **Edit skill with GraFx Genie** knows where the skill came from.
 
-<!-- TODO Bram: screenshot of the Create skill modal -->
+![Skills](skill1.png){.screenshot-full}
+
+![Skills](skill2.png){.screenshot-full}
 
 !!! info "Facts the agent can look up are not baked in"
     When your brief mentions things the agent can read at runtime (the available layout presets, the deployed connectors, the Brand Kit colors, the templates in the environment), the generated skill instructs the agent to look them up rather than hard-coding a list that would go stale.

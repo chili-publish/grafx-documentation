@@ -28,7 +28,9 @@ A template with no colors and no text styles cannot be designed on; the agent wi
 
 Watch the stages in the chat: **brand** (gathering the kit, its descriptions and the layout presets), **compose** (planning the page), **measure** (rendering text to make sure it fits), **placement** and **place** (putting the frames on the layout), then the reply. The result is a regular GraFx Studio layout: the lifestyle image in an image frame filled with the asset whose description matched "meat" or "barbecue", the headline in the *Headline* style, five *Promo slot* component frames in a grid, the disclaimer in *Legal* in the footer, and text and image variables for everything you asked to be editable.
 
-<!-- TODO Bram: screenshot of a generated leaflet page with the chat showing the stages -->
+![Design from Scratch1](design1.png){.screenshot}
+
+![Design from Scratch1](design2.png){.screenshot-full}
 
 If the layout size or intent you asked for differs from the current root layout, the agent applies it before placing.
 
