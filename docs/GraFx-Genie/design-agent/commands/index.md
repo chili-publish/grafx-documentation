@@ -75,8 +75,6 @@ A few habits make every request land better:
 | Change logic | "Change action *Toggle badge* to also hide the price strike-through" | Updates the script; name and triggers when you ask. Two Actions with the same name make the agent ask which one. |
 | List, find, delete | "Which actions are there?", "What refers to the *Badge* frame?", "Delete the *Test* action" | |
 
-Variable visibility conditions are set in the variable settings, not through the agent.
-
 ## Responsiveness, anchoring and copyfitting
 
 | You want to | Say for example | Notes |

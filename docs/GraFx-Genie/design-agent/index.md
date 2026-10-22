@@ -16,7 +16,7 @@ Think of it as a design colleague who knows GraFx Studio inside out, works from 
 
 Three things to know before you start:
 
-- **If you can do it in the interface, you can ask for it.** The agent's reach is the GraFx Studio workspace itself: layouts, pages, frames, text, variables, Actions, animation, Brand Kit, media, components, data sources, barcodes. The few things it cannot reach yet are listed under [known limitations](#known-limitations) below.
+- **If you can do it in the interface, you can ask for it.** The agent's reach is the GraFx Studio workspace itself: layouts, pages, frames, text, variables, Actions, animation, Brand Kit, media, components, data sources, barcodes. During the Beta, not every feature is supported yet; the agent tells you when something is out of reach.
 - **It only does what you ask.** The agent does not tidy up, optimize or add things on its own initiative. Ask for a plan if you want suggestions; ask for a change if you want a change.
 - **It works as is, and works better with context.** On any template the agent can explain, change and build. The more it knows about your brand and your way of working, from [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/), [variable descriptions](/GraFx-Studio/guides/template-variables/define/#description) and [custom skills](/GraFx-Genie/design-agent/skills/), the closer its first result is to what you meant.
 
@@ -117,9 +117,7 @@ It also does not publish, approve or distribute anything, it does not alter the 
 !!! warning "Known limitations in this beta"
     - Running the same prompt twice can give different results. Check the outcome on the canvas; the template is fully editable.
     - After a series of changes, the agent's picture of the template can lag behind the document. If an answer looks wrong, ask it to look again ("list the variables") or clear the chat history.
-    - The agent sometimes creates a new variable or variable group where an existing one would do. Say explicitly which variable or group to reuse.
-    - Vertical text alignment and baseline shift are not yet available to the agent, and the *Link to variable* option when configuring a data connector is not supported in chat.
-    - Variable visibility conditions, connector metadata mapping and layout fill color are not exposed to the agent. It will tell you what it cannot reach when you ask for something outside its range.
+    - Not every GraFx Studio feature is available to the agent yet; support is added throughout the Beta. When you ask for something outside its range, the agent tells you, and you can make that change by hand.
 
 ## Where to find it
 

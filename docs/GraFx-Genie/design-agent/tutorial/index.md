@@ -91,7 +91,7 @@ Drag a frame a few millimetres by hand. Change a color in the properties panel. 
 
 > Align the subhead with the headline's left edge.
 
-The agent reads the document as it is now, including your manual edits. There is no mode to switch, no handover. Use whichever is faster for the step at hand: the chat for anything structural or repetitive, your hands for a nudge.
+The agent reads the document again when it needs to, including your manual edits. There is no mode to switch, no handover. Use whichever is faster for the step at hand: the chat for anything structural or repetitive, your hands for a nudge.
 
 **Habit:** the agent is a colleague at the same desk, not a separate tool.
 
