@@ -7,7 +7,7 @@ If you want a finished outcome instead, follow one of the guides: [adapt an exis
 ## Before you start
 
 - Open a template in the GraFx Studio workspace. A copy of a real one is ideal: something with a few layouts, variables and an Action or two.
-- Click the **GraFx Genie** button at the bottom of the left sidebar to open the chat, and drag it to a spot where it does not cover what you are working on.
+- Click the **GraFx Genie** button at the bottom of the left sidebar to open the chat. Use the **…** menu at the top of the chat to dock it, float it, or open it in a new window.
 
 ## 1. Let the agent explain the template
 

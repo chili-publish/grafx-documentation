@@ -151,4 +151,4 @@ See the [design from scratch guide](/GraFx-Genie/design-agent/design-from-scratc
 | Stop a running turn | Click **Stop**. What already landed stays; the request returns to the text box. |
 | Undo a turn | ++ctrl+z++ / ++cmd+z++, one step per turn. |
 | Repeat an earlier prompt | ++up++ / ++down++ in the text box. |
-| Start over | Reopen the template. A new session starts with an empty chat. |
+| Start over | Choose **Clear chat history** in the **…** menu at the top of the chat. Your template is not changed. |

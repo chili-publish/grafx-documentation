@@ -60,9 +60,15 @@ Most teams start at 1 to learn what the agent does, and move to 3 for the work t
 
 ### Open the chat
 
-In the GraFx Studio workspace, click the **GraFx Genie** button at the bottom of the left sidebar. The chat opens as a draggable window titled *GraFx Genie* over the canvas, so you can move it out of the way of the area you are working on. The button is only available once the template has finished loading; clicking it again closes the window.
+In the GraFx Studio workspace, click the **GraFx Genie** button at the bottom of the left sidebar to open the chat. The button is enabled once the template has finished loading; click it again to close the chat.
 
-Closing the window does not end the conversation: reopen it and the thread is still there. A new session (opening a template again) starts with an empty chat. An empty chat suggests things to try, such as "Add an A4 layout" or "Add QR code and a toggle to show or hide it".
+Use the **…** menu at the top of the chat to choose where the chat is shown:
+
+- **Docked panel**: docked to the right of the workspace.
+- **Floating panel**: a panel over the canvas that you can drag where you want.
+- **New window**: a separate browser window, for example on a second screen.
+
+Closing the chat does not end the conversation: reopen it and the thread is still there. To start over, choose **Clear chat history** in the **…** menu. This empties the thread, and GraFx Genie no longer uses any of the earlier conversation as context. Your template is not changed.
 
 ### Send a message
 
@@ -110,7 +116,7 @@ It also does not publish, approve or distribute anything, it does not alter the 
 
 !!! warning "Known limitations in this beta"
     - Running the same prompt twice can give different results. Check the outcome on the canvas; the template is fully editable.
-    - After a series of changes, the agent's picture of the template can lag behind the document. If an answer looks wrong, ask it to look again ("list the variables") or start a new session.
+    - After a series of changes, the agent's picture of the template can lag behind the document. If an answer looks wrong, ask it to look again ("list the variables") or clear the chat history.
     - The agent sometimes creates a new variable or variable group where an existing one would do. Say explicitly which variable or group to reuse.
     - Vertical text alignment and baseline shift are not yet available to the agent, and the *Link to variable* option when configuring a data connector is not supported in chat.
     - Variable visibility conditions, connector metadata mapping and layout fill color are not exposed to the agent. It will tell you what it cannot reach when you ask for something outside its range.
