@@ -157,6 +157,7 @@ plugins:
           - CHILI-GraFx/concepts/integrations/index.md: "Integrations are OAuth2 client credentials used to authenticate API calls"
           - CHILI-GraFx/concepts/renders/index.md: "Renders are the unit of consumption - each output job costs a number of renders"
           - CHILI-GraFx/concepts/storage/index.md: "Storage concepts for assets and templates"
+          - CHILI-GraFx/concepts/skills/index.md: "Skills - per-environment instructions that tell GraFx Genie (Design Agent) how your organisation works"
         Environment API:
           - GraFx-Developers/environment-api/01-overview/index.md: "Overview of the REST API that manages templates, output, media, and users"
           - GraFx-Developers/environment-api/02-managing-integrations/index.md: "How to create and manage integrations (OAuth2 clients) in the admin panel"
@@ -320,6 +321,7 @@ nav:
             - 'Integrations' :                  'CHILI-GraFx/concepts/integrations/index.md'
             - 'Renders':                        'CHILI-GraFx/concepts/renders/index.md'
             - 'Sandbox':                        'CHILI-GraFx/concepts/sandbox/index.md'
+            - 'Skills':                         'CHILI-GraFx/concepts/skills/index.md'
             - 'Storage':                        'CHILI-GraFx/concepts/storage/index.md'
             - 'Subscriptions' :                 'CHILI-GraFx/concepts/subscriptions/index.md'
         - 'Platform Administration':
@@ -340,6 +342,7 @@ nav:
             - 'Manage Group Membership' :       'CHILI-GraFx/guides/manage-group-membership/index.md'
             - 'Manage Group Access' :           'CHILI-GraFx/guides/manage-group-access/index.md'
             - 'Manage Subject Types' :          'CHILI-GraFx/guides/manage-subject-types/index.md'
+            - 'Manage Skills' :                 'CHILI-GraFx/guides/manage-skills/index.md'
             - 'Manage Environment Version' :    'CHILI-GraFx/guides/manage-environment-version/index.md'
             - 'Create GraFx Studio template' :  'CHILI-GraFx/guides/create-studio-template/index.md'
             - 'Create GraFx Publisher template': 'CHILI-GraFx/guides/create-publisher-template/index.md'
@@ -410,6 +413,16 @@ nav:
 
     - 'GraFx Genie':
         - 'Introduction':                       'GraFx-Genie/index.md'
+        - 'Design Agent (Beta)':
+            - 'Introduction':                   'GraFx-Genie/design-agent/index.md'
+            - 'Tutorial: work effectively':     'GraFx-Genie/design-agent/tutorial/index.md'
+            - 'Prepare your template':          'GraFx-Genie/design-agent/template-setup/index.md'
+            - 'Brand Kit descriptions':         'GraFx-Genie/design-agent/brand-kit-descriptions/index.md'
+            - 'Custom skills':                  'GraFx-Genie/design-agent/skills/index.md'
+            - 'What you can ask':               'GraFx-Genie/design-agent/commands/index.md'
+            - 'Guide: adapt a design':          'GraFx-Genie/design-agent/adapt-a-design/index.md'
+            - 'Guide: design from scratch':     'GraFx-Genie/design-agent/design-from-scratch/index.md'
+            - 'Availability and usage':         'GraFx-Genie/design-agent/manage/index.md'
         - 'Smart Crop':                         'GraFx-Genie/concepts/smart-crop/index.md'
         - 'Actions':                            'GraFx-Genie/concepts/actions/index.md'
         - 'Product Image Creator':              'GraFx-Genie/concepts/product-image-creator/index.md'
@@ -450,6 +463,7 @@ nav:
             - 'Crop':                           'GraFx-Studio/concepts/crop/index.md'
             - 'Crop Marks':                     'GraFx-Studio/concepts/crop-marks/index.md'
             - 'Design & Run':                   'GraFx-Studio/concepts/design-run/index.md'
+            - 'Design Agent (Beta)':            'GraFx-Studio/concepts/design-agent/index.md'
             - 'Drop Shadow':                    'GraFx-Studio/concepts/drop-shadow/index.md'
             - 'Frames':                         'GraFx-Studio/concepts/frames/index.md'
             - 'Gradients':                      'GraFx-Studio/concepts/gradients/index.md'

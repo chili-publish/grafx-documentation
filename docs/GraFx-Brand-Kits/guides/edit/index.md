@@ -28,6 +28,22 @@ On the Brand Kit detail page:
 
 ![The "Edit Style" button, a pencil icon beside its label](edit09.png){.screenshot}
 
+## Describe an element
+
+Colors, media, paragraph styles, character styles and components have a **Description** text area next to their preview. Use it to say when the element is meant to be used: "price and discount color, never for body copy", "logo for dark backgrounds", "headline style, max two lines".
+
+- Descriptions can only be edited on the default theme. On other themes the field is shown read-only, since a theme changes an element's value, not its purpose.
+- Templates that use the Brand Kit pick up new descriptions through [Brand Kit sync](/GraFx-Studio/guides/brandkits/#keep-a-brand-kit-in-sync).
+
+!!! tip "Descriptions guide the Design Agent"
+    The [GraFx Genie Design Agent](/GraFx-Genie/design-agent/) reads these descriptions whenever it designs or changes a template from this Brand Kit. A well-described kit is the single biggest factor in how on-brand the agent's work is. See [Brand Kit descriptions for the Design Agent](/GraFx-Genie/design-agent/brand-kit-descriptions/) for what to write.
+
+## Add a component
+
+Components let the Brand Kit carry the brand's reusable design elements alongside its colors and styles. In the **Components** section, click "+" and pick a component from the environment's component library; a duplicate gets a unique name. Give it a description that says where it goes and which of its fields map to which template variables.
+
+Components have no theme variants: add, describe and remove them on the default theme. Removing a component from the Brand Kit only removes it from the kit, not from the environment.
+
 ## Remove an element
 
 - Click the "..." menu and select **Remove**
