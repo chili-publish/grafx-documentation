@@ -13,13 +13,13 @@
 
     ---
 
-    **Oct 14, 2026**: GraFx Genie: Design Agent (Beta)
+    **Oct 22, 2026**: GraFx Genie: Design Agent (Beta)
 
     ![GraFx Genie icon for the Design Agent Beta release note](/assets/icon-Grafx-Genie.svg){.rn_icon}
 
     Chat with your Design System in the GraFx Studio workspace: the Design Agent explains, adapts and builds templates from your Brand Kit, guided by descriptions and custom skills, with an opt-out per environment.
 
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/14/grafx-genie-design-agent-beta/)
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/22/grafx-genie-design-agent-beta/)
 
     ---
 
