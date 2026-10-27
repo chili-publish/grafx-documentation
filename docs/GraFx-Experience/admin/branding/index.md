@@ -24,7 +24,7 @@ All branding images are selected from your local device. Where they are stored d
 - **Tenants with the Assets extension** keep working as before: space images, Layouts page images and file settings are stored in the Assets extension; tenant logo, favicon and login images are stored in GraFx Experience.
 - **New GraFx tenants without the Assets extension** upload every branding image to **GraFx Media** in the connected CHILI GraFx environment, through the environment's default media connector. GraFx Experience keeps a copy for display, so the portal does not depend on the connector at render time.
 
-Replacing or removing a branding image only clears the reference in GraFx Experience. The original file in GraFx Media is never deleted, so it stays available to other pages or templates that use it.
+For images uploaded to GraFx Media, replacing or removing a branding image only clears the reference in GraFx Experience. The file in GraFx Media is never deleted, so it stays available to other pages or templates that use it. Images stored in the Assets extension or in GraFx Experience keep the behavior they had before this release when they are replaced or removed.
 
 ## Image requirements
 
