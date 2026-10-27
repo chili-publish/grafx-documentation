@@ -32,7 +32,18 @@ If you need to capture additional order information — such as a cost center or
 
 ## Step 3: Configure output settings (optional)
 
-In **Settings → Production output settings**, you can set a default output reference prefix (up to 5 alphanumeric characters). This prefix is automatically added to all order references generated through this channel.
+In **Settings → Production output settings**, you can configure how production outputs are generated. These settings apply to all production channels.
+
+| Setting | Description |
+|---|---|
+| Production output reference prefix | Up to 5 alphanumeric characters, automatically added to all order references generated through a channel |
+| Default PDF output setting | The [output setting](/GraFx-Studio/concepts/output-settings/) from your CHILI GraFx environment used for production output PDFs. Options configured in that setting, such as outlined text or crop marks, are applied to every PDF sent to a production partner. If none is selected, production PDFs are generated with the environment's default PDF settings. |
+| Default PDF VDP output setting | The PDF output setting used when the project's template has an [output data source](/GraFx-Studio/concepts/connectors-data/#two-ways-to-use-a-data-connector). Select a PDF output setting that has **Data source** enabled, so a batch of PDFs is produced, one per record. |
+
+The dropdowns list the PDF output settings of the connected CHILI GraFx environment. If a setting you created recently is missing, clear the GraFx API cache under **Settings → Environment settings** (see [Connect the extension to CHILI GraFx](../connect-to-chili-grafx/#refreshing-after-changes-in-chili-grafx)).
+
+!!! note
+    Project downloads already use the output settings configured on the template. The default output settings above only affect **production outputs** — files generated when a user sends a project to a production channel.
 
 ## Step 4: Verify
 

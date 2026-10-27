@@ -13,6 +13,8 @@ The options shown depend on the output intents of the layouts in your project:
 
 Downloads are processed in the background. When ready, they appear on the **Downloads** tab of the Projects page.
 
+If the campaign is set up to generate output from an [output data source](/GraFx-Studio/concepts/connectors-data/#two-ways-to-use-a-data-connector) (for example, one version per store or per product), the download is a single ZIP file containing one file per record.
+
 ![The Print dropdown on a project card showing Download Print, Download Digital, and available production partner options](ge15.png){.screenshot}
 
 ## Ordering via a production partner
