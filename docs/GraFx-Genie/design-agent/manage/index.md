@@ -2,7 +2,7 @@
 
 ## Availability
 
-The [Design Agent](/GraFx-Genie/design-agent/) is available in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is) in the GraFx Studio template workspace, to users with a Template Designer seat. It carries a **Beta** label in the interface. The Design Agent is part of the product, not a [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/) experiment.
+The [Design Agent](/GraFx-Genie/design-agent/) is available in [Beta](/release-notes/feature-maturity/#maturity-how-finished-it-is) in the GraFx Studio template workspace, to users with a Template Designer seat. It carries a **Beta** label in the interface. For which features the agent supports during the Beta, see [Beta status](/GraFx-Genie/design-agent/beta-status/). The Design Agent is part of the product, not a [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/) experiment.
 
 ## Opt out per environment
 
