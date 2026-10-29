@@ -42,7 +42,7 @@ This is a high-level overview, not a complete reference. For example prompts per
 | Manual image crop | Not yet | |
 | Drop shadows and blend modes | Not yet | |
 | Overprint | Partial | On text, through character and paragraph styles; not yet on shape and barcode frames. |
-| Rename frames | Not yet | |
+| Rename frames | Supported | Actions that use the old name are updated. |
 
 ## Text
 
@@ -70,7 +70,7 @@ This is a high-level overview, not a complete reference. For example prompts per
 | Variable properties | Supported | Required, read-only, placeholder, help text, prefix and suffix, and similar. |
 | Variable descriptions | Supported | |
 | Display names for variables and list items | Supported | |
-| Rename variables | Supported | Renaming variable groups is not yet possible. |
+| Rename variables and variable groups | Supported | Actions that use the old name are updated. |
 | Variable visibility conditions | Not yet | |
 | Variable private data | Not yet | |
 
