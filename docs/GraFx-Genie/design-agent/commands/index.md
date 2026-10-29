@@ -1,6 +1,6 @@
 # What you can ask the Design Agent
 
-The [Design Agent](/GraFx-Genie/design-agent/) understands plain language; there is no command syntax to learn. This page lists what it can do, grouped by area of GraFx Studio, with example requests you can adapt. Where the agent asks a question or refuses something, that is noted too.
+The [Design Agent](/GraFx-Genie/design-agent/) understands plain language; there is no command syntax to learn. This page lists what it can do, grouped by area of GraFx Studio, with example requests you can adapt. Where the agent asks a question or refuses something, that is noted too. For which GraFx Studio features the agent supports during the Beta, see [Beta status](/GraFx-Genie/design-agent/beta-status/).
 
 A few habits make every request land better:
 

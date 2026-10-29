@@ -10,5 +10,6 @@ The Design Agent is available in [Beta](/release-notes/feature-maturity/#maturit
 
 - [Design Agent](/GraFx-Genie/design-agent/): what it is, how a conversation works, and what it is not.
 - [What you can ask](/GraFx-Genie/design-agent/commands/): the full reference of commands by area.
+- [Beta status](/GraFx-Genie/design-agent/beta-status/): which GraFx Studio features the agent supports today.
 - [Prepare your template](/GraFx-Genie/design-agent/template-setup/), [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/) and [custom skills](/GraFx-Genie/design-agent/skills/): how to set things up so the agent does good work.
 - [Guide: adapt a design](/GraFx-Genie/design-agent/adapt-a-design/) and [Guide: design from scratch](/GraFx-Genie/design-agent/design-from-scratch/).
