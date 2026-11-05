@@ -24,7 +24,7 @@ Below is the abstract process of conversion. For specific conversions see:
 
 - [How to convert an Adobe® InDesign® document](/GraFx-Studio/convert/Adobe-InDesign/)  
 - [How to convert an Adobe® Photoshop® document](/GraFx-Studio/convert/Adobe-Photoshop/)  
-- [How to convert a Figma design](/GraFx-Studio/convert/Figma/) (experimental)
+- [How to convert a Figma design](/GraFx-Studio/convert/Figma/)
 
 ### Export from desktop tools
 
@@ -33,7 +33,7 @@ Currently, GraFx Studio Exporter plugins are available for:
 
 - Adobe® InDesign® (multiple pages, alternate layouts)  
 - Adobe® Photoshop® (multiple artboards)  
-- Figma (a single frame, experimental)
+- Figma (a single frame)
 
 ### Import into GraFx Studio
 

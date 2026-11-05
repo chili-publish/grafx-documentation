@@ -5,10 +5,7 @@
 The Figma plugin lets you export a frame from Figma and import it into **GraFx Studio** as a template.
 Figma is a great place to design, but it isn't built to produce hundreds of variants across formats and channels — that is what GraFx Studio does. The plugin turns finished Figma design work into a starting point for automation instead of something you rebuild by hand.
 
-!!! example "Experimental"
-    The Figma plugin is released as [experimental](/release-notes/feature-maturity/#experimental-being-retired). It is not published on the Figma Community, so you download it from the [plugin downloads](/GraFx-Studio/convert/downloads/) page and install it yourself. Behavior and supported features can still change between versions.
-
-**Current version:** 0.8.0 Experimental
+**Current version:** 1.0.0
 **Supported operating systems:** Windows and macOS
 
 ## Elements of the conversion
@@ -18,12 +15,21 @@ Figma is a great place to design, but it isn't built to produce hundreds of vari
 
 ## How to install the plugin
 
-Get the latest plugin from the [GraFx Studio plugin downloads](/GraFx-Studio/convert/downloads/) page.
+### Option 1 — Official Figma store
 
-The download is a `.zip` file — `GraFxStudioExporter_Figma_0.8.0.zip` — rather than a Figma Community install. Unpack it, then add it to Figma as a local plugin.
+Get the plugin from the official Figma store.
+
+!!! note "Store link"
+    The link will be provided as soon as the plugin is published.
+
+### Option 2 — Zip from storage
+
+Get the plugin from the [GraFx Studio plugin downloads](/GraFx-Studio/convert/downloads/) page.
+
+The download is a `.zip` file — `GraFxStudioExporter_Figma_1.0.0.zip`. Unpack it, then add it to Figma as a local plugin.
 
 !!! note "Version-specific download"
-    Unlike the Adobe plugins, the Figma download points at a specific version. When a new experimental build is released, the download link changes with it.
+    Unlike the Adobe plugins, the Figma zip points at a specific version (`1.0.0`). When a new build is released, the download link changes with it. Installing from the Figma store is separate from this zip.
 
 ## How to convert a document
 
@@ -76,7 +82,6 @@ The download is a `.zip` file — `GraFxStudioExporter_Figma_0.8.0.zip` — rath
 Preflight in the Figma plugin works the same way as preflight in the Adobe plugins: you get a list of warnings for the selected frame, and you can expand any warning to choose what to do with that item. When nothing needs attention, the panel shows **No errors or warnings found**.
 
 !!! warning "Known limitations in this version"
-    - Clicking a preflight warning does not select or center the corresponding frame in Figma
     - The export destination dialog shows `blob:null…` as its title on Windows
     - The destination folder has to be chosen on every export
 
@@ -92,8 +97,8 @@ The export supports the following text properties:
 - **Case handling** — upper and lower case transformations are preserved
 - **Lists** — numbered and bullet lists, including multilevel nested lists, with left/center/right and top/middle/bottom alignment
 
-!!! info "Underline used as a text background color"
-    If an underline uses a negative offset and a thickness of 50% or more, GraFx Studio treats it as a text background color rather than an underline. This is intentional — it is how a highlight behind text is expressed in Studio.
+!!! info "Underline used as a text highlight"
+    Figma has no text highlight option. An underline with a negative offset and a thickness of 50% or more is a highlight workaround in Figma. The plugin converts that workaround into an actual text highlight in GraFx Studio.
 
 !!! note "Text wrapping"
     In Figma, text can wrap to a new line where GraFx Studio does not, which can lead to text overflow in the converted template. Check text frames after import.
@@ -106,13 +111,13 @@ Figma text styles are exported and recreated in GraFx Studio, covering:
 - Line height (% and pixels)
 - Letter spacing (%)
 - Underline, strikethrough, superscript, subscript
-- Background text color (applied when underline + negative offset + thickness ≥ 50%)
+- Text highlight (applied when underline + negative offset + thickness ≥ 50%)
 
 !!! info "Line height set to Auto"
     Text using the default **Line height** value `Auto` converts with a line height of 120%, applied silently — no preflight warning is shown. Set an explicit line height in Figma if you want a different value in the template.
 
 !!! warning "Known limitations in this version"
-    - Figma text styles are currently mapped to a mix of paragraph and character styles in GraFx Studio. The visual appearance of styled text is preserved in the template, but the style structure does not yet line up one-to-one with Figma
+    - Figma has a single style object, Text style. GraFx Studio has separate character styles and paragraph styles. A Figma text style is mapped across those Studio styles. The look of the text is preserved; the style structure differs because the two products model text styles differently
     - The default **Vertical trim** value `Standard` triggers a preflight warning
 
 ## Color styles
@@ -140,10 +145,10 @@ Along with:
 - Stroke weight
 - Different corner radius per corner
 - Image as a fill, with fill / fit / crop
+- An image used as a fill in a shape acts as a clipping mask
 
 !!! warning "Known limitations in this version"
     - Only the **center** stroke position is supported
-    - An image used as a fill in a shape acts as a clipping mask. Figma's native **Use as a mask** clipping is not yet supported
 
 ## Drop shadows
 
