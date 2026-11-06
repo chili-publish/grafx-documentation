@@ -35,6 +35,10 @@ SSO integration requires setup by your organization’s technical team or platfo
 - If SSO is used, your identity provider must be configured and linked to the platform’s identity system.
 - You must be assigned to one or more **groups** that grant permission to access GraFx Experience.
 
+### Checking which version you are on
+
+Once logged in, open the user menu (your avatar in the navigation). Below **Log out**, it lists the deployed frontend and backend versions with the time of their last deployment. Clicking a version copies its full identifier — useful to include when you contact support.
+
 ### Summary
 
 - The login page may look different depending on your organization’s configuration.  

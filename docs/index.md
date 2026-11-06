@@ -13,6 +13,16 @@
 
     ---
 
+    **Oct 26, 2026**: GraFx Experience 1.23: output settings for production, variable data output and branding without Assets
+
+    ![GraFx Experience icon for the GraFx Experience 1.23 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
+
+    Production outputs use a chosen PDF output setting, data-driven projects produce a ZIP with one file per record, and new tenants brand their portal with images uploaded to GraFx Media.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/26/grafx-experience-123-output-settings-for-production-variable-data-output-and-branding-without-assets/)
+
+    ---
+
     **Oct 22, 2026**: GraFx Genie: Design Agent (Beta)
 
     ![GraFx Genie icon for the Design Agent Beta release note](/assets/icon-Grafx-Genie.svg){.rn_icon}
@@ -60,16 +70,6 @@
     The three-dot menu on an item is available while its preview is still loading, and GraFx Media can be set back as the default media connector.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/02/chili-grafx-platform-update/)
-
-    ---
-
-    **Sep 28, 2026**: GraFx Studio: InDesign® and Photoshop® plugins 1.5.0
-
-    ![GraFx Studio icon for the InDesign and Photoshop plugins 1.5.0 release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    The InDesign® plugin now exports text backgrounds and overprint settings. The Photoshop® plugin warns about documents that are not 72 PPI and lets you keep their size in px or mm.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/09/28/grafx-studio-indesign-and-photoshop-plugins-150/)
 
     ---
 

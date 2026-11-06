@@ -79,6 +79,6 @@ Admins control the portal’s look and first impression:
 - Apply brand identity (logos, colors, visuals)
 - Configure post-login behavior and redirect pages
 
-Branding and login setup reinforce your corporate presence.
+Branding and login setup reinforce your corporate presence. See [Branding & login](../branding/) for where each image is set and how it is stored.
 
 Admin configuration determines the look and behavior of the Experience portal — there is no fixed UI, only what you build.
