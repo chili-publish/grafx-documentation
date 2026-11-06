@@ -155,7 +155,7 @@ Preview type | Where Studio requests it | Recommended size | Formats | Intents S
 `thumbnail` | Image variable preview in the Variables panel, and the placeholder shown while `highres` loads | 200–400px | PNG, JPEG | web
 `mediumres` | Media panel and the image variable "Select image" modal | 1000–2000px | PNG, JPEG | web
 `highres` | Images in frames on the editor canvas, and image drop shadows in PDF output | The largest raster preview your DAM has, ideally 2000–4000px | PNG, JPEG | web, print
-`fullres` | Images in frames during output | Print: the original PNG, JPEG or PDF file. Web and animation: a large raster, around 4096px | PNG, JPEG; PDF for print only | web, print, animation
+`fullres` | Images in frames during output | Print: the original PNG, JPEG or PDF file. Web and animation: the highest-resolution PNG or JPEG available | PNG, JPEG; PDF for print only | web, print, animation
 
 The sizes are recommended targets for the longest side, not required dimensions:
 
