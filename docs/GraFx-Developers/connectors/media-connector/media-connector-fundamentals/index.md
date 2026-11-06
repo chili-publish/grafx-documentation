@@ -140,34 +140,56 @@ The method returns a `Promise<Connector.ArrayBufferPointer>`. This `ArrayBufferP
 
 The `download` method is invoked in various scenarios to retrieve image data. Its behavior should adapt based on the `previewType` and `intent` parameters to provide the most appropriate image format and quality.
 
-#### Preview Types
-The `previewType` parameter can have these values:
+#### Download Intents
+The `intent` parameter tells you what the image will be used for:
 
-- **thumbnail**: Used when requesting the image preview in the Variable panel.
-- **mediumres**: Used when requesting images in the media panel and the variable "Select image" modal.
-- **highres**: Used when loading images into frames in the editor in the browser.
-- **fullres**: Used during output for requesting the images to be loaded in frames.
+- **web**: Display in the browser editor, and PNG / JPEG image output.
+- **print**: PDF output.
+- **animation**: GIF and MP4 output.
+
+#### Preview Types
+The `previewType` parameter tells you which rendition of the asset Studio needs.
+
+Preview type | Where Studio requests it | Recommended size | Formats | Intents Studio uses
+-- | -- | -- | -- | --
+`thumbnail` | Image variable preview in the Variables panel, and the placeholder shown while `highres` loads | 200–400px | PNG, JPEG | web
+`mediumres` | Media panel and the image variable "Select image" modal | 1000–2000px | PNG, JPEG | web
+`highres` | Images in frames on the editor canvas, and image drop shadows in PDF output | The largest raster preview your DAM has, ideally 2000–4000px | PNG, JPEG | web, print
+`fullres` | Images in frames during output | Print: the original PNG, JPEG or PDF file. Web and animation: the highest-resolution PNG or JPEG available | PNG, JPEG; PDF for print only | web, print, animation
+
+The sizes are recommended targets for the longest side, not required dimensions:
+
+- **Never upscale.** If your DAM has no rendition that large, return the largest one it has. Studio scales the image to the frame.
+- **Keep the same framing in every rendition.** Each rendition must show the full image with the same aspect ratio. Do not crop, letterbox or pad it. Studio stores crops and smart-crop areas relative to the image, so they land in the wrong place if the editor image (`highres`) and the output image (`fullres`) are framed differently.
+- **Keep files reasonable.** Very large `highres` renditions slow down the browser editor. Smart crop only uses renditions up to 10 MB: it tries `mediumres`, then `highres`, then `thumbnail`.
+
+`original` is also a valid `previewType`, but Studio does not request it today. If an integration calls `download` with `original` through the SDK, return the unmodified source file. Studio passes the bytes to the caller without decoding them, so the format rules below do not apply.
 
 !!! note "Remember Custom UIs"
 
-    Custom GUI editors may request previewTypes for different scenarios.
+    Custom GUI editors and SDK integrations can request any combination of `previewType` and `intent`, not only the ones in the table. Apply the same rules whatever the intent: return PNG or JPEG for `thumbnail`, `mediumres` and `highres`, and follow the intent-specific rules below for `fullres`.
 
-#### Download Intents
-The `intent` parameter specifies the platform the `download` was called:
+!!! note "Deprecated names"
 
-- **web**: For in-browser display and image output.
-- **print**: For PDF output.
-- **animation**: For GIF and MP4 output.
+    The deprecated SDK values `HighResolutionWeb` and `LowResolutionWeb` map to `highres` and `thumbnail`.
 
 #### Supported Formats
 
-DownloadType / DownloadIntent | *web* (= browser based editing session, PNG/JPG output) | *print* (= PDF output, High res image output) | *animation* (= Gif, mp4 output, compression will be applied)
--- | -- | -- | --
-*thumbnail* (PNG / JPEG) | ✓ (e.g., Displaying small preview images on a webpage) |   |
-*mediumres* (PNG / JPEG) | ✓ (e.g., Displaying larger images on a webpage without slowing down load times) | ✓ (e.g., Printing a decent-quality image where high resolution is not crucial) |
-*highres* (PNG / JPEG) | ✓ (e.g., Downloading a high-quality image for use on a high-resolution display) | ✓ (e.g., Printing a high-quality, large-scale image) | ✓ (e.g., Using as a frame in a high-quality animation)
-*fullres* (PDF / PNG / JPEG) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset converted to PNG / JPEG file ) | ✓ (e.g., Printing the original PDF or PNG / JPEG image file in its highest quality. For asset types other than PNG / JPEG / PDF one should serve the asset wrapped as a PDF file) | ✓ (e.g., Downloading the original image file in its highest quality. For asset types other than PNG / JPEG one should serve the asset converted to PNG / JPEG file )
-*original* | ✓ | ✓ | ✓
+Return **PNG** or **JPEG** for every raster rendition, and **PDF** only for `fullres` with intent `print`. Studio detects the format from the file contents, not from the file name or headers. Other formats (for example TIFF, SVG, EPS or PSD) are not supported: they cause errors in PDF output and may not display in the editor. Convert them first.
+
+- `thumbnail`, `mediumres` and `highres`: return PNG or JPEG. Never return a PDF; `highres` is also used for drop shadows in PDF output, which fail on a PDF image.
+- `fullres` with intent `print`: return PNG, JPEG or PDF files as-is, so the original quality and color space reach the PDF. For any other asset type, generate a PDF that contains the asset.
+- `fullres` with intent `web` or `animation`: return PNG or JPEG. Convert any other asset type, including PDF, to PNG or JPEG.
+
+When you return a PDF for print, Studio embeds it in the output without rasterizing or converting it:
+
+- Vectors stay vectors, and the original color spaces (including CMYK) are kept. When you wrap another format (for example EPS, AI or TIFF) as a PDF, keep vectors as vectors and keep the source color space.
+- Only the first page is used.
+- Studio uses the page's CropBox if it is set, otherwise the MediaBox, and respects the page rotation.
+
+!!! tip "Keep transparency"
+
+    Of the supported formats, only PNG and PDF keep transparency. If an asset has transparency, return PNG for every raster rendition. JPEG cannot store transparency, so a JPEG rendition shows a solid background instead.
 
 ### detail Method
 
