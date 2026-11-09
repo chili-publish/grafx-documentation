@@ -20,7 +20,12 @@ Three things to know before you start:
 - **It only does what you ask.** The agent does not tidy up, optimize or add things on its own initiative. Ask for a plan if you want suggestions; ask for a change if you want a change.
 - **It works as is, and works better with context.** On any template the agent can explain, change and build. The more it knows about your brand and your way of working, from [Brand Kit descriptions](/GraFx-Genie/design-agent/brand-kit-descriptions/), [variable descriptions](/GraFx-Studio/guides/template-variables/define/#description) and [custom skills](/GraFx-Genie/design-agent/skills/), the closer its first result is to what you meant.
 
-![The GraFx Genie chat open over an empty A4 template in the GraFx Studio workspace, asking "How can I help you today?"](chat-open.png){.screenshot-full}
+<iframe width="690" height="388" src="https://www.youtube.com/embed/k4qi3xp2AXs?list=PLMLmEjQJYZnY&controls=1&mute=0&showinfo=0&rel=0&autoplay=0&loop=0" title="Welcome to GraFx Studio Quick Start" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+!!! tip "Watch the quick start series"
+    **GraFx Studio Quick Start with Design Agent** is a series of short videos that turns a design into a template, one request at a time.
+
+    [:octicons-link-external-24: Watch the series on YouTube](https://www.youtube.com/playlist?list=PLMLmEjQJYZnY)
 
 ## How GraFx Genie helps
 
