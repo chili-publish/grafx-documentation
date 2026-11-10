@@ -30,9 +30,10 @@ Often this is the same person.
 !!! abstract "Setup at a glance"
 
     1. **[Lytho Configuration](#lytho-configuration)** (in Lytho): generate the credentials and copy the values for your GraFx connector.
-    2. **[CHILI GraFx Connector Configuration](#chili-grafx-connector-configuration)** (in CHILI GraFx): add the Lytho connector and make it available. Then fill in its two tabs:
+    2. **[CHILI GraFx Connector Configuration](#chili-grafx-connector-configuration)** (in CHILI GraFx): add the Lytho connector and fill in its two tabs. Then make it available:
         - **[Configuration](#configuration)**: paste the runtime options and proxy settings.
         - **[Authentication](#authentication)**: choose account-level access or per-user sign-in. With per-user sign-in, you also register the connector in Lytho.
+        - **[Make the connector available](#make-the-connector-available)**: switch it on for Template Designers once everything else is done.
 
     When setup is done, Template Designers can start [using assets from your Lytho DAM](#using-assets-from-your-lytho-dam). If something does not work, see [Troubleshooting](#troubleshooting).
 
@@ -81,7 +82,7 @@ In Lytho, go to **Settings → Advanced → GraFx connector**.
 
 <a id="add-the-connector"></a>
 
-???+ abstract "<input type="checkbox" aria-label="Mark 2.1 as done"> 2.1 Add the connector and make it available"
+???+ abstract "<input type="checkbox" aria-label="Mark 2.1 as done"> 2.1 Add the connector"
 
     From the overview of Environments, click on "Settings" on the right of the environment where you want to configure the Connector.
 
@@ -89,7 +90,7 @@ In Lytho, go to **Settings → Advanced → GraFx connector**.
 
     Then click **Connectors**. If Lytho is not listed yet, click **+ Add connector** and select Lytho (see [Installation Through Connector Hub](/GraFx-Studio/guides/connector-hub/)).
 
-    Make sure the **Available** toggle of the Lytho row is switched on. A newly added connector is not available by default, and Template Designers can only add Lytho images to a template while it is available. Then open the Lytho Connector.
+    Then open the Lytho Connector.
 
     ![The environment's Connectors list, with the Lytho row of type Media highlighted](sc03.png){.screenshot-full style="max-width: calc(100% - 40px)"}
 
@@ -121,6 +122,8 @@ In Lytho, go to **Settings → Advanced → GraFx connector**.
     |---|---|---|---|
     | **Account-level access** | Everyone who uses your templates may see every asset | Every asset in your Lytho account | None. The connector always connects with the account's credentials. |
     | **Per-user sign-in** | Users should only see what their Lytho permissions allow | Only the assets their own Lytho user may see | Each user signs in to Lytho once in GraFx Studio |
+
+    In both setups, only supported file types and assets within their publish dates are shown. See [Which assets are available](#which-assets-are-available).
 
     Exporting and rendering output always uses the account's credentials, because no user is present at that point. In both setups, this lets templates that contain restricted assets still export.
 
@@ -180,6 +183,14 @@ In Lytho, go to **Settings → Advanced → GraFx connector**.
             ![The Lytho Add connector dialog, with the Technical name and Connector URL or ID fields](sc08.png){.screenshot}
 
         The first time a user opens Lytho assets in GraFx Studio, they are asked to sign in with their Lytho login.
+
+<a id="make-the-connector-available"></a>
+
+???+ abstract "<input type="checkbox" aria-label="Mark 2.4 as done"> 2.4 Make the connector available"
+
+    Go back to **Settings → Connectors** and switch on the **Available** toggle of the Lytho row. A newly added connector is not available by default, and Template Designers can only add Lytho images to a template while it is available.
+
+    Turn it on only when the Configuration and Authentication tabs are complete and, with per-user sign-in, the connector is registered in Lytho. Until then, Template Designers could select a connector that does not work yet.
 
 ## Using Assets from Your Lytho DAM
 
