@@ -404,6 +404,7 @@ nav:
             - 'Navigation':                         'GraFx-Experience/admin/navigation/index.md'
             - 'Visibility & access':                'GraFx-Experience/admin/page-visibility/index.md'
             - 'Design Systems':                     'GraFx-Experience/admin/design-systems/index.md'
+            - 'Branding & login':                   'GraFx-Experience/admin/branding/index.md'
         - 'End user':
             - 'Overview':                           'GraFx-Experience/end-user/overview/index.md'
             - 'Browse campaigns & start a project': 'GraFx-Experience/end-user/browse-and-start/index.md'
