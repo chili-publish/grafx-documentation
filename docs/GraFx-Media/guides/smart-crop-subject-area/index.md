@@ -77,7 +77,7 @@ Subject types are defined centrally by environment admins. See [Manage Subject T
 When defining the Subject Area on a media detail view, a **Subject type** dropdown appears alongside the area controls. It lists **Default** plus every subject type defined on the environment.
 
 - **Default** is the Subject Area and POI detected automatically on upload. This is what Smart Crop uses when no subject type is selected on the image frame.
-- Selecting a custom subject type (for example *People*) loads the Subject Area and POI stored for that type, if any. Adjust and **Apply** to save a variant specific to that type.
+- Selecting a custom subject type (for example *People*) loads the Subject Area and POI stored for that type. If nothing is stored for that type yet, the **Default** Subject Area and POI are shown as a starting point, the same values Smart Crop falls back to in GraFx Studio. Adjust and **Apply** to save a variant specific to that type.
 
 ![Subject type Default: the area spans the whole photo and the Point of Interest rests on the woman's face](subject-type-default.png){.screenshot-full}
 
