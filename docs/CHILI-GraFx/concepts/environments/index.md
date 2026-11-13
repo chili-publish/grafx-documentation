@@ -41,6 +41,10 @@ The settings are also available in the environment overview.
 
 ![Settings button on an environment row in the My environments list, next to its type and used storage](settings01.png){.screenshot-full}
 
+Besides the name, type and used storage, the **My environments** list shows each environment's **ID** and **Region**, the data center region where its data is stored (see [data centers](/CHILI-GraFx/trust/data-centers/)).
+
+Environment settings also hold the **AI opt-out**, where admins can switch off [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/#turn-grafx-labs-off-for-an-environment) and the [Design Agent](/GraFx-Genie/design-agent/manage/#opt-out-per-environment) for that environment.
+
 
 ### Isolation
 

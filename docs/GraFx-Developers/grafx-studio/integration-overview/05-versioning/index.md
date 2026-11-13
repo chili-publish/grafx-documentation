@@ -236,7 +236,7 @@ The `/settings` endpoint also returns an `applicationsConfig` object describing 
 }
 ```
 
-`applicationsConfig` drives application availability in the UI; it does not affect versioning or restrict access to API features. The set of applications and features is currently fixed.
+`applicationsConfig` drives application availability in the UI; it does not affect versioning or restrict access to API features. The set of applications and features is currently fixed. `labs.enabled` follows the [AI opt-out](/CHILI-GraFx/concepts/grafx-labs/#turn-grafx-labs-off-for-an-environment) toggle in Environment settings.
 
 Use this value to:
 
