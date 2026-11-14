@@ -43,7 +43,7 @@ In short: the portal provides the context and access, your hosting runs the app,
 ## Before you start
 
 - Admin access to the **Admin Console**
-- Node.js 20.19 or later, and npm
+- Node.js 20.19 or later, or 22.12 or later, and npm
 - A place to host static files over HTTPS
 
 !!! info "You choose where your extension runs"

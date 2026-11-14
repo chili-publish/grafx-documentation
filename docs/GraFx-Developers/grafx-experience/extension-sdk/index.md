@@ -86,5 +86,5 @@ When your app changes route, call `emitNavigationChange` so the portal knows. Se
 | [Building a React extension](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/react-guide.md) | Provider, handshake, API calls, navigation |
 | [Flows](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/flows.md) | Handshake, design tokens, `apiCall`, token refresh, page settings, navigation |
 | [Embedding](https://github.com/chili-publish/experience-extension-sdk/blob/main/docs/embedding.md) | How GraFx Experience embeds your app |
-| [SDK API reference](https://kadanza-io.github.io/extension-sdk/) | Classes, interfaces, and payloads |
+| [SDK API reference](https://chili-publish.github.io/experience-extension-sdk/) | Classes, interfaces, and payloads |
 | [npm package](https://www.npmjs.com/package/@kadanza/extension-sdk) | Installation and versions |

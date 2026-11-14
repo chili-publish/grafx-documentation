@@ -4,7 +4,7 @@ The Experience Extension API is the public REST API for extension developers. Us
 
 ## What you can do with it
 
-- Work with **CHILI GraFx** templates, versions, projects, and output
+- Work with **CHILI GraFx Experience** templates, versions, projects, and output
 - Manage **users**, **user groups**, and invitations
 - Work with **translations** and other extension resources
 

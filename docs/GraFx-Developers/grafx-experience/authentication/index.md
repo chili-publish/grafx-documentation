@@ -26,14 +26,14 @@ Refresh tokens roll over, so integrations stay connected without signing in agai
 |---|---|
 | **Validity** | A refresh token is valid for **30 days**. |
 | **Renewal** | Each time you use it to get a new access token, it's valid for another **30 days**. |
-| **Staying connected** | Refresh at least once every 30 days and the integration keeps working. |
+| **Staying connected** | Refresh before the 30 days run out and the integration keeps working. |
 | **Expiry** | A refresh token unused for **30 days** stops working. Go through the OAuth flow again to get a new one. |
 | **Reuse** | Using a refresh token doesn't invalidate it. |
 | **Scope** | Only for **extension OAuth applications**. User sign-in is not affected. |
 | **Revocation** | Disabling or uninstalling the extension revokes its refresh tokens. |
 
 !!! tip "Stay connected"
-    Schedule your integration to refresh at least once every 30 days.
+    Schedule your integration to refresh well before the 30 days run out, so a delayed run doesn't let the refresh token expire.
 
 ## Extension SDK JWT claims
 
@@ -75,14 +75,14 @@ For what each role means, see [Roles & permissions](/GraFx-Experience/overview/r
 
 Use **`roles`** to show admin-only features only to `ROLE_TENANT_ADMIN` or `ROLE_TENANT_OWNER`.
 
-!!! warning "Always check the issuer"
-    Verify the signature against the JWK set of the issuer in **`iss`**. Reject tokens from any other issuer.
+!!! warning "Always validate the token"
+    Check that **`iss`** is the issuer you expect, then verify the signature against that issuer's JWK set. Reject tokens from any other issuer, tokens whose **`aud`** is not your extension, and tokens past **`exp`**.
 
 ### Example payload
 
 ```json
 {
-  "iss": "https://idp.kadanza.app",
+  "iss": "https://idp.kadanza.io",
   "aud": "ext:assets",
   "sub": "336ce6b4-ec7b-11ec-8179-7e7497b0126b",
   "email": "user@example.com",
