@@ -40,7 +40,7 @@ In **Settings → Production output settings**, you can configure how production
 | Default PDF output setting | The [output setting](/GraFx-Studio/concepts/output-settings/) from your CHILI GraFx environment used for production output PDFs. Options configured in that setting, such as outlined text or crop marks, are applied to every PDF sent to a production partner. If none is selected, production PDFs are generated with the environment's default PDF settings. |
 | Default PDF VDP output setting | The PDF output setting used when the project's template has an [output data source](/GraFx-Studio/concepts/connectors-data/#two-ways-to-use-a-data-connector). Select a PDF output setting that has **Data source** enabled, so a batch of PDFs is produced, one per record. |
 
-The dropdowns list the PDF output settings of the connected CHILI GraFx environment. If a setting you created recently is missing, clear the GraFx API cache under **Settings → Environment settings** (see [Connect the extension to CHILI GraFx](../connect-to-chili-grafx/#refreshing-after-changes-in-chili-grafx)).
+The dropdowns list the PDF output settings of the connected CHILI GraFx environment. They are read live, so a setting you just created appears the next time the settings view loads. See [Settings are read live from CHILI GraFx](../connect-to-chili-grafx/#settings-are-read-live-from-chili-grafx).
 
 !!! note
     Project downloads already use the output settings configured on the template. The default output settings above only affect **production outputs** — files generated when a user sends a project to a production channel.

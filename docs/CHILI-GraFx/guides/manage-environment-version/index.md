@@ -34,21 +34,9 @@ After you change the version, the environment settings reflect your choice.
 !!! note "Existing templates and projects don't auto-upgrade"
     Changing the environment version doesn't migrate existing content. Templates and projects keep their current saved version until someone opens and saves them — at which point they're saved in the new version.
 
-## Refresh GraFx Experience
+## GraFx Experience follows automatically
 
-If this environment is linked to GraFx Experience, you also need to refresh the GraFx version there after changing it. Otherwise there's a mismatch between the version running in the browser and the version running on the server, which causes output failures.
-
-To refresh GraFx Experience:
-
-1. Open your GraFx Experience admin settings.
-
-2. Find the GraFx extension: click **Extensions** (1), click **Installed** (2), locate **GraFx** in the list and click the three dots **...** (3), then click **Settings** (4).
-
-    ![GraFx Experience installed extensions page with the Extensions and Installed navigation expanded and the GraFx extension's three-dot menu open showing the Settings option](env-extensions-settings.png){.screenshot-full}
-
-3. On the settings page, find the **Refresh** button under **GraFx version** and click it. This syncs the two environments so they run the same version.
-
-    ![GraFx Experience extension settings page highlighting the Refresh button under the GraFx version section](env-settings-refresh.png){.screenshot-full}
+If this environment is linked to GraFx Experience, there is nothing to refresh there. GraFx Experience reads the version from the environment settings each time an editing session opens, so the next session runs on the new version. Sessions that are already open keep the version they started with. If CHILI GraFx can't be reached, GraFx Experience uses the last version it read. See [Settings are read live from CHILI GraFx](/GraFx-Experience/guides/connect-to-chili-grafx/#settings-are-read-live-from-chili-grafx).
 
 ## When to pin vs. stay on Latest
 

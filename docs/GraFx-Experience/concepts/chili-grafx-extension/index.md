@@ -17,13 +17,13 @@ The extension is configured through its own admin console. The key objects it ma
 ![The CHILI GraFx extension admin console showing the main navigation with Templates, Fields, Production Channels, and Settings](ge4.png){.screenshot-full}
 
 **Templates**
-A template in the extension is a record that points to a Design System in GraFx Studio. It holds metadata (name, description, status, main visual) and configuration (fields, workflow settings). The link between the two systems is the **GraFx External ID** — the unique identifier of the Design System in GraFx Studio. Templates appear to end users as campaigns in the portal.
+A template in the extension is a record that points to a Design System in GraFx Studio. It holds metadata (name, description, status, main visual) and configuration (field values, workflow settings). Admins add a template by picking the Design System from the templates in the connected CHILI GraFx environment, so the two stay linked without copying IDs. Templates appear to end users as campaigns in the portal.
 
 **Fields**
 Reusable metadata elements that can be attached to templates, projects, production channels, and outputs. Fields serve two purposes: categorizing content for search and filtering, and controlling which user groups can access which templates. See [Fields](../fields/) for details.
 
 **Template versioning**
-Templates support a draft and published version cycle. Changes made in GraFx Studio are synced to the extension and staged as a draft before being published to users. See [Template versioning](../template-versioning/) for details.
+Templates support a draft and published version cycle. After a change in GraFx Studio, an admin creates a new version, which is staged as a draft before being published to users. See [Template versioning](../template-versioning/) for details.
 
 **Production channels**
 Define where output goes after a user finishes personalizing a template — a download, a print partner, or a digital endpoint. See [Production channels](../production-channels/) for details.

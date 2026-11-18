@@ -20,26 +20,21 @@ The **Templates** view shows all Design Systems that are known to the Experience
 
 Each row represents one Design System and includes:
 
-- **Reference**  
-  Internal reference used to identify the Design System in Experience.
-
 - **Name**  
-  Human-readable name shown to admins and, depending on configuration, to end users.
-
-- **GraFx external ID**  
-  The unique identifier that links this Design System to GraFx Studio.
+  A landscape thumbnail of the main visual, the human-readable name shown to admins and, depending on configuration, to end users, and the internal reference used to identify the Design System in Experience.
 
 - **Status**  
-  Indicates whether the Design System is active and usable.
-
-- **Layouts**  
-  Number of layouts defined in the Design System.
+  **Active**, **Inactive** or **Expired**.
 
 - **Version**  
-  The version currently linked to Experience.
+  The published version that new projects use, with a chip when there is a draft or a failed sync.
 
-- **Draft indicator**  
-  Shows whether there is an unpublished draft version.
+- **Last updated**  
+  When the template was last changed.
+
+The **⋯** menu on each row offers **Open**, **Edit in GraFx Studio**, and **Set active** or **Set inactive**.
+
+To add a Design System, click **Add template** and pick it from the templates in your CHILI GraFx environment. See [Configure a Design System](/GraFx-Experience/guides/configure-design-system/).
 
 This overview helps admins verify which Design Systems are connected and ready for use.
 

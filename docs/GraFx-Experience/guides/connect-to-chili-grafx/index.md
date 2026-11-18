@@ -30,27 +30,24 @@ The page holds the connection details for your CHILI GraFx environment. Required
 | Client ID | The Client ID of the integration from Step 1 |
 | Client Secret | The Client Secret of the integration from Step 1 (masked) |
 
-The page also has optional fields for the Studio UI CDN URL, the Studio UI SDK URL, and the editor link.
-
 Click **Save Authentication**. When you save, GraFx Experience checks the environment against your CHILI GraFx subscription. If the Environment ID is not valid, an error message is shown and the previous values are kept.
 
 ## Step 3: Verify the connection
 
-Open the extension's **Settings → Environment settings**.
+Open the extension's **Settings → Environment settings** and check that the access token has a recent refresh time. If the connection is successful, the GraFx Studio user interfaces and output settings from your environment are available when you configure templates in the extension.
 
-- Under **GraFx version**, click **Refresh** to load the version your environment runs on.
-- Under **GraFx API cache**, click **Clear cache** to load the latest user interfaces and output settings from CHILI GraFx.
+## Settings are read live from CHILI GraFx
 
-If the connection is successful, the GraFx Studio user interfaces and output settings from your environment are available when you configure templates in the extension.
+GraFx Experience reads the following from your CHILI GraFx environment each time it needs them, so a change in CHILI GraFx applies without any action in GraFx Experience:
 
-![The Environment settings panel in the extension admin console showing the GraFx API cache with a Clear cache button, the GraFx version with a Refresh button, and the access token's last refresh time with a Refresh button](ge7.png){.screenshot-full}
+- **GraFx Studio version** — the next editing session that opens runs on the version set in the [environment settings](/CHILI-GraFx/guides/manage-environment-version/). A session that is already open keeps its version.
+- **User interfaces and output settings** — the next settings view, preview or output uses the changed value.
 
-## Refreshing after changes in CHILI GraFx
+If CHILI GraFx can't be reached, GraFx Experience uses the last values it read successfully, and the editor shows a warning. When no earlier values exist, the editor loads the latest GraFx Studio version.
 
-The extension does not automatically pick up changes made in CHILI GraFx. Use **Environment settings** to apply them:
+## Refreshing after permission changes
 
-- **Integration permissions changed** — click **Refresh** under **Access token** to re-authenticate with the updated permissions.
-- **User interfaces or output settings changed** — click **Clear cache** under **GraFx API cache**.
+When you change the permissions of the integration in CHILI GraFx, open **Environment settings** and click **Refresh** under **Access token** to re-authenticate with the updated permissions.
 
 ## Subscription sync
 
