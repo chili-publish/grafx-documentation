@@ -36,7 +36,7 @@ After you change the version, the environment settings reflect your choice.
 
 ## GraFx Experience follows automatically
 
-If this environment is linked to GraFx Experience, there is nothing to refresh there. GraFx Experience reads the version from the environment settings each time an editing session opens, so the next session runs on the new version. See [Settings are read live from CHILI GraFx](/GraFx-Experience/guides/connect-to-chili-grafx/#settings-are-read-live-from-chili-grafx).
+If this environment is linked to GraFx Experience, there is nothing to refresh there. GraFx Experience reads the version from the environment settings each time an editing session opens, so the next session runs on the new version. Sessions that are already open keep the version they started with. If CHILI GraFx can't be reached, GraFx Experience uses the last version it read. See [Settings are read live from CHILI GraFx](/GraFx-Experience/guides/connect-to-chili-grafx/#settings-are-read-live-from-chili-grafx).
 
 ## When to pin vs. stay on Latest
 

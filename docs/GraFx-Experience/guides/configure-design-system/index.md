@@ -93,7 +93,7 @@ Open GraFx Experience as an end user and go to the campaigns page. Confirm the t
 When a Design System is updated in GraFx Studio, the extension does not automatically pick up those changes. To update the template:
 
 1. Open the template in the extension admin console.
-2. Click **Create version**, in the header's **⋯** menu or on the **Versions** tab. The draft is created right away from the latest design in GraFx Studio.
+2. Click **Create version**, in the header's **⋯** menu or on the **Versions** tab. The draft is created right away from the latest design in GraFx Studio. If the template already has a draft, or a version that failed to sync, use **Resync** on that version instead.
 3. Test the draft if needed.
 4. Click **Publish** to make the new version available for new projects.
 

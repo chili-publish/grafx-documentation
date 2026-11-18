@@ -17,7 +17,7 @@
 
     ![GraFx Experience icon for the GraFx Experience 1.24 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
 
-    Admins add and edit a template on one page, picked from the CHILI GraFx environment, and GraFx Experience always uses the current Studio version and output settings.
+    Admins add and edit a template on one page, picked from the CHILI GraFx environment, and the next editing session, preview or output picks up Studio version and output setting changes without a manual refresh.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/11/18/grafx-experience-124-redesigned-template-page-and-live-settings-from-chili-grafx/)
 

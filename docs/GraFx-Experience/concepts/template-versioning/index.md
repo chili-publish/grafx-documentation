@@ -19,7 +19,7 @@ An expired version is no longer used. Projects on an expired version can no long
 The version could not be created from the Design System in GraFx Studio. Use **Resync** to try again.
 
 !!! note
-    Publishing a new version does not affect existing projects. Projects created from older versions remain available to users — they can still be edited, duplicated, and downloaded.
+    Publishing a new version does not affect existing projects. Projects created from older versions that are still published remain available to users — they can still be edited, duplicated, and downloaded.
 
 ## The version lifecycle
 
@@ -47,6 +47,8 @@ The page header also shows which published version new projects use, and links t
 ## Creating a version from GraFx Studio changes
 
 When a Design System is updated in GraFx Studio, those changes are not automatically reflected in the extension. Click **Create version**, in the header's **⋯** menu or on the **Versions** tab, to create a draft from the latest design right away. No name, comment or confirmation is needed.
+
+A template has only one draft at a time. While a draft exists, or a version failed to sync, you can't create another version. Use **Resync** on that version to update it with the latest design, or publish the draft first.
 
 Layout changes compared to the published version can't be detected, so the draft doesn't mark layouts as new or changed. Review the draft's layouts before you publish.
 
