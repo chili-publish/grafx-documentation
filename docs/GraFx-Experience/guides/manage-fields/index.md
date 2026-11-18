@@ -32,12 +32,12 @@ After creating a Select field, open it and add the available options — for exa
 
 ## Assign a field to a template
 
-Open a template in the GraFx Experience admin and go to the **Fields** section. Select the field from the list of available fields and set its value.
+Open a template in the GraFx Experience admin. On the **General** tab, the **Field values** section lists every field that is used on templates. Set the value directly on the field's row.
 
 - For **Select** fields: choose one or more options from the predefined list.
 - For **User Group** fields: select the user groups that should have access to this template.
 
-Click **Save** to apply.
+Use **Clear** to remove a value. Click **Save** to apply.
 
 ## Configure field visibility on the campaigns page
 

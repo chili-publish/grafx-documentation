@@ -13,6 +13,26 @@
 
     ---
 
+    **Nov 18, 2026**: GraFx Experience 1.24: redesigned template page and live settings from CHILI GraFx
+
+    ![GraFx Experience icon for the GraFx Experience 1.24 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
+
+    Admins add and edit a template on one page, picked from the CHILI GraFx environment, and GraFx Experience always uses the current Studio version and output settings.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/11/18/grafx-experience-124-redesigned-template-page-and-live-settings-from-chili-grafx/)
+
+    ---
+
+    **Oct 29, 2026**: GraFx Genie: Design Agent in the component workspace
+
+    ![GraFx Genie icon for the Design Agent in the component workspace release note](/assets/icon-Grafx-Genie.svg){.rn_icon}
+
+    The Design Agent knows when you build a component, respects what a component can do, and protects the variables templates map to.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/29/grafx-genie-design-agent-in-the-component-workspace/)
+
+    ---
+
     **Oct 26, 2026**: GraFx Experience 1.23: output settings for production, variable data output and branding without Assets
 
     ![GraFx Experience icon for the GraFx Experience 1.23 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
@@ -50,26 +70,6 @@
     Components report whether they have unpublished changes, reading font families is lighter on the server, and connector changes are saved more safely.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-unpublished-changes-font-lookups-and-connectors/)
-
-    ---
-
-    **Oct 06, 2026**: GraFx Experience 1.22: project card carousel and multi-claim SSO mapping
-
-    ![GraFx Experience icon for the GraFx Experience 1.22 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
-
-    Project cards show a carousel of the template's main visual and each layout, and admins can map multiple SAML or OpenID Connect claims to user groups.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/06/grafx-experience-122-project-card-carousel-and-multi-claim-sso-mapping/)
-
-    ---
-
-    **Oct 02, 2026**: CHILI GraFx Platform Update
-
-    ![CHILI GraFx icon for the October 2 platform update release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    The three-dot menu on an item is available while its preview is still loading, and GraFx Media can be set back as the default media connector.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/02/chili-grafx-platform-update/)
 
     ---
 
