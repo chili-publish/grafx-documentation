@@ -16,6 +16,8 @@ Each output task lists the following details:
 
 Use the **Search** bar or **Select filters** to narrow down the list of tasks.
 
+The list does not update by itself. Click the **Refresh** button next to the search and filters to load the latest status. Refreshing also clears the search, sorting and filters.
+
 ## Output Task Actions
 
 Click the **three dots** at the end of any row to open the actions menu.

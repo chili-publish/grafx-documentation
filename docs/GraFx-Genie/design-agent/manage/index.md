@@ -14,7 +14,7 @@ Organizations that do not want AI features in a given environment can switch the
 
 ![The AI opt-out page with two cards: GraFx Labs with its toggle, and GraFx Genie with the Design agent toggle](ai-opt-out.png){.screenshot-full}
 
-The toggle is on by default. When it is off, the Design Agent is hidden for every user in that environment, in the template and the component workspace. The same page holds the **GraFx Labs** toggle; the two are independent. GraFx Genie Vision (Smart Crop) and GraFx Genie for Actions are not affected by either toggle.
+The toggle is on by default. When it is off, the Design Agent is hidden for every user in that environment, in the template and the component workspace. The same page holds the [GraFx Labs](/CHILI-GraFx/concepts/grafx-labs/#turn-grafx-labs-off-for-an-environment) toggle; the two are independent. GraFx Genie Vision (Smart Crop) and GraFx Genie for Actions are not affected by either toggle.
 
 Only Subscription Admins and Environment Admins can change the opt-out, see [roles](/CHILI-GraFx/users/roles/).
 

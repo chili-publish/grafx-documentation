@@ -60,6 +60,8 @@ The tag appears in the Tags list with its creation date.
 !!! tip
     To create or rename tags without leaving this panel, click **Edit tags** at the top.
 
+When you duplicate a template, the copy keeps the tags of the original.
+
 ## Filter templates by tag
 
 1. In **Templates**, click the **Filter** icon in the toolbar.
