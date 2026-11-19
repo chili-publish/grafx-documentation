@@ -22,10 +22,14 @@ It's crucial to establish a consistent variable naming schema with acceptable va
 
 ### Retrieving Variables
 
-If you need to look up variables and their values in a document, you'll need to examine the document JSON. For documents stored on the CHILI GraFx Platform, use the following endpoints (assuming a production environment):
+If you need to look up variables and their values in a document, use the `allVariables` query of the [Template Information Service](/GraFx-Developers/grafx-studio/template-information-service/#allvariables). Don't read variables directly from the document JSON: its format is internal and can change without notice.
 
-  - Templates: `GET: https://{environment}.chili-publish.online/api/v1/environment/{environment}/templates/{templateId}/download`
-  - Projects: `GET: https://{environment}.chili-publish.online/api/v1/environment/{environment}/projects/{projectId}/document`
+First download the document JSON. For documents stored on the CHILI GraFx Platform, use the following endpoints (assuming a production environment):
+
+  - Templates: `GET: https://{environment}.chili-publish.online/grafx/api/v1/environment/{environment}/templates/{templateId}/download`
+  - Projects: `GET: https://{environment}.chili-publish.online/grafx/api/v1/environment/{environment}/projects/{projectId}/document`
+
+Then send the downloaded JSON to the Template Information Service with the `allVariables` query.
 
 ## Updating Variables
 

@@ -170,6 +170,7 @@ plugins:
           - GraFx-Developers/grafx-studio/integration-overview/02-integration-levels/index.md: "Three integration levels: API-only, embedded editor (SDK), or full self-service portal"
           - GraFx-Developers/grafx-studio/integration-overview/03-common-integration-workflows/index.md: "Common workflows: headless output, user-facing editor, template management"
           - GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md: "Authentication setup for Studio integrations - tokens, scopes, and connector auth"
+          - GraFx-Developers/grafx-studio/template-information-service/index.md: "Template Information Service - read layouts, variables, data connector, and more from Template or Project JSON without parsing the internal document format"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md: "Studio SDK quickstart - embed the GraFx Studio editor in your own application"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/02-project-setup/index.md: "Project setup for the Studio SDK"
           - GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/03-loading-studio-sdk/index.md: "How to load and initialise the Studio SDK"
@@ -670,6 +671,7 @@ nav:
                 - '04 Managing Integrations and Authentication':          'GraFx-Developers/grafx-studio/integration-overview/04-managing-integrations-and-authentication/index.md'
                 - '05 Versioning your integration':          'GraFx-Developers/grafx-studio/integration-overview/05-versioning/index.md'
             - 'Moving from GraFx Publisher':    'GraFx-Developers/grafx-studio/studio-publisher-integration-differences/index.md'
+            - 'Template Information Service':   'GraFx-Developers/grafx-studio/template-information-service/index.md'
             - 'Editor Engine' :
                 - 'Studio SDK Quickstart':
                     - '01 Overview':                'GraFx-Developers/grafx-studio/editor-engine/studio-sdk-quickstart/01-overview/index.md'
