@@ -44,7 +44,7 @@ Ensure the **Data source** is enabled for batch processing.
 
 ![The Data source section of an output setting, with the Use data source toggle switched on](../output.png){.screenshot}
 
-All output formats can use the data source. When set to "Use data source", a PDF output has a page for each record in the data source. Other formats (PNG, JPG, GIF, MP4) produce one file per record, delivered in a ZIP.
+All output formats can use the data source. For PDF, the output setting decides how records are grouped: for example, all records in a single PDF with a page per record, or one record per PDF. Other formats (PNG, JPG, GIF, MP4) produce one file per record, delivered in a ZIP.
 
 ![Output preview with a page per record: New Listing on the canvas, New Price and Hello in the Pages panel](../output2.png){.screenshot-full}
 
