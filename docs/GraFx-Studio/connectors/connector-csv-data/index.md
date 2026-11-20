@@ -80,7 +80,7 @@ In [Run Mode](/GraFx-Studio/concepts/design-run/#run-mode) or the [Studio UI](/G
 
 ### Output
 
-To generate output across all records, create an [output setting](/GraFx-Studio/guides/output/settings/#data-source) and enable the **Data source** option. Your output will include one page per record in the CSV file.
+To generate output across all records, create an [output setting](/GraFx-Studio/guides/output/settings/#data-source) and enable the **Data source** option. Every record in the CSV file is then included in the output. For PDF, the output setting decides how records are grouped: for example, all records in a single PDF with a page per record, or one record per PDF. Other formats (PNG, JPG, GIF, MP4) produce one file per record, delivered in a ZIP.
 
 ## Column types
 

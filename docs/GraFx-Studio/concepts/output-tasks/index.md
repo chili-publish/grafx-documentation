@@ -31,7 +31,7 @@ The Output Task List contains several key details for each job, organized in the
 - **Records**: Reflects the number of records in the current batch. For example, if a batch of 100 records is split into 4 tasks of 25 each, the user will see four separate output tasks listed.
 - **Date Created**: The date and time when the output job was initiated.
 
-[^1]: Non-pdf output is listed here if it's a single output, batch output is only for pdf
+[^1]: Batch output is available for all output formats, not only PDF.
 
 Behind the "..." menu, you can also 
 
