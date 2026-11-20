@@ -1,10 +1,6 @@
 # Variable Data Printing With Output API
 
-Variable Data Printing (VDP) allows you to generate PDF outputs where variables are dynamically updated based on a dataset. This guide explains how to use the Output API endpoints to achieve VDP functionality.
-
-!!! warning
-
-    Currently, only PDF output is supported.
+Variable Data Printing (VDP) allows you to generate outputs where variables are dynamically updated based on a dataset. VDP is available for all output formats, not only PDF. This guide explains how to use the Output API endpoints to achieve VDP functionality.
 
 ## Requirements
 
@@ -33,7 +29,7 @@ If you need to look up variables and their values in a document, you'll need to 
 
     Currently, only text (shortText), list, and image variables are supported.
 
-To update variables when generating a PDF output, modify your API request with a `variables` property as follows:
+To update variables when generating output, modify your API request with a `variables` property. The example below uses the PDF endpoint; the `variables` property works the same way on the endpoints for the other output formats.
 
 ```javascript
 const variables = [
@@ -74,7 +70,7 @@ Key points:
 
 !!! tip
 
-    Always set a value for variables that might change during output. Omitted variables will inherit values from the previous object in the array, which can lead to unwanted output results.
+    Each object in the array starts from the document's initial state; values are never carried over from the previous object. A variable you omit keeps the value it has in the document, so set a value for every variable that should differ from that initial state.
 
 !!! tip
 
@@ -102,7 +98,7 @@ In example, if the document list variable `Colors` has the list items:
   - Blue
   - Green
 
-Then trying to set `Colors` to "Yellow" will cause a 500 Internal Server Error during the PDF output process when calling the task status API.
+Then trying to set `Colors` to "Yellow" will cause a 500 Internal Server Error during the output process when calling the task status API.
 
 ### Image Variable
 
