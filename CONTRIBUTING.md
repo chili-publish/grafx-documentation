@@ -156,6 +156,27 @@ The file starts with metadata holding
 - draft status: true or false (true will not render in live guides)
 - date: The publication date of the release note, formatted as: yyyy-MM-dd
 
+**Emailing an operational update**
+
+Release notes are published in the [RSS feed](https://docs.chiligrafx.com/feed_rss_created.xml). An email tool watches the feed and sends an email for every post that has an `email_summary` in its front matter. Add one to an operational update when customers should be emailed about it:
+
+``` markdown
+---
+draft: false
+date: 2026-08-11
+categories:
+  - Operational updates
+email_summary: >-
+  On 14 September 2026, GraFx servers will be briefly unavailable for
+  infrastructure updates. Check the post for downtime times in your region.
+---
+```
+
+- The email subject is the post's `#` topic, and the body is the `email_summary` followed by a link to the post.
+- Keep the summary to one or two plain-text sentences. Markdown is not rendered.
+- Posts without `email_summary` are not emailed.
+- Add the summary when the post is first published, so it's in the feed when the email tool first sees the post.
+
 The topic always starts with #
 
 Followed by the relevant icon for the Platform or Application
