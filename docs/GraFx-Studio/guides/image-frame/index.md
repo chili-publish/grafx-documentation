@@ -107,9 +107,10 @@ Double-click the image frame, or select it and choose the Pen tool (**P**). The 
 
 Fit, Fill and Smart Crop keep working with a custom clipping path, and undo and redo follow the [same rules as on shape frames](/GraFx-Studio/guides/shape-frame/#undo-and-redo-while-editing). End users in Studio UI cannot edit the clipping path.
 
-<!-- TODO screenshot (REL-80): an image frame in path editing, with anchor points and a Bézier handle visible on a custom clipping path. Save as clippingmask-path.png next to this page and uncomment:
-![An image frame in path editing, the photo clipped to a custom outline with its anchor points and a Bézier handle showing](clippingmask-path.png){.screenshot-full}
--->
+<video width="690" autoplay="true" loop="true" muted="true">
+  <source src="edit-clipping-path.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 !!! warning "Known limitation"
     Clipping masks made of several separate sub-paths cannot be edited with the Pen tool. Double-clicking such a frame does nothing.

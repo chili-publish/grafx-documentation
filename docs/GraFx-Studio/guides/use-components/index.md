@@ -29,9 +29,7 @@ When the template's [Brand Kit](/GraFx-Studio/guides/brandkits/) contains compon
 
 Click a component in the Components tab to place it. It is placed exactly like a component from the Resources panel, with the same placement rules. To add more components to the Brand Kit, click **+** at the top right of the tab and pick them from the environment's component library.
 
-<!-- TODO screenshot (REL-80): the Brand Kit panel with the Components tab open, showing a few components and the + icon. Save as brandkit-components-tab.png next to this page and uncomment:
-![The Components tab of the Brand Kit panel, listing the kit's components with the + icon at the top right](brandkit-components-tab.png){.screenshot}
--->
+![Opening the Brand Kit from the Resources panel, switching to the Components tab and placing a product price component on the canvas](ComponentBrandKits.gif){.screenshot-full}
 
 The component frame points to the component itself, not to the Brand Kit:
 

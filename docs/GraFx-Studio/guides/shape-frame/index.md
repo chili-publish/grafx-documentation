@@ -20,6 +20,11 @@ Drag a rectangle on the canvas. The selected shape will be drawn inside the fram
 
 Rectangles, ellipses and polygons cover most needs. When a design calls for something else — a speech bubble, a ribbon, a badge outline — draw the shape yourself with the **Pen tool**. The result is a shape frame with a custom path, built from anchor points and Bézier handles.
 
+<video width="690" autoplay="true" loop="true" muted="true">
+  <source src="create_edit_shape.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <!-- TODO screenshot (REL-80): the Pen tool in the left toolbox, between Shapes and Text, with its tooltip showing the shortcut P. Save as tool-pen.png next to this page and uncomment:
 ![The Pen tool in the left toolbox, its tooltip showing the shortcut P](tool-pen.png){.screenshotsmall}
 -->
@@ -34,10 +39,6 @@ Rectangles, ellipses and polygons cover most needs. When a design calls for some
     - Press **Esc** to finish an open path.
 
 While drawing, **Delete** removes the last point you placed, and snapping helps you line points up.
-
-<!-- TODO screenshot (REL-80): an animation of drawing a closed path with the Pen tool — corner points by clicking, a curve by dragging, closing on the first point. Save as draw-path.gif next to this page and uncomment:
-![Drawing a closed path with the Pen tool: corner points by clicking, a curved point by dragging out Bézier handles](draw-path.gif){.screenshot-full}
--->
 
 ### Edit a path
 
