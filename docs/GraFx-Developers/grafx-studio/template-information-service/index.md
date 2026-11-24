@@ -116,13 +116,15 @@ Send the request body to `POST /query` with `Content-Type: application/json`.
       -H "Authorization: Bearer $TOKEN" \
       -o template.json
 
-    # Escape the JSON so it can be sent as a string in documentJson
-    DOCUMENT_JSON=$(sed 's/\\/\\\\/g; s/"/\\"/g' template.json | tr -d '\n')
+    # Build the request body with jq (1.6+), which stores the Template JSON as a string in documentJson
+    jq -n --rawfile documentJson template.json \
+      '{documentJson: $documentJson, queries: [{property: "allLayouts"}, {property: "layoutsAvailableForUser"}]}' \
+      > request.json
 
-    # Query the service
+    # Query the service, reading the request body from the file
     curl -s -X POST "https://template-information.chiligrafx.com/query" \
       -H "Content-Type: application/json" \
-      -d "{\"documentJson\": \"$DOCUMENT_JSON\", \"queries\": [{\"property\": \"allLayouts\"}, {\"property\": \"layoutsAvailableForUser\"}]}"
+      --data-binary @request.json
     ```
 === "Node v18+"
     ```javascript
