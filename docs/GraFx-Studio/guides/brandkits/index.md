@@ -98,6 +98,7 @@ The circular-arrows button next to the Brand Kit selector pulls the latest versi
 
     A sync is a single undoable step — use undo/redo to revert it.
 
-    Components sync like the other Brand Kit elements, but a sync only updates the Brand Kit's component list. Component frames already placed in the template are not changed.
-
     Sync is theme-aware: it applies to the selected theme and restores its settings to the source Brand Kit's state.
+
+!!! warning "A sync does not update placed components"
+    Components sync like the other Brand Kit elements, but a sync only updates the Brand Kit's **component list**. **Component frames already placed in the template are not changed.**

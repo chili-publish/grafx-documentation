@@ -17,7 +17,7 @@
 
     ![GraFx Studio icon for the Pen tool and Brand Kit components release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
 
-    Draw custom shapes and image clipping paths with the new Pen tool, and place components straight from the Brand Kit panel.
+    Draw custom shapes and edit image clipping paths with the new Pen tool, and place components straight from the Brand Kit panel.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/11/24/grafx-studio-pen-tool-and-components-in-the-brand-kit/)
 

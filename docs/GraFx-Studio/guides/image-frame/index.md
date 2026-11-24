@@ -91,13 +91,13 @@ The **Assign shape** dropdown sets the shape used to clip the image:
 - **Rectangle** (default) — the standard image frame look. Combine with a corner radius to round the edges.
 - **Ellipse** — clips the image to an ellipse fitted inside the frame's bounding box.
 - **Polygon** — clips the image to a triangle fitted inside the frame's bounding box.
-- **Custom** — clips the image with a custom path: one you [draw or edit with the Pen tool](#draw-or-edit-a-custom-clipping-path), or one imported from an InDesign export. The custom path is fitted inside the frame's bounding box.
+- **Custom** — clips the image with a custom path: one you [edit with the Pen tool](#edit-a-custom-clipping-path), or one imported from an InDesign export. The custom path is fitted inside the frame's bounding box.
 
 The image is always clipped within the frame's existing width, height, and rotation — the shape only affects the silhouette.
 
-### Draw or edit a custom clipping path
+### Edit a custom clipping path
 
-The [Pen tool](/GraFx-Studio/guides/shape-frame/#draw-a-custom-shape-with-the-pen-tool) also works on the clipping mask of an image frame, so you can cut an image to any outline — a torn edge, a speech bubble, the silhouette of a product.
+The [Pen tool](/GraFx-Studio/guides/shape-frame/#draw-a-custom-shape-with-the-pen-tool) also edits the clipping mask of an image frame, so you can reshape the outline an image is cut to into any form — a torn edge, a speech bubble, the silhouette of a product.
 
 Double-click the image frame, or select it and choose the Pen tool (**P**). The path editor opens on the frame's clipping mask:
 
