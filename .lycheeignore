@@ -24,6 +24,11 @@
 # ── Versioned SDK paths with literal template braces ─────────────────────────
 ^https://studio-cdn\.chiligrafx\.com/studio-ui/%7Bminor\.version%7D/latest/es-module/bundle\.js$
 
+# ── Theme templates — Jinja expressions, resolved at build time ──────────────
+# Files in overrides/ hold links like {{ 'release-notes/' | url }}. MkDocs turns
+# them into real URLs when it builds the site; lychee sees the raw template.
+^file://.*/overrides/.*%7B%7B
+
 # ── GitHub SDK types file — versioned blob, frequently moved ─────────────────
 ^https://github\.com/chili-publish/studio-sdk/blob/.*/types/Actions\.d\.ts$
 
