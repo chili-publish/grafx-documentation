@@ -23,6 +23,23 @@ Click a component to place it on the canvas. The component is placed as a frame 
 
 > **Placement rules:** The component is placed at the center of the canvas. If the component's default size is larger than the current layout, it is scaled down to fit within the layout boundaries.
 
+### Place a component from the Brand Kit
+
+When the template's [Brand Kit](/GraFx-Studio/guides/brandkits/) contains components, they are also available in the **Components** tab of the Brand Kit panel. This keeps the brand's approved design elements — a price tag, a promo badge — next to its colors, styles and media.
+
+Click a component in the Components tab to place it. It is placed exactly like a component from the Resources panel, with the same placement rules. To add more components to the Brand Kit, click **+** at the top right of the tab and pick them from the environment's component library.
+
+<!-- TODO screenshot (REL-80): the Brand Kit panel with the Components tab open, showing a few components and the + icon. Save as brandkit-components-tab.png next to this page and uncomment:
+![The Components tab of the Brand Kit panel, listing the kit's components with the + icon at the top right](brandkit-components-tab.png){.screenshot}
+-->
+
+The component frame points to the component itself, not to the Brand Kit:
+
+- Removing a component from the Brand Kit does not affect frames already placed in the template.
+- Editing or deleting the component behaves the same as for a component placed from Resources.
+
+The Components tab is not available in the Component Workspace.
+
 ## Multiple instances
 
 You can place the same component multiple times on the same page. Each placement is an independent instance with its own position, size, and variable mapping.

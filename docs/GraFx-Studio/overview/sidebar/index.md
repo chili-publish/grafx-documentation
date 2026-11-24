@@ -1,5 +1,6 @@
 # Sidebar (top section)
 
+<!-- TODO screenshot (REL-80): retake — the sidebar now includes the Pen tool; confirm its position in the list below against the retake -->
 ![The sidebar tools, from Select at the top to Zoom at the bottom](sidebar.png){.screenshotsmall}
 
 Tools to interact with the page or document.
@@ -11,6 +12,7 @@ From top to bottom
 - Shapes > Rectangle (R)
 - Shapes > Ellipse (E)
 - Shapes > Polygon (Y)
+- Pen (P)
 - Text (T)
 - Hand (H)
 - Zoom (Z)
@@ -30,6 +32,10 @@ To create a frame to hold media assets
 ## Shapes
 
 To create a frame to hold a shape.
+
+## Pen
+
+To draw a custom shape, or edit the path of a shape or an image clipping mask. See [Draw a custom shape with the Pen tool](/GraFx-Studio/guides/shape-frame/#draw-a-custom-shape-with-the-pen-tool).
 
 ## Text
 

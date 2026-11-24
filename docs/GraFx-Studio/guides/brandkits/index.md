@@ -2,7 +2,7 @@
 
 - Create your Brand Kit in the [GraFx Brand Kit](/GraFx-Brand-Kits/guides/create/) application
 - Import a Brand Kit in your GraFx Studio Document
-- Use the Media, Fonts and Styles in your document
+- Use the Media, Fonts, Styles and [Components](/GraFx-Studio/guides/use-components/#place-a-component-from-the-brand-kit) in your document
 
 ## Import a Brand Kit
 
@@ -51,6 +51,8 @@ switchTheme(name: string)
 
 Integrations can use the equivalent Studio SDK brand kit theme methods.
 
+The theme selector in the Brand Kit panel always shows the active theme, also when the theme is switched outside the panel — by the SDK or by [GraFx Genie](/GraFx-Genie/design-agent/).
+
 ## Keep a Brand Kit in sync
 
 Once a Brand Kit is imported, the template can stay aligned with the source Brand Kit in **GraFx Brand Kits**. When an element is updated centrally (for example a new brand color, or a revised paragraph style), those changes can be pulled into the template without re-importing.
@@ -95,5 +97,7 @@ The circular-arrows button next to the Brand Kit selector pulls the latest versi
     - A renamed element is added as a new element (names act as identifiers).
 
     A sync is a single undoable step — use undo/redo to revert it.
+
+    Components sync like the other Brand Kit elements, but a sync only updates the Brand Kit's component list. Component frames already placed in the template are not changed.
 
     Sync is theme-aware: it applies to the selected theme and restores its settings to the source Brand Kit's state.

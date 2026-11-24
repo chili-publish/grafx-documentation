@@ -91,9 +91,28 @@ The **Assign shape** dropdown sets the shape used to clip the image:
 - **Rectangle** (default) — the standard image frame look. Combine with a corner radius to round the edges.
 - **Ellipse** — clips the image to an ellipse fitted inside the frame's bounding box.
 - **Polygon** — clips the image to a triangle fitted inside the frame's bounding box.
-- **Custom** — clips the image with a custom shape (for example a shape imported from an InDesign export). The custom path is fitted inside the frame's bounding box.
+- **Custom** — clips the image with a custom path: one you [draw or edit with the Pen tool](#draw-or-edit-a-custom-clipping-path), or one imported from an InDesign export. The custom path is fitted inside the frame's bounding box.
 
 The image is always clipped within the frame's existing width, height, and rotation — the shape only affects the silhouette.
+
+### Draw or edit a custom clipping path
+
+The [Pen tool](/GraFx-Studio/guides/shape-frame/#draw-a-custom-shape-with-the-pen-tool) also works on the clipping mask of an image frame, so you can cut an image to any outline — a torn edge, a speech bubble, the silhouette of a product.
+
+Double-click the image frame, or select it and choose the Pen tool (**P**). The path editor opens on the frame's clipping mask:
+
+- If the mask is a Rectangle, Ellipse or Polygon, its outline becomes an editable path.
+- Move, add and delete anchor points and Bézier handles exactly as you would [on a shape frame](/GraFx-Studio/guides/shape-frame/#edit-a-path).
+- The image stays visible only inside the path.
+
+Fit, Fill and Smart Crop keep working with a custom clipping path, and undo and redo follow the [same rules as on shape frames](/GraFx-Studio/guides/shape-frame/#undo-and-redo-while-editing). End users in Studio UI cannot edit the clipping path.
+
+<!-- TODO screenshot (REL-80): an image frame in path editing, with anchor points and a Bézier handle visible on a custom clipping path. Save as clippingmask-path.png next to this page and uncomment:
+![An image frame in path editing, the photo clipped to a custom outline with its anchor points and a Bézier handle showing](clippingmask-path.png){.screenshot-full}
+-->
+
+!!! warning "Known limitation"
+    Clipping masks made of several separate sub-paths cannot be edited with the Pen tool. Double-clicking such a frame does nothing.
 
 !!! note "Re-selecting the active shape resets the corner radius"
     Picking the same shape that's already selected (for example Rectangle when the shape is already Rectangle) resets the corner radius to zero. This is intentional; use Undo to restore the previous values.

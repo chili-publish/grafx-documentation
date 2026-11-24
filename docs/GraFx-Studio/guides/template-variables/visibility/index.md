@@ -32,6 +32,9 @@ Click **Visibility Conditions**.
 
 Click **+ Add Condition** and define the criteria that must be met for the variable to be visible.
 
+For a **Selected layout** condition, the layout list follows the order of the layout tree, with sub-layouts indented under their parent.
+
+<!-- TODO screenshot (REL-80): retake with a template that has sub-layouts, so the indented layout list is visible -->
 ![A first condition, Selected layout Equal to A4, with the layout list open on A4 and A5](var11.png){.screenshot-full}
 
 ![A second condition on the variable Show text, its value list open on True and False](var12.png){.screenshot-full}
