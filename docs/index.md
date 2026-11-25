@@ -13,6 +13,16 @@
 
     ---
 
+    **Nov 24, 2026**: GraFx Studio: Pen tool and components in the Brand Kit
+
+    ![GraFx Studio icon for the Pen tool and Brand Kit components release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
+
+    Draw custom shapes and edit image clipping paths with the new Pen tool, and place components straight from the Brand Kit panel.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/11/24/grafx-studio-pen-tool-and-components-in-the-brand-kit/)
+
+    ---
+
     **Nov 18, 2026**: GraFx Experience 1.24: redesigned template page and live settings from CHILI GraFx
 
     ![GraFx Experience icon for the GraFx Experience 1.24 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
@@ -60,16 +70,6 @@
     A new Rich text variable type turns tagged text from a data feed into your template's paragraph and character styles, using import rules managed per environment.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/13/grafx-studio-rich-text-variables/)
-
-    ---
-
-    **Oct 12, 2026**: CHILI GraFx Environment API: Unpublished changes, font lookups, and connectors
-
-    ![CHILI GraFx icon for the October 12 Environment API release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
-
-    Components report whether they have unpublished changes, reading font families is lighter on the server, and connector changes are saved more safely.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/12/chili-grafx-environment-api-unpublished-changes-font-lookups-and-connectors/)
 
     ---
 

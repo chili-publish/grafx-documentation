@@ -14,6 +14,9 @@ Click the Text tool in the [sidebar](/GraFx-Studio/overview/sidebar/). Drag a fr
 
 Double-click inside the text frame and start typing.
 
+- **Enter** starts a new paragraph.
+- **Shift + Enter** inserts a soft return: a line break inside the same paragraph. Both lines keep the paragraph's settings — style, alignment and list bullet — so use it to break a headline over two lines, or to continue a list item on a new line without adding a bullet.
+
 ## Add Variable Text to a Text Frame
 
 See [Work with variables](/GraFx-Studio/guides/template-variables/assign/).

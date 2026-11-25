@@ -16,7 +16,61 @@ Drag a rectangle on the canvas. The selected shape will be drawn inside the fram
 
 [All feature videos](https://www.youtube.com/playlist?list=PLLHtQ1R6R-B_m7XAVySM9OjbbUscsgBOH)
 
+## Draw a custom shape with the Pen tool
 
+Rectangles, ellipses and polygons cover most needs. When a design calls for something else — a speech bubble, a ribbon, a badge outline — draw the shape yourself with the **Pen tool**. The result is a shape frame with a custom path, built from anchor points and Bézier handles.
+
+<video width="690" autoplay="true" loop="true" muted="true">
+  <source src="create_edit_shape.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- TODO screenshot (REL-80): the Pen tool in the left toolbox, between Shapes and Text, with its tooltip showing the shortcut P. Save as tool-pen.png next to this page and uncomment:
+![The Pen tool in the left toolbox, its tooltip showing the shortcut P](tool-pen.png){.screenshotsmall}
+-->
+
+### Draw a path
+
+1. Select the **Pen tool** in the sidebar, or press **P**. The tool stays highlighted while it is active.
+2. Click on the canvas to place an anchor point. Each click adds a corner point connected to the previous one.
+3. Click and drag to place a curved point. Dragging pulls out Bézier handles that set the curve on both sides of the point.
+4. Finish the path:
+    - Click the first point to close the path.
+    - Press **Esc** to finish an open path.
+
+While drawing, **Delete** removes the last point you placed, and snapping helps you line points up.
+
+### Edit a path
+
+Double-click a shape frame with a custom path to enter path editing. You can also select the frame and choose the Pen tool.
+
+In path editing you can:
+
+- Drag an anchor point to move it.
+- Drag a Bézier handle to reshape the curve around its point.
+- Click on the path to add a point.
+- Select points or handles and press **Delete** or **Backspace** to remove them.
+
+To leave path editing, choose the Select tool (**V**) or another tool.
+
+### Turn a shape into a custom shape
+
+Select a rectangle, ellipse or polygon and choose the Pen tool. The shape's outline becomes an editable path, so you can start from a standard shape and adjust it rather than drawing from scratch.
+
+### Undo and redo while editing
+
+While you are in path editing, **Undo** and **Redo** step through your individual point edits: adding, moving and removing points. Undo never takes you out of path editing; when you have undone every edit, you stay in the editor with the original path.
+
+Once you leave path editing, the whole path edit counts as a single step in the template's undo history.
+
+### Properties of a custom shape
+
+A custom shape has the same properties as other shape frames — fill, stroke, drop shadow, blend mode and opacity — except corner radius, which applies only to rectangles and polygons.
+
+Path editing is a template design feature. End users in Studio UI cannot edit paths.
+
+!!! warning "Known limitation"
+    Shapes made of several separate sub-paths cannot be edited with the Pen tool. This applies, for example, to some shapes imported from Adobe® InDesign® or Adobe® Photoshop®. Double-clicking such a shape does nothing, and choosing the Pen tool with the shape selected starts a new path instead.
 
 ## User Constraints for Shape Frames
 

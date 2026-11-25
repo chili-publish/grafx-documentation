@@ -54,7 +54,7 @@ Look [here](/GraFx-Studio/concepts/crop/) to see how to work with cropping.
 
 ### Clipping mask
 
-Every image frame has a **clipping mask** that defines its visible silhouette. By default, the mask is a Rectangle without a stroke, so an image frame looks like a regular rectangular frame. Switching the shape to **Ellipse** or **Polygon**, applying a corner radius, or enabling a stroke produces a visible effect — useful for circular avatars, rounded product cards, or polygonal hero crops without putting a separate shape frame on top.
+Every image frame has a **clipping mask** that defines its visible silhouette. By default, the mask is a Rectangle without a stroke, so an image frame looks like a regular rectangular frame. Switching the shape to **Ellipse** or **Polygon**, editing a custom path with the Pen tool, applying a corner radius, or enabling a stroke produces a visible effect — useful for circular avatars, rounded product cards, or polygonal hero crops without putting a separate shape frame on top.
 
 See [Clipping mask](/GraFx-Studio/guides/image-frame/#clipping-mask) on the image frame guide for the available controls.
 
@@ -87,7 +87,7 @@ This is particularly useful for lifestyle images where automated cropping (Fill,
 
 ![A grey Rectangle shape frame selected, with Corner radius, Fill and Stroke in its properties](frame-shape.png){.screenshot-full}
 
-A shape frame draws the selected shape. (Rectangle, Ellipse, Polygon).
+A shape frame draws the selected shape: a Rectangle, Ellipse or Polygon, or a custom shape you draw with the [Pen tool](/GraFx-Studio/guides/shape-frame/#draw-a-custom-shape-with-the-pen-tool).
 
 The shape can be used as a (dynamic) background for e.g. a button. Since a shape will follow the inheritance model, the size, rotation, position, etc, will also be linked to the current sub-layout.
 

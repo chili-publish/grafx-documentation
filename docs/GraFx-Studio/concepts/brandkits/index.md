@@ -1,6 +1,6 @@
 # Brand Kit
 
-A Brand Kit is a collection of media, text styles, color styles, and fonts.
+A Brand Kit is a collection of media, text styles, color styles, fonts, and components.
 
 Elements of a "Brand Kit":
 
@@ -9,6 +9,7 @@ Elements of a "Brand Kit":
 	- Text: character styles
 	- Colors
 	- Fonts
+	- Components
 
 When you define a Brand Kit, you define elements that fit together in one group, so you can re-use the settings later in the document.
 
@@ -29,6 +30,10 @@ A character style is a collection of character formatting attributes that can be
 ## Color
 
 A [color](/GraFx-Studio/guides/colors/) is a color saved inside a Brand Kit. You can define a color, give it a name, and save the named color to be used later.
+
+## Components
+
+Reusable design elements — a price tag, a promo badge — that belong to the brand. Place them from the **Components** tab of the Brand Kit panel; see [Place a component from the Brand Kit](/GraFx-Studio/guides/use-components/#place-a-component-from-the-brand-kit).
 
 ## Fonts
 

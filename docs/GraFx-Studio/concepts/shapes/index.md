@@ -8,6 +8,8 @@ Select (E) for ellipse
 
 Select (Y) for polygon (don't ask Y)
 
+For any other outline, use the Pen tool (P) to draw a custom shape from anchor points and Bézier handles. See [Draw a custom shape with the Pen tool](/GraFx-Studio/guides/shape-frame/#draw-a-custom-shape-with-the-pen-tool).
+
 ![The shape tool flyout with Rectangle (R), Ellipse (E) and Polygon (Y)](shapes-ui.png){.screenshot}
 
 ![An ellipse selected on the canvas, with its fill set to hex #63AECE in the Color picker](shapes-intro.png){.screenshot-full}

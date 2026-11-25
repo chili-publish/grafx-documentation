@@ -39,6 +39,10 @@ Your subject will now fit within the defined Subject Position box.
 
 ![The runner now sitting in the lower half of the frame, clear of the Sports headline above her](sc11.png){.screenshot-full}
 
+The Subject Position box can also extend beyond the edges of the frame — on one side or several at once. Use this when the subject should be partly cut off by the frame edge, for example a product that bleeds off the side of a banner. The box edges snap to the frame edges, so you can also align them exactly. At least 10% of the frame's width and height must stay covered by the box.
+
+The Subject Position is stored per layout, and an out-of-frame position renders the same in Studio UI and in output.
+
 ## Subject alignment
 
 When the image has room to move after Smart Crop has zoomed, you can nudge the subject toward a side inside the Subject Position instead of leaving it centered. With Smart Crop selected, choose a position from the **Subject alignment** dropdown in the properties panel. It offers a 3×3 grid of positions:
