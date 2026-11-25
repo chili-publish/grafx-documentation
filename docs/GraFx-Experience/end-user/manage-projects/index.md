@@ -17,6 +17,12 @@ The **My projects** tab shows all projects you have created. Each project card d
 
 Use the **search bar**, **sort**, and **filter** controls to find projects quickly.
 
+### Grid or list view
+
+Switch between grid and list view with the toggle next to the filters. Your choice is remembered in your browser and applies to **My projects**, **All projects** and **Downloads**, also after you leave or refresh the page.
+
+Until you pick a view yourself, the page opens in the default view set by your admin, or in grid view when no default is set. Admins set the default in the settings of the Projects component in the page editor. Changing the default later does not override a view a user has already picked.
+
 ![The My projects tab showing a grid of project cards with thumbnail previews, project names, layout counts, last-edited dates, and Edit and Print/Download buttons](ge14.png){.screenshot-full}
 
 ## Project card previews
@@ -37,7 +43,9 @@ The **All projects** tab shows projects created by other users in your organizat
 
 The **Downloads** tab shows all output files you have requested. When a file is ready, the status updates and you can download it from this page.
 
-A download that produces several files at once appears as a single entry with the total number of files it contains. Use **Download all** to get every file in that entry as one ZIP file.
+A download that produces several files at once appears as a single entry with the total number of files it contains. Use **Download all** to get every file in that entry as one ZIP file. An entry with only one file downloads that file directly, without a ZIP.
+
+Downloads you start from the editor are listed here too. See [Download from the editor](../edit-project/#download-from-the-editor).
 
 ## Lists
 

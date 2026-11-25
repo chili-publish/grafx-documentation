@@ -48,12 +48,31 @@ Click the **...** context menu next to a layout tab to access additional options
 - **Rename** — give the layout a custom name within this project
 - **Duplicate** — create a copy of the layout in the project
 - **Remove** — remove the layout from the project
+- **Download** — download only this layout, in one of its formats (see [Download from the editor](#download-from-the-editor))
 
 ## Saving your work
 
 Click **Save** to save your changes. Your project is stored on the Projects page and can be reopened at any time.
 
 Click **Close** to exit the editing experience without saving the latest changes.
+
+## Download from the editor
+
+You can download your work without leaving the editor. There are two places to start a download:
+
+| Where | What you get |
+|---|---|
+| **Download** in the title bar, next to **Save** | The whole project: every layout of the format group you pick (**Print** or **Digital**), whichever tab is open |
+| **Download** in the **...** menu of a layout tab | Only that layout, in one of its formats |
+
+A download with one file arrives as that file. A download with several files arrives as one ZIP file, named after the project.
+
+- **Unsaved changes are saved first.** If the save fails or you cancel it, the download does not start.
+- **You can keep editing.** A notification shows that the download has started, and another one with a **Download** button when the file is ready. The file is also listed on the [Downloads](../manage-projects/#downloads) tab.
+- **Same options as the Projects page.** The formats you see, and whether you can download at all, are the same as on the project card. They depend on your user group and the template's workflow settings. When the template version has expired, download is not available.
+- **Projects with one layout** don't show layout tabs. Use **Download** in the title bar.
+
+If some layouts of a ZIP could not be generated, the ZIP holds the finished files and a warning says how many are missing.
 
 !!! tip
     You can undo and redo changes using the arrow buttons in the toolbar before saving.

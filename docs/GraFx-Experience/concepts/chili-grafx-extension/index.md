@@ -17,7 +17,7 @@ The extension is configured through its own admin console. The key objects it ma
 ![The CHILI GraFx extension admin console showing the main navigation with Templates, Fields, Production Channels, and Settings](ge4.png){.screenshot-full}
 
 **Templates**
-A template in the extension is a record that points to a Design System in GraFx Studio. It holds metadata (name, description, status, main visual) and configuration (field values, workflow settings). Admins add a template by picking the Design System from the templates in the connected CHILI GraFx environment, so the two stay linked without copying IDs. Templates appear to end users as campaigns in the portal.
+A template in the extension is a record that points to a Design System in GraFx Studio. It holds metadata (name, description, status, main visual) and configuration (field values, workflow settings). When the extension is connected to a CHILI GraFx environment, every template of that environment is added automatically with the status **Needs configuration**, hidden from users until an admin configures and activates it. The two stay linked without copying IDs. Templates appear to end users as campaigns in the portal.
 
 **Fields**
 Reusable metadata elements that can be attached to templates, projects, production channels, and outputs. Fields serve two purposes: categorizing content for search and filtering, and controlling which user groups can access which templates. See [Fields](../fields/) for details.

@@ -32,6 +32,8 @@ The page holds the connection details for your CHILI GraFx environment. Required
 
 Click **Save Authentication**. When you save, GraFx Experience checks the environment against your CHILI GraFx subscription. If the Environment ID is not valid, an error message is shown and the previous values are kept.
 
+Once connected, every template of the environment is added to the extension's **Templates** list with the status **Needs configuration**. Users don't see these templates until you configure and activate them. See [Configure a Design System](../configure-design-system/).
+
 ## Step 3: Verify the connection
 
 Open the extension's **Settings → Environment settings** and check that the access token has a recent refresh time. If the connection is successful, the GraFx Studio user interfaces and output settings from your environment are available when you configure templates in the extension.
@@ -44,6 +46,22 @@ GraFx Experience reads the following from your CHILI GraFx environment each time
 - **User interfaces and output settings** — the next settings view, preview or output uses the changed value.
 
 If CHILI GraFx can't be reached, GraFx Experience uses the last values it read successfully, and the editor shows a warning. When no earlier values exist, the editor loads the latest GraFx Studio version.
+
+## Changing the environment
+
+You can point the extension to another CHILI GraFx environment by changing the **Environment ID** or the **Environment API base URL** on the **GraFx Authentication** page. Because this affects every template, GraFx Experience asks you to confirm before it saves. **Cancel** keeps your edits in the form and saves nothing.
+
+When you confirm:
+
+- **Templates that are not on the new environment become Inactive** and are hidden from users. Expired templates stay Expired. Nothing is deleted: templates, versions, layouts and projects are kept.
+- **Templates of the new environment are added** with the status **Needs configuration**.
+- **Templates that exist on both environments** (with the same template ID) keep their status.
+- **Existing projects** on templates of the previous environment can no longer be reliably edited or output.
+- **Output settings and user interfaces** selected in the extension and in workflow settings still point to the previous environment. They are kept as they are; check and update them.
+
+Switching back to an earlier environment does not restore anything. Templates stay Inactive until an admin activates them again.
+
+Saving new credentials (Client ID, Client Secret or Auth URL) for the same environment, or connecting for the first time, doesn't show the warning and doesn't change any template.
 
 ## Refreshing after permission changes
 

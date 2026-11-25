@@ -60,7 +60,7 @@ When your app connects through the Extension SDK, GraFx Experience issues a JWT 
 | **`ext_key`** | Extension key, for example `assets` or `grafx-vdp`. |
 | **`token_type`** | Always `extension_sdk`. |
 | **`scope`** | OAuth scopes granted to the token. |
-| **`roles`** | The user's roles. |
+| **`roles`** | The signed-in user's roles on the installation, as an array of role names. Always present: `[]` when the user has no roles. |
 | **`amr`** | How the user authenticated. |
 
 ### Role values
@@ -73,7 +73,7 @@ For what each role means, see [Roles & permissions](/GraFx-Experience/overview/r
 | **`ROLE_TENANT_ADMIN`** | Admin. Access to the page editor and the **Admin Console**. |
 | **`ROLE_TENANT_OWNER`** | Account Owner. Same access as Admin; one per installation. |
 
-Use **`roles`** to show admin-only features only to `ROLE_TENANT_ADMIN` or `ROLE_TENANT_OWNER`.
+Use **`roles`** to show admin-only features only to `ROLE_TENANT_ADMIN` or `ROLE_TENANT_OWNER`. The claim is in the token of Experience pages and **Admin Console** pages. A refreshed token carries the roles the user has at the time of the refresh. The SDK has no helper for it: decode `authToken.jwt` to read it.
 
 !!! warning "Always validate the token"
     Check that **`iss`** is the issuer you expect, then verify the signature against that issuer's JWK set. Reject tokens from any other issuer, tokens whose **`aud`** is not your extension, and tokens past **`exp`**.

@@ -24,7 +24,7 @@ Each row represents one Design System and includes:
   A landscape thumbnail of the main visual, the human-readable name shown to admins and, depending on configuration, to end users, and the internal reference used to identify the Design System in Experience.
 
 - **Status**  
-  **Active**, **Inactive** or **Expired**.
+  **Needs configuration**, **Active**, **Inactive** or **Expired**. Only active templates are shown to users.
 
 - **Version**  
   The published version that new projects use, with a chip when there is a draft or a failed sync.
@@ -34,7 +34,7 @@ Each row represents one Design System and includes:
 
 The **⋯** menu on each row offers **Open**, **Edit in GraFx Studio**, and **Set active** or **Set inactive**.
 
-To add a Design System, click **Add template** and pick it from the templates in your CHILI GraFx environment. See [Configure a Design System](/GraFx-Experience/guides/configure-design-system/).
+When the extension is connected to a CHILI GraFx environment, every template of that environment is added to the list with the status **Needs configuration**. These templates are hidden from users until an admin configures, publishes and activates them. See [Configure a Design System](/GraFx-Experience/guides/configure-design-system/).
 
 This overview helps admins verify which Design Systems are connected and ready for use.
 
