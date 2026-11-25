@@ -2,6 +2,7 @@ import gzip
 import os
 import re
 from datetime import date
+from xml.sax.saxutils import escape
 
 # Remove GraFx Publisher and unlisted landing pages from search. Pages stay
 # published; they're just kept out of the local search box, marked noindex for
@@ -13,15 +14,34 @@ EXCLUDE_PREFIXES = ("GraFx-Publisher/", "landing/")
 
 NOINDEX_META = '<meta name="robots" content="noindex, nofollow">'
 
+# Release posts with an `email_summary` front-matter field get a
+# <chili:emailSummary> element in their RSS feed items. The email tool that
+# watches the feed sends an email for each item that carries one.
+RSS_FEEDS = ("feed_rss_created.xml", "feed_rss_updated.xml")
+CHILI_RSS_NS = "https://docs.chiligrafx.com/rss"
+
+# Page canonical URL -> email summary, collected while pages build.
+_email_summaries = {}
+
+
+def on_pre_build(config, **kwargs):
+    """Reset collected email summaries so `mkdocs serve` rebuilds start clean."""
+    _email_summaries.clear()
+
 
 def on_page_markdown(markdown, page, config, files, **kwargs):
-    """Remove EXCLUDE_PREFIXES pages from the local search index.
+    """Remove EXCLUDE_PREFIXES pages from the local search index, and collect
+    `email_summary` front matter for the RSS feeds.
 
-    Applied by path, so new pages under those folders are covered without
-    editing each file's front matter. Runs before the search index is built.
+    Search exclusion is applied by path, so new pages under those folders are
+    covered without editing each file's front matter. Runs before the search
+    index is built.
     """
     if page.file.src_uri.startswith(EXCLUDE_PREFIXES):
         page.meta.setdefault("search", {})["exclude"] = True
+    summary = page.meta.get("email_summary")
+    if summary and page.canonical_url:
+        _email_summaries[page.canonical_url] = " ".join(str(summary).split())
     return markdown
 
 
@@ -45,6 +65,9 @@ def on_post_build(config, **kwargs):
     3. Drops EXCLUDE_PREFIXES URLs from sitemap.xml so Google isn't pointed at
        the noindex'd pages.
     4. Removes the GraFx Publisher pointer/links from the llms.txt files.
+    5. Adds <chili:emailSummary> to RSS items whose post has `email_summary`.
+       Runs after the rss plugin has written the feeds (hooks run after
+       plugins).
     """
     site_dir = config["site_dir"]
     today = date.today().isoformat()
@@ -69,6 +92,36 @@ def on_post_build(config, **kwargs):
             f.write(content)
 
     _strip_sitemap(site_dir)
+    _add_email_summaries(site_dir)
+
+
+def _add_email_summaries(site_dir):
+    """Add <chili:emailSummary> to RSS items whose post has `email_summary`.
+
+    Items without an `email_summary` are left untouched (no element at all).
+    The chili namespace is declared on <rss> in every feed.
+    """
+    for name in RSS_FEEDS:
+        path = os.path.join(site_dir, name)
+        if not os.path.exists(path):
+            continue
+        with open(path, "r", encoding="utf-8") as f:
+            xml = f.read()
+
+        def add(match):
+            item = match.group(0)
+            link = re.search(r"<link>([^<]*)</link>", item)
+            summary = link and _email_summaries.get(link.group(1).strip())
+            if not summary:
+                return item
+            element = f"<chili:emailSummary>{escape(summary)}</chili:emailSummary>"
+            return item.replace("</item>", f"{element} </item>", 1)
+
+        xml = re.sub(r"<item>.*?</item>", add, xml, flags=re.DOTALL)
+        if "xmlns:chili=" not in xml:
+            xml = xml.replace("<rss ", f'<rss xmlns:chili="{CHILI_RSS_NS}" ', 1)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(xml)
 
 
 def _strip_sitemap(site_dir):
