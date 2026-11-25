@@ -13,6 +13,16 @@
 
     ---
 
+    **Nov 25, 2026**: Environment API: Modify projects without opening the editor
+
+    ![CHILI GraFx icon for the Environment API project modification release note](/assets/icon-CHILI-GraFx.svg){.rn_icon}
+
+    Integrations can now set a project's variables, layout and page size on the server, and run its Actions, through public Environment API endpoints.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/11/25/environment-api-modify-projects-without-opening-the-editor/)
+
+    ---
+
     **Nov 24, 2026**: GraFx Studio: Pen tool and components in the Brand Kit
 
     ![GraFx Studio icon for the Pen tool and Brand Kit components release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -60,16 +70,6 @@
     Chat with your Design System in the GraFx Studio workspace: the Design Agent explains, adapts and builds templates from your Brand Kit, guided by descriptions and custom skills, with an opt-out per environment.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/22/grafx-genie-design-agent-beta/)
-
-    ---
-
-    **Oct 13, 2026**: GraFx Studio: Rich text variables
-
-    ![GraFx Studio icon for the rich text variables release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    A new Rich text variable type turns tagged text from a data feed into your template's paragraph and character styles, using import rules managed per environment.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/13/grafx-studio-rich-text-variables/)
 
     ---
 

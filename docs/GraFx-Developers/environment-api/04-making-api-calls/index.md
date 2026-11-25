@@ -25,6 +25,8 @@ Below is a table of the most common endpoints used by a basic integration.
 | DELETE | /api/v1/environment/{environment}/projects                         | Deletes a Project                                          |
 | GET    | /api/v1/environment/{environment}/projects/{projectId}/document    | Gets the JSON of a Project                                 |
 | PUT    | /api/v1/environment/{environment}/projects/{projectId}/document    | Save JSON to a Project                                     |
+| POST   | /api/v1/environment/{environment}/projects/{projectId}/modifications | Start a task to set variables, layout or page size of a Project ([guide](/GraFx-Developers/grafx-studio/supplementary-materials/modify-projects-with-api/)) |
+| GET    | /api/v1/environment/{environment}/projects/modifications/tasks/{taskId} | Get task status of a Project modification             |
 | GET    | /api/v1/environment/{environment}/projects/{projectId}/preview     | Start a task to generate a preview of a Project            |
 | GET    | /api/v1/environment/{environment}/projects/preview/tasks/{taskId}  | Get task status of a preview for a Project                 |
 | POST   | /api/v1/environment/{environment}/output/image                     | Starts an image output of a Project, Template, or JSON     |
