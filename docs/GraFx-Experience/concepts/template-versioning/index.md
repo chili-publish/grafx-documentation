@@ -56,6 +56,14 @@ Layout changes compared to the published version can't be detected, so the draft
 
 GraFx Experience prepares a preview for every layout in the draft. **Publish** stays disabled, with the reason shown, until all previews are ready, and after a sync failure.
 
+The **Versions** tab shows the progress while you wait:
+
+- **Right after Create version**, before the layouts are known, a progress indicator shows that layouts and previews are being prepared.
+- **Once the layouts are known**, each layout has a card. Until its preview is ready, the card shows your tenant's fallback image.
+- **When a preview fails**, the card shows an error icon and a **Relaunch** button that generates the preview for that layout again.
+
+Use **Refresh** to load the latest state of the version without leaving the page.
+
 When you publish, new projects start using this version. Existing projects stay on the version they were created from.
 
 ## Expiring a version

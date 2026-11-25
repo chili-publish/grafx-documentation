@@ -64,6 +64,8 @@ const user = await sdk.apiCall<{ firstName: string }>(
 );
 ```
 
+`sdk.getApiUrl()` returns the platform API base URL that GraFx Experience uses on this installation, and `apiCall()` sends requests to that same URL. Use it when your app calls the API without `apiCall()`. `extensionDetails.baseUrl` stays the URL of the portal itself.
+
 Calls are limited to the [API permissions](/GraFx-Developers/grafx-experience/create-local-extension/#api-permissions) of your extension. To validate the token on your own back end, see [Extension SDK JWT claims](/GraFx-Developers/grafx-experience/authentication/#extension-sdk-jwt-claims).
 
 ## Step 4: Host and embed

@@ -2,6 +2,12 @@
 
 Tenant admins control how the portal looks before and after users log in: the logo in the main navigation, the icon in the browser tab, the images on the login page, and the visuals of each space.
 
+## Default look
+
+New tenants start with the look of CHILI GraFx: the same primary color, font and corner rounding. Tenants that already changed their color, font or rounding keep their own settings.
+
+On portals with a light theme, the GraFx components (content store, projects, order history, print partner dashboard, checkout and production output details) show their filters, lists and pagination in white panels, as in CHILI GraFx. This keeps them readable on page backgrounds that are not white.
+
 ## Where branding images are set
 
 | Image | Where to set it | Where it appears |

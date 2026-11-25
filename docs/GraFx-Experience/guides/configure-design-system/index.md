@@ -8,15 +8,15 @@ This guide explains how to make a GraFx Studio Design System available in GraFx 
 - The extension must be connected to your CHILI GraFx environment. See [Connect the extension to CHILI GraFx](../connect-to-chili-grafx/).
 - You need access to the CHILI GraFx extension admin console in GraFx Experience.
 
-## Step 1: Add the template
+## Step 1: Open the template
 
-In the CHILI GraFx extension admin console, go to **Templates** and click **Add template**.
+In the CHILI GraFx extension admin console, go to **Templates**.
 
-A picker opens with the templates in your connected CHILI GraFx environment. Each one shows a preview, its name, its folder and when it was last modified. Use search and sort to find the right one.
+When the extension is connected to your CHILI GraFx environment, every template of that environment is added to this list with the status **Needs configuration**. The name is taken from CHILI GraFx, and a reference is created from it. A template with this status is hidden from users; it only shows up in the admin list. Filter the list on **Needs configuration** to see what is still waiting for setup, and open the template you want to configure.
 
-Templates that are already added to GraFx Experience stay visible in the picker, but you can't select them a second time.
+If the template is not in the list, click **Add template**. A picker opens with the templates in your connected CHILI GraFx environment. Each one shows a preview, its name, its folder and when it was last modified. Templates that are already added stay visible in the picker, but you can't select them a second time.
 
-Select the template. The template page opens in create mode, prefilled with the template you picked. You don't need to copy or paste a template ID.
+You never need to copy or paste a template ID.
 
 ## Step 2: Fill in the general settings
 
@@ -74,6 +74,8 @@ Users who don't match any row get the default GraFx Studio user interface and **
 
 Changes on the **General** tab are kept until you save or discard them, also when you switch tabs. As soon as something changes, a save bar appears. Click **Save** to store all changes at once, or **Discard** to go back to the saved state. The save bar tells you when **Reference** or **Name** is missing.
 
+Fields that are [required on templates](../manage-fields/#make-a-field-required-on-templates) are labelled **Required**. You can save the template without them, but you can't activate it until they have a value.
+
 ## Step 6: Publish the template version
 
 Open the **Versions** tab. The first version of a new template is a draft.
@@ -84,7 +86,13 @@ Version actions such as **Publish** run immediately. They don't require you to s
 
 See [Template versioning](../../concepts/template-versioning/) for the full version lifecycle.
 
-## Step 7: Verify
+## Step 7: Activate the template
+
+A template that was added automatically has the status **Needs configuration**. When it is configured and has a published version, set its status to **Active**, on the template page or with **Set active** in the **⋯** menu of the template list. Users then see it as a campaign.
+
+A template can't be activated while a [required field](../manage-fields/#make-a-field-required-on-templates) has no value. The error names the missing fields.
+
+## Step 8: Verify
 
 Open GraFx Experience as an end user and go to the campaigns page. Confirm the template appears with the correct name, main visual and field values, and that access is restricted as expected.
 

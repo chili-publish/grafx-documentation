@@ -39,6 +39,12 @@ A field can be applied to one or more of the following:
 | Production channel | Controls which user groups can access a production channel |
 | Production output | Controls which user groups can view specific production outputs |
 
+## Required fields
+
+A field can be marked **Required** on templates. Every template then needs a value for it before it can be set to Active, so metadata that filters or access control depend on is never forgotten. Templates that are already active stay active; admins see which values are missing the next time they open the template.
+
+See [Make a field required on templates](../../guides/manage-fields/#make-a-field-required-on-templates).
+
 ## Relationship to templates
 
 Fields are defined centrally and then assigned to individual templates. When a field is assigned to a template, an admin sets its value for that template. The same field (e.g. "Template Type") can have different values on different templates.

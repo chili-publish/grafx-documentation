@@ -13,6 +13,16 @@
 
     ---
 
+    **Nov 25, 2026**: GraFx Experience 1.25: download from the editor, required fields and templates ready to configure
+
+    ![GraFx Experience icon for the GraFx Experience 1.25 release note](/assets/icon-GraFx-Experience.svg){.rn_icon}
+
+    Users download a project or a single layout straight from the editor, admins can make fields required on templates, and every CHILI GraFx template is listed as soon as the extension is connected.
+
+    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/11/25/grafx-experience-125-download-from-the-editor-required-fields-and-templates-ready-to-configure/)
+
+    ---
+
     **Nov 24, 2026**: GraFx Studio: Pen tool and components in the Brand Kit
 
     ![GraFx Studio icon for the Pen tool and Brand Kit components release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
@@ -60,16 +70,6 @@
     Chat with your Design System in the GraFx Studio workspace: the Design Agent explains, adapts and builds templates from your Brand Kit, guided by descriptions and custom skills, with an opt-out per environment.
 
     [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/22/grafx-genie-design-agent-beta/)
-
-    ---
-
-    **Oct 13, 2026**: GraFx Studio: Rich text variables
-
-    ![GraFx Studio icon for the rich text variables release note](/assets/icon-GraFx-Studio.svg){.rn_icon}
-
-    A new Rich text variable type turns tagged text from a data feed into your template's paragraph and character styles, using import rules managed per environment.
-
-    [:octicons-arrow-right-24: Full Release Note](/release-notes/2026/10/13/grafx-studio-rich-text-variables/)
 
     ---
 

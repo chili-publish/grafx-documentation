@@ -18,6 +18,7 @@ In the GraFx Experience general settings, go to **Fields** and click **New field
 | Description | Short explanation of what the field controls |
 | Type | **Select** for a list of options, or **User Group** for access control |
 | Used on | Select one or more: Template, Project, Production channel, Production output |
+| Required | A checkbox next to each **Used on** option. Off by default. See [Make a field required on templates](#make-a-field-required-on-templates). |
 
 Click **Save** to create the field.
 
@@ -38,6 +39,25 @@ Open a template in the GraFx Experience admin. On the **General** tab, the **Fie
 - For **User Group** fields: select the user groups that should have access to this template.
 
 Use **Clear** to remove a value. Click **Save** to apply.
+
+Fields that are required on templates are labelled **Required** and can't be removed from the template.
+
+## Make a field required on templates
+
+Make a field required when every template must have a value for it, for example a channel or a campaign.
+
+Open the field, and next to **Template** under **Used on**, select **Required**. Click **Save**.
+
+From then on:
+
+- **New templates** open with a row for the field, labelled **Required**. The row is empty, or holds the field's default value.
+- **A template without a value can't be set to Active.** The error names the fields that are missing a value. This applies to templates that are Inactive, Expired or that need configuration.
+- **An active template can't be saved** when a required value is removed.
+- **Saving a template that is not active, and publishing a version, still work** without the value. Set the value before you activate the template.
+- **Templates that are already active stay active.** End users see no difference. The next time an admin opens the template, a banner names the missing fields and empty rows are added. These rows are only saved when you click **Save**; opening the template never changes it.
+
+!!! note
+    **Required** is enforced on templates. On projects, production channels and production outputs, the setting is saved but not enforced.
 
 ## Configure field visibility on the campaigns page
 
