@@ -15,6 +15,7 @@ Before proceeding, make sure you are familiar with:
 - The authentication process (see [Environment API overview](/GraFx-Developers/environment-api/01-overview/))
 - The difference between templates and projects (see [Templates vs Projects](/GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/))
 - Polling a task until it finishes, as you do for previews and output
+- Reading a document's variables and layouts with the [Template Information Service](/GraFx-Developers/grafx-studio/template-information-service/)
 
 The endpoints work with documents from GraFx Studio **1.49** and later. A document made with an older version is upgraded to the GraFx Studio version of your environment during the task.
 
@@ -47,12 +48,28 @@ Get the status and result of either task:
 GET /api/v1/environment/{environment}/projects/modifications/tasks/{taskId}
 ```
 
+## Find variable names and layout IDs
+
+Before you modify a project, find out which variables and layouts it has. Send the project document to the [Template Information Service](/GraFx-Developers/grafx-studio/template-information-service/) and run these queries:
+
+- [`allVariables`](/GraFx-Developers/grafx-studio/template-information-service/#allvariables) returns the name, type, required flag and current value of every variable.
+- [`allLayouts`](/GraFx-Developers/grafx-studio/template-information-service/#alllayouts) returns the ID, name and size of every layout. Use [`layoutsAvailableForUser`](/GraFx-Developers/grafx-studio/template-information-service/#layoutsavailableforuser) to get only the layouts an end user can choose.
+
+Get the document of a stored project with:
+
+```
+GET /api/v1/environment/{environment}/projects/{projectId}/document
+```
+
+!!! warning "Don't read the document JSON yourself"
+    The document JSON format is internal and can change without notice. Use the Template Information Service to read variable names and layout IDs, not the raw `variables` or `layouts` in the JSON.
+
 ## Request fields
 
 | Field | Description |
 |---|---|
 | `variables` | Values to set, as an array of `{ "name", "value" }` objects |
-| `selectedLayoutId` | ID of the layout to select, from the document's `layouts` array |
+| `selectedLayoutId` | ID of the layout to select, as returned by `allLayouts` |
 | `pageSize` | New page size, as `{ "width", "height", "unit" }` |
 | `executeActions` | Run the document's Actions during the task. Default `true` |
 | `document` | The project document JSON. Required on the supplied-document endpoint only |
@@ -61,16 +78,10 @@ Send at least one of `variables`, `selectedLayoutId` or `pageSize`, or leave `ex
 
 ### Variables
 
-- Use the project document as the reference for variable names and the value each variable accepts. Get it with:
-
-    ```
-    GET /api/v1/environment/{environment}/projects/{projectId}/document
-    ```
-
-- Variable names are case-insensitive.
+- Use the names returned by `allVariables`. Variable names are case-insensitive.
 - A name that appears twice in `variables` makes the request fail.
 - Names that don't exist on the document are ignored.
-- A value can be a string, number, boolean, object or array, depending on the variable type.
+- Send a value that matches the variable `type`: a string for `shortText` and `longText`, a number for `number`, and `true` or `false` for `boolean`. Depending on the type, a value can also be an object or an array.
 
 ### Actions
 
