@@ -178,6 +178,7 @@ plugins:
           - GraFx-Developers/grafx-studio/editor-engine/integrate-studio-ui/index.md: "How to embed the full Studio UI inside your application"
           - GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md: "Difference between templates (master designs) and projects (user instances)"
           - GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md: "How to drive variable data printing via the Output API"
+          - GraFx-Developers/grafx-studio/supplementary-materials/modify-projects-with-api/index.md: "How to set variables, layout and page size of a project document server-side via the Environment API"
           - GraFx-Developers/grafx-studio/references/index.md: "SDK and API references for Studio integration"
         Connectors:
           - GraFx-Developers/connectors/connectors-introduction/index.md: "What connectors are - pluggable media and data sources for Studio templates"
@@ -713,6 +714,7 @@ nav:
             - 'Supplementary Materials':
                 - 'Templates vs Projects':                    'GraFx-Developers/grafx-studio/supplementary-materials/templates-vs-projects/index.md'
                 - 'Variable Data Printing With Output API':                                         'GraFx-Developers/grafx-studio/supplementary-materials/variable-data-printing-with-output-api/index.md'
+                - 'Modify Projects With the Environment API':                                       'GraFx-Developers/grafx-studio/supplementary-materials/modify-projects-with-api/index.md'
             - 'References': 'GraFx-Developers/grafx-studio/references/index.md'
         - 'Extend GraFx Experience':
             - 'Overview':                       'GraFx-Developers/grafx-experience/overview/index.md'
